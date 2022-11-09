@@ -1,0 +1,43 @@
+- nacrtat sinkroni stroj i nacrtat gdje je uzbudni a gdje armaturni namot
+- crtat nadomjesnu shemu transformatora 
+- nacrtat nadomjesnu shemu asinkronog motora
+- nacrtat tiristorsko èudo sa kutem upravljanja 45 stupnjeva
+- yd5 spoj ka to izglda (namoti i faze)
+
+- rekatancije kod TG i HG
+- nadomjesna shema transformatora, objasniti odnos R1 i R2'
+- mom. karakt. asin. motora i nacrtati stat. struju
+- jednofazni ispravljac
+
+- Uvjeti sinkronizacije sinkronog generatora
+- Što treba napraviti da bi transformatori Yd5 i Yd11 radili paralelno
+- Odnosi struje kratkog spoja i poteznog momenta za dva napona
+- Nekakav silazni usmjerivaè ili tako nešto, nemam pojma uèinsku
+
+- nacrtati V-krivulje zadani napon i snaga
+- napisati koji su uvijeti paralelnog spoja transformatora.
+- imas rad asinkronog motora koji je spojen u trokut, nacrtati momentnu karakteristiku. i u istom grafu nacrtati momentnu karakteristiku kada ga prespojis u zvijezdu.
+- nesta sa tiristorskim ispravljacima.
+
+- fazorski dijagram HG-a
+- nesto sa transformatorom,da li moze raditi transf 10kV kad se prikljuci na 12kV
+- momentna karakteristika s centrifugalnom pumpom
+- silazni pretvarac i zvod formula
+
+- Pogonska karta hidrogeneratora cosfi=0.8,Xd=2Xq=120%
+- Yz5
+- Momentna karkt. asinkronog motora, kad se smanji U i f za 50% i kad U=konst. a f poveæa dva puta
+- reguliranje brzine izmjeniènog motora sa pretvaraèem
+
+- Nacrtaj pogonsku kartu HG
+- Moment as.motora, moment ako napon i frekvencija se smanji (omjer konst.), moment ako se samo frekv. poveæa dva puta
+- Spoj Yz5 i fazorski dijagram
+- Napisati primjer reguliranja vrtnje izmjeniènog motora
+
+- Ovisnost napona na sekundaru transformatora u kapacitivnom i induktivnom optereæenju
+- Zašto klizanje asinkronog motora mora biti malo i koliko otprilike iznosi za motor snage 1000 kW?
+- Regulacija optereæenja kod sinkronog generatora u ovisnosti o cos fi
+
+- nacrtati V-krivulje; zadani naponu ovisnosti o snazi (U=0, U=0,5*Pn, U=Pn mislim da je tako nekako bilo)
+
+- napisati koji su uvijeti paralelnog spoja transformatora.
