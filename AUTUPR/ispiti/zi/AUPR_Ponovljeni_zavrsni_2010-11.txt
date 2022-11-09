@@ -1,0 +1,28 @@
+Onako po sjeæanju:
+
+1.zadatak(9)
+-definicija amplitudno osiguranje (0.5)bodova 
+-definicija faznog osiguranja (0.5)bodova 
+-definicija prijenosne fukcije sustava (1)bod
+-zadana slika u Im-Re ravnini sa 3 pola(jedan je na neg. realnoj osi, 
+ a druga dva su konjugirano kompleksna) i onda naæi pokazatelje kvalitete
+ (nadvišenje,vrijeme porasta,vrijeme ustaljivanja,vrijeme MAX se nije moglo naæi) (2 boda)
+-zadan je bio pol u z-ravnini z=nešto+jnešto i treba ga preslikat u s-ravninu (2 boda)
+- i još nešto sa zadanim wc i vremenom uzorkovanja T, koja je tranformacija korištena ... (2) boda
+
+2. zadatak (8) 
+-zadan Nyquist dijagram i karakteristiène toèke i iz njega je trebalo naæi prijenosnu funkciju (6 bodova)
+-zadana pobuda i naæi odziv (3 boda)
+
+3.zadatak(11)
+- mislim da je trebalo preko ZN rub stabilnosti naæi parametre PI regulatora (5 bodova) 
+-naæi prijelaznu fukciju sutava i skicirati, te nadvišenja i podbaèaje, odnosno njihova vremena (4 boda)
+-regulacijsko odstupanje za step i 1/s^2 2 (2)boda
+
+4.zadatak (10)
+-zadana funkcija procesa, tri pola, zadano je nadvišenje, odrediti parametre regulatora: Ti da se kompenzira 
+ dominantna vremenska konstanta; pojaèanje Kr, a pritome nema veæe nadvišenje od sigma koji je zadan (4 boda)
+-bodeov dijagram mislim za gore kompenziranu fukciju (3 boda)
+-nacrtati onu shemu diskretni sustav upravljanja u vremenski kontinuiranoj domeni i oznaèiti AD,DA i digitalno raèunalo (1 bod)
+-mislim da je trebalo odrediti i preporuèeni iznos T(znaèi trebalo je wc naæi iz bodea) i onda po formuli (0.17-0.34)/wc (1 bod)
+-zadano je bilo wc i T i procjeniti koliko je nadvišenje prijelazne funkcije(ja sam to išao kao delta=wc*T/2) (1 boda)
