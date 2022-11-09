@@ -1,0 +1,159 @@
+Baric 
+1. Npn tranzistor princip rada, jednadžbe za struje, grafovi za sze. Ugl sve ko za diodu napisat
+2.spoj zajednièke upravljaèke diode i spoj zajednièke baze izraèunati pojaèanja otpora i napisati karakteristike pojaèala
+3. Neinvertirajuce pojaèalo, izvesti za beskonaèno i za konaèno pojaèanje
+4. Astabil s operacijskim, grafovi princip rada, ugl sve
+
+Potrefilo me skoro sve što nisam znao i proso na jedvite jade iako sam rasturio pismeni, dobar je baric èovjek i sve kuzi
+Takodjer dao je da imamo formule iako meni nisu pomogle
+
+----------------------------------------------------------
+
+bye bye ele1
+
+Bariæ
+
+1. dioda - strujno naponske karakteristike, razlika izmeðu realne i idealne, jednadžba struje...
+2. zajednicka upravljacka i zajednicki emiter - nacrtat, izvest pojacanje otpore itd.
+3. invertirajuce pojacalo za beskonacno i konacno pojacanje i nacrtat diferencijalno pojacalo
+4. monostabil s op, nacrtat objasnit napisat formule.
+
+1. sam znao sve, jedino je komentirao kako nisam oznacio velicine na grafovima
+2. emiter sam rijesio sve osim strujnog pojacanja, upravljacko nisam uspio ni pojacanja ni izlazne otpore
+3. neinvertirajuce sam samo predznak negdje fulao
+4. samo nacrtao i nesto objasnio, formule nisam imao pojma
+
+Uglavnom, tipu je jedino bitno da ne pišete gluposti, ako nešto niste rješili izgleda da niti ne skuži, ali ako ste nešto napisali i samo neku sitnicu zeznuli, odmah æe skužit, mada nije da mu nešto previše smeta. Bolje ne pisati ništa i pravit se blesav ako dio zadatka ne znate.
+Prije usmenog sam imao 26 bodova i odmah je rekao ako bude suvislo napisano to je prolaz, tako da ga izgleda nije nesto previse briga ni za bodove sa ispita.
+
+----------------------------------------------------------
+kod barica u 10:
+
+1. pn dioda, ui karakteristika, razlika izmedju realne i idealne diode, karakteristicne velicine i nacrtat manjisnke nosioce, difuzijski kap. i kapacitet osiromasenog sloja
+
+2. pojac. u spoju zajednickog gatea i zajednickog emitera, nacrtat sve i sve izvest vezano uz to i navest karakteristike oba pojac.
+
+3. invertirajuce op. pojacalo, izvest za slucaj virtualnog kratkog spoja i kad je pojacanje konacno, nacrtat diferencijsko pomocu operacijskog p.
+
+4. monostabil, nacrtat, grafovi svi, izvest, objasnit, uglavnom sve o monostabilu
+
+
+covjek korektno ispituje, ak vidi da ne strebate napamet neg da kuzite onda nema problema, ja nisam ni znao jedan zadatak i proso sam
+
+-----------------------------------------------------
+
+prof. Bariæ:
+4 pitanja:
+
+1. nMOS, apsolutno sve o njemu; opis naèina rada, prijenosna i izlazna karakteristika, skica strukture, modeli za mali signal...
+
+2. Nacrtati BPT u spoju zajednièkog kolektora i onda ko na ispitu, nacrtat i izvest sve; dinamièki uvjeti, pojaèanja, ulazni izlazni otpor..
+isto to za MOSFET u zajednièkom odvodu (ne treba strujno pojaèanje)
+
+3. opisat rad BPT kao sklopke, u kakvom naèinu rada moraju biti identiène sklopke postavljene na izlaz i na ulaz da bi središnja sklopka bila u zasiæenju? (dakle 3 serijski povezana BPT, ja saam napiso da ulazna mora bit u zasiæenju, a izlazna u zapiranju da bi središnja bila u zasiæenju. nisam siguran jel to toèno, jer je valjda i njemu dopizdilo nakon 2 i pol sata pa je to samo preletio)
+
+4. diferencijsko pojaèalo izvedeno MOSFETima, opet isto, dakle sve o tome, skicirat, izvest napone itd (to nisam znao) i bilo je još jedno pitanje u vezi toga, što predstavlja neki faktor/svojstv/štoveæ. i diferencijsko realizirano operacijskim, skicirat i izvest pojaèanje. to sam znao :)
+
+ne znam kako æe dijelit bodove, nije ih spominjao samo je rekao da smo prosli. a što se prolaza tièe dovoljno je pokazat razumijevanje, dakle ne mora bit sve toèno, bitno da bude, kako on veli "suvislo".
+
+Dobar èovjek taj Bariæ, i nemojte mu muljat ono "dada, ja sam to mislio, ne ma to sam u biti ovo ono" samo æe vas prozvat da muljate, a ako ostavite tu i tamo nešto prazno (ja sam se spetljo u izlaznom otporu zajednièkog uvoda jer sam krivo precrto prethodno dobro nacrtanu skicu) samo se nasmije i reko da je ok.
+
+eto, to je to, velim, ne znam kako æe dodjeljivat bodove, al imam osjeæaj da nas bagru sa jesenskog neæe previše nagradit, ako je nekom od kolega nešto rekao, nek javi, ja sam samo èuo da je svima reko "vi æete proæ".
+
+-------------------------------------------------------------
+
+Koliko sam ja vidio gotovo svi su dobili 50 ili 51 bod. Èovjek je stvarno korektan. Ukoliko netko želi proæi mora pokazati znanje, ne mora sve biti toèno al mora se zadovoljiti taj neki njegov uvijet.
+Ukoliko netko želi veæu ocjenu odgovori na pitanja moraju biti cjeloviti, i bez veæih grešaka. 
+Bariæ je profesionalac, razumije studente i puno se može nauèiti od njega! Mogu reæi da mi je jako drago što je on bio moj prof na ele 1!
+
+Ekipi koja ide na dekanski nek je s sreæom :)
+
+Evo i mojih pitanja po sjeæanju:
+1)	Strujno naponska karakteristika pn diode, difuzijski kapacitet, kapacitet osiromašenog sloja ( definicija, formule, slike). Propusna polarizacija, shema. Bila je još neka usporedba realne i idelne diode ako se dobro sjeæam
+2)	Spoj zajednièke upravljaèke elektrode, poèetna shema, statika, dinamika, Rul,Riz.
+Spoj zajednièkog emitera, poèetna shema, statika, dinamika, Rul,Riz, strujno pojaèanje
+3)	Konstruirati invertirajuæe pojaèalo, pa izvesti pojaèanje ako je na ulazima prividni kratki spoj i ako postoji Avop. Konstruirati diferencijalno pojaèalo s invertireajuæem. ( tako nešto)
+4)	Mislim da je bio mesfet, sheme, karakteristike, neke usporedbe ( stvarno se ne sjeæam)
+Ako se netko od kolega sjeæa nek nadopiše što fali.
+----------------------------------------------------------------
+
+Za buduce generacije: Bariæ:
+
+1) pn-dioda: strujno-naponska karakteristika, razlika izmedu realne i idealne diode, schokleyeva jednadzba, kapacitet osiromasenog sloja, difuzijski kapacitet
+2) spoj zajednickog emitera, naponsko pojacanje, strujno pojacanje, dinamicka analiza, glavne karakteristike + isto za mosfet sa zajednickom upravljackom elektrodom
+3) invertirajuce pojacalo uz a) prividni kratki spoj; b) Avop + diferencijsko pojacalo (samo shema)
+4) monostabil: shema + jednadzbe, grafovi, objasniti rad
+
+svima koji nisu prosli, sretno s tim vrazjim predmetom.
+
+------------------------------------------------------------
+
+PITANJA(Baric):
+
+1.PN dioda - nacrtaj izlaznu karakteristiku i jednadzbu koja ju opisuje, razlike realne i idealne PN diode, napisati izraz i objasniti kapacitet osiromasenog sloja i difuzijski kapacitet
+2. SZE(ja sam bez degeneracije) i SZB -Nacrtaj, izvedi za oba Av, Rul, Riz, za SZE i Ai.
+3. Neinvertirajuce pojacalo - Nacrtati i izvesti Av sa Avop i tehnikom vizualnog kratkog spoja. nacrtati diferencijsko pojacalo sa OP.
+4. Monostabil sa OP nacrtati, objasniti kako radi, nacrtati ulazni i izlazni graf, o cemu ovisi vrijeme kvazineutralnog podrucja i izvesti ga
+
+Uglavnom, 37.2/38, cetvorka, can't fucking believe it 
+
+budem jos skenirao pa postavio ona odgovorena suligojeva pitanja posto me je jedan kolega pitao(ne nadajte se pre vise-imam ruzan rukopis)
+
+u privitku, Freddie Mercury 
+
+---------------------------------------------------------------
+
+Pitanja kod Barica danas:
+
+1. NMOS, izlazna i prijenosna karakteristika, kako radi nmos, nacrtati poprecni presjek, i kako nadomjestamo u onim spojevima, imaju neka dva nacina kako ih nadomjestamo (kad ni uvod i odvod nije na masi i kad je jedno od tog dvoje na masi)
+
+2. spoj zajednickog kolektora, sve izvesti za pojacanja Av i Ai, Rul i Riz, ali isto tako i spoj zajednickog odvoda izvesti Av, Rul i Ril, i naravno sve nacrtati
+
+3. Kada bipolarni tranzistor radi kao sklopka? i jos nesto kao koje uvjete treba ispuniti kad bi spojili na krajeve takve sklopke jos dva tranzistora koji rade u zasicenju ili koji rade kao sklopke (ugl ovo ja nisam mogao ni procitati a kamoli rijesiti), itrebalo je takav spoj nacrtati.
+
+4. Diferencijsko pojacalo, izvesti ga pomocu operacijskog pojacala i pomocu tranzistora, izvesti pojacanja, sto je faktor potiskivanja, i kod izvedbe operacijskog pojacala izvesti napon Avop koji je R2/R1
+
+----------------------------------------------------------------
+
+Nek bude za sljedeæe generacije: 
+
+Kod Bariæa, trebalo mi je 22boda da proðem. Daje papire s pitanjima, pregledava službeni šalabahter jel ima kaj ispisano itd. Dobila ista pitanja kao netko na roku prije: 
+1. Pn dioda - strujno naponska karakteristika, jednadžba, nacrtati raspodjele manjiskih nosioca u propusnoj polarizaciji, karakteristiène vrijednosti i formule za njih, razlika realne i idealne diode. --> Malo sam zmrljala oznake kod raspodjela manjiskih, to je ispravio, ostalo sam znala.
+2. SZUE nacrtati, nacrtati nadomjesnu shemu, izvesti Av, Rul, Riz, kolko otprilike iznosi Av --> znala nacrtati spoj, nadomjesnu shemu sam zeznula (to sam mu odmah rekla da se nemrem sjetit), tu me malo pitao nešto oko toga i rekao ak sam riješila sljedeæi dobro da æu dobit dovoljan a da inaèe padam kao kruška 
+3. Nacrtati invertirajuæe pojaèalo, izvesti pojaèanje po principu vizualnog kratkog spoja, izvesti pojaèanje ako imamo konaèan Avop i nacrtati diferencijsko pojaèalo. --> Nacrtala sam dobro, izvela dobro, uopæe nisam nacrtala diferencijsko (mislim da nije ni skužio da se i to traži), onda me htio zeznut i rekao da sam neš loše oznaèila pa sam mu objasnila kaj su moje oznake, pa me pitao jesam zadovoljna s dovoljnim - rekoh i više nego s odliènim i to je to :)
+
+Sretno svima!
+
+----------------------------------------------------------------
+
+3 pitanja:
+
+1. pn dioda 
+- nacrtati strujno-naponsku karakteristiku i pripadnu jednadžbu
+- nacrtati raspodjele manjinskih nosilaca, oznaèiti karakteristiène vrijednosti i napisati izraze za njih (npo, nop, pno, pon) u propusnoj polarizaciji
+- razlike izmeðu realne i idealne diode
+
+2. mosfet
+- nacrtati spoj zajednièke upravljaèke elektrode
+- izvesti Av, Rul, Riz
+- kolko otprilike iznose Av, Rul, Riz
+
+3. operacijsko pojaèalo
+- nacrtati invertirajuèe pojaèalo
+- izvesti pojaèanje za to pojaèalo po principu virtualnog kratkog spoja
+- izvesti pojaèanje za to pojaèalo ako imamo neko konaèno Avop
+- nacrtati diferencijsko pojaèalo pomoæu operacijskog
+
+Imate PUUUUUUUUUUUUUUNO vremena za rješavat, kaže vam 30-45min, kaže da ako treba može i dulje i onda još èekate dok drugi odgovaraju, znaèi stvarno puno vremena. Ja sam bila u terminu u 11:30, tek u 13:30 sam odgovarala (predzadnja, znaèi još je netko bio poslije mene). Dakle ima vremena. Malo vas još Bariæ ispita i to je to.
+
+Izmeðu ostalog, reko mi je da sam prošla, a nisam ništa uèila za ovo jer sam mislila da neæu proæ na ovom roku, pa rekoh super!!!!!!!! 
+
+--------------------------------------------------------------
+
+1) MOSFET - nacrtati tehnoloski presjek, objasniti princip rada, nacrtati prijenosnu i izlaznu karakteristiku te nadomjesni spoj
+
+2) SZC - nacrtati pojacalo, nacrtati nadomjesnu shemu, izvesti naponsko i strujno pojaèanje te ulazni i izlazni otpor
+
+3) Diferencijsko pojacalo (MOSFET) - statika, i jos nesto - uglavnom, nisam ni rješavao pa nemam pojma sta se tražilo sve (samo znam da je bilo diferencijsko)
+
+sretno!

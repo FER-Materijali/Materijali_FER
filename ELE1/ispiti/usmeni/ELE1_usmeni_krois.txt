@@ -1,0 +1,136 @@
+1. prikazi Y= negirano(A(B+C+E)), hint: obavezno spoji i podlogu (4 konektor) u p mrezi na UDD, u n na zemlju, (pere za to i objasnit zasto je podloga tako spojena)
+2. izlazne karakteristike bipolatnog za spoj zajednicke baze i za spoj zajednickog emitera
+3. nacrtaj integrator i derivator izvedi izraze za Uiz
+
+
+Prvo pitanje je bilo koje su struje u poluvodièu, što ih uzrokuje i koji parametri utjeèu na njih.
+Drugo pitanje je bilo spoj zajednièkog odvoda - nacrtat sami spoj, nadomjesnu shemu za dinamièku analizu i zvesti Av, Rul i Riz.
+Treæe pitanje je bilo objasniti invertor izveden bipolarnim tranzistorom.
+
+
+1. CR mreza, odziv na pravokutni signal i karakteristike
+2. Model MOSFETa za mali signal, pravokutni presjek i svasta nesto
+3. Podesavanje staticke radne tocke kod bipolarnih, zasto se to radi
+
+
+1. energetski dijagram pn spoja u ravnotezi. objasniti sto je kontaktni potencijal. podpitanja: sto je osiromaseno podrucje? zasto dolazi do elektricne sile?
+2. SR bistabil pomocu CMOS-a. podpitanja: na sto se spaja "Bulk" u mosfetima (u SR bistabilu (tj. u digitalnim sklopovima))
+3. diferencijsko pojacalo
+
+
+1) Ravnotežne konc. u poluvodièu i temperaturna ovisnost. Kasnije me tražio nacrtat onaj graf gdje je prikazana ekstrizièna i intrizièna konc.
+2) NI sklop. Objasnio sam i PDN i PUN. Napomena: Èuvajte se crteža iz pdf-ova, baš i nisu toèni. Rekao je:"Dobro, ali to neæe raditi." Na kraju se ispostavilo da se pMOS bulk (ono gdje je trokutiæ) mora povezati sa drainom, a nMOS bulk sa sourceom.
+3) Diferencijsko pojaèalo. Izveo sam Uiz i napisao pojaèanja. Kao svojstvo je prihvatio odgovor:"pojaèava razliku dvaju ulaznih napona". Tu me doslovno ništa nije pitao.
+Dodatno me pitao SRT (rekao je da mu to nitko nije znao danas, pa nisam ni ja) i pitao èemu koriste oni kondenzatori u spojevima s mosfetom (nešto sam uspio zakljuèiti).
+
+
+1) pn ravnoteza nacrtat i kontaktni potencijal
+2) cmos SR bistabil nacrtat
+3)diferencijsko pojacalo pomocu operacijskog
+
+
+1.dioda schoklyeva jednadzba
+kako glasi,o cemu ovisi,nacrtati spoj s njom
+2.mosfet
+stabilizacija tranzistora,nacrtati shemu i objasniti
+3.pojacala
+astabil,nacrtati shemu te karakteristiku
+
+
+1. pn spoj, I-U jednadžba i njene karakteristike
+2. stabilizacija radne toèke MOSFET-a (tu užasno mrcvari) 
+3. astabil
+
+
+1. objasniti princip rada CMOS sklopova, realizirati funkciju NE Y=A*(B+C+E) pomoæu CMOS-a i objasniti kako radi
+2. izlazne karakteristike kod SZE i SZB, grafovi i detaljno objašnjenje
+3. derivator i integrator, nacrtati, izvesti izlazne napone i objasniti princip rada
+
+
+1. energetski dijagram pn-spoja u ravnoteži. Kontaktni potencijal- što je i o èemu ovisi.
+2. CMOS SR-bistabil.
+3. Diferencijsko pojaèalo pomoæu operacijskog pojaèala.
+
+
+1.RC mreza, stacionarno stanje nacrtati, prijelaznu pojavu, navisti jednadzbe koje opisuju napon na C-u, sto je sto u tim jednadzbama na grafu 
+2. spoj zajednickog uvoda, ivesti Av, Rul,Riz
+3. shema bipolarnog za mali signal, izvesti parametre i objasniti ih, o cemu ovise parametri
+
+
+1. struje u poluvodièu, koji su uzroci i o kojim parametrima tranzistora ovise
+2. spoj zajednièkog odvoda, nacrtati sklop, nadomjesnu shemu za dinamiku i izvesti Rul, Riz i Av
+3. invertor pomoæu bipolarnog, u kojem podruèju radi i još neko podpitanje
+
+
+1.diode i optoelektrici
+2.spoj zajednièkog emitera,ulazni i izlazni otpor, shema za dinamiku, strujno i naponsko pojaèanje
+3.komparator, shema, izlazna karakteristika, naèin rada itd
+
+
+1) MOSFET izlazma i projenosna karakteristika, vrste mosfeta sobzirom na njih, i podrucja rada
+2) ogranicavac diode (HVALA kolegi koji mi je shemu pokazao, sam sam izumio kako radi i bilo je ok :))
+3) invertirajuce i neinventirajuce operacijsko pojacalo, sheme, pojasnjenje kak rade, i izvest izraz za naponsko pojacanje
+
+
+1) Sto je to ispravljac s kapacitetnim opterecenjem? Nacrtaj shemu i objasni ulogu kapaciteta.
+
+Tu nacrtas shemu iz knjige... najjednostavnije nacrtati poluvalni ispravljac te dodas paralelno C. Oznacis dobro napone (up, us, uc, uiz), struje (is = ir + ic), transformator itd. Sada nacrtas 4 grafa: polu i punovalni bez C, i polu i punovalni s C kako izgleda uiz/t graf.
+
+Tu te pita koja je uloga C-a? Ponasa se kao sekundarni us (napon sekundara) te ispravlja izmjenicni u istosmjerni napon tako sto se puni dok struja ic tece (tece dok us > (uc = uiz) uc i uiz su u paraleli), a prazni kada je uc > (us = uiz).
+
+2) Nacrtaj sheme svih spojeva bipolarnog tranzistora. Objasni polarizacije pojedinih pn-spojeva te objasni sve faktore.
+
+Nacrtas sve spojeve zajednickog X (3 komada) te napises odnose pojednih napona kako bi npn tranzistor bio u NAP.
+
+Onda nacrtas npn tranzistor s strujama onak... IE, IB, IC, InE, IpE, InC, IR.. sve to i iz toga napises sve odnose struja tipa -IE = InE + IpE itd. te onda napises sve faktore: gama, beta zvjezdica, alfa, beta s izrazima koje znas. Znaj pricu o njima + mozda izvod alfe/bete.
+
+Tu cete pitati zasto bas ti polozaji zajednickog prikljucka X (koji god bio)... ugl. tako da on bude na masi da lakse mozemo odrediti odnose napona ostala 2 prikljuca tako da dobijemo polarizacije za NAP.
+
+3) Ostvari CMOS tehnologijom NILI sklop. Objasni nacin spajanja tranzistora!
+
+*Nacrtaj NILI sklop*
+
+Tu sada moras objasniti kako je CMOS nastao 1980-ih zbog problema s temperaturom ponajvise. CMOSom ne tece struja u stacionarnim stanjima, lakse se tehnoloski ostvari otpor tranzistorom u int. tehnologiji, itd.
+
+
+1. ui karakteristika pn diode, jako je zapeo na to kaj predstavlja m
+2.podesavanje i stabilizacija radne tocke kod mosfeta, pito me di je spojena podloga i kako je onda polarizirano podloga d i podloga s (podloga d propusno, podloga s nema polarizacije)
+3.astabil, izvesti krakteristicna vremena, objasniti kako radi. Tu me pitao jako puno za komparator trebala sam mu sve crtat i izvodit zasto je to tako itd
+
+
+1. ispravljaè sa kapacitativnim optereæenjem. èemu služi kapacitet. (znao otprilike , mislim da me ne bi pustio da nisam poèeo nešto prièat o prijenosnoj karakteristici)
+2. svi spojevi bipolarnih tranzistora, naèini polarizacije , navesti i objasniti faktore ( gama, beta, alfa, beta*) (znao sam dosta dobro)
+3. realizirati nili funkciju pomoæu cmos sklopova ( ovdje me je dosta gnjavio dok nisam skužio šta me u principu pita)
+za kraj mi je zadao najjednostavnije operacijsko pojaèalo, dakle, osnovno pojaèalo iz skripte, rekao da je Avop konaèan, i na ulaze stavio Ua i Ub, pitanje uiz = ? , odgovor uiz = AVOP(u+ - u-) , u mom sluèaju uiz = AVOP (Ub - Ua), tu mi je rekao da mi može dati samo dovoljan buduæi da sam iz ispita imao 22 i iz labosa 5. jako mu je bitno kako ste ispit napisali, ako ste dobro napisali i brzo odgovorite na sve što vas se traži, može se dobiti i lagana èetvorka.
+
+
+1. Razlike u strujno naponskoj karakteristici idealne i realne diode, zaporna i propusna polarizacija.
+2. SZC, izvest Av, Ai, Rul, Riz, nacrtati sklop kao takav i nadomjesnu shemu za dinamièku analizu
+3. Razlog kašnjenja CMOS invertora. Objasni disipaciju snage kod CMOS invertora.
+
+
+1. energetski dijagram pn spoja, kontaktni potencijal
+2. nacrtati SR bistabil, princip rada
+3. diferencijsko pojaèalo pomoæu operacijskog pojaèala nacrtati, princip rada
+
+
+1) Ostvarit neku f-ju pomocu CMOS-a i objasnit kako radi, ovo ono..
+2) Izlazne karakteristike za SZE i SZB
+3) Invertor i derivator sa operacijskim pojacalom
+
+
+1) Nacrtati izlaznu i prijenosnu karakteristiku MOSFETa, objasniti podrucje rada. Koje vrste MOSFETAa postoje s obzirom na polozaj prijenosne karakteristike?
+2)Sto je diodni ogranicivac? Nacrtati shemu jednog od ogranicivaca i objasniti njegov rad.
+3)Nacrtati invertirajuce i neinvertirajuce pojacalo s operacijskim pojacalaom. Opisati njihov rad i izvesti izraze za pojacanje pojacala.
+
+
+1.)nacrtati odziv cr mreze, odrediti karakteristica vremena, i neko pitanje u smislu boljeg cr-a
+2.)nacrtati model za mali signal FET-a, definirati elemente, i izvesti ih
+3.)stabilizacija radne toèe bipolarnog, sta je, kako se stabilizira, cemu sluzi
+
+ostala koja sam cula: invertor, pn dioda(jedan dio, al nezz koji), cr u stacionarnom stanju, ogranièivaè, cmos tehnologija.
+
+
+1. energetski dijagram pn spoja, kontaktni potencijal
+2. nacrtati SR bistabil, princip rada
+3. diferencijsko pojaèalo pomoæu operacijskog pojaèala nacrtati, princip rada

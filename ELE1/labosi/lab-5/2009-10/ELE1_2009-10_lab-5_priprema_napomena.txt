@@ -1,0 +1,1 @@
+U 4. zadatku mi je krivi Avg. Nije 0.62 nego je 10.69, jer sam ja uzimao da je Rg = 1000 oma, umjesto Rg = 50 oma kako je oznaceno na slici. Sve ostalo je toèno :)

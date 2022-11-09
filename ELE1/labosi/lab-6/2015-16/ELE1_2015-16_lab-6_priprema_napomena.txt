@@ -1,0 +1,10 @@
+Riješeno je metodom èvorova kako smo i uèili na Elektriènim krugovima.
+
+Redosljed prepisivanja:
+1) ovo gore lijevo do praznine
+2) ovo gore desno do U2=1.218V
+3) od U1=U2*(1+R2/R3) do ovoga iznad "a)"
+4) ovo pod "a)" pa pod "b)" 
+
+*ne znam da li treba pisati ovo Uiz=U2*(1+Rf/R4)-U1*Rf/R4  (ispod U2=1.218V), ali ja sam napisao
+
