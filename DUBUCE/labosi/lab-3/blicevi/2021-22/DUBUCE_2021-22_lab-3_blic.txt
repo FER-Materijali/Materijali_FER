@@ -1,0 +1,63 @@
+1.izraz za skriveni sloj u rnn
+h(t) = tanh(Whhh(t−1) + Wxhx(t) + bh))
+
+2.cemu sluzi <UNK>
+služi za riječi koje nisu u našem vokabularu 
+
+3.jel se moze <UNK> vidjet tijekom treniranja
+da, ako je ogranicena velicina vokabulara
+
+4.koje special rijeci su koristene u labosu
+<UNK>:1  i <PAD>:0
+
+5.sto bi se dogodilo u drugom zad da pomijesamo rijeci
+mslm da nis jer nema rnn, a on se brine za redoslijed
+
+6.broj parametara za neku mrezu s veliciniom vokabulara i ulaza 100 i hidden size 1000
+
+7.u kojem intervalu je tanh
+[-1, 1]
+
+8.gradijent gubitka po ulazu softmaxa, tako nesto je pisalo
+mslm da je to ono y_pred - y
+
+9.zadani su veličina vokabulara, dimenzija ulaza i skrivena dimenzija, koja matrica ima najviše parametara
+
+10.Koja funckija nelinearnosti se koristi kod Rnna?
+tanh
+
+11.Funckija za racunanje skirvenog stanja LSTM-a?
+c(t) = f(t)*c(t-1) + i(t)*ckapa(t) 
+
+12.Koji optimizacijski algoritam se preporucio u vjezbi?
+ADAM
+
+13.Ako umjesto RNNa koristimo obicnu mrezu hoce li acc ostat ista ak ispremjesamo rijeci?
+da, obicna mreza ne pamti poredak
+
+14.Koja je derivacija tangensa hiperbolnog?
+1-tanh2(x)
+
+15.Koja je derivacija softmaxa?
+y_pred-y_true
+
+16.Sto sprjecava gradient clipping?
+eksplodirajuce gradijente
+
+17.Koju smo funkciju pogreske koristili u labosu (cross entropy)
+BCEWithLogitsLoss
+
+18.jedno ili dva pitanja s izrazima za gradijente
+
+19.o kojoj matrici ovisi hoce li eksplodirati gradijenti
+Whh
+
+--20.Jel moguće ostvarit gubitak 0?
+
+21.Derivacija od tanh (zapisana preko numpya)?
+t=(np.exp(x)-np.exp(-x))/(np.exp(x)+np.exp(-x))
+dt=1-t**2
+
+22.Koji parametar zauzima najviše memorijskog prostora?
+
+23.koji parametar uzrokuje eksplodirajući gradijent - ovdje pazite jer je među odgovorima \(W_{hh}, W_{hy}\) i samo \(W_{hh}\)

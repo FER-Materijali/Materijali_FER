@@ -1,0 +1,139 @@
+<svg width="777" height="295" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="297" width="779" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1" transform="translate(651.385, 101.433) scale(0.68302)">
+   <rect fill=" rgb(160, 160, 160)" y="58.232041" x="-944.936966" height="28" width="28" id="svg_14" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="20.732041" x="-847.936966" height="28" width="28" id="svg_15" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="25.732041" x="-842.936966" height="28" width="28" id="svg_16" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="30.732041" x="-837.936966" height="28" width="28" id="svg_17" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="35.732041" x="-832.936966" height="28" width="28" id="svg_18" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="40.732041" x="-827.936966" height="28" width="28" id="svg_19" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="45.732041" x="-822.936966" height="28" width="28" id="svg_20" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="50.732041" x="-817.936966" height="28" width="28" id="svg_21" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="55.732041" x="-812.936966" height="28" width="28" id="svg_22" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="60.732041" x="-807.936966" height="28" width="28" id="svg_23" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="65.732041" x="-802.936966" height="28" width="28" id="svg_24" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="70.732041" x="-797.936966" height="28" width="28" id="svg_25" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="75.732041" x="-792.936966" height="28" width="28" id="svg_26" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="80.732041" x="-787.936966" height="28" width="28" id="svg_27" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="85.732041" x="-782.936966" height="28" width="28" id="svg_28" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="90.732041" x="-777.936966" height="28" width="28" id="svg_29" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="95.732041" x="-772.936966" height="28" width="28" id="svg_30" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="27.732041" x="-707.936966" height="14" width="14" id="svg_31" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="32.732041" x="-702.936966" height="14" width="14" id="svg_32" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="37.732041" x="-697.936966" height="14" width="14" id="svg_33" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="42.732041" x="-692.936966" height="14" width="14" id="svg_34" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="47.732041" x="-687.936966" height="14" width="14" id="svg_35" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="52.732041" x="-682.936966" height="14" width="14" id="svg_36" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="57.732041" x="-677.936966" height="14" width="14" id="svg_37" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="62.732041" x="-672.936966" height="14" width="14" id="svg_38" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="67.732041" x="-667.936966" height="14" width="14" id="svg_39" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="72.732041" x="-662.936966" height="14" width="14" id="svg_40" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="77.732041" x="-657.936966" height="14" width="14" id="svg_41" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="82.732041" x="-652.936966" height="14" width="14" id="svg_42" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="87.732041" x="-647.936966" height="14" width="14" id="svg_43" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="92.732041" x="-642.936966" height="14" width="14" id="svg_44" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="97.732041" x="-637.936966" height="14" width="14" id="svg_45" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="102.732041" x="-632.936966" height="14" width="14" id="svg_46" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="-12.267959" x="-576.936966" height="14" width="14" id="svg_47" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="-7.267959" x="-571.936966" height="14" width="14" id="svg_48" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="-2.267959" x="-566.936966" height="14" width="14" id="svg_49" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="2.732041" x="-561.936966" height="14" width="14" id="svg_50" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="7.732041" x="-556.936966" height="14" width="14" id="svg_51" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="12.732041" x="-551.936966" height="14" width="14" id="svg_52" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="17.732041" x="-546.936966" height="14" width="14" id="svg_53" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="22.732041" x="-541.936966" height="14" width="14" id="svg_54" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="27.732041" x="-536.936966" height="14" width="14" id="svg_55" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="32.732041" x="-531.936966" height="14" width="14" id="svg_56" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="37.732041" x="-526.936966" height="14" width="14" id="svg_57" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="42.732041" x="-521.936966" height="14" width="14" id="svg_58" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="47.732041" x="-516.936966" height="14" width="14" id="svg_59" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="52.732041" x="-511.936966" height="14" width="14" id="svg_60" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="57.732041" x="-506.936966" height="14" width="14" id="svg_61" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="62.732041" x="-501.936966" height="14" width="14" id="svg_62" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="67.732041" x="-496.936966" height="14" width="14" id="svg_63" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="72.732041" x="-491.936966" height="14" width="14" id="svg_64" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="77.732041" x="-486.936966" height="14" width="14" id="svg_65" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="82.732041" x="-481.936966" height="14" width="14" id="svg_66" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="87.732041" x="-476.936966" height="14" width="14" id="svg_67" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="92.732041" x="-471.936966" height="14" width="14" id="svg_68" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="97.732041" x="-466.936966" height="14" width="14" id="svg_69" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="102.732041" x="-461.936966" height="14" width="14" id="svg_70" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="107.732041" x="-456.936966" height="14" width="14" id="svg_71" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="112.732041" x="-451.936966" height="14" width="14" id="svg_72" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="117.732041" x="-446.936966" height="14" width="14" id="svg_73" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="122.732041" x="-441.936966" height="14" width="14" id="svg_74" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="127.732041" x="-436.936966" height="14" width="14" id="svg_75" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="132.732041" x="-431.936966" height="14" width="14" id="svg_76" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="137.732041" x="-426.936966" height="14" width="14" id="svg_77" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="142.732041" x="-421.936966" height="14" width="14" id="svg_78" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="-8.767959" x="-429.936966" height="7" width="7" id="svg_79" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="-3.767959" x="-424.936966" height="7" width="7" id="svg_80" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="1.232041" x="-419.936966" height="7" width="7" id="svg_81" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="6.232041" x="-414.936966" height="7" width="7" id="svg_82" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="11.232041" x="-409.936966" height="7" width="7" id="svg_83" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="16.232041" x="-404.936966" height="7" width="7" id="svg_84" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="21.232041" x="-399.936966" height="7" width="7" id="svg_85" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="26.232041" x="-394.936966" height="7" width="7" id="svg_86" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="31.232041" x="-389.936966" height="7" width="7" id="svg_87" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="36.232041" x="-384.936966" height="7" width="7" id="svg_88" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="41.232041" x="-379.936966" height="7" width="7" id="svg_89" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="46.232041" x="-374.936966" height="7" width="7" id="svg_90" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="51.232041" x="-369.936966" height="7" width="7" id="svg_91" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="56.232041" x="-364.936966" height="7" width="7" id="svg_92" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="61.232041" x="-359.936966" height="7" width="7" id="svg_93" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="66.232041" x="-354.936966" height="7" width="7" id="svg_94" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="71.232041" x="-349.936966" height="7" width="7" id="svg_95" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="76.232041" x="-344.936966" height="7" width="7" id="svg_96" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="81.232041" x="-339.936966" height="7" width="7" id="svg_97" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="86.232041" x="-334.936966" height="7" width="7" id="svg_98" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="91.232041" x="-329.936966" height="7" width="7" id="svg_99" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="96.232041" x="-324.936966" height="7" width="7" id="svg_100" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="101.232041" x="-319.936966" height="7" width="7" id="svg_101" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="106.232041" x="-314.936966" height="7" width="7" id="svg_102" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="111.232041" x="-309.936966" height="7" width="7" id="svg_103" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="116.232041" x="-304.936966" height="7" width="7" id="svg_104" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="121.232041" x="-299.936966" height="7" width="7" id="svg_105" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="126.232041" x="-294.936966" height="7" width="7" id="svg_106" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="131.232041" x="-289.936966" height="7" width="7" id="svg_107" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="136.232041" x="-284.936966" height="7" width="7" id="svg_108" class="rect"/>
+   <rect fill=" rgb(160, 160, 160)" y="141.232041" x="-279.936966" height="7" width="7" id="svg_109" class="rect"/>
+   <rect fill=" rgb(224, 224, 224)" y="146.232041" x="-274.936966" height="7" width="7" id="svg_110" class="rect"/>
+   <rect fill-opacity="0" y="64.177279" x="-935.053397" height="5" width="5" id="svg_111" class="conv"/>
+   <rect fill-opacity="0" y="110.707768" x="-762.077773" height="2" width="2" id="svg_112" class="conv"/>
+   <rect fill-opacity="0" y="107.590733" x="-624.972755" height="5" width="5" id="svg_113" class="conv"/>
+   <rect fill-opacity="0" y="147.864547" x="-414.692283" height="2" width="2" id="svg_114" class="conv"/>
+   <line stroke=" black" y2="102.969722" x2="-760.904795" y1="69.177279" x1="-930.053397" id="svg_115" class="link"/>
+   <line stroke=" black" y2="102.969722" x2="-760.904795" y1="64.177279" x1="-930.053397" id="svg_116" class="link"/>
+   <line stroke=" black" y2="110.795894" x2="-627.089708" y1="112.707768" x1="-760.077773" id="svg_117" class="link"/>
+   <line stroke=" black" y2="110.795894" x2="-627.089708" y1="110.707768" x1="-760.077773" id="svg_118" class="link"/>
+   <line stroke=" black" y2="150.290007" x2="-409.548194" y1="112.590733" x1="-619.972755" id="svg_119" class="link"/>
+   <line stroke=" black" y2="150.290007" x2="-409.548194" y1="107.590733" x1="-619.972755" id="svg_120" class="link"/>
+   <line stroke=" black" y2="149.226003" x2="-270.710901" y1="149.864547" x1="-412.692283" id="svg_121" class="link"/>
+   <line stroke=" black" y2="149.226003" x2="-270.710901" y1="147.864547" x1="-412.692283" id="svg_122" class="link"/>
+   <polygon fill=" rgb(224, 224, 224)" points="-264.936798095703,-108.78730350732803 -254.93675231933582,-108.78730350732803 107.10182952880871,253.25159114599228 97.10186004638683,253.25159114599228 " id="svg_123" class="poly"/>
+   <polygon fill=" rgb(224, 224, 224)" points="109.10182952880871,68.69662898778915 119.10186767578136,68.69662898778915 126.17290496826183,75.76767390966415 116.17291259765636,75.76767390966415 " id="svg_124" class="poly"/>
+   <line stroke=" black" y2="253.251377" x2="97.101706" y1="153.232041" x1="-267.936966" id="svg_125" class="line"/>
+   <line stroke=" black" y2="-108.787295" x2="-264.936966" y1="-8.767959" x1="-422.936966" id="svg_126" class="line"/>
+   <line stroke=" black" y2="75.767574" x2="116.172774" y1="253.251377" x1="107.101706" id="svg_127" class="line"/>
+   <line stroke=" black" y2="68.696507" x2="109.101706" y1="-108.787295" x1="-254.936966" id="svg_128" class="line"/>
+   <text id="svg_129" font-size=" 16px" y="420.270713" x="-871.686966" font-family="sans-serif" class="text"/>
+   <text id="svg_130" font-size=" 16px" y="420.270713" x="-719.186966" font-family="sans-serif" class="text"/>
+   <text id="svg_131" font-size=" 16px" y="420.270713" x="-570.686966" font-family="sans-serif" class="text"/>
+   <text id="svg_132" font-size=" 16px" y="420.270713" x="-393.436966" font-family="sans-serif" class="text"/>
+   <text id="svg_133" font-size=" 16px" y="420.270713" x="-190.927298" font-family="sans-serif" class="text"/>
+   <text id="svg_134" font-size=" 16px" y="43.232041" x="-944.936966" font-family="sans-serif" class="info">1@28x28</text>
+   <text id="svg_135" font-size=" 16px" y="5.732041" x="-847.936966" font-family="sans-serif" class="info">16@28x28</text>
+   <text id="svg_136" font-size=" 16px" y="12.732041" x="-707.936966" font-family="sans-serif" class="info">16@14x14</text>
+   <text id="svg_137" font-size=" 16px" y="-27.267959" x="-576.936966" font-family="sans-serif" class="info">32@14x14</text>
+   <text id="svg_138" font-size=" 16px" y="-23.767959" x="-429.936966" font-family="sans-serif" class="info">32@7x7</text>
+   <text id="svg_139" font-size=" 16px" y="-123.787295" x="-264.936966" font-family="sans-serif" class="info">1x512</text>
+   <text id="svg_140" font-size=" 16px" y="53.696507" x="109.101706" font-family="sans-serif" class="info">1x10</text>
+  </g>
+ </g>
+</svg>
