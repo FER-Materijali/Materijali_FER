@@ -1,0 +1,107 @@
+Predavanje br. 01 - Dijagrami toka signala
+
+	Gledanje online:
+		
+		http://lecto-player.lss.hr/lectureLink.php?uri=http://lecto-player.lss.hr/lectures/fer/amos/1_dts_uvod/config_1.psu.xml
+		
+	Download:
+	
+		http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/1_dts_uvod/predavac_1.mp4
+		http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/1_dts_uvod/desktop_1.mp4
+		
+
+		
+Predavanje br. 02 - Klasifikacija Bikvadratnih sekcija s jednim pojaèalom (SAB-sekcija)
+
+	Gledanje online:
+	
+		http://lecto-player.lss.hr/lectureLink.php?uri=http://lecto-player.lss.hr/lectures/fer/amos/2_aktivni_rc_filtri/config_1.psu.xml
+		
+	Download:
+	
+	
+		Prvi dio:
+		
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/2_aktivni_rc_filtri/desktop_1.mp4
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/2_aktivni_rc_filtri/predavac_1.mp4
+			
+		Drugi dio:
+		
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/2_aktivni_rc_filtri/desktop_2.mp4
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/2_aktivni_rc_filtri/predavac_2.mp4
+			
+		Treæi dio:
+			
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/2_aktivni_rc_filtri/desktop_3.mp4
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/2_aktivni_rc_filtri/predavac_3.mp4
+			
+		Èetvrti dio:
+		
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/2_aktivni_rc_filtri/desktop_4.mp4
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/2_aktivni_rc_filtri/predavac_4.mp4
+			
+			
+
+Predavanje br. 03 - Primjeri proraèuna elektriènih filtara (Bikvadratna sekcija)
+	
+	Gledanje online:
+	
+		http://lecto-player.lss.hr/lectureLink.php?uri=http://lecto-player.lss.hr/lectures/fer/amos/3_primjeri_proracuna/config_1.psu.xml
+		
+	Download:
+	
+		Prvi dio:
+		
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/3_primjeri_proracuna/desktop_1.mp4
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/3_primjeri_proracuna/predavac_1.mp4
+			
+		Drugi dio:
+		
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/3_primjeri_proracuna/desktop_2.mp4
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/3_primjeri_proracuna/predavac_2.mp4
+			
+		Treæi dio:
+		
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/3_primjeri_proracuna/desktop_3.mp4
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/3_primjeri_proracuna/predavac_3.mp4
+			
+			
+
+Predavanje br. 04 - Osjetljivosti (Aktivnih-RC filtara na pasivne komponente)
+
+
+	Gledanje online:
+	
+		http://lecto-player.lss.hr/lectureLink.php?uri=http://lecto-player.lss.hr/lectures/fer/amos/4_osjetljivosti/config_1.psu.xml
+		
+	Download:
+	
+		Prvi dio:
+		
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/4_osjetljivosti/desktop_1.mp4
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/4_osjetljivosti/predavac_1.mp4
+
+		Drugi dio:
+		
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/4_osjetljivosti/desktop_2.mp4
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/4_osjetljivosti/predavac_2.mp4
+			
+			
+			
+Predavanje br. 05 - SC Filtri (Filtri s preklapanim kapacitetima)
+
+	Gledanje online:
+	
+		http://lecto-player.lss.hr/lectureLink.php?uri=http://lecto-player.lss.hr/lectures/fer/amos/5_sc_filtri/config_1.psu.xml 
+		
+	Download:
+	
+		Prvi dio:
+		
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/5_sc_filtri/desktop_1.mp4
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/5_sc_filtri/predavac_1.mp4
+			
+		Drugi dio:
+		
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/5_sc_filtri/desktop_2.mp4
+			http://lecto-player.lss.hr/recordings/fer/predmeti/amos/2014/5_sc_filtri/predavac_2.mp4
