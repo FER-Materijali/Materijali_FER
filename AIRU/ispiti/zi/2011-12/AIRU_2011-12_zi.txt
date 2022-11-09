@@ -1,0 +1,45 @@
+ARU - ZI 2011/2012 - Ban/Bjažiæ
+
+1.
+a)
+Zadan je proces (u brojniku samo pojaèanje, u nazivniku jedan pol, konkretni koeficijenti) u z-domeni.
+Trebalo je projektirati RST regulator s integralnim djelovanjem da se postigne ponašanje zatvorenog 
+kruga upravljanja prema zadanoj modelskoj funkciji (bio je zadan brojnik prvog reda i nazivnik drugog reda, 
+sa konkretnim koeficijentima).
+
+b)
+Nacrtati shemu upravljanja s RST regulatorom koji æe raditi ako se mijenjaju parametri procesa (kao na 
+seminaru, doda se blok za RLS estimaciju parametara procesa i pomoæu estimiranih parametara se naštimavaju 
+polinomi RST regulatora).
+
+2.
+a) Nacrtati shemu MV regulatora (minimum varijance).
+b) Kako MV regulator razmješta polove sustava? Može li doæi do problema ako proces ima neminimalno fazne nule i ako može kakvih?
+c) Opisati algoritam LQG upravljanja i komentirati koji koraci algoritma su raèunski kritièni.
+
+3.
+Zadan je proces:
+
+Gp=(s+a)/(s+1)^2 // barem mislim da je tako nekako bio zadan
+
+Nominalna vrijednost parametra a je an=3.
+a se mijenja u granicama [2, 4].
+
+a) Odrediti W2(s) (težinu multiplikativne neizvjesnosti) za dani proces.
+b) Izraèunati MSM (multiplikativnu granicu stabilnosti).
+c) Pomoæu odabranog W2(s) po teoremu malog pojaèanja odrediti je li zadani proces robusno stabilan.
+
+4.
+Zadan je karakteristièni polinom oblika:
+
+alfa_cl(s)=a3*s^3 + a2*s^2 + a1*s + a0
+
+Zadano je da se a2 mijenja u granicama +-10%, a1 +-20% i a0 +-30% oko nominalnih vrijednosti koje su:
+
+a2n=2, a1n=3 i a0n=1 (mislim da je tak bilo, možda nisu toèni baš brojevi, ali nebitno).
+
+Nominalna vrijednost parametra a3=1. On se mijenja u granicam +-p (nije zadan p).
+Treba po teoremu Karitonova odrediti kolika je maksimalna promjena parametra a3 (tj. koliki je p) 
+za koju æe dana familija polinoma biti robusno stabilna. Trebalo je provjeriti stabilnost po Hurwitzovom 
+postupku (bilo je napisano kako se odreðuje stabilnost pomoæu Hurwitza: da bi polinom 3. reda p=a3s^3+a2s^2+a1s+a0 
+bio stabilan trebaju svi koeficijenti polinoma biti istog predznaka i a1*a2-a3*a0>0 ) 

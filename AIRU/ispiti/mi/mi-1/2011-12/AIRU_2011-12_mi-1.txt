@@ -1,0 +1,25 @@
+ISPIT 2011/2012 - Ban/Bjazic
+
+1.) (6 boda)
+
+a.) Gain scheduling, parametarska, signalna konceptualne sheme
+b.) Opisat na kojem principu radi adaptacija u ova tri algoritma
+c.) Napisati barem jednu prednost i manu ovih adaptacija
+
+2.) (19 bodova)
+
+a.) Izvesti zakon promjene parametara Kd i Kp u parametarskoj adaptaciji sa zadanom funkcijom Lyapunova
+
+b.) Odrediti parametre Kd i Kp u stacionarnom stanju uz poznate parametre procesa i modela
+
+c.) Nacrati shemu sa gainovima mnozenjima integratorima
+
+d.) Kako bi odredili parametre gamma_p i gamma_d tako da odziv dobro slijedi model i da upravljacki signal nije oscilatoran (Kriterijem pogreske e_y + njene derivacije)
+
+e.) Cemu služi normiranje signala u slucaju parametarske adaptacije
+
+f.) Odrediti parametar h tako da se dobije poklapanje modela i sustava u statickom i dinamickom rezimu rada ako se koristi algoritam sa signum funkcijom i uz poznate raspone parametara procesa. (Rijesiti promatranjem odziva na step)
+
+h.) Nacrtati shemu signalne adaptacije
+
+i.) Predloziti algoritam koji smanjuje oscilacije i nacrtati kako izgleda signal adaptacije sa signum funkcijom
