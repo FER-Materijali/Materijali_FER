@@ -1,0 +1,1635 @@
+Velicina ulaza: 29
+
+# Praznjenje #
+Tablica ispraznjena!
+Ocekujemo max zapisa: 350
+U jedan blok stane: 17
+Ukupno imamo blokova: 26
+Velicina bloka: 493 bajtova
+
+# Hash tablica po blokovima #
+### BLOK 0 ###
+### KRAJ BLOKA ###
+
+### BLOK 1 ###
+### KRAJ BLOKA ###
+
+### BLOK 2 ###
+### KRAJ BLOKA ###
+
+### BLOK 3 ###
+### KRAJ BLOKA ###
+
+### BLOK 4 ###
+### KRAJ BLOKA ###
+
+### BLOK 5 ###
+### KRAJ BLOKA ###
+
+### BLOK 6 ###
+### KRAJ BLOKA ###
+
+### BLOK 7 ###
+### KRAJ BLOKA ###
+
+### BLOK 8 ###
+### KRAJ BLOKA ###
+
+### BLOK 9 ###
+### KRAJ BLOKA ###
+
+### BLOK 10 ###
+### KRAJ BLOKA ###
+
+### BLOK 11 ###
+### KRAJ BLOKA ###
+
+### BLOK 12 ###
+### KRAJ BLOKA ###
+
+### BLOK 13 ###
+### KRAJ BLOKA ###
+
+### BLOK 14 ###
+### KRAJ BLOKA ###
+
+### BLOK 15 ###
+### KRAJ BLOKA ###
+
+### BLOK 16 ###
+### KRAJ BLOKA ###
+
+### BLOK 17 ###
+### KRAJ BLOKA ###
+
+### BLOK 18 ###
+### KRAJ BLOKA ###
+
+### BLOK 19 ###
+### KRAJ BLOKA ###
+
+### BLOK 20 ###
+### KRAJ BLOKA ###
+
+### BLOK 21 ###
+### KRAJ BLOKA ###
+
+### BLOK 22 ###
+### KRAJ BLOKA ###
+
+### BLOK 23 ###
+### KRAJ BLOKA ###
+
+### BLOK 24 ###
+### KRAJ BLOKA ###
+
+### BLOK 25 ###
+### KRAJ BLOKA ###
+
+Prost broj: 23
+
+Procitan zapis 7284371471296 aGHXUedm
+# Upis #
+Izracunata adresa (17758) = 2
+     Zelimo upisati sto blize bloku 2
+          Isprobavamo blok 2
+            U bloku 2 isprobavamo mjesto 0
+               UPIS U BLOK 2 MJESTO 0!!!
+
+
+Procitan zapis 6244209112826 SlPNyhku
+# Upis #
+Izracunata adresa (9338) = 0
+     Zelimo upisati sto blize bloku 0
+          Isprobavamo blok 0
+            U bloku 0 isprobavamo mjesto 0
+               UPIS U BLOK 0 MJESTO 0!!!
+
+
+Procitan zapis 7266792809838 WGRoaXhi
+# Upis #
+Izracunata adresa (18445) = 22
+     Zelimo upisati sto blize bloku 22
+          Isprobavamo blok 22
+            U bloku 22 isprobavamo mjesto 0
+               UPIS U BLOK 22 MJESTO 0!!!
+
+
+Procitan zapis 1482863856929 iMzXytqJ
+# Upis #
+Izracunata adresa (14444) = 0
+     Zelimo upisati sto blize bloku 0
+          Isprobavamo blok 0
+            U bloku 0 isprobavamo mjesto 0
+               Za blok 0 u dio 0 vec upisan JMBG
+            U bloku 0 isprobavamo mjesto 1
+               UPIS U BLOK 0 MJESTO 1!!!
+
+
+Procitan zapis 5101596118045 MRmHkXRc
+# Upis #
+Izracunata adresa (11057) = 17
+     Zelimo upisati sto blize bloku 17
+          Isprobavamo blok 17
+            U bloku 17 isprobavamo mjesto 0
+               UPIS U BLOK 17 MJESTO 0!!!
+
+
+Procitan zapis 7354411450544 HBfufTZI
+# Upis #
+Izracunata adresa (13156) = 0
+     Zelimo upisati sto blize bloku 0
+          Isprobavamo blok 0
+            U bloku 0 isprobavamo mjesto 0
+               Za blok 0 u dio 0 vec upisan JMBG
+            U bloku 0 isprobavamo mjesto 1
+               Za blok 0 u dio 1 vec upisan JMBG
+            U bloku 0 isprobavamo mjesto 2
+               UPIS U BLOK 0 MJESTO 2!!!
+
+
+Procitan zapis 1149143955809 ULHJJrpj
+# Upis #
+Izracunata adresa (11705) = 21
+     Zelimo upisati sto blize bloku 21
+          Isprobavamo blok 21
+            U bloku 21 isprobavamo mjesto 0
+               UPIS U BLOK 21 MJESTO 0!!!
+
+
+Procitan zapis 4749748222296 pdODLVSn
+# Upis #
+Izracunata adresa (26178) = 4
+     Zelimo upisati sto blize bloku 4
+          Isprobavamo blok 4
+            U bloku 4 isprobavamo mjesto 0
+               UPIS U BLOK 4 MJESTO 0!!!
+
+
+Procitan zapis 3289345988341 TuYsARsx
+# Upis #
+Izracunata adresa (17670) = 6
+     Zelimo upisati sto blize bloku 6
+          Isprobavamo blok 6
+            U bloku 6 isprobavamo mjesto 0
+               UPIS U BLOK 6 MJESTO 0!!!
+
+
+Procitan zapis 2099765007476 BBgYEPxr
+# Upis #
+Izracunata adresa (25022) = 21
+     Zelimo upisati sto blize bloku 21
+          Isprobavamo blok 21
+            U bloku 21 isprobavamo mjesto 0
+               Za blok 21 u dio 0 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 1
+               UPIS U BLOK 21 MJESTO 1!!!
+
+
+Procitan zapis 5679494613482 LOwEvrXQ
+# Upis #
+Izracunata adresa (23142) = 4
+     Zelimo upisati sto blize bloku 4
+          Isprobavamo blok 4
+            U bloku 4 isprobavamo mjesto 0
+               Za blok 4 u dio 0 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 1
+               UPIS U BLOK 4 MJESTO 1!!!
+
+
+Procitan zapis 1088717307046 rupeAPVM
+# Upis #
+Izracunata adresa (20044) = 11
+     Zelimo upisati sto blize bloku 11
+          Isprobavamo blok 11
+            U bloku 11 isprobavamo mjesto 0
+               UPIS U BLOK 11 MJESTO 0!!!
+
+
+Procitan zapis 8660725730154 NTOtmtGu
+# Upis #
+Izracunata adresa (13028) = 10
+     Zelimo upisati sto blize bloku 10
+          Isprobavamo blok 10
+            U bloku 10 isprobavamo mjesto 0
+               UPIS U BLOK 10 MJESTO 0!!!
+
+
+Procitan zapis 8353923154392 yDbJkMTx
+# Upis #
+Izracunata adresa (22114) = 11
+     Zelimo upisati sto blize bloku 11
+          Isprobavamo blok 11
+            U bloku 11 isprobavamo mjesto 0
+               Za blok 11 u dio 0 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 1
+               UPIS U BLOK 11 MJESTO 1!!!
+
+
+Procitan zapis 5835230567338 wECogPIb
+# Upis #
+Izracunata adresa (11066) = 3
+     Zelimo upisati sto blize bloku 3
+          Isprobavamo blok 3
+            U bloku 3 isprobavamo mjesto 0
+               UPIS U BLOK 3 MJESTO 0!!!
+
+
+Procitan zapis 6071443830682 QoDnHBOP
+# Upis #
+Izracunata adresa (14747) = 4
+     Zelimo upisati sto blize bloku 4
+          Isprobavamo blok 4
+            U bloku 4 isprobavamo mjesto 0
+               Za blok 4 u dio 0 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 1
+               Za blok 4 u dio 1 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 2
+               UPIS U BLOK 4 MJESTO 2!!!
+
+
+Procitan zapis 3929593798638 xSLxlqIe
+# Upis #
+Izracunata adresa (18919) = 13
+     Zelimo upisati sto blize bloku 13
+          Isprobavamo blok 13
+            U bloku 13 isprobavamo mjesto 0
+               UPIS U BLOK 13 MJESTO 0!!!
+
+
+Procitan zapis 3882351145969 NmGOTUPg
+# Upis #
+Izracunata adresa (13348) = 8
+     Zelimo upisati sto blize bloku 8
+          Isprobavamo blok 8
+            U bloku 8 isprobavamo mjesto 0
+               UPIS U BLOK 8 MJESTO 0!!!
+
+
+Procitan zapis 3469527268287 yGGrGEjM
+# Upis #
+Izracunata adresa (23201) = 17
+     Zelimo upisati sto blize bloku 17
+          Isprobavamo blok 17
+            U bloku 17 isprobavamo mjesto 0
+               Za blok 17 u dio 0 vec upisan JMBG
+            U bloku 17 isprobavamo mjesto 1
+               UPIS U BLOK 17 MJESTO 1!!!
+
+
+Procitan zapis 8173467207860 QwsvGEgd
+# Upis #
+Izracunata adresa (15260) = 11
+     Zelimo upisati sto blize bloku 11
+          Isprobavamo blok 11
+            U bloku 11 isprobavamo mjesto 0
+               Za blok 11 u dio 0 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 1
+               Za blok 11 u dio 1 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 2
+               UPIS U BLOK 11 MJESTO 2!!!
+
+
+Procitan zapis 8165776543472 zkKyxxzP
+# Upis #
+Izracunata adresa (20817) = 2
+     Zelimo upisati sto blize bloku 2
+          Isprobavamo blok 2
+            U bloku 2 isprobavamo mjesto 0
+               Za blok 2 u dio 0 vec upisan JMBG
+            U bloku 2 isprobavamo mjesto 1
+               UPIS U BLOK 2 MJESTO 1!!!
+
+
+Procitan zapis 7430219428082 xeNBnMJo
+# Upis #
+Izracunata adresa (10623) = 20
+     Zelimo upisati sto blize bloku 20
+          Isprobavamo blok 20
+            U bloku 20 isprobavamo mjesto 0
+               UPIS U BLOK 20 MJESTO 0!!!
+
+
+Procitan zapis 4857142857142 opccaqJT
+# Upis #
+Izracunata adresa (13187) = 8
+     Zelimo upisati sto blize bloku 8
+          Isprobavamo blok 8
+            U bloku 8 isprobavamo mjesto 0
+               Za blok 8 u dio 0 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 1
+               UPIS U BLOK 8 MJESTO 1!!!
+
+
+Procitan zapis 3359935300759 buoypRUh
+# Upis #
+Izracunata adresa (24586) = 22
+     Zelimo upisati sto blize bloku 22
+          Isprobavamo blok 22
+            U bloku 22 isprobavamo mjesto 0
+               Za blok 22 u dio 0 vec upisan JMBG
+            U bloku 22 isprobavamo mjesto 1
+               UPIS U BLOK 22 MJESTO 1!!!
+
+
+Procitan zapis 9503952146976 okGpuQAj
+# Upis #
+Izracunata adresa (20544) = 5
+     Zelimo upisati sto blize bloku 5
+          Isprobavamo blok 5
+            U bloku 5 isprobavamo mjesto 0
+               UPIS U BLOK 5 MJESTO 0!!!
+
+
+Procitan zapis 5836329233679 ePooebnu
+# Upis #
+Izracunata adresa (17310) = 14
+     Zelimo upisati sto blize bloku 14
+          Isprobavamo blok 14
+            U bloku 14 isprobavamo mjesto 0
+               UPIS U BLOK 14 MJESTO 0!!!
+
+
+Procitan zapis 2704580828272 vLpzVaIF
+# Upis #
+Izracunata adresa (17162) = 4
+     Zelimo upisati sto blize bloku 4
+          Isprobavamo blok 4
+            U bloku 4 isprobavamo mjesto 0
+               Za blok 4 u dio 0 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 1
+               Za blok 4 u dio 1 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 2
+               Za blok 4 u dio 2 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 3
+               UPIS U BLOK 4 MJESTO 3!!!
+
+
+Procitan zapis 8589037751395 TrrmIcjT
+# Upis #
+Izracunata adresa (19550) = 0
+     Zelimo upisati sto blize bloku 0
+          Isprobavamo blok 0
+            U bloku 0 isprobavamo mjesto 0
+               Za blok 0 u dio 0 vec upisan JMBG
+            U bloku 0 isprobavamo mjesto 1
+               Za blok 0 u dio 1 vec upisan JMBG
+            U bloku 0 isprobavamo mjesto 2
+               Za blok 0 u dio 2 vec upisan JMBG
+            U bloku 0 isprobavamo mjesto 3
+               UPIS U BLOK 0 MJESTO 3!!!
+
+
+Procitan zapis 2147831659901 KyNDHHlr
+# Upis #
+Izracunata adresa (16723) = 2
+     Zelimo upisati sto blize bloku 2
+          Isprobavamo blok 2
+            U bloku 2 isprobavamo mjesto 0
+               Za blok 2 u dio 0 vec upisan JMBG
+            U bloku 2 isprobavamo mjesto 1
+               Za blok 2 u dio 1 vec upisan JMBG
+            U bloku 2 isprobavamo mjesto 2
+               UPIS U BLOK 2 MJESTO 2!!!
+
+
+Procitan zapis 3094607379375 tLKigqlb
+# Upis #
+Izracunata adresa (18373) = 19
+     Zelimo upisati sto blize bloku 19
+          Isprobavamo blok 19
+            U bloku 19 isprobavamo mjesto 0
+               UPIS U BLOK 19 MJESTO 0!!!
+
+
+Procitan zapis 6904232917263 iRlThpmo
+# Upis #
+Izracunata adresa (12696) = 0
+     Zelimo upisati sto blize bloku 0
+          Isprobavamo blok 0
+            U bloku 0 isprobavamo mjesto 0
+               Za blok 0 u dio 0 vec upisan JMBG
+            U bloku 0 isprobavamo mjesto 1
+               Za blok 0 u dio 1 vec upisan JMBG
+            U bloku 0 isprobavamo mjesto 2
+               Za blok 0 u dio 2 vec upisan JMBG
+            U bloku 0 isprobavamo mjesto 3
+               Za blok 0 u dio 3 vec upisan JMBG
+            U bloku 0 isprobavamo mjesto 4
+               UPIS U BLOK 0 MJESTO 4!!!
+
+
+Procitan zapis 8396496475111 LRwZbhhV
+# Upis #
+Izracunata adresa (13059) = 18
+     Zelimo upisati sto blize bloku 18
+          Isprobavamo blok 18
+            U bloku 18 isprobavamo mjesto 0
+               UPIS U BLOK 18 MJESTO 0!!!
+
+
+Procitan zapis 4196844386119 zJAWwyIS
+# Upis #
+Izracunata adresa (16525) = 11
+     Zelimo upisati sto blize bloku 11
+          Isprobavamo blok 11
+            U bloku 11 isprobavamo mjesto 0
+               Za blok 11 u dio 0 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 1
+               Za blok 11 u dio 1 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 2
+               Za blok 11 u dio 2 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 3
+               UPIS U BLOK 11 MJESTO 3!!!
+
+
+Procitan zapis 3753532517471 CXhYieOe
+# Upis #
+Izracunata adresa (16369) = 16
+     Zelimo upisati sto blize bloku 16
+          Isprobavamo blok 16
+            U bloku 16 isprobavamo mjesto 0
+               UPIS U BLOK 16 MJESTO 0!!!
+
+
+Procitan zapis 2813074129459 TbaHpeoS
+# Upis #
+Izracunata adresa (9415) = 8
+     Zelimo upisati sto blize bloku 8
+          Isprobavamo blok 8
+            U bloku 8 isprobavamo mjesto 0
+               Za blok 8 u dio 0 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 1
+               Za blok 8 u dio 1 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 2
+               UPIS U BLOK 8 MJESTO 2!!!
+
+
+Procitan zapis 9220221564377 DqkUjXwT
+# Upis #
+Izracunata adresa (9790) = 15
+     Zelimo upisati sto blize bloku 15
+          Isprobavamo blok 15
+            U bloku 15 isprobavamo mjesto 0
+               UPIS U BLOK 15 MJESTO 0!!!
+
+
+Procitan zapis 9322946867274 lliTWgOW
+# Upis #
+Izracunata adresa (18983) = 8
+     Zelimo upisati sto blize bloku 8
+          Isprobavamo blok 8
+            U bloku 8 isprobavamo mjesto 0
+               Za blok 8 u dio 0 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 1
+               Za blok 8 u dio 1 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 2
+               Za blok 8 u dio 2 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 3
+               UPIS U BLOK 8 MJESTO 3!!!
+
+
+Procitan zapis 8573381756034 zGSXcZYK
+# Upis #
+Izracunata adresa (10640) = 14
+     Zelimo upisati sto blize bloku 14
+          Isprobavamo blok 14
+            U bloku 14 isprobavamo mjesto 0
+               Za blok 14 u dio 0 vec upisan JMBG
+            U bloku 14 isprobavamo mjesto 1
+               UPIS U BLOK 14 MJESTO 1!!!
+
+
+Procitan zapis 8339915158542 dKtixwxc
+# Upis #
+Izracunata adresa (23074) = 5
+     Zelimo upisati sto blize bloku 5
+          Isprobavamo blok 5
+            U bloku 5 isprobavamo mjesto 0
+               Za blok 5 u dio 0 vec upisan JMBG
+            U bloku 5 isprobavamo mjesto 1
+               UPIS U BLOK 5 MJESTO 1!!!
+
+
+Procitan zapis 2612842188787 nqkFHfjJ
+# Upis #
+Izracunata adresa (19371) = 5
+     Zelimo upisati sto blize bloku 5
+          Isprobavamo blok 5
+            U bloku 5 isprobavamo mjesto 0
+               Za blok 5 u dio 0 vec upisan JMBG
+            U bloku 5 isprobavamo mjesto 1
+               Za blok 5 u dio 1 vec upisan JMBG
+            U bloku 5 isprobavamo mjesto 2
+               UPIS U BLOK 5 MJESTO 2!!!
+
+
+Procitan zapis 9834925382243 CljuBvpN
+# Upis #
+Izracunata adresa (17870) = 22
+     Zelimo upisati sto blize bloku 22
+          Isprobavamo blok 22
+            U bloku 22 isprobavamo mjesto 0
+               Za blok 22 u dio 0 vec upisan JMBG
+            U bloku 22 isprobavamo mjesto 1
+               Za blok 22 u dio 1 vec upisan JMBG
+            U bloku 22 isprobavamo mjesto 2
+               UPIS U BLOK 22 MJESTO 2!!!
+
+
+Procitan zapis 5837702566606 KOlDJJqf
+# Upis #
+Izracunata adresa (15076) = 11
+     Zelimo upisati sto blize bloku 11
+          Isprobavamo blok 11
+            U bloku 11 isprobavamo mjesto 0
+               Za blok 11 u dio 0 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 1
+               Za blok 11 u dio 1 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 2
+               Za blok 11 u dio 2 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 3
+               Za blok 11 u dio 3 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 4
+               UPIS U BLOK 11 MJESTO 4!!!
+
+
+Procitan zapis 9617938779869 acUbLrVu
+# Upis #
+Izracunata adresa (23453) = 16
+     Zelimo upisati sto blize bloku 16
+          Isprobavamo blok 16
+            U bloku 16 isprobavamo mjesto 0
+               Za blok 16 u dio 0 vec upisan JMBG
+            U bloku 16 isprobavamo mjesto 1
+               UPIS U BLOK 16 MJESTO 1!!!
+
+
+Procitan zapis 3005615405743 BtjhmAqO
+# Upis #
+Izracunata adresa (15907) = 14
+     Zelimo upisati sto blize bloku 14
+          Isprobavamo blok 14
+            U bloku 14 isprobavamo mjesto 0
+               Za blok 14 u dio 0 vec upisan JMBG
+            U bloku 14 isprobavamo mjesto 1
+               Za blok 14 u dio 1 vec upisan JMBG
+            U bloku 14 isprobavamo mjesto 2
+               UPIS U BLOK 14 MJESTO 2!!!
+
+
+Procitan zapis 8158085879084 qsGmyKIO
+# Upis #
+Izracunata adresa (17473) = 16
+     Zelimo upisati sto blize bloku 16
+          Isprobavamo blok 16
+            U bloku 16 isprobavamo mjesto 0
+               Za blok 16 u dio 0 vec upisan JMBG
+            U bloku 16 isprobavamo mjesto 1
+               Za blok 16 u dio 1 vec upisan JMBG
+            U bloku 16 isprobavamo mjesto 2
+               UPIS U BLOK 16 MJESTO 2!!!
+
+
+Procitan zapis 9232032227545 LrYbZpVk
+# Upis #
+Izracunata adresa (7223) = 1
+     Zelimo upisati sto blize bloku 1
+          Isprobavamo blok 1
+            U bloku 1 isprobavamo mjesto 0
+               UPIS U BLOK 1 MJESTO 0!!!
+
+
+Procitan zapis 9549272133548 HJnqvTry
+# Upis #
+Izracunata adresa (16713) = 15
+     Zelimo upisati sto blize bloku 15
+          Isprobavamo blok 15
+            U bloku 15 isprobavamo mjesto 0
+               Za blok 15 u dio 0 vec upisan JMBG
+            U bloku 15 isprobavamo mjesto 1
+               UPIS U BLOK 15 MJESTO 1!!!
+
+
+Procitan zapis 6176915799431 FUhDKFKr
+# Upis #
+Izracunata adresa (19372) = 6
+     Zelimo upisati sto blize bloku 6
+          Isprobavamo blok 6
+            U bloku 6 isprobavamo mjesto 0
+               Za blok 6 u dio 0 vec upisan JMBG
+            U bloku 6 isprobavamo mjesto 1
+               UPIS U BLOK 6 MJESTO 1!!!
+
+
+Procitan zapis 1261757255775 RLOHLkKS
+# Upis #
+Izracunata adresa (16948) = 20
+     Zelimo upisati sto blize bloku 20
+          Isprobavamo blok 20
+            U bloku 20 isprobavamo mjesto 0
+               Za blok 20 u dio 0 vec upisan JMBG
+            U bloku 20 isprobavamo mjesto 1
+               UPIS U BLOK 20 MJESTO 1!!!
+
+
+Procitan zapis 8691213721121 QfcQEKNV
+# Upis #
+Izracunata adresa (6217) = 7
+     Zelimo upisati sto blize bloku 7
+          Isprobavamo blok 7
+            U bloku 7 isprobavamo mjesto 0
+               UPIS U BLOK 7 MJESTO 0!!!
+
+
+Procitan zapis 4996948149051 mALCERll
+# Upis #
+Izracunata adresa (21569) = 18
+     Zelimo upisati sto blize bloku 18
+          Isprobavamo blok 18
+            U bloku 18 isprobavamo mjesto 0
+               Za blok 18 u dio 0 vec upisan JMBG
+            U bloku 18 isprobavamo mjesto 1
+               UPIS U BLOK 18 MJESTO 1!!!
+
+
+Procitan zapis 7081118198186 DiHvigtQ
+# Upis #
+Izracunata adresa (11177) = 22
+     Zelimo upisati sto blize bloku 22
+          Isprobavamo blok 22
+            U bloku 22 isprobavamo mjesto 0
+               Za blok 22 u dio 0 vec upisan JMBG
+            U bloku 22 isprobavamo mjesto 1
+               Za blok 22 u dio 1 vec upisan JMBG
+            U bloku 22 isprobavamo mjesto 2
+               Za blok 22 u dio 2 vec upisan JMBG
+            U bloku 22 isprobavamo mjesto 3
+               UPIS U BLOK 22 MJESTO 3!!!
+
+
+Procitan zapis 8063875240332 xTmOrxOV
+# Upis #
+Izracunata adresa (15664) = 1
+     Zelimo upisati sto blize bloku 1
+          Isprobavamo blok 1
+            U bloku 1 isprobavamo mjesto 0
+               Za blok 1 u dio 0 vec upisan JMBG
+            U bloku 1 isprobavamo mjesto 1
+               UPIS U BLOK 1 MJESTO 1!!!
+
+
+Procitan zapis 2126132999664 FVJXsxaj
+# Upis #
+Izracunata adresa (14240) = 3
+     Zelimo upisati sto blize bloku 3
+          Isprobavamo blok 3
+            U bloku 3 isprobavamo mjesto 0
+               Za blok 3 u dio 0 vec upisan JMBG
+            U bloku 3 isprobavamo mjesto 1
+               UPIS U BLOK 3 MJESTO 1!!!
+
+
+Procitan zapis 9912106692708 jpgvvmDh
+# Upis #
+Izracunata adresa (3994) = 15
+     Zelimo upisati sto blize bloku 15
+          Isprobavamo blok 15
+            U bloku 15 isprobavamo mjesto 0
+               Za blok 15 u dio 0 vec upisan JMBG
+            U bloku 15 isprobavamo mjesto 1
+               Za blok 15 u dio 1 vec upisan JMBG
+            U bloku 15 isprobavamo mjesto 2
+               UPIS U BLOK 15 MJESTO 2!!!
+
+
+Procitan zapis 4196844386119 IrsKscUe
+# Upis #
+Izracunata adresa (16525) = 11
+     Zelimo upisati sto blize bloku 11
+          Isprobavamo blok 11
+            U bloku 11 isprobavamo mjesto 0
+               Za blok 11 u dio 0 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 1
+               Za blok 11 u dio 1 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 2
+               Za blok 11 u dio 2 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 3
+               Za blok 11 u dio 3 vec upisan JMBG
+                    Upisujemo postojeci - skip
+
+
+Procitan zapis 7345896786400 wyvomCuA
+# Upis #
+Izracunata adresa (14872) = 14
+     Zelimo upisati sto blize bloku 14
+          Isprobavamo blok 14
+            U bloku 14 isprobavamo mjesto 0
+               Za blok 14 u dio 0 vec upisan JMBG
+            U bloku 14 isprobavamo mjesto 1
+               Za blok 14 u dio 1 vec upisan JMBG
+            U bloku 14 isprobavamo mjesto 2
+               Za blok 14 u dio 2 vec upisan JMBG
+            U bloku 14 isprobavamo mjesto 3
+               UPIS U BLOK 14 MJESTO 3!!!
+
+
+Procitan zapis 1430127872554 DkHHTsnc
+# Upis #
+Izracunata adresa (7146) = 16
+     Zelimo upisati sto blize bloku 16
+          Isprobavamo blok 16
+            U bloku 16 isprobavamo mjesto 0
+               Za blok 16 u dio 0 vec upisan JMBG
+            U bloku 16 isprobavamo mjesto 1
+               Za blok 16 u dio 1 vec upisan JMBG
+            U bloku 16 isprobavamo mjesto 2
+               Za blok 16 u dio 2 vec upisan JMBG
+            U bloku 16 isprobavamo mjesto 3
+               UPIS U BLOK 16 MJESTO 3!!!
+
+
+Procitan zapis 3169591357157 iXNnXFYh
+# Upis #
+Izracunata adresa (20701) = 1
+     Zelimo upisati sto blize bloku 1
+          Isprobavamo blok 1
+            U bloku 1 isprobavamo mjesto 0
+               Za blok 1 u dio 0 vec upisan JMBG
+            U bloku 1 isprobavamo mjesto 1
+               Za blok 1 u dio 1 vec upisan JMBG
+            U bloku 1 isprobavamo mjesto 2
+               UPIS U BLOK 1 MJESTO 2!!!
+
+
+Procitan zapis 3048463393047 JwLcSWra
+# Upis #
+Izracunata adresa (17075) = 9
+     Zelimo upisati sto blize bloku 9
+          Isprobavamo blok 9
+            U bloku 9 isprobavamo mjesto 0
+               UPIS U BLOK 9 MJESTO 0!!!
+
+
+Procitan zapis 9209784234137 lryBlIrd
+# Upis #
+Izracunata adresa (20014) = 4
+     Zelimo upisati sto blize bloku 4
+          Isprobavamo blok 4
+            U bloku 4 isprobavamo mjesto 0
+               Za blok 4 u dio 0 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 1
+               Za blok 4 u dio 1 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 2
+               Za blok 4 u dio 2 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 3
+               Za blok 4 u dio 3 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 4
+               UPIS U BLOK 4 MJESTO 4!!!
+
+
+Procitan zapis 9678914761802 LVZqGAlL
+# Upis #
+Izracunata adresa (18732) = 10
+     Zelimo upisati sto blize bloku 10
+          Isprobavamo blok 10
+            U bloku 10 isprobavamo mjesto 0
+               Za blok 10 u dio 0 vec upisan JMBG
+            U bloku 10 isprobavamo mjesto 1
+               UPIS U BLOK 10 MJESTO 1!!!
+
+
+Procitan zapis 8401715140231 sQyXmtEB
+# Upis #
+Izracunata adresa (11403) = 18
+     Zelimo upisati sto blize bloku 18
+          Isprobavamo blok 18
+            U bloku 18 isprobavamo mjesto 0
+               Za blok 18 u dio 0 vec upisan JMBG
+            U bloku 18 isprobavamo mjesto 1
+               Za blok 18 u dio 1 vec upisan JMBG
+            U bloku 18 isprobavamo mjesto 2
+               UPIS U BLOK 18 MJESTO 2!!!
+
+
+Procitan zapis 9055696279792 QZuQWflW
+# Upis #
+Izracunata adresa (22268) = 4
+     Zelimo upisati sto blize bloku 4
+          Isprobavamo blok 4
+            U bloku 4 isprobavamo mjesto 0
+               Za blok 4 u dio 0 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 1
+               Za blok 4 u dio 1 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 2
+               Za blok 4 u dio 2 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 3
+               Za blok 4 u dio 3 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 4
+               Za blok 4 u dio 4 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 5
+               UPIS U BLOK 4 MJESTO 5!!!
+
+
+Procitan zapis 1606189153721 lByGVxUs
+# Upis #
+Izracunata adresa (10687) = 15
+     Zelimo upisati sto blize bloku 15
+          Isprobavamo blok 15
+            U bloku 15 isprobavamo mjesto 0
+               Za blok 15 u dio 0 vec upisan JMBG
+            U bloku 15 isprobavamo mjesto 1
+               Za blok 15 u dio 1 vec upisan JMBG
+            U bloku 15 isprobavamo mjesto 2
+               Za blok 15 u dio 2 vec upisan JMBG
+            U bloku 15 isprobavamo mjesto 3
+               UPIS U BLOK 15 MJESTO 3!!!
+
+
+Procitan zapis 6921536912136 mvdXRITb
+# Upis #
+Izracunata adresa (9786) = 11
+     Zelimo upisati sto blize bloku 11
+          Isprobavamo blok 11
+            U bloku 11 isprobavamo mjesto 0
+               Za blok 11 u dio 0 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 1
+               Za blok 11 u dio 1 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 2
+               Za blok 11 u dio 2 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 3
+               Za blok 11 u dio 3 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 4
+               Za blok 11 u dio 4 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 5
+               UPIS U BLOK 11 MJESTO 5!!!
+
+
+Procitan zapis 4604998931851 wNBpHGjZ
+# Upis #
+Izracunata adresa (19866) = 17
+     Zelimo upisati sto blize bloku 17
+          Isprobavamo blok 17
+            U bloku 17 isprobavamo mjesto 0
+               Za blok 17 u dio 0 vec upisan JMBG
+            U bloku 17 isprobavamo mjesto 1
+               Za blok 17 u dio 1 vec upisan JMBG
+            U bloku 17 isprobavamo mjesto 2
+               UPIS U BLOK 17 MJESTO 2!!!
+
+
+Procitan zapis 4372081667530 fPPsIZcF
+# Upis #
+Izracunata adresa (7126) = 19
+     Zelimo upisati sto blize bloku 19
+          Isprobavamo blok 19
+            U bloku 19 isprobavamo mjesto 0
+               Za blok 19 u dio 0 vec upisan JMBG
+            U bloku 19 isprobavamo mjesto 1
+               UPIS U BLOK 19 MJESTO 1!!!
+
+
+Procitan zapis 3966399121066 HFnMGSRP
+# Upis #
+Izracunata adresa (16696) = 21
+     Zelimo upisati sto blize bloku 21
+          Isprobavamo blok 21
+            U bloku 21 isprobavamo mjesto 0
+               Za blok 21 u dio 0 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 1
+               Za blok 21 u dio 1 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 2
+               UPIS U BLOK 21 MJESTO 2!!!
+
+
+Procitan zapis 4479201635791 QzQgLvEO
+# Upis #
+Izracunata adresa (21513) = 8
+     Zelimo upisati sto blize bloku 8
+          Isprobavamo blok 8
+            U bloku 8 isprobavamo mjesto 0
+               Za blok 8 u dio 0 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 1
+               Za blok 8 u dio 1 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 2
+               Za blok 8 u dio 2 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 3
+               Za blok 8 u dio 3 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 4
+               UPIS U BLOK 8 MJESTO 4!!!
+
+
+Procitan zapis 9805261391032 oyZANMSp
+# Upis #
+Izracunata adresa (10721) = 3
+     Zelimo upisati sto blize bloku 3
+          Isprobavamo blok 3
+            U bloku 3 isprobavamo mjesto 0
+               Za blok 3 u dio 0 vec upisan JMBG
+            U bloku 3 isprobavamo mjesto 1
+               Za blok 3 u dio 1 vec upisan JMBG
+            U bloku 3 isprobavamo mjesto 2
+               UPIS U BLOK 3 MJESTO 2!!!
+
+
+Procitan zapis 6865779595323 FkRZzeQk
+# Upis #
+Izracunata adresa (15840) = 16
+     Zelimo upisati sto blize bloku 16
+          Isprobavamo blok 16
+            U bloku 16 isprobavamo mjesto 0
+               Za blok 16 u dio 0 vec upisan JMBG
+            U bloku 16 isprobavamo mjesto 1
+               Za blok 16 u dio 1 vec upisan JMBG
+            U bloku 16 isprobavamo mjesto 2
+               Za blok 16 u dio 2 vec upisan JMBG
+            U bloku 16 isprobavamo mjesto 3
+               Za blok 16 u dio 3 vec upisan JMBG
+            U bloku 16 isprobavamo mjesto 4
+               UPIS U BLOK 16 MJESTO 4!!!
+
+
+Procitan zapis 5469100009155 FZUrGnlQ
+# Upis #
+Izracunata adresa (15835) = 11
+     Zelimo upisati sto blize bloku 11
+          Isprobavamo blok 11
+            U bloku 11 isprobavamo mjesto 0
+               Za blok 11 u dio 0 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 1
+               Za blok 11 u dio 1 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 2
+               Za blok 11 u dio 2 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 3
+               Za blok 11 u dio 3 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 4
+               Za blok 11 u dio 4 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 5
+               Za blok 11 u dio 5 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 6
+               UPIS U BLOK 11 MJESTO 6!!!
+
+
+Procitan zapis 7146488845484 etocRjKu
+# Upis #
+Izracunata adresa (19759) = 2
+     Zelimo upisati sto blize bloku 2
+          Isprobavamo blok 2
+            U bloku 2 isprobavamo mjesto 0
+               Za blok 2 u dio 0 vec upisan JMBG
+            U bloku 2 isprobavamo mjesto 1
+               Za blok 2 u dio 1 vec upisan JMBG
+            U bloku 2 isprobavamo mjesto 2
+               Za blok 2 u dio 2 vec upisan JMBG
+            U bloku 2 isprobavamo mjesto 3
+               UPIS U BLOK 2 MJESTO 3!!!
+
+
+Procitan zapis 9558336130862 soncjqXL
+# Upis #
+Izracunata adresa (18723) = 1
+     Zelimo upisati sto blize bloku 1
+          Isprobavamo blok 1
+            U bloku 1 isprobavamo mjesto 0
+               Za blok 1 u dio 0 vec upisan JMBG
+            U bloku 1 isprobavamo mjesto 1
+               Za blok 1 u dio 1 vec upisan JMBG
+            U bloku 1 isprobavamo mjesto 2
+               Za blok 1 u dio 2 vec upisan JMBG
+            U bloku 1 isprobavamo mjesto 3
+               UPIS U BLOK 1 MJESTO 3!!!
+
+
+Procitan zapis 7896877956479 ftwiaxDi
+# Upis #
+Izracunata adresa (23231) = 1
+     Zelimo upisati sto blize bloku 1
+          Isprobavamo blok 1
+            U bloku 1 isprobavamo mjesto 0
+               Za blok 1 u dio 0 vec upisan JMBG
+            U bloku 1 isprobavamo mjesto 1
+               Za blok 1 u dio 1 vec upisan JMBG
+            U bloku 1 isprobavamo mjesto 2
+               Za blok 1 u dio 2 vec upisan JMBG
+            U bloku 1 isprobavamo mjesto 3
+               Za blok 1 u dio 3 vec upisan JMBG
+            U bloku 1 isprobavamo mjesto 4
+               UPIS U BLOK 1 MJESTO 4!!!
+
+
+Procitan zapis 1972045045319 CXXTLRLr
+# Upis #
+Izracunata adresa (4595) = 18
+     Zelimo upisati sto blize bloku 18
+          Isprobavamo blok 18
+            U bloku 18 isprobavamo mjesto 0
+               Za blok 18 u dio 0 vec upisan JMBG
+            U bloku 18 isprobavamo mjesto 1
+               Za blok 18 u dio 1 vec upisan JMBG
+            U bloku 18 isprobavamo mjesto 2
+               Za blok 18 u dio 2 vec upisan JMBG
+            U bloku 18 isprobavamo mjesto 3
+               UPIS U BLOK 18 MJESTO 3!!!
+
+
+Procitan zapis 6210150456251 EafveWOn
+# Upis #
+Izracunata adresa (6895) = 18
+     Zelimo upisati sto blize bloku 18
+          Isprobavamo blok 18
+            U bloku 18 isprobavamo mjesto 0
+               Za blok 18 u dio 0 vec upisan JMBG
+            U bloku 18 isprobavamo mjesto 1
+               Za blok 18 u dio 1 vec upisan JMBG
+            U bloku 18 isprobavamo mjesto 2
+               Za blok 18 u dio 2 vec upisan JMBG
+            U bloku 18 isprobavamo mjesto 3
+               Za blok 18 u dio 3 vec upisan JMBG
+            U bloku 18 isprobavamo mjesto 4
+               UPIS U BLOK 18 MJESTO 4!!!
+
+
+Procitan zapis 9573168126467 iFyqUQxw
+# Upis #
+Izracunata adresa (11902) = 11
+     Zelimo upisati sto blize bloku 11
+          Isprobavamo blok 11
+            U bloku 11 isprobavamo mjesto 0
+               Za blok 11 u dio 0 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 1
+               Za blok 11 u dio 1 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 2
+               Za blok 11 u dio 2 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 3
+               Za blok 11 u dio 3 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 4
+               Za blok 11 u dio 4 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 5
+               Za blok 11 u dio 5 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 6
+               Za blok 11 u dio 6 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 7
+               UPIS U BLOK 11 MJESTO 7!!!
+
+
+Procitan zapis 4052644428845 EOZeQIrj
+# Upis #
+Izracunata adresa (13830) = 7
+     Zelimo upisati sto blize bloku 7
+          Isprobavamo blok 7
+            U bloku 7 isprobavamo mjesto 0
+               Za blok 7 u dio 0 vec upisan JMBG
+            U bloku 7 isprobavamo mjesto 1
+               UPIS U BLOK 7 MJESTO 1!!!
+
+
+Procitan zapis 8144352549820 fSiWmxqo
+# Upis #
+Izracunata adresa (10837) = 4
+     Zelimo upisati sto blize bloku 4
+          Isprobavamo blok 4
+            U bloku 4 isprobavamo mjesto 0
+               Za blok 4 u dio 0 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 1
+               Za blok 4 u dio 1 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 2
+               Za blok 4 u dio 2 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 3
+               Za blok 4 u dio 3 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 4
+               Za blok 4 u dio 4 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 5
+               Za blok 4 u dio 5 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 6
+               UPIS U BLOK 4 MJESTO 6!!!
+
+
+Procitan zapis 4688497573778 vSJtedgk
+# Upis #
+Izracunata adresa (21576) = 2
+     Zelimo upisati sto blize bloku 2
+          Isprobavamo blok 2
+            U bloku 2 isprobavamo mjesto 0
+               Za blok 2 u dio 0 vec upisan JMBG
+            U bloku 2 isprobavamo mjesto 1
+               Za blok 2 u dio 1 vec upisan JMBG
+            U bloku 2 isprobavamo mjesto 2
+               Za blok 2 u dio 2 vec upisan JMBG
+            U bloku 2 isprobavamo mjesto 3
+               Za blok 2 u dio 3 vec upisan JMBG
+            U bloku 2 isprobavamo mjesto 4
+               UPIS U BLOK 2 MJESTO 4!!!
+
+
+Procitan zapis 1230719931638 LIJtUUWi
+# Upis #
+Izracunata adresa (11133) = 1
+     Zelimo upisati sto blize bloku 1
+          Isprobavamo blok 1
+            U bloku 1 isprobavamo mjesto 0
+               Za blok 1 u dio 0 vec upisan JMBG
+            U bloku 1 isprobavamo mjesto 1
+               Za blok 1 u dio 1 vec upisan JMBG
+            U bloku 1 isprobavamo mjesto 2
+               Za blok 1 u dio 2 vec upisan JMBG
+            U bloku 1 isprobavamo mjesto 3
+               Za blok 1 u dio 3 vec upisan JMBG
+            U bloku 1 isprobavamo mjesto 4
+               Za blok 1 u dio 4 vec upisan JMBG
+            U bloku 1 isprobavamo mjesto 5
+               UPIS U BLOK 1 MJESTO 5!!!
+
+
+Procitan zapis 9492965483564 xUcqqRsA
+# Upis #
+Izracunata adresa (19141) = 5
+     Zelimo upisati sto blize bloku 5
+          Isprobavamo blok 5
+            U bloku 5 isprobavamo mjesto 0
+               Za blok 5 u dio 0 vec upisan JMBG
+            U bloku 5 isprobavamo mjesto 1
+               Za blok 5 u dio 1 vec upisan JMBG
+            U bloku 5 isprobavamo mjesto 2
+               Za blok 5 u dio 2 vec upisan JMBG
+            U bloku 5 isprobavamo mjesto 3
+               UPIS U BLOK 5 MJESTO 3!!!
+
+
+Procitan zapis 6822656941434 dxnXkmna
+# Upis #
+Izracunata adresa (12269) = 10
+     Zelimo upisati sto blize bloku 10
+          Isprobavamo blok 10
+            U bloku 10 isprobavamo mjesto 0
+               Za blok 10 u dio 0 vec upisan JMBG
+            U bloku 10 isprobavamo mjesto 1
+               Za blok 10 u dio 1 vec upisan JMBG
+            U bloku 10 isprobavamo mjesto 2
+               UPIS U BLOK 10 MJESTO 2!!!
+
+
+Procitan zapis 8697256385997 FDwFcfAC
+# Upis #
+Izracunata adresa (20489) = 19
+     Zelimo upisati sto blize bloku 19
+          Isprobavamo blok 19
+            U bloku 19 isprobavamo mjesto 0
+               Za blok 19 u dio 0 vec upisan JMBG
+            U bloku 19 isprobavamo mjesto 1
+               Za blok 19 u dio 1 vec upisan JMBG
+            U bloku 19 isprobavamo mjesto 2
+               UPIS U BLOK 19 MJESTO 2!!!
+
+
+Procitan zapis 2290658284249 BrKqzVYY
+# Upis #
+Izracunata adresa (11752) = 22
+     Zelimo upisati sto blize bloku 22
+          Isprobavamo blok 22
+            U bloku 22 isprobavamo mjesto 0
+               Za blok 22 u dio 0 vec upisan JMBG
+            U bloku 22 isprobavamo mjesto 1
+               Za blok 22 u dio 1 vec upisan JMBG
+            U bloku 22 isprobavamo mjesto 2
+               Za blok 22 u dio 2 vec upisan JMBG
+            U bloku 22 isprobavamo mjesto 3
+               Za blok 22 u dio 3 vec upisan JMBG
+            U bloku 22 isprobavamo mjesto 4
+               UPIS U BLOK 22 MJESTO 4!!!
+
+
+Procitan zapis 3061922055726 psrzslvC
+# Upis #
+Izracunata adresa (13578) = 8
+     Zelimo upisati sto blize bloku 8
+          Isprobavamo blok 8
+            U bloku 8 isprobavamo mjesto 0
+               Za blok 8 u dio 0 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 1
+               Za blok 8 u dio 1 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 2
+               Za blok 8 u dio 2 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 3
+               Za blok 8 u dio 3 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 4
+               Za blok 8 u dio 4 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 5
+               UPIS U BLOK 8 MJESTO 5!!!
+
+
+Procitan zapis 9131229590745 exTRKZIo
+# Upis #
+Izracunata adresa (8323) = 20
+     Zelimo upisati sto blize bloku 20
+          Isprobavamo blok 20
+            U bloku 20 isprobavamo mjesto 0
+               Za blok 20 u dio 0 vec upisan JMBG
+            U bloku 20 isprobavamo mjesto 1
+               Za blok 20 u dio 1 vec upisan JMBG
+            U bloku 20 isprobavamo mjesto 2
+               UPIS U BLOK 20 MJESTO 2!!!
+
+
+Procitan zapis 4347636341440 jCzQjTQh
+# Upis #
+Izracunata adresa (18211) = 18
+     Zelimo upisati sto blize bloku 18
+          Isprobavamo blok 18
+            U bloku 18 isprobavamo mjesto 0
+               Za blok 18 u dio 0 vec upisan JMBG
+            U bloku 18 isprobavamo mjesto 1
+               Za blok 18 u dio 1 vec upisan JMBG
+            U bloku 18 isprobavamo mjesto 2
+               Za blok 18 u dio 2 vec upisan JMBG
+            U bloku 18 isprobavamo mjesto 3
+               Za blok 18 u dio 3 vec upisan JMBG
+            U bloku 18 isprobavamo mjesto 4
+               Za blok 18 u dio 4 vec upisan JMBG
+            U bloku 18 isprobavamo mjesto 5
+               UPIS U BLOK 18 MJESTO 5!!!
+
+
+Procitan zapis 6554582354197 ddhhqbmU
+# Upis #
+Izracunata adresa (19524) = 20
+     Zelimo upisati sto blize bloku 20
+          Isprobavamo blok 20
+            U bloku 20 isprobavamo mjesto 0
+               Za blok 20 u dio 0 vec upisan JMBG
+            U bloku 20 isprobavamo mjesto 1
+               Za blok 20 u dio 1 vec upisan JMBG
+            U bloku 20 isprobavamo mjesto 2
+               Za blok 20 u dio 2 vec upisan JMBG
+            U bloku 20 isprobavamo mjesto 3
+               UPIS U BLOK 20 MJESTO 3!!!
+
+
+Procitan zapis 2825708792382 zGTNSyXp
+# Upis #
+Izracunata adresa (20698) = 21
+     Zelimo upisati sto blize bloku 21
+          Isprobavamo blok 21
+            U bloku 21 isprobavamo mjesto 0
+               Za blok 21 u dio 0 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 1
+               Za blok 21 u dio 1 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 2
+               Za blok 21 u dio 2 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 3
+               UPIS U BLOK 21 MJESTO 3!!!
+
+
+Procitan zapis 7389843440045 IZAbDbWv
+# Upis #
+Izracunata adresa (22275) = 11
+     Zelimo upisati sto blize bloku 11
+          Isprobavamo blok 11
+            U bloku 11 isprobavamo mjesto 0
+               Za blok 11 u dio 0 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 1
+               Za blok 11 u dio 1 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 2
+               Za blok 11 u dio 2 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 3
+               Za blok 11 u dio 3 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 4
+               Za blok 11 u dio 4 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 5
+               Za blok 11 u dio 5 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 6
+               Za blok 11 u dio 6 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 7
+               Za blok 11 u dio 7 vec upisan JMBG
+            U bloku 11 isprobavamo mjesto 8
+               UPIS U BLOK 11 MJESTO 8!!!
+
+
+Procitan zapis 7086611529892 wqKxAxAC
+# Upis #
+Izracunata adresa (22814) = 21
+     Zelimo upisati sto blize bloku 21
+          Isprobavamo blok 21
+            U bloku 21 isprobavamo mjesto 0
+               Za blok 21 u dio 0 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 1
+               Za blok 21 u dio 1 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 2
+               Za blok 21 u dio 2 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 3
+               Za blok 21 u dio 3 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 4
+               UPIS U BLOK 21 MJESTO 4!!!
+
+
+Procitan zapis 4777489547410 bgfBwdvK
+# Upis #
+Izracunata adresa (14143) = 21
+     Zelimo upisati sto blize bloku 21
+          Isprobavamo blok 21
+            U bloku 21 isprobavamo mjesto 0
+               Za blok 21 u dio 0 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 1
+               Za blok 21 u dio 1 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 2
+               Za blok 21 u dio 2 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 3
+               Za blok 21 u dio 3 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 4
+               Za blok 21 u dio 4 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 5
+               UPIS U BLOK 21 MJESTO 5!!!
+
+
+Procitan zapis 6190099795525 TENBlZOf
+# Upis #
+Izracunata adresa (4472) = 10
+     Zelimo upisati sto blize bloku 10
+          Isprobavamo blok 10
+            U bloku 10 isprobavamo mjesto 0
+               Za blok 10 u dio 0 vec upisan JMBG
+            U bloku 10 isprobavamo mjesto 1
+               Za blok 10 u dio 1 vec upisan JMBG
+            U bloku 10 isprobavamo mjesto 2
+               Za blok 10 u dio 2 vec upisan JMBG
+            U bloku 10 isprobavamo mjesto 3
+               UPIS U BLOK 10 MJESTO 3!!!
+
+
+Procitan zapis 3346201971495 zQeiMTmU
+# Upis #
+Izracunata adresa (17869) = 21
+     Zelimo upisati sto blize bloku 21
+          Isprobavamo blok 21
+            U bloku 21 isprobavamo mjesto 0
+               Za blok 21 u dio 0 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 1
+               Za blok 21 u dio 1 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 2
+               Za blok 21 u dio 2 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 3
+               Za blok 21 u dio 3 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 4
+               Za blok 21 u dio 4 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 5
+               Za blok 21 u dio 5 vec upisan JMBG
+            U bloku 21 isprobavamo mjesto 6
+               UPIS U BLOK 21 MJESTO 6!!!
+
+
+Procitan zapis 4878292184209 mvdJgmko
+# Upis #
+Izracunata adresa (11953) = 16
+     Zelimo upisati sto blize bloku 16
+          Isprobavamo blok 16
+            U bloku 16 isprobavamo mjesto 0
+               Za blok 16 u dio 0 vec upisan JMBG
+            U bloku 16 isprobavamo mjesto 1
+               Za blok 16 u dio 1 vec upisan JMBG
+            U bloku 16 isprobavamo mjesto 2
+               Za blok 16 u dio 2 vec upisan JMBG
+            U bloku 16 isprobavamo mjesto 3
+               Za blok 16 u dio 3 vec upisan JMBG
+            U bloku 16 isprobavamo mjesto 4
+               Za blok 16 u dio 4 vec upisan JMBG
+            U bloku 16 isprobavamo mjesto 5
+               UPIS U BLOK 16 MJESTO 5!!!
+
+
+Procitan zapis 9603381450848 rflvTVbG
+# Upis #
+Izracunata adresa (11688) = 4
+     Zelimo upisati sto blize bloku 4
+          Isprobavamo blok 4
+            U bloku 4 isprobavamo mjesto 0
+               Za blok 4 u dio 0 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 1
+               Za blok 4 u dio 1 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 2
+               Za blok 4 u dio 2 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 3
+               Za blok 4 u dio 3 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 4
+               Za blok 4 u dio 4 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 5
+               Za blok 4 u dio 5 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 6
+               Za blok 4 u dio 6 vec upisan JMBG
+            U bloku 4 isprobavamo mjesto 7
+               UPIS U BLOK 4 MJESTO 7!!!
+
+
+Procitan zapis 6250801110873 NMPdkXbp
+# Upis #
+Izracunata adresa (16338) = 8
+     Zelimo upisati sto blize bloku 8
+          Isprobavamo blok 8
+            U bloku 8 isprobavamo mjesto 0
+               Za blok 8 u dio 0 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 1
+               Za blok 8 u dio 1 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 2
+               Za blok 8 u dio 2 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 3
+               Za blok 8 u dio 3 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 4
+               Za blok 8 u dio 4 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 5
+               Za blok 8 u dio 5 vec upisan JMBG
+            U bloku 8 isprobavamo mjesto 6
+               UPIS U BLOK 8 MJESTO 6!!!
+
+
+# Hash tablica po blokovima #
+### BLOK 0 ###
+0: 6244209112826 SlPNyhku 
+1: 1482863856929 iMzXytqJ 
+2: 7354411450544 HBfufTZI 
+3: 8589037751395 TrrmIcjT 
+4: 6904232917263 iRlThpmo 
+### KRAJ BLOKA ###
+
+### BLOK 1 ###
+0: 9232032227545 LrYbZpVk 
+1: 8063875240332 xTmOrxOV 
+2: 3169591357157 iXNnXFYh 
+3: 9558336130862 soncjqXL 
+4: 7896877956479 ftwiaxDi 
+5: 1230719931638 LIJtUUWi 
+### KRAJ BLOKA ###
+
+### BLOK 2 ###
+0: 7284371471296 aGHXUedm 
+1: 8165776543472 zkKyxxzP 
+2: 2147831659901 KyNDHHlr 
+3: 7146488845484 etocRjKu 
+4: 4688497573778 vSJtedgk 
+### KRAJ BLOKA ###
+
+### BLOK 3 ###
+0: 5835230567338 wECogPIb 
+1: 2126132999664 FVJXsxaj 
+2: 9805261391032 oyZANMSp 
+### KRAJ BLOKA ###
+
+### BLOK 4 ###
+0: 4749748222296 pdODLVSn 
+1: 5679494613482 LOwEvrXQ 
+2: 6071443830682 QoDnHBOP 
+3: 2704580828272 vLpzVaIF 
+4: 9209784234137 lryBlIrd 
+5: 9055696279792 QZuQWflW 
+6: 8144352549820 fSiWmxqo 
+7: 9603381450848 rflvTVbG 
+### KRAJ BLOKA ###
+
+### BLOK 5 ###
+0: 9503952146976 okGpuQAj 
+1: 8339915158542 dKtixwxc 
+2: 2612842188787 nqkFHfjJ 
+3: 9492965483564 xUcqqRsA 
+### KRAJ BLOKA ###
+
+### BLOK 6 ###
+0: 3289345988341 TuYsARsx 
+1: 6176915799431 FUhDKFKr 
+### KRAJ BLOKA ###
+
+### BLOK 7 ###
+0: 8691213721121 QfcQEKNV 
+1: 4052644428845 EOZeQIrj 
+### KRAJ BLOKA ###
+
+### BLOK 8 ###
+0: 3882351145969 NmGOTUPg 
+1: 4857142857142 opccaqJT 
+2: 2813074129459 TbaHpeoS 
+3: 9322946867274 lliTWgOW 
+4: 4479201635791 QzQgLvEO 
+5: 3061922055726 psrzslvC 
+6: 6250801110873 NMPdkXbp 
+### KRAJ BLOKA ###
+
+### BLOK 9 ###
+0: 3048463393047 JwLcSWra 
+### KRAJ BLOKA ###
+
+### BLOK 10 ###
+0: 8660725730154 NTOtmtGu 
+1: 9678914761802 LVZqGAlL 
+2: 6822656941434 dxnXkmna 
+3: 6190099795525 TENBlZOf 
+### KRAJ BLOKA ###
+
+### BLOK 11 ###
+0: 1088717307046 rupeAPVM 
+1: 8353923154392 yDbJkMTx 
+2: 8173467207860 QwsvGEgd 
+3: 4196844386119 zJAWwyIS 
+4: 5837702566606 KOlDJJqf 
+5: 6921536912136 mvdXRITb 
+6: 5469100009155 FZUrGnlQ 
+7: 9573168126467 iFyqUQxw 
+8: 7389843440045 IZAbDbWv 
+### KRAJ BLOKA ###
+
+### BLOK 12 ###
+### KRAJ BLOKA ###
+
+### BLOK 13 ###
+0: 3929593798638 xSLxlqIe 
+### KRAJ BLOKA ###
+
+### BLOK 14 ###
+0: 5836329233679 ePooebnu 
+1: 8573381756034 zGSXcZYK 
+2: 3005615405743 BtjhmAqO 
+3: 7345896786400 wyvomCuA 
+### KRAJ BLOKA ###
+
+### BLOK 15 ###
+0: 9220221564377 DqkUjXwT 
+1: 9549272133548 HJnqvTry 
+2: 9912106692708 jpgvvmDh 
+3: 1606189153721 lByGVxUs 
+### KRAJ BLOKA ###
+
+### BLOK 16 ###
+0: 3753532517471 CXhYieOe 
+1: 9617938779869 acUbLrVu 
+2: 8158085879084 qsGmyKIO 
+3: 1430127872554 DkHHTsnc 
+4: 6865779595323 FkRZzeQk 
+5: 4878292184209 mvdJgmko 
+### KRAJ BLOKA ###
+
+### BLOK 17 ###
+0: 5101596118045 MRmHkXRc 
+1: 3469527268287 yGGrGEjM 
+2: 4604998931851 wNBpHGjZ 
+### KRAJ BLOKA ###
+
+### BLOK 18 ###
+0: 8396496475111 LRwZbhhV 
+1: 4996948149051 mALCERll 
+2: 8401715140231 sQyXmtEB 
+3: 1972045045319 CXXTLRLr 
+4: 6210150456251 EafveWOn 
+5: 4347636341440 jCzQjTQh 
+### KRAJ BLOKA ###
+
+### BLOK 19 ###
+0: 3094607379375 tLKigqlb 
+1: 4372081667530 fPPsIZcF 
+2: 8697256385997 FDwFcfAC 
+### KRAJ BLOKA ###
+
+### BLOK 20 ###
+0: 7430219428082 xeNBnMJo 
+1: 1261757255775 RLOHLkKS 
+2: 9131229590745 exTRKZIo 
+3: 6554582354197 ddhhqbmU 
+### KRAJ BLOKA ###
+
+### BLOK 21 ###
+0: 1149143955809 ULHJJrpj 
+1: 2099765007476 BBgYEPxr 
+2: 3966399121066 HFnMGSRP 
+3: 2825708792382 zGTNSyXp 
+4: 7086611529892 wqKxAxAC 
+5: 4777489547410 bgfBwdvK 
+6: 3346201971495 zQeiMTmU 
+### KRAJ BLOKA ###
+
+### BLOK 22 ###
+0: 7266792809838 WGRoaXhi 
+1: 3359935300759 buoypRUh 
+2: 9834925382243 CljuBvpN 
+3: 7081118198186 DiHvigtQ 
+4: 2290658284249 BrKqzVYY 
+### KRAJ BLOKA ###
+
+### BLOK 23 ###
+### KRAJ BLOKA ###
+
+### BLOK 24 ###
+### KRAJ BLOKA ###
+
+### BLOK 25 ###
+### KRAJ BLOKA ###
+
+Upisite JMBG >
+# Trazenje #
+Izracunata adresa (0) = 0
+Trenutno gledam u bloku 0
+     Gledam u bloku 0 na mjesto 0
+          Mjesto 0 nije prazno!
+     Gledam u bloku 0 na mjesto 1
+          Mjesto 1 nije prazno!
+     Gledam u bloku 0 na mjesto 2
+          Mjesto 2 nije prazno!
+     Gledam u bloku 0 na mjesto 3
+          Mjesto 3 nije prazno!
+     Gledam u bloku 0 na mjesto 4
+          Mjesto 4 nije prazno!
+     Gledam u bloku 0 na mjesto 5
+JMBG -1 nije u tablici

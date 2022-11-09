@@ -1,0 +1,20 @@
+Za svaki algoritam (selection, insertion, bubble, shell, quick sort) postoji inacica u kojoj se 
+prikazuje rad na sortiranom nizu, naopako sortiranom nizu i nizu sa sluèajnim vrijednostima.
+
+
+Brzina animacije moze se kontrolirati slijedecim tipkama (u prozoru pokraj):
+
+-B - ubrzava 2x
+
+-S - usporava 2x
+
+-K - sortiranje se brzo izvrsava do kraja
+
+-O - kratku pauzu postavljamo na 0ms
+
+-N - normalne vrijednosti pauzi; duga=1000ms, kratka=200ms 
+     kod quick sorta: duga=1500ms, kratka=1000ms
+     kod shell sorta: duga=3000ms, kratka=3000ms
+
+
+

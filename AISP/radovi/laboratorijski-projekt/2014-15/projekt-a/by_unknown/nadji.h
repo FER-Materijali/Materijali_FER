@@ -1,0 +1,1 @@
+long nadji(char *ime_prezime,FILE *ulaz, long pocetak_bloka);

@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1368742644 source:c:\users\dajana\desktop\asp_lab2\sortovi\main.c
+	"sortovi.h"
+	<stdio.h>
+
+1368729915 c:\users\dajana\desktop\asp_lab2\sortovi\sortovi.h
+	<stdlib.h>
+
+1368730211 source:c:\users\dajana\desktop\asp_lab2\sortovi\sortovi.c
+	"sortovi.h"
+	<stdlib.h>
+
+1368738499 source:c:\users\dajana\desktop\asp_lab2\sortovi\generator.c
+	"generator.h"
+
+1368737593 c:\users\dajana\desktop\asp_lab2\sortovi\generator.h
+	<stdlib.h>
+	<stdio.h>
+
+1368744077 source:c:\users\dajana\desktop\asp_lab2\sortovi\permute.c
+	"permute.h"
+	<stdio.h>
+
+1368743879 source:c:\users\dajana\desktop\asp_lab2\sortovi\test.c
+	"test.h"
+	<stdio.h>
+	<time.h>
+
+1368743928 c:\users\dajana\desktop\asp_lab2\sortovi\test.h
+
+1368744080 c:\users\dajana\desktop\asp_lab2\sortovi\permute.h
+

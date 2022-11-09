@@ -1,0 +1,61 @@
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
+#include "datoteka.h"
+
+
+void ispisStoga (Stog *stog){
+    int brojac;
+    Datoteka element;
+    Stog pomocni;
+    init_stog(&pomocni);
+    //brojac = 0; - provjerava koliko je datoteka ispisano
+
+    while (skini(&element, stog)){ //skini element sa stoga
+        printf("%c %-40s %-10d \n", element.vrsta, element.putanja, element.velicina); //ispisi taj element
+        dodaj(element, &pomocni); // stavi ga na pomocni stog
+    }
+
+    while (skini(&element, &pomocni)){ //skini sa pomocnog stoga
+            ++brojac;
+        dodaj(element, stog); // .. i stavi na glavni stog
+    }
+
+    //printf("Ukupno: %d", brojac); 
+}
+
+void najveceDatoteke(char *mapa, Stog *s){
+    int broj, i;
+    Datoteka max; //oznacava najvecu datoteku u trenutn
+    Datoteka *poljeDatoteka = NULL;
+
+    broj = vratiDatoteke(mapa,&poljeDatoteka);
+    max.velicina = 0;
+
+
+
+    for (i = 0; i < broj; ++i){
+        if ( (poljeDatoteka[i].vrsta == 'F') && (poljeDatoteka[i].velicina > max.velicina) )
+              prepisiDatoteku(&max, &poljeDatoteka[i]);
+    }
+    if (max.velicina > 0) dodaj (max, s);
+
+    for (i = 0; i < broj; ++i){
+        if (poljeDatoteka[i].vrsta == 'D')
+            najveceDatoteke(poljeDatoteka[i].putanja, s);
+    }
+
+    free(poljeDatoteka);
+}
+
+int main(void){
+    Stog stog; // varijabla "stog" je tipa "Stog"
+    init_stog(&stog);
+    najveceDatoteke("G:", &stog);
+    ispisStoga(&stog);
+
+    return 0;
+}
+
+
+

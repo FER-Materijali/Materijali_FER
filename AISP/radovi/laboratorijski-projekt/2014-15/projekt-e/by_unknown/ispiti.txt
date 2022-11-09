@@ -1,0 +1,3 @@
+fizika.txt#58
+kemija.txt#50
+biologija.txt#55

@@ -1,0 +1,12 @@
+Zadatak 1)		http://pastebin.com/raw/cRXMKHrJ
+Zadatak 2)		http://pastebin.com/raw/UKAkKM6Z
+Zadatak 3)		http://pastebin.com/raw/YbQZzcUz
+Zadatak 4)		http://pastebin.com/raw/A2BkEGNn
+Zadatak 5)		http://pastebin.com/raw/AwwpJQhg
+Zadatak 6)		http://pastebin.com/raw/AEGNnWpi
+Zadatak 7)		http://pastebin.com/raw/39c5Tb3T
+Zadatak 8)		http://pastebin.com/raw/MZTw5dpm
+Zadatak 9)		http://pastebin.com/raw/FJvxeAUE
+Zadatak 10) 	http://pastebin.com/raw/BNrTcFfP
+Zadatak 11) 	http://pastebin.com/raw/Z7pbPQrc
+Zadatak 12) 	http://pastebin.com/raw/ZifQ19zj

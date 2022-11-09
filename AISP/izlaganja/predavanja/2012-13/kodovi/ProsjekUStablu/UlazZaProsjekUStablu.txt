@@ -1,0 +1,12 @@
+Kruh 4.50
+Novine 5
+Knjiga 23.75
+Meso 45.80
+Maramice 1
+Cigarete 8.5	
+Sibice 0.5
+Upaljac 7.5
+Casopis 12.5
+Teka 8.80	
+Olovka 0.75
+Penkala 12.3

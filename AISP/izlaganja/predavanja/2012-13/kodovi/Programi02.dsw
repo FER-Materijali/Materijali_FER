@@ -1,0 +1,565 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "AritmetikaPokazivaca"=.\AritmetikaPokazivaca\AritmetikaPokazivaca.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/AritmetikaPokazivaca", FEFAAAAA
+    .\aritmetikapokazivaca
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "BinarnoPretrazivanje"=.\BinarnoPretrazivanje\BinarnoPretrazivanje.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/BinarnoPretrazivanje", IFFAAAAA
+    .\binarnopretrazivanje
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "BinomniKoeficijenti"=.\BinomniKoeficijenti\BinomniKoeficijenti.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/BinomniKoeficijenti", BBFAAAAA
+    .\binomnikoeficijenti
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "DvodimenzionalnoPolje"=.\DvodimenzionalnoPolje\DvodimenzionalnoPolje.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/DvodimenzionalnoPolje", LBFAAAAA
+    .\dvodimenzionalnopolje
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ElementarnaRekurzija"=.\ElementarnaRekurzija\ElementarnaRekurzija.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/ElementarnaRekurzija", ICFAAAAA
+    .\elementarnarekurzija
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Euklid"=.\Euklid\Euklid.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/Euklid", CEFAAAAA
+    .\euklid
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Faktorijeli"=.\Faktorijeli\Faktorijeli.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/Faktorijeli", PAFAAAAA
+    .\faktorijeli
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Fibonacci"=.\Fibonacci\Fibonacci.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/Fibonacci", ZBFAAAAA
+    .\fibonacci
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "GomiluPodesi"=.\GomiluPodesi\GomiluPodesi.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/GomiluPodesi", VBFAAAAA
+    .\gomilupodesi
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "GomiluStvori"=.\GomiluStvori\GomiluStvori.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/GomiluStvori", WCFAAAAA
+    .\gomilustvori
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Hash"=.\Hash\Hash.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/Hash", YAFAAAAA
+    .\hash
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "IndirektnaZamjenaVrijednosti"=.\IndirektnaZamjenaVrijednosti\IndirektnaZamjenaVrijednosti.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/IndirektnaZamjenaVrijednosti", PEFAAAAA
+    .\indirektnazamjenavrijednosti
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "KomunikacijaSFunkcijama"=.\KomunikacijaSFunkcijama\KomunikacijaSFunkcijama.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/KomunikacijaSFunkcijama", VAFAAAAA
+    .\komunikacijasfunkcijama
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Lista"=.\Lista\Lista.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/Lista", SCFAAAAA
+    .\lista
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ListaNaDisku1"=.\ListaNaDisku1\ListaNaDisku1.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/ListaNaDisku1", IAFAAAAA
+    .\listanadisku1
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ListaNaDisku2"=.\ListaNaDisku2\ListaNaDisku2.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/ListaNaDisku2", SBFAAAAA
+    .\listanadisku2
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "MaxClanStd"=.\MaxClanStd\MaxClanStd.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/MaxClanStd", HBFAAAAA
+    .\maxclanstd
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ModPolja"=.\ModPolja\ModPolja.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/ModPolja", EBFAAAAA
+    .\modpolja
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "PoljeJePokazivac"=.\PoljeJePokazivac\PoljeJePokazivac.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/PoljeJePokazivac", FCFAAAAA
+    .\poljejepokazivac
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "PrimjerZaMalloc"=.\PrimjerZaMalloc\PrimjerZaMalloc.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/PrimjerZaMalloc", PCFAAAAA
+    .\primjerzamalloc
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "PrimjerZaStruct"=.\PrimjerZaStruct\PrimjerZaStruct.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/PrimjerZaStruct", VDFAAAAA
+    .\primjerzastruct
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "PrimjeriRekurzije"=.\PrimjeriRekurzije\PrimjeriRekurzije.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/PrimjeriRekurzije", CCFAAAAA
+    .\primjerirekurzije
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ProsjekUStablu"=.\ProsjekUStablu\ProsjekUStablu.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/ProsjekUStablu", LEFAAAAA
+    .\prosjekustablu
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "RazneSlozenosti"=.\RazneSlozenosti\RazneSlozenosti.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/RazneSlozenosti", PBFAAAAA
+    .\razneslozenosti
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "RedListom"=.\RedListom\RedListom.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/RedListom", KDFAAAAA
+    .\redlistom
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "RedListom2"=.\RedListom2\RedListom2.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/RedListom2", IEFAAAAA
+    .\redlistom2
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "RedPoljem"=.\RedPoljem\RedPoljem.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/RedPoljem", LCFAAAAA
+    .\redpoljem
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Rekurzija"=.\Rekurzija\Rekurzija.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/Rekurzija", YDFAAAAA
+    .\rekurzija
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SortiranoStablo"=.\SortiranoStablo\SortiranoStablo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/SortiranoStablo", GDFAAAAA
+    .\sortiranostablo
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Sortovi"=.\Sortovi\Sortovi.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/Sortovi", DDFAAAAA
+    .\sortovi
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "StogListom"=.\StogListom\StogListom.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/StogListom", SDFAAAAA
+    .\stoglistom
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "StogPoljem"=.\StogPoljem\StogPoljem.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/StogPoljem", ADFAAAAA
+    .\stogpoljem
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "UklanjanjeRekurzije"=.\UklanjanjeRekurzije\UklanjanjeRekurzije.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/UklanjanjeRekurzije", MAFAAAAA
+    .\uklanjanjerekurzije
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "VisestrukaLista"=.\VisestrukaLista\VisestrukaLista.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor/VisestrukaLista", SAFAAAAA
+    .\visestrukalista
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Nastava/Algor", BRWAAAAA
+    .
+    end source code control
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

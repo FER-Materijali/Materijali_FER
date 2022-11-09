@@ -1,0 +1,7 @@
+6
+123 abc
+100 def
+500 ghi
+60 awddawd
+1000 awdawdaw
+300 awawdd

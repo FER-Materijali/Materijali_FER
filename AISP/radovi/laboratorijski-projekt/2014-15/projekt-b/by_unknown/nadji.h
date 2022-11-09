@@ -1,0 +1,1 @@
+long nadji(char *uzorak, long pocetak_bloka, void *izvor);

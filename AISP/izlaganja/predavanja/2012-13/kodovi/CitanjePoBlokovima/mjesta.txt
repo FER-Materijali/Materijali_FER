@@ -1,0 +1,6935 @@
+Ada,31214,Laslovo 
+Adamovec,10363,Belovar 
+Adzamovci,35422,Zapolje 
+Alaginci,34000,Pozega 
+Alan,53271,Krivi Put 
+Aleksandrovac,34330,Velika 
+Aleksinica,53212,Klanac 
+Alilovci,34334,Kaptol 
+Aljmas,31205,Aljmas 
+Amatovci,34320,Orljavac 
+Andigola,43240,Cazma 
+Andrasevec,49243,Oroslavje 
+Andrijasevci,32271,Rokovci Andrijasevci 
+Andrijevac,31224,Koska 
+Andrilovec,10370,Dugo Selo 
+Antenal,52466,Novigrad (Cittanova) 
+Antin,32214,Tordinci 
+Antolovec,48317,Legrad 
+Antonci,52428,Oprtalj (Portole) 
+Antonci,52440,Porec 
+Antovo,51244,Grizane 
+Antunovac,31216,Antunovac 
+Antunovac,34543,Poljana 
+Anzici,52463,Visnjan 
+Apatija,42230,Ludbreg 
+Apatovec,48260,Krizevci 
+Apsevci,32246,Lipovac 
+Arapovac,47240,Slunj 
+Arbanija,21224,Slatine 
+Arzano,21246,Arzano 
+Asikovci,34310,Pleternica 
+Augustanovec,10414,Pokupsko 
+Babici,52464,Kastelir 
+Babici,52470,Umag (Umago) 
+Babina Greda,32276,Babina Greda 
+Babina Rijeka,44432,Mecencani 
+Babinac,43232,Berek 
+Babinac,43273,Bulinac 
+Babindub,23000,Zadar 
+Babine Kuce,20226,Govedari 
+Babinec,42208,Cestica 
+Babino Polje,20225,Babino Polje 
+Babotok,43203,Kapela 
+Bacevac,33411,Gradina 
+Bacici,51242,Drivenik 
+Backovica,43271,Velika Pisanica 
+Bacva,52463,Visnjan 
+Bacin,44450,Hrvatska Dubica 
+Bacin Dol,35404,Cernik 
+Bacina,20340,Ploce 
+Badanj,22320,Drnis 
+Baderna,52445,Baderna 
+Badlican,40306,Macinec 
+Badljevina,34552,Badljevina 
+Badovinci,47284,Kast 
+Badinec,10342,Dubrava 
+Badzula,20353,Mliniste 
+Bair,44330,Novska 
+Bajagic,21241,Obrovac Sinjski 
+Bajcici,51511,Malinska 
+Bajici,47271,Netretic 
+Bajkini,52447,Vizinada 
+Bakar-dio,51222,Bakar 
+Bakarac,51261,Bakarac 
+Bakic,33520,Slatina 
+Bakovcice,48000,Koprivnica 
+Baldasi,52447,Vizinada 
+Bale,52211,Bale (Valle) 
+Balici,52341,Zminj 
+Balici II,52207,Barban 
+Balinac,44401,Hajtic 
+Balinci,33517,Mikleus 
+Baljci,22322,Ruzic 
+Bandino Selo,47243,Veljun 
+Banfi,40312,Strigova 
+Banicevec,10347,Rakovec 
+Banicevac,35404,Cernik 
+Banici,20232,Slano 
+Banki,52445,Baderna 
+Bankovci,34000,Pozega 
+Bankovci,33513,Zdenci 
+Bankovici,52342,Svetvincenat 
+Banova Jaruga,44321,Banova Jaruga 
+Banovci,35254,Bebrina 
+Banovci,32247,Banovci 
+Banovina,51323,Lic 
+Banovo,10340,Vrbovec 
+Banska Gorica,49215,Tuhelj 
+Banska Selnica,47212,Skakavac 
+Banski Kovacevac,47206,Lasinja 
+Banski Moravci,47212,Skakavac 
+Banscica,49245,Gornja Stubica 
+Banj,23263,Zdrelac 
+Banja,20344,Komin (Dalmacija) 
+Banja,21276,Vrgorac 
+Banje Selo,10382,Donja Zelina 
+Banjevci,23422,Stankovci 
+Banjol,51280,Rab 
+Banjole,52100,Pula 
+Banjsko Selo,47250,Duga Resa 
+Bapce,10410,Velika Gorica 
+Bapska,32235,Bapska 
+Baranjsko Petrovo Selo,31322,Baranjsko Petrovo Selo 
+Barat,52352,Kanfanar 
+Barat,52463,Visnjan 
+Barban,52207,Barban 
+Barbarici Kravarski,10413,Kravarsko 
+Barbat na Rabu,51280,Rab 
+Barbici,52220,Labin 
+Barci,51244,Grizane 
+Baredine,52460,Buje (Buie) 
+Baredine,52420,Buzet 
+Baretici,51244,Grizane 
+Bargatic,22303,Oklaj 
+Barica,43541,Sirac 
+Baric Draga,53289,Lukovo Sugarje 
+Barici,52463,Visnjan 
+Barilovic,47252,Barilovic 
+Barkovici,47201,Draganici 
+Barlabasevec,48268,Gornja Rijeka 
+Barlete,53000,Gospic 
+Barotul,23262,Pasman 
+Barovka,10455,Kostanjevac 
+Bartici,52220,Labin 
+Bartolici,52427,Livade 
+Bartolovci,35252,Sibinj 
+Bartolovec,42202,Trnovec Bartolovecki 
+Bartolovici,47263,Gornje Dubrave 
+Barusici,51511,Malinska 
+Barusici,52420,Buzet 
+Basara,47245,Rakovica 
+Bast,21320,Baska Voda 
+Bastajski Brdani,43531,Veliki Bastaji 
+Basana,23250,Pag 
+Basanija,52475,Savudrija (Salvore) 
+Basarinka,52449,Cervar Porat 
+Basici,52341,Zminj 
+Baska,51523,Baska 
+Baska Voda,21320,Baska Voda 
+Baske Ostarije,53206,Brusane 
+Baskoti,52463,Visnjan 
+Bastijani,51218,Drazice 
+Basunje Male,51243,Tribalj 
+Basunje Vele,51244,Grizane 
+Bater,51251,Ledenice 
+Batina,31306,Batina 
+Batina,44320,Kutina 
+Batinova Kosa,44415,Topusko 
+Batinske,48356,Ferdinandovac 
+Batinjani,43500,Daruvar 
+Batinjani,34550,Pakrac 
+Batinjska Rijeka,43500,Daruvar 
+Batlug,52341,Zminj 
+Batnoga,47222,Cetingrad 
+Batomalj,51523,Baska 
+Batrina,35410,Nova Kapela 
+Baturi,44400,Glina 
+Bazgalji,52000,Pazin 
+Bazli,51307,Prezid 
+Bebrina,35254,Bebrina 
+Bec,47251,Bosiljevo 
+Becic,35257,Luzani 
+Bedekovcina,49221,Bedekovcina 
+Bedenec,42240,Ivanec 
+Bedenica,10381,Bedenica 
+Bedenicka,43271,Velika Pisanica 
+Bedenik,43273,Bulinac 
+Beder,10432,Bregana 
+Bednja,42253,Bednja 
+Bednjica,42255,Donja Visnjica 
+Begi,52450,Vrsar 
+Begluci,23445,Srb 
+Begovac Plascanski,47305,Licka Jesenica 
+Begovaca,43233,Trnoviticki Popovac 
+Begovici,44204,Jabukovac 
+Begovo Brdo,47222,Cetingrad 
+Begovo Brdo Zumberacko,10455,Kostanjevac 
+Begovo Razdolje,51315,Mrkopalj 
+Beketinci,31403,Vuka 
+Beketinec,48267,Orehovec 
+Bektez,34343,Bektez 
+Bela,42242,Radovan 
+Bela Gorica,10293,Dubravica 
+Bela Vodica,51317,Crni Lug 
+Belaj,52434,Boljun 
+Belaj,47250,Duga Resa 
+Belajska Vinica,47250,Duga Resa 
+Belajske Poljice,47250,Duga Resa 
+Belajski Malinci,47250,Duga Resa 
+Belanovo Selo,48312,Rasinja 
+Belavici,52207,Barban 
+Belavici,47250,Duga Resa 
+Belcici,10453,Gorica Svetojanska 
+Belec,49254,Belec 
+Belej,51555,Belej 
+Beletinec,42214,Sveti Ilija 
+Belgrad,51244,Grizane 
+Beli,51559,Beli 
+Beli Manastir,31300,Beli Manastir 
+Belica,40319,Belica 
+Belinsko Selo,47280,Ozalj 
+Belisce,31551,Belisce 
+Belo,51301,Brod na Kupi 
+Belo Selo,51321,Vrata 
+Belobrajici,51243,Tribalj 
+Beloslavec,10381,Bedenica 
+Belosici,47283,Vivodina 
+Belovar,10363,Belovar 
+Belovar Zlatarski,49228,Brestovec Orehovicki 
+Belski Ravan,51301,Brod na Kupi 
+Beljevina,31511,Durdenovac 
+Bencani,52428,Oprtalj (Portole) 
+Bencetici,47201,Draganici 
+Bencani,52463,Visnjan 
+Bencici,52425,Roc 
+Bencici,52341,Zminj 
+Benicanci,31542,Magadenovac 
+Benici,51260,Crikvenica 
+Benici Drivenicki,51242,Drivenik 
+Benkovac,23420,Benkovac 
+Benkovac,35430,Okucani 
+Benkovac Fuzinski,51322,Fuzine 
+Benkovacko Selo,23420,Benkovac 
+Benkovec,42253,Bednja 
+Benkovec Petrovski,49234,Petrovsko 
+Benkovici,51242,Drivenik 
+Benkovo,49218,Pregrada 
+Berak,32243,Orolik 
+Beram,52000,Pazin 
+Beravci,35221,Velika Kopanica 
+Berek,43232,Berek 
+Beretinec,42201,Beretinec 
+Berislavec,10380,Sveti Ivan Zelina 
+Bertelovci,34308,Jaksic 
+Bertosi,52000,Pazin 
+Bestovje,10437,Bestovje 
+Bestrma,44211,Blinjski Kut 
+Besinci,34334,Kaptol 
+Beslinec,10312,Klostar Ivanic 
+Beter,10450,Jastrebarsko 
+Betina,22244,Betina 
+Bezavina/dio/,49215,Tuhelj 
+Bezavina/dio/,49214,Veliko Trgovisce 
+Bibali,52460,Buje (Buie) 
+Bibici,52342,Svetvincenat 
+Bibinje,23205,Bibinje 
+Bicko Selo,35212,Garcin 
+Bicici,52207,Barban 
+Bicine,22222,Skradin 
+Bijela,43500,Daruvar 
+Bijela Loza,31433,Podgorac 
+Bijela Stijena,35430,Okucani 
+Bijele Vode,44406,Vlahovic 
+Bijele Zemlje,52429,Groznjan (Grisignana) 
+Bijeli Klanac,47242,Krnjak 
+Bijeli Vir,20353,Mliniste 
+Bijelnik,44231,Blinja 
+Bijelo Brdo,31204,Bijelo Brdo 
+Bijeljevina Orahovicka,33515,Orahovica 
+Bikovec,42243,Marusevec 
+Bila Vlaka,23422,Stankovci 
+Bilaj,53000,Gospic 
+Bile,51252,Klenovica 
+Bili Brig,35410,Nova Kapela 
+Bilice,34310,Pleternica 
+Bilice,22000,Sibenik 
+Bilisane,23450,Obrovac 
+Bilo,47222,Cetingrad 
+Bilje,31327,Bilje 
+Biljevec,42243,Marusevec 
+Biljevina,51317,Crni Lug 
+Biljevine,53284,Sveti Juraj 
+Biocic,22321,Siveric 
+Biograd na moru,23210,Biograd na moru 
+Biokovsko Selo,21270,Zagvozd 
+Biorine,21244,Cista Velika 
+Biovicino Selo,22305,Kistanje 
+Birovaca,53250,Donji Lapac 
+Bisag,42226,Bisag 
+Bisko,21232,Dicmo 
+Biskupija,22300,Knin 
+Bistrac,44214,Bobovac 
+Bistrica,33520,Slatina 
+Bistrinci,31551,Belisce 
+Biscanovo,44400,Glina 
+Bisevo,21485,Komiza 
+Biskupci,34330,Velika 
+Biskupec Zelinski,10380,Sveti Ivan Zelina 
+Bitorajci,47251,Bosiljevo 
+Bizovac,31222,Bizovac 
+Bjelajci,34553,Bucje 
+Bjelanovac,34551,Lipik 
+Bjelina,23421,Bjelina 
+Bjelisevac,34340,Kutjevo 
+Bjelkovac,33518,Nova Bukovica 
+Bjelopolje,53230,Korenica 
+Bjelovar,43000,Bjelovar 
+Blaca,21210,Solin 
+Blace,20357,Blace 
+Blacko,34310,Pleternica 
+Blagaj,47243,Veljun 
+Blagdanici,52446,Nova Vas 
+Blagorodovac,43507,Uljanik 
+Blagusa,10362,Kasina 
+Blanje,31540,Donji Miholjac 
+Blaskovec,10382,Donja Zelina 
+Blaskovici,51244,Grizane 
+Blaskovici,52232,Krsan 
+Blata,47305,Licka Jesenica 
+Blatna Vas,52425,Roc 
+Blatnica,43246,Stefanje 
+Blatnica Pokupska,47204,Sisljavic 
+Blato,20225,Babino Polje 
+Blato,20271,Blato 
+Blato na Cetini,21254,Blato na Cetini 
+Blatusa,44410,Gvozd 
+Blazevci,51328,Lukovdol 
+Blazevdol,10380,Sveti Ivan Zelina 
+Blazevic Dol,35414,Vrbova 
+Blazici,51243,Tribalj 
+Blinja,44231,Blinja 
+Blinjska Greda,44211,Blinjski Kut 
+Blinjski Kut,44211,Blinjski Kut 
+Blizna Donja,21228,Blizna Donja 
+Blizna Gornja,21228,Blizna Donja 
+Bobare,35430,Okucani 
+Bobodol,22303,Oklaj 
+Bobota,32225,Bobota 
+Bobovac,44214,Bobovac 
+Bobovec Rozganski,10293,Dubravica 
+Bobovec Tomasevecki,49290,Klanjec 
+Bobovica,10430,Samobor 
+Bobovisca,21404,Lozisca 
+Bobovje,49000,Krapina 
+Bocanjevci,31550,Valpovo 
+Bockovac,31540,Donji Miholjac 
+Bocadir,49282,Konjscina 
+Bocaki,49282,Konjscina 
+Bockinci,31552,Podgajci Podravski 
+Bockovec,48267,Orehovec 
+Bodegraj,35430,Okucani 
+Bodovaljci,35422,Zapolje 
+Bogacevo,48267,Orehovec 
+Bogacevo Rijecko,48268,Gornja Rijeka 
+Bogatic,22324,Drinovci 
+Bogatnik,23451,Zegar 
+Bogdanovci,32000,Vukovar 
+Bogdanovec,40306,Macinec 
+Bogdanovici,21227,Primorski Dolac 
+Bogdasici,34320,Orljavac 
+Bogomolje,21468,Bogomolje 
+Bogovci,47271,Netretic 
+Bogovici,51511,Malinska 
+Bogovolja,47222,Cetingrad 
+Bojacno,49296,Zagorska Sela 
+Bojana,43245,Gornji Draganec 
+Bojna,44402,Mali Obljaj 
+Bojnikovec,48265,Raven 
+Bok Palanjecki,44000,Sisak 
+Bokane,33522,Vocin 
+Bokordici,52342,Svetvincenat 
+Boksic,32238,Cakovci 
+Boksic,31511,Durdenovac 
+Boksic Lug,31511,Durdenovac 
+Bol,21420,Bol 
+Bolc,10344,Farkasevac 
+Bolfan,42230,Ludbreg 
+Bolman,31323,Bolman 
+Bolomace,34322,Brestovac 
+Boljenovici,20230,Ston 
+Boljevici,52232,Krsan 
+Boljun,52434,Boljun 
+Boljunsko Polje,52434,Boljun 
+Bonaci,52445,Baderna 
+Bonasini,52342,Svetvincenat 
+Boraja,22206,Boraja 
+Borak,21310,Omis 
+Borenec,42226,Bisag 
+Boricevci,34322,Brestovac 
+Boricevec Toplicki,42223,Varazdinske Toplice 
+Boricevac,53250,Donji Lapac 
+Borik,33517,Mikleus 
+Borinici,52207,Barban 
+Boris,43505,Koncanica 
+Borje,48269,Kalnik 
+Borkovec,49250,Zlatar 
+Borojevci,31416,Levanjska Varos 
+Borojevici,44432,Mecencani 
+Borova,33410,Suhopolje 
+Borova Kosa,43508,Maslenjaca 
+Borovac,44323,Rajic 
+Borovci,20278,Nova Sela 
+Borovik,31418,Drenje 
+Borovik,21483,Podspilje 
+Borovita,44401,Hajtic 
+Borovljani,48324,Koprivnicki Bregi 
+Borovo,32227,Borovo 
+Borut,52402,Cerovlje 
+Bosanci,47251,Bosiljevo 
+Bosanka,20207,Mlini 
+Bosiljevo,47251,Bosiljevo 
+Bosiljevo,43240,Cazma 
+Bosna,10381,Bedenica 
+Bosevci,47280,Ozalj 
+Boskari,52342,Svetvincenat 
+Bosnjaci,32275,Bosnjaci 
+Bost,47250,Duga Resa 
+Botinac,43203,Kapela 
+Botinec,10020,Zagreb-Novi Zagreb 
+Botinovec,48311,Kunovec 
+Botovo,48322,Drnje 
+Bovic,44414,Bovic 
+Bozava,23286,Bozava 
+Bozjakovina,10370,Dugo Selo 
+Bracak,49210,Zabok 
+Bracevci,31423,Bracevci 
+Bracevic,21203,Donji Muc 
+Brajakovo Brdo,47271,Netretic 
+Brajdic Selo,47245,Rakovica 
+Brajkovici,52352,Kanfanar 
+Brajkovici,52000,Pazin 
+Bralici,52450,Vrsar 
+Branesci,34553,Bucje 
+Branimirovac,31224,Koska 
+Branjin Vrh,31301,Branjin Vrh 
+Branjina,31303,Popovac 
+Braslovje,10430,Samobor 
+Brasina,20207,Mlini 
+Brasljevica,47284,Kast 
+Bratelji,10456,Kalje 
+Bratina,10451,Pisarovina 
+Bratiskovci,22222,Skradin 
+Bratkovec,49296,Zagorska Sela 
+Bratovanci,47282,Kamanje 
+Bratovici,52445,Baderna 
+Bratovski Vrh,49294,Kraljevec na Sutli 
+Bratulici,52207,Barban 
+Bratuljevci,34320,Orljavac 
+Bratus,21320,Baska Voda 
+Brbinj,23285,Brbinj 
+Brckovic Draga,47261,Zvecaj 
+Brckovljani,10370,Dugo Selo 
+Brcevec,10340,Vrbovec 
+Brcici,52444,Tinjan 
+Brcici,52446,Nova Vas 
+Brcino,35252,Sibinj 
+Brdce,51214,Sapjane 
+Brdo,52462,Momjan (Momiano) 
+Brdo Cirkvensko,48213,Cirkvena 
+Brdo Jesenjsko,49233,Gornje Jesenje 
+Brdo Orehovecko,48267,Orehovec 
+Brdo Utinjsko,47220,Vojnic 
+Brdovec,10291,Prigorje Brdovecko 
+Brdani,34310,Pleternica 
+Brdani,35422,Zapolje 
+Brdani Cesta,44211,Blinjski Kut 
+Brdani Dapcevacki,43290,Grubisno Polje 
+Brdani Kosa,44211,Blinjski Kut 
+Brdani Sokolovacki,48306,Sokolovac 
+Brdani Samaricki,44441,Brdani Samaricki 
+Brebernica,10251,Hrvatski Leskovac 
+Brebornica,47242,Krnjak 
+Brebrovac,10450,Jastrebarsko 
+Brecevici,52444,Tinjan 
+Brecici,20278,Nova Sela 
+Breg,52220,Labin 
+Breg Mokricki,10380,Sveti Ivan Zelina 
+Bregana,10432,Bregana 
+Bregana Pisarovinska,10451,Pisarovina 
+Breganica,10432,Bregana 
+Bregi,51211,Matulji 
+Bregi Kostelski,49218,Pregrada 
+Bregi Radobojski,49224,Lepajci 
+Bregi Zabocki,49210,Zabok 
+Bregovljana,10294,Donja Pusca 
+Brekinska,34543,Poljana 
+Brela,21322,Brela 
+Bresnica,34310,Pleternica 
+Brest,52421,Slum 
+Brest pod Uckom,52426,Lupoglav 
+Brest Pokupski,44250,Petrinja 
+Brestaca,44330,Novska 
+Brestik,44405,Mali Gradac 
+Brestova Draga,51315,Mrkopalj 
+Brestovac,34322,Brestovac 
+Brestovac Daruvarski,43505,Koncanica 
+Brestovac Ogulinski,47300,Ogulin 
+Brestovacka Brda,43505,Koncanica 
+Brestovec Orehovicki,49228,Brestovec Orehovicki 
+Bresca,51213,Jurdani 
+Brestane,53234,Udbina 
+Brestanovci,33507,Crnac 
+Breza,43252,Prgomelje 
+Breza,51213,Jurdani 
+Brezakovec,49296,Zagorska Sela 
+Brezani,10347,Rakovec 
+Brezari,10450,Jastrebarsko 
+Brezaric,10454,Krasic 
+Breze,51251,Ledenice 
+Brezik,33406,Lukac 
+Brezik,33518,Nova Bukovica 
+Brezik Nasicki,31500,Nasice 
+Brezine,10344,Farkasevac 
+Brezine,34543,Poljana 
+Brezje,10342,Dubrava 
+Brezje,49245,Gornja Stubica 
+Brezje,40311,Lopatinec 
+Brezje Dobransko,51311,Skrad 
+Brezje Dravsko,42208,Cestica 
+Brezje Miholecko,48268,Gornja Rijeka 
+Brezje Samoborsko,10431,Sveta Nedjelja 
+Brezje Vivodinsko,47283,Vivodina 
+Breznica,42225,Breznicki Hum 
+Breznica Dakovacka,31416,Levanjska Varos 
+Breznica Nasicka,31225,Breznica Nasicka 
+Breznicki Hum,42225,Breznicki Hum 
+Breznik,47281,Mali Erjavec 
+Breznik,53205,Medak 
+Breznik Plesivicki,10450,Jastrebarsko 
+Breznik Zakanjski,47276,Zakanje 
+Brezno Dreznicko,47313,Dreznica 
+Brezno Gora,49231,Hum na Sutli 
+Brezova,49223,Sveti Kriz Zacretje 
+Brezova Glava,47241,Tusilovic 
+Brezova Gora,42253,Bednja 
+Brezovac,43000,Bjelovar 
+Brezovac,47245,Rakovica 
+Brezovac Dobroselski,53252,Doljani 
+Brezovac Subocki,44330,Novska 
+Brezovac Zumberacki,10453,Gorica Svetojanska 
+Brezovec,40313,Sveti Martin na Muri 
+Brezovec Zelinski,10382,Donja Zelina 
+Brezovica,33411,Gradina 
+Brezovica,10251,Hrvatski Leskovac 
+Brezovica,31555,Marijanci 
+Brezovica Petrovska,49225,Durmanec 
+Brezovljani,48214,Sveti Ivan Zabno 
+Brezovljani Vojlovicki,33514,Cacinci 
+Brezovo Polje,44404,Gornji Klasnic 
+Brezane Lekenicke,44272,Lekenik 
+Brezani,48267,Orehovec 
+Brezani,47212,Skakavac 
+Brgat Donji,20207,Mlini 
+Brgat Donji,20207,Mlini 
+Brgod,52224,Trget 
+Brgud,23420,Benkovac 
+Brgudac,52422,Lanisce 
+Brgujac,21480,Vis 
+Brgulje,23292,Molat 
+Bribir,51253,Bribir 
+Bribir,22223,Bribir(kod Skradina) 
+Bric,52462,Momjan (Momiano) 
+Bricanci,52342,Svetvincenat 
+Brig,52447,Vizinada 
+Brihovo,47276,Zakanje 
+Brijest,31000,Osijek 
+Brijesta,20248,Putnikovic 
+Brijesce,31000,Osijek 
+Brinjani,44320,Kutina 
+Brinje,53260,Brinje 
+Brinjeva Draga,51305,Trsce 
+Brist,21335,Podaca 
+Bristivica,21228,Blizna Donja 
+Brisevo,23000,Zadar 
+Bristane,22324,Drinovci 
+Brkac,52424,Motovun 
+Brkisevina,10414,Pokupsko 
+Brlekovo,49282,Konjscina 
+Brlenic,10454,Krasic 
+Brlog,53226,Kompolje 
+Brlog Ozaljski,47282,Kamanje 
+Brloska Dubrava,53226,Kompolje 
+Brnaze,21230,Sinj 
+Brncici,51215,Kastav 
+Brnelici,51218,Drazice 
+Brnobici,52425,Roc 
+Brnobici,52464,Kastelir 
+Brnjavac,44410,Gvozd 
+Brnjeuska,44400,Glina 
+Brnjica,22221,Lozovac 
+Broce,20230,Ston 
+Brocice,44330,Novska 
+Brocanac,47245,Rakovica 
+Brod Moravice,51312,Brod Moravice 
+Brod na Kupi,51301,Brod na Kupi 
+Brodarovec,42243,Marusevec 
+Brodic,48356,Ferdinandovac 
+Brodski Stupnik,35253,Brodski Stupnik 
+Brodski Varos,35000,Slavonski Brod 
+Brodski Zdenci,35201,Podcrkavlje 
+Brodanci,31223,Brodanci 
+Brodani,47212,Skakavac 
+Broskvari,52463,Visnjan 
+Brotnice,20210,Cavtat 
+Brotnja,23445,Srb 
+Brovinje,52222,Koromacno 
+Brsec,51418,Brsec 
+Brsecine,20234,Orasac 
+Brsadin,32222,Brsadin 
+Brscici,52342,Svetvincenat 
+Brsica,52224,Trget 
+Brstanovo,21202,Lecevica 
+Brtonigla,52474,Brtonigla (Verteneglio) 
+Brubno,44404,Gornji Klasnic 
+Brusici,51511,Malinska 
+Brusje,21454,Brusje 
+Brusnik,34550,Pakrac 
+Brusane,53206,Brusane 
+Bruska,23421,Bjelina 
+Bruvno,23441,Bruvno 
+Brzac,51511,Malinska 
+Bubani,52352,Kanfanar 
+Bubnjarci,47282,Kamanje 
+Bubnjarski Brod,47276,Zakanje 
+Bucalovici,52463,Visnjan 
+Bucje,34553,Bucje 
+Bucje,34315,Ratkovica 
+Bucje Gorjansko,31423,Bracevci 
+Budacka Rijeka,47242,Krnjak 
+Budak,23422,Stankovci 
+Budak,53201,Licki Osik 
+Budakovac,33411,Gradina 
+Budancevica,48362,Klostar Podravski 
+Budanica,33412,Cabuna 
+Budasevo,44202,Topolovac 
+Budenec,10360,Sesvete 
+Budim Vivodinski,47283,Vivodina 
+Budimci,31432,Budimci 
+Budimiri,21243,Ugljane 
+Budinscak,42245,Donja Voca 
+Budinscina,49284,Budinscina 
+Budinjak,10456,Kalje 
+Budislavec,42205,Vidovec 
+Budrovac,48350,Durdevac 
+Budrovac Lukacki,33406,Lukac 
+Budrovci,47201,Draganici 
+Budrovci,31400,Dakovo 
+Buhaca,47222,Cetingrad 
+Buici,52440,Porec 
+Buici,20207,Mlini 
+Bujarici,52463,Visnjan 
+Buje,52460,Buje (Buie) 
+Bujevica,34543,Poljana 
+Bujinja,44435,Divusa 
+Bujinjski Rijecani,44435,Divusa 
+Buk,34310,Pleternica 
+Buk Vlaka/Des.ob.Male Neretve/,20355,Opuzen 
+Bukevje,10382,Donja Zelina 
+Bukevje,10411,Orle 
+Bukevje,10380,Sveti Ivan Zelina 
+Bukori,52447,Vizinada 
+Bukov Vrh,51311,Skrad 
+Bukova,33410,Suhopolje 
+Bukovac Perjasicki,47253,Perjasica 
+Bukovac Perusicki,53202,Perusic 
+Bukovac Podvrski,51311,Skrad 
+Bukovac Svetojanski,10453,Gorica Svetojanska 
+Bukovacki Antunovac,33518,Nova Bukovica 
+Bukovcak,10253,Donji Dragonozec 
+Bukovcani,34551,Lipik 
+Bukovec,40314,Selnica 
+Bukovec Zelinski,10382,Donja Zelina 
+Bukovec Zelinski,10380,Sveti Ivan Zelina 
+Bukovica,35403,Resetari 
+Bukovica,44415,Topusko 
+Bukovica Prekriska,10454,Krasic 
+Bukovica Utinjska,47211,Utinja 
+Bukovic,23420,Benkovac 
+Bukovje Bistransko,10298,Donja Bistra 
+Bukovje Krizevacko,48260,Krizevci 
+Bukovje Podvrsko,10430,Samobor 
+Bukovlje,35209,Bukovlje 
+Bukovlje Netreticko,47250,Duga Resa 
+Bukvik,33514,Cacinci 
+Bulic,23420,Benkovac 
+Bulici,47285,Radatovici 
+Bulinac,43273,Bulinac 
+Bunic,53235,Bunic 
+Bunjak,10382,Donja Zelina 
+Bunjani,10314,Kriz 
+Bunjevci,51325,Moravice 
+Buric Selo,47242,Krnjak 
+Burici,52352,Kanfanar 
+Buroli,52474,Brtonigla (Verteneglio) 
+Busnovi,34322,Brestovac 
+Busetina,33404,Spisic Bukovica 
+Busevec,10417,Busevec 
+Busevic,53250,Donji Lapac 
+Busin,49218,Pregrada 
+Butkovec,42225,Breznicki Hum 
+Butkovici,52342,Svetvincenat 
+Butoniga,52000,Pazin 
+Buzadovac,10345,Gradec 
+Buzdohanj,51219,Cavle 
+Buzet,52420,Buzet 
+Buzeta,44401,Hajtic 
+Buzin,51301,Brod na Kupi 
+Buzin,10010,Zagreb-Slobostina 
+Buzim,53211,Smiljan 
+Buzin,52460,Buje (Buie) 
+Buzinija,52466,Novigrad (Cittanova) 
+Bzenica,34310,Pleternica 
+Cabuna,33412,Cabuna 
+Cage,35430,Okucani 
+Caginec,10313,Graberje Ivanicko 
+Cancini,52446,Nova Vas 
+Careva Draga,10454,Krasic 
+Carevdar,48263,Carevdar 
+Carevici,51325,Moravice 
+Carevo Polje,47303,Josipdol 
+Carevo Selo,47252,Barilovic 
+Caska,53296,Zubovici 
+Cavtat,20210,Cavtat 
+Cebovec,49253,Lobor 
+Celine,10453,Gorica Svetojanska 
+Celine,10340,Vrbovec 
+Celine,40317,Podturen 
+Celine Puscanske,10294,Donja Pusca 
+Celine Samoborske,10430,Samobor 
+Cepelis,44251,Gora 
+Cepidlak,48213,Cirkvena 
+Cera,22323,Unesic 
+Cere,52341,Zminj 
+Cere,52231,Nedescina 
+Ceremosnjak,31500,Nasice 
+Ceric,32221,Nustar 
+Cerik,10340,Vrbovec 
+Cerina,43240,Cazma 
+Cerion,52463,Visnjan 
+Cerjani,52464,Kastelir 
+Cerje,10361,Sesvete-Kraljevec 
+Cerje,10340,Vrbovec 
+Cerje Jesenjsko,49233,Gornje Jesenje 
+Cerje Letovanicko,44272,Lekenik 
+Cerje Nebojse,42243,Marusevec 
+Cerje Pokupsko,10414,Pokupsko 
+Cerje Samoborsko,10430,Samobor 
+Cerje Tuzno,42242,Radovan 
+Cerje Vivodinsko,47283,Vivodina 
+Cerna,32272,Cerna 
+Cernik,35404,Cernik 
+Cernik,51219,Cavle 
+Cernik,10457,Sosice 
+Cerovac,31222,Bizovac 
+Cerovac,23440,Gracac 
+Cerovac,34308,Jaksic 
+Cerovac Barilovicki,47252,Barilovic 
+Cerovac Vukmanicki,47241,Tusilovic 
+Cerovacki Galovici,47250,Duga Resa 
+Cerovica,10456,Kalje 
+Cerovici,51242,Drivenik 
+Cerovlje,52402,Cerovlje 
+Cerovnik,47303,Josipdol 
+Cerovski Vrh,10418,Dubranec 
+Cesarska Ves,49290,Klanjec 
+Cestica,42208,Cestica 
+Cetina,22310,Kijevo 
+Cetingrad,47222,Cetingrad 
+Cetinovec,49250,Zlatar 
+Cetinski Varos,47222,Cetingrad 
+Cicvare,22223,Bribir(kod Skradina) 
+Cicvare,34553,Bucje 
+Ciglena,43000,Bjelovar 
+Ciglenica,43280,Garesnica 
+Ciglenica,44320,Kutina 
+Ciglenica Zagorska,49223,Sveti Kriz Zacretje 
+Ciglenik,34343,Bektez 
+Ciglenik,35257,Luzani 
+Cigrovec,49218,Pregrada 
+Cikote,34553,Bucje 
+Cirka,52342,Svetvincenat 
+Cirkovljan,40323,Prelog 
+Cirkvena,48213,Cirkvena 
+Cista Provo,21256,Cista Provo 
+Civljane,22310,Kijevo 
+Cokuni,52208,Krnica 
+Colnari,51312,Brod Moravice 
+Cremusina,43270,Veliki Grdevac 
+Cres,51557,Cres 
+Crevarska Strana,44410,Gvozd 
+Crikvenica,51260,Crikvenica 
+Crivac,21229,Crivac 
+Crklada,52447,Vizinada 
+Crkovec,42250,Lepoglava 
+Crkvari,33515,Orahovica 
+Crkveni Bok,44214,Bobovac 
+Crkveni Vrhovci,34000,Pozega 
+Crljenci,34320,Orljavac 
+Crljenik,23422,Stankovci 
+Crna Draga,47206,Lasinja 
+Crna Klada,31500,Nasice 
+Crna Mlaka,10450,Jastrebarsko 
+Crnac,33507,Crnac 
+Crnac,44010,Sisak-Caprag 
+Crni,52220,Labin 
+Crni Dabar,53206,Brusane 
+Crni Kal,53273,Vratnik 
+Crni Lazi,51305,Trsce 
+Crni Lug,51317,Crni Lug 
+Crni Potok,35201,Podcrkavlje 
+Crni Potok,44415,Topusko 
+Crno,51251,Ledenice 
+Crno,23000,Zadar 
+Crno Kamanje,47262,Generalski Stol 
+Crno Vrelo,47243,Veljun 
+Crveni Vrh,52475,Savudrija (Salvore) 
+Cubinec,48260,Krizevci 
+Cugovec,10345,Gradec 
+Cukrici,52342,Svetvincenat 
+Cunj,52420,Buzet 
+Curkovec,10382,Donja Zelina 
+Cvetkovec,48312,Rasinja 
+Cvetkovic,10450,Jastrebarsko 
+Cvetkovic Brdo,10418,Dubranec 
+Cvetlin,42255,Donja Visnjica 
+Cvetnic Brdo,10414,Pokupsko 
+Cvijanovic Brdo,47243,Veljun 
+Cvitani,52463,Visnjan 
+Cvitici,52341,Zminj 
+Cvitovic,47240,Slunj 
+Cabar,51306,Cabar 
+Cabdin,10450,Jastrebarsko 
+Cabraji,48264,Klostar Vojakovacki 
+Cabrunici,52342,Svetvincenat 
+Cacinci,33514,Cacinci 
+Cacvina,21240,Trilj 
+Cadavac,43271,Velika Pisanica 
+Cadavica,33523,Cadavica 
+Cadavicki Lug,33523,Cadavica 
+Caglin,34350,Caglin 
+Caire,44320,Kutina 
+Cajkovci,35210,Vrpolje 
+Cajkovica,20236,Mokosica 
+Cajkovici,20236,Mokosica 
+Cakanec,10413,Kravarsko 
+Cakovci,32238,Cakovci 
+Cakovec,40000,Cakovec 
+Calinec,42243,Marusevec 
+Camagajevci,31555,Marijanci 
+Cambarelici,52232,Krsan 
+Camerovac,47240,Slunj 
+Canak,53235,Bunic 
+Candrli,51242,Drivenik 
+Canjevo,42224,Visoko 
+Capljani,44222,Sas 
+Caporice,21240,Trilj 
+Caprginci,35430,Okucani 
+Cara,20273,Cara 
+Cargovec,42205,Vidovec 
+Catrnja,47246,Dreznik Grad 
+Catrnja,47242,Krnjak 
+Catrnja,47245,Rakovica 
+Cavle,51219,Cavle 
+Cavlovica,44443,Donji Zirovac 
+Cavoglave,22322,Ruzic 
+Cazma,43240,Cazma 
+Cecavac,34320,Orljavac 
+Cecavacki Vucjak,34320,Orljavac 
+Cedanj,51301,Brod na Kupi 
+Ceglje,10450,Jastrebarsko 
+Cehici,52448,Sveti Lovrec 
+Cehovec,40323,Prelog 
+Celikovici,35252,Sibinj 
+Celina,21317,Lokva Rogoznica 
+Celopeci,20207,Mlini 
+Cemernica,33000,Virovitica 
+Cemernica Lonjska,10312,Klostar Ivanic 
+Ceminac,31325,Ceminac 
+Cenkovo,31416,Levanjska Varos 
+Cepelovac,48350,Durdevac 
+Cepic,52428,Oprtalj (Portole) 
+Cepikuce,20231,Doli 
+Cepin,31431,Cepin 
+Cepinski Martinci,31431,Cepin 
+Cepljani,52470,Umag (Umago) 
+Cervar,52449,Cervar Porat 
+Cervar Porat,52449,Cervar Porat 
+Cervari,52352,Kanfanar 
+Cestijanec,40313,Sveti Martin na Muri 
+Cesvinica,20230,Ston 
+Cesljakovci,34334,Kaptol 
+Cetekovac,33517,Mikleus 
+Cetvrtkovac,44210,Sunja 
+Cibaca,20207,Mlini 
+Cickovina,42232,Donji Martijanec 
+Cigoc,44213,Kratecko 
+Cilipi,20213,Cilipi 
+Cingi-lingi,48327,Molve 
+Ciritez,52425,Roc 
+Cista Mala,22223,Bribir(kod Skradina) 
+Cista Mlaka,10361,Sesvete-Kraljevec 
+Cista Velika,22223,Bribir(kod Skradina) 
+Cisla,21253,Gata 
+Citluk,22303,Oklaj 
+Citluk,21230,Sinj 
+Cizici,51514,Dobrinj 
+Cojlug,33517,Mikleus 
+Cojluk,53234,Udbina 
+Cokadinci,31431,Cepin 
+Covac,35430,Okucani 
+Covici,53224,Licko Lesce 
+Crecan,40306,Macinec 
+Crecan,10380,Sveti Ivan Zelina 
+Cremusnica,44414,Bovic 
+Cresnjevec,49215,Tuhelj 
+Cresnjevo,42201,Beretinec 
+Cret,49217,Krapinske Toplice 
+Cret Bisaski,42226,Bisag 
+Cret Bizovacki,31222,Bizovac 
+Cret Posavski,10411,Orle 
+Cret Viljevski,31531,Viljevo 
+Crncevec,48267,Orehovec 
+Crnec Biskupecki,42204,Turcin 
+Crnec Dugoselski,10370,Dugo Selo 
+Crnec Rugvicki,10370,Dugo Selo 
+Crnica,52420,Buzet 
+Crnile,42223,Varazdinske Toplice 
+Crnilovec,10450,Jastrebarsko 
+Crnkovci,31553,Crnkovci 
+Crnkovec,10410,Velika Gorica 
+Cucak,51312,Brod Moravice 
+Cucici,10456,Kalje 
+Cuic Brdo,47245,Rakovica 
+Cujica Krcevina,53231,Plitvicka Jezera 
+Cuki,52447,Vizinada 
+Cukovec,40325,Draskovec 
+Cukovec,42230,Ludbreg 
+Cukur,44430,Hrvatska Kostajnica 
+Cunkova Draga,10455,Kostanjevac 
+Cuntic,44204,Jabukovac 
+Curilovec,42222,Ljubescica 
+Cusi,52440,Porec 
+Cvrljevo,22221,Lozovac 
+Cvrljevo,22323,Unesic 
+Celija,32225,Bobota 
+Ceralije,33521,Ceralije 
+Cetise,47285,Radatovici 
+Cikovici,51215,Kastav 
+Core,44440,Dvor 
+Cosinci,34312,Sesvete (kod Pozege) 
+Cosine Laze,34000,Pozega 
+Culibrki,47271,Netretic 
+Cunski,51564,Cunski 
+Curlovac,43000,Bjelovar 
+Cusi,52402,Cerovlje 
+Dabar,53222,Dabar 
+Dabar,21233,Hrvace 
+Dabasnica,23445,Srb 
+Dabrina,44403,Maja 
+Dajla,52466,Novigrad (Cittanova) 
+Dalj,31226,Dalj 
+Damalj,51329,Severin na Kupi 
+Danci,52447,Vizinada 
+Dancanje,20248,Putnikovic 
+Danculovici,47284,Kast 
+Dane,10456,Kalje 
+Dane,52421,Slum 
+Dani,47251,Bosiljevo 
+Danilo Biranj,22000,Sibenik 
+Danilo Gornje,22205,Perkovic 
+Danilo Kraljice,22205,Perkovic 
+Dapci,43240,Cazma 
+Daranovci,34322,Brestovac 
+Darda,31326,Darda 
+Darici,47201,Draganici 
+Darkovac,34350,Caglin 
+Daruvar,43500,Daruvar 
+Daruvarski Vinogradi,43500,Daruvar 
+Daskatica,43246,Stefanje 
+Dautan,43272,Nova Raca 
+Davor,35425,Davor 
+Dazlina,22240,Tisno 
+Deanovec,10313,Graberje Ivanicko 
+Deanovici,44204,Jabukovac 
+Debelo Brdo,53235,Bunic 
+Debelo Brdo I,53000,Gospic 
+Debelo Brdo II,53000,Gospic 
+Debeljak,23206,Sukosan 
+Debeljuhi,52341,Zminj 
+Dedin,51313,Kupjak 
+Dedina,48269,Kalnik 
+Dekanovec,40318,Dekanovec 
+Deklesanec,48268,Gornja Rijeka 
+Deklevi,52463,Visnjan 
+Deklici,52464,Kastelir 
+Dekovici,52446,Nova Vas 
+Delaci,51312,Brod Moravice 
+Delic Poljana,47222,Cetingrad 
+Delici,52450,Vrsar 
+Delkovec,49251,Mace 
+Delnice,51300,Delnice 
+Delovi,48325,Novigrad Podravski 
+Demerje,10251,Hrvatski Leskovac 
+Dereza,34552,Badljevina 
+Dereza,43240,Cazma 
+Derezani,10313,Graberje Ivanicko 
+Deringaj,23440,Gracac 
+Dervisaga,34000,Pozega 
+Desinic,49216,Desinic 
+Desinic Gora,49216,Desinic 
+Desmerice,47307,Gornje Zagorje 
+Desna Martinska Ves,44201,Martinska Ves 
+Desne,20344,Komin (Dalmacija) 
+Desni Degoj,44425,Gornja Bucica 
+Desni Dubrovcak,44201,Martinska Ves 
+Desni Stefanki,47206,Lasinja 
+Desno Sredicko,47206,Lasinja 
+Desno Trebarjevo,44201,Martinska Ves 
+Desno Zeljezno,44201,Martinska Ves 
+Desprim,10251,Hrvatski Leskovac 
+Detkovac,33411,Gradina 
+Dezanovac,43506,Dezanovac 
+Dezevci,34320,Orljavac 
+Dicmo,21232,Dicmo 
+Dijakovac,43504,Ivanovo Selo 
+Dijanes,10340,Vrbovec 
+Dijankovec,48260,Krizevci 
+Dijebala,43211,Predavac 
+Diklici,52463,Visnjan 
+Diminici,52222,Koromacno 
+Dinjevac,48362,Klostar Podravski 
+Dinjiska,23249,Povljana 
+Dios,43505,Koncanica 
+Disnik,43280,Garesnica 
+Divjake,51311,Skrad 
+Divojevici,21202,Lecevica 
+Divoselo,53000,Gospic 
+Divos,31215,Ernestinovo 
+Divosevci,35214,Donji Andrijevci 
+Divsici,52206,Marcana 
+Divulje,21220,Trogir 
+Divusa,44435,Divusa 
+Djedina Rijeka,34350,Caglin 
+Dnopolje,53250,Donji Lapac 
+Dobra Kuca,43500,Daruvar 
+Dobra Voda,34350,Caglin 
+Dobra Voda,23422,Stankovci 
+Dobranje,21244,Cista Velika 
+Dobranje,20353,Mliniste 
+Dobrec,51415,Lovran 
+Dobrenici,47262,Generalski Stol 
+Dobri Zdenci,49245,Gornja Stubica 
+Dobric,33522,Vocin 
+Dobrince,21263,Krivodol 
+Dobrinj,51514,Dobrinj 
+Dobrodol,10360,Sesvete 
+Dobrogosce,34350,Caglin 
+Dobropoljana,23263,Zdrelac 
+Dobropoljci,23421,Bjelina 
+Dobroselo,53252,Doljani 
+Dobrovac,34551,Lipik 
+Dobrovic,33518,Nova Bukovica 
+Dodosi,44204,Jabukovac 
+Dograde,21222,Marina 
+Dojutrovica,47283,Vivodina 
+Dokici,52342,Svetvincenat 
+Dokmanovici,51325,Moravice 
+Dol,10454,Krasic 
+Dol,21410,Postira 
+Dol,21460,Stari Grad 
+Dol Klanjecki,49290,Klanjec 
+Dolac,34322,Brestovac 
+Dolac Crikvenicki,51260,Crikvenica 
+Dolanjski Jarak,10453,Gorica Svetojanska 
+Dolci,33515,Orahovica 
+Dolec Podokicki,10435,Sveti Martin pod Okicem 
+Dolenci,51328,Lukovdol 
+Dolenja Vas,52426,Lupoglav 
+Doli,20231,Doli 
+Dolica,52341,Zminj 
+Dolica Draga,21263,Krivodol 
+Dolici,49000,Krapina 
+Dolina,35423,Vrbje 
+Dolinci,51244,Grizane 
+Dolnjaki,44403,Maja 
+Dolovo,51514,Dobrinj 
+Dolus,51312,Brod Moravice 
+Doljan,42214,Sveti Ilija 
+Doljanci,34330,Velika 
+Doljanec,48265,Raven 
+Doljani,43500,Daruvar 
+Doljani,53221,Skare 
+Doljani,53252,Doljani 
+Doljani Zumberacki,47285,Radatovici 
+Doljanovci,34334,Kaptol 
+Domagovic,10450,Jastrebarsko 
+Domahovo,49214,Veliko Trgovisce 
+Domaji,48306,Sokolovac 
+Domankus,43212,Rovisce 
+Domaslovec,10430,Samobor 
+Domasinec,40318,Dekanovec 
+Domijanici,52341,Zminj 
+Dominkovica,43226,Veliko Trojstvo 
+Domitrovec,42205,Vidovec 
+Domovec,49283,Hrascina-Trgovisce 
+Donja Bacuga,44205,Donja Bacuga 
+Donja Banda,20242,Oskorusno 
+Donja Batina/dio/,49282,Konjscina 
+Donja Batina/dio/,49250,Zlatar 
+Donja Bebrina,35208,Ruscica 
+Donja Bistra,10298,Donja Bistra 
+Donja Brckovcina,48260,Krizevci 
+Donja Brusovaca,47221,Krstinja 
+Donja Bucica,44425,Gornja Bucica 
+Donja Budicina,44250,Petrinja 
+Donja Bukovica,33518,Nova Bukovica 
+Donja Cemernica,44410,Gvozd 
+Donja Dobra,51312,Brod Moravice 
+Donja Drenova,10382,Donja Zelina 
+Donja Dubrava,40328,Donja Dubrava 
+Donja Glina,47240,Slunj 
+Donja Glogovnica,48260,Krizevci 
+Donja Gracenica,44318,Voloder 
+Donja Greda,10370,Dugo Selo 
+Donja Jagodnja,23423,Polaca 
+Donja Jelenska,44317,Popovaca 
+Donja Konjscina,49282,Konjscina 
+Donja Kovacica,43270,Veliki Grdevac 
+Donja Krasicevica,51317,Crni Lug 
+Donja Kupcina,10451,Pisarovina 
+Donja Lamana Draga,51312,Brod Moravice 
+Donja Letina,44210,Sunja 
+Donja Lomnica,10412,Donja Lomnica 
+Donja Mlinoga,44204,Jabukovac 
+Donja Moticina,31513,Donja Moticina 
+Donja Obreska,10312,Klostar Ivanic 
+Donja Obrijez,34552,Badljevina 
+Donja Oraovica,44435,Divusa 
+Donja Pacetina,49223,Sveti Kriz Zacretje 
+Donja Pastusa,44204,Jabukovac 
+Donja Perjasica,47253,Perjasica 
+Donja Petricka,43232,Berek 
+Donja Pistana,33515,Orahovica 
+Donja Plemenscina,49218,Pregrada 
+Donja Podgora,49240,Donja Stubica 
+Donja Poljana,42223,Varazdinske Toplice 
+Donja Purgarija,10450,Jastrebarsko 
+Donja Pusca,10294,Donja Pusca 
+Donja Rasenica,43290,Grubisno Polje 
+Donja Reka,10450,Jastrebarsko 
+Donja Rijeka,48268,Gornja Rijeka 
+Donja Selnica,49254,Belec 
+Donja Stranica,47272,Ribnik 
+Donja Stubica,49240,Donja Stubica 
+Donja Stupnica,44437,Rujevac 
+Donja Semnica/dio/,49224,Lepajci 
+Donja Semnica/dio/,49252,Mihovljan 
+Donja Sumetlica,34550,Pakrac 
+Donja Susnjara,43246,Stefanje 
+Donja Toplicica,10380,Sveti Ivan Zelina 
+Donja Trebinja,47212,Skakavac 
+Donja Trstenica,44400,Glina 
+Donja Velesnja,44433,Majur 
+Donja Velika,48000,Koprivnica 
+Donja Visocka,47243,Veljun 
+Donja Visnjica,42255,Donja Visnjica 
+Donja Vlahinicka,44316,Velika Ludina 
+Donja Voca,42245,Donja Voca 
+Donja Vrba,35211,Trnjani 
+Donja Vrijeska,43508,Maslenjaca 
+Donja Vrucica,20240,Trpanj 
+Donja Zdencina,10450,Jastrebarsko 
+Donja Zelina,10382,Donja Zelina 
+Donja Zrvnica,47222,Cetingrad 
+Donjara,48306,Sokolovac 
+Donje Bazije,33523,Cadavica 
+Donje Biljane,23424,Smilcic 
+Donje Brezno,49231,Hum na Sutli 
+Donje Bukovlje,47261,Zvecaj 
+Donje Ceranje,23420,Benkovac 
+Donje Cjepidlake,43532,Dulovac 
+Donje Dubrave,47262,Generalski Stol 
+Donje Dvorisce,10370,Dugo Selo 
+Donje Gnojnice,47222,Cetingrad 
+Donje Jame,44412,Stankovac 
+Donje Jesenje,49233,Gornje Jesenje 
+Donje Komarevo,44211,Blinjski Kut 
+Donje Kusonje,33520,Slatina 
+Donje Ladanje,42243,Marusevec 
+Donje Makojisce,42220,Novi Marof 
+Donje Mekusje,47000,Karlovac 
+Donje Mokrice,44273,Sela 
+Donje Mrzlo Polje Mreznicko,47250,Duga Resa 
+Donje Novo Selo,32245,Nijemci 
+Donje Obuljeno,20236,Mokosica 
+Donje Ogorje,21206,Donje Ogorje 
+Donje Oresje,10380,Sveti Ivan Zelina 
+Donje Pazariste,53213,Donje Pazariste 
+Donje Planjane,22323,Unesic 
+Donje Podotocje,10415,Novo Cice 
+Donje Polje,22020,Sibenik-Razine 
+Donje Predrijevo,33513,Zdenci 
+Donje Prekrizje,10454,Krasic 
+Donje Prilisce,47273,Srednje Prilisce 
+Donje Primislje,47244,Primislje 
+Donje Psarjevo,10380,Sveti Ivan Zelina 
+Donje Pustinje,21203,Donji Muc 
+Donje Rascane,21273,Zupa 
+Donje Rastane,23207,Sveti Filip i Jakov 
+Donje Seliste,44400,Glina 
+Donje Selo,21430,Grohote 
+Donje Sitno,21251,Zrnovnica 
+Donje Stative,47271,Netretic 
+Donje Taboriste,44425,Gornja Bucica 
+Donje Taboriste,47240,Slunj 
+Donje Tihovo,51301,Brod na Kupi 
+Donje Utore,22323,Unesic 
+Donje Vino,49217,Krapinske Toplice 
+Donje Vinovo,22323,Unesic 
+Donje Zagorje,47307,Gornje Zagorje 
+Donje Zdjelice,48326,Virje 
+Donji Andrijevci,35214,Donji Andrijevci 
+Donji Babin Potok,53223,Vrhovine 
+Donji Bitelic,21233,Hrvace 
+Donji Bjelovac,44432,Mecencani 
+Donji Bogicevci,35429,Gornji Bogicevci 
+Donji Borki,43500,Daruvar 
+Donji Budacki,47241,Tusilovic 
+Donji Bukovac Zakanjski,47276,Zakanje 
+Donji Cerovac,47240,Slunj 
+Donji Cerovljani,44450,Hrvatska Dubica 
+Donji Crnogovci,35422,Zapolje 
+Donji Caglic,34551,Lipik 
+Donji Cehi,10020,Zagreb-Novi Zagreb 
+Donji Cemehovec,10293,Dubravica 
+Donji Daruvar,43500,Daruvar 
+Donji Desinec,10450,Jastrebarsko 
+Donji Dobretin,44440,Dvor 
+Donji Dolac,21205,Donji Dolac 
+Donji Draganec,43245,Gornji Draganec 
+Donji Dragicevci,43240,Cazma 
+Donji Dragonozec,10253,Donji Dragonozec 
+Donji Dubovec,48265,Raven 
+Donji Emovci,34000,Pozega 
+Donji Fodrovec,48267,Orehovec 
+Donji Furjan,47240,Slunj 
+Donji Grahovljani,34550,Pakrac 
+Donji Gucani,34322,Brestovac 
+Donji Hrastovac,44221,Staza 
+Donji Hrascan,40320,Donji Kraljevec 
+Donji Hrusevec,10413,Kravarsko 
+Donji Humac,21423,Nerezisca 
+Donji Jalsovec,49216,Desinic 
+Donji Javoranj,44440,Dvor 
+Donji Kasic,23424,Smilcic 
+Donji Klasnic,44404,Gornji Klasnic 
+Donji Kneginec,42204,Turcin 
+Donji Koncovcak,40314,Selnica 
+Donji Kosinj,53203,Kosinj 
+Donji Kraj,51417,Moscenicka Draga 
+Donji Kraljevec,40320,Donji Kraljevec 
+Donji Kraljevec,49283,Hrascina-Trgovisce 
+Donji Kremen,47240,Slunj 
+Donji Kucan,42000,Varazdin 
+Donji Kukuruzari,44431,Donji Kukuruzari 
+Donji Laduc,10292,Senkovec 
+Donji Ladevac,47240,Slunj 
+Donji Lapac,53250,Donji Lapac 
+Donji Lipovac,35410,Nova Kapela 
+Donji Lipovcani,43240,Cazma 
+Donji Lovic,47283,Vivodina 
+Donji Lozac,51301,Brod na Kupi 
+Donji Macelj,49225,Durmanec 
+Donji Marinkovac,10342,Dubrava 
+Donji Markovac,10344,Farkasevac 
+Donji Martijanec,42232,Donji Martijanec 
+Donji Maslarac,48306,Sokolovac 
+Donji Mekinjar,53236,Podlapaca 
+Donji Meljani,33520,Slatina 
+Donji Mihaljevec,40326,Sveta Marija 
+Donji Miholjac,31540,Donji Miholjac 
+Donji Miklous,43240,Cazma 
+Donji Mosti,43203,Kapela 
+Donji Muc,21203,Donji Muc 
+Donji Niksic,47240,Slunj 
+Donji Okrug,51317,Crni Lug 
+Donji Ostrc,10455,Kostanjevac 
+Donji Ostri Vrh Ozaljski,47280,Ozalj 
+Donji Poloj,47243,Veljun 
+Donji Popovac,47240,Slunj 
+Donji Prnjarovec,10314,Kriz 
+Donji Prolozac,21264,Donji Prolozac 
+Donji Pustakovec,40323,Prelog 
+Donji Rogolji,35430,Okucani 
+Donji Selkovac,44400,Glina 
+Donji Sjenicak,47213,Sjenicak Lasinjski 
+Donji Skrad,47252,Barilovic 
+Donji Slatinik,35201,Podcrkavlje 
+Donji Sredani,43506,Dezanovac 
+Donji Stupnik,10255,Gornji Stupnik 
+Donji Sajn,51312,Brod Moravice 
+Donji Sarampov,10310,Ivanic-Grad 
+Donji Sehovac,51312,Brod Moravice 
+Donji Skrnik,49295,Kumrovec 
+Donji Strbci,53251,Nebljusi 
+Donji Tkalec,48265,Raven 
+Donji Trupci,10253,Donji Dragonozec 
+Donji Turni,51300,Delnice 
+Donji Vaganac,53233,Licko Petrovo Selo 
+Donji Varos,35435,Stara Gradiska 
+Donji Velemeric,47252,Barilovic 
+Donji Vidovec,40327,Donji Vidovec 
+Donji Vidusevac,44400,Glina 
+Donji Vinjani,21260,Imotski 
+Donji Vuckovici,51325,Moravice 
+Donji Vukasinac,10342,Dubrava 
+Donji Vukojevac,44272,Lekenik 
+Donji Vuksici,51325,Moravice 
+Donji Zagon,51251,Ledenice 
+Donji Zatezeli,47262,Generalski Stol 
+Donji Zbilj,49216,Desinic 
+Donji Zebanec,40314,Selnica 
+Donji Zvecaj,47261,Zvecaj 
+Donji Zagari,51303,Plesce 
+Donji Zirovac,44443,Donji Zirovac 
+Dopsin,31404,Vladislavci 
+Dorcici,51221,Kostrena 
+Dosen Dabar,53206,Brusane 
+Drace,20246,Janjina 
+Dracevac,52440,Porec 
+Dracevac Ninski,23241,Policnik 
+Dracevica,21423,Nerezisca 
+Dracevo Polje,21483,Podspilje 
+Draga,34330,Velika 
+Draga,44441,Brdani Samaricki 
+Draga Bascanska,51522,Draga Bascanska 
+Draga Crikvenicka,51260,Crikvenica 
+Draga Lukovdolska,51329,Severin na Kupi 
+Draga Svetojanska,10453,Gorica Svetojanska 
+Dragalic,35429,Gornji Bogicevci 
+Dragaljin,51253,Bribir 
+Draganic,43212,Rovisce 
+Draganici,47201,Draganici 
+Draganlug,34343,Bektez 
+Draganje Selo,10430,Samobor 
+Drage,23211,Pakostane 
+Drage,47245,Rakovica 
+Dragljane,21275,Dragljane 
+Dragonos,10430,Samobor 
+Dragoslavec,40311,Lopatinec 
+Dragoslavec Breg,40306,Macinec 
+Dragoslavec Selo,40306,Macinec 
+Dragosevci,47285,Radatovici 
+Dragosicka,10370,Dugo Selo 
+Dragotin,31411,Trnava 
+Dragotina,44403,Maja 
+Dragotinci,44204,Jabukovac 
+Dragovanscak,10450,Jastrebarsko 
+Dragovci,35410,Nova Kapela 
+Dragove,23286,Bozava 
+Dragovic,34550,Pakrac 
+Dragovici,51325,Moravice 
+Dragozetici,51557,Cres 
+Draguc,52402,Cerovlje 
+Draguzeti,52207,Barban 
+Drakulic Rijeka,53230,Korenica 
+Dramalj,51265,Dramalj 
+Drastin,51218,Drazice 
+Drasci Vrh,10455,Kostanjevac 
+Drase,49294,Kraljevec na Sutli 
+Draskovac,44435,Divusa 
+Draskovec,40325,Draskovec 
+Draskovic,42226,Bisag 
+Drasnice,21328,Drasnice 
+Draz,31305,Draz 
+Drazevitici,21277,Veliki Prolog 
+Drazica,43270,Veliki Grdevac 
+Drazice,51218,Drazice 
+Drencec,10361,Sesvete-Kraljevec 
+Drenov Bok,44325,Krapje 
+Drenov Klanac,53226,Kompolje 
+Drenovac,34315,Ratkovica 
+Drenovac Banski,44406,Vlahovic 
+Drenovac Osredacki,23446,Kaldrma 
+Drenovac Raducki,53205,Medak 
+Drenovci,32257,Drenovci 
+Drenovec,42223,Varazdinske Toplice 
+Drenovica Lipnicka,47272,Ribnik 
+Drenje,31418,Drenje 
+Drenje,52220,Labin 
+Drenje Brdovecko,10291,Prigorje Brdovecko 
+Drenje Scitarjevsko,10410,Velika Gorica 
+Dreznica,47313,Dreznica 
+Dreznicko Seliste,47246,Dreznik Grad 
+Dreznik,35422,Zapolje 
+Dreznik Brezovicki,10251,Hrvatski Leskovac 
+Dreznik Grad,47246,Dreznik Grad 
+Dreznik Podokicki,10435,Sveti Martin pod Okicem 
+Drinak,51252,Klenovica 
+Drinovci,22324,Drinovci 
+Drivenik,51242,Drivenik 
+Drivenik-Stanica,51323,Lic 
+Drlez,43506,Dezanovac 
+Drljaca,44210,Sunja 
+Drljanovac,43272,Nova Raca 
+Drnek,10411,Orle 
+Drnis,22320,Drnis 
+Drnje,48322,Drnje 
+Dropcevec,10347,Rakovec 
+Dropkovec,48268,Gornja Rijeka 
+Drskovci,34000,Pozega 
+Drum,21262,Kamenmost 
+Druskovec,42243,Marusevec 
+Druskovec Gora,49231,Hum na Sutli 
+Druskovec Humski,49231,Hum na Sutli 
+Druzbinec,42206,Petrijanec 
+Druzilovec,49214,Veliko Trgovisce 
+Drvenik,21333,Drvenik 
+Drvenik,20217,Pridvorje 
+Drvenik Mali,21225,Drvenik Veliki 
+Drvenik Veliki,21225,Drvenik Veliki 
+Drzimurec,40321,Mala Subotica 
+Duba Konavoska,20210,Cavtat 
+Duba Peljeska,20240,Trpanj 
+Duba Stonska,20230,Ston 
+Dubocac,35254,Bebrina 
+Duboka,34350,Caglin 
+Duboka,21483,Podspilje 
+Duboka,20356,Klek 
+Duboki Dol,23440,Gracac 
+Dubosevica,31304,Dubosevica 
+Dubovac,35430,Okucani 
+Dubovec,49245,Gornja Stubica 
+Dubovec Bisaski,10383,Komin 
+Dubovica,42231,Mali Bukovec 
+Dubovik,35201,Podcrkavlje 
+Dubranec,10418,Dubranec 
+Dubrava,10342,Dubrava 
+Dubrava,20248,Putnikovic 
+Dubrava,21252,Tugare 
+Dubrava kod Sibenika,22000,Sibenik 
+Dubrava kod Tisnoga,22240,Tisno 
+Dubrava Krizovljanska,42208,Cestica 
+Dubrava Puscanska,10294,Donja Pusca 
+Dubrava Samoborska,10430,Samobor 
+Dubrava Zabocka,49210,Zabok 
+Dubravci,47250,Duga Resa 
+Dubravci,52352,Kanfanar 
+Dubravcani,47250,Duga Resa 
+Dubrave,20278,Nova Sela 
+Dubrave,47240,Slunj 
+Dubravec,42244,Klenovnik 
+Dubravica,10293,Dubravica 
+Dubravica,20350,Metkovic 
+Dubravica,20234,Orasac 
+Dubravica Desinicka,49216,Desinic 
+Dubravice,22222,Skradin 
+Dubravka,20216,Dubravka 
+Dubravski Markovac,10342,Dubrava 
+Dubrovcan/dio/,49215,Tuhelj 
+Dubrovcan/dio/,49214,Veliko Trgovisce 
+Dubrovnik,20000,Dubrovnik 
+Ducici,47285,Radatovici 
+Duce,21315,Dugi Rat 
+Duga Gora,47262,Generalski Stol 
+Duga Luka,52220,Labin 
+Duga Meda,33513,Zdenci 
+Duga Resa,47250,Duga Resa 
+Duga Rijeka,48312,Rasinja 
+Dugace,47251,Bosiljevo 
+Duge Njive,21275,Dragljane 
+Dugi Dol,47242,Krnjak 
+Dugi Rat,21315,Dugi Rat 
+Dugnjevec,49295,Kumrovec 
+Dugo Selo,10370,Dugo Selo 
+Dugo Selo,44410,Gvozd 
+Dugo Selo Lukacko,33406,Lukac 
+Dugobabe,21202,Lecevica 
+Dugopolje,21204,Dugopolje 
+Dugopolje,23446,Kaldrma 
+Duhovi,43507,Uljanik 
+Dujmic Selo,47307,Gornje Zagorje 
+Dujmici,51221,Kostrena 
+Dukovec,49223,Sveti Kriz Zacretje 
+Dulepska,10341,Lonjica 
+Dumace,44273,Sela 
+Dumovec,10361,Sesvete-Kraljevec 
+Dunave,20216,Dubravka 
+Dunjak,47221,Krstinja 
+Dunjkovec,40305,Nedelisce 
+Dupci,21255,Zadvarje 
+Duricici,52402,Cerovlje 
+Durlinci,47282,Kamanje 
+Dusina,21277,Veliki Prolog 
+Duzluk,33515,Orahovica 
+Duzica,44272,Lekenik 
+Dvor,44440,Dvor 
+Dvoranci,10451,Pisarovina 
+Dvori,52464,Kastelir 
+Dvorisce,44400,Glina 
+Dvorisce,10347,Rakovec 
+Dvorisce Ozaljsko,47280,Ozalj 
+Dvorisce Vivodinsko,47283,Vivodina 
+Dvoriste,47242,Krnjak 
+Dvorjanci,47261,Zvecaj 
+Dvornica,22203,Rogoznica 
+Dvorska,33533,Pivnica Slavonska 
+Dakovo,31400,Dakovo 
+Delekovec,48316,Delekovec 
+Deletovci,32244,Deletovci 
+Devrske,22319,Devrske 
+Divan,10340,Vrbovec 
+Duba,52470,Umag (Umago) 
+Dulovac,43532,Dulovac 
+Durdanci,32284,Stari Mikanovci 
+Durdekovec,10362,Kasina 
+Durdenovac,31511,Durdenovac 
+Durdevac,48350,Durdevac 
+Durdic,43231,Ivanska 
+Durdic,48260,Krizevci 
+Duricic,33522,Vocin 
+Durici,32263,Durici 
+Durin Potok,47222,Cetingrad 
+Durinici,20218,Plocice 
+Durinovec,42224,Visoko 
+Durmanec,49225,Durmanec 
+Dzaperovac,47221,Krstinja 
+Eminovci,34308,Jaksic 
+Emovacki Lug,34000,Pozega 
+Ercegovci,21232,Dicmo 
+Erdelj,47262,Generalski Stol 
+Erdovec,48260,Krizevci 
+Erdut,31206,Erdut 
+Erkovcici,52425,Roc 
+Ernestinovo,31215,Ernestinovo 
+Ertic,47276,Zakanje 
+Ervenik,22306,Ervenik 
+Ervenik Zlatarski,49247,Zlatar Bistrica 
+Fabci,52463,Visnjan 
+Fajerovec,48268,Gornja Rijeka 
+Falascak,10435,Sveti Martin pod Okicem 
+Falinic Breg,42208,Cestica 
+Farini,52463,Visnjan 
+Farkasevac,10344,Farkasevac 
+Farkasevec Samoborski,10430,Samobor 
+Fazana,52212,Fazana 
+Fazonci,51303,Plesce 
+Ferbezari,51305,Trsce 
+Ferdinandovac,48356,Ferdinandovac 
+Ferenci,47280,Ozalj 
+Ferenci,52447,Vizinada 
+Ferezani,48265,Raven 
+Fericanci,31512,Fericanci 
+Ferketinec,40316,Vratisinec 
+Ferovac,34340,Kutjevo 
+Festinec,10345,Gradec 
+Filipana,52206,Marcana 
+Filipi,52447,Vizinada 
+Filipici,42242,Radovan 
+Filipini,52440,Porec 
+Filipovac,34551,Lipik 
+Filipovici,10383,Komin 
+Filozici,51557,Cres 
+Fincevec,48267,Orehovec 
+Finida,52470,Umag (Umago) 
+Fiorini,52474,Brtonigla (Verteneglio) 
+Flengi,52450,Vrsar 
+Florijan,49290,Klanjec 
+Fodrovac Rijecki,48268,Gornja Rijeka 
+Foli,52342,Svetvincenat 
+Forcici,52425,Roc 
+Forkusevci,31401,Viskovci 
+Fotez Breg,42245,Donja Voca 
+Francici,52220,Labin 
+Franovici,51244,Grizane 
+Franjetici,47201,Draganici 
+Frata,52465,Tar 
+Fratrovci,47251,Bosiljevo 
+Fratrovci Ozaljski,47280,Ozalj 
+Frkanovec,40311,Lopatinec 
+Frkasic,53230,Korenica 
+Frketic Selo,47250,Duga Resa 
+Frkljevci,34310,Pleternica 
+Frkuljevec Mihovljanski,49252,Mihovljan 
+Frkuljevec Persaveski,49251,Mace 
+Frnjolici,52448,Sveti Lovrec 
+Fuckovac,47251,Bosiljevo 
+Fuka,10343,Nova Kapela 
+Funtana,52452,Funtana 
+Furjanici,47283,Vivodina 
+Fuskulin,52440,Porec 
+Fuzine,51322,Fuzine 
+Gaber,49216,Desinic 
+Gabonjin,51511,Malinska 
+Gabos,32212,Gabos 
+Gabrili,20213,Cilipi 
+Gabrilovac,31511,Durdenovac 
+Gabrovec,49218,Pregrada 
+Gacice,42242,Radovan 
+Gacelezi,22215,Zaton 
+Gacesa Selo,47211,Utinja 
+Gacesko Selo,47253,Perjasica 
+Gaciste,33410,Suhopolje 
+Gage,44437,Rujevac 
+Gaj,34543,Poljana 
+Gaj,10340,Vrbovec 
+Gajac-dio,53291,Novalja 
+Gajac-dio,23251,Kolan 
+Gajana,52215,Vodnjan (Dignano) 
+Gajec,10362,Kasina 
+Gajic,31305,Draz 
+Gajine,53250,Donji Lapac 
+Gala,21241,Obrovac Sinjski 
+Galezova Draga,47283,Vivodina 
+Galgovo,10435,Sveti Martin pod Okicem 
+Galin,47283,Vivodina 
+Galizana,52216,Galizana (Gallesano) 
+Galovac,43000,Bjelovar 
+Galovac,23222,Zemunik 
+Galovec,49282,Konjscina 
+Galovec Zacretski,49224,Lepajci 
+Galovic Selo,47250,Duga Resa 
+Gambajeva Greda,48323,Hlebine 
+Gambetici,52463,Visnjan 
+Gamboci,52460,Buje (Buie) 
+Garbina,52440,Porec 
+Garcin,35212,Garcin 
+Gardinovec,40319,Belica 
+Gardun,21240,Trilj 
+Garesnica,43280,Garesnica 
+Garesnicki Brestovac,43280,Garesnica 
+Garica,51516,Vrbnik 
+Garjak,21236,Vrlika 
+Gasinci,31421,Satnica Dakovacka 
+Gasparci,51302,Kuzelj 
+Gat,31554,Gat 
+Gata,21253,Gata 
+Gazije,31512,Fericanci 
+Gdinj,21467,Gdinj 
+Geckovec,42240,Ivanec 
+Gedici,52446,Nova Vas 
+Gejkovac,47221,Krstinja 
+Generalski Stol,47262,Generalski Stol 
+Gerovo,51304,Gerovo 
+Gerovo Tounjsko,47264,Tounj 
+Gerovski Kraj,51304,Gerovo 
+Gezinci,31530,Podravska Moslavina 
+Gilesici,52342,Svetvincenat 
+Giletinci,35404,Cernik 
+Gizdavac,21247,Neoric 
+Gladovec Kravarski,10413,Kravarsko 
+Gladovec Pokupski,10414,Pokupsko 
+Glavace,53221,Skare 
+Glavani,52207,Barban 
+Glavani,51221,Kostrena 
+Glavat,20290,Lastovo 
+Glavica,47251,Bosiljevo 
+Glavica,34553,Bucje 
+Glavice,21230,Sinj 
+Glavicani,44440,Dvor 
+Glavina Donja,21260,Imotski 
+Glavina Gornja,21260,Imotski 
+Glavnica Donja,10363,Belovar 
+Glavnica Gornja,10363,Belovar 
+Glavnicica,10361,Sesvete-Kraljevec 
+Glibodol,53261,Krizpolje 
+Glina,44400,Glina 
+Glinice,47222,Cetingrad 
+Glinska Poljana,44251,Gora 
+Glinsko Vrelo,47240,Slunj 
+Globocec,49246,Marija Bistrica 
+Globocec Ludbreski,42230,Ludbreg 
+Glogovac,48324,Koprivnicki Bregi 
+Glogovec Zagorski,49215,Tuhelj 
+Glogovica,35201,Podcrkavlje 
+Glogovo,23440,Gracac 
+Glusci,20350,Metkovic 
+Glusici,52220,Labin 
+Glusinja,10456,Kalje 
+Gljev,21241,Obrovac Sinjski 
+Gnojnice,47222,Cetingrad 
+Godinjak,35422,Zapolje 
+Gojak,47263,Gornje Dubrave 
+Gojanec,42205,Vidovec 
+Gojkovac,47222,Cetingrad 
+Gojlo,44320,Kutina 
+Gola,48331,Gola 
+Golas,52352,Kanfanar 
+Golenic,33520,Slatina 
+Golesi Zumberacki,47285,Radatovici 
+Goli Breg,10251,Hrvatski Leskovac 
+Goli Vrh,10450,Jastrebarsko 
+Goli Vrh,10347,Rakovec 
+Goli Vrh Lipnicki,47272,Ribnik 
+Goli Vrh Netreticki,47271,Netretic 
+Goli Vrh Ozaljski,47280,Ozalj 
+Golik,51301,Brod na Kupi 
+Goliki,51312,Brod Moravice 
+Golinci,31543,Miholjacki Porec 
+Golinja,44414,Bovic 
+Golo Brdo,34334,Kaptol 
+Golo Brdo,33000,Virovitica 
+Golobrdac,35404,Cernik 
+Golobrdci,34000,Pozega 
+Gologorica,52402,Cerovlje 
+Gologoricki Dol,52402,Cerovlje 
+Golovik,51418,Brsec 
+Golubic,23451,Zegar 
+Golubic,22301,Golubic 
+Golubici,10456,Kalje 
+Golubici,52427,Livade 
+Golubnjak,43500,Daruvar 
+Golubovac Divuski,44435,Divusa 
+Goljak,47201,Draganici 
+Goljak,10450,Jastrebarsko 
+Goljak Klanjecki,49294,Kraljevec na Sutli 
+Gomirje,51327,Gomirje 
+Gondolici,52220,Labin 
+Gonjeva,10450,Jastrebarsko 
+Gora,44251,Gora 
+Gora Kosnicka,49216,Desinic 
+Gora Veternicka,49255,Novi Golubovec 
+Goraci,51306,Cabar 
+Goranec,42244,Klenovnik 
+Goranec,10360,Sesvete 
+Gorani,51311,Skrad 
+Gorenci,51328,Lukovdol 
+Gorica,47250,Duga Resa 
+Gorica,48312,Rasinja 
+Gorica,23222,Zemunik 
+Gorica,52341,Zminj 
+Gorica,23249,Povljana 
+Gorica Jamnicka,10451,Pisarovina 
+Gorica Lipnicka,47272,Ribnik 
+Gorica Miholecka,48267,Orehovec 
+Gorica Skradska,51311,Skrad 
+Gorica Svetojanska,10453,Gorica Svetojanska 
+Gorica Valpovacka,31550,Valpovo 
+Gorice,35429,Gornji Bogicevci 
+Gorice,22222,Skradin 
+Gorican,40324,Gorican 
+Goricanec,10382,Donja Zelina 
+Goricanovec,49225,Durmanec 
+Goricica,10382,Donja Zelina 
+Goricice Dobranske,47262,Generalski Stol 
+Goricine,51242,Drivenik 
+Goricka,44441,Brdani Samaricki 
+Goricko,48311,Kunovec 
+Gorici,53225,Svica 
+Gorinci,47262,Generalski Stol 
+Goris,22221,Lozovac 
+Gorjakovo,49218,Pregrada 
+Gorjani,31422,Gorjani 
+Gorjani Sutinski,49232,Radoboj 
+Gorkovec,49290,Klanjec 
+Gorniki Vivodinski,47283,Vivodina 
+Gornja Bacuga,44205,Donja Bacuga 
+Gornja Batina,49254,Belec 
+Gornja Bebrina,35208,Ruscica 
+Gornja Bistra,10298,Donja Bistra 
+Gornja Brckovcina,48260,Krizevci 
+Gornja Brela,21255,Zadvarje 
+Gornja Brusovaca,47221,Krstinja 
+Gornja Bucica,44425,Gornja Bucica 
+Gornja Cemernica,44410,Gvozd 
+Gornja Dobra,51311,Skrad 
+Gornja Drenova,10382,Donja Zelina 
+Gornja Dubrava,40306,Macinec 
+Gornja Garesnica,43233,Trnoviticki Popovac 
+Gornja Glina,47240,Slunj 
+Gornja Glogovnica,48260,Krizevci 
+Gornja Gracenica,44318,Voloder 
+Gornja Greda,10370,Dugo Selo 
+Gornja Jagodnja,23423,Polaca 
+Gornja Jelenska,44317,Popovaca 
+Gornja Konjscina,49282,Konjscina 
+Gornja Kovacica,43270,Veliki Grdevac 
+Gornja Krasicevica,51317,Crni Lug 
+Gornja Kupcina,10454,Krasic 
+Gornja Lamana Draga,51312,Brod Moravice 
+Gornja Letina,44210,Sunja 
+Gornja Lomnica,10412,Donja Lomnica 
+Gornja Meminska,44434,Grabostani 
+Gornja Mlinoga,44204,Jabukovac 
+Gornja Mocila,47245,Rakovica 
+Gornja Moticina,31513,Donja Moticina 
+Gornja Nugla,52425,Roc 
+Gornja Obreska,10312,Klostar Ivanic 
+Gornja Obrijez,34552,Badljevina 
+Gornja Oraovica,44435,Divusa 
+Gornja Pacetina,49224,Lepajci 
+Gornja Pastusa,44204,Jabukovac 
+Gornja Petricka,43232,Berek 
+Gornja Pistana,33515,Orahovica 
+Gornja Plemenscina,49218,Pregrada 
+Gornja Ploca,53244,Lovinac 
+Gornja Ploscica,43285,Velika Trnovitica 
+Gornja Podgora,49240,Donja Stubica 
+Gornja Podstrana,21312,Podstrana 
+Gornja Poljana,42223,Varazdinske Toplice 
+Gornja Purgarija,10450,Jastrebarsko 
+Gornja Pusca,10294,Donja Pusca 
+Gornja Rasenica,43290,Grubisno Polje 
+Gornja Reka,10450,Jastrebarsko 
+Gornja Rijeka,48268,Gornja Rijeka 
+Gornja Selnica,49254,Belec 
+Gornja Stranica,47272,Ribnik 
+Gornja Stubica,49245,Gornja Stubica 
+Gornja Stupnica,44437,Rujevac 
+Gornja Semnica/dio/,49252,Mihovljan 
+Gornja Semnica/dio/,49232,Radoboj 
+Gornja Sumetlica,34550,Pakrac 
+Gornja Susnjara,43246,Stefanje 
+Gornja Toplicica,10380,Sveti Ivan Zelina 
+Gornja Trebinja,47212,Skakavac 
+Gornja Trnovitica,43285,Velika Trnovitica 
+Gornja Trstenica,44414,Bovic 
+Gornja Vas,10456,Kalje 
+Gornja Velesnja,44433,Majur 
+Gornja Velika,48000,Koprivnica 
+Gornja Visocka,47243,Veljun 
+Gornja Visnjica,42255,Donja Visnjica 
+Gornja Vlahinicka,44316,Velika Ludina 
+Gornja Voca,42245,Donja Voca 
+Gornja Vrba,35208,Ruscica 
+Gornja Vrijeska,43508,Maslenjaca 
+Gornja Vrucica,20240,Trpanj 
+Gornja Zdencina,10450,Jastrebarsko 
+Gornja Zrvnica,47222,Cetingrad 
+Gornjaki,49283,Hrascina-Trgovisce 
+Gornjaki,10346,Preseka 
+Gornje Bazje,33407,Gornje Bazje 
+Gornje Biljane,23424,Smilcic 
+Gornje Brezno,49231,Hum na Sutli 
+Gornje Bukovlje,47261,Zvecaj 
+Gornje Ceranje,23420,Benkovac 
+Gornje Cjepidlake,43532,Dulovac 
+Gornje Dubrave,47263,Gornje Dubrave 
+Gornje Dvorisce,10370,Dugo Selo 
+Gornje Gnojnice,47222,Cetingrad 
+Gornje Igrane,21327,Podgora 
+Gornje Jame,44412,Stankovac 
+Gornje Jesenje,49233,Gornje Jesenje 
+Gornje Komarevo,44211,Blinjski Kut 
+Gornje Kusonje,33520,Slatina 
+Gornje Ladanje,42207,Vinica 
+Gornje Makojisce,42220,Novi Marof 
+Gornje Morkice,44273,Sela 
+Gornje Mrzlo Polje Mreznicko,47250,Duga Resa 
+Gornje Obuljeno,20236,Mokosica 
+Gornje Ogorje,21206,Donje Ogorje 
+Gornje Oresje,10380,Sveti Ivan Zelina 
+Gornje Planjane,22323,Unesic 
+Gornje Podotocje,10419,Vukovina 
+Gornje Pokupje,47286,Mahicno 
+Gornje Postinje,21203,Donji Muc 
+Gornje Predrijevo,33525,Sopje 
+Gornje Prekrizje,10454,Krasic 
+Gornje Prilisce,47273,Srednje Prilisce 
+Gornje Primislje,47244,Primislje 
+Gornje Psarjevo,10380,Sveti Ivan Zelina 
+Gornje Rascane,21273,Zupa 
+Gornje Rastane,23207,Sveti Filip i Jakov 
+Gornje Seliste,44400,Glina 
+Gornje Selo,21432,Stomorska 
+Gornje Selo,51414,Icici 
+Gornje Selo,51414,Icici 
+Gornje Sitno,21251,Zrnovnica 
+Gornje Stative,47000,Karlovac 
+Gornje Taboriste,44425,Gornja Bucica 
+Gornje Taboriste,47240,Slunj 
+Gornje Tihovo,51301,Brod na Kupi 
+Gornje Utore,22323,Unesic 
+Gornje Viljevo,33518,Nova Bukovica 
+Gornje Vinovo,22323,Unesic 
+Gornje Vratno,42208,Cestica 
+Gornje Vrhovine,53223,Vrhovine 
+Gornje Zagorje,47307,Gornje Zagorje 
+Gornje Zdjelice,43203,Kapela 
+Gornji Andrijevci,35252,Sibinj 
+Gornji Babin Potok,53223,Vrhovine 
+Gornji Bitelic,21233,Hrvace 
+Gornji Bjelovac,44432,Mecencani 
+Gornji Bogicevci,35429,Gornji Bogicevci 
+Gornji Borki,43500,Daruvar 
+Gornji Budacki,47242,Krnjak 
+Gornji Bukovac Zakanjski,47276,Zakanje 
+Gornji Cerovac,47240,Slunj 
+Gornji Cerovljani,44450,Hrvatska Dubica 
+Gornji Crnogovci,35422,Zapolje 
+Gornji Cagalic,34551,Lipik 
+Gornji Cehi,10020,Zagreb-Novi Zagreb 
+Gornji Cemehovec,49294,Kraljevec na Sutli 
+Gornji Daruvar,43500,Daruvar 
+Gornji Desinec,10450,Jastrebarsko 
+Gornji Dobretin,44440,Dvor 
+Gornji Dolac,21205,Donji Dolac 
+Gornji Draganec,43245,Gornji Draganec 
+Gornji Dragicevci,43240,Cazma 
+Gornji Dragonozec,10253,Donji Dragonozec 
+Gornji Dubovec,48265,Raven 
+Gornji Emovci,34000,Pozega 
+Gornji Fodrovec,48267,Orehovec 
+Gornji Furjan,47240,Slunj 
+Gornji Grahovljani,34550,Pakrac 
+Gornji Gucani,34322,Brestovac 
+Gornji Hrastovac,44434,Grabostani 
+Gornji Hrascan,40306,Macinec 
+Gornji Hrusevec,10413,Kravarsko 
+Gornji Humac,21424,Praznica 
+Gornji Jalsovec,49216,Desinic 
+Gornji Javoranj,44440,Dvor 
+Gornji Karin,23452,Karin 
+Gornji Klasnic,44404,Gornji Klasnic 
+Gornji Kneginec,42204,Turcin 
+Gornji Koncovcak,40313,Sveti Martin na Muri 
+Gornji Kosinj,53203,Kosinj 
+Gornji Kraljevec,49283,Hrascina-Trgovisce 
+Gornji Kraljevec,40316,Vratisinec 
+Gornji Kraljevec /dio/,49284,Budinscina 
+Gornji Kremen,47240,Slunj 
+Gornji Kucan,42000,Varazdin 
+Gornji Kukuruzari,44431,Donji Kukuruzari 
+Gornji Kursanec,40305,Nedelisce 
+Gornji Kuti,51312,Brod Moravice 
+Gornji Laduc,10292,Senkovec 
+Gornji Ladevac,47240,Slunj 
+Gornji Lapac,53250,Donji Lapac 
+Gornji Lipovac,35410,Nova Kapela 
+Gornji Lipovcani,43240,Cazma 
+Gornji Lovic,47283,Vivodina 
+Gornji Lozac,51302,Kuzelj 
+Gornji Macelj,49225,Durmanec 
+Gornji Marinkovac,10342,Dubrava 
+Gornji Martijanec,42232,Donji Martijanec 
+Gornji Maslarac,48306,Sokolovac 
+Gornji Meljani,33522,Vocin 
+Gornji Mihaljevec,40306,Macinec 
+Gornji Miholjac,33520,Slatina 
+Gornji Miklous,43240,Cazma 
+Gornji Mosti,43203,Kapela 
+Gornji Muc,21203,Donji Muc 
+Gornji Niksic,47240,Slunj 
+Gornji Okrug,51317,Crni Lug 
+Gornji Ostrc,10455,Kostanjevac 
+Gornji Ostri Vrh Ozaljski,47280,Ozalj 
+Gornji Poloj,47253,Perjasica 
+Gornji Popovac,47240,Slunj 
+Gornji Prnjarovec,10314,Kriz 
+Gornji Prolozac,21264,Donji Prolozac 
+Gornji Rogolji,35430,Okucani 
+Gornji Selkovac,44400,Glina 
+Gornji Sjenicak,47213,Sjenicak Lasinjski 
+Gornji Skrad,47242,Krnjak 
+Gornji Slatinik,35201,Podcrkavlje 
+Gornji Sredani,43506,Dezanovac 
+Gornji Stupnik,10255,Gornji Stupnik 
+Gornji Sajn,51312,Brod Moravice 
+Gornji Sehovac,51312,Brod Moravice 
+Gornji Skrnik,49296,Zagorska Sela 
+Gornji Strbci,53251,Nebljusi 
+Gornji Tkalec,48265,Raven 
+Gornji Tomas,43000,Bjelovar 
+Gornji Trupci,10253,Donji Dragonozec 
+Gornji Turni,51300,Delnice 
+Gornji Uljanik,43507,Uljanik 
+Gornji Vaganac,53233,Licko Petrovo Selo 
+Gornji Varos,35435,Stara Gradiska 
+Gornji Velemeric,47252,Barilovic 
+Gornji Vidusevac,44400,Glina 
+Gornji Vinkovec,10383,Komin 
+Gornji Vinjani,21260,Imotski 
+Gornji Vrhovci,34330,Velika 
+Gornji Vuckovici,51325,Moravice 
+Gornji Vukasinac,10342,Dubrava 
+Gornji Vukojevac,44272,Lekenik 
+Gornji Vuksici,51325,Moravice 
+Gornji Zagon,51251,Ledenice 
+Gornji Zatezali,47262,Generalski Stol 
+Gornji Zbilj,49216,Desinic 
+Gornji Zebanec,40314,Selnica 
+Gornji Zvecaj,47261,Zvecaj 
+Gornji Zagari,51306,Cabar 
+Gornji Zirovac,44443,Donji Zirovac 
+Gorscaki,47286,Mahicno 
+Gorscaki Ozaljski,47280,Ozalj 
+Gorseti,51312,Brod Moravice 
+Gorusevnjak,42207,Vinica 
+Gospic,53000,Gospic 
+Gostenje,49216,Desinic 
+Gostinjac,51514,Dobrinj 
+Gostovic,10340,Vrbovec 
+Gosic,22319,Devrske 
+Gotalovac,49284,Budinscina 
+Gotalovo,48331,Gola 
+Govedari,20226,Govedari 
+Govede Polje,43506,Dezanovac 
+Grab,21242,Grab 
+Grab,23440,Gracac 
+Grabarak,10453,Gorica Svetojanska 
+Grabarje,35201,Podcrkavlje 
+Grabarje,34312,Sesvete (kod Pozege) 
+Grabarska,47222,Cetingrad 
+Grabe,49228,Brestovec Orehovicki 
+Graberanec,10340,Vrbovec 
+Graberec,10342,Dubrava 
+Graberje,44251,Gora 
+Graberje Ivanicko,10313,Graberje Ivanicko 
+Grabic,33520,Slatina 
+Grabik,43240,Cazma 
+Grabostani,44434,Grabostani 
+Grabovac,21271,Grabovac 
+Grabovac,31309,Knezevi Vinogradi 
+Grabovac,47245,Rakovica 
+Grabovac Banski,44205,Donja Bacuga 
+Grabovac Dreznicki,47246,Dreznik Grad 
+Grabovac Krnjacki,47242,Krnjak 
+Grabovac Vojnicki,47242,Krnjak 
+Grabovci,22215,Zaton 
+Grabovica,44441,Brdani Samaricki 
+Grabovnica,43240,Cazma 
+Grabovo,32232,Sotin 
+Grabricina,44316,Velika Ludina 
+Grabric,10345,Gradec 
+Grabrk,47251,Bosiljevo 
+Grabrov Potok,44316,Velika Ludina 
+Grabrova,51417,Moscenicka Draga 
+Grabrovec,49210,Zabok 
+Grabrovnica,33405,Pitomaca 
+Grabrovnik,40312,Strigova 
+Grabusic,53230,Korenica 
+Gracac,23440,Gracac 
+Gracac,22222,Skradin 
+Gracac Slaveticki,10454,Krasic 
+Gracanica Sisinecka,44412,Stankovac 
+Gracec,10370,Dugo Selo 
+Gracina,48260,Krizevci 
+Gracisce,52403,Gracisce 
+Gradac,51253,Bribir 
+Gradac,21330,Gradac 
+Gradac,34310,Pleternica 
+Gradac,22322,Ruzic 
+Gradac Nasicki,31500,Nasice 
+Gradac Orlovac,47000,Karlovac 
+Gradec,10345,Gradec 
+Gradec Pokupski,10451,Pisarovina 
+Gradecki Pavlovec,10345,Gradec 
+Gradici,10410,Velika Gorica 
+Gradina,33411,Gradina 
+Gradina,22221,Lozovac 
+Gradina,52450,Vrsar 
+Gradina Korenicka,53230,Korenica 
+Gradinje,52402,Cerovlje 
+Gradinje,52427,Livade 
+Gradiscak,40313,Sveti Martin na Muri 
+Gradisce,47261,Zvecaj 
+Gradisce,52341,Zminj 
+Gradiste,34343,Bektez 
+Gradiste,32273,Gradiste 
+Gradna,10430,Samobor 
+Gradski Vrhovci,34000,Pozega 
+Gradusa Posavska,44210,Sunja 
+Gramalj,51311,Skrad 
+Grana,42220,Novi Marof 
+Grancari,10251,Hrvatski Leskovac 
+Grandic Breg,47280,Ozalj 
+Grandici,52207,Barban 
+Granice,31500,Nasice 
+Granje,34308,Jaksic 
+Grbajel,51302,Kuzelj 
+Grbasevec,48312,Rasinja 
+Grbavac,43290,Grubisno Polje 
+Grbavac,21312,Podstrana 
+Grbavac,20207,Mlini 
+Grbe,23235,Vrsi 
+Grdak,48306,Sokolovac 
+Grdanjci,10432,Bregana 
+Grdenci,49210,Zabok 
+Grdoselo,52000,Pazin 
+Grdun,47281,Mali Erjavec 
+Grebastica,22010,Sibenik-Brodarica 
+Greda,10341,Lonjica 
+Greda,42243,Marusevec 
+Greda,44273,Sela 
+Greda Breska,10311,Posavski Bregi 
+Greda Sunjska,44210,Sunja 
+Gredenec,49234,Petrovsko 
+Gredice,49290,Klanjec 
+Gredani,35430,Okucani 
+Gredani,44415,Topusko 
+Greguric Breg,10430,Samobor 
+Gregurovec,49217,Krapinske Toplice 
+Gregurovec,49252,Mihovljan 
+Gregurovec,48265,Raven 
+Grescevina,42223,Varazdinske Toplice 
+Grganjica,47261,Zvecaj 
+Grgetici,10456,Kalje 
+Grgetici,10455,Kostanjevac 
+Grginac,43226,Veliko Trojstvo 
+Grgurevici,35252,Sibinj 
+Gric,10456,Kalje 
+Grice,47272,Ribnik 
+Grimalda,52402,Cerovlje 
+Grizane,51244,Grizane 
+Grizici,35252,Sibinj 
+Grkavescak,40313,Sveti Martin na Muri 
+Grkine,48350,Durdevac 
+Grletinec,49231,Hum na Sutli 
+Grljevac,21312,Podstrana 
+Grmov,51556,Martinscica 
+Grmusani,44440,Dvor 
+Grobnik,51219,Cavle 
+Grobnik,47243,Veljun 
+Grobnik,52233,Susnjevica 
+Grohot,49216,Desinic 
+Grohote,21430,Grohote 
+Gromaca,20234,Orasac 
+Gromacnik,35000,Slavonski Brod 
+Gromin Dolac,21465,Jelsa 
+Groznjan,52429,Groznjan (Grisignana) 
+Grscaki,47250,Duga Resa 
+Grtovec,49284,Budinscina 
+Grubici,52447,Vizinada 
+Grubine,21262,Kamenmost 
+Grubisno Polje,43290,Grubisno Polje 
+Gruda,20215,Gruda 
+Grudnjak,33513,Zdenci 
+Grzini,52341,Zminj 
+Gubasevo,49214,Veliko Trgovisce 
+Gubavcevo Polje,23440,Gracac 
+Guci Draganicki,10450,Jastrebarsko 
+Guce Selo,51302,Kuzelj 
+Gudalji,47285,Radatovici 
+Gudci,10253,Donji Dragonozec 
+Gudovac,43251,Gudovac 
+Gulici,52440,Porec 
+Gundinci,35222,Gundinci 
+Gunja,32260,Gunja 
+Gunjevci,35422,Zapolje 
+Gusakovec,49245,Gornja Stubica 
+Gustelnica,10418,Dubranec 
+Gusti Laz,51301,Brod na Kupi 
+Gustirna,21222,Marina 
+Gusce,44203,Gusce 
+Guscerovec,48267,Orehovec 
+Gutmanovci,33513,Zdenci 
+Gvozd,44410,Gvozd 
+Gvozdanska,33533,Pivnica Slavonska 
+Gvozdansko,44437,Rujevac 
+Habjanovac,10343,Nova Kapela 
+Habjanovci,31223,Brodanci 
+Hader,44400,Glina 
+Haganj,10343,Nova Kapela 
+Hajdine,51326,Vrbovsko 
+Hajtic,44401,Hajtic 
+Hambariste,51326,Vrbovsko 
+Hampovica,48350,Durdevac 
+Harina Zlaka,49296,Zagorska Sela 
+Harkanovci,31227,Zelcin 
+Harmica,10292,Senkovec 
+Hartje,10456,Kalje 
+Havidic Selo,10253,Donji Dragonozec 
+Heki,52000,Pazin 
+Hemusevec,40325,Draskovec 
+Heraki,52448,Sveti Lovrec 
+Hercegovac,43284,Hercegovac 
+Heresin,48000,Koprivnica 
+Hizakovec,49240,Donja Stubica 
+Hizanovec,48269,Kalnik 
+Hladna Voda,48361,Kalinovac 
+Hlapa,51514,Dobrinj 
+Hlapicina,40313,Sveti Martin na Muri 
+Hlebine,48323,Hlebine 
+Hlevci,51314,Ravna Gora 
+Hlevnica,49225,Durmanec 
+Hodilje,20230,Ston 
+Hodinci,47283,Vivodina 
+Hodosan,40320,Donji Kraljevec 
+Homer,51316,Lokve 
+Homoljac,53230,Korenica 
+Horvati,10436,Rakov Potok 
+Horvatsko,42244,Klenovnik 
+Hosnik,51311,Skrad 
+Hotnja,10414,Pokupsko 
+Hrastelnica,44000,Sisak 
+Hrastin,31404,Vladislavci 
+Hrastina Brdovecka,10299,Marija Gorica 
+Hrastina Samoborska,10430,Samobor 
+Hrastje,10380,Sveti Ivan Zelina 
+Hrastje Plesivicko,10450,Jastrebarsko 
+Hrastova Greda,48361,Kalinovac 
+Hrastovac,43280,Garesnica 
+Hrastovac,31403,Vuka 
+Hrastovec Toplicki,42223,Varazdinske Toplice 
+Hrastovica,44250,Petrinja 
+Hrastovica Vivodinska,47283,Vivodina 
+Hrastovljan,42232,Donji Martijanec 
+Hrastovsko,42230,Ludbreg 
+Hrasca,10450,Jastrebarsko 
+Hrasce Turopoljsko,10020,Zagreb-Novi Zagreb 
+Hrascica,42000,Varazdin 
+Hrascina,49283,Hrascina-Trgovisce 
+Hrboki,52207,Barban 
+Hrebine,10294,Donja Pusca 
+Hrebinec,10370,Dugo Selo 
+Hreljici,52207,Barban 
+Hreljin,51226,Hreljin 
+Hreljin Ogulinski,47300,Ogulin 
+Hrgovec,48267,Orehovec 
+Hrib,51304,Gerovo 
+Hribac,51311,Skrad 
+Hrkanovci Dakovacki,31411,Trnava 
+Hrnetic-Novaki,47000,Karlovac 
+Hrnjanec,10382,Donja Zelina 
+Hrnjevac,34335,Vetovo 
+Hromec,49225,Durmanec 
+Hrsina,47251,Bosiljevo 
+Hrsovo,48213,Cirkvena 
+Hrsak Breg,49217,Krapinske Toplice 
+Hrscevani,21262,Kamenmost 
+Hrtic,44440,Dvor 
+Hruscica,10360,Sesvete 
+Hrusevec,49240,Donja Stubica 
+Hrusevec Kupljenski,10295,Kupljenovo 
+Hrusevec Puscanski,10294,Donja Pusca 
+Hruskovec,10347,Rakovec 
+Hruskovica,10340,Vrbovec 
+Hrvace,21233,Hrvace 
+Hrvatska Dubica,44450,Hrvatska Dubica 
+Hrvatska Kostajnica,44430,Hrvatska Kostajnica 
+Hrvatski Cuntic,44204,Jabukovac 
+Hrvatski Leskovac,10251,Hrvatski Leskovac 
+Hrvatsko,51303,Plesce 
+Hrvatsko Polje,53226,Kompolje 
+Hrvatsko Selo,44415,Topusko 
+Hrzenica,42233,Sveti Durd 
+Hrzenik,10454,Krasic 
+Hudi Bitek,10251,Hrvatski Leskovac 
+Hudovljani,48000,Koprivnica 
+Hudovo,10347,Rakovec 
+Hum,52425,Roc 
+Hum,33522,Vocin 
+Hum Bistricki,49246,Marija Bistrica 
+Hum Kosnicki,49216,Desinic 
+Hum na Sutli,49231,Hum na Sutli 
+Hum Stubicki,49245,Gornja Stubica 
+Hum Varos,33522,Vocin 
+Hum Zabocki,49210,Zabok 
+Humac,21465,Jelsa 
+Humljani,33514,Cacinci 
+Husain,44320,Kutina 
+Husinec,49283,Hrascina-Trgovisce 
+Husje,47000,Karlovac 
+Hutin,10454,Krasic 
+Hvar,21450,Hvar 
+Icici,51414,Icici 
+Icevo,22222,Skradin 
+Igrane,21329,Igrane 
+Igrisce,10297,Jakovlje 
+Ika,51414,Icici 
+Ilaca,32248,Ilaca 
+Ilmin Dvor,33523,Cadavica 
+Ilok,32236,Ilok 
+Ilova,44320,Kutina 
+Ilovac,47280,Ozalj 
+Ilovacak,44425,Gornja Bucica 
+Ilovik,51552,Ilovik 
+Ilovski Klokocevac,43284,Hercegovac 
+Imbrijovec Jalzabetski,42203,Jalzabet 
+Imbriovec,48316,Delekovec 
+Imotica,20205,Topolo 
+Imotski,21260,Imotski 
+Imrijevci,34350,Caglin 
+Imsovac,43506,Dezanovac 
+Ipsi,52427,Livade 
+Irinovac,47246,Dreznik Grad 
+Islam Grcki,23424,Smilcic 
+Islam Latinski/dio Podgradina/,23242,Posedarje 
+Islam Latinski/dio Rupalj/,23241,Policnik 
+Ist,23293,Ist 
+Istocni Trojvrh,47303,Josipdol 
+Isevnica,51301,Brod na Kupi 
+Ivan Dolac,21465,Jelsa 
+Ivanbegovina,21262,Kamenmost 
+Ivanbrijeg,33520,Slatina 
+Ivancani,10344,Farkasevac 
+Ivancec,48312,Rasinja 
+Ivancici,10453,Gorica Svetojanska 
+Ivancici Pokupski,47204,Sisljavic 
+Ivandol,34322,Brestovac 
+Ivanec,42240,Ivanec 
+Ivanec Bistranski,10290,Zapresic 
+Ivanec Krizevacki,48260,Krizevci 
+Ivanecka Zeljeznica,42240,Ivanec 
+Ivanecki Vrhovec,42240,Ivanec 
+Ivanecko Naselje,42240,Ivanec 
+Ivanic Desinicki,49216,Desinic 
+Ivanic Grad,10310,Ivanic-Grad 
+Ivanic Kosnicki,49216,Desinic 
+Ivanic Miljanski,49296,Zagorska Sela 
+Ivankovic Selo,47211,Utinja 
+Ivankovo,32281,Ivankovo 
+Ivanovac,31216,Antunovac 
+Ivanovci,34350,Caglin 
+Ivanovci,31227,Zelcin 
+Ivanovci Gorjanski,31400,Dakovo 
+Ivanovec,40000,Cakovec 
+Ivanovo,31540,Donji Miholjac 
+Ivanovo Polje,43500,Daruvar 
+Ivanovo Selo,43504,Ivanovo Selo 
+Ivanska,43231,Ivanska 
+Ivanja Reka,10360,Sesvete 
+Ivanje,51559,Beli 
+Ivanjski Bok,44214,Bobovac 
+Ivici,52448,Sveti Lovrec 
+Ivosevci,22305,Kistanje 
+Ivosevic Selo,47211,Utinja 
+Izimje,10450,Jastrebarsko 
+Jablan,51326,Vrbovsko 
+Jablanac,53287,Jablanac 
+Jablanovec,10298,Donja Bistra 
+Jabuceta,43203,Kapela 
+Jabuka,21485,Komiza 
+Jabuka,21240,Trilj 
+Jabukovac,44204,Jabukovac 
+Jadranovo,51264,Jadranovo 
+Jadreski,52100,Pula 
+Jadrici,47272,Ribnik 
+Jadrtovac,22010,Sibenik-Brodarica 
+Jadruhi,52447,Vizinada 
+Jagma,34551,Lipik 
+Jagnjedovac,48000,Koprivnica 
+Jagnjic Dol,10431,Sveta Nedjelja 
+Jagodno,10415,Novo Cice 
+Jagodnjak,31324,Jagodnjak 
+Jagodnje,53236,Podlapaca 
+Jagrovac,47221,Krstinja 
+Jagrovac,47220,Vojnic 
+Jaguplije,34322,Brestovac 
+Jakacici,52332,Pican 
+Jakacina Mala,35252,Sibinj 
+Jakici I i II,52448,Sveti Lovrec 
+Jakomici,52333,Podpican 
+Jakopovac,43202,Zrinski Topolovac 
+Jakopovec,42204,Turcin 
+Jakov Polje,51252,Klenovica 
+Jakovci,34553,Bucje 
+Jakovci Netreticki,47271,Netretic 
+Jakovici,52444,Tinjan 
+Jakovlje,10297,Jakovlje 
+Jaksic,34308,Jaksic 
+Jaksici,51325,Moravice 
+Jaksinec,49245,Gornja Stubica 
+Jakusevec Zabocki,49210,Zabok 
+Jales Breznicki,42226,Bisag 
+Jalkovec,42000,Varazdin 
+Jalsevec Breski,10310,Ivanic-Grad 
+Jalsevec Nartski,10370,Dugo Selo 
+Jalsevec Svibovecki,42223,Varazdinske Toplice 
+Jalsje,49214,Veliko Trgovisce 
+Jalsovec,40312,Strigova 
+Jalzabet,42203,Jalzabet 
+Jamarica,44321,Banova Jaruga 
+Jamarje,47245,Rakovica 
+Jame,47240,Slunj 
+Jamnica Pisarovinska,10451,Pisarovina 
+Jamno,42255,Donja Visnjica 
+Jancani,47251,Bosiljevo 
+Jankovac,48306,Sokolovac 
+Jankovo Seliste,47262,Generalski Stol 
+Janja Gora,47304,Plaski 
+Janja Lipa,44321,Banova Jaruga 
+Janjani,47263,Gornje Dubrave 
+Janjevalj,51243,Tribalj 
+Janjina,20246,Janjina 
+Japaga,34550,Pakrac 
+Jarcani,48260,Krizevci 
+Jarce Polje,47250,Duga Resa 
+Jarebinjak,22203,Rogoznica 
+Jarek Bisaski,42226,Bisag 
+Jarek Habekov,49283,Hrascina-Trgovisce 
+Jargovo,51253,Bribir 
+Jarki,42208,Cestica 
+Jarki Horvaticevi,42223,Varazdinske Toplice 
+Jarmina,32280,Jarmina 
+Jarnevici,47272,Ribnik 
+Jaruge,35224,Sikirevci 
+Jarusje,10432,Bregana 
+Jasenak,47314,Jasenak 
+Jasenas,43532,Dulovac 
+Jasenice,20210,Cavtat 
+Jasenice,23450,Obrovac 
+Jasenik,43227,Sandrovac 
+Jasenovac,44324,Jasenovac 
+Jasenovac,31309,Knezevi Vinogradi 
+Jasenovcani,44222,Sas 
+Jasenovec,10363,Belovar 
+Jasenovec Zagorski,49217,Krapinske Toplice 
+Jasenovica,52440,Porec 
+Jasenovica,47272,Ribnik 
+Jasenovik,52233,Susnjevica 
+Jasensko,21230,Sinj 
+Jasik,34350,Caglin 
+Jasikovac,53230,Korenica 
+Jasnic Brdo,47242,Krnjak 
+Jastrebarsko,10450,Jastrebarsko 
+Jaskovo,47281,Mali Erjavec 
+Javnica,44440,Dvor 
+Javor,10456,Kalje 
+Javorek,10432,Bregana 
+Javorje,51252,Klenovica 
+Javorje,10291,Prigorje Brdovecko 
+Javornik,44440,Dvor 
+Javorovac,48325,Novigrad Podravski 
+Jazavica,44323,Rajic 
+Jazbina,49216,Desinic 
+Jazbina Cvetlinska,42255,Donja Visnjica 
+Jazbina Visnjicka,42255,Donja Visnjica 
+Jazvaci,47201,Draganici 
+Jazvenik,44273,Sela 
+Jazvine,49232,Radoboj 
+Jedusevac,48324,Koprivnicki Bregi 
+Jehnici,52440,Porec 
+Jelenscak,42220,Novi Marof 
+Jelenjak,49216,Desinic 
+Jelenje,51218,Drazice 
+Jelisavac,31225,Breznica Nasicka 
+Jelov Klanac,47245,Rakovica 
+Jelovec,49282,Konjscina 
+Jelovec Vocanski,42245,Donja Voca 
+Jelovice,52421,Slum 
+Jelsa,21465,Jelsa 
+Jeminovac,34320,Orljavac 
+Jercinovici,51242,Drivenik 
+Jerebic,10418,Dubranec 
+Jerovec,42240,Ivanec 
+Jertovec,49282,Konjscina 
+Jesenice,21314,Jesenice 
+Jezera,22242,Jezera 
+Jezerane,53262,Jezerane 
+Jezerce,53231,Plitvicka Jezera 
+Jezerine,10454,Krasic 
+Jezerisce,49225,Durmanec 
+Jezernice,10457,Sosice 
+Jezero,34350,Caglin 
+Jezero I Dio,47304,Plaski 
+Jezero Klanjecko,49214,Veliko Trgovisce 
+Jezero Posavsko,44201,Martinska Ves 
+Jezdovec,10250,Lucko 
+Jezenj,52000,Pazin 
+Jezevic,21236,Vrlika 
+Jezevik,35209,Bukovlje 
+Jezevo,10370,Dugo Selo 
+Jezovec,42253,Bednja 
+Johi,47251,Bosiljevo 
+Johovec,10314,Kriz 
+Johovo,47220,Vojnic 
+Josipdol,47303,Josipdol 
+Josipovac,31221,Josipovac 
+Josipovac Punitovacki,31424,Punitovci 
+Josipovo,33520,Slatina 
+Josan,53234,Udbina 
+Josavica,44231,Blinja 
+Josevica,44400,Glina 
+Jovac,44440,Dvor 
+Jovici,23248,Razanac 
+Jugovac,47276,Zakanje 
+Jugovo Polje,33412,Cabuna 
+Juradi,52420,Buzet 
+Jural,52352,Kanfanar 
+Jurandvor,51523,Baska 
+Juranscina,49254,Belec 
+Jurazini,52231,Nedescina 
+Jurcani,52448,Sveti Lovrec 
+Jurdani,51213,Jurdani 
+Jurga,47220,Vojnic 
+Juricani,52470,Umag (Umago) 
+Juricici,52420,Buzet 
+Juricev Kal,52207,Barban 
+Jurici,52341,Zminj 
+Jurici,52445,Baderna 
+Jursici,52342,Svetvincenat 
+Jurjevac Punitovacki,31424,Punitovci 
+Jurjevcani,10450,Jastrebarsko 
+Jurjevec Zacretski,49217,Krapinske Toplice 
+Jurketinec,42243,Marusevec 
+Jurkovac,34350,Caglin 
+Jurkovo Selo,10455,Kostanjevac 
+Jurovcak,40313,Sveti Martin na Muri 
+Jurovec,40313,Sveti Martin na Muri 
+Jurovo,47276,Zakanje 
+Jurovski Brod,47276,Zakanje 
+Jusici,51213,Jurdani 
+Kabal,10344,Farkasevac 
+Kablar,47212,Skakavac 
+Kackovec,49294,Kraljevec na Sutli 
+Kadanovci,34310,Pleternica 
+Kadina Glavica,22321,Siveric 
+Kadumi,52440,Porec 
+Kajgana,43280,Garesnica 
+Kajini,52420,Buzet 
+Kakanj,22319,Devrske 
+Kakinac,43212,Rovisce 
+Kakma,23423,Polaca 
+Kalac,51417,Moscenicka Draga 
+Kaldanija,52460,Buje (Buie) 
+Kaldir,52424,Motovun 
+Kaldrma,23446,Kaldrma 
+Kalebovac,53230,Korenica 
+Kalenic,34310,Pleternica 
+Kali,23272,Kali 
+Kalic,51302,Kuzelj 
+Kalinovac,48361,Kalinovac 
+Kalinovaca,53213,Donje Pazariste 
+Kalinovica,10436,Rakov Potok 
+Kalinje,10380,Sveti Ivan Zelina 
+Kalnik,48269,Kalnik 
+Kaluderovac,53202,Perusic 
+Kalje,10456,Kalje 
+Kamanje,47282,Kamanje 
+Kamen,21000,Split 
+Kamena Gorica,42220,Novi Marof 
+Kamenac,31309,Knezevi Vinogradi 
+Kamenci,47285,Radatovici 
+Kamenica,42250,Lepoglava 
+Kamenica,10346,Preseka 
+Kamenica,48305,Reka 
+Kamenica Skradnicka,47264,Tounj 
+Kamenicki Vrhovec,42250,Lepoglava 
+Kamenicko Podgorje,42250,Lepoglava 
+Kamenmost,21262,Kamenmost 
+Kamenska,34320,Orljavac 
+Kamenski Hrib,51303,Plesce 
+Kamenski Seovci,34320,Orljavac 
+Kamenski Vucjak,34320,Orljavac 
+Kamensko,21246,Arzano 
+Kamensko,47000,Karlovac 
+Kamensko,51326,Vrbovsko 
+Kamenjak,51244,Grizane 
+Kamesnica,48269,Kalnik 
+Kampelje,51516,Vrbnik 
+Kampor,51280,Rab 
+Kanegra,52460,Buje (Buie) 
+Kanfanar,52352,Kanfanar 
+Kaniska Iva,43283,Kaniska Iva 
+Kaniza,35254,Bebrina 
+Kaniza,42240,Ivanec 
+Kaniza Gospicka,53000,Gospic 
+Kantrovci,34330,Velika 
+Kanjane,22321,Siveric 
+Kaocine,22324,Drinovci 
+Kapela,43203,Kapela 
+Kapela,42231,Mali Bukovec 
+Kapela Dvor,33406,Lukac 
+Kapela Kalnicka,42222,Ljubescica 
+Kapela Korenicka,53230,Korenica 
+Kapela Ravenska,48265,Raven 
+Kapelec,42243,Marusevec 
+Kapelica,43280,Garesnica 
+Kapelica,52220,Labin 
+Kapelna,31531,Viljevo 
+Kapelski Vrh,49294,Kraljevec na Sutli 
+Kapelscak,40313,Sveti Martin na Muri 
+Kapetanovo Polje,34552,Badljevina 
+Kapinci,33525,Sopje 
+Kapljuv,47222,Cetingrad 
+Kapovici,52448,Sveti Lovrec 
+Kaprije,22235,Kaprije 
+Kaptol,34334,Kaptol 
+Karadzicevo,32280,Jarmina 
+Karakasica,21230,Sinj 
+Karalic,22324,Drinovci 
+Karanac,31315,Karanac 
+Karane,48260,Krizevci 
+Karasi,47203,Recica 
+Karigador,52474,Brtonigla (Verteneglio) 
+Karin,23452,Karin 
+Karivaros,49245,Gornja Stubica 
+Karlobag,53288,Karlobag 
+Karlovac,47000,Karlovac 
+Karlovac Fericanacki,33515,Orahovica 
+Karlovec Ludbreski,42233,Sveti Durd 
+Karlovici,52341,Zminj 
+Karojba,52423,Karojba 
+Kartalije,47211,Utinja 
+Kastav,51215,Kastav 
+Kasuni,47251,Bosiljevo 
+Kascerga,52000,Pazin 
+Kasic,22213,Pirovac 
+Kasina,10362,Kasina 
+Kasinska Sopnica,10362,Kasina 
+Kasljavac,43274,Severin 
+Kast,47284,Kast 
+Kastel,52460,Buje (Buie) 
+Kastel Dezanovacki,43506,Dezanovac 
+Kastel Gomilica,21213,Kastel Gomilica 
+Kastel Kambelovac,21214,Kastel Kambelovac 
+Kastel Luksic,21215,Kastel Luksic 
+Kastel Novi,21216,Kastel Stari 
+Kastel Stari,21216,Kastel Stari 
+Kastel Sucurac,21212,Kastel Sucurac 
+Kastel Stafilic,21216,Kastel Stari 
+Kastel Zegarski,23451,Zegar 
+Kastelanec,42204,Turcin 
+Kastelir,52464,Kastelir 
+Katinac,43532,Dulovac 
+Katinka,33407,Gornje Bazje 
+Katinovac,44415,Topusko 
+Katolicke Caire,44320,Kutina 
+Katolicko Selisce,44316,Velika Ludina 
+Katoro,52470,Umag (Umago) 
+Katun,52445,Baderna 
+Katun,51264,Jadranovo 
+Katuni,21250,Sestanovac 
+Kavran,52208,Krnica 
+Kavrani,51312,Brod Moravice 
+Kebel,49221,Bedekovcina 
+Kegljevac,43226,Veliko Trojstvo 
+Kejici,47262,Generalski Stol 
+Kelemen,42203,Jalzabet 
+Keleminovec,10383,Komin 
+Kelesinka,31433,Podgorac 
+Kendelovec,48213,Cirkvena 
+Kepcije,44440,Dvor 
+Kerestinec,10431,Sveta Nedjelja 
+Keseri,47285,Radatovici 
+Keserov Potok,47242,Krnjak 
+Kestenovac,47221,Krstinja 
+Kestenovac,53251,Nebljusi 
+Kestenjak,47253,Perjasica 
+Kestenje,47222,Cetingrad 
+Kesinci,31402,Semeljci 
+Kiceri,51253,Bribir 
+Kihalac,44400,Glina 
+Kijani,23440,Gracac 
+Kijevo,22310,Kijevo 
+Kik,53244,Lovinac 
+Kindrovo,35201,Podcrkavlje 
+Kinjacka,44211,Blinjski Kut 
+Kip,43500,Daruvar 
+Kirin,44414,Bovic 
+Kirmenjak,52440,Porec 
+Kistanje,22305,Kistanje 
+Kitisanci,31554,Gat 
+Klada,53286,Starigrad (kod Senja) 
+Kladare,33405,Pitomaca 
+Kladari,44211,Blinjski Kut 
+Kladescica,10380,Sveti Ivan Zelina 
+Kladje,10430,Samobor 
+Kladnik,49295,Kumrovec 
+Kladnjice,21202,Lecevica 
+Klakar,35208,Ruscica 
+Klake,10435,Sveti Martin pod Okicem 
+Klana,51217,Klana 
+Klanac,53212,Klanac 
+Klanac,51329,Severin na Kupi 
+Klanac,47245,Rakovica 
+Klanac Perjasicki,47253,Perjasica 
+Klanice,51514,Dobrinj 
+Klanjec,49290,Klanjec 
+Klanjecno,49216,Desinic 
+Klarici,51242,Drivenik 
+Klarici,52342,Svetvincenat 
+Klasnjica,53230,Korenica 
+Klek,20356,Klek 
+Klenice,49218,Pregrada 
+Klenovac,53202,Perusic 
+Klenovec Humski,49231,Hum na Sutli 
+Klenovica,51252,Klenovica 
+Klenovnik,42244,Klenovnik 
+Klenovscak,52421,Slum 
+Klepece Selo,51312,Brod Moravice 
+Kletiste,44320,Kutina 
+Klimen,49282,Konjscina 
+Klimni,52341,Zminj 
+Klimno,51514,Dobrinj 
+Klinac,44204,Jabukovac 
+Klinca Sela,10450,Jastrebarsko 
+Klipino Brdo,47211,Utinja 
+Klis,21231,Klis 
+Klisa,34320,Orljavac 
+Klisa,34550,Pakrac 
+Klisa,31000,Osijek 
+Klisevo,20234,Orasac 
+Klobucak,44211,Blinjski Kut 
+Klokoc,47221,Krstinja 
+Klokocevac,43211,Predavac 
+Klokocevac Samoborski,10432,Bregana 
+Klokocevci,31500,Nasice 
+Klokocevik,35211,Trnjani 
+Klokovec,49217,Krapinske Toplice 
+Klostar,52450,Vrsar 
+Klostar Ivanic,10312,Klostar Ivanic 
+Klostar Podravski,48362,Klostar Podravski 
+Klostar Siljevicki,51264,Jadranovo 
+Klostar Vojakovacki,48264,Klostar Vojakovacki 
+Klupci,49217,Krapinske Toplice 
+Klupica,47221,Krstinja 
+Kljaic Brdo,47211,Utinja 
+Kljake,22322,Ruzic 
+Kljenak,21276,Vrgorac 
+Kljuc,42220,Novi Marof 
+Kljuc,22324,Drinovci 
+Kljuc Brdovecki,10292,Senkovec 
+Kljucar,47220,Vojnic 
+Kljucic Brdo,10413,Kravarsko 
+Kmeti,52470,Umag (Umago) 
+Knapic,42240,Ivanec 
+Knapici,52448,Sveti Lovrec 
+Knez Gorica,47205,Vukmanic 
+Knezovec,40311,Lopatinec 
+Knezovljani,44432,Mecencani 
+Knezci,34312,Sesvete (kod Pozege) 
+Knezevac,34350,Caglin 
+Knezevi Vinogradi,31309,Knezevi Vinogradi 
+Knezevic Kosa,47220,Vojnic 
+Knezevo,31302,Knezevo 
+Knezica,20236,Mokosica 
+Knin,22300,Knin 
+Kninsko Polje,22300,Knin 
+Kobasicari,43211,Predavac 
+Kobilic,10410,Velika Gorica 
+Kobilic Pokupski,47000,Karlovac 
+Kobiljaca,20278,Nova Sela 
+Kobiljak,44402,Mali Obljaj 
+Kocijani,51312,Brod Moravice 
+Kocicin,51302,Kuzelj 
+Kocici,52463,Visnjan 
+Kohanjac,47276,Zakanje 
+Kokanj,51242,Drivenik 
+Kokinac,43000,Bjelovar 
+Kokirevo,47220,Vojnic 
+Kokocak,33515,Orahovica 
+Kokoric,21276,Vrgorac 
+Kolan,23251,Kolan 
+Kolarec,48268,Gornja Rijeka 
+Kolarevo Selo,43247,Narta 
+Kolaric,47220,Vojnic 
+Kolarina,23420,Benkovac 
+Kolarovec,42208,Cestica 
+Kolasac,22305,Kistanje 
+Koledinec,48312,Rasinja 
+Kolenica,10347,Rakovec 
+Kolenovac,47271,Netretic 
+Kolocep,20221,Kolocep 
+Kolumbera,52463,Visnjan 
+Koljane,21236,Vrlika 
+Kom,23443,Zrmanja 
+Komaji,20213,Cilipi 
+Komarna,20356,Klek 
+Komarnica,35420,Staro Petrovo Selo 
+Komarnica Ludbreska,42233,Sveti Durd 
+Komarovci,34334,Kaptol 
+Komatnica,48323,Hlebine 
+Komazeci,23451,Zegar 
+Komesarac,47222,Cetingrad 
+Kometnik-Jorgici,33522,Vocin 
+Kometnik-Zubici,33522,Vocin 
+Komic,53234,Udbina 
+Komin,10383,Komin 
+Komin,20344,Komin (Dalmacija) 
+Komiza,21485,Komiza 
+Komlenici,51325,Moravice 
+Komletinci,32253,Komletinci 
+Komogovina,44432,Mecencani 
+Komolac,20236,Mokosica 
+Komor Zacretski,49223,Sveti Kriz Zacretje 
+Komora,44443,Donji Zirovac 
+Komorica,34315,Ratkovica 
+Kompanj,52425,Roc 
+Kompator,44316,Velika Ludina 
+Kompolje,53226,Kompolje 
+Kompolje Korenicko,53230,Korenica 
+Komusevac,43245,Gornji Draganec 
+Komusina,34000,Pozega 
+Konak,10340,Vrbovec 
+Koncanica,43505,Koncanica 
+Koncarev Kraj,53231,Plitvicka Jezera 
+Kondric,31411,Trnava 
+Konscani,10315,Novoselec 
+Konscica,10435,Sveti Martin pod Okicem 
+Kontesici,52450,Vrsar 
+Konjaric Vrh,10455,Kostanjevac 
+Konjevrate,22221,Lozovac 
+Konjkovsko,47286,Mahicno 
+Konjsko,53288,Karlobag 
+Konjsko,21231,Klis 
+Konjsko Brdo,53202,Perusic 
+Konjscina,49282,Konjscina 
+Kopacevo,31327,Bilje 
+Kopcevec,10370,Dugo Selo 
+Koprivna,31215,Ernestinovo 
+Koprivna,34320,Orljavac 
+Koprivnica,48000,Koprivnica 
+Koprivnica,34310,Pleternica 
+Koprivnica Zagorska,49225,Durmanec 
+Koprivnicki Bregi,48324,Koprivnicki Bregi 
+Koprivnicki Ivanec,48314,Koprivnicki Ivanec 
+Koprivno,21231,Klis 
+Koprno,22323,Unesic 
+Korana,47246,Dreznik Grad 
+Korana,53231,Plitvicka Jezera 
+Koranska Strana,47253,Perjasica 
+Koranski Brijeg,47241,Tusilovic 
+Koranski Lug,47245,Rakovica 
+Koransko Selo,47253,Perjasica 
+Korcula,20260,Korcula 
+Kordici Zumberacki,10457,Sosice 
+Kordunski Ljeskovac,47245,Rakovica 
+Kordusevci,35211,Trnjani 
+Korelici,52402,Cerovlje 
+Korenica,53230,Korenica 
+Korenicani,43531,Veliki Bastaji 
+Korenic Brdo,47251,Bosiljevo 
+Korenici,52352,Kanfanar 
+Korenjak,42243,Marusevec 
+Koretinec,42243,Marusevec 
+Korija,33404,Spisic Bukovica 
+Korita,34551,Lipik 
+Korita,20224,Maranovici 
+Korita,21238,Otok (Dalmacija) 
+Korita Rakovicka,47245,Rakovica 
+Koritinja,47204,Sisljavic 
+Koritna,10342,Dubrava 
+Koritna,31402,Semeljci 
+Korlat,23420,Benkovac 
+Korlevici,52463,Visnjan 
+Kornati,22243,Murter 
+Kornic,51517,Kornic 
+Korog,31214,Laslovo 
+Koromacno,52222,Koromacno 
+Koromani,52207,Barban 
+Korusce,21202,Lecevica 
+Kosa,47240,Slunj 
+Kosa Janjacka,53202,Perusic 
+Kosavin,51253,Bribir 
+Kosi,51216,Viskovo 
+Kosijer Selo,47243,Veljun 
+Kosijersko Selo,47252,Barilovic 
+Kosinozici,52440,Porec 
+Kosinjski Bakovac,53203,Kosinj 
+Kosna,44437,Rujevac 
+Kosore,21236,Vrlika 
+Kosoriga,52420,Buzet 
+Kosovac,35430,Okucani 
+Kosovecko,49282,Konjscina 
+Kostadinovac,48263,Carevdar 
+Kostanj,10342,Dubrava 
+Kostanje,21207,Kostanje 
+Kostanjevac,10455,Kostanjevac 
+Kostanjevac,43233,Trnoviticki Popovac 
+Kostanjevec Podvrski,10432,Bregana 
+Kostanjevec Rijecki,48268,Gornja Rijeka 
+Kostanjica,52429,Groznjan (Grisignana) 
+Kostel,49218,Pregrada 
+Kostel Pribicki,10454,Krasic 
+Kostelsko,49218,Pregrada 
+Kostelj,51244,Grizane 
+Kostrcani,52233,Susnjevica 
+Kostrena Sveta Barbara,51221,Kostrena 
+Kostrena Sveta Lucija,51221,Kostrena 
+Kostresi Bjelovacki,44432,Mecencani 
+Kostresi Saski,44222,Sas 
+Kostrici,44433,Majur 
+Koska,31224,Koska 
+Koskovec,42243,Marusevec 
+Kosljun,23250,Pag 
+Kosnica,49216,Desinic 
+Kosutarica,44324,Jasenovac 
+Kosute,21240,Trilj 
+Kosutici,52463,Visnjan 
+Kotarani,44440,Dvor 
+Kotari,10430,Samobor 
+Kotarice,49223,Sveti Kriz Zacretje 
+Kotezi,21276,Vrgorac 
+Kotlenice,21204,Dugopolje 
+Kotli,52425,Roc 
+Kotlina,31309,Knezevi Vinogradi 
+Kotor,51260,Crikvenica 
+Kotoriba,40329,Kotoriba 
+Koturic,34553,Bucje 
+Kovacevac,34551,Lipik 
+Kovacevac,35400,Nova Gradiska 
+Kovacevac,43212,Rovisce 
+Kovaci,52464,Kastelir 
+Kovacic,22300,Knin 
+Kozalj Vrh,47261,Zvecaj 
+Kozaperovica,44405,Mali Gradac 
+Kozarac,44414,Bovic 
+Kozarac,31325,Ceminac 
+Kozarevac,48362,Klostar Podravski 
+Kozarevac Racanski,43272,Nova Raca 
+Kozarica,20225,Babino Polje 
+Kozarice,44322,Lipovljani 
+Kozibrod,44435,Divusa 
+Kozica,21274,Kozica 
+Kozice,33520,Slatina 
+Kozinscak,10370,Dugo Selo 
+Kozjaca,10413,Kravarsko 
+Kozjak,31328,Lug 
+Kozjak Zacretski,49223,Sveti Kriz Zacretje 
+Kozjan,53235,Bunic 
+Kozji Vrh,51307,Prezid 
+Kozlikovo,10450,Jastrebarsko 
+Kozino,23231,Petrcane 
+Kozlovac,23420,Benkovac 
+Kozljak,52233,Susnjevica 
+Kozljani,52207,Barban 
+Kracevec,42224,Visoko 
+Kraguj,34550,Pakrac 
+Kraj,21232,Dicmo 
+Kraj,23212,Tkon 
+Kraj Donji,10299,Marija Gorica 
+Kraj Drage,52231,Nedescina 
+Kraj Gornji -juzni dio,10293,Dubravica 
+Kraj Gornji -sjeverni dio,10293,Dubravica 
+Krajacici,35252,Sibinj 
+Krajcar Brijeg,52341,Zminj 
+Krajici,52428,Oprtalj (Portole) 
+Krajiska Kutinica,44320,Kutina 
+Krajna,33514,Cacinci 
+Krajska Vas,10296,Luka 
+Krakar,47313,Dreznica 
+Kraljev Vrh,10297,Jakovlje 
+Kraljev Vrh,10346,Preseka 
+Kraljev Vrh,51305,Trsce 
+Kraljeva Velika,44322,Lipovljani 
+Kraljevac,43212,Rovisce 
+Kraljevac,21255,Zadvarje 
+Kraljevcani,44204,Jabukovac 
+Kraljevec na Sutli,49294,Kraljevec na Sutli 
+Kraljevec Radobojski,49224,Lepajci 
+Kraljevec Semnicki,49252,Mihovljan 
+Kraljevica,51262,Kraljevica 
+Kraljevo Selo,47251,Bosiljevo 
+Krancici,52464,Kastelir 
+Krancici,52342,Svetvincenat 
+Kranjci,51307,Prezid 
+Kranjci,52220,Labin 
+Krapan,52223,Rasa 
+Krapanj,22231,Krapanj 
+Krapina,49000,Krapina 
+Krapina Selo,49282,Konjscina 
+Krapinica,49284,Budinscina 
+Krapinske Toplice,49217,Krapinske Toplice 
+Krapje,44325,Krapje 
+Kras,51514,Dobrinj 
+Kras,52425,Roc 
+Krasica,52460,Buje (Buie) 
+Krasica,51224,Krasica 
+Kraskovici,33514,Cacinci 
+Krasno,53274,Krasno 
+Krasic,10454,Krasic 
+Kratecko,44213,Kratecko 
+Kravarsko,10413,Kravarsko 
+Kravljak,10432,Bregana 
+Kravljak,33533,Pivnica Slavonska 
+Krbava,53236,Podlapaca 
+Krbavcici,52420,Buzet 
+Krbavica,53235,Bunic 
+Krbune,52402,Cerovlje 
+Krbune,52333,Podpican 
+Krculi,52341,Zminj 
+Krc,42220,Novi Marof 
+Krc Bosiljevski,47251,Bosiljevo 
+Krcenik,31530,Podravska Moslavina 
+Kreca Ves,10380,Sveti Ivan Zelina 
+Kremenici,51511,Malinska 
+Kresini,52341,Zminj 
+Kresevo,21250,Sestanovac 
+Krestelovac,43506,Dezanovac 
+Kricina,51253,Bribir 
+Kricke,34553,Bucje 
+Kricke,44330,Novska 
+Kricke,22320,Drnis 
+Kringa,52444,Tinjan 
+Kristanovec,40316,Vratisinec 
+Krivac,51301,Brod na Kupi 
+Krivaj,44321,Banova Jaruga 
+Krivaj,34000,Pozega 
+Krivaj Sunjski,44210,Sunja 
+Krivaja,43232,Berek 
+Krivaja Pustara,33507,Crnac 
+Krivaja Vojnicka,47220,Vojnic 
+Krivi Put,53271,Krivi Put 
+Krivodol,21263,Krivodol 
+Krivodol,21242,Grab 
+Kriz,10314,Kriz 
+Kriz Brdovecki,10299,Marija Gorica 
+Kriz Gornji,43202,Zrinski Topolovac 
+Kriz Hrastovacki,44251,Gora 
+Kriz Kamenica,53261,Krizpolje 
+Kriz Koranski,47252,Barilovic 
+Krizanci,52341,Zminj 
+Krizance,42208,Cestica 
+Krizance,49221,Bedekovcina 
+Krizancici,47201,Draganici 
+Krizanec,42204,Turcin 
+Krizci,10312,Klostar Ivanic 
+Krizevci,48260,Krizevci 
+Krizevcec,10382,Donja Zelina 
+Krizic,43231,Ivanska 
+Krizine,52470,Umag (Umago) 
+Krizisce,51241,Krizisce 
+Kriznica,33405,Pitomaca 
+Krizovec,40316,Vratisinec 
+Krizovljan,42230,Ludbreg 
+Krizovljan Radovecki,42208,Cestica 
+Krizpolje,53261,Krizpolje 
+Krk,51500,Krk 
+Krkac,10340,Vrbovec 
+Krkanec,42205,Vidovec 
+Krkovic,22223,Bribir(kod Skradina) 
+Krkuz,52425,Roc 
+Krmed,52352,Kanfanar 
+Krmpotske Vodice,51252,Klenovica 
+Krndija,31424,Punitovci 
+Krneza,23248,Razanac 
+Krnezici,10454,Krasic 
+Krnica,52208,Krnica 
+Krnicari,52341,Zminj 
+Krnici,21255,Zadvarje 
+Krnjak,47242,Krnjak 
+Krnjeuve,22319,Devrske 
+Kropinjak,52421,Slum 
+Krstatice,21272,Slivno 
+Krstinja,47221,Krstinja 
+Krs,53203,Kosinj 
+Krsan,52232,Krsan 
+Krsanci,52341,Zminj 
+Krscenovec,42225,Breznicki Hum 
+Krsete,52474,Brtonigla (Verteneglio) 
+Krsikla,52000,Pazin 
+Krsinci,31433,Podgorac 
+Krsuli,52448,Sveti Lovrec 
+Krti,52427,Livade 
+Kruge,53251,Nebljusi 
+Kruncici,52448,Sveti Lovrec 
+Krunoslavje,31543,Miholjacki Porec 
+Krupa,23451,Zegar 
+Krupace,10454,Krasic 
+Kruscica,53203,Kosinj 
+Krusevica,35220,Slavonski Samac 
+Krusevo,23450,Obrovac 
+Krusevo,34320,Orljavac 
+Krusevo,22204,Siroke 
+Kruskovac,53205,Medak 
+Kruskovaca,47222,Cetingrad 
+Krusljevac,10346,Preseka 
+Krusljevec,42214,Sveti Ilija 
+Krusljevo Selo,49243,Oroslavje 
+Krusvar,21232,Dicmo 
+Krusvari,52420,Buzet 
+Krvavac I,20341,Kula Norinska 
+Krvavac II,20350,Metkovic 
+Krvavica,21320,Baska Voda 
+Krzelji,21255,Zadvarje 
+Kuberton,52462,Momjan (Momiano) 
+Kucaj,47300,Ogulin 
+Kucari,48265,Raven 
+Kuce,10419,Vukovina 
+Kuceli,51211,Matulji 
+Kucer,10454,Krasic 
+Kucice,21208,Kucice 
+Kucilovina,10362,Kasina 
+Kucine,21209,Mravince 
+Kucan Ludbreski,42230,Ludbreg 
+Kucan Marof,42000,Varazdin 
+Kucanci,31542,Magadenovac 
+Kucanci Dakovacki,31418,Drenje 
+Kucanec,10360,Sesvete 
+Kucari,10340,Vrbovec 
+Kucevice,47271,Netretic 
+Kucibreg,52462,Momjan (Momiano) 
+Kucista Cesaricka,53288,Karlobag 
+Kuciste,20267,Kuciste 
+Kujici,52207,Barban 
+Kujnik,35250,Oriovac 
+Kujnik,34320,Orljavac 
+Kuk,47222,Cetingrad 
+Kukci,52446,Nova Vas 
+Kukljica,23271,Kukljica 
+Kukljic,53205,Medak 
+Kukuljani,51218,Drazice 
+Kukuljanovo,51223,Skrljevo 
+Kukunjevac,34551,Lipik 
+Kukurini,52332,Pican 
+Kula,34343,Bektez 
+Kula Atlagic,23420,Benkovac 
+Kula Norinska,20341,Kula Norinska 
+Kuljaji,47285,Radatovici 
+Kuljani,44435,Divusa 
+Kumrovec,49295,Kumrovec 
+Kuna Konavoska,20217,Pridvorje 
+Kuna Peljeska,20243,Kuna 
+Kuncani,47285,Radatovici 
+Kundevec,48265,Raven 
+Kunic,47304,Plaski 
+Kunic Ribnicki,47271,Netretic 
+Kunisinci,31555,Marijanci 
+Kunovac Kupirovacki,23445,Srb 
+Kunovci,34000,Pozega 
+Kunovec,48311,Kunovec 
+Kunovec Breg,48311,Kunovec 
+Kunj,52220,Labin 
+Kupa,51301,Brod na Kupi 
+Kupari,20207,Mlini 
+Kupcina Zumberacka,10455,Kostanjevac 
+Kupec Dol,10453,Gorica Svetojanska 
+Kupina,35216,Prnjavor 
+Kupinec,10450,Jastrebarsko 
+Kupinecki Kraljevec,10251,Hrvatski Leskovac 
+Kupinovac,43000,Bjelovar 
+Kupirovo,23445,Srb 
+Kupjak,51313,Kupjak 
+Kupljenovo,10295,Kupljenovo 
+Kupljensko,47220,Vojnic 
+Kurili,52352,Kanfanar 
+Kurjak,53234,Udbina 
+Kurjavici,52463,Visnjan 
+Kurpezova Gorica,10454,Krasic 
+Kursanec,40000,Cakovec 
+Kusaja,47221,Krstinja 
+Kusanovec,10370,Dugo Selo 
+Kusijevec,48268,Gornja Rijeka 
+Kusonje,34550,Pakrac 
+Kustici,53296,Zubovici 
+Kusevac,31400,Dakovo 
+Kustani,48213,Cirkvena 
+Kutanja,47243,Veljun 
+Kuterovo,53225,Svica 
+Kutina,44320,Kutina 
+Kutinica,44320,Kutina 
+Kutinska Slatina,44320,Kutina 
+Kutjevo,34340,Kutjevo 
+Kutnjak,48317,Legrad 
+Kutovi,33513,Zdenci 
+Kuzma,33522,Vocin 
+Kuzma Perjasicka,47253,Perjasica 
+Kuzmica,34311,Kuzmica 
+Kuzminec,48312,Rasinja 
+Kuzminec Miljanski,49296,Zagorska Sela 
+Kuzminec/dio/,49255,Novi Golubovec 
+Kuzminec/dio/,49252,Mihovljan 
+Kuzelj,51302,Kuzelj 
+Kvarte,53202,Perusic 
+Labin,52220,Labin 
+Labin,21201,Prgomet 
+Labinci,52464,Kastelir 
+Lacici,31542,Magadenovac 
+Ladesici,47271,Netretic 
+Ladici,52352,Kanfanar 
+Ladimirevci,31550,Valpovo 
+Ladina,10342,Dubrava 
+Ladinec,48213,Cirkvena 
+Ladislav,43284,Hercegovac 
+Ladislav Sokolovacki,48306,Sokolovac 
+Ladislavec,49250,Zlatar 
+Ladrovici,52440,Porec 
+Ladvenjak,47241,Tusilovic 
+Ladvic,51260,Crikvenica 
+Ladanska,31225,Breznica Nasicka 
+Ladevac,35430,Okucani 
+Ladevacko Seliste,47240,Slunj 
+Ladevci,22223,Bribir(kod Skradina) 
+Laginji,52341,Zminj 
+Lakmartin,51517,Kornic 
+Lakovici,52448,Sveti Lovrec 
+Laktac,21233,Hrvace 
+Laktec,10382,Donja Zelina 
+Lakusija,34310,Pleternica 
+Lalici,43203,Kapela 
+Laminac,43246,Stefanje 
+Lancic,42240,Ivanec 
+Lanisce,10453,Gorica Svetojanska 
+Lanisce,52422,Lanisce 
+Lanisce,52232,Krsan 
+Lapat,47304,Plaski 
+Lapovci,31411,Trnava 
+Lapsina,40313,Sveti Martin na Muri 
+Lasinja,47206,Lasinja 
+Laslavici,47251,Bosiljevo 
+Laslovo,31214,Laslovo 
+Lasovac,43273,Bulinac 
+Lasovac-Brdo,43273,Bulinac 
+Lastine,49231,Hum na Sutli 
+Lastovo,20290,Lastovo 
+Lasici,52447,Vizinada 
+Latin,47304,Plaski 
+Latinovac,34350,Caglin 
+Lautari,51307,Prezid 
+Laz Bistricki,49246,Marija Bistrica 
+Laz Stubicki,49246,Marija Bistrica 
+Lazac Lokvarski,51316,Lokve 
+Lazarevac,10340,Vrbovec 
+Lazarici,52232,Krsan 
+Laze,35422,Zapolje 
+Laze Prnjavor,34000,Pozega 
+Lazi,51305,Trsce 
+Lazi Krapinski,49000,Krapina 
+Lazi Turopoljski,10410,Velika Gorica 
+Lazina,47201,Draganici 
+Lazina Cicka,10415,Novo Cice 
+Lecevica,21202,Lecevica 
+Ledenice,51251,Ledenice 
+Ledenik,31224,Koska 
+Ledenik Cesaricki,53288,Karlobag 
+Ledina,10346,Preseka 
+Ledine Klanjecke,49290,Klanjec 
+Ledinec,42201,Beretinec 
+Legovici,52463,Visnjan 
+Legrad,48317,Legrad 
+Lekenik,44272,Lekenik 
+Lekneno,10410,Velika Gorica 
+Lemes,48265,Raven 
+Lemes Krizevacki,48260,Krizevci 
+Lenisce,49215,Tuhelj 
+Lepa Ves,49240,Donja Stubica 
+Lepajci,49224,Lepajci 
+Lepavina,48306,Sokolovac 
+Lepenica,22206,Boraja 
+Lepoglava,42250,Lepoglava 
+Lepoglavec,49290,Klanjec 
+Leprovica,10370,Dugo Selo 
+Lepsic,10310,Ivanic-Grad 
+Lepuri,23420,Benkovac 
+Lesci,51328,Lukovdol 
+Lesiscina,52426,Lupoglav 
+Leska,51317,Crni Lug 
+Leskova Draga,51313,Kupjak 
+Leskovac Barilovicki,47252,Barilovic 
+Leskovec,40312,Strigova 
+Leskovec Toplicki,42223,Varazdinske Toplice 
+Lesce,47262,Generalski Stol 
+Lestakovec,42203,Jalzabet 
+Letaj,52233,Susnjevica 
+Letajac,52220,Labin 
+Leticani,43000,Bjelovar 
+Letinac,53260,Brinje 
+Letovanic,44271,Letovanic 
+Letovcan Novodvorski,49290,Klanjec 
+Letovcan Tomasevecki,49290,Klanjec 
+Levanjska Varos,31416,Levanjska Varos 
+Levinovac,33533,Pivnica Slavonska 
+Levkusje,47286,Mahicno 
+Lic,51323,Lic 
+Licka Jesenica,47305,Licka Jesenica 
+Licki Citluk,53000,Gospic 
+Licki Novi,53000,Gospic 
+Licki Osik,53201,Licki Osik 
+Licki Ribnik,53000,Gospic 
+Licko Cerje,53244,Lovinac 
+Licko Lesce,53224,Licko Lesce 
+Licko Novo Selo,31511,Durdenovac 
+Licko Petrovo Selo,53233,Licko Petrovo Selo 
+Liganj,51415,Lovran 
+Lijesce,47285,Radatovici 
+Lijeva Luka,44201,Martinska Ves 
+Lijeva Martinska Ves,44201,Martinska Ves 
+Lijevi Degoj,10414,Pokupsko 
+Lijevi Dubrovcak,10316,Lijevi Dubrovcak 
+Lijevi Stefanki,10414,Pokupsko 
+Lijevo Sredicko,10451,Pisarovina 
+Lijevo Trebarjevo,44201,Martinska Ves 
+Lijevo Zeljezno,44201,Martinska Ves 
+Lila,31500,Nasice 
+Linardici,51511,Malinska 
+Lindar,52000,Pazin 
+Lipa,51214,Sapjane 
+Lipa,47261,Zvecaj 
+Lipice,53261,Krizpolje 
+Lipik,34551,Lipik 
+Lipine,31500,Nasice 
+Lipje,47212,Skakavac 
+Liplje,51329,Severin na Kupi 
+Lipnica,10253,Donji Dragonozec 
+Lipnica,10347,Rakovec 
+Lipnica Zagorska,49215,Tuhelj 
+Lipnik,47272,Ribnik 
+Liposcaki,47251,Bosiljevo 
+Lipov Pesak,47261,Zvecaj 
+Lipovac,32246,Lipovac 
+Lipovac,34550,Pakrac 
+Lipovac,47245,Rakovica 
+Lipovac,33411,Gradina 
+Lipovac Hrastinski,31403,Vuka 
+Lipovac Krstinjski,47221,Krstinja 
+Lipovac Majur,43500,Daruvar 
+Lipovaca,32010,Vukovar 
+Lipovaca Dreznicka,47246,Dreznik Grad 
+Lipovcani,43211,Predavac 
+Lipovec,49282,Konjscina 
+Lipovec Lonjski,10312,Klostar Ivanic 
+Lipovljani,44322,Lipovljani 
+Lipovlje,53225,Svica 
+Lipovnik,42244,Klenovnik 
+Lipovo Brdo,43203,Kapela 
+Lipovo Polje,53203,Kosinj 
+Lisac,20231,Doli 
+Lisac,51217,Klana 
+Lisicic,23420,Benkovac 
+Lisicina Gorica,47251,Bosiljevo 
+Lisicine,33522,Vocin 
+Lisine,47221,Krstinja 
+Liska,21232,Dicmo 
+Lisane Ostrovicke,23420,Benkovac 
+Lisane Tinjske,23423,Polaca 
+Lisnica,47250,Duga Resa 
+Lisnjak,22320,Drnis 
+Livade,52427,Livade 
+Livadani,34551,Lipik 
+Livana,31431,Cepin 
+Liznjan,52203,Medulin 
+Lobor,49253,Lobor 
+Loborika,52206,Marcana 
+Lokosin Dol,10450,Jastrebarsko 
+Lokva Rogoznica,21317,Lokva Rogoznica 
+Lokve,51316,Lokve 
+Lokvica,51312,Brod Moravice 
+Lokvicici,21263,Krivodol 
+Loncar Brdo,47271,Netretic 
+Loncarica,43290,Grubisno Polje 
+Londzica,31500,Nasice 
+Lonja,44213,Kratecko 
+Lonjgari,47271,Netretic 
+Lonjica,10341,Lonjica 
+Lopaca,51218,Drazice 
+Lopar,51281,Lopar 
+Lopatinec,40311,Lopatinec 
+Lopud,20222,Lopud 
+Loskunja,47220,Vojnic 
+Lotine,44435,Divusa 
+Lovas,32237,Lovas 
+Lovca,44432,Mecencani 
+Lovcic,35253,Brodski Stupnik 
+Lovic Prekriski,47283,Vivodina 
+Lovinac,23241,Policnik 
+Lovinac,53244,Lovinac 
+Loviste,20269,Loviste 
+Lovorje,20357,Blace 
+Lovorno,20217,Pridvorje 
+Lovran,51415,Lovran 
+Lovranska Draga,51415,Lovran 
+Lovrecan,42242,Radovan 
+Lovrecan,49247,Zlatar Bistrica 
+Lovrecica,52470,Umag (Umago) 
+Lovrecka Varos,10340,Vrbovec 
+Lovrecka Velika,10340,Vrbovec 
+Lovrec,21257,Lovrec 
+Lovreca Sela,49217,Krapinske Toplice 
+Lovrentovec,42223,Varazdinske Toplice 
+Lovska,44330,Novska 
+Lozan,33404,Spisic Bukovica 
+Lozari,52460,Buje (Buie) 
+Lozice,23234,Vir 
+Loznati,51557,Cres 
+Lozovac,22221,Lozovac 
+Lozisca,21404,Lozisca 
+Loznice,22204,Siroke 
+Lubarska,51218,Drazice 
+Lubena,10345,Gradec 
+Lubenice,51557,Cres 
+Luc,31300,Beli Manastir 
+Lucane,21230,Sinj 
+Lucelnica,10451,Pisarovina 
+Lucelnica Tomasevecka,49290,Klanjec 
+Lucica,47252,Barilovic 
+Lucice,51300,Delnice 
+Lucinci,34320,Orljavac 
+Lucko,10250,Lucko 
+Ludbreg,42230,Ludbreg 
+Ludbreski Ivanec,48312,Rasinja 
+Ludinica,44316,Velika Ludina 
+Ludvinci,32225,Bobota 
+Lug,47201,Draganici 
+Lug,31328,Lug 
+Lug Gradinski,33411,Gradina 
+Lug Orehovicki,49228,Brestovec Orehovicki 
+Lug Poznanovecki,49222,Poznanovec 
+Lug Samoborski,10432,Bregana 
+Lug Suboticki,31224,Koska 
+Lug Zabocki,49210,Zabok 
+Lugarski Breg,10293,Dubravica 
+Luka,10296,Luka 
+Luka,20230,Ston 
+Luka,10340,Vrbovec 
+Luka,23282,Zman 
+Luka Krmpotska,51252,Klenovica 
+Luka Ludbreska,42233,Sveti Durd 
+Luka Pokupska,47203,Recica 
+Lukac,33406,Lukac 
+Lukac,34335,Vetovo 
+Lukacevec,48268,Gornja Rijeka 
+Lukacevec Toplicki,42223,Varazdinske Toplice 
+Lukar,22303,Oklaj 
+Lukarisce,10370,Dugo Selo 
+Lukavac,33520,Slatina 
+Lukavec,10412,Donja Lomnica 
+Lukavec,42242,Radovan 
+Lukavec Klanjecki,49294,Kraljevec na Sutli 
+Lukavec Posavski,44203,Gusce 
+Lukavec Sutlanski,10293,Dubravica 
+Luke,47222,Cetingrad 
+Luke Poljanske,49296,Zagorska Sela 
+Lukezi,51218,Drazice 
+Lukinic Brdo,10414,Pokupsko 
+Lukinic Draga,47282,Kamanje 
+Lukoran,23274,Lukoran 
+Lukovcak,49225,Durmanec 
+Lukovdol,51328,Lukovdol 
+Lukovec,48312,Rasinja 
+Lukovo,53285,Lukovo 
+Lukovo,10340,Vrbovec 
+Lukovo Sugarje,53289,Lukovo Sugarje 
+Luksici Ozaljski,47280,Ozalj 
+Lumbarda,20263,Lumbarda 
+Lumbardenik,47240,Slunj 
+Lun,53294,Lun 
+Lunjkovec,42231,Mali Bukovec 
+Lupinjak,49231,Hum na Sutli 
+Lupoglav,10370,Dugo Selo 
+Lupoglav,52426,Lupoglav 
+Luscani,44205,Donja Bacuga 
+Luzan,10363,Belovar 
+Luzan Biskupecki,42204,Turcin 
+Luzani,35257,Luzani 
+Luzani Zagorski,49233,Gornje Jesenje 
+Luznica,10290,Zapresic 
+Ljeskovac,44437,Rujevac 
+Ljestani,35430,Okucani 
+Ljubac,20234,Orasac 
+Ljubac,23248,Razanac 
+Ljubac,22300,Knin 
+Ljubacki Stanovi,23248,Razanac 
+Ljubelj,42222,Ljubescica 
+Ljubelj Kalnicki,42222,Ljubescica 
+Ljubescica,42222,Ljubescica 
+Ljubina,44437,Rujevac 
+Ljubitovica,21201,Prgomet 
+Ljubljanica,44000,Sisak 
+Ljubostinje,22323,Unesic 
+Ljubosina,51327,Gomirje 
+Ljubotic,22303,Oklaj 
+Ljudevit Selo,43500,Daruvar 
+Ljupina,35400,Nova Gradiska 
+Ljut,21245,Tijarica 
+Ljuta,20217,Pridvorje 
+Ljutici,51511,Malinska 
+Macinec,40306,Macinec 
+Macute,33522,Vocin 
+Mace,49251,Mace 
+Macki,10344,Farkasevac 
+Mackovac,33522,Vocin 
+Mackovac,35423,Vrbje 
+Mackovec,40000,Cakovec 
+Mackovo Selo,44204,Jabukovac 
+Madarasevec,42232,Donji Martijanec 
+Madzarevo,42220,Novi Marof 
+Madzari,44231,Blinja 
+Magadenovac,31542,Magadenovac 
+Magadinovac,33515,Orahovica 
+Magic Mala,35410,Nova Kapela 
+Maglenca,43226,Veliko Trojstvo 
+Mahicno,47286,Mahicno 
+Mahovo,44201,Martinska Ves 
+Maja,44403,Maja 
+Majar,31416,Levanjska Varos 
+Majdan,44437,Rujevac 
+Majer,51327,Gomirje 
+Majerje,42206,Petrijanec 
+Majiske Mede,31323,Bolman 
+Majkovec,10382,Donja Zelina 
+Majkovi,20232,Slano 
+Majkusi,52463,Visnjan 
+Majske Poljane,44400,Glina 
+Majski Trtnik,44403,Maja 
+Majur,10344,Farkasevac 
+Majur,44433,Majur 
+Majurec,48260,Krizevci 
+Makarska,21300,Makarska 
+Maklen,51312,Brod Moravice 
+Maklosevac,31500,Nasice 
+Makose,20207,Mlini 
+Makov Hrib,51305,Trsce 
+Makovci,52429,Groznjan (Grisignana) 
+Mala Babina Gora,43532,Dulovac 
+Mala Barna,43290,Grubisno Polje 
+Mala Branjska,48306,Sokolovac 
+Mala Brsljanica,43282,Veliko Vukovje 
+Mala Buna,10413,Kravarsko 
+Mala Ciglena,43000,Bjelovar 
+Mala Crkvina,47242,Krnjak 
+Mala Cresnjevica,33405,Pitomaca 
+Mala Dapcevica,43504,Ivanovo Selo 
+Mala Dobra,51311,Skrad 
+Mala Erpenja,49217,Krapinske Toplice 
+Mala Gora,49218,Pregrada 
+Mala Gorica,10431,Sveta Nedjelja 
+Mala Gradusa,44212,Mala Gradusa 
+Mala Hrastilnica,10314,Kriz 
+Mala Huba,52420,Buzet 
+Mala Jasenovaca,43290,Grubisno Polje 
+Mala Jazbina,10432,Bregana 
+Mala Jelsa,47000,Karlovac 
+Mala Klisa,33533,Pivnica Slavonska 
+Mala Kopanica,35221,Velika Kopanica 
+Mala Kosa,47253,Perjasica 
+Mala Kosnica,10410,Velika Gorica 
+Mala Lesnica,51301,Brod na Kupi 
+Mala Ludina,44316,Velika Ludina 
+Mala Milesina,21206,Donje Ogorje 
+Mala Mlaka,10020,Zagreb-Novi Zagreb 
+Mala Mlinska,43285,Velika Trnovitica 
+Mala Mucna,48306,Sokolovac 
+Mala Ostrna,10370,Dugo Selo 
+Mala Pacetina,49234,Petrovsko 
+Mala Paka,47276,Zakanje 
+Mala Paukova,44212,Mala Gradusa 
+Mala Peratovica,43290,Grubisno Polje 
+Mala Pisanica,43270,Veliki Grdevac 
+Mala Plana,53213,Donje Pazariste 
+Mala Rakovica,10430,Samobor 
+Mala Rasinjica,48312,Rasinja 
+Mala Rijeka,48312,Rasinja 
+Mala Solina,44412,Stankovac 
+Mala Subotica,40321,Mala Subotica 
+Mala Trapinska,33533,Pivnica Slavonska 
+Mala Trnovitica,43285,Velika Trnovitica 
+Mala Vranovina,44415,Topusko 
+Male Drage,51312,Brod Moravice 
+Male Mune,51212,Vele Mune 
+Male Sesvete,48264,Klostar Vojakovacki 
+Male Srakane,51550,Mali Losinj 
+Malesevic Selo,47211,Utinja 
+Maletic,47250,Duga Resa 
+Mali Banovac,34550,Pakrac 
+Mali Bastaji,43531,Veliki Bastaji 
+Mali Bilac,34310,Pleternica 
+Mali Botinovac,48306,Sokolovac 
+Mali Brezovec,10345,Gradec 
+Mali Brgud,51213,Jurdani 
+Mali Budici,34553,Bucje 
+Mali Bukovec,49251,Mace 
+Mali Bukovec,42231,Mali Bukovec 
+Mali Carevdar,48263,Carevdar 
+Mali Dol,51241,Krizisce 
+Mali Erjavec,47281,Mali Erjavec 
+Mali Golji,52220,Labin 
+Mali Gorenec,42253,Bednja 
+Mali Grabicani,48306,Sokolovac 
+Mali Gradac,44405,Mali Gradac 
+Mali Grdevac,43270,Veliki Grdevac 
+Mali Iz,23284,Veli Iz 
+Mali Jadrc,51329,Severin na Kupi 
+Mali Komor,49251,Mace 
+Mali Kozinac,47252,Barilovic 
+Mali Lipovec,10430,Samobor 
+Mali Losinj,51550,Mali Losinj 
+Mali Lovrecan,42208,Cestica 
+Mali Lug,51304,Gerovo 
+Mali Maj,52440,Porec 
+Mali Mihaljevec,40311,Lopatinec 
+Mali Miletinac,43531,Veliki Bastaji 
+Mali Mlun,52420,Buzet 
+Mali Modruspotok,47271,Netretic 
+Mali Obljaj,44402,Mali Obljaj 
+Mali Otok,48317,Legrad 
+Mali Pasijan,43280,Garesnica 
+Mali Podol,51557,Cres 
+Mali Poganac,48306,Sokolovac 
+Mali Potocec,48260,Krizevci 
+Mali Prolog,20278,Nova Sela 
+Mali Rastovac,33507,Crnac 
+Mali Raven,48265,Raven 
+Mali Ston,20230,Ston 
+Mali Tabor,49231,Hum na Sutli 
+Mali Turini,52220,Labin 
+Mali Vareski,52208,Krnica 
+Mali Vrh Kamanjski,47282,Kamanje 
+Mali Vukovic,47240,Slunj 
+Mali Zdenci,43293,Veliki Zdenci 
+Malicka,44410,Gvozd 
+Malik,47251,Bosiljevo 
+Malinci,47285,Radatovici 
+Malino,35257,Luzani 
+Malinovac,31542,Magadenovac 
+Malinska,51511,Malinska 
+Malo Grablje,21450,Hvar 
+Malo Gradisce,42208,Cestica 
+Malo Korenovo,43000,Bjelovar 
+Malo Krcevo,44434,Grabostani 
+Malo Polje,53202,Perusic 
+Malo Selce,51311,Skrad 
+Malo Selo,51317,Crni Lug 
+Malo Trojstvo,43226,Veliko Trojstvo 
+Malo Vukovje,43283,Kaniska Iva 
+Malunje,10450,Jastrebarsko 
+Maljevac,47222,Cetingrad 
+Maljevacko Seliste,47222,Cetingrad 
+Maljkovo,21233,Hrvace 
+Mandalencici,52403,Gracisce 
+Mandelici,42342,Svetvincenat 
+Mandic Selo,47211,Utinja 
+Mandicevac,31418,Drenje 
+Mandli,51303,Plesce 
+Mandre,23251,Kolan 
+Mantovani,52332,Pican 
+Manja Vas,10430,Samobor 
+Manjadvorci,52207,Barban 
+Manjerovici,47211,Utinja 
+Maovice,21235,Otisic 
+Maovice,21236,Vrlika 
+Maracici,51221,Kostrena 
+Maranovici,20224,Maranovici 
+Marasi,52450,Vrsar 
+Maravic Draga,47313,Dreznica 
+Marceljani,52220,Labin 
+Marcan,42207,Vinica 
+Marcana,52206,Marcana 
+Marcani,43240,Cazma 
+Marcelji,51216,Viskovo 
+Marcenegla,52420,Buzet 
+Mareda,52466,Novigrad (Cittanova) 
+Marenic,10340,Vrbovec 
+Maretic,49283,Hrascina-Trgovisce 
+Margecan,42242,Radovan 
+Marici,52352,Kanfanar 
+Marici,52220,Labin 
+Marici,43211,Predavac 
+Marigutic,49284,Budinscina 
+Marija Bistrica,49246,Marija Bistrica 
+Marija Gorica,10299,Marija Gorica 
+Marija Magdalena,10294,Donja Pusca 
+Marija Trost,51300,Delnice 
+Marijanci,31555,Marijanci 
+Marijanski Ivanovci,31555,Marijanci 
+Marina,21222,Marina 
+Marinbrod,44400,Glina 
+Marinci,32221,Nustar 
+Marinci,52420,Buzet 
+Marindolsko Brdo,47240,Slunj 
+Marindvor,34000,Pozega 
+Marine Zemlje,21480,Vis 
+Marinec,49218,Pregrada 
+Marinici,51216,Viskovo 
+Marino Selo,34543,Poljana 
+Marinovec,48260,Krizevci 
+Marinovec Zelinski,10380,Sveti Ivan Zelina 
+Marjancanci,31227,Zelcin 
+Markoci,52220,Labin 
+Markovac,43500,Daruvar 
+Markovac,34320,Orljavac 
+Markovac,52463,Visnjan 
+Markovac,22312,Kosovo/Zvjerinac/ 
+Markovac Krizevacki,43212,Rovisce 
+Markovac Krizevacki,48213,Cirkvena 
+Markovac Nasicki,31500,Nasice 
+Markovic Selo,47300,Ogulin 
+Markovici,52447,Vizinada 
+Markovo Polje,10360,Sesvete 
+Markusbrijeg,49253,Lobor 
+Markusevec Turopoljski,10253,Donji Dragonozec 
+Markusica,32213,Markusica 
+Markusici,10455,Kostanjevac 
+Marlovac,47253,Perjasica 
+Marof,40313,Sveti Martin na Muri 
+Marsici,51511,Malinska 
+Martin,31500,Nasice 
+Martina,51418,Brsec 
+Martinac,43240,Cazma 
+Martinac,43226,Veliko Trojstvo 
+Martinci,52420,Buzet 
+Martinci Miholjacki,31530,Podravska Moslavina 
+Martincici,52429,Groznjan (Grisignana) 
+Martinec Orehovicki,49228,Brestovec Orehovicki 
+Martinic,42231,Mali Bukovec 
+Martinisce,49210,Zabok 
+Martinkovec,42223,Varazdinske Toplice 
+Martinovici,44405,Mali Gradac 
+Martinovici,20207,Mlini 
+Martinovo Selo,51218,Drazice 
+Martinska Ves,10340,Vrbovec 
+Martinski Vrh,47272,Ribnik 
+Martinscica,51556,Martinscica 
+Martinscica,51221,Kostrena 
+Martinscina,49250,Zlatar 
+Martinusevec,40312,Strigova 
+Martisa Ves,49218,Pregrada 
+Marusevec,42243,Marusevec 
+Marusici,51244,Grizane 
+Marusici,21318,Mimice 
+Marusici,52462,Momjan (Momiano) 
+Maruzini,52352,Kanfanar 
+Maslenjaca,43508,Maslenjaca 
+Maslinica,21430,Grohote 
+Mastelici,52447,Vizinada 
+Masic,35429,Gornji Bogicevci 
+Masvina,47245,Rakovica 
+Matase,22303,Oklaj 
+Matenci,49240,Donja Stubica 
+Materada,52470,Umag (Umago) 
+Materada Maj,52440,Porec 
+Matese,47251,Bosiljevo 
+Matesko Selo,47262,Generalski Stol 
+Matici,51325,Moravice 
+Matijasi,52341,Zminj 
+Matijevici,44440,Dvor 
+Matkovic Mala,35201,Podcrkavlje 
+Matohanci,52352,Kanfanar 
+Matulini,52445,Baderna 
+Matulji,51211,Matulji 
+Maturovec,49217,Krapinske Toplice 
+Maurovac,47253,Perjasica 
+Mavrici,51244,Grizane 
+Mavrinci,51219,Cavle 
+Mazin,23441,Bruvno 
+Mece,31326,Darda 
+Mecencani,44432,Mecencani 
+Medak,53205,Medak 
+Medaki,52448,Sveti Lovrec 
+Medancici,52341,Zminj 
+Medari,35432,Medari 
+Medinci,33520,Slatina 
+Medov Dolac,21271,Grabovac 
+Medsave,10430,Samobor 
+Medulin,52203,Medulin 
+Medveja,51415,Lovran 
+Medveje,52420,Buzet 
+Medven Draga,10455,Kostanjevac 
+Medvidici,52448,Sveti Lovrec 
+Medvidovica Draga,21260,Imotski 
+Medvida,23450,Obrovac 
+Meda,48267,Orehovec 
+Medare,22223,Bribir(kod Skradina) 
+Mededi,51325,Moravice 
+Mededak,47304,Plaski 
+Mededak Utinjski,47211,Utinja 
+Meduraca,43272,Nova Raca 
+Medurace,44273,Sela 
+Meduric,44321,Banova Jaruga 
+Meja Gaj,51226,Hreljin 
+Mekisi kod Kastelira,52464,Kastelir 
+Mekisi kod Vizinade,52447,Vizinada 
+Melinovac,53251,Nebljusi 
+Melnica,52207,Barban 
+Melnice,53273,Vratnik 
+Meljan,42253,Bednja 
+Merag,51557,Cres 
+Merenje,10295,Kupljenovo 
+Merhatovec,40314,Selnica 
+Merisce,52462,Momjan (Momiano) 
+Merolino Sikirevacko,31410,Strizivojna 
+Metajna,53296,Zubovici 
+Metkovic,20350,Metkovic 
+Metohija,20230,Ston 
+Mezinovac,53202,Perusic 
+Micetici,52440,Porec 
+Micetinac,48350,Durdevac 
+Micevec,10410,Velika Gorica 
+Micijevac,48264,Klostar Vojakovacki 
+Migalovci,34350,Caglin 
+Mihajlije,34320,Orljavac 
+Mihalic Selo,47250,Duga Resa 
+Mihalj,20357,Blace 
+Mihaljekov Jarek,49000,Krapina 
+Mihaljevac,53230,Korenica 
+Mihaljevci,34000,Pozega 
+Mihaljevici,34310,Pleternica 
+Mihanici,20217,Pridvorje 
+Mihanovicev Dol,49290,Klanjec 
+Mihatovici,52446,Nova Vas 
+Mihelici,52440,Porec 
+Miholascica,51556,Martinscica 
+Miholec,48267,Orehovec 
+Miholjacki Porec,31543,Miholjacki Porec 
+Miholjanec,48326,Virje 
+Miholjsko,47221,Krstinja 
+Mihotici,51211,Matulji 
+Mihovljan,40000,Cakovec 
+Mihovljan,49252,Mihovljan 
+Mijaca,21272,Slivno 
+Mijaci,34320,Orljavac 
+Mikasinovici,47263,Gornje Dubrave 
+Miklavec,40316,Vratisinec 
+Mikleus,33517,Mikleus 
+Mikleuska,44320,Kutina 
+Miklusevci,32238,Cakovci 
+Mikulici,20219,Molunat 
+Miladini,10453,Gorica Svetojanska 
+Milanezi,52463,Visnjan 
+Milani,47251,Bosiljevo 
+Milanlug,34350,Caglin 
+Milanovac,33507,Crnac 
+Milanovac,34320,Orljavac 
+Milanovac,33000,Virovitica 
+Milasevac,43240,Cazma 
+Milasi,51218,Drazice 
+Milcetici,51511,Malinska 
+Milekovo Selo,49240,Donja Stubica 
+Milicani,48306,Sokolovac 
+Milinac,31416,Levanjska Varos 
+Milivojevci,34320,Orljavac 
+Milna,21450,Hvar 
+Milna,21405,Milna 
+Milna,21480,Vis 
+Milohnici,51511,Malinska 
+Milosevac,47253,Perjasica 
+Milotski Brijeg,52341,Zminj 
+Milovcici,51511,Malinska 
+Miljana,49296,Zagorska Sela 
+Miljanovac,43541,Sirac 
+Miljevac,21312,Podstrana 
+Miljevac,47240,Slunj 
+Miljevci,33518,Nova Bukovica 
+Mimice,21318,Mimice 
+Miocic,22321,Siveric 
+Miocinovici,44204,Jabukovac 
+Miranje,23420,Benkovac 
+Mirca,21400,Supetar 
+Miric Selo,47300,Ogulin 
+Mirici,47263,Gornje Dubrave 
+Mirkopolje,10454,Krasic 
+Mirkovac,31309,Knezevi Vinogradi 
+Mirkovci,32240,Mirkovci 
+Mirkovec,48267,Orehovec 
+Mirkovec,49223,Sveti Kriz Zacretje 
+Mirkovec Breznicki,42226,Bisag 
+Mirlovic Polje,22322,Ruzic 
+Mirlovic Zagora,22323,Unesic 
+Mirosi,51244,Grizane 
+Mislina,20353,Mliniste 
+Misinci,47276,Zakanje 
+Misinka,44320,Kutina 
+Miskovici,23249,Povljana 
+Misljenovac,53250,Donji Lapac 
+Mitlo,21228,Blizna Donja 
+Mitrovac,31309,Knezevi Vinogradi 
+Mitrovac,34340,Kutjevo 
+Mjesto Primislje,47244,Primislje 
+Mladenici,51216,Viskovo 
+Mlaka,44324,Jasenovac 
+Mlaka,10347,Rakovec 
+Mlaka Antinska,32214,Tordinci 
+Mlakovac,47241,Tusilovic 
+Mlakva,53203,Kosinj 
+Mlinari,51325,Moravice 
+Mlini,20207,Mlini 
+Mliniste,20353,Mliniste 
+Mlinski Vinogradi,43285,Velika Trnovitica 
+Mocici,20213,Cilipi 
+Mocile,51329,Severin na Kupi 
+Modrino Selo,22305,Kistanje 
+Modrovec,49245,Gornja Stubica 
+Modrus,47303,Josipdol 
+Modrusani,52341,Zminj 
+Modruska Munjava,47303,Josipdol 
+Mogoric,53205,Medak 
+Mohovo,32234,Sarengrad 
+Mokosica,20236,Mokosica 
+Mokres,34350,Caglin 
+Mokrica Tomasevecka,10383,Komin 
+Mokrice,49243,Oroslavje 
+Mokrice Miholecke,48268,Gornja Rijeka 
+Mokro Polje,22307,Mokro Polje 
+Molat,23292,Molat 
+Molunat,20219,Molunat 
+Molve,48327,Molve 
+Molve Grede,48327,Molve 
+Molvice,48356,Ferdinandovac 
+Molvice,10430,Samobor 
+Momcilovica Kosa,44405,Mali Gradac 
+Momici,20341,Kula Norinska 
+Momjan,52462,Momjan (Momiano) 
+Monterol,52470,Umag (Umago) 
+Montizana,52440,Porec 
+Moravce,10363,Belovar 
+Moravice,51325,Moravice 
+Moravicka Sela,51312,Brod Moravice 
+Morpolaca,23422,Stankovci 
+Mosec,22320,Drnis 
+Moslavacka Slatina,44317,Popovaca 
+Most Rasa,52223,Rasa 
+Mostari,10342,Dubrava 
+Mosanci,47272,Ribnik 
+Moscenica,44253,Petrinja 
+Moscenice,51417,Moscenicka Draga 
+Moscenicka Draga,51417,Moscenicka Draga 
+Mostanica,44231,Blinja 
+Motovun,52424,Motovun 
+Motovunski Novaki,52423,Karojba 
+Movrac,49294,Kraljevec na Sutli 
+Mozdenec,42220,Novi Marof 
+Mracelj,47221,Krstinja 
+Mraclin,10410,Velika Gorica 
+Mracaj,44434,Grabostani 
+Mracaj Krstinjski,47221,Krstinja 
+Mracin,47250,Duga Resa 
+Mratovo,22303,Oklaj 
+Mravince,21209,Mravince 
+Mravinjac,20234,Orasac 
+Mravnica,22205,Perkovic 
+Mravnica,20232,Slano 
+Mrcevo,20234,Orasac 
+Mreznica,47253,Perjasica 
+Mreznicke Poljice,47250,Duga Resa 
+Mreznicki Brest,47262,Generalski Stol 
+Mreznicki Brig,47250,Duga Resa 
+Mreznicki Novaki,47250,Duga Resa 
+Mreznicki Varos,47250,Duga Resa 
+Mreznicko Dvorisce,47250,Duga Resa 
+Mrgani,52352,Kanfanar 
+Mrkopalj,51315,Mrkopalj 
+Mrkoplje,34320,Orljavac 
+Mrljane,23264,Nevidane 
+Mrzla Vodica,51317,Crni Lug 
+Mrzli Dol,53271,Krivi Put 
+Mrzlo Polje,49214,Veliko Trgovisce 
+Mrzlo Polje Zumberacko,10456,Kalje 
+Mrzljaki,47201,Draganici 
+Mrzljaki,47271,Netretic 
+Mrzovic,32284,Stari Mikanovci 
+Mucici,51213,Jurdani 
+Mugeba,52440,Porec 
+Mundanije,51280,Rab 
+Munije,43504,Ivanovo Selo 
+Muntic,52206,Marcana 
+Muntrilj,52444,Tinjan 
+Munjasi,47263,Gornje Dubrave 
+Munjava,47303,Josipdol 
+Muraj,51517,Kornic 
+Muricevec,42250,Lepoglava 
+Murine,52470,Umag (Umago) 
+Mursko Sredisce,40315,Mursko Sredisce 
+Murter,22243,Murter 
+Murvica,21420,Bol 
+Murvica,23000,Zadar 
+Music,31416,Levanjska Varos 
+Mustafina Klada,44316,Velika Ludina 
+Musulini,51327,Gomirje 
+Musalez,52440,Porec 
+Musaluk,53201,Licki Osik 
+Muskovci,23450,Obrovac 
+Muskovici,52342,Svetvincenat 
+Mutilic,53234,Udbina 
+Mutogras,21312,Podstrana 
+Mutvoran,52208,Krnica 
+Muzilovcica,44213,Kratecko 
+Muzini,52341,Zminj 
+Nadin,23420,Benkovac 
+Nadvoda,23451,Zegar 
+Nadvrelo,23442,Otric 
+Nadvucnik,51328,Lukovdol 
+Naglici,51312,Brod Moravice 
+Najevi,21222,Marina 
+Naklice,21252,Tugare 
+Nakovanj,20267,Kuciste 
+Nard,31550,Valpovo 
+Narduci,52447,Vizinada 
+Nart Savski,10370,Dugo Selo 
+Narta,43247,Narta 
+Naselje Stjepana Radica,10340,Vrbovec 
+Nasice,31500,Nasice 
+Nasicko Novo Selo,31511,Durdenovac 
+Natkrizovljan,42208,Cestica 
+Naudovac,33410,Suhopolje 
+Nebljusi,53251,Nebljusi 
+Nebojan,44273,Sela 
+Nebojse,49216,Desinic 
+Necujam,21430,Grohote 
+Nedelisce,40305,Nedelisce 
+Nedeljanec,42205,Vidovec 
+Nedescina,52231,Nedescina 
+Negnar,52420,Buzet 
+Negoslavci,32239,Negoslavci 
+Negovec,10341,Lonjica 
+Nemcevac,48268,Gornja Rijeka 
+Nemetin,31000,Osijek 
+Nenadici,51511,Malinska 
+Neoric,21247,Neoric 
+Nerezine,51554,Nerezine 
+Nerezisca,21423,Nerezisca 
+Nespes,10382,Donja Zelina 
+Neteka,23445,Srb 
+Netretic,47271,Netretic 
+Nevest,22323,Unesic 
+Nevidane,23264,Nevidane 
+Nevinac,43272,Nova Raca 
+Nijemci,32245,Nijemci 
+Nikolici,47313,Dreznica 
+Niksici,51325,Moravice 
+Nin,23232,Nin 
+Ninski Stanovi,23232,Nin 
+Nisko,21202,Lecevica 
+Niza,31224,Koska 
+Normanci,31224,Koska 
+Norsic Selo,10432,Bregana 
+Nos Kalik,22324,Drinovci 
+Noskovacka Dubrava,33523,Cadavica 
+Noskovci,33523,Cadavica 
+Nova Bukovica,33518,Nova Bukovica 
+Nova Diklenica,43203,Kapela 
+Nova Drencina,44250,Petrinja 
+Nova Gradiska,35400,Nova Gradiska 
+Nova Josava,33515,Orahovica 
+Nova Kapela,35410,Nova Kapela 
+Nova Kapela,10343,Nova Kapela 
+Nova Krivaja,43532,Dulovac 
+Nova Krslja,47245,Rakovica 
+Nova Lipa,34000,Pozega 
+Nova Lipovica,34343,Bektez 
+Nova Ljeskovica,34350,Caglin 
+Nova Mokosica,20236,Mokosica 
+Nova Pisanica,43271,Velika Pisanica 
+Nova Ploscica,43285,Velika Trnovitica 
+Nova Raca,43272,Nova Raca 
+Nova Sela,21254,Blato na Cetini 
+Nova Sela,20278,Nova Sela 
+Nova Sela,21243,Ugljane 
+Nova Subocka,44330,Novska 
+Nova Sarovka,33520,Slatina 
+Nova Vas,52474,Brtonigla (Verteneglio) 
+Nova Vas,52446,Nova Vas 
+Nova Vas,52233,Susnjevica 
+Nova Ves Petrijanecka,42206,Petrijanec 
+Novacka,48331,Gola 
+Novaki,10342,Dubrava 
+Novaki,42243,Marusevec 
+Novaki,33525,Sopje 
+Novaki Bistranski,10298,Donja Bistra 
+Novaki Bizovacki,31223,Brodanci 
+Novaki Lipnicki,47272,Ribnik 
+Novaki Nartski,10361,Sesvete-Kraljevec 
+Novaki Oborovski,10372,Oborovo 
+Novaki Ozaljski,47280,Ozalj 
+Novaki Pazinski,52402,Cerovlje 
+Novaki Petrovinski,10450,Jastrebarsko 
+Novaki Ravenski,48265,Raven 
+Novaki Samoborski,10431,Sveta Nedjelja 
+Novaki Scitarjevski,10410,Velika Gorica 
+Novakovec,42203,Jalzabet 
+Novakovec,40318,Dekanovec 
+Novakovec Bisacki,10380,Sveti Ivan Zelina 
+Novalja,53291,Novalja 
+Nove Hize,51312,Brod Moravice 
+Novi Antunovac,33404,Spisic Bukovica 
+Novi Besinci,34334,Kaptol 
+Novi Bezdan,31322,Baranjsko Petrovo Selo 
+Novi Bolman,31323,Bolman 
+Novi Bosnjani,48263,Carevdar 
+Novi Cakovci,32238,Cakovci 
+Novi Ceminac,31325,Ceminac 
+Novi Dol,47253,Perjasica 
+Novi Dvori Klanjecki,49290,Klanjec 
+Novi Durdic,48260,Krizevci 
+Novi Farkasic,44273,Sela 
+Novi Glog,48214,Sveti Ivan Zabno 
+Novi Golubovec,49255,Novi Golubovec 
+Novi Grabovac,44322,Lipovljani 
+Novi Grad,35216,Prnjavor 
+Novi Gradac,33411,Gradina 
+Novi Jankovci,32241,Stari Jankovci 
+Novi Lazi,51312,Brod Moravice 
+Novi Majur,34550,Pakrac 
+Novi Marof,42220,Novi Marof 
+Novi Mihaljevci,34000,Pozega 
+Novi Mikanovci,32283,Vodinci 
+Novi Pavljani,43000,Bjelovar 
+Novi Perkovci,31417,Piskorevci 
+Novi Senkovac,33520,Slatina 
+Novi Skucani,43203,Kapela 
+Novi Stitnjak,34000,Pozega 
+Novi Varos,35435,Stara Gradiska 
+Novi Vinodolski,51250,Novi Vinodolski 
+Novi Zdenkovac,34350,Caglin 
+Novigrad,52466,Novigrad (Cittanova) 
+Novigrad,23312,Novigrad (Dalmacija) 
+Novigrad na Dobri,47250,Duga Resa 
+Novigrad Podravski,48325,Novigrad Podravski 
+Novo Brdo,10413,Kravarsko 
+Novo Brdo Mreznicko,47261,Zvecaj 
+Novo Cice,10415,Novo Cice 
+Novo Kusonje,33520,Slatina 
+Novo Mjesto,10380,Sveti Ivan Zelina 
+Novo Nevesinje,31322,Baranjsko Petrovo Selo 
+Novo Petrovo Polje,33507,Crnac 
+Novo Pracno,44010,Sisak-Caprag 
+Novo Seliste,44250,Petrinja 
+Novo Selo,43240,Cazma 
+Novo Selo,34000,Pozega 
+Novo Selo,21425,Selca 
+Novo Selo,47240,Slunj 
+Novo Selo,10340,Vrbovec 
+Novo Selo,44010,Sisak-Caprag 
+Novo Selo Bosiljevsko,47251,Bosiljevo 
+Novo Selo Garesnicko,43233,Trnoviticki Popovac 
+Novo Selo Glinsko,44400,Glina 
+Novo Selo Korenicko,53230,Korenica 
+Novo Selo Lasinjsko,47206,Lasinja 
+Novo Selo Lekenicko,10417,Busevec 
+Novo Selo na Dravi,40000,Cakovec 
+Novo Selo Okicko,10450,Jastrebarsko 
+Novo Selo Palanjecko,44202,Topolovac 
+Novo Selo Perjasicko,47253,Perjasica 
+Novo Selo Podravsko,42231,Mali Bukovec 
+Novo Selo Rok,40000,Cakovec 
+Novo Selo Zumberacko,10456,Kalje 
+Novo Topolje,35214,Donji Andrijevci 
+Novo Virje,48355,Novo Virje 
+Novo Zvecevo,34320,Orljavac 
+Novoselci,34310,Pleternica 
+Novoselci,44210,Sunja 
+Novoselec,10315,Novoselec 
+Novoselija,53213,Donje Pazariste 
+Novoselo Bilajsko,53000,Gospic 
+Novoselo Trnovacko,53000,Gospic 
+Novoseljani,43000,Bjelovar 
+Novska,44330,Novska 
+Nunic,22305,Kistanje 
+Nurkovac,34322,Brestovac 
+Nustar,32221,Nustar 
+Njezici,34320,Orljavac 
+Njivice,20226,Govedari 
+Njivice,51512,Njivice 
+Obed,10411,Orle 
+Obedisce,10315,Novoselec 
+Obedisce Jezevsko,10370,Dugo Selo 
+Oblakovac,34322,Brestovac 
+Oborovo,10372,Oborovo 
+Oborovo Bistransko,10298,Donja Bistra 
+Obradovci,33513,Zdenci 
+Obrankovec,42233,Sveti Durd 
+Obrezina,10410,Velika Gorica 
+Obrez Kalnicki,48269,Kalnik 
+Obrez Stupnicki,10255,Gornji Stupnik 
+Obrez Vivodinski,47283,Vivodina 
+Obrez Zelinski,10380,Sveti Ivan Zelina 
+Obrh,47272,Ribnik 
+Obrovac,23450,Obrovac 
+Obrovac Sinjski,21241,Obrovac Sinjski 
+Obrovnica,43000,Bjelovar 
+Obrs,51417,Moscenicka Draga 
+Ocura,49255,Novi Golubovec 
+Ocura,42250,Lepoglava 
+Ocestovo,22318,Padene 
+Odra,10020,Zagreb-Novi Zagreb 
+Odra Sisacka,44000,Sisak 
+Odranski Obrez,10020,Zagreb-Novi Zagreb 
+Oglavci,22203,Rogoznica 
+Ogulin,47300,Ogulin 
+Ogulinac,10417,Busevec 
+Ohnici,52447,Vizinada 
+Okesinec,10315,Novoselec 
+Okic,47241,Tusilovic 
+Oklaj,22303,Oklaj 
+Oklinak,47300,Ogulin 
+Okljucna,21485,Komiza 
+Okoli,44316,Velika Ludina 
+Okreti,52352,Kanfanar 
+Okrivje,51303,Plesce 
+Okrug Donji,21223,Okrug Gornji 
+Okrug Gornji,21223,Okrug Gornji 
+Okrugli Vrh,40311,Lopatinec 
+Okruglica,47300,Ogulin 
+Okrugljaca,33404,Spisic Bukovica 
+Okucani,35430,Okucani 
+Okuje,10410,Velika Gorica 
+Okuklje,20224,Maranovici 
+Okunscak,10370,Dugo Selo 
+Olib,23296,Olib 
+Oljasi,34320,Orljavac 
+Omamno,10381,Bedenica 
+Omanovac,34552,Badljevina 
+Omis,21310,Omis 
+Omisalj,51513,Omisalj 
+Omsica,23440,Gracac 
+Ondic,53234,Udbina 
+Opanci,21257,Lovrec 
+Opasanjek,49247,Zlatar Bistrica 
+Opatija,10413,Kravarsko 
+Opatija,10414,Pokupsko 
+Opatija,51410,Opatija 
+Opatinec,10310,Ivanic-Grad 
+Opatovac,35404,Cernik 
+Opatovac,32233,Opatovac 
+Opcevac,43240,Cazma 
+Oplaznik,10299,Marija Gorica 
+Oporovec,40325,Draskovec 
+Opric,51415,Lovran 
+Oprisavci,35213,Oprisavci 
+Oprsinac,35404,Cernik 
+Oprtalj,52428,Oprtalj (Portole) 
+Opuzen,20355,Opuzen 
+Orah,21276,Vrgorac 
+Orahovica,33515,Orahovica 
+Oraovac,53250,Donji Lapac 
+Orasac,20234,Orasac 
+Oratje,49217,Krapinske Toplice 
+Oravac,53230,Korenica 
+Orbani,52448,Sveti Lovrec 
+Orbanici,52206,Marcana 
+Orbanici,52341,Zminj 
+Ordanja,31224,Koska 
+Orebic,20250,Orebic 
+Orehova Gorica,49245,Gornja Stubica 
+Orehovec,42220,Novi Marof 
+Orehovec,48267,Orehovec 
+Orehovec Radobojski,49232,Radoboj 
+Orehovica,49228,Brestovec Orehovicki 
+Orehovica,40322,Orehovica 
+Oresac,33410,Suhopolje 
+Oresje,10434,Strmec Samoborski 
+Oresje Humsko,49231,Hum na Sutli 
+Oresje Okicko,10450,Jastrebarsko 
+Oresnjak,31530,Podravska Moslavina 
+Oric,52332,Pican 
+Orihi,52207,Barban 
+Orijevac,47253,Perjasica 
+Oriovac,35250,Oriovac 
+Oriovcic,35201,Podcrkavlje 
+Orisje,47251,Bosiljevo 
+Orle,10411,Orle 
+Orlec,51557,Cres 
+Orlic,22312,Kosovo/Zvjerinac/ 
+Orlici,52342,Svetvincenat 
+Orlovac,43272,Nova Raca 
+Orlovac Zdenacki,43293,Veliki Zdenci 
+Orljakovo,47282,Kamanje 
+Orljavac,34320,Orljavac 
+Ornice,53000,Gospic 
+Orolik,32243,Orolik 
+Oroslavje,49243,Oroslavje 
+Orovac,43274,Severin 
+Orubica,35424,Orubica 
+Osecka,42242,Radovan 
+Osekovo,44317,Popovaca 
+Osijek,31000,Osijek 
+Osijek Vojakovacki,48260,Krizevci 
+Oskorus,52462,Momjan (Momiano) 
+Oskorusno,20242,Oskorusno 
+Oslici,52402,Cerovlje 
+Osobljava,20246,Janjina 
+Osoje,21232,Dicmo 
+Osojnik,20236,Mokosica 
+Osojnik,51329,Severin na Kupi 
+Osonjak,42253,Bednja 
+Osor,51554,Nerezine 
+Osredci,23446,Kaldrma 
+Osredek Desinicki,49216,Desinic 
+Osredek Zumberacki,10456,Kalje 
+Ostojici,44443,Donji Zirovac 
+Ostrogasica,22323,Unesic 
+Ostrosinci,31433,Podgorac 
+Ostrovica,23420,Benkovac 
+Ostrovica,21253,Gata 
+Ostrovo,32211,Ostrovo 
+Ostrozin,44410,Gvozd 
+Ostrusevec,10432,Bregana 
+Ostrvica,53201,Licki Osik 
+Osunja,10456,Kalje 
+Osljak,23273,Preko 
+Oslje,20205,Topolo 
+Ostarije,47302,Ostarije 
+Ostarski Stanovi,47245,Rakovica 
+Ostri Vrh,35420,Staro Petrovo Selo 
+Ostri Zid,43233,Trnoviticki Popovac 
+Ostrice,42220,Novi Marof 
+Ostrobradic,51511,Malinska 
+Otavice,22322,Ruzic 
+Otes,53212,Klanac 
+Otisic,21235,Otisic 
+Otisic,21236,Vrlika 
+Otkopi,43505,Koncanica 
+Otocac,53220,Otocac 
+Otocka,48331,Gola 
+Otok,32252,Otok 
+Otok,21238,Otok (Dalmacija) 
+Otok,40323,Prelog 
+Otok Duba,20357,Blace 
+Otok na Dobri,47251,Bosiljevo 
+Otok Nartski,10370,Dugo Selo 
+Otok Ostarijski,47302,Ostarije 
+Otok Svibovski,10361,Sesvete-Kraljevec 
+Otok Virje,42208,Cestica 
+Oton,22318,Padene 
+Otrckovec,10381,Bedenica 
+Otric,23442,Otric 
+Otric Seoci,20342,Otric Seoci 
+Otrovanec,33405,Pitomaca 
+Ovcara,31431,Cepin 
+Ovcara,31416,Levanjska Varos 
+Ovcare,34335,Vetovo 
+Ovrlja,21238,Otok (Dalmacija) 
+Ozalj,47280,Ozalj 
+Ozdakovci,34320,Orljavac 
+Ozegovci,34553,Bucje 
+Pacetin,32222,Brsadin 
+Pacici,52207,Barban 
+Padene,22318,Padene 
+Pag,23250,Pag 
+Pagubice,52402,Cerovlje 
+Pajari,52448,Sveti Lovrec 
+Pajkovici,52342,Svetvincenat 
+Paka,34350,Caglin 
+Paka,42220,Novi Marof 
+Paklenica,44330,Novska 
+Pakostane,23211,Pakostane 
+Pakovo Selo,22320,Drnis 
+Pakrac,34550,Pakrac 
+Pakrani,43500,Daruvar 
+Palaca,31214,Laslovo 
+Paladini,52420,Buzet 
+Palagruza,21485,Komiza 
+Palancani,43240,Cazma 
+Palanka,23443,Zrmanja 
+Palanjek,44000,Sisak 
+Palanjek Pokupski,44271,Letovanic 
+Palesnik,43284,Hercegovac 
+Palinovec,40320,Donji Kraljevec 
+Palit,51280,Rab 
+Palovec,40321,Mala Subotica 
+Palje Brdo,20218,Plocice 
+Paljevina,31423,Bracevci 
+Paljevine,43247,Narta 
+Paljugi,10453,Gorica Svetojanska 
+Paljuv,23312,Novigrad (Dalmacija) 
+Pamici,52341,Zminj 
+Panjani,44433,Majur 
+Papici,44222,Sas 
+Papinec,42205,Vidovec 
+Paradiz,52342,Svetvincenat 
+Parcic,22321,Siveric 
+Parcic,22305,Kistanje 
+Parg,51306,Cabar 
+Partizansko Zariste,47242,Krnjak 
+Paruzevac,10342,Dubrava 
+Paruzevina,10362,Kasina 
+Pasadur,20290,Lastovo 
+Pasanska Gorica,49245,Gornja Stubica 
+Pasikovci,34320,Orljavac 
+Pasjak,51214,Sapjane 
+Pasin Potok,47222,Cetingrad 
+Pasman,23262,Pasman 
+Pasnik,42253,Bednja 
+Patkovac,43000,Bjelovar 
+Pauci,51312,Brod Moravice 
+Paucje,31416,Levanjska Varos 
+Paukovac,44441,Brdani Samaricki 
+Paukovec,10382,Donja Zelina 
+Paulin Dvor,31215,Ernestinovo 
+Paulovac,43226,Veliko Trojstvo 
+Paunovac,48306,Sokolovac 
+Pausinci,33514,Cacinci 
+Paveki,51221,Kostrena 
+Pavicici,47271,Netretic 
+Pavicini,52208,Krnica 
+Pavkovic Selo,47241,Tusilovic 
+Pavlicani,43240,Cazma 
+Pavlin Klostar,43203,Kapela 
+Pavlovac,47240,Slunj 
+Pavlovac,43270,Veliki Grdevac 
+Pavlovac Vrebacki,53205,Medak 
+Pavlovci,35410,Nova Kapela 
+Pavlovci,34322,Brestovac 
+Pavlovcani,10450,Jastrebarsko 
+Pavlovec Pregradski,49218,Pregrada 
+Pavlovec Ravenski,48265,Raven 
+Pavlovec Zabocki,49210,Zabok 
+Pavucnjak,10450,Jastrebarsko 
+Paz,52434,Boljun 
+Pazin,52000,Pazin 
+Pazurovec,49284,Budinscina 
+Pcelic,33410,Suhopolje 
+Pece,49284,Budinscina 
+Pece,42242,Radovan 
+Pecka,44415,Topusko 
+Pecki,44205,Donja Bacuga 
+Pecane,53235,Bunic 
+Pecarici,47283,Vivodina 
+Pecca,51243,Tribalj 
+Pecisce,51311,Skrad 
+Pecno,10456,Kalje 
+Pecurkovo Brdo,47250,Duga Resa 
+Pedalj,44437,Rujevac 
+Pehardovac,10342,Dubrava 
+Pejkovici,21255,Zadvarje 
+Peklenica,40315,Mursko Sredisce 
+Pengari,52420,Buzet 
+Penicici,52420,Buzet 
+Pepelana,33533,Pivnica Slavonska 
+Peracko Blato,20340,Ploce 
+Perci,52420,Buzet 
+Perci,52465,Tar 
+Perenci,34320,Orljavac 
+Peresiji,52342,Svetvincenat 
+Perici,47263,Gornje Dubrave 
+Perici,47242,Krnjak 
+Perini,52448,Sveti Lovrec 
+Perjasica,47253,Perjasica 
+Perkovic,22205,Perkovic 
+Permani,51213,Jurdani 
+Perna,44415,Topusko 
+Pernat,51557,Cres 
+Peroj,52212,Fazana 
+Perovici,51221,Kostrena 
+Persaves,49251,Mace 
+Perusic,53202,Perusic 
+Perusic Benkovacki,23420,Benkovac 
+Peruski,52208,Krnica 
+Pesak,10454,Krasic 
+Pesek,48260,Krizevci 
+Peskovec,10341,Lonjica 
+Pescenica,44272,Lekenik 
+Pescenica Vinicka,42207,Vinica 
+Pescenik,48000,Koprivnica 
+Pesceno,49282,Konjscina 
+Petehi,52207,Barban 
+Peteranec,48321,Peteranec 
+Petina,10410,Velika Gorica 
+Petkov Breg,10450,Jastrebarsko 
+Petkovac,44231,Blinja 
+Petkovec Toplicki,42223,Varazdinske Toplice 
+Petlovac,31321,Petlovac 
+Petraca,20207,Mlini 
+Petrakovo Brdo,47250,Duga Resa 
+Petrcane,23231,Petrcane 
+Petricko Selo,10456,Kalje 
+Petrijanec,42206,Petrijanec 
+Petrijevci,31208,Petrijevci 
+Petrinovici,51242,Drivenik 
+Petrinja,44250,Petrinja 
+Petrinjci,44210,Sunja 
+Petrova Gora,49253,Lobor 
+Petrova Poljana,47221,Krstinja 
+Petrova Slatina,31215,Ernestinovo 
+Petrovci,32229,Petrovci 
+Petrovec,10418,Dubranec 
+Petrovec,44273,Sela 
+Petrovici,51325,Moravice 
+Petrovija,52470,Umag (Umago) 
+Petrovina,10450,Jastrebarsko 
+Petrovina Turopoljska,10410,Velika Gorica 
+Petrovo Selo,20236,Mokosica 
+Petrovsko,49234,Petrovsko 
+Petrunici,47262,Generalski Stol 
+Petrus Vrh,47283,Vivodina 
+Petrusevec,49254,Belec 
+Pican,52332,Pican 
+Pifari,52341,Zminj 
+Pihovec,42203,Jalzabet 
+Pijavicino,20243,Kuna 
+Pila,49244,Stubicke Toplice 
+Pilatovci,47285,Radatovici 
+Pilkovici,52352,Kanfanar 
+Piljenice,44321,Banova Jaruga 
+Pinezici,51500,Krk 
+Pinezici,52206,Marcana 
+Pirakovec,10341,Lonjica 
+Piramatovci,22223,Bribir(kod Skradina) 
+Pirelici,52427,Livade 
+Pirovac,22213,Pirovac 
+Piroviste,51323,Lic 
+Pisak,21318,Mimice 
+Pisarovina,10451,Pisarovina 
+Piscetke,47271,Netretic 
+Piscanovec,42223,Varazdinske Toplice 
+Piskorevci,31417,Piskorevci 
+Piskovec,48267,Orehovec 
+Piskovica,52447,Vizinada 
+Pitomaca,33405,Pitomaca 
+Pitve,21465,Jelsa 
+Pivare,35429,Gornji Bogicevci 
+Pivnica Slavonska,33533,Pivnica Slavonska 
+Pjescanica,44410,Gvozd 
+Plajzi,51317,Crni Lug 
+Planica,51312,Brod Moravice 
+Planina Donja,10362,Kasina 
+Planina Gornja,10362,Kasina 
+Planina Kunicka,47271,Netretic 
+Planina Skradska,51311,Skrad 
+Plano,21220,Trogir 
+Plastovo,22222,Skradin 
+Plaski,47304,Plaski 
+Plat,20207,Mlini 
+Plavci,10457,Sosice 
+Plavic,49296,Zagorska Sela 
+Plavnice Gornje,43000,Bjelovar 
+Plavnice Stare,43000,Bjelovar 
+Plavno,22317,Plavno 
+Plavsinac,48325,Novigrad Podravski 
+Plemenitas,51328,Lukovdol 
+Plemenscina,42244,Klenovnik 
+Plesmo,44325,Krapje 
+Ples,42253,Bednja 
+Ples,42254,Trakoscan 
+Plesce,51303,Plesce 
+Plesici,51221,Kostrena 
+Plesivica,10450,Jastrebarsko 
+Plesivica,40314,Selnica 
+Plesivica,51329,Severin na Kupi 
+Pleskovec,40311,Lopatinec 
+Pleternica,34310,Pleternica 
+Pleternicki Mihaljevci,34310,Pleternica 
+Plina Jezero,20340,Ploce 
+Plisko Polje,21480,Vis 
+Plisici,51242,Drivenik 
+Plitvica Selo,53231,Plitvicka Jezera 
+Plitvica Vocanska,42245,Donja Voca 
+Plitvicka Jezera,53231,Plitvicka Jezera 
+Plitvicki Ljeskovac,53231,Plitvicka Jezera 
+Ploce,20340,Ploce 
+Plocice,20218,Plocice 
+Plomin,52234,Plomin 
+Plomin Luka,52234,Plomin 
+Plosna,51223,Skrljevo 
+Plostine,34552,Badljevina 
+Plovanija,52460,Buje (Buie) 
+Pluska,10296,Luka 
+Pobjenik,43240,Cazma 
+Pobrdani,43240,Cazma 
+Pobrdani,44221,Staza 
+Pobrezje,20236,Mokosica 
+Pobri,51211,Matulji 
+Pocekaji,52420,Buzet 
+Pocitelj,53205,Medak 
+Podaca,21335,Podaca 
+Podaspilje,21208,Kucice 
+Podbablje Gornje,21262,Kamenmost 
+Podbilo,53271,Krivi Put 
+Podbitoraj,47313,Dreznica 
+Podbrdani Vojkovacki,48264,Klostar Vojakovacki 
+Podbrde,44317,Popovaca 
+Podbrest,40322,Orehovica 
+Podbrezovica,49225,Durmanec 
+Podbrezje,47280,Ozalj 
+Podcrkavlje,35201,Podcrkavlje 
+Podcudnic,51219,Cavle 
+Podevcevo,42220,Novi Marof 
+Podgace,52422,Lanisce 
+Podgaj Petrovski,49234,Petrovsko 
+Podgajci Podravski,31552,Podgajci Podravski 
+Podgajci Posavski,32258,Posavski Podgajci 
+Podgajec,48260,Krizevci 
+Podgaric,43233,Trnoviticki Popovac 
+Podglavica,22203,Rogoznica 
+Podgora,49295,Kumrovec 
+Podgora,21327,Podgora 
+Podgora,20232,Slano 
+Podgora Krapinska,49000,Krapina 
+Podgora Turkovska,51302,Kuzelj 
+Podgorac,31433,Podgorac 
+Podgorani,51312,Brod Moravice 
+Podgorci,43211,Predavac 
+Podgori,51253,Bribir 
+Podgorje,20250,Orebic 
+Podgorje,34335,Vetovo 
+Podgorje,33000,Virovitica 
+Podgorje,44410,Gvozd 
+Podgorje Bednjansko,42253,Bednja 
+Podgorje Bistricko,49246,Marija Bistrica 
+Podgorje Bracevacko,31423,Bracevci 
+Podgorje Jamnicko,10451,Pisarovina 
+Podgorje Krnjacko,47242,Krnjak 
+Podgradina,20355,Opuzen 
+Podgrade,21207,Kostanje 
+Podgrade,32245,Nijemci 
+Podgrade,49247,Zlatar Bistrica 
+Podgrade,23420,Benkovac 
+Podgrade Podokicko,10435,Sveti Martin pod Okicem 
+Podgraj,47280,Ozalj 
+Podhum,51218,Drazice 
+Podhume,21405,Milna 
+Podhumlje,21483,Podspilje 
+Podi,21242,Grab 
+Podimoc,20231,Doli 
+Podine,22206,Boraja 
+Podjales,10345,Gradec 
+Podkilavac,51218,Drazice 
+Podkuk,52420,Buzet 
+Podlapaca,53236,Podlapaca 
+Podlug,23420,Benkovac 
+Podluzan,10342,Dubrava 
+Podmelnica,47240,Slunj 
+Podmelnik,51252,Klenovica 
+Podobuce,20244,Potomje 
+Podolec,10340,Vrbovec 
+Podolje,31303,Popovac 
+Podorljak,22203,Rogoznica 
+Podosoje,21261,Runovic 
+Podosoje,21236,Vrlika 
+Podostra,53000,Gospic 
+Podpican,52333,Podpican 
+Podprolog,21277,Veliki Prolog 
+Podravlje,31000,Osijek 
+Podravska Moslavina,31530,Podravska Moslavina 
+Podravska Slatina,33520,Slatina 
+Podravske Sesvete,48363,Podravske Sesvete 
+Podrebar,47251,Bosiljevo 
+Podrebar,52420,Buzet 
+Podrinje,32213,Markusica 
+Podrujnica,20341,Kula Norinska 
+Podrute,42220,Novi Marof 
+Podrvanj,51219,Cavle 
+Podsedlo,47211,Utinja 
+Podselje,21480,Vis 
+Podskoci,51253,Bribir 
+Podslemski Lazi,51311,Skrad 
+Podsopalj Belgradski,51243,Tribalj 
+Podsopalj Drivenicki,51243,Tribalj 
+Podsrece,34320,Orljavac 
+Podstena,51311,Skrad 
+Podstene,51312,Brod Moravice 
+Podstene,51303,Plesce 
+Podstrana,53213,Donje Pazariste 
+Podstrana,21312,Podstrana 
+Podstrazje,21480,Vis 
+Podspilje,21483,Podspilje 
+Podtisovac,51317,Crni Lug 
+Podturen,40317,Podturen 
+Podugrinac,51253,Bribir 
+Poduljin,51253,Bribir 
+Podum,53221,Skare 
+Podumci,22323,Unesic 
+Podumol,47251,Bosiljevo 
+Podunavlje,31327,Bilje 
+Podvinje,35107,Podvinje 
+Podvinje Miholecko,48267,Orehovec 
+Podvorec,42226,Bisag 
+Podvornica,10413,Kravarsko 
+Podvozic,47250,Duga Resa 
+Podvrh,10432,Bregana 
+Podvrsje,23206,Sukosan 
+Podvrsje,23248,Razanac 
+Podvrsko,35404,Cernik 
+Podvucnik,51328,Lukovdol 
+Pofuki,48268,Gornja Rijeka 
+Pogancec,10346,Preseka 
+Poganovci,31432,Budimci 
+Pojatno,10294,Donja Pusca 
+Pokasin,10345,Gradec 
+Poklek,10432,Bregana 
+Pokojec,49284,Budinscina 
+Pokrovnik,22221,Lozovac 
+Pokupsko,10414,Pokupsko 
+Pokupsko Vratecko,44271,Letovanic 
+Polaca,23423,Polaca 
+Polaca,22302,Polaca/kod Knina/ 
+Polace,20226,Govedari 
+Police,49290,Klanjec 
+Police Pirisce,47282,Kamanje 
+Policnik,23241,Policnik 
+Pologi,10293,Dubravica 
+Poloje,34310,Pleternica 
+Polojski Varos,47222,Cetingrad 
+Polonje,10383,Komin 
+Polonje Tomasevecko,10383,Komin 
+Polubase,31500,Nasice 
+Polum,43271,Velika Pisanica 
+Poljana,34543,Poljana 
+Poljana,23273,Preko 
+Poljana,10340,Vrbovec 
+Poljana,51326,Vrbovsko 
+Poljana Biskupecka,42201,Beretinec 
+Poljana Cicka,10415,Novo Cice 
+Poljana Krizevacka,48260,Krizevci 
+Poljana Lekenicka,44272,Lekenik 
+Poljana Sultanska,49296,Zagorska Sela 
+Poljana Vojnicka,47242,Krnjak 
+Poljanak,53231,Plitvicka Jezera 
+Poljanci,35213,Oprisavci 
+Poljancani,43203,Kapela 
+Poljane,51414,Icici 
+Poljane,35429,Gornji Bogicevci 
+Poljanec,42230,Ludbreg 
+Poljani,43290,Grubisno Polje 
+Poljanica Bistranska,10298,Donja Bistra 
+Poljanica Bistricka,49246,Marija Bistrica 
+Poljanica Okicka,10450,Jastrebarsko 
+Poljanska,34330,Velika 
+Poljanski Lug,10340,Vrbovec 
+Polje,47240,Slunj 
+Polje,51515,Silo 
+Polje Cepic,52232,Krsan 
+Polje Krapinsko,49000,Krapina 
+Polje Ozaljsko,47280,Ozalj 
+Poljica,21263,Krivodol 
+Poljica,51511,Malinska 
+Poljica,21222,Marina 
+Poljica,23235,Vrsi 
+Poljica,21466,Zastrazisce 
+Poljica Kozicka,21274,Kozica 
+Poljica-Brig,23235,Vrsi 
+Poljice,20215,Gruda 
+Poljice,53234,Udbina 
+Pomena,20226,Govedari 
+Pomer,52100,Pula 
+Pomperovec,49284,Budinscina 
+Ponikvari,44415,Topusko 
+Ponikve,47263,Gornje Dubrave 
+Ponikve,51329,Severin na Kupi 
+Ponikve,51223,Skrljevo 
+Ponor,47222,Cetingrad 
+Ponor Korenicki,53230,Korenica 
+Ponorac,47242,Krnjak 
+Ponorac Perjasicki,47253,Perjasica 
+Ponori,53225,Svica 
+Popova Luka,20246,Janjina 
+Popovac,31303,Popovac 
+Popovac,33522,Vocin 
+Popovac Subocki,44330,Novska 
+Popovaca,44317,Popovaca 
+Popovaca Pazariska,53213,Donje Pazariste 
+Popovci,34553,Bucje 
+Popovec,10360,Sesvete 
+Popovec Kalnicki,48269,Kalnik 
+Popovic Brdo,47212,Skakavac 
+Popovici,23420,Benkovac 
+Popovici,20215,Gruda 
+Popovici Zumberacki,47285,Radatovici 
+Popovo Selo,47263,Gornje Dubrave 
+Porat,51511,Malinska 
+Porec,34343,Bektez 
+Porec,52440,Porec 
+Poredje,49231,Hum na Sutli 
+Porozina,51557,Cres 
+Posavski Bregi,10311,Posavski Bregi 
+Posedarje,23242,Posedarje 
+Postira,21410,Postira 
+Postranje,21264,Donji Prolozac 
+Potcetin,47222,Cetingrad 
+Pothum Plascanski,47304,Plaski 
+Potirna,20270,Vela Luka 
+Potkobiljak,51323,Lic 
+Potkonje,22300,Knin 
+Potnjani,31423,Bracevci 
+Potocani,43532,Dulovac 
+Potocani,34330,Velika 
+Potocec,10345,Gradec 
+Potocnica,53291,Novalja 
+Potok,43232,Berek 
+Potok,44317,Popovaca 
+Potok Bosiljevski,47251,Bosiljevo 
+Potok Kalnicki,48269,Kalnik 
+Potok Muslinski,47300,Ogulin 
+Potok Tounjski,47264,Tounj 
+Potomje,20244,Potomje 
+Potplaninsko,47253,Perjasica 
+Potpoletnica,21255,Zadvarje 
+Potravlje,21233,Hrvace 
+Povelic,48260,Krizevci 
+Povile,51250,Novi Vinodolski 
+Povlja,21413,Povlja 
+Povljana,23249,Povljana 
+Pozla Gora,20278,Nova Sela 
+Poznanovec,49222,Poznanovec 
+Pozorac,21222,Marina 
+Pozar,51302,Kuzelj 
+Pozari,33000,Virovitica 
+Pozarkovec,49214,Veliko Trgovisce 
+Pozarnica,51303,Plesce 
+Pozega,34000,Pozega 
+Pozeski Brdani,34320,Orljavac 
+Pozun,47280,Ozalj 
+Pracana,52420,Buzet 
+Prapatnica,21201,Prgomet 
+Prapatnica,21276,Vrgorac 
+Prapoce,52422,Lanisce 
+Praporcan,40314,Selnica 
+Praputnjak,51225,Praputnjak 
+Prascari,52463,Visnjan 
+Prascevac,10344,Farkasevac 
+Prautina,47276,Zakanje 
+Praznica,21424,Praznica 
+Prebukovje,42253,Bednja 
+Precec,10370,Dugo Selo 
+Precno,10372,Oborovo 
+Precno,10372,Oborovo 
+Predavac,43211,Predavac 
+Predavec,10312,Klostar Ivanic 
+Predavec Krizevacki,48214,Sveti Ivan Zabno 
+Predoscica,51557,Cres 
+Pregrada,49218,Pregrada 
+Prekno,42205,Vidovec 
+Preko,23273,Preko 
+Prekobrdo,43211,Predavac 
+Prekopa,44400,Glina 
+Prekopa,40312,Strigova 
+Prekopakra,34550,Pakrac 
+Prekoracani,33514,Cacinci 
+Prekrizje Plesivicko,10430,Samobor 
+Prekvrsje,10362,Kasina 
+Prelog,40323,Prelog 
+Preloscica,44202,Topolovac 
+Premantura,52100,Pula 
+Premuda,23294,Premuda 
+Prepolno,10380,Sveti Ivan Zelina 
+Prepustovec,49284,Budinscina 
+Prepustovec,10362,Kasina 
+Prerovec,10316,Lijevi Dubrovcak 
+Presecno,42220,Novi Marof 
+Presecno Visocko,42224,Visoko 
+Preseka,40306,Macinec 
+Preseka,10346,Preseka 
+Preseka Oborovska,10372,Oborovo 
+Preseka Ozaljska,47282,Kamanje 
+Preseka Petrovska,49234,Petrovsko 
+Presika,52220,Labin 
+Presika,51326,Vrbovsko 
+Preslatinci,31418,Drenje 
+Prespa,43000,Bjelovar 
+Pretetinec,40305,Nedelisce 
+Pretkovec,49000,Krapina 
+Pretoki,10380,Sveti Ivan Zelina 
+Previz,52402,Cerovlje 
+Prevlaka,10372,Oborovo 
+Prevrsac,44432,Mecencani 
+Prezid,51307,Prezid 
+Prgomelje,34553,Bucje 
+Prgomelje,43252,Prgomelje 
+Prgomet,21201,Prgomet 
+Prhati,52207,Barban 
+Prhati,52463,Visnjan 
+Prhci,51305,Trsce 
+Prhoc,10450,Jastrebarsko 
+Prhovec,40312,Strigova 
+Prhutova Draga,51305,Trsce 
+Pribanjci,47251,Bosiljevo 
+Pribic,10454,Krasic 
+Pribic Crkveni,10454,Krasic 
+Pribislavec,40000,Cakovec 
+Pribisevci,31511,Durdenovac 
+Pribude,21206,Donje Ogorje 
+Pribudic,23443,Zrmanja 
+Pricac,35257,Luzani 
+Pridraga,23226,Pridraga 
+Pridvorje,31418,Drenje 
+Pridvorje,20217,Pridvorje 
+Prigorec,42240,Ivanec 
+Prigorje,49225,Durmanec 
+Prigorje Brdovecko,10291,Prigorje Brdovecko 
+Prijeboj,53231,Plitvicka Jezera 
+Prijeka,44403,Maja 
+Prijevor,20236,Mokosica 
+Prikraj,10370,Dugo Selo 
+Prikraj Krizevacki,48260,Krizevci 
+Priles,42233,Sveti Durd 
+Prilesje,10340,Vrbovec 
+Prilipje,10450,Jastrebarsko 
+Primorski Dolac,21227,Primorski Dolac 
+Primosten,22202,Primosten 
+Primosten Burnji/dio/,22202,Primosten 
+Priselci,47286,Mahicno 
+Prisjeka,47221,Krstinja 
+Prisoje,21232,Dicmo 
+Pristaniste,20226,Govedari 
+Pristava,49215,Tuhelj 
+Pristava Krapinska,49000,Krapina 
+Pristeg,23420,Benkovac 
+Prislin,49231,Hum na Sutli 
+Privlaka,23233,Privlaka (Dalmacija) 
+Privlaka,32251,Privlaka 
+Prizna,53287,Jablanac 
+Prkacini,52341,Zminj 
+Prkos,48312,Rasinja 
+Prkos,23223,Skabrnja 
+Prkos Ivanicki,10313,Graberje Ivanicko 
+Prkos Lasinjski,47206,Lasinja 
+Prkovci,32282,Retkovci 
+Prljevo,23443,Zrmanja 
+Prnjarovac,43240,Cazma 
+Prnjavor,43211,Predavac 
+Prnjavor,35216,Prnjavor 
+Prnjavor Cunticki,44204,Jabukovac 
+Prnjavor Lepavinski,48306,Sokolovac 
+Prodani,52420,Buzet 
+Prodin Dol,10453,Gorica Svetojanska 
+Prodol,52208,Krnica 
+Prokike,53260,Brinje 
+Prokljuvani,43000,Bjelovar 
+Prokljuvani,43240,Cazma 
+Promajna,21320,Baska Voda 
+Prosenik,49215,Tuhelj 
+Prosenik Gubasevski,49214,Veliko Trgovisce 
+Prosenik Zacretski,49223,Sveti Kriz Zacretje 
+Prosika,22213,Pirovac 
+Prosinec,10293,Dubravica 
+Protulipa,47261,Zvecaj 
+Provic,23422,Stankovci 
+Prozor,53220,Otocac 
+Prozorje,10370,Dugo Selo 
+Prozura,20224,Maranovici 
+Prozurska Luka,20224,Maranovici 
+Prsleti,51305,Trsce 
+Prsurici,52463,Visnjan 
+Prud,20352,Vid 
+Prudnice,10291,Prigorje Brdovecko 
+Prugovac,48362,Klostar Podravski 
+Prugovo,21231,Klis 
+Prvan Selo,53202,Perusic 
+Prvca,35400,Nova Gradiska 
+Prvic Luka,22233,Prvic Luka 
+Prvic Sepurine,22234,Prvic Sepurine 
+Prvinci,10455,Kostanjevac 
+Prvonozina,10418,Dubranec 
+Pucak,51311,Skrad 
+Pucici,52341,Zminj 
+Pucisca,21412,Pucisca 
+Puhovo,10370,Dugo Selo 
+Puklica,43532,Dulovac 
+Pula,52100,Pula 
+Puljane,22303,Oklaj 
+Punat,51521,Punat 
+Punikve,42240,Ivanec 
+Punitovci,31424,Punitovci 
+Punta Kriza,51554,Nerezine 
+Puntera,52207,Barban 
+Pupelica,43227,Sandrovac 
+Pupnat,20274,Pupnat 
+Purga Bednjanska,42253,Bednja 
+Purgarija Cepic,52232,Krsan 
+Puricani,43000,Bjelovar 
+Puska,44325,Krapje 
+Pustakovec,48314,Koprivnicki Ivanec 
+Pusti,52342,Svetvincenat 
+Pustike,10413,Kravarsko 
+Pustodol,49240,Donja Stubica 
+Pustodol Orehovicki,49228,Brestovec Orehovicki 
+Pustodol Zacretski,49223,Sveti Kriz Zacretje 
+Pusava,49294,Kraljevec na Sutli 
+Pusca,49296,Zagorska Sela 
+Puscine,40305,Nedelisce 
+Pusina,33514,Cacinci 
+Puskarici,47300,Ogulin 
+Puticanje,22213,Pirovac 
+Putini,52352,Kanfanar 
+Putisici,21205,Donji Dolac 
+Putkovec,49225,Durmanec 
+Putnikovic,20248,Putnikovic 
+Rab,51280,Rab 
+Raba,20356,Klek 
+Rabac,52221,Rabac 
+Rabinja,47243,Veljun 
+Racak,47273,Srednje Prilisce 
+Racice,52420,Buzet 
+Racicki Brijeg,52420,Buzet 
+Racinovci,32262,Racinovci 
+Racisce,20264,Racisce 
+Racja Vas,52422,Lanisce 
+Radakovo,49294,Kraljevec na Sutli 
+Radatovici,47285,Radatovici 
+Radeljevo Selo,48312,Rasinja 
+Radesic,42225,Breznicki Hum 
+Radetici,52444,Tinjan 
+Radici,51511,Malinska 
+Radici,52448,Sveti Lovrec 
+Radigojna,51325,Moravice 
+Radikovci,31543,Miholjacki Porec 
+Radina Gorica,10454,Krasic 
+Radina Vas,47283,Vivodina 
+Radini,52474,Brtonigla (Verteneglio) 
+Radinovo Brdo,10455,Kostanjevac 
+Radljevac,22317,Plavno 
+Radmani,52440,Porec 
+Radmanovac,47220,Vojnic 
+Radnovac,34308,Jaksic 
+Radoboj,49232,Radoboj 
+Radocaj Brodski,51301,Brod na Kupi 
+Radocaji,47262,Generalski Stol 
+Radoisce,10383,Komin 
+Radojcici,47313,Dreznica 
+Radonic,22221,Lozovac 
+Radonja,47220,Vojnic 
+Radonja Luka,44210,Sunja 
+Radosavci,33520,Slatina 
+Radosevici,51325,Moravice 
+Radosi kod Visnjana,52463,Visnjan 
+Radosi kod Zbandaja,52440,Porec 
+Radosic,21202,Lecevica 
+Radosic,21230,Sinj 
+Radosinovci,23422,Stankovci 
+Radovan,42242,Radovan 
+Radovanci,34330,Velika 
+Radovani,52463,Visnjan 
+Radovanje,35250,Oriovac 
+Radovcici,20215,Gruda 
+Radovec,42208,Cestica 
+Radovec Polje,42208,Cestica 
+Radovin,23248,Razanac 
+Raduc,53244,Lovinac 
+Raducic,22304,Raducic 
+Radulec,10342,Dubrava 
+Radunic,21206,Donje Ogorje 
+Radenovci,44323,Rajic 
+Rafaeli,52463,Visnjan 
+Raic,43252,Prgomelje 
+Rajakovici,47285,Radatovici 
+Rajcici,44323,Rajic 
+Rajevo Selo,32261,Rajevo Selo 
+Rajic,44323,Rajic 
+Rajic Brdo,47221,Krstinja 
+Rajino Polje,33514,Cacinci 
+Rajki,52448,Sveti Lovrec 
+Rajki,52207,Barban 
+Rajsavac,34308,Jaksic 
+Rakalj,52208,Krnica 
+Rakitje,10437,Bestovje 
+Rakitnica,48350,Durdevac 
+Rakitovec,10419,Vukovina 
+Rakitovica,31543,Miholjacki Porec 
+Rakotule,52423,Karojba 
+Rakov Potok,10436,Rakov Potok 
+Rakovacko Seliste,47245,Rakovica 
+Rakovci,52445,Baderna 
+Rakovec,42222,Ljubescica 
+Rakovec,10347,Rakovec 
+Rakovec Tomasevecki,49290,Klanjec 
+Rakovica,47245,Rakovica 
+Ramanovci,34334,Kaptol 
+Ramljane,21203,Donji Muc 
+Ramljane,22312,Kosovo/Zvjerinac/ 
+Ramljani,53224,Licko Lesce 
+Randici,51221,Kostrena 
+Rapain Klanac,53260,Brinje 
+Rapanji,52342,Svetvincenat 
+Rapavel,52463,Visnjan 
+Rasinja,48312,Rasinja 
+Raskrizje,51301,Brod na Kupi 
+Raskrizje Tihovo,51300,Delnice 
+Raslina,22215,Zaton 
+Rasna,34320,Orljavac 
+Rasohe,51301,Brod na Kupi 
+Rasopasno,51511,Malinska 
+Rasticevo,23442,Otric 
+Rastoka,53211,Smiljan 
+Rastoke,47240,Slunj 
+Rastoki,10450,Jastrebarsko 
+Rastovac,43504,Ivanovo Selo 
+Rastovac,43231,Ivanska 
+Rastovac,21270,Zagvozd 
+Rastovac,21228,Blizna Donja 
+Rastovac Budacki,47242,Krnjak 
+Rastovaca,53231,Plitvicka Jezera 
+Rastusje,35107,Podvinje 
+Rasa,52223,Rasa 
+Rascani,48264,Klostar Vojakovacki 
+Raspor,52422,Lanisce 
+Rastevic,23420,Benkovac 
+Ratkov Dol,31416,Levanjska Varos 
+Ratkovac,35429,Gornji Bogicevci 
+Ratkovec,49250,Zlatar 
+Ratkovica,34315,Ratkovica 
+Ratulje,51218,Drazice 
+Rausovac,44430,Hrvatska Kostajnica 
+Rava,23283,Rava 
+Ravan,35252,Sibinj 
+Ravca,21276,Vrgorac 
+Ravna Gora,51314,Ravna Gora 
+Ravnes,43274,Severin 
+Ravni,52220,Labin 
+Ravni Dabar,53206,Brusane 
+Ravnica,47272,Ribnik 
+Ravnice,51305,Trsce 
+Ravnice,49214,Veliko Trgovisce 
+Ravnice Desinicke,49216,Desinic 
+Ravninsko,49225,Durmanec 
+Ravno Brdo,52434,Boljun 
+Ravno Brezje,49295,Kumrovec 
+Ravno Rasce,44403,Maja 
+Razbojiste,31433,Podgorac 
+Razdrto,51312,Brod Moravice 
+Razdrto II dio,51328,Lukovdol 
+Razdrto Tuheljsko,49295,Kumrovec 
+Razloge,51317,Crni Lug 
+Razloski Okrug,51317,Crni Lug 
+Razljev,10315,Novoselec 
+Razvode,22303,Oklaj 
+Razvor,49295,Kumrovec 
+Razanac,23248,Razanac 
+Razanj,22203,Rogoznica 
+Rebic,53234,Udbina 
+Rebici,52207,Barban 
+Rebrovici,47264,Tounj 
+Recica,47203,Recica 
+Recica Kriska,10315,Novoselec 
+Redovje,10453,Gorica Svetojanska 
+Reka,48305,Reka 
+Remetinec,10345,Gradec 
+Remetinec,42220,Novi Marof 
+Removac,43532,Dulovac 
+Rendulici,47251,Bosiljevo 
+Repas,48332,Zdala 
+Repicevo Selo,49245,Gornja Stubica 
+Repinec,10345,Gradec 
+Repisce,10450,Jastrebarsko 
+Repno,49254,Belec 
+Repovec,49210,Zabok 
+Repusnica,44320,Kutina 
+Resnatac,51311,Skrad 
+Resnik,34310,Pleternica 
+Resnik Bosiljevski,47251,Bosiljevo 
+Resetar,53233,Licko Petrovo Selo 
+Resetarevo,47250,Duga Resa 
+Resetari,35403,Resetari 
+Reskovci,43211,Predavac 
+Restovo,47282,Kamanje 
+Restovo Zumberacko,10457,Sosice 
+Retkovci,32282,Retkovci 
+Retkovec Svibovecki,42223,Varazdinske Toplice 
+Rezovac,33000,Virovitica 
+Rezovacke Krcevine,33000,Virovitica 
+Rezanci,52342,Svetvincenat 
+Ribari,47212,Skakavac 
+Ribic Breg,42240,Ivanec 
+Ribnica,10415,Novo Cice 
+Ribnik,47272,Ribnik 
+Ribnjaci,34543,Poljana 
+Ribnjacka,43273,Bulinac 
+Ribnjak,31225,Breznica Nasicka 
+Ribnjak,48312,Rasinja 
+Ricice,21267,Ricice 
+Ricice,53244,Lovinac 
+Ricina,51243,Tribalj 
+Ridane,22312,Kosovo/Zvjerinac/ 
+Rijeka,51000,Rijeka 
+Rijeka Koprivnicka,48306,Sokolovac 
+Rijeka Vocanska,42245,Donja Voca 
+Rijenci,33522,Vocin 
+Rim,52425,Roc 
+Rim,51329,Severin na Kupi 
+Rimnjak,52420,Buzet 
+Rinkovec,42253,Bednja 
+Ripenda Kosi,52220,Labin 
+Ripenda Kras,52220,Labin 
+Ripenda Verbanci,52220,Labin 
+Risika,51516,Vrbnik 
+Risvica,49295,Kumrovec 
+Rit,33407,Gornje Bazje 
+Rivalno,42232,Donji Martijanec 
+Rivanj,23291,Sestrunj 
+Rizvanusa,53206,Brusane 
+Robade,40312,Strigova 
+Roc,52425,Roc 
+Rocko Polje,52425,Roc 
+Rodaljice,23421,Bjelina 
+Rodin Potok,33533,Pivnica Slavonska 
+Rogacic,21480,Vis 
+Rogi,51301,Brod na Kupi 
+Rogocana,52220,Labin 
+Rogotin,20343,Rogotin 
+Rogovac,33404,Spisic Bukovica 
+Rogovici,52465,Tar 
+Rogoznica,22203,Rogoznica 
+Rogoza,43282,Veliko Vukovje 
+Rogulje,44441,Brdani Samaricki 
+Rogulje,34553,Bucje 
+Rojci,52464,Kastelir 
+Rojnici,52207,Barban 
+Rokovci,32271,Rokovci Andrijasevci 
+Ropa,20225,Babino Polje 
+Ropci,51243,Tribalj 
+Rosopajnik,47271,Netretic 
+Rosulje,44430,Hrvatska Kostajnica 
+Rosini,52446,Nova Vas 
+Roskici,52464,Kastelir 
+Rovanjska,23450,Obrovac 
+Rovci,48267,Orehovec 
+Rovinj,52210,Rovinj (Rovigno) 
+Rovinjsko Selo,52210,Rovinj (Rovigno) 
+Rovisce,43212,Rovisce 
+Roviska,44400,Glina 
+Rovistanci,48000,Koprivnica 
+Rovno,49234,Petrovsko 
+Rozga,10293,Dubravica 
+Rozmajerovac,31500,Nasice 
+Rozat,20236,Mokosica 
+Rozdanik,44323,Rajic 
+Roze,21245,Tijarica 
+Rozenica,10414,Pokupsko 
+Rozici,51221,Kostrena 
+Rozmanici,51221,Kostrena 
+Rtic,51328,Lukovdol 
+Rtina,23248,Razanac 
+Rubesi,51215,Kastav 
+Ruca,10411,Orle 
+Ruda,21242,Grab 
+Rudani,52341,Zminj 
+Rudanovac,53230,Korenica 
+Rude,10430,Samobor 
+Rude Pribicke,10454,Krasic 
+Rudezi,44441,Brdani Samaricki 
+Rudina,21460,Stari Grad 
+Rudine,51514,Dobrinj 
+Rudinka,53203,Kosinj 
+Rudopolje,53223,Vrhovine 
+Rudopolje Bruvanjsko,23441,Bruvno 
+Rugvica,10370,Dugo Selo 
+Rujevac,44437,Rujevac 
+Rujevo,47282,Kamanje 
+Rukavac,51211,Matulji 
+Rukavac,21480,Vis 
+Rukljevina,42223,Varazdinske Toplice 
+Rumin,21233,Hrvace 
+Runovic,21261,Runovic 
+Rupa,51214,Sapjane 
+Rupe,22222,Skradin 
+Rupeni,52445,Baderna 
+Rusnica,49231,Hum na Sutli 
+Rusani,33411,Gradina 
+Ruscica,35208,Ruscica 
+Rusevac,48260,Krizevci 
+Rusevac,34320,Orljavac 
+Rusevica,47222,Cetingrad 
+Rusevo,34350,Caglin 
+Rusevo Krmpotsko,51252,Klenovica 
+Ruskovac,43232,Berek 
+Ruskovica,44316,Velika Ludina 
+Ruzic,22322,Ruzic 
+Ruzic Selo,51226,Hreljin 
+Ruzici,51213,Jurdani 
+Ruzici,52231,Nedescina 
+Ruzici,52440,Porec 
+Rzisce,52231,Nedescina 
+Sabljaki Modruski,47303,Josipdol 
+Sabljici,51511,Malinska 
+Saborsko,47306,Saborsko 
+Sadikovac,47222,Cetingrad 
+Sadilovac,47246,Dreznik Grad 
+Saftici,51244,Grizane 
+Salajci,10345,Gradec 
+Salakovci,52220,Labin 
+Salambati,52342,Svetvincenat 
+Salez,52420,Buzet 
+Sali,23281,Sali 
+Salinovec,42240,Ivanec 
+Salnik,10383,Komin 
+Salopek Luke,47240,Slunj 
+Salopeki Modruski,47303,Josipdol 
+Samarica,43232,Berek 
+Samatovci,31222,Bizovac 
+Samci,49245,Gornja Stubica 
+Samobor,10430,Samobor 
+Samoborec,10347,Rakovec 
+Samoborski Otok,10430,Samobor 
+Santalezi,52231,Nedescina 
+Santrici,21255,Zadvarje 
+Sapci,35212,Garcin 
+Sapina Doca,22204,Siroke 
+Saplunara,20224,Maranovici 
+Sapna,34350,Caglin 
+Sarovo,47261,Zvecaj 
+Sarsoni,51216,Viskovo 
+Sarvas,31204,Bijelo Brdo 
+Sasi,10410,Velika Gorica 
+Sasovac,43272,Nova Raca 
+Sastavak,47240,Slunj 
+Satnica,31222,Bizovac 
+Satnica Dakovacka,31421,Satnica Dakovacka 
+Satric,21233,Hrvace 
+Savar,23285,Brbinj 
+Savrscak,10430,Samobor 
+Savska Cesta,10340,Vrbovec 
+Savska Ves,40000,Cakovec 
+Savski Bok,35423,Vrbje 
+Savski Marof,10291,Prigorje Brdovecko 
+Savudrija,52475,Savudrija (Salvore) 
+Sazije,34320,Orljavac 
+Sedalce,51302,Kuzelj 
+Sedlarica,33405,Pitomaca 
+Sedramic,22323,Unesic 
+Seget,52470,Umag (Umago) 
+Seget Donji,21218,Seget Donji 
+Seget Gornji,21218,Seget Donji 
+Seget Vranjica,21220,Trogir 
+Segovina,42230,Ludbreg 
+Seketin,42204,Turcin 
+Sekirevo Selo,49245,Gornja Stubica 
+Sekirisce,49223,Sveti Kriz Zacretje 
+Sekulici,47285,Radatovici 
+Sekulinci,33522,Vocin 
+Sela,44273,Sela 
+Sela Bosiljevska,47251,Bosiljevo 
+Sela Ravenska,48265,Raven 
+Sela Zakanjska,47276,Zakanje 
+Selakova Poljana,47221,Krstinja 
+Selanec,48267,Orehovec 
+Selca,21425,Selca 
+Selca,52420,Buzet 
+Selca kod Bogomolja,21468,Bogomolje 
+Selca kod Starog Grada,21460,Stari Grad 
+Selce,51266,Selce 
+Selce Zumberacko,10432,Bregana 
+Selci,31222,Bizovac 
+Selci Dakovacki,31415,Selci Dakovacki 
+Selci Krizovljanski,42208,Cestica 
+Selina,52448,Sveti Lovrec 
+Seline,23244,Starigrad Paklenica 
+Selisce Sunjsko,44214,Bobovac 
+Seliste,44320,Kutina 
+Seliste Kostajnicko,44430,Hrvatska Kostajnica 
+Selna,35212,Garcin 
+Selnica,49246,Marija Bistrica 
+Selnica,40314,Selnica 
+Selnica,10410,Velika Gorica 
+Selnica Miholecka,48267,Orehovec 
+Selnica Podravska,48317,Legrad 
+Selnica Psarjevacka,10380,Sveti Ivan Zelina 
+Selnik,42230,Ludbreg 
+Selnik,42243,Marusevec 
+Selno,49217,Krapinske Toplice 
+Selo,51305,Trsce 
+Selsko Brdo,10451,Pisarovina 
+Seljaci,52420,Buzet 
+Seljanec,42242,Radovan 
+Semeljci,31402,Semeljci 
+Semicevici,51243,Tribalj 
+Semic,52426,Lupoglav 
+Senj,53270,Senj 
+Senj,52420,Buzet 
+Senjska Draga,53270,Senj 
+Seoca,21254,Blato na Cetini 
+Seoce,35410,Nova Kapela 
+Seoci,34000,Pozega 
+Seocani,47313,Dreznica 
+Seona,31513,Donja Moticina 
+Sertic Poljana,53231,Plitvicka Jezera 
+Sestrunj,23291,Sestrunj 
+Sesvete,34312,Sesvete (kod Pozege) 
+Sesvete,10360,Sesvete 
+Sesvete Ludbreske,42233,Sveti Durd 
+Setus,44000,Sisak 
+Severin,43274,Severin 
+Severin na Kupi,51329,Severin na Kupi 
+Severovci,48350,Durdevac 
+Sevid,21222,Marina 
+Sibenik,43270,Veliki Grdevac 
+Sibic,44251,Gora 
+Sibinj,35252,Sibinj 
+Sibinj Krmpotski,51252,Klenovica 
+Sibokovac,34350,Caglin 
+Sica,47252,Barilovic 
+Sicane,21232,Dicmo 
+Sicice,35423,Vrbje 
+Sice,35410,Nova Kapela 
+Sigetac Novski,44330,Novska 
+Sigetec,48321,Peteranec 
+Sigetec Ludbreski,42230,Ludbreg 
+Sikirevci,35224,Sikirevci 
+Sikovo,23207,Sveti Filip i Jakov 
+Silas,31214,Laslovo 
+Silba,23295,Silba 
+Sinac,53224,Licko Lesce 
+Sinlije,35404,Cernik 
+Sinozici,52445,Baderna 
+Sinj,21230,Sinj 
+Sirac,43541,Sirac 
+Sirotici,52420,Buzet 
+Sirova Katalena,48350,Durdevac 
+Sisak,44000,Sisak 
+Siscani,43245,Gornji Draganec 
+Sitno Donje,22205,Perkovic 
+Siveric,22321,Siveric 
+Sivica,40317,Podturen 
+Sjecevac,10456,Kalje 
+Sjenicak Lasinjski,47213,Sjenicak Lasinjski 
+Sjeverovac,44212,Mala Gradusa 
+Skakavac,47212,Skakavac 
+Skela,44400,Glina 
+Skenderovci,34551,Lipik 
+Skenderovci,34322,Brestovac 
+Skitaca,52222,Koromacno 
+Skoblic Brdo,47251,Bosiljevo 
+Skrad,51311,Skrad 
+Skradin,22222,Skradin 
+Skradinsko Polje,22222,Skradin 
+Skradnik,47302,Ostarije 
+Skradsko Selo,47272,Ribnik 
+Skrbcici,51500,Krk 
+Skrivena Luka,20290,Lastovo 
+Skukani,47262,Generalski Stol 
+Skupica,47250,Duga Resa 
+Slabinja,44450,Hrvatska Dubica 
+Sladojevacki Lug,33520,Slatina 
+Sladojevci,33520,Slatina 
+Slakovci,32242,Slakovci 
+Slakovec,40305,Nedelisce 
+Slana,44273,Sela 
+Slani Dol,10430,Samobor 
+Slani Potok,49245,Gornja Stubica 
+Slano,20232,Slano 
+Slanje,42230,Ludbreg 
+Slapnica,10430,Samobor 
+Slapno,47281,Mali Erjavec 
+Slatina,10346,Preseka 
+Slatina Pokupska,44425,Gornja Bucica 
+Slatina Svedruska,49234,Petrovsko 
+Slatine,21224,Slatine 
+Slatinik Drenjski,31418,Drenje 
+Slatinski Drenovac,33516,Slatinski Drenovac 
+Slavagora,10430,Samobor 
+Slavetic,10450,Jastrebarsko 
+Slavica,51321,Vrata 
+Slavonske Bare,33513,Zdenci 
+Slavonski Brod,35000,Slavonski Brod 
+Slavonski Kobas,35255,Slavonski Kobas 
+Slavonski Samac,35220,Slavonski Samac 
+Slavsko Polje,44410,Gvozd 
+Sleme Skradsko,51311,Skrad 
+Slemenice,40000,Cakovec 
+Slime,21255,Zadvarje 
+Slivarsko,42245,Donja Voca 
+Slivnica,23247,Vinjerac 
+Slivno,22205,Perkovic 
+Slivno,21272,Slivno 
+Slivno Ravno,20356,Klek 
+Slivonja Jarek,49217,Krapinske Toplice 
+Slobodna Vlast,31416,Levanjska Varos 
+Slobodnica,35252,Sibinj 
+Slobostina,34320,Orljavac 
+Slokovec,42230,Ludbreg 
+Slovinci,44222,Sas 
+Slovinska Kovacica,43272,Nova Raca 
+Slum,52421,Slum 
+Slunj,47240,Slunj 
+Slunjska Selnica,47212,Skakavac 
+Slunjski Moravci,47212,Skakavac 
+Slusnica,47240,Slunj 
+Sljeme,51321,Vrata 
+Sljeme,10000,Zagreb 
+Smerovisce,10430,Samobor 
+Smilcic,23424,Smilcic 
+Smiljan,53211,Smiljan 
+Smiljansko Polje,53211,Smiljan 
+Smisljak,51312,Brod Moravice 
+Smisljak,51329,Severin na Kupi 
+Smokovic,23222,Zemunik 
+Smokovljani,20231,Doli 
+Smokovo,51264,Jadranovo 
+Smokric,53244,Lovinac 
+Smokvica,20272,Smokvica 
+Smokvica,23249,Povljana 
+Smokvica Krmpotska,51252,Klenovica 
+Smolici,52463,Visnjan 
+Smoljanac,53231,Plitvicka Jezera 
+Smoljanci,52342,Svetvincenat 
+Smoljanovci,34320,Orljavac 
+Smrdelje,22319,Devrske 
+Smrecje,51304,Gerovo 
+Smrekari,51303,Plesce 
+Smrtic,35429,Gornji Bogicevci 
+Smude,33522,Vocin 
+Snasici,52220,Labin 
+Snos,47243,Veljun 
+Soblinec,10360,Sesvete 
+Sobocani,10312,Klostar Ivanic 
+Soboli,51219,Cavle 
+Sobra,20225,Babino Polje 
+Socanica,44440,Dvor 
+Sokoli,51305,Trsce 
+Sokolovac,43506,Dezanovac 
+Sokolovac,31309,Knezevi Vinogradi 
+Sokolovac,48306,Sokolovac 
+Soldatici,47280,Ozalj 
+Solin,21210,Solin 
+Soline,47251,Bosiljevo 
+Soline,20226,Govedari 
+Soline,23287,Veli Rat 
+Soline,20207,Mlini 
+Soline,51514,Dobrinj 
+Soljani,32255,Soljani 
+Sonkovic,22222,Skradin 
+Sop,10361,Sesvete-Kraljevec 
+Sop Bukevski,10411,Orle 
+Sopac,51316,Lokve 
+Sopaljska,51260,Crikvenica 
+Sopcic Vrh,47272,Ribnik 
+Sopjanska Greda,33525,Sopje 
+Sopje,33525,Sopje 
+Sopot,49218,Pregrada 
+Sopote,10457,Sosice 
+Sosice,10457,Sosice 
+Sosici,52352,Kanfanar 
+Sotin,32232,Sotin 
+Sovari,43240,Cazma 
+Sovinjak,52420,Buzet 
+Sovinjska Brda,52420,Buzet 
+Sovinjsko Polje,52420,Buzet 
+Sovjak,33533,Pivnica Slavonska 
+Sovski Dol,34350,Caglin 
+Spahici,47251,Bosiljevo 
+Sparagovici,20230,Ston 
+Sparednjak,47243,Veljun 
+Spincici,51215,Kastav 
+Split,21000,Split 
+Splitska,21410,Postira 
+Sracak,47272,Ribnik 
+Sracinec,42209,Sracinec 
+Srb,23445,Srb 
+Srdinac,48325,Novigrad Podravski 
+Srebreno,20207,Mlini 
+Srebrenjak,10431,Sveta Nedjelja 
+Srebrnici,52463,Visnjan 
+Sredanci,35215,Svilaj 
+Sredice Gornje,43203,Kapela 
+Srednja Diklenica,43203,Kapela 
+Srednja Draga,51305,Trsce 
+Srednja Krasicevica,51317,Crni Lug 
+Srednja Meminska,44434,Grabostani 
+Srednjak,10453,Gorica Svetojanska 
+Srednje Mokrice,44273,Sela 
+Srednje Prilisce,47273,Srednje Prilisce 
+Srednje Selo,47222,Cetingrad 
+Srednje Selo,21430,Grohote 
+Srednje Selo,34310,Pleternica 
+Srednji Borki,43500,Daruvar 
+Srednji Dubovec,48265,Raven 
+Srednji Grahovljani,34550,Pakrac 
+Srednji Lipovac,35410,Nova Kapela 
+Srednji Mosti,43203,Kapela 
+Srednji Poloj,47253,Perjasica 
+Sreser,20246,Janjina 
+Srijane,21205,Donji Dolac 
+Srijedska,43231,Ivanska 
+Srijem,48306,Sokolovac 
+Srijemske Laze,32242,Slakovci 
+Srima,22211,Vodice 
+Srinjine,21292,Srinjine 
+Sroki,51216,Viskovo 
+Srsici,51511,Malinska 
+Srsici,47283,Vivodina 
+Stajnica,53262,Jezerane 
+Stancic,10370,Dugo Selo 
+Stancici,43252,Prgomelje 
+Stanetinec,40312,Strigova 
+Stanica Roc,52425,Roc 
+Stanicici Zumberacki,10456,Kalje 
+Stanic,51557,Cres 
+Stanic Polje,44440,Dvor 
+Stanici,43203,Kapela 
+Stanici,21310,Omis 
+Stanici kod Nove Vasi,52446,Nova Vas 
+Stanisi,52447,Vizinada 
+Stanisovi,52222,Koromacno 
+Stanista,53288,Karlobag 
+Stankovac,44412,Stankovac 
+Stankovci,47272,Ribnik 
+Stankovci,23422,Stankovci 
+Stankovic,20250,Orebic 
+Stankovo,10450,Jastrebarsko 
+Stara Baska,51521,Punat 
+Stara Diklenica,43203,Kapela 
+Stara Drencina,44273,Sela 
+Stara Gradiska,35435,Stara Gradiska 
+Stara Josava,33515,Orahovica 
+Stara Kapela,35410,Nova Kapela 
+Stara Kapela,10343,Nova Kapela 
+Stara Krivaja,43532,Dulovac 
+Stara Krslja,47245,Rakovica 
+Stara Lipa,34000,Pozega 
+Stara Ljeskovica,34350,Caglin 
+Stara Marca,10312,Klostar Ivanic 
+Stara Novalja,53291,Novalja 
+Stara Ploscica,43232,Berek 
+Stara Raca,43272,Nova Raca 
+Stara Subocka,44330,Novska 
+Stara Susica,51314,Ravna Gora 
+Stara Vas,23249,Povljana 
+Stara Ves Kosnicka,49216,Desinic 
+Stara Ves Petrovska,49234,Petrovsko 
+Stara Ves Ravenska,48265,Raven 
+Starci,35420,Staro Petrovo Selo 
+Starcevljani,43203,Kapela 
+Stari Bosnjani,48263,Carevdar 
+Stari Brod,44271,Letovanic 
+Stari Farkasic,44271,Letovanic 
+Stari Glog,10343,Nova Kapela 
+Stari Golubovec,49255,Novi Golubovec 
+Stari Grabovac,44330,Novska 
+Stari Grad,21460,Stari Grad 
+Stari Grad Zumberacki,10457,Sosice 
+Stari Gradac,33405,Pitomaca 
+Stari Jankovci,32241,Stari Jankovci 
+Stari Laz,51314,Ravna Gora 
+Stari Lazi,51312,Brod Moravice 
+Stari Majur,34550,Pakrac 
+Stari Mikanovci,32284,Stari Mikanovci 
+Stari Pavljani,43000,Bjelovar 
+Stari Pazin,52000,Pazin 
+Stari Perkovci,35210,Vrpolje 
+Stari Skucani,43203,Kapela 
+Stari Slatnik,35253,Brodski Stupnik 
+Stari Zdenkovac,34350,Caglin 
+Starici,52440,Porec 
+Starigrad,48000,Koprivnica 
+Starigrad,53286,Starigrad (kod Senja) 
+Starigrad,23244,Starigrad Paklenica 
+Starin,33523,Cadavica 
+Starine,43246,Stefanje 
+Starjak,10251,Hrvatski Leskovac 
+Staro Cice,10419,Vukovina 
+Staro Petrovo Polje,33507,Crnac 
+Staro Petrovo Selo,35420,Staro Petrovo Selo 
+Staro Pracno,44000,Sisak 
+Staro Selo,53220,Otocac 
+Staro Selo,44212,Mala Gradusa 
+Staro Selo Topusko,44415,Topusko 
+Staro Stefanje,43246,Stefanje 
+Staro Topolje,35214,Donji Andrijevci 
+Starogradacki Marof,33405,Pitomaca 
+Stasevica,20345,Stasevica 
+Staza,44210,Sunja 
+Staznjevec,42242,Radovan 
+Stepcici,52234,Plomin 
+Stilja,21276,Vrgorac 
+Stinica,53287,Jablanac 
+Stipan,44414,Bovic 
+Stipanovci,31433,Podgorac 
+Stipernica,49218,Pregrada 
+Stobrec,21311,Stobrec 
+Stojavnica,47283,Vivodina 
+Stojcinovac,34350,Caglin 
+Stojdraga,10432,Bregana 
+Stojmeric,47243,Veljun 
+Stolac,53270,Senj 
+Stomorska,21432,Stomorska 
+Ston,20230,Ston 
+Stoncica,21480,Vis 
+Strahinje,49000,Krapina 
+Strahinje Radobojsko,49232,Radoboj 
+Strahoninec,40000,Cakovec 
+Strana,52420,Buzet 
+Stranici kod Sv. Lovreca,52448,Sveti Lovrec 
+Strasnik,44251,Gora 
+Stravca,20210,Cavtat 
+Straza,47250,Duga Resa 
+Straza Krapinska,49000,Krapina 
+Strazanac,43505,Koncanica 
+Strazbenica,44231,Blinja 
+Strazeman,34330,Velika 
+Strelec,40321,Mala Subotica 
+Strelecko,44000,Sisak 
+Strezoj,10414,Pokupsko 
+Strgari,47251,Bosiljevo 
+Strijezevica,34320,Orljavac 
+Strilcici,51511,Malinska 
+Strizirep,21245,Tijarica 
+Strizivojna,31410,Strizivojna 
+Strizicevac,34543,Poljana 
+Strmacka,47222,Cetingrad 
+Strmec,10346,Preseka 
+Strmec,49214,Veliko Trgovisce 
+Strmec,10020,Zagreb-Novi Zagreb 
+Strmec Bukevski,10410,Velika Gorica 
+Strmec Humski,49231,Hum na Sutli 
+Strmec Podravski,42206,Petrijanec 
+Strmec Pribicki,10454,Krasic 
+Strmec Remetinecki,42220,Novi Marof 
+Strmec Samoborski,10434,Strmec Samoborski 
+Strmec Stubicki,49244,Stubicke Toplice 
+Strmec Sutlanski,49294,Kraljevec na Sutli 
+Strmen,44214,Bobovac 
+Strmendolac,21240,Trilj 
+Strmica,22311,Strmica 
+Strosinci,32256,Strosinci 
+Strpancici,52463,Visnjan 
+Struga,42233,Sveti Durd 
+Struga Banska,44440,Dvor 
+Struga Nartska,10361,Sesvete-Kraljevec 
+Strukovec,40314,Selnica 
+Struzani,35216,Prnjavor 
+Struzec,44317,Popovaca 
+Struzec Posavski,10411,Orle 
+Stubalj,44433,Majur 
+Stubica,51326,Vrbovsko 
+Stubicka Slatina,49243,Oroslavje 
+Stubicke Toplice,49244,Stubicke Toplice 
+Studena,51217,Klana 
+Studenci,53202,Perusic 
+Studenci,21265,Studenci 
+Stupa,20205,Topolo 
+Stupe,10455,Kostanjevac 
+Stupnicki Kuti,35254,Bebrina 
+Stupno,44000,Sisak 
+Stupovaca,44320,Kutina 
+Subocka,34551,Lipik 
+Subotica Podravska,48311,Kunovec 
+Sucici,51417,Moscenicka Draga 
+Sucuraj,21469,Sucuraj 
+Sudaraz,31300,Beli Manastir 
+Sudovcina,42232,Donji Martijanec 
+Sudovec,42220,Novi Marof 
+Sudurad,20223,Sipanjska Luka 
+Suha Katalena,48362,Klostar Podravski 
+Suha Mlaka,33507,Crnac 
+Suhac,21230,Sinj 
+Suhaja,43240,Cazma 
+Suhodol Budacki,47242,Krnjak 
+Suhodol Zelinski,10382,Donja Zelina 
+Suhopolje,33410,Suhopolje 
+Suhor,51302,Kuzelj 
+Suhovare,23241,Policnik 
+Suknovci,22303,Oklaj 
+Sukosan,23206,Sukosan 
+Sulkovci,34310,Pleternica 
+Sumartin,21426,Sumartin 
+Sunger,51315,Mrkopalj 
+Sunja,44210,Sunja 
+Supetar,21400,Supetar 
+Supetarska Draga,51280,Rab 
+Susak,51561,Susak 
+Sustjepan,20236,Mokosica 
+Susa,10411,Orle 
+Susac,20290,Lastovo 
+Susanj Cesaricki,53288,Karlobag 
+Susci,21232,Dicmo 
+Susici,52425,Roc 
+Susik,51243,Tribalj 
+Susine,31511,Durdenovac 
+Susobreg,49282,Konjscina 
+Sutina,21247,Neoric 
+Sutinske Toplice,49251,Mace 
+Sutivan,21403,Sutivan 
+Sutivanac,52341,Zminj 
+Sutomiscica,23273,Preko 
+Suvaja,23445,Srb 
+Suvoj,44213,Kratecko 
+Suza,31308,Suza 
+Suzan,51514,Dobrinj 
+Sv. Filip i Jakov,23207,Sveti Filip i Jakov 
+Sv. Marija na Krasu,52470,Umag (Umago) 
+Sv. Martin na Muri,40313,Sveti Martin na Muri 
+Svedruza,49234,Petrovsko 
+Sveta Ana,48350,Durdevac 
+Sveta Helena,10382,Donja Zelina 
+Sveta Helena,48260,Krizevci 
+Sveta Jelena,51418,Brsec 
+Sveta Katarina,52332,Pican 
+Sveta Lucija,52428,Oprtalj (Portole) 
+Sveta Marija,40326,Sveta Marija 
+Sveta Marija na Krasu,52460,Buje (Buie) 
+Sveta Marina,52220,Labin 
+Sveta Nedjelja,21465,Jelsa 
+Sveta Nedjelja,10431,Sveta Nedjelja 
+Sveti Andrija,21485,Komiza 
+Sveti Anton,51511,Malinska 
+Sveti Anton,51417,Moscenicka Draga 
+Sveti Bartol,52424,Motovun 
+Sveti Bartul,52220,Labin 
+Sveti Donat,52420,Buzet 
+Sveti Durad,31552,Podgajci Podravski 
+Sveti Durad,33000,Virovitica 
+Sveti Durd,42233,Sveti Durd 
+Sveti Ilija,42214,Sveti Ilija 
+Sveti Ivan,52428,Oprtalj (Portole) 
+Sveti Ivan,52463,Visnjan 
+Sveti Ivan,52420,Buzet 
+Sveti Ivan,51511,Malinska 
+Sveti Ivan Dobrinjski,51514,Dobrinj 
+Sveti Ivan Zelina,10380,Sveti Ivan Zelina 
+Sveti Ivan Zabno,48214,Sveti Ivan Zabno 
+Sveti Jakov,51554,Nerezine 
+Sveti Juraj,53284,Sveti Juraj 
+Sveti Juraj u Trnju,40323,Prelog 
+Sveti Kirin,52342,Svetvincenat 
+Sveti Kriz,49284,Budinscina 
+Sveti Kriz,40321,Mala Subotica 
+Sveti Kriz,49215,Tuhelj 
+Sveti Kriz Zacretje,49223,Sveti Kriz Zacretje 
+Sveti Lovrec,52448,Sveti Lovrec 
+Sveti Marko,53202,Perusic 
+Sveti Martin,48260,Krizevci 
+Sveti Martin,52231,Nedescina 
+Sveti Martin,21312,Podstrana 
+Sveti Martin,52420,Buzet 
+Sveti Martin pod Okicem,10435,Sveti Martin pod Okicem 
+Sveti Matej,49245,Gornja Stubica 
+Sveti Mikula,51253,Bribir 
+Sveti Petar,51559,Beli 
+Sveti Petar,51417,Moscenicka Draga 
+Sveti Petar Cvrstec,48260,Krizevci 
+Sveti Petar Ludbreski,42231,Mali Bukovec 
+Sveti Petar Mreznicki,47250,Duga Resa 
+Sveti Petar Orehovec,48267,Orehovec 
+Sveti Petar u sumi,52404,Sveti Petar u sumi 
+Sveti Rok,53244,Lovinac 
+Sveti Urban,40312,Strigova 
+Sveti Vid,51253,Bribir 
+Sveti Vid Dobrinjski,51514,Dobrinj 
+Sveti Vid Miholjice,51511,Malinska 
+Svetice,47281,Mali Erjavec 
+Sveticko Hrasce,47281,Mali Erjavec 
+Svetinja,34308,Jaksic 
+Svetoblazje,31411,Trnava 
+Svetojurski Vrh,49218,Pregrada 
+Svetonedjeljski Breg,10431,Sveta Nedjelja 
+Svetvincenat,52342,Svetvincenat 
+Svib,21256,Cista Provo 
+Svibje,10361,Sesvete-Kraljevec 
+Svibovec,42223,Varazdinske Toplice 
+Svibovec Podravski,42209,Sracinec 
+Svilaj,35215,Svilaj 
+Svilna,34310,Pleternica 
+Svinca,21222,Marina 
+Svinica,44212,Mala Gradusa 
+Svinica Krstinjska,47221,Krstinja 
+Svinisce,21208,Kucice 
+Svinjarec,10342,Dubrava 
+Svinjarevci,32242,Slakovci 
+Svirce,21462,Vrbanj 
+Svojic,47253,Perjasica 
+Svolonje,21253,Gata 
+Svracica,44403,Maja 
+Svrackovo Selo,53236,Podlapaca 
+Svrzevo,10454,Krasic 
+Sag,31550,Valpovo 
+Sagovina Cernicka,35404,Cernik 
+Sagovina Masicka,35429,Gornji Bogicevci 
+Sagudovec,49245,Gornja Stubica 
+Sajini,52207,Barban 
+Sakanlije,44435,Divusa 
+Salamunic,53235,Bunic 
+Salamunovec,48267,Orehovec 
+Salovec,10380,Sveti Ivan Zelina 
+Sandorovec,40000,Cakovec 
+Sandrovac,43227,Sandrovac 
+Sapjane,51214,Sapjane 
+Saptinovci,31511,Durdenovac 
+Sarari,51244,Grizane 
+Sarengrad,32234,Sarengrad 
+Saric Struga,20343,Rogotin 
+Sarici,52206,Marcana 
+Sartovac,44320,Kutina 
+Sas,44222,Sas 
+Sasa,42253,Bednja 
+Saseva,44401,Hajtic 
+Sasevo,33523,Cadavica 
+Sasinovec,10360,Sesvete 
+Satornja,44400,Glina 
+Scepanje,42225,Breznicki Hum 
+Scapovec,10312,Klostar Ivanic 
+Scitarjevo,10410,Velika Gorica 
+Scrbinec,49254,Belec 
+Sculac,47252,Barilovic 
+Sculci,52420,Buzet 
+Sebreki,47286,Mahicno 
+Secerana,31300,Beli Manastir 
+Seganovac,53230,Korenica 
+Segestin,44435,Divusa 
+Segotici,52208,Krnica 
+Seketino Brdo,47250,Duga Resa 
+Selovec,10347,Rakovec 
+Semovci,48350,Durdevac 
+Semovec,42202,Trnovec Bartolovecki 
+Semovec Breski,10311,Posavski Bregi 
+Senkovec,40000,Cakovec 
+Senkovec,10292,Senkovec 
+Seovci,34000,Pozega 
+Seovica,34550,Pakrac 
+Sepci Podstenski,51312,Brod Moravice 
+Seraje,52448,Sveti Lovrec 
+Sestak Brdo,10414,Pokupsko 
+Sestanovac,21250,Sestanovac 
+Sevalj,51302,Kuzelj 
+Sibenik-dio,22000,Sibenik 
+Sibenik/dio-Brodarica/,22010,Sibenik-Brodarica 
+Sibenik/dio-Razine/,22020,Sibenik-Razine 
+Sibenik/dio-Zablace/,22030,Sibenik-Zablace 
+Sibice,10290,Zapresic 
+Sibine,44401,Hajtic 
+Sibovac,43500,Daruvar 
+Sijanec,42205,Vidovec 
+Sije,51313,Kupjak 
+Silo,51515,Silo 
+Siljakovina,10413,Kravarsko 
+Siljeski,20210,Cavtat 
+Siljki,47285,Radatovici 
+Siljkovaca,47222,Cetingrad 
+Simatovo,51312,Brod Moravice 
+Simici,51242,Drivenik 
+Simljana,43232,Berek 
+Simljanica,43232,Berek 
+Simljanik,43233,Trnoviticki Popovac 
+Simraki,10456,Kalje 
+Simunci,49216,Desinic 
+Simuncevec,10360,Sesvete 
+Simuni,23251,Kolan 
+Sinkovica Bednjanska,42253,Bednja 
+Sinkovica Saska,42253,Bednja 
+Sipacki Breg,10430,Samobor 
+Sipanjska Luka,20223,Sipanjska Luka 
+Sipki,49253,Lobor 
+Siptari,43211,Predavac 
+Sirinci,35429,Gornji Bogicevci 
+Sirine,31300,Beli Manastir 
+Sirinec,10314,Kriz 
+Siritovci,22324,Drinovci 
+Siroka Kula,53201,Licki Osik 
+Siroka Rijeka,47221,Krstinja 
+Siroke,22204,Siroke 
+Siroko Polje,31403,Vuka 
+Siroko Selo,48306,Sokolovac 
+Sisan,52100,Pula 
+Sisinec,44271,Letovanic 
+Siskovci,32272,Cerna 
+Sisljavic,47204,Sisljavic 
+Sivati,52341,Zminj 
+Skabrnja,23223,Skabrnja 
+Skalic Zagorski,49216,Desinic 
+Skalnica,51217,Klana 
+Skaljevica,47280,Ozalj 
+Skare,53221,Skare 
+Skaricevo,49224,Lepajci 
+Skarnik,42223,Varazdinske Toplice 
+Skicini,52342,Svetvincenat 
+Skodinovac,43531,Veliki Bastaji 
+Skopljak,52403,Gracisce 
+Skrabutnik,34000,Pozega 
+Skrile,52460,Buje (Buie) 
+Skriljevec,42242,Radovan 
+Skrinjari,48214,Sveti Ivan Zabno 
+Skrip,21410,Postira 
+Skrljevo,51223,Skrljevo 
+Skropeti,52423,Karojba 
+Skudelin,52460,Buje (Buie) 
+Skuljari,52420,Buzet 
+Skvaransko,52222,Koromacno 
+Sljivnjak,47243,Veljun 
+Sljivosevci,31542,Magadenovac 
+Sljivovac,44414,Bovic 
+Smrika,51263,Smrika 
+Snjegavic,34320,Orljavac 
+Sodici,51221,Kostrena 
+Sodolovci,31215,Ernestinovo 
+Soici,51221,Kostrena 
+Sopot,23420,Benkovac 
+Sopron,48269,Kalnik 
+Sorgi,52428,Oprtalj (Portole) 
+Sorici,52352,Kanfanar 
+Spadici,52440,Porec 
+Spanat,33520,Slatina 
+Spanovica,34550,Pakrac 
+Spehari,47251,Bosiljevo 
+Spickovina,49210,Zabok 
+Spigelski Breg,10453,Gorica Svetojanska 
+Spiranec,48265,Raven 
+Spisic Bukovica,33404,Spisic Bukovica 
+Staglinec,48000,Koprivnica 
+Stakorovec,10370,Dugo Selo 
+Stakorovica,47221,Krstinja 
+Stale,51253,Bribir 
+Stancija Grgur,52342,Svetvincenat 
+Stedrica,20205,Topolo 
+Stefanci,51328,Lukovdol 
+Stefanec,40000,Cakovec 
+Stefanec Bartolovecki,42202,Trnovec Bartolovecki 
+Stefanje,43246,Stefanje 
+Sterna,52428,Oprtalj (Portole) 
+Stifanici,52445,Baderna 
+Stikada,53244,Lovinac 
+Stikovo,22321,Siveric 
+Stinjan,52212,Fazana 
+Stirkovac,47253,Perjasica 
+Stitar,32274,Stitar 
+Stitnjak,34000,Pozega 
+Stivan,51555,Belej 
+Stivica,35420,Staro Petrovo Selo 
+Stokovci,52342,Svetvincenat 
+Strigova,40312,Strigova 
+Strigovec,48268,Gornja Rijeka 
+Strmac,52220,Labin 
+Strped,52420,Buzet 
+Strucljevo,49223,Sveti Kriz Zacretje 
+Stuparje,49234,Petrovsko 
+Stuti,52463,Visnjan 
+Sulinec,10380,Sveti Ivan Zelina 
+Sumanovci,34308,Jaksic 
+Sumarina,31300,Beli Manastir 
+Sumber,52231,Nedescina 
+Sumecani,10313,Graberje Ivanicko 
+Sumece,35254,Bebrina 
+Sumede,33515,Orahovica 
+Sumet,21263,Krivodol 
+Sumet,20236,Mokosica 
+Sumetlica,35404,Cernik 
+Supera,51260,Crikvenica 
+Suplja Lipa,43505,Koncanica 
+Surdovec,10381,Bedenica 
+Suselj Brijeg,49000,Krapina 
+Susnjari,34320,Orljavac 
+Susnjari,10314,Kriz 
+Susnjevci,35211,Trnjani 
+Susnjevica,52233,Susnjevica 
+Susnjici,52448,Sveti Lovrec 
+Svajcarnica,31326,Darda 
+Svaljkovec/dio/,49224,Lepajci 
+Svaljkovec/dio/,49223,Sveti Kriz Zacretje 
+Svica,53225,Svica 
+Svrakarica,44441,Brdani Samaricki 
+Taboriste,44250,Petrinja 
+Tadini,52464,Kastelir 
+Tanac,44324,Jasenovac 
+Tar,52465,Tar 
+Tarno,10310,Ivanic-Grad 
+Tatar Varos,47222,Cetingrad 
+Tatinica,20226,Govedari 
+Tedrovec,10370,Dugo Selo 
+Tekic,34308,Jaksic 
+Temovec,49223,Sveti Kriz Zacretje 
+Tenja,31207,Tenja 
+Teodorovac,31511,Durdenovac 
+Tepljuh,22321,Siveric 
+Terezino Polje,33407,Gornje Bazje 
+Tiborjanci,31554,Gat 
+Tici,51325,Moravice 
+Tihocaj,10453,Gorica Svetojanska 
+Tijarica,21245,Tijarica 
+Tikves,31328,Lug 
+Timarci,44222,Sas 
+Tinj,23423,Polaca 
+Tinjan,52444,Tinjan 
+Tisanic Jarek,49210,Zabok 
+Tisno,22240,Tisno 
+Tisovac,34553,Bucje 
+Tisovac,35420,Staro Petrovo Selo 
+Tisovac Zumberacki,10456,Kalje 
+Tisina Erdedska,44000,Sisak 
+Tisina Kaptolska,44000,Sisak 
+Tiskovac Licki,23446,Kaldrma 
+Tkalci,49000,Krapina 
+Tkalec Breznicki,42226,Bisag 
+Tkon,23212,Tkon 
+Tociljevac,43272,Nova Raca 
+Tocak,47243,Veljun 
+Tocak Perjasicki,47253,Perjasica 
+Tocionik,20231,Doli 
+Tolic,53236,Podlapaca 
+Tomasevci,10456,Kalje 
+Tomasevec,49290,Klanjec 
+Tomasevec,10383,Komin 
+Tomasevec Biskupecki,42204,Turcin 
+Tomasica,43280,Garesnica 
+Tomasici,47262,Generalski Stol 
+Tomasinci,31422,Gorjani 
+Tomasnica,47281,Mali Erjavec 
+Tomica,35107,Podvinje 
+Tomici,47313,Dreznica 
+Tomici,51325,Moravice 
+Tomingaj,23440,Gracac 
+Tominovac,34340,Kutjevo 
+Tomislavovac,20248,Putnikovic 
+Tomisici,52341,Zminj 
+Tompojevci,32238,Cakovci 
+Toncici,47250,Duga Resa 
+Topid,52220,Labin 
+Toplice,10453,Gorica Svetojanska 
+Toplicica,49284,Budinscina 
+Toplicica,42220,Novi Marof 
+Topoline,31224,Koska 
+Topolo,20205,Topolo 
+Topolovac,44202,Topolovac 
+Topolovec,10340,Vrbovec 
+Topolovec Pisarovinski,10451,Pisarovina 
+Topolovica,51325,Moravice 
+Topolovica,43270,Veliki Grdevac 
+Topolje,31304,Dubosevica 
+Topolje,10311,Posavski Bregi 
+Topusko,44415,Topusko 
+Toranj,34543,Poljana 
+Toranj,34330,Velika 
+Torcec,48322,Drnje 
+Tordinci,32214,Tordinci 
+Torjanci,31322,Baranjsko Petrovo Selo 
+Torovi,23234,Vir 
+Totovec,40000,Cakovec 
+Tounj,47264,Tounj 
+Tovarnik,32249,Tovarnik 
+Trakoscan,42253,Bednja 
+Trapari,34310,Pleternica 
+Trbounje,22320,Drnis 
+Trbovici,47313,Dreznica 
+Trebez,44325,Krapje 
+Trebovec,10311,Posavski Bregi 
+Treglava,43290,Grubisno Polje 
+Trema,48214,Sveti Ivan Zabno 
+Tremusnjak,44204,Jabukovac 
+Trenkovo,34330,Velika 
+Trepca,44410,Gvozd 
+Trescerovac,47280,Ozalj 
+Trestanovci,34308,Jaksic 
+Trg,47280,Ozalj 
+Trget,52224,Trget 
+Trgetari,52224,Trget 
+Trgovi,44437,Rujevac 
+Trgovisce,49283,Hrascina-Trgovisce 
+Tribalj,51243,Tribalj 
+Tribalj Gornji,51243,Tribalj 
+Triban,52460,Buje (Buie) 
+Tribanj,23245,Tribanj 
+Tribulje,51514,Dobrinj 
+Tribunj,22212,Tribunj 
+Trilj,21240,Trilj 
+Trinajstici,51215,Kastav 
+Trn,20357,Blace 
+Trnakovac,35430,Okucani 
+Trnava,35429,Gornji Bogicevci 
+Trnava,31411,Trnava 
+Trnava Cabunska,33412,Cabuna 
+Trnavac,53230,Korenica 
+Trnbusi,21254,Blato na Cetini 
+Trnova,20232,Slano 
+Trnovac,53000,Gospic 
+Trnovac,34330,Velika 
+Trnovac Glinski,44405,Mali Gradac 
+Trnovac Sokolovacki,48306,Sokolovac 
+Trnovec,40306,Macinec 
+Trnovec Bartolovecki,42202,Trnovec Bartolovecki 
+Trnovec Desinicki,49216,Desinic 
+Trnovi,47222,Cetingrad 
+Trnovica,20231,Doli 
+Trnovica,51218,Drazice 
+Trnoviticki Popovac,43233,Trnoviticki Popovac 
+Trnovo,47261,Zvecaj 
+Trnjani,35211,Trnjani 
+Trnjanski Kuti,35213,Oprisavci 
+Trnje,10410,Velika Gorica 
+Trogir,21220,Trogir 
+Trojeglava,43506,Dezanovac 
+Trojstveni Markovac,43000,Bjelovar 
+Trojvrh,47303,Josipdol 
+Trolokve,21201,Prgomet 
+Trombal,52447,Vizinada 
+Tropeti,51306,Cabar 
+Trosmarija,47263,Gornje Dubrave 
+Trpanj,20240,Trpanj 
+Trpinja,32224,Trpinja 
+Trstenik,52421,Slum 
+Trstenik,20245,Trstenik 
+Trstenik Nartski,10361,Sesvete-Kraljevec 
+Trstenik Puscanski,10291,Prigorje Brdovecko 
+Trsteno,20233,Trsteno 
+Trsteno,49215,Tuhelj 
+Trsce,51305,Trsce 
+Trski Lazi,51311,Skrad 
+Trski Vrh,49000,Krapina 
+Trtnik Glinski,44400,Glina 
+Trupinjak,47242,Krnjak 
+Trviz,52000,Pazin 
+Trzic,10450,Jastrebarsko 
+Trzic Primisljanski,47244,Primislje 
+Trzic Tounjski,47264,Tounj 
+Tucenik,10345,Gradec 
+Tucepi,21325,Tucepi 
+Tugare,21252,Tugare 
+Tugonica,49247,Zlatar Bistrica 
+Tuhelj,49215,Tuhelj 
+Tuheljske Toplice,49215,Tuhelj 
+Tuhovec,42223,Varazdinske Toplice 
+Tuk,43212,Rovisce 
+Tuk,51326,Vrbovsko 
+Tuk Bjelopoljski,53230,Korenica 
+Tuk Mrkopaljski,51315,Mrkopalj 
+Tuk Vojni,51315,Mrkopalj 
+Tulisevica,51415,Lovran 
+Tulnik,34310,Pleternica 
+Tupcina,10455,Kostanjevac 
+Tupkovec,40312,Strigova 
+Tupljak,52333,Podpican 
+Turanovac,33406,Lukac 
+Turanovac/dio/,33407,Gornje Bazje 
+Turanj,23207,Sveti Filip i Jakov 
+Turcenica,44400,Glina 
+Turcevic Polje,43504,Ivanovo Selo 
+Turcic,51511,Malinska 
+Turcin,42204,Turcin 
+Turcisce,40318,Dekanovec 
+Turjaci,21230,Sinj 
+Turjanski,53223,Vrhovine 
+Turke,51302,Kuzelj 
+Turkovcina,10381,Bedenica 
+Turkovici Ogulinski,47300,Ogulin 
+Turnasica,33405,Pitomaca 
+Turnic,34000,Pozega 
+Turnisce,49282,Konjscina 
+Turnisce Desinicko,49216,Desinic 
+Turnisce Klanecko,49214,Veliko Trgovisce 
+Turnovo,49216,Desinic 
+Turopolje,10417,Busevec 
+Tusti Vrh,51311,Skrad 
+Tusilovic,47241,Tusilovic 
+Tuskani,47286,Mahicno 
+Tustevac,20357,Blace 
+Tuzno,42242,Radovan 
+Tvrda Reka,43202,Zrinski Topolovac 
+Tvrdavica,31000,Osijek 
+Ubli,20289,Ubli 
+Udbina,53234,Udbina 
+Udbinja,47211,Utinja 
+Udetin,44440,Dvor 
+Udovicic,21242,Grab 
+Ugarci,34000,Pozega 
+Ugljan,23275,Ugljan 
+Ugljane,21243,Ugljane 
+Ugljes,31326,Darda 
+Ugrini,51253,Bribir 
+Ugrini,52420,Buzet 
+Uljanicki Brijeg,43507,Uljanik 
+Uljanik,43507,Uljanik 
+Umag,52470,Umag (Umago) 
+Umcani,21277,Veliki Prolog 
+Umetici,44432,Mecencani 
+Umljanovici,22322,Ruzic 
+Umol,47251,Bosiljevo 
+Uncani,44435,Divusa 
+Unesic,22323,Unesic 
+Unije,51562,Unije 
+Urinj,51221,Kostrena 
+Uskoci,35435,Stara Gradiska 
+Uskoplje,20210,Cavtat 
+Ustrine,51555,Belej 
+Ustica,44324,Jasenovac 
+Utinja,47211,Utinja 
+Utinja Vrelo,47211,Utinja 
+Utiskani,43231,Ivanska 
+Utolica,44222,Sas 
+Uzdolje,22312,Kosovo/Zvjerinac/ 
+Vabriga,52465,Tar 
+Vacani,22222,Skradin 
+Vadalj,22204,Siroke 
+Vadediji,52341,Zminj 
+Vadina,10296,Luka 
+Vadres,52207,Barban 
+Vaganac,53212,Klanac 
+Vagovina,43245,Gornji Draganec 
+Vajin Vrh,47303,Josipdol 
+Valenovac,31512,Fericanci 
+Valentici,52464,Kastelir 
+Valentinovo,49218,Pregrada 
+Valetic,10347,Rakovec 
+Valica,52470,Umag (Umago) 
+Valici,51219,Cavle 
+Valkarin,52440,Porec 
+Valpovo,31550,Valpovo 
+Valtura,52100,Pula 
+Valun,51557,Cres 
+Vanici,44440,Dvor 
+Vantacici,51511,Malinska 
+Varastovac,47283,Vivodina 
+Varazdin,42000,Varazdin 
+Varazdin Breg,42204,Turcin 
+Varazdinske Toplice,42223,Varazdinske Toplice 
+Vardarac,31327,Bilje 
+Vardica,52470,Umag (Umago) 
+Varivode,22319,Devrske 
+Varos Bosiljevski,47251,Bosiljevo 
+Varoz,52341,Zminj 
+Vasine Laze,34000,Pozega 
+Vaska,33525,Sopje 
+Vazminec,51559,Beli 
+Veceslavec,48264,Klostar Vojakovacki 
+Vedasici,53230,Korenica 
+Vedrine,21240,Trilj 
+Vedro Polje,44210,Sunja 
+Vejaki,52463,Visnjan 
+Vela Luka,20270,Vela Luka 
+Vela Traba,52000,Pazin 
+Vela Ucka,51414,Icici 
+Vela Voda,51317,Crni Lug 
+Vele Drage,51312,Brod Moravice 
+Vele Mune,51212,Vele Mune 
+Vele Srakane,51550,Mali Losinj 
+Veleniki,52440,Porec 
+Velesevec,10411,Orle 
+Veleskovec,49247,Zlatar Bistrica 
+Veli Brgud,51213,Jurdani 
+Veli Dol,51241,Krizisce 
+Veli Golji,52220,Labin 
+Veli Iz,23284,Veli Iz 
+Veli Losinj,51551,Veli Losinj 
+Veli Maj,52440,Porec 
+Veli Mlin,52460,Buje (Buie) 
+Veli Mlun,52420,Buzet 
+Veli Rat,23287,Veli Rat 
+Veli Turini,52220,Labin 
+Velic,21240,Trilj 
+Velici,52447,Vizinada 
+Velika,34330,Velika 
+Velika Babina Gora,33533,Pivnica Slavonska 
+Velika Barna,43290,Grubisno Polje 
+Velika Branjska,48306,Sokolovac 
+Velika Brsljanica,43282,Veliko Vukovje 
+Velika Buna,10413,Kravarsko 
+Velika Cista,21244,Cista Velika 
+Velika Crkvina,47242,Krnjak 
+Velika Cresnjevica,33405,Pitomaca 
+Velika Dapcevica,43290,Grubisno Polje 
+Velika Erpenja,49215,Tuhelj 
+Velika Glava,22222,Skradin 
+Velika Gora,49218,Pregrada 
+Velika Gora,10380,Sveti Ivan Zelina 
+Velika Gorica,10410,Velika Gorica 
+Velika Gradusa,44212,Mala Gradusa 
+Velika Horvatska,49216,Desinic 
+Velika Hrastilnica,10314,Kriz 
+Velika Jamnicka,10451,Pisarovina 
+Velika Jasenovaca,43290,Grubisno Polje 
+Velika Jazbina,10432,Bregana 
+Velika Jelsa,47000,Karlovac 
+Velika Klisa,33533,Pivnica Slavonska 
+Velika Kopanica,35221,Velika Kopanica 
+Velika Kosnica,10410,Velika Gorica 
+Velika Lesnica,51301,Brod na Kupi 
+Velika Loza,20226,Govedari 
+Velika Ludina,44316,Velika Ludina 
+Velika Milesina,21206,Donje Ogorje 
+Velika Mlaka,10408,Velika Mlaka 
+Velika Mlinska,43285,Velika Trnovitica 
+Velika Mucna,48306,Sokolovac 
+Velika Ostrna,10370,Dugo Selo 
+Velika Paka,47276,Zakanje 
+Velika Peratovica,43290,Grubisno Polje 
+Velika Petrovagorska,49253,Lobor 
+Velika Pisanica,43271,Velika Pisanica 
+Velika Plana,53213,Donje Pazariste 
+Velika Popina,23442,Otric 
+Velika Rakovica,10430,Samobor 
+Velika Rasinjica,48312,Rasinja 
+Velika Solina,44400,Glina 
+Velika Trapinska,33533,Pivnica Slavonska 
+Velika Trnava,43284,Hercegovac 
+Velika Trnovitica,43285,Velika Trnovitica 
+Velika Ves,49224,Lepajci 
+Velika Veternicka,49252,Mihovljan 
+Velika Vranovina,44415,Topusko 
+Velike Brisnice,53286,Starigrad (kod Senja) 
+Velike Sesvete,48264,Klostar Vojakovacki 
+Veliki Banovac,34552,Badljevina 
+Veliki Bastaji,43531,Veliki Bastaji 
+Veliki Bilac,34350,Caglin 
+Veliki Botinovac,48306,Sokolovac 
+Veliki Brezovec,10345,Gradec 
+Veliki Brocanac,21231,Klis 
+Veliki Budici,34553,Bucje 
+Veliki Bukovec,49251,Mace 
+Veliki Bukovec,42231,Mali Bukovec 
+Veliki Erjavec,47281,Mali Erjavec 
+Veliki Gorenec,42253,Bednja 
+Veliki Grabicani,48312,Rasinja 
+Veliki Gradac,44405,Mali Gradac 
+Veliki Grdevac,43270,Veliki Grdevac 
+Veliki Jadrc,51329,Severin na Kupi 
+Veliki Komor,49251,Mace 
+Veliki Kozinac,47252,Barilovic 
+Veliki Lipovec,10430,Samobor 
+Veliki Lovrecan,42208,Cestica 
+Veliki Miletinac,43531,Veliki Bastaji 
+Veliki Modruspotok,47271,Netretic 
+Veliki Obljaj,44402,Mali Obljaj 
+Veliki Otok,48317,Legrad 
+Veliki Pasijan,43280,Garesnica 
+Veliki Poganac,48312,Rasinja 
+Veliki Potocec,48260,Krizevci 
+Veliki Prokop,43233,Trnoviticki Popovac 
+Veliki Prolog,21277,Veliki Prolog 
+Veliki Rastovac,33507,Crnac 
+Veliki Raven,48265,Raven 
+Veliki Susnjar,44205,Donja Bacuga 
+Veliki Vareski,52208,Krnica 
+Veliki Vrh,10455,Kostanjevac 
+Veliki Vrh Kamanjski,47282,Kamanje 
+Veliki Zdenci,43293,Veliki Zdenci 
+Veliki Zitnik,53212,Klanac 
+Veliko Brdo,21325,Tucepi 
+Veliko Korenovo,43000,Bjelovar 
+Veliko Krcevo,44434,Grabostani 
+Veliko Polje,33407,Gornje Bazje 
+Veliko Polje,10010,Zagreb-Slobostina 
+Veliko Selce,51311,Skrad 
+Veliko Svinjicko,44203,Gusce 
+Veliko Trgovisce,49214,Veliko Trgovisce 
+Veliko Trojstvo,43226,Veliko Trojstvo 
+Veliko Vukovje,43282,Veliko Vukovje 
+Velim,23422,Stankovci 
+Velimirovac,31500,Nasice 
+Velinci,49295,Kumrovec 
+Veliskovci,31554,Gat 
+Velo Grablje,21450,Hvar 
+Velusic,22320,Drnis 
+Veljaki,52232,Krsan 
+Veljun,47243,Veljun 
+Veljun Primorski,53271,Krivi Put 
+Veljunska Glina,47243,Veljun 
+Veljunski Ponorac,47243,Veljun 
+Venac Mreznicki,47261,Zvecaj 
+Venje,34340,Kutjevo 
+Veprinac,51414,Icici 
+Vera,32225,Bobota 
+Vesela,34310,Pleternica 
+Veselici,47272,Ribnik 
+Veternica/dio/,49255,Novi Golubovec 
+Veternica/dio/,49252,Mihovljan 
+Vetovo,34335,Vetovo 
+Vezac,22204,Siroke 
+Vezisce,10315,Novoselec 
+Veznaveri,52446,Nova Vas 
+Vica Sela,49217,Krapinske Toplice 
+Vid,20352,Vid 
+Vidalici,53296,Zubovici 
+Videkic Selo,47240,Slunj 
+Vidonje,20350,Metkovic 
+Vidovac Cesaricki,53288,Karlobag 
+Vidovci,34000,Pozega 
+Vidovec,42205,Vidovec 
+Vidovec Krapinski,49000,Krapina 
+Vidovec Petrovski,49224,Lepajci 
+Vidovici,51556,Martinscica 
+Vidrenjak,44316,Velika Ludina 
+Vidulini,52341,Zminj 
+Viganj,20267,Kuciste 
+Vijenac Barilovicki,47252,Barilovic 
+Vilanci,49215,Tuhelj 
+Vilanija,52470,Umag (Umago) 
+Viletinec,42250,Lepoglava 
+Vilic Selo,34322,Brestovac 
+Viljevo,31531,Viljevo 
+Vina,21276,Vrgorac 
+Vinagora,49218,Pregrada 
+Vinalic,21236,Vrlika 
+Vinez,52220,Labin 
+Vinica,42207,Vinica 
+Vinica Breg,42207,Vinica 
+Vinicno,42224,Visoko 
+Vinine,21243,Ugljane 
+Vinipotok,49253,Lobor 
+Vinisce,21226,Vinisce 
+Vinivrh,47280,Ozalj 
+Vinkovacki Banovci,32247,Banovci 
+Vinkovci,32100,Vinkovci 
+Vinkovec /dio/,10346,Preseka 
+Vinkovec /dio/,10383,Komin 
+Vinogradci,31554,Gat 
+Vinogradi Ludbreski,42230,Ludbreg 
+Vinovac,21228,Blizna Donja 
+Vinski Vrh,47271,Netretic 
+Vinterovec,49245,Gornja Stubica 
+Vinjerac,23247,Vinjerac 
+Vir,23234,Vir 
+Viranec,48267,Orehovec 
+Virje,48326,Virje 
+Virje Krizovljansko,42208,Cestica 
+Virovitica,33000,Virovitica 
+Vis,21480,Vis 
+Visocane,23241,Policnik 
+Visocani,20231,Doli 
+Visoce,10457,Sosice 
+Visoka,22323,Unesic 
+Visoka Greda,35423,Vrbje 
+Visoko,42224,Visoko 
+Visovi,43211,Predavac 
+Visuc,53234,Udbina 
+Visci Vrh,10456,Kalje 
+Viskovci,34310,Pleternica 
+Viskovci,31401,Viskovci 
+Viskovici,52222,Koromacno 
+Viskovo,51216,Viskovo 
+Visnjan,52463,Visnjan 
+Visnjevac,43226,Veliko Trojstvo 
+Visnjevac,31220,Visnjevac 
+Visnjevac Podvrski,10432,Bregana 
+Visnjevec,49218,Pregrada 
+Visnjica,33520,Slatina 
+Visnjica,21276,Vrgorac 
+Visnjica Usticka,44324,Jasenovac 
+Visnjic Brdo,47263,Gornje Dubrave 
+Vitaljina,20218,Plocice 
+Vitesinec,42240,Ivanec 
+Vitunj,47300,Ogulin 
+Vivodina,47283,Vivodina 
+Vizanovec,49254,Belec 
+Vizinada,52447,Vizinada 
+Vizintini,52428,Oprtalj (Portole) 
+Vizintini Vrhi,52429,Groznjan (Grisignana) 
+Vizovlje,49214,Veliko Trgovisce 
+Vladimirovac,33411,Gradina 
+Vladislavci,31404,Vladislavci 
+Vladisovo,35420,Staro Petrovo Selo 
+Vlahovic,44406,Vlahovic 
+Vlaislav,48325,Novigrad Podravski 
+Vlaka,21275,Dragljane 
+Vlaka/lij.ob.Male Neretve/,20355,Opuzen 
+Vlasic Brdo,10455,Kostanjevac 
+Vlasici,23249,Povljana 
+Vlaskovec,10450,Jastrebarsko 
+Vlatkovac,34350,Caglin 
+Vocarica,44330,Novska 
+Vocin,33522,Vocin 
+Vode,51304,Gerovo 
+Vodena Draga,47251,Bosiljevo 
+Vodice,51557,Cres 
+Vodice,52421,Slum 
+Vodice,22211,Vodice 
+Vodnjan,52215,Vodnjan (Dignano) 
+Vodostaj,47000,Karlovac 
+Vodotec,53260,Brinje 
+Vodovada,20216,Dubravka 
+Vodinci,32283,Vodinci 
+Vojakovac,48264,Klostar Vojakovacki 
+Vojisnica,47220,Vojnic 
+Vojlovica,33514,Cacinci 
+Vojnic,47220,Vojnic 
+Vojnic Breg,49228,Brestovec Orehovicki 
+Vojnic Sinjski,21240,Trilj 
+Vojnovac,47303,Josipdol 
+Vojnovec Kalnicki,48269,Kalnik 
+Vojnovec Loborski,49253,Lobor 
+Vojnovic Brdo,47242,Krnjak 
+Vojsak,49218,Pregrada 
+Vojvodinec,48312,Rasinja 
+Volarice,53284,Sveti Juraj 
+Volavec,49245,Gornja Stubica 
+Volavje,10450,Jastrebarsko 
+Volinja,44435,Divusa 
+Voloder,44318,Voloder 
+Voljevec Rijecki,48267,Orehovec 
+Vorkapic,44415,Topusko 
+Vostane,21245,Tijarica 
+Vosteni,52448,Sveti Lovrec 
+Vozilici,52234,Plomin 
+Vrabac,21242,Grab 
+Vrana,23210,Biograd na moru 
+Vrana,51557,Cres 
+Vranesevci,33523,Cadavica 
+Vranic,34320,Orljavac 
+Vranici kod Poreca,52440,Porec 
+Vranici kod Visnjana,52463,Visnjan 
+Vranici kod Vizinade,52447,Vizinada 
+Vranik,53244,Lovinac 
+Vrankovec,49223,Sveti Kriz Zacretje 
+Vranojelje,42253,Bednja 
+Vranov Dol,10450,Jastrebarsko 
+Vranovaca,53230,Korenica 
+Vranovci,35209,Bukovlje 
+Vranovine,53212,Klanac 
+Vranja,52434,Boljun 
+Vranjak Zumberacki,10454,Krasic 
+Vranje Selo,52447,Vizinada 
+Vranjic,21211,Vranjic 
+Vrata,51321,Vrata 
+Vratarusa,53271,Krivi Put 
+Vratecko,44273,Sela 
+Vratisinec,40316,Vratisinec 
+Vratnik,53273,Vratnik 
+Vratnik Samoborski,10430,Samobor 
+Vratno Donje,42207,Vinica 
+Vratno Otok,42208,Cestica 
+Vrbanci,47201,Draganici 
+Vrbani,52447,Vizinada 
+Vrbanovec,42232,Donji Martijanec 
+Vrbanska Draga,47281,Mali Erjavec 
+Vrbanj,21462,Vrbanj 
+Vrbanja,32254,Vrbanja 
+Vrbica,32284,Stari Mikanovci 
+Vrbica,43226,Veliko Trojstvo 
+Vrbisnica,49231,Hum na Sutli 
+Vrbje,35423,Vrbje 
+Vrbnik,51516,Vrbnik 
+Vrbnik,22300,Knin 
+Vrbno,42253,Bednja 
+Vrboska,21463,Vrboska 
+Vrbova,35414,Vrbova 
+Vrbovac,43500,Daruvar 
+Vrbovec,10340,Vrbovec 
+Vrbovec Samoborski,10430,Samobor 
+Vrbovecki Pavlovec,10340,Vrbovec 
+Vrbovljani,35430,Okucani 
+Vrbovo,49283,Hrascina-Trgovisce 
+Vrbovo Posavsko,10411,Orle 
+Vrbovsko,51326,Vrbovsko 
+Vrcici,23249,Povljana 
+Vrcin Dol,34310,Pleternica 
+Vrebac,53205,Medak 
+Vrecari,52231,Nedescina 
+Vrelo Korenicko,53230,Korenica 
+Vrgada,23210,Biograd na moru 
+Vrgorac,21276,Vrgorac 
+Vrh,47201,Draganici 
+Vrh,51500,Krk 
+Vrh,52420,Buzet 
+Vrh Brodski,51301,Brod na Kupi 
+Vrh Lasici,52447,Vizinada 
+Vrh Letovanicki,44271,Letovanic 
+Vrh Martinscice,51221,Kostrena 
+Vrh Visocki,42224,Visoko 
+Vrhi Pregradski,49218,Pregrada 
+Vrhi Vinagorski,49218,Pregrada 
+Vrhjani,52463,Visnjan 
+Vrhova Gorica,47251,Bosiljevo 
+Vrhovac,47280,Ozalj 
+Vrhovac Sokolovacki,48306,Sokolovac 
+Vrhovacki Sopot,47280,Ozalj 
+Vrhovci,51305,Trsce 
+Vrhovcak,10430,Samobor 
+Vrhovec,10347,Rakovec 
+Vrhovec Bednjanski,42253,Bednja 
+Vrhovina,35211,Trnjani 
+Vrhovine,53223,Vrhovine 
+Vrhovljan,40313,Sveti Martin na Muri 
+Vrisnik,21465,Jelsa 
+Vrlika,21236,Vrlika 
+Vrnjak,52462,Momjan (Momiano) 
+Vrpile,53230,Korenica 
+Vrpolje,22205,Perkovic 
+Vrpolje,21245,Tijarica 
+Vrpolje,35210,Vrpolje 
+Vrpolje,22300,Knin 
+Vrpolje Bansko,44440,Dvor 
+Vrsar,52450,Vrsar 
+Vrsi,23235,Vrsi 
+Vrsine,21222,Marina 
+Vrsno,22206,Boraja 
+Vrskovac,47283,Vivodina 
+Vrtlinovec,42223,Varazdinske Toplice 
+Vrtlinska,43240,Cazma 
+Vrtnjakovec,49217,Krapinske Toplice 
+Vrucac,47313,Dreznica 
+Vrvari,52440,Porec 
+Vrzici,53273,Vratnik 
+Vucelici,47263,Gornje Dubrave 
+Vucak,49221,Bedekovcina 
+Vucani,43240,Cazma 
+Vucetinec,40311,Lopatinec 
+Vucevci,31401,Viskovci 
+Vucevica,21202,Lecevica 
+Vucilcevo,10293,Dubravica 
+Vucinci,51325,Moravice 
+Vucipolje,23440,Gracac 
+Vucipolje,21233,Hrvace 
+Vucjak Fericanacki,31512,Fericanci 
+Vucnik,51328,Lukovdol 
+Vuger Selo,10360,Sesvete 
+Vuglovec,42240,Ivanec 
+Vugrisinec,40306,Macinec 
+Vugrovec Donji,10360,Sesvete 
+Vugrovec Gornji,10360,Sesvete 
+Vujici Vojakovacki,48264,Klostar Vojakovacki 
+Vujnovici,51326,Vrbovsko 
+Vuka,31403,Vuka 
+Vukanci,49251,Mace 
+Vukanovec,40306,Macinec 
+Vukelici,47313,Dreznica 
+Vukelici,51325,Moravice 
+Vukelici,53203,Kosinj 
+Vuketic,47283,Vivodina 
+Vukmanic,47205,Vukmanic 
+Vukoder,47286,Mahicno 
+Vukojevci,31500,Nasice 
+Vukojevica,34350,Caglin 
+Vukomeric,10418,Dubranec 
+Vukosavljevica,33404,Spisic Bukovica 
+Vukosevac,44212,Mala Gradusa 
+Vukova Gorica,47273,Srednje Prilisce 
+Vukovar,32000,Vukovar 
+Vukovec,48267,Orehovec 
+Vukovije,43500,Daruvar 
+Vukovina,10419,Vukovina 
+Vukovje Zelinsko,10382,Donja Zelina 
+Vukovo Brdo,10455,Kostanjevac 
+Vukovo Selo,10292,Senkovec 
+Vukovoj,42244,Klenovnik 
+Vuksani,47281,Mali Erjavec 
+Vuksic,23422,Stankovci 
+Vuksin Sipak,10454,Krasic 
+Vuksinec Rijecki,48268,Gornja Rijeka 
+Vularija,40322,Orehovica 
+Vulisinec,42250,Lepoglava 
+Vurnovec,10362,Kasina 
+Vurot,44273,Sela 
+Zablatje,48316,Delekovec 
+Zablatje Posavsko,10410,Velika Gorica 
+Zabok,49210,Zabok 
+Zaborsko Selo,47271,Netretic 
+Zabrde,10345,Gradec 
+Zabrde,20230,Ston 
+Zabrezani,52404,Sveti Petar u sumi 
+Zabukovac,51252,Klenovica 
+Zadar,23000,Zadar 
+Zadobarje,47000,Karlovac 
+Zadravec,49228,Brestovec Orehovicki 
+Zadrkovec,10381,Bedenica 
+Zadubravlje,35211,Trnjani 
+Zadvarje,21255,Zadvarje 
+Zadvorsko,10251,Hrvatski Leskovac 
+Zaglav,23281,Sali 
+Zagolik,51302,Kuzelj 
+Zagora,49000,Krapina 
+Zagore,51418,Brsec 
+Zagorje,47242,Krnjak 
+Zagorje,52234,Plomin 
+Zagorje Modrusko,47307,Gornje Zagorje 
+Zagorska Sela,49296,Zagorska Sela 
+Zagrad,23420,Benkovac 
+Zagradci,47250,Duga Resa 
+Zagrade,34310,Pleternica 
+Zagraj,47286,Mahicno 
+Zagreb-dio,10000,Zagreb 
+Zagreb-dio,10040,Zagreb-Dubrava 
+Zagreb-dio,10020,Zagreb-Novi Zagreb 
+Zagreb-dio,10010,Zagreb-Slobostina 
+Zagreb-dio,10090,Zagreb-Susedgrad 
+Zagvozd,21270,Zagvozd 
+Zahrt,51312,Brod Moravice 
+Zaistovec,48267,Orehovec 
+Zajacko Selo,47280,Ozalj 
+Zajci,52333,Podpican 
+Zajezda,49284,Budinscina 
+Zaklepica,10311,Posavski Bregi 
+Zaklopac,23445,Srb 
+Zaklopaca,53233,Licko Petrovo Selo 
+Zaklopatica,20290,Lastovo 
+Zakopa,44440,Dvor 
+Zakorenje,34322,Brestovac 
+Zakrajc Brodski,51301,Brod na Kupi 
+Zakrajc Turkovski,51302,Kuzelj 
+Zakucac,21310,Omis 
+Zalesina,51313,Kupjak 
+Zaloj,44412,Stankovac 
+Zalug,49231,Hum na Sutli 
+Zaluka,47280,Ozalj 
+Zaluka Lipnicka,47276,Zakanje 
+Zaluki,51213,Jurdani 
+Zaluzje,42255,Donja Visnjica 
+Zaluznica,53223,Vrhovine 
+Zamask,52000,Pazin 
+Zamaski Dol,52000,Pazin 
+Zambratija,52475,Savudrija (Salvore) 
+Zamlaca,42205,Vidovec 
+Zamlaca,44440,Dvor 
+Zamladinec,48267,Orehovec 
+Zamlaka,42202,Trnovec Bartolovecki 
+Zamost,51303,Plesce 
+Zamost Brodski,51301,Brod na Kupi 
+Zamrsje,47203,Recica 
+Zankovci,52233,Susnjevica 
+Zaostrog,21334,Zaostrog 
+Zapec,51328,Lukovdol 
+Zapoljak,47240,Slunj 
+Zapolje,35422,Zapolje 
+Zapolje Brodsko,51301,Brod na Kupi 
+Zapresic,10290,Zapresic 
+Zapuntel,23292,Molat 
+Zapuzane,23420,Benkovac 
+Zarace,21450,Hvar 
+Zarecje,52000,Pazin 
+Zarilac,34312,Sesvete (kod Pozege) 
+Zasadbreg,40311,Lopatinec 
+Zasiok,21233,Hrvace 
+Zastenice,51219,Cavle 
+Zastolje,20216,Dubravka 
+Zastrazisce,21466,Zastrazisce 
+Zatka Cepic,52232,Krsan 
+Zaton,23232,Nin 
+Zaton,22215,Zaton 
+Zaton,20235,Zaton Veliki 
+Zaton Doli,20231,Doli 
+Zaton Obrovacki,23450,Obrovac 
+Zaumol,51328,Lukovdol 
+Zavala,21465,Jelsa 
+Zavescak,40314,Selnica 
+Zavode,53205,Medak 
+Zavojane,21275,Dragljane 
+Zavrelje,20207,Mlini 
+Zavrh,51312,Brod Moravice 
+Zavrsje,51312,Brod Moravice 
+Zavrsje,52429,Groznjan (Grisignana) 
+Zavrsje,34322,Brestovac 
+Zavrsje,35252,Sibinj 
+Zavrsje Belecko,49254,Belec 
+Zavrsje Loborsko,49253,Lobor 
+Zavrsje Netreticko,47271,Netretic 
+Zavrsje Podbelsko,42242,Radovan 
+Zavrsje Zacretsko,49224,Lepajci 
+Zbelava,42202,Trnovec Bartolovecki 
+Zbicina,51557,Cres 
+Zbisina,51557,Cres 
+Zbitke,51307,Prezid 
+Zbjeg,35254,Bebrina 
+Zbjegovaca,44321,Banova Jaruga 
+Zden,47264,Tounj 
+Zdenci,33513,Zdenci 
+Zdenci Brdovecki,10291,Prigorje Brdovecko 
+Zdencac,43280,Garesnica 
+Zdencec,43245,Gornji Draganec 
+Zdihovo,10450,Jastrebarsko 
+Zdihovo,51329,Severin na Kupi 
+Zebanec Selo,40314,Selnica 
+Zeci,52341,Zminj 
+Zecev Varos,47244,Primislje 
+Zecevo,22319,Devrske 
+Zecevo Rogoznicko,22203,Rogoznica 
+Zecica,47300,Ogulin 
+Zelcin,31227,Zelcin 
+Zelengrad,23450,Obrovac 
+Zeleno Polje,31321,Petlovac 
+Zelin Crnoluski,51317,Crni Lug 
+Zelin Mrzlovodicki,51317,Crni Lug 
+Zelina Breska,10311,Posavski Bregi 
+Zelovo,21233,Hrvace 
+Zelovo Sutinsko,21247,Neoric 
+Zemunik,23222,Zemunik 
+Zemunik Gornji,23222,Zemunik 
+Zetkan,10342,Dubrava 
+Zgalisce,10342,Dubrava 
+Zgrabljici,52448,Sveti Lovrec 
+Zguric Brdo,10414,Pokupsko 
+Zidarici,51511,Malinska 
+Zimic,47241,Tusilovic 
+Zinajevac,47253,Perjasica 
+Zlarin,22232,Zlarin 
+Zlatar,49250,Zlatar 
+Zlatar-Bistrica,49247,Zlatar Bistrica 
+Zlatna Greda,31328,Lug 
+Zlec,49223,Sveti Kriz Zacretje 
+Zlobin,51324,Zlobin 
+Zlogonje,42255,Donja Visnjica 
+Zmajevac,31307,Zmajevac 
+Zmijavci,21266,Zmijavci 
+Znoz /dio/,49254,Belec 
+Znoz/dio/,49250,Zlatar 
+Zokov Gaj,33513,Zdenci 
+Zoljan,31500,Nasice 
+Zoljani,35215,Svilaj 
+Zoretici,51218,Drazice 
+Zoricici,51260,Crikvenica 
+Zoricici,52463,Visnjan 
+Zorkovac,47280,Ozalj 
+Zorkovac na Kupi,47280,Ozalj 
+Zorkovac Vivodinski,47283,Vivodina 
+Zrenj,52428,Oprtalj (Portole) 
+Zrin,44441,Brdani Samaricki 
+Zrinska,43270,Veliki Grdevac 
+Zrinski Topolovac,43202,Zrinski Topolovac 
+Zrinscina,10383,Komin 
+Zrinj Lukacki,33407,Gornje Bazje 
+Zrmanja,23443,Zrmanja 
+Zrmanja Vrelo,23443,Zrmanja 
+Zrnici,47313,Dreznica 
+Zubovici,53296,Zubovici 
+Zut,44440,Dvor 
+Zvecaj,47261,Zvecaj 
+Zvecanje,21253,Gata 
+Zvekovac,10342,Dubrava 
+Zvekovica,20210,Cavtat 
+Zverinac,23286,Bozava 
+Zvijerci,43000,Bjelovar 
+Zvjerinac,22312,Kosovo/Zvjerinac/ 
+Zvoneca,51213,Jurdani 
+Zvonik,10344,Farkasevac 
+Zvonimirevo,33410,Suhopolje 
+Zvonimirovac,33523,Cadavica 
+Zabica,53000,Gospic 
+Zabjak,43212,Rovisce 
+Zabljak,47252,Barilovic 
+Zabnica,10343,Nova Kapela 
+Zabnik,40313,Sveti Martin na Muri 
+Zabnik,42202,Trnovec Bartolovecki 
+Zabno,44000,Sisak 
+Zabnjaca,33507,Crnac 
+Zabnjak,10346,Preseka 
+Zagrici,52341,Zminj 
+Zagrovic,22300,Knin 
+Zakanje,47276,Zakanje 
+Zakule,51325,Moravice 
+Zamarija,10455,Kostanjevac 
+Zarovnica,42250,Lepoglava 
+Zazina,44271,Letovanic 
+Zazvic,22223,Bribir(kod Skradina) 
+Zbandaj,52440,Porec 
+Zdala,48332,Zdala 
+Zdralovi,43000,Bjelovar 
+Zdrapanj,22222,Skradin 
+Zdrelac,23263,Zdrelac 
+Zedno,21220,Trogir 
+Zegar,23451,Zegar 
+Zejane,51212,Vele Mune 
+Zejinci,10296,Luka 
+Zelezna Gora,40312,Strigova 
+Zeliski,52207,Barban 
+Zeljava,53233,Licko Petrovo Selo 
+Zeljeznica,42242,Radovan 
+Zeljezno Zumberacko,10455,Kostanjevac 
+Zena Glava,21483,Podspilje 
+Zenodraga,52463,Visnjan 
+Zerava,23235,Vrsi 
+Zerjavinec,10360,Sesvete 
+Zestilac,51515,Silo 
+Zezevica,21250,Sestanovac 
+Zgaljici,51511,Malinska 
+Zgombici,51511,Malinska 
+Zibrinovec,48269,Kalnik 
+Zidovnjak,49221,Bedekovcina 
+Zigerovci,34322,Brestovac 
+Zigrovec,42214,Sveti Ilija 
+Zikovici,52463,Visnjan 
+Zircica,44000,Sisak 
+Zirje,22236,Zirje 
+Ziroslavlje,33412,Cabuna 
+Ziskovec,40316,Vratisinec 
+Zitarka,10436,Rakov Potok 
+Zitkovcica,10413,Kravarsko 
+Zitnic,22320,Drnis 
+Zitomir,10380,Sveti Ivan Zelina 
+Zivaja,44450,Hrvatska Dubica 
+Zivike,35257,Luzani 
+Zivkovic Kosa,47220,Vojnic 
+Zivogosce,21329,Igrane 
+Zlebec Goricki,10294,Donja Pusca 
+Zlebec Puscanski,10294,Donja Pusca 
+Zlebina,33411,Gradina 
+Zman,23282,Zman 
+Zminj,52341,Zminj 
+Znjidarici,52428,Oprtalj (Portole) 
+Zonti,52420,Buzet 
+Zreme,44210,Sunja 
+Zrnovac,51311,Skrad 
+Zrnovnica,21251,Zrnovnica 
+Zrnovo,20275,Zrnovo 
+Zuberkovac,35429,Gornji Bogicevci 
+Zubrica,33412,Cabuna 
+Zubrinci,47251,Bosiljevo 
+Zudetici,52447,Vizinada 
+Zuknica,51221,Kostrena 
+Zukovec,10342,Dubrava 
+Zuljana,20247,Zuljana 
+Zumberak,10455,Kostanjevac 
+Zunci,10346,Preseka 
+Zuntici,52352,Kanfanar 
+Zupa,21273,Zupa 
+Zupa Srednja,21273,Zupa 
+Zupanec,42231,Mali Bukovec 
+Zupanici,52231,Nedescina 
+Zupanja,32270,Zupanja 
+Zupanje,51515,Silo 
+Zupic,44250,Petrinja 
+Zurkovo,51221,Kostrena 
+Zuta Lokva,53260,Brinje 
+Zutnica,49000,Krapina 
+Zuzici,52444,Tinjan 
+Zuzici,52463,Visnjan 

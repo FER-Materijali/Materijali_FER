@@ -1,0 +1,132 @@
+PIPI ponavljanje
+	1. Treba uèitati niz od N brojeva i izraèunati njihovu sumu. Napomena: ne smije se koristiti fiksna velièina polja.
+	2. Napišite program koji uèitava brojeve dok ne uèita -1. Ispis je prosjeèna vrijednost upisanih brojeva.
+	3. Napišite program koji uèitava nizove znakova sve dok korisnik ne upiše rijeè "KRAJ". Prebrojte koliko puta se koristilo slovo "A" ili "a".
+	4. Napišite program koji uèitava nizove znakova sve dok korisnik ne upiše rijeè "KRAJ". Program ispisuje koja rijeè je najviše puta upisana. Ukoliko postoje dvije ili više rijeèi s istim brojem ponavljanja, treba ispisati "Los unos".
+	5. Napišite funckiju void zamjeni(,) koja æe zamjeniti vrijednosti predanih varijabli. (Napomena: napraviti to sa i bez pomoæne varijable)
+	6. Napišite funkciju void zamjeni(,) koja æe zamjeniti dva pointera.
+	7. Napišite program koji uèitava sadržaj datoteke "ispis_me.txt" i ispisuje njen sadržaj u konzolu.
+	8. Napišite program æe proizvoljno dugaèak niz brojeva zapisati u datoteku "brojevi.txt". Niz je prekinut brojem -1. Ne smijete koristiti polje fiksne velièine.
+	9. Napišite program koji odreðeni niz znakova zapisuje binarno i formatirano u datoteke "znakovi.bin" i "znakovi.txt". Usporedite te datoteke. Objasnite što vidite.
+       10. Napišite funkciju koja æe primiti kao parametar pointer na matricu i njene dimenzije (bit æe pravokutna matrica), a ispisuje matricu tako da je širina jednaka širini najšireg broja. Brojevi æe biti pozitivni i cijeli. Npr.
+	   Matrica [{0, 1, 2}, {3, 74, 5}, {6, 11, 9}] se treba ravnati po broju 74 ili 11, tako da svaki broj za sebe rezervira mjesta za 2 znamenke + razmak.
+           _0 _1 _2
+ 	   _3 74 _5
+	   _6 11 _9  (napomena: _ je razmak) [fora sa printf("%*d")]
+       11. Napišite funkciju koja prima paramtere m i n, a vraæa pointer na matricu dimenzija m x n.
+       12. Napišite strukturu "Riba" koja sadrzi element "otrovna" i "velicina". Element "otrovna" može biti ili 0 ili 1 (ovisno i tome nije li ili je otrovna), a "velicina" može biti izmeðu 50 i 532. Ribe su poznate po kanibalizmu (velike ribe redovito jedu male ribe (radi zadatka: ako je razlika velièine veæa ili jednaka od 42)).
+	   Napišite program koji æe generirati N riba sluèajnih parametara, te napisati koliko njih bude pojedeno. Napomena: otrovne ribe ne budu pojedene, one definitivno prežive. Ispišite i tko koga pojede.
+       13. a) Napišite strukturu "Tocka" koja sadrži elemente "X" i "Y" koji su realni brojevi.
+ 	   b) Napišite funkciju koja kao parametre prima dvije toèke i vraæa njihovu udaljenost.
+	   c) Napišite program koji æe uèitavati proizvoljan broj toèaka sve dok udaljenost izmeðu zadanih toèki na bude 0.
+	   d) Spremite sve toèke i njihove udaljenosti u datoteku "udaljenosti.txt" u sljedeæem obliku:
+		"X1: <do 5 znamenki> | Y1: <do 5 znamenki> 
+		 X2: <do 5 znamenki> | Y2: <do 5 znamenki>
+		 d:  >4 decimale>
+		 ----------
+		"
+	      Napomena: ima 10 crtica. Nije važno, samo da ne morate brojati.
+
+Složenosti
+Odredi složenost sljedeæe funkcije:
+int f(int n) {
+	return n+1;
+}
+
+O(1)
+
+Odredi složenost sljedeæe funkcije:
+int f(int n) {
+	for(i = 0; i < n; ++i)
+		return i;
+}
+
+O(1) (trik!)
+
+Odredi složenost sljedeæe funkcije:
+int f(int n) {
+	for(i = 0; i < n/2; ++i) {
+		for(j = 0; j < n/2; ++j)
+			printf("%d ", i);
+		printf("\n");
+	}
+}
+
+O(n^2), asimptotska n^2/4
+
+Odredi složenost sljedeæe funkcije:
+int f(int n) {
+	for(i = 0; i < n; ++i);
+	for(j = 0; j < n; ++j)
+	for(k = 0; k < n; ++k);
+
+	for(i = 0, n *= n; i < n; ++i);
+	for(i = 0; i < n; ++i);	
+}
+
+O(n^2) - zbog nedostatka toèke-zareza se dobije ugnježdena petlja + poveèavanje n na n^2 u poèetnoj naredbi èetvrtog fora
+
+Odredi složenost sljedeæe funkcije:
+int f(int n, int k, int m) {
+	for(i = 0; i < n; ++i) {
+		if(i == k) break;
+		for(j = 0; j < m; ++j) {
+			++j;
+		}
+	}
+}
+
+O(m * n) (ako k nije 0, tad je složenost 1 i ako k nije u intervalu <0, n>)
+
+Odredi prosjeænu složenost funkcije:
+funkcija(int x){
+	...
+	int f;
+	for (i=0; i<n^2; i++){
+		if (i==x) break;
+		f+=i;
+	}
+}
+
+O(n^2) ako x nije 0
+
+Odredi složenost funkcije:
+int f(int n) {
+	if(n == 0) return 0;
+	return (n % 10) + f(n/10);
+}
+
+O(log n)
+
+Rekurzije
+Binarno naði broj 7 u nizu:
+1 2 3 4 5 7 8
+
+Sortiranja
+Sortiraj niz po selection sortu: (obratiti pozornost na složenost i stabilnost!)
+5 6 1 0 7 2 5
+Sortiraj niz po bubble sortu: (obratiti pozornost na složenost i stabilnost!)
+5 6 1 0 7 2 5
+Sortiraj niz po insertion sortu: (obratiti pozornost na složenost i stabilnost!)
+5 6 1 0 7 2 5
+Sortiraj niz  po shell sortu: (obratiti pozornost na složenost i stabilnost!)
+5 6 1 0 7 2 5
+Sortiraj niz po merge sortu: (obratiti pozornost na složenost i stabilnost!)
+5 6 1 0 7 2 5
+Sortiraj niz po quick sortu: (obratiti pozornost na složenost i stabilnost!)
+5 6 1 0 7 2 5
+
+Koji je ovo sort?
+4 5 7 12 8 3 89 2
+4 5 7 12 8 3 2 89
+4 5 7 2 8 3 12 89
+
+Selection
+
+Botièki hints:
+
+-složenost æe biti minimalno, ali znati složenosti sortova, složenost hasha....
+-hash obavezno(funkcije upis i pronaði najèešèe budu)
+-rekurzija obavezno
+-malloc i realloc
+-više puta je naglasio quick sort u smislu da se najèešæe pojavljuje na ispitima.

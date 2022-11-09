@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1401544196 source:c:\users\martin-pc\downloads\takma\fer\asp\lab2\asp_lab2\labos2\demo.c
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+	"datoteka.h"
+
+1401551213 c:\users\martin-pc\downloads\takma\fer\asp\lab2\asp_lab2\labos2\datoteka.h
+	"stdio.h"
+	"stdlib.h"
+
+1401545491 source:c:\users\martin-pc\downloads\takma\fer\asp\lab2\asp_lab2\labos2\funkcije.c
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+	"datoteka.h"
+
+1401552339 source:c:\users\martin-pc\downloads\takma\fer\asp\lab2\asp_lab2\labos2\main.c
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+	"datoteka.h"
+

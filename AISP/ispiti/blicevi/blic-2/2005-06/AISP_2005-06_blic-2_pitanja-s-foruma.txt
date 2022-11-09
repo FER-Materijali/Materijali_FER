@@ -1,0 +1,287 @@
+pitanja i dogovori koji su stavljeni na forumu...
+
+Od OOP-a: 
+-definicije deep i shallow copya (2 pitanja)
+-nešto s Temperaturom i pozivanjem iz glavne funkcije ali to baš nisam znao
+-teorijsko pitanje vezano za destruktor (naði netoènu tvrdnju, netoèna je bila da se destruktor MORA pozvati manualno u svakoj klasi)
+
+STOG: 
+-naæi toènu tvrdnju-4 su jako glupe, toèna je: Da bi se pristupilo elementu na dnu stoga, treba se maknuti sve sa vrha
+-dva programèiæa sa stogom (treba samo znati kako rade funkcije dodaj i skini)
+
+SORT:
+-zadana tri koraka bubble sorta, što æe se dogoditi u èetvrtom
+-odrediti stvarni medijan od zadanog niza (ima to pitanje u onim blicevima od lani, odgovor je 5,tj. treba naæi broj koji bi stajao u sredini polja da je ono sortirano)
+-koji sort treba najviše memorije (merge sort)
+-koji sort nije poželjno koristiti s velikim poljima (bubble sort)
+-zadan je kod i treba vidjeti koji je to sort. u mom sluèaju bio je insertion.
+
+tek sad vidim da sam imao 5 pitanja iz sortova.hmm.
+
+preko pola bodova pa ja zadovoljan. sretno svima.
+
+edit: stog:push(push(pop))(nešto u tom stilu)
+objektno: zadan prog. odsj. i treba reæ dal klasa ima konstruktor ili destruktor
+
+imo 100%,ne morate provjeravat ,dakle
+
+-slozenost bubble sorta: O(n2)
+-koji od sortova nema najlosiju slozenost O(n2):merge sort
+-ako stog ima najvise n podataka,kolika je slozenost prilikom skidanja SVIH podataka s njega:O(n)
+-u klasi K1 postoji destruktor ~Stog,kako se brise objekt iz te klase:automatskim pozivanjem destruktora
+-zadan prog.odsjecak,sto ce se ispisat 
+int main(){
+int i;
+int &referenca=i;
+printf("%d",&referenca)
+printf("%d",&i)
+odgovor: adresa varijable i(na koju refencira referenca) i adresa varijable i(iste vrijednosti)
+-oni zadaci push(push(5)+pull()),samo sto je meni bilo pop umjesto pull al je zadano da radi istu stvar ::rjesenje: 5 2,uglavnom to malo pogledajte,meni su bila 3-4 takva
+-zadan je niz brojeva ,kako izgleda nakon sortiranja shell sortom s hk=3,uglavnom usporedjujete sve brojeve udaljene za tri i redate ih po velicini, primjer ,3 9 7 4 1 66 88 55 8 
+znaci usporedjujemo 3,4,88 i vidimo da su poredani kako treba i ne mijenjamo ih,zatim usporedjujemo 9,1, i 55,poredamo ih i sad ce bit
+3,1,7,4,9,66,88,55,8
+zatim uspor. 7,66 i 8 ,poredamo ih pa ca bit
+3,1,7,4,9,8,88,55,66..i tako dalje
+-zadana je nesortiran niz,i 4-5 koraka sortiranja.treba prepoznat koji sort se koristi ,meni bilo
+34251
+34251
+23451
+23451
+12345
+,ovo je insertion sort,ovo nije tesko ,pogledajte on slajdsou od majstora s mass instrukcija i bit ce vam jasno
+-kako se u C++-u zauzima memorija velicine 10 integera:
+int *polje=new int[10],pogledajte teoriju iz OOP-a,meni nije nijedan zadatak doso,sve sama teorija
+
+sortovi
+3x Zadan kod - koji je to sort?
+zadan niz od 5 brojeva, kako izgledaju koraci do potpuno sortiranog niza?
+(s time da koraci niza 52341 izgledaju 0. 52341,1. 12345, 2. 12345, 3. 12345,...)
+
+oop 
+zadana klasa - koliko ima konstruktora i destruktora
+pretpostavljeno da je klasa zadana i funkcija koja poziva copy kostruktor. sto je problem? (treba rucno micati copy konstruktor ili tako nesto.)
+
+stog 
+
+zadaci tipa pusham pa popam pa pusham dvaput bla bla, stanje varijabli nakon toga
+
+jedan malo zeznutiji - zadan je kod i treba ispisati sto radi ta funkcija. Ima stog, pomocni stog, pusheva i popova mali milijun. Iz poudenih rjesenja se relativno brzo metodom eliminacije moze shvatiti sto program radi
+
+neka pit:
+složenost za bubble
+koji sort ima najveæe mem zahtjeve
+definicije konstruktora,def.destruktora(DOBRO ÈITAJTE PITANJA JER NEGDJE PITA ŠTO JE ISTINA,NEGDJE ŠTA NIJE ITD,IL ZA STOG NEKAD PITA ŠTA SKINE A NEKAD ŠTA OSTANE NA STOGU ITD)
+zadan algoritam pita koji je to sort
+zadan niz pita koji je od ponuðenih pravilan selection sort
+onaj sa stogom gdje je 3,1,2 rješenje
+slièno kao iz pripreme jedan gdje premješta elementa na 2,stog al ovisi dal se onaj rekurzivni poziv stavi prije il poslije premjesti
+iz oop neki kod pa pita kako se sve može pozvat neka èlanska funkcija---bitno da znate kad je npr,
+klasa *k ...onda je poziv k->nešto()
+a za klasa k...je k.nešto()(na tu foru mislim)
+destruktor neko pitanje ugl.manualno se ne poziva veæ automatski....
+
+1. zadan je niz 66 88 99 22 77 55 33 11. Napraviti Shell sort s razmakom 3 za niz
+
+Rješenje: 22 11 99 33 77 55 33 88
+
+
+2. Jedan iz referenci, kod ide otprilike...
+int i=1;
+int &referenca=i;
+printf("%d %d", i, referenca);
+i=2;
+printf("%d %d", i, referenca);
+
+
+rješenje...1122
+
+
+
+3. Imamo funkcije int push(int elem) i int pull() koje rade sa stogom. Na stogu postoje veæ neki elementi (nije prazan). Funkcija push vraæa 1 ako je uspjela, 0 inaèe, a funkcija pull vraæa element kojeg skine sa stoga i ne vraæa ništa za grešku.
+Što æe biti na stogu nakon naredbe push( push(push(5)) + pull() );
+
+Rješenje : 5 2
+
+
+
+4. Koliko puta se zovu konstruktor i destruktor objekta koji je stvoren jednom u main()-u naredbom
+objekt ime;
+i onda opet u funkciji koja se poziva iz main()-a a koja sadržava naredbu:
+objekt *ime=new objekt;
+
+Konstruktor se zove dva puta, a destruktor jednom, jer se ne koristi naredba delete za drugi objekt (prvi se pobriše automatski kad se napusti main() )
+
+
+
+5. Stog punimo sa for petljom i=1 do 10, onda ga praznimo i=1 do 5, sto je ostalo?
+Rjesenje: 1,2,3,4,5
+
+
+6. Najveæe memorijske zahtjeve ima merge sort
+
+
+7. Na stog prikazan poljem pohranjuju se samo cijeli brojevi. Prototip funkcije za skidanje cijelog broja sa stoga je (funkcija vraæa 0 ili 1, ovisno o tome da li se zapis uspio skinuti s vrha stoga):
+a) int skini(int stavka, int stog[], int *vrhStog);
+b) int skini(int *stavka, int stog[], int *vrhStog);
+c) int skini(float stavka, float stog[], int vrhStog);
+d) int *skini(int *stavka, int stog[], int vrhStog);
+e) void *skini(int *stavka, int stog[], int n, int *vrhStog);
+
+odgovor b
+
+8. Ponuðene su cijele funkcije za stavljanje elementa na stog...odabrati toènu
+
+9. Zadan je kod nekog sorta, odabrati koji je to sort 
+meni je bio bubble
+
+10. Zadan je kod nekog sorta, odabrati koji je to sort 
+meni je bio sort umetanjem
+
+11. Nešto sa klasama je zadano, odabrati krivi naèin pozivanja objekta....
+
+12. zadana je neka definicija...treba pogoditi da se radi o shallow kopiranju objekta
+
+evo još neki koji su bili:
+def.funkcije skini realizirane preko liste
+
+stog realiziran listom sadrzi podatke o studentima 
+i treba izbaciti ,preko pom stoga ,sve koji imaju negativne ocijene i odrediti redosljed i slozenost nakon vracanja na stog 
+
+koja je tvrdnja za reference nije istinita-da se ne poziva preko operatora *.
+
+iz oop je jos bilo kako se pozivaju metode u objektu,te
+i koristenje operatora this->
+
+
+
+1. zadatak
+// boldani odgovori su toèni odgovori
+Stog, koji ima barem dva elementa, treba zamijeniti vrijednosti dva elementa s vrha
+a) int a, b a= pop(), b=pop(), push(a), push(b)<---
+b) int a, b push(a), push(b), a=pop(), b=pop()
+c) int a, b a=pop(), b=pop(), push(b), push(a)
+d) int a, b push(a), push(b), pop(a), pop(b)
+e) push(push(a), push(b))
+// nešto tog tipa, ne sjeæam se baš da su takvi odgovori bili
+
+2.zadatak:
+Zadana je klasa Student
+...
+class Student
+...
+void main
+Student S1(2)
+
+Student *S2 = new Student (3)
+// gore je bila nekakva funkcija sa printf-ovima, i pitanje je koliko puta æe se ispisati A, a koliko B, toèan odgovor je A 5 puta, B 2 puta!
+
+3.zadatak
+Zadan je kod:
+int i;
+int &referenca = i;
+i=1;
+
+printf("%d %d ", i, referenca);
+i=2;
+printf("%d %d", referenca, i);
+
+Što æe se ispisati?
+Toèno rješenje je: 1 1 2 2
+// to je jedan od zadatka iz starih bliceva što možete naæi u materijalima
+
+4.zadatak
+Prototipi skini i dodaj su zadani
+Što æe ispisati?
+Kod je isto tu bio zadan...
+int a=1, b=2, c=3;
+dodaj a
+dodaj b
+dodaj c
+skini a
+skini c
+skini b
+// nisam sigurna da je takav redoslijed, ali slièno je bilo ako ne isto
+printf("%d %d %d", a, b, c);
+
+Rješenje je: 3 1 2
+
+5.zadatak
+Quick sort, medijan tri elementa
+zadano je polje 15 18 7 17 9 4
+rješenje je: 4 18 9 17 7 15
+
+6.zadatak
+Zadan je prototip sorta, pitanje je:
+Koji je to sort?
+Rješenje: Bubble sort
+
+
+7.zadatak
+skini, stavi
+1 ako je uspješno obavljeno, 0 ako nije uspjelo
+pretpostavka da na stogovima ima dovoljno mjesta
+Zadana je funkcija:
+void prepis(int stog1[], int stog2[]) {
+int element;
+if skini(stog1, &element)
+prepis(stog1, stog2)
+stavi(stog2, &element)
+}
+Rješenje je:
+premještamo elemente sa stog1 na stog2, i redoslijed elemenata stog1 je ISTI! kao redoslijed elemenata stog2
+
+
+8.zadatak
+Što je od sljedeæega istinito?
+a) vrijeme izvoðenja Merge sorta je O(n*2^n)
+b) najgore kod Shell sorta je O(n^2)  <---
+c) najgore kod Quick sorta je O(n/2)
+d)izravna realizacija Bubble sorta ima vrijeme izvoðenja O(n-2)
+e) vrijeme izvoðenja sorta umetanjem je O(2*(n-2))
+
+
+9.zadatak
+Što NIJE toèno za destruktor razreda?
+a) za objekte kreirane na stogu, destruktor se poziva automatski
+b) za objekte kreirane na heapu, destrktor se poziva manualno, korištenjem operatora delete
+c) u svaku klasu se mora ruèno ugraditi destruktor  <---
+d) funkcija destruktora se zove isto kao i razred, s time da ima tildu (~) ispred imena
+e) destruktori se pozivaju prilikom uklanjanja objekta iz memorije
+// mrzim ovakva pitanja, èudno da nisu stavili odgovor: ništa od ponuðenog (mislila sam pritom i na pitanje prije ovog)  
+
+
+10.zadatak
+Zadani su razredi A i B
+class A {
+public:
+B*Get B () {...}
+}
+class B {
+public:
+int Ispisi() {...}
+}
+// i nešto je trebalo tu sada raditi (naravno), ali ja se ovoga dalje zbilja ne sjeæam, jer to pitanje nisam uopæe znala
+
+
+11.zadatak
+Koja je apriorna složenost Bubble sorta?
+a) O(n)
+b) O(n^3)
+c) O(log2 n)
+d) O(n log2 n)
+e) O(n^2)  <---
+
+
+12.zadatak
+Koji je prototip:
+dodaj element na stog realiziran listom?
+// to imate u slajdovima
+
+atom *dodaj (atom *vrh, int element) {
+atom *novi;
+if ((novi = (atom *) malloc(sizeof(atom))) != NULL) { 
+novi->element = element;
+novi->sljed = vrh;
+}
+return novi;
+}

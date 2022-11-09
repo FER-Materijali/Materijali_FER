@@ -1,0 +1,78 @@
+AC	Autocad	
+AR1	Arhitektura racunala 1	
+ASP	Algoritmi i strukture podataka	PiPI
+AR2	Arhitektura racunala 2	AR1
+AT	Audiotehnika	
+AU	Automatsko upravljanje	
+BP	Baze podataka	ASP
+DL	Digitalna logika	
+DV	Digitalni video	
+EA	Elektroakustika	
+EiEP	Elektromehanicke i elektricne pretvorbe	
+EK	Elektronicke komunikacije	
+ElAk	Elektricni aktuatori	
+Ele1	Elektronika 1	
+Ele2	Elektronika 2	
+EP	Elektricna postrojenja	
+ES	Elektromehanicki sustavi	
+ESA	Elementi sustava automatizacije	
+ET	Energijske tehnologije	
+EuR	Ergonomija u racunarstvu	
+IE	Inzenjerska ekonomika	
+ILiJ	Informacija, logika i jezici	ASP
+IRG	Interaktivna racunalna grafika	
+IRiT	Integracija racunala i telefonije	
+JPM	Javna pokretna mreza	
+KEU	Konstrukcija elektronickih uredaja	
+KM	Komunikacijske mreze	ASP
+LM	Lokalne mreze	
+MiAPE	Mjerenje i analiza potrosnje energije	
+MK	Mobilne komunikacije	
+MM	Mjerne metode	
+MMPWM	Matematicko modeliranje racunalom 91612	
+MP	Mrezno programiranje	
+MT	Multimedijske tehnologije	
+OEMiI	Osnove elektronickih mjerenja i instrumentacije	
+OI	Obradba informacija	
+OiOR	Okolis i odrzivi razvoj	MuI
+OPP	Oblikovanje programske potpore	
+OR	Otvoreno racunarstvo	
+PiREE	Prijenos i razdjela elektricne energije	
+PParJ	Programske paradigme i jezici	ASP
+PPJ	Prevodenje programskih jezika	
+PrEM	Primijenjeni elektromagnetizam	
+RPPP	Razvoj primijenjene programske potpore	PParJ
+RUS	Racunalno upravljanje sustavima	
+SiS	Signali i sustavi	TI
+TI	Teorija informacije	
+TP	Trgovacko pravo	EiPO
+TSiM	Telekomunikacijski sustavi i mreze	
+UI	Umjetna inteligencija	
+UK	Upravljanje kakvocom	
+URS	Ugradbeni racunalni sustavi	
+UuTRZ	Uvod u teoriju racunarstva	
+VIS	Vjerojatnost i statistika	
+VU	Visemedijske usluge	
+EiPO	Ekonomika i poslovno odlucivanje	OiOR
+Fiz1	Fizika 1	
+Fiz2	Fizika 2	Fiz1
+Mat1	Matematika 1	
+Mat2	Matematika 2	Mat1
+Mat3E	Matematika 3E	Mat2
+Mat3R	Matematika 3R	Mat2
+MuI	Menadzment u inzenjerstvu	VK
+OE	Osnove elektrotehnike	
+OS	Operacijski sustavi	
+PiPI	Programiranje i programsko inzenjerstvo	
+Pr_AUT	Projekt (Automatika)	SemE
+Pr_EE	Projekt (Elektroenergetika)	SemE
+Pr_EiRi	Projekt (Elektronicko  i racunalno inzenjerstvo)	SemE
+Pr_Ele	Projekt (Elektronika)	SemE
+Pr_PI	Projekt iz programske potpore (Programsko inzenjerstvo)	SemR
+Pr_RI	Projekt iz programske potpore (Racunalno inzenjerstvo)	SemR
+Pr_RK	Projekt (Radiokomunikacije)	SemE
+Pr_RZ	Projekt iz programske potpore (Racunarska znanost)	SemR
+Pr_TiI	Projekt iz programske potpore (Telekomunikacije i informatika)	SemE
+SemE	Seminar_E	
+SemR	Seminar_R	
+VK	Vjestine komuniciranja	

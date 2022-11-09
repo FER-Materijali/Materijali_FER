@@ -1,0 +1,36 @@
+Content
+	Ponavljanje PIPI - pointeri, memorija (heap, stack)
+		Malloc, Realloc, Free (primjer - zamjeni(,) i zamjeni(&,&) i zamjeni(**, **); navest realloc(null, size) == malloc(size) foru
+		Baratanje s diskom
+		Fore s printfom + funfact o stacku i printfovim argumentima
+		Polje pointera
+		Plesanje po matrici preko pointera
+
+	Složenosti + primjeri + zli primjeri
+		A priori - najbolji/najgori sluèaj, asimptotska složenost
+		A posteriori - pokazat foru s timeom
+
+	Pozivi funkcija + stack
+	Rekurzije
+		Šta je, šta nije
+		Stack overflow
+		Jednotavni primjeri (suma, faktorijel, potenciranje)
+		Rekurizvna pretraga (linearno, binarno)
+		Potraga za najveæim elementom
+
+	Hash
+		Tehnike adresiranja
+			Primarni, kompoznitni i sekundarni kljuèevi - sortiranje po kljuèevima
+			Blokovsko pretraživanje
+			Binarna pretraga
+		Izrada tablice - proæ kroz svaki detalj
+
+	Sortiranja
+		Selection
+		Bubble
+		Insertion
+		Shell
+		Merge
+		Quick
+		Usporedba složenosti i brzine
+		Primjeri

@@ -1,0 +1,90 @@
+	Ponavljanje PIPI - pointeri, memorija (heap, stack)
+		Najosnovnije - znaju
+
+		Malo prièe o memoriji
+			Što je heap?
+			Što je stack?
+			Koja je razlika?
+			Kako èemu pristupit?
+
+		Pointeri
+			Šta je pointer?
+				- konceptualno
+				- stvarno
+			Èemu služi pointer?
+				- za pokazivanje na stvari
+				- za predaju velike kolièine podataka
+				- za lako šetanje po podacima
+			Kako se koristi?
+				- napomenut da int* nije TIP, i da je kod int* a, b -> a pointer, b varijabla (primjer: 
+					char* a, b;
+					printf("%d %d\n", sizeof(a)*8, sizeof(b)*8);
+			Jednostavni primjeri
+				- funkcija zamjene vrijednosti varijabli
+				- funkcija zamjene pointera
+
+		Malloc, Realloc, Free
+			Što je malloc, realloc, free? (referencirati stack i heap)
+			Èemu to služi?
+			Kako to funkcionira?
+			Napraviti primjer
+
+		Strukture
+			Što je struktura?
+			Èemu služi?
+			Kako se koristi? Pokazati sa i bez typedefa i uvjerit ih u typedef
+				- bez typedefa se svugdje mora pisat struct, a sa typedefom ide kao obièni tip podatka
+			Pokazat "brzo deklariranje"
+
+		Baratanje s diskom
+			Objasniti kako se radi s fileovima
+			Objasniti da ni sam ne znam funkcije napamet
+			Napraviti file sa C-om
+			Napraviti drugi file sa C-om
+			U taj drugi file upisati nešto
+			Pokušat iz prvog filea nešto proèitat
+			Uèitati kako treba
+			Binarni zapis prikazat tek kod hasha
+
+		Fore s printfom + funfact o stacku i printfovim argumentima
+
+		Plesanje po matrici preko pointera
+			Napravit primjer i pravit se budalom
+
+	Složenosti + primjeri + zli primjeri
+			Isprièati što zapravo složenost predstavlja
+			Èemu to služi
+			Big O
+			Big Omega
+			Asimptotske gluposti (najveæi èlan preživi)
+			
+  			A posteriori - pokazat foru s timeom, eventualno na usmenom
+				Objasniti što je to
+				Pokazati primjer
+				Dok se primjer vrti napomenuti da utjeèe apsoltuno sve - i OS, i CPU i memorija
+
+			Memorijska složenost
+--
+	Hash stvari
+		Tehnike adresiranja - pretrage u biti
+			Primarni, kompoznitni i sekundarni kljuèevi - sortiranje po kljuèevima
+			Naivna pretraga
+			Blokovsko pretraživanje
+			Binarna pretraga - iterativno
+			Sortiranje èarapa
+		Hash
+			Što je to?
+			Èemu to?
+			Sortiranje èarapa
+			Proæi detaljno kroz primjer
+				Napomenut korištenje do-while i for petlje!
+				SEEK_SET vs pomak
+				Usporedba stringova sa == i strcmp
+--
+		Shell
+			Objasniti da je to zapravo insertion sort s nekim razmakom
+			Brži je jer je uvjet zaustavljanja korak, ne pojedini element, stoga je NlogN
+		Merge
+			Pokazati šta bude kad se radi u istom polju
+		Quick
+			Pokazat onu foru sa potpisivanjem
