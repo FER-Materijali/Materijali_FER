@@ -1,0 +1,89 @@
+--- 				Leo Budin 					   ---
+---		ANALIZA I PROJEKTIRANJE RAÈUNALOM 			   ---
+---			(skripta s predavanjima)			   ---
+
+
+1. UVOD
+-------
+
+2. POGREŠKE U POSTUPCIMA ANALIZE
+--------------------------------
+2.1. Moguæi uzroci pogrešaka (str.7)
+2.2. Prikaz brojeva s pomiènom toèkom (str.9)
+2.3. Pogreške zaokruživanja (str.17)
+2.4. Aritmetika brojeva s pomiènom toèkom (str.22)
+2.5. Rasprostiranje pogrešaka (str.29)
+
+3. ALGORITMI ZA MATRICE
+-----------------------
+3.1. Osnovna svojstva matrica (str. 38)
+3.2. Osnovne operacije s matricama (str. 44)
+
+4. RJEŠAVANJE SUSTAVA LINEARNIH JEDNADŽBI
+-----------------------------------------
+- LUP postupak (str. 54)
+- Unapredna supstitucija (str. 55)
+- Unatražna supstitucija (str. 56)
+- Izvoðenje LU dekompozicije (str. 59)
+- LUP dekompozicija (str. 64)
+
+5. POSTUPCI NELINEARNOG OPTIMIRANJA
+-----------------------------------
+5.1. Uvodno razmatranje (str. 71)
+5.2. Formuliranje funkcije cilja (str. 74)
+5.3. Osnovne koncepcije i definicije (str. 80)
+
+5.4. PRONALAŽENJE MINIMUMA FUNKCIJE JEDNE VARIJABLE
+5.4.1. Postupak zlatnog reza (str.92)
+5.4.2. Fibonaccijev postupak (str.96)
+5.4.3. Postupak zasnovan na kvadratnoj interpolaciji (str.100)
+5.4.4. Pronalaženje unimodalnog intervala (str. 102)
+5.4.5. Odreðivanje minimuma na pravcu u višedimenzionalnom prostoru (str.105)
+
+5.5. POSTUPCI ODREÐIVANJA MINIMUMA FUNKCIJA VIŠE VARIJABLI BEZ UPOTREBE DERIVACIJA
+5.5.1. Traženje u smjerovima koor. osi (str.106)
+5.5.2. Hooke-Jeeves postupak (str.108) - algoritam u skripti ne valja!
+5.5.3. Postupak po Powellu s traženjem u meðusobno konjugiranim smjerovima (str.112)
+5.5.4. Simpleks postupak po Nelderu i Meadu (str.125)
+
+5.6. GRADIJENTNI POSTUPCI
+5.6.1. Metoda najbržeg spusta (str.132)
+5.6.2. Newton-Raphsonov postupak (str.134)
+5.6.3. Postupak po Fletcheru i Powellu (str.136)
+
+5.7. ODREÐIVANJE MINIMUMA FUNKCIJA VIŠE VARIJABLI S OGRANIÈENJIMA
+5.7.1. Problem optimiranja s ogranièenjima (str.143)
+5.7.2. Uvoðenje novih varijabli za odstranjenje eksplicitnih ogranièenja (str.149)
+5.7.3. Transformacija u problem bez ogranièenja s unutarnjom poèetnom toèkom (str.151)
+5.7.4. Transformacija u problem bez ogranièenja s vanjskom poèetnom toèkom (str.155)
+5.7.5. Transformacija u problem bez ogranièenja na miješani naèin (str.157)
+5.7.6. Postupak po Boxu (str.159)
+5.7.7. Postupak s prilagodljivim narušavanjem ogranièenja (str.162)
+
+7. ANALIZA PRIJELAZNIH POJAVA NUMERIÈKIM POSTUPCIMA
+---------------------------------------------------
+7.1. Uvodna razmatranja (str. 167)
+
+7.2. EULEROVI POSTUPCI
+7.2.1. Izravni Eulerov postupak (str. 175)
+7.2.2. Obrnuti Eulerov postupak (str. 182)
+
+7.3. Trapezni postupak (str. 184)
+7.4. Eksplicitni i implicitni postupci (str. 187)
+7.5. Rješavanje sustava diferencijalnih jednadžbi (str. 189)
+7.6. Runge-Kutta postupci (str. 194)
+
+7.7. LINEARNI VIŠEKORAÈNI POSTUPCI
+7.7.1. Opæi oblik linearnih višekoraènih postupaka (str. 206)
+7.7.2. Lagrangeova interpolacija (str. 211)
+7.7.3. Adams-Bashforthovi postupci (str. 212)
+7.7.4. Adams-Moultonovi postupci (str. 217)
+7.7.5. Nordsieckov oblik linearnih višekoraènih postupaka (str. 222)
+
+8. DINAMIÈKO PONAŠANJE DISKRETNIH SUSTAVA (str. 235)
+-----------------------------------------
+...
+
+9. DINAMIÈKO PONAŠANJE KONTINUIRANIH SUSTAVA (str. 259)
+--------------------------------------------
+...
