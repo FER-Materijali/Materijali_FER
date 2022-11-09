@@ -1,0 +1,27 @@
+Ako se ne želite zabavljati upisivanjem mikro i makro programa pomoæu PCMP razvjne okoline...
+	1. Uštimati PCMP da ispravno radi.
+		(Za WINXsp2 - kome ne radi)
+		1.1 Desni klik na PCMP.exe .
+		1.2 Klik na Properties -> (tab) Program -> (btn) Advanced... .
+		1.3 U (tbx) "Config filename: "upisati (c/p) path do PCMP.NT datoteke .
+			- primjer: D:\FER\progPodrska\PCMP\PCMP.NT
+		1.4 Sve uredno potvrditi i trebala bi se pojaviti PCMP.pif datoteka.
+	2. Presnimiti datoteke (4 komada) iz mape PCMPdata u mapu gdje se nalazi PCMP.EXE datoteka. Tu se nalaze mikroprogrami za potrebne naredbe i jednostavan asemblerski program za testiranje tih naredbi. Trebala bi se pojaviti 
+	3. Upogoniti :)
+		Ime mikroprocesora: CPU19.cpu
+		Ime datoteke s aemblerskim programom: CPU19.ass
+		Preporuèene vrijednosti registara za testiranje:
+			A = 0x02 ,
+			B = 0X01 ,
+			PC = 0x10 ,
+			SP = 0x00 .
+
+Napomena: Prouèiti suèelje. Može biti korisno.
+
+Rijeènik:
+	c/p - copy/paste
+	tbx - textbox
+	btn - button
+	
+
+pozz _Fos

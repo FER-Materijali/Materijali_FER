@@ -1,0 +1,7 @@
+
+        SUB A,B
+        MOVEM B,(9)
+        SHL A
+        POP B
+
+        STOP

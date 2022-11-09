@@ -1,0 +1,98 @@
+// ================ PRIBAVI =======================
+
+
+fetch0: a_sel=7, b_sel=7, alu_sel=OR, mar_sel=LOAD ;  			  //MAR <- PC
+fetch1: ir1_sel=LOAD, read, if wait then goto fetch1 endif;			 // IR_high <- MEM(MAR)
+fetch2: a_sel=7, c_in, alu_sel=ADDA, r7_write; 				// PC <- PC+1
+fetch3: a_sel=7, b_sel=7, alu_sel=OR, mar_sel=LOAD; 			// MAR <- PC
+fetch4: ir0_sel=LOAD, read, if wait then goto fetch4 endif; 			// IR_low <- MEM(MAR)
+fetch5: a_sel=7, c_in, alu_sel=ADDA, r7_write, goto opcode[IR_OPCODE]; 	// PC <- PC+1
+
+
+
+//   0) MOVE ri, rj 
+opcode[0]: ri_sel, rj_sel, alu_sel=ADDA, goto fetch0;
+
+//   1) LOAD ri, addr 
+opcode[1]:    result_sel = IR_CONST8, r4_write, goto opcode1.1;
+
+//   2) STORE rj, rk
+opcode[2]: rj_sel, alu_sel=ADDA, mdr_sel = LOAD_ALU, goto opcode2.1;
+
+// 3) LOAD_IMMEDIATE (ri <- ir_const8)
+opcode[3]: result_sel=IR_CONST8, ri_sel, goto fetch0;
+
+//  4) JMP addr 
+opcode[4]: result_sel = IR_CONST8, r7_write, goto fetch0; 
+
+//5) SUB ri, rj, rk
+opcode[5]:  ri_sel, rj_sel, rk_sel, c_in, alu_sel=SUB,
+    	   if m_7 then goto opcode5.1 else goto opcode5.2 endif;
+
+// 6)  JZ rj, rk 
+opcode[6]:  rj_sel, alu_sel = SUBA, r4_write, if c_out then goto fetch0 else goto branch endif;
+
+//7) SHL ri, rj 
+opcode[7]:  rj_sel, alu_sel = ADDA, r4_write goto opcode7.1;
+
+//8) LDSP konst 
+opcode[8]: result_sel=IR_CONST8, r5_write, goto fetch0;
+
+//9) PUSH 
+opcode[9]: rj_sel, alu_sel=ADDA, mdr_sel=LOAD_ALU goto opcode9.1;
+
+//10) POP ri 
+opcode[10]: a_sel = 5, alu_sel = SUBA, mar_sel = LOAD, goto opcode10.1;
+
+//11) CALL addr 
+opcode[11]: a_sel=7, alu_sel=ADDA, mdr_sel=LOAD_ALU goto opcode11.1;
+
+//12) RET (povratak iz potprograma)
+opcode[12]:  a_sel =5, alu_sel=SUBA, mar_sel=LOAD, goto opcode12.1;
+
+
+
+
+
+
+//dodaci pojedinim naredbama
+
+opcode1.1:   a_sel=4, b_sel=4 alu_sel = OR, mar_sel = LOAD;
+opcode1.2:    mdr_sel = LOAD_MEM, read, if wait then goto opcode1.2 endif;
+	     result_sel = MDR, ri_sel, goto fetch0; 
+
+opcode2.1: a_sel=4, b_sel=4, alu_sel = SUB, c_in, r4_write;
+	   rk_sel, a_sel=4 alu_sel = OR, mar_sel = LOAD;
+opcode2.2:  write, if wait then goto opcode2.2 else goto fetch0 endif;
+
+opcode5.1: a_sel=4, b_sel=4, alu_sel=XOR, r4_write; 
+	   a_sel=4, c_in, alu_sel=ADDA, r6_write, goto fetch0; 
+opcode5.2: a_sel=4, b_sel=4; alu_sel=XOR, r4_write; 
+	   a_sel=4, alu_sel=ADDA, r6_write, goto fetch0; 
+
+branch:  a_sel=4, b_sel=4, alu_sel = SUB, c_in, r4_write;
+	   rk_sel, a_sel=4 alu_sel = OR,  r7_write, goto fetch0;
+
+
+opcode7.1: ri_sel, a_sel=4, b_sel=4, alu_sel = ADD
+	if m_7 then goto opcode7.2 else goto opcode7.3 endif;
+opcode7.2: a_sel=4, b_sel=4, alu_sel=XOR, r4_write;
+	   a_sel=4, c_in, alu_sel=ADDA, r6_write, goto fetch0; 
+opcode7.3: a_sel=4, b_sel=4; alu_sel=XOR, r4_write; 
+	   a_sel=4, alu_sel=ADDA, r6_write, goto fetch0; 
+
+opcode9.1: a_sel=5, alu_sel=ADDA, mar_sel = LOAD;
+opcode9.2: write, if wait then goto opcode9.2 endif; 
+opcode9.3: a_sel = 5, c_in, alu_sel = ADDA, r5_write, goto fetch0;
+
+opcode10.1: read, if wait then goto opcode10.1 endif; 
+opcode10.2: result_sel = MDR, ri_sel goto fetch0;
+
+opcode11.1: a_sel=5, alu_sel=ADDA, mar_sel = LOAD;
+opcode11.2: write, if wait then goto opcode11.2 endif; 
+opcode11.3: a_sel = 5, c_in, alu_sel = ADDA, r5_write;
+opcode11.4: result_sel = IR_CONST8, r7_write, goto fetch0; 
+
+opcode12.1: read, mdr_sel=LOAD_MEM, if wait then goto opcode12.1 endif;
+	     result_sel=MDR, r7_write, goto fetch0;
+

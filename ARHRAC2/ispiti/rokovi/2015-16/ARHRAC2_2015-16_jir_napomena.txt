@@ -1,0 +1,9 @@
+U drugom zadatku(dobila 9 od 10) samo treba zanemariti one taktove s visokom impedancijom (zaokruzeni su), ostalo je ok. Ja sam krivo promatrala kako ide fetch a kako execute (fetch na tim mjestima treba skratiti za 1 takt, pa je ovaj sto ostane execute).
+
+U trecem zadatku(isto 9 od 10 bodova), u optimiranom kodu treba jos bne prebaciti, zaokruzeno je.
+
+U petom zadatku (8 od 10) pod b nije tocno, zaokruzen red u kojem je greska (iako ne znam zasto x)).
+
+Ostale zadatke sam polovicno imala, zato ih nisam stavila. Opet je bilo gresaka koje su ispravljali bili dok smo pisali, na ispitu sve pise sto je prepravljeno. 
+
+

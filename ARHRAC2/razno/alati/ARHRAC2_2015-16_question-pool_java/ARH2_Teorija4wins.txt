@@ -1,0 +1,1262 @@
+#Kakvi podaci se stavljaju na upravljaèki stog raèunala
+
+ovisi o tome postoji li numerièki koprocesor
+.parametri potprograma i lokalne varijable
+s pomiènim zarezom, ali ne i cjelobrojni
+operacijski kodovi instrukcija
+
+$Zadana je PM s 8 linija po 16B i izravnim preslikavanjem. Svako promašeno èitanje bajta inicira prijenos podataka iz DRAM-a od:
+
+16 B
+(šesnaest byteova)
+
+Svaki puta kada promasimo moramo popuniti
+cijelu liniju, sto znaci - 16B
+
+#Performansa raèunala u kontekstu izvoðenja slijednih programa u posljednjih nekoliko godina
+
+stagnira
+.raste uz usporenje porasta
+opada
+raste uz ubrzanje porasta
+
+#Koji je od sljedeæih kriterija ocjene raèunalne performanse najobjektivniji?
+
+MIPS
+MOPS
+.SPECmark
+MFLOPS
+
+#Primjer SIMD raèunala je:
+
+.vektorski procesor na grafièkoj kartici
+redundantno raèunalo u kojem više jedinica obraðuje iste podatke
+serijsko zbrajalo
+Von Neumannovo raèunalo
+
+#Trend poveæanja broja jezgri u procesorima uzrokovan je prvenstveno
+
+potrebom za poveæanjem performanse izvoðenja tipiènih programa
+nužnošæu konkurentnog izvooðenja u modernom operacijskom sustavu
+porastom disipacije integriranih sklopova
+.iscrpljenjem moguænosti za ubrzanje slijednih programa sofisticiranom arhitekturom
+
+#Èitanje registarskog operanda u tipiènoj RISC arhitekturi odvija se:
+
+usporedno s pristupom podatkovnoj memoriji
+za vrijeme pribavljanja instrukcije
+.usporedno s dekodiranjem instrukcije
+prije pribavljanja instrukcije
+
+#Raèunanje odredišta relativnog grananja u arhitekturi MIPS odvija se:
+
+usporedno s pristupom podatkovnoj memoriji
+za vrijeme pribavljanja instrukcije
+.usporedno s dekodiranjem instrukcije
+prije pribavljanja instrukcije
+
+#Resursni konflikt instrukcije load u jednostavnoj protoènoj arhitekturi tipa RISC može nastati oko sljedeæeg resursa:
+
+zbrajalo
+.memorija
+registarski skup
+sklop za grananje
+
+#Adresa sljedeæe mikroinstrukcije ne može se dobiti:
+
+prijenosom adresnog polja mikrorijeèi
+poveæanjem mikroprog brojila za jedan
+primjenom logike za uvjetno grananje
+.prijenosom usputne konstante makroinstrukcije
+
+#Instrukcije osaminstrukcijskog procesora:
+
+nemaju memorijske operande
+nemaju registarske operande
+.mogu imati najviše jedan memorijski operand
+uvijek imaju sve operande u registrima
+
+#Koncept protoènosti je koristan jer omoguæava:
+
+istu performansu uz manji broj tranzistora
+.iskorištavanje instrukcijskog paralelizma
+CISC arhitekturama da se po performansi izjednaèe s RISC-om
+smanjivanje potrebnog broja registara
+ublažavanje resursnih konflikata
+
+#Slijed instrukcija load r5, 20(r1); add r2, r1, r5 može rezultirati:
+
+.hazardom tipa RAW
+zakašnjelim grananjem
+hazardom tipa RAR
+hazardom tipa WAR
+
+#Arhitektura MIPS u svakom ciklusu signala takta izvrši:
+
+barem dva memorijska pristupa
+.najviše dva memorijska pristupa
+toèno dva memorijska pristupa
+najviše jedan memorijski pristup
+toèno jedan memorijski pristup
+
+#Ako je registar R s odvojenim izvodima za èitanje i pisanje spojen na dijeljenu sabirnicu, sklopovi s tri stanja su:
+
+nepotrebni i ometaju normalan rad
+.potrebni samo kod èitanja registra R
+nepotrebni ali ne ometaju normalan rad
+potrebni samo kod pisanja u registar R
+
+#U kakvom su odnosu MHz (radni takt procesora) i SPECint2000 (rezultat na SPEC-ovom testiranju):
+
+MHz je relevantniji pokazatelj performanse
+.MHz je èimbenik performanse, a SPECmark pokazatelj
+SPECmark je èimbenik performanse, a MHz pokazatelj
+SPECmark se odnosi na arhitekturu, MHz na tehnologiju
+
+#Za upravljaèku jedinicu osam-instrukcijskog procesora vrijedi:
+
+da podržava instrukcijski skup RISC
+da se ne može izvesti mikroprogramiranjem
+.da se može izvesti poljem PLA
+da je izvedena mikroprogramiranjem
+
+#Koji nedostatak Von Neumannove memorijske organizacije je izbjegnut u Harvardskoj memorijskoj organizaciji:
+
+.jednistvena sabirnica za podatke i instrukcije
+dugaèko vrijeme pristupa
+nedovoljni adresni protor
+bajtna zrnatost
+
+#Koja komponenta modernog raèunala nije bila prisutna u originalnoj Von Neumannovoj arhitekturi:
+
+interna sabirnica
+ožièena upravljaèka jedinica
+.priruèna instrukcijska memorija
+aritmetièka jedinica
+
+#Tipièno, mikroprogram koji implementira fazu izvrši makroinstrukcijski završava
+
+.pozivom mikroprograma za fazu pribavi
+prozivanjem nanoprogramske memorije
+upisom rezultata u mikroprogramsku memoriju
+upisom nove vrijednosti u programsko brojilo
+
+#Neka w(R) oznaèava broj bitova registara. Tada za osam-instrukcijski procesor vrijedi:
+
+w(MAR)>w(MDR)
+w(MAR)=w(MDR)
+.w(IR)+w(PC)=w(MDR)
+w(AC)=w(PC)
+
+#Za tipiène horizontalne mikroinstrukcije vrijedi:
+
+.mogu nezavisno upravljati sklopovljem
+zahtijevaju manju upravljaèku memoriju od alternativnih pristupa
+imaju sporiji odziv od alternativnih pristupa
+instrukcijska rijeè im je kraæa od 16 bitova
+
+#Za realizaciju 3-bitnog posmaènog sklopa koji izravno podržava 5 vrsta posmaka i prijenos podataka potrebno je
+
+5 multipleksora 8/1
+.3 multipleksora 8/1
+4 multipleksora 5/1
+3 multipleksora 4/1
+
+#Elementi memorijskog sklopa DRAM obièno su organizirani u:
+
+3D polju
+1D polju
+.kvadratnom 2D polju
+pravokutnom 2D polju s više redaka nego stupaca
+
+#Koji od slijedeæih nije algoritam zamjene stranica:
+
+LRU
+FIFO
+.bimodalna tablica odluke
+sluèajni izbor
+
+#Ako 32-bit zbrajalo bez sklopa za predviðanje bita prijenosa ima latenciju T, kolika bi latencija bila kod 64-bit zbrajala iste tehnologije:
+
+32T
+T/64
+.2T
+T
+
+#Koji problem se može pojaviti kad promijenjene podatke cachea ne upisujemo trenutno u glavnu memoriju:
+
+.gubitak koherencije u višeprocesorskom sustavu
+poveæanje latencije PM
+gubitak podataka zbog nepozdanosti memorijskih elemenata PM
+prevelik pritisak na propusnost glavne memorije
+
+#Postotak uspješnosti dinamièkog predviðanja grananja tipièno je u intervalu:
+
+[70% - 80%]
+[50% - 60%]
+[80% - 90%]
+.[90% - 100%]
+
+#Zašto je uvjetni registar posebno problematièan na superskalarnim raèunalima:
+
+.postaje implicitni izvor podatkovnih hazarda
+onemoguæava predviðanje grananja
+nepovoljno se odražava na ortogonalnost instrukcijskog skupa
+onemoguæava preimenovanje registara
+
+$Zadana je PM s 8 linija po 16B. Koliko komparatora oznaka adrese je potrebno kod potpuno asocijativnog preslikavanja?
+
+8 (koliko linija toliko komparatora)
+
+#Neka je zadano raèunalo sa stranicama od 4kB. Koliko de fizièkog RAM-a zauzeti proces koji koristi ukupno 4097 bajtova memorije:
+
+.8192 B
+16834 B
+4096 B
+4100 B
+
+#Koji je glavni nedostatak algoritma LRU za zamjenu blokova priruène memorije:
+
+.složena implementacija za više od dvo-elementne asocijativnosti
+slabo korištenje prostorne lokalnosti
+prevelik pritisak na propusnost glavne memorije
+gubitak koherencije u višeprocesorskom sustavu
+
+#Potpuno zbrajalo se:
+
+.može realizirati pomoæu dva poluzbrajala i dodatnog sklopa ILI
+može realizirati pomoæu dva poluzbrajala, bez korištenja dodatnih logièkih sklopova
+ne može realizirati pomoæu poluzbrajala
+može realizirati pomoæu jednog poluzbrajala i dodatnog sklopa ILI
+
+$Navedite naèine dijeljenja logièkog i fizièkog adresnog prostora na temelju promjenljivosti velièine bloka:
+
+a) virtualni memorijski sustav sa stranièenjem - ako se logièki i fizièki adresni prostor podijele na jednake blokove stalne velièine;
+b) virtualni memorijski sustav sa segmentacijom - ako se u mehanizmu adresnog preslikavanja upotrebljavaju blokovi promjenjive velièine;
+c) virtualni memorijski sustav sa stranièenim segmentima ili segmentacija sa stranièenjem - kombinacija stranièenja i segmentacije na naèin da su segmenti podijeljeni na stranice (Paged segmentation, Segmentation with paging). 
+
+$Tijekom oblikovanja logièke sekcije za nasu ALU jedinicu uveli smo dodatnu (pomoænu) varijablu Ki koja je korištena za:
+
+izvedbu logièke operacije I.
+
+$Tijekom izvoðenja bilo koje od logièkih operacija, bit Ci svakog stupnja treba biti:
+
+u logièkoj 0
+
+$Prilikom izvedbe sklopa za posmak u procesoru, radi veæe brzine, prednost se daje:
+
+kombinacijskim sklopovima.
+
+$Potpuno asocijativna priruèna memorija ima jednu bitnu i prepoznatljivu znaèajku i to:
+
+blok velièine b iz glavne memorije može se smjestiti na bilo koji slobodni bloèni prikljuèak priruène memorije.
+
+$Algoritam zamjene blokova OPT ima sljedeæu osnovnu znaèajku:
+
+daje dobru osnovu za usporedbu s drugim algoritmima ali se, meðutim, ne može realizirati
+
+$Omjer pogotka izražava se kao vjerojatnost da se naslovljavani podatak nalazi u priruènoj memoriji i aproksimiran je s:
+
+h= broj naslovljavanja u kojima je postignut pogodak / broj ukupnih referenciranja
+
+$Ako glavna memorija, kapaciteta 2^M, ima BM = 2^M /b blokova, gdje je velièina bloka b=2^W rijeci, tada se priruèna memorija sastoji od:
+
+BP blokova (izravno nezavisno od BM), pri èemu je velièina bloka b = 2^W;
+
+$Bloèni prikljuèak u priruènoj memoriji oblikuju:
+
+blok i adresna znaèka
+
+$Da bismo dobili kružni posmak za 6 mjesta uporabom baèvastog posmaènog sklopa treba:
+
+na ulaz A 32-bitni operand, na ulaz B isto taj 32-bitni operand, a na ulaz S vrijednost 6;
+
+$Kad se logièki i fizièki adresni prostor podijele na jednake blokove stalne velièine, tada je rijeè o:
+
+virtualnom memorijskom prostoru sa stranièenjem
+
+$Baèvasti posmaèni sklop je:
+
+jedna od glavnih komponenti puta podataka
+
+$Logièka adresa a pohranjuje se u
+
+registru virtualne adrese 
+
+$Adresna znaèka odreðena je s:
+
+k najznaèajnijih bitova koji predstavljaju bloèni broj bloka u glavnoj memoriji
+
+$Potpuno asocijativno preslikavanje kod priruène memorije dopušta:
+
+prikljuèivanje bilo kojeg bloka memorije u bilo koji bloèni prikljuèak
+
+$Poluzbrajalo kao "crna kutija" predoèava se s:
+
+dva ulaza i dva izlaza
+
+$Sklop za predviðanje bita prijenosa je:
+
+dvorazinski kombinacijski sklop
+
+$U raèunalnom sustavu koji koristi virtualnu memoriju, adresa koju generira procesor je:
+
+logièka adresa
+
+$Koji se od sljedeæih algoritama zamjene blokova ne može realizirati:
+
+OPT
+
+$Brojilo sekvenci po modulu k je:
+
+sekvencijalni sklop
+
+$Ako je poèetni sadržaj 8-bitovnog registra jednak –7210, aritmetièkim se posmakom u desno (uz pretpostavku zapisa negativnih brojeva u notaciji dvojnog komplementa) dobiva vrijednost:
+
+-3610
+
+$Uobièajenim postupkom oblikovanja ALU, logièka operacija "iskljuèivo ILI" dobiva se:
+
+tako da se Ci postavi u logièko "0" invertiranjem upravljaèkog signala S2
+
+$Navedite dva naèina izvedbe brojila sekvenci po modulu k:
+
+prstenasto brojilo , binarno brojilo + dekoder
+
+$Osnovna znaèajka organizacije izravne priruène memorije je:
+
+da se svaki blok iz glavne memorije može smjestiti samo na odreðeni bloèni prikljuèak
+
+$Baèvasti posmaèni sklop podržava:
+
+logièki i kružni posmak u oba smjera za proizvoljan broj mjesta
+
+$Postavljanje bita Ci u logièku 0 za svaki stupanj ALU karakterizira:
+
+logièke operacije
+
+$Oznaèite ispravnu tvrdnju koja vrijedi za organizaciju priruène memorije:
+
+adresna znaèka se pridružuje svakom bloku u priruènoj memoriji.
+
+$Navedite barem tri osnovna algoritma zamjene blokova za tipiène organizacije priruène memorije:
+
+OPT , FIFO , LRU , Random
+
+$Za virtualni memorijski sustav koji je organiziran stranièenjem vrijedi:
+
+stranièni okvir se odnosi na fizièki adresni prostor
+
+$Navedite tri glavne organizacije priruène memorije i to prema naèinu smještaja blokova iz glavne memorije u priruènu memoriju:
+
+potpuno asocijativna , izravna , skupno asocijativna
+
+$Flynnova klasifikacija arhitekture temelji se na:
+
+višestrukosti instrukcijskog toka i toka podataka
+
+$Tipièan broj cjelobrojnih registara za RISC procesor je:
+
+32 ili više registara
+
+$Troadresni format instrukcije je karakteristièan za:
+
+RISC procesore;
+
+$Znaèajka load/store arhitekture specificira:
+
+RISC arhitekturu
+
+$Protoènost kao iznimno važan koncept znaèajan je za:
+
+RISC i CISC
+
+$U protoènoj strukturi faktor ubrzanja (za idealan „glatki“ tok) jest:
+
+M – broj protoènih segmenata
+
+$Jedna od osnovnih znaèajki dataflow arhitekture jest:
+
+raspoloživi podaci odreðuju skup izvodljivih instrukcija
+
+#VLIW arhitektura inspirirana je:
+
+arhitekturom RISC
+.horizontalnim mikroprogramiranjem
+promjenjivim i vrlo dugim instrukcijama CISC procesora
+sklopovskim izvedbama veæeg broja upravljaèkih jedinica
+
+$Ganttov dijagram sluzi za:
+
+prikaz instrukcija u protoènoj strukturi
+
+$Jedno od zlatnih pravila : „ žrtvuj sve kako bi smanjio vremenski ciklus podataka“ vrijedi prvenstveno za:
+
+procesore RISC
+
+$Instrukcija NOP u protoènoj strukturi RISC procesora:
+
+"ne radi ništa", no služi i za rješavanje hazarda i tumaèi se kao umetanje "protoènog mjehuriæa"
+
+$Izvoðenje instrukcije lar ra,C1 imat æe za posljedicu:
+
+R[ra] = PC + C1
+
+#Primjer SISD raèunala je:
+
+raèunalo temeljeno na višejezgrenom procesoru
+.Von Neumannovo raèunalo
+vektorski procesor na grafièkoj kartici
+redundantno raèunalo u kojem više izvršnih jedinica obraðuje iste podatke
+paralelno zbrajalo
+
+#Procesori 8086 i Core i7 920 imaju:
+
+.srodnu instrukcijsku arhitekturu, ali razlièitu organizaciju
+srodnu organizaciju, ali razlièitu instrukcijsku arhitekturu
+srodnu instrukcijsku arhitekturu i srodnu organizaciju
+isti broj vanjskih izvoda (pinova)
+kompatibilnu adresnu sabirnicu
+
+#Koja od navedenih komponenata nije element puta podataka:
+
+aritmetièko-logièka jedinica
+.radna memorija
+skup registara
+interna sabirnica
+
+#Za superskalarne RISC arhitekture je specifièno da se paralelno izvoðenje slijednog programa pospješuje:
+
+adresnom translacijom
+malom ali brzom priruènom memorijom
+predviðanjem grananja
+.dinami¡ckom analizom meðuovisnosti instrukcija u sklopovlju procesora (scoreboard)
+
+$Tipièni skalarni CISC procesor ima:
+
+malo registara, više formata instrukcija
+
+#Tipièni skalarni RISC procesor ima:
+
+.troadresne aritmetièke instrukcije bez memorijskih operanada
+jednoadresne aritmetièke instrukcije
+aritmetièke instrukcije s memorijskim operandima
+akumulatorsku arhitekturu
+tablicu meðuovisnosti (scoreboard)
+
+$Moderne implementacije arhitekture x86 imaju:
+
+instrukcijsku arhitekturu tipa CISC, te organizaciju tipa RISC
+
+$Koliko bitova ima usputna konstanta u tipiènoj 32-bitnoj troadresnoj RISC instrukciji:
+
+oko 16
+
+$Koji od ponuðenih odgovora nije tipièna grupa instrukcija arhitekture RISC:
+
+trigonometrijske instrukcije
+
+$Koliko bajtova ima tipièna instrukcija RISC procesora:
+
+4
+
+$Tip instrukcijske arhitekture Intelovog procesora Pentium III:
+
+CISC
+
+$Ganttov dijagram ima naneseno:
+
+na apcisi vrijeme, a na ordinati protoène segmente (by Stripy & mylemim)
+
+$Pretpostavimo da raèunalo s dobro popunjenom 5-segmentnom protoènom strukturom preinaèimo tako da dvostruko ubrzamo samo jedan segment. Efekt na performansu biti ce:
+
+nikakav
+
+$Zašto su arhitekture CISC manje pogodne za izvedbu protoènosti od arhitektura RISC?
+
+zbog resursnih konflikata koje je teško zaobiæi
+
+#Koja operacija se izvodi u segmentu EX arhitekture MIPS kod instrukcija upisa u memoriju?
+
+pristup memoriji
+.odreðivanje efektivne adrese
+zbrajanje dvaju registara
+upis proèitanog podatka u odredišni registar
+
+#Svih pet segmenata osnovne arhitekture MIPS koriste se samo prilikom izvoðenja:
+
+.instrukcija èitanja iz memorije
+instrukcija pisanja u memoriju
+instrukcija bezuvjetnog grananja
+instrukcija uvjetnog grananja
+
+$Kako se kod stranièenja rješava problem brzine pristupa elementima straniène tablice:
+
+cacheiranjem straniènih opisnika
+
+$Za superskalarnost RISC arhitekture je specifièno da se usporedno prevoðenje slijednog programa pospješuje prvenstveno:
+
+dinamièkim rasporeðivanjem instrukcija u sklopovlju raèunala
+
+$Jedan od znaèajnih razloga prirasta broja instrukcija arhitekture x86 su:
+
+nove instrukcije tipa SIMD
+
+$Koja svojstva instrukcije arhitekture MIPS omoguæuju relativnog odredišta u okviru protoènog ID?
+
+fiksni i jednostavni instrukcijski format
+
+$Koliko bitova je potrebno za kodiranje reg. operanda u tipiènom RISC procesoru?
+
+5
+
+#Ukoliko želimo oblikovati superskalarni procesor koji bi u prosjeku izvodio 2 instrukcije po ciklusu, broj procesnih jedinica mora biti:
+
+.znatno veæi od dva
+proizvoljan
+manji od dva
+jednak dva
+
+#Jednostavna superskalarna organizacija se od skalarne protoène organizacije s više procesnih jedinica razlikuje jer ima:
+
+efikasnu priruènu memoriju
+veæi registarski skup
+.moguænost istovremenog pribavljanja i dekodiranja više instrukcija
+više od jedne procesne jedinice
+
+$Zadano je 32-bitno raèunalo s 1GB memorije RAM, 1MB PML2, te 16kB L1. Koliki je LAP?
+
+232 B
+
+$Ubrzanje arhitekture MIPS uslijed protoènosti je:
+
+najviše 5 puta
+
+$U odnosu na period takta modernog procesora, latencija DRAM-a je u opæenitom sluèaju:
+
+100 puta veæa (inaèe problem moderne DRAM, by Stripy)
+
+#Skupna asocijativna priruèna memorija omoguæuje smještanje blokova iz glavne memorije:
+
+.u bilo koji slobodni bloèni prikljuèak
+u bloèni prikljuèak koji je odreðen formulom j =i(modulo Bp)
+u bilo koju skupinu bloènih prikljuèaka
+u bilo koji slobodni prikljuèak skupine j, gdje je j=i(modulo Bs)
+
+#Adresno preslikavanje u virtualnom memorijskom sustavu može se opisati funkcijom f koja ima sljedeæi oblik (gdje je L = {0, 1, 2, ..., N-1} skup logièkih adresa, F= {0, 1, 2, ..., M-1} skup fizièkih adresa, H skup adresa koje su izazvale promašaj i 0 prazan skup.):
+
+f: L › F,
+f: F › L ? 0,
+.f: L › F ? 0,
+f: F › L ? 0 ? H.
+
+#Mikroinstrukcija je:
+
+.kodirano predstavljena (nizom bitova) jedna ili više mikrooperacija
+skup mikrooperacija
+podskup mikroopeacija
+komponenta makroinstrukcije
+
+#Zastavice I0, I1 i I2 (MC 68000) nalaze se u:
+
+.nadglednom bajtu statusnog registra SR
+korisnièkom bajtu statusnog registra SR
+u posebnom registru koji nije komponenta programskog modela
+u statusnom registru SR ali tako da im se može programski pristupiti nadglednom i korisnièkom naèinu rada
+
+#U nultoj stranici memorije raèunala na bazi MC 68000 nalazi se obièno:
+
+pohranjeni vektorski brojevi
+.pohranjeni vektori iznimaka
+nadgledni i korisnièki stogovi
+inicijalne vrijednosti registara D0-D7 i A0 - A7
+
+#Sabirnièka jedinica (engl. Bus Unit) može se predoèiti kao stroj stanja sa:
+
+dva stanja,
+.tri stanja,
+èetiri stanja,
+pet stanja.
+
+#U idealiziranom protoènom modelu faktor ubrzanja jednak je:
+
+.dubini protoène strukture
+omjeru ts/T
+vremenu ts
+N, gdje je N broj identiènih zadataka
+
+#SRISC model procesora ima sljedeæu znaèajku:
+
+koristi Little_Endian Byte Ordering
+.koristi Big-Endian Byte Ordering
+nema definiran sljed ureðenja bajtova
+ima èvrsti 32-bitni format podataka zahvaljujuæi 4-bajtnoj adresnoj zrnatosti
+
+#SRISC procesor ima:
+
+.trosabirnièku strukturu
+dvosabirnièku strukturu
+jednosabirnièku strukturu
+dvosabirnièku strukturu s posebnim baèvastim posmiènim sklopom
+
+$Vrste podatkovnog hazarda su:
+
+RAW, WAR i WAW
+
+$U organizaciji priruène memorije postoje dva glavna naèina obnavljanja sadržaja glavne memorije:
+
+Write-through i Write/copy-back
+
+#Zaokružiti ispravan redoslijed memorijske hijerarhije.
+
+registri, RAM, disk, cache
+cache, registri, disk, RAM,
+.registri, cache, RAM, disk
+cache, RAM, disk, registri
+
+#Koja od sljedeæih tehnika ne vodi poboljšanju iskorištenja superskalarnih resursa?
+
+ortogonalizacija skupa instrukcija
+izvoðenje izvan redoslijeda
+.pretjerano poveæavanje radne frekvencije
+predviðanje grananja
+
+#Translacijski spremnik ne sadrži:
+
+bitove zaštite pristupa (npr, W, S)
+virtualnu stranicu
+.kopiju bloka podataka iz RAM-a
+fizièku stranicu
+
+#Što omoguæavamo preimenovanjem registara?
+
+bolju performansu cachea
+.otklanjanje hazarda WAR
+jednostavniju izvedbu upravlja¡cke jedinice
+bolje predvi —danje grananja
+
+$Koja od sljedeæih logièkih operacija nije izravno podržana u modelu ALU koji je opisan na predavanjima:
+
+NI, NILI
+
+#Zašto je odnos |LAP|>|FAP| poželjniji od odnosa |LAP|=|FAP|?
+
+zbog manje disipacije
+.zbog moguænosti proširenja
+zbog boljeg iskorištenja CPU
+zbog boljeg iskorištenja memorije RAM
+
+$Harvardska arhitektura raèunala uspješno rješava :
+
+sukobljavanje oko sredstava(resursa)
+
+$Opæenito postoje tri vrste podatkovnih hazarda: RAW, WAR i WAW. Za RISC procesore od gornjih hazarda kritièan je:
+
+RAW.
+
+#Veæina instrukcija arhitekture x86 podržava:
+
+0 memorijskih operanada
+.1 memorijski operand
+2 memorijska operanda
+3 memorijska operanda
+4 memorijska operanda
+
+#U protoènom raèunalu sa zajednièkom jednoadresnom priruènom memorijom podataka i instrukcija naroèito možemo oèekivati:
+
+podatkovne hazarde
+.strukturne hazarde
+upravljaèke hazarde
+otežano izvoðenje samomodificirajuæeg koda
+ubrzanje od 20%
+
+#Sistolièka polja se svrstavaju u:
+
+SIMD
+.MISD
+MIMD
+SISD
+
+#Koncept upravljanja tokom podataka koristi se u:
+
+originalnom Von Neumannovom modelu
+.superskalarnim raèunalima
+CISC raèunalima
+višejezgrenim raèunalima
+
+$Koliko registarskih operanada ima tipièna aritmetièka RISC instrukcija:
+
+3
+
+$Zakašnjele instrukcije grananja u arhitekturi RISC procesora posljedica su:
+
+upravljaèkog hazarda (po službenim rješenjima)
+
+$Jedinièna kružnica u Kiviat grafu sijeèe os „Prosjeèan broj perioda po instrukciji“ u toèki:
+
+koja ima vrijednost 1
+
+$Resetiranjem procesora MC68000 procesor postavlja zastavice:
+
+S = 1, T = 0,
+
+$Ako je broj straniènih prikljuèaka u primarnoj memoriji BP = 128 i ako je indeks stranice u sekundarnoj memoriji 428, onda se ta stranica, ako virtualni memorijski sustav rabi izravno preslikavanje, može prikljuèiti u stranièni prikljuèak s indeksom:
+
+44 (428 mod 128 = ostatak 44)
+
+$Lokalnost programa izražava se radnim skupom WS pri tom WS je:
+
+WS (t, h), gdje je h velièina „okna“
+
+$Izravnim preslikavanjem u virtualnom memorijskom sustavu odreðuje se stranièni prikljuèak:
+
+j=i (modulo BP) gdje je BP ukupan broj straniènih prikljuèaka, BS ukupan broj stranica sekundarne memorije, i broj stranice te j broj straniènog prikljuèaka.
+
+$Za organizaciju priruène memorije vrijedi:
+
+glavna memorija je podijeljena na slijedne blokove, a priruèna memorija na bloène prikljuèke
+
+$Omjer pogodaka je:
+
+H = N1/(N1 + N2)gdje je N1 broj pozivanja primarne memorije, a N2 broj pozivanja sekundarne memorije.
+
+$Adresna znaèka se u organizacije priruène memorije pridružuje:
+
+bloku u priruènoj memoriji (adresna znaèka se pridružuje svakom bloku u priruènoj memoriji)
+
+$Vektorski broj za 16-bitni procesor MC68000 je:
+
+8-bitni
+
+$Modulo za brojilo sekvenci u realizaciji sklopovske upravljaèke jedinice izravno zavisi od:
+
+procijenjenom vremenu trajanja najdulje instrukcije (izraženo brojem perioda)
+
+$Logièka jednadžba kojom se opisuje upravljaèki signali sklopovski realizirane upravljaèke jedinice ima sljedeæe elemente:
+
+izlaze iz brojila sekvenci, izlaze iz instrukcijskog dekodera
+
+$U modelu mikroprogramirane upravljaèke jedinice faza P(1) signala vremenskog voðenja odgovara:
+
+prijenosu adrese u mikroprogramski adresni registar H
+
+$Oznaèite pojam koji je uljez u odnosu na preostala tri (u kontekstu dodjeljivanja upravljaèkih bitova):
+
+nanoformati
+
+$Mikroprocesor MC68000 signalizira periferiji prihvaæanje zahtjeva za prekid:
+
+postavljenjem FC0 = 1, FC1= 0 i FC2 = 1
+
+$Zadana je PM s 8 linija po 16B i izravnim preslikavanjem. Podatak na adresi 0xcc smještamo u liniju s indeksom:
+
+4
+
+#Koja od sljedeæih tehnika ne vodi poveæanju propusnosti modula DRAM?
+
+.asinkroni upravljaèki protokol
+usporedan pristup veæem broju sklopova uz preplitanje podataka
+širenje podatkovne sabirnice
+brzi pristup retku u grupni prijenos podataka
+
+$Što od navedenog ne spada u iskorišteni instrukcijski paralelizam ?
+
+podatkovni paralelizam
+
+$Kako vektoriziranje algoritma tipièno utjeèe na uèestalost hazarda ?
+
+smanjuje broj hazarda vrste RAW
+
+$Za vektorske instrukcije redukcije vrijedi da:
+
+iz dva vektorska operanda proizvode skalarni operand
+
+$Performansa procesora veæa je ako je:
+
+manji prosjeèan broj perioda po instrukciji CPI
+
+$Za vektorske instrukcije maskiranja vrijedi da:
+
+iz dva vektorska operanda proizvode vektorski operand
+
+$Disipacija snage procesora ovisi:
+
+linearno o frekvenciji signala vremenskog voðenja
+
+$Paralelizam na razini dretvi i procesa iskljuèivo se koristi:
+
+na razini kombinacije arhitekture i operacijskog sustava
+
+$Jedan od nedostataka stranièenja je:
+
+unutarnja fragmentacija
+
+$Koji od ponuðenih odgovora ne spada u zadatke virtualne memorije?
+
+omoguæiti brzinu pristupa koja bi pratila brzinu procesora
+
+$Zrnatost zaštite pristupa kod stranièenja je:
+
+na razini stranice
+
+$Koji od slijedeæih scenarija pokazuje najveæu p____ lok. p____, dok ______ ne postoji?
+
+inicijalizacija polja nulom
+
+#Koliko ciklusa traje faza izvrši instrukcije add $a0a0 pojednostavljenog modela procesora?
+
+.2
+1
+5
+3
+
+$Širina mikroprog. adr.prostora odreðena je:
+
+kapacitetom mikroprogramske memorije
+
+$Za arhitekturu tipa VLIW je specifièno da se usporedno izvoðenje slijednog programa pospješuje prvenstveno:
+
+statièkim rasporeðivanjem instrukcija u sklopovlju procesora
+
+#Dinamièko rasporeðivanje se koristi jer statièka analiza ne može:
+
+.razotkriti dinamièke memorijske i upravljaèke hazarde
+optimirati kod za željenu arhitekturu
+razotkriti strukturne hazarde
+razotkriti registarske hazarde
+
+#U Denningovom memorijskom modelu s namjerno ugraðenom logièkom pogreškom broj elemenata u tablici preslikavanja jednak je:
+
+broju memorijskih lokacija primarne memorije,
+.broju memorijskih lokacija sekundarne memorije,
+ukupnom broju memorijskih lokacija primane i sekundarne memorije,
+nP* broj lokacija primarne memorije, pri èemu je nP velièina stranice.
+
+#Baèvasti posmaèni sklop (Barrel Shifter) je:
+
+sekvencijalni sklop
+sekvencijalno-kombinacijski sklop
+.kombinacijski sklop
+kombinacijsko-sekvencijalni sklop
+
+#U sabirnièkom ciklusu potvrde prekida MC 68000 postavlja kod razine prihvaæenog prekida na:
+
+.sabirnicu podataka
+upravljaèku sabirnicu
+adresnu sabirnicu
+posebnu sabirnicu vektorskog prekida
+
+#Prekidni sustav mikroprocesora MC 68000 dopušta:
+
+64 sklopovska prekida
+128 sklopovska prekida
+.256 sklopovska prekida
+192 sklopovska prekida
+
+#Superskalarni CISC procesor ima:
+
+protoèno CISC jezgro
+.skalarno RISC jezgro
+superskalarno RISC jezgro
+superskalarno CISC jezgro
+
+#Superskalarnost se ostvaruje:
+
+velikim brojem protoènih segmenata
+uporabom koncepta temeljenog na VLIW
+višestrukim protoènim strukturama
+.veæim brojem zavisnih funkcijskih jedinica 
+
+#Kolika propusnost je potrebna za prijenos slike od 500 kByte na frekvenciji od 25 Hz?
+
+oko 1000 MByte/s
+oko 100 MByte/s
+.oko 10 MByte/s
+oko 0.1 MByte/s
+
+$Struktura stoga podržava:
+
+Rekurzivno pozivanje (pot)programa i njihovo gniježðenje te gniježðenje prekidnih programa.
+
+#Programsko brojilo se uveæava u pravilu:
+
+.tijekom faze pribavi
+programsko brojilo se ne uveæava
+tijekom faze izvrši
+tijekom grananja
+
+$Najniža razina hijerarhijskog modela arhitekture raèunala je:
+
+Sklopovska oprema;
+
+$Instrukcije uvjetnog i bezuvjetnog skoka koriste se za:
+
+Prijenos upravljanja u jednoj programskoj strukturi;
+
+#Kakvo prosljedivanje se tipicno koristi za smanjenje latencije instrukcije grananja (i oznaCava redni broj instrukcije)?
+
+.ID[i] -> IF[i+2]
+EX[i] -> ID[i+1]
+[i+1] -> IF[i]
+ME[i+1] -> ID[i]
+WB[i] -> ID[i+1]
+
+$RISC arhitektura procesora dopušta:
+
+da operandi za aritmetièko-logièke operacije budu u registrima.
+
+#Koje se komponente izravno spajaju na periferni sklop (southbridge)?
+
+.vanjske sabirnice: PCI, IDE, USB, Firewire, ISA
+procesor, memorija, grafièka kartica
+procesor, memorija i periferija
+samo procesor
+
+#Osnovna znaèajka Von Neumannovog raèunala je:
+
+podatci se pohranjuju u memoriji, dok je program odreðen mehanièkim prekidaèima
+program se pohranjuje odvojeno od podataka
+.program se opisuje slijedom instrukcija i pohranjuje u zajednièkoj memoriji
+instrukcijska arhitektura tipa RISC
+
+#Koliki adresni prostor ima raèunalo s 11-bitno adresnom sabirnicom?
+
+11k memorijskih lokacija
+11 memorijskih lokacija
+65536 rijeèi
+.2048 memorijskih lokacija
+
+#Adresna sabirnica raèunala je:
+
+dvosmjerna, spaja upravljaèku i aritmetièku jedinicu
+jednosmjerna, izvire iz upravljaèke jedinice te ponire u aritmetièkoj jedinici
+dvosmjerna, spaja memoriju i procesor
+.jednosmjerna, izvire iz procesora te ponire u memoriji
+
+$Koliko memorijskih operanada ima tipièna aritmetièka RISC instrukcija:
+
+0
+
+$Koji od ponuðenih odgovora ne predstavlja jednu od glavnih vrsta promašaja?
+
+promašaji zbog nedovoljne asocijativnosti
+
+$Koji od sljedeæih scenarija pokazuje najveæu prostornu lokalnost pristupa podacima kada vremenska lokalnost ne postoji?
+
+inicijalizacija polja nulom
+
+$Potrebna memorijska propusnost na suvremenom procesoru je oko
+
+10 GB/s
+
+$Zadana je PM s 8 linija po 16B i 2-elementnom asocijativnošæu. Koja od sljedeæih preslikavanja nije izvediva?
+
+16 (šesnaest)-elementno asocijativno preslikavanje
+
+$Najveæi nedostatak modernih memorija DRAM je:
+
+velika latencija
+
+$Svojstvo viših razina memorijske hijerarhije u odnosu na niže razine je:
+
+manji kapacitet, manja latencija, veæa cijena po bitu
+
+$Odnos latencije i takta procesora. (paziti na formu pitanja jer je veæ bilo „podvala“ na teoriji/blitz)
+
+1:100 (Tj. MEM ima veæi Latenciju nego takt procesora, tj memorija je sporija i „koèi“ obradu a iz drugih izvora se taj omjer uzima i 1:300 )
+
+$Nedostaci LRU algoritma zamjene blokova?
+
+skupa implementacija za vise od dvostruke asocijativnosti
+
+$Što ne sadrži linija priruène memorije?
+
+bitove za prava pristupa
+
+#Mikroprogramski procesor s predavanja omoguæava
+
+.uvjetno mikrogrananje s obzirom na predznak podatka na glavnoj sabirnici
+uvjetno µgrananje s obzirom na zastavicu C
+samo bezuvjetno mikrogrananje
+zakašnjelo mikrogrananje
+
+#Koja je prednost tablice odredišta grananja nat tablicom povijesti grananja
+
+.veæa latencija spekuliranog ishoda grananja
+trenutno odreðivanje spekulirane odredišne adrese
+bolji rezultat predviðanja
+zahtjeva manju površinu èipa
+
+#Zašto su u skalarnoj protoènoj strukturi s više procesnih jedinica funkcijske jedinice slabo iskorištene
+
+.jer se izdaje samo jedna instrukcija po ciklusu
+zbog neefikasne priruène memorije
+zbog hazarda RAW
+zbog slabog predviðanja grananja
+
+#Translacijski spremnik sadrži:
+
+.kopije straniènih opisnika
+povijest grananja
+kopije neprekinutih blokova priruène memorije
+servisne podatke priruène memorije
+
+#Najèešæi odnos TLB-a i PM je:
+
+.TLB prethodi PM
+PM prethodi TLB
+PM i TLB se aktiviraju kod razlièitih instrukcija
+PM i TLB su potpuno neovisni jedan o drugome
+
+#Koja od sljedeæih tehnika nije namijenjena za statièko predviðanje grananja?
+
+.predviðanje s obzirom na smjer
+trivijalno predviðanje
+odreðivanje èešæeg smjera grananja profiliranjem koda
+bimodalno predviðanje ishoda grananja
+
+#Kod stranièenja adresno preslikavanje se izvodi pomoæu sljedeæih operacija:
+
+.zbrajanje
+dijeljenje
+prozivanje tablice
+oduzimanje
+
+$Paralelizam na razini programskih petlji je klasificiran kao:
+
+srednje zrnati
+
+#Sklop za predviðanje bita operand Bi na izlazu može generirati slijedeæe vrijednosti:
+
+.0, Bi, NOT(Bi) i 1
+0, 1 i Z
+Ai, NOT(Ai), Bi i NOT(Bi)
+samo 0 i 1
+
+$Izbacite uljeza (koji nije vrsta podatkovnog hazarda):
+
+RAR (ostali WAW, RAW, WAR su podatkovni hazardi)
+
+$Iznimkom RESET prekidne zastavice u SR registru procesora MC68000 :
+
+postavljaju se sve u 1
+
+$Teško rješivi hazardi tipa RAW tipièno nastaju nakon :
+
+instrukcije load
+
+$Utjecaj podatkovnih hazarda RAW na performansu raèunala ne može se ublažiti:
+
+internim prosljeðivanjem rezultata
+
+$Kakvo prosljeðivanje može pomoæi kod zakašnjele instrukcije èitanja (i oznaèava redni broj instrukcije)?
+
+ID[i] -> IF[i+2]
+
+$Pojavu koja uzrokuje zastoj protoène arhitekture nazivamo:
+
+hazardom
+
+#Objektni modul programskog jezika C na arhitekturi x86 tipièno predviðaju relociranje sljedeæih elemenata programske sekcije :
+
+svih instrukcija grananja
+svih instrukcija uvjetnog grananja
+svih instrukcija grananja na potprograme
+.svih instrukcija grananja na potprograme izvan modula
+svih instrukcija uvjetnog grananja i grananja na potprograme
+
+$Kada 8 instrukcijski procesor sadržaj registra MDR prosljeðuje u akumulator?
+
+u fazi izvrši instrukcije ld
+
+$Elementarna sklopovska operacija naziva se :
+
+mikrooperacija
+
+$Koji od ponuðenih odgovara nije memorijska instrukcija arhitekture RISC
+
+brl r2,r3
+
+$Memorijski adresni registar je :
+
+izvor podataka na adresnoj sabirnici
+
+$Jedna od glavnih prednosti višerazinske straniène tablice :
+
+manja cijena nekorištenih dijelova LAP-a
+
+$Što od navedenog ne spada u iskorišteni funkcijski paralelizam ?
+
+podatkovni paralelizam
+
+$IA-64 je porodica Intelovih procesora sa arhitekturom
+
+EPIC
+
+$Za vektorske instrukcije okupljanja vrijedi da:
+
+uèitavanja vektorskih operanda iz memorijskih lokacije koje ne moraju bit uzastopne
+(IZ memorije dohvaæa i oblikuju rijetko popunjeni vektor)
+
+$Koncept EPIC odnosi se na :
+
+explicitno izražen paralelizam na razini instrukcija
+(Intel IA-64 Itanium, Merced Itanium)
+6 glavnih vektorskih instrukcija (nije pitanje ali jedna od tvrdnji se obièno pojavi…)
+1. Instrukcije vektor <-> vektor
+2. Instrukcije vektor <-> skalar
+3. Instrukcije vektor <-> memorija
+4. Instrukcija redukcije (pretvara vektor u skalar)
+5. Instrukcije okupljanja (uèitavanje iz MEM) i raspršivanja (pohranjivanje u MEM)
+6. Instrukcije maskiranja (sažima ili proširuje izvorni vektor)
+
+#Višetraèna vektorska obrada podrazumijeva:
+
+iskljuèivo cjelobrojne vektorske registre
+.višestruke funkcijske jedinice
+jednu neprotoènu funkcijsku jedinicu
+iskljuèivo raèunanje transcedentnih funkcija (npr. sqrt)
+
+#Koji glavni uèinak na izvoðenje programa možemo oèekivati nakon vektoriziranja algoritma?
+
+poveæanje memorijskog prometa
+ne možemo oèekivati nikakav uèinak
+poveæanje broja izvedenih instrukcija
+.smanjenje broja izvedenih instrukcija
+
+#Iscrpne dinamièke analize ispitnih programa pokazuju da se najèešæe mogu usporedno izdavati
+
+.tri instrukcije
+dvije instrukcije
+èetiri instrukcije
+šest instrukcija
+
+#Za vektorske i skalarne instrukcije tipièno vrijedi:
+
+da se izvode u istim sklopovskim jedinicama i koriste zajednièke registre
+.da se izvode u razlièitim sklopovskim jedinicama i koriste razlièite registarske skupove
+da se izvode u istim sklopovskim jedinicama i koriste razlièite registre
+da se izvode u razlièitim sklopovskim jedinicama i koriste zajednièke registarske skupove
+
+#Faktor ubrzanja za istodobno izdavanje najviše 15 instrukcija iznosi:
+
+oko 15
+.oko 3
+oko 15/2
+oko 15/3
+
+#Koji od sljedeæih pojmova ne oznaèava ovisnost koja može usporiti obradu u procesu s dinamièkim izdavanjem:
+
+podatkovna ovisnost
+antiovisnost
+upravljaèka ovisnost
+.glagolska ovisnost
+
+
+#Neka se 10% postupka A ne može izvoditi usporedno s ostalim dijelovima postupka. Koliko æe biti ubrzanje postupka A na raèunalu sa 100 procesora?
+
+.oko 10 puta
+oko 100 puta
+oko 20 puta
+oko 5 puta
+
+#Zašto se za spremanje povratne adrese koristi stog?
+
+gniježdenje potprograma nije moguæe bez korištenja stoga
+.rekurzija nije moguæa bez korištenja stoga
+pozivanje potprograma nije moguæe bez korištenja stoga
+da omoguæimo prijevremeni izlaz iz potprograma
+
+#Na koje sve naèine procesor MC68000 prelazi iz korisnièkog u nagledni naèin rada?
+
+.iskljuèivo obradom iznimke
+izmeðu ostalog i eksplicitnim postavljanjem zastavice S u registru stanja
+izmeðu ostalog i instrukcijom RTE
+izmeðu ostalog i eksplicitnim postavljanjem zastavice X u registru stanja
+
+#Koje podatke procesor MC68000 sprema prilikom obrade iznimke?
+
+samo adresne registre
+samo podatkovne registre
+.samo programsko brojilo i registar stanja
+samo programsko brojio
+
+#Moderni superskalarni procesori tipièno postižu:
+
+CPI > 100 MHz
+CPI > 100
+.CPI element [0.5, 10]
+CPI > 3 GHz
+
+#U kontekstu performanse procesora, radna frekvencija je:
+
+sasvim nevezana uz performansu
+.jednako važna kao i ostali èimbenici
+najrelativniji èimbenik
+najmanje relativan èimbenik
+
+#Koja je razlika izmeðu dretve i procesa
+
+procesi imaju zajednièki adresni prostor, a dretve ne
+.dretve imaju zajednièki adresni prostor, a procesi ne
+procesi imaju odvojene stogove, a dretve ne
+dretve imaju odvojene stogove, a procesi ne
+
+#Koji od navedenih pojmova ne predstavlja jednu od šest glavnih vrsta vektorskih instrukcija?
+
+.instrukcije indikacije
+.instrukcije kontrakcije
+instrukcije vektor-skalar
+instrukcije redukcije
+instrukcije vektor-memorija
+
+#Za vektorske instrukcije raspršivanja vrijedi da:
+
+ne pristupaju memoriji
+.spremaju više skalara na memorijske lokacije koje ne moraju biti uzastopne
+pribavljaju vektorski operand iz memorije
+u memoriju spremaju jedan skalarni operand
+
+#Koji od navedenih pojmova nije povezan s imenskom ovisnošæu?
+
+antiovisnost
+izlazna ovisnost
+hazard WAR
+.podatkovna ovisnost
+
+#Korisnièki stog se širi kad god treba primiti nove podatke. Tipièan smjer širenja je:
+
+u smjeru nadglednog stoga
+.prema padajuæim memorijskim adresama
+ovisi o položaju realociranog memorijskog prostora
+prema rastuæim memorijskim adresama
+
+#Zašto Amdahlov zakon koèi razvoj paralelnih sustava?
+
+.jer se poveæanjem broja procesora u praksi èesto postižu sublinearna ubrzanja
+jer se porast uniprocesorske performanse usporava
+jer se ne može proizvesti skup s potrebnim brojem tranzistora
+zbog akumulatorske arhitekture
+
+#Kamo se sprema minimalni kontekst pri obradi iznimke na procesoru MC68000?
+
+na nultu stranicu
+na korisnièki stog
+.na nadgledni stog
+u podatkovne registre
+
+#U današnjim raèunalnim sustavima vrijedi sljedeæi odnos izmeðu fizièkog adresnog prostora (FAR) i logièkog adresnog prostora (LAR):
+
+FAR > LAR
+FAR = LAR
+FAR ? LAR
+.FAR < LAR
+
+#Mikroinstrukcija koja se temelji na tehnici višestrukih formata kao naèina dodjeljivanja upravljaèkih bitova dopušta:
+
+specifikaciju istodobno svih raspoloživih mikrooperacija
+.specifikaciju obièno do èetiri mikrooperacije
+specifikaciju više od šesnaest mikrooperacija
+samo podskupa mikrooperacija i to onih koje koriste razlièite formate emit polja
+
+
