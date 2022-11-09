@@ -1,0 +1,466 @@
+﻿Ispisati JMBAG, prezime i inicijal imena studenata koji ne stanuju u istoj upaniji u kojoj su i
+rodeni, te su akademske godine koja je za jedan manja od tekue kalendarske godine iz bib kojeg
+predmeta pohadali nastavu u grupi ija oznaka poinje sbovom “B”.
+Pored jMBAG-a, prezimena i inicijala imena studenta ispisati i oznaku grupe u kojoj je student sIuao
+predavanja.
+Upit mora biti vremenski neovisan o trenutku izvodenja.
+
+SELECT DISTINCT student.jmbag, TRIM(student.prezimestudent) || '.' || SUBSTRING(student.imestudent FROM 1 FOR 1) 
+	AS prezimeiime, upisanPredmet.oznGrupa AS grupa
+FROM student JOIN mjesto AS mjestoR
+	ON student.pbrrodstudent = mjestoR.pbr
+	JOIN mjesto AS mjestoS
+	ON student.pbrstanstudent = mjestoS.pbr
+	JOIN upisanPredmet
+	ON student.jmbag = upisanPredmet.jmbag
+WHERE (mjestoS.sifZupanija <> mjestoR.sifZupanija) AND (upisanPredmet.akGodina = YEAR(today) - 1) 
+	AND (upisanPredmet.oznGrupa LIKE 'B%');
+
+-----------------------------------------------
+Ispisati jmbag, ime, prezime, ifru predmeta, ocjenu i ak.godinu za svakog studenta i predmet za koje vrijedi da je student akademske godine 2012/2013 iz
+tog predmeta dobio pozitivnu ocjenu takvu da niti jedan drugi student nije uspio dobiti vecu ocjenu iz tog predmeta te akademske godine. Ispisati samo
+one studente fiji je ukupni prosjek ocjena manji od 4.
+Napomena: U prosjek ulaze samo pozitivne ocjene.
+
+SELECT student.jmbag,imestudent,prezimestudent,sifpredmet ,ocjena,akgodina
+from student join upisanpredmet
+on student.jmbag=upisanpredmet.jmbag
+where akgodina=2012 and (select avg(up.ocjena) from upisanpredmet as up where upisanpredmet.jmbag=up.jmbag and up.ocjena>1)<4
+and upisanpredmet.ocjena=(SELECT MAX(ocjena)from upisanpredmet as up2 where up2.sifpredmet=upisanpredmet.sifpredmet and up2.akgodina=2012);
+--------------------------------------------------
+Ispisati jmbag i ime svakog studenta za kojeg vrijedi da mu se ime sastoji od parnog broja znakova i da je prvo slovo imena jednako zadnjern slovu
+imena (naravno, bez obzira na velika i mala slova).
+Na primjer: Neven, Ana, itd.
+
+select jmbag, imestudent from student
+where mod(char_length(trim(imestudent)),2)=0 and 
+UPPER(substring(imestudent from (char_length(trim(imestudent))) for 1))=(substring(imestudent from 1 for 1))
+---------------------------------------
+Za svakog studenta kojemu je rođendan u ovoj godini već prošao (ne računa se današnji dan, odnosono studentima koji su rođeni na današnji dan rođendan nije prošao) ispisati jmbag, ime i prezime ako su mu nepoznati mjesto rođenja ili stanovanja(ili oboje).
+
+SELECT student.jmbag, student.imestudent, student.prezimestudent
+FROM student
+WHERE ((pbrrodstudent IS NULL) OR (pbrstanstudent IS NULL))
+	AND (datumRod BETWEEN MDY(1,1,YEAR(datumRod)) AND MDY(MONTH(TODAY), DAY(TODAY-1), YEAR(datumRod)));
+-----------------------------------------------------
+Za organizacijsku jedinicu ispišite naziv te prosječan koeficijent nastavnika koji su u toj organizacijskoj jedinici ikad bili zaposleni. Ispišite zapise samo za  one organizacijske jedinice za koje je broj nastavnika koji su ikad bili zaposleni u toj organizacijskoj jedinici veći od 4.
+
+select orgjed.nazorgjed, avg(nastavnik.koef) as prosjecni_koef
+from nastavnik,orgjed
+where orgjed.siforgjed=nastavnik.siforgjed
+group by orgjed.nazorgjed
+having count(nastavnik.sifnastavnik)> 4
+-----------------------------------------------
+Za zadanu relacijsku shemu STUDSTIP={ime, prezime, jmbg, ukEcts) napisati naredbu kojom e se napraviti relacija studStip(STUDSTIP). Tipovi podataka neka budu sIjedei:
+• ime, prezime - NCHAR(25)
+• jmbg - CHAR(13)
+• ukEcts (ukupan broj ECTS bodova koje je student ostvario polaganjem predmeta) - DECIMAL(4, 1)
+U relaciju studStip upisati studente fiji je ukupan broj ECTS bodova ostvaren polaganjem spita veci gli jednak 80 (u sumu ulaze, naravno, samo poIoeni ispiti).
+
+CREATE TABLE studStip(
+ime NCHAR(25)
+, prezime NCHAR(25)
+, jmbg CHAR(13)
+, ukEcts DECIMAL(4,1) 
+);
+
+INSERT INTO studStip
+SELECT student.imestudent, student.prezimestudent, student.jmbg, sum(ectsbod)
+from student join upisanpredmet on student.jmbag = upisanpredmet.jmbag
+join predmet on predmet.sifpredmet=upisanpredmet.sifpredmet AND ocjena > 1
+group by student.imestudent, student.prezimestudent, student.jmbg, upisanpredmet.jmbag
+having sum(ectsbod) >= 80;
+-------------------------------------------
+Za zadanu relacijsku shemu STUDSTIP={ime, prezime, jmbg, prosjekOcjena} napisati naredbu kojom Ce se napraviti relacija studStip(STUDSTJP). Tipovi podataka neka budu
+sljedeä:
+• ime, prezime - NCHAR(25)
+• jmbg - CHAR(13)
+• prosjekOcjena - DECIMAL(5, 2)
+U reIaciu studstip upisati studente koji imaju prosjek ocjena ved iii jednak 3 a stogo manji od 5 (u prosjek ocjena ulaze samo pozitivne ocjene). Probaj sa i bez rounda.
+
+SELECT imeStudent, prezimeStudent, student.jmbag, ROUND(AVG(ocjena),2) AS prosjek
+FROM student, upisanpredmet
+WHERE student.jmbag = upisanpredmet.jmbag
+AND ocjena > 1
+GROUP by imeStudent, prezimeStudent, student.jmbag
+HAVING AVG(ocjena) >= 3 AND AVG(ocjena) < 5
+----------------------------------------
+Potrebno je dodati novu organizacljsku jedinicu “Republika Hrvatska” sa ifrom 1 (nema nadredenu organizacijsku jedinicu). Zatim postaviti Republiku
+Hrvatsku kao nadredenu svim sveuiIitima (to su one organizacijske jedinice koje sadr2e niz “sveuiIite” u nazivu bez obzira na velika I mala slova).
+Openita napomena: viestruke SQL naredbe odvajati znakom: “;“.
+
+INSERT INTO orgjed
+	VALUES (1, Republika Hrvatska', null);
+UPDATE orgjed
+	SET sifNadOrgJed=1
+	WHERE UPPER(nazorgjed) LIKE UPPER('%sveučilište%');
+-----------------------------------------------------------------
+Za studente ije ime i prezime poeinje istim slovom ispiite jmbag, ime i prezime, te ukupan zbroj ects bodova koje je student upisao (nazovite stupac upEsao_ects). U zbroj uraunajte samo predmete
+koji nose vie od 2 ects boda.
+
+SELECT student.JMBAG, student.imeStudent, student.prezimeStudent, SUM(ECTSbod) AS upisao_bodova
+FROM student JOIN upisanPredmet
+ON student.JMBAG = upisanPredmet.JMBAG
+JOIN predmet
+ON upisanPredmet.sifPredmet = predmet.sifPredmet
+WHERE SUBSTRING(student.imeStudent FROM 1 FOR 1) = SUBSTRING(student.prezimeStudent FROM 1 FOR 1) AND ECTSbod>2
+GROUP BY student.JMBAG, student.imeStudent, Student.prezimeStudent
+--------------------------------------------------------------------
+Za sve nastavnike s rnaksmialnirn k-oeficijentom koji su predavaii barem jednoj grupi ispisati ifru, ime, prezime i broj grupa kojima su predavaii. Zapise poredati uzlazno p0 prezimenu nastavnika.
+
+SELECT nastavnik.sifNastavnik, imeNastavnik, prezimeNastavnik, COUNT(oznGrupa)
+FROM nastavnik JOIN predmetGrupa
+ON nastavnik.sifNastavnik=predmetGrupa.sifNastavnik
+WHERE koef=(SELECT MAX(koef) from nastavnik)
+GROUP BY nastavnik.sifnastavnik, imeNastavnik, prezimeNastavnik
+HAVING COUNT(oznGrupa) > 0
+ORDER BY prezimeNastavnik;
+------------------------------------------
+Za svaku nastavnu grupu iz predmeta u akademskoj godini 2010/2011 ispisati oznaku grupe, akademsku godinu, naziv predmeta i broj studenata u grupi (stupac
+nazvati broj_studenata_u_grupi). Ispisati samo one zapise za koje je broj studenata u grupi iz predmeta veci od 10.
+
+SELECT upisanpredmet.oznGrupa, upisanpredmet.akGodina, predmet.nazPredmet, COUNT(upisanPredmet.JMBAG) AS broj_studenata_u_grupi
+FROM upisanpredmet
+JOIN predmet ON predmet.sifpredmet=upisanpredmet.sifpredmet
+WHERE upisanpredmet.akgodina=2010
+GROUP BY upisanPredmet.sifPredmet, ozngrupa, akgodina, nazpredmet
+HAVING COUNT(upisanPredmet.JMBAG)>10;
+-------------------------------------------
+Za studente koji su predmet ponovno upisali 2012. akademske godine (tJ. imaju isti predmeti upisan i u akademskim godinama prlje 2012.) ispisati )MBAG, prezime, ime, ifru predmeta,
+te akademsku godinu upisa prije 2012. godlne.
+Stupce rezultata imenovati u skiadu sa sljedeàm predlokom:
+
+SELECT student.JMBAG, prezimeStudent AS prezime, imeStudent AS ime, sifPredmet AS predmet, akGodina AS akGodinaPrije2012
+FROM student JOIN upisanPredmet AS Upisano ON upisanPredmet.JMBAG = student.JMBAG
+WHERE student.JMBAG IN (SELECT JMBAG FROM upisanPredmet WHERE student.JMBAG = upisanPredmet.JMBAG AND akGodina = 2012 AND upisanPredmet.sifPredmet = Upisano.sifPredmet)
+AND akGodina < 2012
+ORDER BY student.JMBAG ASC, predmet ASC, akgodinaPrije2012 DESC;
+-------------------------------------------
+Za parove studenata mukog spola koji su rodeni u istoj upaniji, istog mjeseca i istog dana u mjesecu bib koje godine ispisati prezime i inicijal imena te datum rodenja u sljedeëem obliku:
+studenti datRodi jstudent24..... datRod2
+Floñjan. S. r04.lo.1983 I5tevevie, D. 04.101984
+Floñjan, S. 04.10.1983 IKarie, I. 04.10.1986
+Frkovi, V ‘11.03.1982 IBarthe, M. 11.03.1985
+_________________________________________________ I... I...
+Nazwe stupaca u listi izlaznih rezultata imenovati u skiadu s goinjim pred1okom Iz rezultata izbaciti n-torke u kojima se isti student pojavijuje pod stupcima sa sufiksom 1 z sufilcsom 2. Obratiti palnju
+na formatiranje znakovnth nizova koji Sc ispisuju pod stupcuna studenti 1 student2 — prezime bez prateéth praznina odvojenoje zarezom I jednim praznun mjestom od inicijala imena iza kojeg je
+navedena (toëka).
+Upit mora biti vremenski neovisan o trenutku izvodenja.
+Poredak zapisa u rezultatu nije bitan
+
+SELECT DISTINCT (trim(student.prezimeStudent)||', '||SUBSTRING(student.imeStudent FROM 1 FOR 1)||'.') as student1, student.datumRod as datrod1
+, (trim(stud.prezimeStudent)||', '||substring(stud.imeStudent from 1 for 1)||'.') as student2, stud.datumRod as datrod2
+FROM student JOIN student as stud
+ON MONTH(student.datumRod)=MONTH(stud.datumRod)
+AND (student.spol='M'and stud.spol='M') 
+AND DAY(student.datumRod) = DAY(stud.datumRod)
+AND student.JMBAG <> stud.JMBAG
+AND student.JMBG <> stud.JMBG
+WHERE (SELECT sifZupanija FROM mjesto
+WHERE mjesto.pbr=student.pbrRodStudent) = (SELECT sifZupanija
+FROM mjesto WHERE mjesto.pbr=stud.pbrRodStudent);
+---------------------------------------
+Za svakog studenta koji je poIoio predmet u kalendarskoj godini 2012 i pritom nije dobio niti jednu ocjenu manju od 3 ispisati njegovjmbag. ime. prezime. broj predmeta kojeje poIoio utoj kalendarskoj godini
+(stupac nazvati polozio_predmeta) i prosjeënu ocjenu koju je ostvario u toj kalendarskoj godini (stupac nazvati prosjek_ocjena).
+
+SELECT student.JMBAG, imeStudent, prezimeStudent, COUNT (upisanPredmet.ocjena) AS polozio_predmeta, AVG(upisanPredmet.ocjena) AS prosjek_ocjena
+FROM student, upisanPredmet
+WHERE student.JMBAG = upisanPredmet.JMBAG
+AND YEAR(upisanPredmet.datumOcjena) = 2012
+GROUP BY student.JMBAG, imeStudent, prezimeStudent
+HAVING MIN(ocjena) > 2;
+-------------------------------------------------------
+Ispisati jmbag, ime, prezime, ifru predmeta, ocjenu i ak.godinu za svakog studenta i predmet za koje vrijedi da je student akademske godine 2012/2013 iz tog
+predmeta dobio ocjenu 1 I postoji bar jo jedan predmet iz kojeg je taj student te Iste akademske godine doblo istu ocjenu. Ispisati samo one studente Ijl je ukupni
+prosjek ocjena ved od 3.1.
+Napomena: U prosjek ulaze samo pozitivne ocjene.
+
+SELECT student.JMBAG, student.imeStudent, student.prezimeStudent, upisanPredmet.sifPredmet, upisanPredmet.ocjena , upisanPredmet.akGodina
+FROM student JOIN upisanPredmet ON student.JMBAG = upisanPredmet.JMBAG
+WHERE upisanPredmet.akGodina = 2012 AND upisanPredmet.ocjena = 1 AND EXISTS (SELECT up2.JMBAG FROM upisanPredmet AS up2 
+WHERE up2.JMBAG = student.JMBAG AND up2.ocjena <> 1 GROUP BY up2.JMBAG 
+HAVING AVG(up2.ocjena) > 3.1)
+AND EXISTS (SELECT * FROM upisanPredmet AS up2 JOIN student as st2 ON st2.JMBAG = up2.JMBAG
+WHERE st2.JMBAG = student.JMBAG AND up2.sifPredmet <> upisanPredmet.sifPredmet AND up2.ocjena = 1 AND up2.akGodina = upisanPredmet.akGodina )
+--------------------------------------------------------
+Za svakog nastavnika čije ime počinje slovom 'A' ili slovom 'M' a kojem je radni odnos započeo 2001 godine od siječnja do srpnja te godine, ispisati šifru nastavnika i inicijale imena i prezimena (u formatu I.P.). 
+Za one nastavnike koji su predavali predmete u akademskoj godini 2011/2012. dodatno ispisati oznake grupa kojima su nastavnici predavali predmete, inače ispisati NULL vrijednost. 
+Dodatno, ispisati i naziv predmeta, ako se predmet predavao više od 5 sati tjedno, u suprotnom ispisati NULL vrijednost
+
+SELECT nastavnik.sifNastavnik, 5UBSTRING(imenastavnik FROM 1 FOR 1) || '.' || SUBSTRING(prezimeNastavnik FROM 1 FOR 1) || '.' AS inicijali, predmetGrupa.ozngrupa, predmet.nazpredmet
+FROM nastavnik LEFT OUTER JOIN predmetGrupa
+ON (nastavnik.sifNastavnik = predmetGrupa.sifNastavnik) AND (predmetGrupa.akGodina = 2011)
+	LEFT OUTER JOIN predmet
+ON(predmetGrupa.sifPredmet = predmet.sifPredmet) AND (predmet.ukBrSatiTjedno > 5)
+WHERE (imeNastavnik LIKE 'A%' OR imeNastavnik LIKE 'M%') AND (datumZaposlenod BETWEEN '1.1.2001.' AND '30.6.2001');
+--------------------------------------------------------------------------------------------------------------
+Za svaki predmet ispisati naziv predmeta, ukupan broj pozitivno ocijenjenih upisa predmeta te ukupan broj neocijenjenih upisa tog predmeta.
+
+SELECT nazpredmet,
+	(SELECT count(jmbag)
+		FROM upisanpredmet
+        	WHERE predmet.sifpredmet = upisanpredmet.sifpredmet
+		AND ocjena > 1) AS pozitivni,
+	(SELECT count(jmbag)
+		FROM upisanpredmet
+		WHERE predmet.sifpredmet = upisanpredmet.sifpredmet
+		AND ocjena=1) AS negativni
+from predmet;
+--------------------------------------------
+Za sve studente čije prezime počnje Slovom ”J” i imepoiinjenekimodsIova “D” iii “T” koji nisu najmladi (datum rodenja je manji od najveceg datuma rodenja svih studenata) ispisati IMBAG, ime i prezime te koliko još pored njega ima studenata rođenih na isti dan. Zapise u rezultatu poredati po prezimenu, a zatim po imenu studenata.
+
+Dakle otkrio sam glupav razlog, treba gledat da ne brojiš i samog tog studenta kao da ima rođendan na isti dan. Odnosno zbroji sve koji imaju tada dan rođenda i oduzmi tog našeg glavnog protagonista.
+
+SELECT JMBAG, imeStudent, prezimeStudent, 
+CASE((SELECT COUNT(second.JMBAG) FROM student AS second WHERE second.datumRod=student.datumRod)-1)
+WHEN -1 THEN 0
+ELSE ((SELECT COUNT(second.JMBAG) FROM student AS second WHERE second.datumRod=student.datumRod)-1)
+END AS isti_datum
+FROM student
+WHERE prezimeStudent LIKE "J%" AND (imeStudent LIKE "D%" OR imeStudent LIKE "T%") AND datumRod<(SELECT MAX(datumRod)FROM student)
+ORDER BY prezimeStudent, imeStudent;
+-------------------------------------------------
+Ispisati jmbag studenta, ime studenta, prezime studenta i nazive svih predmeta iz kojih je student dobio ocjenu 5. Ukoliko student iz niti jednog predmeta nije dobio ocjenu 5 za naziv predmeta ispisati NULL vrijednost. Uzeti u obzir samo one studente kojima prezime počinje slovom R.
+Pretpostavlja se da za svaki upisani predmet postoji odgovarajući zapis u relaciji predmet.
+
+SELECT student.jmbag,
+student.imeStudent,
+student.prezimeStudent,
+predmet.nazPredmet
+FROM student left join upisanpredmet ON student.jmbag=upisanpredmet.jmbag and upisanpredmet.ocjena=5
+left join predmet ON upisanpredmet.sifpredmet=predmet.sifpredmet
+WHERE lower(student.prezimestudent) LIKE 'r%';
+
+SELECT student.jmbag,
+student.imeStudent,
+student.prezimeStudent,
+predmet.nazPredmet
+FROM student left join upisanpredmet ON student.jmbag=upisanpredmet.jmbag and upisanpredmet.ocjena=5
+left join predmet ON upisanpredmet.sifpredmet=predmet.sifpredmet
+WHERE lower(student.prezimestudent) LIKE 'r%';
+---------------------------------------------------
+"Svim grupama kojima je kao predavač evidentirana nastavnica Ines Majetić postaviti umjesto nje nastavnicu Danijelu Sajko.
+Nakon toga iz relacije Nastavnik obrisati nastavnicu Ines Majetić.
+Općenita napomena: višestruke SQL naredbe odvajati znakom ';'. "
+
+UPDATE predmetGrupa
+SET sifNastavnik=(SELECT sifNastavnik FROM nastavnik WHERE imeNastavnik='Danijela' AND prezimeNastavnik='Sajko')
+WHERE sifNastavnik=(SELECT sifNastavnik FROM nastavnik WHERE imeNastavnik='Ines' AND prezimeNastavnik='Majetić') ;
+
+DELETE FROM nastavnik
+WHERE imeNastavnik='Ines' AND prezimeNastavnik='Majetić'
+---------------------------------------------------
+Za svaku A-dvoranu iji Je kapacitet manji iii jednak kapacitetu najrnanje D-dvorane (tj. D-dvorane s najmanjlm kapacitetom) ispisati oznaku dvorane,
+kapacitet broj razIiitih predmeta iz kojlh se u toj dvoranl odvija nastava u akademskoj godinl 2010.12011. (ukIjuitI u Ispis i dvorane u kojima se te
+godine nastava uope ne dri). Zapise poredati silazno p0 broju predmeta, a one s istim brojem predmeta prema oznacl dvorane uzlazno.
+
+SELECT dvorana.oznDvorana, dvorana.kapacitet, COUNT(DISTINCT predmetGrupa.sifPredmet) AS brojPredmeta
+FROM dvorana LEFT JOIN predmetGrupa ON dvorana.oznDvorana = predmetGrupa.oznDvorana AND predmetGrupa.akGodina = 2010 
+WHERE dvorana.oznDvorana LIKE 'D%' AND dvorana.kapacitet < 0.5*(SELECT MAX(dvorana.kapacitet) FROM dvorana WHERE dvorana.oznDvorana LIKE 'A%')
+GROUP BY dvorana.oznDvorana, dvorana.kapacitet
+ORDER BY brojPredmeta DESC, dvorana.oznDvorana ASC
+-----------------------------------------------------
+Za svako mjesto kojem naziv poinje slovom “M” ispisati naziv mjesta, naziv upanije u kojoj se mjesto nalazi, te JMBAG i datum rodenja studenata koji su
+u torn mjestu rodeni, a rodeni su radnim danom (pon - pet). U ispisu se moraju pojaviti i podaci o mjestima za koja nema takvih studenata. U torn sIuaju za
+JMBAG I datum rodenja Ispisatl NULL vrljednost.
+
+SELECT DISTINCT nazMjesto,nazZupanija,jmbag,datumrod
+FROM student RIGHT JOIN mjesto
+ON student.pBrRodStudent=mjesto.pBr AND weekday(datumrod) BETWEEN 1 AND 5
+JOIN zupanija
+ON zupanija.sifZupanija= mjesto.sifZupanija
+WHERE nazMjesto LIKE 'M%'
+-------------------------------------------------
+Potrebno je napraviti analizu kako bi se promijenile plaOe aktivnih nastavnika ako bi im se koeficijent zaokru2io. Naime, plaOa nastavnika se
+odreduje kao koeficijent * 1000 kn.
+Tako, na primjer, nastavnik s koeficijentom:
+• 5.3 ima plaOu 5,300 kn
+• 5.6 ima plaOu 5,600 kn.
+Ukoliko bi se zaokru2ili koeficijenti:
+• prvi nastavnik bi mao plaáu 5,000 kn (rast=0,0, pad=300,0)
+• drugi nastavnik bi imao pladu 6,000 kn (rast=400,0, pad=0,0)
+Napisati upit koji Oe vratiti ime, prezime, rast i pad za sve nastavnike koji su joE zaposleni (datumzaposlendo nije postavijeno).
+Atributi rast i pad se definiraju na sijeded nadn:
+• rast - iznos (apsolutna vrijednost) za koji óe porasti plaóa nastavnika, ako pIaa ne raste onda 0
+• pad - iznos (apsolutna vrijednost) za koji óe pasti plaóa nastavnika, ako pIaa ne pada onda 0
+Npr. primjer rezultata:
+
+SELECT nastavnik.imenastavnik AS ime, nastavnik.prezimenastavnik AS prezime,
+	CASE 
+		WHEN
+			(nastavnik.koef*1000 - ( SELECT ROUND(nastavnik.koef)*1000
+				FROM nastavnik AS nastavnik2
+				WHERE nastavnik.sifNastavnik = nastavnik2.sifNastavnik)) < 0 THEN ABS((nastavnik.koef*1000 - ( SELECT ROUND(nastavnik.koef)*1000
+				FROM nastavnik AS nastavnik2
+				WHERE nastavnik.sifNastavnik = nastavnik2.sifNastavnik)))
+		ELSE 0 
+	END AS rast ,
+	CASE 
+		WHEN
+			(nastavnik.koef*1000 - ( SELECT ROUND(nastavnik.koef)*1000
+				FROM nastavnik AS nastavnik2
+				WHERE nastavnik.sifNastavnik = nastavnik2.sifNastavnik)) > 0 THEN ABS((nastavnik.koef*1000 - ( SELECT ROUND(nastavnik.koef)*1000
+				FROM nastavnik AS nastavnik2
+				WHERE nastavnik.sifNastavnik = nastavnik2.sifNastavnik)))
+		ELSE 0 
+	END AS pad 
+FROM nastavnik
+WHERE nastavnik.datumZaposlenDo IS NULL;
+---------------------------------------------
+Ispisati oznaku i kapacitet svih dvorana kojima oznaka poinje slovom “A”. Za one dvorane u kojima se izvodila nastava za grupe kojima oznaka grupe poànje slovom C, ispisati uz podatke o dvorani
+i akademsku godinu kada se ta nastava odvijala, u suprotnom ispisati NULL vrijednost. Dodatno, ispisati i naziv predmeta iz kojeg se odvijala takva nastava, ukoliko je predmet nosio 5 ECTS bodova,
+inae ispisati NULL vrijednost. Iz ispisa izbaciti duplikate.
+
+SELECT DISTINCT dvorana.*, 
+       pomocna.akGodina,
+       pomocna.nazPredmet
+FROM dvorana LEFT JOIN (SELECT * FROM predmetGrupa LEFT JOIN predmet 
+                                 ON predmetGrupa.sifPredmet = predmet.sifPredmet AND predmet.ECTSbod = 5) AS pomocna
+         ON dvorana.oznDvorana = pomocna.oznDvorana AND dvorana.oznDvorana LIKE 'A%' AND pomocna.oznGrupa LIKE 'C%'
+         WHERE dvorana.oznDvorana LIKE 'A%';
+-----------------------------------------------------
+Ispisati JMBAG, prezime I ime studenta te prosjenu ocjenu poIoenih predmeta sa iframa iz skupa {2, 35, 38, 42, 45} all samo za one studente ija je prosjena ocjena iz navedenih predmeta u zatvorenom intervalu [2.5, 3.0].
+Stupce rezultata imenovati u skiadu sa sijedecim predlokom:
+FjMBAG prezirneStudent1neStuden[jrosjek E!
+I05550041221IVuinovi lrKristina 12.75
+055500 1456]IMalna r
+IlIva n 112,66666666666666666666666666671
+ii...
+ii... II...
+U prosjek ocjena ne ulaze negativne ocjene.
+Prikazani sadraj rezultata je ilustrativan I ne mora se podudarati sa stvarnim rezultatom.
+Poredak zapisa u rezultatu nije bitan.
+
+select	student.jmbag,
+	student.prezimestudent,
+	student.imestudent,
+	avg(upisanpredmet.ocjena) as prosjek
+from student
+	join
+	upisanpredmet
+	on student.jmbag = upisanpredmet.jmbag
+where ocjena > 1 and sifpredmet in (2,35,38,42,45)
+group by student.jmbag, prezimestudent, imestudent
+having avg(ocjena) between 2.5 and 3.0
+-------------------------------------------
+Izbrisati podatke o nastavnicima koji rade u organizacijskoj jedinici sa sifrom 36 i nisu nikada predavali u niti jednoj grupi.
+
+DELETE FROM nastavnik
+WHERE sifnastavnik NOT IN(SELECT sifnastavnik FROM predmetgrupa)
+------------------------------------------------------
+Ispisati maticni broj, prezime i ime studenata cija je prosjecna ocjena iz predmeta cija je sifra predmeta {12, 24, 35, 36}(lupam bezveze) u intervalu [3.50, 3.80].
+U prosjek ocjena ulaze samo pozitivne ocjene.
+
+SELECT student.jmbag, prezimestudent, imestudent, avg(ocjena)
+
+FROM student JOIN upisanpredmet on student.jmbag=upisanpredmet.jmbag
+
+WHERE sifpredmet IN (12, 24, 35, 36) AND ocjena>1
+
+GROUP  BY  student.jmbag, prezimestudent, imestudent
+
+HAVING AVG(ocjena) BETWEEN 3.5 AND 3.8
+-----------------------------------------------
+Ispisati razlicite datume u kojima su rodjeni studenti izmedju datuma 1.7.1989 i 1.12.1990.(lupam opet) te ispisati broj studenata rodjeno na taj datum.
+
+SELECT datumrod, COUNT(jmbag) AS broj_rodjenih
+FROM student
+WHERE datumrod BETWEEN MDY(7,1,1989) AND MDY(12,1,1990)
+GROUP BY datumrod
+-----------------------------------------
+Ispisati JMBAG, prezime i ime studenta te prosječnu ocjenu položenih predmeta sa šiframa iz skupa {12,20,25,26} ali samo za one studente čija je prosječna ocjena iz navedenih predmeta u zatvorenom intervalu [4.5, 5.0]. 
+Stupce rezultata imenovati u skladu sa sljedećim predloškom:
+
+bla bla
+
+U prosjek ocjena ne ulaze negativne ocjene.
+Prikazani sadržaj rezultata je ilustrativan i ne mora se podudarati sa stvarnim rezultatom. 
+Poredak zapisa u rezultatu nije bitan.
+
+SELECT student.JMBAG, prezimeStudent, imeStudent, AVG(Ocjena) AS prosjek
+FROM student JOIN upisanPredmet ON student.jmbag = upisanPredmet.jmbag
+WHERE sifPredmet IN (12, 20, 25, 26) AND (ocjena>1)
+GROUP BY student.JMBAG, prezimeStudent, imeStudent
+HAVING AVG(ocjena) BETWEEN 4.5 AND 5.0
+---------------------------------------------
+Postaviti koeficijent na 0 svim nastavnicima koji su zaposleni u organizacijskoj jedinici sa šifrom 36, a nisu nikad držali nastavu niti jednoj grupi studenata.
+Općenita napomena: višestruke SQL naredbe odvajati znakom: ";".
+
+UPDATE nastavnik
+SET koef = 0
+WHERE siforgjed = 36
+AND sifnastavnik NOT IN (SELECT sifnastavnik FROM predmetGrupa)
+---------------------------------------------
+Za akademsku godinu 2011/2012 ispisati akademsku godinu, šifru predmeta za koje su definirane nastavne grupe te broj nastavnih grupa definiranih za taj predmet u toj akademskoj godini.
+
+SELECT akGodina, predmet.sifPredmet, COUNT(oznGrupa)
+FROM predmet join predmetGrupa ON predmet.sifpredmet = predmetGrupa.sifpredmet
+WHERE akGodina = 2011
+GROUP BY akgodina, predmet.sifPredmet
+-------------------------------------------
+u tablicu Orgjed treba upisati nove podatke:
+"Sveučilište u Dubrovniku" sa šifrom 331 (bubam napamet ove podatke,ne sjećam se točno kako su išli)
+"Hrvatsko katoličko društvo" sa šifrom 542
+"Odjel za humanističke znanosti" sa šifrom 258
+
+Sveučilište u Split (šifra:9999) je nadređena jedinica Odjelu za humanističke znanosti, dok ostali novi zapisi nemaju pridjeljenje nadređene jedinice.
+
+INSERT INTO orgjed (nazorgjed , siforgjed) VALUES ('Sveuciliste u Dubrovniku', 331);
+i tak i za druga dva, i na kraju
+
+UPDATE orgjed SET sifnadorgjed = 9999 WHERE siforgjed = 258;
+----------------------------------------------------------------
+EDIT: kako postaviti uvjet da je između 2 datuma (gori navedena) ukoliko nemam godinu?
+
+WHERE (MONTH(student.datumRod) = 4 AND DAY(student.datumRod) BETWEEN 15 AND 30) OR
+(MONTH(student.datumRod) = 5 AND DAY(student.datumRod) BETWEEN 1 AND 10)
+---------------------------------------------
+Ispisati podatke o praznim predmetnim grupama iz akademske godine 2010/2011 (ispisivati: naziv predmeta, oznaku grupe, akademsku godinu i ifru nastavnika). Prazne predmetne grupe su one predmetne grupe
+kojima (te akademske godine) nije bio pridijeijen niti jedan student. U obzir uzeti samo one predmete kojima je te akademske godine bib pridijeijeno vie od jednog nastavnika.
+Primjer rezultata:
+‘fnaPredmet ‘[oznjru pa akgIina sifnastavnik
+ILogi&a algt:r jD-B2 j2010 j570
+Logika algebra ID-B3 12010 1590
+Ivjetine komuniciranjaID-A5 12010 1480
+[. 1. 1.. 1
+Turnaãenje prvog retka rezultata: akadernske god/ne 2010/2011 fe definirano da grupi “D-82° nastavnik sa ifrorn 570 predafe predmet TMLogicka algebra”, all n/ti jedan student n/fe blo rasporeden u tu grupu.
+Takoder, Logiãku algebru je 2010/2011 predavao barern jo jedan nastavnik os/rn onog sa sifrorn 570.
+
+SELECT predmet .nazPredinet, predmetGrupa. oznSrupa, predmetGrupa. a]cGodina, predmetGrupa . sifNastavni]c
+FROM pretet JOIN predmetGrupa ON predmet.sifFredmet = predmet3rupa.sifFredmet
+WHERE predmetGrupa.aicGodlna = 2010
+AND predrnetGrupa.oznGrupa NOT IN ( SELECT DISTINCT czn3rupa
+FROM upisanPredmet
+WHERE akOodina = 2010 MID upisanPredmet.sifPredmet = predznet.sifPredmet
+AND predmet.sifPredmet IN ( SELECT predmetGrupa.aifPredmet
+FROM predmetOrupa
+WHERE predmetGrupa.akGodina = 2010
+GROUP BY predmetGrupa.sifPredmet
+HAVING COtJ1IT (DISTINCT sifllastavnik) > 1
+------------------------------------------------
+Organizacijskim jedinicama direktno podrecienim Fakultetu elektrotehnike i raunarstva (ifra 36) kojima naziv poinje s “Zavod” iii “Grupa”
+promijeniti naziv tako da poinje s “Centar” (npr. “Zavod za elektrometriju” je potrebno promijeniti u “Centar za elektrometriju”, odnosno “Grupa za
+elektrometrlju” je potrebno promijeniti u “Centar za elektrometrlju”).
+Obrisati organizacijske jedinice koje su direktno podredene organizacijskim jedinicama sa iframa 100012 1100017.
+Zatim obrisati i organizacijske jedinice sa iframa 100012 i 100017.
+Organizacijska jedinica 01 je direktno podredene organizacijskoJ jedinici 02 ako je u hijerarhijskom stablu vor 02 roditelj voru 01.
+Npr.
+02
+1-01
+1-05
+1-06
+1-03
+Organizacijske jedinice 01 i 03 su direktno podredene organizacijskoj jedinici 02, all organizacijska jedinica 05 flue direktno podredena
+organizacijskoj jedinici 02 (vet 01).
+Openita napomena: viestruke SQL naredbe odvajati znakom: “;“.
+
+UPDATE orgjed
+	SET nazorgjed = "Grupa" || SUBSTRING ( nazorgjed FROM 6 )
+	WHERE SUBSTRING ( nazorgjed FROM 1 FOR 5) = 'Zavod';
+
+DELETE FROM orgjed
+	WHERE sifnadorgjed = 100012 sifnadorgjed = 100017;
+
+DELETE FROM orgjed
+	WHERE siforgjed = 100012 OR siforgjed = 100017;
+-------------------------------------------------------------------
