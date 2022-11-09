@@ -1,0 +1,25 @@
+Odredjivanje granice smetnje primjenom bistabila
+
+VDD  +  0  DC 1.8V
+VS   S  0
+
+ES1   A  Y  S  0  1   
+ES2   X  B  S  0  1
+
+X1   A  X  +  inv
+X2   B  Y  +  inv
+
+.SUBCKT  inv  u  i  +
+Mn   i  u  0  0  n1 L=0.2u W=0.3u
+Mp   i  u  +  +  p1 L=0.2u W=1.2u
+.ENDS inv
+   
+.include dms.lib
+
+.nodeset  V(Y)=0  V(X)=1.8V
+
+.DC VS 0  1.8V  0.001V
+
+.probe
+
+.end
