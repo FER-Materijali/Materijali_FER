@@ -1,0 +1,79 @@
+%1a)DTFT
+w=[-pi:0.01:pi];
+x1=10*cos(7./2.*pi.*w)+4*cos(3/2.*w);
+plot(w,x1,'b');title('10*cos(7./2.*pi.*w)+4*cos(3/2.*w)');
+xlabel
+hold on;
+
+x2=10*cos(7./2.*pi.*w)
+plot(w,x2,'r');title('10*cos(7./2.*pi.*w)');
+hold on;
+
+x3=4*cos(3/2.*w);
+plot(w,x3,'g');title('4*cos(3/2.*w)');
+hold on;
+grid
+
+
+
+X = fourier(x1)
+simplify(X)
+pretty(X)
+
+%1b)DTF N=8
+N = 8;  % broj uzoraka 
+ n = [0 1 2 3 4 5 6 7]; 
+ x = [5 0 2 0 0 2 0 5];  % zadani signal 
+ DFT = fft(x,N);  % racunamo DFT 
+ amplituda = abs(DFT);  % racunamo amplitudu 
+ stem(n, amplituda); 
+ faza = phase(DFT);   % racunamo fazu 
+ stem(n,faza); 
+ 
+ stup=faza.*180./pi
+ 
+ %2
+ 
+ n=[0 1 2 3] 
+ x=4/pi*sin(0.285.*pi.*n)+4/(pi*3)*sin(0.857*pi.*n)+4/(pi.*5).*sin(0.428.*pi.*n)+4/(pi*7)*sin(pi*n)
+ 
+ 
+ D=[1 1 1 1; 1 -i -1 i; 1 -1 1 -1; 1 i -1 -i]
+ A=[0; 1.4279; 1.02; 0.768]
+ k=D*A
+ abs(k)
+ faza = phase(k)
+ 
+ 
+ 
+ %3b)
+ 
+ x1=[3 5 1 4 7 4 5 2];
+ x2=[4 4 5 2];
+ X3=[3 5 1 4];
+ 
+ %racunanje DTF8
+ D=[1 1 1 1; 1 -i -1 i; 1 -1 1 -1; 1 i -1 -i];
+ k=[0; 1; 2; 3];
+
+ a1=[3; 4; 2; 8]; % x[2n]
+ a2=[6; 6; 1; 2]; % x[2n+1]
+ f=D*a1
+ g=D*a2
+ h=exp(-i.*pi/4.*k); %W 0-3
+ dft1=f+g.*h
+ % za X(4)...
+ k=[4; 5; 6; 7];
+ h=exp(-i.*pi/4.*k); %W 4-7
+ dft2=f+g.*h
+ 
+amp1= abs(dft1)
+ amp2=abs(dft2)
+ 
+ faza1 = phase(dft1)
+ faza2 = phase(dft2)
+ 
+ %3c)
+ D=[1 1 1 1; 1 -i -1 i; 1 -1 1 -1; 1 i -1 -i];
+ x=[2+3i; 1+6i; 8+4i; 2+6i];
+ D*x
