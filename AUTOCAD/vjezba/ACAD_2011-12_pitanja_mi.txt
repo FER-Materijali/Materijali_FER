@@ -1,0 +1,197 @@
+1. Navedite omjer stranica formata crteža te dimenzije formata A3 i A4.
+jedan naprema korijen iz 2, A0 je 1m kvadratni a sve nize su polovicne mjere od toga
+
+2. Što je sustav referentne mreže i zašto se koristi?
+može biti ucrtan radi lakšeg pronalaženja detalja, unošenja izmjena i slièno
+
+3. Što je zaglavlje crteža i koje podatke sadrži?
+uokvireni prostor u donjem desnom kutu crteža
+služi za upisivanje osnovnih podataka potrebnih za identifikaciju i upotrebljavanje crteža
+naziv crteža
+mjerilo. po potrebi
+broj crteža ili slièno
+naziv tvrtke u kojoj je nacrt izraðen
+imena i potpise osoba odgovornih za crtez
+
+4. Što je mjerilo crteža i koje mjere se unose u crtež?
+mjerilo crteža je podatak koji nam govori u kojem odnosu su velièine na crtežu u odnosu na stvarnost, u crtež se uvijek unose stvarne mjere bez obzira crta li se predmet u prirodnoj velièini, smanjeno ili uveæano
+
+5. Koje su vrste crta propisane normama?
+široka crta
+uska crta
+isprekidana crta
+široka crta-toèka
+uska crta-toèka
+crta slobodnom rukom
+
+6. Što se crta širokom crtom?
+široka crta - vidljivi bridovi i konture objekta ili predmeta
+- široka crta-toèka tok zamišljenog presjeka
+
+7. Što se crta uskom crtom?
+uska crta sporedni pomocni dijelovi crteza, kotne ili pomocne crte, šrafure, pokazne crte
+
+8. Što se crta isprekidanom crtom?
+isprekidana crta nevidljivi bridovi i zaklonjeni bridovi
+
+9. Što se crta uskom crtom i toèkom?
+uska toèka-crta simetrale predmeta, sredipnjice
+
+10. Što je nevidljivi brid?
+nevidljivi brid predmeta je brid koji stvarno postoji, ali se u nekoj projekciji ne vidi pa se crta isprekidanom crtom
+
+11. Kakvo može biti tehnièko pismo?
+upsravno
+koso nagib 75°
+normalno 
+usko 
+široko
+
+12. Što je ortogonalna projekcija i koja su osnovna pravila?
+projekcija je prikaz predmeta na jednu ravninu, ortogonalna projekcija zadovoljava najbolje paralelnost i jednakost bridova te jednakost kuteva u prostoru i projekciji
+osnovna pravila: 
+predmet se nalazi izmeðu ravnine crtanja i crtaèa, 
+zrake projiciranja su okomite na ravninu crtanja, 
+u projekciji se crta samo onaj dio predmeta koji se vidi u smjeru gledanja
+
+13. Koji je raspored projekcija nacrt, bokocrt i tlocrt?
+prvo bi trebao iæi nacrt pa bokocrt pa tlocrt
+
+14. Što je kotiranje?
+proces unošenja mjera oredmeta na tehnièim crtežima
+
+15. Što je kotna crta?
+mjernica (na njoj se unosi mjera predmeta u mm)
+
+16. Što je pomoæna kotna crta?
+vertikalne crte na kraju kotne crte koje oznaèavaju poèetak i kraj kotne crte
+
+17. Koje su vrste presjeka?
+puni, ako se cijeli predmet sijeèe na dvije polovice
+polovièan, ako se sijeèe 1/4 predmeta
+djelomièan, ako se sijeèe manji dio predmeta
+zakrenut, ako se sijeèe popreèno, a crta se zakrene za 90°
+
+18. Što se oznaèava šrafurom?
+predmet u presjeku (crta se uskim crtama)
+
+19. U kojem programskom alatu se izvode vježbe?
+autoCAD 2012
+
+20. Na koji naèin se unose naredbe u AutoCAD-u?
+odabirom naredbe iz alatne trake
+komandnom linijom
+koristeæi menu
+
+21. Što je grid, èemu služi i kako se ukljuèuje? U izborniku Snap and Grid objasnite podešenja Grid spacing.
+naredba grid je skup ravnomjerno rasporeðenih linija koje služe kao vizualne reference udaljenosti, mreža takoðer uobièajeno pokazuje granice crteža
+
+22. Èemu služi Adaptive grid?
+adaptive grid omoguæava automatsko mijenjanje razmaka izmeðu linija mreže
+
+23. Èemu služi naredba snap, kako se ukljuèuje? U izborniku Snap and Grid objasnite podešenja Snap spacing.
+naredba snap služi na za prianjanje kursora na referentnu mrežu, kako bi nam olakšao preciznije crtanje, ukljuèuje se kraticom F9 ili klikom na ikonu, snap spacing nam diktira na kolikim intervalima æe nam kursor prianjati za mrežu
+
+24. Kada se koristi naredba polyline i pokažite njezinu primjenu!
+polyline koristimo za crtanje povezanih linija
+
+25. Objasnite naredbe polar snap i polar tracking. Upotrebom naredbi polar snap i polar tracking nacrtajte kocku.
+polar snap se koristi u kombinaciji sa nerodbom polar tracking za crtaje linija odreðene duljine pod odreðenim kutem
+
+26. Objasnite naredbu osnap. Pokažite primjenu naredbe osnap s opcijom midpoint.
+osnap se koristi ako želimo crtati s poèetkom u odreðenim dijelovima postojeæih objekata
+
+27. Èemu služe slojevi (layers) u AutoCAD-u?
+slojevi nam služe za razvrstavanje razlièitih dijelova nekog nacrta u smislene cjeline
+
+28. Napravite novi sloj s imenom kruznica, odaberite sivu boju i postavite sloj aktivnim. Nacrtajte kružnicu i tada iskljuèite sloj kruznica.
+-praktièni primjer-
+
+29. Napravite novi sloj s imenom kvadrat, odaberite crvenu boju, crtkani tip linije i postavite sloj aktivnim. Upotrebom naredbe rectang nacrtajte kvadrat i nakon toga iskljucite sloj kvadrat.
+-praktièni primjer-
+
+30. Napravite novi sloj trokut, odaberite plavu boju i debljinu linije 0.3 mm i postavite sloj aktivnim. Upotrebom naredbe polyline nacrtajte trokut i nakon toga iskljucite sloj trokut.
+-praktièni primjer-
+
+31. Kako odabrati stvarni prikaz debljina linija?
+kliknemo na ikonicu u donjem dijlu programa show/hide linewight
+
+32. Nacrtajte proizvoljni oblik i pokažite kotiranje jednog brida.
+-praktièni primjer-
+
+33. Nacrtajte kružnicu i kotirajte njezin promjer.
+-praktièni primjer-
+
+34. Nacrtajte kružnicu i kotirajte njezin polumjer.
+-praktièni primjer-
+
+35. Pokažite gedje se mijenjaju postavke stila kotiranja.
+-praktièni primjer-
+
+36. Promjenite visinu kotnih brojeva.
+-praktièni primjer-
+
+37. Što je layout?
+layout je virtualni papir koji se uobièajeno sastoji od jednog pogleda na crtež (viewport)
+
+38. Kreirajte novi layout, podesite printanje u pdf, format papira ISO Expand A4, margine postavite na nulu, postavite sastavnicu u layout i postavite željeni viewport. Postavite mjerilo na 1:1, iskljuèite mrežu, izanite iz viewporta i uklonite rub viewporta iz printanja.
+-praktièni primjer-
+
+39. Objasnite naredbu fillet na proizvoljno odabranom primjeru.
+fillet koristimo za zaobljavanje kuteva lukom kruznice odreðenog radijusa
+
+
+40. Objasnite naredbu revolve na proizvoljno odabranom primjeru.
+revolve koristimo kako bi iz 2D objekta izvulki 3D objket oko nekog oznaèenog brida
+
+
+41. Objasnite naredbu chamfer na proizvoljno odabranom primjeru.
+chamger koristimo ako od jednog kuta(brida) želimo stvoriti dva nova kuta(brida)
+
+
+42. Objasnite naredbu region na proizvoljno odabranom primjeru.
+stvara arbitraran 2D objekt od oznacenih 1D objekata
+
+
+43. Objasnite naredbu extrude na proizvoljno odabranom primjeru.
+extrude koristimo za izvlaèenje nekog objekta u smjeru nekog pravca, koristi se za kreiranje 3D objekata
+
+
+44. Objasnite naredbu union na proizvoljno odabranom primjeru.
+union koristimo akd dva solidna objekta želimo spojiti u jedan
+
+
+45. Objasnite naredbu presspull na proizvoljno odabranom primjeru.
+presspull koristimo za izvlaèenje 2D objekata u 3D objekte na plohama postojecih 3D objekata
+
+
+46. Èemu služi naredba array?
+array koristimo kako bi odjednom nacrtali veliki broj istovjetnih objekata
+
+47. Nacrtajte jedan kvadrat i naredbom array stvorite polje kvadrata. Podesite broj stupaca na 5 i razmak menu stupcima na 50. Podesite broj redaka na 3 i razmak menu recima na 50.
+-praktièni primjer-
+
+
+48. Naredbom array stvorite polje kvadrata. Nakon toga svim kvadratima upišite kružnicu.
+-praktièni primjer-
+
+
+49. Naredbom array stvorite polje kvadrata i jedan kvadrat zamijenite trokutom.
+-praktièni primjer-
+
+
+50. Objasnite naredbu radial array na proizvoljno odabranom primjeru.
+koristimo za ponavljanje nekog objekta oko neke kruznice
+
+
+51. Naredbom radial array nacrtajte jednoliko rasporeðene kvadrate oko kružnice.
+-praktièni primjer-
+
+
+52. Objasnite naredbu path array na proizvoljno odabranom primjeru.
+path array koristimo za ponavljanje objekata uzduž neke proizvoljne linije
+
+
+53. Nacrtajte polje kružnica koje prati proizvoljnu krivulju.
+-praktièni primjer-
+
