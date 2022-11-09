@@ -1,0 +1,79 @@
+CT		EQU 0FFFF0000
+CTLR	EQU 0FFFF0004
+CTBS	EQU 0FFFF0008
+CTEND	EQU 0FFFF000C
+
+DMASRC	EQU 0FFFF1000
+DMADST	EQU 0FFFF1004
+DMACNT	EQU 0FFFF1008
+DMACR	EQU 0FFFF100C
+DMASTRT	EQU 0FFFF1010
+DMAACK	EQU 0FFFF1014
+
+BVJ		EQU 0FFFFFFFC
+	
+		ORG 0
+		MOVE 10000, R7 ; inicijaliziramo SP
+		JP GLAVNI
+		
+		ORG 0C ; na adr 12 cijeli prekidni program
+		PUSH R0
+		PUSH R1
+		MOVE SR, R1
+		PUSH R1 ; spremamo kontekst
+		
+		STORE R0, (DMAACK) ; storamo bilo sto kao znak da smo prihvatili DMA
+		MOVE -1, R0 
+		LOAD R1, (DMADST) ; ucitamo adresu iz R1
+		STORE R0, (R1) ; i taj -1 spremimo na adresu do kud je DMA  kopirao jer tako trazi zadatak
+		LOAD R0, (BLOKOVI)	
+		ADD R0, 1, R0
+		STORE R0, (BLOKOVI) ; povecanje brojaca
+		MOVE 1, R0
+		STORE R0, (GOTOVO) 
+		
+		POP R1
+		MOVE R1, SR
+		POP R1
+		POP R0 ;obanavljamo kontekst
+		RETN ; vracamo se iz nemaskirajuceg 
+		
+GLAVNI	MOVE %B 0111, R0
+		STORE R0, (DMACR) ; namjestam upravljacku rijec
+		MOVE BVJ, R0 ; spremim adr bezuvjetne
+		STORE R0, (DMASRC) ; storam u dma source znaci od tud citam
+		MOVE %D 1000, R0 
+		STORE R0, (CTLR) ; brojac 1000 da 1000/10 MHz bude 100 mikrosek (procesor napravi 10 mil takvtova u sek, a meni treba 100 mikrosek)
+		MOVE 1, R0 
+		STORE R0, (CT) ; upisujemo rijec- oznaka brojilo broji
+		MOVE 1000, R1 ; poc adresa zadana u zadatku
+		
+BROJI	LOAD R0, (CTBS) ; citam bsb stanja
+		CMP R0, 1
+		JR_NE BROJI ; dok god nije 1 vrtimo u petlji samo da broji do 100 mikro sek
+		
+		STORE R0,(CTBS) ; resetiramo bsb stanja
+		LOAD R0, (BLOKOVI) ; provjeri koliko blokova smo upiali
+		CMP R0, 5
+		JR_NE DALJE
+		MOVE 0, R0 ; ako je 5 onda stavljamo 0 u CT i govorimo mu da ne broji vise
+		STORE R0, (CT)
+		HALT
+		
+DALJE	STORE R1, (DMADST) ; spremamo 1000 u destination
+		ADD R1, 28, R1 ; povecamo za 28 heks jer je to za sljedeci blok
+		MOVE 9, R0 ; stavljamo u R0 jer po 9 kopiramo
+		STORE R0, (DMACNT) ; 9 u brojac
+		STORE R0, (DMASTRT)	; pokrecemo kopiranje- neprekinuto
+		
+P2	LOAD R0, (GOTOVO) ; provjeravamo je li prekidni potrogram gotov
+		CMP R0, 1
+		JR_NE P2
+		
+		MOVE 0, R0
+		STORE R0, (GOTOVO) ; dok je gotov resetiramo gotovo
+		STORE R0, (CTEND) ;zdojavljujemo kraj posluzivanja
+		JP BROJI
+		
+BLOKOVI DW 0
+GOTOVO DW 0

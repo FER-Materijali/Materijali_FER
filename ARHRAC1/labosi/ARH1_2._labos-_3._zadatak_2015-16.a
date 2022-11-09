@@ -1,0 +1,74 @@
+VJ1_DATA	EQU FFFF1000
+VJ2_DATA	EQU	FFFF2000
+VJ2_B		EQU FFFF2004
+VJ3_DATA	EQU	FFFF3000
+VJ3_B		EQU	FFFF3004 ; skoci u 1 kad se trazi prekid, na to moram poslat podatak da prihvatim prekid
+VJ3_END		EQU	FFFF3008 ; saljem kad zavrsim s obradom prekida
+VJ3_HALT	EQU	FFFF300C ; jedinica omoguci rad vanjske jedinice, 0 obustavi
+
+		ORG 0
+		MOVE 10000, SP
+		JP GLAVNI
+	
+		ORG 8	; prekidni vektor
+		DW 500
+
+GLAVNI	MOVE %B 10000, SR ; dozvoljava prekid GIE zastavica
+		MOVE 1, R1
+		STORE R1, (VJ3_HALT) ; omoguci rad vanjske jednice
+		
+PETLJA	LOAD R1, (VJ2_B)
+		OR R1,R1,R1
+		JR_Z PETLJA ; probjerava spremnost VJ2
+		LOAD R2, (BROJ) ; s mem lok broj ucitam vrijednost
+		STORE R2, (VJ2_DATA) 
+		STORE R2, (VJ2_B) ; saljemo nesto na bistabil stanja da ga  resetiramo
+		LOAD R2, (BROJAC) ; kolko brojeva smo poslali na vj2
+		ADD R2,1,R2 ; raste brojac dok saljem broj
+		STORE R2, (BROJAC) ; spremam na brojac
+		JR PETLJA 
+		
+		ORG 500	; prekidni podprogram skacem na prekdni vektor
+		PUSH R3 
+		PUSH R0
+		MOVE SR, R0
+		PUSH R0 ; cuvam kontekst
+		LOAD R3, (VJ1_DATA) ; uzimamo iz vj1 koja je bevjetna
+		STORE R3, (VJ3_B) ; na bistabil stavljamo bilo kaj- prihvat prekida
+		PUSH R3 ; spremamo ucitani broj s vj1
+		CALL OBRADI ; poziv potprograma
+		
+		STORE R0, (BROJ) ; spremam rez na meme lok broj
+		ADD SP, 4, SP ; pomicem sp
+		LOAD R0, (BROJAC) ; R0 brojim koliko je do sad bilo poslano brojeva
+		STORE R0, (VJ3_DATA) ; to spremim na VJ3 jer zadatak
+		STORE R0, (VJ3_END) ; javljam kraj prekida
+		POP R0 
+		MOVE R0, SR
+		POP R0
+		POP R3 ; obanvljanje konteksta
+		RETI ; vraca se iz maskirajuceg prekida
+		
+OBRADI	PUSH R1
+		PUSH R2 ; cuavnje konteksta
+		LOAD R1,(SP+0C) ; podatak koji smo ocitali s vj1
+		ROTL R1,1,R1 ; provjeravamo je li broj jedinica jer je 2'k
+		JP_M NEG	; ako je jednica zaustavljamo program (ako je minus) 
+		ROTR R1,1,R1 ; rotiramo opet da ga vratimo kak je bil
+		MOVE 1, R2 ; stavm u 1
+		SHL R2, R1, R2 ; pomicanjem u lijevo mnozimo sa 2 R1 puta
+		MOVE R2, R0 ; premjestam rez u R0 jer u zad trazi da prek R0 vratim rez
+		POP R2
+		POP R1 ; obnavljanje konteksta
+		RET
+		
+NEG		POP R2
+		POP R1 ; obanvaljamo kontekst
+		MOVE 0, R0
+		STORE R0, (VJ3_END) ; javljam kraj prekida 
+		STORE R0, (VJ3_HALT) ; zaustavljam rad VJ
+		HALT
+
+		
+BROJAC	DW 0
+BROJ	DW 0
