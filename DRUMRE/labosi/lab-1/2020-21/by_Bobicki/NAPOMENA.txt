@@ -1,0 +1,4 @@
+Ova aplikacija napravljena je u Xamarin.Formsu, odnosno samo Android dio je implementiran.
+
+Broj dobivenih bodova: 8/10
+-2 boda skinuta su jer u vrijeme predaje nismo počeli raditi na projektu.

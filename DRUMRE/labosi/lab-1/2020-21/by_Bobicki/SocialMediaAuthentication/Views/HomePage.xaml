@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="SocialMediaAuthentication.Views.HomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    Title="Title"
+    ios:Page.UseSafeArea="true">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout BackgroundColor="#4768AD" Orientation="Horizontal">
+                <Image
+                    HeightRequest="40"
+                    Source="ic_fb"
+                    VerticalOptions="Center"
+                    WidthRequest="40" />
+
+                <StackLayout Margin="60,0,0,0" Orientation="Horizontal">
+                    <Image
+                        Margin="0,0,5,0"
+                        HeightRequest="35"
+                        Source="{Binding UserProfilePicture}"
+                        VerticalOptions="Center"
+                        WidthRequest="35" />
+
+                    <Label
+                        FontSize="16"
+                        Text="{Binding UserProfileName}"
+                        TextColor="White"
+                        VerticalOptions="Center" />
+                </StackLayout>
+
+                <Button
+                    Margin="5"
+                    Clicked="OnLogout"
+                    FontAttributes="Bold"
+                    HorizontalOptions="EndAndExpand"
+                    Text="Logout"
+                    TextColor="#4768AD"
+                    VerticalOptions="Center" />
+            </StackLayout>
+
+            <Picker
+                x:Name="artistPicker"
+                Title="Select an artist"
+                Margin="5,0,80,5"
+                SelectedIndexChanged="OnPickerSelectedIndexChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Kanye West</x:String>
+                        <x:String>Adele</x:String>
+                        <x:String>The Weeknd</x:String>
+                        <x:String>Ariana Grande</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <StackLayout Margin="10,0,0,0">
+                <StackLayout Orientation="Horizontal">
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="Artist:"
+                        TextColor="Black" />
+                    <Label
+                        FontSize="16"
+                        Text="{Binding ArtistName}"
+                        TextColor="Black" />
+                </StackLayout>
+                <Label FontSize="14" Text="{Binding ArtistUrl}" />
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="14" Text="{Binding ArtistListeners}" />
+                    <Label FontSize="14" Text="listeners" />
+                </StackLayout>
+                <ListView
+                    Margin="0,0,80,0"
+                    Header="Top five tracks:"
+                    IsEnabled="False"
+                    ItemsSource="{Binding ArtistTopTracks}" />
+            </StackLayout>
+
+            <StackLayout Margin="10,0,0,50">
+                <StackLayout Orientation="Horizontal">
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="City:"
+                        TextColor="Black" />
+                    <Label
+                        FontSize="16"
+                        Text="{Binding WeatherCity}"
+                        TextColor="Black" />
+                </StackLayout>
+                <Label FontSize="14" Text="{Binding WeatherDescription}" />
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="14" Text="Humidity:" />
+                    <Label FontSize="14" Text="{Binding WeatherHumidity}" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="14" Text="Pressure:" />
+                    <Label FontSize="14" Text="{Binding WeatherPressure}" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="14" Text="Temperature:" />
+                    <Label FontSize="14" Text="{Binding WeatherTemperature}" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="14" Text="Wind speed:" />
+                    <Label FontSize="14" Text="{Binding WeatherWindSpeed}" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

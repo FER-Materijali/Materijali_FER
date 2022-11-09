@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="SocialMediaAuthentication.Views.SocialLoginPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Margin="10"
+                FontSize="22"
+                HorizontalTextAlignment="Center"
+                Text="Please login with your Facebook account to proceed:" />
+
+            <StackLayout
+                x:Name="mainLayout"
+                Padding="20"
+                BindableLayout.ItemsSource="{Binding SocialNetworks}"
+                VerticalOptions="CenterAndExpand">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Button
+                            BackgroundColor="{Binding Background}"
+                            Command="{Binding Path=BindingContext.OnLoginCommand, Source={x:Reference mainLayout}}"
+                            CommandParameter="{Binding .}"
+                            HeightRequest="55"
+                            HorizontalOptions="CenterAndExpand"
+                            ImageSource="{Binding Icon}"
+                            Text="{Binding Name, StringFormat='Login with {0}'}"
+                            TextColor="{Binding Foreground}"
+                            VerticalOptions="FillAndExpand"
+                            WidthRequest="200" />
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

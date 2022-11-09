@@ -1,0 +1,3 @@
+Broj dobivenih bodova: 12/15
+-2 boda skinuta su jer je graf trebao biti neusmjereni, a ne usmjereni.
+-1 bod skinut je na obrani zadaće, jer nisam točno odgovorio na sve što me asistent pitao.
