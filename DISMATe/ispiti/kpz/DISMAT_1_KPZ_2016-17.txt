@@ -1,0 +1,10 @@
+1.da li je (2013 povrh 513) / 7^2 prirodan broj. objasni.
+2.a)da li postoji rjesenje 663x=55(mod 777). objasni.
+b)naði rješenje 663x=33(mod 777)
+c)koji toèno x-ovi u intervalu [-800, 2000] zadovoljavaju 663x=33(mod 777)
+
+kratka rjesenja
+1. nije prirodan broj. jer 2013! ima 333 faktora 7, a 513!*1500! ima 332
+2.a) ne jer 55 nije djeljiv s 3, a 663 i 777 jesu
+b)211+259*n
+c)[-566, -307, -48, 211, 470, 729, 988, 1247, 1506, 1765]
