@@ -1,0 +1,183 @@
+﻿01. Nacrtana šema i pitanje kaj se treba napravit s određena dva kondenzatora za niskofrekvencijsku analizu.
+02. Objasniti Millerov efekt.
+03. Nacrtana šema i trebalo izvest tau, znači samo formulu napisat.
+
+nacrtana shema (kao ona u zadacima za vježbu iz VF kod 2. zadatka(zadane vrijednosti elemenata)) i trebalo izvest Av(jw)=Uiz/Uul za niske i srednje te za srednje i visoke frekvencije
+
+1.millerov efekt
+efekt kada se kapacitet spojen između ulaznog i izlaznog kruga preslikava u ulazni krug pomnožen s iznosom naponskog pojačanja naziva se millerov efekt
+millerov teorem je jedno, millerov efekt je drugo, nemojte to mješat, efekt je samo posljedica tog teorema odnosno preslikavanja (teorem je u dodatku C na kraju skripte)
+2.zajedniči emiter-šta radimo s Cg i Ce na srednjim frekvencijama-
+kratko spajamo
+3.Tg na srednjim frekvencijama za onu nadomjesnu shemu iz labosa...
+
+- Što s kondenzatorima na srednjim frekvencijama?
+- Što se događa s emiterskom degeneracijom na niskim, a što na visokim frekvencijama?
+- Nadomjesna shema, napisati formulu za tauT.
+
+1.napisati izraze za tau konstante u slučaju strujnog pojačanja AI kod istog sklopa kao što je u 2. zadatku iz NF.pretpostavlja se da je stavljen idealni strujni izvor.
+rješenje: 
+tauCe=Ce(Re2II(Re1+(rbe+RB)/(1+hfe) ) ) ...zato što idealni strujni izvor odspojimo ,a ne kratko spojimo i u tom slučaju nam u obzir dolazi i otpor RB...
+taug=0 (nisam siguran da li 0 ili beskonačno,ja sam stavio 0),zato što odspajanjem strujnog izvora odspajamo i kond.Cg 
+2.napisati izraz za donju frekvenciju u slučaju nepostojanja dominantnog pola:
+rješenje:Wd=1/tau1 + 1/tau2...1/tau n ,strana 108 u skripti.ovdje se mora ići do n jer se odnosi na općeniti slučaj....
+
+1. graf Av0 / w
+odrediti gornju granicnu frekvenciju
+2. uul= 5+ 2sin(8t) - > tako nesto
+napisati izraz za uiz (i jos neki tekst zapamtio da pojacalo nije protufazno)
+3. max hod ulaznog napona j -3V do +3V
+koliki je max hod izlaznog napona
+
+1. graf Av0 / w
+odrediti gornju granicnu frekvenciju
+kako iz Bodeovog grafa određujemo gornju i donju graničnu frekvenciju ?
+gornja granicna frekvencija ti je ona prijelomna frekvencija na bodeovom dijagramu gdje je w NAJMANJI, isto tako za doljnju, gdje je w NAJVECI (skripta str 111)
+
+Što se događa s emiterskom degeneracijom na niskim, a što na visokim frekvencijama?
+
+zapravo te pita kaj se dogadja sa kondenzatorom Ce na tim frekvencijama. Na niskim se moze odspojiti zbog prevelike impedancije, dok je na visim kratko spojen (skripta str 98 imas mali dio samo o tome)
+
+
+prvo (2 boda) o kondenzatorima na niskim i visokim frekvencijama
+drugo (1 bod) iz frekvencijske karakteristike samo reci koji je Avo i donju granicnu frekvenciju
+
+1. I 2. Millerov efekt (str. 130 skripta) - kratko objasniti i napisati formule za cul i cizl
+- standardna shemica nacrtana
+3. Dan ulazni napon, bode slika pojacanja - izr. izraz za izlazni
+4. Bode Slika pojacanja - nadji donju frekv, i nesto na srednji frekv, pojacanje mislim
+
+1. Primjena Millerovog toerema, nacrtana shema ko u skripti i trebalo je napisati formulu za Cul i Ciz (126.str u knjizi Elektronika 2)
+2. Šta se događa sa gornjom graničnom frekvencijom s porastom naponskog pojačanja? Treba napisat da se gornja granična frekvencija smanjuje s porastom naponskog pojačanja 
+3. Na kojim frekvencijama dolazi do izražaja djelovanje kondezatora Cp iz 3. i 4. lab. vj. i zašto? Na visokim frekvencijama (napisao sam samo to i priznao mi bod)
+4. Nacrtan bodeov dijagram i trebalo je odrediti donju graničnu frekvenciju na grafu.
+
+1. iz sheme izraziti kako se preslikavaju Cb'c i Cb'e preko millerovog efekta
+2. Porastom naponskog pojacanja, gornja granicna frekvencija je veca ili manja? - manja
+3. Dana je shema pojačala sa Cg, Cp, Ce, i parazitnim kapacitetima. objasniti koji kapaciteti su aktivni na niskim/visokim frekvencijama.
+4. Bode, amplitudni, napisati Avo i donju granicnu frekvenciju. Istosmjerno je pojačalo, pa je frekv. 0
+
+1. nekakva shema sa tri kondenzatora, jedan na izlazu, jedan u emiterskom krugu, jedan na ulazu (izmedju baze i uul) i opisati kako se ponasaju na VF a kako na NF
+2. objasniti millerov efekt
+3. shema za NF (dinamika nacrtana) nekakav najjednostavniji sa bipolarnim tranzistorom i tri kondenzatora, treba izraziti vremensku konstantu za onaj na ulazu
+
+1.Nacrtana shema za VF analizu- napisat izraze za Cul i Ciz?
+2.Na kojim frekvencijama djeluje Cp iz 3. i 4. lab. vjezbe i zašto?
+3. Nacrtan bodeov dijagram i zadano Uul, izračunat Uiz?
+
+može neko malo pojasniti ova dva pitanja,ak ima ideju kak to riješiti: 
+
+1.Nacrtan bodeov dijagram i zadano Uul, izračunat Uiz? 
+
+2. Bode, amplitudni, napisati Avo i donju granicnu frekvenciju. Istosmjerno je pojačalo, pa je frekv. 0
+
+1. Iz bodeovog dijagrama očitaš pojačanje..
+i iz formule A=Uiz/Uul dobiš Uiz 
+
+2. Isto očitavaš iz bodeovog dijagrama
+
+edit: ne zaboravit pretvorit pojačanje iz dB u ovo normalno
+
+1. Shema VF, odredi Cul i Ciz (millerov teorem), poveca se naponsko poj. kaj se desava s gornjom graničnom
+2. Objasni millerov efekt
+3. Na kojim frekv. djeluje Cp
+
+nova pitanja....bodeov dijagram...odredi Avo i granične frek...
+....shema i svi kondenzatori...opiši....
+.....dvije skice iz osciloskopa i pita zašto dolazi do izobličenja.....
+
+1.(1 bod) bode graf,naci donju granicnu f. i pojacanje na srednjim frekven..
+2.(1 bod) crtez sklopa ko na 3. i 4. labosu,reci koji c-ovi su na niskim,a koji na visokim f.
+3.(2 boda) Zasto dolazi do izoblicenja izlaznog signala
+
+Odgovori:
+1.Kad se trazi donja(za gornju citas najmanju omegu) ocitas najvecu omegu(10^9 mislim da je bilo) i podjelis s 2pi,ovo amplitudno pojacanje sam uzo da je tamo na pocetku di je ravno(80db)
+2.Na niskoj su ukljuceni Cg,Cp,Ce dok na visokoj parazitativni(valjda se tako pise) kapacitetu Cb'e,Cb'c jer pri velik frekve. impedancija Z=1/jw je jako mala te ti kapaciteti pretstavljaju kratki spoj(w-->oo; Z-->0)
+3." kad nam se napon na izlazu toliko poveca da Uceq padne ispod Ugama(Ubeq) i tranzistor izadje iz NAP-a. "
+
+donja granična frekvencija je 0 jer smo imali istosmjerno pojačalo...
+
+1) 2 grafa su nacrtana, treba znat koji graf je za shemu sa spojenim Cp (graf koji strmije počinje opadat poslije Av0)
+2) zadan je neki ulazni signal mislim da je bio 3+7sin(...), mislim da je bio zadan graf iz kojeg se očita pojačanje, treba odredit izlazni signal (kažu da je točan odg tipa 700*sin(...), ugl bez ove istosmjerne komponente)
+3) zašto su izobličenje kod sinusnog i pravokutnog signala (kod sinusnog jer je preveliki ulazni signal, a kod pravokutnog jer je beskonačni spektar)
+4) bodeov graf, ugl ovo što je malo prije raspravljano, sa graničnom frekvencijom 0
+
+1.)isto
+2.)zadana je omega 10^8 i tamo očitamo pojačanje od 40 dB, a to ja 20log(10^2) pa se zato ovo 3+7sin(...) množi sa 100 i ovo 3 zanemarujemo jer je od istosmjerne, kao što je rečeno..
+3.)kod pravokutnog dolazi do izobličenja zato što ima sve frekvencijske komponente, a pojačanje nije jednako na svim frekvencijama..
+a kod sinusnog - tranzistor ne vodi ako dovedemo preveliki napon
+4.) gleda se gdje počinje najveće pojačanje a to je na f=0
+
+Ponavljaju se stara pitanja, u terminu 4-6 (Žonja je bila) smo imali 2 zadatka, prvi smo imali zadano ulaz, u_ul=1+2sin(2*10^7*t), ako se ne varam, tako nešta, Av karakteristiku koja je izgledala pad od 20 db/dek., ravna linija na 60 dB, opet pad od 20 dB/dek., te je rečeno da je napon napajanja +/- 10 V. Trebalo je nacrtati izlaz. Drugi zadatak smo imali shemu istu kao iz pripreme i trebalo je reći koji otpornici djeluju na visokoj, a koji na niskoj frekv. (uključujući i kapacitete tranzistora).
+
+Izlazni kao i prošlih godina, dobiješ jednostavnu shemu i treba odredit koji kondenzatori utječu na pojačanje na niskim, a koji na visokim frekvencijama, uključujući parazitne kapacitete tranzistora, jedan Bode iz kojeg treba odredit donju ili gornju graničnu frekvenciju i pojačanje na NF, SF ili VF i opet shema pojačala i odrediti vremensku konstantu jednog kondenzatora
+
+1. zad
+
+Shema pojačala iz vježbe, pitanje: što činimo s kondenzatorima Ce i Cb (onaj donji kond. i lijevi, ako sam krive oznake stavio) pri analizi na srednjim frekvencijama, i što dobivamo, a što gubimo, odspajanjem kondenzatora Ce?
+
+2. zad
+
+Objasni Millerov efekt
+
+3. zad
+
+Zadan je Bodeov dijagram, Uul=3+7sin(8*10^8t), uz pretpostavku da pojačalo ne zakreće signal u fazi, odrediti Iiz.
+
+1. Nacrtana jednostavna shema s 3 kondenzatora, treba reći na kojim frekvencijama djeluju koji kondenzatori (uključujući parazitne kapacitete)
+
+2. Nacrtan Bodeov dijagram, krece na vrijednosti 80db pa na 10^6 pada na 60 db pa tako bude jednu dekadu pa onda pada dalje, treba odredit pojačanje na srednjim frekv (Av0) i donju graničnu frekvenciju. 
+
+3. nacrtana dinamička shema iz ZZV - Niskofrekvencijska - 1. zadatak: traži se izraz za vremensku konstantu kondenzatora Ct.
+
+
+
+
+
+
+WORD !!!
+
+
+Objasni Millerov efekt.
+efekt kada se kapacitet spojen između ulaznog i izlaznog kruga preslikava u ulazni krug pomnožen s iznosom naponskog pojačanja naziva se millerov efekt. U pojačalu koje radi u spoju zajednički emiter Millerovim efektom bitno se poveća Cul, tj. poveća se ulazna vremenska konstanta ul i smanji gornja granična frekvencija.
+
+zajedniči emiter-šta radimo s Cg i Ce na srednjim frekvencijama.
+	Kratko spajamo
+
+Što se događa s emiterskom degeneracijom na niskim, a što na visokim frekvencijama?
+Na niskim djeluje jer Ce ima jako veliku impedanciju, a na visokim ne djeluje, jer se preko Ce otpornik Re , koji unosi degeneraciju,  kratko spaja
+
+Napisati izraze za  konstante u slučaju strujnog pojačanja AI kod istog sklopa kao što je u  2. zadatku iz NF. pretpostavlja se da je stavljen idealni strujni izvor.
+Ce=Ce(Re2IIz(Re1+(rbe+RB)/(1+hfe) ) ) zato što idealni strujni izvor odspojimo ,a ne kratko spojimo i u tom slučaju nam u obzir dolazi i otpor RB...
+g=0 (nisam siguran da li 0 ili beskonačno,ja sam stavio 0),zato što odspajanjem strujnog izvora odspajamo i kond.Cg
+
+Napisati izraz za donju frekvenciju u slučaju nepostojanja dominantnog pola:
+Wd=1/tau1 + 1/tau2...1/tau n ,strana 108 u skripti.ovdje se mora ići do n jer se odnosi na općeniti slučaj....
+
+Šta se događa sa gornjom graničnom frekvencijom s porastom naponskog pojačanja? 
+gornja granična frekvencija smanjuje se s porastom naponskog pojačanja zbog millerovog efekta.
+
+Primjena Millerovog toerema, nacrtana shema ko u skripti,odredi  Cul i Ciz (126.str u knjizi Elektronika 2).
+Cul=Cb'e + Cb'e (1-K)  
+Ciz=Cb'e (K-1)/K
+
+Na kojim frekvencijama dolazi do izražaja djelovanje kondezatora Cp iz 3. i 4. lab. vj. i zašto?
+Na visokim frekvencijama zato što kratko spaja masu na izlaz pojačala, tj. određuje gornju graničnu frekvenciju
+
+Nacrtan bodeov dijagram i trebalo je odrediti donju graničnu frekvenciju na grafu.
+Donja granična frekvencija je frekvencija gdje je prigušenje Av od -3dB tj. najveći   	od nula (nisko frekventne analize)
+Gornja granična frekvencija je frekvencija gdje je prigušenje Av od -3dB tj. najmanji   od polova (visokonisko frekventne analize)
+(lakše objasnit na nacrtanom bodeovom dijagramu)
+
+Nacrtan bodeov dijagram i zadano Uul, izračunat Uiz?
+Iz bodeovog dijagrama očitaš pojačanje A i iz formule A=Uiz/Uul dobiš Uiz 
+ne zaboravit pretvorit dB u normalan broj
+
+Prvi zadatak Bode i treba wg i pojacanje na srednjim frekv, drugi zd preko tog pojacanja odredit izlazni napon ako je ulazni 1+2sin(7*10^7t) mV, treci je bio kao s materijala sta se radi s C-ovima nekim u analizi srednjih frekv, i cetvrti odrediti tau(t) od one standardne dinamicke sheme
+
+donju i gornju graničnu frekvenciju odrediti à imaš zadan amplitudni bode
+Millerov efekt
+Zadan sinus(8*10^8t)+3 i pretpostavka je da kad je omega=0 pojačanje isto nula i odredi izlazni napon
+odrediti vremensku konstantu za neki kondenzator na semi
+
+

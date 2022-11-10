@@ -1,0 +1,296 @@
+
+
+1. Čemu služe Zener diode?
+2. Barkhausenov kriterij osciliranja.
+3. Kada koristimo piezoelektrični kristal?
+4. Kada koristimo RC, a kada LC oscilatore?
+
+1. cemu sluze zenerove diode
+2. barkhausernorevljev kriterij i koje uvjete povlaci
+3. fazno osiguranje na nyquistu i oznaciti karakt. tocke
+******************************************************************************************************************************************
+1. pitanje:R3 raste
+2.Xa i Xf moraju biti jednaki,jer kad signal prođe kroz pojačalo pa kroz povratnu vezu natrag mora biti jednak početnom(Xul),
+pod ovim jednak podrazumijeva se da mu je ista faza i ista amplituda kao na početku,jer inače nema oscilacija.... 
+a Barkhausenov kriterij:amplituda je jednaka 1 i faza je 0 stupnjeva to proizilazi iz onog 1-T(jw0)=0 prema tome T(jw0)=1 
+i onda iz toga amplituda je 1 a faza 0 stupnjeva
+3. shema piezzoelektričnog kristala,ima u skripti,ja sam nacrtala još i simbol,
+i napisala da je prednost da zbog rezonantne karakteristike i velikog faktora dobrote kristali
+ se koriste najviše da stabiliziraju frekvenciju osciliranja,ali nedostatci su onda što ne možemo 
+ pomoću njih podešavati tu istu frekvenciju osciliranja
+4.pod beta sam zaokružila ona dva para spoja: otpornik+ kondenzator a pod "A "granu sam zaokružila ostalo,
+znači i pojačalo i otpornike i napisala izraz beta(jw0)=1/(3+j(wRC-1/wRC)) imaginarni dio nazivnika 
+mora biti jednak nuli i iz toga slijedi da je w0=1/RC ili f=1/(2piRC)
+******************************************************************************************************************************************
+sve isto kao i prije... samo je bilo modificirano ono s R3.... 
+nije bilo pitanje za fazno osiguranje nego za amplitudno osiguranje... dakle sto se desi s AO ako se makne R3... 
+jos je bio Barkhausenov kriterij, onaj kristal, prednosti,nedostaci shema; 
+spoj s wienovim mostom prepoznati, odrediti frekvenciju osciliranja, oznacit A i B granu,
+beta=(r3+r4)/(r3+r4+r2), ako maknes r3 smanji se beta, tj. pojačanje, 
+što znači da je sustav stabilniji, a ako je stabilniji onda i FO i AO rastu...
+ja sam to gledao opcenito ko sustav u kojem je pojacanje 1+ R2/R1 stim da je u jednom slucaju R1 bilo jednako R3+R4,
+a u drugom samo R4 (nije postojao otpor R1 nego sam to sam tak zapiso jer smo tak zapisivali opcenito pojacanje neinvertirajuceg pojacala)
+i sto bi znacilo da se u slucaju kada maknemo R3 -> pojacanje sustava naraslo ---->> onda se lagano preko Nyquista moze vidjet 
+da A.O. pada., ja sam tom logikom iso.
+isto kad sam kasnije razmisljao - preko onog da F.O. raste  isto sam dosao do tog zaključka.
+nisam 100% siguran u to, ali mislim da bi trebalo biti okej.
+Sustav je stabilniji sto je A.O. manje ( str. 205. u skripti) ,ako iskljucimo otpor sustav je stabilniji, 
+ako je stabilniji A.O. pada. Npr. u bode.u stabilno je ako je ispod 0dB,i sto je negativnije to bolje,i sada sto je ono negativnije, 
+F.O. je veci, jer je veca razlika izmedu 180stupnjeva,i i kuta na frekvenciji w1.
+******************************************************************************************************************************************
+Čemu služe zenerove diode?
+Zenerove diode sluze za stabilizaciju amplitude. U pocetku osciliranja, dok je amplituda izlaznog napona mala diode ne
+vode, nakon sto se porastom izlaznog napona dosegne probojni napon zenerove diode, diode provode struje sto uzrokuje smanjenje
+pojačanja Av=3 uz ograničenje izlaznog napona.
+******************************************************************************************************************************************
+Barkhausenov kriterij osciliranja?
+faza T(jw0)=0 stupnjeva
+|T(jw0)|=1
+odnosno prolaskom kroz pojačalo i granu povratne veze signal se na ulazu pojačala mora vratiti istom fazom i istom amplitudom
+******************************************************************************************************************************************
+Cemu sluzi piezoelektricki kristal? prednosti, ndotatci, shema?
+-U koliko ga stavimo u granu povratne veze kristal će znatno poboljšati stabilnost frekvencije osciliranja.
+-nedostaci su nemoze se podesavat frekvencija osciliranja a prednost je kaj stabilizira frekvenciju osciliranja 
+slika - str.232
+******************************************************************************************************************************************
+Čemu služi prvo operacijsko pojačalo na slici 1 u pripremi?
+neinvertirajuće pojačalo s naponskim pojačanjem, ne opterećuje izlaz grane povratne veze, i ne spaja istovremeno na otpornik R A i B granu!
+******************************************************************************************************************************************
+Koliko mora biti pojačanje A-grane i zašto? (ista slika)
+Av>=29, da bi se održale oscilacije
+******************************************************************************************************************************************
+Za zadanu funkciju je bilo potrebno preko bodeovog dijagrama naci betu na granici stabilnosti pojacala.
+Imate nesto tako na str 207 i 208.
+******************************************************************************************************************************************
+Šta će se dogodit sa signalom ako je |T(jw)|<1 i zašto? 
+Ako je |T(jw)|<1 da je pojačalo stabilno (odnosno prolaskom kroz petlju povratne veze, 
+oscilacije signala će se postepeno prigušivati) a ako je |T(jw)|>1 pojačalo je nestabilno.
+******************************************************************************************************************************************
+Kod barkh. zašto promatramo signal kad je T(jw) = 0 stupnjeva?
+Zato što Xa i Xf moraju biti jednaki da bi došlo do oscilacija(to podrazumijeva da trebaju imati istu fazu) (Str 216 u skripti)
+******************************************************************************************************************************************
+Na slici oznaci A i beta granu. Napisi izraz za frekvenciju osciliranja. Kako se zove ovakav spoj (shema broj 2 sa lab vjezbe)
+Mislim da A cini pojacalo a beta granu cine impedancije Z1 i Z2. Spoj se zove oscilator sa wienovim mostom. w=1/(RC), f=1/(2piRC).
+******************************************************************************************************************************************
+Nacrtaj oscilator s wienovim mostom i napisi izraz za frekvenciju osciliranja.
+Isto kao i pitanje prije.
+******************************************************************************************************************************************
+Nacrtati naponsku-paralelnu povratnu vezu
+******************************************************************************************************************************************
+Nactrtati struju-serijsku vezu i označiti signale (ulazni,izlazni,povrat
+ni,uzorak)
+******************************************************************************************************************************************
+Koja se povratna veza koristi kod oscilatora - samo odgovorit.
+pozitivna povratna veza (boldano na 215. str.)
+******************************************************************************************************************************************
+Vrste oscilatora?
+trebas napisat nazive oscilatora... a to su ti osc s Wienovim mostom, Colpittsov oscilator, Hartleyev oscilator i Pierceov oscilator... 
+bas te nazive trazi i to ti je onda puni bod
+******************************************************************************************************************************************
+pojačalo sa jedan i dva pola je bezuvjetno stabilno a sa tri uvjetno stabilno 
+******************************************************************************************************************************************
+definirat F.O. i nacrtati i oznaciti karakteristicne tocke na nyquistovu dijagramu
+F.O se definira kao fazni pomak izmedu faze fi(jw1) i faze -180 stupnjeva. str 204
+******************************************************************************************************************************************
+sa 5 labosa pitanje kako se ponasa F.O. ako maknemo R3 na onoj shemi di je uz R4:
+-raste
+******************************************************************************************************************************************
+kada se koriste RC, a kada LC oscilatori?
+LC na visim frekvencijama od RC
+******************************************************************************************************************************************
+bilo je novo definirati A.O. u Nyquistu i označiti karak. točke
+Amplituda pojačanja na kritičnoj frekvenciji w180 je A.O pojačala sa povratnom vezom. Karak. točke str 204
+******************************************************************************************************************************************
+Pitanja iz termina u 9.30:
+1) Definiraj A.O. na Nyquistu i oznaci karak. tocke
+2) Sto se dogodi sa F.O. kad maknemo R3
+3) Kad se koriste RC a kad LC oscilatori
+4) Za sto sluze Zenerove diode i sta se dogodi kad maknemo granu sa Zenerovim diodama
+******************************************************************************************************************************************
+kak se mijenja A.O ako maknemo R1, odgovor pada
+jos je bilo ako imamo tri pola sustav je uvjetno stabilan
+nacrtati i napisati prednosti i nedostatke piezonekakvog kristala: nedostaci su nemoze se podesavat frekvencija osciliranja a prednost 
+je kaj stabilizira frekvenciju osciliranja (slika ima negdi u skripti)
+i definirati F.O. (to preko nikvista)
+******************************************************************************************************************************************
+koji je spoj na slici. oznaci a i beta grane i frekvenciju osciliranja. onda pojačalo s dva pola je bezuvjetno stabilno. 
+i trece barkausenov kriterij osciliranja.
+******************************************************************************************************************************************
+1) Koja se povratna veza koristi kod oscilatora - pozitivna povratna veza
+2) šta će se dogodit sa signalom ako je |T(jw)|<1 i zašto?
+kod barkh. zašto promatramo signal kad je T(jw) = 0 stupnjeva?
+Zato što Xa i Xf moraju biti jednaki da bi došlo do oscilacija(to padrazumijeva da trebaju imati istu fazu)
+Str 216 u skripti
+******************************************************************************************************************************************
+Cemu sluze zenerove diode?
+
+Barkhausenov kriterij osciliranja?
+
+Cemu sluzi piezoelektricki kristal?
+
+Čemu služi prvo operacijsko pojačalo na slici 1 u pripremi?
+neinvertirajuće pojačalo s naponskim pojačanjem, ne opterećuje izlaz grane povratne veze, i ne spaja istovremeno na otpornik R A i B granu!
+
+Koliko mora biti pojačanje A-grane i zašto? (ista slika)
+Av>=29, da bi se održale oscilacije
+
+Za zadanu funkciju je bilo potrebno preko bodeovog dijagrama naci betu na granici stabilnosti pojacala
+
+Šta će se dogodit sa signalom ako je |T(jw)|<1 i zašto?
+
+Kod barkh. zašto promatramo signal kad je T(jw) = 0 stupnjeva?
+Zato što Xa i Xf moraju biti jednaki da bi došlo do oscilacija(to podrazumijeva da trebaju imati istu fazu) (Str 216 u skripti)
+
+Na slici oznaci A i beta granu. Napisi izraz za frekvenciju osciliranja. Kako se zove ovakav spoj (shema broj 2 sa lab vjezbe)
+
+Nacrtaj oscilator s wienovim mostom i napisi izraz za frekvenciju osciliranja 
+
+Nacrtati naponsku-paralelnu povratnu vezu
+
+Frekvencija osciliranja pojačala s Wieneovim mostom--samo formulu napisati 
+
+Nactrtati struju-serijsku vezu i označiti signale (ulazni,izlazni,povrat
+ni,uzorak)
+
+Koja se povratna veza koristi kod oscilatora - samo odgovorit.
+pozitivna povratna veza (boldano na 215. str.)
+
+Nacrtati struju-paralelnu, oznaciti di sta ide i kako
+
+Vrste oscilatora?
+trebas napisat nazive oscilatora... a to su ti osc s Wienovim mostom, Colpittsov oscilator, Hartleyev oscilator i Pierceov oscilator... bas te nazive trazi i to ti je onda puni bod
+
+pojačalo s dva pola je bezuvjetno stabilno
+
+definirat F.O. i nacrtati i oznaciti karakteristicne tocke na nyquistovu dijagramu
+
+sa 5 labosa pitanje kako se ponasa F.O. ako maknemo R3 na onoj shemi di je uz R4:
+-raste
+-pada
+-ostaje isto 
+
+kada se koriste RC, a kada LC oscilatori?
+LC na visim frekvencijama od RC
+
+************************
+Čemu služe zenerove diode?
+Zenerove diode sluze za stabilizaciju amplitude. U pocetku osciliranja, dok je amplituda izlaznog napona mala diode ne
+vode, nakon sto se porastom izlaznog napona dosegne probojni napon zenerove diode, diode provode struje sto uzrokuje smanjenje
+pojačanja Av=3 uz ograničenje izlaznog napona.
+
+Barkhausenov kriterij osciliranja?
+faza T(jw0)=0 stupnjeva
+|T(jw0)|=1
+odnosno prolaskom kroz pojačalo i granu povratne veze signal se na ulazu pojačala mora vratiti istom fazom i istom amplitudom
+
+Cemu sluzi piezoelektricki kristal?
+U koliko ga stavimo u granu povratne veze kristal će znatno poboljšati stabilnost frekvencije osciliranja.
+
+Čemu služi prvo operacijsko pojačalo na slici 1 u pripremi?
+neinvertirajuće pojačalo s naponskim pojačanjem, ne opterećuje izlaz grane povratne veze, i ne spaja istovremeno na otpornik R A i B granu!
+
+Koliko mora biti pojačanje A-grane i zašto? (ista slika)
+Av>=29, da bi se održale oscilacije
+
+
+Za zadanu funkciju je bilo potrebno preko bodeovog dijagrama naci betu na granici stabilnosti pojacala.
+Imate nesto tako na str 207 i 208.
+
+Šta će se dogodit sa signalom ako je |T(jw)|<1 i zašto? 
+Ako je |T(jw)|<1 da je pojačalo stabilno (odnosno prolaskom kroz petlju povratne veze, oscilacije signala će se postepeno prigušivati) a ako je |T(jw)|>1 pojačalo je nestabilno.
+
+Kod barkh. zašto promatramo signal kad je T(jw) = 0 stupnjeva?
+Zato što Xa i Xf moraju biti jednaki da bi došlo do oscilacija(to podrazumijeva da trebaju imati istu fazu) (Str 216 u skripti)
+
+Na slici oznaci A i beta granu. Napisi izraz za frekvenciju osciliranja. Kako se zove ovakav spoj (shema broj 2 sa lab vjezbe)
+Mislim da A cini pojacalo a beta granu cine impedancije Z1 i Z2. Spoj se zove oscilator sa wienovim mostom. w=1/(RC), f=1/(2piRC).
+
+Nacrtaj oscilator s wienovim mostom i napisi izraz za frekvenciju osciliranja.
+Isto kao i pitanje prije.
+
+Nacrtati naponsku-paralelnu povratnu vezu
+
+
+Nactrtati struju-serijsku vezu i označiti signale (ulazni,izlazni,povrat
+ni,uzorak)
+
+
+Koja se povratna veza koristi kod oscilatora - samo odgovorit.
+pozitivna povratna veza (boldano na 215. str.)
+
+Vrste oscilatora?
+trebas napisat nazive oscilatora... a to su ti osc s Wienovim mostom, Colpittsov oscilator, Hartleyev oscilator i Pierceov oscilator... bas te nazive trazi i to ti je onda puni bod
+
+pojačalo sa jedan i dva pola je bezuvjetno stabilno a sa tri uvjetno stabilno 
+
+definirat F.O. i nacrtati i oznaciti karakteristicne tocke na nyquistovu dijagramu
+F.O se definira kao fazni pomak izmedu faze fi(jw1) i faze -180 stupnjeva. str 204
+
+sa 5 labosa pitanje kako se ponasa F.O. ako maknemo R3 na onoj shemi di je uz R4:
+-raste
+-pada
+-ostaje isto
+
+kada se koriste RC, a kada LC oscilatori?
+LC na visim frekvencijama od RC
+
+bilo je novo definirati A.O. u nyqistu i označiti karak. točke
+Amplituda pojačanja na kritičnoj frekvenciji w180 je A.O pojačala sa povratnom vezom. Karak. točke str 204
+
+Barkhausen
+Nadomjesna za kristal, i poz i neg strane
+nacrtan Wienov, napisati da je to wienov, napisati izraz za frekvu, označiti A i B granu
+nacrtana shema sa zenerima, napisati cemu sluze zeneri
+
+
+taj je meni zadnji put isto unesel bodove na vjezbi al bili su vidljivi kad i svima ostalima tak da nemorate panicarit nece se zagubit
+
+p.s. za buduce generacije termin u 9:30 bilo pitanje kak se mijenja A.O ako maknemo R1, odgovor pada
+jos je bilo ako imamo tri pola sustav je uvjetno stabilan
+nacrtati i napisati prednosti i nedostatke piezonekakvog kristala: nedostaci su nemoze se podesavat frekvencija osciliranja a prednost je kaj stabilizira frekvenciju osciliranja (slika ima negdi u skripti)
+i definirati F.O. (to preko nikvista)
+
+Pitanja iz termina u 9.30:
+1) Definiraj A.O. na Nyquistu i oznaci karak. tocke
+2) Sto se dogodi sa F.O. kad maknemo R3
+3) Kad se koriste RC a kad LC oscilatori
+4) Za sto sluze Zenerove diode i sta se dogodi kad maknemo granu sa Zenerovim diodama
+
+Čemu služe zenerove diode?
+Zenerove diode sluze za stabilizaciju amplitude. U pocetku osciliranja, dok je amplituda izlaznog napona mala diode ne
+vode, nakon sto se porastom izlaznog napona dosegne probojni napon zenerove diode, diode provode struje sto uzrokuje smanjenje
+pojačanja Av=3 uz ograničenje izlaznog napona.
+Barkhausenov kriterij osciliranja?
+faza T(jw0)=0 stupnjeva
+|T(jw0)|=1
+odnosno prolaskom kroz pojačalo i granu povratne veze signal se na ulazu pojačala mora vratiti istom fazom i istom amplitudom
+Cemu sluzi piezoelektricki kristal? prednosti, ndotatci, shema?
+-U koliko ga stavimo u granu povratne veze kristal će znatno poboljšati stabilnost frekvencije osciliranja.
+-nedostaci su nemoze se podesavat frekvencija osciliranja a prednost je kaj stabilizira frekvenciju osciliranja 
+Čemu služi prvo operacijsko pojačalo na slici 1 u pripremi?
+neinvertirajuće pojačalo s naponskim pojačanjem, ne opterećuje izlaz grane povratne veze, i ne spaja istovremeno na otpornik R A i B granu!
+Koliko mora biti pojačanje A-grane i zašto? (ista slika)
+Av>=29, da bi se održale oscilacije
+Šta će se dogodit sa signalom ako je |T(jw)|<1 i zašto? 
+Ako je |T(jw)|<1 da je pojačalo stabilno (odnosno prolaskom kroz petlju povratne veze, oscilacije signala će se postepeno prigušivati) 
+a ako je |T(jw)|>1 pojačalo je nestabilno.
+Kod barkh. zašto promatramo signal kad je T(jw) = 0 stupnjeva?
+Zato što Xa i Xf moraju biti jednaki da bi došlo do oscilacija(to podrazumijeva da trebaju imati istu fazu) prolaskom kroz poj i granu povratne
+ veze signal se na ulaz pojačala mora vratiti s istom fazom i amplitudom
+Na slici oznaci A i beta granu. Napisi izraz za frekvenciju osciliranja. Kako se zove ovakav spoj (shema broj 2 sa lab vjezbe)
+Mislim da A cini pojacalo a beta granu cine impedancije Z1 i Z2. Spoj se zove oscilator sa wienovim mostom. w=1/(RC), f=1/(2piRC).
+Nacrtaj oscilator s wienovim mostom i napisi izraz za frekvenciju osciliranja.
+
+Koja se povratna veza koristi kod oscilatora - samo odgovorit.
+pozitivna povratna veza
+Vrste oscilatora?
+tto su ti osc s Wienovim mostom, Colpittsov oscilator, Hartleyev oscilator i Pierceov oscilator
+Pojačalo sa jedan i dva pola je bezuvjetno stabilno a sa tri uvjetno stabilno
+definirat F.O. i nacrtati i oznaciti karakteristicne tocke na nyquistovu dijagramu
+F.O se definira kao fazni pomak izmedu faze fi(jw1) i faze -180 stupnjeva. 
+Sa 5 labosa pitanje kako se ponasa F.O. ako maknemo R3 na onoj shemi di je uz R4: -raste
+kada se koriste RC, a kada LC oscilatori?
+LC na visim frekvencijama od RC
+bilo je novo definirati A.O. u nyqistu i označiti karak. točke
+Amplituda pojačanja na kritičnoj frekvenciji w180 je A.O pojačala sa povratnom vezom
+

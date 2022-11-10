@@ -1,0 +1,77 @@
+1. Dif pojacalo sa Fetom i njegova poboljšana verzija, faktor pojacanja i sve sto ide uz to kako ga povecam i tak to sve...
+ Ugl ispituje sve o pojacalu... Zasto je kod bipolarnog veci faktor pojacanja
+2. Klasa B, nacrtati raspored snaga i zasto je to tako, razlike izmedju A i B klase...
+3. Nacrtana shema, treba napraviti spoj za visokofrekv analizu, sto je millerov efekt, kako to fizikalno objasnjavamo i sto
+ on uzrokuje naci granicnu frekvenciju
+4. Nacrtana shema s povratnom vezom i nacrtat nadomjesnu shemu i onda 1000 pitanja, kako izvesti strujno pojacanje itd
+5. LC oscilatori, opcenita shema
+
+1. Kakve izvedbe diff pojacala postoje (s bip. tranz i s fetovima), nacrtati shemu, opisati prednosti i nedostatke pojedine izvedbe.
+2.Nacrtati shemu pojacala u klasi A, opisati klasu A, njena svojstva, nacrtati raspodjelu snaga (Prt, Pt, i Pcc).
+3.Pojacalo (bipolarni tranzistor neki bzvz zajednicki emiter) na niskim frekvencijama, izraziti A(jw), nacrtati bodeov dijagram 
+utjecaja kondenzatora Cg i Ct (bez Ce).
+4.Pojacalo s povratnom vezom, izrazit beta, reci kakva je povratna veza, koje je pojacanje A grane, nacrtat A granu itd. Bio je
+ neki zajebani prijmjer gdje je bila pov veza naponska-paralelna, a izgleda na prvi dojam strujna-paralelna.
+5.Objasniti princip rada oscilatora s faznim pomakom, nacrtat shemu, te reci u koju grupu oscilatora on spada.
+
+Krois je nešto zapeo za dokazivanje zašto neki kondiæ djeluje na nf ili vf pa ak æe nekom trebat za rok:
+Trebalo bi u shemi potrpat taj kondiæ u nekakav Z pa izrazit pojaèanje preko |Z| i gledat kak se pojaèanje mijenja s frekvencijom.
+Npr. za Ce, Ze =Re||Ce, pojaèanje je onda -hf*R/(hf*Ze+rbe). Ze se smanjuje s porastom frekvencije pa se pojaèanje poveæava, zato 
+Ce djeluje na niskim frekvencijama.
+Imate to u i skripti napisano (str. 100) pa si pogledajte to prije usmenog. 
+
+1.sto su sinusni oscilatori, po cemu su specificni, koje su sklopovske realizacije, koji su kriteriji osciliranja.
+2. sto je frekvencijska kompenzacija, koje parametre koristimo za to, objasniti na bodeu, te za koje slucajeve pojacala koristimo to
+3. sto je povratna veza, koji su sastavni dijelovi sklopovske izvedbe, koji tip se koristi za pojacala, te koji su efekti povratne 
+veze i o cemu ovise.
+4. nacrtana shema jfet sa zajednickim uvodom, napisati izraz za gornju granicnu frekvenciju i nacrtati nadomjesnu shemu za to
+5. objasniti sto je problem kod pojacala u B klasi, kako se to sklopovski rjesava i koji su nedostaci i prednosti sklopovskih rjesenja
+
+pitao me 2 pitanja oko sinusnih oscilatora ( gdje je a grana i koje je njeno pojacanje ), ostalo sam ocito dovoljno objasnio
+
+1. Nacrtana kaskada sa povratnom vezom. Prepoznati tip povratne veze, nadomjesna sheme.
+2. Oscilator sa faznim pomakom, kako radit i nacrtati.
+3. Pojaèalo B klase. Nacrtati, razlika izmeðu A i B. Grafovi snage
+4. Niskofrekvencijska analiza. Što je odreðuje i napisati izraz(zadan je sklop).
+5. Nacrtati shemu pojaèala sa velikim ulaznim, malim izlaznim otporom i sa velikim pojaèanjem.
+
+1)dif. pojaèalo s em. otpornikom,shema,dinamièka shema,izvest Avd iAvz
+2)pojaèalo snage klase B,objasni izoblièenja i kako se to sklopovski rješava te koje su prednosti i nedostatci takve veze
+3) SZU sa Ct na niskim f,treba din. shemu i izvest izraz za tau g.g.frekv.
+4)neka povratna veza ko u zadatcima za vježbu i cijeli zad u biti trebaš rješit samo bez brojeva
+5) èemu služe strujni izvori i nacrtaj 2 primjera 
+
+1. Teorija o diferencijskim pojaèalima, faktor potiskivanja, pojaèanja, ništa drugo.
+2. Pojaèalo B klase, samo nacrtati i objasniti kako radi, bez snage.
+3. Kondenzator Ce, utjecaj, SVE o tome, analizirati na amplitudnom grafu, pogotovo ga je zanimao onaj sluèaj na jako niskim 
+frekvencijama, želio je analizu te paralele Ce||Re na svim frekvencijama.
+4. Zadan je krug s povratnom vezom, napisati najosnovnije stvari, smije se imati podsjetnik.
+5. Wienov most.
+
+1. nacrtati diferencijsko s emiterskim otpornikom, i objasniti sve o tome, i nacrtati obje nadomjesne sheme
+2. darlingtonov spoj, i nešta o tome - taj nisam uopæe znao
+3. najobiènije pojaèalo s ona tri kondenzatora, i nacrtati nadomjesnu shemu za niske frekv. i objasniti donju graniènu frekv. 
+i izraziti formule...
+4. povratna veza, isto shemu nacrtati i osnovna pitanja o tome
+5. nacrtati widlarov strujni izvor s emiterskim otpornicima, i napisati jednadžbe, tak nešt....
+
+1.kaskada RC vezana i što se ostvarilo tim sklopom
+2. A.O. i F.O. preko bodea i nyquista definirati, kako se stabilizira uvjetno stabilan sustav
+3. mislim da je bio SZE - nadomjesna shema za NF i onda pita jesu li donja granièna frekv. od naponskog i strujnog pojaèanja iste
+ i objasnit zašto
+4. povratna veza, ona koju je neki kolega kod butka imao. malo je tricky jer te oæe navest da je povratna veza na RG, al je na RC.
+ i pita onda standardno koje je pojaèanje i kolko je beta.
+5. kako riješit problem izoblièenja kod klase B i objasnit zaš uopæe doðe do njih. i prednosti i nedostaci sklopa koji to rješava.
+
+1.Nacrtati diferencijsko pojaèala s FET-ovima,odrediti pojaèanje i èemu služi ?
+2.Darlingtonov spoj - èemu služi i izvesti nešto...
+3.NF-pojaèala SZE ( sve objasniti )
+4.Povratna veza ko iz skripte
+5.Objasniti Widlarow strujni izvor s emiterskim otp...
+
+1.) nacrtaj diferencijalno pojaèalo s FETom i poboljšanu verziju tog pojaèala. Objasni razlike i kako se poboljša faktor potiskivanja.
+2.)Nacrtaj kaskadu i objasni što svaki stupanj kaskade pridonosi
+3.)nacrtaj widlarov strujni izvor s emiterskim otpornicima. za što se on koristi i zašto nam je on koristan.
+4.)nacrtana slika. napiši vrstu pojaèala. nacrtaj A granu sa optereèenjem beta grane za mali signal. Izvedi iz toga betu. napiši 
+pojaèanje za Avf=uiz/uul (tu ne moraš izvodit nek napisat kak bi ti to rješila, ono da odvojiš dijelove pa dio po dio)
+5.)nacrtana slika. Objasni koji kondenzatoru utjeèu na niskim frekvencijama. napiši graniène frekvencije preko vremenskih konstanti
