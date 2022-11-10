@@ -1,0 +1,73 @@
+----------------------------------------------------------LJIR 2012-2013-------------------------------------------------------
+gsm
+što je grozd
+broj kanala, 400 poziva 8 æelija
+širina kanala 200khz
+tip modulacije gmsk
+tehnike za višestruki pristup
+fu ako je fd 940mhz i duplex 45mhz
+
+telefonija
+tip komutacije
+postupak analogno digitalne pretvorbe
+brzina prijenosa
+
+lan
+podslojevi podatkovnog (osi)
+što su datagrami
+svojsvo mreže u komutaciji datagrama po kojem se vrednuje
+
+adsl
+multipleksiranje
+splitter
+usmjerivaè je u kojem sloj?
+
+...stm-1
+brzina 19440 125
+9 9 261
+f okvir?
+
+zašto bpsk i qpsk imaju istu vjerojatnost pogreške
+
+devijacija faze je 2 radijana, modulacijske frekvencije 300-3400mhz, u kojem rasponu je devijacija frekvencije? 
+
+
+-------------------------------------------------------JIR 2012-2013--------------------------------------------------------------------------------
+1.koji dio opreme omogucava istodobni prijenos govora i podataka kod ADSL-a?
+2.koliko razina ima 16-QAM?? nacrtajte dijagram stanja. koja struktura se koristi umjesto kvadraturne strukture i zasto? heksagonalna struktura...
+3.koje norme 802.11 su kompatibilne? 802.11b i 802.11g
+4.koliko bita ima preambula kod ethernet II okvira? valjda 8okteta*8= 64 bita
+5.kod t1,t2,t3,t4,koje razine se mogu multipleksirati? mogu se samo susjedne razine, t1 i t2, t2 i t3, t3 i t4
+6.koji ureðaj spaja lan s wan mrezom? usmjerivaè?
+7.objasni 100BASE-T?
+8.zadatak u vezi OFDM uz male izmjene- OFDM , ima 6817 podnosilaca, od toga 701 pilotski,i 51 nekih sinkronizacijskih,
+ korisni podnosioci su modulirani QPSK postupkom (w1=2),a pilotski i sinkroznizacijski sa BPSK (w2=1), koliko ima bitova u jednom OFDM simbolu, 
+ kolika je ukupna netto brzina bita,a kolika bruto?
+bitova u jednom OFDM simbolu : n= 701*w2 + 51*w2 + (6817-701-51)*w1 = 12882 bita
+neto brzina : Rb = n/ Tuk
+za bruto ne znam,meni nije bilo tocno ovo : R= n/T0
+
+9.u vezi ovog zadatka: U 60 potkanal prenosi se 7 bitova/simbolu,u 10 potkanala prenosi se 10bitova/simbolu,u 50 potkanala prenosi se 5 bitova/simbolu,u 
+5 potkanal prenosi se 4 bita/simbolu,a u ostalim potkanalima prenosi se maksimali broj bitova/simbolu. bla bla...
+moralo se znati napamet koliko potkanala ima dolazni smjer kod ADSL-a (G.DMT),moze se i izracunati al treba opet znati napamet sirine pojasa 
+
+
+
+-------------------------------------------------------------------LJIR 2013-2014------------------------------------------------------------------
+dupleksni prijenos
+FDD,TDD
+tehnike višestrukog pristupa (TDMA,FDMA,CDMA
+kakav je signal na izlazu iz modema
+prednosti i nedostaci ISDN
+sinkrona digitalna hijerarhija-nešto objasnit, neznam više kaj
+-slika - prez. 6, slajd 36 - mislim da je trebalo u kucice
+upisat ADM,REG i DXC
+opisati tehnologije FTTx (FIber to the ...)
+koliko bitova saddrži MAC adresa
+maks brzina IEEE 802.11g
+Za koje modulacijske postupke su MER i EMS jednaki
+GSM æelijski koncept - pitanja koja su se veæ pojavljivala
+Gdje se koristi OFDM
+referentni model TCP/IP - nabrojat slojeve
+osnovna prednost prijenosa uz proširenje pojasa
+dvije temeljne arhitekture WLAN-a 
