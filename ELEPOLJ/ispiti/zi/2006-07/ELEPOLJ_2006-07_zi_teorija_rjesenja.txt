@@ -1,0 +1,23 @@
+Postavljeni su primjerci 3 MI i ZI od lani. U 3. MI u 2. zadatku fali dio teksta koji glasi ".. nakon jedne sekunde "
+
+U 3. MI u 11. zadatku nije bio ponudjen točan odgovor u otisnutom ispitu, koji je 2,36 mW/m2 .
+
+Odgovori se dani u posebnoj datoteci. Zadaci u ZI su numerirani tako da se nastavljaju na 3. MI.
+
+doc. dr. sc. Martin Dadić
+
+
+
+B D D A	
+
+E E C A	
+
+B D E A	
+
+D A B C	
+
+D C B E	
+
+
+A B C A A	
+A B B C	E
