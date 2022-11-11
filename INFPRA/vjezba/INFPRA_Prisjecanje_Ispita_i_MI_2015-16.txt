@@ -1,0 +1,152 @@
+1. Nes u stilu, sta je od ovog utvrdeno u europskoj sudskoj praksi da je privatni podatak. 
+Za odgovor se sam sjecam da IP adresa nije (npr. server moze imat IP adresu i to nema veze s nekom konkretno fizickom osobom)
+
+2. ja mislim nesto sa safe harbour-ima?
+
+3. nesto u stilu s kojim je aktom uredeno nesto
+
+4. kako su uredeni odnosi izmedu voditelja zbirke privatnih podataka i osobe koja nes radi s tom zbirkom
+
+Pitanja sa ZI su bila puno normalnija, dosta vise nekih tehnickih nego pravnih pojmova (tocni odgovori su kolko ja znam, nije 100% al ja mislim da je tocno):
+
+1. Kak se zove malware koji ti zasifrira podatke i onda te trazi pare da ih desifrira:
+a) spyware
+b) alienware
+c) ransoware (tocno)
+d) adware
+
+2. Na Silk road-u i drugim darknet trzistima se:
+a) Mogu kupit narkotici, lazne putovnice, itd. (tocno)
+b) Ne predstavljaju problem pravosudu
+c) Placa se u principu Bitcoinima (tocno)
+d) spaja se preko anonimizirajuceg softwarea npr Tor (tocno)
+
+3. Za botnet vrijedi:
+a) to je racunalo koje je zarazeno nesto tako ali ja mislim krivo (botnet je cijela mreza zarazenih racunala)
+b) vlasnik zarazenog racunala cesto nije svjestan da je racunalo zarazeno (tocno)
+c) cesto se koristi sa DDOS i slanje spama (tocno)
+d) jos nesto
+
+4. Intelektualno vlasnistvo za software je uredeno na koji nacin u RH/Europi:
+a) kao autorsko pravo (tocno)
+b) patentima
+c) sui generis nesto tako
+d) jos nes
+
+5. Sto je od sljedeceg kaznjivo po zakonu RH:
+a) zloporaba naprava (nez, stavio sam tocno)
+b) neovlasteno brisanje podataka (tocno)
+.. i jos tak nesto slicno
+
+6. GPL licenca je formularni nesto koja je legit (kao priznata na sudovima, moze se koristit itd)
+a) da (tocno)
+b) ne
+
+
+Zbog ustava koji zakon za osobne podatke
+
+Po dizajnu sadrzi dodatne stvari za zastitu istina/laž
+
+Pitanje o dodatnim stvarima (posebna kategorija) za zastitu
+
+Tajnost komunikacije smije se koristiti za komunikacijske svrhe istina/laž, smije za racune istina/laž, nikako se ne smije istina/laž
+
+Prometni podaci su ip istina/laž, broj mobitela istina/laž
+
+Glavni zakoni(stvari) za osobne podatke, direktiva, komvencija i preporuke
+
+Rupa u programu
+
+Information brooker
+
+Problwmi racunarstva u oblaku, gdje idu podaci i tko im pristupa i besplatno nesto
+
+Pravo na zaborav - pretrazivac 
+
+Posebna prava autora za programe
+Povreda sadrzaja (pedofili), i preostale dvije
+
+Objektivan cimbenik za sirenje rasprswnost cybercrime, rast tog crkmea, jeftini uredaji,
+
+Sinergija organiziranog i kyber keiminala zbog
+
+Po ustavu je pravo zastite op temeljno ljudako pravo
+
+Profiliranje
+
+Virusi koji kriptiraju i traze pare
+
+Prava osobnih podataka skroz u zop
+
+Silk road i slicni se razvijaju, se pristupaju uz pomoc TOR 
+
+U hrv je piratstvo veliko zbog slabih zakona?
+
+Phishing je krada identiteta, temeljni prekrsaj
+
+Posebna prava rac prpgrama je opoziv i neki drugi opoziv
+
+Koristenje kom teh nesto ako korisnik da privolu mora prestati ako opozove privolu, moze u drugu svrhu ako da novu privolu
+
+Pravo na zaborav
+
+Hakiranje zabranjeno u hrv
+
+Zakonski zabranjeno ddos, lazno predstavljanje, zloupotreba naprava
+
+Raste cyber crime slozenost pada tehnicko obrazovanje
+
+U trendu je sirwnje cybercrime
+
+Temeljno pravo za racunala je autorsko pravo ili sce unestoLatinsko
+
+Ogranicavanje za pravo prometnih?Podataka. Zakon, naplata
+
+Promwtni podaci sw odma brisu, ip, broj telefona
+
+"U pravu RH zastita OP uziva status temeljnog ljudskog prava od donoswnja Ustava 1990. godine"
+
+Izvrsitelj zbirke podataka, ugovor pisani, minimalno propisano od drzave, mora osiguravati da je dobar- osigurava dovoljna jamstva u pogledu ostvarivanja...
+
+Direktiva ZOP
+
+Obrada podataka je objavljivanje podataka
+
+Dodatne stvari za zastitu OP, smanjuju funkcionalnost, smanjuju podatke, defimicija
+
+Privatnost u dizajnu 132 str
+
+Pseudonlmim, gsje se spremaju podaci, jesu li to osobni podaci
+
+Smoju se koristiti OP ako funkicja ne ide bez njih, ako su potrebne za komunikacuju
+
+Kolacici za ciljano reklamiranje
+
+Rast i rasprostranjenost crnog kibertrzista
+
+Botnet racunalo koje ceka komande mastera, osoba nwzna da mu je racunalo botnet, koristi se za ddos
+
+
+Kiberprostor globalan, nije centraliran i tsko to je razlog za sirenje cybercrime
+
+Racunalno krivotvorenjw
+
+Psiholosko oboljenjw razlog za povecanje? Frustrscija
+
+Rast kiberkrininala kao usluge
+
+Nove taktike napada
+
+Napad na pojedince raste
+
+Dekompajliranje
+
+Objasniti cc by sa cs
+
+Otvoreni kod zatvoreni kod - besplatno komercijalo, izvorni kod 
+
+Poseban polozaj rac programa
+
+Drm - digitalno upravljanje pravima
+
+Gnu je pravno dpvoljna
