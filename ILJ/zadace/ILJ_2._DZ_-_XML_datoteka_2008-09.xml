@@ -1,0 +1,4984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<imenik>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Andrea</ime>
+    <prezime>Aglić Aljinović</prezime>
+    <kucni>465</kucni>
+    <telefon>6129-965</telefon>
+    <soba>D181</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Kristina</ime>
+    <prezime>Andrić</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Ivan</ime>
+    <prezime>Andročec</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Jasenka</ime>
+    <prezime>Anzil</prezime>
+    <kucni>392</kucni>
+    <telefon>6129-892</telefon>
+    <soba>D373</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Božo</ime>
+    <prezime>Armelin</prezime>
+    <kucni>359</kucni>
+    <telefon>6129-859</telefon>
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Zoran</ime>
+    <prezime>Babok</prezime>
+    <kucni>103</kucni>
+    <telefon>6129-603</telefon>
+    <soba />
+    <zavod />
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Andro</ime>
+    <prezime>Bačan</prezime>
+    <kucni>536</kucni>
+    <telefon>6129-536</telefon>
+    <soba>D136</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Josipa</ime>
+    <prezime>Baček</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Mile</ime>
+    <prezime>Baće</prezime>
+    <kucni>178</kucni>
+    <telefon>6129-678</telefon>
+    <soba>C02-19</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Marina</ime>
+    <prezime>Bagić</prezime>
+    <kucni>248</kucni>
+    <telefon>6129-748</telefon>
+    <soba>C08-04</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Marko</ime>
+    <prezime>Bago</prezime>
+    <kucni>213</kucni>
+    <telefon>6129-713</telefon>
+    <soba>C09-17</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Drago</ime>
+    <prezime>Ban</prezime>
+    <kucni>173</kucni>
+    <telefon>6129-673</telefon>
+    <soba>C05-09</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Željko</ime>
+    <prezime>Ban</prezime>
+    <kucni>354</kucni>
+    <telefon>6129-854</telefon>
+    <soba>C09-08</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Dr.sc.</titula>
+    <ime>Marko</ime>
+    <prezime>Banek</prezime>
+    <kucni>256</kucni>
+    <telefon>6129-756</telefon>
+    <soba>C06-17</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Mato</ime>
+    <prezime>Baotić</prezime>
+    <kucni>321</kucni>
+    <telefon>6129-821</telefon>
+    <soba>C09-13</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Mirta</ime>
+    <prezime>Baranović</prezime>
+    <kucni>416</kucni>
+    <telefon>6129-916</telefon>
+    <soba>D367</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Matko</ime>
+    <prezime>Barišić</prezime>
+    <kucni>305</kucni>
+    <telefon>6129-805</telefon>
+    <soba>C09-19</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Atila</ime>
+    <prezime>Barta</prezime>
+    <kucni>496</kucni>
+    <telefon>6129-996</telefon>
+    <soba>D211</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Juraj</ime>
+    <prezime>Bartolić</prezime>
+    <kucni>163</kucni>
+    <telefon>6129-663</telefon>
+    <soba>C12-10</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Danko</ime>
+    <prezime>Basch</prezime>
+    <kucni>312</kucni>
+    <telefon>6129-812</telefon>
+    <soba>C11-13</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Alen</ime>
+    <prezime>Bažant</prezime>
+    <kucni>227</kucni>
+    <telefon>6129-727</telefon>
+    <soba>C08-14</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Hrvoje</ime>
+    <prezime>Belani</prezime>
+    <kucni>245</kucni>
+    <telefon>6129-745</telefon>
+    <soba>C07-06</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Zvonko</ime>
+    <prezime>Benčić</prezime>
+    <kucni>216</kucni>
+    <telefon>6129-716</telefon>
+    <soba>C04-05</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Vesna</ime>
+    <prezime>Benčik</prezime>
+    <kucni>497</kucni>
+    <telefon>6129-997</telefon>
+    <soba>D213</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Ivica</ime>
+    <prezime>Berislavić</prezime>
+    <kucni>239</kucni>
+    <telefon>6129-739</telefon>
+    <soba>B24</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Laborant</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Tomaž</ime>
+    <prezime>Beriša</prezime>
+    <kucni>343</kucni>
+    <telefon>6129-843</telefon>
+    <soba>C08-13</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Dubravka</ime>
+    <prezime>Bernat</prezime>
+    <kucni>435</kucni>
+    <telefon>6129-935</telefon>
+    <soba>D304</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Vedran</ime>
+    <prezime>Bilas</prezime>
+    <kucni>474</kucni>
+    <telefon>6129-974</telefon>
+    <soba>D111</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Petar</ime>
+    <prezime>Biljanović</prezime>
+    <kucni>453</kucni>
+    <telefon>6129-953</telefon>
+    <soba>D312</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Lahorija</ime>
+    <prezime>Bistričić</prezime>
+    <kucni>122</kucni>
+    <telefon>6129-622</telefon>
+    <soba>C02-09</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Marko</ime>
+    <prezime>Bišćan</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Toni</ime>
+    <prezime>Bjažić</prezime>
+    <kucni>529</kucni>
+    <telefon>6129-529</telefon>
+    <soba>C09-16</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Đurđica</ime>
+    <prezime>Blaga</prezime>
+    <kucni>233</kucni>
+    <telefon>6129-733</telefon>
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Bruno</ime>
+    <prezime>Blašković</prezime>
+    <kucni>274</kucni>
+    <telefon>6129-774</telefon>
+    <soba>C06-18</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Stjepan</ime>
+    <prezime>Bogdan</prezime>
+    <kucni>144</kucni>
+    <telefon>6129-644</telefon>
+    <soba>C11-14</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Nikola</ime>
+    <prezime>Bogunović</prezime>
+    <kucni>221</kucni>
+    <telefon>6129-721</telefon>
+    <soba>D309</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Davor</ime>
+    <prezime>Bonefačić</prezime>
+    <kucni>272</kucni>
+    <telefon>6129-772</telefon>
+    <soba>C11-05</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Dijana</ime>
+    <prezime>Bontempo</prezime>
+    <kucni />
+    <telefon />
+    <soba>B105</soba>
+    <zavod>FS</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Vesna</ime>
+    <prezime>Borjanović</prezime>
+    <kucni>137</kucni>
+    <telefon>6129-637</telefon>
+    <soba>C02-10</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Vesna</ime>
+    <prezime>Borošak</prezime>
+    <kucni>301</kucni>
+    <telefon>6129-801</telefon>
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Mladen</ime>
+    <prezime>Boršić</prezime>
+    <kucni>100</kucni>
+    <telefon>6129-600</telefon>
+    <soba>C03-07</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Željko</ime>
+    <prezime>Bosilj</prezime>
+    <kucni>359</kucni>
+    <telefon>6129-859</telefon>
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Marko</ime>
+    <prezime>Bosiljevac</prezime>
+    <kucni>112</kucni>
+    <telefon>6129-612</telefon>
+    <soba>C12-12</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ivana</ime>
+    <prezime>Bosnić</prezime>
+    <kucni>131</kucni>
+    <telefon>6129-631</telefon>
+    <soba>C11-17</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Darjan</ime>
+    <prezime>Bošnjak</prezime>
+    <kucni>509</kucni>
+    <telefon>6129-509</telefon>
+    <soba>D240</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ivica</ime>
+    <prezime>Botički</prezime>
+    <kucni>417</kucni>
+    <telefon>6129-917</telefon>
+    <soba>D366</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Snježana</ime>
+    <prezime>Božić</prezime>
+    <kucni>170</kucni>
+    <telefon>6129-670</telefon>
+    <soba>C01-03</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Agata</ime>
+    <prezime>Brajdić</prezime>
+    <kucni>255</kucni>
+    <telefon>6129-755</telefon>
+    <soba>C07-16</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>oecc.</titula>
+    <ime>Željka</ime>
+    <prezime>Bratić Odobašić</prezime>
+    <kucni>405</kucni>
+    <telefon>6129-905</telefon>
+    <soba>D23</soba>
+    <zavod>STUSL</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Mišel</ime>
+    <prezime>Brezak</prezime>
+    <kucni>561</kucni>
+    <telefon>6129-561</telefon>
+    <soba>C09-02</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Ljiljana</ime>
+    <prezime>Brkić</prezime>
+    <kucni>392</kucni>
+    <telefon>6129-892</telefon>
+    <soba>D373</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Ilko</ime>
+    <prezime>Brnetić</prezime>
+    <kucni>402</kucni>
+    <telefon>6129-902</telefon>
+    <soba>D171</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Mirjana</ime>
+    <prezime>Brozović</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Ika</ime>
+    <prezime>Budanko</prezime>
+    <kucni>345</kucni>
+    <telefon>6129-845</telefon>
+    <soba>C05-08</soba>
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Vesna</ime>
+    <prezime>Bukarica</prezime>
+    <kucni>486</kucni>
+    <telefon>6129-986</telefon>
+    <soba>D210</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Neven</ime>
+    <prezime>Bulić</prezime>
+    <kucni>151</kucni>
+    <telefon>6129-651</telefon>
+    <soba>C04-15</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Tomislav</ime>
+    <prezime>Burić</prezime>
+    <kucni>459</kucni>
+    <telefon>6129-959</telefon>
+    <soba>D153</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Dušan</ime>
+    <prezime>Bušljeta</prezime>
+    <kucni>103</kucni>
+    <telefon>6129-603</telefon>
+    <soba>CS-02</soba>
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Željko</ime>
+    <prezime>Butković</prezime>
+    <kucni>424</kucni>
+    <telefon>6129-924</telefon>
+    <soba>D356</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Josip</ime>
+    <prezime>Butorac</prezime>
+    <kucni>132</kucni>
+    <telefon>6129-632</telefon>
+    <soba>C03-13</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Marko</ime>
+    <prezime>Butorac</prezime>
+    <kucni />
+    <telefon>563</telefon>
+    <soba>D162</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Marko</ime>
+    <prezime>Capek</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Željka</ime>
+    <prezime>Car</prezime>
+    <kucni>287</kucni>
+    <telefon>6129-787</telefon>
+    <soba>C07-11</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Aleksandra</ime>
+    <prezime>Cesarik</prezime>
+    <kucni>463</kucni>
+    <telefon>6129-963</telefon>
+    <soba>D151</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Mirko</ime>
+    <prezime>Cettolo</prezime>
+    <kucni>353</kucni>
+    <telefon>6129-853</telefon>
+    <soba>C05-03</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Stručni suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Drago</ime>
+    <prezime>Cmuk</prezime>
+    <kucni>249</kucni>
+    <telefon>6129-749</telefon>
+    <soba>C03-15</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Mario</ime>
+    <prezime>Cvitković</prezime>
+    <kucni>112</kucni>
+    <telefon>6129-612</telefon>
+    <soba>C12-12</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Ivan</ime>
+    <prezime>Čajsa</prezime>
+    <kucni>103</kucni>
+    <telefon>6129-603</telefon>
+    <soba>CS-02</soba>
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Nikola</ime>
+    <prezime>Čavlina</prezime>
+    <kucni>491</kucni>
+    <telefon>6129-991</telefon>
+    <soba>D222</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Dr.sc.</titula>
+    <ime>Igor</ime>
+    <prezime>Čavrak</prezime>
+    <kucni>361</kucni>
+    <telefon>6129-861</telefon>
+    <soba>C11-12</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Vladimir</ime>
+    <prezime>Čeperić</prezime>
+    <kucni />
+    <telefon />
+    <soba>D354</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Aleksandra</ime>
+    <prezime>Čereković</prezime>
+    <kucni>238</kucni>
+    <telefon>6129-738</telefon>
+    <soba>C08-03</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Marija</ime>
+    <prezime>Čukelj</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Vera</ime>
+    <prezime>Čukelj</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Marko</ime>
+    <prezime>Čupić</prezime>
+    <kucni>548</kucni>
+    <telefon>6129-548</telefon>
+    <soba>D340</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Vladimir</ime>
+    <prezime>Ćepulić</prezime>
+    <kucni>404</kucni>
+    <telefon>6129-904</telefon>
+    <soba>D169</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Ante</ime>
+    <prezime>Ćurković</prezime>
+    <kucni>193</kucni>
+    <telefon>6129-693</telefon>
+    <soba>D209</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Martin</ime>
+    <prezime>Dadić</prezime>
+    <kucni>235</kucni>
+    <telefon>6129-735</telefon>
+    <soba>C06-04</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Dubravko</ime>
+    <prezime>Dajević</prezime>
+    <kucni>359</kucni>
+    <telefon>6129-859</telefon>
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Đurđica</ime>
+    <prezime>Dandić</prezime>
+    <kucni>516</kucni>
+    <telefon>6129-516</telefon>
+    <soba>D322</soba>
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Zdenka</ime>
+    <prezime>Dandić</prezime>
+    <kucni>516</kucni>
+    <telefon>6129-516</telefon>
+    <soba>D322</soba>
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Tomislav</ime>
+    <prezime>Debogović</prezime>
+    <kucni>242</kucni>
+    <telefon>6129-742</telefon>
+    <soba>C12-15</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Nenad</ime>
+    <prezime>Debrecin</prezime>
+    <kucni>488</kucni>
+    <telefon>6129-988</telefon>
+    <soba>D223</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime />
+    <prezime>dekan</prezime>
+    <kucni>363</kucni>
+    <telefon />
+    <soba>DEKAN</soba>
+    <zavod>UPRAVA</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Marko</ime>
+    <prezime>Delimar</prezime>
+    <kucni>496</kucni>
+    <telefon>6129-996</telefon>
+    <soba>D211</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Šandor</ime>
+    <prezime>Dembitz</prezime>
+    <kucni>260</kucni>
+    <telefon>6129-760</telefon>
+    <soba>C06-20</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Julijana</ime>
+    <prezime>Divković-Pukšec</prezime>
+    <kucni>414</kucni>
+    <telefon>6129-914</telefon>
+    <soba>D357</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Ognjen</ime>
+    <prezime>Dobrijević</prezime>
+    <kucni>255</kucni>
+    <telefon>6129-755</telefon>
+    <soba>C07-16</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ivan</ime>
+    <prezime>Dokmanić</prezime>
+    <kucni>470</kucni>
+    <telefon>6129-970</telefon>
+    <soba>D107</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Mirjana</ime>
+    <prezime>Domazet-Lošo</prezime>
+    <kucni>290</kucni>
+    <telefon>6129-790</telefon>
+    <soba>D373</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Hrvoje</ime>
+    <prezime>Domitrović</prezime>
+    <kucni>220</kucni>
+    <telefon>6129-720</telefon>
+    <soba>C10-08</soba>
+    <zavod>ZEA</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ivica</ime>
+    <prezime>Draganjac</prezime>
+    <kucni>329</kucni>
+    <telefon>6129-829</telefon>
+    <soba>C11-16</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Zlatko</ime>
+    <prezime>Đukić</prezime>
+    <kucni>521</kucni>
+    <telefon>6129-521</telefon>
+    <soba>C02-02</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Emil</ime>
+    <prezime>Dumić</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZRK</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Mira</ime>
+    <prezime>Đurašin</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Ivan</ime>
+    <prezime>Đurek</prezime>
+    <kucni>333</kucni>
+    <telefon>6129-833</telefon>
+    <soba>C10-07</soba>
+    <zavod>ZEA</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Marijan</ime>
+    <prezime>Đurek</prezime>
+    <kucni>423</kucni>
+    <telefon>6129-923</telefon>
+    <soba>D370</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Dr.sc.</titula>
+    <ime>Hrvoje</ime>
+    <prezime>Džapo</prezime>
+    <kucni>378</kucni>
+    <telefon>6129-878</telefon>
+    <soba>D110</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Šadi</ime>
+    <prezime>El Assadi</prezime>
+    <kucni>155</kucni>
+    <telefon>6129-655</telefon>
+    <soba>PCLAB1</soba>
+    <zavod>CIP</zavod>
+    <funkcija>Tehničko osoblje</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Neven</ime>
+    <prezime>Elezović</prezime>
+    <kucni>400</kucni>
+    <telefon>6129-900</telefon>
+    <soba>D176</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Igor</ime>
+    <prezime>Erceg</prezime>
+    <kucni>151</kucni>
+    <telefon>6129-651</telefon>
+    <soba>C04-15</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Mlađi asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>ing.</titula>
+    <ime>Lovorko</ime>
+    <prezime>Erceg</prezime>
+    <kucni>189</kucni>
+    <telefon>6129-689</telefon>
+    <soba>A013</soba>
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Siniša</ime>
+    <prezime>Fajt</prezime>
+    <kucni>247</kucni>
+    <telefon>6129-747</telefon>
+    <soba>C10-09</soba>
+    <zavod>ZEA</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Tomislav</ime>
+    <prezime>Fancev</prezime>
+    <kucni>497</kucni>
+    <telefon>6129-997</telefon>
+    <soba>D213</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Ivan</ime>
+    <prezime>Felja</prezime>
+    <kucni>274</kucni>
+    <telefon>6129-774</telefon>
+    <soba>C06-18</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Viši laborant 1. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Luka</ime>
+    <prezime>Ferković</prezime>
+    <kucni>176</kucni>
+    <telefon>6129-676</telefon>
+    <soba>C03-10</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Mlađi asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Sanja</ime>
+    <prezime>Ferković-Živković</prezime>
+    <kucni>253</kucni>
+    <telefon>6129-753</telefon>
+    <soba>C03-03</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Krešimir</ime>
+    <prezime>Fertalj</prezime>
+    <kucni>418</kucni>
+    <telefon>6129-918</telefon>
+    <soba>D369</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl. oec.</titula>
+    <ime>Branka</ime>
+    <prezime>Filipović</prezime>
+    <kucni>162</kucni>
+    <telefon />
+    <soba>B113</soba>
+    <zavod>FS</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Božidar</ime>
+    <prezime>Filipović Grčić</prezime>
+    <kucni>214</kucni>
+    <telefon>6129-714</telefon>
+    <soba>D206</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Viši laborant 2. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Dražen</ime>
+    <prezime>Franolić</prezime>
+    <kucni>229</kucni>
+    <telefon>6129-729</telefon>
+    <soba>C03-14</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Viši laborant 2. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ivan</ime>
+    <prezime>Fratrić</prezime>
+    <kucni>550</kucni>
+    <telefon>6129-550</telefon>
+    <soba>D343</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Darko</ime>
+    <prezime>Fudurić</prezime>
+    <kucni>119</kucni>
+    <telefon>6129-619</telefon>
+    <soba>C11-10</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Vjekoslav</ime>
+    <prezime>Futivić</prezime>
+    <kucni>297</kucni>
+    <telefon>6129-797</telefon>
+    <soba>C10-11</soba>
+    <zavod>ZEA</zavod>
+    <funkcija>Viši laborant 2. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Ivan</ime>
+    <prezime>Gašparac</prezime>
+    <kucni>204</kucni>
+    <telefon>6129-704</telefon>
+    <soba>C05-12</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Darko</ime>
+    <prezime>Gašparović</prezime>
+    <kucni>247</kucni>
+    <telefon>6129-747</telefon>
+    <soba>C10-09</soba>
+    <zavod>ZEA</zavod>
+    <funkcija>Laborant</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Biljana</ime>
+    <prezime>Geratović</prezime>
+    <kucni>435</kucni>
+    <telefon>6129-935</telefon>
+    <soba>D304</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Tomislav</ime>
+    <prezime>Gjurić</prezime>
+    <kucni>210</kucni>
+    <telefon />
+    <soba />
+    <zavod>ZPF</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Krešimir</ime>
+    <prezime>Gjurin</prezime>
+    <kucni>338</kucni>
+    <telefon>6129-838</telefon>
+    <soba />
+    <zavod>ZTEL</zavod>
+    <funkcija>Viši laborant 2. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Vlado</ime>
+    <prezime>Glavinić</prezime>
+    <kucni>455</kucni>
+    <telefon>6129-955</telefon>
+    <soba>D318</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Gordan</ime>
+    <prezime>Gledec</prezime>
+    <kucni>325</kucni>
+    <telefon>6129-825</telefon>
+    <soba>C07-10</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Gordana</ime>
+    <prezime>Glušćević</prezime>
+    <kucni />
+    <telefon />
+    <soba>B105</soba>
+    <zavod>FS</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Marin</ime>
+    <prezime>Golub</prezime>
+    <kucni>467</kucni>
+    <telefon>6129-967</telefon>
+    <soba>D329</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Alan</ime>
+    <prezime>Goluban</prezime>
+    <kucni>110</kucni>
+    <telefon>6129-610</telefon>
+    <soba>C11-07</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Pavao</ime>
+    <prezime>Golubović</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZESA</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Blanka</ime>
+    <prezime>Gott</prezime>
+    <kucni>295</kucni>
+    <telefon>6129-795</telefon>
+    <soba>C09-05</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Marijana</ime>
+    <prezime>Greblički</prezime>
+    <kucni>461</kucni>
+    <telefon>6129-961</telefon>
+    <soba>D179</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Davor</ime>
+    <prezime>Grgić</prezime>
+    <kucni>494</kucni>
+    <telefon>6129-994</telefon>
+    <soba>D214</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Mislav</ime>
+    <prezime>Grgić</prezime>
+    <kucni>351</kucni>
+    <telefon>6129-851</telefon>
+    <soba>C11-06</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Sonja</ime>
+    <prezime>Grgić</prezime>
+    <kucni>280</kucni>
+    <telefon>6129-780</telefon>
+    <soba>C11-04</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Tomislav</ime>
+    <prezime>Grgić</prezime>
+    <kucni>255</kucni>
+    <telefon>6129-755</telefon>
+    <soba>C07-16</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Danijela</ime>
+    <prezime>Grozdanić</prezime>
+    <kucni>187</kucni>
+    <telefon>6129-687</telefon>
+    <soba>C01-06</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Carmen</ime>
+    <prezime>Gršić</prezime>
+    <kucni>115</kucni>
+    <telefon>6129-615</telefon>
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Sanja</ime>
+    <prezime>Grubeša</prezime>
+    <kucni>322</kucni>
+    <telefon>6129-822</telefon>
+    <soba>C10-02</soba>
+    <zavod>ZEA</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>oecc.</titula>
+    <ime>Mirjana</ime>
+    <prezime>Grubiša</prezime>
+    <kucni>420</kucni>
+    <telefon>6129-920</telefon>
+    <soba>D23</soba>
+    <zavod>STUSL</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Darko</ime>
+    <prezime>Grubišić</prezime>
+    <kucni>592</kucni>
+    <telefon>6129-592</telefon>
+    <soba>C07-01</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Igor</ime>
+    <prezime>Grudenić</prezime>
+    <kucni>427</kucni>
+    <telefon>6129-927</telefon>
+    <soba>D342</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Jasenka</ime>
+    <prezime>Haladin</prezime>
+    <kucni>365</kucni>
+    <telefon>6129-865</telefon>
+    <soba>C06-05</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Ivana</ime>
+    <prezime>Hebel</prezime>
+    <kucni>185</kucni>
+    <telefon>6129-685</telefon>
+    <soba />
+    <zavod>FS</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Zdravko</ime>
+    <prezime>Hebel</prezime>
+    <kucni>480</kucni>
+    <telefon />
+    <soba>D245</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Adam</ime>
+    <prezime>Heđi</prezime>
+    <kucni>440</kucni>
+    <telefon>6129-940</telefon>
+    <soba>D145</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Hrvoje</ime>
+    <prezime>Hegeduš</prezime>
+    <kucni>249</kucni>
+    <telefon>6129-749</telefon>
+    <soba>C03-315</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Jasna</ime>
+    <prezime>Hemen</prezime>
+    <kucni>194</kucni>
+    <telefon>6129-694</telefon>
+    <soba>D204</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Višnja</ime>
+    <prezime>Henč Bartolić</prezime>
+    <kucni>145</kucni>
+    <telefon />
+    <soba />
+    <zavod>ZPF</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Josip</ime>
+    <prezime>Herceg</prezime>
+    <kucni>101</kucni>
+    <telefon>6129-601</telefon>
+    <soba>C00-03</soba>
+    <zavod>CIP</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Nikica</ime>
+    <prezime>Hlupić</prezime>
+    <kucni>451</kucni>
+    <telefon>6129-951</telefon>
+    <soba>D263</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Ana</ime>
+    <prezime>Holjak</prezime>
+    <kucni>573</kucni>
+    <telefon>6129-573</telefon>
+    <soba>C01-03</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Goran</ime>
+    <prezime>Horak</prezime>
+    <kucni>367</kucni>
+    <telefon>6129-867</telefon>
+    <soba>D135</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>prof.</titula>
+    <ime>Božica</ime>
+    <prezime>Horvat</prezime>
+    <kucni>228</kucni>
+    <telefon>6129-728</telefon>
+    <soba>B114</soba>
+    <zavod>TA</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Dubravko</ime>
+    <prezime>Horvat</prezime>
+    <kucni>104</kucni>
+    <telefon>6129-604</telefon>
+    <soba>C01-09</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Marko</ime>
+    <prezime>Horvat</prezime>
+    <kucni>322</kucni>
+    <telefon>6129-822</telefon>
+    <soba>C10-10</soba>
+    <zavod>ZEA</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Lana</ime>
+    <prezime>Horvat-Dmitrović</prezime>
+    <kucni>461</kucni>
+    <telefon>6129-961</telefon>
+    <soba>D179</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Silvio</ime>
+    <prezime>Hrabar</prezime>
+    <kucni>328</kucni>
+    <telefon>6129-828</telefon>
+    <soba>C12-13</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Tomislav</ime>
+    <prezime>Hrkać</prezime>
+    <kucni>426</kucni>
+    <telefon>6129-926</telefon>
+    <soba>D344</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Miroslav</ime>
+    <prezime>Iličić</prezime>
+    <kucni>359</kucni>
+    <telefon>6129-859</telefon>
+    <soba>Porta</soba>
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Damir</ime>
+    <prezime>Ilić</prezime>
+    <kucni>179</kucni>
+    <telefon>6129-679</telefon>
+    <soba>C03-06</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ivana</ime>
+    <prezime>Ilić</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Dr.sc.</titula>
+    <ime>Željko</ime>
+    <prezime>Ilić</prezime>
+    <kucni>278</kucni>
+    <telefon>6129-778</telefon>
+    <soba>C08-08</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Saša</ime>
+    <prezime>Ilijić</prezime>
+    <kucni>109</kucni>
+    <telefon>6129-609</telefon>
+    <soba>C02-11</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Sanja</ime>
+    <prezime>Illeš</prezime>
+    <kucni>592</kucni>
+    <telefon>6129-592</telefon>
+    <soba>C07-01</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Bojan</ime>
+    <prezime>Ivančević</prezime>
+    <kucni>362</kucni>
+    <telefon>6129-862</telefon>
+    <soba>C10-03</soba>
+    <zavod>ZEA</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Edouard</ime>
+    <prezime>Ivanjko</prezime>
+    <kucni>213</kucni>
+    <telefon>6129-713</telefon>
+    <soba>C09-13</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ilijana</ime>
+    <prezime>Iveković</prezime>
+    <kucni>497</kucni>
+    <telefon>6129-997</telefon>
+    <soba>D213</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Danko</ime>
+    <prezime>Ivošević</prezime>
+    <kucni>426</kucni>
+    <telefon>6129-926</telefon>
+    <soba>D344</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Branimir</ime>
+    <prezime>Ivšić</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZRK</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Domagoj</ime>
+    <prezime>Jakobović</prezime>
+    <kucni>467</kucni>
+    <telefon>6129-967</telefon>
+    <soba>D329</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Zvonimir</ime>
+    <prezime>Jakopović</prezime>
+    <kucni>428</kucni>
+    <telefon>6129-928</telefon>
+    <soba>D334</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Viši laborant 2. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Željko</ime>
+    <prezime>Jakopović</prezime>
+    <kucni>304</kucni>
+    <telefon>6129-804</telefon>
+    <soba>C04-06</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Kristian</ime>
+    <prezime>Jambrošić</prezime>
+    <kucni>333</kucni>
+    <telefon>6129-833</telefon>
+    <soba>C10-07</soba>
+    <zavod>ZEA</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Petar</ime>
+    <prezime>Janković</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>TA</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Radomir</ime>
+    <prezime>Ječmenica</prezime>
+    <kucni>138</kucni>
+    <telefon>6129-638</telefon>
+    <soba>C02-12</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Stručni suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Mate</ime>
+    <prezime>Jelavić</prezime>
+    <kucni>213</kucni>
+    <telefon>6129-713</telefon>
+    <soba>C09-17</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Leonardo</ime>
+    <prezime>Jelenković</prezime>
+    <kucni>427</kucni>
+    <telefon>6129-927</telefon>
+    <soba>D342</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Đurđica</ime>
+    <prezime>Jelić</prezime>
+    <kucni>157</kucni>
+    <telefon>6129-657</telefon>
+    <soba>B108</soba>
+    <zavod>TA</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Branko</ime>
+    <prezime>Jeren</prezime>
+    <kucni>450</kucni>
+    <telefon>6129-950</telefon>
+    <soba>D120</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Dragan</ime>
+    <prezime>Jevtić</prezime>
+    <kucni>319</kucni>
+    <telefon>6129-819</telefon>
+    <soba>C08-07</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Gordan</ime>
+    <prezime>Ježić</prezime>
+    <kucni>325</kucni>
+    <telefon>6129-825</telefon>
+    <soba>C07-10</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>ing.</titula>
+    <ime>Damir</ime>
+    <prezime>Josić</prezime>
+    <kucni>299</kucni>
+    <telefon>6129-799</telefon>
+    <soba>C09-15</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Viši laborant 2. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Vladimir</ime>
+    <prezime>Jovanović</prezime>
+    <kucni>171</kucni>
+    <telefon>6129-671</telefon>
+    <soba>D341</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Mlađi asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Alan</ime>
+    <prezime>Jović</prezime>
+    <kucni>548</kucni>
+    <telefon>6129-548</telefon>
+    <soba>D340</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Krešimir</ime>
+    <prezime>Jurasović</prezime>
+    <kucni>248</kucni>
+    <telefon>6129-748</telefon>
+    <soba>C08-04</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Marko</ime>
+    <prezime>Jurčević</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZOEM</zavod>
+    <funkcija>Mlađi asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Anka</ime>
+    <prezime>Jurić</prezime>
+    <kucni>182</kucni>
+    <telefon>6129-682</telefon>
+    <soba>B105</soba>
+    <zavod>FS</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Damir</ime>
+    <prezime>Jurić</prezime>
+    <kucni>256</kucni>
+    <telefon>6129-756</telefon>
+    <soba>C06-17</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Dražen</ime>
+    <prezime>Jurišić</prezime>
+    <kucni>449</kucni>
+    <telefon>6129-949</telefon>
+    <soba>D109</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Zoran</ime>
+    <prezime>Kalafatić</prezime>
+    <kucni>498</kucni>
+    <telefon>6129-998</telefon>
+    <soba>D343</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Josip</ime>
+    <prezime>Kalaj</prezime>
+    <kucni>359</kucni>
+    <telefon>6129-859</telefon>
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Hrvoje</ime>
+    <prezime>Kalinić</prezime>
+    <kucni>440</kucni>
+    <telefon>6129-940</telefon>
+    <soba>D145</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Damir</ime>
+    <prezime>Kalpić</prezime>
+    <kucni>419</kucni>
+    <telefon>6129-919</telefon>
+    <soba>D368</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>prof.</titula>
+    <ime>Marija</ime>
+    <prezime>Katić</prezime>
+    <kucni>364</kucni>
+    <telefon>6129-864</telefon>
+    <soba>D374</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Tihomir</ime>
+    <prezime>Katić</prezime>
+    <kucni>184</kucni>
+    <telefon>6129-684</telefon>
+    <soba>D114</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Barica</ime>
+    <prezime>Kenig-Sovina</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Vesna</ime>
+    <prezime>Kezdorf</prezime>
+    <kucni>219</kucni>
+    <telefon>6129-719</telefon>
+    <soba>D121</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Damir</ime>
+    <prezime>Kirasić</prezime>
+    <kucni>125</kucni>
+    <telefon>6129-625</telefon>
+    <soba>PCLAB1</soba>
+    <zavod>CIP</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Andreja</ime>
+    <prezime>Kitanov</prezime>
+    <kucni>305</kucni>
+    <telefon>6129-805</telefon>
+    <soba>C09-19</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>ing.</titula>
+    <ime>Davor</ime>
+    <prezime>Klarin</prezime>
+    <kucni>457</kucni>
+    <telefon>6129-957</telefon>
+    <soba>D208</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Viši laborant 2. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Vedran</ime>
+    <prezime>Klasić</prezime>
+    <kucni>155</kucni>
+    <telefon>6129-655</telefon>
+    <soba>PCLAB-1</soba>
+    <zavod>CIP</zavod>
+    <funkcija>Tehničko osoblje</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Josip</ime>
+    <prezime>Knezović</prezime>
+    <kucni>119</kucni>
+    <telefon>6129-619</telefon>
+    <soba>C11-10</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Petar</ime>
+    <prezime>Knežević</prezime>
+    <kucni>246</kucni>
+    <telefon>6129-746</telefon>
+    <soba>C06-13</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Marija</ime>
+    <prezime>Kočiš</prezime>
+    <kucni>411</kucni>
+    <telefon>6129-911</telefon>
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Fetah</ime>
+    <prezime>Kolonić</prezime>
+    <kucni>324</kucni>
+    <telefon>6129-824</telefon>
+    <soba>C04-04</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Zdenka</ime>
+    <prezime>Komerički</prezime>
+    <kucni>458</kucni>
+    <telefon>6129-958</telefon>
+    <soba>D168</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Tin</ime>
+    <prezime>Komljenović</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZRK</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Damir</ime>
+    <prezime>Konjarek</prezime>
+    <kucni>394</kucni>
+    <telefon>6129-894</telefon>
+    <soba>D238</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Ljubica</ime>
+    <prezime>Konjević</prezime>
+    <kucni>140</kucni>
+    <telefon>6129-640</telefon>
+    <soba>C10-05</soba>
+    <zavod>ZEA</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Marko</ime>
+    <prezime>Koričić</prezime>
+    <kucni>171</kucni>
+    <telefon>6129-671</telefon>
+    <soba>D341</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Mlađi asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Luka</ime>
+    <prezime>Korkut</prezime>
+    <kucni>439</kucni>
+    <telefon>6129-939</telefon>
+    <soba>D180</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Mladen</ime>
+    <prezime>Kos</prezime>
+    <kucni>294</kucni>
+    <telefon>6129-794</telefon>
+    <soba>C08-17</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Tomislav</ime>
+    <prezime>Kos</prezime>
+    <kucni>272</kucni>
+    <telefon>6129-772</telefon>
+    <soba>C11-05</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Zvonko</ime>
+    <prezime>Kostanjčar</prezime>
+    <kucni>470</kucni>
+    <telefon>6129-970</telefon>
+    <soba>D107</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Davor</ime>
+    <prezime>Kotur</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZOEM</zavod>
+    <funkcija>Laborant</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Mario</ime>
+    <prezime>Kovač</prezime>
+    <kucni>259</kucni>
+    <telefon>6129-759</telefon>
+    <soba>C11-19</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.iur.</titula>
+    <ime>Marija</ime>
+    <prezime>Kovačević</prezime>
+    <kucni>146</kucni>
+    <telefon>6129-646</telefon>
+    <soba>B106</soba>
+    <zavod>TA</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Zdenko</ime>
+    <prezime>Kovačić</prezime>
+    <kucni>296</kucni>
+    <telefon>6129-796</telefon>
+    <soba>C11-15</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Slavko</ime>
+    <prezime>Krajcar</prezime>
+    <kucni>490</kucni>
+    <telefon>6129-990</telefon>
+    <soba>D215</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Mario</ime>
+    <prezime>Križan</prezime>
+    <kucni>547</kucni>
+    <telefon>6129-547</telefon>
+    <soba>D353</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Krešimir</ime>
+    <prezime>Križanović</prezime>
+    <kucni>531</kucni>
+    <telefon>6129-531</telefon>
+    <soba>D373</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ognjen</ime>
+    <prezime>Krkač</prezime>
+    <kucni>536</kucni>
+    <telefon>6129-536</telefon>
+    <soba>D136</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Snježana</ime>
+    <prezime>Krleža</prezime>
+    <kucni>270</kucni>
+    <telefon>6129-770</telefon>
+    <soba>C05-04</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Mario</ime>
+    <prezime>Krnić</prezime>
+    <kucni>465</kucni>
+    <telefon>6129-965</telefon>
+    <soba>D181</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Krešimir</ime>
+    <prezime>Kroflin</prezime>
+    <kucni>160</kucni>
+    <telefon />
+    <soba>C00-06</soba>
+    <zavod>CIP</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Igor</ime>
+    <prezime>Krois</prezime>
+    <kucni>412</kucni>
+    <telefon>6129-912</telefon>
+    <soba>D359</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Jakov</ime>
+    <prezime>Krolo</prezime>
+    <kucni>397</kucni>
+    <telefon>6129-897</telefon>
+    <soba>D338</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ana</ime>
+    <prezime>Kukec</prezime>
+    <kucni>237</kucni>
+    <telefon>6129-737</telefon>
+    <soba>C07-05</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Davor</ime>
+    <prezime>Kukolja</prezime>
+    <kucni>521</kucni>
+    <telefon>6129-521</telefon>
+    <soba>C02-02</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Ljubomir</ime>
+    <prezime>Kuljača</prezime>
+    <kucni>315</kucni>
+    <telefon>6129-815</telefon>
+    <soba>C09-09</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ivica</ime>
+    <prezime>Kunšt</prezime>
+    <kucni>176</kucni>
+    <telefon>6129-676</telefon>
+    <soba>C03-10</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Viši laborant 2. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Marijan</ime>
+    <prezime>Kunštić</prezime>
+    <kucni>348</kucni>
+    <telefon>6129-848</telefon>
+    <soba>C08-16</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Marijan</ime>
+    <prezime>Kuri</prezime>
+    <kucni>460</kucni>
+    <telefon>6129-960</telefon>
+    <soba>D149</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Viši laborant 2. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Mario</ime>
+    <prezime>Kušek</prezime>
+    <kucni>301</kucni>
+    <telefon>6129-801</telefon>
+    <soba>C08-05</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Igor</ime>
+    <prezime>Kuzle</prezime>
+    <kucni>375</kucni>
+    <telefon>6129-875</telefon>
+    <soba>D249</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Igor</ime>
+    <prezime>Lacković</prezime>
+    <kucni>308</kucni>
+    <telefon>6129-808</telefon>
+    <soba>D129</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ozren</ime>
+    <prezime>Lapčević</prezime>
+    <kucni>251</kucni>
+    <telefon>6129-751</telefon>
+    <soba>C07-14</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Ivan</ime>
+    <prezime>Leniček</prezime>
+    <kucni>209</kucni>
+    <telefon>6129-709</telefon>
+    <soba>C03-05</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Vjekoslav</ime>
+    <prezime>Levačić</prezime>
+    <kucni>470</kucni>
+    <telefon>6129-970</telefon>
+    <soba>D107</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl. soc. r.</titula>
+    <ime>Danijela</ime>
+    <prezime>Ležaić</prezime>
+    <kucni>405</kucni>
+    <telefon>6129-905</telefon>
+    <soba>D23</soba>
+    <zavod>STUSL</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Jadranka</ime>
+    <prezime>Lisek</prezime>
+    <kucni>388</kucni>
+    <telefon>6129-888</telefon>
+    <soba>KNJIZNICA</soba>
+    <zavod>KN</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Zorica</ime>
+    <prezime>Livić</prezime>
+    <kucni>323</kucni>
+    <telefon>6129-823</telefon>
+    <soba>C03-19</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Sven</ime>
+    <prezime>Lončarić</prezime>
+    <kucni>391</kucni>
+    <telefon>6129-891</telefon>
+    <soba>D119</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl. knjiž.</titula>
+    <ime>Branka</ime>
+    <prezime>Lovreček</prezime>
+    <kucni>386</kucni>
+    <telefon>6129-886</telefon>
+    <soba>KNJIZNICA</soba>
+    <zavod>KN</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Ignac</ime>
+    <prezime>Lovrek</prezime>
+    <kucni>302</kucni>
+    <telefon>6129-802</telefon>
+    <soba>C08-15</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Željka</ime>
+    <prezime>Lučev</prezime>
+    <kucni>367</kucni>
+    <telefon>6129-867</telefon>
+    <soba>D135</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Luka</ime>
+    <prezime>Lugarić</prezime>
+    <kucni>193</kucni>
+    <telefon>6129-693</telefon>
+    <soba>D209</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>prof.</titula>
+    <ime>Petra</ime>
+    <prezime>Lukina</prezime>
+    <kucni>520</kucni>
+    <telefon>6129-520</telefon>
+    <soba>D021</soba>
+    <zavod>STUSL</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Igor</ime>
+    <prezime>Ljubi</prezime>
+    <kucni>268</kucni>
+    <telefon>6129-768</telefon>
+    <soba>C08-06</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Kristijan</ime>
+    <prezime>Maček</prezime>
+    <kucni>213</kucni>
+    <telefon>6129-713</telefon>
+    <soba>C09-02</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Ratko</ime>
+    <prezime>Magjarević</prezime>
+    <kucni>438</kucni>
+    <telefon>6129-938</telefon>
+    <soba>D143</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Sonja</ime>
+    <prezime>Majstorović</prezime>
+    <kucni>415</kucni>
+    <telefon>6129-915</telefon>
+    <soba>D365</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Krešimir</ime>
+    <prezime>Malarić</prezime>
+    <kucni>289</kucni>
+    <telefon>6129-789</telefon>
+    <soba>C12-11</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Roman</ime>
+    <prezime>Malarić</prezime>
+    <kucni>150</kucni>
+    <telefon>6129-650</telefon>
+    <soba>C03-04</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.iur.</titula>
+    <ime>Vladimir</ime>
+    <prezime>Malarić</prezime>
+    <kucni>123</kucni>
+    <telefon>6129-623</telefon>
+    <soba>B112</soba>
+    <zavod>TA</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Mladen</ime>
+    <prezime>Maletić</prezime>
+    <kucni>120</kucni>
+    <telefon>6129-620</telefon>
+    <soba>C10-04</soba>
+    <zavod>ZEA</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Vlatko</ime>
+    <prezime>Malović</prezime>
+    <kucni>512</kucni>
+    <telefon>6129-512</telefon>
+    <soba>D365</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Zlatko</ime>
+    <prezime>Maljković</prezime>
+    <kucni>273</kucni>
+    <telefon>6129-773</telefon>
+    <soba>C05-11</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Milivoj</ime>
+    <prezime>Mandić</prezime>
+    <kucni>214</kucni>
+    <telefon>6129-714</telefon>
+    <soba>D206</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Tvrtko</ime>
+    <prezime>Mandić</prezime>
+    <kucni>547</kucni>
+    <telefon>6129-547</telefon>
+    <soba>D353</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Marijo</ime>
+    <prezime>Maračić</prezime>
+    <kucni>550</kucni>
+    <telefon>6129-550</telefon>
+    <soba>D336</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Darijan</ime>
+    <prezime>Marčetić</prezime>
+    <kucni>550</kucni>
+    <telefon>6129-550</telefon>
+    <soba>D336</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Branka</ime>
+    <prezime>Marjanović</prezime>
+    <kucni>384</kucni>
+    <telefon>6129-884</telefon>
+    <soba>D225</soba>
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Tihomir</ime>
+    <prezime>Marjanović</prezime>
+    <kucni>477</kucni>
+    <telefon>6129-977</telefon>
+    <soba>D146</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Manda</ime>
+    <prezime>Marković</prezime>
+    <kucni>422</kucni>
+    <telefon>6129-922</telefon>
+    <soba>D1</soba>
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Anja</ime>
+    <prezime>Marunović</prezime>
+    <kucni>187</kucni>
+    <telefon>6129-687</telefon>
+    <soba>C01-06</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Ante</ime>
+    <prezime>Marušić</prezime>
+    <kucni>409</kucni>
+    <telefon>6129-909</telefon>
+    <soba>D250</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Damir</ime>
+    <prezime>Matić</prezime>
+    <kucni>229</kucni>
+    <telefon>6129-729</telefon>
+    <soba>C03-14</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Viši laborant 2. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Maja</ime>
+    <prezime>Matijašević</prezime>
+    <kucni>257</kucni>
+    <telefon>6129-757</telefon>
+    <soba>C07-08</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Mario</ime>
+    <prezime>Matijević</prezime>
+    <kucni>138</kucni>
+    <telefon>6129-638</telefon>
+    <soba>C02-12</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.iur.</titula>
+    <ime>Jadranka</ime>
+    <prezime>Matleković</prezime>
+    <kucni>303</kucni>
+    <telefon>6129-803</telefon>
+    <soba>B107</soba>
+    <zavod>TA</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Jadranko</ime>
+    <prezime>Matuško</prezime>
+    <kucni>561</kucni>
+    <telefon>6129-561</telefon>
+    <soba>C09-02</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ivica</ime>
+    <prezime>Medved</prezime>
+    <kucni>169</kucni>
+    <telefon>6129-669</telefon>
+    <soba>D150</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Igor</ime>
+    <prezime>Mekterović</prezime>
+    <kucni>290</kucni>
+    <telefon>6129-790</telefon>
+    <soba>D373</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Sanja</ime>
+    <prezime>Mesić</prezime>
+    <kucni>592</kucni>
+    <telefon>6129-592</telefon>
+    <soba>C07-01</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Željka</ime>
+    <prezime>Mihajlović</prezime>
+    <kucni>444</kucni>
+    <telefon>6129-944</telefon>
+    <soba>D331</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Branko</ime>
+    <prezime>Mihaljević</prezime>
+    <kucni>131</kucni>
+    <telefon>6129-631</telefon>
+    <soba>C11-17</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Mara</ime>
+    <prezime>Mihaljević</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Josip</ime>
+    <prezime>Mihel</prezime>
+    <kucni>536</kucni>
+    <telefon>6129-536</telefon>
+    <soba>D136</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Neven</ime>
+    <prezime>Mijat</prezime>
+    <kucni>466</kucni>
+    <telefon>6129-966</telefon>
+    <soba>D117</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Nenad</ime>
+    <prezime>Mijatović</prezime>
+    <kucni>457</kucni>
+    <telefon>6129-957</telefon>
+    <soba>D208</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Jure</ime>
+    <prezime>Mijić</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Branko</ime>
+    <prezime>Mikac</prezime>
+    <kucni>252</kucni>
+    <telefon>6129-752</telefon>
+    <soba>C07-13</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Matija</ime>
+    <prezime>Mikac</prezime>
+    <kucni>231</kucni>
+    <telefon>6129-731</telefon>
+    <soba>C08-18</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Vedran</ime>
+    <prezime>Mikac</prezime>
+    <kucni>343</kucni>
+    <telefon>6129-843</telefon>
+    <soba>C08-13</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Marija</ime>
+    <prezime>Mikić</prezime>
+    <kucni>501</kucni>
+    <telefon>6129-501</telefon>
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Damjan</ime>
+    <prezime>Miklić</prezime>
+    <kucni>329</kucni>
+    <telefon>6129-829</telefon>
+    <soba>C11-16</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Dr.sc.</titula>
+    <ime>Vesna</ime>
+    <prezime>Mikšić-Trontl</prezime>
+    <kucni>148</kucni>
+    <telefon>6129-648</telefon>
+    <soba>C02-17</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Viši asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Miljenko</ime>
+    <prezime>Mikuc</prezime>
+    <kucni>327</kucni>
+    <telefon>6129-827</telefon>
+    <soba>C07-07</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Vladimir</ime>
+    <prezime>Mikuličić</prezime>
+    <kucni>493</kucni>
+    <telefon>6129-993</telefon>
+    <soba>D220</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Dr.sc.</titula>
+    <ime>Viktor</ime>
+    <prezime>Milardić</prezime>
+    <kucni>214</kucni>
+    <telefon>6129-714</telefon>
+    <soba>D206</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Viši asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Boris</ime>
+    <prezime>Milašinović</prezime>
+    <kucni>364</kucni>
+    <telefon>6129-864</telefon>
+    <soba>D374</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Marinko</ime>
+    <prezime>Miletić</prezime>
+    <kucni>334</kucni>
+    <telefon>6129-834</telefon>
+    <soba>C04-11</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Viši laborant 2. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Siniša</ime>
+    <prezime>Miličić</prezime>
+    <kucni>961</kucni>
+    <telefon>6129-961</telefon>
+    <soba>D179</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Dr.sc.</titula>
+    <ime>Josipa-Pina</ime>
+    <prezime>Milišić</prezime>
+    <kucni>439</kucni>
+    <telefon>6129-939</telefon>
+    <soba>D180</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Nikolina</ime>
+    <prezime>Miljan</prezime>
+    <kucni>228</kucni>
+    <telefon>6129-728</telefon>
+    <soba>B106</soba>
+    <zavod>TA</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Ljiljana</ime>
+    <prezime>Mišerić</prezime>
+    <kucni>590</kucni>
+    <telefon>6129-590</telefon>
+    <soba>C10-12</soba>
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Nikola</ime>
+    <prezime>Mišković</prezime>
+    <kucni>315</kucni>
+    <telefon>6129-815</telefon>
+    <soba>C09-09</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Hrvoje</ime>
+    <prezime>Mlinarić</prezime>
+    <kucni>342</kucni>
+    <telefon>6129-842</telefon>
+    <soba>C11-09</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Borivoj</ime>
+    <prezime>Modlic</prezime>
+    <kucni>172</kucni>
+    <telefon>6129-672</telefon>
+    <soba>C12-09</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Goran</ime>
+    <prezime>Molnar</prezime>
+    <kucni>563</kucni>
+    <telefon>6129-563</telefon>
+    <soba>D162</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Petar</ime>
+    <prezime>Mostarac</prezime>
+    <kucni>249</kucni>
+    <telefon>6129-749</telefon>
+    <soba>C3-15</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Saša</ime>
+    <prezime>mrvoš</prezime>
+    <kucni />
+    <telefon />
+    <soba>D137</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Mario</ime>
+    <prezime>Muštra</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZRK</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Alan</ime>
+    <prezime>Mutka</prezime>
+    <kucni>329</kucni>
+    <telefon>6129-829</telefon>
+    <soba>c11-16</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Robert</ime>
+    <prezime>Nađ</prezime>
+    <kucni>230</kucni>
+    <telefon>6129-730</telefon>
+    <soba>C12-04</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Anamari</ime>
+    <prezime>Nakić</prezime>
+    <kucni>461</kucni>
+    <telefon>6129-961</telefon>
+    <soba>D179</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Zoran</ime>
+    <prezime>Narančić</prezime>
+    <kucni>124</kucni>
+    <telefon>6129-624</telefon>
+    <soba>C01-07</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ivana</ime>
+    <prezime>Nižetić</prezime>
+    <kucni>364</kucni>
+    <telefon>6129-864</telefon>
+    <soba>D374</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Ljerka</ime>
+    <prezime>Nuić</prezime>
+    <kucni>357</kucni>
+    <telefon>6129-857</telefon>
+    <soba>C12-08</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Milijana</ime>
+    <prezime>Odavić</prezime>
+    <kucni>283</kucni>
+    <telefon>6129-783</telefon>
+    <soba>C04-09</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Marin</ime>
+    <prezime>Orlić</prezime>
+    <kucni>131</kucni>
+    <telefon>6129-631</telefon>
+    <soba>C11-17</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ivana</ime>
+    <prezime>Palunko</prezime>
+    <kucni>521</kucni>
+    <telefon>6129-521</telefon>
+    <soba>C02-02</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Hrvoje</ime>
+    <prezime>Pandžić</prezime>
+    <kucni>509</kucni>
+    <telefon>6129-509</telefon>
+    <soba>D240</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Igor</ime>
+    <prezime>Pandžić</prezime>
+    <kucni>135</kucni>
+    <telefon>6129-635</telefon>
+    <soba>C08-10</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Robert</ime>
+    <prezime>Pašičko</prezime>
+    <kucni>486</kucni>
+    <telefon>6129-986</telefon>
+    <soba>D210</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Mervan</ime>
+    <prezime>Pašić</prezime>
+    <kucni>401</kucni>
+    <telefon>6129-901</telefon>
+    <soba>D172</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Mario-Osvin</ime>
+    <prezime>Pavčević</prezime>
+    <kucni>434</kucni>
+    <telefon>6129-934</telefon>
+    <soba>D177</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Armin</ime>
+    <prezime>Pavić</prezime>
+    <kucni>277</kucni>
+    <telefon>6129-777</telefon>
+    <soba>C06-12</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Ivica</ime>
+    <prezime>Pavić</prezime>
+    <kucni>484</kucni>
+    <telefon>6129-984</telefon>
+    <soba>D233</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Velimir-Josip</ime>
+    <prezime>Pavlaković</prezime>
+    <kucni>201</kucni>
+    <telefon>6129-701</telefon>
+    <soba>C04-16</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Viši laborant 2. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Jakov</ime>
+    <prezime>Pavlek</prezime>
+    <kucni>263</kucni>
+    <telefon>6129-763</telefon>
+    <soba />
+    <zavod>ZOEM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Stjepan</ime>
+    <prezime>Pavlek</prezime>
+    <kucni>415</kucni>
+    <telefon>6129-915</telefon>
+    <soba>D365</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Milutin</ime>
+    <prezime>Pavlica</prezime>
+    <kucni>113</kucni>
+    <telefon>6129-613</telefon>
+    <soba>C05-07</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Renata</ime>
+    <prezime>Peček</prezime>
+    <kucni>303</kucni>
+    <telefon>6129-803</telefon>
+    <soba>B107</soba>
+    <zavod>TA</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Damir</ime>
+    <prezime>Pehar</prezime>
+    <kucni>166</kucni>
+    <telefon>6129-666</telefon>
+    <soba>PCLAB1</soba>
+    <zavod>CIP</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Domagoj</ime>
+    <prezime>Peharda</prezime>
+    <kucni>496</kucni>
+    <telefon>6129-996</telefon>
+    <soba>D211</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Tomislav</ime>
+    <prezime>Pejša</prezime>
+    <kucni>238</kucni>
+    <telefon>6129-738</telefon>
+    <soba>C08-03</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Edgar</ime>
+    <prezime>Pek</prezime>
+    <kucni>548</kucni>
+    <telefon>6129-548</telefon>
+    <soba>D340</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Mario</ime>
+    <prezime>Perić</prezime>
+    <kucni>425</kucni>
+    <telefon>6129-925</telefon>
+    <soba>D360</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Nedjeljko</ime>
+    <prezime>Perić</prezime>
+    <kucni>355</kucni>
+    <telefon>6129-855</telefon>
+    <soba>C09-07</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Stipo</ime>
+    <prezime>Periša</prezime>
+    <kucni>275</kucni>
+    <telefon>6129-775</telefon>
+    <soba>D114</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Tehnički suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Spomenka</ime>
+    <prezime>Perkušić</prezime>
+    <kucni>264</kucni>
+    <telefon>6129-764</telefon>
+    <soba>C04-07</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Tomislav</ime>
+    <prezime>Petković</prezime>
+    <kucni>240</kucni>
+    <telefon>6129-740</telefon>
+    <soba>C02-06</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Tomislav</ime>
+    <prezime>Petković</prezime>
+    <kucni>563</kucni>
+    <telefon>6129-563</telefon>
+    <soba>D162</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Antonio</ime>
+    <prezime>Petošić</prezime>
+    <kucni>322</kucni>
+    <telefon>6129-822</telefon>
+    <soba>C10-10</soba>
+    <zavod>ZEA</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Damir</ime>
+    <prezime>Petričević</prezime>
+    <kucni>314</kucni>
+    <telefon>6129-814</telefon>
+    <soba>C12-03</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Viši laborant 2. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ana</ime>
+    <prezime>Petrić</prezime>
+    <kucni>195</kucni>
+    <telefon>6129-695</telefon>
+    <soba>C08-04</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Davor</ime>
+    <prezime>Petrinović</prezime>
+    <kucni>468</kucni>
+    <telefon>6129-968</telefon>
+    <soba>D105</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Ivan</ime>
+    <prezime>Petrović</prezime>
+    <kucni>344</kucni>
+    <telefon>6129-844</telefon>
+    <soba>C09-10</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Martina</ime>
+    <prezime>Petrović</prezime>
+    <kucni>211</kucni>
+    <telefon>6129-711</telefon>
+    <soba>B104</soba>
+    <zavod>FS</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Tamara</ime>
+    <prezime>Petrović</prezime>
+    <kucni>329</kucni>
+    <telefon>6129-829</telefon>
+    <soba>C11-16</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Dubravko</ime>
+    <prezime>Pevec</prezime>
+    <kucni>167</kucni>
+    <telefon>6129-667</telefon>
+    <soba>C02-20</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Damir</ime>
+    <prezime>Pintar</prezime>
+    <kucni>186</kucni>
+    <telefon>6129-686</telefon>
+    <soba>C06-11</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Dr.sc.</titula>
+    <ime>Sanda</ime>
+    <prezime>Pleslić</prezime>
+    <kucni>107</kucni>
+    <telefon>6129-607</telefon>
+    <soba>C02-07</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Viši asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Zrinka</ime>
+    <prezime>Plodinec</prezime>
+    <kucni>359</kucni>
+    <telefon>6129-859</telefon>
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Ivana</ime>
+    <prezime>Podnar Žarko</prezime>
+    <kucni>287</kucni>
+    <telefon>6129-787</telefon>
+    <soba>C07-11</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Vedran</ime>
+    <prezime>Podobnik</prezime>
+    <kucni>248</kucni>
+    <telefon>6129-748</telefon>
+    <soba>C08-04</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Mirko</ime>
+    <prezime>Poljak</prezime>
+    <kucni>564</kucni>
+    <telefon>6129-564</telefon>
+    <soba>D352</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Snježana</ime>
+    <prezime>Poljak</prezime>
+    <kucni>110</kucni>
+    <telefon>6129-610</telefon>
+    <soba>C11-07</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Alen</ime>
+    <prezime>Poljugan</prezime>
+    <kucni>282</kucni>
+    <telefon>6129-782</telefon>
+    <soba>C04-13</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Miroslav</ime>
+    <prezime>Popović</prezime>
+    <kucni>397</kucni>
+    <telefon>6129-897</telefon>
+    <soba>D338</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Siniša</ime>
+    <prezime>Popović</prezime>
+    <kucni>337</kucni>
+    <telefon>6129-837</telefon>
+    <soba>C02-02</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Vesna</ime>
+    <prezime>Popović</prezime>
+    <kucni>154</kucni>
+    <telefon>6129-654</telefon>
+    <soba />
+    <zavod>ZPF</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Jožica</ime>
+    <prezime>Poslon</prezime>
+    <kucni>146</kucni>
+    <telefon>6129-646</telefon>
+    <soba>B106</soba>
+    <zavod>TA</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime />
+    <prezime>Praktikum</prezime>
+    <kucni>105</kucni>
+    <telefon />
+    <soba />
+    <zavod>ZPF</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Dr.sc.</titula>
+    <ime>Tomislav</ime>
+    <prezime>Pribanić</prezime>
+    <kucni>367</kucni>
+    <telefon>6129-867</telefon>
+    <soba>D135</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Krešimir</ime>
+    <prezime>Pripužić</prezime>
+    <kucni>245</kucni>
+    <telefon>6129-745</telefon>
+    <soba>C07-06</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>za financije</ime>
+    <prezime>prodekan</prezime>
+    <kucni>330</kucni>
+    <telefon />
+    <soba>DEKAN</soba>
+    <zavod>UPRAVA</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>za nastavu</ime>
+    <prezime>prodekan</prezime>
+    <kucni>102</kucni>
+    <telefon />
+    <soba>B114</soba>
+    <zavod>UPRAVA</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>za znanost</ime>
+    <prezime>prodekan</prezime>
+    <kucni>130</kucni>
+    <telefon />
+    <soba>B114</soba>
+    <zavod>UPRAVA</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Maroje</ime>
+    <prezime>Puh</prezime>
+    <kucni>580</kucni>
+    <telefon>6129-580</telefon>
+    <soba>C07-01</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Dubravka</ime>
+    <prezime>Pukljak Zoković</prezime>
+    <kucni>364</kucni>
+    <telefon>6129-864</telefon>
+    <soba>D374</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Zrinka</ime>
+    <prezime>Puljiz</prezime>
+    <kucni>237</kucni>
+    <telefon>6129-737</telefon>
+    <soba>C07-05</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Nada</ime>
+    <prezime>Rabik</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Ankica</ime>
+    <prezime>Radaš</prezime>
+    <kucni>233</kucni>
+    <telefon />
+    <soba />
+    <zavod />
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Tomislav</ime>
+    <prezime>Rajnović</prezime>
+    <kucni>512</kucni>
+    <telefon>6129-512</telefon>
+    <soba>D365</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ivan</ime>
+    <prezime>Rajšl</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Marija</ime>
+    <prezime>Raljević</prezime>
+    <kucni>359</kucni>
+    <telefon />
+    <soba />
+    <zavod />
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>591</titula>
+    <ime />
+    <prezime>6129-859</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod />
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>6129-591</titula>
+    <ime>SO</ime>
+    <prezime />
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod />
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Mirko</ime>
+    <prezime>Randić</prezime>
+    <kucni>260</kucni>
+    <telefon>6129-760</telefon>
+    <soba>C06-20</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Davor</ime>
+    <prezime>Rašeta</prezime>
+    <kucni>394</kucni>
+    <telefon>6129-894</telefon>
+    <soba>D238</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Ana</ime>
+    <prezime>Relotić</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Anastazija</ime>
+    <prezime>Rendulić</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Maja</ime>
+    <prezime>Resman</prezime>
+    <kucni>459</kucni>
+    <telefon>6129-959</telefon>
+    <soba>D153</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Slobodan</ime>
+    <prezime>Ribarić</prezime>
+    <kucni>452</kucni>
+    <telefon>6129-952</telefon>
+    <soba>D311</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Branka</ime>
+    <prezime>Rihtarić</prezime>
+    <kucni>345</kucni>
+    <telefon>6129-845</telefon>
+    <soba>C05-08</soba>
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Slavica</ime>
+    <prezime>Robić</prezime>
+    <kucni>486</kucni>
+    <telefon>6129-986</telefon>
+    <soba>D210</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Nataša</ime>
+    <prezime>Rogulja</prezime>
+    <kucni>275</kucni>
+    <telefon>6129-775</telefon>
+    <soba>D114</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Lidia</ime>
+    <prezime>Rovan</prezime>
+    <kucni>539</kucni>
+    <telefon>6129-539</telefon>
+    <soba>D373</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Goran</ime>
+    <prezime>Rovišan</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZESA</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Gorana</ime>
+    <prezime>Rubinić</prezime>
+    <kucni />
+    <telefon>290</telefon>
+    <soba>D373</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Marija</ime>
+    <prezime>Rumac</prezime>
+    <kucni>142</kucni>
+    <telefon>6129-642</telefon>
+    <soba>DEKAN</soba>
+    <zavod>TA</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Branko</ime>
+    <prezime>Samaržija</prezime>
+    <kucni>498</kucni>
+    <telefon>6129-998</telefon>
+    <soba>D336</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Tomislav</ime>
+    <prezime>Sečen</prezime>
+    <kucni>131</kucni>
+    <telefon>6129-631</telefon>
+    <soba>C11-17</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Marija</ime>
+    <prezime>Seder</prezime>
+    <kucni>561</kucni>
+    <telefon>6129-561</telefon>
+    <soba>C09-02</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Damir</ime>
+    <prezime>Seršić</prezime>
+    <kucni>473</kucni>
+    <telefon>6129-973</telefon>
+    <soba>D106</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Mira</ime>
+    <prezime>Silov</prezime>
+    <kucni>177</kucni>
+    <telefon>6129-677</telefon>
+    <soba>B102</soba>
+    <zavod>FS</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Vjekoslav</ime>
+    <prezime>Sinković</prezime>
+    <kucni>218</kucni>
+    <telefon>6129-718</telefon>
+    <soba>C08-19</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Danko</ime>
+    <prezime>Sirotić</prezime>
+    <kucni>346</kucni>
+    <telefon>6129-846</telefon>
+    <soba>C03-20</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Zoran</ime>
+    <prezime>Skočir</prezime>
+    <kucni>331</kucni>
+    <telefon>6129-831</telefon>
+    <soba>C06-16</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Dr.sc.</titula>
+    <ime>Srđan</ime>
+    <prezime>Skok</prezime>
+    <kucni>478</kucni>
+    <telefon>6129-978</telefon>
+    <soba>D232</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Viši asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Nina</ime>
+    <prezime>Skorin-Kapov</prezime>
+    <kucni>231</kucni>
+    <telefon>6129-731</telefon>
+    <soba>C08-18</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Daniel</ime>
+    <prezime>Skrobo</prezime>
+    <kucni>397</kucni>
+    <telefon>6129-897</telefon>
+    <soba>D338</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Jasna</ime>
+    <prezime>Slavinić</prezime>
+    <kucni>310</kucni>
+    <telefon>6129-810</telefon>
+    <soba>C08-09</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Pripremna</ime>
+    <prezime>Soba</prezime>
+    <kucni>128</kucni>
+    <telefon />
+    <soba />
+    <zavod>ZPF</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Branko</ime>
+    <prezime>Somek</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>Nema zavoda</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ana</ime>
+    <prezime>Sović</prezime>
+    <kucni>383</kucni>
+    <telefon>6129-883</telefon>
+    <soba>D163</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Siniša</ime>
+    <prezime>Sovilj</prezime>
+    <kucni>367</kucni>
+    <telefon>6129-867</telefon>
+    <soba>D135</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Vedrana</ime>
+    <prezime>Spudić</prezime>
+    <kucni>305</kucni>
+    <telefon>6129-805</telefon>
+    <soba>C09-19</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Siniša</ime>
+    <prezime>Srbljić</prezime>
+    <kucni>454</kucni>
+    <telefon>6129-954</telefon>
+    <soba>D310</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Vlado</ime>
+    <prezime>Sruk</prezime>
+    <kucni>445</kucni>
+    <telefon>6129-945</telefon>
+    <soba>D332</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Kristina</ime>
+    <prezime>Stanković</prezime>
+    <kucni>238</kucni>
+    <telefon>6129-738</telefon>
+    <soba>C08-03</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Zoran</ime>
+    <prezime>Stare</prezime>
+    <kucni>433</kucni>
+    <telefon>6129-933</telefon>
+    <soba>D130</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Željko</ime>
+    <prezime>Stojin</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Dr.sc.</titula>
+    <ime>Marko</ime>
+    <prezime>Subašić</prezime>
+    <kucni>440</kucni>
+    <telefon />
+    <soba>D145</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Boris</ime>
+    <prezime>Sučić</prezime>
+    <kucni>545</kucni>
+    <telefon>6129-545</telefon>
+    <soba>D241</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Mia</ime>
+    <prezime>Suhanek</prezime>
+    <kucni>322</kucni>
+    <telefon>6129-822</telefon>
+    <soba>C10-10</soba>
+    <zavod>ZEA</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Tomislav</ime>
+    <prezime>Suligoj</prezime>
+    <kucni>398</kucni>
+    <telefon>6129-898</telefon>
+    <soba>D345</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Damir</ime>
+    <prezime>Sumina</prezime>
+    <kucni>284</kucni>
+    <telefon>6129-784</telefon>
+    <soba>C04-12</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Mirko</ime>
+    <prezime>Sužnjević</prezime>
+    <kucni>580</kucni>
+    <telefon>6129-580</telefon>
+    <soba>C07-01</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Siniša</ime>
+    <prezime>Šadek</prezime>
+    <kucni>394</kucni>
+    <telefon>6129-894</telefon>
+    <soba>D238</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Alan</ime>
+    <prezime>Šala</prezime>
+    <kucni>209</kucni>
+    <telefon>6129-709</telefon>
+    <soba>C03-05</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Siniša</ime>
+    <prezime>Šegvić</prezime>
+    <kucni>442</kucni>
+    <telefon>6129-942</telefon>
+    <soba>D330</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Đurđica</ime>
+    <prezime>Šešerinac</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Krešimir</ime>
+    <prezime>Šikić</prezime>
+    <kucni>281</kucni>
+    <telefon>6129-781</telefon>
+    <soba>D104</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Mile</ime>
+    <prezime>Šikić</prezime>
+    <kucni>281</kucni>
+    <telefon>6129-781</telefon>
+    <soba>D104</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Željkica</ime>
+    <prezime>Šikuten</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Artur</ime>
+    <prezime>Šilić</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Marin</ime>
+    <prezime>Šilić</prezime>
+    <kucni>397</kucni>
+    <telefon>6129-897</telefon>
+    <soba>D338</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Neda</ime>
+    <prezime>Šimara</prezime>
+    <kucni>407</kucni>
+    <telefon>6129-907</telefon>
+    <soba>D204</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl. knjiž.</titula>
+    <ime>Stjepan</ime>
+    <prezime>Šimara</prezime>
+    <kucni>538</kucni>
+    <telefon>6129-538</telefon>
+    <soba>KNJIZNICA</soba>
+    <zavod>KN</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Toni</ime>
+    <prezime>Šimić</prezime>
+    <kucni>356</kucni>
+    <telefon>6129-856</telefon>
+    <soba>C 4-10</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Zdenko</ime>
+    <prezime>Šimić</prezime>
+    <kucni>485</kucni>
+    <telefon>6129-985</telefon>
+    <soba>D247</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Dina</ime>
+    <prezime>Šimunić</prezime>
+    <kucni>106</kucni>
+    <telefon>6129-606</telefon>
+    <soba>C12-06</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Gordana</ime>
+    <prezime>Šincek</prezime>
+    <kucni>183</kucni>
+    <telefon>6129-683</telefon>
+    <soba>B104</soba>
+    <zavod>FS</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Zvonimir</ime>
+    <prezime>Šipuš</prezime>
+    <kucni>298</kucni>
+    <telefon>6129-798</telefon>
+    <soba>C12-07</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Gordan</ime>
+    <prezime>Šišul</prezime>
+    <kucni>351</kucni>
+    <telefon>6129-851</telefon>
+    <soba>C11-06</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Dr.sc.</titula>
+    <ime>Dejan</ime>
+    <prezime>Škanata</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Siniša</ime>
+    <prezime>Škokić</prezime>
+    <kucni>242</kucni>
+    <telefon>6129-742</telefon>
+    <soba>C12-15</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Davor</ime>
+    <prezime>Škrlec</prezime>
+    <kucni>421</kucni>
+    <telefon>6129-921</telefon>
+    <soba>D224</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Dejan</ime>
+    <prezime>Škvorc</prezime>
+    <kucni>397</kucni>
+    <telefon>6129-897</telefon>
+    <soba>D338</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Boris</ime>
+    <prezime>Šnajder</prezime>
+    <kucni>536</kucni>
+    <telefon>6129-536</telefon>
+    <soba>D136</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Jan</ime>
+    <prezime>Šnajder</prezime>
+    <kucni>498</kucni>
+    <telefon>6129-998</telefon>
+    <soba>D330</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Mirica</ime>
+    <prezime>Špiljar</prezime>
+    <kucni>321</kucni>
+    <telefon>6129-821</telefon>
+    <soba>C09-12</soba>
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Zdenko</ime>
+    <prezime>Štifter</prezime>
+    <kucni>293</kucni>
+    <telefon>6129-793</telefon>
+    <soba>C05-17</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Viši laborant 2. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Željko</ime>
+    <prezime>Štih</prezime>
+    <kucni>156</kucni>
+    <telefon>6129-656</telefon>
+    <soba>C06-08</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Nikola</ime>
+    <prezime>Švigir</prezime>
+    <kucni>234</kucni>
+    <telefon>6129-734</telefon>
+    <soba>C03-18</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Kristijan</ime>
+    <prezime>Tabak</prezime>
+    <kucni>403</kucni>
+    <telefon>6129-903</telefon>
+    <soba>D178</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Marija</ime>
+    <prezime>Tadić</prezime>
+    <kucni>498</kucni>
+    <telefon>6129-998</telefon>
+    <soba>D343</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime />
+    <prezime>Telefax</prezime>
+    <kucni>105</kucni>
+    <telefon />
+    <soba />
+    <zavod>ZPF</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Sejid</ime>
+    <prezime>Tešnjak</prezime>
+    <kucni>408</kucni>
+    <telefon>6129-908</telefon>
+    <soba>D218</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Mladen</ime>
+    <prezime>Tkalić</prezime>
+    <kucni>261</kucni>
+    <telefon>6129-761</telefon>
+    <soba>C07-12</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Siniša</ime>
+    <prezime>Tomić</prezime>
+    <kucni>160</kucni>
+    <telefon>6129-660</telefon>
+    <soba>C00-06</soba>
+    <zavod>CIP</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Tomislav</ime>
+    <prezime>Tomiša</prezime>
+    <kucni>489</kucni>
+    <telefon />
+    <soba />
+    <zavod />
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>545</titula>
+    <ime />
+    <prezime>6129-989</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod />
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>6129-545</titula>
+    <ime>ZVNE</ime>
+    <prezime>D221</prezime>
+    <kucni>Redoviti profesor</kucni>
+    <telefon />
+    <soba />
+    <zavod />
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Željko</ime>
+    <prezime>Tomšić</prezime>
+    <kucni>483</kucni>
+    <telefon>6129-983</telefon>
+    <soba>D246</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Stanko</ime>
+    <prezime>Tonković</prezime>
+    <kucni>432</kucni>
+    <telefon>6129-932</telefon>
+    <soba>D131</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Vlado</ime>
+    <prezime>Torbica</prezime>
+    <kucni>275</kucni>
+    <telefon>6129-775</telefon>
+    <soba>D114</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Tehnički suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Vasilija</ime>
+    <prezime>Tovarloža</prezime>
+    <kucni>406</kucni>
+    <telefon>6129-906</telefon>
+    <soba>D20</soba>
+    <zavod>STUSL</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Bojan</ime>
+    <prezime>Trkulja</prezime>
+    <kucni>235</kucni>
+    <telefon>6129-735</telefon>
+    <soba>C06-04</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Krešimir</ime>
+    <prezime>Trontl</prezime>
+    <kucni>148</kucni>
+    <telefon>6129-648</telefon>
+    <soba>C02-17</soba>
+    <zavod>ZPF</zavod>
+    <funkcija>Viši laborant 1. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Marijana</ime>
+    <prezime>Trputec</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Smiljanka</ime>
+    <prezime>Turkalj</prezime>
+    <kucni>420</kucni>
+    <telefon>6129-920</telefon>
+    <soba>D22</soba>
+    <zavod>STUSL</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Ivo</ime>
+    <prezime>Uglešić</prezime>
+    <kucni>479</kucni>
+    <telefon>6129-979</telefon>
+    <soba>D236</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Matko</ime>
+    <prezime>Ugrin</prezime>
+    <kucni>158</kucni>
+    <telefon>6129-658</telefon>
+    <soba>C07-04</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ivana</ime>
+    <prezime>Ujević</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Dr.sc.</titula>
+    <ime>Zvonimir</ime>
+    <prezime>Vanjak</prezime>
+    <kucni>534</kucni>
+    <telefon>6129-534</telefon>
+    <soba>D263</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Darko</ime>
+    <prezime>Vasić</prezime>
+    <kucni>367</kucni>
+    <telefon>6129-867</telefon>
+    <soba>D135</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Dr.sc.</titula>
+    <ime>Mario</ime>
+    <prezime>Vašak</prezime>
+    <kucni>305</kucni>
+    <telefon>6129-805</telefon>
+    <soba>C09-19</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Robert</ime>
+    <prezime>Veljković</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Tanja</ime>
+    <prezime>Vešić</prezime>
+    <kucni>113</kucni>
+    <telefon>6129-613</telefon>
+    <soba />
+    <zavod>ZESA</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Klemo</ime>
+    <prezime>Vladimir</prezime>
+    <kucni>397</kucni>
+    <telefon />
+    <soba>D338</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Domagoj</ime>
+    <prezime>Vlah</prezime>
+    <kucni>403</kucni>
+    <telefon>6129-903</telefon>
+    <soba>D178</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Nikolina</ime>
+    <prezime>Volf</prezime>
+    <kucni>438</kucni>
+    <telefon>6129-938</telefon>
+    <soba>D143</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Mihaela</ime>
+    <prezime>Vranić</prezime>
+    <kucni>186</kucni>
+    <telefon>6129-686</telefon>
+    <soba>C06-11</soba>
+    <zavod>ZOEM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Mario</ime>
+    <prezime>Vražić</prezime>
+    <kucni>254</kucni>
+    <telefon>6129-754</telefon>
+    <soba>C05-16</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Vedran</ime>
+    <prezime>Vrbanić</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Boris</ime>
+    <prezime>Vrdoljak</prezime>
+    <kucni>256</kucni>
+    <telefon>6129-756</telefon>
+    <soba>C06-17</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Krešimir</ime>
+    <prezime>Vrdoljak</prezime>
+    <kucni>305</kucni>
+    <telefon>6129-805</telefon>
+    <soba>C09-19</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Mladen</ime>
+    <prezime>Vučić</prezime>
+    <kucni>475</kucni>
+    <telefon>6129-975</telefon>
+    <soba>D108</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Dinko</ime>
+    <prezime>Vuina</prezime>
+    <kucni>141</kucni>
+    <telefon>6129-641</telefon>
+    <soba>B25</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Viši laborant 2. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Ruža</ime>
+    <prezime>Vukelić</prezime>
+    <kucni>226</kucni>
+    <telefon>6129-726</telefon>
+    <soba>C06-10</soba>
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Zoran</ime>
+    <prezime>Vukić</prezime>
+    <kucni>340</kucni>
+    <telefon>6129-840</telefon>
+    <soba>C09-18</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Miljenko</ime>
+    <prezime>Vukmanić</prezime>
+    <kucni>103</kucni>
+    <telefon>6129-603</telefon>
+    <soba>CS-02</soba>
+    <zavod>SO</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Igor</ime>
+    <prezime>Vuković</prezime>
+    <kucni>394</kucni>
+    <telefon>6129-894</telefon>
+    <soba>D238</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Marin</ime>
+    <prezime>Vuković</prezime>
+    <kucni>245</kucni>
+    <telefon>6129-745</telefon>
+    <soba>C07-06</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Slaven</ime>
+    <prezime>Zakošek</prezime>
+    <kucni>379</kucni>
+    <telefon>6129-879</telefon>
+    <soba>D374</soba>
+    <zavod>ZPR</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Davor</ime>
+    <prezime>Zaluški</prezime>
+    <kucni />
+    <telefon />
+    <soba />
+    <zavod>ZRK</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Marko</ime>
+    <prezime>Zec</prezime>
+    <kucni>237</kucni>
+    <telefon>6129-737</telefon>
+    <soba>C7-05</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Stručni suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Radoslav</ime>
+    <prezime>Zelić</prezime>
+    <kucni>482</kucni>
+    <telefon>6129-982</telefon>
+    <soba>D248</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Viši laborant 1. vrste</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Sven</ime>
+    <prezime>Zelić</prezime>
+    <kucni />
+    <telefon />
+    <soba>C4-10</soba>
+    <zavod>ZESA</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Radovan</ime>
+    <prezime>Zentner</prezime>
+    <kucni>298</kucni>
+    <telefon>6129-798</telefon>
+    <soba>C12-07</soba>
+    <zavod>ZRK</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Kristijan</ime>
+    <prezime>Zimmer</prezime>
+    <kucni>160</kucni>
+    <telefon>6129-660</telefon>
+    <soba>C00-06</soba>
+    <zavod>CIP</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Zlatko</ime>
+    <prezime>Zmijarević</prezime>
+    <kucni>193</kucni>
+    <telefon>6129-693</telefon>
+    <soba>D209</soba>
+    <zavod>ZVNE</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Mr.sc.</titula>
+    <ime>Goranka</ime>
+    <prezime>Zorić</prezime>
+    <kucni>301</kucni>
+    <telefon>6129-801</telefon>
+    <soba>C08-05</soba>
+    <zavod>ZTEL</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Jasmina</ime>
+    <prezime>Zorko</prezime>
+    <kucni>411</kucni>
+    <telefon>6129-911</telefon>
+    <soba>D144</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Tajnik/ca</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Damir</ime>
+    <prezime>Zrno</prezime>
+    <kucni>566</kucni>
+    <telefon>6129-566</telefon>
+    <soba />
+    <zavod>ZRK</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Mario</ime>
+    <prezime>Žagar</prezime>
+    <kucni>117</kucni>
+    <telefon>6129-617</telefon>
+    <soba>C11-18</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Martin</ime>
+    <prezime>Žagar</prezime>
+    <kucni>131</kucni>
+    <telefon>6129-631</telefon>
+    <soba>C11-17</soba>
+    <zavod>ZAPR</zavod>
+    <funkcija>Asistent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Doc.dr.sc.</titula>
+    <ime>Damir</ime>
+    <prezime>Žarko</prezime>
+    <kucni>206</kucni>
+    <telefon>6129-706</telefon>
+    <soba />
+    <zavod>ZESA</zavod>
+    <funkcija>Docent</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ana</ime>
+    <prezime>Žgaljić</prezime>
+    <kucni>465</kucni>
+    <telefon />
+    <soba>D181</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Tomislav</ime>
+    <prezime>Žganec</prezime>
+    <kucni>133</kucni>
+    <telefon>6129-633</telefon>
+    <soba>PCLAB1</soba>
+    <zavod>CIP</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula />
+    <ime>Zora</ime>
+    <prezime>Žitnik</prezime>
+    <kucni>386</kucni>
+    <telefon>6129-886</telefon>
+    <soba>KNJIZNICA</soba>
+    <zavod>KN</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Goran</ime>
+    <prezime>Živković</prezime>
+    <kucni />
+    <telefon>275</telefon>
+    <soba>D114</soba>
+    <zavod>ZESOI</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Sanja</ime>
+    <prezime>Žonja</prezime>
+    <kucni>564</kucni>
+    <telefon>6129-564</telefon>
+    <soba>D352</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Znanstveni novak</funkcija>
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Darko</ime>
+    <prezime>Žubrinić</prezime>
+    <kucni>469</kucni>
+    <telefon>6129-969</telefon>
+    <soba>D173</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Redoviti profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl. oec.</titula>
+    <ime>Olga</ime>
+    <prezime>Županić</prezime>
+    <kucni>222</kucni>
+    <telefon>6129-722</telefon>
+    <soba />
+    <zavod>FS</zavod>
+    <funkcija />
+  </osoba>
+  <osoba>
+    <titula>Prof.dr.sc.</titula>
+    <ime>Vesna</ime>
+    <prezime>Županović</prezime>
+    <kucni>430</kucni>
+    <telefon>6129-930</telefon>
+    <soba>D170</soba>
+    <zavod>ZPM</zavod>
+    <funkcija>Izvanredni profesor</funkcija>
+  </osoba>
+  <osoba>
+    <titula>dipl.ing.</titula>
+    <ime>Ivan</ime>
+    <prezime>Žužak</prezime>
+    <kucni>397</kucni>
+    <telefon>6129-897</telefon>
+    <soba>D338</soba>
+    <zavod>ZEMRIS</zavod>
+    <funkcija>Zavodski suradnik</funkcija>
+  </osoba>
+</imenik>
+
