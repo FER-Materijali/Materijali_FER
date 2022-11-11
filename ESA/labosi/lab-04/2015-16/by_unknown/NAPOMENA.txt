@@ -1,0 +1,16 @@
+1.zadatak radi cijeli
+
+2. u drugom zadatku mi je asisten rekao da to nije ta definicija blinkanja al je 
+   priznao zadatak
+
+4. kod ovog zadatka ,simulacija radi ok ,ali tek kada se stanje s1 prebaci u TRUE,
+   i onda ide sve normalno,no stvar je sto se na plocici na koju se prebacuje kod ne moze 
+   prebaciti s1 u TRUE jer je to varijabla.Potrebno je podesiti kod tako da se S1 stanje
+   pri samom startu simulacije nalazi u TRUE i onda ide sve OK.
+
+   hint1 : nekako  s1:BOOL=TRUE; u prostoru za varijable pa testirati 
+   uglavnom S1 mora biti TRUE pri samom startu simulacije 
+   
+   hint2 : pregledati pinove IO jesu li svi dobro nastimani -mislim da jesu.
+
+   Nadam se da olaksava izradu .

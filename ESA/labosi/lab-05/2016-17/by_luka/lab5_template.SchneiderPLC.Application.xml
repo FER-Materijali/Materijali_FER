@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.3.0.0</Version>
+    <SymbolConfigObject version="3.3.0.0" />
+    <ProjectInfo name="lab5_template" devicename="SchneiderPLC" appname="Application" />
+  </Header>
+  <TypeList />
+</Symbolconfiguration>

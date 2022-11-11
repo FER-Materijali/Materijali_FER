@@ -1,0 +1,15 @@
+Dobro došli u kratki uvod u koristenje ovih sadrzaja...bla...bla...
+
+Dakle:
+1. Procitajte pripremu da okvirno znate sto uopce treba napraviti, jer to ne zelim objasnjavat ovdje.
+2. Podaci o senzorima (vektori temperature i pripadnih otpora/napona) nalaze se u zasebnim m-skriptama nazvanim prema odgovrajuæem senzoru (osim [3] kojeg sam skromno nazvao NTE.m.)
+3. [1],[3] i [4] su otpornicki senzori u kojima vektor R oznacava otpor. [5] je naponski u kojemu R PREDSTAVLJA NAPON, iskljucivo zato da ne moram raditi grananje ili neke druge preinake u skripti koja provodi aproksimaciju polinoma. Ovdje, dakle, R predstavlja napon.
+4. Senzor [2] je opisan kao linearan pa, shodno tome i uputama u pripremi koje kazu da tada ne treba traziti polinom viseg stupnja, linearno interpoliram polinom pomocu bilo koja dva podatka u data-sheetu. Za njega iz ocitih razloga nisam pisao skriptu. Odradite to rucno.
+5. Postupak aproksimacije ide u dva koraka. Za svaki senzor posebno pozovete m-skriptu njegova imena kako biste definirali njemu karakteristicne vektore. Nakon toga iz prompta pozovete aproksimacija.m i dobijete 12 grafickih prikaza. 11 njih prikazuje odnose aproksimiranih polinoma n-tog stupnja i originale temperaturne karakteristike, a zadnji vam odreduje srednju pogresku interpolacije za svaki stupanj polinoma zasebno.
+6. Srednja pogreska interpolacije je definirana kao suma apsolutnih odstupanja svih tocaka polinoma n-tog stupnja od stvarnih vrijednosti podijeljena sa brojem tocaka u kojima se odstupanje racuna.
+7. Vrijednosti iz vektora u m-skriptama provjerite, za svaki slucaj. U zadnjem ([5]) slucaju uzeo sam si slobodu i, umjesto da sam prepisivao svih 150 iznosa otpora za pripadne temperature, odlucio sam se za kvant od 5 stupnjeva. Kome nisam dovoljno precizan, nek pise sam. Takoder su unesene vrijednosti napona (ponavljam opet, izrazenih u vektoru R) napisane u mV, pa pripazite i na to.
+8. Kada se odlucite za odredeni polinom, njegove koeficijete vidite tako da kliknete na strukturu st{} i u tablici odaberete sto zelite vidjeti. Tako mozete vidjeti i jako malene koeficijente.
+9. Nadam se kako sam sve tocno rekao i kako cu barem nekome pomoci. Ukoliko pronadete gresku, bio bih zahvalan kada biste mi javili.
+
+Zivjeli vi meni sto godina!
+Vas marko.svn ;)
