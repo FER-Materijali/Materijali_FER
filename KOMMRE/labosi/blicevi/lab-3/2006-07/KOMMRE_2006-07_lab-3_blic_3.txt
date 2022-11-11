@@ -1,0 +1,115 @@
+Zadano je raèunalo s IP adresom 235.227.172.65/27. Koja od navedenih 
+adresa mo?e biti adresa defaultnog usmjeritelja?
+        a) 235.227.172.83
+        b) 255.255.255.224
+        c) 235.227.172.95
+        d) 235.227.172.64
+
+
+---
+
+
+A jedini toèan je a. Pod d je adresa mreže, pod c je broadcast adresa, a
+b je mrežna maska.
+
+
+---
+
+
+> Jedini logièni odgovor je d.
+
+Krivo, jedini logican odgovor je pod a. Ovaj pod d ne valja, buduci da u
+racunalnom dijelu adrese sadrzi samo nule, a to nije valjana adresa za neko
+racunalo u mrezi.
+
+
+________________________________________________________________
+
+
+1.?elimo dobit adresu podmre?e: Ako uzmemo IP adresu sa prefiksom
+npr. ....../ 26 jel to znaci da uzimamo i prvih 26 bita te adrese i
+prvih 26 bita maske i onda & napravimo?
+
+2. Ako je zadana neka IP adresa, kak se iz nje dobije broadcast adresa
+i adresa mre?e.
+Kaj je tocno broadcast adresa?
+
+
+Ko zna nek napi?e, ko ne zna 2
+
+
+---
+
+
+> 1=2E=8Eelimo dobit adresu podmre=9Ee: Ako uzmemo IP adresu sa prefiksom
+> npr. ....../ 26 jel to znaci da uzimamo i prvih 26 bita te adrese i
+> prvih 26 bita maske i onda & napravimo?
+
+Da bi dobio adresu podmreze napravis operaciju & izmedju adrese nekog 
+racunala u toj podmrezi i maske. Ako je u igri 26 bita mreznog dijela 
+tada maska ima 26 bitova u jedinici, a ostatak su nule.
+ 
+> 2=2E Ako je zadana neka IP adresa, kak se iz nje dobije broadcast adresa
+> i adresa mre=9Ee.
+
+Adresa mreze ima u mreznom dijelu mrezni dio :) (dobijes pomocu maske 
+ili je zadano npr. /24) a u ostatku (racunalni dio) ima sve nule. Isto 
+to samo sa svim jedinicama u racunalnom dijelu je broadcast adresa.
+
+> Kaj je tocno broadcast adresa?
+ 
+To je adresa na koju kada se posalje paket, on dolazi do SVIH racunala u 
+doticnoj mrezi (podmrezi). 
+
+
+---
+
+
+> 1.Želimo dobit adresu podmreže: Ako uzmemo IP adresu sa prefiksom
+> npr. ....../ 26 jel to znaci da uzimamo i prvih 26 bita te adrese i
+> prvih 26 bita maske i onda & napravimo?
+
+podmrezu  dobis da napravis & izmedju svih 32 bita maske i svih 32 bita 
+adrese. Prvih 26 bita maske ti je 1 , a ostalo su nule.
+
+
+
+> 
+> 2. Ako je zadana neka IP adresa, kak se iz nje dobije broadcast adresa
+> i adresa mreže.
+
+Znaci mora biti zadana i maska (prefiks) i adresa. Tipa 162.38.24.1/24
+
+Sad iz ove adrese uzmesh prvih 24 bita i prepises a na ostala mjesta bez 
+obzira na adresu stavish 1.
+
+znachi
+
+162.38.24.11111111 (primjeti ove jedinice)
+
+sto vodi na brodcast adresu 162.38.24.255
+
+Da je maska (prefiks) bila /26
+
+onda bi ti bilo
+
+162.38.24.|00|111111 -----> 162.38.24.63 Ovo u zagradi prepises od 
+zadnjeg bita.
+
+Jesi skuzio
+
+> Kaj je tocno broadcast adresa?
+
+To znaci da kad racunalo posalje ping ili IP paket na tu adresu ,ustvari 
+salje taj ping na sva racunala u toj mrezi.
+
+
+---
+
+
+> 162.38.24.|00|111111 -----> 162.38.24.63 Ovo u zagradi prepises od zadnjeg 
+> bita.
+>
+
+ispravak. Nije zadnjeg bita nego zadnjeg broja. To jest prva dva bita 
+zadnjeg broja.

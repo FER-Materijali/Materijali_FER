@@ -1,0 +1,111 @@
+Please rjesite mi ove zadatke:
+
+Komunikacija putem protokola SMTP ostvaruje se:
+ -na naèelu razmjene poruka izmeðu klijenta i poslužitelja
+
+
+Razmjena poruka kod protokola POP temelji se na:
+ -naèelu razmjene poruka izmeðu klijenta i poslužitelja
+
+
+Komunikacija kod protokola HTTP temelji se na:
+ -naèelu zahtjeva i odgovora (jedan ili više segmenata zahtjeva, jedan ili
+više segmenata odgovora)
+
+
+
+Prilikom uspostave upravljaèke veze kod FTP-a:
+ -klijent koristi svoja slobodno odabrana vrata, dok poslužitelj koristi
+dobro znana vrata 21
+
+
+
+Koja je od sljedeæih tvrdnji toèna?
+ -HTTP protokol može koristiti bilo koji port.
+
+
+
+Koja je od sljedeæih tvrdnji toèna?
+ -HTTP klijent može komunicirati iskljuèivo s HTTP poslužiteljem.
+
+
+Koja je od sljedeæih tvrdnji toèna?
+ -HTTP klijent uvijek inicira vezu, dok HTTP poslužitelj uvijek èeka na
+uspostavu veze.
+
+
+Nakon uspostave veze izmeðu HTTP klijenta i poslužitelja,
+ -klijent prvi šalje zahtjev, na koji poslužitelj odgovara.
+
+-------------------------------------------------------------------------
+
+
+
+Ako u mailboxu na posluzitelju korisnika ceka 5 poruka, kad se on spoji na 
+POP posluzitelj:
+ -uspostavit ce se jedna konekcija preko koje ce korisnik dohvatiti sve 
+poruke
+
+
+
+Ako u mailboxu na posluzitelju korisnika ceka 5 poruka, kad se on spoji na 
+POP posluzitelj:
+ -korisnik ce sve poruke dohvatiti preko jedne konekcije
+
+
+
+Posta poslana na adresu tkm@tel.fer.hr stici ce na odrediste zato jer:
+ -na DNS posluzitelju postoji zapis o racunalu koje prima postu za domenu 
+tel.fer.hr
+
+
+
+Uloga DNS protokola kod slanja elektronicke poste je:
+ -odrediti racunalo koje je zaduzeno za primanje elektronicke poste na 
+domeni iz adrese
+
+
+
+Protokol HTTP na transportnom i mreznom sloju oslanja se na protokole:
+ -TCP na transportnom i IP na mreznom
+
+
+Koja je od sljedecih tvrdnji tocna?
+ -TCP protokol mora uspostavljati cak i u slucaju da se prenosi samo jedan 
+oktet korisnicih podataka.
+
+
+Kontrolna veza kod FTP-a medu ostalim sluzi i za:
+ -uskladivanje dinamicki odredenih vrata (portova) za podatkovnu vezu izmedu 
+klijenta i posluzitelja
+
+
+
+Kod DNS-a, uloga vrsnih posluzitelja je:
+ -znaju koji posluzitelji su nadlezni za sve vrsne domene
+
+
+
+DNS protokol koristi UDP protokol, a ne TCP, zato jer:
+ -UDP ne trosi vrijeme na uspostavu poziva, a DNS posluzitelji su obicno 
+"blizu" DNS klijenata pa je mala vjerojatnost gubitka paketa.
+
+
+
+Koja je od sljedecih tvrdnji tocna?
+ -DNS upiti salju se iskljucivo pomocu UDP protokola.
+
+
+
+Koja je od sljedecih tvrdnji tocna?
+ -odgovori na DNS upite salju se iskljucivo pomocu UDP protokola.
+
+
+
+Koja je od sljedecih tvrdnji tocna?
+ -DNS nema veze s protokolom ARP.
+
+
+
+Razmjena poruka kod protokola DNS temelji se na:
+ -nacelu kratkih upita i odgovora (jedan upit i jedan odgovor)

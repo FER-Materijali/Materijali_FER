@@ -1,0 +1,149 @@
+Za raèunalo s adresom 141.63.91.184/26 (dakle, s duljinom mrežnog prefiksa
+26 bita), maska podmreže je:
+	a) 141.63.91.128
+	b) 255.255.0.0
+	c) 255.255.255.128
+	d) 255.255.255.192 <---
+
+
+
+zna li tko kako se ovo racuna i sta znaci /26?
+
+
+---
+
+
+znaci, ako je prefiks duzine 26 bita to znaci sljedece:
+
+11111111  11111111  11111111 11000000
+
+znaci: 255.255.255.192
+
+
+---
+
+
+odgovor je d)
+26 je broj bitova koji se koriste za masku podmreze, drugim rijecima maska
+je:
+11111111.11111111.11111111.11000000
+(od ukupno 32 bita adrese prvih 26 postavis na 1)
+
+
+---
+
+
+Pretpostavimo da racunalo A salje podatke racunalu B preko 
+obnavljaca-routera(znaci prvo dolazi hub, onda router :-) ), kakvo je stanje 
+Ehternet okvira nakon sto paket napusti router tj koja MAC adresa 
+(izvorisna, odredisna) je zapisana u okviru?
+
+
+---
+
+
+Ma, ono sto se meni cini malo zbunjujuce je stvar terminologije. Naime,
+taj termin "mijenjati adresu" mene prvo asocira na prepisavanje necega -
+adrese ili porta (NAT/NAPT). Ukoliko to nije slucaj (kao sto je to za
+kolokvij iz TKM) moguce su dvije stvari:
+	- enkapsulacija
+		-> paket je stigao u odredisnu lokalnu mrezu (tj. do
+		usmjernika koji zna da je trazeno racunalo u njegovoj
+		mrezi) i IP paket se enkapsulira u MAC okvir. Pri tome se
+		upisuju u okvir izvorisna MAC adresa i odredisna MAC
+		adresa. Izvorisna je adresa usmjernika odredisna je MAC
+		adresa odredisnog racunala. Nju inicijalno ne znamo (znamo 
+		samo IP adresu odredisnog racunala) i zato
+		se prvo salje ARP upit po LAN-u. Postepeno na taj nacin
+		mrezna oprema uci topologiju mreze. 
+		Dakle, MAC adresa je fizicka adresa pridijeljena nekom
+		mreznom sucelju.
+	- prepisivanje podataka
+		-> javlja se kod komunikacije izmedju usmjernika. Tj. IP
+		paket putuje od jednog preko drugog do treceg usmjernika
+		itd usmjernika. Podaci (IP adrese npr.) se jednostavno
+		prepisuju i svaki usmjernik gleda ima li trazeno racunalo
+		u svojoj mrezi ili ne. Ako nema, smanji TTL i salje paket
+		dalje. Sve do paket ne stigne do odredisne mreze ili npr.
+		ne istekne TTL. 
+		Dakle, IP adresa je nazovimo globalni identifikator (ako
+		se ne radi o privatnom rasponu IP adresa) i kakva je takva
+		je do kraja.
+
+Sto se npr. huba tice, on nema nikakvog utjecaja na spomenute stvari. Hub
+je dummy uredjaj prvog sloja (MAC adrese su Layer 2, IP Layer 3). On se
+pojavio s paricnom topologijom - topologija zvijezde, no njegova logicka
+topologija je sabirnica.
+
+
+---
+
+
+Ok, ali kako onda komutator/usmjerivaè uèi topologiju LAN-a?
+Na temelju IP adresa ili MAC adresa? 
+
+
+---
+
+
+Switch uci topologiju LAN-a, povezuje izlazne portove i MAC adrese. Tj. uredjuje tablicu MAC adresa - port.
+Uglavnom, kada primi okvir, pogleda izvorisnu MAC adresu okvira i toj izvorisnoj adresi pridruzi port kroz koji je primio okvir. A dodaje i timestamp (kako se tablica ne bi prepunila). Tj. u najgorem slucaju, switch se ponasa kao hub, a postepeno nauci sto mu se nalazi na portovima. 
+
+Ali, kad sam rekla ucenje topologije, mislila sam na manipulaciju s ARP 
+tablicom koja sadrzi parove MAC adresa - IP adresa. 
+Naravno, IP i MAC adresa nisu jedini unosi takve tablice. Eto primjera:
+
+he:~# ip neighbour show
+192.168.11.2 dev eth0 lladdr 00:50:56:f2:cb:14 nud reachable
+192.168.11.254 dev eth0 lladdr 00:50:56:f4:95:ac nud reachable
+192.168.11.10 dev eth0 lladdr 00:50:56:c0:00:08 nud reachable
+
+Unosi su: IP adresa, izlazno sucelje, Logical Link adresa (lladdr) MAC adresa i Network Unreachability Detection - nud (npr. reachable: odrediste je dostupno do isteka unaprijed odredjenog vremena, permanent - unos u ARP tablici je administrativno dodan i potrebno ga je na isti nacin ukloniti, failed - unos vise nije vazec).
+
+
+---
+
+
+Switch nema MAC adresu za razliku od routera, zar ne? Mislim router uzme 
+okvir, "razgradi" ga do IP paketa, pa ga proslijedi pritom mijenjajuci 
+izvorisnu(postane njegova MAC adresa) i odredisnu MAC adresu (racunalo, 
+drugi router), da li to radi i switch?
+
+
+---
+
+
+Ponovno:
+
+Pretpostavimo da racunalo A salje podatke racunalu B preko 
+obnavljaca-routera(znaci prvo dolazi hub, onda router :-) ), kakvo je stanje 
+Ehternet okvira nakon sto paket napusti router tj koja MAC adresa 
+(izvorisna, odredisna) je zapisana u okviru?
+
+
+---
+
+
+Izvorisna adresa je adresa routera, a odredisna adresa je adresa 
+racunala B. Ono sto je vrlo bitno je da Ethernet zaglavlje paketa koji 
+dolazi do rutera nema nikakve veze sa Ethernet zaglavljem paketa koji 
+router salje dalje. Jedino je nepromjenjen paket sa svim zaglavljima 
+visih slojeva sto sve skupa ethernet protokol tretira kao jednu cjelinu.
+
+
+---
+
+
+Sve to stoji, ali i paket sa zaglavljima visih slojeva se mijenja (npr TTL 
+polje u IP paketu)
+
+
+---
+
+
+Naravno. Vjerojatno sam se malo krivo izrazio pa je ispalo da router 
+samo radi sa ethernet protokolom. Jasno je da on prvo radi sa IP 
+protokolom (tj. protokolom mreznog sloja) i mijenja zaglavlja npr. TTL, 
+ali ono sto sam ja naveo se odnosi na slucaj kada se na routeru predaje 
+paket nizem sloju (ethernet). Tada vise nema promjene zaglavlja visih 
+slojeva.

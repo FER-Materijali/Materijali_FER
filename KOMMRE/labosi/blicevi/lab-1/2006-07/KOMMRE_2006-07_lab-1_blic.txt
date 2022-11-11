@@ -1,0 +1,188 @@
+Dakle zanima me sto ce desava sa izvorisnim i odredisnim IP i MAC
+adresama prilikom slanja paketa kroz mrezu preko vise routera do
+odredista? (znaci od mene do R1, od R1 do R2, pa recimo od R2 do
+odredista)
+
+Molio bi neku dobru dusu koja zna (ili misli da zna:) da mi malo
+pojasni ARP protokol na malo vecoj mrezi tj. ovo pitanje mi je
+malo nejasno:
+
+1) ARP upiti:
+  a) prolaze kroz usmjerivaè pri èemu im se mijenjaju odredišne IP
+adrese
+  b) ne prolaze kroz usmjerivaè
+  c) usmjeravaju se s obzirom na odredišnu IP adresu
+  d) nikad ne dolaze do usmjerivaèa
+
+i jos ova dva pitanja:
+
+2) U LAN-u u kojem stanice implementiraju TCP/IP protokolni složaj 	
+promatramo sadržaj okvira po segmentima. Na putu od izvorišne do
+odredišne stanice koje razdvaja više usmjeritelja i komutatora:
+  a) odredišna MAC adresa ethernetskog okvira uvijek je adresa krajnje
+stanice
+  b) izvorišna MAC adresa ethernetskog okvira uvijek je adresa
+izvorišne stanice
+  c) izvorišna IP adresa uvijek je adresa izvorišne stanice
+  d) odredišna IP adresa uvijek je adresa sljedeæeg usmjeritelja
+
+3) U LAN-u u kojem stanice implementiraju TCP/IP protokolni složaj
+promatramo sadržaj okvira po segmentima. Na putu od izvorišne do
+odredišne stanice koje razdvaja više usmjeritelja i komutatora:
+  a) izvorišna MAC adresa ethernetskog okvira uvijek je adresa
+izvorišne stanice
+  b) odredišna MAC adresa ethernetskog okvira uvijek je adresa
+sljedeæeg usmjeritelja, a odredišna MAC adresa na zadnjem segmentu je
+adresa odredišne stanice
+  c) odredišna MAC adresa ethernetskog okvira uvijek je adresa
+odredišne stanice
+  d) izvorišna IP adresa okvira uvijek je adresa prethodnog
+usmjeritelja, a izvorišna IP adresa okvira na prvom segmentu je adresa
+izvorišne stanice
+
+
+Ja bi ponudio ove odgovore:
+1) b
+2) c
+3) b
+
+
+---
+
+
+> 1) ARP upiti:
+>   a) prolaze kroz usmjerivaè pri èemu im se mijenjaju odredišne IP
+> adrese
+>   b) ne prolaze kroz usmjerivaè
+>   c) usmjeravaju se s obzirom na odredišnu IP adresu
+>   d) nikad ne dolaze do usmjerivaèa
+
+usmerivaèi/router-i razbijaju broadcast domenu, toèan odgovor je b, jer se 
+usmjeravju IP paketi a ne ethernet okviri
+
+
+---
+
+
+> Dakle zanima me sto ce desava sa izvorisnim i odredisnim IP i MAC
+> adresama prilikom slanja paketa kroz mrezu preko vise routera do
+> odredista? (znaci od mene do R1, od R1 do R2, pa recimo od R2 do
+> odredista)
+> Molio bi neku dobru dusu koja zna (ili misli da zna:) da mi malo
+> pojasni ARP protokol na malo vecoj mrezi tj. ovo pitanje mi je
+> malo nejasno:
+
+Da pokusam.. Recimo da pocinjes od svojeg racunala. To tvoje racunalo (s
+jednim mreznim suceljem) nazovimo obicno racunala. Nasuprot takvom
+racunalu postoji i ono racunalo koje je "neobicno" - ima ukljucene
+funkcije usmjernika, ima vise mreznih sucelje i obavlja funkcije
+usmjernika. Usmjernik u jednostavnijim slucajevima moze biti samo
+racunalo, no inace su to specijalna racunala (npr. poynati Cisco
+usmjernici i njihov IOS). Kao i takvi usmjernici, i tvoje racunalo ima
+tablicu usmjeravanja. Njegova je tablica usmjeravanja jednostavna i obicno
+sadrzi dvije rute - jedna opisuje lokalnu mrezu u kojoj se racunalo nalazi
+(tj. polje "Next hop" u onoj slavnoj :) pojednostavljenoj tablici
+usmjeravanja je prazno ili sadrzi nekakve nule) i drugu rutu koja je
+default ruta i paket ce poslati kroz izlazno sucelje van prema usmjerniku. 
+
+Drugim rijecima.. kada paket izlazi iz racunala, on moze biti namijenjen
+za lokalnu mrezu ili za neku vanjsku (u tom slucaju je njegova sudbina
+odredjena rutom prema van; ako uzmemo primjer nase jednostavne tablice
+usmjeravanja od dvije rute, onda je to default ruta koja prema "longest
+prefix match" usmjeravanju znaci nuzni pogodak).
+Ako je paket namijenjen za lokalnu mrezu nacin na koji on stize do
+odredista je pomocu ARP upita. Upravo je to problem LAN-a: broadcast (ARP)
+promet preplavljuje lokalnu mrezu. Bilo kako bilo, ARP upit je upit u
+kojem mi za poznatu IP adresu zelimo doznati nepoznatu MAC adresu. Tako da
+ta komunikacija, iako je unutar LAN-a, ipak malo zadire u mrezni sloj. 
+
+Ukoliko je paket namijenjen za vanjsku mrezu, iz racunala izlazi kroz
+definirano "izlazno sucelje", a u polje "next hop" tablice usmjeravanja
+zapisana mu je adresa sucelja usmjernika - dakle, njegov sljedeci skok je
+do usmjernika koji ce procitati svoju tablicu usmjeravanja i znati sto
+uciniti s paketom. IP adresa usmjernika u pojlu "next hop" i IP adresa
+racunala iz tog razloga moraju biti u istoj mrezi. Nadalje, ono sto ce
+npr. usmjernik napraviti kad mu paket stigne je.. pogledati ce odredisnu
+adresu u paketu i provjeriti ima li kakvu rutu koja mu kaze kroz izlazno
+sucelje treba dalje poslati paket..
+
+A ono sto se dogadja s MAC adresama oslanja se na dosad receno i podlijeze
+pravilu o enkapsulaciji. Ne uzimajuci u obzir portove, prikljucnice dakle
+aplikacije i sl za put paketa kroz Internet vrijedi.. 
+u Ethernet okviru je enkapsuliran IP paket s izvorisnom i
+odredisnom IP adresom takva kakva je (one se ne mijenjaju; ne uzimajuci u
+obzir prevodjenje adresa - NAT). Kada IP paket stigne do odredisne mreze
+on se umata u Ethernet okvir i opet tu dolazi do preplavljivanja mreze ARP
+upitima..
+
+Uglavnom, mozda ces pronaci nesto detaljnije na
+http://linux.zemris.fer.hr/index.php?option=com_docman&task=cat_view&gid=15&Itemid=26
+
+
+---
+
+
+> Moje mišljenje:
+> 1)b
+
+Tocno
+
+> 2)b i c
+
+samo c
+
+> 3)a
+
+b
+
+MAC adrese ti se mijenjaju kako paket prolati kroz razlicite dijelove 
+mreze, jer se u ethernet okvir stavljaju MAC adrese uredjaja koji paket 
+salje u datom trenutku (trenutni korak), znaci neki ruter npr. i 
+odredisna MAC adresa sljedeceg koraka, dok su IP adrese uvijek iste 
+(odredisna i izvorisna).
+
+
+---
+
+
+>> MAC adrese ti se mijenjaju kako paket prolati kroz razlicite dijelove
+>> mreze, jer se u ethernet okvir stavljaju MAC adrese uredjaja koji paket
+>> salje u datom trenutku (trenutni korak), znaci neki ruter npr. i
+>> odredisna MAC adresa sljedeceg koraka, dok su IP adrese uvijek iste
+>> (odredisna i izvorisna).
+>>
+> To stoji za IP datagrame (da se unutar njega mijenjaju MAC adrese src-a i 
+> dest-a), ali ethernet okviru (zaglavlju) router ne smije promijenti sadrzaj 
+> (nema tu ovlast pristupa podatkovnom sloju)
+
+MAC adresa se ne nalazi unutar IP datagrama (enkapsulacija ide obrnutim
+putem - sto si blize prijenosnom mediju overhead je veci; IP paket je
+payload okviru podatkovnog sloja).
+
+odgovor:
+
+Da naravno, krivio sam sa izrazio, mislio sam reci da ruter uzme IP datagram 
+iz starog okvira i doda nove MAC adrese u sklopu novog eth okvira (MAC svog 
+izlaznog sucelja i MAC sljedeceg rutera), ali ne prosljeduje onaj stari eth 
+okvir s LAN-a dalje na mrezu. Cijelo pitanje je u biti dvosmisleno, jer se 
+ne zna o kojem se eth okviru radi (starom ili novom)
+
+
+---
+
+> 3) U LAN-u u kojem stanice implementiraju TCP/IP protokolni slo?aj
+> promatramo sadr?aj okvira po segmentima. Na putu od izvori?ne do
+> odredi?ne stanice koje razdvaja vi?e usmjeritelja i komutatora:
+
+Ovo pitanje nije baš najbolje sroèeno.  Treba biti jasno da ethernetski 
+okvir koji nosi IP datagram prestaje postojati kad doðe do usmjerivaèa 
+kroz koji IP datagram mora proæi prema nekom daljnjem odredištu.  Na 
+izlaznom suèelju na koje se IP datagram prosljeðuje, nastaje novi 
+ethernetski okvir koji s onim prethodnim nema nikakve veze, osim što 
+nose isti korisnièki sadržaj, tj. IP datagram.
+
+Ovako postavljeno pitanje možda sugerira da kroz usmjerivaè "prolaze" 
+ethernetki okvir koji mijenjaju sadržaj, što nije toèno.
+
+
+---
