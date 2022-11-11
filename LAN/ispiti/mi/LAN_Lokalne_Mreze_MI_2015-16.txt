@@ -1,0 +1,11 @@
+﻿22 pitanja.
+Prvih 14 na nadopunjavanje ili račun. Nema negativnih. 
+Drugih 8 na zaokruživanje. -0.5 za netocan odgovor.
+Bilo je pitanje o prednostima i manama SPAN-a (Switch Port Analyzer).
+Nabroji korake algoritma RSTP (Rapid STP).
+Imamo hub 100 Mbit/s i komutator 10/100 Mbit/s. Spojimo hub na port komutatora. 
+Koja brzina (10 ili 100Mbit) i koja vrsta linka (naizmjenicni ili dvostrani) ce biti? 
+Zaokruzit i ukratko obrazlozit.
+Na zaokruživanje koji IEEE 802 se bavi Ethernet Flow Controlom (802.x).
+Duljina okvira Pause (64 okteta).
+Ostalo već viđeno.
