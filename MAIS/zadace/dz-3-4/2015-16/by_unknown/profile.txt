@@ -1,0 +1,7 @@
+1. main - 1.076s - 23.96%
+2. fprintf - 0.380s - 8.46%
+3. cos - 0.345s - 7.68%
+4. Import thunk cos -  0.090s - 2%
+5. round - 0.010s - 0.22%
+
+Vrijeme ukupno: 4.492 s. - 100% 

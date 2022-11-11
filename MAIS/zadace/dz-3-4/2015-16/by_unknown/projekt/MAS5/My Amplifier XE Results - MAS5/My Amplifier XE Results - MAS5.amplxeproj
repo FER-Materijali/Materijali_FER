@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <connectionOption>localhost</connectionOption>
+ <rdmgr>
+  <timestamp type="u64_t">1454085026</timestamp>
+  <hostname>Ana</hostname>
+  <os>windows</os>
+  <product>Intel® VTune™ Amplifier XE 2016</product>
+  <buildNumber type="s32_t">424694</buildNumber>
+  <logicalCPUCount type="s32_t">4</logicalCPUCount>
+  <CPUFrequency type="s64_t">2300000000</CPUFrequency>
+ </rdmgr>
+ <All_Configurations-All_Platforms>
+  <target_settings>
+   <selected_workload>
+    <localhost>launch</localhost>
+   </selected_workload>
+   <result_dir>
+    <localhost>C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\My Amplifier XE Results - MAS5</localhost>
+   </result_dir>
+   <workloads>
+    <localhost>
+     <attach type="pointer" type_id="dasID_cctrl2::AttachWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>attach</targetName>
+       <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
+       <attach.process_name>MAS5.exe</attach.process_name>
+       <attach.pid type="null"></attach.pid>
+       <result_directory.path>C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\My Amplifier XE Results - MAS5\r@@@{at}</result_directory.path>
+       <search_directories>
+        <item>
+         <value>sym=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\Debug</value>
+        </item>
+        <item>
+         <value>sym=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5</value>
+        </item>
+        <item>
+         <value>sym=srv*C:\Windows\symbols</value>
+        </item>
+        <item>
+         <value>sym=srv*C:\Windows\symbols*http://msdl.microsoft.com/download/symbols</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\Debug</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(VC_ExecutablePath_x86)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(WindowsSDK_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(VS_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(MSBuild_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\SysWow64</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Team Tools\Static Analysis Tools\FxCop</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\IntelSWTools\Trace Analyzer and Collector\9.1.1.019\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2016.0.110\windows\mpi\intel64\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\ProgramData\Oracle\Java\javapath</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\WindowsPowerShell\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\110\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\110\DTS\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\120\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\120\DTS\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\MinGW\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\cygwin64\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Python27\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\curl-7.45.0-win64-mingw\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Python27</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Skype\Phone</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\OpenVPN\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\MATLAB\R2013a\runtime\win64</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\MATLAB\R2013a\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\IntelSWTools\Trace Analyzer and Collector\9.1.1.019\dll</value>
+        </item>
+        <item>
+         <value>bin=C:\MCC18\mpasm</value>
+        </item>
+        <item>
+         <value>bin=C:\MCC18\bin</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>allowMultipleRuns</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>analyzeKvmGuest</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>analyzeSystemWide</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>cpuMask</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>customCollector</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>dataLimit</id>
+         <value type="s32_t">500</value>
+        </contextValue>
+        <contextValue>
+         <id>followChild</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>followChildStrategy</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>goodFastFrameThreshold</id>
+         <value type="double">100</value>
+        </contextValue>
+        <contextValue>
+         <id>kvmGuestKallsyms</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>kvmGuestModules</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>kvmProfileGuest</id>
+         <value type="null"></value>
+        </contextValue>
+        <contextValue>
+         <id>mrteMode</id>
+         <value>auto</value>
+        </contextValue>
+        <contextValue>
+         <id>slowGoodFrameThreshold</id>
+         <value type="double">40</value>
+        </contextValue>
+        <contextValue>
+         <id>targetDurationType</id>
+         <value>short</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>attach</value>
+        </contextValue>
+       </context>
+      </workload>
+     </attach>
+     <launch type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>launch</targetName>
+       <launch_app.inherit_sys_environment type="bool">true</launch_app.inherit_sys_environment>
+       <launch_app.app_to_launch>C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\Debug\MAS5.exe</launch_app.app_to_launch>
+       <launch_app.working_folder>C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5</launch_app.working_folder>
+       <launch_app.app_parameters></launch_app.app_parameters>
+       <launch_app.environment>PATH=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2016\windows\redist\ia32\compiler;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2016.0.110\windows\redist\ia32\ipp;%PATH%&#13;
+PATH=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2016\windows\redist\ia32\compiler;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2016.0.110\windows\redist\ia32\ipp;%PATH%&#13;
+&#13;
+    &#13;
+    </launch_app.environment>
+       <launch_app.environment_prepend>PATH=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2016\windows\redist\ia32\compiler;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2016.0.110\windows\redist\ia32\ipp;</launch_app.environment_prepend>
+       <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
+       <result_directory.path>C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\My Amplifier XE Results - MAS5\r@@@{at}</result_directory.path>
+       <search_directories>
+        <item>
+         <value>sym=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\Debug</value>
+        </item>
+        <item>
+         <value>sym=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5</value>
+        </item>
+        <item>
+         <value>sym=srv*C:\Windows\symbols</value>
+        </item>
+        <item>
+         <value>sym=srv*C:\Windows\symbols*http://msdl.microsoft.com/download/symbols</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\Debug</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(VC_ExecutablePath_x86)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(WindowsSDK_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(VS_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(MSBuild_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\SysWow64</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Team Tools\Static Analysis Tools\FxCop</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\IntelSWTools\Trace Analyzer and Collector\9.1.1.019\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2016.0.110\windows\mpi\intel64\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\ProgramData\Oracle\Java\javapath</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\WindowsPowerShell\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\110\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\110\DTS\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\120\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\120\DTS\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\MinGW\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\cygwin64\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Python27\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\curl-7.45.0-win64-mingw\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Python27</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Skype\Phone</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\OpenVPN\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\MATLAB\R2013a\runtime\win64</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\MATLAB\R2013a\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\IntelSWTools\Trace Analyzer and Collector\9.1.1.019\dll</value>
+        </item>
+        <item>
+         <value>bin=C:\MCC18\mpasm</value>
+        </item>
+        <item>
+         <value>bin=C:\MCC18\bin</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>allowMultipleRuns</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>analyzeKvmGuest</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>analyzeSystemWide</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>cpuMask</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>customCollector</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>dataLimit</id>
+         <value type="s32_t">500</value>
+        </contextValue>
+        <contextValue>
+         <id>followChild</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>followChildStrategy</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>goodFastFrameThreshold</id>
+         <value type="double">100</value>
+        </contextValue>
+        <contextValue>
+         <id>kvmGuestKallsyms</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>kvmGuestModules</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>kvmProfileGuest</id>
+         <value type="null"></value>
+        </contextValue>
+        <contextValue>
+         <id>mrteMode</id>
+         <value>native</value>
+        </contextValue>
+        <contextValue>
+         <id>slowGoodFrameThreshold</id>
+         <value type="double">40</value>
+        </contextValue>
+        <contextValue>
+         <id>targetDurationType</id>
+         <value>short</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>launch</value>
+        </contextValue>
+        <contextValue>
+         <id>traceMpi</id>
+         <value type="bool">false</value>
+        </contextValue>
+       </context>
+      </workload>
+     </launch>
+     <system type="pointer" type_id="dasID_cctrl2::SystemWideWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>system</targetName>
+       <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
+       <result_directory.path>C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\My Amplifier XE Results - MAS5\r@@@{at}</result_directory.path>
+       <search_directories>
+        <item>
+         <value>sym=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\Debug</value>
+        </item>
+        <item>
+         <value>sym=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5</value>
+        </item>
+        <item>
+         <value>sym=srv*C:\Windows\symbols</value>
+        </item>
+        <item>
+         <value>sym=srv*C:\Windows\symbols*http://msdl.microsoft.com/download/symbols</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\Debug</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(VC_ExecutablePath_x86)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(WindowsSDK_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(VS_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(MSBuild_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\SysWow64</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Team Tools\Static Analysis Tools\FxCop</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\IntelSWTools\Trace Analyzer and Collector\9.1.1.019\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2016.0.110\windows\mpi\intel64\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\ProgramData\Oracle\Java\javapath</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\WindowsPowerShell\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\110\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\110\DTS\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\120\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\120\DTS\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\MinGW\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\cygwin64\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Python27\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\curl-7.45.0-win64-mingw\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Python27</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Skype\Phone</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\OpenVPN\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\MATLAB\R2013a\runtime\win64</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\MATLAB\R2013a\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\IntelSWTools\Trace Analyzer and Collector\9.1.1.019\dll</value>
+        </item>
+        <item>
+         <value>bin=C:\MCC18\mpasm</value>
+        </item>
+        <item>
+         <value>bin=C:\MCC18\bin</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>allowMultipleRuns</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>analyzeKvmGuest</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>cpuMask</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>customCollector</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>dataLimit</id>
+         <value type="s32_t">500</value>
+        </contextValue>
+        <contextValue>
+         <id>followChild</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>goodFastFrameThreshold</id>
+         <value type="double">100</value>
+        </contextValue>
+        <contextValue>
+         <id>kvmGuestKallsyms</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>kvmGuestModules</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>kvmProfileGuest</id>
+         <value type="null"></value>
+        </contextValue>
+        <contextValue>
+         <id>mrteMode</id>
+         <value>native</value>
+        </contextValue>
+        <contextValue>
+         <id>slowGoodFrameThreshold</id>
+         <value type="double">40</value>
+        </contextValue>
+        <contextValue>
+         <id>targetDurationType</id>
+         <value>short</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>system</value>
+        </contextValue>
+       </context>
+      </workload>
+     </system>
+    </localhost>
+   </workloads>
+   <result_pattern>
+    <localhost>r@@@{at}</localhost>
+   </result_pattern>
+  </target_settings>
+  <analysis_type_settings>
+   <selected_analysis_type_path>C:\Program Files (x86)\IntelSWTools\VTune Amplifier XE 2016\config\analysis_type\basic_hotspots.cfg</selected_analysis_type_path>
+  </analysis_type_settings>
+ </All_Configurations-All_Platforms>
+ <engine>
+  <knobs>
+   <utilizationThreshold>&lt;bag xmlns:double=&quot;http://www.w3.org/2001/XMLSchema#double&quot;
+                  xmlns:boolean=&quot;http://www.w3.org/2001/XMLSchema#boolean&quot;&gt;
+          &lt;minValueThresholds boolean:scaled=&quot;true&quot;&gt;
+            &lt;double:minValueThreshold name=&quot;%Idle&quot;&gt;-1&lt;/double:minValueThreshold&gt;
+            &lt;double:minValueThreshold name=&quot;%Poor&quot;&gt;0.0000001&lt;/double:minValueThreshold&gt;
+            &lt;double:minValueThreshold name=&quot;%Ok&quot;&gt;0.5001&lt;/double:minValueThreshold&gt;
+            &lt;double:minValueThreshold name=&quot;%Ideal&quot;&gt;0.85&lt;/double:minValueThreshold&gt;
+            &lt;double:minValueThreshold name=&quot;%Over&quot;&gt;1.15&lt;/double:minValueThreshold&gt;
+          &lt;/minValueThresholds&gt;
+        &lt;/bag&gt;</utilizationThreshold>
+   <frameThreshold>
+&lt;bag xmlns:double=&quot;http://www.intel.com/2001/XMLSchema#double&quot;&gt;
+ &lt;minValueThresholds domain=&quot;&quot;&gt;
+  &lt;double:minValueThreshold name=&quot;%SlowFrame&quot;&gt;0&lt;/double:minValueThreshold&gt;
+  &lt;double:minValueThreshold name=&quot;%GoodFrame&quot;&gt;40&lt;/double:minValueThreshold&gt;
+  &lt;double:minValueThreshold name=&quot;%FastFrame&quot;&gt;100&lt;/double:minValueThreshold&gt;
+ &lt;/minValueThresholds&gt;
+&lt;/bag&gt;
+</frameThreshold>
+   <regionThreshold>&lt;bag xmlns:double=&quot;http://www.w3.org/2001/XMLSchema#double&quot;&gt;
+          &lt;minValueThresholds&gt;
+            &lt;double:minValueThreshold name=&quot;%FastRegion&quot;&gt;0.0&lt;/double:minValueThreshold&gt;
+            &lt;double:minValueThreshold name=&quot;%GoodRegion&quot;&gt;0.20&lt;/double:minValueThreshold&gt;
+            &lt;double:minValueThreshold name=&quot;%SlowRegion&quot;&gt;0.80&lt;/double:minValueThreshold&gt;
+          &lt;/minValueThresholds&gt;
+        &lt;/bag&gt;</regionThreshold>
+   <taskThreshold>&lt;bag xmlns:double=&quot;http://www.w3.org/2001/XMLSchema#double&quot;&gt;
+          &lt;minValueThresholds&gt;
+            &lt;double:minValueThreshold name=&quot;%FastTask&quot;&gt;0.0&lt;/double:minValueThreshold&gt;
+            &lt;double:minValueThreshold name=&quot;%GoodTask&quot;&gt;0.20&lt;/double:minValueThreshold&gt;
+            &lt;double:minValueThreshold name=&quot;%SlowTask&quot;&gt;0.80&lt;/double:minValueThreshold&gt;
+          &lt;/minValueThresholds&gt;
+        &lt;/bag&gt;</taskThreshold>
+   <interruptThreshold>&lt;bag xmlns:double=&quot;http://www.w3.org/2001/XMLSchema#double&quot;&gt;
+          &lt;minValueThresholds&gt;
+            &lt;double:minValueThreshold name=&quot;%FastTask&quot;&gt;0.0&lt;/double:minValueThreshold&gt;
+            &lt;double:minValueThreshold name=&quot;%GoodTask&quot;&gt;0.20&lt;/double:minValueThreshold&gt;
+            &lt;double:minValueThreshold name=&quot;%SlowTask&quot;&gt;0.80&lt;/double:minValueThreshold&gt;
+          &lt;/minValueThresholds&gt;
+        &lt;/bag&gt;</interruptThreshold>
+   <bandwidthThreshold>
+&lt;bag xmlns:double=&quot;http://www.intel.com/2001/XMLSchema#double&quot;&gt;
+ &lt;minValueThresholds domain=&quot;&quot;&gt;
+  &lt;double:minValueThreshold name=&quot;%LowBandwidth&quot;&gt;0&lt;/double:minValueThreshold&gt;
+  &lt;double:minValueThreshold name=&quot;%MediumBandwidth&quot;&gt;0.29999999999999999&lt;/double:minValueThreshold&gt;
+  &lt;double:minValueThreshold name=&quot;%HighBandwidth&quot;&gt;0.69999999999999996&lt;/double:minValueThreshold&gt;
+ &lt;/minValueThresholds&gt;
+&lt;/bag&gt;
+</bandwidthThreshold>
+  </knobs>
+ </engine>
+ <contextValues>
+  <contextValue>
+   <id>emulatorByCtxKnob</id>
+   <value></value>
+  </contextValue>
+ </contextValues>
+</root>

@@ -1,0 +1,104 @@
+-r
+C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\My Amplifier XE Results - MAS5\r001hs
+--data-limit-mb=500
+--stack-stitching
+--follow-child
+--itt-config=frame
+--stackwalk=offline
+--mrte-mode=native
+--mrte-type=java,dotnet
+--type=cpu:counters:nostack
+--type=cpu:stack
+--interval=10
+--search-dir
+sym=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\Debug
+--search-dir
+sym=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5
+--search-dir
+sym=srv*C:\Windows\symbols
+--search-dir
+sym=srv*C:\Windows\symbols*http://msdl.microsoft.com/download/symbols
+--search-dir
+bin=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\Debug
+--search-dir
+bin=C:\Users\Ana\documents\visual studio 2013\Projects\MAS5
+--search-dir
+bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(VC_ExecutablePath_x86)
+--search-dir
+bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(WindowsSDK_ExecutablePath)
+--search-dir
+bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(VS_ExecutablePath)
+--search-dir
+bin=C:/Users\Ana\documents\visual studio 2013\Projects\MAS5\MAS5\$(MSBuild_ExecutablePath)
+--search-dir
+bin=C:\Windows\SysWow64
+--search-dir
+bin=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Team Tools\Static Analysis Tools\FxCop
+--search-dir
+bin=C:\Program Files (x86)\IntelSWTools\Trace Analyzer and Collector\9.1.1.019\bin
+--search-dir
+bin=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2016.0.110\windows\mpi\intel64\bin
+--search-dir
+bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt
+--search-dir
+bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt
+--search-dir
+bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler
+--search-dir
+bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler
+--search-dir
+bin=C:\ProgramData\Oracle\Java\javapath
+--search-dir
+bin=C:\Windows\system32
+--search-dir
+bin=C:\Windows
+--search-dir
+bin=C:\Windows\System32\Wbem
+--search-dir
+bin=C:\Windows\System32\WindowsPowerShell\v1.0
+--search-dir
+bin=C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit
+--search-dir
+bin=C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+--search-dir
+bin=C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn
+--search-dir
+bin=C:\Program Files\Microsoft SQL Server\110\DTS\Binn
+--search-dir
+bin=C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn
+--search-dir
+bin=C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio
+--search-dir
+bin=C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn
+--search-dir
+bin=C:\Program Files\Microsoft SQL Server\120\Tools\Binn
+--search-dir
+bin=C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn
+--search-dir
+bin=C:\Program Files\Microsoft SQL Server\120\DTS\Binn
+--search-dir
+bin=C:\MinGW\bin
+--search-dir
+bin=C:\cygwin64\bin
+--search-dir
+bin=C:\Python27\Scripts
+--search-dir
+bin=C:\curl-7.45.0-win64-mingw\bin
+--search-dir
+bin=C:\Python27
+--search-dir
+bin=C:\Program Files (x86)\Skype\Phone
+--search-dir
+bin=C:\Program Files\OpenVPN\bin
+--search-dir
+bin=C:\Program Files\MATLAB\R2013a\runtime\win64
+--search-dir
+bin=C:\Program Files\MATLAB\R2013a\bin
+--search-dir
+bin=C:\Program Files (x86)\IntelSWTools\Trace Analyzer and Collector\9.1.1.019\dll
+--search-dir
+bin=C:\MCC18\mpasm
+--search-dir
+bin=C:\MCC18\bin
+--
+C:\Users\Ana\documents\visual studio 2013\Projects\MAS5\Debug\MAS5.exe
