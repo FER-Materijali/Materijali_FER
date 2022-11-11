@@ -1,0 +1,449 @@
+$1. Nacrtajte u pv dijagramu adijabatsku i izotermnu ekspanziju koje pošinju u istoj toèci.
+
+a
+
+$2. Da li je mehanièki rad promjene volumena velièina stanja i zašto?
+
+Mehaniæki rad promjene volumena kod adijabatskih procesa je veliæina stanja jer je njegova vrijednost odreğena samo poæetnim i konaænim stanjem sustava a ne i procesom izmeğu tih stanja. (slijedi iz 1.glavnog stavka termodinamike)
+
+$3. Što se dogağa s entropijom u realnom, a što u idealnom krunom procesu i kako se mijenja entropija sustava kojemu se oduzima toplina?
+
+U idealnom k.p. je konstantna, u realnom raste. Entropija sustava kojem se oduzima toplina pada.
+
+$4. Koji su naèini poveèanja stupnja djelovanja Rankineovog ciklusa?
+
+Dodavanjem meğupregrijaæa, zagrijavanjem kondenzata
+
+$5. Što je aktivnost, a što reaktivnost nuklearnog goriva? 
+
+Brzina promjene broja radioaktivnih jezgara, dN/dt = N(t) [na šalièu], se zove aktivnost, R, radioaktivnog izotopa i proporcionalna je trenutnom broju jezgara. Reaktivnost je definirana kao Ï=(k-1)/k, gdje je k multiplikacijski faktor (obiæno blizu 1).
+
+$6. Kako kontroliramo broj neutrona tijekom rada PWR reaktora?
+
+Broj neutrona tijekom rada PWR reaktora kontroliramo moderatorom (to je kod PWR obiæna voda) jer ih on usporava elastiænim sudarima uz minimalnu apsorpciju.
+
+$7. Navedite vrste geotermalnih elektrana.
+
+Elektrane na suhu paru, elektrane sa separiranjem pare, elektrane sa binarnim ciklusom.
+
+$8. U èemu je osnovna razlika geotermalne elektrane i toplinske pumpe?
+
+U toplinskim pumpama se direktno iskorištava geotermalna energija (iz tla, zraka, vodeâ€¦) i koriste Carnotov kruni proces, dok se u geotermalnim elektranama geotermalna energija pretvara u elektriænu energiju potom dovodi do potrošaæa (Rankineov kruni proces)
+
+$9. Koji bi tip vodne turbine izabrali za lokaciju gdje je pad vode velik, a protok mali i da li bi tu turbinu svrstali u akcijske ili reakcijske? 
+
+Peltonovu turbinu izabiremo za veliki pad i mali protok. Spada u akcijske turbine (turbine slobodnog mlaza)
+
+$10. Koje je osnovno obiljeje tlaènog cjevovoda?
+
+Tlaæni cjevovod slui za dovoğenje vode iz vodostana ili vodne komore do turbina.
+
+$11. Što je vozni red elektrana i èemu slui? 
+
+Pokrivanje dnevnog dijagrama optereèenja elektrana u sustavu naziva se vozni red elektrane, slui za â€¦
+
+$12. Definirajte faktor optereèenja i faktor ravnomjernosti dnevnog dijagrama optereèenja.
+
+(Faktori su na šalièu)
+
+$13. Nacrtajte U-I karakteristiku FN èelije i definirajte faktor punjenja. 
+
+Faktor punjenja prikazuje koliko je stvarna èelija blizu idealnoj i to je omjer produkta struja i napona pri maksimalnoj snazi prema produktu struje kratkog spoja i napona bez optereèenja.
+
+$14.Zašto FN èelije spajamo u paralelu a zašto u seriju?
+
+Ä†elije spajamo u paralelu ako elimo veèu struju, a u seriju ako elimo veèi napon.
+
+$15. Navedite bar tri znaèajke koje koristimo u karakterizaciji spremnika energije.
+
+Gustoca energije, ukupni ciklus skladistenja, ucinkovitost skladistenja, brzina punjenja/praznjenja.
+
+$16. Nacrtajte karakteristiku snage vjetroagregata te oznaèite i objasnite karakteristiène brzine.
+
+Startna brzina je brzina vjetra pri kojoj snaga VA postaje veèa od nula. Nominalna brzina je brzina vjetra pri kojoj VA ima nominalnu snagu Pn.
+
+$17. Nacrtajte u T-S dijagramu izobarnu i izohornu kompresiju iz iste toèke. 
+
+a
+
+$18. Koliki je specifièni toplinski kapacitet izotermne promjene stanja? 
+
+Specificni t.k. je beskonacan za izotemnu promjenu.
+
+$19. Koju fizikalnu velièinu dobijete kao integral ispod krivulje promjene stanja u Ts dijagramu i dali je ona velièina stanja. 
+
+Povrsina ispod Ts dijagrama predstavlja toplinsku energiju i nije veliæina stanja.
+
+$20. Za koju su promjenu stanja idealnog plina mehanièki rad promijene volumena i tehnièki rad jednaki?
+
+Mehaniæki rad promjene volumena i tehniæki rad su istog iznosa kod izotermnog procesa. Zato što je izoterma istostrana hiperbola.
+
+$21. Što je eksergijski stupanj djelovanja i kolko on iznosi za Carnotov kruzni prces?
+
+Eksergijski stupanj djelovanja izraæunava uæinkovitost procesa koristeèi drugi stavak termodinamike. Usporeğujuèi dovedenu eksergiju i dobivenu eksergiju, dobiveni mehaniæki rad se moe definirati kao eksergijski stupanj djelovanja. 
+
+$22. Kako nazivamo dio energije koji ne mozemo pretvoriti u mehanicki rad?
+
+Dio energije koji ne mozemo pretvoriti u meh rad naziva se anergija
+
+$23. Koji je predznak promjene entropije u realnom kruznom procesu? 
+
+U realnom kruznom procesu promjena entropije je pozitivna, raste li entropija radi se o nepovratljivim procesima. Što je veèi porast entropije to je promatrani proces lošiji i više se eksergije pretvara u anergiju. Pravac okolice je pravac u hs dijagramu gdje je eksergija=0
+
+$24. Što je pravac okolice i cemu sluzi?
+
+Pravac okolice je pravac u hs dijagramu gdje je eksergija=0
+
+$25. Kako bi utjecali na promjenu stupnja djelovanja Rainkinovog kruznog procesa ako smanjimo tlak u kondenzatoru? 
+
+Smanjili bi stupanj djelovanja.
+
+$26. Od kojih se procesa sastoji Rainkenov k.p. 
+
+Rainkenov kp sastoji se od adijabatske kompresije, izobarno dovodenja topline, adijabatske ekspanzije, izobarnog odvodenja topline.
+
+$27. Što je to specificni potrosak topline, a sto specificni potrosak pare?
+
+Specificni potrosak topline govori koliko toplinske energije u dulima [J] treba potrošiti da bi se proizveo 1 kWh elektriæne energije. Specificni potrosak pare naziva se broj koji pokazuje koliko kilograma pare mora biti podvrgnuto krunom procesu da bi se dobio korisni mehaniæki rad iznosa 1 kWh.
+
+$28. Navedite bar dvije karakteristike nuklearnih sila. 
+
+Dre nukleone u jezgri na okupu, djeluju izmeğu kvarkova (jaka nukl. sila), imaju kratak domet (red veliæine dimenzije nukleona), privlaæne i snane (formiraju jezgru velike gustoèe) ne ovise o naboju, pokazuju svojstvo zasièenja.
+
+$29. Koje je fizikalno znaèenje makroskopskog udarnog presjeka za reakciju s neutronima i koja mu je jedinica? 
+
+Produkt mikroskopskog udarnog presjeka i gustoèe jezgara mete zove se makroskopski udarni presjek [ cm^-1]. Ima znaæenje srednjeg slobodnog puta izmeğu 2 reakcije.
+
+$30. Što je moderator i koji je materijal korišten kao moderator u PWR reaktoru?
+
+Moderator je materijal koji dobro usporava neutrone elastiænim sudarima uz minimalnu apsorpciju. Kod PWR-a je to obiæna voda. (kod BWRa je isto obiæna voda) moe biti obiæna i teška voda, grafit, berilij
+
+$31. Koje vrste geotermalnih elektrana imamo? 
+
+Elektrane na suhu paru, elektrane sa separiranjem pare, elektrane sa binarnim ciklusom.
+
+$32. Sto je faktor preobrazbe toplinske pumpe?
+
+Faktor preobrazbe toplinske pumpe je pokazatelj energetske uæinkovitosti rada toplinske pumpe ( f.p.= Qdov / Wt )
+
+$33. Navedite bar 2 izvora biomase iz uzgoja? 
+
+Vrba, secerna repica, uljana repica, kukuruz, itarice, suncokret.
+
+$34. Koji kem proces predstavlja osnovu za dobivanje biodizela a koji za dobivanje bioetanola?
+
+Biodizel se dobiva esterifikacijom biljnih ulja s metanolom, a bioetanol fermentacijom.
+
+$35. Nacrtajte idealni QH dijagram derivacijske hidroelektrane. 
+
+a
+
+$36. Kako se HE dijele prema poloaju strojarnice? 
+
+Prema poloaju strojarnice se dijele na pribranske i derivacijske HE
+
+$37. Napišite èlan dinamièkog tlaka u Bernulijevoj jednadzbi. 
+
+Äˆlan dinamiækog tlaka u B. jednadbi je 0.5*ro*c^2
+
+$38. O kojem se tipu vodne turbine vjeratno radi ako vam je jedino poznato da se radi o velikoj jediniènoj snazi?
+
+Ako se radi o velikoj jediniænoj snazi - Kaplanova turbina (pretlaæna, reakcijska)
+
+$39. Kakav je fazni kut napona i struje za cisto kapacitivno optereèenje? 
+
+Napon kasni za strujom za 90Â°
+
+$40. Navedite dvije osnovne razlike dalekovodnog ueta i visokonaponskog kabela.
+
+a
+
+$41. Definirajte faktore neravnomjernosti dnevne krivulje optereèenja 
+
+a
+
+$42. Kada koristimo istosmjerni napon u prijenosu elektricne energije?
+
+Istosmjerni napon ukljuæuje prijenos dugaækim podvodnim kabelima, a koristimo ga za povezivanje sustava razliæitih frekvencija ili sustava æije frekvencije nisu sinkronizirane, kao i prijenos na izrazito velike udaljenosti. (Loše strane istosmjernog prijenosa su tee prekidanje strujnog kruga i potreba za pretvaraæima istosmjernog u izmjeniæni sustav s obje strane istosmjernog voda.)
+
+$43. Sto je solarna konstanta a sto index prozirnosti?
+
+Solarna konstanta predstavlja snagu Sunæeva zraæenja na rubu atmosfere i iznosi G0 = 1370 W/m2, a indeks prozirnosti Kt = G / G0 (G je snaga na površini Zemlje)
+
+$44. Koje su komponente suncevog zracenja iskoristive na fotonaponskom panelu a koje na solarnom tornju? 
+
+Sol.elektrana - direktno zraæenje FN èelije - 77% sunæ.spektra (UV,IC,vidljiv)
+
+$45. Nacrtajte UI dijagam FN celije i paralelnog spoja 2 iste FN celije. 
+
+a
+
+$46. Kako se zove uredaj za mjerenje ozracenja?
+
+Ureğaj za mjerenje ozraæenja je piranometar. Najæešèe mjerimo globalnu ozraæenost, ali tad izraæunavamo direktnu I difuznu komponentu.
+
+$47. Koja su dva osnovna nacina podjele gorivnih clanaka?
+
+2 osnovna naæina podjele gorivnih ælanaka su: prema naæinu rada (primarni, sekundarni) i prema vrsti elektrolita (polimerna membrana, fosforna kiselina, alkali, rastaljeni karbonati, kruti oksidi)
+
+$48. Navedite bar dva nacina za proizvodnju vodika.
+
+Naæini za proizvodnju vodika su: elektrolizom vode, iz biomase rasplinjavanjem, iz fosilnih goriva (benzin direktno, prirodni plin reformiranjem)
+
+$49. Koja je osnovna prednost a koja osnovna mana reverzibilne elektrane kao spremnika energije?
+
+Osnovna prednost RHE kao spremnika energije je brzi start, niski troškovi odravanja, visoka pouzdanost. A mane su veliko zauzeèe zemljišta i dugotrajna izgradnja.
+
+$50. Navedite bar 3 osnovne komponente VA
+
+Lopatice, kuèište, toranj, temelji.
+
+$51. Da li efikasnost VA ovisi o brzini vjetra?
+
+da, ne, moda, neznam
+
+$52. Kako se regulira mehancka snaga VA i koju bi se regulaciju trebalo odabrati za VA velike snage?
+
+Mehaniæka snaga se regulira pasivno ili aktivno, za velike snage pasivno
+
+$53. Da li je za ocekivati vecu jedinicnu snagu VA lociranog na kopnu ili na moru?
+
+Veèa jediniæna snaga èe biti kod VA na moru.
+
+$54. Nacrtaj izentropsku i adijabatu u Ts dijagramu.
+
+a
+
+$55. provesti proces da se što bolje obavi prijelaz topline s jednog na drugo tijelo
+
+Da se što bolje obavi prijelaz topline s jednog na drugo tijelo toplom i hladnom spremniku treba povisiti odnosno smanjiti temperaturu jer su kod viših temperatura gubici manji.
+
+$56. kad kaemo da je neka velièina, velièina stanja? 
+
+Veliæina stanja je veliæina (ili funkcija) koja ovisi samo o poæetnom i konaænom stanju procesa. Npr: entropija, UKE, entalpija, volumen, temp, tlak
+
+$57. Za koju je promjenu stanja idealnog plina mehanièki rad promjene volumena isti kao tehnièki rad uz zanemarenje promjene potencijalne i kinetièke energije?
+
+Mehaniæki rad promjene volumena i tehniæki rad su istog iznosa kod izotermnog procesa. Zato što je izoterma istostrana hiperbola.
+
+$58. Koji je utjecaj na stupanj djelovanja Rankineovog procesa ako poveèamo temperaturu rashladne vode kondenzatora?
+
+Ako poveèamo temperaturu rashladne vode, poveèati èemo i stupanj djelovanja.
+
+$59. od kojih se procesa sastoji Brayton/Youle?
+
+Od dvije izobare i 2 adijabate.
+
+$60. jednostavna shema TE za proizvodnju el. i topl. Energije?
+
+a
+
+$61. što su zakašnjeli elektroni i zašto su vani?
+
+Zakašnjeli neutroni su rezultat raspada fisijskih produkata. Udjel zakašnjelih neutrona u ukupnom broju neutrona je od 0,22% do 0,65%. Najveèi broj zakašnjelih neutrona se pojavi unutar 70 s nakon procesa fisije. Zakašnjeli neutroni su bitni za kontrolu reaktora.
+
+$62. kad kaemo da je reaktor podkritièan?
+
+Ako je k<1 broj neutrona i snaga reaktora èe se s vremenom smanjivati i reaktor je tada podkritiæan. (k je multiplikacijski faktor i opisuje tijek odvijanja procesa, ako je k=1 onda je reaktor kritiæni, a ako je k>1 onda je nadkritiæni)
+
+$63. fizikalno znaèenje mikroskopskog i makroskopskog udarnog presjeka
+
+Mikroskopski udarni presjek predstavlja vjerojatnost da doğe do nuklearne reakcije. Za velike energije se pribliava površini presjeka projekcije jezgre i projektila ali je kvantnomehaniæka veliæina. Produkt mikroskopskog udarnog presjeka i gustoèe jezgara mete zove se makroskopski udarni presjek. Ima znaæenje srednjeg slobodnog puta izmeğu dvije reakcije.
+
+$64. Porijeklo unutrašnje kalorièke Zemlje i okvirna zastupljenost pojedinih izvora?
+
+Porijeklo UKE Zemlje je od postanka. Tjezgre=4000C-nemoguèe iskorištavati zbog dubine. Podjela: suhe vruèe stijene, voda pod velikim tlakom i dubinom, voda na manjim dubinama. Najviše se koriste vodeni izvori.
+
+$65. koji tip geotermalnih izvora ima najveèi stupanj djelovanja?
+
+a
+
+$66. koje su dvije osnovne vrste biomase ovisno o porijeklu?
+
+osnovne vrste biomase ovisno o porijeklu: uzgoj, ostaci i otpad
+
+$67. nacrtaj i oznaèi konsumpcijsku krivulju ravnièarske i planinske rijeke(na istom grafu za isti protok)
+
+$68. kako reguliramo snagu Peltonove turbine i za koje podruèje protoka i pada se koristi?
+
+Peltonova turbina je turbina slobodnog mlaza (akcijska turbina), koristimo ju za podruæja s visokim padom i relativno malim protokom. Ima najveèi stupanj iskorištenja od svih turbina. Snagu joj poveèavamo smanjenjem razlike mlaza od donje vode.
+
+$69. visinski oblik Bernoulijeve jedn. s gubicima?
+
+p/(ro*g) + h + 0.5*c^2/g + hË‡r =konst
+
+$70. razlika u namjeni i konstrukciji zateznog i nosivog stupa?
+
+nosive, kod kojih se u neporemeèenom stanju horizontalne sile u smjeru trase uvijek poništavaju. Koriste se na ravnoj trasi zatezne, kod kojih se u neporemeèenom stanju horizontalne sile u smjeru trase djelomiæno poništavaju, tj. uvijek postoji odreğeni iznos horizontalne sile u jednom smjeru. Koriste se kada se trasa lomi.
+
+$71. definiraj vrijeme korištenja max. snage dnevne krivulje optereèenja?
+
+Tpmax = Wukupno dnevno / Pmax
+
+$72. zašto u prijenosu el. en. koristimo visoki napon?
+
+Radi smanjenja gubitaka prijenos el.en se vrši na visokom naponu
+
+$73. navedi dvije vrste solarnih TE i oèekivanu efikasnost pretvorbe en. zraèenja u el ?
+
+Solarni toranj (18% godišnja efikasnost), paraboliæna protoæna (14%) , paraboliæni toranj (od 22%)
+
+$74. UI karakteristika gorivnog èlanka?
+
+a
+
+$75. navedi jedan naèin spremanja koji ima veliku gustoèu i jedan koji ima veliku kolièinu en?
+
+Zamašnjak (spremnik kin en) - velika gustoèa Spremnici grav. pot en. - velika koliæina energije
+
+$76. Što je nuan preduvjet odrivog ciklusa biomase?
+
+Nuan preduvjet odrivog ciklusa biomase : korištenje < prirasta
+
+$77. Koji su osnovni lokacijski preduvjeti za izgradnju reverzibilne HE ?
+
+Lokacijski preduvjet za izgradnju rHE su moguènost velike visinske razlike izmeğu gornjeg i donjeg spremnika vode.
+
+$78. Kada kaemo da je energetsko postrojenje kogeneracijsko a kada da je kombinirano?
+
+Kogeneracijsko je ono postrojenje u kojem se proizvodi i elektriæna i toplinska energija istovremeno, a kombinirano kada odvojeno proizvodi el i topl.energiju.
+
+$79. Što je faktor otjecanja vodotoka?
+
+Faktor otjecanja vodotoka predstavlja koliæinu vode koja pritjeæe u vodotok. Faktor otjecanja = voda u promatranom vodotoku/(oborinsko podruèje * koliæina padalina)
+
+$80. Kako se regulira snaga Kaplan turbine?
+
+a
+
+$81. Da li bi na izlaz protoène niskotlaène HE stavili radije aspirator ili difuzor i zašto?
+
+Na izlaz protoæne niskotlaæne HE bi stavili difuzor da smanjimo izlaznu brzinu, æime se smanjuju izlazni gubici energije, a time poveèava ukupna korisnost turbine. (Difuzor omoguèava turbinski rad neovisno o promjenama razine donje vode, a u turbinama s okomitim vratilom, mijenja smjer strujanja vode iz okomitog u vodoravni, uz najmanje hidrodinamiæke gubitke.)
+
+$82. Kako se mijenja napon FN èelije s poveèanjem ozraèenja i zašto?
+
+Napon èelije s poveèanjem ozraæenja pada
+
+$83. Što je gorivni èlanak?
+
+Gorivni ælanak je elektrokemijski je ureğaj koji omoguèuje neposrednu transformaciju kemijske energije u istosmjernu elektriænu energiju i toplinu. cšvodik + kisik = voda + el. en. + toplina
+
+$84. Kada kaemo da je spoj na VA mreu indirektan?
+
+Spoj je indirektan kada je generator na osovinu vjetroturbine vezan preko prijenosnika.
+
+$85. Koju bi elektranu radije koristili za pokrivanje vršnih optereèenja: plinsku TE ili vjetroelektranu odgovarajuèe snage i zašto?
+
+TE, zbog lakše regulacije i predvidivosti proizvodnje
+
+$86. Kako prema vremenskom razdoblju planiranja dijelimo metode predviÄanja porasta potrošnje elektriène energije?
+
+Prema vremenskom razdoblju metode predviğanja porasta potrošnje dijelimo na: kratkoroæne, srednjoroæne i dugoroæne.
+
+$87. U èemu se sve razlikuju vodiè nadzemnog voda i podzemni kabel? Koji su više zastupljeni u distribucijskim mreama?
+
+U distribucijskim mreama se prenose nii naponi nego u prijenosnim mreama, takoğer i na nie udaljenosti pa se više koriste nadzemni kabeli, dok se u prijenosnim mreama više koriste podzemni kabeli zbog velikih udaljenosti i visokog napona.
+
+$88. Ako u EE sustavu raste frekvencija, kakva je relacija izmeÄu proizvodnje i potrošnje energije?
+
+Ako frekvencija raste, proizvodnja je veèa od potrošnje!
+
+$89. Navedite 2 osnovna razloga zbog kojih je potrebno skladištit energiju
+
+Potrebno je skladištiti energiju zbog istodobnosti potrošnje i proizvodnje elektriæne energije te povremene nedostupnosti pojedinih energenata
+
+$90. Navedite dijelove pogonskog ciklusa spremnika energije opèenito i objasnite ih na primjeru skladištenja u olovnom akumulatoru.
+
+Pogonski ciklus spremnika energije: punjenje i pranjenje. Skladištenje u olovnom akumulatoru: pretvorbom elektriæne energije u kemijsku (punjenje akumulatora) pohranjuje se odreğeni dio dovedene elektriæne energije, a prikljuækom trošila na stezaljke akumulatora obrèe se proces: kemijska energija pretvara se u elektriænu energiju (pranjenje akumulatora)
+
+$91. U èemu je sve razliku u utjecaju na okoliš TE na ugljen i TE na prirodni plin
+
+a
+
+$92. Koji plinovi ispušteni u TE uzrokuju kisele kiše?
+
+Plinovi CO2 i SO2 iz TE uzrokuju kisele kiše.
+
+$93. Ako 400 kv i 110 kv dalekovodi prenose istu snagu, koji èe od njih biti ogranièen po kriteriju dozvoljenog magnetskog, a koji po kriteriju dozvoljenog elektriènog polja?
+
+400kV elektriæno, a 110kV magnetsko
+
+$94. U èemu je osnovna razlika krunog procesa geotermalne elektrane i toplinske pumpe?
+
+Kruni proces geotermalne elektrane je Rankine, a toplinske pumpe Carnotov.
+
+$95. Što su kritiène dimenzije nuklearnog reaktora?
+
+Kritiæne dimenzije nuklearnog reaktora (k=1) su one dimenzije pri kojima reaktor odrava konstantan broj neutrona i snagu proizvedenu fisijom. (Za kritiænost reaktora su bitne 2 vrste elektrona: promptni koji nastaju direktno pri fisiji i zakašnjeli koji su rezultat raspada fis.produkata).
+
+$96. Koji su oplodni fisijski materijali i zašto ih tako zovemo?
+
+Oplodni materijali su oni koji uhvatom neutrona prelaze u neki od fisijskih materijala, a tako ih zovemo jer omoguèuju veèu proizvodnju od potrošnje goriva (ali zato zahtijevaju veèe obogaèenje).
+
+$97. Što je to odgor nuklearnog goriva i koja mu je fizikalna jedinica?
+
+Odgor nuklearnog goriva je mjera starosti jezgre i proizvedene energije (MWd/tU) â€“ proizvedena energija po jedinici mase goriva
+
+$98. Što je velièina izgradnje derivacijske HE?
+
+Veliæina izgradnje derivacijske HE je maksimalni protok koji se moe koristiti u HE pri normalnom pogonu uzimajuèi u obzir sve dijelove postrojenja (Qi).
+
+$99. Kako se mijenja efikasnost FN èelije s porastom temperature i kako se mijenja struja èelije sa smanjenjem ozraèenja?
+
+S porastom temperature efikasnost FN èelije pada, a struja èelije sa smanjenjem ozraæenja pada.
+
+$100. Što je gorivni èlanak i koji su mu osnovni dijelovi?
+
+Gorivni ælanak je elektrokemijski je ureğaj koji omoguèuje neposrednu transformaciju kemijske energije u istosmjernu elektriænu energiju i toplinu. Osnovni dijelovi su: 2 elektrode izmeğu kojih je elektrolit, na elektrode se spaja trošilo, na anodu gorivo, a na katodu se dovodi oksidans. vodik + kisik = voda + el. en. + toplin
+
+$101. Koji se tip elektriènog generatora koristi pri direktnom spajanju VA na mreu?
+
+Pri direktnom spajanju VA na mreu se koristi sinkroni generator.
+
+$102. Koje se elektrane koriste za pokrivanje vršnih optereèenja?
+
+Za vršna optereèenja se koriste reverzibilne HE i plinske TE.
+
+$103. Kako se prema funkcijskoj ovisnosti optereèenja dijele metode predviÄanja potrošnje el.en. ?
+
+Prema funkcijskoj ovisnosti optereèenja se dijele na neovisne i ovisne metode.
+
+$104. Navedite kako se i zašto topografski razlikuju prijenosne i distribucijske mree?
+
+Prijenosne (visokonaponske) mree su grağene tako da se meğusobno povezuju i zatvaraju u povezane i meğusobno zatvorene cjeline, æime se poveèava pouzdanost opskrbe potrošaæa, a distribucijske (razdjelne) se konstruiraju kao prostorno uzamæene (petljaste) mree, radi moguènosti višestranog napajanja potrošaæa, u pogonu su uglavnom zrakaste (radijalne), odnosno takve da se u svakom trenutku potrošaæ napaja samo iz jednog smjera.
+
+$105. Ako u EE pada frekvencija , kakva je relacija izmeÄu proizvodnje i potrošnje el.en ?
+
+Ako frekvencija pada onda je potrošnja veèa od proizvodnje!
+
+$106. Navedite dijelove pogonskog ciklusa spremnika energije i objasnite ih na primjeru skaldištenja komprimiranog zraka.
+
+Pogonski ciklus spremnika energije: punjenje i pranjenje. Skladištenje komprimiranog zraka: u razdobljima niske potrošnje (i cijene) elektriæne energije, kompresorom se tlaæi zrak u podzemno spremište, najæešèe: zrak koji izlazi iz turbine pohranjuje se komprimiran u spremnik, a kad je potrebno, vraèa se u turbinu; energija predana sustavu pohranjuje se u obliku unutrašnje kaloriæke energije plina
+
+$107. Koje mjesto na vremenskoj i prostornoj skali oneèišèivaèa atomsfere pripada staklenièkim plinovima?
+
+Stakleniækim plinovima pripada mjesto na sinoptiækoj i globalnoj skali.
+
+$108. Sto je obogaèivanje nuklearnog goriva i zašto je potrebno?
+
+Obogaèivanje nuklearnog goriva je proces poveèanja teinskog udjela izotopa U-235 u ukupnom Uranu. (Obogaèenje je maseni udio izotopskog udjela U-235 u ukupnom Uranu). Prirodni uran sadri samo 0,71 posto tog izotopa, zato se treba obogatiti. Za razdvajanje obaju izotopa urana (urana 235 i urana 238) najprimjereniji je uran u plinovitom obliku (UF6).
+
+$109. Objasnite sto su i èemu slue: konsumpcijska krivulja i vjerojatnostna krivulja protoka
+
+Konsumpcijska krivulja predstavlja ovisnost visine vode u koritu o trenutnom volumnom protoku. Krivulja trajanja protoka predstavlja vjerojatnosnu krivulju â€“ vjerojatnost pojave protoka QTA jednaka je omjeru vremena TA i ukupnog vremena promatranja T.
+
+$110. Navedite koliko se max. energije vjetra moe iskoristiti u vjetroagregatu.
+
+P=16/17 * Pv
+
+$111. Objasnite zašto je vano planirati potrebe za energijom na dnevnoj, a zašto na višegodisnjoj bazi.
+
+Na višegodišnjoj bazi zbog promjene broja stanovnika i promjene ivotnog standarda, a na dnevnoj zbog razlike u potrošnji tijekom radnog dana tj vikenda.
+
+$112. ÄŒemu sluzi prekidaè, a èemu rastavljaè u rasklopnim postrojenjima?
+
+Prekidaæi slue za ukljuæenje i iskljuæenje vodova u normalnom pogonu i u sluæaju kvara. Rastavljaæi vidljivo odvajaju dijelove rasklopnog postrojenja, ne upotrebljavaju se za prekidanje struje, a isklapanje i uklapanje rastavljaæa provodi se kada njim ne teæe struja.
+
+&113. Objasnite specifiène prednosti i nedostatke koje odlikuju pohranu energije u superkondenzatore te u reverzibilne hidroelektrane.
+
+Prednosti superkondenzatora u odnosu na baterije: bre punjenje i pranjenje, nema kemijskih reakcija, veèa trajnost materijala i veèi broj ciklusa, veèi raspon napona, moguènost æestih pulseva energije. Osnovna prednost RHE kao spremnika energije je brzi start, niski troškovi odravanja, visoka pouzdanost. A mane su veliko zauzeèe zemljišta i dugotrajna izgradnja.

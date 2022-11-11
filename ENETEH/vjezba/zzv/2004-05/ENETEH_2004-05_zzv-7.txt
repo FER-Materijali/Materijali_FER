@@ -1,0 +1,194 @@
+1.2.10. 
+
+postupak je iz Horvatove Fizike 1, 
+zadatak s gemistom i kockicama leda 
+
+
+V(voda) = 1 l = 0.001 m3 
+V(led) = 16 * 10 ml = 0.00016 m3 
+l(led) = 320 000 J/kg 
+cp(voda) = 4180 J/kgK, cp(led) = 2100 J/kgK 
+v(led) = 1.09*10^-3 m3/kg --> ro(led)=1/v(led) 
+T(voda) = 293.15 K, T(l) = 263.15 K 
+
+T(kon) = ? 
+
+m(led) = V(led)*ro(led) = 0.1468 kg 
+m(voda) = V(voda)*ro(voda) = 1 kg 
+
+kada se led rastali u vodu: 
+Q1 = m(led)*l(led) 
+
+nakon taljenja: 
+Q2 = m(voda)*cp(voda)*(T(vode)-T(kon)) 
+i vrijedi: 
+Q2 = Q1 + m(led)*cp(led)*(T(kon)-T(led)) 
+
+m(v)*cp(v)*(T(v)-T(k)) = m(l)*l(l)+m(l)*cp(l)*(T(k)-T(l)) 
+
+iz ovoga izvuces T(k) i dobijes: 
+T(k) = 280.624 K 
+
+t(k) = 7.474 °C, valjda se moze zaokruziti na 7 °C 
+
+#########################
+
+1.2.11. 
+
+V = 2 m3, T1=323.15 K, p1=200kPa, p2=800 kPa, 
+cv=3116 J/kgK, R=2077 J/kgK 
+
+Q=? 
+
+izohorni proces V=konst. & p1/T1 = p2/T2 
+
+pV=mRT ---> m=pv/RT=p1*V/R*T1=0.5959 kg 
+
+p1/T1 = p2/T2 ---> T2=(p2/p1)*T1=1292.6 K 
+
+Q = m*cv*delta(T) = 1800288.878 J 
+Q = 1800 kJ 
+
+#########################
+
+1.2.13. 
+
+m.p. = 0.02 kg/s 
+visina radijatora = 60 cm = 0.6 m 
+800 pravokutnih otvora 10mm x 1mm ili 0.01m x 0.001m 
+
+t=? 
+
+za volumni protok Q=A*c, a za maseni: 
+m.p. = A*c*ro 
+
+brzina kroz pravokutne otvore: 
+c = m.p. / ((0.01*0.001)*ro) = 2 m/s 
+
+v = s/t --> t = s/v 
+
+ispada tocno rjesenje ako stavis za put s = 0.6*800 = 480 m 
+
+t = s/v = 240 s ili t = 4 min 
+
+#########################
+
+1.2.14. 
+
+delta(p) = 4 MPa, m.p. = 200 kg/s, 
+R1 = 0.2 m -> r1 = 0.1m 
+R2 = 0.12 m -> r2 = 0.06 m 
+
+P(min)=? 
+
+za pumpu (rad moramo uloziti pa je negativan): 
+-w12 = v*delta(p) + 0.5*(c2^2-c1^2) + g(z2-z1) 
+
+zadnji clan -> delta(E potencijalna) zanemaris 
+
+v=1/ro=0.001 m3/kg 
+
+iz formule: 
+m.p. = A*c*ro --> c = m.p. / (r^2*pr*ro) 
+dobijes c1 i c2: 
+
+c1 = 6.3662 m/s 
+c2 = 17.6839 m/s 
+
+i onda za rad dobijes: 
+w12 = - 4136.0956 J/kg 
+
+P(min) = w12*m.p. = - 827.219 kW 
+
+#########################
+
+1.2.15.
+
+T1=293 K, p1=80 kPa
+T2=473 K, p2=0.8 MPa
+P(meh) = 400 W
+cp = 1000 J/kgK, R = 287 J/kgK
+c2 = 20 m/s, r2 = R2/2 = 0.05 m
+
+za maseni protok:
+(m/t) = A * c * ro = A2 * c2 * ro2
+
+ro = 1/v pa racunas specificni volumen v2
+
+p2*V2 = m*R*T2     /:m
+v2 = R*T2 / p2 = 0.1697 m3/kg
+
+znaci ro2 = 1/v2 = 5.8931 kg/m3
+
+(m/t) = (r2^2 * pi) * c2 * ro2 = 0.9257 kg/s
+
+sada postavljas jednadzbu 1. T.D. zakona za zatvoren sustav:
+
+q12 - w12 = u2 - u1 + 0.5*(c2^2 - c1^2) +g*(z2 - z1)
+
+zanemarujes promjenu kineticke i potencijalne energije i
+pomnozis jednadzbu s masenim protokom (m/t):
+
+... u2 - u1 = cp*delta(T) ...
+
+q12*(m/t) - w12(m/t) = (m/t)*cp*(T2 - T1)
+
+P(top) - P(meh) = (m/t)*cp*(T2 - T1)
+P(top) = (m/t)*cp*(T2 - T1) + P(meh)
+
+mehanicku snagu smo ulozili -> njen predznak je minus
+
+P(top) = 0.9257*1000*180 + (-400000)
+P(top) = - 233375.3187 W = - 233.4 kJ/s
+
+(minus predznak - toplina se odvodi iz kompresora)
+
+#########################
+
+1.2.16.
+
+maseni protok = m/t = 20 kg/s
+spec. volumen pare na izlazu iz kotla = v = 0.03837 m3/kg
+gustoca vode u kondenzatoru = ro = 1000 kg/m3
+
+sa slike ocitavas entalpije:
+
+h3 = na izlazu iz kotla(ulazu u turbinu) = 3625.5 kJ/kg
+h4 = na izlazu iz turbine(ualzu u kondenzator) = 2584.6 kJ/kg
+h1 = na izlazu iz kondenzatora(ulazu u pojnu pumpu) = 167.57 kJ/kg
+h2 = na izlazu iz pojne pumpe(ulazu u kotao) = 167.58 kJ/kg
+
+promjer otvora na izlazu iz kotla:
+R = 30 cm --> r = 0.15 m
+
+a) toplinska snaga kotla
+
+Ptop(kotla) = (enatlpija na izlazu - na ulazu) * (maseni protok)
+Ptop(kotla) = (h3 - h1)*(m/t) = 69154.4 kW = 69.1544 MW
+
+
+b) mehanicka snaga dobivena na turbini
+
+P(t) = (enatlpija na ulazu - na izlazu) * (maseni protok)
+P(t) = (h3 - h4)*(m/t) = 20814 kW = 20.814 MW
+
+c) toplinska snaga kondenzatora
+
+Ptop(kond) = (enatlpija na izlazu - na ulazu) * (maseni protok)
+Ptop(kond) = (h1 - h4)*(m/t) = - 48340.6 kW = - 48.3406 MW
+
+d) snaga pumpanja
+(u rj. je 0.2 MW - ili je greska ili postoji neka druga formula za rad p. pumpe)
+
+P(pump) = (enatlpija na izlazu - na ulazu) * (maseni protok)
+P(pump) = h2-h1 = 0.2 kW
+
+e) brzina pare na izlazu iz kotla
+volumni protok = povrsina presjeka * brzina
+Q = A * c
+
+maseni protok = povrsina presjeka * brzina * ro
+(m/t) = A * c * ro = A * c * (1/v)
+
+c = v * (m/t) / A = v * (m/t) / (r^2 * pi)
+c = 10.8565 = 10.9 m/s

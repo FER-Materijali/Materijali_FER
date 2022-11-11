@@ -1,0 +1,77 @@
+1. (3b) Navedite bar dva nacina za povecanje termickog stupnja djelovanja Rankineovog kruznog procesa u termoelektrani. U cemu je osnovna razlika kruznog procesa geotermalne elektrane i toplinske pumpe?
+
+2. (3b) Što su to kriticne dimenzije nuklearnog reaktora? Koji su oplodni fisijski materijali i zasto ih tako zovemo? Sto je odgor nuklearnog goriva i koja mu je fizikalna jedinica?
+
+3. (3b) Sto je to velicina izgradnje derivacijske HE? Koji tip turbine ne bi izabrali za ugradnju u reverzibilnu HE i zašto? Da li bi na izlaz protocne niskotlacne HE radije stavili aspirator ili difuzor i zašto?
+
+4. (2b) Nacrtajte strujno-naponsku karakteristiku fotonaponske celije i označite tocku maksimalne snage. Kako se mijenja efikasnost FN celije s porastom temperature i kako se mijenja struja celije sa smanjenjem ozracenja?
+
+5. (1b) Sto je to gorivni clanak i koji su mu osnovni dijelovi?
+
+6. (3b) Koji se tip elektricnog generatora koristi pri direktnom spajanju vjetroagregata u mrezu? Nacrtajte i oznacite karakteristiku snage VA. U kojem dijelu karakteristike je nuzno upravljanje mehanickom snagom vjetroagregata?
+
+7. (3b) Sto je vozni red elektrana? Koje se elektrane koriste za pokrivanje vrsnih opterecenja? Kako se prema funkcijskoj ovisnosti opterecenja dijele metode predviđanja potrošnje električne energije?
+
+8. (2b) Navedite kako se i zašto topografski razlikuju prijenosne i distribucijske električne mreže. Ako u EE sustavu pada frekvencija, kakva je relacija izmedu proizvodnje i potrosnje elektricne energije?
+
+9. (2b) Navedite dva osnovna razloga zbog kojih je potrebno skladistiti energiju. Navedite dijelove pogonskog ciklusa spremnika energije i objasnite ih na primjeru skladistenja komprimiranog zraka. 
+
+10. (2b) Koje mjesto na vremenskoj i prostornoj skali oneciscivaca atmosfere pripada staklenickim plinovima? Ako 400kV i 110kV dalekovodi prenose istu snagu, koji ce od njih biti ogranicen po kriteriju dozvoljenog magnetskog, a koji po kriteriju dozvoljenog elektricnog polja? 
+
+11. (5b) 
+Realni se Rankineov kruzni proces provodi u termoelektrani snage turbine 1000MW. Tlak je pare na ulazu u turbinu 8,5MPa, a temperatura 650C. Tlak u kondenzatoru je 10 kPa. Unutrasnji stupanj djelovanja turbine iznosi 0,9, a pumpe 0,85. Iz parnih tablica ocitane su sljedece karakteristicne vrijednosti: 
+tlak 10kPa : h'=191,8 kJ/kg, h''=2585 kJ/kg, v'= 0,001 m^3/kg
+tlak 8,5MP, temperatura 650C : h=3756kJ/kg, s=7121 kJ/kgK
+tlak 10kPa, entropija 7121 kJ/kgK : h= 2256kJ/kg
+Odredite:
+	a) sadrzaj pare na izlazu iz turbine
+	b) specificnu entalpiju vode na ulazu u kotao
+	c) termicki stupanj djelovanja Rankineovog kruznog procesa (uzeti u obzir rad pumpanja).
+
+12. (5b)
+Nuklearna elektrana PWR tipa ima 4 rashladne petlje. Snaga jezgre je 3990 MW, masa UO2 u jezgri je 105 tona. Srednji neutronski tok u jezgri je 3*10^7 n/m2 s. Mikroskopski udarni presjek za fisiju je 580*10^(-28) m2. Temperatura hladioca, specificnog toplinskog kapaciteta 5,9kJ/kgK, na ulazu u jezgru je 295C, a na izlazu iz jezgre 329C. Entalpija vode parogeneratora je 650kJ/kg, a entalpija zasicene pare na izlazu iz parogeneratora je 2760kJ/kg. Maseni protok pare po parogeneratoru je 475 kg/s. Izracunati:
+	a) snagu primarne pumpe
+	b) obogacenje goriva
+	c) maseni protok primarnog hladioca kroz primarnu pumpu.
+
+13. (6b) 
+Vjerojatnosna krivulja trajanja protoka na mjestu gdje je postavljena derivacijska hidroelektrana, Qi=300m3/s, dana je izrazom Q[m3/s]=450- 30t [mjeseci]. Zahvat se ostvaruje na 250 m n.v., a dno se odvodnog kanala nalazi na 90 m n.v. Brana je visine 50 m s ugrađenim zapornicama koje se reguliraju tako da propustaju višak vode. Racunati s konstantnim stupnjem djelovanja HE 0,95. Odredite:
+	a) vjerojatnu godisnju proizvodnju elektricne energije; pretpostaviti konstantnu visinu vode ispred brane 40m, uzeti da mjesec ima 730 h
+	b) najvecu i najmanju snagu HE, ako je konsumpcijska krivulja na mjestu zahvata dana izrazom Hgv[m]=Q[m3/s]/10, a na mjestu odvoda iz postrojenja Hdv[m]=Q[m3/s]/50.
+
+14. (4b) 
+Termoelektrana snage 800 MW, stupnja djelovanja 0,4 i faktora opterecenja 0,65, kao gorivo koristi ugljen ogrjevne moci 25MJ/kg. Ako maseni udio ugljika u ugljenu iznosi 0,75, kolika se masa CO2 godisnje ispusti u okolis? Atomska masa ugljika iznosi 12g/mol, a kisika 16g/mol. Pretpostaviti da je izgaranje potpuno. 
+
+15. (5b)
+Promjer vjetroturbine vjetroagregata iznosi 60m. VA postize nazivnu snagu pri brzini vjetra 15m/s. Tijekom godine brzina vjetra 25% vremena iznosi 8m/s, 25% vremena 12m/s, 15% je između 15m/s i 25m/s kada VA radi na nazivnoj snazi. Ostalo vrijeme VA ne radi. Gustoca zraka je 1,225 kg/m3. Izracunati:
+	a) maksimalnu godisnju proizvodnju elektricne energije u VA
+	b) faktor opterecenja VA.
+
+16. (5b)
+Vršno ozracenje na povrsinu fotonaponskih panela u solarnoj FN elektrani iznosi 1kW/m2, godisnja ozracenost je na horizontalnu povrsinu na mjestu postavljanja panela 1600 kW/m2. Stupanj djelovanja FN celije je 0,11, a aktivna povrsina panela 9000m2. Ukupno povecanje ozracenosti na panele postavljene pod optimalnim kutom iznosi 20%. Izracunati:
+	a) godisnju proizvedenu elektricnu energiju u FN elektrani, ako su paneli postavljeni pod optimalnim kutom
+	b) nazivnu elektricnu snagu FN elektrane
+	c) koliko se najmanje FN panela mora spojiti paralelno da se ne premasi struja kratkog spoja pd 20 A po panelu ako je za ozracenje od 1kW/m2 faktor punjenja 0,9 i napon otvorenog kruga 450V?
+
+17. (6b)
+Za neki EES poznato je dnevno opterecenje prema podacima u tablici. Potrebno je nacrtati dnevnu krivulju trajanja opterecenja, odrediti iznos varijabilne energije, konstante energije, dnevno utrosene energije, faktor opterecenja te vrijeme koristenja maksimalne snage. 
+t(h)	I P(MW)	
+ 0- 4	I  800	
+ 4- 6 	I 1000
+ 6- 9	I 1300
+ 9-12	I 2000
+12-13	I 1600
+13-16	I 1900
+16-18	I 1500
+18-21	I 1700
+21-22	I 1200
+22-24	I  800
+U sustavu se nalaze sljedece elektrane: 
+HE1	Phe1 =200MW 	protocna
+HE2	Phe2 =300MW	protocna
+NE 	Pne = 500MW,
+vise TE ukupne snage 800MW, ukupnih tehnickih minimuma 100MW
+RHE radi kad su sve ostale elektrane u sustavu iscrpljene, podize vodu u spremnik kad postoji visak proizvodnje.
+	a) Ucrtajte u dnevnu krivulju trajanja opterecenja raspored rada elektrana
+	b) Ukoliko se ciklus punjenja i praznjenja spremnika RHE dogodi svaki dan u cijelosti prema gore zadanom rasporedu, kolika je energija pohranjena u spremniku ako je ucinkovitost procesa podizanja vode 0,6? Efikasnost procesa proizvodnje elektricne energije u RHE?
+	c) Nacrtajte aproksimaciju dnevne krivulje trajanja opterecenja pomoću 3 pravca uz alfa=beta u istom dijagramu s dnevnom krivuljom trajanja opterecenja. 

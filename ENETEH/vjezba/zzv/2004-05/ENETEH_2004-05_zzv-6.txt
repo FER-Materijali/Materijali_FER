@@ -1,0 +1,91 @@
+03-02-2005
+
+B2
+t = 97°C  --> T(dov) = 370.15 K
+t(oko) = 17°C --> T(oko) = 190.15 K
+m.p. = 2.5 kg/s
+-----------------------------
+Pmax=?
+
+Carnotov K.P.
+eta(CKP) = 1 - T(o)/T(d)
+eta(CKP) = 0.21613
+
+w = q(dov)*eta(CKP) = cv*deltaT*eta(CKP)
+... cv(vode) = 4186 kJ/kgK ... 
+w = 72377.14 J
+
+Pmax = w * m.p. = 180942.861 W = 181 kW
+
+#############################
+
+B4
+Hn = 20 m, eta = 0.85, m = 0.9
+Q(t) = 300 - 25*t
+-----------------------------
+Qins=?
+
+faktor opterecenja:
+m = W/Wins = Qsri/Qins --> Qsri = 0.9*Qins
+
+Qsri = 1/12 * [Qins*ti + 0.5*(Qins+Q(12))*(12-ti)]
+... Q(12) = 300-25*12 = 0 m3/s ...
+0.9*Qins = 1/12 * [Qins*ti + 6Qins - 0.5Qins]
+(1/24) * Qins*ti = 0.4 * Qins
+ti = 9.6 mjeseci
+
+Qins = Q(ti) = 300 - 25*ti = 60 m3/s
+
+#############################
+#############################
+
+11-04-2005
+
+A3b
+Sn = 15 MVA, Un = 10 kV
+-----------------------------
+In = ?
+
+po formuli:
+In = Sn / (sqrt3*Un) = 577.4 A
+
+#############################
+#############################
+
+15-06-2005
+
+B3
+t1 = -5°C --> T1 = 268.15 K
+t2 = -25°C --> T2 = 248.15 K
+t(odvedena) = 20°C --> T = 293.15 K
+-----------------------------
+W2/W1 = ?
+
+kod hladnjaka postoji koeficijent KI:
+KI = Q/W
+vrijedi i:
+KI = [T(odvedena)-T(dovedena)]  / T(dovedena)
+
+kad te dvije formule izjednacis:
+W = Q * [T(odvedena)-T(dovedena)] / T(dovedena)
+
+W2/W1 = {[T-T2] / T2} / {[T-T1] / T1}
+W2/W1 = 1.94
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
