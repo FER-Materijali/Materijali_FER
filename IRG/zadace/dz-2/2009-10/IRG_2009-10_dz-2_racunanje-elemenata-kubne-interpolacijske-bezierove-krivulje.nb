@@ -1,0 +1,157 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      4333,        148]
+NotebookOptionsPosition[      4074,        135]
+NotebookOutlinePosition[      4421,        150]
+CellTagsIndexPosition[      4378,        147]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"b03", "[", "t_", "]"}], "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "-", "t"}], ")"}], "^", "3"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"b13", "[", "t_", "]"}], "=", 
+   RowBox[{"3", "*", "t", "*", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "-", "t"}], ")"}], "^", "2"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"b23", "[", "t_", "]"}], "=", 
+   RowBox[{"3", "*", 
+    RowBox[{"t", "^", "2"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"1", "-", "t"}], ")"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"b33", "[", "t_", "]"}], "=", 
+   RowBox[{"t", "^", "3"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"{", 
+    RowBox[{"1.08", ",", "1.35"}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{"{", 
+    RowBox[{"4.66", ",", "2.56"}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"c", "=", 
+   RowBox[{"{", 
+    RowBox[{"2.58", ",", "2.32"}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"d", "=", 
+   RowBox[{"{", 
+    RowBox[{"10.3", ",", "4.44"}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"tA", "=", "0.1"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"tB", "=", "0.5"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"tC", "=", "0.3"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"tD", "=", "0.9"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"tT", "=", "0.2"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"A", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"b03", "[", "tA", "]"}], ",", 
+       RowBox[{"b13", "[", "tA", "]"}], ",", 
+       RowBox[{"b23", "[", "tA", "]"}], ",", 
+       RowBox[{"b33", "[", "tA", "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"b03", "[", "tB", "]"}], ",", 
+       RowBox[{"b13", "[", "tB", "]"}], ",", 
+       RowBox[{"b23", "[", "tB", "]"}], ",", 
+       RowBox[{"b33", "[", "tB", "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"b03", "[", "tC", "]"}], ",", 
+       RowBox[{"b13", "[", "tC", "]"}], ",", 
+       RowBox[{"b23", "[", "tC", "]"}], ",", 
+       RowBox[{"b33", "[", "tC", "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"b03", "[", "tD", "]"}], ",", 
+       RowBox[{"b13", "[", "tD", "]"}], ",", 
+       RowBox[{"b23", "[", "tD", "]"}], ",", 
+       RowBox[{"b33", "[", "tD", "]"}]}], "}"}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"P", "=", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"r0", ",", "r1", ",", "r2", ",", "r3"}], "}"}], "=", 
+   RowBox[{
+    RowBox[{"Inverse", "[", "A", "]"}], ".", "P"}]}], ";"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{"\"\<r0=\>\"", ",", "r0"}], "]"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{"\"\<r1=\>\"", ",", "r1"}], "]"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{"\"\<r2=\>\"", ",", "r2"}], "]"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{"\"\<r3=\>\"", ",", "r3"}], "]"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"tx", ",", "ty"}], "}"}], "=", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"b03", "[", "tT", "]"}], ",", 
+      RowBox[{"b13", "[", "tT", "]"}], ",", 
+      RowBox[{"b23", "[", "tT", "]"}], ",", 
+      RowBox[{"b33", "[", "tT", "]"}]}], "}"}], ".", 
+    RowBox[{"{", 
+     RowBox[{"r0", ",", "r1", ",", "r2", ",", "r3"}], "}"}]}]}], ";"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{"\"\<tx=\>\"", ",", "tx"}], "]"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{"\"\<ty=\>\"", ",", "ty"}], "]"}]}], "Input"]
+},
+WindowSize->{607, 750},
+WindowMargins->{{Automatic, 507}, {-15, Automatic}},
+FrontEndVersion->"7.0 for Microsoft Windows (64-bit) (November 10, 2008)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 3525, 113, 532, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
