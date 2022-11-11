@@ -1,0 +1,10 @@
+Napomena za riješeni 1.mi iz 2009/2010 god, metanova riješenja iz Komunikacijskih sustava.
+
+-zadatak 8, AM modulacija, nije dobro riješenje za Umm1 i Umm2 40 i 60 V
+ nego 20 i 30 V. Imao sam ga na ponovljenom prvom i zaokružio sam 40 i 60 V
+i nije mi bilo dobro, zadatak je bio isti kao i ovaj, baš isti i brojevi i sve, 
+tako da vas molim da na to obratite pažnju.
+
+p.s znam da je predmet glup, ja sam ga dao s 50.0 bodova, nemojte ga podcijeniti, 
+    pa eto to je samo moje malo upozorenje, i sretno svima
+
