@@ -1,0 +1,42 @@
+Error 1 - Warning :
+Mesh not build: File D:\PRAVICA\VJ6.TRA not created
+No recording of .TRA file has been made.
+
+-------------------------------------------
+Error 2 - Warning :
+POINT already existing
+Failed to create a new instance of Point.
+Can not execute the following command :
+PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['XY1'],
+                 uvw=['0',
+                      '-20'],
+                 nature=Nature['STANDARD'])
+
+-------------------------------------------
+Error 3 - Warning :
+POINT already existing
+Failed to create a new instance of Point.
+Can not execute the following command :
+PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['XY1'],
+                 uvw=['0',
+                      '-40'],
+                 nature=Nature['STANDARD'])
+
+-------------------------------------------
+Error 4 - Warning :
+*** WARNING : the problem has not been solved ***
+ *** Several faces have not been associated with regions, ***
+*** only the facesassociated with a region are           ***
+*** exported to FLUX2D                                   ***
+ *** No writting of the physical description of the problem     ***
+*** on the .TRA file, and no writting of the possible circuit. ***
+
+-------------------------------------------
+Error 5 - Warning :
+*** WARNING : the problem has not been solved ***
+
+-------------------------------------------

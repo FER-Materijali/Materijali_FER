@@ -1,0 +1,37 @@
+  
+                *******************************************
+                *     CEDRAT                   MAGSOFT    *
+                * Grenoble, France            Troy, N.Y.  *
+                *                                         *
+                *             FLUX2D 9.3.2                *
+                *                                         *
+                *            Serial number 2              *
+                *                                         *
+                *     copyright (all rights reserved)     *
+                * ENSIEG - LABORATOIRE D'ELECTROTECHNIQUE *
+                * BP46 38402 Saint Martin d'Heres France  *
+                *                                         *
+                *         email : cedrat@cedrat.com       *
+                *******************************************
+
+Problem name
+D:\Pravica\MAG
+
+Created :04/25/08 14:33:09
+
+ Size of the matrix :
+   Number of lines = 245
+   Average length  = 7
+ 
+ Integration done, equations assembled
+ Equations solved
+ Integration done, equations assembled
+ Equations solved
+ Iteration number 1
+ Relative variation with respect to the previous iteration 0.002161
+ Integration done, equations assembled
+ Equations solved
+ Iteration number 2
+ Relative variation with respect to the previous iteration 0
+ 
+Status : computation finished

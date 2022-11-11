@@ -1,0 +1,21 @@
+Loading data model 'Flux_model.stp'
+Recording commands in 'D:\Nisevic\Preflu2D_log.py'
+Trace in file FLUX.esp
+                                         ----------------------------------------------
+                                         | PREFLU_9.3.2 : Finite Element preprocessor |
+                                         |            200 Mo N. + 16 Mo C.            |
+                                         |              Build 0612081936              |
+                                         ----------------------------------------------
+
+Preflu2D (application 9.30) running
+
+Loading project 'lab9.FLU'
+12:54:20      9 sec. Start reading ...
+12:54:21     10 sec. ... end reading
+Updating the data structure: merge standard database
+Updating visualization of 4 faces.
+The occurrency created becomes active.
+... end loading project
+Closing project
+Close of D:/NISEVIC/LAB9
+... end closing project

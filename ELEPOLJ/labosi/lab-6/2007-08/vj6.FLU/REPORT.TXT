@@ -1,0 +1,2 @@
+SOFTWARE : PREFLU_9.3.2 : Finite Element preprocessor
+USECASE  : Flux2DMagneticDCCartSolv2D

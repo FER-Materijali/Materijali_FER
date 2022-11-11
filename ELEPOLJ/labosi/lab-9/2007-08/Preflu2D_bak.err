@@ -1,0 +1,32 @@
+Error 1 - Warning :
+*** WARNING : the problem has not been solved ***
+RSFRE0: No entity for the active model
+RSFRE0: Failed
+ *** INFINITE: This region is not completely characterized ***
+*** In Physical, [MODIFY] [REG_SURF] [MAG_HARM_AXI]       ***
+Conductive region : SIGMA must be <> 0
+ *** Face region REGIONFACE_1 unsuitable material for this formulation ***
+Conductive region : SIGMA must be <> 0
+ *** Face region REGIONFACE_2 unsuitable material for this formulation ***
+ *** No writting of the physical description of the problem     ***
+*** on the .TRA file, and no writting of the possible circuit. ***
+
+-------------------------------------------
+Error 2 - Warning :
+*** WARNING : the problem has not been solved ***
+RSFRE0: No entity for the active model
+RSFRE0: Failed
+ *** INFINITE: This region is not completely characterized ***
+*** In Physical, [MODIFY] [REG_SURF] [MAG_HARM_AXI]       ***
+ *** No writting of the physical description of the problem     ***
+*** on the .TRA file, and no writting of the possible circuit. ***
+
+-------------------------------------------
+Error 3 - Warning :
+Warning : the field ' Steady State AC Magnetic ' is not set. Check carefully its value before validating the box.
+
+-------------------------------------------
+Error 4 - Warning :
+Warning : the field ' Visibility ' is not set. Check carefully its value before validating the box.
+
+-------------------------------------------

@@ -1,0 +1,145 @@
+Loading data model 'Flux_model.stp'
+Recording commands in 'D:\Nisevic\Preflu2D_log.py'
+Trace in file FLUX.esp
+                                         ----------------------------------------------
+                                         | PREFLU_9.3.2 : Finite Element preprocessor |
+                                         |            200 Mo N. + 16 Mo C.            |
+                                         |              Build 0612081936              |
+                                         ----------------------------------------------
+
+Preflu2D (application 9.30) running
+
+Loading project 'lab9.FLU'
+12:33:55      5 sec. Start reading ...
+12:33:57      6 sec. ... end reading
+Updating the data structure: merge standard database
+The occurrency created becomes active.
+... end loading project
+ 
+*** WARNING : the problem has not been solved ***
+ 
+12:34:25      35 sec. Beginning of mesh verification...
+12:34:25      35 sec. End of mesh verification
+12:34:25     35 sec. Beginning of export. DAVOR.TRA
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+ 
+*** INFINITE: This region is not completely characterized ***
+*** In Physical, [MODIFY] [REG_SURF] [MAG_HARM_AXI]       ***
+ 
+ 
+*** Face region REGIONFACE_1 unsuitable material for this formulation ***
+ 
+ 
+*** Face region REGIONFACE_2 unsuitable material for this formulation ***
+ 
+ 
+*** No writting of the physical description of the problem     ***
+*** on the .TRA file, and no writting of the possible circuit. ***
+ 
+12:34:25     35 sec. End of export.
+   exportMeshAndPhysicalDescriptionToTRA executed
+Error 1 - *** WARNING : the problem has not been solved ***
+RSFRE0: No entity for the active model
+RSFRE0: Failed
+ *** INFINITE: This region is not completely characterized ***
+*** In Physical, [MODIFY] [REG_SURF] [MAG_HARM_AXI]       ***
+Conductive region : SIGMA must be <> 0
+ *** Face region REGIONFACE_1 unsuitable material for this formulation ***
+Conductive region : SIGMA must be <> 0
+ *** Face region REGIONFACE_2 unsuitable material for this formulation ***
+ *** No writting of the physical description of the problem     ***
+*** on the .TRA file, and no writting of the possible circuit. ***
+   RegionFace[REGIONFACE_1] modify
+   RegionFace[REGIONFACE_2] modify
+ 
+Meshing of 4 faces
+ 
+Automatic mesh of 14 lines
+ 
+****  W A R N I N G  ****
+ 
+Incomplete mesh information for lines:
+1  2  3  4  5  6  7  8  9  10  11  12  13  14
+ 
+The following points have no MESH:
+1  2  3  4  5  6  7  8  9  11  12  14
+These entities are set to a MESH value equal to 0.017889
+ 
+****  End of W A R N I N G  messages  ****
+ 
+12:41:37    467 sec. Internal meshing of the lines
+ 
+Automatic meshing of 4  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 4 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+12:41:37    467 sec.      66 1st order surfacic elements created
+12:41:37    467 sec. Generating 2nd order elements is running
+  Total number of nodes --> 157
+12:41:38    468 sec. End generating 2nd order elements
+ 
+Surface elements :
+   Number of elements not evaluated     : 0  %
+   Number of excellent quality elements : 86.36  %
+   Number of good quality elements      : 10.61  %
+   Number of average quality elements   : 3.03  %
+   Number of poor quality elements      : 0  %
+   Number of abnormal elements          : 0  %
+   meshFaces executed
+Updating visualization of 4 faces.
+ 
+*** WARNING : the problem has not been solved ***
+ 
+12:41:47     477 sec. Beginning of mesh verification...
+12:41:47     477 sec. End of mesh verification
+12:41:47    477 sec. Beginning of export. DADO.TRA
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+ 
+*** INFINITE: This region is not completely characterized ***
+*** In Physical, [MODIFY] [REG_SURF] [MAG_HARM_AXI]       ***
+ 
+ 
+*** No writting of the physical description of the problem     ***
+*** on the .TRA file, and no writting of the possible circuit. ***
+ 
+12:41:48    478 sec. End of export.
+   exportMeshAndPhysicalDescriptionToTRA executed
+Error 2 - *** WARNING : the problem has not been solved ***
+RSFRE0: No entity for the active model
+RSFRE0: Failed
+ *** INFINITE: This region is not completely characterized ***
+*** In Physical, [MODIFY] [REG_SURF] [MAG_HARM_AXI]       ***
+ *** No writting of the physical description of the problem     ***
+*** on the .TRA file, and no writting of the possible circuit. ***
+Error 3 - Warning : the field ' Steady State AC Magnetic ' is not set. Check carefully its value before validating the box.
+Error 4 - Warning : the field ' Visibility ' is not set. Check carefully its value before validating the box.
+   RegionFace[INFINITE] modify
+12:42:15     505 sec. Beginning of mesh verification...
+12:42:15     505 sec. End of mesh verification
+12:42:15    505 sec. Beginning of export. DAD.TRA
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+12:42:16    505 sec. End of export.
+   exportMeshAndPhysicalDescriptionToTRA executed
+Saving project 'lab9.FLU'
+12:42:33    523 sec. Start save ...
+12:42:36    526 sec. ... end save
+12:42:36    526 sec. Writing of the file D:\NISEVIC\LAB9.TRA
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+12:42:36    526 sec. End writing
+... end saving project
+Closing project
+Close of D:/NISEVIC/LAB9
+... end closing project

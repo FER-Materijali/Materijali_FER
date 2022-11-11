@@ -1,0 +1,82 @@
+
+====================================================================
+Axisymetric problem
+
+====================================================================
+ISOVALUES	Quantity: Equi flux	Unit: Weber                                                                           
+Phase (Deg): 0
+Number		Value
+1		-2,536E-6
+2		-896,181E-9
+3		744,427E-9
+4		2,384E-6
+5		4,025E-6
+6		5,666E-6
+7		7,306E-6
+8		8,946E-6
+9		10,587E-6
+10		12,228E-6
+11		13,868E-6
+
+
+
+====================================================================
+COMPUTATION ON POINT
+Phase (Deg): 0
+
+Points for Flux computation : (0.000, 0.000) and (0.025,0.010)
+Flux		1,436183e-006	Weber	OK
+
+====================================================================
+COMPUTATION ON POINT
+Phase (Deg): 0
+
+Points for Flux computation : (0.025, 0.010) and (0.025,0.010)
+Flux		0,000000e+000	Weber	OK
+
+====================================================================
+COMPUTATION ON POINT
+Phase (Deg): 0
+
+Points for Flux computation : (0.025, 0.010) and (0.025,0.010)
+Flux		0,000000e+000	Weber	OK
+
+====================================================================
+COMPUTATION ON POINT
+Phase (Deg): 0
+
+Points for Flux computation : (0.025, 0.010) and (0.025,0.010)
+Flux		0,000000e+000	Weber	OK
+
+====================================================================
+COMPUTATION ON POINT
+Phase (Deg): 0
+
+Points for Flux computation : (0.000, 0.000) and (0.025,0.010)
+Flux		1,436183e-006	Weber	OK
+
+====================================================================
+COMPUTATION ON POINT
+Phase (Deg): 0
+Point(25,10)
+Current density	Magnitude	1,148946e-002	A/(square mm)	OK
+Points for Flux computation : (0.025, 0.010) and (0.025,0.010)
+Flux		0,000000e+000	Weber	OK
+
+====================================================================
+ISOVALUES	Quantity: |Current density|	Unit: A/(square mm)                                                                   
+Phase (Deg): 0
+Number		Value
+1		0
+2		0,007
+3		0,014
+4		21,001E-3
+5		28,001E-3
+6		35,001E-3
+7		42,002E-3
+8		49,002E-3
+9		56,003E-3
+10		63,003E-3
+11		70,003E-3
+
+

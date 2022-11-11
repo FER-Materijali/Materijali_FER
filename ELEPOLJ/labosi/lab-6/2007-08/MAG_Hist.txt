@@ -1,0 +1,43 @@
+
+====================================================================
+Plane problem : real depth of the object = 1.000000 mm
+
+====================================================================
+ISOVALUES	Quantity: Equi flux	Unit: Weber                                                                           
+
+Number		Value
+1		-3,907E-6
+2		-3,469E-6
+3		-3,031E-6
+4		-2,593E-6
+5		-2,154E-6
+6		-1,716E-6
+7		-1,278E-6
+8		-840,185E-9
+9		-401,884E-9
+10		36,417E-9
+11		474,718E-9
+
+
+
+====================================================================
+COMPUTATION ON POINT
+
+
+Points for Flux computation : (0.000, 0.000) and (0.020,0.030)
+Flux		2,022196e-006	Weber	OK
+
+====================================================================
+COMPUTATION ON POINT
+
+
+Points for Flux computation : (0.020, 0.030) and (0.020,0.030)
+Flux		0,000000e+000	Weber	OK
+
+====================================================================
+COMPUTATION ON POINT
+
+Point(21,056,30,025)
+Flux density	Magnitude	1,831691e-001	Tesla	OK
+Points for Flux computation : (0.020, 0.030) and (0.021,0.030)
+Flux		2,618322e-009	Weber	OK
