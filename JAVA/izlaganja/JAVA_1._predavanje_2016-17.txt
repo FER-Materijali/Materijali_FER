@@ -1,0 +1,683 @@
+Krenimo s prvim programom.
+
+----------- Java: ----------------
+package hr.fer.zemris.java.p01;
+/**
+ * Program koji ilustrira "Hello world" u Javi.
+ *
+ * @author Marko Čupić
+ */
+public class P01 {
+
+  /**
+   * Metoda od koje kreće izvođenje programa.
+   *
+   * @param args argumenti zadani preko naredbenog retka
+   */
+  public static void main(String[] args) {
+    System.out.println("Hello world!");
+    if(args.length==1) {
+      System.out.println("Hello, " + args[0] + "!");
+      System.out.printf("Hello, %s!%n", args[0]);
+      String ispis = String.format("Hello, %s!%n", args[0]);
+      System.out.print(ispis);
+    }
+  }
+
+}
+----------- Java: ----------------
+
+Programe ćemo uvijek deklarirati s "public class" pa ime, čime ujedno deklariramo i razred tog imena. Unutar razreda pišemo deklaracije članskih varijabli (kasnije) i metoda. Signatura metode main mora biti "public static void main(String[])" - naziv polja nije bitan.
+
+Sva polja imaju svojstvo ".length" koje sadrži veličinu (broj elemenata) polja.
+
+Na raspolaganju nam je printf metoda (System.out.printf) koja radi formatirani ispis na standardni izlaz. Također, u razredu String imamo metodu format (String.format) koja rezultat ne ispisuje već ga vraća kao String s kojim onda možemo raditi što god je potrebno.
+
+Smjernice za pisanje javadoc-a:
+
+http://www.oracle.com/technetwork/articles/java/index-137868.html
+
+Sve programe koje pišemo, organizirat ćemo kao projekte. Svaki projekt na disku zahtjeva određenu strukturu direktorija. Neka je glavni direktorij našeg projekta DIR. Tipična organizacija će biti:
+DIR
+ +- src  // tu idu izvorni kodovi (*.java)
+ +- bin  // tu ide prevedeni kod  (*.class)
+
+Razrede u Javi smještamo u pakete čime radimo njihovo logičko grupiranje. Naziv paketa u koji smještamo razred navodi se na početku iza ključne riječi package. Paketi su hijerarhijski i komponente se odvajaju točkom. Na disku, izvorni kod razreda mora biti smješten u strukturu direktorija koja odgovara paketu. Konkretno, razred P01 deklarirali smo u paketu hr.fer.zemris.java.p01. Stoga datoteka s tim izvornim kodom na disku mora biti u poddirektoriju hr/fer/zemris/java/p01. Ime datoteke sa izvornim kodom mora odgovarati nazivu deklariranog razreda (paziti na velika i mala slova).
+
+DIR
+ +- src  // tu idu izvorni kodovi (*.java)
+ |  +- hr
+ |     +- fer
+ |        +- zemris
+ |           +- java
+ |              +- p01
+ |                 +- P01.java
+ +- bin  // tu ide prevedeni kod  (*.class)
+
+Kako napraviti ovu strukturu?
+
+WIN: mkdir src\hr\fer\zemris\java\p01
+WIN: notepad src\hr\fer\zemris\java\p01\P01.java
+
+LIN: mkdir -p src/hr/fer/zemris/java/p01
+LIN: gedit src/hr/fer/zemris/java/p01/P01.java
+
+Kako prevodimo program? Pretpostavimo da smo u terminalu pozicionirani u DIR. Pišemo:
+
+javac -sourcepath src -d bin src/hr/fer/zemris/java/p01/P01.java
+
+Naredba će iskompajlirati izvorni kod i smjestiti izvršnu verziju (bajtkod) u datoteku *.class u jednaku strukturu direktorija (sam prevoditelj će kreirati direktorije ako ne postoje). Time ćemo dobiti:
+
+DIR
+ +- src  // tu idu izvorni kodovi (*.java)
+ |  +- hr
+ |     +- fer
+ |        +- zemris
+ |           +- java
+ |              +- p01
+ |                 +- P01.java
+ +- bin  // tu ide prevedeni kod  (*.class)
+    +- hr
+       +- fer
+          +- zemris
+             +- java
+                +- p01
+                   +- P01.class
+
+Kako pokrećemo program? Pozivamo virtualni stroj, kažemo mu gdje sve traži *.class datoteke (parametrom -cp što je "class path") te dajemo po potrebni druge parametre virtualnom stroju, potom navodimo puno logičko ime razreda koji sadrži metodu main (FQCN: Fully Qualified Class Name: paket + ime razreda sve, sve odvojeno točkama), i na kraju dajemo niz argumenata koji se predaju programu (argumenti naredbenog retka).
+
+java -cp bin hr.fer.zemris.java.p01.P01 Pero
+ 
+P02: Ispis argumenata naredbenog retka
+
+ - napisati program koji ispisuje argumente koje je primio preko naredbenog retka
+
+Primitivni tipovi podataka:
+long, int, short, byte, char, double, float, boolean (+ void)
+
+Sve ostalo su na "primitivnoj" razini reference ("pokazivači") na objekte u memoriji. Objekti su dijelovi memorije uređeni u skladu sa zadanim tipom podataka (u Javi: razredom). U najjednostavnijem slučaju, taj uređaj (memorijski "layout") možemo poistovjetiti sa strukturama podataka u C-u.
+
+Primjerice, postoji razred java.lang.Integer koji konceptualno odgovara C-ovoj strukturi:
+----------- C: ----------------
+typedef struct {
+  int value;
+} Integer;
+----------- C: ----------------
+
+U C-u varijable koje su izvedenog tipa (strukture) možemo stvarati na stogu te na gomili (heap):
+----------- C: ----------------
+void funkcija() {
+  Integer i1;   // deklarira varijablu i 
+                // zauzima mjesto na stogu
+  Integer *i2;  // deklarira samo pokazivač; 
+                //zauzima na stogu mjesto za pokazivač
+  i1.value = 7; // u podatkovni član "value" varijable i1
+                // upisuje vrijednost 7
+  i2 = malloc(sizeof(Integer)); // ručno zauzmi mjesto na gomili
+  i2->value = 7;  // upiši vrijednost u podatkovni član
+  free(i2);       // oslobodi mjesto
+}
+----------- C: ----------------
+
+Za varijablu/objekt i1 zauzima se mjesto na stogu po ulasku u funkciju i automatski oslobađa po izlasku iz funkcije. Pozivatelju ne možemo vratiti tu varijablu (mogli bismo eventualno njezinu kopiju ako pozivatelj pripremi mjesto). 
+
+Varijabla i2 je pokazivač: mjesto za sam objekt zauzimamo pozivom malloc na gomili i taj objekt živi sve dok ga ručno ne oslobodimo: njegov životni vijek razdvojili smo od životnog vijeka izvođenja funkcije. Pozivatelju možemo vratiti pokazivač na taj objekt i pozivatelj mu može uredno pristupati.
+
+U Javi (pričat ćemo kasnije detaljnije), razredi predstavljaju integraciju struktura iz C-a s nizom dodatnih važnih funkcionalnosti. Međutim, Java trenutno ne omogućava stvaranje objekata na stogu već isključivo na gomili. Stoga kad god se pri deklaraciji varijable navede tip podataka koji je razred, varijabla se tretira kao pokazivač (na stogu zauzima mjesto za jedan pokazivač). Stoga Java nema "." i "->", već isključivo koristi "." nad referencama (ali ponašanje je kao "->" u C-u).
+
+----------- Java: ----------------
+public static void metoda() {
+  int i1 = 7; // i1 je tipa int i zauzeta je na stogu
+  Integer i2 = new Integer(7); // i2 je referenca;
+              // new je ekvivalent mallocu koji na gomili
+              // zauzima mjesto za strukturu Integer i
+              // tamo upisuje 7
+}
+----------- Java: ----------------
+
+Evo još jednog primjera. U razredu P03 deklariramo si pomoćnu strukturu MyInteger. Za sada, sve takve pomoćne strukture deklarirat ćemo kao "static class Ime { ... }".
+
+----------- Java: ----------------
+package hr.fer.zemris.java.p01;
+
+public class P03 {
+  static class MyInteger {
+    int value;
+  }
+
+  public static void main(String[] args) {
+    MyInteger i1 = null;
+    i1 = new MyInteger();
+    i1.value = 7;
+    m(i1);
+    int current = i1.value;
+    System.out.println(current);
+  }
+
+  private static void m(MyInteger i) {
+    i.value = i.value * 2;
+  }
+}
+----------- Java: ----------------
+
+U prethodnom primjeru metoda main deklarira referencu i1 koju inicijaliza na null. Potom operatorom new na gomili alocira mjesto za jedan objekt tipa MyInteger (čuva 4 okteta podataka jer struktura ima samo jedan podatkovni član: value, tipa int). Potom u alociranu memoriju upisuje 7. Referencu na taj objekt šalje metodi m. Ona preko reference pristupa objektu na gomili, čita vrijednost podatkovnog člana value (7), množi ju s 2 (dobiva 14) i rezultat ponovno upisuje u podatkovni član value tog objekta. Po povratku u main, čitamo koja je sada vrijednost u objektu i ispisujemo ju (14). Alocirani objekt ne treba oslobađati jer će to učiniti garbage collector za nas, čim naš kod pogubi sve reference na taj objekt (čime nam isti postaje nedohvatljiv).
+
+Sve pomoćne metode u razredu deklarirat ćemo (za sada) s private static pa dalje kao u C-u.
+
+Razlikovati reference od ostalih primitivnih tipova je vrlo važno. Posebno kada radimo s poljima. Evo primjera.
+
+----------- Java: ----------------
+package hr.fer.zemris.java.p01;
+
+public class P04 {
+  static class MyInteger {
+    int value;
+  }
+
+  public static void main(String[] args) {
+    // Sljedeći redak deklarira varijablu polje1 koja je po tipu
+    // referenca i stvara se na stogu; inicijalizira se na referencu
+    // na polje koje operator new zauzima na gomili; to je polje od
+    // 3 int-a koja su inicijalno postavljena na 0 a mi ih potom mijenjamo:
+    int[] polje1 = new int[3];
+    polje1[0] = 42;
+    polje1[1] = 28;
+    polje1[2] = 13;
+
+    // Sljedeći redak deklarira varijablu polje2 koja je po tipu
+    // referenca i stvara se na stogu; inicijalizira se na referencu
+    // na polje koje operator new zauzima na gomili; to je polje od
+    // 3 reference koje su inicijalno postavljene na null a mi ih
+    // potom mijenjamo:
+    MyInteger[] polje2 = new MyInteger[3];
+    polje2[0] = new MyInteger(); 
+    polje2[0].value = 42;
+    polje2[1] = new MyInteger(); 
+    polje2[1].value = 28;
+    polje2[2] = new MyInteger(); 
+    polje2[2].value = 13;
+
+    for(int i : polje1) {
+      System.out.println(i);
+    }
+    for(MyInteger i : polje2) { // "i" poprima redom sve reference iz polja
+      System.out.println(i.value);
+    }
+  }
+}
+----------- Java: ----------------
+
+Idemo sada napisati program koji će preko naredbenog retka primiti niz cijelih brojeva te ispisati njihovu sumu.
+
+----------- Java: ----------------
+package hr.fer.zemris.java.p01;
+
+public class P05 {
+
+  public static void main(String[] args) {
+    int suma = 0;
+    for(int i = 0; i < args.length; i++) {
+      suma += Integer.parseInt(args[i]);
+    }
+    System.out.printf("Suma je %d.%n", suma);
+  }
+
+}
+----------- Java: ----------------
+
+Za primitivne tipove byte, short, int, long, float, double imamo na raspolaganju prateće razrede Byte, Short, Integer, Long, Float i Double (takozvani objektni wrapperi). S jedne strane, primjerci tih razreda (objekti) kada ih alociramo, na gomili čuvaju jednu varijablu odgovarajućeg primitivnog tipa. S druge strane, nude nam zgodne metode za konverziju iz stringa i u string.
+
+Konverzija u string:
+String Byte.toString(byte value);
+String Short.toString(short value);
+String Integer.toString(int value);
+String Long.toString(long value);
+String Float.toString(float value);
+String Double.toString(double value);
+
+Konverzija iz stringa:
+byte Byte.parseByte(String value);
+short Short.parseShort(String value);
+int Integer.parseInt(String value);
+long Long.parseLong(String value);
+float Float.parseFloat(String value);
+double Double.parseDouble(String value);
+
+Vidi:
+https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html
+https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html
+https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html
+https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html
+https://docs.oracle.com/javase/8/docs/api/java/lang/Float.html
+https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html
+
+Pažnja!!! Konverzije između decimalnih tipova i stringova (u oba smjera) koriste trenutne lokalizacijske postavke operacijskog sustava (decimalna točka vs decimalni zarez).
+
+Što ako predamo nešto što nije broj? Srušit će se program uz iznimku java.lang.NumberFormatException (isprobati - bit će ispisano puno ime iznimke). Dio koda koji može izazvati iznimku možemo okružiti s 
+try { 
+  opasni kod 
+} catch(TipIznimke varijabla) {
+  obrada
+}
+Ako "opasni kod" izazove iznimku, počinje se izvoditi blok catch koji obrađuje tu iznimku. Idemo popraviti rješenje tako da zanemari argumente koji nisu brojevi (uz ispis poruke).
+
+----------- Java: ----------------
+package hr.fer.zemris.java.p01;
+
+public class P05 {
+
+  public static void main(String[] args) {
+    int suma = 0;
+    for(int i = 0; i < args.length; i++) {
+      try {
+        suma += Integer.parseInt(args[i]);
+      } catch(NumberFormatException ex) {
+        System.out.format("Argument '%s' nije broj - zanemarit ćemo ga.%n", args[i]);
+      }
+    }
+    System.out.printf("Suma je %d.%n", suma);
+  }
+
+}
+----------- Java: ----------------
+
+Čitanje s tipkovnice: postoji više načina. Za početak ćemo koristiti usluge razreda Scanner iz paketa java.util. Prilikom prevođenja java programa, prevoditelj pretpostavlja da su svi korišteni tipovi podataka ili primitivni, ili deklarirani u paketu java.lang (što je vrijedilo za sve prethodne primjere; npr. puno ime razreda Integer je java.lang.Integer). Međutim, ako naš izvorni kod treba tip koji nije iz paketa java.lang, imamo dvije mogućnosti: koristiti njegovo puno ime, ili nakon deklaracije paketa dodati prikladne import direktive. Primjerice, napišemo li:
+
+import java.util.Scanner;
+
+prevoditelj će svaki puta u izvornom kodu naleti na tip Scanner znati da mislimo na razred čije je puno ime java.util.Scanner. Njegova dokumentacija s primjerima je:
+
+https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html
+
+Čitanje s tipkovnice radimo tako da standardni ulaz (System.in) "zamotamo" u objekt Scanner i potom nad njim pozivamo prikladne metode za dohvat sljedećeg stringa, broja, itd. U programu treba paziti da ovo "zamatanje" napravimo samo jednom i potom referencu na scanner šaljemo gdje god je potrebno pa na kraju scanner zatvorimo.
+
+Evo primjera koji čita cijele brojeve i zbraja ih, sve dok se ne unese negativni broj; sve što nisu cijeli brojevi se preskače uz ispis.
+
+----------- Java: ----------------
+package hr.fer.zemris.java.p01;
+
+import java.util.Scanner;
+
+public class P06 {
+
+  public static void main(String[] args) {
+    int suma = 0;
+    Scanner sc = new Scanner(System.in);
+
+    while(true) {
+      if(sc.hasNextInt()) {
+        int current = sc.nextInt();
+        if(current < 0) {
+          break;
+        }
+        suma += current;
+      } else {
+        String elem = sc.next();
+        System.out.format("Argument '%s' nije broj - zanemarit ćemo ga.%n", elem);
+      }
+    }
+    System.out.printf("Suma je %d.%n", suma);
+    
+    sc.close();
+  }
+
+}
+----------- Java: ----------------
+
+================================================================
+Uporaba alata Maven za automatiziranu izgradnju projekta.
+================================================================
+
+Maven očekuje da je projekt strukturiran na sljedeći način.
+
+https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
+
+DIR
+ +- src
+ |  +- main
+ |  |  +- java
+ |  |  +- resources
+ |  |  +- ...
+ |  |  +- webapp
+ |  +- test
+ |  |  +- java
+ |  |  +- resources
+ |  |  +- ...
+ |  |  +- webapp
+ +- target 
+    +- classes         // direktorij u koji idu *.class datoteke
+    +- biblioteka.jar  // program zapakiran u JAR arhivu
+ +- pom.xml
+
+Izvorne kodove stavljamo u src/main/java; slike i druge resurse u src/main/resources. U vršnom direktoriju projekta mora biti datoteka pom.xml koja sadrži definiciju projekta i omogućava konfiguriranje različitih postavki.
+
+Svaki projekt/biblioteka u mavenovom svijetu se opisuje s tri parametra:
+ * grupom (identifikator koji se razlikuje od tvrtke do tvrtke), 
+   hijerarhijskog oblika; npr. org.apache.commons
+ * identifikatorom artefakta (oznaka konkretnog programa/biblioteke), 
+   npr. u grupi org.apache.commons imamo biblioteke commons-lang3,
+   commons-math3, commons-io, commons-collections4, i niz drugih
+ * verzijom, npr. 1.0.0, 1.4.2-RELEASE, ...
+
+Projekt se gradi pokretanjem alata mvn i zadavanjem prikladnog cilja (npr. mvn clean, mvn compile, mvn package).
+
+----------- pom.xml ----------------
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>hr.fer.zemris.java.jmbag0000000000</groupId>
+  <artifactId>p01</artifactId>
+  <version>1.0</version>
+
+  <!-- configuration of basic properties -->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
+  </properties>
+
+</project>
+----------- pom.xml ----------------
+
+Napravimo novi direktorij za ovaj projekt. Stvorimo src/main/java i unutra napravite program P06:
+
+mkdir -p src/main/java/hr/fer/zemris/java/p01
+gedit src/main/java/hr/fer/zemris/java/p01/P06.java
+
+Prethodni pom.xml stavite u korijenski direktorij.
+
+mvn compile
+dir target     // Uočite stvoreni direktorij target/classes
+mvn package
+dir target     // Uočite stvorenu arhivu target/p01-1.0.jar
+
+JAR ekstenzija označava ZIP arhivu (Java ARchive, JAR) koja sadrži *.class datoteke programa i druge potrebne resurse, plus direktorij META-INF. Možete je otvoriti bilo kojim ZIP arhiverom. Program koji ste preveli s mvn compile sada možete pokrenuti na uobičajeni način:
+
+java -cp target/classes hr.fer.zemris.java.p01.P06
+
+Ako imamo JAR, virtualnom stroju možemo reći da bajtkod programa traži u toj arhivi:
+
+java -cp target/p01-1.0.jar hr.fer.zemris.java.p01.P06
+
+Umjesto da sami navodimo classpath, program možemo pokrenuti i preko mavena:
+
+mvn exec:java -Dexec.mainClass="hr.fer.zemris.java.p01.P06"
+
+odnosno ako trebamo predati i argumente naredbeno retka:
+
+mvn exec:java -Dexec.mainClass="hr.fer.zemris.java.p01.P06" -Dexec.args="arg1 arg2 arg3"
+
+Uočite da se u tom slučaju naziv razreda predaje kao parametar -Dexec.mainClass dok se svi argumenti predaju kao jedan string preko parametra -Dexec.args
+
+Danas je na internetu dostupan čitav niz korisnih biblioteka koje možemo iskoristiti u našim programima. Jedna mogućnost jest da ih ručno tražimo i skinemo (download) u neki poddirektorij projekta i potom ih dodamo u classpath pri pokretanju prevodioca i virtualnog stroja. Mnoštvo biblioteka dostupno je u organiziranim maven repozitorijima i maven ih zna sam skinuti i dohvatiti za nas; sve što moramo znati jest groupId, artifactId i version biblioteke koja nam treba. Ako to znamo, u pom.xml moramo deklarirati da nam treba ta biblioteka unutar sekcije <dependencies>:
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+Ako trebamo više biblioteka, sve ih nižemo u istu sekciju <dependencies>:
+
+  <dependencies>
+    <dependency>
+      ... prva ...
+    </dependency>
+    <dependency>
+      ... druga ...
+    </dependency>
+    <dependency>
+      ... treća ...
+    </dependency>
+  </dependencies>
+
+Maven sve ove biblioteke izravno dohvaća s interneta i sprema na jedno mjesto na računalu (u korisnikovom $HOME direktoriju napravi poddirektorij .m2 i sve sprema unutra). Zahvaljujući tome, ako više projekata treba iste biblioteke, one se ne dohvaćaju više puta i ne čuva se po jedna kopija u svakom projektu; umjesto toga, maven u classpath dodaje izravno tu vanjsku lokaciju gdje je spremio biblioteku.
+
+Spomenutu biblioteku junit iskoristit ćemo da bismo kvalitetnije razvijali program. Zamislite sljedeće. Želimo napraviti program i u njemu funkciju koja prima string koji se sastoji od niza znakova. Funkcija mora izbrojati koliko ima velikih slova A koja se ne pojavljuju neposredno iza velikog slova B. Možemo zamisliti niz različitih stringova koje bismo tijekom razvoja htjeli dati takvoj funkciji, i za koje bismo htjeli provjeriti radi li naša funkcija OK. Npr.
+
+"" -> 0
+"A" -> 1
+"AAAA" -> 4
+"GAAGAGA" -> 4
+"GAABAAGA" -> 4
+
+Čest "razvojni" proces koji ljudi znaju raditi jest: "piši to metodi main i printf-aj rezultate pa čitaj što je ispisano". Ovo je loše jer je stvar teško automatizirati. Umjesto da to radimo na takav način, možemo iskoristiti biblioteku junit koja nam, u najjednostavnijem slučaju, omogućava da svaki takav scenarij opišemo u novoj metodi i definiramo što mora biti rezultat. Potom to možemo automatizirano pokretati. Na kraju će nam ostati napisan niz provjera koje će lagano uhvatiti pogreške koje bismo mogli unijeti pri refaktoriranju koda.
+
+Dodatna prednost je što Vam automatski ostaje napisan niz provjera koje možete iskoristiti da biste provjerili radi li tuđi kod koji ste dobili na recenziju!
+
+Testovi su također razredi koje u mavenovim projektima smještamo u src/test/java. Svaku provjeru stavljamo u jednu javnu metodu (bez riječi static) koja ništa ne prima i ništa ne vraća i koju anotiramo anotacijom @org.junit.Test (ili samo @Test ako dodamo "import org.junit.Test;" što svakako preporučam).
+
+* Pokrenite Eclipse.
+* Odaberite gdje se nalazi workspace u koji ćete pohranjivati projekte.
+* Otiđite u terminalu u taj workspace pa zadajte
+  mkdir p01            // to će biti direktorij projekta
+  cd p01
+  mkdir -p src/main/java
+  mkdir -p src/test/java
+* U direktorij p01 spremite i pom.xml; umjesto da ga prepisujete, možete ga
+  izravno dohvatiti sa:
+  http://java.zemris.fer.hr/home/learn/resources/maven/basic/pom.xml
+  Time imamo regularan (doduše prazan) maven projekt. Sada ga možemo
+  importati u Eclipse.
+* Vratite se u Eclipse -> File -> Import... -> Maven -> Existing Maven Projects
+  pa u Root Directory odaberite direktorij p01. 
+
+Napravimo naprije P07:
+
+----------- Java: ----------------
+package hr.fer.zemris.java.p01;
+
+public class P07 {
+
+	public static void main(String[] args) {
+	}
+	
+	public static int broji(String ulaz) {
+		return 0;
+	}
+
+}
+----------- Java: ----------------
+
+Metodu koju ovdje razvijamo nazvali smo "broji": prima string i vraća cijeli broj. Označena je s public jer je ideja da je bilo tko može pozivati (pa tako i naš testni kod koji nije definiran unutar samog razreda P07 - isti ne bi vidio metodu kada bi je označili s private).
+
+Idemo sada napisati razred s testovima. Stavit ćemo ga u src/test/java u isti paket kao i P07; sam razred nazvat ćemo P07Test (u Eclipse-u možete desni klik na P07 pa New -> Junit Test Case). Evo osnovnog kostura:
+
+----------- Java: ----------------
+package hr.fer.zemris.java.p01;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+public class P07Test {
+
+	@Test
+	public void test1() {
+		fail("Not yet implemented");
+	}
+
+}
+----------- Java: ----------------
+
+Naredba "import static org.junit.Assert.*;" nalaže kompajleru da pogleda koje su sve metode u razredu org.junit.Assert deklarirane kao static i da to zapamti, tako da u programskom kodu koji slijedi metode ne moramo pozivati punim imenom, npr. org.junit.Assert.fail(...) već da možemo navesti samo ime metode, npr. fail(...).
+
+Metoda test1() je primjer jednog testa. U Eclipse-u sada možemo desni klik na P07Test pa Run As -> JUnit Test. Vidjet ćemo da je pokrenut jedan test i da je on pao.
+
+Idemo napisati prvi test: "u praznom stringu nema slova A" - napišite ga umjesto one prazne metode test1():
+
+----------- Java: ----------------
+	@Test
+	public void prazanStringNulaAova() {
+		int n = P07.broji("");
+		assertEquals(0, n);
+	}
+----------- Java: ----------------
+
+Pozivamo metodu assertEquals koja na prvo mjesto prima očekivanu vrijednost a na drugo mjesto testiranu vrijednost. Metoda ruši test ako one nisu jednake.
+
+Pokrenite sada izvođenje testova i uvjerite se da je test prošao. Dodajmo (dakle, ne brisati stari - dodati!) sada test za sljedeći slučaj:
+
+----------- Java: ----------------
+	@Test
+	public void samoSlovoA() {
+		int n = P07.broji("A");
+		assertEquals(1, n);
+	}
+----------- Java: ----------------
+
+Pokretanjem testova sada ćemo vidjeti da je prvi prošao a drugi nije. Idemo doraditi metodu P07.broji(...):
+
+----------- Java: ----------------
+	public static int broji(String ulaz) {
+		char[] znakovi = ulaz.toCharArray();
+		int broj = 0;
+		for(char c : znakovi) {
+			if(c=='A') broj++;
+		}
+		return broj;
+	}
+----------- Java: ----------------
+
+Pokrenimo testove - oba će proći. Dodajmo preostala tri testa:
+
+----------- Java: ----------------
+	@Test
+	public void samoSlovaA() {
+		int n = P07.broji("AAAA");
+		assertEquals(4, n);
+	}
+
+	@Test
+	public void viseAAliBezB() {
+		int n = P07.broji("GAAGAGA");
+		assertEquals(4, n);
+	}
+
+	@Test
+	public void viseAiB() {
+		int n = P07.broji("GAABAAGA");
+		assertEquals(4, n);
+	}
+----------- Java: ----------------
+
+Pokrenite testove. Sve će proći osim posljednjeg (viseAiB). Idemo još jednom popraviti metodu.
+
+----------- Java: ----------------
+	public static int broji(String ulaz) {
+		char[] znakovi = ulaz.toCharArray();
+		int broj = 0;
+		for(int i = 0; i < znakovi.length; i++) {
+			char c = znakovi[i];
+			if(c=='A' && znakovi[i-1]!='B') broj++;
+		}
+		return broj;
+	}
+----------- Java: ----------------
+
+Ponovno pokrenite testove. Uvjerite se da će test viseAiB sada proći. No napravili smo grešku u kodu i sada dva testa koja su prije prolazila (samoSlovoA i samoSlovaA) više ne prolaze (štoviše, raspadaju se). Vidite li razlog? Oba testa pucaju uz jednu iznimku - pogledajte koju.
+
+Idemo popraviti još jednom kod.
+
+----------- Java: ----------------
+	public static int broji(String ulaz) {
+		char[] znakovi = ulaz.toCharArray();
+		int broj = 0;
+		for(int i = 0; i < znakovi.length; i++) {
+			char c = znakovi[i];
+			if(c=='A') {
+				if(i>0 && znakovi[i-1]=='B') continue;
+				broj++;
+			}
+		}
+		return broj;
+	}
+----------- Java: ----------------
+
+Kroz Eclipse možete izravno pokretati i samo odabrani test, odnosno još važnije, umjesto "Run", možete pokrenuti "Debug" pa ako ste prije toga postavili točke prekida (breakpoints) u izvornom kodu, moći ćete pratiti naredbu po naredbu kako se kod izvršava, kakvo je stanje pojedinih varijabli i slično.
+
+Komentar za kraj: kako izgleda program koji sam radi svoju jednostruko povezanu ulančanu listu (iz kvalifikacijskog ispita - ali bez čitanja iz datoteke za sada):
+
+----------- Java: ----------------
+package hr.fer.zemris.java.p01;
+
+public class P08 {
+
+	static class Zapis {
+		Zapis sljedeci;
+		String ime;
+		String prezime;
+		int godine;
+	}
+
+	private static Zapis dodaj(Zapis glava, String ime, String prezime, int godine) {
+		Zapis novi = new Zapis();
+		novi.ime = ime;
+		novi.prezime = prezime;
+		novi.godine = godine;
+		novi.sljedeci = glava;
+		return novi;
+	}
+	
+	public static void main(String[] args) {
+		Zapis glava = null;
+		
+		glava = dodaj(glava, "Ante", "Antić", 25);
+		glava = dodaj(glava, "Ivo", "Ivić", 31);
+		glava = dodaj(glava, "Jasna", "Jasnić", 28);
+		glava = dodaj(glava, "Štefanija", "Štefić", 23);
+		
+		// Napišite sada kod koji radi ispis!
+	}
+}
+----------- Java: ----------------
+
+Komentar: kako lijepiti stringove u Javi? Sljedeći kod radi, ali je spor:
+
+----------- Java: ----------------
+String text = "";
+for(int i = 0; i < 1000; i++) {
+  text = text + "AB";
+}
+----------- Java: ----------------
+
+jer svako zbrajanje stringova rezultira alokacijom novog prostora u memoriji i kopiranjem stringova koje zbrajamo u taj prostor. Dodatno, kako to radimo u petlji 1000 puta, stvara se 1000 međurezulata koji već u sljedećem koraku postaju smeće u memoriji.
+
+Za dinamičku izgradnju stringova koristi se pomoćni razred StringBuilder koji održava međuspremnik koji po potrebi realocira ali vrlo adresivno (veličinu mu mijenja eksponencijalno; *2). U međuspremnik elemente dodajemo pozivom metode append(...) koja može primiti druge stringove ali i sve ostale tipove podataka. Kad smo gotovi, konačni string zatražimo pozivom metode .toString().
+
+----------- Java: ----------------
+StringBuilder spremnik = new StringBuilder();
+for(int i = 0; i < 1000; i++) {
+  sb.append("AB");
+}
+String text = sb.toString();
+----------- Java: ----------------
+
+Znamo li procjeniti barem okvirno koliko bi spremnik trebao biti, njegovu POČETNU veličinu možemo dati kao argument kod stvaranja spremnika (to je samo početna veličina!).
+
+----------- Java: ----------------
+StringBuilder spremnik = new StringBuilder(2000);
+for(int i = 0; i < 1000; i++) {
+  sb.append("AB");
+}
+String text = sb.toString();
+----------- Java: ----------------
+
+TODO LISTA:
+
+1) Kad god radite novi workspace u Eclipse-u, nakon što ga napravite, a prije no što krenete raditi/importati prvi projekt, OBAVEZNO, izbornik Window -> Preferences -> Otvoriti sekciju General -> Workspace (klik na Workspace); desno će se otvoriti postavke koje vrijede u tom workspace-u. Provjeriti da je pri dnu Text File Encoding postavljen na UTF-8 (ako piše Default(UTF-8), ostavite tako, ako je kao default nešto drugo, prebacite na Other pa tamo ručno odaberite UTF-8). Te će postavke vrijediti za sve projekte koje budete stvarali u tom workspace-u, osim ako sam projekt to ne nadjača.
+
+2) Ako u workspace-u već imate definirane projekte i ako defaultna postavka za workspace nije da koristi UTF-8, što točno koristi projekt možete provjeriti tako da u Project Exploreru (onaj lijevi dio površine Eclipse-a koji ima popis projekata) napravite desni klik na naziv konkretnog projekta pa iz iskočnog izbornika odaberete na dnu "Properties". U prozoru koji će se otvoriti kliknite na sekciju "Resource" (ako već nije odabrana) pa u desnom dijelu prozora provjerite što je postavljeno pod "Text file encoding". Ako ste importali maven projekt kao što smo radili na predavanju, trebalo bi biti postavljeno na Other: "UTF-8".
+
+3) Kad god radite novi projekt, provjerite da se za zapisivanje *.java datoteka na disk koristi kodna stranica UTF-8. Ako to ne bude slučaj s Vašim zadaćama, gubit ćete ocjene na tome.
+
+4) Ako se nešto strga s mavenom pri skidanju bibloteka (pa dobijete neku čudnu poruku), otiđite na disk u Vaš HOME direktorij, tamo pronađite .m2 direktorij, uđite unutra. Pronaći ćete poddirektorij "repository" u kojem su po strukturama direktorija razmještene skinute biblioteke. Ili pronađite direktorij u kojem bi biblioteka trebala biti pa ga obrišite, ili obrišite sve poddirektorije. Vratite se u Eclipse, otvorite problematičan pom.xml, dodajte mu pa obrišite jedan razmak (kao da ste ga editirali), pa Save. Time će se ponovno pokrenuti postupak dohvata svih biblioteka koje nedostaju (u donjem desnom uglu vidjet ćete progressbar koji će indicirati da se nešto događa); kad bude gotovo, sve bi trebalo biti OK. Ako ste radili neku izmjenu u pom.xml nakon koje se Eclipse zblesira, desni klik na projekt -> Maven -> Update Project...
+
+5) Ako nešto od datoteka u projektu koji je učitan i u Eclipse mijenjate izvana (izravno s diska pokrenete editor i mijenjate pom.xml, java kod ili bilo što drugoga), Eclipse toga neće biti svjestan. U tom slučaju OBAVEZNO prije no što radite bilo što dalje u Eclipse-u, desni klik na projekt -> Refresh.

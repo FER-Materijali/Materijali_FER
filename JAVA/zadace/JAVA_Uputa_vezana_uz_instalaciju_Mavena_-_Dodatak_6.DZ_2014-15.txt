@@ -1,0 +1,320 @@
+Skinuti i instalirati maven 3.3.1
+http://maven.apache.org/download.cgi
+(vidi Apendix u najnovijoj verziji knjige)
+
+Kratka uputa općenito o Mavenu (ako bilo što od ovoga što slijedi ne bude jasno):
+https://maven.apache.org/guides/getting-started/
+
+Korak 0. Pročitajte u knjizi još novijoj verziji (stavio sam na http://java.zemris.fer.hr/nastava/opjj/ verziju book-2015-04-16.pdf) u poglavlju 2 u podpoglavlju
+         "Automatizacija razvojnog ciklusa" podpodpoglavlje "Uporaba alata maven". Napravite cjelokupni primjer koji je tamo dan i isprobajte ga. Korak 1 opisan
+         u nastavku naslanja se na ovaj dio.
+
+Korak 1. Napravite demo projekt (uputa u nastavku).
+
+ 1) Pozicionirajte se u vršni direktorij u kojem želite za projekt otvoriti poddirektorij (npr. D:\home\java\projekti).
+
+ 2) Zadajte naredbu koja će stvoriti projekt imena "demo" (parametar artifactId) i kod smjestiti u paket "hr.fer.zemris.java.hw06.demo" (parametar groupId).
+    mvn -B archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=hr.fer.zemris.java.hw06.demo -DartifactId=demo
+
+ 3) Uđite u stvoreni direktorij demo
+    cd demo
+
+ 4) Upoznajte se sa stvorenom strukturom direktorija. Opisnik projekta je datoteka pom.xml (slično kao što smo za ant imali build.xml).
+
+ 5) Dodajte u pom.xml ispred <dependencies> taga nalog mavenu da datoteke s izvornim kodom tretira uporabom UTF-8 kodne stranice:
+    <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+ 6) Kako je opisano u knjizi (poglavlje 2, podpoglavlje "Automatizacija razvojnog procesa", podpodpoglavlje "Uporaba alata maven"), dodajte u pom.xml konfiguraciju prevodioca tako da kod prevodi u skladu s verzijom jave 1.8 (ono što zovemo "Java 8"; službena verzija je 1.8).
+
+ 7) Često ćete trebati pronaći neku biblioteku koja Vam treba za projekt. Maven sam zna skidati te biblioteke (morate imati vezu na Internet).
+    Centralna tražilica biblioteka koje su javno dostupne mavenu nalazi se na adresi:
+    Maven Central Repository Search Engine
+    --------------------------------------
+    http://search.maven.org/
+
+ 8) Otvorite datoteku pom.xml u Vašem projektu i pronađite deklaraciju ovisnosti o staroj verziji junit-a (verzija 3.x):
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    Uočite da je u <scope> navedeno da je ova biblioteka potrebna samo za kompajliranje i prevođenje testova; ona neće biti uključena u classpath prilikom prevođenja vašeg programa.
+
+ 9) Otiđite na prethodnu tražilicu, potražite artefakt "junit" u grupi "junit"; vidite koja je zadnja verzija (nešto sa 4), klik na nju i dobit ćete isječak bloka dependency koji trebate staviti u pom.xml; taj blok prekopirajte preko ovog postojećeg koji dodaje ovisnost prema zastarjeloj verziji junita.
+
+10) Potom otiđite u src/test do primjera konkretnog testa koji je tamo (i koji se sada neće kompajlirati): prepravite ga u test junita verzije 4: obrišite ono nasljeđivanje, uklonite konstruktor, maknite metodu suite() i dodajte anotacije (i nemojte zaboraviti popraviti importe uključivo import static za org.junit.Assert.*; junit 3 koristi paket junit.framework, junit 4 paket org.junit).
+
+11) Pokrenite kompajliranje koda.
+    mvn compile
+
+12) Pokrenite kompajliranje testova.
+    mvn test-compile
+
+13) Pokrenite testiranje koda
+    mvn test
+
+    Neki od ciljeva:
+    mvn clean
+    mvn compile
+    mvn test-compile
+    mvn test
+    mvn package
+    mvn install
+    mvn site
+    Definirane su implicitne ovisnosti među ciljevima pa će se pokrenuti sve što treba za svaki direktno zadani cilj.
+
+    Pokrenete li "mvn package", u target poddirektoriju bit će izgenerirana jar arhiva s bytekodom Vašeg projekta.
+
+14) U pom.xml imate sekciju <build> koja ima samo jednu podsekcija: <plugins>. Dodajte Unutar <build> ispred <plugins> sekciju <pluginManagement> kako je prikazano u nastavku:
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.4</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+    Ovime smo zatražili da se za generiranje izvještaja koristi verzija plugina 3.4.
+
+15) Konfigurirajte način na koji maven generira izvještaje.
+    U nastavku su pojedinim pluginovima definirani zadatci izrade različitih izvještaja.
+    Pluginove koji pokreću izradu javadoca i checkstyle izvještaja ćete lagano otkriti.
+    Surefire plugin generira izvještaj za junit testove. Clobertura je zamjena za jacoco:
+    generira izvještaj za code-coverage. PMD je još jedan alat za kontrolu kvalitete koda.
+    FindBugs je alat koji radi analizu koda i također prijavljuje niz pogrešaka koje pronađe.
+
+    Napomena: ništa od ovoga ne morate sami skidati s Interneta: Maven će sve potrebne biblioteke
+    sam skinuti s Interneta i smjestiti na jedno zajedničko mjesto na Vašem računalu (izvan Vašeg
+    projekta), tako da svi drugi projekti za koje koristite Maven također dijele te iste biblioteke,
+    čime se izbjegava download višestrukih kopija i njihovo čuvanje na disku. Nezgodno je što te biblioteke
+    tada nisu dio projekta i ne distribuiraju se s njime (u pom.xml piše samo popis ovisnosti). Kada na
+    novom računalu pokušate izbuildati projekt, maven će s Interneta krenuti skidati sve ovisnosti
+    koje još nema u lokalnom cache-u, pa morate biti spojeni na Internet (mala cijena za sve blagodati
+    koje time nudi).
+
+    Dodajte na dno pom.xml sekciju <reporting> s konfiguracijama pluginova prikazanih u nastavku.
+
+  <reporting>
+    <excludeDefaults>true</excludeDefaults>
+    <outputDirectory>${project.build.directory}/site</outputDirectory>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.8</version>
+        <configuration>
+          <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
+          <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+        </configuration>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>dependencies</report>
+              <report>summary</report>
+              <report>project-team</report>
+              <report>index</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.10.2</version>
+        <configuration>
+          <charset>UTF-8</charset>
+          <docencoding>UTF-8</docencoding>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <version>2.5</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>2.15</version>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>checkstyle</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+        <version>2.18.1</version>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>cobertura-maven-plugin</artifactId>
+        <version>2.7</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.4</version>
+        <configuration>
+          <linkXref>true</linkXref>
+          <sourceEncoding>UTF-8</sourceEncoding>
+          <minimumTokens>100</minimumTokens>
+          <targetJdk>1.8</targetJdk>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>3.0.1</version>
+      </plugin>
+    </plugins>
+  </reporting>
+
+    Više o opcijama koje možete koristiti u konfiguraciji pluginova pogledajte ovdje:
+    https://maven.apache.org/plugins/maven-site-plugin/maven-3.html
+    https://maven.apache.org/plugins/maven-project-info-reports-plugin/
+    https://maven.apache.org/plugins/maven-javadoc-plugin/javadoc-mojo.html
+    https://maven.apache.org/jxr/maven-jxr-plugin/
+    https://maven.apache.org/plugins/maven-checkstyle-plugin/usage.html
+    https://maven.apache.org/surefire/maven-surefire-report-plugin/
+    http://mojo.codehaus.org/cobertura-maven-plugin/
+    https://maven.apache.org/plugins/maven-pmd-plugin/
+    https://gleclaire.github.io/findbugs-maven-plugin/index.html
+
+    Za konfiguraciju maven-javadoc-plugin dao sam samo primjer podešavanja kodnih stranica; ako treba još nešto podesiti, podesite.
+
+16) Dodajte u projekt (u pom.xml) nakon sekcije <properties> još i sljedeći dio konfiguracije
+    projekta kojim pobliže opisujete projekt i sebe (zamijenite podatke koji se odnose na mene
+    Vašim podatcima):
+
+  <description>
+    Ovo je testni projekt koji ilustrira uporabu mavena za upravljanje
+    java projektom.
+  </description>
+
+  <organization>
+    <name>ZEMRIS, Fakultet elektrotehnike i računarstva, Sveučilište u Zagrebu</name>
+    <url>http://www.fer.unizg.hr</url>
+  </organization>
+
+  <developers>
+    <developer>
+      <id>Marko.Cupic</id>
+      <name>Marko Čupić</name>
+      <email>marko.cupic@fer.hr</email>
+      <url>http://ferko.fer.hr/people/Marko.Cupic/</url>
+      <organization>ZEMRIS, Fakultet elektrotehnike i računarstva, Sveučilište u Zagrebu</organization>
+      <organizationUrl>http://www.fer.unizg.hr</organizationUrl>
+      <roles>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>
+  </developers>
+
+  Potom pokrenite "mvn site" i pogledajte rezultate (u target/site direktoriju). 
+
+17) Dodajte na kraj sekcije <build> u podsekciju <plugins> (ne <pluginManagement>!) još definiciju
+    plugina koji omogućava pokretanje napisanog programa. Evo xml-a koji trebate ubaciti:
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.4.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <executable>java</executable>
+          <workingDirectory>.</workingDirectory>
+          <arguments>
+            <argument>-classpath</argument>
+            <classpath />
+            <argument>hr.fer.zemris.java.hw06.demo.App</argument>
+            <argument>Ivo</argument>
+            <argument>Anica</argument>
+            <argument>Jasna</argument>
+          </arguments>
+        </configuration>
+      </plugin>
+
+    Uočite gdje smo rekli da se pokreće program java (tag executable), te kako se gradi naredbeni redak:
+    napiši "-classpath", onda umetni stazu do svih jar-ova (classpath), onda dodaj paket i naziv razreda
+    koji se pokreće, i onda predaj argumente Ivo, Anica, Jasna.
+
+    Program ćete pokrenuti s:
+    mvn exec:exec
+
+    Dokumentacija ovog plugina:
+    http://mojo.codehaus.org/exec-maven-plugin/index.html
+  
+Korak 2. Izgradnja projekta čiji je cilj razviti biblioteku CijeliBrojevi.
+
+    U okviru ovog dijela razvijate biblioteku kroz Maven projekt. Odaberite da je grupa projekta
+    hr.fer.zemris.java.studentVASJMBAG.hw06 i naziv projekta (jeste zapamtili kako se to zove u mavenu?) CijeliBrojevi.
+    Stvorite najprije projekt iz naredbenog retka naredbom mvn. Potom kao pom.xml koristite datoteku koju ste maloprije 
+    razvili u koraku 1 (pregazite ovu koju je nanovo napravio mvn onom i samo prilagodite potrebno).
+    U paket hr.fer.zemris.java.studentVASJMBAG.hw06 smjestite razred CijeliBrojevi:
+
+    public class CijeliBrojevi {
+        public boolean jeNeparan(int broj) { ... }
+        public boolean jeParan(int broj) { ... }
+        public boolean jeProst(int broj) { ... }
+    }
+
+	Napomena: u prethodnoj verziji upute (ako ste je skinuli) metode su bile isOdd, isEven i isPrime
+	          uz argument nazvan "number"; sada sam to sve preimenovao da bude u skladu s nazivom razreda.
+			  Ako želite, možete ostaviti i onako.
+			  
+    Napišite ostatak i testove za JUnit verzije 4. Jednom kada ste to napisali i izdokumentirali, instalirajte gotovu
+    biblioteku u lokalni repozitorij naredbom:
+
+    mnv install
+
+    Napomena: ako u koraku 3 otkrijete da ovdje nešto ne radi, onda se vratite, popravite, istestirajte i ponovno rezultat
+    instalirajte u repozitorij; bez ponovnog instaliranja projekta u lokalni repozitorij projekt iz koraka 3 će i dalje vidjeti
+    staru kopiju biblioteke.
+
+Korak 3. Izgradnja projekta koji koristi razvijenu biblioteku.
+
+    U okviru ovog dijela razvijate komandnolinijski program kroz Maven projekt. Odaberite da je grupa projekta
+    hr.fer.zemris.java.studentVASJMBAG.hw06 i naziv projekta CijeliBrojeviKonzola. Stvorite najprije projekt
+    iz naredbenog retka naredbom mvn. Potom kao pom.xml koristite datoteku koju ste maloprije razvili u koraku 1 
+    (pregazite ovu koju je nanovo napravio mvn onom i samo prilagodite potrebno).
+    U paket hr.fer.zemris.java.studentVASJMBAG.hw06 smjestite razred CijeliBrojeviKonzola. On u beskonačnoj petlji
+    čita brojeve koje korisnik unosi (jedan po retku). Za svaki broj uporabom biblioteke koju ste maloprije razvili
+    utvrđuje je li uneseni broj paran, neparan te je li prim i to ispisuje na zaslon. Evo očekivanog primjera
+    interakcije s korisnikom:
+
+    Unesite broj> 7
+    Paran: NE, neparan DA, prim: DA
+    Unesite broj> 16
+    Paran: DA, neparan NE, prim: NE
+    Unesite broj> quit
+    Hvala na druženju.
+
+    Da biste ovo postigli, morat ćete u pom.xml dodati ovisnost prema prethodno razvijenoj biblioteci. Pri tome nigdje ne
+    navodite fizičku stazu do projekta ili biblioteke; navodite samo grupu, naziv i verziju biblioteke o kojoj ovisite.
+    Sve ostalo će napraviti maven.
+
+Prilikom uploada domaće zadaće, uz sve ostalo što će trebati uploadati, uploadat ćete i ova tri projekta koja su razvijena
+kroz korak 1, korak 2 i korak 3.
+
+Napomena: Eclipse zna raditi s Maven projektima. Jednom stvoreni projekt možete lagano importati i dalje raditi u Eclipse-u.
+Važno: ako mijenjate direktno pom.xml (u smislu da baš manipulirate po xml-u) jednom kad ste projekt importali u Eclipse, 
+istom se ponekad to neće baš previše svidjeti pa će se ponašati kao da tu promjenu ne vidi. U tom slučaju desni klik tamo u
+Project Exploreru, pa u iskočnom izborniku pronađite podizbornik "Maven" i u njemu ćete imati nešto tipa "Refresh pom.xml"
+ili "Reload pom.xml" ili nešto na tu temu.
