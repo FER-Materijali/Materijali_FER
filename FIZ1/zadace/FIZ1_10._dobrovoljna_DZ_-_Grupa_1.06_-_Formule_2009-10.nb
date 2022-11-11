@@ -1,0 +1,133 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      4031,        123]
+NotebookOptionsPosition[      3592,        104]
+NotebookOutlinePosition[      3935,        119]
+CellTagsIndexPosition[      3892,        116]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"R", "=", "0.025"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"w0", "=", 
+   RowBox[{"24", "*", "2", "*", "Pi"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"alfa", "=", 
+   RowBox[{"40", "\[Degree]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mi", "=", "0.9"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"g", "=", "9.81"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{
+    RowBox[{"mi", "*", "g", "*", 
+     RowBox[{"Cos", "[", "alfa", "]"}]}], "-", 
+    RowBox[{"g", "*", 
+     RowBox[{"Sin", "[", "alfa", "]"}]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"t1", "=", 
+  RowBox[{"R", "*", 
+   RowBox[{"w0", "/", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"3", "*", "mi", "*", "g", "*", 
+       RowBox[{"Cos", "[", "alfa", "]"}]}], "-", 
+      RowBox[{"g", "*", 
+       RowBox[{"Sin", "[", "alfa", "]"}]}]}], 
+     ")"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"skliz", "=", 
+  RowBox[{
+   RowBox[{"t1", "^", "2"}], "*", 
+   RowBox[{"a", "/", "2"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"hmax", "=", 
+  RowBox[{
+   RowBox[{"skliz", "*", 
+    RowBox[{"Sin", "[", "alfa", "]"}]}], "+", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"t1", "*", "a"}], ")"}], "^", "2"}], "/", 
+    RowBox[{"(", 
+     RowBox[{"2", "*", "g"}], ")"}]}]}]}]}], "Input",
+ CellChangeTimes->{{3.48122770965625*^9, 3.481227814328125*^9}, {
+  3.48122784721875*^9, 3.481227900984375*^9}, {3.481228244078125*^9, 
+  3.481228285828125*^9}, {3.481228376609375*^9, 3.481228409015625*^9}, {
+  3.48122864628125*^9, 3.481228653609375*^9}, {3.481229039765625*^9, 
+  3.481229072578125*^9}, {3.481229502125*^9, 3.48122951146875*^9}, {
+  3.481229544375*^9, 3.481229553953125*^9}, {3.481229805390625*^9, 
+  3.48122981134375*^9}}],
+
+Cell[BoxData[
+ RowBox[{"48", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{
+  3.48122781675*^9, {3.481227851125*^9, 3.48122790253125*^9}, {
+   3.4812282809375*^9, 3.48122828621875*^9}, 3.48122840996875*^9, {
+   3.481228647984375*^9, 3.48122865403125*^9}, 3.481229557328125*^9, 
+   3.481229805828125*^9}],
+
+Cell[BoxData["0.269578357471383`"], "Output",
+ CellChangeTimes->{
+  3.48122781675*^9, {3.481227851125*^9, 3.48122790253125*^9}, {
+   3.4812282809375*^9, 3.48122828621875*^9}, 3.48122840996875*^9, {
+   3.481228647984375*^9, 3.48122865403125*^9}, 3.481229557328125*^9, 
+   3.481229805828125*^9}],
+
+Cell[BoxData["0.016629643794365354`"], "Output",
+ CellChangeTimes->{
+  3.48122781675*^9, {3.481227851125*^9, 3.48122790253125*^9}, {
+   3.4812282809375*^9, 3.48122828621875*^9}, 3.48122840996875*^9, {
+   3.481228647984375*^9, 3.48122865403125*^9}, 3.481229557328125*^9, 
+   3.48122980584375*^9}],
+
+Cell[BoxData["0.011465141597749418`"], "Output",
+ CellChangeTimes->{
+  3.48122781675*^9, {3.481227851125*^9, 3.48122790253125*^9}, {
+   3.4812282809375*^9, 3.48122828621875*^9}, 3.48122840996875*^9, {
+   3.481228647984375*^9, 3.48122865403125*^9}, 3.481229557328125*^9, 
+   3.48122980584375*^9}]
+}, Open  ]]
+},
+WindowSize->{615, 523},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"7.0 for Microsoft Windows (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 1811, 50, 218, "Input"],
+Cell[2381, 74, 303, 6, 33, "Output"],
+Cell[2687, 82, 293, 5, 33, "Output"],
+Cell[2983, 89, 295, 5, 33, "Output"],
+Cell[3281, 96, 295, 5, 33, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

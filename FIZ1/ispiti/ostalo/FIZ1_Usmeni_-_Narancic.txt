@@ -1,0 +1,101 @@
+
+2011/2012
+------------------------------------------------------------
+Ljetni rok:
+1.izvesti izvode za tangencijalnu i radijalnu akceleraciju, obodnu brzinu, kutnu brzinu (uglavnom, skoro sve vezano za jednoliko gibanje po kružnici)
+2. precesija zvrka (izvodi i objasniti pojavu)
+3. brzina i protok kod laminarnog strujanja fluida
+4. Carnotov kružni proces.
+
+Jesenski rok:
+
+1. Kod savršeno elastiènog sudara naæi brzinu poslije sudara.
+2.Kutna kolièina gibanja
+3.Kako se ponaša realan plin u uskoj cijevi - (to nitko nije znao XD )
+4. Adijabatski proces izraz za vezu izmeðu P-V
+
+Dekanski rok:
+
+1.Precesija zvrka
+2.Coriolisova sila
+3.Bernulijeva jednadžba
+4.Carnotov kružni proces
+
+
+
+2012/2013
+------------------------------------------------------------
+Evo što meni kaže kolega koji je sada bio na usmenom u 10:
+1. centralni sudar, izvesti brzine v1' i v2' (savršeno elastièni jel)
+2. zvrk
+3. Bernulli
+4. neki idealni plin u kinetièkoj teoriji (to nitko nije znao)
+
+kasnije je još usmeno pitao newtonove aksiome, einsteinove postulate, 
+kutnu kolièinu gibanja, jako puno iz treæeg ciklusa (fluidi i
+termodinamika), reynoldsov broj, laminarno i turbulentno blabla... 
+
+1. Konzervativne sile / nekonzervativne sile
+2. Izvod za kutnu kolicinu gibanja kod rotacije oko nepomicne osi
+3. Izvod za brzinu i protok realnog fluida kroz tanku cijev(Poissonove formule)
+4. Carnotov proces 
+
+ne treba ti papir. kad predaš izvode postavlja još nekoliko dodatnih
+pitanja. ispitivao je neke ljude prije mene nešto u vezi kinetièke
+teorije (to što nitko nije znao napraviti), a ostala pitanja su
+uglavnom bila nevezana uz ono što smo pisali (II grupa).
+oni koje je prve ocjenjivao u grupi su po meni dobivali laganija
+pitanja, newtonovi zakoni, zakoni termodinamike... pitanje je
+ponavljao ako nitko nije dotad znao odgovorit na njeg. pitao je
+i naèine voðenja topline, što su inercijalni sustavi, konzervativne,
+nekonzervativne sile, reynoldsov broj, silu trenja kod realnog fluida... 
+
+
+pitanja:
+molekularno kinetièka teorija, izvod za tlak
+impuls sile i kolièina gibanja, nekakava veza
+kutna kolièina gibanja materijalne toèke
+barometarski tlak
+
+
+pitanja od danas:
+elastièan centralni sudar, izvesti brzine
+EDIT: (od kolegice itsboss) veza izmedju kutne brzine precesije i kutne brzine
+Poiseuilleov zakon (strujanje fluida kroz cijev)
+Poissonova jednadžba adijabate
+
+još je dao dodatno pitanje
+izvod za oèuvanje kolièine gibanja 
+
+dodatna pitanja: Newtonovi aksiomi, Einsteinovi postulati, svi zakoni
+termodinamike (2.zakon ima više verzija), konzervativne/nekonzervativne
+sile, sila trenja, funkcije stanja i procesa, uzgon, lorentzove
+transformacije, atmosferski tlak, uvjet ravnoteže..
+
+danas:
+
+1) na tijelo djeluje sila F= -b*v ... izrazi v(t) i s(t)
+2) Izvod coriolisove sile
+3) izrazi brzinu strujanja fluida (ono sa viskoznosti)
+4) poissonove razdiobe (P-V, T-V i T-P ovisnost)
+
+dod. pitanja:
+konkurentne sile, konzervativne sile, einsteinovi postulati,
+adijabatski procesi, uvjeti ravnoteze, keplerovi zakoni, zakoni
+termodinamike, newtonovi zakoni.. 
+
+2013/2014
+------------------------------------------------------------
+1. grupa:
+
+1. Kosi hitac
+2. Lorentzove transformacije
+3. Poiseuilleova formula
+4. Mayerove relacije
+
+2. grupa:
+
+1. Par sila
+2. Lorentzove transformacije
+3. Bernoullijeva jednadžba
+4. Carnotov proces

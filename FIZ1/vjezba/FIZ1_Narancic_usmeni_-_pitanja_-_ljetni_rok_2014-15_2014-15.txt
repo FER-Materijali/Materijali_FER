@@ -1,0 +1,27 @@
+Usmeni na ljetnom roku je 2014/15 godine imao 3 izvoda po osobi i usmeno ispitivanje:
+
+IZVODI SU MU NAJVAZNIJI I NOSE NAJVISE BODOVA.
+
+1. Izvedi kolicinu gibanja za KRUTO TIJELO
+2. Izvedi Lorentzove transformacije
+3. Izvedi Bernoullijevu jednadzbu.
+
+1.Ocuvanje kolicine gibanja kod savrseno elasticnog sudara
+2.Coriolisova sila
+3.Carnotov proces i izraz za korisnost preko temperatura
+
+1.Veza izmedju kutne brzine precesije i kutne brzine(zvrk)
+2.Barometarska formula
+3.Molekularno kineticka teorija plinova - naci tlak
+
+1. Pomocu Newtonovih aksioma i Kelperovih zakona izvedi Newtonov zakon gravitacije
+2. Brzina protjecanja realnog fluida kroz kapilaru
+3. Poisson, p-V
+
+
+Najcesca pitanja: Newtonovi aksiomi , Keplerovi zakoni , Einsteinovi postulati , zakoni termodinamike
+                  Coriolis , uvjeti ravnoteze, funkcije stanja i procesa ,konzervativne i nekonzervativne sile , konkurentne i nekonkurentne sile,
+                  Molekularno Kineticka teorija , entropija(znati objasniti obicno i statisticku intepretaciju) , 
+                  broj stupnjeva slobode , Reynoldsov broj 
+ 
+               ==>Ako nesto ne valja u izvodima zna pitati da mu objasnis i onda ti da par pitanja oko toga

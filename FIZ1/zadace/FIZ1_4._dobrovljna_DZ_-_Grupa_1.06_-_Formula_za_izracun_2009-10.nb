@@ -1,0 +1,112 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      3033,        102]
+NotebookOptionsPosition[      2661,         85]
+NotebookOutlinePosition[      3005,        100]
+CellTagsIndexPosition[      2962,         97]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"30", "\[Degree]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{"15", "\[Degree]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mi", "=", "0.2"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"m", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"v", "=", "10"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"F", "=", "3"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"g", "=", "9.81"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"t", "=", 
+  RowBox[{"v", "*", "m", 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{
+       RowBox[{"m", "*", "g", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"Sin", "[", "a", "]"}], "+", 
+          RowBox[{"mi", "*", 
+           RowBox[{"Cos", "[", "a", "]"}]}]}], ")"}]}], "-", 
+       RowBox[{"F", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"mi", "*", 
+           RowBox[{"Sin", "[", "b", "]"}]}], "+", 
+          RowBox[{"Cos", "[", "b", "]"}]}], ")"}]}]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       RowBox[{"m", "*", "g", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"Sin", "[", "a", "]"}], "-", 
+          RowBox[{"mi", "*", 
+           RowBox[{"Cos", "[", "a", "]"}]}]}], ")"}]}], "+", 
+       RowBox[{"F", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"mi", "*", 
+           RowBox[{"Sin", "[", "b", "]"}]}], "-", 
+          RowBox[{"Cos", "[", "b", "]"}]}], ")"}]}]}]]}], ")"}]}]}]}], "Input",
+ CellChangeTimes->{{3.47748135203125*^9, 3.477481382265625*^9}, {
+  3.47748141615625*^9, 3.477481438046875*^9}, {3.477481482484375*^9, 
+  3.477481495*^9}, {3.477485223734375*^9, 3.477485277734375*^9}, {
+  3.477485314734375*^9, 3.47748543690625*^9}, {3.47748596665625*^9, 
+  3.477485975234375*^9}}],
+
+Cell[BoxData["24.396978176730777`"], "Output",
+ CellChangeTimes->{
+  3.47748543825*^9, {3.477485967875*^9, 3.477485976390625*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.47748521934375*^9, 3.477485220734375*^9}}]
+},
+WindowSize->{1048, 523},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"7.0 for Microsoft Windows (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 1851, 53, 283, "Input"],
+Cell[2421, 77, 130, 2, 33, "Output"]
+}, Open  ]],
+Cell[2566, 82, 91, 1, 33, InheritFromParent]
+}
+]
+*)
+
+(* End of internal cache information *)
+
