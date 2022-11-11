@@ -1,0 +1,35 @@
+set(0,'defaulttextinterpreter','latex')
+Ua=3; m=0.1; R=3.2; %Ua se podesava na 2 ili 3 kao u labosu kako bi dobili drugacije boje grafova
+
+if Ua==2
+    boja='r'
+else
+    boja='b'
+end
+
+
+
+%kada se jedan kod korsiti drugi "iskljucite" tj stavite oznake za komentar oko
+%tog djela tako da nije aktivan
+%ucitate lab1.mat u matlabu te pokrenete skriptu, ispisati ce se graf, ucitate lab2.mat ponovno pokrenete skriptu
+%ispisati ce se novi graf u istom prozoru (nemojte zaboraviti mijenjati vrijedost Ua)
+%ponovi za sve ostale slucajeve, identicno za kod sa strujom
+%ovakvim postupkom ce se dobiti dva grafa po slici(za napon 2 tj 3)
+
+%dio koda za prikaz brzine vrtnje
+hold on
+grid on
+plot(Odzivi.time,Odzivi.signals(1).values(:,1),boja)
+xlabel('$t$,s')
+ylabel('$n$,$\min^{-1}$')
+
+legend('Un/3','Un/2')
+
+%Dio koda za prikaz struje
+hold on
+grid on
+plot(Odzivi.time,Odzivi.signals(2).values(:,1),boja)
+xlabel('$t$,s')
+ylabel('$I_\mathrm{a},\mathrm{A}$')
+
+legend('Un/3','Un/2')
