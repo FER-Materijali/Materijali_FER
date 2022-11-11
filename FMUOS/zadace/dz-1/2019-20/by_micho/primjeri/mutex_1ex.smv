@@ -1,0 +1,27 @@
+MODULE main 
+VAR
+	turn : boolean;
+	proc0 : process user(turn, FALSE);
+	proc1 : process user(turn, TRUE);
+ASSIGN
+	init(turn) := FALSE;
+
+MODULE user(turn, ind)
+VAR
+	state : {entering, critical, exiting, noncritical};
+ASSIGN
+	init(state) := {entering, noncritical};
+	next(state) :=
+		case
+			(state = entering) & (turn = ind) : critical;
+			state = critical : {critical, exiting};
+			state = exiting : noncritical;
+			state = noncritical : {entering, noncritical};
+			TRUE : state;
+		esac;
+	next(turn) :=
+		case 
+			(state = exiting) & (ind = FALSE) : TRUE;
+			(state = exiting) & (ind = TRUE) : FALSE;
+			TRUE : turn;
+		esac;

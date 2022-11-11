@@ -1,0 +1,38 @@
+MODULE main
+VAR
+	proc0 : process user(proc1.flag);
+	proc1 : process user(proc0.flag);
+
+SPEC EF(proc0.state=critical & proc1.state=critical)
+SPEC AG(!(proc0.state=critical & proc1.state=critical))
+SPEC AG(proc0.state=reading -> AF(proc0.state=critical))
+SPEC EF(AG(proc0.state=reading & proc1.state=reading))
+MODULE user(oflag)
+VAR
+	flag : boolean;
+	state  : {setflag, reading, critical, exiting, noncritical};
+ASSIGN
+	init(state) := {setflag};
+	init(flag) := 0;
+	next(state) :=
+		case
+			state = setflag : reading;
+			state = reading & !oflag : critical;
+			state = critical : {critical, exiting};
+			state = exiting : noncritical;
+			state = noncritical : {noncritical, setflag};
+			1 : state;
+		esac;
+	next(flag) :=
+		case
+			state = setflag : 1;
+			state = exiting : 0;
+			1 : flag;
+		esac;
+	
+FAIRNESS
+	running
+FAIRNESS
+	!(state = critical)
+FAIRNESS
+	!(state = noncritical)

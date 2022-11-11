@@ -1,0 +1,42 @@
+#define N 35
+
+#define p (x <= 0)
+
+int x = N;
+
+active proctype A()
+{
+do
+	:: true ->
+		S0: 
+		x = x - 4; goto end_S1;
+	
+		end_S1: 
+		x = x + 2; goto S0;
+od;
+}
+
+active proctype B()
+{
+do
+	:: true ->
+		S0: 
+		x = x - 1; goto end_S1;	
+	
+		end_S1: 
+		x = x + 1; goto S0;	
+od;
+}
+
+never  {    /* <>[]p */
+T0_init:
+        do
+        :: ((p)) -> goto accept_S4
+        :: (1) -> goto T0_init
+        od;
+accept_S4:
+        do
+        :: ((p)) -> goto accept_S4
+        od;
+}
+

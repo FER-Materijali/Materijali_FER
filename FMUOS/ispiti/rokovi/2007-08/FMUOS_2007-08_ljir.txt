@@ -1,0 +1,48 @@
+1.rok 2008
+
+1. Sto mora sadrzavati svaki always blok u Verilog programu da se nebi
+brtio u beskonacnoj petlji
+
+2. Cemu sluzi obiljezje nepristranosti (fairness) u SMV-u.
+
+3. Ekspanzijom sa lijeve strane (Shannon) po varijabli x dokazi: f(x
++y) + f(xy) = f(x) + f(y)
+
+4. Pomocu petrijeve mreze rjesiti problem 5 filozofa
+
+5. Nacrtati kripke strukturu koja zadovoljava sljedeca pravila !AG(p)
+i AG(EF(EG(p)) i dali takva struktura zadovoljava EF(p)
+
+6. Napisati u CTL formalizmu: a) postoji stanje busy u kojem proces
+moze ostati 3 vremenske jedinice (ili tako nesto) b) kada se desi
+stanje reset ...
+
+7. Neka su zadani predikati STUDENT(x), PREDAVANJE(y) i BIO_NA(x,y),
+prevedi receniece u predikatnu logiku: a) postoji student koji je bio
+na svim predavanjim b) postoji predavanje na kojem nisu bili svi
+studenti
+
+8. dokazi pravilima sa auditornih sljedecu logicku posljedicu u
+propozicijskoj logici: (PQ)->R |- (PR)(QR) (ili tako nesto)
+
+9. skiciraj algoritam E(f U g), i pomocu tog algoritma rjesi E(pUq) za
+skup prijelaza T....
+
+10. Zadana je funkcija, dokazi da je funkcija monotona i pronadji
+najmanju i najvecu fiksnu tocku
+
+
+
+5 zad rj:
+Hm...Onda kad bi se zasebno rjesavao !AG(p) zar nije da bi bilo dovoljno 
+jedno stanje koje ne sadrzi p?
+
+No ako se rjesava tako da istovremeno vrijedi !AG(p) i AG(EF(EG(p))) onda bi 
+bila dva stanja:
+npr. pocetno stanje s0 bez p (tj. p=false) koje ima prijelaz u stanje s1 
+gdje je p istinit i s1 ima jos prijelaz u samog sebe..
+Tada bi vrijedilo !AG(p) (odnosno da ne vrijedi da na svim putevima u svi 
+stanjima vrijedi p) i takodjer, vrijedilo bi AG(EF(EG(p))) (odnosno da na 
+svim stazama u svim stanjima vrijedi da postoji staza iz koje se konacno 
+moze doci u stazu u kojoj su sva stanja p. Tada bi struktura zadovoljavala i 
+EF(p).

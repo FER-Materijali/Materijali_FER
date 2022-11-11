@@ -1,0 +1,28 @@
+MODULE main
+VAR
+	proc0 : process user(proc1.flag);
+	proc1 : process user(proc0.flag);
+
+MODULE user(oflag)
+VAR
+	flag : boolean;
+	state  : {setflag, reading, critical, exiting, noncritical};
+ASSIGN
+	init(state) := {setflag};
+	init(flag) := FALSE;
+	next(state) :=
+		case
+			state = setflag : reading;
+			state = reading & !oflag : critical;
+			state = critical : {critical, exiting};
+			state = exiting : noncritical;
+			state = noncritical : {noncritical, setflag};
+			TRUE : state;
+		esac;
+	next(flag) :=
+		case
+			state = setflag : TRUE;
+			state = exiting : FALSE;
+			TRUE : flag;
+		esac;
+	

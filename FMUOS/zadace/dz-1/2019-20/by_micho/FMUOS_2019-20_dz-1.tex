@@ -1,0 +1,1206 @@
+\documentclass{article}
+
+\usepackage{caption}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{xcolor}
+
+\captionsetup[table]{labelformat=empty}
+
+\definecolor{Gray}{gray}{0.85}
+
+\newcommand{\crnotice}[1]
+{
+    \begin{center}
+        \colorbox{red!15}{\parbox{\textwidth}{#1}}
+    \end{center}
+}
+\newcommand{\sekcija}[1]{\section{\textsc{#1}}}
+\newcommand{\dio}[1]{\sekcija{#1. dio}}
+\newcommand{\zadatak}[1]{\subsection{Zadatak #1}}
+\newcommand{\odgovor}{\subsubsection*{Odgovor}}
+\newcommand{\code}[1]{\colorbox{blue!11}{\texttt{#1}}}
+
+\renewcommand{\contentsname}{Sadržaj}
+
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{\fill}
+
+    \huge
+    \textbf{\textsc{Formalne metode u oblikovanju sustava}} \\
+    
+    \vspace*{0.5cm}
+    
+    \large
+    \textsc{1. domaća zadaća - NuSMV} \\
+
+    \vspace*{\fill}
+    \textsc{Zagreb, travanj 2020.}
+\end{titlepage}
+
+\tableofcontents
+\pagebreak
+
+
+
+\sekcija{Izjava}
+
+Zadaci priloženi uz ovu domaću zadaću pripadaju njihovim vlasnicima te služe isključivo u edukacijske svrhe. Bilo koja promjena originala je isključivo radi estetske i funkcionalne prirode i ne mijenja smisao informacije. Također, takve promjene ne primijenjuje nikakvu drukčiju licencu niti se smatraju intelektualnim vlasništvom uređivača.
+\newline
+
+Uz ovu datoteku obično dolaze i primjerci kôda, koji su zaštićeni licencom:
+
+\crnotice
+{
+    Copyright 2020 Studoši
+    \newline
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    \newline
+
+        \quad
+        http://www.apache.org/licenses/LICENSE-2.0
+        \newline
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+}
+
+\sekcija{Priprema}
+
+Potrebno je instalirati NuSMV prema uputama predmeta u repozitoriju, kao i primjere u direktoriju vježbe. Svi primjeri nalazit će se u datoteci \code{primjeri} u korijenu direktorija repozitorija vježbe. Direktorij NuSMV treba postaviti u korijen repozitorija - nakon toga će se izvršni program NuSMV nalaziti na \code{by\_micho/NuSMV/bin/NuSMV.exe}. Svi primjeri bit će pokrenuti iz direktorija \code{by\_micho}, što znači da se naredbe odnose na scenarij kada smo pozicionirani u tom direktoriju.
+
+\pagebreak
+
+
+
+\dio{1}
+
+\zadatak{1.1}
+Prouči primjer \code{mutex\_1ex.smv}.
+
+\odgovor
+
+\begin{minted}
+[
+framesep=2mm,
+baselinestretch=1.2,
+fontsize=\footnotesize,
+linenos
+]{text}
+MODULE main
+VAR
+	turn : boolean;
+	proc0 : process user(turn, FALSE);
+	proc1 : process user(turn, TRUE);
+ASSIGN
+	init(turn) := FALSE;
+
+MODULE user(turn, ind)
+VAR
+	state : {entering, critical, exiting, noncritical};
+ASSIGN
+	init(state) := {entering, noncritical};
+	next(state) :=
+		case
+			(state = entering) & (turn = ind) : critical;
+			state = critical : {critical, exiting};
+			state = exiting : noncritical;
+			state = noncritical : {entering, noncritical};
+			TRUE : state;
+		esac;
+	next(turn) :=
+		case 
+			(state = exiting) & (ind = FALSE) : TRUE;
+			(state = exiting) & (ind = TRUE) : FALSE;
+			TRUE : turn;
+		esac;
+\end{minted}
+\pagebreak  % Čišće je
+
+
+\zadatak{1.2}
+
+Specificiraj i napiši u CTL notaciji obilježje sigurnosti (engl. \textit{safety property}):\newline
+\code{Dva procesa ne mogu biti istovremeno u kritičnom odsječku.}
+\newline
+
+Potrebno je napisati dva oblika obilježja:
+
+\begin{enumerate}[label=\alph*)]
+\item specifikacija da je moguće jedno nepoželjno ponašanje (engl. \textit{refutation})
+\item specifikacija da nema nepoželjnog ponašanja
+\end{enumerate}
+
+\noindent
+Nepoželjno ponašanje je u ovom slučaju istovremeno nalaženje u kritičnom odsječku.
+
+\odgovor
+
+\begin{enumerate}[label=\alph*)]
+\item \code{EF (proc0.state = critical \& proc1.state = critical)}
+\item \code{AG !(proc0.state = critical \& proc1.state = critical)}
+\end{enumerate}
+
+
+\zadatak{1.3}
+
+Utvrdi pomoću sustava NuSMV je li ispunjeno navedeno obilježje. Objasni rezultat na temelju kôda primjera (ne na temelju ispisa traga).
+
+\odgovor
+
+Pokrenimo dvije naredbe:
+
+\begin{itemize}
+\item \code{NuSMV/bin/NuSMV DZ1/p1/task\_02a.smv}
+\item \code{NuSMV/bin/NuSMV DZ1/p1/task\_02b.smv}
+\end{itemize}
+
+\noindent
+Pokretanjem prve naredbe vidimo da specifikacija nije ispravna, dok pokretanjem druge utvrđujemo da je ona ispravna.
+\newline
+
+Ako analiziramo kôd, vidimo da kôd \textbf{prve} specifikacije želimo da postoji (barem jedan) put na kojem se događa da su istovremeno oba procesa u kritičnom odsječku. Međusobno isključivanje podrazumijeva da se ovo nikad ne događa, tj. da je u kritičnom odsječku uvijek \textbf{isključivo} jedan proces. Kod \textbf{druge} specifikacije želimo da ne postoji ni jedno stanje u kojem se može dogoditi da su oba procesa u kritičnom odsječku. Ovo ujedno i \textbf{zadovoljava} obilježje sigurnosti.
+\pagebreak  % Čišće je
+
+
+\zadatak{1.4}
+
+Specificiraj i napiši u CTL notaciji obilježje životnosti (engl. \textit{liveness property}):\newline
+\code{Ako proces pokuša ući u kritični odsječak, konačno će i ući}.
+\newline
+
+\noindent
+Specifikaciju napiši za oba procesa. 
+
+\odgovor
+
+Specifikacija glasi:
+
+\begin{minted}{text}
+CTLSPEC AG (proc0.state = entering -> AF (proc0.state = critical))
+CTLSPEC AG (proc1.state = entering -> AF (proc1.state = critical))
+\end{minted}
+
+
+\zadatak{1.5}
+
+Utvrdi da li je zadovoljeno navedeno obilježje. Koji su sve problemi s ovom implementacijom?
+
+\odgovor
+
+Pokretanjem \code{NuSMV/bin/NuSMV DZ1/p1/task\_04.smv} uviđamo da navedeno obilježje nije zadovoljeno. Ako pogledamo specifikaciju, konkretno liniju
+
+\begin{minted}{text}
+state = critical : {critical, exiting};
+\end{minted}
+
+\noindent
+Možemo vidjeti da proces teoretski vječno može zapeti u kritičnom odsječku. Naša specifikacija govori da za sve čvorove mora postojati neki put kako bi iz stanja \code{entering} prešli u stanje \code{critical}. Trace nam je naveo i slučajeve kad to neće biti istina. Ovo se može zaobići nekim konačnim brojem prijelaza u kritičnom odsječku nakon kojih će posljednje od njih preći u stanje \code{exiting}. Bez takvog ponašanja, praktički smo omogućili procesu da zaglavi.
+
+
+\zadatak{1.6}
+
+U \code{mutex\_1ex.smv} dodaj ograničenje pravednosti (engl. \textit{fairness}): svaka instanca procesa obavlja se beskonačno mnogo puta. Napiši ovdje kako ono glasi.
+
+\odgovor
+
+U \code{mutex\_1ex.smv} treba dodati liniju:
+
+\begin{minted}{text}
+JUSTICE running
+\end{minted}
+\pagebreak  % Čišće je
+
+
+\zadatak{1.7}
+
+Ponovno provjeri prethodno obilježje. Što smo postigli s ovim ograničenjem pravednosti?
+
+\odgovor
+
+Pokretanjem \code{NuSMV/bin/NuSMV DZ1/p1/task\_06.smv} vidimo da naša definicija još uvijek ne zadovoljava obilježje životnosti. Dodavanjem ograničenja pravednosti osigurali smo samo da naš sustav u svakom trenutku bira hoće li se proces izvršavati ili ne, što garancija da jedan od njih neće biti beskonačno u kritičnom odsječku.
+
+
+
+\zadatak{1.8}
+
+U \code{mutex\_1ex.smv} još dodaj ograničenje pravednosti: svaka instanca procesa ne može beskonačno dugo ostati u \textbf{kritičnom} odsječku. Napiši ovdje kako ono glasi. Provjeri sad svojstvo životnosti za \code{mutex\_1ex.smv}.
+
+\odgovor
+
+U \code{mutex\_1ex.smv} treba osim prethodnog ograničenja za \code{running} dodati:
+
+\begin{minted}{text}
+JUSTICE !(state = critical)
+\end{minted}
+
+\noindent
+Pokretanjem \code{NuSMV/bin/NuSMV DZ1/p1/task\_08.smv} NuSMV dojavljuje da specifikacija još uvijek nije ispravna.
+
+
+\zadatak{1.9}
+
+U \code{mutex\_1ex.smv} dodaj još jedno ograničenje pravednosti: svaka instanca procesa ne može beskonačno dugo ostati u \textbf{nekritičnom} odsječku. Napiši ovdje kako ono glasi. Provjeri sad svojstvo životnosti za \code{mutex\_1ex.smv}.
+
+\odgovor
+
+U \code{mutex\_1ex.smv} treba još dodati:
+
+\begin{minted}{text}
+JUSTICE !(state = noncritical)
+\end{minted}
+
+\noindent
+Pokretanjem \code{NuSMV/bin/NuSMV DZ1/p1/task\_09.smv} NuSMV dojavljuje da je sada specifikacija ispravna.
+\pagebreak  % Čišće je
+
+
+\zadatak{1.10}
+
+Specificiraj i napiši u CTL notaciji:
+
+\begin{minted}{text}
+Ako proces proc0 uđe u kritični odsječak,
+proc0 neće ponovo ući u kritični odsječak
+sve dok proc1 nije prošao kroz svoj kritični odsječak.
+\end{minted}
+
+\odgovor
+
+\begin{minted}{text}
+CTLSPEC AG (proc0.state = exiting ->
+            A[proc1.state = exiting U !(proc0.state = critical)])
+\end{minted}
+
+
+\zadatak{1.11}
+
+Utvrdi je li zadovoljeno navedeno obilježje za \code{mutex\_1ex.smv} (uz navedena ograničenja pravednosti). Koja obilježja protokola međusobnog isključivanja rješavaju ograničenja pravednosti prethodno navedena, a koji problem je još uvijek prisutan?
+
+\odgovor
+
+Pokretanjem \code{NuSMV/bin/NuSMV DZ1/p1/task\_10.smv} utvrđujemo da je navedeno obilježje zadovoljeno.
+\newline
+
+Riješili smo probleme beskonačnog boravka u (ne)kritičnim odsječcima, međutim, recimo da smo pokrenuli \textbf{proces 0} i on je ušao u kritični odsječak te izašao iz njega. Ako sustav \underline{ponovo} odluči pokrenuti \textbf{proces 0}, trebat će pričekati da se \underline{pokrene i završi} \textbf{proces 1}. Drugim riječima, predodređen je redoslijed kojim procesi ulaze u kritičan odsječak.
+\pagebreak
+
+
+
+\dio{2}
+
+\zadatak{2.1}
+
+Prouči primjer \code{mutex\_2ex.smv}.
+
+\odgovor
+
+\begin{minted}
+[
+framesep=2mm,
+baselinestretch=1.2,
+fontsize=\footnotesize,
+linenos
+]{text}
+MODULE main
+VAR
+	proc0 : process user(proc1.flag);
+	proc1 : process user(proc0.flag);
+
+MODULE user(oflag)
+VAR
+	flag : boolean;
+	state  : {setflag, reading, critical, exiting, noncritical};
+ASSIGN
+	init(state) := {setflag};
+	init(flag) := FALSE;
+	next(state) :=
+		case
+			state = setflag : reading;
+			state = reading & !oflag : critical;
+			state = critical : {critical, exiting};
+			state = exiting : noncritical;
+			state = noncritical : {noncritical, setflag};
+			TRUE : state;
+		esac;
+	next(flag) :=
+		case
+			state = setflag : TRUE;
+			state = exiting : FALSE;
+			TRUE : flag;
+		esac;
+\end{minted}
+\pagebreak  % Čišće je
+
+
+\zadatak{2.2}
+
+Specificiraj i napiši u CTL notaciji obilježje sigurnosti (engl. \textit{safety property}):\newline
+
+\code{Dva procesa ne mogu biti istovremeno u kritičnom odsječku.}
+\newline
+
+Potrebno je napisati dva oblika obilježja:
+
+\begin{enumerate}[label=\alph*)]
+\item specifikacija da je moguće jedno nepoželjno ponašanje (engl. \textit{refutation})
+\item specifikacija da nema nepoželjnog ponašanja
+\end{enumerate}
+
+\odgovor
+
+\begin{enumerate}[label=\alph*)]
+\item \code{EF (proc0.state = critical \& proc1.state = critical)}
+\item \code{AG !(proc0.state = critical \& proc1.state = critical)}
+\end{enumerate}
+
+
+\zadatak{2.3}
+
+Utvrdi da li je ispunjeno zadano obilježje. Objasni rezultat na temelju kôda primjera (ne na temelju ispisa traga).
+
+\odgovor
+
+Zadano obilježje je iz sličnih razloga kao i u 1. dijelu zadovoljeno samo za b) inačicu: b) inačica garantira da se ni u jednom čvoru neće dogoditi da su oba procesa u kritičnom odsječku istovremeno.
+
+
+\zadatak{2.4}
+
+Specificiraj i napiši u CTL notaciji obilježje životnosti (engl. \textit{liveness property}):\newline
+\code{Ako proces pokuša ući u kritični odsječak, konačno će i ući}.
+\newline
+
+\noindent
+Specifikaciju napiši za oba procesa. 
+
+\odgovor
+
+Specifikacija glasi:
+
+\begin{minted}{text}
+CTLSPEC AG (proc0.state = reading -> AF(proc0.state = critical))
+CTLSPEC AG (proc1.state = reading -> AF(proc1.state = critical))
+\end{minted}
+\pagebreak  % Čišće je
+
+
+\zadatak{2.5}
+
+ Utvrdi je li zadovoljeno navedeno obilježje. Objasni koji je problem u ovoj implementaciji međusobnog isključivanja.
+ 
+\odgovor
+
+Nakon što pokrenemo \code{NuSMV/bin/NuSMV DZ1/p2/task\_04.smv} vidimo da zadano obilježje nije zadovoljeno. Razlog tome je što proces može vječno ostati u stanju \code{reading}, kao i u prethodnom dijelu.
+ 
+ 
+\zadatak{2.6}
+
+Specificiraj i napiši u CTL notaciji taj problem i provjeri ga pomoću NuSMV sustava.
+
+\odgovor
+
+Specifikacija tog problema glasi:
+
+\begin{minted}{text}
+CTLSPEC EF (AG (proc0.state = reading & proc1.state = reading))
+\end{minted}
+
+\noindent
+Nakon provjere sustava s ovom specifikacijom NuSMV javlja da je ovaj uvjet zadovoljen.
+\pagebreak  % Čišće je
+
+
+\zadatak{2.7}
+
+Prouči primjer \code{mutex\_3ex.smv}.
+
+\odgovor
+
+\begin{minted}
+[
+framesep=2mm,
+baselinestretch=1.2,
+fontsize=\footnotesize,
+linenos
+]{text}
+MODULE main
+VAR
+	proc0 : process user(proc1.flag);
+	proc1 : process user(proc0.flag);
+
+MODULE user(oflag)
+VAR
+	flag : boolean;
+	state  : {start, testflag, testflag1, critical, noncritical};
+ASSIGN
+	init(state) := start;
+	init(flag) := TRUE;
+	next(state) :=
+		case
+			state = start : testflag;
+			state = testflag & oflag : testflag1;
+			state = testflag & !oflag : critical;
+			state = testflag1 & oflag : testflag1;
+			state = testflag1 & !oflag : testflag;
+			state = critical : {critical, noncritical};
+			state = noncritical : {noncritical, start};
+			TRUE : state;
+		esac;
+
+	next(flag) := 
+		case 
+			state = start : TRUE;
+			state = testflag & oflag : FALSE;
+			state = testflag1 & !oflag : TRUE;
+			state = noncritical : FALSE;
+			TRUE : flag;
+		esac;
+\end{minted}
+
+
+\zadatak{2.8}
+
+Je li zadovoljeno obilježje sigurnosti (2. dio, 2. pitanje)?
+
+\odgovor
+
+Kao i prije, obilježje sigurnosti zadovoljeno je samo za b) inačicu:
+
+\begin{minted}{text}
+CTLSPEC AG !(proc0.state = critical & proc1.state = critical)
+\end{minted}
+
+
+\zadatak{2.9}
+
+Je li zadovoljeno obilježje životnosti (2. dio, 4. pitanje)?
+
+\odgovor
+
+Dodajmo specifikacije
+
+\begin{minted}{text}
+CTLSPEC AG (proc0.state = testflag -> AF (proc0.state = critical))
+CTLSPEC AG (proc1.state = testflag -> AF (proc1.state = critical))
+\end{minted}
+
+\noindent
+Nakon izvršavanja \code{NuSMV/bin/NuSMV DZ1/p2/task\_09.smv} NuSMV nam javlja da obilježje nije zadovoljeno.
+
+
+\zadatak{2.10}
+
+Dodajte sad ograničenja pravednosti kao kôd zadataka 1.6, 1.8 i 1.9. Je li sad zadovoljeno obilježje životnosti?
+
+\odgovor
+
+Pokretanjem \code{NuSMV/bin/NuSMV DZ1/p2/task\_10.smv} je lako vidljivo da nije zadovoljeno obilježje životnosti.
+
+
+\zadatak{2.11}
+
+Koji je problem u ovoj implementaciji međusobnog isključivanja (bez obzira na uključena ograničenja pravednosti)? Gdje sustav može \emph{zapeti}? Problem specificiraj u CTL notaciji i provjeri pomoću sustava NuSMV.
+
+\odgovor
+
+Problem je u sustavu testnih zastavica. Moguće je da oba procesa zapnu u iz \code{testflag1}, što znači da nikad neće doći u stanje \code{testflag}, preko kojeg bi neki proces mogao doći u kritični odsječak. Dovoljno je pokazati da se to implicira kad samo jedan od procesa bude u \code{testflag1}. Na primjer, u kôd iz \code{mutex\_3ex.smv} možemo dodati liniju:
+
+\begin{minted}{text}
+CTLSPEC EF (AG (proc0.state = testflag1) -> AG (proc1.state = testflag1))
+\end{minted}
+
+\noindent
+Izvšimo li tada \code{NuSMV/bin/NuSMV DZ1/p2/task\_11.smv}, vidimo da nam NuSMV kaže da je zadovoljena specifikacija, što znači da imamo problem.
+\pagebreak  % Čišće je
+
+
+\zadatak{2.12}
+
+Prouči primjer \code{mutex\_4ex.smv}. Ovo je primjer uspješne implementacije međusobnog isključivanja. Zasniva se na rješenju kojeg je predložio T. Dekker a opisao E. W. Dijkstra. 
+
+\odgovor
+\begin{minted}
+[
+framesep=2mm,
+baselinestretch=1.2,
+fontsize=\footnotesize,
+linenos
+]{text}
+MODULE main
+VAR
+	turn  : boolean;
+	proc0 : process user(proc1.flag, turn, FALSE);
+	proc1 : process user(proc0.flag, turn, TRUE);
+ASSIGN
+	init(turn) := FALSE;
+
+MODULE user(oflag, turn, ind)
+VAR
+	flag : boolean;
+	state  : {start, testflag, testturn, testturn1, critical, noncritical};
+ASSIGN
+	init(state) := start;
+	init(flag) := TRUE;
+	next(state) :=
+		case
+			state = start : testflag;
+			state = testflag & oflag : testturn ;
+			state = testflag & !oflag : critical;
+			(state = testturn) & (turn = ind)  : testflag;
+			(state = testturn) & (turn != ind)  : testturn1;
+			(state = testturn1) & (turn = ind)  : testflag;
+			(state = testturn1) & (turn != ind)  : testturn1;
+			state = critical : {critical, noncritical};
+			state = noncritical : {noncritical, start};
+		esac;
+
+	next(flag) := 
+		case 
+			state = start : TRUE;
+			(state = testturn) & (turn != ind) : FALSE;
+			(state = testturn1) & (turn = ind)  : TRUE;
+			state = noncritical : FALSE;
+			TRUE : flag;
+		esac;
+	
+
+
+
+	next(turn) :=
+		case 
+			(state = noncritical) & (ind = FALSE) : TRUE;
+			(state = noncritical) & (ind = TRUE) : FALSE;
+			TRUE : turn;
+		esac;
+
+FAIRNESS running
+FAIRNESS !(state=critical)
+FAIRNESS !(state=noncritical)
+\end{minted}
+
+
+\zadatak{2.13}
+
+Provjeri svojstva sigurnosti i životnosti. Jesu li zadovoljena (uz dodavanje tri ograničenja pristranosti iz 1. dijela)?
+
+\odgovor
+
+Kao i inače, dodat ćemo par linija specifikacija:
+
+\begin{minted}{text}
+CTLSPEC AG !(proc0.state = critical & proc1.state = critical)
+CTLSPEC AG (proc0.state = testflag -> AF (proc0.state = critical))
+CTLSPEC AG (proc1.state = testflag -> AF (proc1.state = critical))
+\end{minted}
+
+\noindent
+Kad pokrenemo \code{NuSMV/bin/NuSMV DZ1/p2/task\_13.smv}, vidimo da su sva 3 uvjeta zadovoljena, tj. ispunjena su svojstva sigurnosti i životnosti.
+
+
+\zadatak{2.14}
+
+Koje se ideje za kontrolu pristupa kritičnom odsječku iz prethodnih (neuspješnih) pokušaja nameću u ovom rješenju?
+
+\odgovor
+
+To su ideje da proces ne bi smio tražiti ulazak u kritični odsječak ako vidi da to drugi proces već radi.
+\pagebreak  % Čišće je
+
+
+\zadatak{2.15}
+
+Prouči primjer \code{mutex\_5ex.smv}. Ovaj je primjer implementacija Petersonovog algoritma, koji predstavlja pojednostavnjenje prethodnog (Dekkerovog) algoritma.
+
+\odgovor
+
+\begin{minted}
+[
+framesep=2mm,
+baselinestretch=1.2,
+fontsize=\footnotesize,
+linenos
+]{text}
+MODULE main
+VAR
+	turn  : boolean;
+	proc0 : process user(proc1.flag, turn, FALSE);
+	proc1 : process user(proc0.flag, turn, TRUE);
+ASSIGN
+	init(turn) := {FALSE, TRUE};
+
+MODULE user(oflag, turn, ind)
+VAR
+	flag : boolean;
+	state  : {start, trying, critical, noncritical};
+ASSIGN
+	init(state) := start;
+	init(flag) := TRUE;
+	next(state) :=
+		case
+			state = start : trying;
+			(state = trying) & (turn = ind) & (oflag) : trying;
+			(state = trying) & ( (turn != ind) | (!oflag) ) : critical; 
+			state =  critical : {critical, noncritical};
+			state = noncritical : {noncritical, start};
+		esac;
+
+	next(flag) := 
+		case 
+			state = start : TRUE;
+			state = noncritical : FALSE;
+			TRUE : flag;
+		esac;
+	
+	next(turn) :=
+		case 
+			(state = start) & (ind = FALSE) : FALSE;
+			(state = start) & (ind = TRUE) : TRUE;
+			TRUE : turn;
+		esac;
+FAIRNESS running
+FAIRNESS !(state=critical)
+FAIRNESS !(state=noncritical)
+\end{minted}
+
+
+\zadatak{2.16}
+
+Je li zadovoljeno obilježje sigurnosti?
+
+\odgovor
+
+To ćemo provjeriti tako da umetnemo specifikaciju:
+
+\begin{minted}{text}
+CTLSPEC AG !(proc0.state = critical & proc1.state = critical)
+\end{minted}
+
+\noindent
+Kada pokrenemo \code{NuSMV/bin/NuSMV DZ1/p2/task\_16.smv}, NuSMV nam kaže da je obilježje zadovoljeno.
+
+
+\zadatak{2.17}
+
+Specificiraj i napiši u CTL notaciji obilježje životnosti. Provjeri ga pomoću sustava NuSMV. Je li to obilježje zadovoljeno (uz dodavanje tri ograničenja pravednosti iz 1. dijela)?
+
+\odgovor
+
+Traženi izrazi su:
+
+\begin{minted}{text}
+CTLSPEC AG (proc0.state = trying -> AF(proc0.state = critical))
+CTLSPEC AG (proc1.state = trying -> AF(proc1.state = critical))
+\end{minted}
+
+\noindent
+Nakon pokretanja \code{NuSMV/bin/NuSMV DZ1/p2/task\_17.smv}, NuSMV nam kaže da je obilježje životnosti zadovoljeno.
+\pagebreak
+
+
+\dio{3}
+
+Prouči potpoglavlja 3.1, 3.2, 3.5 i 3.7 iz NuSMV priručnika \code{NuSMV 2.6 User Manual}. Nakon toga riješi sljedeće zadatke:
+
+\zadatak{3.1}
+
+Pokreni interaktivno ljusku NuSMV-a. Učitaj model zadan datotekom \code{mutex\_1ex\_int.smv}.
+
+\odgovor
+
+Treba izvršiti niz naredbi:
+
+\begin{itemize}
+    \item \code{../NuSMV/bin/NuSMV -int}
+    \item \code{read\_model -i primjeri/mutex\_1ex\_int.smv}
+\end{itemize}
+
+
+\zadatak{3.2}
+
+Inicijaliziraj sustav za verifikaciju. Ukratko obrazloži što se sve događa prilikom pokretanja naredbe \code{go}.
+
+\odgovor
+
+Naredba \code{go} odgovara sekvenci naredbi:
+
+\begin{enumerate}
+    \item \code{read\_model} - učitava model s puta definiranog u env varijabli \code{input-file}
+    \item \code{flatten\_hierarchy} - instancira module i procese zamjenom stvarnih parametara sa formalnim
+    \item \code{encode\_variables} - generira varijable binarnih dijagrama odluka (engl. \textit{BDD variables}) i algebarskih dijagrama odluka (engl. \textit{ADD variables})
+    \item \code{build\_flat\_model} - prevodi spljoštenu hijerarhiju u skup početnih stanja, invarijanta i prijelaznih relacija
+    \item \code{build\_model} - prevodi spljošteni model u binarne dijagrame odluka
+\end{enumerate}
+
+\noindent
+Ako je netka od ovih naredbi već izvršena, preskočit će se njeno izvođenje.
+\pagebreak  % Čišće je
+
+
+\zadatak{3.3}
+
+Simuliraj kretanje kroz 3 stanja (od proizvoljno odabranog početnoga). Navedi dvije naredbe koje se koriste da bi se to ostvarilo. Koju naredbu treba koristiti da bi se ispisao trag prolaska kroz ta stanja?
+
+\odgovor
+
+Prvo je potrebno odabrati proizvoljno stanje. To ćemo moći učiniti upisivanjem \code{pick\_state -r}.
+
+Zatim, ako želimo proći kroz n stanja, trebamo upisati \code{simulate -k n}, gdje ćemo n zamijeniti s brojem prijelaza. U našem slučaju je to \textbf{3}, pa naredba glasi \code{simulate -k 3}.
+
+Naposljetku, da bi ispisali trag, potrebno je upisati \code{show\_traces}.
+
+
+\zadatak{3.4}
+
+Provjeri stroj s konačnim brojem stanja. Kakva je relacija prijelaza tog automata? Može li doći do potpunog zastoja?
+
+\odgovor
+
+Provjeriti KA možemo s naredbom \code{check\_fsm}. Kad to upišemo, za datoteku \code{mutex\_1ex\_int.smv} nam se prikaže:
+
+\begin{minted}{text}
+##########################################################
+The transition relation is total: No deadlock state exists
+##########################################################
+\end{minted}
+
+\noindent
+To u prijevodu znači da je relacija prijelaza potpuna i da ne može doći do potpunog zastoja.
+
+
+\zadatak{3.5}
+
+Koliko ukupno postoji stanja u modelu, a koliko postoji dosezljivih (engl. \textit{reachable}) stanja? (napomena: \code{diameter} - promjer FSM-a je minimalan broj koraka potrebnih da bi se došlo do svih dosezljivih stanja)
+
+\odgovor
+
+Naredbom \code{print\_reachable\_states} doznajemo da je broj dosezljivih stanja \textbf{16}, a da ukupno postoji \textbf{32} stanja.
+\pagebreak  % Čišće je
+
+
+\zadatak{3.6}
+
+Provjeri prvu po redu CTL specifikaciju (redni broj 0). Je li ona istinita ili lažna? Koje obilježje protokola međusobnog isključivanja se njome provjerava? Je li to obilježje zadovoljeno?
+
+\odgovor
+
+Provjera prve po redu CTL specifikacije moći će se izvršiti upisivanjem naredbe \code{check\_ctlspec -n 0}. NuSMV nam potom za danu datoteku vraća infomaciju da je tvrdnja lažna. Provjeravala se specifikacija
+
+\begin{minted}{text}
+CTLSPEC EF (proc0.state = critical & proc1.state = critical)
+\end{minted}
+
+\noindent
+čijom se neistinitošću potvrdilo da vrijedi obilježje sigurnosti.
+
+
+\zadatak{3.7}
+
+Provjeri drugu po redu CTL specifikaciju (redni broj 1). Je li ona istinita ili lažna? Koje obilježje protokola međusobnog isključivanja se njome provjerava? Je li to obilježje zadovoljeno? 
+
+\odgovor
+
+Slično kao i prije, možemo provjeriti drugu po redu specifikaciju onosom naredbe \code{check\_ctlspec -n 1}. NuSMV nam je vratio rezultat da je specifikacija istinita. Provjeravala se specifikacija
+
+\begin{minted}{text}
+CTLSPEC AG (proc0.state = entering -> AF (proc0.state = critical))
+\end{minted}
+
+\noindent
+kojom se provjerava vrijedi li obilježje životnosti za \textbf{proces 0}. Obilježje je zadovoljeno samo djelomično, jer trebamo provjeriti i \textbf{proces 1}.
+
+
+\zadatak{3.8}
+
+Sada ukloni obilježja pravednosti iz datoteke \code{mutex\_1ex\_int.smv}, ponovi postupak učitavanja i pripreme za verifikaciju te provjeri drugu po redu CTL specifikaciju. Ima li kakve promjene u odnosu na prethodni zadatak?
+
+\odgovor
+
+Kako ne bi izmijenjivali sadržaj direktorija \code{primjeri}, uređeni kôd smjestili smo u datoteku \code{DZ1/p3/task\_08.smv}. Nakon pokretanja \code{check\_ctlspec -n 1} druga po redu CTL specifikacija pada, što znači da obilježje životnosti više nije zadovoljeno.
+
+
+\zadatak{3.9}
+
+Prouči naredbe za provjeru svojstava sustava za rad u stvarnom vremenu koje su zadane s ključnom riječi \code{COMPUTE} u datoteci \code{mutex\_1ex\_int.smv}. Koje je značenje svake od tih naredbi?
+
+\odgovor
+
+Linija \code{COMPUTE MIN[proc0.state = noncritical, proc0.state = exiting]} računa najkraću udaljenost puta od stanja \code{noncritical} do \code{exiting}. Uz malo višu razinu apstrakcije, ovo računa koliko je najmanje koraka potrebno za jedan ciklus procesa.
+\newline
+
+\noindent
+Linija \code{COMPUTE MAX[proc0.state = noncritical, proc0.state = critical]} računa najdulju udaljenost puta od stanja \code{noncritical} do \code{exiting}. Uz malo višu razinu apstrakcije, ovo računa koliko je najviše koraka potrebno za jedan ciklus procesa.
+
+
+\zadatak{3.10}
+
+Provjeri te naredbe u sustavu NuSMV (prva \code{COMPUTE} naredba ima redni broj 2 u modelu, a druga redni broj 3). Navedi rezultat izvođenja tih dviju naredbi. Uzima li naredba \code{COMPUTE} u obzir navedena ograničenja pravednosti?
+
+\odgovor
+
+Provjeru ovih naredbi možemo napraviti s \code{check\_compute}. Pokrenemo li ovu naredbu za datoteku \code{primjeri/mutex\_1ex\_int.smv}, dobit ćemo izlaz:
+
+\begin{minted}{text}
+the result of MIN[proc0.state=noncritical, proc0.state=exiting] is 3
+the result of MAX[proc0.state=noncritical, proc0.state=critical] is infinity
+\end{minted}
+
+\noindent
+Pokrenemo li istu naredbu za \code{p3/task\_08.smv} (jer tu nema ograničenja pravednosti), dobit ćemo izlaz:
+
+\begin{minted}{text}
+the result of MIN[proc0.state=noncritical, proc0.state=exiting] is 3
+the result of MAX[proc0.state=noncritical, proc0.state=critical] is infinity
+\end{minted}
+
+\noindent
+Vidimo da su rezultati isti, pa stoga zaključujemo da ograničenja pravednosti ne utječu na naredbu \code{COMPUTE}. Napomena - izlazima su maknuti neki razmaci i \code{---- } na početku kako bi stali na stranicu.
+\pagebreak
+
+
+%--------------------------------------------------------
+
+
+\dio{4}
+
+\zadatak{4.1}
+
+Prouči primjer \code{ferryman.smv}.
+
+\odgovor
+
+\begin{minted}
+[
+framesep=2mm,
+baselinestretch=1.2,
+fontsize=\footnotesize,
+linenos
+]{text}
+-- Players: ferryman, wolf, goat, cabbage.
+-- Problem:
+-- 	All start on one (right) side of the river.
+-- 	All should end up on the other (left) side of the river.
+--	The ferryman can only take one object at a time.
+--	If left alone without the ferryman:
+--		The wolf eats the goat, or
+-- 		The goat eats the cabbage.
+
+MODULE main
+VAR
+-- the ferryman and the three items
+  cabbage  : {right,left};
+  goat     : {right,left};
+  wolf     : {right,left};
+  ferryman : {right,left};
+  carry_cabbage: boolean;
+  carry_goat : boolean;
+  carry_wolf : boolean;
+  no_carry : boolean;
+  
+-- possible moves
+  move    : {c, g, w, e};
+
+
+-- initially everything is on the right bank
+ASSIGN
+  init(cabbage)  := right;
+  init(goat)     := right;
+  init(wolf)     := right;
+  init(ferryman) := right;
+
+  carry_cabbage := move=c;
+  carry_goat := move=g;
+  carry_wolf := move=w;
+  no_carry := move=e;
+
+
+
+
+TRANS
+  carry_cabbage -> 
+		cabbage=ferryman & -- cabbage is carried by the ferryman
+		next(cabbage)!=cabbage &
+		next(ferryman)!=ferryman &
+		next(goat)=goat &
+		next(wolf)=wolf
+
+TRANS
+  carry_goat -> 
+		goat=ferryman & 
+		next(goat)!=goat & 
+		next(ferryman)!=ferryman &
+		next(cabbage)=cabbage &
+		next(wolf)=wolf
+
+TRANS
+  carry_wolf -> 
+		wolf=ferryman & 
+		next(wolf)!=wolf & 
+		next(ferryman)!=ferryman &
+		next(goat)=goat &
+		next(cabbage)=cabbage
+
+TRANS
+  no_carry -> 
+	next(ferryman)!=ferryman &
+	next(goat)=goat &
+	next(cabbage)=cabbage &
+	next(wolf)=wolf 
+		
+
+-- goat and wolf must not be left unattended !
+-- goat and cabbage must not be left unattended !
+DEFINE
+  safe_state := (goat = wolf | goat = cabbage) -> goat = ferryman;
+  goal := cabbage = left & goat = left & wolf = left;
+\end{minted}
+\pagebreak  % Čišće je
+
+
+\zadatak{4.2}
+
+Specificiraj i napiši u CTL notaciji obilježje: \newline
+\code{Ne postoji siguran put kojim se dolazi do cilja problema}. Pritom se u specifikaciji trebaju koristiti već definirane makro-instrukcije programa.
+
+\odgovor
+
+Izjava se može preoblikovati u: \newline
+\code{Nemoguće je stići do cilja dok se ne zađe na nesiguran put}. Tada je to lagano opisati specifikacijom:
+
+\begin{minted}{text}
+CTLSPEC A [!goal U !safe_state]
+\end{minted}
+
+
+\zadatak{4.3}
+
+Provjeri zadano svojstvo. Je li ono zadovoljeno? Što nam u ovom slučaju daje ispis traga programa? Opiši redoslijed izvođenja kojim se uspješno dolazi do cilja problema. 
+
+\odgovor
+
+Pokretanjem provjere, NuSMV vraća trag:
+
+\begin{minted}{text}
+-- specification A [ !goal U !safe_state ]   is false
+\end{minted}
+
+\noindent
+Svojstvo nije zadovoljeno. Ispis traga nam govori o putu koji je kontradikcija ovog svojstva: to je ujedno i put za koji se postiže uvjet \code{goal} bez da se ostvari uvjet \code{!safe\_state}. Kontraprimjer koji je izbacio NuSMV glasi:
+
+\begin{enumerate}
+    \item skeledžija, vuk, ovca i kupus započinju na desnom koritu
+    \item skeledžija se penje na skelu s ovcom
+    \item skeledžija vozi ovcu na lijevo korito
+    \item skeledžija se iskrcava s ovcom na lijevo korito
+    \item skeledžija se penje na skelu sam
+    \item skeledžija se vozi na desno korito
+    \item skeledžija se iskrcava na desno korito
+    \item skeledžija se penje na skelu s vukom
+    \item skeledžija vozi vuka na lijevo korito
+    \item skeledžija se iskrcava s vukom na lijevo korito
+    \item skeledžija se penje na skelu s ovcom
+    \item skeledžija vozi ovcu na lijevo korito
+    \item skeledžija se iskrcava s ovcom na desno korito
+    \item skeledžija se penje na skelu s kupusom
+    \item skeledžija vozi kupus na lijevo korito
+    \item skeledžija se iskrcava s kupusom na lijevo korito
+    \item skeledžija se penje na skelu sam
+    \item skeledžija se vozi na desno korito
+    \item skeledžija se iskrcava na desno korito
+    \item skeledžija se penje na skelu s ovcom
+    \item skeledžija vozi ovcu na lijevo korito
+    \item skeledžija se iskrcava s ovcom na lijevo korito
+\end{enumerate}
+
+
+\zadatak{4.4}
+
+Zadani kôd u NuSMV-u sadrži implicitni nedeterminizam uzrokovan varijablom \code{request}. Izmijeni zadani kôd tako da sadrži isključivo eksplicitni nedeterminizam (napomena: ne mijenjati tipove varijabli!).
+
+\begin{minted}
+[
+framesep=2mm,
+baselinestretch=1.2,
+fontsize=\footnotesize,
+linenos
+]{text}
+MODULE main
+VAR
+    request: boolean;
+    flag: {red, blue};
+ASSIGN
+    init(flag) := blue;
+    next(flag) :=
+        case
+            request = FALSE : blue;
+            TRUE : red;
+        esac;
+\end{minted}
+
+\odgovor
+
+Potrebni dodaci su:
+
+\begin{minted}{text}
+init(request) := FALSE;
+
+next(request) :=
+case
+    TRUE : {TRUE, FALSE};
+esac;
+\end{minted}
+
+\noindent
+Ovo se također nalazi u \code{p4/task\_04.smv}, te je komentirano.
+
+
+\zadatak{4.5}
+
+Za zadani kôd u NuSMV-u nacrtaj odgovarajuću Kripke strukturu i odredi:
+
+\begin{enumerate}[label=\alph*)]
+\item skup svih mogućih stanja -– $S_A$
+\item skup svih dosezljivih stanja -– $S_R$ (uz pretpostavku da su sva početna stanja dosezljiva)
+\end{enumerate}
+
+\begin{minted}
+[
+framesep=2mm,
+baselinestretch=1.2,
+fontsize=\footnotesize,
+linenos
+]{text}
+MODULE main
+VAR
+    request : boolean;
+    status : {ready, busy};
+    negReq : boolean;
+
+ASSIGN
+    init(request) := FALSE;
+    init(status) := busy;
+    init(negReq) := TRUE;
+    
+    next(request) :=
+    case
+        (status = ready) : FALSE;
+        TRUE: TRUE;
+    esac;
+    
+    next(status) :=
+    case 
+        request : ready;
+        TRUE : busy;
+    esac;
+    
+    next(negReq) := !request;
+\end{minted}
+
+\odgovor
+
+\begin{center}
+\begin{tikzpicture}[->,shorten >=1pt,auto,node distance=4cm,thick,font=\small,
+    base/.style={circle,draw,minimum size=50pt,text width=1.6cm, text centered},
+    entry/.style={double,circle,draw,minimum size=50pt,text width=1.6cm, text centered}]
+
+    \node[entry] (1)
+    {
+        $req = \bot$
+        $st = busy$
+        $\overline{req} = \top$
+    };
+    \node[base, below of=1] (2)
+    {
+        $req = \top$
+        $st = busy$
+        $\overline{req} = \top$
+    };
+    \node[base, right of=2] (3)
+    {
+        $req = \top$
+        $st = ready$
+        $\overline{req} = \bot$
+    };
+    \node[base, above of=3] (4)
+    {
+        $req = \bot$
+        $st = ready$
+        $\overline{req} = \bot$
+    };
+    
+    \path[]
+        (1) edge node[below] {} (2)
+        (2) edge node[right] {} (3)
+        (3) edge node[above] {} (4)
+        (4) edge node[left]  {} (1)
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.5cm}
+
+\noindent
+Napomena: na dijagramu je početno stanje prikazano čvorom s dvostrukim rubom. Varijable \code{request}, \code{status} i \code{negReq} su redom prikazane kao \textbf{req}, \textbf{st} i \overline{\textbf{req}}.
+
+\vspace{1cm}
+
+\definecolor{Gray}{gray}{0.85}
+
+\begin{table}[h]
+\parbox{.45\linewidth}
+{
+    \centering
+    \begin{tabular}{ccc}
+        \hline
+        request & status & negReq \\
+        \hline
+        \bot & ready & \bot \\
+        \bot & ready & \top \\
+        \bot & busy  & \bot \\
+        \rowcolor{Gray}
+        \bot & busy  & \top \\
+        \top & ready & \bot \\
+        \top & ready & \top \\
+        \top & busy  & \bot \\
+        \top & busy  & \top \\
+    \end{tabular}
+    \caption{a) skup svih mogućih stanja -– $S_A$}
+}
+\hfill
+\parbox{.45\linewidth}
+{
+    \centering
+    \begin{tabular}{ccc}
+        \hline
+        request & status & negReq \\
+        \hline
+        \rowcolor{Gray}
+        \bot & busy  & \top \\
+        \top & busy  & \top \\
+        \top & ready & \bot \\
+        \bot & ready & \bot \\
+        \end{tabular}
+    \caption{b) skup svih dosezljivih stanja -– $S_R$}
+}
+\end{table}
+
+\vspace{0.5cm}
+
+\noindent
+Napomena: zasivljeni retci označavaju početno stanje.
+
+\end{document}

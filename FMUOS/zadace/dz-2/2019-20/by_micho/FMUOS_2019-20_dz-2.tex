@@ -1,0 +1,613 @@
+\documentclass{article}
+
+\usepackage{caption}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{xcolor}
+
+\newcommand{\crnotice}[1]
+{
+    \begin{center}
+        \colorbox{red!15}{\parbox{\textwidth}{#1}}
+    \end{center}
+}
+\newcommand{\sekcija}[1]{\section{\textsc{#1}}}
+\newcommand{\dio}[1]{\sekcija{#1. dio}}
+\newcommand{\zadatak}[1]{\subsection{Zadatak #1}}
+\newcommand{\odgovor}{\subsubsection*{Odgovor}}
+\newcommand{\code}[1]{\colorbox{blue!11}{\texttt{#1}}}
+
+\renewcommand{\contentsname}{\textsc{Sadržaj}}
+
+\setcounter{secnumdepth}{0}
+
+\newminted[ccode]{text}{fontsize=\small, tabsize=4, breaklines}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{\fill}
+
+    \huge
+    \textbf{\textsc{Formalne metode u oblikovanju sustava}} \\
+    
+    \vspace*{0.5cm}
+    
+    \large
+    \textsc{2. domaća zadaća - Java PathFinder} \\
+
+    \vspace*{\fill}
+    \textsc{Zagreb, travanj 2020.}
+\end{titlepage}
+
+\tableofcontents
+\pagebreak
+
+
+
+\sekcija{Izjava}
+
+Zadaci priloženi uz ovu domaću zadaću pripadaju njihovim vlasnicima te služe isključivo u edukacijske svrhe. Bilo koja promjena originala je isključivo radi estetske i funkcionalne prirode i ne mijenja smisao informacije. Također, takve promjene ne primijenjuje nikakvu drukčiju licencu niti se smatraju intelektualnim vlasništvom uređivača.
+\newline
+
+\pagebreak
+
+
+
+
+
+\dio{1}
+
+Proučite strukturu projekta \texttt{jpf-core}. Primjeri nad kojima će se raditi provjera modela nalaze se u paketu \texttt{src/examples}. Osim ako nije drugačije zadano, programi se u \textbf{NetBeansu} mogu pokrenuti desnim klikom na odgovarajuću \texttt{*.jpf} datoteku i odabirom opcije \texttt{Verify...}. Alternativno, ako niste uspjeli podesiti plugin \texttt{Verify...} da radi (vidjeti instalacijske upute), moguće je pokrenuti program unoseći puni put u komandnoj liniji koji je obično ovakvog oblika:
+
+\begin{ccode}
+java -jar >jpf-core lokacija>\build\RunJPF.jar +shell.port=4242 <jpf-core lokacija>\src\examples\HelloWorld.jpf
+\end{ccode}
+
+
+
+\zadatak{1.1}
+
+Otvorite konfiguracijsku datoteku projekta \texttt{jpf-core} koja se naziva
+\texttt{jpf.properties} i koja se nalazi u korijenskom direktoriju projekta. \newline
+
+\noindent
+Koja se defaultna strategija koristi za pretragu prostora stanja u JPF-u? Koja se standardna svojstva provjeravaju prilikom pretrage korištenjem odgovarajućih slušača? Osim naziva strategije i svojstava, navedite i puna kvalificirajuća imena razreda u projektu \texttt{jpf-core} koji za to služe.
+
+\odgovor
+
+Defaultna strategija koja se koristi za pretragu prostora stanja je\newline
+\texttt{gov.nasa.jpf.search.DFSearch}.\newline
+
+\noindent
+Standardna svojstva koja se provjeravaju prilikom pretrage su:
+
+\begin{itemize}
+    \item \texttt{gov.nasa.jpf.vm.NoUncaughtExceptionsProperty}
+    \item \texttt{gov.nasa.jpf.vm.NotDeadlockedProperty}
+\end{itemize}
+
+\zadatak{1.2}
+
+Proučite najjednostavniji primjer aplikacije \texttt{HelloWorld.java} (u paketu \texttt{examples}). Što se ispisuje pokretanjem provjere modela tog programa u dijelu nakon \texttt{search started}? Koje su pogreške dojavljene?
+
+\odgovor
+
+Nakon što pokrenemo program, ispisuje se "\texttt{I won't say it!}". Nakon toga dolazi "\texttt{no errors detected}", što nam govori da prilikom testiranja programa nisu pronađeni problemi.
+
+\pagebreak  % Urednost
+
+\zadatak{1.3}
+
+Proučite primjer ograničenog međuspremnika \texttt{BoundedBuffer.java}. Navedite koji su sudionici u ovom primjeru. 
+
+\odgovor
+
+Sudionici su proizvođači i potrošači.
+
+\zadatak{1.4}
+
+Kojim mehanizmom u Javi su ostvareni ti sudionici? Koje metode koriste koji sudionici?
+
+\odgovor
+
+Sudionici nasljeđuju \texttt{Thread} i svaki implementira metodu \code{run()}. Koriste se metode \code{get()} i \code{put()}, koje su sinkronizirane uz pomoć metoda \code{notify()} i \code{wait()}.
+
+\zadatak{1.5}
+
+Pokrenite aplikaciju ograničenog međuspremnika. Koje svojstvo je narušeno izvođenjem ovog programa koristeći argumente navedene u konfiguracijskoj datoteci (2,4,1)? Što se dogodilo s pojedinim sudionicima? Kolika je bila veličina međuspremnika u ovom slučaju?
+
+\odgovor
+
+Narušavamo svojstvo \texttt{gov.nasa.jpf.vm.NotDeadlockedProperty}. U programu smo dali međuspremniku veličinu 2. Međutim, imamo 4 proizvođača i 1 potrošača. Napunit ćemo međuspremnik, ali će sve dretve biti u stanju \texttt{WAIT}, što je definicija potpunog zastoja.
+
+\zadatak{1.6}
+
+Pokrenite istu aplikaciju, samo s argumentima (4,1,1). Kakva je sad situacija? (Napomena: NetBeans će vas možda gnjaviti da ne može spremiti izmjene u datoteci \texttt{*.jpf} jer da je datoteka otvorena vjerojatno samo za čitanje. Obično spremanje promjena ipak uspješno prođe nakon što prođe neko vrijeme (manje od minute), no u slučaju da ne prođe,
+možete napraviti \texttt{Save As...} i pohraniti datoteku pod drugim imenom)
+
+\odgovor
+
+Sada imamo dovoljno mjesta u međuspremniku za normalnu operaciju proizvođača i potrošača, pa ne narušavamo nikakvo svojstvo.
+
+\zadatak{1.7}
+
+Opišite ukratko što rade i nad čime se pokreću Javine metode \code{wait()} i \code{notify()}.
+
+\odgovor
+
+Aktivna dretva poziva ove metode. Ovisno o pozvanoj metodi, događa se sljedeće:
+
+\begin{itemize}
+    \item \code{wait()} - dretva se odriče svojeg prava na izvršavanje i čeka dok neka druga dretva ne pozove svoj \code{notify()}
+    \item \code{notify} - odabire se jedna dretva, te nakon što trenutna dretva izađe iz kritičnog odsječka se odabranoj dretvi daje mogućnost da uđe u kritični odsječak
+\end{itemize}
+
+\zadatak{1.8}
+
+Obrazložite ukratko (i precizno) zašto dolazi do narušavanja svojstva u ovom primjeru.
+
+\odgovor
+
+Nakon što proizvođač stavi nešto u spremnik, on će pozvati \code{notify()}. Recimo da je proizvođač pozvao \code{notify()} nakon što je popunio zadnje mjesto u međuspremniku i da je time pozvao drugog proizvođača. Taj proizvođač zove \code{wait()}, i čeka da netko pozove \code{notify()}, međutim to je bila jedina aktivna dretva, i sad sve dretve čekaju, tj. dogodio se potpuni zastoj.
+
+\zadatak{1.9}
+
+Proučite primjer \texttt{Rand.java} i pridruženu konfiguracijsku datoteku \texttt{Rand.jpf}. Što specificira konfiguracijska naredba \code{cg.enumerate\_random = true} i zašto je ona bitna za ovaj problem? 
+
+\odgovor
+
+Naredba će potaknuti program da provjeri sve mogućnosti kad se u \texttt{a} stavi nasumični broj iz \{0, 1\}, a u \texttt{b} stavi nasumičan broj iz \{0, 1, 2\}. U varijablu c se, potom, stavlja rezultat operacije $\frac{a}{a + b - 2}$, pri čemu postoji šansa da se dogodi dijeljenje s 0, što će baciti iznimku jer smo prisilili JPF da provjeri sve mogućnosti postavljanjem \code{cg.enumerate\_random = true}.
+
+\pagebreak  % Urednost
+
+\zadatak{1.10}
+
+Pokrenite aplikaciju za verifikaciju. Koje svojstvo je ovdje narušeno? Što je programer ovog ili ovome sličnog kôda previdio? Kako se mogao unaprijed osigurati da se cijeli sustav ne sruši? Koje su konkretne vrijednosti varijabli \texttt{a} i \texttt{b} srušile program?
+
+\odgovor
+
+JPF će provjeriti svojstvo za vrijednosti \texttt{a = 0} i \texttt{b = 2}, nakon koje će dojaviti
+
+\begin{ccode}
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.ArithmeticException: division by zero
+\end{ccode}
+
+\noindent
+Programer je previdio da bi se moglo dogoditi dijeljenje s 0, a od toga se lako može osigurati ako se uhvati ta iznimka \texttt{try-catch} blokom.
+
+\zadatak{1.11}
+
+Sad izbrišite specifikaciju \code{cg.enumerate\_random = true} iz konfiguracijske datoteke te pokrenite aplikaciju. Što se sad dogodilo? Objasnite.
+
+\odgovor
+
+Nije prijavljen problem. Pretpostavljamo da se ovo dogodilo jer JPF nije naletio na ilegalnu konfiguraciju varijabli \texttt{a} i \texttt{b} jer ih nije sve provjerio.
+
+\pagebreak
+
+
+
+
+
+\dio{2}
+
+
+\zadatak{2.1}
+
+Proučite primjer \texttt{Racer.java} i konfiguracijsku datoteku \texttt{Racer.jpf}. Napravite kopiju konfiguracijske datoteke koju ćete nazvati \texttt{Racer\_2.jpf} i u kojoj ćete izbrisati liniju \code{listener=gov.nasa.jpf.listener.PreciseRaceDetector}. Pokrenite aplikaciju za verifikaciju putem \texttt{Racer.jpf} i zatim putem \texttt{Racer\_2.jpf}. Koje svojstvo je narušeno u slučaju \texttt{Racer\_2.jpf}, a što piše pod \texttt{error 1} u slučaju \texttt{Racer.jpf}?
+
+\odgovor
+
+Za \texttt{Racer\_2.jpf} dobivamo ispis
+
+\begin{ccode}
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.ArithmeticException: division by zero
+\end{ccode}
+
+\noindent
+Za \texttt{Racer.jpf} dobivamo \texttt{error 1} ispis
+
+\begin{ccode}
+gov.nasa.jpf.listener.PreciseRaceDetector
+race for field Racer@15b.d
+\end{ccode}
+
+\zadatak{2.2}
+
+Opišite zašto može doći do problema prilikom izvođenja ovog primjera. Može li instanca dretve \texttt{t} pristupiti liniji kôda \code{int c = 420 / racer.d;} ?
+
+\odgovor
+
+Pokretanje dretvi je ovdje zbog nedostatka sinkronizacije proizvoljno. Ako se prvo pokrene dretva koja postavlja \texttt{d} na vrijednost 0, onda će doći do dijeljenja nulom.\newline
+
+\noindent
+Instanca dretve \texttt{t} ne može pristupiti toj liniji koda jer se ne nalazi unutar vlastite \code{run()} metode.
+
+\pagebreak  % Urednost
+
+\zadatak{2.3}
+
+Otvorite kôd razreda \texttt{gov.nasa.jpf.listener.PreciseRaceDetector}. Ukratko pojasnite (na temelju komentara razreda) koja je ideja kod implementacije detektora utrke za resursom. Također navedite koji Adapter nasljeđuje ovaj slušač i koje metode nadjačava.
+
+\odgovor
+
+Ideja je prilično jednostavna - izoliraj sve moguće objekte za koje bi se dretve mogle natjecati. Zatim, kako imamo konačan broj dretvi, izvršavamo ih u različitim redosljedima. Ako nakon ovog nemamo problema, pokrili smo sve slučajeve i onda garantirano nema utrke dretvi.\newline
+
+\noindent
+Nasljeđeni Adapter je \texttt{PropertyListenerAdapter}, a nadjačava metode \code{check()}, \code{choiceGeneratorSet()}, \code{executeInstruction()} \code{getErrorMessage()} i\newline
+\code{reset()}.
+
+\zadatak{2.4}
+
+Proučite kôd primjera \texttt{NumericValueCheck.java} i konfiguracijsku datoteku\newline
+\texttt{NumericValueCheck.jpf}. Zatim pokrenite aplikaciju. Koju grešku je dojavio JPF?
+
+\odgovor
+
+JPF dojavljuje grešku 
+
+\begin{ccode}
+gov.nasa.jpf.listener.NumericValueChecker
+local variable someVariable out of range: 12345,000000 > 42,000000
+\end{ccode}
+
+\zadatak{2.5}
+
+Primijetite na koji način je specificirano u konfiguracijskoj datoteci na koju varijablu i na koji način se odnosi provjeravanje raspona numeričkih vrijednosti. Pogledajte sad kôd odgovarajućeg slušača koji implementira provjeravanje raspona vrijednosti. Koje su dvije mogućnosti rada tog slušača (na koje dijelove nekog razreda se može primijeniti)? Navedite i sintaksu tih provjera.
+
+\odgovor
+
+Moguće je provjeravati konretne varijable ili polja - ovo je specificirano identifikatorom nakon \texttt{range}. Prema tome, iako je u originalnoj datoteci specificirano
+
+\begin{ccode}
+range.vars = 1
+\end{ccode}
+
+\noindent
+Kad bi htjeli provjeravati raspon polja mogli bismo pisati
+
+\begin{ccode}
+range.fields = 1
+\end{ccode}
+
+\zadatak{2.6}
+
+Proučite kôd primjera \texttt{TestExample.java} i konfiguracijsku datoteku\newline
+\texttt{TestExample-coverage.jpf}. Korištenjem slušača \texttt{CoverageAnalyzer} omogućena je analiza pokrivanja kôda. Pokrenite aplikaciju i promotrite rezultantnu tablicu koju je ispisao \texttt{CoverageAnalyzer}. Koji razred je bio bolje pokriven s ispitnim primjerima u metodi main? Koje sučelje je morao implementirati ovaj slušač kako bi izmijenio izgled ispisa izvještaja?
+
+\odgovor
+
+Što se tiče \texttt{T1}, pokrivene su sve 3 metode, a kod \texttt{T2} pokrivene su samo 2 metode. \texttt{T1} je bolje pokriven s ispitnim primjerima.\newline
+
+\noindent
+Kako bi izmijenili izgled ispisa izvještaja moramo implementirati sučelje\newline
+\texttt{PublisherExtension}.
+
+\zadatak{2.7}
+
+S obzirom na rezultate ispisa i dani kôd, koja bi to bila metoda \code{<init>()} koja piše u tablici? 
+
+\odgovor
+
+To je najvjerojatnije zadani konstruktor razreda.
+
+\zadatak{2.8}
+
+Dodajte u konfiguracijsku datoteku \texttt{TestExample-coverage.jpf} pod razrede koje treba uključiti za provjeru dodatno i sam razred \texttt{TestExample}, uz postojeće razrede \texttt{T1} i \texttt{T2}. Spremite datoteku i pokrenite aplikaciju za verifikaciju. Proučite rezultat. Iz samog kôda, očito je da će se proći kroz sve linije metode \texttt{main}.\newline
+
+\noindent
+Koje naredbe (linije kôda) analizator pokrivanja preskače kad izvještava da je prošao kroz samo $\frac{3}{8}$ linija kôda metode \texttt{main} (osma linija kôda uključuje implicitni \code{return;})? Kojom specifikacijom bi isključili ispisivanje provjeravanja pokrivenosti grana u izlaznoj tablici?
+
+\odgovor
+
+Analizator je preskočio \code{assert} naredbe.\newline
+
+\noindent
+Ako želimo isključiti ispisivanje provjeravanja pokrivenosti grana u izlaznoj tablici možemo koristiti specifikaciju \code{coverage.show\_branches = false}.
+
+\pagebreak
+
+
+
+\dio{3}
+
+Instalirajte projekt (paket) \texttt{jpf-aprop} koji služi za provjeru specifičnih svojstava programa pisanih u Javi koja su zadana u kôdu u obliku anotacija (oznaka \code{@}). Projekt možete naći u zip obliku na stranicama predmeta FMUOS, u materijalima za DZ2. Projekt raspakirajte u isti direktorij gdje se nalazi i projekt \texttt{jpf-core} (npr. \texttt{NetBeansProjects}). U NetBeansu otvorite novi projekt: odaberite \texttt{File} $\rightarrow$ \texttt{New Project} $\rightarrow$ \texttt{Java} $\rightarrow$ \texttt{Java Free-Form Project}. Pod \texttt{Location} odaberite direktorij gdje se nalazi \texttt{jpf-aprop}. Ostale sve rubrike bi se trebale popuniti automatski. Nastavite dalje. U koraku \texttt{Source Package Folder} pod \texttt{Source level} izaberite \texttt{JDK 1.8}. Zatim odaberite \texttt{Finish}. \texttt{jpf-aprop} bi se trebao naći u otvorenim projektima. Dodajte u datoteku \texttt{site.properties}, koju ste ranije stvorili u postupku instalacije, sljedeće retke na kraj datoteke i pohranite promjene:
+
+\begin{ccode}
+# annotation properties extension
+jpf-aprop = ${jpf.home}/jpf-aprop
+extensions+=,${jpf-aprop}
+\end{ccode}
+
+\noindent
+Sada pokrenite skriptu \texttt{build.xml} koja se nalazi u korijenskom direktoriju projekta jpfaprop (desni klik pa \texttt{Run Target} $\rightarrow$ \texttt{build}). Prevođenje datoteka i izgradnja tri \texttt{.jar} datoteke trebalo bi proći bez pogrešaka.
+
+
+
+\zadatak{3.1}
+
+Proučite datoteku \texttt{jpf.properties} projekta \texttt{jpf-aprop}. Koja se standardna svojstva provjeravaju prilikom pretrage kad se koristi projekt \texttt{jpf-aprop}? Gdje je to uopće definirano? Također, navedite put do direktorija s međukôdom razreda koji se kao primjeri provjeravaju uz pomoć \texttt{jpf-aprop}. Koje svojstvo pokazuje taj put u datoteci \texttt{jpf.properties}?
+
+\odgovor
+
+U datoteci \texttt{jpf.properties} nisu definirana nikakva standardna svojstva, znači sve fallbacka na standardna \texttt{jpf-core} svojstva.\newline
+
+\noindent
+Relativan put do razrednih direktorija je \texttt{src/examples}, a svojstvo koje to pokazuje je \texttt{jpf-aprop.sourcepath}.
+
+\pagebreak  % Urednost
+
+\zadatak{3.2}
+
+Proučite jednostavni primjer \texttt{ConstViolation.java} i pridruženu konfiguracijsku datoteku \texttt{ConstViolation.jpf} te odgovarajućeg slušača. Opišite što se događa u kôdu razreda \texttt{ConstViolation.java}. Koja metoda je označena s \code{@Const} anotacijom i što to točno znači?
+
+\odgovor
+
+Ono što se događa je da u \code{main()} metodi se stvara objekt razreda \texttt{ConstViolation}, te se nad njim poziva metoda \code{dontDoThis()}.\newline
+
+\noindent
+Ta ista metoda je označena \code{@Const} anotacijom - tako označene metode ne smije mijenjati članove svoga razreda, a ako to naprave, izbacuje se \texttt{AssertionError}. Ovo svojstvo se delegira i na metode pozvane iz označene metode, tj. ta oznaka otvara tzv. scope u kojem se ne smiju mijenjati članovi razreda.
+
+\zadatak{3.3}
+
+Pokrenite tu aplikaciju za verifikaciju. Navedite pogrešku koja je dojavljena.
+
+\odgovor
+
+Dobivamo ispis 
+
+\begin{ccode}
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: instance field write within const context: int ConstViolation.d
+\end{ccode}
+
+\zadatak{3.4}
+
+Proučite primjer \texttt{ContractViolation.java} i pridruženu konfiguracijsku datoteku \texttt{ContractViolation.jpf}. Navedite koje sve slušače koristi ovaj program (puna kvalificirajuća imena).
+
+\odgovor
+
+Program koristi sljedeće slušače:
+
+\begin{itemize}
+    \item \texttt{gov.nasa.hpf.aprop.listener.ConstChecker}
+    \item \texttt{gov.nasa.hpf.aprop.listener.ContractVerifier}
+    \item \texttt{gov.nasa.hpf.aprop.listener.LockChecker}
+    \item \texttt{gov.nasa.hpf.aprop.listener.NonnullChecker}
+    \item \texttt{gov.nasa.hpf.aprop.listener.NonSharedChecker}
+\end{itemize}
+
+\zadatak{3.5}
+
+Pronađite u strukturi projekta odgovarajućeg slušača u kojem se provjerava svojstvo \texttt{nonshared.throw\_on\_cycle}. U kôdu pronađite i napišite koju bi vrstu iznimke bacio JPF ako bi dretva bila uhvaćena u ciklusu nad objektom koji nije predviđen za višedretvenost.
+
+\odgovor
+
+Radi se o slušaču \texttt{gov.nasa.jpf.aprop.listener.NonSharedChecker}.\newline
+
+\noindent
+Kad bi dretva bila uhvaćena u ciklusu nad objektom koji nije predviđen za višedretvenost bacila bi se pogreška
+
+\begin{ccode}
+java.lang.AssertionError
+\end{ccode}
+
+\zadatak{3.6}
+
+Što znače anotacije \code{@Requires}, \code{@Invariant} i \code{@Ensures} u kôdu programa \texttt{ContractViolation.java}? Koju vrstu dobrog oblikovanja programske potpore ostvaruju ove anotacije?
+
+\odgovor
+
+\begin{itemize}
+    \item \code{@Requires} definira preduvjete koji bi morali biti ispunjeni prije izvršavanja metode.
+    \item \code{@Invariant} prisiljava da su tijekom izvršavanja označene metode zadovoljena svojstva invarijante.
+    \item \code{@Ensures} definira uvjete koji bi morali biti ispunjeni nakon izvršavanja metode.
+\end{itemize}
+
+\noindent
+Ove anotacije ostvaruju programsku potporu zasnivanu na ugovorima (ne znam točno kako se zove jer materijala na internetu nema, a OPP je bio očajan održan što se tiče teorijskog dijela).
+
+\zadatak{3.7}
+
+Pokrenite aplikaciju za verifikaciju. Koja anotacija je narušena? Napišite pogrešku koja je dojavljena.
+
+\odgovor
+
+Narušen je dio ugovora označen s \code{@Ensures}, a dojavljuje se pogreška
+
+\begin{ccode}
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: postcondition violated: "(Result >= 0) AND (Result > 0)", values={Result=0}
+\end{ccode}
+
+\zadatak{3.8}
+
+Pažljivo proučite dojavljenu pogrešku. Koja metoda kojeg točno razreda je izazvala narušavanje ugovora?
+
+\odgovor
+
+To je učinila \texttt{ContractViolation.getLoopCount()}.
+
+\zadatak{3.9}
+
+Promijenite ugovore dviju metoda tako da obje ispituju uvjet \texttt{(Result>=0)}. Spremite izmijenjenu datoteku \texttt{ContractViolation.java}. Pokrenite ponovno skriptu \texttt{build.xml}. Kad se izmijenjeni primjer preveo, ponovno ga pokrenite. Kakva je sad situacija? 
+
+\odgovor
+
+Sad JPF ne dojavljuje pogreške.
+
+\pagebreak
+
+
+
+
+
+\dio{4}
+
+
+\zadatak{4.1}
+
+U NetBeansu napravite novi projekt (\texttt{File} $\rightarrow$ \texttt{New Project} $\rightarrow$ \texttt{Java Application}) koji ćete nazvati \texttt{JavaFV}. Napravite ga bez razreda \texttt{JavaFV} s metodom \texttt{main}. Zatim desnim klikom na \texttt{Source Packages} napravite novi paket pod nazivom \texttt{fv}, a onda desnim klikom na paket \texttt{fv} napravite novi razred pod imenom \texttt{Verifikacija.java} i statičkom metodom \texttt{main} (unutar razreda napišite\newline
+\code{public static void main(String[] args){})}.\newline
+
+\zadatak{4.1.1}
+
+\noindent
+Napravite unutar istoga paketa novu datoteku (desni klik na \texttt{fv}, pa \texttt{New} $\rightarrow$ \texttt{Other...} $\rightarrow$ \texttt{Other} $\rightarrow$ \texttt{Empty File} i nazovite ga \texttt{Verifikacija.jpf}. U tu datoteku dodajte zasad samo jedan redak kojim ćete omogućiti pokretanje razreda \texttt{Verifikacija.java} iz paketa \texttt{fv} i spremite ju. Kako izgleda taj redak?
+
+\odgovor
+
+\code{target = fv.Verifikacija}
+
+\zadatak{4.1.2}
+
+U korijenskom direktoriju projekta \texttt{JavaFV} zatim napravite datoteku \texttt{jpf.properties} jednostavnog sadržaja:
+
+\begin{ccode}
+JavaFV=${config_path}
+JavaFV.classpath=${JavaFV}/build/classes
+JavaFV.sourcepath=${JavaFV}/src/fv
+\end{ccode}
+
+\noindent
+Na kartici \texttt{Projects} kliknite desnim klikom na vaš projekt \texttt{JavaFV} i odaberite \texttt{Clean and
+build}. Nakon što se projekt izgradio, provjerite da se međukôd \texttt{Verifikacija.class} nalazi pod direktorijem \texttt{build/classes/fv}. Probajte pokrenuti verifikaciju koja bi trebala proći bez pogrešaka. Objasnite zašto je redak \code{JavaFV.classpath=\${JavaFV}/build/classes} nužno navesti u datoteci \texttt{jpf.properties}?
+
+\odgovor
+
+JPF neće ispravno raditi ako mu ne predamo putanju do međukoda jer ga ne zna otkud učitati.
+
+\zadatak{4.2}
+
+Sada izmijenite sadržaj datoteke \texttt{Verifikacija.java} tako da sadrži kôd koji se nalazi u istoimenoj datoteci koja se nalazi u repozitoriju kolegija FMUOS (pod DZ2). Također, izmijenit ćete sadržaj datoteke \texttt{Verifikacija.jpf} tako da sadrži specifikacije prema istoimenoj datoteci koja se nalazi u repozitoriju kolegija. Nakon kopiranja kôda i specifikacija spremite datoteke, no nećete moći prevesti datoteku \texttt{Verifikacija.java} budući da sadrži importe koji su nepoznati projektu \texttt{JavaFV}.
+
+\zadatak{4.3}
+
+Potrebno je uključiti izgrađene knjižnice (\texttt{.jar}) od \texttt{jpf-core} i \texttt{jpf-aprop} u projekt \texttt{JavaFV} kako bi se kôd razreda \texttt{Verifikacija.java} mogao prevesti. To se radi tako da odaberete \texttt{JavaFV} pa desni klik, a zatim \texttt{Properties} $\rightarrow$ \texttt{Libraries} $\rightarrow$ \texttt{Add JAR/Folder}. Pronađite u direktoriju \texttt{jpf-core} $\rightarrow$ \texttt{build} $\rightarrow$ \texttt{jpf.jar}, \texttt{jpf-classes.jar} i \texttt{jpfannotations.jar} te ih dodajte. Ostale knjižnice nisu bitne. Od projekta \texttt{jpf-aprop} potrebno je dodati samo knjižnicu \texttt{jpf-aprop-annotations.jar}. Odaberite \texttt{Ok}. Pogreške bi sada trebale nestati. Sad prevedite \texttt{Verifikacija.java} (\texttt{desni klik} $\rightarrow$ \texttt{Compile File}).
+
+\zadatak{4.4}
+
+Pokrenite aplikaciju za verifikaciju. Koja pogreška vam je dojavljena? Objasnite zašto je došlo do te pogreške s obzirom na konfiguracijsku datoteku i zadani kôd.
+
+\odgovor
+
+Javlja se pogreška
+
+\begin{ccode}
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: null assignment to @Nonnull instance field: Verifikacija.id
+\end{ccode}
+
+
+\noindent
+Pregledom izvornog kôda, vidimo da \code{v.setId(null);} narušava specifikaciju\newline
+\code{@Nonnull private String id;}.
+
+\pagebreak  % Urednost
+
+\zadatak{4.5}
+
+U konfiguracijsku datoteku dodajte ovaj redak na kraj:
+
+\begin{ccode}
+search.multiple_errors = true
+\end{ccode}
+
+\noindent
+Ovime se prolazi svim putevima izvođenja kroz program i dojavljuje se za svaki put izvođenja prva pogreška na koju se naletilo. Pokrenite aplikaciju za verifikaciju. Koja je razlika između prethodnog ispisa pogrešaka i sadašnjega?
+
+\odgovor
+
+Sad imamo dvije dodatne pogreške, obje jednake:
+
+\begin{ccode}
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: null assignment to @Nonnull instance field: Verifikacija.id
+\end{ccode}
+
+\zadatak{4.6}
+
+Uklonite redak \code{search.multiple\_errors = true} te zakomentirajte redak u kôdu koji smatrate odgovornim za dojavu pogreške iz \textbf{zadatka 4.4}. Prevedite kôd i pokrenite ponovno aplikaciju za verifikaciju. Koja se sada pogreška pojavila, na kojem retku kôda i zašto je prijavljena?
+
+\odgovor
+
+Sad se pojavilo sljedeće:
+
+\begin{ccode}
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: write of const instance field outside constructor: java.lang.String Verifikacija.DNA
+\end{ccode}
+
+\noindent
+Javlja se pogreška jer smo pokušali izmijeniti varijablu \texttt{DNA} koju smo označili prethodno s \code{@Const}. Ovo se događa u liniji
+
+\begin{ccode}
+v.setDNA("CTGA");
+\end{ccode}
+
+\pagebreak  % Urednost
+
+\zadatak{4.7}
+
+Zakomentirajte redak u kôdu koji smatrate odgovornim za dojavu ove vrste pogreške. Prevedite kôd i pokrenite ponovno aplikaciju za verifikaciju. Koja je sada pogreška dojavljena? Objasnite zašto se ova pogreška dogodila.
+
+\odgovor
+
+Sad se javlja pogreška
+
+\begin{ccode}
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError
+\end{ccode}
+
+\noindent
+Ovo se dogodilo jer smo u \texttt{.jpf} datoteci definirali raspon varijable kao [20, 100]. Međutim, imamo sljedeću liniju:
+
+\begin{ccode}
+assert (vel < 100.0);
+\end{ccode}
+
+\noindent
+Ovo će pasti kad nam \texttt{vel} bude jednak 100 jer ne vrijedi 100 < 100.
+
+\zadatak{4.8}
+
+Izmijenite naredbu (\texttt{assert}) u kôdu tako da više ne dolazi do ove vrste pogreške. Prevedite kôd i provjerite da se pogreška zaista više ne događa. Koji ste broj trebali navesti kao uvjet u naredbi (\texttt{assert}) da ne dođe do pogreške? 
+
+\odgovor
+
+Izmjena sporne linije u
+
+\begin{ccode}
+assert(vel <= 100)
+\end{ccode}
+
+\noindent
+će se riješiti pogrešaka prilikom verifikacije. Ako ne smijemo mijenjati znak, onda kao zamjenski broj možemo umetnuti npr. 100.1.
+
+\pagebreak  % Urednost
+
+\zadatak{4.9}
+
+Provjerite metode razreda \texttt{gov.nasa.jpf.vm.Verify}. Postoje li metode\newline
+\code{getDouble()} i \code{getInt()} bez argumenata? Objasnite. Objasnite na primjeru što su to generatori izbora i koja je namjena navođenja heuristika pri korištenju generatora izbora. Koja se heuristika koristila u primjeru \texttt{Verifikacija.java}?
+
+\odgovor
+
+Metode \code{getDouble()} i \code{getInt()} bez argumenata ne postoje. Nema previše smisla pozivati ove metode bez nekog zadanog raspona ili referencom na ključ definiran u \texttt{.jpf} datoteci.\newline
+
+\noindent
+Generatori izbora su ponašanje u JPF uz pomoć kojega ne moramo pretraživati sva moguća stanja, već samo ona bitna. Dakle, radi se o nekakvoj heuristici. Umjesto da provjeravamo sva moguća stanja, njih je previše, ispitati ćemo samo relevantna stanja. Heuristika treba biti takva da njena manjkavost u broju provjerenih stanja ne utječe na ispravnost algoritma.
+
+\pagebreak
+
+\end{document}

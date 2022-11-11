@@ -1,0 +1,44 @@
+MODULE main
+VAR
+	turn  : boolean;
+	proc0 : process user(proc1.flag, turn, 0);
+	proc1 : process user(proc0.flag, turn, 1);
+ASSIGN
+	init(turn) := 0;
+
+
+MODULE user(oflag, turn, ind)
+VAR
+	flag : boolean;
+	state  : {start, testflag, testturn, testturn1, critical, noncritical};
+ASSIGN
+	init(state) := start;
+	init(flag) := 1;
+	next(state) :=
+		case
+			state = start : testflag;
+			state = testflag & oflag : testturn ;
+			state = testflag & !oflag : critical;
+			(state = testturn) & (turn = ind)  : testflag;
+			(state = testturn) & !(turn = ind)  : testturn1;
+			(state = testturn1) & (turn = ind)  : testflag;
+			(state = testturn1) & !(turn = ind)  : testturn1;
+			state = critical : {critical, noncritical};
+			state = noncritical : {noncritical, start};
+		esac;
+
+	next(flag) := 
+		case 
+			state = start : 1;
+			(state = testturn) & !(turn = ind) : 0;
+			(state = testturn1) & (turn = ind)  : 1;
+			state = noncritical : 0;
+			1 : flag;
+		esac;
+	
+	next(turn) :=
+		case 
+			(state = noncritical) & (ind = 0) : 1;
+			(state = noncritical) & (ind = 1) : 0;
+			1 : turn;
+		esac;

@@ -1,0 +1,14 @@
+1 Za Verilog navesti: a)vrste varijabli		b)tri nacina opisa modula
+2 a)Svi veliki filozofi napisali su barem jednu knjigu
+  b) Nitko nije velik filozof a da nije veci barem od nekog drugog filozofa
+3 q->r |- pVq->(pVr)
+4 Def poluodlucljiv formalni sustav, primjeri
+5 Zadana je kripke struktura M(S,R,L) (slicno kao na aud vj . 4 stanja).
+	 Pronaci a)S,R,L	b)Q(ExG)	c)Q(EG(q))
+6 a)kanonicnost kod komplement lukova
+  b)ROBDD s komplement lukovima za potpuno zbrajalo
+7 Slozenost SAT problema, slozenost ispitivanja tautologije za logicke funkcije prikazane ROBDD
+8 bila su 2 CTL-a za napisati
+9 Petri -> 1 proizv, 2 potrošaèa, 1 buffer =20 poruka. 2 stanja za svakog -> Proizvodi, odnom; potrosi, odmor
+10 U koje se dvije skupine dijele UML dijagrami? 3 primjera za dvaku skupinu
+	

@@ -1,0 +1,64 @@
+-- Copyright 2020 Studosi
+--
+-- Licensed under the Apache License, Version 2.0 (the "License");
+-- you may not use this file except in compliance with the License.
+-- You may obtain a copy of the License at
+--
+--     http://www.apache.org/licenses/LICENSE-2.0
+--
+-- Unless required by applicable law or agreed to in writing, software
+-- distributed under the License is distributed on an "AS IS" BASIS,
+-- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-- See the License for the specific language governing permissions and
+-- limitations under the License.
+
+MODULE main
+VAR
+	turn  : boolean;
+	proc0 : process user(proc1.flag, turn, FALSE);
+	proc1 : process user(proc0.flag, turn, TRUE);
+ASSIGN
+	init(turn) := FALSE;
+CTLSPEC AG !(proc0.state = critical & proc1.state = critical)
+CTLSPEC AG(proc0.state = testflag -> AF(proc0.state = critical))
+CTLSPEC AG(proc1.state = testflag -> AF(proc1.state = critical))
+
+MODULE user(oflag, turn, ind)
+VAR
+	flag : boolean;
+	state  : {start, testflag, testturn, testturn1, critical, noncritical};
+ASSIGN
+	init(state) := start;
+	init(flag) := TRUE;
+	next(state) :=
+		case
+			state = start : testflag;
+			state = testflag & oflag : testturn ;
+			state = testflag & !oflag : critical;
+			(state = testturn) & (turn = ind)  : testflag;
+			(state = testturn) & (turn != ind)  : testturn1;
+			(state = testturn1) & (turn = ind)  : testflag;
+			(state = testturn1) & (turn != ind)  : testturn1;
+			state = critical : {critical, noncritical};
+			state = noncritical : {noncritical, start};
+		esac;
+
+	next(flag) := 
+		case 
+			state = start : TRUE;
+			(state = testturn) & (turn != ind) : FALSE;
+			(state = testturn1) & (turn = ind)  : TRUE;
+			state = noncritical : FALSE;
+			TRUE : flag;
+		esac;
+	
+	next(turn) :=
+		case 
+			(state = noncritical) & (ind = FALSE) : TRUE;
+			(state = noncritical) & (ind = TRUE) : FALSE;
+			TRUE : turn;
+		esac;
+
+FAIRNESS running
+FAIRNESS !(state=critical)
+FAIRNESS !(state=noncritical)

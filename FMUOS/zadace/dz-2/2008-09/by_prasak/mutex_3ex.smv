@@ -1,0 +1,36 @@
+MODULE main 
+VAR
+	turn : boolean;
+	proc0 : process user(turn, 0);
+	proc1 : process user(turn, 1);
+ASSIGN
+	init(turn) := 0;
+
+SPEC EF(proc0.state=critical & proc1.state=critical)
+SPEC AG(!(proc0.state=critical & proc1.state=critical))
+SPEC AG(proc0.state=entering -> AF(proc0.state=critical))
+SPEC AG(proc0.state=critical -> (proc0.state=critical | A[!proc0.state=critical U proc1.state=critical]))
+
+
+MODULE user(turn, ind)
+VAR
+	state : {entering, critical, exiting, noncritical};
+ASSIGN
+	init(state) := {entering, noncritical};
+	next(state) :=
+		case
+			(state = entering) & (turn = ind) : critical;
+			state = critical : {critical, exiting};
+			state = exiting : noncritical;
+			state = noncritical : {entering, noncritical};
+			1 : state;
+		esac;
+	next(turn) :=
+		case 
+			(state = exiting) & (ind = 0) : 1;
+			(state = exiting) & (ind = 1) : 0;
+			1 : turn;
+		esac;
+FAIRNESS running
+FAIRNESS !state=critical
+FAIRNESS !state=noncritical

@@ -1,0 +1,51 @@
+mtype = { ini, ack, dreq, data, shutup, quiet, dead };
+
+#define N 16
+
+chan M = [N] of { mtype };
+chan W = [N] of { mtype };
+
+active proctype Mproc() 
+{
+	W!ini; 					/* connection */
+	M?ack; 					/* handshake */
+
+	timeout -> 				/* wait */
+	if 						/* two options: */
+	:: W!shutup 			/* start shutdown */
+	:: W!dreq; 				/* or request data */
+		M?data -> 			/* receive data */
+		do
+		:: W!data 			/* send data */
+		:: W!shutup; 		/* or shutdown */
+			break
+		od
+	fi;
+
+	M?shutup; 				/* shutdown handshake */
+	W!quiet;
+	M?dead
+}
+
+active proctype Wproc()
+{
+	W?ini; 					/* wait for ini */
+	M!ack; 					/* acknowledge */
+
+	do 						/* 3 options: */
+	:: W?dreq -> 			/* data requested */
+		M!data 				/* send data */
+	:: W?data -> 			/* receive data */
+#if 1
+		M!data
+#else
+		skip 				/* no response */
+#endif
+	:: W?shutup ->
+		M!shutup; 			/* start shutdown */
+		break
+	od;
+
+	W?quiet;
+	M!dead
+}
