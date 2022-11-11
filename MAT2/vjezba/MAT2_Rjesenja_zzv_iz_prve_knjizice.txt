@@ -1,0 +1,39 @@
+17.1) 9/2
+2) 2/[(e-1)^2 - 2]
+3) 2
+4) 3/4 tu je greska, suma treba iæi od 2
+5)1/4
+
+18. 1) integralni kriterij - za p>1 konv., za p<1 div.
+2) divergira (usporedba s 1/n*ln(n))
+
+19. 1) konv.
+2) konv.
+3) div.
+4) konv.
+5) konv.
+6) div.
+
+20. 1) konv. (usporedba s 1/n^2)
+2) div. (s 1/n)
+3) konv. (raspisati sinus poloviènog kuta - sin^2 (x/2) = (1 - cosx)/2, iz toga izluèiti 1 - cosx i umjesto x uvrstiti 1/n)
+4) treba samo gledati nuzni uvjet konvergencije lim an i bit ce razlicit od 0 pa divergira
+5) konv. (geom. red)
+6) konv. (usporedba s 1/n^2)
+
+21. 1) konv. (D'Alambert)
+2) div. (Cauchy)
+3) konv. (D'Alambert)
+4) konv. (D'Alambert)
+
+22. 1) konv. aps.
+2) konv. aps.
+3) div.
+4) konv. aps. (kad se stavi apsolutna vrijednost, |sin n| je uvijek manje ili = 1, pa se dobije 1/n^2, što konvergira)
+5) NUK
+6) div. 
+
+23. 1) ne konvergira apsolutno, ali konv. uvjetno (Leibniz)
+2) ne konv. apsolutno, konv. po Leibnizu
+3) po Leibnitzu konvergira, ne znam jel apsolutno konvergira.
+4) konvergira po Leibnizu (ne apsolutno)
