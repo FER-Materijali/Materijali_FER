@@ -1,0 +1,122 @@
+1.
+
+x=linspace(-5,5,100)
+
+
+y=linspace(2,4,100)
+
+
+[X,Y]=meshgrid(x,y)
+
+z=sin(X)./((cos(Y)+1.1).*exp(0.05*(X.^2+Y.^2)))
+
+
+mesh(X,Y,z)
+
+
+umjesto mesh treba isprobati:
+contour(X,Y,z)
+contour3(X,Y,z)
+contourf(X,Y,z) 
+colorbar('southoutside')
+
+
+
+--------------------
+2.a
+x = 1:4;
+
+y = sin(x);
+
+k = min(abs(diff(x)));
+k = k / 10;
+
+lx = abs(max(x) - min(x));
+  
+v = (min(x)-lx/2):k:(max(x)+lx/2);
+yv = sin(v);
+
+p = polyfit(x,y,length(x)-1);
+f = polyval(p,v);
+
+subplot(2,1,1), plot(v,f,'-g',v,yv,'--b',x,y,'xr','MarkerSize',10,'LineWidth',1.5);
+subplot(2,1,1), ylabel ('f(x), P(x)');
+subplot(2,1,1), grid;
+
+subplot(2,1,2), plot(v,yv-f,'b','LineWidth',1.5);
+subplot(2,1,2), ylabel ('e(x)=f(x)-P(x)');
+subplot(2,1,2), grid;
+
+
+----------------
+2.b   funkciju pozivate s npr. polinom_approx([1 2 3 4 5], 1)
+
+function polinom = polinom_approx(tocke, crtanje)
+x = tocke;
+
+y = sin(x);
+
+k = min(abs(diff(x)));
+k = k / 10;
+
+lx = abs(max(x) - min(x));
+  
+v = (min(x)-lx/2):k:(max(x)+lx/2);
+yv = sin(v);
+
+p = polyfit(x,y,length(x)-1);
+f = polyval(p,v);
+
+if crtanje
+    
+  subplot(2,1,1), plot(v,f,'-g',v,yv,'--b',x,y,'xr','MarkerSize',10,'LineWidth',1.5);
+  subplot(2,1,1), ylabel ('f(x), P(x)');
+  subplot(2,1,1), grid;
+  legend('p(x)','f(x)','(x_i,f(x_i))');
+  subplot(2,1,2), plot(v,yv-f,'b','LineWidth',1.5);
+  subplot(2,1,2), ylabel ('e(x)=f(x)-P(x)');
+  subplot(2,1,2), grid;
+else disp('Nema crtanja ');
+end
+end
+
+
+-------------------
+3.   program samo ispisuje N i višestrukost traenog podatka bez mijenjanja stanja u imeniku, mene je asistent pustio s tim
+     funkciju pozivate s npr. N=ObradaImenika('Pero',1)
+
+function [N] = ObradaImenika(Podatak,Operacija)
+
+global Imenik
+
+Imenik = {'Ivan',2;'Matej',2;'Marko',4; 'Luka',1}
+
+
+if nargin~=2
+    error ('krivi ulaz')
+end;
+
+validateattributes (Podatak,{'char','cell'},{'nonempty'})
+validateattributes (Operacija,{'double'},{'binary'})
+indeks=find(strcmp(Podatak,Imenik));
+if Operacija==0
+    if isempty(indeks)
+        error('nema podatka u imeniku');
+    else
+        Imenik(indeks,:)=[];
+    end
+else
+    if isempty(indeks)
+        Imenik(end+1,:)={Podatak,1};
+    else
+        Imenik{indeks,2}=Imenik{indeks,2}+1;
+        fprintf('višestrukost traenog podatka je :%d', Imenik{indeks,2})
+    end
+end
+N=0;
+for i=1: size(Imenik,1)
+    if (Imenik{i,2}>=1)
+        N=N+1;
+    end
+end     
+end
