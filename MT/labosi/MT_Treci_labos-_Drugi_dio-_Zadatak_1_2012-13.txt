@@ -1,0 +1,109 @@
+function [y u v] =fcomp(x)
+    profile on;
+    
+    a=imread('peppers.bmp');
+    b=rgb2ycbcr(a);
+    
+    y=b(:,:,1);
+    u=b(:,:,2);
+    v=b(:,:,3);
+    
+    u=downsample(u,2);
+    u=transpose(u);
+    u=downsample(u,2);
+    u=transpose(u);
+    
+    v=downsample(v,2);
+    v=transpose(v);
+    v=downsample(v,2);
+    v=transpose(v);
+    
+    y=int16(y);
+    u=int16(u);
+    v=int16(v);
+    
+    y=y-128;
+    u=u-128;
+    v=v-128;
+    ydct = blockeddct(y, 1);
+    udct = blockeddct(u, 0);
+    vdct = blockeddct(v, 0);
+    
+    y = ydct;
+    u = udct;
+    v = vdct;
+	
+    profile off;
+end
+
+
+function y = blockeddct (x, lum)
+
+    qy = [3,2,2,3,5,8,10,12;
+        2,2,3,4,5,12,12,11;
+        3,3,3,5,8,11,14,11;
+        3,3,4,6,10,17,16,12;
+        4,4,7,11,14,22,21,15;
+        5,7,11,13,16,21,23,18;
+        10,13,16,17,21,24,24,20;
+        14,18,19,20,22,20,21,20]
+    
+    qc = [3,4,5,9,20,20,20,20;
+        4,4,5,13,20,20,20,20;
+        5,5,11,20,20,20,20,20;
+        9,13,20,20,20,20,20,20;
+        20,20,20,20,20,20,20,20;
+        20,20,20,20,20,20,20,20;
+        20,20,20,20,20,20,20,20;
+        20,20,20,20,20,20,20,20]
+    
+    r = size(x,1);
+    s = size(x,2);
+   
+    y=zeros(r, s);
+    A=zeros(8,8);
+    
+    k=r/8;
+    l=s/8;
+    
+    for c=0:(k -1)
+        for d=0:(l-1)
+            
+            for i=1:8
+                for j=1:8
+                    A(i,j)=x(c*8+i, d*8+j);
+                end
+            end
+            
+            B=zeros(8,8);
+            
+            for p=1:8
+                for q=1:8
+                    if(p==1) alphap=sqrt(1/8);
+                    else alphap=sqrt(2/8);
+                    end
+                    if(p==1) alphaq=sqrt(1/8);
+                    else alphaq=sqrt(2/8);
+                    end
+
+                    for m=0:7
+                        for n=0:7
+                            B(p,q)=B(p,q)+alphap*alphaq*A(m+1,n+1)*cos(pi*(2*m+1)*p/16)*cos(pi*(2*n+1)*q/16);
+                        end
+                    end
+                end
+            end
+            
+            if (lum==1)
+                B=B./qy;
+            else B=B./qc;    
+            end
+            
+            for i=1:8
+                for j=1:8
+                    y(c*8+i, d*8+j)=B(i,j);
+                end
+            end
+        end
+    end
+end
