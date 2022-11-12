@@ -1,0 +1,25 @@
+Kombinacije pitanja
+
+1, 12, 23, 34, 40
+2, 13, 24, 37, 49
+3, 15, 21, 36, 39
+
+5, 11, 20, 30, 41
+6, 19, 28, 32, 45
+7, 14, 27, 33, 51
+8, 16, 26, 35, 50
+9, 17, 22, 29, 46
+
+
+navodno je 10 papirica sto znaci da fale 2 kombinacije:
+
+ove nisam naso na starim materijalima:
+4, 10, 18, 25, 31, 38, 42, 43, 44, 47, 48, 52, 53
+
+
+
+EDIT
+
+javio mi je kolega da je vidio jos jednu kombinaciju na nekom papiricu na usmenom:
+
+4, 10, 25, 31, 52
