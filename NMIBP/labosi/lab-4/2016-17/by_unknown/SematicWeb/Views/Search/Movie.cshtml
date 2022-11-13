@@ -1,0 +1,73 @@
+﻿@model SematicWeb.Models.Movie
+
+@{
+    ViewBag.Title = "Movie";
+}
+
+<h2>Movie</h2>
+
+<div>
+    <h4>Movie</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.url)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.url)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.redatelj)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.redatelj)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.scenarist)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.scenarist)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kratkiOpis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kratkiOpis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dugiOpis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dugiOpis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.datumNastanka)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datumNastanka)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

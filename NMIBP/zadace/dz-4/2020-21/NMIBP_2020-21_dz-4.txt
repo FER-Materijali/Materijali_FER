@@ -1,0 +1,150 @@
+db.nobelprizes.mapReduce(
+`function() {
+ if (this.laureates !== undefined) {
+    var year = this.year;
+    var category = this.category;
+    
+    if (year >= 1900 && year <= 1915 && category != "peace") {
+         this.laureates.forEach( function(laureate) {
+            emit( 
+               {
+                  firstname: laureate.firstname,
+                  surname: laureate.surname,
+               },
+               { 
+                  prizes : [
+                     { 
+                        year: year, 
+                        category: category 
+                     }
+                  ]} 
+               )})
+         }
+       }
+};`,
+`function(key, values) {
+ var rv = {
+	prizes: []
+ };
+ values.forEach( function(value) {
+	 rv.prizes = rv.prizes.concat(value.prizes);
+ });
+ 
+ rv.prizes = rv.prizes.sort(function(a,b){
+		return a.year-b.year;
+ });  
+   
+ return rv;
+};`,
+{
+  
+ })
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ db.nobelprizes.mapReduce(
+`function() {
+ if (this.laureates !== undefined) {
+    var year = this.year;
+    var category = this.category;
+    
+    this.laureates.forEach( function(laureate) {
+       emit( 
+          {
+             category: category
+          },
+          { 
+             laureates : [
+                { 
+                   year: year, 
+                   firstname: laureate.firstname,
+                   surname: laureate.surname,
+                }
+             ]
+          } 
+       )
+    })
+  }
+};`,
+`function(key, values) {
+ var rv = {
+	laureates: []
+ };
+ values.forEach( function(value) {
+	 rv.laureates = rv.laureates.concat(value.laureates);
+ });
+ rv.laureates = rv.laureates.sort(function(a,b){
+      if (a.year == b.year) {
+         return a.surname > b.surname;
+      } 
+		return a.year-b.year;
+ });  
+ return rv;
+};`,
+{
+  
+ })
+ 
+ 
+ 
+ db.dvdrent.mapReduce(
+`function() {
+ if (this.film.actors != null) {
+    if (this.film.categories.length > 1) {
+       var filmName = this.film.title;
+       
+       var categories = []
+       this.film.categories.forEach( function(category) {
+          categories = categories.concat(category.name);
+       });
+       
+       this.film.actors.forEach( function(actor) {
+          emit( 
+             {
+                id: actor.actor_id, 
+                fullname: actor.first_name + ' ' + actor.last_name
+             }, 
+             { 
+                categories : categories, 
+                films : [
+                   filmName
+                ]
+             } 
+          )})
+    }
+ }
+};`, 
+`function(key,  values) {
+ var rv = {
+	categories: [], 
+   films: [], 
+ };
+ values.forEach( function(value) {
+	 rv.categories = rv.categories.concat(value.categories);
+    rv.films = rv.films.concat(value.films);
+ });
+ 
+ rv.categories = rv.categories.sort(function(a, b){
+	 return a > b;
+ }); 
+ rv.films = rv.films.sort(function(a, b){
+	 return a > b;
+ });  
+rv.categories = rv.categories.filter((obj,  idx,  arr) => (
+   rv.categories.findIndex((o) => o === obj) === idx
+));
+rv.films = rv.films.filter((obj,  idx,  arr) => (
+   rv.films.findIndex((o) => o === obj) === idx
+));
+   
+ return rv;
+};`, 
+{
+  
+ })

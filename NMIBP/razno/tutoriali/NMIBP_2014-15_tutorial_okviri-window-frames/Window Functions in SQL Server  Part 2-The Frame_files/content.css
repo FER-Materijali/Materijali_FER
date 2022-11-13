@@ -1,0 +1,442 @@
+﻿pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    border-top: 1px solid #dddddd;
+}
+
+.table th {
+    font-weight: bold;
+}
+
+.table-bordered {
+    border: 1px solid #dddddd;
+    border-collapse: separate;
+    *border-collapse: collapse;
+    border-left: 0;
+    border-top: 0;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border-left: 1px solid #dddddd;
+}
+
+.sql-query-results {
+    overflow: auto;
+}
+.sql-query-results table {
+    border: 1px solid #abadb3;
+    border-collapse: collapse;
+    border-spacing: 0;
+    white-space: nowrap;
+}
+.sql-query-results table th,
+.sql-query-results table td {
+    padding: 0.1em 0.5em;
+    text-align: left;
+    font-weight: normal;
+    font-family: "Microsoft Sans Serif", sans-serif;
+    font-size: 8pt;
+    color: black;
+}
+.sql-query-results table th {
+    background: #f5f6f8;
+    border: 1px solid #d5d5d5;
+    border-width: 0 1px 1px 0;
+}
+.sql-query-results table td {
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-width: 0 1px 1px 0;
+}
+
+/** Syntax highlighting **/
+
+.language-tsql, .lang-tsql { color: #000000; }
+.language-tsql .str, .lang-tsql .str { color: #FF0000; }
+.language-tsql .kwd, .lang-tsql .kwd { color: #0000FF; }
+.language-tsql .kwd2, .lang-tsql .kwd2 { color: #FF00FF; }
+.language-tsql .kwd3, .lang-tsql .kwd3 { color: #808080; }
+.language-tsql .com, .lang-tsql .com { color: #008000; }
+.language-tsql .typ, .lang-tsql .typ { color: #0000FF; }
+.language-tsql .pun, .lang-tsql .pun { color: #808080; }
+.language-tsql .sym, .lang-tsql .sym { color: #808080; }
+
+pre .title {
+	font-family: inherit;
+    font-size: inherit;
+}
+
+/** Syntax highlighting -- server-side highlight.js **/
+
+pre .comment,
+pre .annotation,
+pre .template_comment,
+pre .diff .header,
+pre .chunk,
+pre .apache .cbracket {
+  color: rgb(0, 128, 0);
+}
+
+pre .keyword,
+pre .id,
+pre .built_in,
+pre .smalltalk .class,
+pre .winutils,
+pre .bash .variable,
+pre .tex .command,
+pre .request,
+pre .status,
+pre .nginx .title,
+pre .xml .tag,
+pre .xml .tag .value {
+  color: rgb(0, 0, 255);
+}
+
+pre .string,
+pre .title,
+pre .parent,
+pre .tag .value,
+pre .rules .value,
+pre .rules .value .number,
+pre .ruby .symbol,
+pre .ruby .symbol .string,
+pre .aggregate,
+pre .template_tag,
+pre .django .variable,
+pre .addition,
+pre .flow,
+pre .stream,
+pre .apache .tag,
+pre .date,
+pre .tex .formula {
+  color: rgb(163, 21, 21);
+}
+
+pre .ruby .string,
+pre .decorator,
+pre .filter .argument,
+pre .localvars,
+pre .array,
+pre .attr_selector,
+pre .pseudo,
+pre .pi,
+pre .doctype,
+pre .deletion,
+pre .envvar,
+pre .shebang,
+pre .preprocessor,
+pre .userType,
+pre .apache .sqbracket,
+pre .nginx .built_in,
+pre .tex .special,
+pre .input_number {
+  color: rgb(43, 145, 175);
+}
+
+pre .phpdoc,
+pre .javadoc,
+pre .xmlDocTag {
+  color: rgb(128, 128, 128);
+}
+
+pre .vhdl .typename { font-weight: bold; }
+pre .vhdl .string { color: #666666; }
+pre .vhdl .literal { color: rgb(163, 21, 21); }
+pre .vhdl .attribute { color: #00B0E8; }
+
+pre .xml .attribute { color: rgb(255, 0, 0); }
+
+/** Syntax highlighting -- client-side google-code-prettify **/
+
+.pln { color: #000 }
+
+@media screen {
+  .str { color: #080 }
+  .kwd { color: #008 }
+  .com { color: #800 }
+  .typ { color: #606 }
+  .lit { color: #066 }
+  .pun, .opn, .clo { color: #660 }
+  .tag { color: #008 }
+  .atn { color: #606 }
+  .atv { color: #080 }
+  .dec, .var { color: #606 }
+  .fun { color: red }
+}
+
+/* Use higher contrast and text-weight for printable form. */
+@media print, projection {
+  .str { color: #060 }
+  .kwd { color: #006; font-weight: bold }
+  .com { color: #600; font-style: italic }
+  .typ { color: #404; font-weight: bold }
+  .lit { color: #044 }
+  .pun, .opn, .clo { color: #440 }
+  .tag { color: #006; font-weight: bold }
+  .atn { color: #404 }
+  .atv { color: #060 }
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 { list-style-type: none }
+/* Alternate shading for lines */
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 { background: #eee }
+
+
+/* Styling for article-content, which will prevent the need to pre-pend CSS to articles */
+.article-content {
+    padding-top: 5px;
+}
+.article-content .codeblue {
+	COLOR: blue
+}
+.article-content .codebrown {
+	COLOR: brown
+}
+.article-content .codedarkred {
+	COLOR: darkred
+}
+.article-content .codegray {
+	COLOR: gray
+}
+.article-content .codegreen {
+	COLOR: green
+}
+.article-content .codemagenta {
+	COLOR: magenta
+}
+.article-content .codered {
+	COLOR: red
+}
+.article-content .codefuchsia {
+    color: fuchsia;
+}
+.article-content .codeblack {
+	COLOR: black
+}
+.article-content .codeteal {
+    color: teal;
+}
+.article-content .indented {
+    MARGIN-LEFT: 80px;
+}
+.article-content .note {	
+	BORDER-LEFT: gray 2.25pt solid; 
+	PADDING-LEFT: 8px; 
+	MARGIN-LEFT: 38px;
+    MSO-ELEMENT: para-border-div;
+    font-size: 12px;
+}
+.article-content .caption {
+	FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    MARGIN-TOP: 3px;
+}
+.article-content .listing {
+	BORDER: #cacaca 1px solid; 
+	PADDING: 10px 3px; 
+	BACKGROUND-COLOR: #f9f9f9; 
+	FONT-FAMILY: Consolas, "Courier New",Courier, monospace; 
+	MARGIN-LEFT: 20px; 
+	FONT-SIZE: 12px; 
+}
+.article-content .listing P {
+	MARGIN-LEFT: 20px; 
+	FONT-FAMILY: Consolas, "Courier New",Courier, monospace; 
+	FONT-SIZE: 11px;
+}
+.article-content .illustration {
+	TEXT-ALIGN: left; 
+	MARGIN-BOTTOM: 0px; 
+	MARGIN-LEFT: 20px
+}
+.article-content .center{
+	  TEXT-ALIGN: center; 
+	  MARGIN: 0 auto;
+    display: block;
+}
+.article-content .quote {
+	BORDER-BOTTOM: silver 1px solid; 
+	PADDING: 10px 0 15px 0; 
+	LINE-HEIGHT: 15px; 
+	FLOAT: right; 
+	FONT-SIZE: 17px; 
+	BORDER-TOP: silver 2px solid; 
+	FONT-WEIGHT: bold; 
+    MARGIN-LEFT: 10px; 
+	MARGIN-RIGHT: 10px; 
+	clear: both;
+}
+.article-content .visual-studio {
+	FONT-FAMILY: Consolas, "Courier New", Courier, monospace;
+    font-size: 12px;
+}
+.article-content BLOCKQUOTE {
+	FONT-STYLE: italic; 
+	MARGIN: 12px 50px; 
+	FONT-SIZE: 12px;
+}
+.article-content DIV.illustration {
+	MARGIN-BOTTOM: 20px
+}
+.article-content DIV.indent {
+	MARGIN-LEFT: 20px
+}
+.article-content DIV.note P.note {
+	MARGIN-LEFT: 0in
+}
+.article-content DL {
+	MARGIN-LEFT: 20px; 
+	FONT-SIZE: 12px
+}
+.article-content DT {
+	WIDTH: 150px;
+    FONT-WEIGHT: bold;
+    float:left;
+    clear: both;
+}
+.article-content DD {
+	MARGIN-LEFT: 170px;
+  margin-bottom: 10px;
+}
+.article-content H1 {
+	FONT-SIZE: 145%
+}
+.article-content H2 {
+	FONT-SIZE: 145%
+}
+.article-content H3 {
+	MARGIN-LEFT: 20px; 
+	FONT-SIZE: 130%
+}
+.article-content H4 {
+	MARGIN-LEFT: 20px
+}
+.article-content HR {
+	BORDER-BOTTOM: thin; 
+	BORDER-TOP: #d2d2d2 1px dotted
+}
+.article-content LI {
+	MARGIN: 0px 20px 3px 20px; 
+	FONT-SIZE: 12px
+}
+.article-content P {
+    margin-left: 20px;
+    font-size: 12px;
+}
+.article-content P.note {
+	BORDER: silver 1px solid; 
+	PADDING: 10px; 
+	MARGIN-LEFT: 80px;
+}
+.article-content P.start:first-letter {
+	LINE-HEIGHT: 100%;
+    FONT-SIZE: 280%;
+    float:left;
+    clear: both;  
+}
+.article-content .user-instruction {
+	FONT-FAMILY: Consolas, "Courier New",Courier, monospace; 
+	FONT-WEIGHT: bold
+}
+.article-content TABLE {
+	BORDER: #cacaca 1px solid; 
+	MARGIN-LEFT: 20px;
+}
+.article-content TABLE UL {
+	MARGIN-LEFT: 10px
+}
+.article-content TABLE LI {
+	MARGIN-LEFT: 5px; 
+	FONT-SIZE: 11px
+}
+.article-content TABLE OL {
+	PADDING-LEFT: 0px; 
+	MARGIN-LEFT: 15px;
+}
+.article-content TABLE P {
+	MARGIN: 0px 5px; 
+	FONT-SIZE: 11px
+}
+.article-content TABLE TD {
+    FONT-SIZE: 11px;
+    PADDING: 5px;
+}
+.article-content TABLE TH {
+    FONT-SIZE: 13px;
+    PADDING: 5px;
+}
+.article-content UL {
+	MARGIN-TOP: 0px
+}
+.article-content aside.right {
+    BORDER: #cacaca 1px solid; 
+    margin-left: 15px;
+    margin-top: 3px;
+	BACKGROUND-COLOR: #f9f9f9;
+    float: right;
+    width: 45%;
+    padding: 6px 0px;
+}
+
+.article-content aside.left {
+    BORDER: #cacaca 1px solid; 
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-top: 3px;
+	BACKGROUND-COLOR: #f9f9f9;
+    float: left;
+    width: 45%;
+    padding: 6px 0px;
+}
+
+.article-content header {
+    BORDER: silver 1px solid; 
+    PADDING: 10px;
+	MARGIN: 7px 0 0px 80px;
+}
+
+.article-content footer {
+    BORDER: silver 1px solid; 
+	PADDING: 10px;
+	MARGIN: 20px 0 12px 80px;
+}
+
+@media all and (max-width: 640px) {
+
+  table {
+    max-width: 95%;
+    min-width: 280px;
+    margin-right: 20px;
+  }
+  
+  .article-content P.note {
+	MARGIN-LEFT: 0px;
+  }
+}

@@ -1,0 +1,1088 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0061)https://www.simple-talk.com/content/article.aspx?article=1396 -->
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml" class=" js no-touch cssanimations csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./Window Functions in SQL Server  Part 2-The Frame_files/ga.js"></script><script async="" src="https://s7.addthis.com/js/250/addthis_widget.js?_=1410212391336"></script><meta http-equiv="content-language" content="en-us"><meta name="viewport" content="width=device_display, initial-scale=1.0"><meta name="msvalidate.01" content="9C05A0BBFB5A166A5C1C7202D4E5D72B">
+    <script type="text/javascript" data-main="/static/versioned/3e62335f7e28118064c631b9a3a32e46/js/main.js" src="./Window Functions in SQL Server  Part 2-The Frame_files/require-2.1.9.js"></script><style id="stylish-13" class="stylish" type="text/css">@namespace url(http://www.w3.org/1999/xhtml);
+@namespace svg url(http://www.w3.org/2000/svg);</style><style type="text/css"></style>
+    <script>
+      require.config({
+        paths: {
+          "jquery": "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min",
+          "mediaelement": "lib/mediaelement/mediaelement-and-player"
+        },
+        urlArgs: "v=105"
+      });
+    </script>
+    <script type="text/javascript" src="./Window Functions in SQL Server  Part 2-The Frame_files/modernizr.custom.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./Window Functions in SQL Server  Part 2-The Frame_files/main.css">
+    <link rel="stylesheet" type="text/css" href="./Window Functions in SQL Server  Part 2-The Frame_files/content.css">
+    <link rel="stylesheet" type="text/css" href="./Window Functions in SQL Server  Part 2-The Frame_files/mobile-navigation.css">
+    <link rel="stylesheet" type="text/css" href="./Window Functions in SQL Server  Part 2-The Frame_files/mobile-searchbar.css">
+
+    
+      <link rel="stylesheet" href="./Window Functions in SQL Server  Part 2-The Frame_files/sql.css" type="text/css">
+    
+    <!--[if lt IE 9]>
+      <script src="/static/versioned/c42155be65838a3ecf77bfc6caf1ee7f/js/lib/html5shiv-printshiv.js"></script>
+    <![endif]-->
+
+    
+    
+  <meta name="description" content="Fabiano continues his introduction to SQL Server&#39;s implementation of the window functions by giving a history of what got implemented and when, and explaining the concept of the &#39;Frame&#39;  in a window function, with plenty of examples.">
+  <meta keywords="Windows Functions, ORDER BY, OVER, SQl Server 2012">
+  <meta itemprop="interactionCount" content="UserComments:4">
+  <link rel="canonical" href="https://www.simple-talk.com/content/article.aspx">
+<title>
+	Window Functions in SQL Server: Part 2-The Frame
+</title><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="./Window Functions in SQL Server  Part 2-The Frame_files/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./Window Functions in SQL Server  Part 2-The Frame_files/jquery.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.dlmenu" src="./Window Functions in SQL Server  Part 2-The Frame_files/jquery.dlmenu.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="rss" src="./Window Functions in SQL Server  Part 2-The Frame_files/rss.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="corner-peel" src="./Window Functions in SQL Server  Part 2-The Frame_files/corner-peel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ajax-comment-delete" src="./Window Functions in SQL Server  Part 2-The Frame_files/ajax-comment-delete.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="audio-polyfill" src="./Window Functions in SQL Server  Part 2-The Frame_files/audio-polyfill.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="newsletter-subscriber" src="./Window Functions in SQL Server  Part 2-The Frame_files/newsletter-subscriber.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics" src="./Window Functions in SQL Server  Part 2-The Frame_files/analytics.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mobile-searchbar" src="./Window Functions in SQL Server  Part 2-The Frame_files/mobile-searchbar.js"></script><script type="text/javascript" async="" src="https://s7.addthis.com/js/250/addthis_widget.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mediaelement" src="./Window Functions in SQL Server  Part 2-The Frame_files/mediaelement-and-player.js"></script></head>
+<body>
+  <div id="corner-peel">
+	  <a href="http://www.red-gate.com/sqlmonitor-simpletalk" rel="nofollow">
+      <img src="https://www.simple-talk.com/images/ads/corner-peel.png" alt="Click here to monitor SSC" width="0" height="0" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 1px 1px;">
+    </a>
+	  <div id="corner-peel-behind"></div>
+  </div>
+
+  <div class="site">
+    <div itemscope="" itemtype="http://schema.org/TechArticle" class="page"> 
+      
+
+<div class="site-header">
+  <div class="mobile-navigation" style="float: left; padding-top: 13px;">
+    
+	  <div class="mobile-navigation-column">
+    <div id="dl-menu" class="dl-menuwrapper">
+		  <button class="dl-trigger">Open Menu</button>
+		  <ul class="dl-menu">
+			  <li>
+				  <a href="https://www.simple-talk.com/">Home</a>
+        </li>
+        <li>
+          <a href="">SQL</a>
+				  <ul class="dl-submenu">
+					  <li><a href="https://www.simple-talk.com/sql/">SQL Home</a></li>
+					  <li><a href="https://www.simple-talk.com/sql/learn-sql-server/">Learn SQL Server</a></li>
+					  <li><a href="https://www.simple-talk.com/sql/sql-training/">SQL Training</a></li>
+					  <li><a href="https://www.simple-talk.com/sql/database-administration/">Database Administration</a></li>
+            <li><a href="https://www.simple-talk.com/sql/t-sql-programming/">T-SQL Programming</a></li>
+            <li><a href="https://www.simple-talk.com/sql/performance/">Performance</a></li>
+            <li><a href="https://www.simple-talk.com/sql/backup-and-recovery/">Backup and Recovery</a></li>
+            <li><a href="https://www.simple-talk.com/sql/sql-tools/">SQL Tools</a></li>
+            <li><a href="https://www.simple-talk.com/sql/editors-corner">Editor's Corner</a></li>
+            <li><a href="https://www.simple-talk.com/sql/ssis/">SSIS</a></li>
+            <li><a href="https://www.simple-talk.com/sql/reporting-services">Reporting Services</a></li>
+				  </ul>
+			  </li>
+			  <li>
+				  <a href="">.NET</a>
+          <ul class="dl-submenu">
+            <li><a href="https://www.simple-talk.com/dotnet/">.NET Home</a></li>
+					  <li><a href="https://www.simple-talk.com/dotnet/asp.net/">ASP.Net</a></li>
+					  <li><a href="https://www.simple-talk.com/dotnet/windows-forms/">Windows Forms</a></li>
+            <li><a href="https://www.simple-talk.com/dotnet/.net-framework/">.Net Framework</a></li>
+            <li><a href="https://www.simple-talk.com/dotnet/performance/">Performance</a></li>
+            <li><a href="https://www.simple-talk.com/dotnet/visual-studio/">Visual Studio</a></li>
+            <li><a href="https://www.simple-talk.com/dotnet/.net-tools/">.Net Tools</a></li>
+            <li><a href="https://www.simple-talk.com/dotnet/editors-corner/">Editor's Corner</a></li>
+				  </ul>
+			  </li>
+			  <li>
+				  <a href="">Cloud</a>
+          <ul class="dl-submenu">
+					  <li><a href="https://www.simple-talk.com/cloud/">Cloud Home</a></li>
+					  <li><a href="https://www.simple-talk.com/cloud/cloud-data/">Cloud Data</a></li>
+					  <li><a href="https://www.simple-talk.com/cloud/platform-as-a-service/">Platform as a Service</a></li>
+            <li><a href="https://www.simple-talk.com/cloud/development/">Development</a></li>
+            <li><a href="https://www.simple-talk.com/cloud/infrastructure-as-a-service/">Infrastructure as a Service</a></li>
+            <li><a href="https://www.simple-talk.com/cloud/security-and-compliance/">Security and Compliance</a></li>
+            <li><a href="https://www.simple-talk.com/cloud/data-science/">Data Science</a></li>
+            <li><a href="https://www.simple-talk.com/cloud/software-as-a-service/">Software as a Service</a></li>
+				  </ul>
+			  </li>
+			  <li>
+				  <a href="">SysAdmin</a>
+          <ul class="dl-submenu">
+            <li><a href="https://www.simple-talk.com/sysadmin/">SysAdmin Home</a></li>
+					  <li><a href="https://www.simple-talk.com/sysadmin/editors-corner/">Editor's Corner</a></li>
+					  <li><a href="https://www.simple-talk.com/sysadmin/exchange/">Exchange</a></li>
+            <li><a href="https://www.simple-talk.com/sysadmin/general/">General</a></li>
+            <li><a href="https://www.simple-talk.com/sysadmin/virtualization/">Virtualization</a></li>
+            <li><a href="https://www.simple-talk.com/sysadmin/unified-messaging/">Unified Messaging</a></li>
+            <li><a href="https://www.simple-talk.com/sysadmin/powershell/">Powershell</a></li>
+				  </ul>
+			  </li>
+        <li>
+          <a href="https://www.simple-talk.com/opinion/">Opinion</a>
+        </li>
+        <li>
+				  <a href="">Books</a>
+          <ul class="dl-submenu">
+            <li><a href="https://www.simple-talk.com/books/">Books Home</a></li>
+					  <li><a href="https://www.simple-talk.com/books/.net-books/">.Net Books</a></li>
+					  <li><a href="https://www.simple-talk.com/books/sql-books/">SQL Books</a></li>
+            <li><a href="https://www.simple-talk.com/books/sysadmin-books/">SysAdmin Books</a></li>
+            <li><a href="https://www.simple-talk.com/books/book-reviews/">Book Reviews</a></li>
+				  </ul>
+			  </li>
+        <li>
+				  <a href="https://www.simple-talk.com/blogs/">Blogs</a>
+        </li>
+        <li>
+				  <a href="https://www.simple-talk.com/community/forums/">Forums</a>
+        </li>
+		  </ul>
+	  </div><!-- /dl-menuwrapper -->
+    </div>
+<script type="text/javascript">
+  require(["jquery", "jquery.dlmenu"], function ($) {
+      $(document).ready(function() {
+          $('#dl-menu').dlmenu({
+              animationClasses: { classin: 'dl-animate-in-2', classout: 'dl-animate-out-2' }
+          });
+      });
+  });
+</script>
+  </div>
+  <div class="site-logo">
+    <a href="https://www.simple-talk.com/">
+      <img src="./Window Functions in SQL Server  Part 2-The Frame_files/simple-talk-logo@2x.png" class="simple-talk-logo-image" alt="Simple-Talk" width="144" height="36">
+    </a>
+  </div>
+        
+  <div class="site-tagline">
+    A technical journal and community hub from Red Gate
+  </div>
+
+	<div class="red-gate-logo">
+	  <a href="http://www.red-gate.com/?utm_source=simpletalk&utm_medium=textad&utm_campaign=homepage">
+	  	<img src="./Window Functions in SQL Server  Part 2-The Frame_files/red-gate-logo@2x.png" class="red-gate-logo-header-image" alt="Red Gate" width="68" height="24">
+	  </a>
+	</div>
+  <div class="signup-buttons">
+    
+  <div class="account-nav account-nav-anonymous">
+      <a href="https://www.simple-talk.com/community/user/CreateUser.aspx?ReturnUrl=%2fcontent%2farticle.aspx%3farticle%3d1396">Join Simple-Talk</a>
+      <a href="https://www.simple-talk.com/community/login.aspx?ReturnUrl=%2fcontent%2farticle.aspx%3farticle%3d1396">Sign in</a>
+  </div>
+
+  </div>
+  <br>
+  <div class="mobile-search">
+    
+<div class="mobile-searchbar-column">
+	<div id="sb-search" class="sb-search">
+		<input class="sb-search-input" placeholder="Search..." type="text" value="" name="search" id="search">
+		<input class="sb-search-submit" type="submit" value="">
+		<span class="sb-icon-search"><img src="./Window Functions in SQL Server  Part 2-The Frame_files/search_white@2x.png" style="height: 25px;" alt="Search" width="0" height="0"></span>
+	</div>
+</div>  
+  </div>
+</div>
+
+      
+
+<div class="mainnav nav">
+  <ul class="primarynav">
+    
+      <li>
+        <a href="https://www.simple-talk.com/">Home</a>
+      </li>
+    
+      <li>
+        <a href="https://www.simple-talk.com/sql/" class="on">SQL</a>
+      </li>
+    
+      <li>
+        <a href="https://www.simple-talk.com/dotnet/">.NET</a>
+      </li>
+    
+      <li>
+        <a href="https://www.simple-talk.com/cloud/">Cloud</a>
+      </li>
+    
+      <li>
+        <a href="https://www.simple-talk.com/sysadmin/">SysAdmin</a>
+      </li>
+    
+      <li>
+        <a href="https://www.simple-talk.com/opinion/">Opinion</a>
+      </li>
+    
+      <li>
+        <a href="https://www.simple-talk.com/books/">Books</a>
+      </li>
+    
+      <li>
+        <a href="https://www.simple-talk.com/blogs/">Blogs</a>
+      </li>
+    
+      <li>
+        <a href="https://www.simple-talk.com/community/forums/">Forums</a>
+      </li>
+    
+  </ul>
+  <div class="site-search">
+    
+      <form action="https://www.simple-talk.com/search/" method="get">
+    
+			  <input type="text" name="search" placeholder="Search…">
+        <button type="submit" class="search-button">
+          <img src="./Window Functions in SQL Server  Part 2-The Frame_files/search.png" alt="Search">
+        </button>
+		
+      </form>
+    
+  </div>
+</div>
+  
+<div class="subnav nav">
+  <ul>
+    
+        <li>
+          <a id="ctl00_Navigation1_repSubMenu_ctl00_lnkItem" href="https://www.simple-talk.com/sql/"><span itemprop="articleSection">SQL Home</span></a>
+        </li>
+      
+        <li>
+          <a id="ctl00_Navigation1_repSubMenu_ctl01_lnkItem" href="https://www.simple-talk.com/sql/learn-sql-server/"><span itemprop="articleSection">Learn SQL Server</span></a>
+        </li>
+      
+        <li>
+          <span class="inactive-link ">Window Functions in SQL Server: Part 2-The Frame</span>
+        </li>
+      
+  </ul>
+</div>
+      <div class="maincontent">
+        
+  <div class="article">
+  
+    <div id="ctl00_MainContent_panSummary" class="summarybox">
+	
+      <ul>
+        <li>Av rating: <img id="ctl00_MainContent_imgRating1" src="./Window Functions in SQL Server  Part 2-The Frame_files/icon_plain_5stars.gif" style="height:13px;width:70px;border-width:0px;"></li>
+        <li>Total votes: 91</li>
+        <li>Total comments: 4</li>
+      </ul>
+      <ul>
+        <li><img id="ctl00_MainContent_imgEmail" src="./Window Functions in SQL Server  Part 2-The Frame_files/icon_email_13x11.gif" style="height:11px;width:14px;border-width:0px;">&nbsp;<a id="ctl00_MainContent_lnkEmail" href="https://www.simple-talk.com/content/email.aspx?article=1396">send to a friend</a></li>
+		    <li><img id="ctl00_MainContent_imgPrint" src="./Window Functions in SQL Server  Part 2-The Frame_files/icon_print_13x11.gif" style="height:11px;width:14px;border-width:0px;">&nbsp;<a id="ctl00_MainContent_lnkPrint" href="https://www.simple-talk.com/content/print.aspx?article=1396" target="_blank">printer friendly version</a></li>
+      </ul>
+      <ul>
+        <li>
+          
+        </li>
+      </ul>
+	
+</div>
+
+    <div class="article-header">
+      <img id="ctl00_MainContent_imgAuthor" class="authorpicture" align="left" itemprop="image" src="https://www.simple-talk.com/iwritefor/publishers/176.gif" alt="Fabiano Amorim" style="border-width:0px;">
+      <h1 class="articletitle">Window Functions in SQL Server: Part 2-The Frame</h1>
+      <div class="date">24 November 2011</div>
+      <div class="author">by <a id="ctl00_MainContent_lnkAuthor" rel="author" href="https://www.simple-talk.com/author/fabiano-amorim/"><span itemprop="author">Fabiano Amorim</span></a></div>
+    </div>
+    <div class="clear"></div>
+    
+    <div itemprop="articleBody">
+
+    
+<style type="text/css">#pretty {
+	
+}
+#pretty .codeblue {
+	COLOR: blue
+}
+#pretty .codebrown {
+	COLOR: brown
+}
+#pretty .tablecontents {
+	FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+#pretty .codedarkred {
+	COLOR: darkred
+}
+#pretty .codegray {
+	COLOR: gray
+}
+#pretty .codegreen {
+	COLOR: green
+}
+#pretty .codemagenta {
+	COLOR: magenta
+}
+#pretty .codered {
+	COLOR: red
+}
+#pretty .indented {
+	MARGIN-LEFT: 80px
+}
+#pretty BLOCKQUOTE {
+	TEXT-ALIGN: justify; FONT-STYLE: italic; FONT-FAMILY: Arial, Helvetica, sans-serif; MARGIN-LEFT: 50px; FONT-SIZE: 12px; MARGIN-RIGHT: 50px
+}
+#pretty BLOCKQUOTE DIV.listing {
+	BORDER-BOTTOM: 0px; TEXT-ALIGN: left; BORDER-LEFT: 0px; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: white; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: "Courier New", Courier, monospace; MARGIN-LEFT: 20px; FONT-SIZE: 11px; BORDER-TOP: 0px; FONT-WEIGHT: normal; BORDER-RIGHT: 0px; PADDING-TOP: 10px
+}
+#pretty DD {
+	MARGIN-TOP: 10px; MARGIN-LEFT: 170px
+}
+#pretty DIV.code {
+	BORDER-BOTTOM: silver 1px solid; TEXT-ALIGN: left; BORDER-LEFT: silver 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f5f5f5; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT-FAMILY: "Courier New", Courier, monospace; MARGIN-LEFT: 0px; FONT-SIZE: 12px; BORDER-TOP: silver 1px solid; BORDER-RIGHT: silver 1px solid; PADDING-TOP: 10px
+}
+#pretty DIV.illustration {
+	MARGIN-BOTTOM: 20px
+}
+#pretty DIV.indent {
+	MARGIN-LEFT: 20px
+}
+#pretty .listing {
+	BORDER-BOTTOM: #cacaca 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #cacaca 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f9f9f9; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: "Courier New", Courier, monospace; MARGIN-LEFT: 20px; FONT-SIZE: 11px; BORDER-TOP: #cacaca 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #cacaca 1px solid; PADDING-TOP: 10px
+}
+#pretty DIV.listing P {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; MARGIN-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Courier New", Courier, monospace; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 0px; FONT-SIZE: 11px; PADDING-TOP: 0px
+}
+#pretty DIV.note {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: gray 2.25pt solid; PADDING-BOTTOM: 0in; PADDING-LEFT: 6pt; PADDING-RIGHT: 0in; MARGIN-LEFT: 28.35pt; BORDER-TOP: medium none; MARGIN-RIGHT: 0in; BORDER-RIGHT: medium none; PADDING-TOP: 0in; MSO-ELEMENT: para-border-div
+}
+#pretty DIV.note P.note {
+	MARGIN-LEFT: 0in
+}
+#pretty DL {
+	TEXT-ALIGN: justify; FONT-FAMILY: Arial, Helvetica, sans-serif; MARGIN-LEFT: 20px; FONT-SIZE: 12px
+}
+#pretty DT {
+	MARGIN-TOP: 10px; WIDTH: 150px; FLOAT: left; CLEAR: both; FONT-WEIGHT: bold
+}
+#pretty FIELDSET {
+	BORDER-BOTTOM: #cacaca 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #cacaca 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f2f2f2; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT-FAMILY: "Courier New", Courier, monospace; MARGIN-LEFT: 20px; FONT-SIZE: 12px; BORDER-TOP: #cacaca 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #cacaca 1px solid; PADDING-TOP: 10px
+}
+#pretty H1 {
+	FONT-FAMILY: "Times New Roman", Times, serif; MARGIN-LEFT: 0px; FONT-SIZE: 145%
+}
+#pretty H2 {
+	FONT-FAMILY: "Times New Roman", Times, serif; MARGIN-LEFT: 20px; FONT-SIZE: 130%
+}
+#pretty H3 {
+	FONT-FAMILY: "Times New Roman", Times, serif; MARGIN-LEFT: 40px; FONT-SIZE: 115%
+}
+#pretty H4 {
+	FONT-FAMILY: "Times New Roman", Times, serif; MARGIN-LEFT: 20px
+}
+#pretty HR {
+	BORDER-BOTTOM: thin; BORDER-TOP: #d2d2d2 1px dotted
+}
+#pretty LEGEND {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT-FAMILY: "Times New Roman", Times, serif; MARGIN-LEFT: 20px; FONT-SIZE: 14px; PADDING-TOP: 10px
+}
+#pretty LI {
+	TEXT-ALIGN: justify; MARGIN-TOP: 0px; FONT-FAMILY: Arial, Helvetica, sans-serif; MARGIN-BOTTOM: 3px; MARGIN-LEFT: 20px; FONT-SIZE: 12px
+}
+#pretty P {
+	TEXT-ALIGN: justify; FONT-FAMILY: Arial, Helvetica, sans-serif; MARGIN-LEFT: 20px; FONT-SIZE: 12px
+}
+#pretty P.caption {
+	TEXT-ALIGN: left; MARGIN-TOP: 0px; MARGIN-LEFT: 20px; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+#pretty P.illustration {
+	TEXT-ALIGN: center; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 0px
+}
+#pretty P.note {
+	BORDER-BOTTOM: silver 1px solid; TEXT-ALIGN: left; BORDER-LEFT: silver 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; MARGIN-LEFT: 80px; BORDER-TOP: silver 1px solid; BORDER-RIGHT: silver 1px solid; PADDING-TOP: 10px
+}
+#pretty .pullout {
+	BORDER-BOTTOM: blue 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #766b7b 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #fbfbfd; PADDING-LEFT: 10px; WIDTH: 350px; PADDING-RIGHT: 10px; FLOAT: right; MARGIN-LEFT: 10px; BORDER-TOP: #786d7d 1px solid; MARGIN-RIGHT: 0px; BORDER-RIGHT: #706573 1px solid; PADDING-TOP: 10px
+}
+#pretty .pullout P {
+	MARGIN-LEFT: 0px
+}
+#pretty P.quote {
+	BORDER-BOTTOM: silver 1px solid; TEXT-ALIGN: left; PADDING-BOTTOM: 15px; LINE-HEIGHT: 15px; PADDING-RIGHT: 0px; FLOAT: right; MARGIN-LEFT: 10px; FONT-SIZE: 17px; BORDER-TOP: silver 2px solid; FONT-WEIGHT: bold; MARGIN-RIGHT: 10px; BORDER-RIGHT: medium none; PADDING-TOP: 10px
+}
+#pretty P.start:first-letter {
+	LINE-HEIGHT: 100%; FLOAT: left; FONT-SIZE: 280%
+}
+#pretty PRE {
+	BORDER-BOTTOM: silver 1px solid; TEXT-ALIGN: left; BORDER-LEFT: silver 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f5f5f5; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; MARGIN-LEFT: 0px; BORDER-TOP: silver 1px solid; BORDER-RIGHT: silver 1px solid; PADDING-TOP: 10px
+}
+#pretty PRE.inline {
+	MARGIN-LEFT: 20px
+}
+#pretty SPAN.codeblack {
+	COLOR: black
+}
+#pretty SPAN.mono {
+	FONT-FAMILY: "Courier New", Courier, monospace; FONT-WEIGHT: bold
+}
+#pretty .monospaced {
+	
+}
+#pretty TABLE {
+	BORDER-BOTTOM: #cacaca 1px solid; BORDER-LEFT: #cacaca 1px solid; MARGIN-LEFT: 20px; BORDER-TOP: #cacaca 1px solid; BORDER-RIGHT: #cacaca 1px solid
+}
+#pretty TABLE LI {
+	TEXT-ALIGN: left; MARGIN-LEFT: 5px; FONT-SIZE: 11px
+}
+#pretty TABLE OL {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MARGIN-LEFT: 15px; PADDING-TOP: 0px
+}
+#pretty TABLE P {
+	MARGIN: 0px 5px; FONT-SIZE: 11px
+}
+#pretty TABLE TD {
+	FONT-SIZE: 11px
+}
+#pretty TABLE UL {
+	MARGIN-LEFT: 10px
+}
+#pretty UL {
+	MARGIN-TOP: 0px
+}
+.style1 {
+	COLOR: #cc0000
+}
+.CodeInText {
+	FONT-FAMILY: courier new, courier, monospaced; FONT-WEIGHT: bold
+}
+.ImportantWords {
+	FONT-WEIGHT: bold
+}
+.ScreenText {
+	FONT-FAMILY: Century Gothic, Tahoma, Lucida Sans, sans-serif
+}
+PRE {
+	BACKGROUND-COLOR: #d6d6d6
+}
+.CodeInText {
+	FONT-FAMILY: courier new, courier, monospaced; FONT-WEIGHT: bold
+}
+.ImportantWords {
+	FONT-WEIGHT: bold
+}
+.ScreenText {
+	FONT-FAMILY: Century Gothic, Tahoma, Lucida Sans, sans-serif
+}
+PRE {
+	BACKGROUND-COLOR: #d6d6d6
+}
+.CodeInText {
+	FONT-FAMILY: courier new, courier, monospaced; FONT-WEIGHT: bold
+}
+.ImportantWords {
+	FONT-WEIGHT: bold
+}
+.ScreenText {
+	FONT-FAMILY: Century Gothic, Tahoma, Lucida Sans, sans-serif
+}
+PRE {
+	BACKGROUND-COLOR: #d6d6d6
+}
+.CodeInText {
+	FONT-FAMILY: courier new, courier, monospaced; FONT-WEIGHT: bold
+}
+.ImportantWords {
+	FONT-WEIGHT: bold
+}
+.ScreenText {
+	FONT-FAMILY: Century Gothic, Tahoma, Lucida Sans, sans-serif
+}
+PRE {
+	BACKGROUND-COLOR: #d6d6d6
+}
+</style>
+
+<div id="pretty">
+<p class="note">Fabiano continues his introduction to SQL Server's implementation of the window functions by giving a history of what got implemented and when, and explaining the concept of the 'Frame'&nbsp; in a window function, with plenty of examples.</p>
+<p class="start">As part of our continuing series about window functions on SQL Server, we’ll review, in this article, which improvements there are in the next version of SQL Server 2012, and&nbsp;explore how a running aggregation can perform much better by combining the ORDER BY clause with the OVER clause.</p>
+<p>Let’s start with a diagram that shows which of the functions of the SQL ANSI/ISO Standard have been introduced with each of the SQL Server versions:</p>
+<p class="illustration"><img alt="Analytic Functions and clause Over on SQL Server" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image001.png"></p>
+<p>Along with SQL Server’s growing adoption of the standard, the standard itself has been developing. Here we illustrate the major releases of the Standard of the language SQL adopted by ISO and ANSI.</p>
+<p class="illustration"><img alt="ISO/ANSI SQL Standard" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image003.png"></p>
+<p>As we know, SQL Server has taken some time to adopt and support all of the windowing functions. The functions we will see in this article were introduced in the ISO/ANSI standard SQL:2008. It has taken four years to implement it in SQL Server, but we are finally <em>getting close</em> to a full support on SQL Server 2012.</p>
+<p>Even though we have a very good support for these window functions, I would like to see <strong><em>full</em></strong> support. For instance, as we can see in the pictures, the clause OVER has been supported since SQL Server 2005 but with some limitations; and it was improved on SQL Server 2012, but it still doesn’t yet have full support as you can see in the list of limitations below.</p>
+<p>I‘ve used the words “getting close” in the sequence above because we still have some unsupported standard functionality. Here is a list of aspects of the standard that are still missing in SQL Server 2012:</p>
+<ul>
+<li>Function <strong>FIRST</strong>, returns the first value of an ordered group 
+</li><li><em>MAX(</em><em>City) KEEP (DENSE_RANK FIRST ORDER BY SUM(Value))</em><em>*</em> 
+</li><li>Function <strong>LAST</strong>, returns the last value of an ordered group <em>MIN(City) KEEP (DENSE_RANK LAST ORDER BY SUM(Value))</em><em>*</em> 
+</li><li>Clause <strong>NULLs FIRST</strong> and <strong>NULLs LAST</strong> 
+</li><li><em>OVER(</em><em>ORDER BY Coluna1 NULLs FIRST)</em> 
+</li><li>Support on <strong><em>interval</em></strong> frame (Year, Month, Day, Hour, Minute, Second) 
+</li><li>Window Clause 
+</li><li><em>SELECT </em><em>LAG(</em><em>Col1) OVER </em><strong><em>MyAliasWin</em></strong><em> AS Col1 FROM </em><em>Tab1</em> 
+</li><li><strong><em>WINDOW </em></strong><strong><em>MyAliasWin</em></strong><em> AS (ORDER BY </em><em>Col1</em><em> ROWS 2 PRECEDING)</em> </li></ul>
+<p style="MARGIN-LEFT: 100px">* Not standard (ISO/ANSI) clauses</p>
+<h2>New functions on SQL Server 2012</h2>
+<p>I’ll now briefly introduce some important window functions supported on SQL Server 2012. After that I’ll explain how the window frame works so that you can understand better why and when to use it in the clause OVER.</p>
+<p>I’ll not cover all the possible syntax options of these functions because these are well covered on Books Online <a href="http://msdn.microsoft.com/en-us/library/hh213234(v=SQL.110).aspx">here</a> and <a href="file:///C:/Users/andrew.Clarke/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/Content.Outlook/OTBVFP99/msdn.microsoft.com/en-us/library/ms189461(v=SQL.110).aspx">here</a>.</p>
+<p>If you want to test these functions, you will need the copy of SQL Server 2012 RC0, which you can download <a href="http://www.microsoft.com/download/en/details.aspx?id=28145">here</a>.</p>
+<p>Here you can see the script to create a table to test the functions:</p>
+<div class="listing"><span style="COLOR: blue">USE </span><span style="COLOR: black">TempDB <br>GO<br></span><span style="COLOR: blue">IF </span><span style="COLOR: magenta">OBJECT_ID</span><span style="COLOR: gray">(</span><span style="COLOR: red">'Tab1'</span><span style="COLOR: gray">) </span><span style="COLOR: blue">IS </span><span style="COLOR: gray">NOT NULL </span><span style="COLOR: blue">DROP TABLE </span><span style="COLOR: black">Tab1 <br>GO<br></span><span style="COLOR: blue">CREATE TABLE </span><span style="COLOR: black">Tab1 </span><span style="COLOR: gray">(</span><span style="COLOR: black">Col1 </span><span style="COLOR: blue">INT</span><span style="COLOR: gray">) <br></span><span style="COLOR: black">GO<br></span><span style="COLOR: blue">INSERT INTO </span><span style="COLOR: black">Tab1 </span><span style="COLOR: blue">VALUES</span><span style="COLOR: gray">(</span><span style="COLOR: black">5</span><span style="COLOR: gray">), (</span><span style="COLOR: black">5</span><span style="COLOR: gray">), (</span><span style="COLOR: black">3</span><span style="COLOR: gray">) , (</span><span style="COLOR: black">1</span><span style="COLOR: gray">) <br></span><span style="COLOR: black">GO</span> </div>
+<h3>LEAD()</h3>
+<p>The LEAD function is used to read a value from the next row, or the row below the actual row. If the next row doesn’t exist, then NULL is returned.</p>
+<div class="listing"><span style="COLOR: green">-- LEAD<br></span><span style="COLOR: blue">SELECT </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: black">LEAD</span><span style="COLOR: gray">(</span><span style="COLOR: black">Col1</span><span style="COLOR: gray">) </span><span style="COLOR: blue">OVER</span><span style="COLOR: gray">(</span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">) </span><span style="COLOR: blue">AS </span><span style="COLOR: black">"LEAD()" &nbsp;&nbsp;</span><span style="COLOR: blue">FROM </span><span style="COLOR: black">Tab1</span> </div>
+<p class="illustration"><img alt="NULL is returned in the next row" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image004.png"></p>
+<p>As we can see, the LEAD column has the next row value, but NULL is returned in the last row.</p>
+<p>By default, the next row is returned; but you can change this behavior by specifying a parameter to read N following rows, for instance:</p>
+<div class="listing"><span style="COLOR: green">-- LEAD<br></span><span style="COLOR: blue">SELECT </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: black">LEAD</span><span style="COLOR: gray">(</span><span style="COLOR: black">Col1</span><span style="COLOR: gray">, </span><span style="COLOR: black">2</span><span style="COLOR: gray">) </span><span style="COLOR: blue">OVER</span><span style="COLOR: gray">(</span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">) </span><span style="COLOR: blue">AS </span><span style="COLOR: black">"LEAD()" &nbsp;&nbsp;</span><span style="COLOR: blue">FROM </span><span style="COLOR: black">Tab1</span></div>
+<p class="illustration"><img alt="Changing the order rows are read in" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image005.png"></p>
+<p>In this last query, I used the parameter “2” in the function in order to specify that I want to read the second row after the current row.</p>
+<h3>LAG()</h3>
+<p>The LAG() function is similar to the LEAD() function, but it returns the row before the actual row rather than return the next row. For instance:</p>
+<div class="listing"><span style="COLOR: green">-- LEAD<br></span><span style="COLOR: blue">SELECT </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: black">LEAD</span><span style="COLOR: gray">(</span><span style="COLOR: black">Col1</span><span style="COLOR: gray">, </span><span style="COLOR: black">2</span><span style="COLOR: gray">) </span><span style="COLOR: blue">OVER</span><span style="COLOR: gray">(</span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">) </span><span style="COLOR: blue">AS </span><span style="COLOR: black">"LEAD()" &nbsp;&nbsp;</span><span style="COLOR: blue">FROM </span><span style="COLOR: black">Tab1</span></div>
+<p class="illustration"><img alt="Returning the result of the previous row" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image006.png"></p>
+<p>As we can see, the function returns the value of the row before the actual row; but when the row before doesn’t exist, then NULL is returned.</p>
+<p>You may be wondering whether I could do the same thing by using the function LEAD() with a negative parameter (OffSet): In other words, instead of read 1 following value I could read -1 following value.</p>
+<p>Let’s see a sample:</p>
+<div class="listing"><span style="COLOR: blue">SELECT </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: black">LEAD</span><span style="COLOR: gray">(</span><span style="COLOR: black">Col1</span><span style="COLOR: gray">, -</span><span style="COLOR: black">1</span><span style="COLOR: gray">) </span><span style="COLOR: blue">OVER</span><span style="COLOR: gray">(</span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">) </span><span style="COLOR: blue">AS </span><span style="COLOR: black">"LEAD() as LAG()" &nbsp;&nbsp;</span><span style="COLOR: blue">FROM </span><span style="COLOR: black">Tab1</span></div>
+<p style="MARGIN-LEFT: 60px"><span style="COLOR: red">Msg 8730, Level 16, State 1, Line 1<br>Offset parameter for Lag and Lead functions cannot be a negative value.</span></p>
+<p>As we can see, we cannot use negative values in this parameter to the function.</p>
+<h3>FIRST_VALUE()</h3>
+<p>As the name says, FIRST_VALUE() returns the first value in a partition window. For instance:</p>
+<div class="listing"><span style="COLOR: green">-- FIRST_VALUE<br></span><span style="COLOR: blue">SELECT </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: black">FIRST_VALUE</span><span style="COLOR: gray">(</span><span style="COLOR: black">Col1</span><span style="COLOR: gray">) </span><span style="COLOR: blue">OVER</span><span style="COLOR: gray">(</span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">) </span><span style="COLOR: blue">AS </span><span style="COLOR: black">"FIRST_VALUE()" &nbsp;&nbsp;</span><span style="COLOR: blue">FROM </span><span style="COLOR: black">Tab1</span> </div>
+<p class="illustration"><img alt="Pointing to a specified frame" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image007.png"></p>
+<h3>LAST_VALUE()</h3>
+<p>Also, as the name suggests, it returns the last value in a partition window: For instance:</p>
+<div class="listing"><span style="COLOR: green">-- LAST_VALUE<br></span><span style="COLOR: blue">SELECT </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: black">LAST_VALUE</span><span style="COLOR: gray">(</span><span style="COLOR: black">Col1</span><span style="COLOR: gray">) </span><span style="COLOR: blue">OVER</span><span style="COLOR: gray">(</span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: black">Col1 ROWS </span><span style="COLOR: gray">BETWEEN </span><span style="COLOR: black">UNBOUNDED PRECEDING </span><span style="COLOR: gray">AND </span><span style="COLOR: black">UNBOUNDED FOLLOWING</span><span style="COLOR: gray">) </span><span style="COLOR: blue">AS </span><span style="COLOR: black">"LAST_VALUE()" &nbsp;&nbsp;</span><span style="COLOR: blue">FROM </span><span style="COLOR: black">Tab1</span></div>
+<p class="illustration"><img alt="Pointing to the last frame" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image008.png"></p>
+<p>To get the last value in the partition window I’ve specified a different frame. This is what the words “ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING” mean. I’ll explain how a window frame works later on this article.</p>
+<h3>PERCENT_RANK()</h3>
+<p>In my first article about window functions, I’ve demonstrated the behavior of the RANK() function. The PERCENT_RANK() function is very similar to the RANK() function, but the values that are returned range between 0 and 1.</p>
+<div class="listing"><span style="COLOR: blue">SELECT </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: black">PERCENT_RANK</span><span style="COLOR: gray">() </span><span style="COLOR: blue">OVER</span><span style="COLOR: gray">(</span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">) </span><span style="COLOR: blue">AS </span><span style="COLOR: black">"PERCENT_RANK()"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RANK</span><span style="COLOR: gray">() </span><span style="COLOR: blue">OVER</span><span style="COLOR: gray">(</span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">) </span><span style="COLOR: blue">AS </span><span style="COLOR: black">"RANK()"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: gray">(</span><span style="COLOR: blue">SELECT </span><span style="COLOR: magenta">COUNT</span><span style="COLOR: gray">(*) </span><span style="COLOR: blue">FROM </span><span style="COLOR: black">Tab1</span><span style="COLOR: gray">) </span><span style="COLOR: black">"COUNT" &nbsp;&nbsp;</span><span style="COLOR: blue">FROM </span><span style="COLOR: black">Tab1</span> </div>
+<p class="illustration"><img alt="Returning precent values" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image009.png"></p>
+<p>You can do the same thing by calculating the percent rank using the following formula:</p>
+<ul>
+<li>(RANK() – 1) / (NumberOfRows - 1) </li></ul>
+<h3>CUME_DIST()</h3>
+<p>The function CUME_DIST() is also used to calculate a rank from 0 to 1 based on the position of the row in the rank, for instance:</p>
+<div class="listing"><span style="COLOR: green">-- CUME_DIST()<br></span><span style="COLOR: blue">SELECT </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: black">CUME_DIST</span><span style="COLOR: gray">() </span><span style="COLOR: blue">OVER</span><span style="COLOR: gray">(</span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">) </span><span style="COLOR: blue">AS </span><span style="COLOR: black">"CUME_DIST()" &nbsp;&nbsp;</span><span style="COLOR: blue">FROM </span><span style="COLOR: black">Tab1</span></div>
+<p class="illustration"><img alt="Showing the ranked results" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image011.png"></p>
+<p>The same behavior could be achieved by using the following formula:</p>
+<ul style="FONT-FAMILY: &#39;Courier New&#39;, Courier, monospace">
+<li><span style="FONT-FAMILY: &#39;Courier New&#39;, Courier, monospace"><span style="COLOR: magenta">COUNT</span><span style="COLOR: gray">(*) </span><span style="COLOR: blue">OVER </span><span style="COLOR: gray">(</span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: black">Col1</span><span style="COLOR: gray">) / </span><span style="COLOR: magenta">COUNT</span><span style="COLOR: gray">(*) </span><span style="COLOR: blue">OVER </span><span style="COLOR: gray">()</span></span> </li></ul>
+<h2>Window Frame</h2>
+<p>To start investigating, and to understand the concept of a window frame, let’s examine the syntax of a window function and the window frame:</p>
+<div align="center">
+<table width="500" cols="2">
+<tbody>
+<tr>
+<td style="WIDTH: 50%">
+<p><span style="COLOR: blue">OVER </span><span style="COLOR: gray">( <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: black">[ &lt;PARTITION BY clause&gt; ]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ &lt;ORDER BY clause&gt; ] <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ &lt;ROW or RANGE clause&gt; ]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: gray">)</span></p></td>
+<td><img src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image013.jpg"></td></tr></tbody></table></div>
+<p>The window frame is a very important concept when used in windowing and aggregation functions, and it can also be very confusing. One reason for the confusion is that it is also known by the synonymous terms <em>window frame, window size </em>or <em>sliding window</em>. I’m calling this a window frame because this is the term that Microsoft chose to call it in books online.</p>
+<p>In the window frame, you can specify the subset of rows in which the windowing function will work. You can specify the top and bottom boundary condition of the sliding window using the window specification clause. The syntax for the window specification clause is:</p>
+<p><em>[ROWS | RANGE] BETWEEN &lt;Start </em><em>expr</em><em>&gt; AND &lt;End </em><em>expr</em><em>&gt;</em></p>
+<p>Where:</p>
+<p>&lt;Start expr&gt; is one of:</p>
+<ul>
+<li><em>UNBOUNDED P</em><em>R</em><em>ECEDING</em>: The window starts in the first row of the partition 
+</li><li><em>CURRENT ROW</em>: The window starts in the current row 
+</li><li><em>&lt;unsigned integer literal&gt; PRECEDING </em>or <em>FOLLOWING</em> </li></ul>
+<p>&lt;End expr&gt; is one of:</p>
+<ul>
+<li><em>UNBOUNDED FOLLOWING</em>: The window ends in the last row of the partition 
+</li><li><em>CURRENT ROW</em>: The window ends in the current row 
+</li><li><em>&lt;unsigned integer literal&gt; PRECEDING</em> or <em>FOLLOWING</em> </li></ul>
+<p>Where it is not explicitly specified, the default window frame is “<em>range between unbounded preceding and current row</em>”, in other words, the top row in the window is the first row in the current partition, and the bottom row in the window is the current row.</p>
+<p>To see all this theory in practice, let’s consider the following query on the table Orders from the Northwind database:</p>
+<div class="listing"><span style="COLOR: blue">USE </span><span style="COLOR: teal">NorthWind</span><br>GO<br><span style="COLOR: blue">SELECT </span><span style="COLOR: teal">OrderID</span><span style="COLOR: gray">, </span><span style="COLOR: teal">CustomerID<br></span><span style="COLOR: blue">FROM </span><span style="COLOR: teal">Orders<br></span><span style="COLOR: blue">WHERE </span><span style="COLOR: teal">CustomerID </span><span style="COLOR: blue">IN </span><span style="COLOR: gray">(</span><span style="COLOR: black">1</span><span style="COLOR: gray">,</span><span style="COLOR: black">2</span><span style="COLOR: gray">)</span> </div>
+<p class="illustration"><img alt="Showing the two windows that will be returned" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image014.png"></p>
+<p>The result of the query returns two customers and their respective orders. In the picture we can see two windows partitioned by CustomerID, where CustomerID = 1 and CustomerID = 2.</p>
+<p>Even then, this is not a 100% correct representation of a window, but it’s easier to understand it when we look at the window as it is in the picture; where the windows correspond to each distinct CustomerID.</p>
+<p>A more correct picture of a window might be the following:</p>
+<p class="illustration"><img alt="A more correct picture of the window" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image015.png"></p>
+<p>Considering that the first window has 6 rows, we have 6 windows that coexist. Because they coexist, it’s easy to implement the frame in a window. I could tell that a window goes from <em>unbounded </em><em>preceding</em><em> to 3 following rows</em>.</p>
+<p>I can understand if this is not quite so straightforward to understand, so let’s, instead, see some examples: Let’s suppose that I want to return the first OrderID of each window above. I could write something like the following query:</p>
+<div class="listing"><span style="COLOR: blue">SELECT </span><span style="COLOR: teal">OrderID</span><span style="COLOR: gray">, </span><span style="COLOR: teal">CustomerID</span><span style="COLOR: gray">,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: teal">FIRST_VALUE</span><span style="COLOR: gray">(</span><span style="COLOR: teal">OrderID</span><span style="COLOR: gray">) </span><span style="COLOR: blue">OVER</span><span style="COLOR: gray">(</span><span style="COLOR: blue">PARTITION </span><span style="COLOR: blue">BY </span><span style="COLOR: teal">CustomerID </span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: teal">OrderID</span><span style="COLOR: gray">) </span><span style="COLOR: blue">AS </span><span style="COLOR: teal">FirstOrderID<br></span><span style="COLOR: blue">FROM </span><span style="COLOR: teal">Orders<br></span><span style="COLOR: blue">WHERE </span><span style="COLOR: teal">CustomerID </span><span style="COLOR: blue">IN </span><span style="COLOR: gray">(</span><span style="COLOR: black">1</span><span style="COLOR: gray">,</span><span style="COLOR: black">2</span><span style="COLOR: gray">)</span> </div>
+<p class="illustration"><img alt="" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image016.png"></p>
+<p>Remember, if I don’t specify the window frame clause, then the default is <em>“range between unbounded preceding and current row”</em>. In other words, the query above is equivalent to the following:</p>
+<div class="listing"><span style="COLOR: blue">SELECT </span><span style="COLOR: teal">OrderID</span><span style="COLOR: gray">, </span><span style="COLOR: teal">CustomerID</span><span style="COLOR: gray">,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: teal">FIRST_VALUE</span><span style="COLOR: gray">(</span><span style="COLOR: teal">OrderID</span><span style="COLOR: gray">) </span><span style="COLOR: blue">OVER</span><span style="COLOR: gray">(</span><span style="COLOR: blue">PARTITION </span><span style="COLOR: blue">BY </span><span style="COLOR: teal">CustomerID <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: teal">OrderID<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ROWS </span><span style="COLOR: gray">BETWEEN </span><span style="COLOR: blue">UNBOUNDED PRECEDING <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: gray">AND </span><span style="COLOR: blue">CURRENT </span><span style="COLOR: black">ROW</span><span style="COLOR: gray">) </span><span style="COLOR: blue">AS </span><span style="COLOR: teal">FirstOrderID<br></span><span style="COLOR: blue">FROM </span><span style="COLOR: teal">Orders<br></span><span style="COLOR: blue">WHERE </span><span style="COLOR: teal">CustomerID </span><span style="COLOR: blue">IN </span><span style="COLOR: gray">(</span><span style="COLOR: black">1</span><span style="COLOR: gray">,</span><span style="COLOR: black">2</span><span style="COLOR: gray">)</span> </div>
+<p>To try to make things clearer, here’s an illustration of the way that the top and bottom boundary works in the query above (using the function FIRST_VALUE). This would work something like this:</p>
+<p class="illustration"><img alt="Rows between UNBOUNDED PRECEEEDING and CURRENT ROW" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image017.png"></p>
+<p>In the picture, we can see that the fist value of the first window is 10643 and the first value of the next window is also 10643, the top row specified in the frame (no preceding) says that it is unbounded preceding.</p>
+<p>A good example of how the window frame works is the function LAST_VALUE, because we need to change the default frame in order to really return the last value of a partition.</p>
+<p>This function can be a little confusing at first, but as soon we understood the window frame we can see that the action that the function performs by default is correct. It’s very common to test the last_value function and think that this is not working properly, and some people even <a href="https://connect.microsoft.com/SQLServer/feedback/details/679668/last-value-does-not-return-expected-values">demand a “fix”</a> for the function because they reckon that it is not working correctly.</p>
+<p>Let’s see what the function returns for the same sample in the Orders table:</p>
+<div class="listing"><span style="COLOR: blue">SELECT </span><span style="COLOR: teal">OrderID</span><span style="COLOR: gray">, </span><span style="COLOR: teal">CustomerID</span><span style="COLOR: gray">,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: teal">LAST_VALUE</span><span style="COLOR: gray">(</span><span style="COLOR: teal">OrderID</span><span style="COLOR: gray">) </span><span style="COLOR: blue">OVER</span><span style="COLOR: gray">(</span><span style="COLOR: blue">PARTITION </span><span style="COLOR: blue">BY </span><span style="COLOR: teal">CustomerID <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: teal">OrderID</span><span style="COLOR: gray">) </span><span style="COLOR: blue">AS </span><span style="COLOR: teal">FirstOrderID<br></span><span style="COLOR: blue">FROM </span><span style="COLOR: teal">Orders<br></span><span style="COLOR: blue">WHERE </span><span style="COLOR: teal">CustomerID </span><span style="COLOR: blue">IN </span><span style="COLOR: gray">(</span><span style="COLOR: black">1</span><span style="COLOR: gray">,</span><span style="COLOR: black">2</span><span style="COLOR: gray">)</span> </div>
+<p class="illustration"><img alt="What&#39;s returned for the Orders Table" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image019.png"></p>
+<p>As we can see, the result was not what one might expect. I wanted to return the last OrderID of each customer, and SQL Server is returning the actual (current row ?) OrderID for each row.</p>
+<p>Let’s see the same illustration we saw earlier with the first_value function but now using the LAST_VALUE concept:</p>
+<p class="illustration"><img alt="Using LAST VALUE" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image020.png"></p>
+<p>Again, remember that because I didn’t specify the window frame clause in the query, it is using the default frame. If I don’t specify the frame I want, it will use the bottom row as the current row, and it will return the value of the actual row as the last value. If you take a look at the blue brackets, you’ll see that the size of the sliding window is limited to the current row.</p>
+<p>Now let’s see the difference when if I specify the frame as unbounded, in the following code:</p>
+<div class="listing"><span style="COLOR: blue">SELECT </span><span style="COLOR: teal">OrderID</span><span style="COLOR: gray">, </span><span style="COLOR: teal">CustomerID</span><span style="COLOR: gray">,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: teal">LAST_VALUE</span><span style="COLOR: gray">(</span><span style="COLOR: teal">OrderID</span><span style="COLOR: gray">) </span><span style="COLOR: blue">OVER</span><span style="COLOR: gray">(</span><span style="COLOR: blue">PARTITION </span><span style="COLOR: blue">BY </span><span style="COLOR: teal">CustomerID <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: teal">OrderID<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ROWS </span><span style="COLOR: gray">BETWEEN </span><span style="COLOR: blue">UNBOUNDED PRECEDING <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: gray">AND </span><span style="COLOR: blue">UNBOUNDED FOLLOWING</span><span style="COLOR: gray">) </span><span style="COLOR: blue">AS </span><span style="COLOR: teal">FirstOrderID<br></span><span style="COLOR: blue">FROM </span><span style="COLOR: teal">Orders<br></span><span style="COLOR: blue">WHERE </span><span style="COLOR: teal">CustomerID </span><span style="COLOR: blue">IN </span><span style="COLOR: gray">(</span><span style="COLOR: black">1</span><span style="COLOR: gray">,</span><span style="COLOR: black">2</span><span style="COLOR: gray">)</span> </div>
+<p class="illustration"><img alt="Results when the frame is unbounded" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image022.png"></p>
+<p>Now we’ve got the expected result. Let’s see how the illustration would be for this scenario:</p>
+<p class="illustration"><img alt="Moving from bounded to unbounded following" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image023.jpg"></p>
+<p>The window frame goes from <em>unbounded preceding</em> to <em>unbounded</em><em> following</em>. In other words, when SQL Server reads the last value of a window, it goes on until the <em>unbounded following</em> that is the last row in the partition.</p>
+<h3>RANGE versus ROW</h3>
+<p>Another confusing thing about the window frame is the RANGE versus ROW. The question is, what is the difference between them?</p>
+<p>The ROWS clause limits the rows within a partition by specifying a fixed number of rows preceding or following the current row. Alternatively, the RANGE clause logically limits the rows within a partition by specifying a range of values with respect to the value in the current row. Preceding and following rows are defined based on the ordering specified by the ORDER BY clause. The window frame “RANGE … CURRENT ROW …” includes all rows that have the same values in the ORDER BY expression as the current row.</p>
+<p>Again, let’s see this in practice, so as to try to understand it better.</p>
+<p>Let’s suppose we have the following query:</p>
+<div class="listing"><span style="COLOR: blue">USE </span><span style="COLOR: black">tempdb<br>GO<br></span><span style="COLOR: blue">IF </span><span style="COLOR: magenta">OBJECT_ID</span><span style="COLOR: gray">(</span><span style="COLOR: red">'tempdb.dbo.#TMP'</span><span style="COLOR: gray">)&nbsp;&nbsp;</span><span style="COLOR: blue">IS </span><span style="COLOR: gray">NOT NULL<br>&nbsp;&nbsp;</span><span style="COLOR: blue">DROP TABLE </span><span style="COLOR: #434343">#TMP<br></span><span style="COLOR: black">GO<br></span><span style="COLOR: blue">CREATE TABLE </span><span style="COLOR: #434343">#TMP </span><span style="COLOR: gray">(</span><span style="COLOR: black">ID </span><span style="COLOR: blue">INT</span><span style="COLOR: gray">, </span><span style="COLOR: black">Col1 </span><span style="COLOR: blue">CHAR</span><span style="COLOR: gray">(</span><span style="COLOR: black">1</span><span style="COLOR: gray">), </span><span style="COLOR: black">Col2 </span><span style="COLOR: blue">INT</span><span style="COLOR: gray">)<br></span><span style="COLOR: black">GO<br><br></span><span style="COLOR: blue">INSERT INTO </span><span style="COLOR: #434343">#TMP </span><span style="COLOR: blue">VALUES</span><span style="COLOR: gray">(</span><span style="COLOR: black">1</span><span style="COLOR: gray">,</span><span style="COLOR: red">'A'</span><span style="COLOR: gray">, </span><span style="COLOR: black">5</span><span style="COLOR: gray">), (</span><span style="COLOR: black">2</span><span style="COLOR: gray">, </span><span style="COLOR: red">'A'</span><span style="COLOR: gray">, </span><span style="COLOR: black">5</span><span style="COLOR: gray">), (</span><span style="COLOR: black">3</span><span style="COLOR: gray">, </span><span style="COLOR: red">'B'</span><span style="COLOR: gray">, </span><span style="COLOR: black">5</span><span style="COLOR: gray">), (</span><span style="COLOR: black">4</span><span style="COLOR: gray">, </span><span style="COLOR: red">'C'</span><span style="COLOR: gray">, </span><span style="COLOR: black">5</span><span style="COLOR: gray">), (</span><span style="COLOR: black">5</span><span style="COLOR: gray">, </span><span style="COLOR: red">'D'</span><span style="COLOR: gray">, </span><span style="COLOR: black">5</span><span style="COLOR: gray">)<br></span><span style="COLOR: black">GO<br></span><span style="COLOR: green">--SELECT * FROM #TMP<br><br></span><span style="COLOR: blue">SELECT </span><span style="COLOR: gray">*,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: magenta">SUM</span><span style="COLOR: gray">(</span><span style="COLOR: black">Col2</span><span style="COLOR: gray">) </span><span style="COLOR: blue">OVER</span><span style="COLOR: gray">(</span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: black">Col1 RANGE UNBOUNDED PRECEDING</span><span style="COLOR: gray">) </span><span style="COLOR: black">"Range"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="COLOR: magenta">SUM</span><span style="COLOR: gray">(</span><span style="COLOR: black">Col2</span><span style="COLOR: gray">) </span><span style="COLOR: blue">OVER</span><span style="COLOR: gray">(</span><span style="COLOR: blue">ORDER BY </span><span style="COLOR: black">Col1 ROWS UNBOUNDED PRECEDING</span><span style="COLOR: gray">) </span><span style="COLOR: black">"Rows" &nbsp;&nbsp;</span><span style="COLOR: blue">FROM </span><span style="COLOR: #434343">#TMP</span> </div>
+<p class="illustration"><img alt="Results of the two calculations" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image025.png"></p>
+<p>We have two running calculations in this query. One of these is using the RANGE frame and the other is using the ROWS frame. You can see that the result for the value “A” is different for each frame. Let’s try to illustrate these windows:</p>
+<p class="illustration"><img alt="Aggregation works differently depending on the frame" src="https://www.simple-talk.com/iwritefor/articlefiles/1396-image026.png"></p>
+<p>We can see in the picture that the aggregation works differently depending on the frame.</p>
+<p>There is another <strong><em>very important</em></strong> difference between the ROW and RANGE clause: the&nbsp;RANGE clause <strong><em>always</em></strong> uses an on-disk window to process the window spool operator. But this is a subject for the next and final article.</p>
+<h2>Conclusion</h2>
+<p>Window functions are very powerful, and can help us to think in set based terms, and get more elegant solutions for many problems we have on building efficient T-SQL code for which we’ve formerly required cursors or non-standard SQL.</p>
+<p>In the next and final article about window functions I’ll answer the question you may are doing to yourself. What about performance and scalability?</p>
+<p>I’ll be describing the <em>window_spool_ondisk_warning</em> eXtended Event, to tell the difference between a on disk window spool versus a on memory window spool. Also we’ll see some performance tests between the actual solutions versus windowing functions. The question is this: Is it really worth changing all my queries to start using windowing functions?</p>
+<p>See you soon.</p>
+<p>That’s all folks.</p></div>
+    
+    </div>
+
+    
+
+    <div class="content-meta">
+      <div class="share-tools"><div class="addthis_toolbox addthis_default_style"><p>Thank this author by sharing:</p><a class="addthis_button_google_plusone" g:plusone:annotation="none"></a><a class="addthis_button_linkedin"></a><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_counter addthis_bubble_style"></a></div></div>
+      This article has been viewed 22546 times.
+    </div>
+  </div>
+
+  
+<div class="authorpanel">
+    <a id="ctl00_MainContent_Author1_lnkImage" title="Fabiano Amorim" href="https://www.simple-talk.com/author/fabiano-amorim/"><img id="ctl00_MainContent_Author1_imgAuthor" class="authorpicture" itemprop="image" src="https://www.simple-talk.com/iwritefor/publishers/176.gif" alt="Fabiano Amorim" align="left" style="border-width:0px;"></a>
+    <p><strong>Author profile:</strong> <a id="ctl00_MainContent_Author1_lnkName" href="https://www.simple-talk.com/author/fabiano-amorim/"><span itemprop="author">Fabiano Amorim</span></a></p>
+    <p>Fabiano is fascinated by the SQL Server Query Processor and the way it works to optimize queries, procedures and functions.  He graduated as a Technical Processor from Colégio Bezerra de Menezes, SP- Brazil, and has worked for several years with SQL Server, focusing in creating Data Warehouses and optimizing T-SQL codes for many companies in Brazil and Argentina.
+Fabiano is a SQL Server MVP, MCP for SQL Server 2000, MCTS and MCITP Data Base Developer for SQL Server 2005 and 2008. He also is actively involved in SQL Server community though forums such as MSDN and TechNet Brazil, writes articles for Simple-Talk and SQL Server Magazine Brazil, and he also presents online Webcasts and In-Person events for Microsoft Brazil.  His blog is on <a href="http://blogfabiano.com/">http://blogfabiano.com 
+</a></p>
+    <p><a id="ctl00_MainContent_Author1_lnkSearch" href="https://www.simple-talk.com/author/fabiano-amorim/">Search for other articles by Fabiano Amorim</a></p>
+    <div class="clear"></div>
+</div>
+  
+
+  <form name="aspnetForm" method="post" action="./Window Functions in SQL Server  Part 2-The Frame_files/Window Functions in SQL Server  Part 2-The Frame.htm" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUIMjAwMDcyMjNkGAEFEWN0bDAwJE5hdmlnYXRpb24xDxQrAAJkMoIFAAEAAAD/////AQAAAAAAAAAMAgAAAEFXZWJTaXRlLCBWZXJzaW9uPTEuMy4wLjEwNDEsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAQBAAAAe1N5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkxpc3RgMVtbU2ltcGxlVGFsay5NZW51SXRlbSwgV2ViU2l0ZSwgVmVyc2lvbj0xLjMuMC4xMDQxLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGxdXQMAAAAGX2l0ZW1zBV9zaXplCF92ZXJzaW9uBAAAFVNpbXBsZVRhbGsuTWVudUl0ZW1bXQIAAAAICAkDAAAAAwAAAAMAAAAHAwAAAAABAAAABAAAAAQTU2ltcGxlVGFsay5NZW51SXRlbQIAAAAJBAAAAAkFAAAACQYAAAAKBQQAAAATU2ltcGxlVGFsay5NZW51SXRlbQQAAAAMbV9DaGlsZENvdW50Cm1fU2VsZWN0ZWQHbV9UaXRsZQVtX1VybAAAAQEIAQIAAAAAAAAAAAYHAAAACFNRTCBIb21lBggAAAAgaHR0cHM6Ly93d3cuc2ltcGxlLXRhbGsuY29tL3NxbC8BBQAAAAQAAAAAAAAAAAYJAAAAEExlYXJuIFNRTCBTZXJ2ZXIGCgAAADFodHRwczovL3d3dy5zaW1wbGUtdGFsay5jb20vc3FsL2xlYXJuLXNxbC1zZXJ2ZXIvAQYAAAAEAAAAAAAAAAAGCwAAADBXaW5kb3cgRnVuY3Rpb25zIGluIFNRTCBTZXJ2ZXI6IFBhcnQgMi1UaGUgRnJhbWUGDAAAAAALZA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Window Functions in SQL Server  Part 2-The Frame_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Window Functions in SQL Server  Part 2-The Frame_files/ScriptResource.axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="./Window Functions in SQL Server  Part 2-The Frame_files/ScriptResource(1).axd" type="text/javascript"></script>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ScriptManager1', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+//]]>
+</script>
+
+    <script language="javascript" type="text/javascript">
+      function EndRequestHandler() {
+        if (theForm._initialAction == undefined)
+          theForm._initialAction = theForm.action;
+        else
+          theForm.action = theForm._initialAction;
+      }
+      if (typeof (Sys) != "undefined") {
+        EndRequestHandler();
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+      }
+    </script>
+    
+  <div id="ctl00_MainContent_panVoting" class="rating">
+	
+    <strong>Rate this article:</strong> &nbsp;&nbsp;Avg rating: <img id="ctl00_MainContent_imgRating2" src="./Window Functions in SQL Server  Part 2-The Frame_files/icon_plain_5stars.gif" style="height:13px;width:70px;border-width:0px;"> from a total of 91 votes.<br><br>
+    
+    
+    <div id="ctl00_MainContent_panOldRating">
+		
+        You have previously rated this article.
+    
+	</div>
+  
+</div>
+  
+  <div id="ctl00_MainContent_panComments" class="comments">
+	
+    <div class="haveyoursayheader">
+      <div class="title">Have Your Say</div>
+        Do you have an opinion on this article? Then <a href="https://www.simple-talk.com/content/article.aspx?article=1396#commentform" class="commentlink"><u>add your comment below</u></a>:
+      </div>
+      <div class="forumview">
+        
+
+<script type="text/javascript" src="./Window Functions in SQL Server  Part 2-The Frame_files/jquery.watermark.js"></script>
+<div id="ctl00_MainContent_ForumView1_panPostingNotAllowed" style="width:100%;">
+	
+    You must be logged in to post to this forum<br><br><a id="ctl00_MainContent_ForumView1_lnkLogin" href="https://www.simple-talk.com/community/login.aspx?ReturnUrl=%2fcontent%2farticle.aspx%3farticle%3d1396">Click here to log in</a>.
+
+</div>
+
+
+    <br><hr>
+  
+	<table border="0" cellpadding="0" cellspacing="4" class="commenttable" width="500">
+      <tbody><tr><td class="commenttitle">Subject: </td><td><b><span id="ctl00_MainContent_ForumView1_repPosts_ctl01_lblSubject">Re: Window Functions</span></b></td></tr>
+      <tr><td class="commenttitle">Posted by: </td><td><i><span id="ctl00_MainContent_ForumView1_repPosts_ctl01_lblAuthor">Deon</span></i> (<a id="ctl00_MainContent_ForumView1_repPosts_ctl01_lnkProfile" href="https://www.simple-talk.com/community/user/Profile.aspx?UserID=15570">view profile</a>)</td></tr>
+      <tr><td class="commenttitle">Posted on: </td><td><i><span id="ctl00_MainContent_ForumView1_repPosts_ctl01_lblDate">Monday, December 12, 2011 at 2:43 AM</span></i></td></tr>
+      <tr><td class="commenttitle" valign="top">Message: </td><td><span id="ctl00_MainContent_ForumView1_repPosts_ctl01_lblMessage">I had no idea how to approach this before-now I'm leockd and loaded.</span></td></tr>
+      
+	</tbody></table>
+  
+    <hr>
+  
+	<table border="0" cellpadding="0" cellspacing="4" class="commenttable" width="500">
+      <tbody><tr><td class="commenttitle">Subject: </td><td><b><span id="ctl00_MainContent_ForumView1_repPosts_ctl03_lblSubject">I want to steal this!</span></b></td></tr>
+      <tr><td class="commenttitle">Posted by: </td><td><i><span id="ctl00_MainContent_ForumView1_repPosts_ctl03_lblAuthor">Celko</span></i> (<a id="ctl00_MainContent_ForumView1_repPosts_ctl03_lnkProfile" href="https://www.simple-talk.com/community/user/Profile.aspx?UserID=10984">view profile</a>)</td></tr>
+      <tr><td class="commenttitle">Posted on: </td><td><i><span id="ctl00_MainContent_ForumView1_repPosts_ctl03_lblDate">Friday, December 23, 2011 at 10:05 AM</span></i></td></tr>
+      <tr><td class="commenttitle" valign="top">Message: </td><td><span id="ctl00_MainContent_ForumView1_repPosts_ctl03_lblMessage">The art work and the text are so clear, I want to steal it for one of my books. Imitiation is the best form os flattery. Plagarism is even more flattery :)</span></td></tr>
+      
+	</tbody></table>
+  
+    <hr>
+  
+	<table border="0" cellpadding="0" cellspacing="4" class="commenttable" width="500">
+      <tbody><tr><td class="commenttitle">Subject: </td><td><b><span id="ctl00_MainContent_ForumView1_repPosts_ctl05_lblSubject">Answer to Celko</span></b></td></tr>
+      <tr><td class="commenttitle">Posted by: </td><td><i><span id="ctl00_MainContent_ForumView1_repPosts_ctl05_lblAuthor">mcflyamorim</span></i> (<a id="ctl00_MainContent_ForumView1_repPosts_ctl05_lnkProfile" href="https://www.simple-talk.com/community/user/Profile.aspx?UserID=19441">view profile</a>)</td></tr>
+      <tr><td class="commenttitle">Posted on: </td><td><i><span id="ctl00_MainContent_ForumView1_repPosts_ctl05_lblDate">Saturday, December 24, 2011 at 12:06 PM</span></i></td></tr>
+      <tr><td class="commenttitle" valign="top">Message: </td><td><span id="ctl00_MainContent_ForumView1_repPosts_ctl05_lblMessage">Hey go ahead on stealing it :-). It's my pleasure to share this content with you...<br><br>Cheers<br>Fabiano</span></td></tr>
+      
+	</tbody></table>
+  
+    <hr>
+  
+	<table border="0" cellpadding="0" cellspacing="4" class="commenttable" width="500">
+      <tbody><tr><td class="commenttitle">Subject: </td><td><b><span id="ctl00_MainContent_ForumView1_repPosts_ctl07_lblSubject">An interesting scenario!</span></b></td></tr>
+      <tr><td class="commenttitle">Posted by: </td><td><i><span id="ctl00_MainContent_ForumView1_repPosts_ctl07_lblAuthor">Abrar Ahmad...</span></i> (<a id="ctl00_MainContent_ForumView1_repPosts_ctl07_lnkProfile" href="https://www.simple-talk.com/community/user/Profile.aspx?UserID=211780">view profile</a>)</td></tr>
+      <tr><td class="commenttitle">Posted on: </td><td><i><span id="ctl00_MainContent_ForumView1_repPosts_ctl07_lblDate">Tuesday, April 15, 2014 at 5:05 AM</span></i></td></tr>
+      <tr><td class="commenttitle" valign="top">Message: </td><td><span id="ctl00_MainContent_ForumView1_repPosts_ctl07_lblMessage">Late but, worthy to contribute.<br><br>Let suppose if the input data set of <br>https://www.simple-talk.com/iwritefor/articlefiles/1396-image014.png<br>has been modified such that if the data for customer1 again input after the customer2 data. So we need to manage these both windows/brackets as separate for further proceedings; then how the old or new windows functions would help to create/treat "separate window for records partitioned by same customer id, but which are  in different windows/brackets"?<br><br>Hopefully interesting!</span></td></tr>
+      
+	</tbody></table>
+  
+    <hr>
+  
+
+
+<script type="text/javascript">
+    require(["jquery"], function($) {
+        $('.comment-name').watermark('Name');
+        $('.comment-subject').watermark('Subject');
+        $('.comment-message').watermark('Message');
+    });
+</script>
+        <a name="commentform">&nbsp;</a>
+      </div>
+  
+</div>
+  
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+
+      </div> 
+      <div class="rightcolumn">
+        
+  
+
+<div class="widget-new" id="categories">
+  <h2>SQL Categories</h2>
+  <div class="widget-new-body">
+    <ul>
+      
+    	    <li id="ctl00_RightColumn_Categories1_repCategories_ctl00_CategoryListItem">
+  	        <a id="ctl00_RightColumn_Categories1_repCategories_ctl00_lnkCategory" href="https://www.simple-talk.com/sql/">SQL Home</a>
+    	    </li>
+        
+    	    <li id="ctl00_RightColumn_Categories1_repCategories_ctl01_CategoryListItem">
+  	        <a id="ctl00_RightColumn_Categories1_repCategories_ctl01_lnkCategory" href="https://www.simple-talk.com/sql/learn-sql-server/">Learn SQL Server</a>
+    	    </li>
+        
+    	    <li id="ctl00_RightColumn_Categories1_repCategories_ctl02_CategoryListItem">
+  	        <a id="ctl00_RightColumn_Categories1_repCategories_ctl02_lnkCategory" href="https://www.simple-talk.com/sql/sql-training/">SQL Training</a>
+    	    </li>
+        
+    	    <li id="ctl00_RightColumn_Categories1_repCategories_ctl03_CategoryListItem">
+  	        <a id="ctl00_RightColumn_Categories1_repCategories_ctl03_lnkCategory" href="https://www.simple-talk.com/sql/database-administration/">Database Administration</a>
+    	    </li>
+        
+    	    <li id="ctl00_RightColumn_Categories1_repCategories_ctl04_CategoryListItem">
+  	        <a id="ctl00_RightColumn_Categories1_repCategories_ctl04_lnkCategory" href="https://www.simple-talk.com/sql/t-sql-programming/">T-SQL Programming</a>
+    	    </li>
+        
+    	    <li id="ctl00_RightColumn_Categories1_repCategories_ctl05_CategoryListItem">
+  	        <a id="ctl00_RightColumn_Categories1_repCategories_ctl05_lnkCategory" href="https://www.simple-talk.com/sql/performance/">Performance</a>
+    	    </li>
+        
+    	    <li id="ctl00_RightColumn_Categories1_repCategories_ctl06_CategoryListItem">
+  	        <a id="ctl00_RightColumn_Categories1_repCategories_ctl06_lnkCategory" href="https://www.simple-talk.com/sql/backup-and-recovery/">Backup and Recovery</a>
+    	    </li>
+        
+    	    <li id="ctl00_RightColumn_Categories1_repCategories_ctl07_CategoryListItem">
+  	        <a id="ctl00_RightColumn_Categories1_repCategories_ctl07_lnkCategory" href="https://www.simple-talk.com/sql/sql-tools/">SQL Tools</a>
+    	    </li>
+        
+    	    <li id="ctl00_RightColumn_Categories1_repCategories_ctl08_CategoryListItem">
+  	        <a id="ctl00_RightColumn_Categories1_repCategories_ctl08_lnkCategory" href="https://www.simple-talk.com/sql/editors-corner/">Editor's Corner</a>
+    	    </li>
+        
+    	    <li id="ctl00_RightColumn_Categories1_repCategories_ctl09_CategoryListItem">
+  	        <a id="ctl00_RightColumn_Categories1_repCategories_ctl09_lnkCategory" href="https://www.simple-talk.com/sql/ssis/">SSIS</a>
+    	    </li>
+        
+    	    <li id="ctl00_RightColumn_Categories1_repCategories_ctl10_CategoryListItem">
+  	        <a id="ctl00_RightColumn_Categories1_repCategories_ctl10_lnkCategory" href="https://www.simple-talk.com/sql/reporting-services/">Reporting Services</a>
+    	    </li>
+        
+    	    <li id="ctl00_RightColumn_Categories1_repCategories_ctl11_CategoryListItem">
+  	        <a id="ctl00_RightColumn_Categories1_repCategories_ctl11_lnkCategory" href="https://www.simple-talk.com/sql/database-delivery/">Database Delivery</a>
+    	    </li>
+        
+    </ul>
+  </div>
+</div>
+
+  
+<div class="widget-new">
+    <div style="background-color:#ddd">
+        <img style="float: right" src="./Window Functions in SQL Server  Part 2-The Frame_files/1970-delivery_pathway_icon.png" alt="Simple-Talk Database Delivery">
+        <a href="https://www.simple-talk.com/sql/database-administration/database-delivery-patterns-and-practices/?utm_source=simpletalk&utm_medium=publink&utm_campaign=delivery&utm_content=deliverylearningprogram&utm_term=mainpagewidget"><h2 style="vertical-align: center">Database Delivery<br>Learning Program</h2></a>
+    </div>
+  <div class="widget-new-body" id="deliverypathway">
+    <p>Visit our patterns and practices library to learn more about continuous delivery for databases.</p>
+    <p>Find out how to automate the process of building, testing and deploying your database changes to reduce risk and make rapid releases possible.</p>
+    <h3><a href="https://www.simple-talk.com/sql/database-administration/database-delivery-patterns-and-practices/?utm_source=simpletalk&utm_medium=publink&utm_campaign=delivery&utm_content=deliverylearningprogram&utm_term=mainpagewidget">Get started</a></h3>
+  </div>
+</div>
+
+  
+  
+  
+  
+  
+
+  
+<div class="widget-new hidden" id="RSSfeedwidget">
+  <h2>Custom RSS feeds</h2>
+  <div class="widget-new-body">
+    <div class="rss-inputs">
+      <input type="checkbox" name="rss" id="sqlFeed" value="2" checked="checked"><label for="sqlFeed">SQL</label><br>
+      <input type="checkbox" name="rss" id="netFeed" value="3" checked="checked"><label for="netFeed">.NET</label><br>
+      <input type="checkbox" name="rss" id="exchangeFeed" value="31" checked="checked"><label for="exchangeFeed">SysAdmin</label><br>
+      <input type="checkbox" name="rss" id="opinionFeed" value="4" checked="checked"><label for="opinionFeed">Opinion</label><br>
+      <input type="checkbox" name="rss" id="booksFeed" value="35" checked="checked"><label for="booksFeed">Books</label><br>
+      <input type="checkbox" name="rss" id="blogsFeed" value="B" checked="checked"><label for="blogsFeed">Blogs</label><br>                
+      <p>
+        <a id="rssGetLink" href="https://www.simple-talk.com/rss.aspx" onclick="RssGetSide(false); return(false);" class="btn">Get my feed</a>
+      </p>
+    </div>
+    <div class="rss-buttons">
+      <div class="rss-advanced">
+        If you update your feed, please remember to tell your RSS reader the new URL
+        <br><br>
+        <a id="rssAdvLink" href="https://www.simple-talk.com/rsssel.aspx" onclick="RssGetSide(true); return(false);">Click here for <b>advanced</b> RSS options</a>
+      </div>
+    </div>
+  </div>
+</div>      
+  
+<div class="widget-new">
+  <h2>Related Articles</h2>
+  <div class="widget-new-body">
+    <ul>
+      
+          <li><a id="ctl00_RightColumn_RelatedArticles1_repArticles_ctl00_lnkLink" href="https://www.simple-talk.com/sql/learn-sql-server/window-functions-in-sql-server/">Window Functions in SQL Server</a></li>
+        
+          <li><a id="ctl00_RightColumn_RelatedArticles1_repArticles_ctl01_lnkLink" href="https://www.simple-talk.com/sql/learn-sql-server/working-with-window-functions-in-sql-server/">Working with Window Functions in SQL Server</a></li>
+        
+    </ul>
+  </div>
+</div>
+  
+  
+<div class="widget-new">
+  <h2><a id="ctl00_RightColumn_SQLOpinion1_lnkHeader" href="https://www.simple-talk.com/author/phil-factor/"><span itemprop="author">Phil Factor</span></a></h2>
+  <div class="widget-new-body">
+    <a id="ctl00_RightColumn_SQLOpinion1_lnkAuthor" title="Phil Factor" href="https://www.simple-talk.com/author/phil-factor/"><img id="ctl00_RightColumn_SQLOpinion1_imgAuthor" class="avatar" itemprop="image" src="https://www.simple-talk.com/community/users/avatar.aspx?userid=2126" alt="Phil Factor" align="left" style="height:83px;width:65px;border-width:0px;"></a>
+    <div id="ctl00_RightColumn_SQLOpinion1_panArticles">
+	
+      <strong><a id="ctl00_RightColumn_SQLOpinion1_lnkArticle1" href="https://www.simple-talk.com/sql/t-sql-programming/quickly-investigating-whats-in-the-tables-of--sql-server-databases/">Quickly Investigating What's in the Tables of  SQL Server Databases</a></strong><br>
+      <p>From SQL Server Management Studio it is difficult to look through the first few rows of a whole lot of tables in a... <a id="ctl00_RightColumn_SQLOpinion1_lnkArticle2" href="https://www.simple-talk.com/sql/t-sql-programming/quickly-investigating-whats-in-the-tables-of--sql-server-databases/">Read more...</a></p>
+    
+</div>
+    <div id="ctl00_RightColumn_SQLOpinion1_panBlogs">
+	
+      RECENT BLOG POSTS:<br>
+		  <img src="./Window Functions in SQL Server  Part 2-The Frame_files/1px.gif" alt="" width="1" height="8"><br>
+      
+          <img src="./Window Functions in SQL Server  Part 2-The Frame_files/w_icon_article_9x11.jpg" alt="" width="9" height="11">&nbsp;<a id="ctl00_RightColumn_SQLOpinion1_repBlogPosts_ctl00_lnkBlogPost" href="https://www.simple-talk.com/blogs/2014/07/17/on-identifying-the-real-stakeholders/">On Identifying the Real Stakeholders</a><br>
+				  <img src="./Window Functions in SQL Server  Part 2-The Frame_files/1px.gif" alt="" width="1" height="8"><br>
+        
+          <img src="./Window Functions in SQL Server  Part 2-The Frame_files/w_icon_article_9x11.jpg" alt="" width="9" height="11">&nbsp;<a id="ctl00_RightColumn_SQLOpinion1_repBlogPosts_ctl01_lnkBlogPost" href="https://www.simple-talk.com/blogs/2014/07/03/on-managing-and-doing-stuff/">On Managing and Doing Stuff</a><br>
+				  <img src="./Window Functions in SQL Server  Part 2-The Frame_files/1px.gif" alt="" width="1" height="8"><br>
+        
+          <img src="./Window Functions in SQL Server  Part 2-The Frame_files/w_icon_article_9x11.jpg" alt="" width="9" height="11">&nbsp;<a id="ctl00_RightColumn_SQLOpinion1_repBlogPosts_ctl02_lnkBlogPost" href="https://www.simple-talk.com/blogs/2014/06/04/5438/">Developing a SQL Server Function in a...</a><br>
+				  <img src="./Window Functions in SQL Server  Part 2-The Frame_files/1px.gif" alt="" width="1" height="8"><br>
+        
+    
+</div>
+    <img src="./Window Functions in SQL Server  Part 2-The Frame_files/w_icon_articles_13x15.gif" alt="" width="13" height="15">&nbsp;<a id="ctl00_RightColumn_SQLOpinion1_lnkBlog" href="https://www.simple-talk.com/blogs/author/2126-phil-factor/">View the blog</a><br>
+  </div>
+</div>
+  
+<div class="widget-new">
+  <h2><a id="ctl00_RightColumn_ArticlesRated1_lnkHeader">Top Rated</a></h2>
+  <div class="widget-new-body">
+    
+        <strong><a id="ctl00_RightColumn_ArticlesRated1_repArticles_ctl00_lnkArticle1" href="https://www.simple-talk.com/sql/database-administration/the-mindset-of-the-enterprise-dba-harnessing-the-power-of-automation/">The Mindset of the Enterprise DBA: Harnessing the Power of Automation</a></strong><br>
+        <img src="./Window Functions in SQL Server  Part 2-The Frame_files/w_icon_article_9x11.jpg" alt="" width="9" height="11">&nbsp;After you have done the necessary groundwork of standardizing and centralizing your database...&nbsp;<a id="ctl00_RightColumn_ArticlesRated1_repArticles_ctl00_lnkArticle2" href="https://www.simple-talk.com/sql/database-administration/the-mindset-of-the-enterprise-dba-harnessing-the-power-of-automation/">Read more...</a><br><br>
+      
+        <strong><a id="ctl00_RightColumn_ArticlesRated1_repArticles_ctl01_lnkArticle1" href="https://www.simple-talk.com/sql/database-administration/rollback-and-recovery-troubleshooting-challenges-and-strategies/">Rollback and Recovery Troubleshooting; Challenges and Strategies</a></strong><br>
+        <img src="./Window Functions in SQL Server  Part 2-The Frame_files/w_icon_article_9x11.jpg" alt="" width="9" height="11">&nbsp;What happens if your database deployment goes awry? Do you restore from a backup or snapshot and lose...&nbsp;<a id="ctl00_RightColumn_ArticlesRated1_repArticles_ctl01_lnkArticle2" href="https://www.simple-talk.com/sql/database-administration/rollback-and-recovery-troubleshooting-challenges-and-strategies/">Read more...</a><br><br>
+      
+        <strong><a id="ctl00_RightColumn_ArticlesRated1_repArticles_ctl02_lnkArticle1" href="https://www.simple-talk.com/sql/database-administration/using-migration-scripts-in-database-deployments/">Using Migration Scripts in Database Deployments</a></strong><br>
+        <img src="./Window Functions in SQL Server  Part 2-The Frame_files/w_icon_article_9x11.jpg" alt="" width="9" height="11">&nbsp;A SQL migration script is similar to a SQL build script, except that it changes a  database from one...&nbsp;<a id="ctl00_RightColumn_ArticlesRated1_repArticles_ctl02_lnkArticle2" href="https://www.simple-talk.com/sql/database-administration/using-migration-scripts-in-database-deployments/">Read more...</a><br><br>
+      
+        <strong><a id="ctl00_RightColumn_ArticlesRated1_repArticles_ctl03_lnkArticle1" href="https://www.simple-talk.com/sql/database-administration/the-sql-server-sqlio-utility/">The SQL Server Sqlio Utility</a></strong><br>
+        <img src="./Window Functions in SQL Server  Part 2-The Frame_files/w_icon_article_9x11.jpg" alt="" width="9" height="11">&nbsp;If, before deployment, you need to push the limits of your disk subsystem in order to determine whether...&nbsp;<a id="ctl00_RightColumn_ArticlesRated1_repArticles_ctl03_lnkArticle2" href="https://www.simple-talk.com/sql/database-administration/the-sql-server-sqlio-utility/">Read more...</a><br><br>
+      
+        <strong><a id="ctl00_RightColumn_ArticlesRated1_repArticles_ctl04_lnkArticle1" href="https://www.simple-talk.com/sql/sql-tools/mysql-compare-the-manual-that-time-forgot,-part-1/">MySQL Compare: The Manual That Time Forgot, Part 1</a></strong><br>
+        <img src="./Window Functions in SQL Server  Part 2-The Frame_files/w_icon_article_9x11.jpg" alt="" width="9" height="11">&nbsp;Although SQL Compare, for SQL Server, is one of Red Gate's best-known products, there are also 'sister'...&nbsp;<a id="ctl00_RightColumn_ArticlesRated1_repArticles_ctl04_lnkArticle2" href="https://www.simple-talk.com/sql/sql-tools/mysql-compare-the-manual-that-time-forgot,-part-1/">Read more...</a><br><br>
+      
+  </div>
+</div>
+  
+
+<div class="widget-new" id="mostviewed">
+  <h2>Most Viewed</h2>
+  <div class="widget-new-body">
+  
+      <strong><a id="ctl00_RightColumn_ArticlesViewed1_repArticles_ctl00_lnkArticle1" href="https://www.simple-talk.com/sql/reporting-services/beginning-sql-server-2005-reporting-services-part-1/">Beginning SQL Server 2005 Reporting Services Part 1</a></strong><br>
+      <img src="./Window Functions in SQL Server  Part 2-The Frame_files/w_icon_article_9x11.jpg" alt="" width="9" height="11">&nbsp;Steve Joubert begins an in-depth tour of SQL Server 2005 Reporting Services with a step-by-step guide...&nbsp;<a id="ctl00_RightColumn_ArticlesViewed1_repArticles_ctl00_lnkArticle2" href="https://www.simple-talk.com/sql/reporting-services/beginning-sql-server-2005-reporting-services-part-1/">Read more...</a><br><br>
+    
+      <strong><a id="ctl00_RightColumn_ArticlesViewed1_repArticles_ctl01_lnkArticle1" href="https://www.simple-talk.com/sql/database-administration/ten-common-database-design-mistakes/">Ten Common Database Design Mistakes</a></strong><br>
+      <img src="./Window Functions in SQL Server  Part 2-The Frame_files/w_icon_article_9x11.jpg" alt="" width="9" height="11">&nbsp;If database design is done right, then the development, deployment and subsequent performance in...&nbsp;<a id="ctl00_RightColumn_ArticlesViewed1_repArticles_ctl01_lnkArticle2" href="https://www.simple-talk.com/sql/database-administration/ten-common-database-design-mistakes/">Read more...</a><br><br>
+    
+      <strong><a id="ctl00_RightColumn_ArticlesViewed1_repArticles_ctl02_lnkArticle1" href="https://www.simple-talk.com/sql/learn-sql-server/sql-server-index-basics/">SQL Server Index Basics</a></strong><br>
+      <img src="./Window Functions in SQL Server  Part 2-The Frame_files/w_icon_article_9x11.jpg" alt="" width="9" height="11">&nbsp;Given the fundamental importance of indexes in databases, it always comes as a surprise how often the...&nbsp;<a id="ctl00_RightColumn_ArticlesViewed1_repArticles_ctl02_lnkArticle2" href="https://www.simple-talk.com/sql/learn-sql-server/sql-server-index-basics/">Read more...</a><br><br>
+    
+      <strong><a id="ctl00_RightColumn_ArticlesViewed1_repArticles_ctl03_lnkArticle1" href="https://www.simple-talk.com/sql/t-sql-programming/reading-and-writing-files-in-sql-server-using-t-sql/">Reading and Writing Files in SQL Server using T-SQL</a></strong><br>
+      <img src="./Window Functions in SQL Server  Part 2-The Frame_files/w_icon_article_9x11.jpg" alt="" width="9" height="11">&nbsp;SQL Server provides several "standard" techniques by which to read and write to files but, just...&nbsp;<a id="ctl00_RightColumn_ArticlesViewed1_repArticles_ctl03_lnkArticle2" href="https://www.simple-talk.com/sql/t-sql-programming/reading-and-writing-files-in-sql-server-using-t-sql/">Read more...</a><br><br>
+    
+      <strong><a id="ctl00_RightColumn_ArticlesViewed1_repArticles_ctl04_lnkArticle1" href="https://www.simple-talk.com/sql/t-sql-programming/concatenating-row-values-in-transact-sql/">Concatenating Row Values in Transact-SQL</a></strong><br>
+      <img src="./Window Functions in SQL Server  Part 2-The Frame_files/w_icon_article_9x11.jpg" alt="" width="9" height="11">&nbsp;It is an interesting problem in Transact SQL, for which there are a number of solutions and...&nbsp;<a id="ctl00_RightColumn_ArticlesViewed1_repArticles_ctl04_lnkArticle2" href="https://www.simple-talk.com/sql/t-sql-programming/concatenating-row-values-in-transact-sql/">Read more...</a><br><br>
+    
+  </div>
+</div>
+  
+
+<div class="widget-new" id="whyjoin">
+  
+      <h2>Why Join</h2>
+      <div class="widget-new-body">
+	      <p>
+	        Over 400,000 Microsoft professionals subscribe to the Simple-Talk technical journal. Join today, it's fast, simple, free and secure.
+	      </p>
+		    <div class="joinbutton">
+		      <a href="https://www.simple-talk.com/community/user/CreateUser.aspx?ReturnUrl=%2fcontent%2farticle.aspx%3farticle%3d1396" class="btn">
+            Join Simple-Talk!
+          </a>
+		    </div>
+      </div>
+    
+</div>
+
+        <div class="clear"></div><br>
+      </div>
+      <div class="clear"></div><br>
+      
+
+<div class="pagefooter nav">
+  <div class="red-gate-logo">
+	  <a href="http://www.red-gate.com/?utm_source=simpletalk&utm_medium=textad&utm_campaign=homepage">
+	  	<img src="./Window Functions in SQL Server  Part 2-The Frame_files/red-gate-logo-footer@2x.png" class="red-gate-logo-footer-image" alt="Red Gate" width="97" height="32">
+	  </a>
+  </div>
+  <ul class="footer-nav">
+    <li>
+      <a id="ctl00_ctl02_lnkGotoAbout" href="https://www.simple-talk.com/about.aspx">About</a>
+    </li>
+    <li>
+      <a id="ctl00_ctl02_lnkGotoSitemap" href="https://www.simple-talk.com/site-map.aspx">Site map</a>
+    </li>
+    <li>
+      <a id="ctl00_ctl02_lnkGotoAuthor" href="https://www.simple-talk.com/become-an-author.aspx">Become an author</a>
+    </li>
+    <li>
+      <a id="ctl00_ctl02_lnkGotoArchive" href="https://www.simple-talk.com/newsletter-archive/">Newsletters</a>
+    </li>
+    <li>
+      <a id="ctl00_ctl02_lnkGotoContact" href="https://www.simple-talk.com/contact-us.aspx">Contact us</a>
+    </li>
+    <li>
+      <a href="https://www.simple-talk.com/community/languages/en-US/docs/faq.aspx">Help</a>
+    </li>
+  </ul>
+
+  <ul class="footer-legal-nav">
+    <li>
+      <a id="ctl00_ctl02_lnkGotoPrivacy" href="https://www.simple-talk.com/privacy-policy.aspx">Privacy policy</a>
+    </li>
+    <li>
+      <a id="ctl00_ctl02_lnkGotoTerms" href="https://www.simple-talk.com/terms-and-conditions.aspx">Terms and conditions</a>
+    </li>
+    <li>
+      <a href="http://www.red-gate.com/" target="_blank">©2005-2014 Red Gate Software</a>
+    </li>
+  </ul>
+</div>
+    </div>
+  </div>
+<script type="text/javascript">
+/* <![CDATA[ */
+    var google_conversion_id = 1072726260;
+    var google_conversion_language = "en";
+    var google_conversion_format = "3";
+    var google_conversion_color = "ffffff";
+    var google_conversion_label = "kOZ_CJS21AIQ9IHC_wM";
+    var google_conversion_value = 0;
+/* ]]> */
+</script>
+
+<script type="text/javascript" src="./Window Functions in SQL Server  Part 2-The Frame_files/conversion.js">
+</script><img height="1" width="1" border="0" alt="" src="https://www.googleadservices.com/pagead/conversion/1072726260/?random=1410212390911&cv=7&fst=1410212390911&num=1&fmt=3&value=0&label=kOZ_CJS21AIQ9IHC_wM&bg=ffffff&hl=en&guid=ON&eid=317150502&u_h=1050&u_w=1680&u_ah=984&u_aw=1680&u_cd=24&u_his=4&u_tz=120&u_java=true&u_nplug=23&u_nmime=108&frm=0&url=https%3A//www.simple-talk.com/content/article.aspx%3Farticle%3D1396"><script src="./Window Functions in SQL Server  Part 2-The Frame_files/saved_resource"></script>
+<noscript>
+&lt;div style="display:inline;"&gt;
+&lt;img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1072726260/?label=kOZ_CJS21AIQ9IHC_wM&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+&lt;/div&gt;
+</noscript>
+
+
+
+<script data-main="/static/versioned/3e62335f7e28118064c631b9a3a32e46/js/main.js" src="./Window Functions in SQL Server  Part 2-The Frame_files/require-2.1.9(1).js"></script> 
+<script src="./Window Functions in SQL Server  Part 2-The Frame_files/retina-1.1.0.js"></script>
+
+
+</body></html>

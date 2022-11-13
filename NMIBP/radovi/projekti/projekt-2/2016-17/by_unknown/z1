@@ -1,0 +1,16 @@
+create table regije as
+select 
+	row_number() over() as id,
+	st_union(array[z4.geom, z7.geom, z8.geom, z10.geom, z15.geom, z17.geom]) as up,
+	st_union(array[z1.geom, z2.geom, z11.geom, z12.geom, z18.geom, z19.geom]) as rh,
+	st_union(array[z5.geom, z6.geom, z9.geom, z13.geom]) as lf,
+	st_union(array[z3.geom, z14.geom, z16.geom, z20.geom]) as dw
+FROM
+	hrv_adm1 z1, hrv_adm1 z2, hrv_adm1 z3, hrv_adm1 z4, hrv_adm1 z5, hrv_adm1 z6, hrv_adm1 z7,
+	hrv_adm1 z8, hrv_adm1 z9, hrv_adm1 z10, hrv_adm1 z11, hrv_adm1 z12, hrv_adm1 z13, hrv_adm1 z14,
+	hrv_adm1 z15, hrv_adm1 z16, hrv_adm1 z17, hrv_adm1 z18, hrv_adm1 z19, hrv_adm1 z20
+where
+	z1.gid = 1 and z2.gid = 2 and z3.gid = 3 and z4.gid = 4 and z5.gid = 5 and z6.gid = 6 and
+    z7.gid = 7 and z8.gid = 8 and z9.gid = 9 and z10.gid = 10 and z11.gid = 11 and z12.gid = 12 and
+    z13.gid = 13 and z14.gid = 14 and z15.gid = 15 and z16.gid = 16 and z17.gid = 17 and
+    z18.gid = 18 and z19.gid = 19 and z20.gid = 20

@@ -1,0 +1,44 @@
+﻿@model List<NoSQLProj.Models.Article>
+@{
+    ViewBag.Title = "Vijesti";
+}
+
+<div>
+
+    @foreach (var item in Model)
+    {
+        using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div class="row">
+                <div class="col-md-4">
+                    @if (item.picture != null)
+                    {
+                        string base64 = Convert.ToBase64String(item.picture);
+                        var imgSrc = string.Format("data:image/gif;base64,{0}", base64);
+                        <img src="@imgSrc" class="img-rounded" style="max-height:300px; max-width:300px; margin-top:10%" />
+                    }
+                    @Html.TextBox("id", item.id, new { @style = "display:none" })
+
+                </div>
+                <div class="col-md-7">
+                    <div class="row">
+                        <h2>@item.headline</h2>
+                        <p>@item.text</p>
+                        <p style="text-align:right; font-size:small">(@item.author)</p>
+                        <div style="overflow:auto; max-height: 150px;font-size:small">
+                            @foreach (var commentar in item.comments)
+                            {
+                                <div class="text-info">@commentar.timestamp : @commentar.text</div>
+                            }
+                            @Html.TextBox("comment", "", new { @placeholder = "upiši komentar" })
+                            <input class="btn btn-default" type="submit" value="Dodaj komentar!" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+    }
+
+</div>

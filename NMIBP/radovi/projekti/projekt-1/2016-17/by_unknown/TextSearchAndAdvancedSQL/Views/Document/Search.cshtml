@@ -1,0 +1,94 @@
+﻿@model TextSearchAndAdvancedSQL.Models.Document.SearchVM
+
+@{
+    ViewBag.Title = "Search";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h2>Search</h2>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Patterns, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Patterns, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Patterns, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Operator, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <label class="radio-inline">
+                    @Html.RadioButtonFor(model => model.Operator, "And") And
+                </label>
+                <label class="radio-inline">
+                    @Html.RadioButtonFor(model => model.Operator, "Or") Or
+                </label>
+                @Html.ValidationMessageFor(model => model.Operator, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SearchType, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <label class="radio-inline">
+                    @Html.RadioButtonFor(model => model.SearchType, "Semantic") Based on morphology & semantic
+                </label>
+                <label class="radio-inline">
+                    @Html.RadioButtonFor(model => model.SearchType, "Fuzzy") Fuzzy string matching
+                </label>
+                @Html.ValidationMessageFor(model => model.SearchType, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </div>
+
+        @if (!string.IsNullOrEmpty(Model.SQLQuery))
+        {
+            <div class="container">
+                <h4>SQL Query</h4>
+                <hr />
+                <div class="col-md-12">
+                    <textarea class="form-control valid" cols="20" id="SQLQuery" name="SQLQuery" readonly="true" rows="10" aria-invalid="false">@Html.Raw(Model.SQLQuery)</textarea>
+                </div>
+            </div>
+        }
+
+        <div class="container">
+            <h4>Search results (@Model.Documents.Count())</h4>
+            <hr />
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th colspan="2">Rank</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var d in Model.Documents.AsEnumerable())
+                    {
+                        <tr>
+                            <td>@Html.Raw(d.Title)</td>
+                            <td>@d.Rank</td>
+                            <td>@Html.ActionLink("View", "Details", "Document", new { id = d.Id }, new { @class = "btn btn-default" })</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

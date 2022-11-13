@@ -1,0 +1,29 @@
+﻿@model SematicWeb.Models.Search
+
+
+
+@{
+    ViewBag.Title = "Search";
+}
+
+<h2>Search</h2>
+
+<table class="table">
+    <tr>
+        <th></th>
+    </tr>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Result</h2>
+            <ul class="list-group">
+
+                @foreach (var m in @Model.results)
+                {
+                    <li class="list-group-item">@Html.ActionLink(m.name, "SearchDetails", new { query = m.name })</li>
+                }
+            </ul>
+        </div>
+    </div>
+
+</table>

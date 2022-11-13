@@ -1,0 +1,82 @@
+SET DateStyle ='German, DMY';
+DROP TABLE IF EXISTS result;
+DROP TABLE IF EXISTS personRef;
+DROP TABLE IF EXISTS person;
+DROP TABLE IF EXISTS poolPlace;
+DROP TABLE IF EXISTS terUnit;
+
+CREATE  TABLE terUnit(terUnitId INT PRIMARY KEY
+			,terUnitName VARCHAR(50) NOT NULL
+			,supTerUnitId INT);
+CREATE TABLE poolPlace(poolPlaceId INT PRIMARY KEY
+			,poolPlaceName TEXT NOT NULL
+			,terUnitId INT REFERENCES terUnit(terUnitId));
+CREATE TABLE person(personId INT PRIMARY KEY
+			,Fname TEXT NOT NULL
+			,Lname TEXT NOT NULL);
+CREATE TABLE personRef(refDate DATE 
+			,personId INT REFERENCES person(personId)
+			,poolPlaceId INT REFERENCES poolPlace(poolPlaceId)
+			,voted BIT NOT NULL);
+CREATE TABLE result(refDate DATE 
+			,poolPlaceId INT REFERENCES poolPlace(poolPlaceId)
+			,ordinal INT PRIMARY KEY
+			,votedFor BIT
+			,valid BIT);
+
+INSERT INTO terUnit VALUES (53,'England', NULL);
+INSERT INTO terUnit VALUES (32,'Scotland', NULL);
+INSERT INTO terUnit VALUES (5478,'East England', 53);
+INSERT INTO terUnit VALUES (9056,'London', 53);
+INSERT INTO terUnit VALUES (437,'Edinburg', 32);
+INSERT INTO terUnit VALUES (856,'West London', 9056);
+INSERT INTO terUnit VALUES (876,'East London', 9056);
+
+INSERT INTO poolPlace VALUES (184, 'Islington Town Hall', 856);
+INSERT INTO poolPlace VALUES (132, 'Olive Morris House', 437);
+INSERT INTO poolPlace VALUES (11, 'Yourk House', 876);
+
+
+INSERT INTO person VALUES (2345, 'aaaaaaa', 'aaaaaaa');
+INSERT INTO person VALUES (3895, 'bbbbbbb', 'bbbbbbb');
+INSERT INTO person VALUES (6903, 'ccccccc', 'ccccccc');
+INSERT INTO person VALUES (5689, 'ddddddd', 'ddddddd');
+
+INSERT INTO personRef VALUES ('18.09.2014', 2345, 132, '1');
+INSERT INTO personRef VALUES ('23.06.2016', 3895, 132, '1');
+INSERT INTO personRef VALUES ('23.06.2016', 6903, 132, '1');
+INSERT INTO personRef VALUES ('23.06.2016', 5689, 132, '1');
+
+INSERT INTO result VALUES ('18.09.2014', 132, 1, '1', '1');
+INSERT INTO result VALUES ('23.06.2016', 11, 2, '0', '1');
+INSERT INTO result VALUES ('23.06.2016', 132, 105, '1', '1');
+
+WITH RECURSIVE voteRecursive(terUnitId, terUnitName, supTerUnitId, votesFor, votesAgainst)
+AS(
+	SELECT terUnit.terUnitId
+		,terUnitName
+		,supTerUnitId
+		,CASE WHEN votedFor='1' THEN 1 ELSE 0 END AS votesFor
+		,CASE WHEN votedFor='0' THEN 1 ELSE 0 END AS votesAgainst
+	FROM result, terUnit, poolPlace
+	WHERE result.poolPlaceId = poolPlace.poolPlaceId
+	AND poolPlace.terUnitId = terUnit.terUnitId	
+	AND valid = '1'
+
+	UNION ALL
+
+	SELECT parent.terUnitId
+		, parent.terUnitName
+		, child.supTerUnitId
+		, parent.votesFor
+		, parent.votesAgainst
+	FROM voteRecursive AS parent, terUnit AS child, result, poolPlace
+	WHERE parent.terUnitId = child.supTerUnitId
+)
+
+
+SELECT terUnit.terUnitName
+	,SUM(votesFor) AS votesFor
+	,SUM(votesAgainst) AS votesAgainst
+	FROM voteRecursive,terUnit WHERE voteRecursive.supTerUnitId = terUnit.terUnitId
+GROUP BY terUnit.terUnitName, terUnit.supTerUnitId

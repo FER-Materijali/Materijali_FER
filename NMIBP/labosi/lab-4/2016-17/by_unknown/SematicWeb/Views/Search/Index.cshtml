@@ -1,0 +1,80 @@
+﻿@model SematicWeb.Models.Home
+
+@{
+    ViewBag.Title = "Search";
+}
+
+<div class="thumbnail" style="margin-top: 10px; padding-left: 10px; padding-right: 10px">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Search</h2> <hr />
+            @using (Html.BeginForm("Search", "Search", FormMethod.Post, htmlAttributes: new { @class = "form-inline" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="row" style="padding-left: 10px; padding-right: 10px">
+                    <div class="col-xs-11">
+                        <input type="text" class="form-control" name="Query" style="width: 100%" />
+                    </div>
+                    <div class="col-xs-1">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Statistics</h2> <hr />
+            <dl class="dl-horizontal">
+                <dt>Total triples</dt>
+                <dd>@Model.Stats.TriplesCount</dd>
+                <dt>Total actors</dt>
+                <dd>@Model.Stats.ActorsCount</dd>
+                <dt>Total drama movies</dt>
+                <dd>@Model.Stats.DramaMoviesCount</dd>
+                <dt>Total movies</dt>
+                <dd>@Model.Stats.MoviesCount</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Randomly selected movies</h2>
+            <ul class="list-group">
+                @foreach (var m in @Model.randomMovies)
+                {
+                     <li class="list-group-item">@Html.ActionLink(m.name, "Movie", new { movie = m.name })</li>
+                }
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Birthdays</h2> <hr />
+            <ul class="list-group">
+                <li class="list-group-item">Philip Jager</li>
+                <li class="list-group-item">Bob Rolly</li>
+                <li class="list-group-item">Ben Paul</li>
+            </ul>
+        </div>
+    </div>
+    @if (IsPost)
+    {
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Search results</h2> <hr />
+                <ul class="list-group">
+                    <li class="list-group-item">Result1</li>
+                    <li class="list-group-item">Result2</li>
+                    <li class="list-group-item">Result3</li>
+                    <li class="list-group-item">Result4</li>
+                </ul>
+            </div>
+        </div>
+    }
+
+</div>

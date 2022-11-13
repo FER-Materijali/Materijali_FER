@@ -1,0 +1,57 @@
+﻿@model SematicWeb.Models.Actor
+
+@{
+    ViewBag.Title = "Actor";
+}
+
+<h2>Actor</h2>
+
+<div>
+    <h4>Actor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.godine)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.godine)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kratkiZivotopis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kratkiZivotopis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mjestoRodenja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mjestoRodenja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prezime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prezime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Portal.Data.News>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>News</h1>
+
+@foreach (var n in Model)
+{
+    <div class="row thumbnail">
+        <div class="col-lg-3">
+            @{
+                string base64 = Convert.ToBase64String(n.Picture);
+                var imgSrc = string.Format("data:image/gif;base64,{0}", base64);
+            }
+            <img src="@imgSrc" class="img-rounded" style="width:300px; margin-top:10%" />
+        </div>
+        <div class="col-lg-9">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>@n.Headline</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    @n.Text
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-lg-3 col-lg-push-9">
+                    Author: @n.Author
+                </div>
+            </div>
+            <hr />
+            <h3>Comments</h3>
+            <div class="row">
+                <div class="col-lg-11 col-lg-push-1">
+                    <ul class="list-group">
+                        @if (n.Comments != null)
+                        {
+                            foreach (var c in n.Comments)
+                            {
+                                <li class="list-group-item">@c.Text</li>
+                            }
+                        }
+                    </ul>
+
+                    <h4>Add comment</h4>
+                    @using (Html.BeginForm("AddComment", "Home", FormMethod.Post))
+                    {
+
+                        <input type="hidden" value="@n.Id" name="id"/>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="text" placeholder="Comment" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Send" class="btn btn-primary" />
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+                }
