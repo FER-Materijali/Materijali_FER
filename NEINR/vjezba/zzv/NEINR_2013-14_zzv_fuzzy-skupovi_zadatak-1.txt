@@ -1,0 +1,24 @@
+Zadatak 01
+----------
+
+Mješalica smjese u nekom proizvodnom procesu zadužena je za izradu smjese optimalnih svojstava. Mješalica je opremljena senzorima koji mjere prozirnost smjese (p iz [0,15]) te vlažnost smjese (v iz [0,50]). Temeljem tih parametara mješalica određuje brzinu miješanja (w iz [0,4]). Brzina miješanja određuje se temeljem AKO-ONDA pravila koja je definirao ekspert:
+
+AKO prozirnost je mala I vlažnost je mala ili srednja ONDA brzina je mala
+AKO prozirnost je mala I vlažnost je velika ONDA brzina je velika
+AKO prozirnost je velika I vlažnost nije mala ONDA brzina je srednja
+
+Pri tome je osnovni skup termina za prozirnost i njihovo značenje:
+mala = l(4,9)
+velika = gamma(6,11)
+
+osnovni skup termina za vlažnost i njihovo značenje:
+mala = l(10,20)
+srednja = lambda(10,20,30)
+velika = gamma(20,30)
+
+te osnovni skup termina za brzinu i njihovo značenje:
+mala = l(0,2)
+srednja = lambda(1,2,3)
+velika = gamma(2,4).
+
+Ako se koristi zaključivanje temeljeno na pojedinačnim pravilima, stroj za zaključivanje temeljen na minimumu te COA kao metoda dekodiranja neizrazitosti, kojom će brzinom mješalica miješati smjesu ako je sa senzora očitano p=5, v=24? Pretpostavite da se kodiranje neizrazitosti radi predstavljenjem jednoelementnim neizrazitim skupovima.
