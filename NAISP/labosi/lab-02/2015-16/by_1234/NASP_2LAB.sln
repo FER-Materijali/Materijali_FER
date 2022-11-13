@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NASP_2LAB_CONSOLE", "NASP_2LAB\NASP_2LAB_CONSOLE.csproj", "{97EE4A88-8062-4B04-B68C-708463ACC935}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knapsack", "Knapsack\Knapsack.csproj", "{1F29B48E-8B1B-4EB6-810B-0A9AE0C36BAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NASP_2LAB_GUI", "NASP_2LAB_GUI\NASP_2LAB_GUI.csproj", "{125ED4AC-DC2A-432E-931C-FCB97DC58833}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97EE4A88-8062-4B04-B68C-708463ACC935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97EE4A88-8062-4B04-B68C-708463ACC935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97EE4A88-8062-4B04-B68C-708463ACC935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97EE4A88-8062-4B04-B68C-708463ACC935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F29B48E-8B1B-4EB6-810B-0A9AE0C36BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F29B48E-8B1B-4EB6-810B-0A9AE0C36BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F29B48E-8B1B-4EB6-810B-0A9AE0C36BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F29B48E-8B1B-4EB6-810B-0A9AE0C36BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125ED4AC-DC2A-432E-931C-FCB97DC58833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125ED4AC-DC2A-432E-931C-FCB97DC58833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125ED4AC-DC2A-432E-931C-FCB97DC58833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125ED4AC-DC2A-432E-931C-FCB97DC58833}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

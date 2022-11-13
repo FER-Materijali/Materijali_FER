@@ -1,0 +1,9 @@
+c:\users\a\documents\visual studio 2010\Projects\Nasp\AVLtree\AVLtree\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\a\documents\visual studio 2010\Projects\Nasp\AVLtree\AVLtree\obj\x86\Debug\AVLtree.Sucelje.resources
+c:\users\a\documents\visual studio 2010\Projects\Nasp\AVLtree\AVLtree\obj\x86\Debug\AVLtree.Properties.Resources.resources
+c:\users\a\documents\visual studio 2010\Projects\Nasp\AVLtree\AVLtree\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\a\documents\visual studio 2010\Projects\Nasp\AVLtree\AVLtree\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\a\documents\visual studio 2010\Projects\Nasp\AVLtree\AVLtree\bin\Debug\AVLtree.exe
+c:\users\a\documents\visual studio 2010\Projects\Nasp\AVLtree\AVLtree\bin\Debug\AVLtree.pdb
+c:\users\a\documents\visual studio 2010\Projects\Nasp\AVLtree\AVLtree\obj\x86\Debug\AVLtree.exe
+c:\users\a\documents\visual studio 2010\Projects\Nasp\AVLtree\AVLtree\obj\x86\Debug\AVLtree.pdb

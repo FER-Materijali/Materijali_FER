@@ -1,0 +1,9 @@
+c:\users\a\documents\visual studio 2010\Projects\Nasp\Labos2\Labos2\bin\Debug\Labos2.exe
+c:\users\a\documents\visual studio 2010\Projects\Nasp\Labos2\Labos2\bin\Debug\Labos2.pdb
+c:\users\a\documents\visual studio 2010\Projects\Nasp\Labos2\Labos2\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\a\documents\visual studio 2010\Projects\Nasp\Labos2\Labos2\obj\x86\Debug\Labos2.Form1.resources
+c:\users\a\documents\visual studio 2010\Projects\Nasp\Labos2\Labos2\obj\x86\Debug\Labos2.Properties.Resources.resources
+c:\users\a\documents\visual studio 2010\Projects\Nasp\Labos2\Labos2\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\a\documents\visual studio 2010\Projects\Nasp\Labos2\Labos2\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\a\documents\visual studio 2010\Projects\Nasp\Labos2\Labos2\obj\x86\Debug\Labos2.exe
+c:\users\a\documents\visual studio 2010\Projects\Nasp\Labos2\Labos2\obj\x86\Debug\Labos2.pdb
