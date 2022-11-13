@@ -1,0 +1,120 @@
+2.
+
+a) (1 bod)
+Objasnite problem preraspodjele fragmenata u repliciranom sustavu; kojima načelima se treba voditi prilikom preraspodjela?
+
+b) (3 boda)
+Navedite i objasnite strategije preraspodjele fragmenata.
+
+3. Odg
+
+db.nobelprizes.mapReduce(
+    `function() {
+        var self = this;
+		if (this.year >=1900 && this.year < 2000) {
+			var decade = this.year - this.year % 10;
+    		let value = {};
+            value[decade] = this.laureates.length;
+            emit(this.category, value);
+		}
+		
+    }`,   
+    `function(key, values) {
+        var rv = {};
+        values.forEach( function(value) {
+			Object.keys(value).forEach(key => {
+                if (rv[key]) {
+                    rv[key] += value[key];
+                } else {
+                    rv[key] = value[key];
+                }                  
+            }); 			          
+        });
+        return rv;  
+    }`,   
+    { 
+        finalize: `
+		function (key, value) {
+			let sum = 0, cnt = 0;
+			Object.keys(value).forEach(key => {
+                sum += value[key];
+				++cnt;
+            }); 
+            value.avg = sum / cnt;
+            return value;
+       	}`
+    }
+);
+
+
+4. 
+
+Na slici je prikazan RDF graf za segment TBoxa i ABoxa s DBPedie kojim se definira
+
+terminološko znanje o TV serijama, žanrovima kojima pripadaju i TV mrežama (npr. Starz)
+asertivno znanje o popularnoj TV seriji Outlander (služi samo za ilustraciju)
+Napišite SPARQL upit kojim će biti ispisan naziv TV mreže, naziv žanra na engleskom jeziku i broj njenih TV serija u pripadnom žanru.
+U obzir uzeti samo TV serije s više od 3 sezone I više od 20 epizoda ukupno. Rezultat poredati silazno prema broju TV serija.
+
+Smatrati da
+
+se upit izvodi na dbpedijinom SPARQL endpointu http://dbpedia.org/sparql.
+se koristi defaultni RDF graf http://dbpedia.org
+su predefinirani svi prostori imena koji su inače predefinirani na dbpediinom SPARQL endpointu.
+
+ODG:
+
+#PREFIX opcionalno jer su svi predefinirani na dbpedia sparql endpointu
+SELECT ?TVStationName ?genreLabel COUNT(?TVShowURI) AS ?noOfShows
+#FROM <http://dbpedia.org> – opcionalno jer je ovaj defaultni
+
+WHERE { 
+   ?TVShowURI      a                    dbo:TelevisionShow;
+                   dbp:channel          ?TVStationUri ;
+                   dbo:numberOfSeasons  ?noOfSeasons ;
+                   dbo:numberOfEpisodes ?noOfEpisodes ;
+                   dbo:genre            ?genreURI .            
+   ?genreURI       rdfs:label           ?genreLabel .
+   ?TVStationUri  a                    dbo:TelevisionStation; 
+                   dbp:name             ?TVStationName .
+   FILTER (?noOfSeasons > 3 && ?noOfEpisodes > 20) 
+   FILTER (LANG(?genreLabel)="en")
+}  
+GROUP BY ?TVStationName?genreLabel
+ORDER BY DESC (?noOfShows)
+
+5.
+
+Na slici je prikazan RDF graf za segment TBoxa i ABoxa s DBPedie.
+
+Napišite Turtle izraze za segment grafa obojan žutom bojom.
+Napomena: Prefikse svih prostora imena koji su navedeni u službenom podsjetniku možete koristiti i bez prepisivanja definicija prefiksa.
+
+dbo:TelevisionStation a owl:Class
+dbo:TelevisionShow    a owl:Class
+
+dbp:channel a          owl:ObjectProperty ;
+           rdfs:domain dbo:TelevisionShow ; 
+           rdfs:range  dbo:TelevisionStation .
+
+dbo:numberOfSeasons a          owl:DataTypeProperty ;
+                  rdfs:domain dbo:TelevisionShow ; 
+                  rdfs:range  xsd:Short.
+
+dbr:Starz a dbo:TelevisionStation ;
+
+dbr:Outlander a                 dbo:TelevisionShow ;
+             dbp:channel        dbr:Starz ;
+             dbo:numberOfSeasons "5"^^xsd:short ;
+
+
+6.
+
+Tokovi podataka:
+
+a) (2 boda)
+Koje pristupe prijenosu događaja preko mreže znate? Komentirajte njihova svojstva i razlike, navedite primjer sustava ako znate.
+
+a) (1 boda)
+Općenito, što se može dogoditi kada proizvođači šalju poruke brže nego što ih potrošači mogu primati? Komentirajte opcije.
+
