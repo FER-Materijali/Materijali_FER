@@ -1,0 +1,43 @@
+
+1. Teorija (12 bodova):
+    (1 bod) navesti broj poruka koje treba razmijeniti u sustavu s 10 racunala kod Lamportovog protokola.
+    (1 bod) na koju vrijdnost ce se postaviti lokalni logicki sat ako u poruci dobije 178 a trenutna vrijdnost je 177
+    (1 bod) 33 bajta se kriptira AES algoritmom, koliko iznosi kriptirana velicina
+    (1 bod) Definirati F(t)
+
+2. (4 boda) Nacrtati i opisati Diffie-Helman postupak za razmjenu tajnog kljuca te poruke koje se salju (opisati ih).
+
+3. (4 boda) Nacrtati i prikazati CBC nacin dekriptiranja i pokazati na kojim bitovima se dogodila pogreska kod dekodiranja.
+
+4. (4 boda) Ma = JMBAGa*101 + Bodovi_a
+e je bio zadan (mislim da je bio 3)
+n = p*q - n je broj od 512 bitova
+Ca = RSA(Ma, e)
+Kako iz Ca i kljuca saznati JMBAGa (10 znamenaka) i Bodovi_a (broj od 0 do 100)
+
+5. (5 bodova) Nacrtati Kerberos protokol (mogu i skracenice)
+
+6. (5 bodova) Ana ima 10 prijatelja P1P2...Pi. Ana zna kljuceve od svih njih. Zeli kriptirati datoteku od 100MB AES-128 kriptosustavom ali
+    tako da kriptirana poruka ne bude veca od 101 MB. Kriptiranje mora biti takvo da je ni jedan prijatelj ne moze samostalno dekriptirati
+    nego jedino ako su u paru. (ideja je dodati zaglavlje i Ana genrira kljuc K, kojim kriptira datoteku, a kljuc K kriptira za svaki par prijatelja dva puta the AES(AES(K, Ki), Kj))
+
+7. Neka funkcija za izracunavanje sazetka poruke djeluje tako da podijeli izvornu poruku na jednake 160-bitne dijelove M1, M2 ... Mn a sazetak 
+H racuna se na nacin H = SHA1(M1) XOR SHA1(M2) XOR ... XOR SHA1(Mn).
+(3 boda) Je li ovako definiran funkcija otporna na izracunavanje poruke koja daje isti sazetak? DA/NE Obrazliziti odgovor.
+
+8. (3 boda) Neka je datoteka velicine 1284 bajtova kriptirana AES kriptosustavom. Koliko bajtova je velika kriptirana datoteka? Obrazliziti odgovor.
+
+9. Zadani inicijalni C1, C2, C3 za procese P1, P2, P3. P1 i P2 u trenutku t1 zele istovremeno u KO. Lamport protokol.
+
+    (1 bod) Koji proces prvi ulazi u KO?
+
+
+
+    (3 boda) Napisati vrijednosti C1, C2, C3 (moze ih biti vise) u trenutku t2, a to je nakon sto je P1 ili P2 izasao iz KO i javio svima da je to napravio
+    i prije nego neki drugi proces ude u KO.
+
+    (3 boda) Potrebno je jos za svaki proces napisati tocno poruke koje prima i salje.
+
+10.  (3 boda) Raid 6 sustav 4 diska od 1TB i 3 diska od 4TB. Potrebno je oblikovat RAID 6 tako da kapacitet bude maksimalan. Koliki je taj kapacitet?
+
+    (3 boda) Potrebno je i skicirati takav sustav. (Ideja je bila kao RAID 5 sa raspodjeljenim paritetima) ()

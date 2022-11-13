@@ -1,0 +1,577 @@
+Mogučnost komunikacije izmedu procesa često je nužna funkcionalnost koju treba pružiti operacijski sustav. 
+Razlozi međuprocesne komunikacije mogu biti:
+	- obavljanje zajedničkog posla
+	- sinkronizacija radi korištenja dijeljenih sredstava
+Komunikacija između procesa razlikuje se ovisno o tome nalaze li se procesi unutar istog računalnog sustava ili u različitim računalnim sustavima.
+
+10.01. KOMUNIKACIJA IZMEĐU PROCESA UNUTAR ISTOG RAČUNALNOG SUSTAVA
+	Detve jednog procesa djeluju u zajedničkom adresnom prostoru.
+	Procesi imaju namjerno razdvojene adresne prostore
+	
+	Najjednostavniji način komunikacije između procesa jest razmjena datoteka (nije uvijek najprikladnije).
+		- jako statična komunikacija
+	
+	Dinamička komunikacija između procesa:
+		zajednička uporaba izvornih podataka u dijeljenom spremničkom prostoru
+		uporaba kopija podataka zasnovana na razmjeni poruka
+
+ 	10.01.01. DIJELJENI SPREMNIČKI PROSTOR
+		Dio virtualnog adresnog prostora više procesa se može proglasiti zajedničkim prostoram za te procese.
+		OS rezervira dio svog adresnog prostora i uvodi ga u adresne prostore procesa kao dijeljeni adresni prostor.
+		Radi se o najjednostavnijem načinu međuprocesne komunikacije.
+		Potrebno je provesti sinkronizaciju dretvi povezanih procesa.
+		
+	10.01.02. RAZMJENA PORUKA IZMEĐU PROCESA
+		Sličan načinu razmjena poruka između dretvi. 
+		Bitne funkcije:
+			send(m)//pošalji poruku m
+			recv(m)//primi poruku i pohrani ju u m
+		
+10.02. KOMUNIKACIJA IZMEDU PROCESA U RASPODIJELJENJIM SUSTAVIMA
+
+	10.02.01. OSNOVE UMREŽAVANJA
+		OS mora imati komunikacijski podsustav koji omogućuje razmjenu poruka između računala.
+		Svrha povezivanja je razmjena informacija, a informacije se u računalima pohranjuju u obliku datoteka.
+		Pojednostavljeno gledano mogli bi reći da je svrha komunikacije razmjena datoteka. 
+	
+		PROTOKOLI - utvrđena pavila komuniciranja
+		PROTOKOLNI STOG - skup protokola potrebnih za funkcionalno povezivanje
+	
+		OSI model - sedmoslojni referentni model (teorija)
+
+		Protokolni stog u praksi:
+			application layer (primjenska razina) 
+				Protokoli: HTTP, SMTP, FTP ...
+			transport layer (prijenosna razina)
+				Protokoli: TCP i UDP
+			internet layer (mrežna razina)
+				Protokol: IP
+			link layer (razina prijenosnih puteva)
+				Dijeli se u dva podsloja:
+					- podatkovni
+					- fizički	
+	
+		TCP vs UDP
+			Određuju način podjele informacije u prijenosne jedinke tj pakete.
+			TCP za razliku od UDP-a nudi pouzdani prijenos podataka, uključujući postupke za oporavak od pogreške, isporučujući potpunu informaciju  originalnom poretku. 
+			TCP dodaje paketima redni broj te dodatne nadzorne i zastitne oktete.
+			UDP je jednostavniji i češće se koristi za prijenos manje količine podataka.
+	
+	10.02.02. STRUKTURA INTERNETA
+		Nije čvrsto definirana.
+		Sastoji se od nekoliko kontinentalnih okosnica (backbones) sastavljenih od vrlo brzih komnikacijskih veza i IP usmjernika (IP routers)
+		Okosnice su međusobno povezane međukontitentalnim vezama
+		Na okosnice su povezane nacionalne i regionalne mreže
+		Na nacionalne i regionalne veze su preko spojnih pristupa (gateways) spojene lokalne mreže koje se sastoje od radnih računala (hosts)
+		Svako računalo ima jedinstveni IP adresu. 
+		Pri komunikaciji prijenosni paketi imaju posebne skupine bitova u zaglavlju koje adresiraju odgovarajuće pristupne točke (servis access points - SAP)
+
+	10.02.03. KOMUNIKACIJA IZMEĐU PROCESA
+		1) Komunikacija razmjenom poruka
+			Kada proces želi komunicirati on mora uspostaviti komunikacijsku priključnicu (socket)
+			Svaka priključnica mora biti imenovana (moramo ju biti u stanju jednoznačno identificirati)
+			Ako dva procesa uspostave kompatibilne priključnice tada ih se može povezati. 
+			Funkcija povezivanja je asimetrična jer jedan proces pokušava uspostaviti vezu dok drugi čeka na postavljanje zahtjeva. 
+			Ovaj način uspostave veze pogodan je za klijent poslužitelj arhitekture.
+		2) Poziv udaljenih procedura
+			Remote procedure call (RPC) je nadogradnja mehanizma razmjene poruka
+			Mehanizam oponaša poziv potprograma.
+			Pri pozivu pravih potprograma podaci se mogu prenositi vrijednošću (call by value) i adresom (call by reference)
+			Pri RPC pozivu podaci se moraju prenositi vrijednošću (call by value)
+			Mehanizam se ostvaruje nad TCP razinom
+			Poziv prihvaća spojni modul (stub) koji oblikuje poruke i potom ih prosljeđuje komunikacijskom sustavu
+			Prilikom primitka rezultata spojni modul će ih dekodirati i vratiti u program. 
+			Proces koji poziva proceduru je klijent, a proces koji izvršava proceduru je poslužitelj. 
+					
+		3) Raspodijeljeni dijeljeni spremnički prostor
+			Taj dijeljeni prostor može biti samo virtualni jer procesi mogu stvarno komunicirati samo razmjenom poruka kroz komunikacijsku mrežu.
+			Ukoliko se jednom od računala dogodi promašaj stranice dijeljenog spremnika tada:
+				- stranica može biti na njegovu disku
+					- u ovom slučaju dogoditi će se uobičajena zamjena stranica
+				- stranica može biti na drugom računalu
+					- u ovom slučaju potrebno je pokrenuti postupak dobavljanja stranice kroz komunikacijsku mrežu
+			Ako se iz dijeljenih stranica samo čita tada nema problema. Ako se podaci ažuriraju tada je pri svakom ažuriranju potrebo ažurirati sve kopije podataka.
+			Dok se ne ažuriraju sve kopije sadržaj nije konzistentan/koherentan.
+		U praktičnoj primjeni su najčešći prva dva načina međuprocesne komunikacije
+
+10.03 MEĐUSOBNO ISKLJUČIVANJE U RASPODIJELJENIM SUSTAVIMA
+
+	10.03.01. MEĐUSOBNO ISKLJUČIVANJE -  OSNOVNI MEHANIZAM OSTVARENJA FUNKCIJA OPERACIJSKOG SUSTAVA
+		Međusobno isključivanje unutar jednog računalnog sustava podržano je sklopovskim rješenjima. 
+		U jednoprocesorskim sustavima to se radi zabranom prekida. 
+		Dvije najvažnije jezgrine funkcije odnose se na binarni semafor (mutex)
+			ispitivanje semafora
+			postvaljanje semafora
+		U višerocesorskim sustavima zabrana prekidanja nije dovoljna za ostvarenje međusobnog isključivanja.
+		Zbog toga je uveden mehanizam nedjeljivog čitanja i nedijeljivog pisanja. 
+		To omogućuje da procesori u čvrsto povezanom sustavu (s jednom sabirnicom i dodjeljivačem sabirnice) mogu nesmetano ispitati zastavicu smještenu u dijeljenom spremničkom prostoru. 	
+		Ulazak u jezgru moguć je ukoliko se uspješno ispita zastavica. Ako nije uspješno ispitana procesor obavlja radno čekanje. 
+
+		Na primjenskoj razini problem međusobnog isključivanja rješava se jednostavnim pozivanjem jezgrenih funkcija. 
+		Binarni semafor može se gledati kao objekt koji može biti slobodan ili pripadati nekoj dretvi. 
+
+		U raspodijeljenom sustavu ne postoji mogućnost sklopovske potpore međusobnog isključivanja.
+		
+	10.03.02. VREMENSKO UREĐENJE DOGAĐAJA U RASPODJELJENIM SUSTAVIMA 
+		Lokalni logički sat
+			U svakom čvoru postoji lokalni logički sat Ci koji se ponaša kao brojilo. 
+			Povećava svoju vrijednost nakon svakog karakterističnog događaja. 
+			Unutar jednog procesa može se jednoznačno utvrditi redoslijed događaja.
+			Relaciju "dogodilo se prije" možemo jednoznačno odrediti za:
+				2 događaja u jednom procesu
+				događaj slanja poruke od jednog procesa i primitka te iste poruke u drugom procesu
+		Globalni logički sat
+			Skup pravila vremenskog uređenja 
+			Zasniva se na sljedećim pravilima:
+				- proces povećava svoj lokalni sat nakon svakog događaja
+				- kad proces šalje poruku on uz nju prilaže vrijednost svog logičkog sata
+				- kada proces primi poruku on  postavlja vrijednost svog logičkog sata na vrijednost veću od trenutne i veću od primljene
+			Može se dogoditi da:
+				- dva lokalna sata imaju jednake vrijednosti
+				- njihove poruke koje si međusobno šalju se presetnu na putu noseći jednake vrijednosti vremenskih oznaka
+			Uređenje možemo postići usporedbom vrijednosti indeksa koji su unaprijed pridjeljeni svakom čvoru
+			
+	10.03.03. PROTOKOLI MEĐUSOBNOG ISKLJUČIVANJA U RASPODIJELJENIM SUSTAVIMA
+		Centralizirani protokol
+			Jedan čvor u mreži se proglašava odgovorinm za ostvarenje međusobnog isključivanja
+			On sadrži sve podatke i ostali čvorovi ga traže dozvolu za ulazak u K.O.
+			Proces Pi kada želi ući mora poslati zahtjev centralnom čvoru.
+			Centralni čvor će mu poslati odobrenje kada Pi može u K.O.
+			Proces Pi nakon izlaska iz K.O. šalje poruku o izlasku centralnom čvoru.		
+			Centralni čvor organizira red prispjelih zahtjeva i dopušta ulazak u K.O. po redu prispjeća.	
+			Osnovni nedostatak ovog protokola je velika ovisnost o centralnom čvoru. 
+
+		Protokol s putujućom značkom
+			Definira se značka koja ciklički putuje kroz sve čvorove.
+			Kada čvor Pi primi značku on će:
+				- zadržati značku dok ne izvrši K.O. (ako trenutno želi u K.O.)
+				- prosljediti značku dalje (ako trenutno ne želi u K.O.)
+			Nedostatak ovog protokola je neotpornost na ispad bilo kojeg čvora koji će prekinuti lanac prosljeđivanja značke. 
+			Drugi nedostatak je što se značka stalno šalje, čak i kad nitko ne želi u K.O.
+		
+		Lamportov raspodijeljeni protokol
+			Zasniva se na uvažavanju vremenskog uređenja temeljem globalnog logičkog sata.
+			Kada Pi želi u K.O. generira zahtijev(i,T(i)) i šalje ga svim čvorovima
+			Unutar svakog čvora nalazi se red poruka u kojem su svi zahtjevi za ulazak u K.O. poredani po relaciji prethodi
+			
+			5 pravila protokola:
+				1) Kada proces Pi zahtjeva ulazak u K.O. on:
+					- stavlja zahtjev(i,T(i)) u vlastiti red
+					- šalje zahtjev(i,T(i)) svima ostalima
+				2) Kada proces Pj primi poruku zahtjev(i,T(i))
+					- uskladi svoj lokalni sat
+					- stavlja zahtejev u svoj red poruka
+					- šalje odgovor(i,T(j))
+				3) Proces Pi smije ući u K.O.
+					- kada je njegov zahtjev na početku reda poruka
+					- kada je primio poruke od ostalih procesa
+				4) Proces Pi po izlasku iz K.O.
+					- ukloni svoj zahtjevv iz reda
+					- šalje svima izlazak(i,T(i)) gdje je T(i) vrijednost logičkog sata u trenutku slanja početnog zahtjeva
+				5) Proces Pj po primitku poruke izlazak(i,T(i))
+					- iz svog reda uklanja zahtjev procesa P(i)
+			
+			Vidimo da je za ulazak i izlazak potrbno 3*(N-1) poruka
+
+		Protokol Ricarta i Agrawala
+			Pokazali su da se broj poruka može svesti na 2*(N-1)
+			
+			5 pravila protokola:
+				1) Kada Pi zahtjeva ulazak u K.O. on:
+					- šalje zahtjev(i,T(i)) svima ostalima
+				2) Kada proces Pj primi zahtjev on:
+					- ažurira svoj lokalni sat
+					- šalje poruku odgovor ako ne želi u K.O. ili ako je njegov zahtjev kasnije od primljenog
+				3) Kada proces Pi primi odgovor on ažurira svoj sat
+				4) Kada proces Pi primi sve odgovore on smije u K.O.
+				5) Kada proces P izlazi iz K.O. on će poslati odgovor(j,T(i)) svim procesima čiji zahtjevi su kod njega na čekanju odgovora.
+
+11.1. SIGURNOST RAČUNALNIH SUSTAVA
+	
+	Sigurnost računalnih sustava sve je važnija jer ljudi sve više koriste raspodijeljene računalne sustave.
+	
+	Osnovna podjela sigurnosnih mehanizama:
+		Zaštita od vanjskih utjecaja
+		Zaštita ostvarena sučeljem prema korisniku
+		Unutarnji zaštitni mehanizmi
+		Komunikacijski zaštitni mehanizmi
+
+
+	Zaštita od vanjskih utjecaja
+		Jednaka kao zaštita bilo koje druge imovine
+	
+	Zaštita ostvarena sučeljem prema korisniku
+		Sučelje mora biti izrađeno tako da omogućuje uporabu samo ovlaštenim osobama. 
+		Pravo pristupa utvrđuje se provjerom identiteta tj. utvrđivanjem vjerodostojnostii (autentičnosti) njegova identiteta. 
+		Korisnik se prilikom pristupa računalu predstavlja postupkom identifikacije.
+		Računalni sustav mora provesti postupak identifikacije. Taj se postupak naziva autentifikacijom. Autentifikacija se provodi prilikom prijave za rad na sustavu.
+		U raspodjeljenim sustavima potrebno je provesti dvostranu autentifikaciju.
+		Identifikacija može biti složeniji upit od autentifikacije.
+
+		Identifikacija = predstavljanje
+		Autentifikacija = identifikacija + verifikacija
+		Autorizacija = Autentifikacija + provjera ovlasti/prava pristupa
+		
+	Unutarnji zaštitni mehanizmi
+		Mehanizmi dopuštanja pristupa pojedinim sredstvima nazivaju se autorizacijom pristpa.
+		Uobičajeno nazivlje u postupcima autorizacije:
+			subjekt - pojedini korisnik
+			objekt zaštite - sva zaštićena sredstva
+			zaštitna pravila - određuju se za svaki par objekt subjekt
+	
+	Komunikacijski zaštitni mehanizmi
+		Najdjelotvornija zaštita komunikacijskih mehanizama jest kriptiraje. 
+		Većina se narušavanja sigurnosti može razmotriti na mehanizmu protoka poruka od izvorišta do odredišta. 		
+		
+	11.01.02 VRSTE NAPADA NA SIGURNOST
+		1) Prisluškivanje ili presretanje
+			Pasivan napad (uljez ne djeluje aktivno na informacije)
+			Djeluje na povjerljivost odnosno tajnost informacija.
+		2) Prekidanje
+			Aktivan napad
+			Uljez prekida komunikaciju između izvorišta i odredišta
+			Djeluje na raspoloživost informacija
+		3) Promjena sadržaja poruke
+			Aktivan napad
+			Djeluje na besprijekornost/integritet informacija
+		4) Izmišljanje poruka
+			Aktivan napad
+			Djeluje na besprijekornost/integritet informacija
+		5) Lažno predstavljanje
+			Aktivan napad
+		6) Poricanje
+			Aktivan napad
+		
+	11.02.03. SIGURNOSNI ZAHTJEVI
+		1) Povjerljivost ili tajnost
+		2) Raspoloživost
+		3) Besprijekornost
+		4) Autentičnost
+		5) Autorizacija
+		6) Neporecivost
+						
+11.01.04. UTJECAJ KOMPONENTI RAČUNALNIH SUSTAVA NA SIGURNOST
+
+	Sklopovlje računala
+		Može najviše utjecati na raspoloživost informacija
+
+	Programi
+		Pogrami mogu utjecati na sve sigurnosne zahtjeve.
+		Virusi su programski odječci koji se komuikacijom ili razmjenom spremničkih medija unose u računalni sustav.
+		Programski crvi (worms) su cjeloviti programi koji sami sebe kroz komunikacijsku mrežu prenose s računala na računalo i pritom djeluju destruktivno.
+		Trojanski konj je program koji obalja neki koristan posao, ali mu je pridodana neka funkcija koja štetno djeluje.
+		Rootkit su posebna vrsta zloćudinih programa koji svoje djelovanje skrivaju na način da nadomještaju sustavske procese i podatke.
+	
+	Podaci 	
+		Podaci su podložni utjecaju na raspoloživost, tajnost i besprijekornost.
+	
+	Komunikacije
+		Ovo je najosjetljivi dio iz stanovišta računalne sigurnosti.
+			
+11.02. OSNOVE KRIPTOGRAFIJE
+	Svi se sigurnosni zahtjevi osim raspoloživosti mogu zadovoljiti pomoću kriptiranja.
+	
+	Kriptiranje
+		Kriptiranje prevodi jasan tekst u kriptirani tekst.
+		Obrnuti postupak je dekriptiranje - inverz funkcije kriptiranja
+		Današnji kriptografski postupci su parametarske matematičke funkcije kojima se nizovi butova jasnog teksta preračunavaju u nizove bitova kriptiranog teksta.
+		
+		Funkcija kriptiranja i dekriptiranja skupa čine kriptosustav
+		Kriptiranjem transformiramo nesigurni komunikacijski kanal u povjerljivi informacijski kanal
+		
+		Današnji posupci kriptiranja su u pravilu javno poznati, ali ključevi kriptiranja imaju jako velik broj mogućih vrijednosti
+		KERCKHOFFOV ZAKON: kriptosustav mora biti siguran i onda kada su sve infomacije o kriptosustavu, osim tajnog ključa, javno poznate
+		
+		Kriptoanalitičam otkriva tajni ključ pomoću:
+			- samo kriptiranog teksta
+			- ograničene količine parova kriptiranog i nekriptiranog teksta
+			- neograničene količine parova kriptiranog i nekriptiranog teksta
+		
+		Danas su u upotrebi dva oblika kriptosustava
+			Simetrični -  isti je ključ kriptiranja i dekriptiranja		
+			Asimetrični - različiti ključevi za kriptiranje i dekriptiranje
+
+11.03. SIMETRIČNI KRIPTOSUSTAV
+	Koriste isti ključ za kriptiranje i dekriptiranje.
+	U načelu, se zanivaju na uporabi operacije isključivo ili.
+	Jedan mogući način kriptiranja bio bi da se kao ključ upotrijebi neki dogovoreni tekst s odgovarajućim brojem znakova jednakim poruci koja se kriptira - jednokratna bilježnica (one time pad)
+	Podjelimo tekst na blokove i svaki kriptiramo.
+	Za N korisnika potrebo je N*(N-1)/2 ključeva.
+	
+	11.03.01 Data encription standard - DES
+		Najrasprostranjeni simterični kriptosustav
+		Zasniva se na permutaciji bitova i operaciji XOR
+		Kriptiraju se blokovi veličine 64 bita. Ključ ima 56 bita i od njega se stvara 16 podključeva veličine 48 bita.
+		Postupak je sljedeći:
+			1) prvo permutiramo tekst 
+				IP(M)
+			2) permutirani tekst podjelimo u dva dijela
+				L = IP(M)[0]
+				R = IP(M)[1]
+			3) zatim se u 16 koraka radi
+				Li = Ri-1
+				Ri = Li-1^f(Ri-1,Ki)
+			4) na kraju se radi inverzija dobijenog testa
+				C = Li+Ri
+				C = IP_INV(C)
+
+		Parovi simetričnih ključeva Ki i K16-i+1 uvjetuju se međusobno inverznim preslagivanjima bitova
+		Ovo omogućuje da je postupak kriptiranja i dekriptiranja jednak.
+		Postoje novije verzije koje koriste 128 bitni ključ za kriptiranje
+
+		Kod supstitucijskih tablica prvi i zadnji bit ulaza određuju redak tablice, a bitovi u sredini određuju stupac tablice.
+
+	11.03.02. 3DES
+		Upotrebljavamo 3 ključa
+		Postupak:
+			C1 = DES(M,K1)
+			C2 = DES_INV(C1,K2)
+			C1 = DES(C2,K3)
+
+	11.03.03. Izbjeljeni DES - DESX		
+		Prvo se provodi bijeljenje teksta
+		Upotrebljavaju se još 2 64-bitna ključa koji vrše izbjeljivanje blokova teksta
+		DESX = DES(M^K2,K1)^K3
+
+	11.03.04. Kriptosustav IDEA
+		Kriptira blokove od 64 bita. Pri kriptiranju se blok dijeli na četiri podbloka od po 16 bitova.
+		Algoritam se provodi u 9 koraka. 
+		U prvih 8 koraka 4 podbloka i 6 16-bitnih podključeva provode sljedeće:
+			XOR
+			zbrajanje mod 2^16
+			množenje mod 2^16+1
+		U 9-om koraku se upotrebljavaju samo 4 podključa i ne upotrebljava se operacija XOR
+		Ključ ima duljinu 128 bitova. 
+		Računanje podključeva:
+			Prvih 8 se dobije djeljenjem ključa na 16 bitne blokove
+			Potom se ključ rotira 25 mjesta u lijevo i ponovno dijeli. To se ponavlja još 6 puta i na kraju se uzima samo prva 4 podključa 
+		Dekriptiranje se provodi jednakim postupkom s tim da se potključevi izračunavaju obrnutim redoslijedom i čine aditivne i multiplikativne inverze potključeva kriptiranja.
+		
+	11.03.05. Napredni kriptosustav AES
+		Koristi konačno Galiosovo polje GF(2^8) -  polinom 7-og stupnja gdje su argumenti polinoma ili 0 ili 1
+		Zbrajanje u ovom polju je XOR, a množenje je množenje polinoma modulo ireducibilni polinom x^8 + x^4 + x^3 + x + 1
+		Kriptira blokove teksta veličine 128 bita. Moguće duljine ključeva su 128, 192 i 256 bita.
+		Broj koraka ovisi o veličini bloka podataka i veličini bloka ključa.
+		U svakom koraku boavljaju se 4 transformacije:
+			Zamjeni znakove
+			Posmakni redove
+			Pomješaj stupce
+			Dodaj potključ
+		U zadnjem koraku se ne radi POMJEŠAJ STUPCE
+		Podključevi su po velični jednaki veličini bloka i dobijavju se iz izvornog ključa.
+		Svi podključevi čine jedan prošireni ključ.
+		Međurezultat kriptiranja naziva se stanje.
+		Funkcija Zamjeni znakove mjenja znak po znak koristeći suspstitucijsku tablicu
+		Funkcija posmakni redove rotira znakove u lijevo i to u drugom trećem i četvrtom redu bloka
+		Funkcija pomiješaj stupce množi sutpac po stupac bloka s finksnim poinomom 0x3*x^3+x^2+x+2 mod (x^4+1)
+		
+11.04. NAČINI KRIPTIRANJA
+	11.04.01. ELEKTRONIČKA BILJEŽNICA
+		Najjednostavni način kriptiranja. 
+		Svaki se blok kriptira tj. dekriptira zasebno koristeći isti ključ.
+		Ne mjenja redoslijed blokova.
+		Pogreška pri kriptiranju jednog bloka ne utječe na kriptiranje ostalih blokova.
+		Loše jer zadržava uzorke teksta
+	
+	11.04.02. ULANČAVANJE (CBC-CHIPER BLOC CHAINING)
+		Text se XOR-a s kriptiranim blokom i potom kriptira
+		
+		Primjer:
+			message = "Ovo treba kriptirat"
+			message_blocks = message.split()
+			c = encrypt(message_blocks[0],initialization_vector)
+			send(c)
+			for(int i=1; i<message_blocks.length;i++)
+				c = encrypt(message_blocks[i],c)
+				send(c)
+			
+		Treba izbjegavati korištenje uvijek istog inicijalizacijskog vektora.
+		Vidimo da kriptiranje bloka ovisi o prethodnom kriptiranju.
+		Ovakav način kriptiranja je samosinkronizirajuć.
+
+	11.04.03. CFB I OFB NAČINI KRIPTIRANJA
+		Ključ proizvoljne duljine moguće je postići uzastopnim kriptiranjem neke početne vrijednosti (OFB način) ili
+		ulančanim kriptiranjem već kriptiranih blokova (CFB način)
+		
+	11.04.04. BROJAČ (CTR-COUNTER)
+		Sličan je OFB načinu kriptiranja samo što se niz bitova ključa dobiva uzastopnim kriptiranjem rastuće vrijednosti brojača.
+		Primjer:
+			message = "Ovo treba kriptirat"
+			message_blocks = message.split()	
+			for(int i=0; i<message_blocks.length; i++)
+				c = encrypt(message_blocks[i],generate_key(i,key))	
+				send(c)		
+
+11.05. ASIMETRIČNI KRIPTOSUSAVI, SUSTAVI S JAVNIM KLJUČEM
+	11.05.01 TEORIJA BROJEVA
+		Broj a djeljiv je s brojem d kada je a višekratnik od d -> d|a (d dijeli a)
+		1 i a je trivijani djeljitelj broja a
+		Netrivijalni djelitelji su faktori
+		
+		Za svaki cijeli broj a i bilo koji pozitivan broj n postoje jedistnevni cijeli brojevi tako da:
+			a = q*n+r
+		
+		Ekvivalentnost brojeva po modulu n -> daju isti ostatak pri djeljenju s n
+		Relativno prosti brojevi nemaju zajedničkih faktora
+		
+		Eulerova phi funkcija 
+			ako je Zn = {0,...,n-1} prsten u kojem su definirani zbrajanje, oduzimanje i množenje modulo n
+			eulerova phi funkcija vraća broj elemenata iz Zn koji su relativno prosti s n
+			Računa se kao:
+				phi(n) = n *(1-1/p1)*(1-1/p2)*...*(1-1/pn)
+				gdje su p1,p2,...,pn faktori broja n
+
+		Potenciranje s velikim eksponentima prikladno je obaviti uzastopnim kvadriranjem
+		Eulerov teorem:
+			a^phi(n)=1 mod(n)
+		Mali Fermatov teorem
+			a^(p-1) = 1 mod(p)		
+		Diskretni logaritam ili index
+			a^x=b mod(n) -> x je diskretni logaritam od x ili index broj b mod(n) u odnosu na bazu a
+		Kineski teorem ostataka
+			Dovodi u vezu sustav ostataka po modulima koji su međusobno po parovima relativno prosti s jednadžbom po modulu koji je jednak njihovom umnošku
+
+	11.05.02. RSA
+		Postupak izgradnje RSA sustava:
+			1) Odabiru se dva velika prosta broja p i q>10^150
+			2) Izračunava se njihov umnožak n = p*q
+			3) Izračunava se phi(n)=(p-1)*(q-1)
+			4) Odabire se e<phi(n) i relativno prost u odnosu na phi(n)
+			5) Izračunava se d<phi(n) tako da e*d=1mod(phi(n))
+			6) Par e,n čini javni ključ
+			7) Par d,n čini privatni ključ
+
+		Kriptiranje
+			C = M^e mod(n)
+		Dekriptiranje
+			M = C^d mod(n)
+		
+		Dobrota RSA kriptosustava zasniva se na teškoći faktoriziranja velikih brojeva.
+		
+		Za velike n funkcija gustoće prostih brojeva približno je jednaka
+			pi(n) = n/ln(n)
+
+		Tj.  vjerojatnost da oko n odaberemo prosti broj otprilike je jednaka 1/ln(n) -> oko n treba ispitati ln(n) brojeva za naći prost broj -> zapravo samo 4/10 tih brojeva
+		
+		Heurističko ispitivanje po Miller-Rabinu
+			Zasniva se na Fermatovu teoremu a^(p-1)=1 mod(p)
+			Problem s ovim su Carmichaelovi brojevi koji to zadovoljavaju za većinu baza a, ali nisu prosti
+			Ako postoji netrivijalni drugi korijen od 1 mod n onda je  sigurno složeni broj. 
+			Provjeravamo da li je |x|!=1 za x^2=1 mod(n). Ako je broj je složen.
+			Funkcija će potvrditi složenost kada ustanovi:
+				da za dani n Fermatov teorem nije zadovoljen
+				da za dani n postoji netrivijalni drugi korijen od 1 mod n
+			Funkcija vraća true ako utvrdi složenost tj. 0 ako ne utvrdi
+			Ako se utvrdi složenost to je sigurno, no ako se ne utvrdi postoji šansa da je broj složen, a ne prost.
+			Složenost funkcije utvrđivanja je logaritamska
+
+			Primjer:
+			provjeri(x,a[]){
+				
+				for(baza:a){
+					if(baza^(x-1)!=1(mod x))
+						return SLOZEN				
+				}
+				
+				x1,x2 = rjesi(x^2=1 mod(x))
+				if(|x1|!=1 || |x2|!=1)
+					return SLOZEN
+				
+				return PROST
+			}
+
+11.06. SAŽETAK PORUKE, UTVRĐIVANJE BESPRIJEKORNOSTI
+
+	11.06.01. DIGITALNA OMOTNICA
+		Postupak:
+			1) Odabiremo simetrični ključ
+			2) Kriptiramo poruku simetričnim ključem
+			3) Kriptiramo simetrični ključ javnim ključem primatelja
+			4) Šaljemo kriptirani tekst i kriptirani simetrični ključ
+		
+		Poruku koja se sastoji od kriptiranog teksta i kriptiranog simetričnog ključa nazivamo digitalnom omotnicom.
+		Ovaj postupak zadovoljava tajnost, ali ne i ostale sigurnosne zahtjeve.
+		
+	Digitalni potpis
+		U nekim primjenama tajnost nije glavni zahtjev, već integritet
+		Osnovni postupak za utvrđivanje besprijekornosti čini matematički postupak za izradu kriptografskog sažetka poruke. 
+		Funkcija za izračun sažetka od poruke proizvoljne duljine proizvodi sažetak fiksne duljine.
+		Funkcija izračuna sažetka nije invertibilna tj. ne možemo iz sažetka izračunati početni tekst.
+		
+		Pošiljatelj može svojim PRIVATNIM ključem kriptirati sažetak i poslati ga, a primatelj onda javnim ključem pošiljatelja provjerava sažetak poruke.
+		Kriptirani sažetak čini svojevrsni digitalni potpis.
+		
+	11.06.02. DIGITALNI PEČAT
+		Digitalni pečat je potpisana poruka u digitalnoj omotnici, odnosno zaečaćena digitalna omotnica.
+		Postupak:
+			1) Odabiremo simetrični ključ
+			2) Kriptiramo poruku simetričnim ključem
+			3) Kriptiramo simetrični ključ javnim ključem primatelja
+			4) Izračunavamo sažetak kriptiranog teksta i kriptiranog ključa (jedan sažetak za spoj to dvoje)
+			5) Kriptiramo sažetak svojim privatnim ključem
+			6) Šaljemo kriptirani tekst, kriptirani ključ i kriptirani sažetak.
+
+//========================================================================================================================================================================================
+//Predavanja
+
+Procesi mogu komunicirati
+	- preko zajedničkog adresnog prostora
+	- razmjenom datoteka
+	- razmjenom poruka (preko redova poruka)
+	- cjevovodima
+	- variablama okoline				
+
+Red poruka
+	- poruku ne šaljemo direktno drugom procesu već ju stavljamo u red poruka
+	- moguće ga je koristiti kao brojački semafor
+
+Okolina(environment)
+	- niz znakova "ime=vrijednost" koji se predaje svakom programu prilikom pokretanja
+	- različite ljuske na različiti način koriste variable okoline
+
+	-------------------------------------------------------------------------------------------
+	|| sh                     || csh                   || opis                               ||
+	-------------------------------------------------------------------------------------------
+	|| ime=vrijednost         || set ime=vrijednost    || samo za trenutnu ljusku            ||
+	-------------------------------------------------------------------------------------------
+	|| export ime=vrijednost  || setenv ime=vrijednost || šalje se programima pri pokretanju ||
+	-------------------------------------------------------------------------------------------
+
+Cjevovodi
+	Komunikacijski mehanizam unutar operacijskog sustava.	
+	Kada stvorimo cjevovod on je dvosmjeran. Ukoliko program samo čita potrebno je zatvoriti dio za pisanje i obrnuto ako program samo piše potrebno je zatvoriti dio za čitanje.
+	Čitanje i pisanje su FIFO operacije.
+	Cjevovod može biti pun (za razliku od datoteke)
+	Cjevovod može biti prazan.
+	Čitanje iz cjevovoda je destruktivno.
+	
+	Cjevovodi mogu biti imenovani i neimenovani. 
+
+	Neimenovani cjevovodi
+		- procesi koji komuniciraju moraju biti u srodstvu
+		- datoteke su opisane s jednim opisnikom dok su cjevovodi opisani s 2 opisnika.
+		- cjevovodi za komunikaciju koriste buffere veličine clustera (4k)
+
+	Imenovani cjevovodi
+		- datoteka + cjevovod -> .p datoteke (uvijek veličine 0)
+		- veličina je 0 jer ne radi dok se ne otvori i za pisanje i za čitanje		
+		- maksimalna veličina je određena maksimalnom veličinom datoteke na disku tj. maksimalnom količinom slobodnog prostora na disku
+		- ova vrsta cjevovoda ima samo 1 opisnik
+		- postoje neovisno o procesima
+		- omogućuju povezivanje procesa koji nisu u nikakvom srodstvu
+
+	Primjer korištenja funkcija close i dup za prespajanje STD_IN tj. STD_OUT uz već inicijalizirani cjevovod:
+		1) Prespajanje STD_IN
+			close(PISANJE)
+			close(STD_IN)
+			dup(ČITANJE)
+			close(ČITANJE)
+		2) Prespajanje STD_OUT
+			close(ČITANJE)
+			close(STD_OUT)
+			dup(PISANJE)
+			close(PISANJE)
+
+
+	
+
