@@ -1,0 +1,5 @@
+Kao prvo, kod nije baš najčišći, ali šljaka.
+
+Algoritam funkcionira kao stablo u kojem svaki čvor ima 7 djece. Master je zadužen za prve 3 razine, odnosno podjela je funkcionalna na 49 zadataka. Prilikom svakog ciklusa računanja master prvo svima dijeli ploču, a nakon toga svaki proces od mastera traži zadatak, dok ima zadataka. Dobije identifikator zadatka (potez računala, potez igrača) koji je kao nekakav indeks stabla, te ručno izvede ta dva poteza, ode u rekurziju, pa počisti ta dva ručno izvedena poteza. Kad se svi zadaci obrade master sumira 3. razinu u čvorove 2. razine.
+
+Broj razina koji se računa može se mijenjati promjenom varijable BROJ_RAZINA. Od toga 3 razine uvijek otpadaju na master, tako da workeri računaju BROJ_RAZINA - 3.

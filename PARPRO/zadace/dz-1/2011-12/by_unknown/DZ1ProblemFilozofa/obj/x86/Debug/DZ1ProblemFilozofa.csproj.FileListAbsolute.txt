@@ -1,0 +1,16 @@
+D:\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\bin\Debug\DZ1ProblemFilozofa.exe
+D:\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\bin\Debug\DZ1ProblemFilozofa.pdb
+D:\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\obj\x86\Debug\DZ1ProblemFilozofa.exe
+D:\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\obj\x86\Debug\DZ1ProblemFilozofa.pdb
+D:\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\bin\Debug\MPI.dll
+D:\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\bin\Debug\MPIUtils.dll
+D:\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\bin\Debug\MPIUtils.pdb
+C:\Documents and Settings\Owner\My Documents\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\obj\x86\Debug\DZ1ProblemFilozofa.exe
+C:\Documents and Settings\Owner\My Documents\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\obj\x86\Debug\DZ1ProblemFilozofa.pdb
+C:\Documents and Settings\Owner\My Documents\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\bin\Debug\DZ1ProblemFilozofa.exe
+C:\Documents and Settings\Owner\My Documents\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\bin\Debug\DZ1ProblemFilozofa.pdb
+C:\Documents and Settings\Owner\My Documents\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\bin\Debug\MPI.dll
+C:\Documents and Settings\Owner\My Documents\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\bin\Debug\MPIUtils.dll
+C:\Documents and Settings\Owner\My Documents\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\bin\Debug\MPIUtils.pdb
+C:\Documents and Settings\Owner\My Documents\fax\8 semestar\Dropbox\Paralelno programiranje\1Dz\DZ1ProblemFilozofa\DZ1ProblemFilozofa\obj\x86\Debug\ResolveAssemblyReference.cache

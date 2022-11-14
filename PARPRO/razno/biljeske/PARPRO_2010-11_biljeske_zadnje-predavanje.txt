@@ -1,0 +1,71 @@
+PARALELNI EVOLUCIJSKI ALGORITAM (pea)
+EA: GA, GP, ES,EP, (...)
+predložak ea:
+	inicijaliziraj populaciju 
+	dok nije zadovoljen uvijet zaustavljanja 
+		evaluiraj populaciju 
+		seleektiraj p(žnj) iz p(i);
+		križaj P(žnj);
+		mutiraj P(žnj)
+	end dok
+podjela pea:
+tpea
+dea-\
+trea-+--hpea
+gpea-/
+
+1tpea
+
+2dea
+-island ea, coarse grained ea migracija
+
+migracija-
+uvode se novi parametri
+a) migracijski inteval:
+-može biti konstantan 
+-promjenjiv (uvijetovan)
+migraacija može biti 
+	-sinkrona 
+	-asinkorna
+b) migracijska stopa
+c) odabir jediunki za emigraciju 
+ -najborojnije sluèajne, kombinacija, operatir
+d)najbolje  za imigraciju
+e) topologija razmjene jedinki
+cirkularna: -sam u krug
+oktalna: broj 8
+globalni ring+ 3 otocna 
+kruzni raspodjeljene al ne saljemo susjedima(ili random nekima)
+
+ostvarenje modela : 
+->gledano kroz faze razvoja par. algoritma
+	->podjela: podaci (domenska) kao matrica pa svaki delaju isti posao ali rade s razlicitim genetskim materijalom
+	->aglomeracija: 1 zadatak - 1 sub-populacija (grubo zrnata podjela)
+	->pridruživanje: pretpostavlja da æe svaki zadatak imati podjednako optereæenje (jednoliko)
+3. model MPEA-masivno paralelni evoluvioni alg. 
+	rubni slucaj raspodjeljenog evolucijskog algoritma gdje subpopulaciju èini samo jedna ili nekoliko jedinki 
+	namjenjen primarno na viseprocesorskim (nekoliko 100tina) masivno paralelnim ralunalima
+	-> za svaku populaciju definira se susjedstvo- skup jedinki s kojima je moguæa interakcija (usporedjujemo s maskom lokalne komunikacije)
+	naprimjer: 
+	2d polje procesora 
+	o\ o / o  o 
+	o- o - o  o 
+	o/ o \ o  o 
+	o  o   o  o
+4. GPEA globalni paralelni evolucijski algoritam
+	- jedan zadatak voditelj i više zadataka radnika (standardna master-slave podjela)
+	- uobièajeno voditelj izvodi selekciju i genetske operatore, a radnici izvode evaluaciju 
+	- podjela opravdana u 90% slucaja jer evaluacija fitnesa najvise kosta(krizanje je primjerice jeftino)
+	- moguæe su i druge podjele: radnici mog takodje izvoditi genestke operatore, a vrlo rijetko i selekciju;
+	-ima zgodno svojstvo:->a ko je sinhroni, GPEA ima isto ponasanje kao i slijedni evolucijski algoritam
+						 ->može biti asinhroni (prebrisavanje jediniki ako se vise ne koriste)-dobra stvar: nema èekanja;
+	ostvarenje: 
+		->podjela: posla 
+		->aglomeracija: 1 zadatak-1radnik (može se širiti, ali time se poveæava zagušenje voditelja->uèinkovitost paralelizacije se smanjuje);
+		
+5. HPEA
+->kombinira prethodne modele, radi paralelizaciju na više razina(ima primjerice više podmodela radnik-voditelj(DEA/GPEA));
+->više kombinacija: DEA/MPEA, MPEA/GPEA, DEA/DEA/GPEA-trorazinski: MPI+dretve 
+zgodno+imformativno: ne moramo radit modele od nule->ECF (ferofci slozili) evaluation computation framework
+					moguce->DEA, GPEA, DEA/GPEA, sam treba postelat datoteku 
+						  ->implicitna paralelizacija: zahtjevne stvari paraleliziramo  
