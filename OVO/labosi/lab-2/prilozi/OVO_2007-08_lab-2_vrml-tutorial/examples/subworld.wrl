@@ -1,0 +1,222 @@
+#VRML V2.0 utf8
+#
+#  subworld.wrl
+#  Submarine world with sounds
+#	by John L. Moreland
+#
+#  This world illustrates the use of multiple sounds and their
+#  ellipsoids to arrange so that different sounds are heard at
+#  different points in the world.
+#
+
+WorldInfo {
+	title "Submarine world with sounds"
+	info [ "Copyright (c) 1998, John L. Moreland" ]
+}
+
+NavigationInfo {
+	type [ "EXAMINE", "ALL" ]
+	headlight TRUE
+}
+
+Viewpoint {
+	description "Above"
+	position 0.0 10.0 19.0
+	orientation 1.0 0.0 0.0  -0.7
+}
+
+Viewpoint {
+	description "Surface"
+	position 0.0 0.0 20.0
+}
+
+Viewpoint {
+	description "Below"
+	position 0.0 -3.0 20.0
+}
+
+Viewpoint {
+	description "Middle"
+	position 0.0 -3.0 0.0
+}
+
+######################################################################
+# World
+
+Group {
+	children [
+		# Sea Surface
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.254 0.494 0.8965
+					emissiveColor 0.254 0.494 0.8965
+					transparency 0.5
+				}
+				texture ImageTexture {
+					url "water.jpg"
+				}
+				textureTransform DEF WaterTT TextureTransform {
+					scale 0.3 0.3
+				}
+			}
+			geometry IndexedFaceSet {
+				solid FALSE
+				ccw TRUE
+				coord Coordinate {
+					point [
+						 20.0  0.0  20.0,
+						 20.0  0.0 -20.0,
+						-20.0  0.0 -20.0,
+						-20.0  0.0  20.0,
+					]
+				}
+				coordIndex [
+					0, 1, 2, 3, 0,
+				]
+			}
+		}
+		# Sub
+		DEF Sub Transform {
+			children [
+				Transform {
+					translation 10.0 -2.0 0.0
+					children [
+						Inline { url "sub.wrl" }
+					]
+				}
+			]
+		}
+	]
+}
+
+######################################################################
+# Sky
+
+Background {
+	skyColor [
+		0.0 0.2 0.9,
+		0.0 0.3 0.8,
+		0.254 0.494 0.8965,
+	]
+	skyAngle [ 1.309, 1.571 ]
+	groundColor [
+		0.0 0.3 0.7,
+		0.0 0.2 0.3,
+		0.0 0.0 0.3,
+	]
+	groundAngle [ 1.309, 1.571 ]
+}
+
+######################################################################
+# Make the sub navigate
+
+DEF TS TimeSensor {
+	cycleInterval 8.0
+	loop TRUE
+}
+
+DEF OI OrientationInterpolator {
+	key [ 0.0, 0.5, 1.0 ]
+	keyValue [
+		0.0 1.0 0.0  0.0,
+		0.0 1.0 0.0  3.14159,
+		0.0 1.0 0.0  6.283,
+	]
+}
+
+ROUTE TS.fraction_changed TO OI.set_fraction
+ROUTE OI.value_changed TO Sub.set_rotation
+
+######################################################################
+# Make the water churn
+
+DEF TS2 TimeSensor {
+	cycleInterval 90.0
+	loop TRUE
+}
+
+DEF OI2 OrientationInterpolator {
+	key [ 0.0, 0.5, 1.0 ]
+	keyValue [
+		0.0 1.0 0.0  0.0,
+		0.0 1.0 0.0  3.14159,
+		0.0 1.0 0.0  6.283,
+	]
+}
+
+DEF Churn Script {
+	eventIn  SFRotation set_rotation
+	eventOut SFFloat one_changed
+	url "vrmlscript:
+		function set_rotation( rot, et )
+		{
+			one_changed = rot[3];
+		}
+	"
+}
+
+ROUTE TS2.fraction_changed TO OI2.set_fraction
+ROUTE OI2.value_changed TO Churn.set_rotation
+ROUTE Churn.one_changed TO WaterTT.set_rotation
+
+######################################################################
+# Ambient Sounds
+
+# Air
+Transform {
+	translation 0.0 8.0 0.0
+	scale 40.0 9.0 40.0
+	children [
+		Sound {
+			minFront 1.0
+			minBack 1.0
+			maxFront 1.0
+			maxBack 1.0
+			spatialize FALSE
+			source AudioClip {
+				loop TRUE
+				url "air.wav"
+			}
+		}
+	]
+}
+
+# Splash
+Transform {
+	translation 0.0 0.0 0.0
+	scale 25.0 1.0 25.0
+	children [
+		Sound {
+			minFront 1.0
+			minBack 1.0
+			maxFront 1.0
+			maxBack 1.0
+			spatialize FALSE
+			source AudioClip {
+				loop TRUE
+				url "paddle.wav"
+			}
+		}
+	]
+}
+
+# Water
+Transform {
+	translation 0.0 -8.0 0.0
+	scale 40.0 9.0 40.0
+	children [
+		Sound {
+			minFront 1.0
+			minBack 1.0
+			maxFront 1.0
+			maxBack 1.0
+			spatialize FALSE
+			source AudioClip {
+				loop TRUE
+				url "water.wav"
+			}
+		}
+	]
+}
+

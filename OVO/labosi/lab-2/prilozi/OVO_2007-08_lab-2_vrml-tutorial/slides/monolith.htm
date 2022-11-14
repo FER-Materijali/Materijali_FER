@@ -1,0 +1,424 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>monolith.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Animating transforms</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>monolith.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  Monolith World
+#  monolith.wrl
+#        by David R. Nadeau
+#
+#  Six vertical monoliths stand in a world.  Touching a monolith starts
+#  it glowing in a pulsing fashion.
+#
+#  TouchSensors on the monoliths route to TimeSensors, one per monolith.
+#  Each TimeSensor routes to the intensity field of a PointLight placed
+#  just in front of the monolith.  Simultaneously, a monolith's TimeSensor
+#  routes to the transparency field on a Material for a Box surrounding
+#  the monolith.
+#
+#  As a monolith's TimeSensor fraction ramps up from 0.0 to 1.0, the
+#  PointLight intensity ramps up from 0.0 (off) to 1.0 (full on).  At
+#  the same time, the monolith's outer box transparency ramps from
+#  0.0 (opaque) to 1.0 (transparent).  As the transparency increases,
+#  an emissive textured inner box for the monolith becomes visible.
+#  The inner box's emissive shading makes it appear to be a light source,
+#  and the plausible source of the PointLight source's illumination.
+#  The overall effect is one of pulsing glowing monoliths.
+#
+#  A grid mesh floor is used so that localized lighting effects will be
+#  obvious.
+#
+#  Things to experiment with:
+#        Try adding a ScalarInterpolator to each monolith and route it's
+#        output in to the rotation field of the monolith's TextureTransform.
+#        This will rotate the texture on the monolith.
+#
+#        Instead of the transparent box trick, try using a ColorInterpolator
+#        to gradually increase the emissiveColor of a single monolith box
+#        while decreasing the box's diffuseColor.
+#
+#        Try routing the TimeSensor's outputs in to a ScalarInterpolator
+#        that varies up and down smoothly, then route this output in to the
+#        light source's intensity, etc.  Instead of the 0.1-1.0 ramp, then
+#        instant fall to 0.0 that the TimeSensor's fraction output gives, you
+#        can shape an arbitrary smooth rise and fall curve in the Scalar
+#        Interpolator's key values.
+#
+
+WorldInfo {
+    title "Monolith World"
+    info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+Viewpoint {
+    position 0.0 1.6 9.0
+    description "Entry View"
+}
+
+NavigationInfo {
+    type [ "WALK", "ANY" ]
+    headlight FALSE
+}
+
+Background {
+    skyColor [
+        0.0 0.0 0.0,
+        0.0 0.0 0.0,
+        0.0 0.1 0.5,
+    ]
+    skyAngle [
+        1.37,
+        1.57,
+    ]
+}
+
+
+#
+#  Generic light source used to give the world ambience before any
+#  monoliths start glowing
+#
+PointLight {
+    ambientIntensity 0.1
+    color 0.2 0.2 0.2
+    location 0.0 8.0 10.0
+}
+
+
+#
+#  Glowing monoliths and their light sources
+#        The monoliths are all structurally the same, but they have
+#        different positions, and slightly different texture transforms
+#        This latter difference insures that the texture on each
+#        monolith is different.
+#
+#        A better way to do this would be to create a PROTO for the
+#        monolith, then provide an argument to the PROTO node that
+#        alters the texture transform.
+#
+DEF Monolith1Light PointLight {
+    intensity 0.0
+    ambientIntensity 0.2
+    color 0.8 0.4 0.0
+    location 0.0 2.0 0.5
+}
+Transform {
+    translation 0.0 2.0 0.0
+    children [
+	# Outer
+	Shape {
+	    appearance Appearance {
+		material DEF Monolith1Facade Material {
+		    diffuseColor 0.2 0.2 0.2
+		    transparency 0.0
+		}
+	    }
+	    geometry DEF MonolithOuterBox Box {
+		size 2.0 4.0 0.3
+	    }
+	}
+	# Inner
+	Shape {
+	    appearance Appearance {
+		material NULL # emissive texturing
+		texture DEF MonolithInnerFire ImageTexture {
+		    url "fire.jpg"
+		}
+		textureTransform TextureTransform {
+		    scale 0.5 0.5
+		}
+	    }
+	    geometry DEF MonolithInnerBox Box {
+		size 1.9 3.9 0.2
+	    }
+	}
+	DEF Monolith1Touch TouchSensor {
+	}
+    ]
+}
+
+DEF Monolith2Light PointLight {
+    intensity 0.0
+    ambientIntensity 0.2
+    color 0.8 0.4 0.0
+    location -3.0 2.0 2.5
+}
+Transform {
+    translation -3.0 2.0 2.0
+    children [
+	# Outer
+	Shape {
+	    appearance Appearance {
+		material DEF Monolith2Facade Material {
+		    diffuseColor 0.2 0.2 0.2
+		    transparency 0.0
+		}
+	    }
+	    geometry USE MonolithOuterBox
+	}
+	# Inner
+	Shape {
+	    appearance Appearance {
+		material NULL # emissive texturing
+		texture USE MonolithInnerFire
+		textureTransform TextureTransform {
+		    scale 0.3 0.3
+		    translation 0.2 0.2
+		}
+	    }
+	    geometry USE MonolithInnerBox
+	}
+	DEF Monolith2Touch TouchSensor {
+	}
+    ]
+}
+
+DEF Monolith3Light PointLight {
+    intensity 0.0
+    ambientIntensity 0.2
+    color 0.8 0.4 0.0
+    location 4.0 2.0 -1.5
+}
+Transform {
+    translation 4.0 2.0 -2.0
+    children [
+	# Outer
+	Shape {
+	    appearance Appearance {
+		material DEF Monolith3Facade Material {
+		    diffuseColor 0.2 0.2 0.2
+		    transparency 0.0
+		}
+	    }
+	    geometry USE MonolithOuterBox
+	}
+	# Inner
+	Shape {
+	    appearance Appearance {
+		material NULL # emissive texturing
+		texture USE MonolithInnerFire
+		textureTransform TextureTransform {
+		    scale 0.1 0.1
+		    translation 0.3 0.5
+		}
+	    }
+	    geometry USE MonolithInnerBox
+	}
+	DEF Monolith3Touch TouchSensor {
+	}
+    ]
+}
+
+DEF Monolith4Light PointLight {
+    intensity 0.0
+    ambientIntensity 0.2
+    color 0.8 0.4 0.0
+    location 4.5 2.0 3.5
+}
+Transform {
+    translation 4.5 2.0 3.0
+    children [
+	# Outer
+	Shape {
+	    appearance Appearance {
+		material DEF Monolith4Facade Material {
+		    diffuseColor 0.2 0.2 0.2
+		    transparency 0.0
+		}
+	    }
+	    geometry USE MonolithOuterBox
+	}
+	# Inner
+	Shape {
+	    appearance Appearance {
+		material NULL # emissive texturing
+		texture USE MonolithInnerFire
+		textureTransform TextureTransform {
+		    scale 0.2 0.2
+		    translation 0.4 0.6
+		}
+	    }
+	    geometry USE MonolithInnerBox
+	}
+	DEF Monolith4Touch TouchSensor {
+	}
+    ]
+}
+
+DEF Monolith5Light PointLight {
+    intensity 0.0
+    ambientIntensity 0.2
+    color 0.8 0.4 0.0
+    location -3.5 2.0 -4.5
+}
+Transform {
+    translation -3.5 2.0 -5.0
+    children [
+	# Outer
+	Shape {
+	    appearance Appearance {
+		material DEF Monolith5Facade Material {
+		    diffuseColor 0.2 0.2 0.2
+		    transparency 0.0
+		}
+	    }
+	    geometry USE MonolithOuterBox
+	}
+	# Inner
+	Shape {
+	    appearance Appearance {
+		material NULL # emissive texturing
+		texture USE MonolithInnerFire
+		textureTransform TextureTransform {
+		    scale 0.2 0.4
+		    translation 0.5 0.1
+		}
+	    }
+	    geometry USE MonolithInnerBox
+	}
+	DEF Monolith5Touch TouchSensor {
+	}
+    ]
+}
+
+DEF Monolith6Light PointLight {
+    intensity 0.0
+    ambientIntensity 0.2
+    color 0.8 0.4 0.0
+    location 2.0 2.0 -5.5
+}
+Transform {
+    translation 2.0 2.0 -6.0
+    children [
+	# Outer
+	Shape {
+	    appearance Appearance {
+		material DEF Monolith6Facade Material {
+		    diffuseColor 0.2 0.2 0.2
+		    transparency 0.0
+		}
+	    }
+	    geometry USE MonolithOuterBox
+	}
+	# Inner
+	Shape {
+	    appearance Appearance {
+		material NULL # emissive texturing
+		texture USE MonolithInnerFire
+		textureTransform TextureTransform {
+		    scale 0.2 0.4
+		    translation 0.5 0.1
+		}
+	    }
+	    geometry USE MonolithInnerBox
+	}
+	DEF Monolith6Touch TouchSensor {
+	}
+    ]
+}
+
+
+#
+#  Floor mesh
+#
+Inline {
+    url "floor.wrl"
+}
+
+
+#
+#  Animation control
+#
+#  For each monolith, route its touch sensor in to the timer to start it.
+#  Route the timer's fraction output in to the facade box's transparency
+#  level and the light's intensity level.
+#
+#  Use different cycle intervals for each time sensor so that they
+#  monoliths pulse in an apparently random, out of sync manner.
+#
+DEF Monolith1Timer TimeSensor {
+    cycleInterval 4.0
+    loop FALSE
+    startTime 0.0
+    stopTime 0.1
+}
+ROUTE Monolith1Touch.touchTime        TO Monolith1Timer.set_startTime
+ROUTE Monolith1Timer.fraction_changed TO Monolith1Facade.set_transparency
+ROUTE Monolith1Timer.fraction_changed TO Monolith1Light.set_intensity
+
+
+DEF Monolith2Timer TimeSensor {
+    cycleInterval 4.5
+    loop FALSE
+    startTime 0.0
+    stopTime 0.1
+}
+ROUTE Monolith2Touch.touchTime        TO Monolith2Timer.set_startTime
+ROUTE Monolith2Timer.fraction_changed TO Monolith2Facade.set_transparency
+ROUTE Monolith2Timer.fraction_changed TO Monolith2Light.set_intensity
+
+
+DEF Monolith3Timer TimeSensor {
+    cycleInterval 5.0
+    loop FALSE
+    startTime 0.0
+    stopTime 0.1
+}
+ROUTE Monolith3Touch.touchTime        TO Monolith3Timer.set_startTime
+ROUTE Monolith3Timer.fraction_changed TO Monolith3Facade.set_transparency
+ROUTE Monolith3Timer.fraction_changed TO Monolith3Light.set_intensity
+
+
+DEF Monolith4Timer TimeSensor {
+    cycleInterval 5.5
+    loop FALSE
+    startTime 0.0
+    stopTime 0.1
+}
+ROUTE Monolith4Touch.touchTime        TO Monolith4Timer.set_startTime
+ROUTE Monolith4Timer.fraction_changed TO Monolith4Facade.set_transparency
+ROUTE Monolith4Timer.fraction_changed TO Monolith4Light.set_intensity
+
+
+DEF Monolith5Timer TimeSensor {
+    cycleInterval 6.0
+    loop FALSE
+    startTime 0.0
+    stopTime 0.1
+}
+ROUTE Monolith5Touch.touchTime        TO Monolith5Timer.set_startTime
+ROUTE Monolith5Timer.fraction_changed TO Monolith5Facade.set_transparency
+ROUTE Monolith5Timer.fraction_changed TO Monolith5Light.set_intensity
+
+
+DEF Monolith6Timer TimeSensor {
+    cycleInterval 6.5
+    loop FALSE
+    startTime 0.0
+    stopTime 0.1
+}
+ROUTE Monolith6Touch.touchTime        TO Monolith6Timer.set_startTime
+ROUTE Monolith6Timer.fraction_changed TO Monolith6Facade.set_transparency
+ROUTE Monolith6Timer.fraction_changed TO Monolith6Light.set_intensity
+</FONT></PRE>
+</BODY>
+</HTML>

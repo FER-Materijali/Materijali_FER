@@ -1,0 +1,184 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+    title "Avion"
+}
+
+Viewpoint {
+    position 1.0 1.0 5.0
+	orientation -1.0 0.0 0.0 0.2
+    description "Entry view"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight TRUE
+}
+
+Background {
+    skyColor    [ 0.0 0.5 1.0 ]
+    groundColor [ 0.2 0.2 0.2 ]
+}
+
+
+# INICIJALI
+Transform {
+	translation -0.1 0.080 1.5
+	rotation 1.0 0.0 0.0 -1.57
+	scale 0.2 0.2 0.2
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {diffuseColor 0.0 0.0 0.0}
+			}
+			geometry Text {
+				string [ "SEXY" ]
+				fontStyle FontStyle {style "BOLD"}
+				}
+			}
+		]
+	}
+
+# AVION
+DEF Avion Transform {
+children [
+
+		# TRUP
+		DEF Trup Transform {
+		children [
+			Transform {
+				scale 1.9 0.3 0.4
+				children [ 
+					DEF Kugla Shape {
+						appearance Appearance {
+							material Material { diffuseColor 0.6 1.0 0.6 }
+							texture ImageTexture { url ["trup.png"] }
+						}
+						geometry Sphere { }
+					}
+				]
+			}
+			
+			# REP 
+			Transform {
+				translation -1.5 0.25 0.0
+				rotation 0.0 0.0 1.0 -0.8
+				scale 0.5 0.2 0.075
+				children [
+					DEF Kugla1 Shape {
+						appearance Appearance {
+							material Material { diffuseColor 0.6 1.0 0.6 }
+						}
+						geometry Sphere { }
+					}
+				]
+			} 
+			
+			# MIÆA KABINICA
+			Transform {
+				translation 1.1 0.15 0.0
+				scale 0.4 0.2 0.2
+				children Shape {
+					appearance Appearance {
+						material Material { diffuseColor 0.0 0.6 1.0 }
+					}
+					geometry Sphere { }
+				}
+			} 
+			
+			# MIÆI REPIÆ
+			Transform {
+				translation -1.72 0.5 0.0
+				rotation 0.0 0.0 1.0 1.57
+				scale 0.02 0.12 0.4
+				children [ USE Kugla1 ]
+			}
+		]
+		}
+		
+		# Krila
+		DEF Krila Transform {
+		children [
+			Transform {
+				translation 0.2 0.0 0.0
+				rotation 0.0 1.0 0.0 1.57
+				scale 2.4 0.075 0.5
+				children [
+					DEF Kugla2 Shape {
+						appearance Appearance {
+							material Material { diffuseColor 0.6 1.0 0.6 }
+						}
+						geometry Sphere { }
+					}
+				]
+			}
+			
+			# ELIPSA
+			DEF Elipse Transform {
+			children [
+			
+				# ELIPSE
+				Transform {
+					translation 1.85 0.0 0.0
+					scale 0.0025 0.25 0.025
+					children [
+						DEF Elipsa Shape {
+							appearance Appearance {
+								material Material { diffuseColor 0.3 0.3 0.3 }
+							}
+							geometry Sphere { }
+						}
+					]
+				}
+				
+				Transform {
+					translation 1.85 0.0 0.0
+					rotation 1.0 0.0 0.0 1.57
+					scale 0.0025 0.25 0.025
+					children [ USE Elipsa ]
+				}
+			]
+			}
+			
+			DEF Motor Transform {
+			children [
+				
+				# MIÆI MOTOR
+				Transform {
+					translation 0.3 0.0 0.9
+					scale 0.5 0.15 0.2
+					children [
+						Shape {
+							appearance Appearance {
+								material Material { diffuseColor 0.5 0.5 0.5 }
+							}
+						geometry Sphere { }
+						}
+					]
+				}
+				
+				# ELIPSA
+				Transform {
+					translation -1.07 0.0 0.9
+					children [ USE Elipse ]
+				}
+			]
+			}
+			
+			# MOTOR #2
+			Transform {
+			translation 0.0 0.0 -1.8
+			children [ USE Motor ]
+			}
+		]
+		}
+			
+		
+		
+		
+]
+}
+
+		  
+		  
+		  

@@ -1,0 +1,151 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>timetime.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Summary examples</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>timetime.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  Timed-timer
+#  timetime.wrl
+#        by David R. Nadeau
+#
+#  Demonstrate how to drive one TimeSensor with another one in order
+#  periodically trigger another animation.
+#
+
+WorldInfo {
+	title "Timed timer"
+	info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+Viewpoint {
+	position 0.0 0.0 12.0
+	description "Entry view"
+}
+
+NavigationInfo {
+	type [ "EXAMINE", "ANY" ]
+	headlight TRUE
+}
+
+# Red Boxes
+
+DEF Red Transform {
+	# animated scale
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 1.0 0.0 0.0
+				}
+			}
+			geometry Box { }
+		}
+	]
+}
+
+Transform { translation  2.0  2.0  0.0 children USE Red }
+Transform { translation -2.0  2.0  0.0 children USE Red }
+Transform { translation  2.0 -2.0  0.0 children USE Red }
+Transform { translation -2.0 -2.0  0.0 children USE Red }
+
+Transform { translation  0.0 -2.0  2.0 children USE Red }
+Transform { translation  0.0  2.0  2.0 children USE Red }
+Transform { translation  2.0  0.0  2.0 children USE Red }
+Transform { translation -2.0  0.0  2.0 children USE Red }
+
+Transform { translation  0.0 -2.0 -2.0 children USE Red }
+Transform { translation  0.0  2.0 -2.0 children USE Red }
+Transform { translation  2.0  0.0 -2.0 children USE Red }
+Transform { translation -2.0  0.0 -2.0 children USE Red }
+
+# Blue Boxes
+
+DEF Blue Transform {
+	translation 2.0 0.0 0.0
+	# animated scale
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.0 0.0 1.0
+				}
+			}
+			geometry Box { }
+		}
+	]
+}
+
+Transform { translation -4.0  0.0  0.0 children USE Blue }
+Transform { translation -2.0  0.0  2.0 children USE Blue }
+Transform { translation -2.0  0.0 -2.0 children USE Blue }
+Transform { translation -2.0  2.0  0.0 children USE Blue }
+Transform { translation -2.0 -2.0  0.0 children USE Blue }
+
+Transform { translation  0.0  2.0  2.0 children USE Blue }
+Transform { translation  0.0  2.0 -2.0 children USE Blue }
+Transform { translation -4.0  2.0  2.0 children USE Blue }
+Transform { translation -4.0  2.0 -2.0 children USE Blue }
+
+Transform { translation  0.0 -2.0  2.0 children USE Blue }
+Transform { translation  0.0 -2.0 -2.0 children USE Blue }
+Transform { translation -4.0 -2.0  2.0 children USE Blue }
+Transform { translation -4.0 -2.0 -2.0 children USE Blue }
+
+DEF Clock TimeSensor {
+	cycleInterval 3.0
+	loop FALSE
+}
+
+DEF Trigger TimeSensor {
+	loop TRUE
+	cycleInterval 5.0
+}
+
+DEF RedScale PositionInterpolator {
+	key [ 0.0, 0.5, 1.0 ]
+	keyValue [
+		1.0 1.0 1.0,
+		0.0001 0.0001 0.0001,
+		1.0 1.0 1.0,
+	]
+}
+
+DEF BlueScale PositionInterpolator {
+	key [ 0.0, 0.25, 0.5, 0.75, 1.0 ]
+	keyValue [
+		1.0 1.0 1.0,
+		0.0001 0.0001 0.0001,
+		1.0 1.0 1.0,
+		0.0001 0.0001 0.0001,
+		1.0 1.0 1.0,
+	]
+}
+
+ROUTE Trigger.cycleTime       TO Clock.set_startTime
+ROUTE Clock.fraction_changed  TO RedScale.set_fraction
+ROUTE Clock.fraction_changed  TO BlueScale.set_fraction
+ROUTE RedScale.value_changed  TO Red.set_scale
+ROUTE BlueScale.value_changed TO Blue.set_scale
+
+</FONT></PRE>
+</BODY>
+</HTML>

@@ -1,0 +1,51 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+    title "Avion"
+}
+
+Viewpoint {
+    position 0.0 0.0 5.0
+    description "Entry view"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight TRUE
+}
+
+Background {
+    skyColor    [ 0.0 0.0 1.0 ]
+    groundColor [ 0.0 0.0 1.0 ]
+}
+
+
+# TRUP
+DEF Trup Transform {
+    children [
+      Transform {
+        scale 1.9 0.3 0.4
+        children[
+          DEF Kugla1 Shape {
+              appearance Appearance {
+                  material Material {
+                      diffuseColor 1.0 1.0 1.0
+                  }
+              }
+              geometry Sphere { }
+          }
+       ]
+      }
+      # REP
+      Transform {
+	  translation -1.5 0.25 0.0
+	  rotation 0.0 0.0 1.0 -0.8
+	  scale 0.5 0.2 0.075
+	children [ USE Kugla1 ]
+      } 
+    ]
+}
+
+
+
+

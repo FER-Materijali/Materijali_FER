@@ -1,0 +1,65 @@
+#VRML V2.0 utf8
+#
+#  Simple button
+#  button.wrl
+#        by David R. Nadeau
+#
+#  This file contains a PROTO to manage a button that, when clicked,
+#  rotates 90 degrees and sends a URL.  This button is used in "loader.wrl".
+#
+
+WorldInfo {
+    title "Simple Button"
+    info [ "Copyright (c) 1998, David R. Nadeau" ]
+}
+
+PROTO Button [
+	field SFVec3f translation 0.0 0.0 0.0
+	field MFString texture ""
+	field MFString url ""
+	eventOut MFString url_changed
+] {
+	DEF Trans Transform {
+		translation IS translation
+		children [
+			Shape {
+				appearance Appearance {
+					material Material {
+						diffuseColor 1.0 1.0 1.0
+					}
+					texture ImageTexture { url IS texture }
+				}
+				geometry Box { size 1.0 1.0 1.0 }
+			}
+			DEF Touch TouchSensor { }
+		]
+	}
+	DEF Timer TimeSensor {
+		startTime 0.0
+		stopTime 1.0
+		loop FALSE
+		cycleInterval 1.0
+	}
+	DEF Rotator OrientationInterpolator {
+		key [ 0.0, 1.0 ]
+		keyValue [
+			0.0 1.0 0.0  0.0,
+			0.0 1.0 0.0  1.571
+		]
+	}
+	DEF SendUrl Script {
+		field    MFString sendUrl IS url
+		eventIn  SFTime   set_touchTime
+		eventOut MFString url_changed IS url_changed
+		url "vrmlscript:
+			function set_touchTime( tm, ts ) {
+				url_changed = sendUrl;
+			}
+		"
+	}
+	ROUTE Touch.touchTime TO Timer.set_startTime
+	ROUTE Timer.fraction_changed TO Rotator.set_fraction
+	ROUTE Rotator.value_changed TO Trans.set_rotation
+	ROUTE Touch.touchTime TO SendUrl.set_touchTime
+}
+

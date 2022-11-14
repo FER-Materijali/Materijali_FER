@@ -1,0 +1,109 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>query.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Accessing the browser from JavaScript and Java</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>query.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  Query browser state
+#  query.wrl
+#        by David R. Nadeau
+#
+#  This world uses the "Browser" object in a script to query information
+#  about the VRML browser.  That information is sent out as an MFString
+#  event that is routed into a Text node's string input.  The effect is
+#  to display a text message showing the Browser's information.  To
+#  give the browser something to do to make it report interesting frame
+#  rates, an animating object is displayed beside the text information.
+#
+
+WorldInfo {
+	title "Query browser state"
+	info [ "Copyright (c) 1998, David R. Nadeau" ]
+}
+
+
+Viewpoint {
+	position 0.0 0.0 10.0
+	description "Entry view"
+}
+
+NavigationInfo {
+	type [ "EXAMINE", "ANY" ]
+	headlight TRUE
+}
+
+Transform {
+	translation -4.0 0.0 0.0
+	scale 0.75 0.75 0.75
+	children [
+		Inline { url "two.wrl" }
+	]
+}
+
+Transform {
+	translation -1.5 1.25 0.0
+	children [
+		Shape {
+			# no appearance - emissive white
+			geometry DEF Message Text {
+				string ""
+				fontStyle FontStyle {
+					size 0.65
+					style "BOLD"
+					family "TYPEWRITER"
+				}
+			}
+		}
+	]
+}
+
+DEF Timer TimeSensor {
+	loop TRUE
+	cycleInterval 4.0
+}
+
+DEF Introspect Script {
+	eventIn  SFTime   trigger
+	eventOut MFString message
+	url "vrmlscript:
+		function update( ) {
+			message.length = 5;
+			message[0] = 'Browser: ' + Browser.getName( );
+			message[1] = 'Version: ' + Browser.getVersion( );
+			message[2] = 'URL:     ' + Browser.getWorldURL( );
+			message[3] = 'Speed:   ' + Browser.getCurrentSpeed( );
+			message[4] = 'Frames:  ' + Browser.getCurrentFrameRate( );
+		}
+		function initialize( ) {
+			update( );
+		}
+		function trigger( t, ts ) {
+			update( );
+		}
+	"
+}
+
+ROUTE Timer.cycleTime TO Introspect.trigger
+ROUTE Introspect.message TO Message.set_string
+</FONT></PRE>
+</BODY>
+</HTML>

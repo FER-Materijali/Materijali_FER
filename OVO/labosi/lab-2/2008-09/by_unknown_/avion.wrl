@@ -1,0 +1,145 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+    title "Avion"
+}
+
+Viewpoint  #	pozicija odakle se promatra scena 
+{
+    position 0.0 7.0 -7.0
+    orientation -0.1 1.0 0.5 3.14
+}
+
+Background {				#	definiram boju pozadine
+    skyColor    [ 0.0 0.0 1.0 ]
+    groundColor [ 0.0 0.0 1.0 ]
+}
+# DESNI PROPELER		
+DEF DPROPELER Transform {	#definiram cvor DPROPELER: njegov oblik, polozaj i velicinu
+    children [
+      Transform {
+	  translation 0.7 -0.13 1.4
+	  rotation 1.0 0.0 0.0 0.78
+	  scale 0.025 0.5 0.025
+        children[
+          DEF Kugla2 Shape {
+              appearance Appearance {
+                  material Material {
+                      diffuseColor 1.0 1.0 1.0
+                  }
+              }
+              geometry Sphere { }
+          }
+     ]
+	}
+	
+	 # ¸2. dio desnog propelera
+      Transform {
+	  translation 0.7 -0.13 1.4
+	  rotation 1.0 0.0 0.0 -0.78
+	  scale 0.025 0.5 0.025
+	children [ USE Kugla2 ]
+      }
+]
+}
+
+
+# LIJEVI PROPELER + krila + motori + rep
+DEF LPROPELER Transform {			#definiram cvor LPROPELER: njegov oblik, polozaj i velicinu
+    children [
+      Transform {
+	  translation 0.7 -0.13 -1.4
+	  rotation 1.0 0.0 0.0 0.78
+	  scale 0.025 0.5 0.025
+        children[
+          DEF Kugla2 Shape {
+              appearance Appearance {
+                  material Material {
+                      diffuseColor 1.0 1.0 1.0
+                  }
+              }
+              geometry Sphere { }
+          }
+     ]
+	}
+	
+	 # ¸2. dio lijevog propelera
+      Transform {
+	  translation 0.7 -0.13 -1.4
+	  rotation 1.0 0.0 0.0 -0.78
+	  scale 0.025 0.5 0.025
+	children [ USE Kugla2 ]
+      }
+      # REP			#definiram cvor REP: njegov oblik, polozaj i velicinu
+      Transform {
+	  translation -1.5 0.25 0.0
+	  rotation 0.0 0.0 1.0 -0.8
+	  scale 0.5 0.2 0.075
+	children [ USE Kugla2 ]
+      } 
+	  
+	  
+	 # ¸Motor1		#definiram polozaj jednog motora
+      Transform {
+	  translation 0.25 -0.13 1.4
+	  rotation 0.0 0.0 0.0 0.0
+	  scale 0.5 0.15 0.15
+	children [ USE Kugla2 ]
+      }
+
+	 # ¸Motor2		#definiram polozaj jednog motora
+      Transform {
+	  translation 0.25 -0.13 -1.4
+	  rotation 0.0 0.0 0.0 0.0
+	  scale 0.5 0.15 0.15
+	children [ USE Kugla2 ]
+	}
+]
+}
+# Krila
+DEF Krila Transform {	#Definiram cvor Krila, njegovu velicinu, izgled i polozaj.
+    children [
+      Transform {
+        translation 0.15 0.0 0.0
+	  rotation -1.0 0.0 0.0 1.57
+	  scale 0.5 2.7 0.075
+        children[
+          DEF Krilo Shape {
+              appearance Appearance {
+                  material Material {
+                      diffuseColor 1.0 1.0 1.0
+                  }
+			texture ImageTexture {url "Inicijali.png"}
+
+              }
+              geometry Sphere { }
+			}
+		]
+		}
+	]
+}
+# TRUP
+DEF Trup Transform {	#Definiram cvor Trup, njegovu velicinu, izgled i polozaj.
+    children [
+      Transform {
+        scale 1.9 0.3 0.4
+        children[
+          DEF Kugla1 Shape {
+              appearance Appearance {
+                  material Material {
+                      diffuseColor 1.0 1.0 1.0
+                  }
+			texture ImageTexture {url "trup.jpg"}
+
+              }
+              geometry Sphere { }
+          }
+		  ]
+		  }
+		  ]
+		  }
+		  
+		  }
+
+
+

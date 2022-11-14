@@ -1,0 +1,121 @@
+#VRML V2.0 utf8
+#
+#  shiny.wrl
+#  Shiny spheres
+#	by David R. Nadeau
+#
+#  This world creates a set of spheres, each given a different set of
+#  material attributes.  The attributes illustrate creation of metalic
+#  surfaces by using the specularColor, shininess, and ambientIntensity
+#  fields along with the standard diffuseColor field.
+#
+
+# Aluminum
+Transform {
+	translation -2.0 1.0 0.0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					ambientIntensity 0.3
+					diffuseColor 0.3 0.3 0.5
+					specularColor 0.7 0.7 0.8
+					shininess 0.1
+				}
+			}
+			geometry Sphere { }
+		}
+	]
+}
+
+# Copper
+Transform {
+	translation 0.0 1.0 0.0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					ambientIntensity 0.26
+					diffuseColor 0.3 0.11 0.0
+					specularColor 0.75 0.33 0.0
+					shininess 0.08
+				}
+			}
+			geometry Sphere { }
+		}
+	]
+}
+
+# Gold
+Transform {
+	translation 2.0 1.0 0.0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					ambientIntensity 0.4
+					diffuseColor 0.22 0.15 0.0
+					specularColor 0.71 0.7 0.56
+					shininess 0.16
+				}
+			}
+			geometry Sphere { }
+		}
+	]
+}
+
+
+
+# Metalic Purple
+Transform {
+	translation -2.0 -1.0 0.0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					ambientIntensity 0.17
+					diffuseColor 0.1 0.03 0.22
+					specularColor 0.64 0.0 0.98
+					shininess 0.2
+				}
+			}
+			geometry Sphere { }
+		}
+	]
+}
+
+# Metalic Red
+Transform {
+	translation 0.0 -1.0 0.0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					ambientIntensity 0.15
+					diffuseColor 0.27 0.0 0.0
+					specularColor 0.61 0.13 0.18
+					shininess 0.2
+				}
+			}
+			geometry Sphere { }
+		}
+	]
+}
+
+# Plastic Blue
+Transform {
+	translation 2.0 -1.0 0.0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					ambientIntensity 0.1
+					diffuseColor 0.20 0.2 0.71
+					specularColor 0.83 0.83 0.83
+					shininess 0.12
+				}
+			}
+			geometry Sphere { }
+		}
+	]
+}

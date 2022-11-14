@@ -1,0 +1,84 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>can.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Mapping textures</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>can.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  Diet VRML can
+#  can.wrl
+#        by David R. Nadeau
+#        published in "The VRML 2.0 Sourcebook" by Ames, Nadeau, and Moreland
+#
+#  Illustrate the use of texture mapping on primitive shapes.
+#
+
+WorldInfo {
+	title "Diet VRML Can"
+	info [ "Copyright (c) 1997, Andrea L. Ames, David R. Nadeau, John L. Moreland" ]
+}
+
+Viewpoint {
+	position 0.0 0.0 6.0
+	description "Entry view"
+}
+
+NavigationInfo {
+	type [ "EXAMINE", "ANY" ]
+	headlight TRUE
+}
+
+Shape {
+    appearance Appearance {
+	material Material { }
+	texture ImageTexture { url "cantop.jpg" }
+    }
+    geometry Cylinder {
+	height	2.7
+	side	FALSE
+	bottom	FALSE
+    }
+}
+Shape {
+    appearance Appearance {
+	material Material { }
+	texture ImageTexture { url "canbot.jpg" }
+    }
+    geometry Cylinder {
+	height	2.7
+	side	FALSE
+	top	FALSE
+    }
+}
+Shape {
+    appearance Appearance {
+	material Material { }
+	texture ImageTexture { url "canlabel.jpg" }
+    }
+    geometry Cylinder {
+	height	2.8
+	top	FALSE
+	bottom	FALSE
+    }
+}
+</FONT></PRE>
+</BODY>
+</HTML>

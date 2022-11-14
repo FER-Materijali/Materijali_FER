@@ -1,0 +1,98 @@
+#VRML V2.0 utf8
+#
+#  Burning log
+#  log.wrl
+#        by David R. Nadeau
+#        published in "The VRML 2.0 Sourcebook" by Ames, Nadeau, and Moreland
+#
+#  Illustrate the use of an IndexedFaceSet and Color nodes to build a
+#  flaming log where the flame color varies across the flame polygons.
+#
+
+WorldInfo {
+	title "Burning log"
+	info [ "Copyright (c) 1997, Andrea L. Ames, David R. Nadeau, John L. Moreland" ]
+}
+
+Viewpoint {
+	position 0.0 0.0 6.0
+	description "Entry view"
+}
+
+NavigationInfo {
+	type [ "EXAMINE", "ANY" ]
+	headlight TRUE
+}
+
+# A log
+Transform {
+    translation 0.0 -0.4 0.0
+    rotation    0.0 0.0 1.0 -1.57
+    children Shape {
+        appearance Appearance {
+            material Material {
+                diffuseColor 0.5 0.3 0.0
+            }
+        }
+        geometry Cylinder {
+            height 2.9
+            radius 0.4
+        }
+    }
+}
+# A set of flames
+DEF Flames Shape {
+    # No appearance, use emissive coloring
+    geometry IndexedFaceSet {
+        coord Coordinate {
+            point [
+                -0.7 0.0 0.0,  -0.8 1.5 0.0,  -1.0 0.0 0.0,
+                -0.5 0.0 0.01, -0.7 1.2 0.01, -0.9 0.0 0.01,
+                -0.1 0.0 0.0,  -0.2 1.6 0.0,  -0.4 0.0 0.0,
+                 0.3 0.0 0.01,  0.2 1.0 0.01,  0.0 0.0 0.0,
+            ]
+        }
+        coordIndex [
+            0, 1, 2, -1,  3,  4,  5, -1,
+            6, 7, 8, -1,  9, 10, 11, -1
+        ]
+        solid FALSE
+        colorPerVertex TRUE
+        color Color {
+            color [
+                1.0 1.0 0.0,  1.0 0.0 0.0,  1.0 0.7 0.0,
+                0.8 0.5 0.0,  1.0 0.1 0.0,  1.0 0.8 0.0,
+            ]
+        }
+        colorIndex [
+            3, 4, 5, 0,   0, 1, 2, 0,
+            3, 4, 5, 0,   0, 1, 2, 0
+        ]
+    }
+}
+# Repeat the flames to make a roaring fire
+Transform {
+    translation 0.8 0.0 0.02
+    scale 1.0 1.3 1.0
+    children USE Flames
+}
+Transform {
+    translation 1.1 0.0 0.04
+    scale 1.0 0.5 1.0
+    children USE Flames
+}
+Transform {
+    translation -0.3 0.0 0.06
+    scale 1.0 1.1 1.0
+    children USE Flames
+}
+Transform {
+    translation -0.1 0.0 0.08
+    scale 1.0 0.4 1.0
+    children USE Flames
+}
+Transform {
+    translation 0.8 0.0 0.10
+    scale 1.0 1.1 1.0
+    children USE Flames
+}

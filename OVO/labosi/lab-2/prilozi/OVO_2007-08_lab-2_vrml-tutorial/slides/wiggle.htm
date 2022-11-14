@@ -1,0 +1,152 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>wiggle.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Building shapes out of points, lines, and faces</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>wiggle.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  Wiggling boxes
+#  wiggle.wrl
+#        by David R. Nadeau
+#
+#  Illustrate the use of CoordinateInterpolator nodes to vary the
+#  coordinates of shapes (in this case a set of boxes).
+#
+
+WorldInfo {
+	title "Wiggling boxes"
+	info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+Viewpoint {
+	position 0.0 0.0 10.0
+	description "Entry view"
+}
+
+NavigationInfo {
+	type [ "EXAMINE", "ANY" ]
+	headlight TRUE
+}
+
+DEF Wig Shape {
+	appearance Appearance {
+		material Material {
+			diffuseColor 0.0 0.5 1.0
+		}
+	}
+	geometry IndexedFaceSet {
+		coord DEF Coordinates Coordinate {
+			point [
+				-1.0  1.0  1.0,
+				 1.0  1.0  1.0,
+				 1.0  1.0 -1.0,
+				-1.0  1.0 -1.0,
+				-1.0 -1.0  1.0,
+				 1.0 -1.0  1.0,
+				 1.0 -1.0 -1.0,
+				-1.0 -1.0 -1.0,
+			]
+		}
+		coordIndex [
+			0, 1, 2, 3, -1,
+			4, 5, 1, 0, -1,
+			5, 6, 2, 1, -1,
+			6, 7, 3, 2, -1,
+			7, 4, 0, 3, -1,
+			7, 6, 5, 4, -1,
+		]
+	}
+}
+Transform { translation -3.0 0.0 0.0 rotation 1.0 0.0 0.0 3.1415 children USE Wig }
+Transform { translation  3.0 0.0 0.0 rotation 1.0 0.0 0.0 3.1415 children USE Wig }
+
+Transform { translation  0.0 0.0 -3.0 rotation 1.0 0.0 0.0 3.1415 children USE Wig }
+Transform { translation -3.0 0.0 -3.0 children USE Wig }
+Transform { translation  3.0 0.0 -3.0 children USE Wig }
+
+Transform { translation  0.0 0.0  3.0 rotation 1.0 0.0 0.0 3.1415 children USE Wig }
+Transform { translation -3.0 0.0  3.0 children USE Wig }
+Transform { translation  3.0 0.0  3.0 children USE Wig }
+
+
+DEF Clock TimeSensor {
+	cycleInterval 2.0
+	loop TRUE
+	startTime 1.0
+	stopTime 0.0
+}
+
+DEF Interpolator CoordinateInterpolator {
+	key [ 0.0, 0.25, 0.5, 0.75, 1.0 ]
+	keyValue [
+	# 1st coordinate set
+		-1.0  1.0  1.0,
+		 1.0  1.0  1.0,
+		 1.0  1.0 -1.0,
+		-1.0  1.0 -1.0,
+		-1.0 -1.0  1.0,
+		 1.0 -1.0  1.0,
+		 1.0 -1.0 -1.0,
+		-1.0 -1.0 -1.0,
+	# 2nd coordinate set
+		-0.5  1.0  0.5,
+		 0.5  1.0  0.5,
+		 0.5  1.0 -0.5,
+		-0.5  1.0 -0.5,
+		-1.5 -1.0  1.5,
+		 1.5 -1.0  1.5,
+		 1.5 -1.0 -1.5,
+		-1.5 -1.0 -1.5,
+	# 3rd coordinate set
+		-1.0  1.0  1.0,
+		 1.0  1.0  1.0,
+		 1.0  1.0 -1.0,
+		-1.0  1.0 -1.0,
+		-1.0 -1.0  1.0,
+		 1.0 -1.0  1.0,
+		 1.0 -1.0 -1.0,
+		-1.0 -1.0 -1.0,
+	# 4th coordinate set
+		-1.5  1.0  1.5,
+		 1.5  1.0  1.5,
+		 1.5  1.0 -1.5,
+		-1.5  1.0 -1.5,
+		-0.5 -1.0  0.5,
+		 0.5 -1.0  0.5,
+		 0.5 -1.0 -0.5,
+		-0.5 -1.0 -0.5,
+	# 5th coordinate set
+		-1.0  1.0  1.0,
+		 1.0  1.0  1.0,
+		 1.0  1.0 -1.0,
+		-1.0  1.0 -1.0,
+		-1.0 -1.0  1.0,
+		 1.0 -1.0  1.0,
+		 1.0 -1.0 -1.0,
+		-1.0 -1.0 -1.0,
+	]
+}
+
+ROUTE Clock.fraction_changed TO Interpolator.set_fraction
+ROUTE Interpolator.value_changed TO Coordinates.set_point
+</FONT></PRE>
+</BODY>
+</HTML>

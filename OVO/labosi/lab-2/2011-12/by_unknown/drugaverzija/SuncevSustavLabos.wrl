@@ -1,0 +1,166 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+    title "Sunèev Sustav"
+}
+#Postavljanje koordinata kamere
+Viewpoint {
+    position 0.0 0.0 100.0
+    description "Entry view"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight TRUE
+}
+
+Background {
+    skyColor    [ 0.0 0.0 0.0 ]
+    groundColor [ 0.0 0.0 0.0 ]
+}
+
+Transform {
+	children [
+		DEF Sunce Transform {
+		#Sunce je u središtu Sunèevog sustava pa se zato ono prvo postavlja u graf scene kako bi se
+				#središte njegovog lokalnog koordinatnog sustava podudaralo sa središtem globalnog koordinatnog
+				#sustava
+			children [
+				Shape {
+					appearance Appearance { 
+						material Material {diffuseColor 0.84 0.86 0.042}
+						texture ImageTexture {url "sunmap.jpg"}
+					}
+					geometry Sphere {radius 6.96}
+				}
+			]
+		}	
+	#Zemlja se postavlja u odnosu na središte koordinatnog sustava
+		#Pomoæu ccenter -14.96 0.0 0.0 vraæamo os rotacije u ishodište globalnog koordinatnog sustava
+		#to je potrebno zbog animacije revolucije Zemlje oko Sunca (inaèe bi Zemlja rotirala oko vlastite osi)
+		DEF ZemljaMjesec Transform {
+			translation 14.96 0.0 0.0
+			center -14.96 0.0 0.0
+			children [
+				
+				DEF Zemlja Transform {
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {diffuseColor 0.0 0.5 0.75}
+								texture ImageTexture {url "Earth.jpg"}
+							}
+							geometry Sphere {radius 0.63}
+						}
+					]
+				}
+				#Mjesec se postavlja u odnosu na Zemlju
+				#Pomoæu ccenter -1.0 0.0 0.0 postavljamo os rotacije u ishodište "nadreðenog" koordinatnog sustava
+				#(a to je koordinatni sustav Zemlje) za animiranje revolucije Mjeseca oko Zemlje
+				DEF Mjesec Transform {
+					translation 1.0 0.0 0.0
+					center -1.0 0.0 0.0
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {diffuseColor 0.75 0.75 0.75}
+								texture ImageTexture {url "Mjesec.jpg"}
+							}
+							geometry Sphere {radius 0.17}
+						}
+					]
+				}
+			]
+		}
+		
+		
+	]
+}
+#ANIMIRANJE - svi planeti rotiraju oko svoje y osi
+
+#REVOLUCIJA ZEMLJE
+#Postavljanje TimeSenor èvora koji služi za generiranje dogaðaja tj. brojanje vremena
+#Vrijednost polje lloop je tTRUE jer Zemlja konstantno rotira oko Sunca
+
+
+
+DEF BrojacRZ TimeSensor {
+	cycleInterval 60.0
+	loop TRUE
+	startTime 0.0
+    stopTime 0.0
+}
+#Postavljanje èvora za interpolaciju, po uputama zadatka to je oOrientationInterpolator èvor
+#On odgovarajuæem èvoru grafa scene (koji mora biti imenovan s dDEF kako bismo ga mogli identificirati)
+#šalje parametre rotacije tj. definira os oko koje treba rotirati i kut za koji se treba zakrenuti
+#prema vremenu koje primi od TimeSenzor èvora
+#Ako za primljeno vrijeme (key) u listi odlaznih vrijednosti (keyValue) ne postoji odgovarajuæi parametar rotacije
+#interpolator ga nalazi raèunanjem srednje vrijednosti koristeæi susjedne vrijednosti primljenog vremena
+
+
+DEF OIZem OrientationInterpolator {
+	key [0.0 ,0.5, 1.0]
+	keyValue [0.0 1.0 0.0 0.0, 0.0 1.0 0.0 3.141, 0.0 1.0 0.0 6.282]
+}
+#Stvaranje puta podataka tj. povezivanje èvorova
+#Kada TimeSenzor Brojac1 promijeni vrijeme, novu vrijednost pošalje interpolatoru OrbitaZ
+#Zatim OrbitaZ na temelju primljene vrijednosti naðe parametre rotacije u svom polju kkeyValue
+#ili ih izraèuna na temelju vrijednosti iz istog polja te ih pošalje èvoru Zemlja
+#koji primljene parametre rotacije primjeni pomoæu svog set_rotation polja
+
+ROUTE BrojacRZ.fraction_changed TO OIZem.set_fraction
+ROUTE OIZem.value_changed TO ZemljaMjesec.set_rotation
+
+
+
+DEF BrojacRM TimeSensor {
+	cycleInterval 4.61
+	loop TRUE
+	startTime 0.0
+    stopTime 0.0
+}
+
+DEF OInterpolatorMjesec OrientationInterpolator {
+	key [0.0 ,0.5, 1.0]
+	keyValue [0.0 1.0 0.0 0.0, 0.0 1.0 0.0 3.141, 0.0 1.0 0.0 6.282]
+}
+
+ROUTE BrojacRM.fraction_changed TO OInterpolatorMjesec.set_fraction
+ROUTE OInterpolatorMjesec.value_changed TO Mjesec.set_rotation
+
+#ROTACIJA ZEMLJE
+#Postavljanje brojaèa vremena, vrijednost ccycleInterval polja je specificirana u zadatku
+
+DEF BRZemlje TimeSensor {
+	cycleInterval 0.164
+	loop TRUE
+	startTime 0.0
+    stopTime 0.0
+}
+
+DEF OIRZemlja OrientationInterpolator {
+	key [0.0 ,0.5, 1.0]
+	keyValue [0.0 1.0 0.0 0.0, 0.0 1.0 0.0 3.141, 0.0 1.0 0.0 6.282]
+}
+#povezivanje èvorova
+
+ROUTE BRZemlje.fraction_changed TO OIRZemlja.set_fraction
+ROUTE OIRZemlja.value_changed TO Zemlja.set_rotation
+
+#ROTACIJA SUNCA
+#Postavljanje brojaèa vremena, vrijednost ccycleInterval polja je specificirana u zadatku
+
+DEF BRSunca TimeSensor {
+	cycleInterval 4.1
+	loop TRUE
+	startTime 0.0
+    stopTime 0.0
+}
+
+DEF OInterRotSunce OrientationInterpolator {
+	key [0.0 ,0.5, 1.0]
+	keyValue [0.0 1.0 0.0 0.0, 0.0 1.0 0.0 3.141, 0.0 1.0 0.0 6.282]
+}
+
+ROUTE BRSunca.fraction_changed TO OInterRotSunce.set_fraction
+ROUTE OInterRotSunce.value_changed TO Sunce.set_rotation

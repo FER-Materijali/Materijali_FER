@@ -1,0 +1,358 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Justin Couch">
+   <META NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
+   <TITLE>VRML97, ISO/IEC 14772-2:xxxx -- 5 Data Type Reference</TITLE>
+</HEAD>
+<BODY>
+
+<CENTER>
+<H1>
+<IMG SRC="../Images/vrml97-2.gif" ALT="VRML97 logo" naturalsizeflag="0" HEIGHT=85 WIDTH=470></H1></CENTER>
+
+<CENTER>
+<H1>
+5 Data type reference</H1></CENTER>
+
+<H1>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H1>
+
+<H2>
+<a NAME="IntroductionAndTableOfContents"></a>5.1 Introduction and Table of Contents</H2>
+
+<H3>
+<a NAME="Introduction"></a>5.1.1 Introduction</H3>
+This clause describes the language independent data types used in the definition
+of <a HREF="servRef.html">6 Services reference</a>.
+<H3>
+<a NAME="TableOfContents"></a>5.1.2 Table of contents</H3>
+<a HREF="#TOC">Table 5.1</a> defines the contents of this clause.
+<CENTER>&nbsp;</CENTER>
+&nbsp;
+<CENTER><TABLE BORDER="1" COLS=2 WIDTH="513" >
+<CAPTION align="top"><a NAME="TOC"></a><B>Table 5.1 -- Table of contents</B></CAPTION>
+
+<TR>
+<TD VALIGN=TOP width="212"><B><a HREF="#IntroductionAndTableOfContents">5.1 Introduction and table of contents</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#Introduction">5.1.1 Introduction</a>&nbsp;
+<BR>&nbsp;<a HREF="#TableOfContents">5.1.2 Table of contents</a>&nbsp;
+<BR>&nbsp;<a HREF="#Concepts">5.1.3 Concepts</a>&nbsp;
+
+<P><B><a HREF="#DataTypeDefinitions">5.2 Data type definitions</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#EAIAction">5.2.1 EAIAction</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIBrowserApp">5.2.2 EAIBrowserApp</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIBrowserName">5.2.3 EAIBrowserName</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIBrowserRef">5.2.4 EAIBrowserRef</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIBrowserVersion">5.2.5 EAIBrowserVersion</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIFieldAccess">5.2.6 EAIFieldAccess</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIFieldID">5.2.7 EAIFieldID</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIFieldName">5.2.8 EAIFieldName</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIFieldType">5.2.9 EAIFieldType</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIFieldValue">5.2.10 EAIFieldValue</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIFrameRate">5.2.11 EAIFrameRate</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAINavSpeed">5.2.12 EAINavSpeed</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAINodeID">5.2.13 EAINodeID</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAINodeType">5.2.14 EAINodeType</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIParameterList">5.2.15 EAIParameterList</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIPropertyList">5.2.16 EAIPropertyList</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIRequesterID">5.2.17 EAIRequesterID</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIURL">5.2.18 EAIURL</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIString">5.2.19 EAIString</a>&nbsp;
+<BR>&nbsp;<a HREF="#NULL">5.2.20 NULL</a></TD>
+
+<TD VALIGN=TOP width="285"><B><a HREF="#ErrorTypes">5.3 Error types</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#EAIError">5.3.1 EAIError</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIBrowserUnavailable">5.3.2 EAI_BROWSER_UNAVAILABLE</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIConnectionError">5.3.3 EAI_CONNECTION_ERROR</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIDisposed">5.3.4 EAI_DISPOSED</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIInvalidAccessType">5.3.5 EAI_INVALID_ACCESS_TYPE</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIInvalidBrowser">5.3.6 EAI_INVALID_BROWSER</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIInvalidName">5.3.7 EAI_INVALID_NAME</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIInvalidNode">5.3.8 EAI_INVALID_NODE</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIInvalidField">5.3.9 EAI_INVALID_FIELD</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIInvalidURL">5.3.10 EAI_INVALID_URL</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIInvalidVRML">5.3.11 EAI_INVALID_VRML</a>&nbsp;
+<BR>&nbsp;<a HREF="#EAIURLUnavailable">5.3.12 EAI_URL_UNAVAILABLE</a>&nbsp;
+
+<P><B><a HREF="#EventTypes">5.4 Event Types</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#BrowserEvents">5.4.1 Browser Events</a>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBrowserEvent">5.4.1.1 EAIBrowserEvent</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBInitialized">5.4.1.2 EAI_B_Initialized</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBShutdown">5.4.1.3 EAI_B_Shutdown</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBConnectionError">5.4.1.4 EAI_B_ConnectionError</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBURLError">5.4.1.5 EAI_B_URLError</a></I>&nbsp;
+<BR>&nbsp;<a HREF="#EAIFieldEvent">5.4.2 EAIFieldEvent</a>&nbsp;
+<BR>&nbsp;</TD>
+</TR>
+</TABLE></CENTER>
+&nbsp;
+<H3>
+<a NAME="Concepts"></a>5.1.3 Concepts</H3>
+All data types in this clause are language binding independent. They represent
+single value information that is passed as parameters, return values or
+error conditions that can be generated through the external authoring interface.
+Each language binding shall define implementations of each of these data
+types.
+
+<P>These data types represent the specific implementation of each type;
+that is, how the VRML browser would represent them internally, not the
+text format described in <a HREF="references.html#[VRML]">ISO/IEC
+14772-1</a>.
+<H1>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H1>
+
+<H2>
+<a NAME="DataTypeDefinitions"></a>5.2 Data type definitions</H2>
+
+<H3>
+<a NAME="EAIAction"></a>5.2.1 EAIAction</H3>
+EAIAction is a single valued field representing a qualifier for a more general service
+type. Each use of the EAIAction type shall define the range of acceptable
+values.
+<H3>
+<a NAME="EAIBrowserApp"></a>5.2.2 EAIBrowserApp</H3>
+EAIBrowserApp is a data type that represents the complete browser application. This is different
+from <a HREF="#EAIBrowserRef">5.2.4 EAIBrowserRef</a>&nbsp; because it defines the
+browser application itself whereas the EAIBrowserRef defines a reference
+to the standardised interface to the browser's functionality. The data
+type shall contain some method for obtaining an EAIBrowserRef.
+<H3>
+<a NAME="EAIBrowserName"></a>5.2.3 EAIBrowserName</H3>
+This data type defines a representation of the name of the browser. If the
+browser implementation does not support this information, a NULL value
+is considered a legal representation of this data type
+<H3>
+<a NAME="EAIBrowserRef"></a>5.2.4 EAIBrowserRef</H3>
+This data type represents a browser reference. This is a unique identifier
+per browser instance. Individual language bindings may place conditions
+on uniqueness allowing other methods for checking equivalent references
+to the same browser.
+
+<P>The browser concept is further defined in <a HREF="concepts.html#Browser">4.4.4
+Browser</a>.
+<H3>
+<a NAME="EAIBrowserVersion"></a>5.2.5 EAIBrowserVersion</H3>
+This data type defines a representation of the name of the browser. If the
+browser implementation does not support this information, a NULL value
+is considered a legal representation of this data type
+<H3>
+<a NAME="EAIFieldAccess"></a>5.2.6 EAIFieldAccess</H3>
+This data type defines the type of access that is permitted to a <a HREF="../part1/glossary.html#Field">field</a>.
+The valid values are types for <a HREF="../part1/glossary.html#Field">field</a>,
+<a HREF="../part1/glossary.html#EventIn">eventIn</a>, <a HREF="../part1/glossary.html#EventOut">eventOut</a>
+and <a HREF="../part1/glossary.html#ExposedField">exposedField</a>.
+<H3>
+<a NAME="EAIFieldID"></a>5.2.7 EAIFieldID</H3>
+This data type represents an identifier for a particular <a HREF="../part1/glossary.html#Field">field</a>
+of a node. It is guaranteed to be unique within the scope of an individual
+NODE reference. It is not guaranteed to be unique in terms of all field
+references generated. To uniquely define a field within the <a HREF="../part1/glossary.html#SceneGraph">scene
+graph</a>, a combination of node and field identifiers is needed.<P>The field concept is further defined in
+<a HREF="concepts.html#Field">4.4.6 Field</a>.
+<H3>
+<a NAME="EAIFieldName"></a>5.2.8 EAIFieldName</H3>
+This data type is used to represent a <a HREF="../part1/glossary.html#FieldName">field
+name</a>.
+<H3>
+<a NAME="EAIFieldType"></a>5.2.9 EAIFieldType</H3>
+This data type is used to store the type of data a field represents. In some
+cases (where the field type represents an MFString or SFString), this field
+type may correspond to an EAINodeID. Valid types of the field are defined
+in<a HREF="../part1/fieldsRef.html"> ISO/IEC 14772-1 5, Field and event reference</a>.
+<H3>
+<a NAME="EAIFieldValue"></a>5.2.10 EAIFieldValue</H3>
+This data type represents the value to be set or to be returned of
+an EAIFieldType in language specific terms. A table may be constructed
+mapping each EAIFieldType represented to at least one language specific
+entry. This data type contains an item of class EAIFieldType
+and an item of the field type specified by the value of the first item.
+All field types defined in <a HREF="../part1/fieldsRef.html">ISO/IEC
+14772-1 5. Field and event reference</a> shall be supported.
+<H3>
+<a NAME="EAIFrameRate"></a>5.2.11 EAIFrameRate</H3>
+<span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">This
+data type is used to represent the frame rate in frames per second that is
+currently being achieved by the browser.</span>
+<H3>
+<a NAME="EAINavSpeed"></a>5.2.12 EAINavSpeed</H3>
+<span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">This
+data type is used to represent the navigation speed of the user in metres per
+second.</span>
+<H3>
+<a NAME="EAINodeID"></a>5.2.13 EAINodeID</H3>
+This data type is used to specify an identifier for a <a HREF="../part1/glossary.html#Node">node</a>.
+Individual language bindings may place conditions on uniqueness allowing
+other methods for checking equivalent references to the same node. The
+node reference is not required to be part of the active <a HREF="../part1/glossary.html#SceneGraph">scene
+graph</a>.
+
+<P>A NULL value is a legal value for this data type. It is used to indicate
+that no node identifier is to be used. For example the Field service setValue
+(see <a HREF="servRef.html#setValue">6.5.7 setValue</a>) a value of NULL on
+an SFNode field type is used to clear the node that may have previously
+been set as the value.
+
+<P>The node concept is further defined in <a HREF="concepts.html#Node">4.4.5
+Node</a>.
+<H3>
+<a NAME="EAINodeType"></a>5.2.14 EAINodeType</H3>
+This data type is used to represent the <a HREF="../part1/glossary.html#NodeType">node
+type</a>.
+<H3>
+<a NAME="EAIParameterList"></a>5.2.15 EAIParameterList</H3>
+EAIParameterList is the abstract data type used to represent a list of parameters that may
+be passed to a service request. Each language binding shall be required
+to define the exact listing of parameters and their mapping to language
+specific types. This may be used to represent more than one list of parameters
+where a binding provides multiple overloaded implementations of a single
+service.
+<H3>
+<a NAME="EAIPropertyList"></a>5.2.16 EAIPropertyList</H3>
+EAIPropertyList is an abstract data type defining a set of key/value pairs for the provision
+of properties.
+<H3>
+<a NAME="EAIRequesterID"></a>5.2.17 EAIRequesterID</H3>
+This data type represents the identifier of a client application or part
+thereof that is requesting a service to be performed. Variables of this
+data type are usually used to identify a particular client piece of code
+that is interested in listening for changes in some information in either
+the scene graph or browser state that functions as a callback device.
+<H3>
+<a NAME="EAIURL"></a>5.2.18 EAIURL</H3>
+EAIURL is a data type which <U>references a single URL</U>. The URL may be any valid
+URL representation but is usually defined as a human readable string that
+conforms to <A HREF="references.html#[URL]">2. [URL]</A>.
+<H3>
+<a NAME="EAIString"></a><FONT COLOR="#000000">5.2.19 EAIString</FONT></H3>
+This data type represents a string formatted with the UTF-8 universal character
+set. (see <A HREF="references.html#[UTF8]">2.[UTF8]</A>).
+<H3>
+<a NAME="NULL"></a>5.2.20 NULL</H3>
+This data value is used to represent the empty value. It contains no data or reference to any
+data type as a valid value to return from a service when nothing can be
+returned and yet no error is generated. Conceptually equivalent to <A HREF="references.html#[JAVA]">2.[JAVA]</A>
+<TT>null</TT> data type and C/C++ <TT>NULL</TT> data type.
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470>
+<H2>
+<a NAME="ErrorTypes"></a>5.3 Error types</H2>
+<a NAME="EAIError"></a><B><FONT SIZE=+1>5.3.1 EAIError</FONT></B>
+
+<P>This section defines the error types that may be generated in response
+to service requests. Errors are generated as synchronous values from a
+service request and returned as variables of type EAIError. These error
+types appear in the errors definition
+of a service request <a HREF="servRef.html#Conventions">(6.1.3 Conventions)</a>.
+A language binding shall define the representation for the EAIError data
+type and assign values for each of the errors defined below but may also
+define additional error data types to these.
+<H3>
+<a NAME="EAIBrowserUnavailable"></a>5.3.2 EAI_BROWSER_UNAVAILABLE</H3>
+This error indicates that the request to gain a reference to a <a HREF="#EAIBrowserApp">EAIBrowserApp</a>
+has failed. Examples may be that a network connection is down or that
+the type of reference required is not supported by the vendor specific
+implementation of a language binding.
+<H3>
+<a NAME="EAIConnectionError"></a>5.3.3 EAI_CONNECTION_ERROR</H3>
+An error has occurred that resulted in the connection between the browser
+and external application becoming non-functional. Therefore, the service
+request could not be executed. This is a different error condition from <a HREF="#EAIBrowserUnavailable">EAI_BROWSER_UNAVAILABLE</a>
+as it assumes that a valid reference has already been obtained and the
+error occurred at a later time.
+<H3>
+<a NAME="EAIDisposed"></a>5.3.4 EAI_DISPOSED</H3>
+The request made of the current&nbsp; <a HREF="#EAINodeID">EAINodeID</a>, <a HREF="#EAIFieldID">EAIFieldID</a> or
+<a HREF="#EAIBrowserRef">EAIBrowserRef</a> reference
+is being made to an object that has already been disposed prior to this
+service request.
+<H3>
+<a NAME="EAIInvalidAccessType"></a>5.3.5 EAI_INVALID_ACCESS_TYPE</H3>
+The attempt to perform an operation of a field failed because it is an
+invalid action for that field type. For example an attempt was made to
+read the value of an eventIn would generate this error.
+<H3>
+<a NAME="EAIInvalidBrowser"></a>5.3.6 EAI_INVALID_BROWSER</H3>
+The instance of <a HREF="#EAIBrowserRef">EAIBrowserRef</a> data type provided as
+part of the parameters to the service request has been disposed of prior
+to this request.
+<H3>
+<a NAME="EAIInvalidName"></a>5.3.7 EAI_INVALID_NAME</H3>
+The name provided to a service request is invalid or cannot be found in
+the context of that object.
+<H3>
+<a NAME="EAIInvalidNode"></a>5.3.8 EAI_INVALID_NODE</H3>
+The instance of <a HREF="#EAINodeID">EAINodeID</a> data type provided as part
+of the parameters to this service request has been disposed of prior to
+this request.
+<H3>
+<a NAME="EAIInvalidField"></a>5.3.9 EAI_INVALID_FIELD</H3>
+The instance of <a HREF="#EAIFieldID">EAIFieldID</a> data type provided as part
+of the parameters to this service request has been disposed of prior to
+this request.
+<H3>
+<a NAME="EAIInvalidURL"></a>5.3.10 EAI_INVALID_URL</H3>
+The instance of <a href="#EAIURL"> EAIURL</a> data type provided as part of the parameters to
+this service request is invalid due to a syntax error. Errors due to the
+requested URL not being available shall generate either an <a HREF="#EAIURLUnavailable">EAI_URL_UNAVAILABLE</a>
+error or an asynchronous event notifying of such a problem.
+<H3>
+<a NAME="EAIInvalidVRML"></a>5.3.11 EAI_INVALID_VRML</H3>
+The EAIString or <a HREF="../part1/glossary.html#VRMLFile">VRML file</a> (for example
+as a result of the fetching of a URL reference)&nbsp; passed to this service
+request contains invalid syntax and cannot be parsed to produce legal data
+types for use in other service requests.
+<H3>
+<a NAME="EAIURLUnavailable"></a>5.3.12 EAI_URL_UNAVAILABLE</H3>
+The service request requiring the browser to have a world URL set cannot
+be completed because no URL has been set. This error is typically generated
+from a getWorldURL (<a HREF="servRef.html#getWorldURL">6.3.11 getWorldURL</a>)
+or getNode (<a HREF="servRef.html#getNode">6.3.9 getNode</a>) service request
+<BR><IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" height=25 width=470>
+<H2>
+<a NAME="EventTypes"></a>5.4 Event Types</H2>
+
+<H3>
+<a NAME="BrowserEvents"></a>5.4.1 Browser Events</H3>
+Browser event types are asynchronous events that are generated in response
+to changes in the status of the browser implementation. The following event
+types shall be implemented by each language binding. Additional implementation
+dependent events may be defined to supplement the provided event types.
+<H4>
+<a NAME="EAIBrowserEvent"></a>5.4.1.1 EAIBrowserEvent</H4>
+The data type that represents the general class of events produced by each
+browser service. (see <a HREF="concepts.html#BrowserToExternalApplication">4.5.3 Browser to external
+application</a>)
+<H4>
+<a NAME="EAIBInitialized"></a>5.4.1.2 EAI_B_Initialized</H4>
+The data type representing the browser having completed the initialisation
+process of loading VRML content (see <a HREF="concepts.html#Initialize">4.5.3.2
+Initialize</a>).
+<H4>
+<a NAME="EAIBShutdown"></a>5.4.1.3 EAI_B_Shutdown</H4>
+The data type representing the browser being shutdown. That is the execution
+model is no longer running or content is displayed (see <a HREF="concepts.html#Shutdown">4.5.3.3
+Shutdown</a>).
+<H4>
+<a NAME="EAIBConnectionError"></a>5.4.1.4 EAI_B_ConnectionError</H4>
+The data type representing an error condition has occurred in the internal
+connection between the browser and the external application (see <a HREF="concepts.html#ConnectionLost">4.5.3.5
+Connection Lost</a>).
+<H4>
+<a NAME="EAIBURLError"></a>5.4.1.5 EAI_B_URLError</H4>
+The data type representing an error condition when no URLs could be processed
+to form valid VRML content (see <a HREF="concepts.html#NoURLsAvailable">4.5.3.4
+No URLs Available</a>).
+<H3>
+<a NAME="EAIFieldEvent"></a>5.4.2 EAIFieldEvent</H3>
+The data type used to represent the notification of a change in a field
+value that the external application has registered interest in.
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470>
+
+</BODY>
+</HTML>

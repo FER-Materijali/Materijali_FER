@@ -1,0 +1,97 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>Browser content creation functions example code</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<TABLE WIDTH=100%
+	BORDER=0
+	CELLSPACING=0
+	CELLPADDING=0
+>
+<TR >
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0000.htm><B><IMG SRC="../images/arwtoc2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0459.htm><B><IMG SRC="../images/arwndx2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0467.htm><B><IMG SRC="../images/arwprev2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0469.htm><B><IMG SRC="../images/arwnext2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=4%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	468
+</TD>
+</TR>
+</TABLE>
+<P>
+
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Accessing the browser from JavaScript and Java</CENTER>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>Browser content creation functions example code</I></B></CENTER>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<FONT COLOR=#FFFFFF SIZE=+2>
+<DL>
+
+<DD><LI>Receive a URL on an input, load it, and output the results
+<DD><LI>Use a <B><TT><FONT COLOR=#00FF00 SIZE=+2>Group</FONT></TT></B> node to hold the results
+</DL>
+<P>
+<PRE><B><TT><FONT COLOR=#00FF00 SIZE=+2>DEF Loader Script {
+    field    SFNode   myself USE Loader
+    field    MFString lastUrl ""
+    eventIn  MFString loadUrl 
+    eventIn  MFNode   vrmlLoaded
+    eventOut MFNode   node_changed
+    eventOut MFString string_changed
+    url "</FONT></TT></B><B><TT><FONT COLOR=#00AAFF SIZE=+2>vrmlscript:
+        function loadUrl( str, ts ) {
+            lastUrl = str;
+            Browser.createVrmlFromURL( str, myself, 'vrmlLoaded' );
+            string_changed[0] = 'Loading...';
+        }
+        function vrmlLoaded( nd, ts ) {
+            node_changed = nd;
+            string_changed[0] = lastUrl[0];
+        }</FONT></TT></B><B><TT><FONT COLOR=#00FF00 SIZE=+2>"
+}</FONT></TT></B></PRE>
+</DL>
+
+
+
+</BODY>
+</HTML>

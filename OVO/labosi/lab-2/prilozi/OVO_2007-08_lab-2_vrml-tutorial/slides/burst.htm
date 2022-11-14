@@ -1,0 +1,104 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>burst.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Controlling color on coordinate-based geometry</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>burst.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  Burst of lines
+#  burst.wrl
+#        by David R. Nadeau
+#        published in "The VRML 2.0 Sourcebook" by Ames, Nadeau, and Moreland
+#
+#  Illustrate the use of an IndexedLineSet to build a 3D star-burst.
+#
+
+WorldInfo {
+	title "Burst of lines"
+	info [ "Copyright (c) 1997, Andrea L. Ames, David R. Nadeau, John L. Moreland" ]
+}
+
+Viewpoint {
+	position 0.0 0.0 3.0
+	description "Entry view"
+}
+
+NavigationInfo {
+	type [ "EXAMINE", "ANY" ]
+	headlight TRUE
+}
+
+DEF Burst Shape {
+    # no appearance, use emissive coloring
+    geometry IndexedLineSet {
+	coord Coordinate {
+	    point [
+		 0.00  0.00  0.00,   1.00  0.00  0.00,
+		 0.92  0.38  0.00,   0.71  0.71  0.00,
+		 0.38  0.92  0.00,   0.00  1.00  0.00,
+		-0.38  0.92  0.00,  -0.71  0.71  0.00,
+		-0.92  0.38  0.00,  -1.00  0.00  0.00,
+		-0.92 -0.38  0.00,  -0.71 -0.71  0.00,
+		-0.38 -0.92  0.00,   0.00 -1.00  0.00,
+		 0.38 -0.92  0.00,   0.71 -0.71  0.00,
+		 0.92 -0.38  0.00,
+	    ]
+	}
+	coordIndex [
+	    0,  1, -1,   0,  2, -1,
+	    0,  3, -1,   0,  4, -1,
+	    0,  5, -1,   0,  6, -1,
+	    0,  7, -1,   0,  8, -1,
+	    0,  9, -1,   0, 10, -1,
+	    0, 11, -1,   0, 12, -1,
+	    0, 13, -1,   0, 14, -1,
+	    0, 15, -1,   0, 16, -1
+	]
+	colorPerVertex TRUE
+	color Color {
+	    color [
+		1.0 1.0 0.0,  # burst center color
+		1.0 0.3 0.3   # burst ends color
+		1.0 0.3 0.3   # burst ends color
+		1.0 0.3 0.3   # burst ends color
+		1.0 0.3 0.3   # burst ends color
+		1.0 0.3 0.3   # burst ends color
+		1.0 0.3 0.3   # burst ends color
+		1.0 0.3 0.3   # burst ends color
+		1.0 0.3 0.3   # burst ends color
+		1.0 0.3 0.3   # burst ends color
+		1.0 0.3 0.3   # burst ends color
+		1.0 0.3 0.3   # burst ends color
+		1.0 0.3 0.3   # burst ends color
+		1.0 0.3 0.3   # burst ends color
+		1.0 0.3 0.3   # burst ends color
+		1.0 0.3 0.3   # burst ends color
+		1.0 0.3 0.3   # burst ends color
+	    ]
+	}
+    }
+}
+Transform { rotation 0.0 1.0 0.0  0.785 children USE Burst }
+Transform { rotation 0.0 1.0 0.0  1.57  children USE Burst }
+Transform { rotation 0.0 1.0 0.0  2.355 children USE Burst }
+</FONT></PRE>
+</BODY>
+</HTML>

@@ -1,0 +1,1037 @@
+<HTML>
+<HEAD>
+<!-- Amd 1 joedw 12/08/02 -->
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 2.0 Win">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+  <TITLE>VRML97, ISO/IEC 14772-1:1997 -- 3 Definitions</TITLE>
+</HEAD>
+<BODY>
+
+<H1><CENTER><IMG SRC="../Images/vrml97.gif" ALT="VRML97 logo" WIDTH="470"
+HEIGHT="85" NATURALSIZEFLAG="0" ALIGN="BOTTOM"></CENTER></H1>
+
+<H1><CENTER>The Virtual Reality Modeling Language</CENTER></H1>
+
+<H1><CENTER>3 Definitions</CENTER></H1>
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" WIDTH=
+"470" HEIGHT="25" sgi_src="/usr/people/rikk/VRML/pix/vrmlbar.gif" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM"></P>
+
+<P>For the purposes of this part of ISO/IEC 14722, the following definitions
+apply.</P>
+
+<H3><A NAME="Activate"></A>
+3.1 activate</H3>
+
+<P>To cause a <I><A HREF="#SensorNode">sensor node</A> </I>to generate an
+&quot;isActive&quot; <I><A HREF="#Event">event</A></I>. The various types
+of sensor nodes are &quot;activated&quot; by <I><A HREF="#User">user</A></I>
+interactions, the passage of <I><A HREF="#Time">time</A></I>, or other events.
+Only active sensor nodes affect the <I><A HREF="#User">user's</A></I> experience.
+A Script <I><A HREF="#Node">node</A></I> is activated when it receives an
+event. A pointing device such as a <I><A HREF="#Mouse">mouse</A></I> is
+activated when one of its buttons is depressed by a user. See <A HREF="concepts.html#4.12.2">4.12.2,&nbsp;Script&nbsp;execution</A>,
+for details.</P>
+
+<H3><A NAME="Ancestor"></A>
+3.2 ancestor</H3>
+
+<P>A <EM><A HREF="#Node">node</A></EM> which is an antecedent of another
+node in the <EM><A HREF="#TransformationHierarchy">transformation hierarchy</A></EM>.</P>
+
+<H3><A NAME="Author"></A>
+3.3 author</H3>
+
+<P>A person or agent that creates <I><A HREF="#VRMLFile">VRML files</A></I>.
+Authors typically use <I><A HREF="#Generator">generators</A></I> to assist
+them.</P>
+
+<H3><A NAME="AuthoringTool"></A>
+3.4 authoring tool</H3>
+
+<P>See <I><A HREF="#Generator">generator</A></I>.</P>
+
+<H3><A NAME="Avatar"></A>
+3.5 avatar</H3>
+
+<P>The abstract representation of the <I><A HREF="#User">user</A></I> in
+a VRML <I><A HREF="#World">world</A></I>. The physical dimensions of the
+avatar are used for collision detection and terrain following. See <A HREF=
+"nodesRef.html#NavigationInfo">6.29,&nbsp;NavigationInfo</A>, for details.</P>
+
+<H3><A NAME="Bearing"></A>
+3.6 bearing</H3>
+
+<P>A straight line passing through the <I><A HREF="#Pointer">pointer</A></I>
+location in the direction of the pointer. If multiple sensors' geometry
+intersect this line, only the sensor nearest the viewer will be eligible
+to generate <I><A HREF="#Event">events</A></I> regardless of material and
+texture properties (e.g., transparency).</P>
+
+<H3><A NAME="BindingNode"></A>
+3.7 bindable node</H3>
+
+<P>A <I><A HREF="#Node">node</A></I> that may have many <I><A HREF="#Instance">instances</A></I>
+in a <I><A HREF="#SceneGraph">scene graph</A></I>, but only one instance
+may be active at any instant of <I><A HREF="#Time">time</A></I>. A node
+of type Background, Fog, NavigationInfo, or Viewpoint. See <A HREF="concepts.html#4.6.10">4.6.10,&nbsp;Bindable&nbsp;children&nbsp;nodes</A>,
+for details.</P>
+
+<H3><A NAME="Browser"></A>
+3.8 browser</H3>
+
+<P>A computer program that interprets <I><A HREF="#VRMLFile">VRML files</A></I>,
+presents their content to a <I><A HREF="#User">user</A></I> on a <I><A 
+HREF="#DisplayDevice">display device</A></I>, and allows the user to interact
+with <I><A HREF="#World">worlds</A></I> defined by VRML files by means of
+a user interface.</P>
+
+<H3><A NAME="BrowserExtension"></A>
+3.9 browser extension</H3>
+
+<P><A HREF="#Node"><I>Nodes</I></A> defined using the prototyping mechanism
+that are understood only by certain <I><A HREF="#Browser">browsers</A></I>.
+See <A HREF="extensions.html#F.3">4.9.3,&nbsp;Browser&nbsp;extensions</A>,
+for details.</P>
+
+<H3><A NAME="Built-InNode"></A>
+3.10 built-in node</H3>
+
+<P>A <EM><A HREF="#Node">node</A></EM> of a <I><A HREF="#NodeType">type</A></I>
+explicitly defined in this part of ISO/IEC 14772.</P>
+
+<H3><A NAME="Callback"></A>
+3.11 callback</H3>
+
+<P>A function defined in a <I><A HREF="#ScriptingLanguage">scripting language</A></I>
+to which <I><A HREF="#Event">events</A></I> are passed. See&nbsp;<A HREF=
+"concepts.html#4.12.8">4.12.8,&nbsp;EventIn&nbsp;handling</A>, for details.</P>
+
+<H3><A NAME="Candidate"></A>
+3.12 candidate</H3>
+
+<P>One of potentially several choices. The <I><A HREF="#User">user</A></I>
+or the <I><A HREF="#Browser">browser</A></I> will select none or one of
+the choices when all candidates are identified. See <A HREF="concepts.html#4.6.10">4.6.10,&nbsp;Bindable&nbsp;children&nbsp;nodes</A>,
+and <A HREF="nodesRef.html#Anchor">6.2,&nbsp;Anchor</A>, for details.</P>
+
+<H3><A NAME="Child"></A>
+3.13 child</H3>
+
+<P>An instance of a <EM><A HREF="#ChildrenNode">children node</A></EM>.</P>
+
+<H3><A NAME="ChildrenNode"></A>
+3.14 children node</H3>
+
+<P>One of a set of <EM><A HREF="#NodeType">node type</A></EM>s, instances
+of which can be collected in a group to share specific properties dependent
+on the type of the <EM><A HREF="#GroupingNode">grouping node</A></EM>. See&nbsp;<A
+HREF="concepts.html#4.6.5">4.6.5,&nbsp;Grouping&nbsp;and&nbsp;children&nbsp;nodes</A>,
+for a list of allowable children nodes.</P>
+
+<H3><A NAME="ClientSystem"></A>
+3.15 client system</H3>
+
+<P>A computer system, attached to a <I><A HREF="#Network">network</A></I>,
+that relies on another computer (the server) for essential processing functions.
+Many client systems also function as stand-alone computers.</P>
+
+<H3><A NAME="CollisionProxy"></A>
+3.16 collision proxy</H3>
+
+<P>A <I><A HREF="#Node">node</A></I> used as a substitute for all of a Collision
+node's children during collision detection. See&nbsp;<A HREF="nodesRef.html#Collision">6.8,&nbsp;Collision</A>,
+for details.</P>
+
+<H3><A NAME="ColourModel"></A>
+3.17 colour model</H3>
+
+<P>Characterization of a colour space in terms of explicit parameters. ISO/IEC
+14772 allows colours to be defined only with the RGB colour model. However,
+colour interpolation is performed in the HSV colour space.</P>
+
+<H3><A NAME="Culling"></A>
+3.18 culling</H3>
+
+<P>The process of identifying <I><A HREF="#Object">objects</A></I> or parts
+of objects which do not need to be processed further by the <I><A HREF=
+"#Browser">browser</A></I> in order to produce the desired view of a <I><A
+HREF="#World">world</A></I>.</P>
+
+<H3><A NAME="Descendent"></A>
+3.19 descendant</H3>
+
+<P>A <I><A HREF="#Node">node</A></I> which descends from another node in
+the <EM><A HREF="#TransformationHierarchy">transformation hierarchy</A></EM>.
+A <EM><A HREF="#ChildrenNode">children node</A></EM>.</P>
+
+<H3><A NAME="DisplayDevice"></A>
+3.20 display device</H3>
+
+<P>A graphics device on which VRML <I><A HREF="#World">worlds</A></I> may
+be rendered.</P>
+
+<H3><A NAME="DragSensor"></A>
+3.21 drag sensor</H3>
+
+<P>A <I><A HREF="#PointingDeviceSensor">pointing device sensor</A></I> that
+causes <I><A HREF="#Event">events</A></I> to be generated in response to
+sensor-dependent pointer motions. For example, the SphereSensor generates
+spherical rotation events. A <I><A HREF="#Node">node</A></I> of type CylinderSensor,
+PlaneSensor, or SphereSensor. See <A HREF="concepts.html#4.6.7">4.6.7,&nbsp;Sensor&nbsp;nodes</A>,
+and <A HREF="concepts.html#4.6.7.4">4.6.7.4,&nbsp;Drag&nbsp;sensors</A>,
+for details.</P>
+
+<h3><a name="ERM"></a>
+3.22 Earth reference model (ERM)</h3> 
+
+<p>One of the models available
+with this specification of either the physical surface of the Earth
+(usually in the form of an oblate spheroid) or a gravity equipotential
+surface for the Earth (often called a <i>geoid</i>).</p>
+
+<H3><A NAME="EnvironmentalSensor"></A>
+3.23 environmental sensor</H3>
+
+<P>A sensor <I><A HREF="#Node">node</A></I> that generates <I><A HREF="#Event">events</A></I>
+based on the location of the viewpoint in the <EM><A HREF="#World">world</A></EM>
+or in relation to <I><A HREF="#Object">objects</A></I> in the world. The
+TimeSensor node generates events at regular intervals in <I><A HREF="#Time">time</A></I>.
+A node of type Collision, ProximitySensor, TimeSensor, or VisibilitySensor.
+See&nbsp;<A HREF="concepts.html#4.6.7.2">4.6.7.2,&nbsp;Environmental&nbsp;sensors</A>,
+for details.</P>
+
+<H3><A NAME="Event"></A>
+3.24 event</H3>
+
+<P>A <I><A HREF="#Message">message</A></I> sent from one <I><A HREF="#Node">node</A></I>
+to another as defined by a <I><A HREF="#Route">route</A></I>. <I><A HREF=
+"#Event">Events</A></I> signal external stimuli, changes to <I><A HREF=
+"#Field">field</A></I> values, and interactions between nodes. An event
+consists of a <I><A HREF="#Timestamp">timestamp</A></I> and a field value.</P>
+
+<H3><A NAME="EventCascade"></A>
+3.25 event cascade</H3>
+
+<P>A sequence of <I><A HREF="#Event">events</A></I> initiated by a script
+or sensor event and propagated from <I><A HREF="#Node">node</A></I> to node
+along one or more <I><A HREF="#Route">routes</A></I>. All events in an event
+cascade are considered to have occurred simultaneously. See <A HREF="concepts.html#4.10.3">4.10.3,&nbsp;Execution&nbsp;model</A>,
+for details.</P>
+
+<H3><A NAME="EventIn"></A>
+3.26 eventIn</H3>
+
+<P>A logical receptor attached to a <I><A HREF="#Node">node</A></I> which
+receives <I><A HREF="#Event">events</A></I>.</P>
+
+<H3><A NAME="EventOut"></A>
+3.27 eventOut</H3>
+
+<P>A logical output terminal attached to a <I><A HREF="#Node">node</A></I>
+from which <I><A HREF="#Event">events</A></I> are sent. The eventOut also
+stores the event most recently sent.</P>
+
+<H3><A NAME="ExecutionModel"></A>
+3.28 execution model</H3>
+
+<P>The rules governing how <I><A HREF="#Event">events</A></I> are processed
+by <I><A HREF="#Browser">browsers</A></I> and scripts.</P>
+
+<H3><A NAME="ExposedField"></A>
+3.29 exposed field</H3>
+
+<P>A <I><A HREF="#Field">field</A></I> that is capable of receiving <I><A
+HREF="#Event">events</A></I> via an <EM><A HREF="#EventIn">eventIn</A></EM>
+to change its value(s), and generating events via an <EM><A HREF="#EventOut">eventOut</A></EM>
+when its value(s) change.</P>
+
+<H3><A NAME="ExternalPrototype"></A>
+3.30 external prototype</H3>
+
+<P>A <I><A HREF="#Prototype">prototype</A></I> defined in an external file
+and referenced by a <I><A HREF="#URL">URL</A></I>.</P>
+
+<H3><A NAME="Field"></A>
+3.31 field</H3>
+
+<P>A property or attribute of a <I><A HREF="#Node">node</A></I>. Each <I><A
+HREF="#NodeType">node type</A></I> has a fixed set of fields. Fields may
+contain various kinds of data and one or many values. Each field has a default
+value.</P>
+
+<H3><A NAME="FieldName"></A>
+3.32 field name</H3>
+
+<P>The identifier of a <I><A HREF="#Field">field</A></I>. Field names are
+unique within the scope of the <I><A HREF="#Node">node</A></I>.</P>
+
+<H3><A NAME="File"></A>
+3.33 file</H3>
+
+<P>A collection of related data. A file may be stored on physical media
+or may exist as a data stream or as data within a computer program.</P>
+
+<H3><A NAME="Frame"></A>
+3.34 frame</H3>
+
+<P>A single rendering of a <I><A HREF="#World">world</A></I> on a <I><A
+HREF="#DisplayDevice">display device</A></I> or a single time-step in a
+simulation.</P>
+
+<h3><a name="FFD"></a>
+3.35 Free Form Deformation (FFD)</h3> 
+<p>The result of transforming the control points of a piece of NURBS
+geometry.</p>
+
+<H3><A NAME="Generator"></A>
+3.36 generator</H3>
+
+<P>A computer program which creates <I><A HREF="#VRMLFile">VRML files</A></I>.
+A generator may be used by a person or operate automatically. Synonymous
+with <EM><A HREF="#AuthoringTool">authoring tool</A></EM>.</P>
+
+<h3><a name="GeocentricSRF"></a>
+
+3.37 geocentric spatial reference frame (GC or GCC)</h3> 
+<p>A spatial reference frame in which an arbitrary point location of the
+surface of the Earth is determined by (x,y,z) parameters in metres
+from the origin (Earth centre), where X-axis is aligned with the Prime
+(Greenwich) Meridian in the Equatorial plane, Z-axis is aligned with
+polar axis (coincident with the Earth&rsquo;s rotational axis)
+pointing North, and Y-axis is defined as orthogonal to the other two
+such as to form a right handed orthogonal set.</p>
+
+<h3><a name="GeodeticSRF"></a>
+3.38 geodetic spatial reference frame (GD or GDC)</h3> 
+
+<p>A spatial reference frame defined using two angular measures called
+latitude and longitude and a linear height measure from the
+surface of the ERM, where:</p> 
+
+<ul>
+<li><p>latitude is specified in
+degrees in the range [&ndash;90, +90];</p>
+</li> 
+
+<li>
+<p>longitude is specified in
+degrees in either the range [&ndash;180, +180] or the range
+[0, +360] where zero degrees represents the same longitude in
+either range;</p>
+</li> 
+
+<li>
+<p>linear height is measured in metres positive above the reference surface.</p>
+</li> 
+
+<li>
+<p>the origin is at a specified point near Greenwich, United Kingdom.</p>
+</li>
+</ul>
+
+<h3><a name="Geoid"></a>
+3.39 geoid</h3> 
+
+<p>A surface along which the gravity potential is everywhere equal,
+and to which the direction of gravity is always perpendicular at
+that surface. The Earth's geoid coincides with that surface to which the oceans
+would conform over the entire Earth, if free to adjust to the
+combined effect of the Earth's mass attraction and the
+centrifugal force of the Earth's rotation, which is roughly
+equivalent to the undisturbed mean sea level.</p>
+
+<H3><A NAME="GeometricPropertyNode"></A>
+3.40 geometric property node</H3>
+
+<P>A <I><A HREF="#Node">node</A></I> defining the properties of a specific
+geometry node. A node of type Color, Coordinate, Normal, or TextureCoordinate.
+See <A HREF="concepts.html#4.6.3.2">4.6.3.2,&nbsp;Geometric&nbsp;property&nbsp;nodes</A>,
+for details.</P>
+
+<H3><A NAME="GeometricSensorNode"></A>
+3.41 geometric sensor node</H3>
+
+<P>A <I><A HREF="#Node">node</A></I> that generates <I><A HREF="#Event">events</A></I>
+based on <I><A HREF="#User">user</A></I> actions, such as a <I><A HREF=
+"#Mouse">mouse</A></I> click or navigating close to a particular <I><A 
+HREF="#Object">object</A></I>. A node of type CylinderSensor, PlaneSensor,
+ProximitySensor, SphereSensor, TouchSensor, VisibilitySensor, or Collision.
+See <A HREF="concepts.html#4.6.7.1">4.6.7.1, Introduction to sensors</A>,
+for details.</P>
+
+<H3><A NAME="GeometryNode"></A>
+3.42 geometry node</H3>
+
+<P>A <I><A HREF="#Node">node</A></I> containing mathematical descriptions
+of three-dimensional (3D) points, lines, surfaces, text strings and solids.
+A node of type Box, Cone, Cylinder, ElevationGrid, Extrusion, IndexedFaceSet,
+IndexedLineSet, PointSet, Sphere, or Text. See <A HREF="concepts.html#4.6.3">4.6.3,&nbsp;Shapes&nbsp;and&nbsp;geometry</A>,
+for details.</P>
+
+<h3><a name="GeoreferencedLCS"></a>
+
+3.43 georeferenced local coordinate system</h3> 
+<p>A local coordinate system in which the origin is fixed to a specified
+geospatial location and specified axis orientation. Such coordinate
+systems are used in this International Standard to associate models
+with positions on the Earth.</p>
+
+<H3><A NAME="Grab"></A>
+3.44 grab</H3>
+
+<P>To receive <I><A HREF="#Event">events</A></I> from activated pointing
+devices (e.g., <I><A HREF="#Mouse">mouse</A></I> or <I><A HREF="#Wand">wand</A></I>).
+A <I><A HREF="#PointingDeviceSensor">pointing device sensor</A></I> becomes
+the exclusive recipient of pointing device events when one or more pointing
+devices are activated simultaneously.</P>
+
+<H3><A NAME="Gravity"></A>
+3.45 gravity</H3>
+
+<P>In the context of ISO/IEC 14772, gravity may be simulated by constraining
+the motion of the viewpoint to the lowest possible path (smallest Y-coordinate
+in the local coordinate system of the viewpoint) consistent with following
+the surface of encountered <EM><A HREF="#Object">objects</A></EM>. See&nbsp;<A
+HREF="nodesRef.html#NavigationInfo">6.29,&nbsp;NavigationInfo</A>, for details.</P>
+
+<H3><A NAME="GroupingNode"></A>
+3.46 grouping node</H3>
+
+<P>One of a set of <EM><A HREF="#NodeType">node types</A></EM> which include
+a list of nodes, referred to as its <I><A HREF="#ChildrenNode">children
+nodes</A></I>. These children nodes are collected together to share specific
+properties dependent on the type of the grouping node. Each grouping node
+defines a coordinate space for its children relative to its own coordinate
+space. The children may themselves be instances of grouping nodes, thus
+forming a <EM><A HREF="#TransformationHierarchy">transformation hierarchy</A></EM>.
+See <A HREF="concepts.html#4.6.5">4.6.5,&nbsp;Grouping&nbsp;and&nbsp;children&nbsp;nodes</A>,
+for details.</P>
+
+<H3><A NAME="HSV"></A>
+3.47 HSV</H3>
+
+<P>Hue, Saturation, and Value colour model. See <A HREF="bibliography.html#[FOLE]">E.[FOLE]</A>.</P>
+
+<H3><A NAME="HTML"></A>
+3.48 HTML</H3>
+
+<P>HyperText Markup Language. See <A HREF="references.html#[HTML]">2.[HTML]</A>.</P>
+
+<H3><A NAME="Hyperlink"></A>
+3.49 hyperlink</H3>
+
+<P>A reference to a <I><A HREF="#URL">URL</A></I> that is associated with
+an Anchor <EM><A HREF="#Node">node</A></EM>. See <A HREF="nodesRef.html#Anchor">6.2,&nbsp;Anchor</A>,
+for details.</P>
+
+<H3><A NAME="IdealVRMLImplementation"></A>
+3.50 ideal VRML implementation</H3>
+
+<P>An implementation of VRML that presents all <I><A HREF="#Object">objects</A></I>
+and simulates movement without approximation. Not realizable in practice.</P>
+
+<H3><A NAME="IEC"></A>
+3.51 IEC</H3>
+
+<P>International Electrotechnical Commission. See <TT><A HREF="http://www.iec.ch/">http://www.iec.ch</A></TT>.</P>
+
+<H3><A NAME="IETF"></A>
+3.52 IETF</H3>
+
+<P>Internet Engineering Task Force. The organization which develops <I><A
+HREF="#Internet">Internet</A></I> standards. See <TT><A HREF="http://www.ietf.org/overview.html">http://www.ietf.org/overview.html</A></TT>.</P>
+
+<H3><A NAME="Image"></A>
+3.53 image</H3>
+
+<P>A two-dimensional (2D) rectangular array of pixel values. Pixel values
+may have from one to four components. See <A HREF="fieldsRef.html#SFImage">5.5,&nbsp;SFImage</A>,
+for details.</P>
+
+<H3><A NAME="In-lining"></A>
+3.54 in-lining</H3>
+
+<P>The mechanism by which one <I><A HREF="#VRMLFile">VRML file</A></I> is
+hierarchically included in another.</P>
+
+<H3><A NAME="Internet"></A>
+3.55 Internet</H3>
+
+<P>The world-wide named <I><A HREF="#Network">network</A></I> of computers
+which communicate with each other using a common set of communication protocols
+known as TCP/IP. See <I><A HREF="#IETF">IETF</A></I>. The <I><A HREF="#WorldWideWeb">World
+Wide Web</A></I> is implemented on the Internet.</P>
+
+<H3><A NAME="Instance"></A>
+3.56 instance</H3>
+
+<P>A reference to a previously defined and named <I><A HREF="#Node">node</A></I>.
+Nodes are named by means of the DEF syntax and reference by USE syntax (see
+<A HREF="concepts.html#4.6.2">4.6.2, DEF/USE semantics</A>). Instances of
+nodes may be used in any context in which the defining node may be used.</P>
+
+<H3><A NAME="InterpolatorNode"></A>
+3.57 interpolator node</H3>
+
+<P>A <I><A HREF="#Node">node</A></I> that defines a piece-wise linear interpolation.
+A node of type ColorInterpolator, CoordinateInterpolator, NormalInterpolator,
+OrientationInterpolator, PositionInterpolator, or ScalarInterpolator. See
+<A HREF="concepts.html#4.6.8">4.6.8,&nbsp;Interpolator nodes</A>, for details.</P>
+
+<H3><A NAME="Intranet"></A>
+3.58 intranet</H3>
+
+<P>A private <I><A HREF="#Network">network</A></I> that uses the same protocols
+and standards as the <I><A HREF="#Internet">Internet</A></I>.</P>
+
+<H3><A NAME="ISO"></A>
+3.59 ISO</H3>
+
+<P>International Organization for Standardization. See <TT><A HREF="http://www.iso.ch/infoe/intro.html">http://www.iso.ch/infoe/intro.html</A></TT>.</P>
+
+<H3><A NAME="JPEG"></A>
+3.60 JPEG</H3>
+
+<P>Joint Photographic Experts Group. See <A HREF="references.html#[JPEG]">2.[JPEG]</A>.</P>
+
+<H3><A NAME="JTC1"></A>
+3.61 JTC 1</H3>
+
+<P><A HREF="#ISO">ISO</A>/<A HREF="#IEC">IEC</A> Joint Technical Committee
+1. See&nbsp;<TT><A HREF="http://www.iso.ch/meme/JTC1.html">http://www.iso.ch/meme/JTC1.html</A></TT>.</P>
+
+<H3><A NAME="LevelOfDetail"></A>
+3.62 level of detail</H3>
+
+<P>The amount of detail or complexity which is displayed at any particular
+<I><A HREF="#Time">time</A></I> for any particular <I><A HREF="#Object">object</A></I>.
+The level of detail for an object is controllable as a function of the distance
+of the object from the viewer. See <A HREF="nodesRef.html#LOD">6.26,&nbsp;LOD</A>,
+for details. (Abbreviated LOD)</P>
+
+<H3><A NAME="LineTerminator"></A>
+3.63 line terminator</H3>
+
+<P>A linefeed character (0x0A) or a carriage return character (0x0D).</P>
+
+<H3><A NAME="Loop"></A>
+3.64 loop</H3>
+
+<P>A sequence of <I><A HREF="#Event">events</A></I> which would result in
+a specific <EM><A HREF="#EventOut">eventOut</A></EM> sending more than one
+event with the same <EM><A HREF="#Timestamp">timestamp</A></EM>.</P>
+
+<H3><A NAME="Message"></A>
+3.65 message</H3>
+
+<P>A data string sent between <I><A HREF="#Node">nodes</A></I> upon the
+occurrence of an <I><A HREF="#Event">event</A></I>. See <A HREF="concepts.html#4.10">4.10,&nbsp;Event&nbsp;processing</A>,
+for details.</P>
+
+<H3><A NAME="MIDI"></A>
+3.66 MIDI</H3>
+
+<P>Musical Instrument Digital Interface. A standard for digital music representation.
+See <A HREF="references.html#[MIDI]">2.[MIDI]</A>.</P>
+
+<H3><A NAME="MIME"></A>
+3.67 MIME</H3>
+
+<P>Multipurpose Internet Mail Extension. Used to specify filetyping rules
+for <I><A HREF="#Internet">Internet</A></I> applications, including <I><A
+HREF="#Browser">browsers</A></I>. See <A HREF="concepts.html#4.5.1">4.5.1,&nbsp;File&nbsp;extension&nbsp;and&nbsp;MIME&nbsp;types</A>,
+for details. See also <A HREF="bibliography.html#[MIME]">E.[MIME]</A>.</P>
+
+<H3><A NAME="Mouse"></A>
+3.68 mouse</H3>
+
+<P>A pointing device that moves in two dimensions and that enables a <I><A
+HREF="#User">user</A></I> to move a cursor on a <EM><A HREF="#DisplayDevice">display
+device</A></EM> in order to point at displayed <I><A HREF="#Object">objects</A></I>.
+One or more push buttons on the mouse allow the user to indicate to the
+computer program that some action is to be taken.</P>
+
+<H3><A NAME="MPEG"></A>
+3.69 MPEG</H3>
+
+<P>Moving Picture Experts Group. See <TT><A HREF="http://drogo.cselt.stet.it/mpeg/">http://drogo.cselt.stet.it/mpeg/</A></TT>.</P>
+
+<H3><A NAME="Multimedia"></A>
+3.70 multimedia</H3>
+
+<P>An integrated presentation, typically on a computer, of content of various
+types, such as computer graphics, audio, and video.</P>
+
+<H3><A NAME="Network"></A>
+3.71 network</H3>
+
+<P>Set of interconnected computers.</P>
+
+<H3><A NAME="Node"></A>
+3.72 node</H3>
+
+<P>The fundamental component of a <I><A HREF="#SceneGraph">scene graph</A></I>
+in ISO/IEC 14772. Nodes are abstractions of various real-world objects and
+concepts. Examples include spheres, lights, and material descriptions. Nodes
+contain <I><A HREF="#Field">fields</A></I> and <I><A HREF="#Event">events</A></I>.
+<I><A HREF="#Message">Messages</A></I> may be sent between nodes along <I><A
+HREF="#Route">routes</A></I>.</P>
+
+<H3><A NAME="NodeType"></A>
+3.73 node type</H3>
+
+<P>A characteristic of each <I><A HREF="#Node">node</A></I> that describes,
+in general, its particular semantics. For example, Box, Group, Sound, and
+SpotLight are node types. See <A HREF="concepts.html#4.6">4.6,&nbsp;Node&nbsp;semantics</A>,
+and <A HREF="nodesRef.html">6,&nbsp;Node&nbsp;reference</A>, for details.</P>
+
+<H3><A NAME="Now"></A>
+3.74 now</H3>
+
+<P>The present <I><A HREF="#Time">time</A></I> as perceived by the <I><A
+HREF="#User">user</A></I>.</P>
+
+<h3><a name="NURBS"></a>
+3.75 NURBS</h3> 
+
+<p>Non-Uniform Rational B-spline. This may be either a
+curve or a surface.</p>
+
+<H3><A NAME="Object"></A>
+3.76 object</H3>
+
+<P>A collection of data and procedures, packaged according to the rules
+and syntax defined in ISO/IEC 14772. &quot;Object&quot; is usually synonymous
+with <I><A HREF="#Node">node</A>.</I></P>
+
+<H3><A NAME="ObjectSpace"></A>
+3.77 object space</H3>
+
+<P>The coordinate system in which an <I><A HREF="#Object">object</A></I>
+is defined.</P>
+
+<H3><A NAME="Panorama"></A>
+3.78 panorama</H3>
+
+<P>A background texture that is placed behind all geometry in the scene
+and in front of the ground and sky. See <A HREF="nodesRef.html#Background">6.5,
+Background</A>, for details.</P>
+
+<H3><A NAME="Parent"></A>
+3.79 parent</H3>
+
+<P>A <EM><A HREF="#Node">node</A></EM> which is an instance of a <EM><A
+HREF="#GroupingNode">grouping node</A></EM>.</P>
+
+<H3><A NAME="PNG"></A>
+3.80 PNG</H3>
+
+<P>Portable Network Graphics. A specification for representing two-dimensional
+images in <EM><A HREF="#File">files</A></EM>. See <A HREF="references.html#[PNG]">2.[PNG]</A>.</P>
+
+<H3><A NAME="Pointer"></A>
+3.81 pointer</H3>
+
+<P>A location and direction in the <I><A HREF="#VirtualWorld">virtual world</A></I>
+defined by the <I><A HREF="#PointingDevice">pointing device</A></I> which
+the <I><A HREF="#User">user</A></I> is currently using to interact with
+the virtual world.</P>
+
+<H3><A NAME="PointingDevice"></A>
+3.82 pointing device</H3>
+
+<P>A hardware device connected to the <I><A HREF="#User">user's</A></I>
+computer by which the user directly controls the location and direction
+of the <I><A HREF="#Pointer">pointer</A></I>. Pointing devices may be either
+two-dimensional or three-dimensional and may have one or more control buttons.
+See <A HREF="concepts.html#4.6.7.5">4.6.7.5,&nbsp;Activating&nbsp;and&nbsp;manipulating&nbsp;sensors</A>,
+for details.</P>
+
+<H3><A NAME="PointingDeviceSensor"></A>
+3.83 pointing device sensor</H3>
+
+<P>A sensor <I><A HREF="#Node">node</A></I> that generates <I><A HREF="#Event">events</A></I>
+based on <I><A HREF="#User">user</A></I> actions, such as <I><A HREF="#PointingDevice">pointing
+device</A></I> motions or button activations. A node of type Anchor, CylinderSensor,
+PlaneSensor, SphereSensor, or TouchSensor. See <A HREF="concepts.html#4.6.7.3">4.6.7.3,&nbsp;Pointing&nbsp;device&nbsp;sensors</A>,
+for details.</P>
+
+<H3><A NAME="Polyline"></A>
+3.84 polyline</H3>
+
+<P>A sequence of straight line segments where the end point of the first
+segment is coincident with the start point of the second segment, the endpoint
+of the second segment is coincident with the start point of the third segment,
+and so on. A piecewise linear curve.</P>
+
+<H3><A NAME="Profile"></A>
+3.85 profile</H3>
+
+<P>A named collection of criteria for functionality and conformance that
+defines an implementable subset of a standard.</P>
+
+<H3><A NAME="Prototype"></A>
+3.86 prototype</H3>
+
+<P>The definition of a new <I><A HREF="#NodeType">node type</A></I> in terms
+of the <I><A HREF="#Node">nodes</A></I> defined in this part of ISO/IEC
+14772. See&nbsp;<A HREF="concepts.html#4.8">4.8,&nbsp;Prototype&nbsp;semantics</A>,
+for details.</P>
+
+<H3><A NAME="Prototyping"></A>
+3.87 prototyping</H3>
+
+<P>The mechanism for extending the set of <I><A HREF="#NodeType">node types</A></I>
+from within a <I><A HREF="#VRMLFile">VRML file</A></I>.</P>
+
+<H3><A NAME="PublicInterface"></A>
+3.88 public interface</H3>
+
+<P>The formal definition of a <I><A HREF="#NodeType">node type</A></I> in
+this part of ISO/IEC 14772.</P>
+
+<H3><A NAME="RGB"></A>
+3.89 RGB</H3>
+
+<P>The colour model used within ISO/IEC 14772 for the specification of colours.
+Each colour is represented as a combination of the three primary colours
+red, green, and blue. See <A HREF="bibliography.html#[FOLE]">E.[FOLE]</A>.</P>
+
+<H3><A NAME="Route"></A>
+3.90 route</H3>
+
+<P>The connection between a <I><A HREF="#Node">node</A></I> generating an
+<I><A HREF="#Event">event</A></I> and a node receiving the event. See&nbsp;<A
+HREF="concepts.html#4.3.9">4.3.9,&nbsp;Route&nbsp;statement syntax</A>,
+and <A HREF="concepts.html#4.10.2">4.10.2, Route semantics</A>, for details.</P>
+
+<H3><A NAME="RouteGraph"></A>
+3.91 route graph</H3>
+
+<P>The set of connections between <EM><A HREF="#EventOut">eventOuts</A></EM>
+and <EM><A HREF="#EventIn">eventIns</A></EM> formed by ROUTE statements
+or addRoute method invocations.</P>
+
+<H3><A NAME="RunTimeNameScope"></A>
+3.92 run-time name scope</H3>
+
+<P>The extent to which a name defined within a VRML file applies and is
+visible. Several different run-time name scopes are recognized and are defined
+in <A HREF="concepts.html#4.4.6">4.4.6, Run-time name scope</A>.</P>
+
+<H3><A NAME="RURL"></A>
+3.93 RURL</H3>
+
+<P>Relative Uniform Resource Locator. See <A HREF="references.html#[RURL]">2.[RURL]</A>.</P>
+
+<H3><A NAME="SceneGraph"></A>
+3.94 scene graph</H3>
+
+<P>An ordered collection of <EM><A HREF="#GroupingNode">grouping nodes</A></EM><I>
+</I>and other nodes. Grouping nodes, (such as LOD, Switch, and Transform
+nodes) may have <I><A HREF="#ChildrenNode">children nodes</A></I>. See <A
+HREF="concepts.html#4.2.3">4.2.3,&nbsp;Scene&nbsp;graph</A>, and <A HREF=
+"concepts.html#4.4.2">4.4.2,&nbsp;Scene&nbsp;graph&nbsp;hierarchy,</A> for
+details.</P>
+
+<H3><A NAME="Scripting"></A>
+3.95 script</H3>
+
+<P>A set of procedural functions normally executed as part of an <EM><A
+HREF="#EventCascade">event cascade</A></EM> (see <A HREF="nodesRef.html#Script">6.40,
+Script</A>). A script function may also be executed asynchronously (see
+<A HREF="concepts.html#4.12.6">4.12.6, Asynchronous scripts</A>).</P>
+
+<H3><A NAME="Scripting"></A>
+3.96 scripting</H3>
+
+<P>The process of creating or referring to a script.</P>
+
+<H3><A NAME="ScriptingLanguage"></A>
+3.97 scripting language</H3>
+
+<P>A system of syntactical and semantic constructs used to define and automate
+procedures and processes on a computer. Typically, scripting languages are
+interpreted and executed sequentially on a statement-by-statement basis
+whereas programming languages are generally compiled prior to execution.</P>
+
+<H3><A NAME="SensorNode"></A>
+3.98 sensor node</H3>
+
+<P>A <I><A HREF="#Node">node</A></I> that enables the <I><A HREF="#User">user</A></I>
+to interact with the <I><A HREF="#World">world</A></I> in the scene graph
+hierarchy. Sensor nodes respond to user interaction with geometric <I><A
+HREF="#Object">objects</A></I> in the world, the movement of the user through
+the world, or the passage of <I><A HREF="#Time">time</A></I>. See <A HREF=
+"concepts.html#4.6.7">4.6.7,&nbsp;Sensor&nbsp;nodes</A>, for details.</P>
+
+<H3><A NAME="SeparatorCharacter"></A>
+3.99 separator character</H3>
+
+<P>A <I><A HREF="#UTF-8">UTF-8</A></I> character used to separate syntactical
+entities in a <I><A HREF="#VRMLFile">VRML file</A></I>. Specifically, commas,
+spaces, tabs, linefeeds, and carriage-returns are separator characters wherever
+they appear outside of string <I><A HREF="#Field">fields</A></I>. See <A
+HREF="concepts.html#4.3.1">4.3.1,&nbsp;Clear&nbsp;text&nbsp;(UTF-8) encoding</A>,
+for details.</P>
+
+<H3><A NAME="Sibling"></A>
+3.100 sibling</H3>
+
+<P>A <EM><A HREF="#Node">node</A></EM> which shares a <EM><A HREF="#Parent">parent</A></EM>
+with other nodes.</P>
+
+<H3><A NAME="SimulationTick"></A>
+3.101 simulation tick</H3>
+
+<P>The smallest time unit capable of being identified in a digital simulation
+of analog time. <I><A HREF="#Time">Time</A></I> in the context of ISO/IEC
+14772 is conceptually analog but is realized by an implementation as a digital
+simulation of abstract analog time. See <A HREF="concepts.html#4.11">4.11,&nbsp;Time</A>,
+for details.</P>
+
+<h3><a name="SpatialReferenceFrame"></a>
+3.102 spatial reference frame</h3> 
+
+<p>The combination of a specific coordinate system that is associated
+with a specified point in relation to a reference object defined by a
+model of that reference object. For this International Standard, the
+reference object is always the Earth (see <i>Earth reference
+model</i>).</p>
+
+<H3><A NAME="SpecialGroupNode"></A>
+3.103 special group node</H3>
+
+<P>A <I><A HREF="#GroupingNode">grouping node</A></I> that exhibits special
+behaviour. Examples of such special behaviour include selecting one of many
+<I><A HREF="#ChildrenNode">children nodes</A></I> to be rendered based on
+a dynamically changing parameter value and dynamically loading children
+nodes from an external file. A node of type Inline, LOD (level of detail),
+or Switch. See <A HREF="concepts.html#4.6.5">4.6.5,&nbsp;Grouping&nbsp;and&nbsp;children&nbsp;nodes</A>,
+for details.</P>
+
+<H3><A NAME="Texture"></A>
+3.104 texture</H3>
+
+<P>An <I><A HREF="#Image">image</A></I> used in a <I><A HREF="#TextureMap">texture
+map</A></I> to create visual appearance effects when applied to <I><A HREF=
+"#GeometryNode">geometry nodes</A></I>.</P>
+
+<H3><A NAME="TextureCoordinates"></A>
+3.105 texture coordinates</H3>
+
+<P>The set of two-dimensional coordinates used by some vertex-based <I><A
+HREF="#GeometryNode">geometry nodes</A></I> (<I>e.g.</I>, IndexedFaceSet
+and ElevationGrid) and specified in the TextureCoordinate node to map textures
+to the vertices of those nodes. Texture coordinates range from 0 to 1 across
+each axis of the texture image. See <A HREF="concepts.html#4.6.11">4.6.11,&nbsp;Texture&nbsp;maps</A>,
+and <A HREF="nodesRef.html#TextureCoordinate">6.48,&nbsp;TextureCoordinate</A>,
+for details.</P>
+
+<H3><A NAME="TextureMap"></A>
+3.106 texture map</H3>
+
+<P>A <I><A HREF="#Texture">texture</A></I> plus the general parameters necessary
+for mapping the texture to geometry.</P>
+
+<H3><A NAME="Time"></A>
+3.107 time</H3>
+
+<P>A monotonically increasing value generated by a node. Time (0.0) starts
+at 00:00:00 GMT January 1, 1970. See <A HREF="concepts.html#4.11">4.11,&nbsp;Time</A>,
+for details.</P>
+
+<H3><A NAME="Timestamp"></A>
+3.108 timestamp</H3>
+
+<P>The part of a <I><A HREF="#Message">message</A></I> that describes the
+<I><A HREF="#Time">time</A></I> the <I><A HREF="#Event">event</A></I> occurred
+and that caused the message to be sent. See <A HREF="concepts.html#4.11">4.11,&nbsp;Time</A>,
+for details.</P>
+
+<H3><A NAME="TransformationHierarchy"></A>
+3.109 transformation hierarchy</H3>
+
+<P>The subset of the <EM><A HREF="#SceneGraph">scene graph</A></EM> consisting
+of <EM><A HREF="#Node">nodes</A></EM> that have well-defined coordinate
+systems. The transformation hierarchy excludes nodes that are not <EM><A
+HREF="#Descendent">descendants</A></EM> of the scene graph root nodes and
+nodes in SFNode or MFNode fields of Script nodes.</P>
+
+<H3><A NAME="TransparencyChunk"></A>
+3.110 transparency chunk</H3>
+
+<P>A section of a PNG file containing transparency information (derived
+from <A HREF="references.html#[PNG]">2.[PNG]</A>).</P>
+
+<H3><A NAME="Traverse"></A>
+3.111 traverse</H3>
+
+<P>To process the <I><A HREF="#Node">nodes</A></I> in a <I><A HREF="#SceneGraph">scene
+graph</A></I> in the correct order.</P>
+
+<h3><a name="TrimmedNURBSSurface"></a>
+3.112 trimmed NURBS surface</h3> 
+
+<p>A closed combination of 2D <i>NURBS</i> curves and/or piecewise linear line
+segments that is used to define the areas of validity and
+invalidity of a NURBS surface.</p> 
+
+<h3><a name="TrimmingLoop"></a>
+3.113 trimming loop</h3> 
+
+<p>A NURBS surface defined with one or more trimming
+loops.</p>
+
+<H3><A NAME="UCS"></A>
+3.114 UCS</H3>
+
+<P>Universal multiple-octet coded Character Set. See <A HREF="references.html#[UTF8]">2.[UTF8]</A>.</P>
+
+<h3><a name="UTMSPF"></a>
+3.115 universal transverse mercator (UTM) spatial reference frame</h3> 
+
+<p>A spatial reference frame in which the result of the <i><u>UTM projection</u></i> 
+is augmented by a
+linear height measured from the surface of the ERM.
+The northing, easting, and elevation values are specified
+relative to a fixed zone and hemisphere.</p> 
+
+<h3><a name="UTMProjection"></a>
+3.116 universal transverse mercator (UTM) projection</h3> 
+
+<p>A projection of an ellipsoid (that represents the Earth) to a
+cylinder, in which the cylinder and the ellipsoid are tangent
+along a meridian, and a point on the ellipsoid is projected on
+the surface of the cylinder which is opened and flattened such
+that the ellipsoid is divided into 60 zones each six degrees wide
+in longitude. UTM is never used for locations above 84.0 degrees
+North and 80.0 degrees South since the error resulting from the
+projection is considered too severe. The longitudinal value is
+called the easting and the latitudinal value is called the
+northing.</p>
+
+<H3><A NAME="URL"></A>
+3.117 URL</H3>
+
+<P>Uniform Resource Locator. See <A HREF="references.html#[URL]">2.[URL]</A>.</P>
+
+<H3><A NAME="URN"></A>
+3.118 URN</H3>
+
+<P>Universal Resource Name. See <A HREF="bibliography.html#[URN]">E.[URN]</A>.</P>
+
+<H3><A NAME="UTF-8"></A>
+3.119 UTF-8</H3>
+
+<P>The character set used to encode <I><A HREF="#VRMLFile">VRML files</A></I>.
+The 8-bit UCS Transformation Format. See&nbsp;<A HREF="references.html#[UTF8]">2.[UTF8]</A>.</P>
+
+<H3><A NAME="User"></A>
+3.120 user</H3>
+
+<P>A person or agent who uses and interacts with <I><A HREF="#VRMLFile">VRML
+files</A></I> by means of a <I><A HREF="#Browser">browser</A></I>.</P>
+
+<H3><A NAME="Viewer"></A>
+3.121 viewer</H3>
+
+<P>A location, direction, and viewing angle in a <I><A HREF="#VirtualWorld">virtual
+world</A></I> that determines the portion of the virtual world presented
+by the <I><A HREF="#Browser">browser</A></I> to the <I><A HREF="#User">user</A></I>.</P>
+
+<H3><A NAME="VirtualWorld"></A>
+3.122 virtual world</H3>
+
+<P>See <I><A HREF="#World">world</A></I>.</P>
+
+<H3><A NAME="VRMLBrowser"></A>
+3.123 VRML browser</H3>
+
+<P>See <I><A HREF="#Browser">browser</A></I>.</P>
+
+<h3><a name="VRMLCoordinateSystem"></a>
+3.124 VRML coordinate system</h3> 
+
+<p>A rectangular Cartesian coordinate system with arbitrary origin
+used to define VRML geometry.</h3>
+
+<H3><A NAME="VRMLDocumentServer"></A>
+3.125 VRML document server</H3>
+
+<P>A computer program that locates and transmits <I><A HREF="#VRMLFile">VRML
+files</A></I> and supporting files in response to requests from <I><A HREF=
+"#Browser">browsers</A></I>.</P>
+
+<H3><A NAME="VRMLFile"></A>
+3.126 VRML file</H3>
+
+<P>A set of VRML nodes and statements as defined in this part of ISO/IEC
+14772. This set of VRML nodes and statements may be in the form of a file,
+a data stream, or an in-line sequence of VRML information as defined by
+a particular VRML encoding.</P>
+
+<H3><A NAME="Wand"></A>
+3.127 wand</H3>
+
+<P>A pointing device that moves in three dimensions and that enables a <I><A
+HREF="#User">user</A></I> to indicate a position in the three-dimensional
+coordinate system of a world in order to point at displayed <I><A HREF=
+"#Object">objects</A></I>. One or more push buttons on the wand allow the
+user to indicate to the computer program that some action is to be taken.</P>
+
+<H3><A NAME="WhiteSpace"></A>
+3.128 white space</H3>
+
+<P>One or more consecutive occurrences of a <EM><A HREF="#SeparatorCharacter">separator
+character</A></EM>. See <A HREF="concepts.html#4.3.1">4.3.1,&nbsp;Clear&nbsp;text&nbsp;(UTF-8)&nbsp;encoding</A>,
+for details.</P>
+
+<H3><A NAME="World"></A>
+3.129 world</H3>
+
+<P>A collection of one or more <I><A HREF="#VRMLFile">VRML files</A></I>
+and other multimedia content that, when interpreted by a <I><A HREF="#VRMLBrowser">VRML
+browser</A></I>, presents an interactive experience to the <I><A HREF="#User">user</A></I>
+consistent with the <I><A HREF="#Author">author's</A></I> intent.</P>
+
+<H3><A NAME="WorldCoordinateSpace"></A>
+3.130 world coordinate space</H3>
+
+<P>The coordinate system in which each VRML <I><A HREF="#World">world</A></I>
+is defined. The world coordinate space is an orthogonal right-handed Cartesian
+coordinate system. The units of length are metres.</P>
+
+<H3><A NAME="WorldWideWeb"></A>
+3.131 World Wide Web</H3>
+
+<P>The collection of documents, data, and content typically encoded in HTML
+pages and accessible via the <I><A HREF="#Internet">Internet</A></I> using
+the HTTP protocol.</P>
+
+<H3><A NAME="XYPlane"></A>
+3.132 XY plane</H3>
+
+<P>The plane perpendicular to the Z-axis that passes through the point Z
+= 0.0.</P>
+
+<H3><A NAME="YZ Plane"></A>
+3.133 YZ plane</H3>
+
+<P>The plane perpendicular to the X-axis that passes through the point X
+= 0.0.</P>
+
+<H3><A NAME="ZXPlane"></A>
+3.134 ZX plane</H3>
+
+<P>The plane perpendicular to the Y-axis that passes through the point Y = 0.0.</P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" WIDTH=
+"470" HEIGHT="25" sgi_src="/usr/people/rikk/VRML/pix/vrmlbar.gif" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM"></P>
+
+<PRE><FONT SIZE=-1>http://www.vrml.org/Specifications/VRML97/part1/glossary.html</FONT></PRE>
+</BODY>
+</HTML>

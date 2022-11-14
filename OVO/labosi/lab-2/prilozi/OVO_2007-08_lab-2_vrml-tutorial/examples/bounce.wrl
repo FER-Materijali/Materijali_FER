@@ -1,0 +1,468 @@
+#VRML V2.0 utf8
+#
+#  FILE
+#    bounce.wrl     11k
+#
+#  SUPPORTING FILES
+#    stone1.jpg      3k
+#    mud01.jpg       2k
+#    bluesat.jpg     2k
+#                   ----
+#                    18k    =  13 sec @ 14.4 download time
+#                           =  6 sec @ 28.8
+#                           =  5 sec @ 36.6
+#
+#  DESCRIPTION
+#    This world builds a pedestal with glowing, rising rings and
+#    a bouncing ball.
+#
+#  IMPLIMENTATION NOTES
+#    This world illustrates the use of multiple interpolators
+#    to drive multiple animations.  Two cylinders in the center
+#    of the world have ring textures mapped to them.  Using a
+#    PositionInterpolator for each one, the cylinders are moved
+#    slowly upward, creating a perpetually rising glowing ring
+#    effect.
+#
+#    At the same time, a set of interpolators create a perpetually
+#    bouncing ball.  Each ball bounce is controlled by a
+#    PositionInterpolator.  Another PositionInterpolator scales
+#    the ball each time it strikes the ground, creating the
+#    appearance of a squishy, bouncy ball.  Simultaneously, a
+#    pair of PositionInterpolator and OrientationInterpolator nodes
+#    move the bouncing ball in a circular pattern around the
+#    glowing rings.
+#
+#  EXPERIMENTATION
+#    Add more bouncing balls!
+#
+#    Change the path of the bouncing ball by changing the path
+#    interpolator's key positions and orientations.
+#
+
+WorldInfo {
+    title "Bouncing"
+    info "Copyright (c) 1997, David R. Nadeau"
+}
+Viewpoint {
+    position 0.0 2.0 11.0
+    description "Entry view"
+}
+NavigationInfo {
+    type [ "WALK", "ANY" ]
+    headlight FALSE
+    speed 2.0
+}
+Background {
+    skyColor [
+        0.0 0.7 0.0
+        0.0 0.0 0.3
+        0.0 0.0 0.0
+    ]
+    skyAngle [
+        1.5,
+        1.571
+    ]
+}
+
+
+#
+#  Lights
+#
+DirectionalLight {
+    direction -1.0 -1.0 -1.0
+    intensity 1.0
+    color 1.0 1.0 1.0
+}
+DirectionalLight {
+    direction 1.0 -1.0 -1.0
+    intensity 0.6
+    color 0.0 1.0 0.0
+}
+
+
+#
+#  Ground
+#
+Shape {
+    appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+            url "mud01.jpg"
+        }
+        textureTransform TextureTransform {
+            scale 10.0 10.0
+        }
+    }
+    geometry Box { size 20.0 0.01 20.0 }
+}
+
+
+#
+#  Pedestal with two stairs
+#
+Transform {
+    translation 0.0 0.25 0.0
+    children [
+    # Sides of pedestal, upper part
+        Shape {
+            appearance Appearance {
+                material Material { }
+                texture DEF Stone ImageTexture {
+                    url "stone1.jpg"
+                }
+                textureTransform TextureTransform {
+                    scale 16.0 1.0
+                }
+            }
+            geometry Cylinder {
+                radius 1.8
+                height 0.5
+                bottom FALSE
+                top FALSE
+            }
+        }
+    # Top of pedestal, upper part
+        Shape {
+            appearance Appearance {
+                material Material { }
+                texture USE Stone
+                textureTransform TextureTransform {
+                    scale 2.0 2.0
+                }
+            }
+            geometry Cylinder {
+                radius 1.8
+                height 0.5
+                side FALSE
+                bottom FALSE
+            }
+        }
+    ]
+}
+Transform {
+    translation 0.0 0.125 0.0
+    rotation 0.0 1.0 0.0  0.785
+    children [
+    # Sides of pedestal, lower part
+        Shape {
+            appearance Appearance {
+                material Material { }
+                texture USE Stone
+                textureTransform TextureTransform {
+                    scale 16.0 1.0
+                }
+            }
+            geometry Cylinder {
+                radius 2.3
+                height 0.25
+                bottom FALSE
+                top FALSE
+            }
+        }
+    # Top of pedestal, lower part
+        Shape {
+            appearance Appearance {
+                material Material { }
+                texture USE Stone
+                textureTransform TextureTransform {
+                    scale 2.0 2.0
+                }
+            }
+            geometry Cylinder {
+                radius 2.3
+                height 0.25
+                side FALSE
+                bottom FALSE
+            }
+        }
+    ]
+}
+
+#
+#  Glowing rings
+#
+Collision {
+    collide FALSE
+    children [
+	DEF Rings1 Transform {
+	    # animated translation
+	    children Transform {
+		translation 0.0 2.5 0.0
+		children Shape {
+		    appearance Appearance {
+			# no material = emissive texturing
+			texture PixelTexture {
+			    image 1 2 4
+				0x00000000,
+				0x00FF88FF
+			}
+			textureTransform TextureTransform {
+			    scale 1.0 16.0
+			}
+		    }
+		    geometry Cylinder {
+			radius 0.7
+			height 5.0
+			bottom FALSE
+			top FALSE
+		    }
+		}
+	    }
+	}
+
+	DEF Rings2 Transform {
+	    # animated translation
+	    children Transform {
+		translation 0.0 2.5 0.0
+		children Shape {
+		    appearance Appearance {
+			# no material = emissive texturing
+			texture PixelTexture {
+			    image 1 2 4
+				0x00000000,
+				0x00FF44FF
+			}
+			textureTransform TextureTransform {
+			    scale 1.0 16.0
+			}
+		    }
+		    geometry Cylinder {
+			radius 0.9
+			height 5.0
+			bottom FALSE
+			top FALSE
+		    }
+		}
+	    }
+	}
+
+
+	#
+	#  Bouncing ball that bounces in a circular path
+	#
+	Transform {
+	    translation 0.0 0.5 0.0
+	    children [
+		DEF BallPath Transform {
+		    # translation animated
+		    # rotation animated
+		    children [
+			DEF Ball Transform {
+			    # translation animated
+			    # scale animated
+			    children [
+				Shape {
+				    appearance Appearance {
+					# no material - emissive texturing
+					texture ImageTexture {
+					    url "bluesat.jpg"
+					}
+				    }
+				    geometry Sphere { radius 0.3 }
+				}
+			    ]
+			}
+		    ]
+		}
+	    ]
+	}
+    ]
+}
+
+
+#
+#  Animation clocks
+#
+DEF PathClock TimeSensor {
+    cycleInterval 16.0
+    loop TRUE
+    startTime 1.0
+    stopTime  0.0
+}
+
+DEF BounceClock TimeSensor {
+    cycleInterval 2.0
+    loop TRUE
+    startTime 1.0
+    stopTime  0.0
+}
+
+DEF Ring1Clock TimeSensor {
+    cycleInterval 4.0
+    loop TRUE
+    startTime 1.0
+    stopTime  0.0
+}
+
+DEF Ring2Clock TimeSensor {
+    cycleInterval 3.0
+    loop TRUE
+    startTime 1.0
+    stopTime  0.0
+}
+
+
+#
+#  Animation interpolators
+#
+DEF BouncePosition PositionInterpolator {
+    key [
+        0.000000,
+        0.125000,
+        0.250000,
+        0.375000,
+        0.500000,
+        0.625000,
+        0.750000,
+        0.875000,
+        1.000000,
+    ]
+    keyValue [
+        0.000000 0.000000 0.0,
+        0.125000 1.071875 0.0,
+        0.250000 1.837500 0.0,
+        0.375000 2.296875 0.0,
+        0.500000 2.450000 0.0,
+        0.625000 2.296875 0.0,
+        0.750000 1.837500 0.0,
+        0.875000 1.071875 0.0,
+        1.000000 0.000000 0.0,
+    ]
+}
+
+DEF BounceSquish PositionInterpolator {
+    key [
+        0.000000,
+        0.150000,
+        0.950000,
+        1.000000,
+    ]
+    # Values are scaling factors, not positions
+    keyValue [
+        1.3 0.5 1.3,
+        1.0 1.0 1.0,
+        1.0 1.0 1.0,
+        1.3 0.5 1.3,
+    ]
+}
+
+DEF PathPosition PositionInterpolator {
+    key [
+        0.000000,
+        0.125000,
+        0.125000,
+        0.250000,
+        0.250000,
+        0.375000,
+        0.375000,
+        0.500000,
+        0.500000,
+        0.625000,
+        0.625000,
+        0.750000,
+        0.750000,
+        0.875000,
+        0.875000,
+        1.000000,
+        1.000000,
+    ]
+    keyValue [
+        1.273239 0.0 0.000000,
+        1.273239 0.0 0.000000,
+        0.900316 0.0 -0.900316,
+        0.900316 0.0 -0.900316,
+        0.000000 0.0 -1.273239,
+        0.000000 0.0 -1.273239,
+        -0.900316 0.0 -0.900316,
+        -0.900316 0.0 -0.900316,
+        -1.273239 0.0 0.000000,
+        -1.273239 0.0 0.000000,
+        -0.900316 0.0 0.900316,
+        -0.900316 0.0 0.900316,
+        0.000000 0.0 1.273239,
+        0.000000 0.0 1.273239,
+        0.900316 0.0 0.900316,
+        0.900316 0.0 0.900316,
+        1.273239 0.0 0.000000,
+    ]
+}
+
+DEF PathRotation OrientationInterpolator {
+    key [
+        0.000000,
+        0.125000,
+        0.125000,
+        0.250000,
+        0.250000,
+        0.375000,
+        0.375000,
+        0.500000,
+        0.500000,
+        0.625000,
+        0.625000,
+        0.750000,
+        0.750000,
+        0.875000,
+        0.875000,
+        1.000000,
+        1.000000,
+    ]
+    keyValue [
+        0.0 1.0 0.0  1.963495,
+        0.0 1.0 0.0  1.963495,
+        0.0 1.0 0.0  2.748894,
+        0.0 1.0 0.0  2.748894,
+        0.0 1.0 0.0  3.534292,
+        0.0 1.0 0.0  3.534292,
+        0.0 1.0 0.0  4.319690,
+        0.0 1.0 0.0  4.319690,
+        0.0 1.0 0.0  5.105088,
+        0.0 1.0 0.0  5.105088,
+        0.0 1.0 0.0  5.890486,
+        0.0 1.0 0.0  5.890486,
+        0.0 1.0 0.0  6.675884,
+        0.0 1.0 0.0  6.675884,
+        0.0 1.0 0.0  7.461282,
+        0.0 1.0 0.0  7.461282,
+        0.0 1.0 0.0  8.246680,
+    ]
+}
+
+DEF Ring1Mover PositionInterpolator {
+    key [ 0.0, 1.0 ]
+    keyValue [
+        0.0 0.0 0.0,
+        0.0 0.3125 0.0,
+    ]
+}
+
+DEF Ring2Mover PositionInterpolator {
+    key [ 0.0, 1.0 ]
+    keyValue [
+        0.0 0.0 0.0,
+        0.0 0.3125 0.0,
+    ]
+}
+
+
+#
+#  Animation circuit
+#
+ROUTE PathClock.fraction_changed TO PathPosition.set_fraction
+ROUTE PathClock.fraction_changed TO PathRotation.set_fraction
+
+ROUTE PathPosition.value_changed TO BallPath.set_translation
+ROUTE PathRotation.value_changed TO BallPath.set_rotation
+
+ROUTE BounceClock.fraction_changed TO BouncePosition.set_fraction
+ROUTE BounceClock.fraction_changed TO BounceSquish.set_fraction
+
+ROUTE BouncePosition.value_changed TO Ball.set_translation
+ROUTE BounceSquish.value_changed TO Ball.set_scale
+
+ROUTE Ring1Clock.fraction_changed TO Ring1Mover.set_fraction
+ROUTE Ring1Mover.value_changed TO Rings1.set_translation
+
+ROUTE Ring2Clock.fraction_changed TO Ring2Mover.set_fraction
+ROUTE Ring2Mover.value_changed TO Rings2.set_translation

@@ -1,0 +1,30 @@
+#VRML V2.0 utf8
+#
+#  atorch.wrl
+#  Torch with animated flames
+#	by David R. Nadeau
+#
+#  This file illustrates creation of a 'Torch' node via the PROTO
+#  syntax.  The torch uses an LOD to select among three torch
+#  variants, each designed to work as part of this animated torch.
+#
+WorldInfo {
+    title "Torch with animated flames"
+    info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+PROTO Torch [
+] {
+	LOD {
+		center 0.0 0.0 0.0
+		range [ 19.0, 25.0 ]
+		level [
+		# High-detail
+			Inline { url "atorch1.wrl" },
+		# Medium-detail
+			Inline { url "atorch2.wrl" },
+		# Low-detail
+			Inline { url "atorch3.wrl" }
+		]
+	}
+}

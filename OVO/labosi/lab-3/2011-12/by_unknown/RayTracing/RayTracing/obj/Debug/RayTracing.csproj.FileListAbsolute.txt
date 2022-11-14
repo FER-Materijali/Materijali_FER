@@ -1,0 +1,10 @@
+C:\Users\Gooseman\Desktop\RayTracing\RayTracing\bin\Debug\RayTracing.exe
+C:\Users\Gooseman\Desktop\RayTracing\RayTracing\bin\Debug\RayTracing.pdb
+C:\Users\Gooseman\Desktop\RayTracing\RayTracing\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Gooseman\Desktop\RayTracing\RayTracing\obj\Debug\RayTracing.exe
+C:\Users\Gooseman\Desktop\RayTracing\RayTracing\obj\Debug\RayTracing.pdb
+C:\Users\Gooseman\Desktop\RayTracing\RayTracing\obj\Debug\raytracing.Picture.resources
+C:\Users\Gooseman\Desktop\RayTracing\RayTracing\obj\Debug\ResGen.read.1.tlog
+C:\Users\Gooseman\Desktop\RayTracing\RayTracing\obj\Debug\ResGen.write.1.tlog
+C:\Users\Sinisa\Desktop\OVO LABOS\OVO-V3- Rezultati-Marija_Srbljic\RayTracing\RayTracing\obj\Debug\RayTracing.exe
+C:\Users\Sinisa\Desktop\OVO LABOS\OVO-V3- Rezultati-Marija_Srbljic\RayTracing\RayTracing\obj\Debug\RayTracing.pdb

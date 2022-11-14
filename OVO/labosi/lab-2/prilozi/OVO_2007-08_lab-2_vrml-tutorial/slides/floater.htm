@@ -1,0 +1,184 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>floater.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Introducing VRML</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>floater.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  Floating pads world
+#  floater.wrl
+#	by David R. Nadeau
+#
+#  A collection of white pads are created.  Each pad
+#  slides back and forth horizontally or vertically at its
+#  own speed.  A green light illuminates the tops of the
+#  pads while a blue light illuminates the bottoms.
+#
+#  Complexity is created from simplicity via two tricks:
+#
+#           1.  Create a set of simple shapes, then repeat the
+#               same shapes several times.  In this case, there
+#               are only 7 original pads moving left and right.
+#               Those 7 are repeated again, but turned around the
+#               Y axis so that they slide front to back.  The
+#               same 7 are repeated again, but rotated around the
+#               Z axis so that they slide up and down.  The
+#               effect is one of a complex bunch of moving shapes
+#               when in reality there are only 7.
+#
+#           2.  Give each moving shape a slightly different cycle
+#               interval for its animation.  This makes all the
+#               movement out of sync, which again creates the
+#               appearance of complexity.
+#  A PROTO is used to create a new Pad node that incorporates a
+#  box shape, a time sensor, a position interpolator, and routes to
+#  connect them together.  Fields to the Pad node control the initial
+#  placement of the pad, and it's animation cycle interval.
+#
+#  Extend the PROTO node to include a color field for selecting
+#  the color of a pad.
+#
+#  Add textures.  Particularly try adding a texture with a
+#  transparency (alpha) channel.  Using transparency textures
+#  you can add stripes, checks, or whatever to the pads.  One
+#  approach that looks interesting is to add a cloud texture,
+#  but make the sky behind the clouds transparent in the
+#  texture.  When mapped, this creates a blobby indistinct
+#  shape on each pad.
+#
+#  Add a Transform node around the entire group of pads, then
+#  use an OrientationInterpolator and TimeSensor to slowly
+#  spin the world.  Remembering the complexity tricks above,
+#  you can create a complex tumble by using three nested
+#  Transform nodes (X, Y, and Z), each with its own
+#  OrientationInterpolator and TimeSensor.  Give the three
+#  TimeSensors slightly different cycleInterval values (such
+#  as 5.0, 7.0, and 11.0).  Prime numbers are good choices.
+#  Since the cycle times are different for the three spins,
+#  they don't sync up, and it looks like a chaotic tumble.
+#
+
+WorldInfo {
+    title "Floating Pads World"
+    info [ "Copyright (c) 1996, David R. Nadeau" ]
+}
+
+Viewpoint {
+    position 0.0 1.6 10.0
+    description "Entry View"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight FALSE
+}
+
+Background {
+    skyColor [ 0.0 0.1 0.4 ]
+}
+
+DirectionalLight {
+    direction 0.5 -1.0 -0.7
+    color 0.3 1.0 0.3
+}
+
+DirectionalLight {
+    direction -0.5 1.0 0.7
+    color 0.0 0.3 1.0
+}
+
+#
+#  Define the Pad node type
+#
+PROTO Pad [
+    exposedField SFVec3f    translation    0.0 0.0 0.0
+    exposedField SFRotation rotation       0.0 0.0 1.0 0.0
+    exposedField SFTime     cycleInterval 10.0
+] {
+    Collision {
+        collide FALSE
+        children [
+	    Transform {
+		translation IS translation
+		rotation    IS rotation
+		children DEF Movee Transform {
+		    children [
+			Shape {
+			    appearance Appearance {
+				material Material {
+				    diffuseColor 1.0 1.0 1.0
+				}
+			    }
+			    geometry Box { size 4.0 0.2 2.0 }
+			}
+			DEF Clock TimeSensor {
+			    cycleInterval IS cycleInterval
+			    loop TRUE
+			    startTime 1.0
+			    stopTime  0.0
+			}
+			DEF Mover PositionInterpolator {
+			    key [ 0.0, 0.5, 1.0 ]
+			    keyValue [
+				-10.0 0.0 0.0,
+				 10.0 0.0 0.0,
+				-10.0 0.0 0.0,
+			    ]
+			}
+		    ]
+		}
+	    }
+        ]
+    }
+    ROUTE Clock.fraction_changed TO Mover.set_fraction
+    ROUTE Mover.value_changed    TO Movee.set_translation
+}
+
+
+#
+#  Make a bunch of moving pads
+#
+Pad { translation  0.0  4.0   0.0   cycleInterval 10.0 }
+Pad { translation -2.0  0.0  -2.0   cycleInterval 12.0 }
+Pad { translation  2.0  6.0  -4.0   cycleInterval 14.0 }
+Pad { translation -4.0  2.0  -8.0   cycleInterval 16.0 }
+Pad { translation  0.0 -6.0 -10.0   cycleInterval 18.0 }
+Pad { translation  4.0 -2.0 -10.0   cycleInterval 10.0 }
+Pad { translation  0.0 -4.0  -0.0   cycleInterval  8.0 }
+
+Pad { translation  0.0  4.0   0.0   cycleInterval 10.0   rotation 0.0 1.0 0.0 1.571 }
+Pad { translation -2.0  0.0  -2.0   cycleInterval 12.0   rotation 0.0 1.0 0.0 1.571 }
+Pad { translation  2.0  6.0  -4.0   cycleInterval 14.0   rotation 0.0 1.0 0.0 1.571 }
+Pad { translation -4.0  2.0  -8.0   cycleInterval 16.0   rotation 0.0 1.0 0.0 1.571 }
+Pad { translation  0.0 -6.0 -10.0   cycleInterval 18.0   rotation 0.0 1.0 0.0 1.571 }
+Pad { translation  4.0 -2.0 -10.0   cycleInterval 10.0   rotation 0.0 1.0 0.0 1.571 }
+Pad { translation  0.0 -4.0  -0.0   cycleInterval  8.0   rotation 0.0 1.0 0.0 1.571 }
+
+Pad { translation  0.0  4.0   0.0   cycleInterval 10.0   rotation 0.0 0.0 1.0 1.571 }
+Pad { translation -2.0  0.0  -2.0   cycleInterval 12.0   rotation 0.0 0.0 1.0 1.571 }
+Pad { translation  2.0  6.0  -4.0   cycleInterval 14.0   rotation 0.0 0.0 1.0 1.571 }
+Pad { translation -4.0  2.0  -8.0   cycleInterval 16.0   rotation 0.0 0.0 1.0 1.571 }
+Pad { translation  0.0 -6.0 -10.0   cycleInterval 18.0   rotation 0.0 0.0 1.0 1.571 }
+Pad { translation  4.0 -2.0 -10.0   cycleInterval 10.0   rotation 0.0 0.0 1.0 1.571 }
+Pad { translation  0.0 -4.0  -0.0   cycleInterval  8.0   rotation 0.0 0.0 1.0 1.571 }
+</FONT></PRE>
+</BODY>
+</HTML>

@@ -1,0 +1,299 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>creangle.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Controlling shading on coordinate-based geometry</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>creangle.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  creangle.wrl
+#  Crease Angle demonstration
+#    by John L. Moreland
+#
+
+WorldInfo {
+    title "Crease angle demonstration"
+    info [ "copyright (c) 1997, John L. Moreland" ]
+}
+
+Viewpoint {
+    description "Front Face"
+    position -2.0 0.85 3.0
+    orientation 0 1 0  -0.62
+}
+
+Viewpoint {
+    description "Back Face"
+    position 2.4 0.85 3.0
+    orientation 0 1 0  0.62
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+}
+
+
+# Red Down Light
+DirectionalLight {
+    color 1.0 0.0 0.0
+    direction 0.0 -1.0 0.1
+}
+
+# Blue Up Light
+DirectionalLight {
+    color 0.0 0.0 1.0
+    direction 0.0 1.0 -0.1
+}
+
+# Panel 1
+Transform {
+    translation -1.1 0.0 0.0
+    children [
+        Shape {
+            appearance DEF White Appearance {
+                material Material {
+                    diffuseColor 1.0 1.0 1.0
+                    ambientIntensity 0.5
+                }
+            }
+            geometry IndexedFaceSet {
+                coord DEF Crd1 Coordinate {
+                    point [
+                        # Front edge
+                        0.0  0.0  1.0, # Bottom
+                        0.0  1.0  1.0, # Middle
+                        0.0  2.0  1.0, # Top
+                        # Back edge
+                        0.0  2.0 -1.0, # Top
+                        0.0  1.0 -1.0, # Middle
+                        0.0  0.0 -1.0, # Bottom
+                    ]
+                }
+                coordIndex [
+                    0, 1, 4, 5, 0, -1,
+                    1, 2, 3, 4, 1, -1,
+                ]
+                creaseAngle 0.0
+                solid FALSE
+            }
+        }
+        Transform {
+            translation 0.0 1.0 1.2
+            children [
+                Billboard {
+#                    axisOfRotation 0.0 0.0 0.0
+                    children [
+                        Shape {
+                            appearance DEF FntColor Appearance {
+                                material Material {
+                                    diffuseColor 1.0 0.0 0.0
+                                }
+                            }
+                            geometry Text {
+                                string "0.0"
+                                fontStyle DEF FntStyle FontStyle {
+                                    style "BOLD"
+                                    size 0.1
+                                    justify [ "LEFT", "MIDDLE" ]
+                                }
+                            }
+                        }
+                        # Bend Angle Label
+                        DEF bendAngleLabel Transform {
+                            translation 0.0 -0.1 0.0
+                            children [
+                                Shape {
+                                    appearance Appearance {
+                                        material Material {
+                                            diffuseColor 0.0 0.5 0.0
+                                        }
+                                    }
+                                    geometry DEF bendAngle Text {
+                                        string "0.0"
+                                        fontStyle USE FntStyle
+                                    }
+                                }
+                            ]
+                        }
+
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+# Panel 2
+Transform {
+    translation 0.0 0.0 0.0
+    children [
+        Shape {
+            appearance USE White
+            geometry IndexedFaceSet {
+                coord DEF Crd2 Coordinate {
+                    point [
+                        # Front edge
+                        0.0  0.0  1.0, # Bottom
+                        0.0  1.0  1.0, # Middle
+                        0.0  2.0  1.0, # Top
+                        # Back edge
+                        0.0  2.0 -1.0, # Top
+                        0.0  1.0 -1.0, # Middle
+                        0.0  0.0 -1.0, # Bottom
+                    ]
+                }
+                coordIndex [
+                    0, 1, 4, 5, 0, -1,
+                    1, 2, 3, 4, 1, -1,
+                ]
+                creaseAngle 0.785
+                solid FALSE
+            }
+        }
+        Transform {
+            translation 0.0 1.0 1.2
+            children [
+                Billboard {
+#                    axisOfRotation 0.0 0.0 0.0
+                    children [
+                        Shape {
+                            appearance USE FntColor
+                            geometry Text {
+                                string "0.785"
+                                fontStyle USE FntStyle
+                            }
+                        }
+                        USE bendAngleLabel
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+# Panel 3
+Transform {
+    translation +1.1 0.0 0.0
+    children [
+        Shape {
+            appearance USE White
+            geometry IndexedFaceSet {
+                coord DEF Crd3 Coordinate {
+                    point [
+                        # Front edge
+                        0.0  0.0  1.0, # Bottom
+                        0.0  1.0  1.0, # Middle
+                        0.0  2.0  1.0, # Top
+                        # Back edge
+                        0.0  2.0 -1.0, # Top
+                        0.0  1.0 -1.0, # Middle
+                        0.0  0.0 -1.0, # Bottom
+                    ]
+                }
+                coordIndex [
+                    0, 1, 4, 5, 0, -1,
+                    1, 2, 3, 4, 1, -1,
+                ]
+                creaseAngle 1.57
+                solid FALSE
+            }
+        }
+        Transform {
+            translation 0.0 1.0 1.2
+            children [
+                Billboard {
+#                    axisOfRotation 0.0 0.0 0.0
+                    children [
+                        Shape {
+                            appearance USE FntColor
+                            geometry Text {
+                                string "1.57"
+                                fontStyle USE FntStyle
+                            }
+                        }
+                        USE bendAngleLabel
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+DEF PS PlaneSensor {
+    minPosition 0.0 0.0
+    maxPosition 6.283 1.57
+}
+
+DEF Scr Script {
+    eventIn  SFVec3f set_translation
+    eventOut SFFloat fraction_changed
+    eventOut MFString label_changed
+    url "vrmlscript:
+        function set_translation( tran, et )
+        {
+            tempCA = tran[0] / 4.0;
+            if ( tempCA &lt; 0.00 ) tempCA = 0.0;
+            if ( tempCA &gt; 1.57 ) tempCA = 1.57;
+            fraction_changed = tempCA;
+            // Hacks to get truncation/formatting
+            tempCA = (Math.floor(tempCA*1000)/1000.0);
+            if ( (tempCA &gt; 0.1) && (tempCA &lt; 1.0) )
+                tempCA = '0' + tempCA;
+            if ( tempCA &lt;= 0.0 )
+                tempCA = tempCA + '.' + '0';
+            label_changed[0] = tempCA;
+        }
+    "
+}
+
+DEF CI CoordinateInterpolator {
+    key [ 0.0, 1.57 ]
+    keyValue [
+        # Straight
+            # Front edge
+            0.0  0.0  1.0, # Bottom
+            0.0  1.0  1.0, # Middle
+            0.0  2.0  1.0, # Top
+            # Back edge
+            0.0  2.0 -1.0, # Top
+            0.0  1.0 -1.0, # Middle
+            0.0  0.0 -1.0, # Bottom
+        # Bent
+            # Front edge
+            0.0  0.0  1.0, # Bottom
+            0.0  1.0  1.0, # Middle
+            1.0  1.0  1.0, # Top
+            # Back edge
+            1.0  1.0 -1.0, # Top
+            0.0  1.0 -1.0, # Middle
+            0.0  0.0 -1.0, # Bottom
+    ]
+}
+
+ROUTE PS.translation_changed TO Scr.set_translation
+ROUTE Scr.fraction_changed TO CI.set_fraction
+ROUTE Scr.label_changed TO bendAngle.set_string
+ROUTE CI.value_changed TO Crd1.set_point
+ROUTE CI.value_changed TO Crd2.set_point
+ROUTE CI.value_changed TO Crd3.set_point
+
+</FONT></PRE>
+</BODY>
+</HTML>

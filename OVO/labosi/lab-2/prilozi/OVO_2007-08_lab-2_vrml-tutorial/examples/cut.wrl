@@ -1,0 +1,199 @@
+#VRML V2.0 utf8
+#
+#  Cutting plane parts
+#  cut.wrl
+#    by David R. Nadeau
+#
+#  This file contains two PROTOs used in creating a cutting plane.
+#    'TexturePlane' creates a plane with one of a set of textures mapped
+#    to it.  The texture choice is controlled by a fraction eventIn.
+#
+#    'SlidingPlane' creates a texture plane that slides back and forth
+#    along the X axis, changing the texture based upon the X position.
+#
+WorldInfo {
+    title "Cutting Plane parts"
+    info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+
+#
+#  TexturePlane
+#    Create a plane that changes its texture based upon an incoming
+#    fraction value.  Add a white outline to the plane.
+#
+PROTO TexturePlane [
+    field MFNode textures ImageTexture { }
+    eventIn SFFloat set_fraction
+] {
+    Group {
+        children [
+        # Create a textured plane
+            Shape {
+                appearance DEF App Appearance {
+                    # no material - emissive texture
+                    # animated texture
+                }
+                geometry IndexedFaceSet {
+                    coord Coordinate {
+                        point [
+                            -1.0 -1.0 0.0,
+                             1.0 -1.0 0.0,
+                             1.0 1.0 0.0,
+                            -1.0 1.0 0.0,
+                        ]
+                    }
+                    coordIndex [ 0, 1, 2, 3 ]
+                    texCoord TextureCoordinate {
+                        point [
+                            0.0 0.0,
+                            1.0 0.0,
+                            1.0 1.0,
+                            0.0 1.0,
+                        ]
+                    }
+                    texCoordIndex [ 0, 1, 2, 3 ]
+                    solid FALSE
+                }
+            }
+        # Add a white outline around the plane
+            Shape {
+                appearance Appearance {
+                    # no material - emissive white
+                }
+                geometry IndexedLineSet {
+                    coord Coordinate {
+                        point [
+                            -1.0 -1.0 0.0,
+                             1.0 -1.0 0.0,
+                             1.0 1.0 0.0,
+                            -1.0 1.0 0.0,
+                        ]
+                    }
+                    coordIndex [ 0, 1, 2, 3, 0 ]
+                }
+            }
+        ]
+    }
+
+    DEF Selector Script {
+        field    MFNode  textures IS textures
+        eventIn  SFFloat set_fraction IS set_fraction
+        eventOut SFNode  texture_changed
+
+        # use 'javascript' on newer browsers
+        url "vrmlscript:
+            function initialize( ) {
+                texture_changed = textures[0];
+            }
+            function set_fraction( f, tm ) {
+                i = Math.floor(f * 10);
+                if ( i == 10 ) { i = 9; }
+                texture_changed = textures[i];
+            }"
+    }
+
+    ROUTE Selector.texture_changed TO App.set_texture
+}
+
+
+#
+#  SlidingPlane
+#    Create a sliding texture plane that slides from the given minimum
+#    to the given maximum.  Use the X location to select among textures
+#    on the texture plane.  Display the texture number to the side.
+#
+PROTO SlidingPlane [
+    field MFNode textures ImageTexture { }
+    field SFVec2f minMaxX 0.0 1.0
+    field SFFloat initialX 0.0
+] {
+    Transform {
+        rotation 0.0 1.0 0.0 1.571
+        children [
+        # Sense side-to-side motion
+            DEF Slider PlaneSensor { }
+
+        # Slide a plane back and forth
+            DEF PlanePosition Transform {
+                # animated translation
+                rotation 0.0 1.0 0.0 -1.571
+                children [
+                # Create a texture plane
+                    DEF Plane TexturePlane {
+                        textures IS textures
+                    }
+                # Add a changing label to the side
+                    Transform {
+                        translation 1.05 -1.2 0.0
+                        rotation 0.0 1.0 0.0 1.571
+                        children Shape {
+                            appearance Appearance {
+                                # no material - emissive white
+                            }
+                            geometry DEF Label Text {
+                                string ""
+                                fontStyle FontStyle {
+                                    size 0.3
+                                    style "BOLD"
+                                    justify "MIDDLE"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+
+    DEF Translator Script {
+        field    SFVec2f  minMaxX  IS minMaxX
+        field    SFFloat  initialX IS initialX
+
+        eventIn  SFVec3f  set_translation
+        eventOut SFFloat  fraction_changed
+        eventOut MFString label_changed
+        eventOut SFVec2f  minPosition_changed
+        eventOut SFVec2f  maxPosition_changed
+        eventOut SFVec3f  offset_changed
+
+        # use 'javascript' on newer browsers
+        url "vrmlscript:
+            function translate( x ) {
+            // compute the fraction using the given X position
+                f = (x-minMaxX[0]) / (minMaxX[1] - minMaxX[0]);
+            // send a fraction event
+                fraction_changed = f;
+            // send a new label string with 1 digit after decimal
+                label_changed[0] = Math.floor(f*10.0)/10.0;
+            }
+
+            function initialize( ) {
+            // set the plane sensor bounds
+                minPosition_changed[0] = minMaxX[0];
+                minPosition_changed[1] = 0.0;
+                maxPosition_changed[0] = minMaxX[1];
+                maxPosition_changed[1] = 0.0;
+            // set the plane sensor initial position
+                offset_changed[0] = initialX;
+                offset_changed[1] = 0.0;
+                offset_changed[2] = 0.0;
+            // compute the initial values
+                translate( initialX );
+            }
+
+            function set_translation( t, tm ) {
+            // compute the new values
+                translate( t[0] );
+            }"
+    }
+
+    ROUTE Slider.translation_changed TO PlanePosition.set_translation
+    ROUTE Slider.translation_changed TO Translator.set_translation
+    ROUTE Translator.fraction_changed TO Plane.set_fraction
+    ROUTE Translator.label_changed TO Label.set_string
+    ROUTE Translator.minPosition_changed TO Slider.set_minPosition
+    ROUTE Translator.maxPosition_changed TO Slider.set_maxPosition
+    ROUTE Translator.offset_changed TO Slider.set_offset
+    ROUTE Translator.offset_changed TO PlanePosition.set_translation
+}

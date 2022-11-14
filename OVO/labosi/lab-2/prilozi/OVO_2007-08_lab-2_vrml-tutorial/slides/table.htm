@@ -1,0 +1,95 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>table.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Grouping nodes</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>table.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  table.wrl
+#        by David R. Nadeau
+#
+#  This table is inlined in to the dinette.wrl file to illustrate inline
+#  groups.
+#
+
+#
+#  Table top
+#
+Transform {
+    translation 0.0 0.615 0.0
+    children [
+	Shape {
+	    appearance DEF Brown Appearance {
+		material Material {
+		    diffuseColor 0.6 0.35 0.0
+		}
+	    }
+	    geometry Cylinder {
+		radius 0.7
+		height 0.03
+	    }
+	}
+    ]
+}
+
+#
+#  Table leg
+#
+Transform {
+    translation 0.0 0.3075 0.0
+    children [
+	Shape {
+	    appearance USE Brown
+	    geometry Box {
+		size 0.09 0.57 0.09
+	    }
+	}
+    ]
+}
+
+#
+#  Table leg base
+#
+Transform {
+    translation 0.0 0.015 0.0
+    children [
+	Shape {
+	    appearance USE Brown
+	    geometry Box {
+		size 0.5 0.03 0.5
+	    }
+	}
+    ]
+}
+Transform {
+    translation 0.0 0.045 0.0
+    children [
+	Shape {
+	    appearance USE Brown
+	    geometry Box {
+		size 0.35 0.03 0.35
+	    }
+	}
+    ]
+}
+</FONT></PRE>
+</BODY>
+</HTML>

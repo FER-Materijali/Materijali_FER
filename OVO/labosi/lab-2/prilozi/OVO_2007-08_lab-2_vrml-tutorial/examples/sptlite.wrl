@@ -1,0 +1,20 @@
+#VRML V2.0 utf8
+Viewpoint {
+	position 0.0 0.0 25.0
+	description "Entry view"
+}
+NavigationInfo {
+	type [ "EXAMINE", "ANY" ]
+	headlight FALSE
+}
+SpotLight {
+    location  0.0 0.0 0.0
+    direction 1.0 0.0 0.0
+    radius   12.0
+    cutOffAngle 0.785
+}
+Inline {
+    url "spheres.wrl"
+    bboxCenter 0.0 0.0 0.0
+    bboxSize   16.0 16.0 1.0
+}

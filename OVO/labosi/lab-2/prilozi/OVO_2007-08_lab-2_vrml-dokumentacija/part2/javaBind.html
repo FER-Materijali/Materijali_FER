@@ -1,0 +1,2344 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Justin Couch">
+   <META NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
+   <TITLE>VRML97 ISO/IEC 14772-2:xxxx - Annex B, Java Language Binding</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<CENTER>
+<H1>
+<IMG SRC="../Images/vrml97-2.gif" ALT="VRML97 logo" naturalsizeflag="0" HEIGHT=85 WIDTH=470 ALIGN=TEXTTOP></H1></CENTER>
+
+<CENTER>
+<H1>
+Annex B<BR>
+<FONT SIZE=+1>(normative)</FONT></H1></CENTER>
+
+<CENTER>
+<H1>
+Java language binding</H1></CENTER>
+
+<CENTER>&nbsp;</CENTER>
+
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470 ALIGN=TEXTTOP>
+<H2>
+<a NAME="TableOfContentsAndIntroduction"></a>B.1 Table of contents and introduction</H2>
+
+<H3>
+<a NAME="Introduction"></a>B.1.1 Introduction</H3>
+This annex provides a detailed description of the Java language binding
+to the services defined in this standard. Note that support for the Java
+platform is not required by this standard but any access of the Java platform
+as an external application to a VRML browser&nbsp; shall conform with the
+requirements specified in this annex.
+
+<P>The <A HREF="http://java.sun.com/">Java<SUP><FONT SIZE=-2>tm</FONT></SUP>
+platform</A> is an object-oriented, hardware and operating system independent,
+multi-threaded, general-purpose application environment developed by <A HREF="http://www.sun.com/">Sun
+Microsystems, Inc</A>. The Java platform consists of the language, the
+virtual machine, and a set of core class libraries. A conforming Java platform
+implements all three components according to their specifications. See <a HREF="references.html#[JAVA]">2.[JAVA]</a>
+for a description of the language, the virtual machine, and the three core
+classes java.lang, java.util, and java.io. The other core class libraries,
+which are not used in this annex, are described in <a HREF="../part1/bibliography.html#[JAPI]">ISO/IEC
+14772-1 E.[JAPI]</a>.
+
+<P>For historical reasons, the Java language binding to the EAI does not
+implement the full set of capabilities defined in the main specification.
+It implements the minimum requirements (see <a HREF="conformance.html#MinimumSupportEnvironments">7.3
+Minimum Support Requirements</a>). Restrictions imposed by this implementation
+on the services specification are noted individually in <a HREF="#ServicesBinding">B.5
+Services Binding</a>.
+<BR>&nbsp;
+<H3>
+<a NAME="TableOfContents"></a>B.1.2 Table of contents</H3>
+See <a HREF="#TOC">Table B.1</a> for the contents of this annex.
+<BR>&nbsp;
+<BR>&nbsp;
+<TABLE BORDER COLS=2 WIDTH="99%" >
+<CAPTION align="top"><a NAME="TOC"></a><B>Table B.1 --Table of contents</B></CAPTION>
+
+<TR>
+<TD VALIGN=TOP><B><a HREF="#TableOfContentsAndIntroduction">B.1 Table of contents and introduction</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#Introduction">B.1.1 Introduction</a>&nbsp;
+<BR>&nbsp;<a HREF="#TableOfContents">B.1.2 Table of contents</a>&nbsp;
+<BR>&nbsp;<a HREF="#Conventions">B.1.3 Conventions</a>&nbsp;
+
+<P><B><a HREF="#Concepts">B.2 Concepts</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#TheBrowserScriptInterface">B.2.1 The browser script interface</a>&nbsp;
+<BR>&nbsp;<a HREF="#RelationshipToISO_IEC_14772_JPSR">B.2.2 Relationship to
+ISO/IEC 14772-1, Annex
+B Java platform scripting interface</a>&nbsp;
+<BR>&nbsp;<a HREF="#ScopeOfSpecification">B.2.3 Scope of specification</a>&nbsp;
+<BR>&nbsp;<a HREF="#Conformance">B.2.4 Conformance</a>&nbsp;
+<BR>&nbsp;<a HREF="#TypesOfJavaBrowsers">B.2.5 Types of Java browsers</a>&nbsp;
+<BR>&nbsp;<a HREF="#ImplementationDependencies">B.2.6 Implementation dependencies</a>&nbsp;
+
+<P><B><a HREF="#DataTypeImplementation">B.3 Data type implementation</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#DataTypeDefinitions">B.3.1 Data type Definitions</a>&nbsp;
+<BR>&nbsp; <I><a HREF="#EAIAction">B.3.1.1 EAIAction</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBrowserApp">B.3.1.2 EAIBrowserApp</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBrowserName">B.3.1.3 EAIBrowserName</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBrowserRef">B.3.1.4 EAIBrowserRef</a>&nbsp;</I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBrowserVersion">B.3.1.5 EAIBrowserVersion</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIFieldAccess">B.3.1.6 EAIFieldAccess</a>&nbsp;</I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIFieldID">B.3.1.7 EAIFieldID</a>&nbsp;</I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIFieldName">B.3.1.8 EAIFieldName</a>&nbsp;</I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIFieldType">B.3.1.9 EAIFieldType</a>&nbsp;</I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIFieldValue">B.3.1.10 EAIFieldValue</a>&nbsp;</I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIFrameRate">B.3.1.11 EAIFrameRate</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAINavSpeed">B.3.1.12 EAINavSpeed</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAINodeID">B.3.1.13 EAINodeID</a>&nbsp;</I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAINodeType">B.3.1.14 EAINodeType</a>&nbsp;</I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIParameterList">B.3.1.15 EAIParameterList</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIPropertyList">B.3.1.16 EAIPropertyList</a></I>&nbsp;
+<BR>&nbsp; <I><a HREF="#EAIRequesterID">B.3.1.17 EAIRequestorID</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIURL">B.3.1.18 EAIURL</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIString">B.3.1.19 EAIString</a></I>&nbsp;
+<BR>&nbsp;<a HREF="#ErrorDataTypes">B.3.2 Error data types</a>&nbsp;
+<BR>&nbsp; <I><a HREF="#EAIError">B.3.2.1 EAIError</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBrowserUnavailable">B.3.2.2 EAI_BROWSER_UNAVAILABLE</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBConnectionError">B.3.2.3 EAI_CONNECTION_ERROR</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIDisposed">B.3.2.4 EAI_DISPOSED</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIInvalidAccessType">B.3.2.5 EAI_INVALID_ACCESS_TYPE</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIInvalidBrowser">B.3.2.6 EAI_INVALID_BROWSER</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIInvalidName">B.3.2.7 EAI_INVALID_NAME</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIInvalidNode">B.3.2.8 EAI_INVALID_NODE</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIInvalidField">B.3.2.9 EAI_INVALID_FIELD</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIInvalidURL">B.3.2.10 EAI_INVALID_URL</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIInvalidVRML">B.3.2.11 EAI_INVALID_VRML</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIURLUnavailable">B.3.2.12 EAI_URL_UNAVAILABLE</a></I>&nbsp;
+<BR>&nbsp;<a HREF="#EventTypes">B.3.3 Event Types</a>&nbsp;
+<BR>&nbsp; <I><a HREF="#EventTypesConcepts">B.3.3.1 Concepts</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBrowserEvent">B.3.3.2 EAIBrowserEvent</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBInitialized">B.3.3.3 EAI_B_Initialized</a></I>&nbsp;
+<BR><I>&nbsp; <a href="#EAIBShutdown">B.3.3.4 EAI_B_Shutdown</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBConnectionError">B.3.3.5 EAI_B_ConnectionError</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBURLError">B.3.3.6 EAI_B_URLError</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EventTypesEAIFieldEvent">B.3.3.7 EAIFieldEvent</a></I>&nbsp;<P><B><a HREF="#LanguageSpecificConcepts">B.4 Language specific concepts</a></B>&nbsp;
+<BR>&nbsp;<a href="#ClassImplementation">B.4.1 Class implementation</a>&nbsp;
+<BR>&nbsp; <I><a HREF="#ClassImplementationIntroduction">B.4.1.1 Introduction</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#ProvisionOfClasses">B.4.1.2 Provision of classes</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#RequiredJavaVersion">B.4.1.3 Required Java version</a></I>&nbsp;
+<BR>&nbsp; <I><a HREF="#PackageStructure">B.4.1.4 Package Structure</a></I>&nbsp;
+<BR>&nbsp;<a HREF="#Sessions">B.4.2 Sessions</a>&nbsp;
+<BR>&nbsp; <I><a HREF="#SessionsIntroduction">B.4.2.1 Introduction</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#Component">B.4.2.2 Component</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#WebBrowserPlugin">B.4.2.3 Web browser plugin</a></I>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;<a HREF="#Identifiers">B.4.3 Identifiers</a>&nbsp;
+<BR><I>&nbsp; <a HREF="#IdentifierEquivalence">B.4.3.1 Identifier equivalence</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#DataStorage">B.4.3.2 Data storage</a></I>&nbsp;
+<BR>&nbsp;<a HREF="#Serialization">B.4.4 Serialization</a>&nbsp;<br>
+  &nbsp;<a href="#RelativeURLs">B.4.5 Relative URLs</a>&nbsp;
+<BR>&nbsp; <I><a HREF="#RelativeURLsIntroduction">B.4.5.1 Introduction</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#JavaApplications">B.4.5.2 Java applications</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#Applets">B.4.5.3 Applets</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#RemoteApplications">B.4.5.4 Remote applications</a></I>&nbsp;
+<BR>&nbsp;<a HREF="#FieldAccess">B.4.6 Field access</a>&nbsp;
+<BR>&nbsp;<I>  <a HREF="#NULLNodes">B.4.6.1 NULL nodes</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#SettingMFNodeFields">B.4.6.2 Setting MFNode fields</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#ArrayRepresentation">B.4.6.3 Array representations</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#Set1Value">B.4.6.4 set1Value</a></I>&nbsp;
+<BR>&nbsp;<a HREF="#DisposingOfResources">B.4.7 Disposing of resources</a>
+  <p><B><a HREF="#ServicesBinding">B.5 Services Binding</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#EstablishingBrowserConnections">B.5.1 Establishing browser connections</a>&nbsp;
+<BR>&nbsp; <I><a HREF="#BrowserFactory">B.5.1.1 BrowserFactory</a></I>&nbsp;
+<BR>&nbsp; <I><a HREF="#getBrowser">B.5.1.2 getBrowser</a></I>&nbsp;
+<BR><I>&nbsp;&nbsp; <FONT SIZE=-1><a HREF="#WebPluginBrowser">B.5.1.2.1 Web
+plugin browser</a></FONT></I><FONT SIZE=-1>&nbsp;</FONT>&nbsp;
+<BR><I><FONT SIZE=-1>&nbsp;&nbsp;&nbsp; <a HREF="#RemoteBrowser">B.5.1.2.2
+Remote browser</a></FONT></I>&nbsp;
+<BR>&nbsp; <I><a HREF="#CreateBrowser">B.5.1.3 createBrowser</a></I>&nbsp;
+<BR><I>&nbsp;&nbsp; <FONT SIZE=-1><a HREF="#AWTComponentBrowser">B.5.1.3.1 AWT Component
+browser</a></FONT></I>&nbsp;
+<BR>&nbsp;<a HREF="#BrowserServices">B.5.2 Browser services</a>&nbsp;
+<BR><I>&nbsp; <a HREF="#getName">B.5.2.1 getName</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getVersion">B.5.2.2 getVersion</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getCirremtSpeed">B.5.2.3 getCurrentSpeed</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getCurrentFrameRate">B.5.2.4 getCurrentFrameRate</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getWorldURL">B.5.2.5 getWorldURL</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#replaceWorld">B.5.2.6 replaceWorld</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#loadURL">B.5.2.7 loadURL</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#SetDescription">B.5.2.8 setDescription</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#CreateVRMLFromString">B.5.2.9 createVrmlFromString</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#CreateVRMLFromURL">B.5.2.10 createVrmlFromURL</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#DynamicRouteHandling">B.5.2.11 Dynamic Route Handling</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#UpdateControl">B.5.2.12 Update Control</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#RegisterBrowserInterest">B.5.2.13 Register Browser Interest</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getNode">B.5.2.14 getNode</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#Dispose">B.5.2.15 Dispose</a></I>&nbsp;
+<BR>&nbsp;<a HREF="#NodeServices">B.5.3 Node services</a>&nbsp;
+<BR>&nbsp; <I><a HREF="#NodeRepresentation">B.5.3.1 Node Representation</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getName_getType">B.5.3.2 getName/getType</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getField">B.5.3.3 getField</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#NodeServicesDispose">B.5.3.4 Dispose</a></I>&nbsp;
+<BR>&nbsp;<a HREF="#FieldServices">B.5.4 Field services</a>&nbsp;
+<BR>&nbsp; <I><a HREF="#FieldRepresentation">B.5.4.1 Field Representation</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getAccessType">B.5.4.2 getAccessType</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getType">B.5.4.3 getType</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#FieldServicesgetName">B.5.4.4 getName</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getValue">B.5.4.5 getValue</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#setValue">B.5.4.6 setValue</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#RegisterFieldInterest">B.5.4.7 Register Field Interest</a></I>&nbsp;</p>
+
+<P><B><a HREF="#JavaClassHeirarchy">B.6 Java Class </a><A HREF="#B.6">Hierarchy</A></B>&nbsp;
+<BR>&nbsp;<a HREF="#EstablishingBrowserConnections">B.6.1 Establishing browser connections</a>&nbsp;
+<BR>&nbsp;<a HREF="#BrowserServices">B.6.2 Browser services</a>&nbsp;
+<BR>&nbsp;<a HREF="#NodeServices">B.6.3 Node services</a>&nbsp;
+<BR>&nbsp;<a HREF="#FieldServices">B.6.4 Field services</a>&nbsp;
+<BR>&nbsp;<a HREF="#ClassHeirarchy_PackageArrangements">B.6.5 Class hierarchy/package arrangements</a>&nbsp;
+
+  <P><b><a href="#Examples">B.7 Examples</a></b>&nbsp;
+<BR>
+<BR>&nbsp;</TD>
+</TR>
+</TABLE>
+
+<H3>
+<a NAME="Conventions"></a>B.1.3 Conventions</H3>
+The following type-setting conventions are used to indicate a particular
+meaning to the text in this document.
+<BR>&nbsp;
+<TABLE CELLPADDING=3 WIDTH="100%" >
+<TR VALIGN=TOP>
+<TD WIDTH="10%"><TT>name</TT></TD>
+
+<TD>Words written in monospaced font are direct description of a particular
+Java class, field or property. This text may also provide a link to the
+specific documentation (provided in javadoc style documentation) to provide
+greater definition of the information</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>methodName()</TT></TD>
+
+<TD>Indicates a particular java method call. This may be representative
+of the general method name (where there are overloaded versions of the
+method) or just the method. No arguments definitions are provided unless
+needed in context to define the particular method specifically. The
+  capitalization
+of the method name exactly follows the name of the method</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>ClassName.methodName()</TT></TD>
+
+<TD>The first word indicates the name of the class and is qualified with
+the method name. The capitalization of the class name follows the exact
+naming of the class. The method argument presentation is the same as that
+for the plain method name.</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>package.name.ClassName</TT></TD>
+
+<TD>All words up to the class name represent the package definition that
+the class belongs to. Referred to as the fully qualified class name. The
+last word is the name of the class. Capitalization follows the exact definition
+of the class and package.</TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470 ALIGN=TEXTTOP>
+<H2>
+<a NAME="Concepts"></a>B.2 Concepts</H2>
+
+<H3>
+<a NAME="TheBrowserScriptInterface"></a>B.2.1 The Browser script interface</H3>
+As with scripts within the VRML scene, the EAI allows access to the full
+functionality of the <a HREF="../part1/concepts.html#4.12">Browser
+script interface</a>. Browser state can be queried, routes can be added
+and deleted, and new nodes can be created. The EAI extends the basic browser
+interface with a number of extra capabilities such as retrieving node references
+and registering interest in browser events. This annex provides an implementation
+in the Java language.
+<H3>
+<a NAME="RelationshipToISO_IEC_14772_JPSR"></a>B.2.2 Relationship to ISO/IEC 14772-1 Annex B Java platform scripting
+reference</H3>
+Annex B Java platform scripting reference of <a HREF="references.html#[VRML]">2.VRML</a>
+defines a Java specification
+to the script interface. Due to the differing capabilities of the EAI and
+scripting interface, the browser interfaces are not interchangeable between
+the two environments. This applies to all of the classes defined in ISO/IEC
+14772-1 B Java platform scripting reference.
+<H3>
+<a NAME="ScopeOfSpecification"></a>B.2.3 Scope of specification</H3>
+The Java platform provides an implementation of the EAI specification.
+It provides a complete binding to the specification within the restrictions
+and implementation specific capabilities as defined in this standard. The
+specification provides a browser implementation independent way of accessing
+the browser capabilities through the Java language.
+<H3>
+<a NAME="Conformance"></a>B.2.4 Conformance</H3>
+Java support is not required for a conforming implementation of the EAI.
+If a browser supports a Java language interface from an external environment, it shall conform with all of the requirements specified in this annex.
+
+<P>An implementation shall not modify the classes defined in this specification
+with their own specific methods or additional methods. The Java reflection
+APIs shall be used to test this aspect of conformance.
+<H3>
+<a NAME="TypesOfJavaBrowsers"></a>B.2.5 Types of Java browsers</H3>
+A VRML browser that can be accessed through a Java API can take one of
+two forms. The first form is as a plugin to a web browser. The Java code
+exists as an applet and accesses the plugin. The second form is a component
+that is available to be directly embedded in the Java framework. This form
+will subclass the Java Component class found in <TT>java.awt.Component</TT>.
+<H3>
+<a NAME="ImplementationDependencies"></a>B.2.6 Implementation dependencies</H3>
+Implementation dependent for the scope of this annex is defined to be the
+browser writer implementation of the Java classes and how they interact
+with the environment and the VRML browser.
+
+<P>This specification does not implement the full capabilities of the EAI
+specification. Additional capabilities may be provided by individual
+implementations but shall not form part of the standard <TT>vrml.eai </TT>package hierarchy and classes as defined in this
+specification. Any implementation dependent provision of these capabilities
+shall be provided under a non-VRML package such as the vendor's own hierarchy.
+The listing of the implementation of all Java classes used for binding
+to the services is provided in <a HREF="#JavaClassHeirarchy">B.6 Java Class Heirarchy</a>.
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470 ALIGN=TOP>
+<H2>
+<a NAME="DataTypeImplementation"></a>B.3 Data Type Implementation</H2>
+
+<H3>
+<a NAME="DataTypeDefinitions"></a>B.3.1 Data type Definitions</H3>
+
+<H4>
+<a NAME="EAIAction"></a>B.3.1.1 EAIAction</H4>
+The action type is dependent on the method used. <a href="#EAIActionToJavaImplementationMapping"> Table B.2</a> defines the
+mapping between each service, the valid action types for that service and
+the Java implementation of that action. Actions are mapped as method names
+describing the action rather than strict primitive types.
+<BR>&nbsp;
+<TABLE BORDER CELLSPACING=3 >
+<CAPTION><a NAME="EAIActionToJavaImplementationMapping"></a><B>Table B.2 EAIAction to Java implementation
+mapping</B></CAPTION>
+
+<TR>
+<TH ALIGN=CENTER>Service</TH>
+
+<TH ALIGN=CENTER>Action Type</TH>
+
+<TH ALIGN=CENTER>Java Implementation</TH>
+</TR>
+
+<TR>
+<TD VALIGN=TOP ROWSPAN="2" NOWRAP>Dynamic Route Handling</TD>
+
+<TD NOWRAP>Add Route</TD>
+
+<TD><TT>Browser.addRoute()</TT></TD>
+</TR>
+
+<TR>
+<TD>Delete Route</TD>
+
+<TD><TT>Browser.deleteRoute()</TT></TD>
+</TR>
+
+<TR>
+<TD>Update Control</TD>
+
+<TD>Begin Update</TD>
+
+<TD><TT>Browser.beginUpdate()</TT></TD>
+</TR>
+
+<TR>
+<TD></TD>
+
+<TD>End Update</TD>
+
+<TD><TT>Browser.endUpdate()</TT></TD>
+</TR>
+
+<TR>
+<TD>Register Browser Interest</TD>
+
+<TD>Add</TD>
+
+<TD><TT>Browser.addBrowserListener()</TT></TD>
+</TR>
+
+<TR>
+<TD></TD>
+
+<TD>Remove</TD>
+
+<TD><TT>Browser.removeBrowserListener()</TT></TD>
+</TR>
+
+<TR>
+<TD>Register Event Interest</TD>
+
+<TD>Add</TD>
+
+<TD><TT>EventOut.addVrmlEventListener()</TT></TD>
+</TR>
+
+<TR>
+<TD></TD>
+
+<TD>Remove</TD>
+
+<TD><TT>EventOut.removeVrmlEventListener()</TT></TD>
+</TR>
+</TABLE>
+
+<H4>
+<a NAME="EAIBrowserApp"></a>B.3.1.2 EAIBrowserApp</H4>
+The data type is implemented as the class <TT>vrml.eai.VrmlComponent</TT>.
+The capability to obtain a EAIBrowserRef is implemented in the <TT>getBrowser()</TT>
+method which returns an instance of the&nbsp; <TT>vrml.eai.Browser</TT>
+class.
+<H4>
+<a NAME="EAIBrowserName"></a>B.3.1.3 EAIBrowserName</H4>
+The data type is implemented as a <TT>java.lang.String</TT>.
+<H4>
+<a NAME="EAIBrowserRef"></a>B.3.1.4 EAIBrowserRef</H4>
+The browser reference type is defined to be an instance of the <TT>vrml.eai.Browser</TT>
+class. The Browser class is defined as an implementation independent Java interface which is then subclassed to provide vendor specific
+<H4>
+<a NAME="EAIBrowserVersion"></a>B.3.1.5 EAIBrowserVersion</H4>
+The data type is implemented as a <TT>java.lang.String</TT>. The NULL value
+is defined as the Java <TT>null</TT> primitive type.
+<H4>
+<a NAME="EAIFieldAccess"></a>B.3.1.6 EAIFieldAccess</H4>
+Field access is defined by the hierarchy of inheritance of classes used
+to represent the EAIFieldID. The base class <TT>vrml.eai.field.BaseField</TT>
+defines the basic field properties which are then subclassed. These subclasses
+<TT>vrml.eai.field.EventIn</TT>
+and <TT>vrml.eai.field.EventOut</TT>
+provide representations of the access types.
+
+<P>There is a distinct difference between the access type of the underlying
+field that was retrieved from the node and how it is represented by the
+subclasses. A request is made of the node to access any field to be viewed
+as either an eventIn (see <TT>Node.getEventIn()</TT>)
+or and eventOut (see <TT>Node.getEventOut()</TT>).
+The node implementation then either returns the type or generates an error
+condition. The acceptable conditions for successful completion of the request
+are defined in <a HREF="#RulesForMappingVRMLFieldTypeToJavaFieldClasses">Table B.3</a>
+<BR>&nbsp;
+<CENTER><TABLE BORDER COLS=4 WIDTH="50%" >
+<CAPTION><a NAME="RulesForMappingVRMLFieldTypeToJavaFieldClasses"></a><B>Table B.3-- Rules for mapping VRML Field
+types to Java field classes</B></CAPTION>
+
+<TR>
+<TD></TD>
+
+<TD></TD>
+
+<TD COLSPAN="2">
+<CENTER><B>Java Classes</B></CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD></TD>
+
+<TD>&nbsp;</TD>
+
+<TD>
+<CENTER><B><TT>EventIn</TT></B></CENTER>
+</TD>
+
+<TD>
+<CENTER><B><TT>EventOut</TT></B></CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD ROWSPAN="4"><B>VRML Field Types</B></TD>
+
+<TD><B>field</B></TD>
+
+<TD>
+<CENTER>Error</CENTER>
+</TD>
+
+<TD>
+<CENTER>Error</CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD><B>eventIn</B></TD>
+
+<TD>
+<CENTER>yes</CENTER>
+</TD>
+
+<TD>
+<CENTER>Error</CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD><B>eventOut</B></TD>
+
+<TD>
+<CENTER>Error</CENTER>
+</TD>
+
+<TD>
+<CENTER>yes</CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD><B>exposedField</B></TD>
+
+<TD>
+<CENTER>yes</CENTER>
+</TD>
+
+<TD>
+<CENTER>yes</CENTER>
+</TD>
+</TR>
+</TABLE></CENTER>
+
+<H4>
+<a NAME="EAIFieldID"></a>B.3.1.7 EAIFieldID</H4>
+The field identifier is represented as an instance of the class <TT>vrml.eai.field.BaseField</TT>.
+Note that since the Java class hierarchy design allows two representations
+of a field using the <TT>EventIn</TT> and <TT>EventOut</TT> classes, it
+is possible to have two disparate references to the same field. The only
+time that this occurs is when referencing an exposedField of a node. The
+class implementation shall override the <TT>equals()</TT> method such that
+checking for equality in the above case shall return a result of <TT>true</TT>.
+
+<P>The following example illustrates the correct behaviour associated with
+this. The node reference has been obtained to a transform node.
+<UL><TT>Node transform;&nbsp; // value has been assign previously</TT>
+<BR><TT>EventIn set_translation = transform.getEventIn("set_translation");</TT>
+<BR><TT>EventOut translation_changed = transform.getEventOut("translation_changed");</TT>
+<BR><TT>Boolean same_event_in;</TT>
+
+<P><TT>same_event_in = set_translation.equals(translation_changed);</TT>
+<BR><TT>System.out.println("Checking set translation equals " +</TT>
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"translation changed: " +</TT>
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+same_event_in);</TT>
+
+<P><TT>// now check the reverse case</TT>
+<BR><TT>same_event_in = translation_changed.equals(set_translation);</TT>
+<BR><TT>System.out.println("Checking translation changed equals " +</TT>
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"set translation: " +</TT>
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+same_event_in);</TT></UL>
+The resulting execution of this code segment should produce on standard
+output
+
+<P><TT>Checking set translation equals translation changed: true</TT>
+<BR><TT>Checking translation changed equals set translation: true</TT>
+<H4>
+<a NAME="EAIFieldName"></a>B.3.1.8 EAIFieldName</H4>
+The name of the field is implemented as a <TT>java.lang.String</TT>.
+<H4>
+<a NAME="EAIFieldType"></a>B.3.1.9 EAIFieldType</H4>
+The field type may be represented in two alternative fashions.
+
+<P>The first alternative is provided through <TT>getType()</TT>
+method provided in the <TT>BaseField</TT> class. This returns an int which
+has one of the values defined by the constant
+types also defined in that class as shown in <a href="#MappingOfVRMLFieldTypeToJavaRepresentation">Table
+B.4</a>.
+<BR>&nbsp;
+<CENTER><TABLE BORDER WIDTH="60%" >
+<CAPTION><a NAME="MappingOfVRMLFieldTypeToJavaRepresentation"></a><B>TableB.4 -- Mapping of VRML Field type
+to Java representation</B></CAPTION>
+
+<TR>
+<TH ALIGN=CENTER>VRML Field type</TH>
+
+<TH ALIGN=CENTER>Java representation</TH>
+</TR>
+
+<TR>
+<TD>MFColor</TD>
+
+<TD><TT>static final int MFColor</TT></TD>
+</TR>
+
+<TR>
+<TD>MFFloat</TD>
+
+<TD><TT>static final int MFFloat</TT></TD>
+</TR>
+
+<TR>
+<TD>MFInt32</TD>
+
+<TD><TT>static final int MFInt32</TT></TD>
+</TR>
+
+<TR>
+<TD>MFNode</TD>
+
+<TD><TT>static final int MFNode</TT></TD>
+</TR>
+
+<TR>
+<TD>MFRotation</TD>
+
+<TD><TT>static final int MFRotation</TT></TD>
+</TR>
+
+<TR>
+<TD>MFString</TD>
+
+<TD><TT>static final int MFString</TT></TD>
+</TR>
+
+<TR>
+<TD>MFTime</TD>
+
+<TD><TT>static final int MFTime</TT></TD>
+</TR>
+
+<TR>
+<TD>MFVec2f</TD>
+
+<TD><TT>static final int MFVec2f</TT></TD>
+</TR>
+
+<TR>
+<TD>MFVec3f</TD>
+
+<TD><TT>static final int MFVec3f</TT></TD>
+</TR>
+
+<TR>
+<TD>SFBool</TD>
+
+<TD><TT>static final int SFBool</TT></TD>
+</TR>
+
+<TR>
+<TD>SFColor</TD>
+
+<TD><TT>static final int SFColor</TT></TD>
+</TR>
+
+<TR>
+<TD>SFFloat</TD>
+
+<TD><TT>static final int SFFloat</TT></TD>
+</TR>
+
+<TR>
+<TD>SFImage</TD>
+
+<TD><TT>static final int SFImage</TT></TD>
+</TR>
+
+<TR>
+<TD>SFInt32</TD>
+
+<TD><TT>static final int SFInt32</TT></TD>
+</TR>
+
+<TR>
+<TD>SFNode</TD>
+
+<TD><TT>static final int SFNode</TT></TD>
+</TR>
+
+<TR>
+<TD>SFRotation</TD>
+
+<TD><TT>static final int SFRotation</TT></TD>
+</TR>
+
+<TR>
+<TD>SFString</TD>
+
+<TD><TT>static final int SFString</TT></TD>
+</TR>
+
+<TR>
+<TD>SFTime</TD>
+
+<TD><TT>static final int SFTime</TT></TD>
+</TR>
+
+<TR>
+<TD>SFVec2f</TD>
+
+<TD><TT>static final int SFVec2f</TT></TD>
+</TR>
+
+<TR>
+<TD>SFVec3f</TD>
+
+<TD><TT>static final int SFVec3f</TT></TD>
+</TR>
+</TABLE></CENTER>
+&nbsp;
+
+<P><FONT COLOR="#000000">The second alternative is provided by the class
+hierarchy. The <TT>EventIn</TT> and <TT>EventOut</TT> classes are further
+derived to provide implementations of the exact field type. These classes
+are defined in the <TT>vrml.eai.field</TT>
+package. A list of all the classes for each field type and access type
+is provided in <a HREF="#FieldServices">B.5.4 Field Services</a>.</FONT>
+<H4>
+<a NAME="EAIFieldValue"></a>B.3.1.10 EAIFieldValue</H4>
+The field value is defined on a per class and per field type instance.
+See the definitions of the classes in the <TT>vrml.eai.field</TT>
+package for the exact definition of each type.
+<BR>&nbsp;
+<H4>
+<a NAME="EAIFrameRate"></a>B.3.1.11 EAIFrameRate</H4>
+The data type is implemented as the Java primitive type <TT>float</TT>. A
+null value is defined as the value <TT>0.0f</TT>.
+<H4>
+<a NAME="EAINavSpeed"></a>B.3.1.12 EAINavSpeed</H4>
+The data type is implemented as the Java primitive type <TT>float</TT>. A
+null value is defined as the value <TT>0.0f</TT>.
+<H4>
+<a NAME="EAINodeID"></a>B.3.1.13 EAINodeID</H4>
+The node identifier is represented as an instance of <TT>vrml.eai.Node</TT>.
+<H4>
+<a NAME="EAINodeType"></a>B.3.1.14 EAINodeType</H4>
+The node type is represented as a <TT>java.lang.String</TT>.
+<H4>
+<a NAME="EAIParameterList"></a>B.3.1.15 EAIParameterList</H4>
+The data type is represented by the values in the <a HREF="#MappingEAIParameterListToJavaParameterLists">Table
+B.5</a>. The table defines the services that use the data type, the method
+of the BrowserFactory class&nbsp; and the lists of argument types that
+method takes.
+<BR>&nbsp;
+<CENTER><TABLE BORDER WIDTH="100%" >
+<CAPTION><a NAME="MappingEAIParameterListToJavaParameterLists"></a><B>Table B.5 -- Mapping of EAIParameterList
+to Java parameter lists</B></CAPTION>
+
+<TR>
+<TH VALIGN=CENTER>Service</TH>
+
+<TH ALIGN=CENTER>method</TH>
+
+<TH ALIGN=CENTER>Java Parameters</TH>
+</TR>
+
+<TR>
+<TD VALIGN=TOP ROWSPAN="3">getBrowser</TD>
+
+<TD><TT>getBrowser()</TT></TD>
+
+<TD><TT>java.applet.Applet</TT></TD>
+</TR>
+
+<TR>
+<TD><TT>getBrowser()</TT></TD>
+
+<TD><TT>java.applet.Applet, String, int</TT></TD>
+</TR>
+
+<TR>
+<TD><TT>getBrowser()</TT></TD>
+
+<TD><TT>java.net.InetAddress, int</TT></TD>
+</TR>
+
+<TR>
+<TD>createBrowser</TD>
+
+<TD><TT>createVrmlComponent()</TT></TD>
+
+<TD>None</TD>
+</TR>
+</TABLE></CENTER>
+&nbsp;
+<H4>
+<a NAME="EAIPropertyList"></a>B.3.1.16 EAIPropertyList</H4>
+The data type is implemented as an array of <TT>java.lang.String</TT>.
+Key/Value pairs are declared in a single string in the following format
+with the '=' character as the separator. Whitespace surrounding the key
+and value are ignored although whitespace inside the key and value are
+legal.
+
+<P>The following are considered valid values (as well as permutations of
+the given examples):
+<UL><TT>"key=value"</TT>
+<BR><TT>"key = value "</TT>
+<BR><TT>" key = value"</TT>
+<BR><TT>"a key= some value"</TT>
+<BR><TT>"a key&nbsp;&nbsp;&nbsp;&nbsp; =some value"</TT></UL>
+
+<H4>
+<a NAME="EAIRequesterID"></a>B.3.1.17 EAIRequesterID</H4>
+The requestor ID is represented as an instance of one of two classes depending
+on what information is being requested.
+
+<P>The requestor ID is an instance of the class implementing the interface
+<TT>vrml.eai.event.BrowserListener</TT>
+when the service request is <a HREF="servRef.html#BrowserEventInterest">browser_event_interest</a>.
+
+<P>The requestor ID is an instance of the class implementing the interface
+<TT>vrml.eai.event.VrmlEventListener</TT>
+when the service request is <a HREF="servRef.html#FieldEventInterest">field_event_interest</a>.
+<H4>
+<a NAME="EAIURL"></a>B.3.1.18 EAIURL</H4>
+The URL is implemented as a <TT>java.lang.String</TT>.
+<H4>
+<a NAME="EAIString"></a>B.3.1.19 EAIString</H4>
+The string is implemented as a <TT>java.lang.String</TT>.
+<H3>
+<a NAME="ErrorDataTypes"></a>B.3.2 Error data types</H3>
+
+<H4>
+<a NAME="EAIError"></a>B.3.2.1 EAIError</H4>
+Java implementations of the errors rely on a set of derived classes based
+on the EAIError type.
+
+<P>The error type is implemented as the class <TT>vrml.eai.VrmlException</TT>.
+This exception is in turn derived from the standard Java error type of
+<TT>java.lang.RuntimeException</TT>. All exceptions(errors) defined in
+this specification shall be derived from <TT>VrmlException</TT>.
+<H4>
+<a NAME="EAIBrowserUnavailable"></a>B.3.2.2 EAI_BROWSER_UNAVAILABLE</H4>
+The error type is implemented as the class <TT>vrml.eai.NoSuchBrowserException</TT>.
+<H4>
+<a NAME="EAIConnectionError"></a>B.3.2.3 EAI_CONNECTION_ERROR</H4>
+The error type is implemented as the class <TT>vrml.eai.ConnectionException</TT>.
+<H4>
+<a NAME="EAIDisposed"></a>B.3.2.4 EAI_DISPOSED</H4>
+The error type is implemented as two separate dual purpose exception classes
+depending on their scope.
+
+<P><TT>vrml.eai.InvalidBrowserException</TT>
+is used to indicate an <a HREF="#EAIBrowserRef">EAIBrowserRef</a> has been disposed
+of.
+<BR><TT>vrml.eai.InvalidNodeException</TT>
+is used to indicate an <a HREF="#EAINodeID">EAINodeID</a> has been disposed
+of.
+<BR>&nbsp;
+<H4>
+<a NAME="EAIInvalidAccessType"></a>B.3.2.5 EAI_INVALID_ACCESS_TYPE</H4>
+The error type is implemented as two separate exceptions based on the implementation
+of <a HREF="#EAINodeID">EAINodeID</a> and the rules defined in <a HREF="#EAIActionToJavaImplementationMapping">Table
+B.2</a>. These classes also derive from <TT>vrml.eai.field.InvalidFieldException</TT>.
+
+<P><TT>vrml.eai.field.InvalidEventInException</TT>
+is used to indicate the named field is not accessible as an eventIn from
+the <TT>Node.getEventIn()</TT>
+method.
+
+<P><TT>vrml.eai.field.InvalidEventOutException</TT>
+is used to indicate the named field is not accessible as an eventOut from
+the <TT>Node.getEventOut()</TT>
+method.
+<H4>
+<a NAME="EAIInvalidBrowser"></a>B.3.2.6 EAI_INVALID_BROWSER</H4>
+The error type is implemented as the class <TT>vrml.eai.InvalidBrowserException</TT>.
+<H4>
+<a NAME="EAIInvalidName"></a>B.3.2.7 EAI_INVALID_NAME</H4>
+The error type is expressed as different exceptions dependent on the situation.
+The <TT>Browser.getNode()</TT> method uses the <TT>InvalidNodeException</TT>.
+The <TT>Node</TT> class <TT>getEventIn()</TT> and <TT>getEventOut()</TT>
+methods use the <TT>InvalidEventInException</TT> and <TT>InvalidEventOutException</TT>
+types respectively.
+<H4>
+<a NAME="EAIInvalidNode"></a>B.3.2.8 EAI_INVALID_NODE</H4>
+The error type is implemented as the class <TT>vrml.eai.InvalidNodeException.</TT>
+<H4>
+<a NAME="EAIInvalidField"></a>B.3.2.9 EAI_INVALID_FIELD</H4>
+The error type is implemented as the class <TT>vrml.eai.field.InvalidFieldException</TT>.
+Note that there are two derived classes from this class (<TT>InvalidEventInException</TT>
+and <TT>InvalidEventOutException) </TT>that may be used at times where
+this error may be generated.
+<H4>
+<a NAME="EAIInvalidURL"></a>B.3.2.10 EAI_INVALID_URL</H4>
+The error type is implemented as the class <TT>vrml.eai.InvalidURLException</TT>.
+<H4>
+<a NAME="EAIInvalidVRML"></a>B.3.2.11 EAI_INVALID_VRML</H4>
+The error type is implemented as the class <TT>vrml.eai.InvalidVrmlException</TT>.
+<H4>
+<a NAME="EAIURLUnavailable"></a>B.3.2.12 EAI_URL_UNAVAILABLE</H4>
+The error type is implemented as the class <TT>vrml.eai.URLUnavailableException</TT>.
+<H3>
+<a NAME="EventTypes"></a>B.3.3 Event Types</H3>
+
+<H4>
+<a NAME="EventTypesConcepts"></a>B.3.3.1 Concepts</H4>
+The Java implementation of the event handling and types is based around
+the Java 1.1 AWT event listener model. A single event class is used to
+encapsulate the type of event and then parameters defining the actual event
+item that occurred.
+<H4>
+<a NAME="EAIBrowserEvent"></a>B.3.3.2 EAIBrowserEvent</H4>
+<TT>vrml.eai.event.BrowserEvent</TT>
+
+<P>The event type is implemented in the class
+<TT>vrml.eai.event.BrowserEvent</TT>.
+Each of the individual events are expressed as actions that the event then
+passes to the registered listeners. The action type of the individual event
+is available through the getID()
+method.
+<H4>
+<a NAME="EAIBInitialized"></a>B.3.3.3 EAI_B_Initialized</H4>
+The event type is implemented as the <TT>INITIALIZED</TT>
+value for the browser event ID.
+<H4>
+<a NAME="EAIBShutdown"></a>B.3.3.4 EAI_B_Shutdown</H4>
+The event type is implemented as the <TT>SHUTDOWN</TT>
+value for the browser event ID.
+<H4>
+<a NAME="EAIBConnectionError"></a>B.3.3.5 EAI_B_ConnectionError</H4>
+The event type is implemented as the <TT>CONNECTION_ERROR</TT>
+value for the browser event ID.
+<H4>
+<a NAME="EAIBURLError"></a>B.3.3.6 EAI_B_URLError</H4>
+The event type is implemented as the <TT>URL_ERROR</TT>
+value for the browser event ID.
+<H4>
+<a NAME="EventTypesEAIFieldEvent"></a>B.3.3.7 EAIFieldEvent</H4>
+The event type is implemented as the class <TT>vrml.eai.event.VrmlEvent</TT>.
+This class contains methods for obtaining the source of the event, the
+time (in VRML time) and any user defined data that occurred with the event.
+<H2>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470 ALIGN=TOP></H2>
+
+<H2>
+<a NAME="LanguageSpecificConcepts"></a>B.4 Language specific concepts</H2>
+
+<H3>
+<a NAME="ClassImplementation"></a>B.4.1 Class implementation</H3>
+
+<H4>
+<a NAME="ClassImplementationIntroduction"></a>B.4.1.1 Introduction</H4>
+This specification provides a set of implementation independent base classes
+that represent the possible interactions with the VRML scene through the
+External Authoring Interface. Browser specific implementation dependencies
+shall to remain hidden to the general user. Where classes are declared
+to be abstract, it is expected that the browser specific implementation
+shall derive from these classes as required.
+
+<P>An implementation shall not modify these base classes with their own
+specific methods or additional methods.
+
+<P>The difference between the two forms of the browser is limited to how
+to initially obtain the browser reference. Once this has been obtained,
+the services provided shall not differ. The term application is used to
+describe the Java code that wishes to access the VRML browser, regardless
+of how the initial reference to the browser was obtained.
+
+<H4>
+<a NAME="ProvisionOfClasses"></a>B.4.1.2 Provision of Classes</H4>
+A browser that supports the EAI Java implementation may supply the base
+classes as part of the distribution. The design of the classes is such
+that only one copy of the classes defined by this application needs to
+be placed on the machine although multiple copies are permitted. Implementation
+dependent classes need only to be supplied with the browser and accessed
+by setting the CLASSPATH to point to the appropriate implementation dependent
+classes.
+
+<P>It is recommended that the implementation of the classes defined by
+this specification are placed in either a zip file or Java Archive (JAR
+file) under the <TT>&lt;JAVAHOME>/lib</TT> directory.
+<H4>
+<a NAME="RequiredJavaVersion"></a>B.4.1.3 Required Java version</H4>
+Where a VRML browser is supplied as a standalone application, the minimum
+required version of Java Virtual Machine support is version 1.1.
+
+<P><FONT COLOR="#000000">VRML Browsers that operate as a plugin to general
+purpose web browsers may support whatever version of Java that the web
+browser supports. In the case where the web browser does not support any Java, or multiple versions, the minimum of version 1.1 shall be required.</FONT>
+<H4>
+<a NAME="PackageStructure"></a>B.4.1.4 Package Structure</H4>
+The Java bindings to the EAI shall be provided under the <TT>vrml.eai</TT>
+top level package structure and are organized in the following manner.
+<BR>&nbsp;
+<TABLE WIDTH="100%" >
+<TR>
+<TD><TT>vrml.eai</TT></TD>
+
+<TD>The basic working classes for the interface to the browser and nodes.&nbsp;</TD>
+</TR>
+
+<TR>
+<TD><TT>vrml.eai.event</TT></TD>
+
+<TD>Event classes and listener interfaces</TD>
+</TR>
+
+<TR>
+<TD><TT>vrml.eai.field</TT></TD>
+
+<TD>Classes for accessing fields</TD>
+</TR>
+</TABLE>
+<h2>
+<a NAME="Sessions"></a>B.4.2 Sessions</h2>
+
+<H4>
+<a NAME="SessionsIntroduction"></a>B.4.2.1 Introduction</H4>
+A session for Java based communications is dependent on the type of handle
+established: applet or component.
+
+<P>The difference between the two forms of the browser is limited to how
+to initially obtain the browser reference. Once this has been obtained,
+the services provided shall not differ. The term application is used to
+describe the Java code that wishes to access the VRML browser, regardless
+of how the initial reference to the browser was obtained.
+<H4>
+<a NAME="Component"></a>B.4.2.2 Component</H4>
+A VRML browser established by creating a new instance of the vrml component
+class. This instance may then be inserted into the Java GUI framework following
+any Java restrictions that may be imposed on the class as a result of adding
+it to an AWT Container.
+
+<P>At the point where the browser object is instantiated, it contains no
+scene graph. To load the initial scene the <tt> loadURL()</tt> method is called. If
+the application has registered as a listener for browser events, it shall
+receive the initialize event as specified in the EAI specification.
+
+<P>Components follow the normal rules for any class derived from <TT>java.awt.Component</TT>.
+It may be freely added to any container and have extra components added
+that may partially or completely obscure the area of the window that is
+being used to render the VRML world. At no time shall the actions of other
+components that partially or complete obscure the VRML browser cause execution
+of the VRML event model to suspend or complete.
+
+<P>Note that this allows application code to draw over the top of the VRML
+window and attach any Java.awt.event listener as it requires without modifying the functionality of the VRML browser and vice versa.
+<H4>
+<a NAME="WebBrowserPlugin"></a>B.4.2.3 Web Browser Plugin</H4>
+When the VRML browser exists as an element embedded in a HTML page to which
+a Java applet has access, it must use the underlying web browser APIs to
+access the plugin. The session is defined to last as long as that particular
+plugin instance <span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">is
+associated with a currently active page</span>. A factory class shall be provided to
+obtain a reference to a VRML browser plugin in an implementation independent
+manner.
+
+<P>The browser shall also provide notification to the listening applications
+of when the world is no longer displayed on the page. When the browser
+is removed from visibility it shall generate a shutdown event to all registered
+listeners. If the browser becomes visible again an initialized event shall
+be generated. If a new page is loaded with a VRML browser as part of it,
+it will contain a different Browser reference and hence the applet will
+not receive any such notification of its presence.
+<H3>
+<a NAME="Identifiers"></a>B.4.3 Identifiers</H3>
+
+<H4>
+<a NAME="IdentifierEquivalence"></a>B.4.3.1 Identifier equivalence</H4>
+Due to the nature of Java to native code interaction, it is possible that
+two instances of a Java class may refer to the same node or field inside
+the vrml scene (that is, using the <TT>==</TT> comparison will be <TT>false</TT>).
+For this reason, an identifier of a node or field cannot be implied to
+mean the same instance reference of the class representation. The representation
+of an Identifier in Java classes is implementation dependent. However,
+class instances may be checked for equivalence by calling the <TT>equals()</TT>
+method of the appropriate class. Implementations of the classes shall override
+the <TT>equals()</TT> method so that comparing two nodes, fields or other
+classes that require an identifier will return the correct result.
+<H4>
+<a NAME="DataStorage"></a>B.4.3.2 Data Storage</H4>
+In the class structure, it is possible to associate user definable data
+references with each field of a node and with the node itself. If one reference
+to a node has data associated with it,, this information shall be available
+to all references to that node at all times. For example, if a field has
+data associated with it, is then disposed and a later application references
+that node, the data shall still remain (if that other application is Java based). There is no requirement to store this information if the node/field
+is no longer referenced by external applications or the internal scene graph,
+or if the external application is not Java based.
+<H3>
+<a NAME="Serialization"></a>B.4.4 Serialization</H3>
+Java serialization may be used to either store the state of the scene graph
+(for example in a database or file) or communicate between two applications/applets
+interfacing with the same browser. Because serialization does not maintain
+the same Java reference, calls to the <TT>equals()</TT> method shall produce
+the correct result. The specification has not defined classes to be serializable.
+This is implementation dependent.
+<H3>
+<a NAME="RelativeURLs"></a>B.4.5 Relative URLs</H3>
+
+<H4>
+<a NAME="RelativeURLsIntroduction"></a>B.4.5.1 Introduction</H4>
+Due to the different environments that a Java based VRML may find itself
+in, this binding defines the following additional behaviour for Java implementations.
+<H4>
+<a NAME="JavaApplications"></a>B.4.5.2 Java applications</H4>
+For standalone Java applications, the current working directory is determined
+by using the <TT>user.dir</TT> system property of the application. If a
+RURL is passed to the browser, it shall be resolved in equivalent terms
+to the following statements:
+<BLOCKQUOTE><TT>String url_base = System.getProperty(&quot;user.dir&quot;);</TT>
+<BR><TT>String complete_url = "file://" + url_base + <I>&lt;relative_url></I></TT>
+;
+<BR><TT>java.net.URL url = new URL(complete_url);</TT></BLOCKQUOTE>
+
+<H4>
+<a NAME="Applets"></a>B.4.5.3 Applets</H4>
+The base document of the browser is considered to be the web page in which
+the browser is embedded if the VRML Browser does not have a VRML world
+loaded.
+
+<P>If the applet also creates a component-based VRML browser, the base
+document determination shall be treated in exactly the same manner as <a HREF="#JavaApplications">B.4.5.2
+Java applications</a> if there is not a base world already loaded. Note
+that this normally will produce different base documents if an applet accesses
+both a plugin and a component-based browser simultaneously.
+<H4>
+<a NAME="RemoteApplications"></a>B.4.5.4 Remote applications</H4>
+If a browser is located remotely to the application using it (for example
+using an RMI implementation), the base url is considered to be the base
+URL of the world. If no world URL has yet been set, the appropriate
+action shall be either of the previous two sections depending on how the
+browser was started.
+<H3>
+<a NAME="FieldAccess"></a>B.4.6 Field access</H3>
+
+<H4>
+<a NAME="NULLNodes"></a>B.4.6.1 NULL nodes</H4>
+The Java <TT>null</TT> reference to an object shall be treated as the equivalent
+of the VRML <TT>NULL</TT> value. Where an SFNode field has its value set
+to <TT>null</TT>, this shall clear the field of the node reference causing
+the default behaviour defined by the parent node to be used for that field.
+When reading a value of an SFNode field where it is empty, the return value
+shall be <TT>null</TT>.
+<H4>
+<a NAME="SettingMFNodeFields"></a>B.4.6.2 Setting MFNode fields</H4>
+MFNodes are represented as an array of Node instances. It is possible that
+during the creation of the array some or all of contents may contain
+null references. How the browser treats a null reference is implementation
+dependent. That is, it is permissible to read back the field value and
+have it not contain the null node references, or to maintain them in the
+order they were sent.
+<H4>
+<a NAME="ArrayRepresentation"></a>B.4.6.3 Array representations</H4>
+In MF fields, arrays are used to represent the data contained in the VRML
+field. Setting the value of that field with an array of length 0 shall
+result in the contents of the field being cleared and is the equivalent
+of the VRML text file declaration of
+
+<P><TT>SomeNode {</TT>
+<BR><TT>&nbsp; <I>MFField</I> []</TT>
+<BR><TT>}</TT>
+
+<P>An empty MF field shall return an array of length zero if queried about
+its value. The <tt> size()</tt> method of the MFField base class shall return a value
+of 0.
+
+<P>Attempting to set the value of the field with <TT>null</TT> shall generate
+an <TT>IllegalArgumentException.</TT>
+<H4>
+<a NAME="Set1Value"></a>B.4.6.4 set1Value</H4>
+MFField classes contain a <tt> set1Value()</tt> method for setting an individual value
+in the field.
+
+<P>If <tt> beginUpdate()</tt> has been called and multiple <tt>set1Value()</tt>
+methods have been called
+on that field, the result when <tt> endUpdate()</tt> is called shall be a single event
+with all of the individual values set. If two calls are made to set a particular
+array index, the last value written shall be used.
+
+<P>If <tt> beginUpdate()</tt>has not been called, the result shall be an event that
+contains the entire field value with the individual value changed. Multiple <tt>set1Value()</tt>
+calls to the field shall result in the equivalent number of events
+being generated inside the VRML browser.
+<H4>
+<a NAME="DisposingOfResources"></a>B.4.7 Disposing of Resources</H4>
+Of particular concern to Java implementations is the disposal of resources
+used by the Java environment. The garbage collection environment creates
+problems when dealing with native code implementations of the VRML browser.
+An explicit <TT>dispose()</TT> method is provided with all classes representing
+VRML entities so that the application can explicitly dispose of the resources
+used by the browser implementation.
+
+<P>For safety purposes, where a class defines a <TT>dispose()</TT> method,
+it shall also override the default <TT>finalize()</TT> method provided
+by <TT>java.lang.Object</TT> and call the <TT>dispose()</TT> method. This
+shall ensure that even if the user has not explicitly called dispose on
+objects, when the object reference goes out of scope, all resources shall
+be freed regardless avoiding potential memory leaks.
+
+<P>Once a node has had the dispose method of, method calls on the node
+shall generate an <TT>InvalidNodeException</TT>.
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470 ALIGN=TOP>
+<H2>
+<a NAME="ServicesBinding"></a>B.5 Services Binding</H2>
+
+<H3>
+<a NAME="EstablishingBrowserConnections"></a>B.5.1 Establishing browser connections</H3>
+
+<H4>
+<a NAME="BrowserFactory"></a>B.5.1.1 BrowserFactory</H4>
+<TT>vrml.eai.BrowserFactory</TT>
+
+<P>Creating a reference to a VRML browser must deal with a number of different
+scenarios: Java applet to VRML plugin in a web browser, server application
+talking to a browser on a separate machine or a component in a standalone Java application. Each of these requires a separate solution in order to
+maintain implementation dependence.
+
+<P>The method of access a VRML browser shall be through a single factory
+style class. This class contains methods for each type of access. To provide
+implementation independence the <TT>vrml.eai.BrowserFactoryImpl</TT>
+interface for the implementation dependent parts is defined. Browsers shall
+subclass this interface to provide the necessary dependent code. This interface
+is loaded by the vrml browser factory using dynamic methods or by having
+the code explicitly set.
+
+<P>A properties file called <TT>vrml.properties</TT>, if resident in the
+user's <TT>CLASSPATH</TT> shall be used to determine the name of the class
+to be loaded. The name of the property in the properties file shall be
+<blockquote>
+
+<P><TT>vrml.eai.factory.class</TT>
+</blockquote>
+which shall be set to the fully qualified name of the browser factory class
+implementation to be loaded. The implementation of this class shall not
+reside within the <TT>vrml.*</TT> class hierarchy but shall reside in the
+browser writer's own class hierarchy. The browser factory shall also contain
+a <TT>setBrowserFactoryImpl()</TT>
+method to allow an explicit setting of the factory implementation. If this
+method is the first method called of all the factory methods, it shall
+be used as the factory implementation. If any other method is called prior
+to calling this method, the name of the factory implementation shall be
+drawn from the properties file and loaded. Any attempt to call the set
+implementation method shall result in a <TT>vrml.eai.VrmlException</TT>
+being generated.
+
+<P>The factory implementation shall return the appropriate subclasses for
+each of the methods. If the implementation does not support the particular
+connection requested, it shall generate a <TT>vrml.eai.NotSupportedException</TT>.
+If it is supported, it shall return the appropriate subclass of the object
+for that method.
+<H4>
+<a NAME="getBrowser"></a>B.5.1.2 getBrowser</H4>
+
+<H5>
+<a NAME="WebPluginBrowser"></a>B.5.1.2.1 Web Plugin browser</H5>
+<TT>Browser BrowserFactory.getBrowser(Applet)</TT>
+<BR><TT>Browser BrowserFactory.getBrowser(Applet, String, int)</TT>
+
+<P>A browser that operates as part of a web browser requires a number of
+different parameters for correct determination of the plugin to access.
+Due to the nature of web pages, it is possible that an applet on one page
+may access either more that one VRML plugin or that the plugin exists in
+another HTML frame. The applet form of the <tt> getBrowser()</tt> method requires
+a reference to the accessing applet, the name of the frame and the index
+of the frame in the nominated frame. The frame name is a string representing
+the name of the frame. The index is the number of the VRML browser in the
+page (where there might be more than one) starting from 0.
+<H5>
+<a NAME="RemoteBrowser"></a>B.5.1.2.2 Remote browser</H5>
+<TT>Browser BrowserFactory.getBrowser(InetAddress, int)</TT>
+
+<P>An application server may wish to access browsers on client machines.
+The third variant of the getBrowser request requires an IP address (or
+machine name) and a port number. The server application requests the browser
+reference of the remote machine. Once the browser reference is returned, the server application may manipulate the browser contents like any
+other EAI using application.
+
+<P>The port number of the protocol may be any port number. There is no
+defined default port to which a browser will listen. The protocol between
+the application and the browser is also not defined.
+<H4>
+<a NAME="CreateBrowser"></a>B.5.1.3 createBrowser</H4>
+
+<H5>
+<a NAME="AWTComponentBrowser"></a>B.5.1.3.1 AWT Component browser</H5>
+<TT>VrmlComponent BrowserFactory.createVrmlComponent(String[])</TT>
+
+<P>The component browser is required to fit into the standard <TT>java.awt.Component</TT>
+model and is implemented as a subclass of <TT>vrml.eai.VrmlComponent</TT>.
+It shall derive from <TT>java.awt.Component</TT> and also provide a <TT>getBrowser()</TT>
+method that returns a reference to a standard <TT>vrml.eai.Browser</TT>
+object. The component implementation may implement the component in any
+manner it requires. Both lightweight components (all rendering performed
+in Java) and heavyweight components (with peer interfaces extending from
+<TT>java.awt.peer.ComponentPeer</TT>) are permitted. These details shall be
+hidden within the implementation specific classes and not accessible to
+the general API user.
+
+<P>The factory class shall include a method that generates an instance
+of this component class. Each call to the component shall result in a new
+independent instance of a VRML browser capable of running as a component.
+The browser shall be capable of running either within a web browser environment
+(e.g., Java applet window with a VRML browser in it) or in standalone applications
+with the restrictions appropriate to the underlying environment. It shall
+also use whatever hints are supported in the parameter argument passed
+to it. These hints are in the same form as those passed to loadURL.
+<BR>&nbsp;
+<H3>
+<a NAME="BrowserServices"></a>B.5.2 Browser services</H3>
+
+<H4>
+<a NAME="getName"></a>B.5.2.1 getName</H4>
+<TT>String Browser.getName()</TT>
+
+<P>The name returned is a String representing the name of the browser.
+If this is not supported, <TT>null</TT> shall be returned.
+<H4>
+<a NAME="getVersion"></a>B.5.2.2 getVersion</H4>
+<TT>String Browser.getVersion()</TT>
+
+<P>The version returned is a String representing the version number of
+the browser. If this is not supported, <TT>null</TT> shall be returned.
+<H4>
+<a NAME="getCirremtSpeed"></a>B.5.2.3 getCurrentSpeed</H4>
+<TT>float Browser.getCurrentSpeed()</TT>
+
+<P>The speed value returned shall be a floating point number or 0.0 if
+is not supported.
+<H4>
+<a NAME="getCurrentFrameRate"></a>B.5.2.4 getCurrentFrameRate</H4>
+<TT>float Browser.getCurrentFrameRate()</TT>
+
+<P>The frame rate value shall be a floating point number or 0.0 if it is
+not supported.
+<H4>
+<a NAME="getWorldURL"></a>B.5.2.5 getWorldURL</H4>
+<TT>String Browser.getWorldURL()</TT>
+
+<P>The world URL shall be a string indicating the complete world URL as
+defined in <a HREF="servRef.html#GetWorldURL">6.3.11 getWorldURL</a>.
+<H4>
+<a NAME="replaceWorld"></a>B.5.2.6 replaceWorld</H4>
+<TT>void Browser.replaceWorld(Node[])</TT>
+
+<P>The parameter shall be an array of Node instances which shall be used
+to replace the currently loaded world. If one or more of the node instances
+have been disposed of, an <TT>IllegalArgumentException</TT> shall be generated.
+<H4>
+<a NAME="loadURL"></a>B.5.2.7 loadURL</H4>
+<TT>void Browser.loadURL(String[], String[])</TT>
+
+<P>The parameters shall be an array of strings for the URL list and an
+array of Strings for the parameters. If the browser determines that it
+cannot load any of the URLs passed, the browser event listener shall receive
+an event notifying it of an error.
+
+<P>If the parameters list is a zero length array or is <TT>null</TT>,
+the action is to replace the world in the current browser. The properties
+defined in <a HREF="#PropertyListForLoadURL">Table B.6</a> are standard values that shall
+be supported.
+<BR>&nbsp;
+<BR>&nbsp;
+<CENTER><TABLE BORDER WIDTH="100%" >
+<CAPTION><a NAME="PropertyListForLoadURL"></a><B>Table B.6 --&nbsp; Property list for
+loadURL</B></CAPTION>
+
+<TR>
+<TH ALIGN=CENTER VALIGN=CENTER>Key</TH>
+
+<TH ALIGN=CENTER VALIGN=CENTER>Value</TH>
+
+<TH ALIGN=CENTER VALIGN=CENTER>Description of Function</TH>
+</TR>
+
+<TR>
+<TD ROWSPAN="2">replace</TD>
+
+<TD>true</TD>
+
+<TD>Replaces the entire page that browser is embedded in. If the browser
+is a standalone browser&nbsp; this shall have no effect.</TD>
+</TR>
+
+<TR>
+<TD>false</TD>
+
+<TD>The browser shall replace the contents of the currently loaded world
+with the new world specified by the URL argument. The same effect as providing
+no value to the parameters argument.</TD>
+</TR>
+
+<TR>
+<TD>target</TD>
+
+<TD><I><TT>&lt;frameName></TT></I></TD>
+
+<TD>The name of the frame shall be used to load the browser as the contents
+of the named HTML frame.</TD>
+</TR>
+</TABLE></CENTER>
+Individual browser implementations may support extra property definitions.
+<H4>
+<a NAME="SetDescription"></a>B.5.2.8 setDescription</H4>
+<TT>void Browser.setDescription(String)</TT>
+
+<P>This service sets the description string of the browser. If the browser
+is running as a plugin, this shall set the title of the page (if the containing
+web browser supports this). For component browsers the result shall be
+implementation dependent.
+<H4>
+<a NAME="CreateVRMLFromString"></a>B.5.2.9 createVrmlFromString</H4>
+<TT>Node[] Browser.createVrmlFromString(String)</TT>
+
+<P>The parameter shall be a string that contains legal syntax as defined
+in ISO/IEC 14772-1. The only difference is that the file header #VRML V2.0
+utf8 need not be present as the first line in the string. If the string
+does not contain legal VRML97 syntax, an InvalidVrmlException shall be
+generated. Returned is an array of the top level Nodes&nbsp; in the order
+that they are declared in the string parameter.
+<H4>
+<a NAME="CreateVRMLFromURL"></a>B.5.2.10 createVrmlFromURL</H4>
+<TT>void Browser.createVrmlFromURL(String[], Node, String)</TT>
+
+<P>The parameter list shall consist of an array of Strings describing the
+list of URLs, a reference to a destination Node and a String which is the
+name of the eventIn to send the loaded URL nodes to.&nbsp; If the browser
+determines that it cannot load any of the URLs passed, the browser event
+listener shall receive an event notifying it of an error.
+<H4>
+<a NAME="DynamicRouteHandling"></a>B.5.2.11 Dynamic Route Handling</H4>
+<TT>void Browser.addRoute(Node, String, Node, String)</TT>
+<BR><TT>void Browser.deleteRoute(Node, String, Node, String)</TT>
+
+<P>This service is split into two separate methods: addRoute and deleteRoute.
+They both take the same argument list. The first parameter is a Node reference
+that the event will leave from. The second is a String describing the name
+of the eventOut. Third and forth parameters are the destination node reference
+and the eventIn as a String. If either of the Node references have been
+disposed of, an InvalidNodeException shall be generated. If either of the
+nodes do not contain the nominated eventIn/eventOut, an InvalidEventIn/EventOutException
+shall be generated appropriately.
+<H4>
+<a NAME="UpdateControl"></a>B.5.2.12 Update Control</H4>
+<TT>void Browser.beginUpdate()</TT>
+<BR><TT>void Browser.endUpdate()</TT>
+
+<P>This service is split into two separate methods beginUpdate and endUpdate.
+The functionality remains as described in <a HREF="servRef.html#UpdateControl">6.3.16
+Update Control</a>.
+<H4>
+<a NAME="RegisterBrowserInterest"></a>B.5.2.13 Register Browser Interest</H4>
+<TT>void Browser.addBrowserListener(BrowserListener)</TT>
+<BR><TT>void Browser.removeBrowserListener(BrowserListener)</TT>
+
+<P>Registering interest in browser events is through a browser event listener.
+The listener is an interface which is passed browser events when the state
+of the browser changes or asynchronous error messages must be sent (for
+example, inability to load any of the requested URLs). Methods shall be
+provided to allow listeners to be added and removed dynamically. A separate
+event class shall be used to indicate the event information. This class
+has a predefined number of events although specific browser implementations
+may send more events than the defined values. The toString() method shall
+be overridden in this case to provide more information to the user in determining
+the extra event types to deal with them. Any extra event types must not
+have values below the figure defined by <TT>LAST_IDENTIFIER</TT>.
+<H4>
+<a NAME="getNode"></a>B.5.2.14 getNode</H4>
+<TT>Node Browser.getNode(String)</TT>
+
+<P>The return value is a Node reference. The parameter is a String defining
+the DEF name of the required node. If the browser cannot find the node
+name, an InvalidNodeException shall be generated.
+<H4>
+<a NAME="Dispose"></a>B.5.2.15 Dispose</H4>
+<TT>void Browser.dispose()</TT>
+
+<P>Dispose shall notify the browser that the Java implementation is no
+longer interested in the VRML browser. Any further requests to methods
+of this instance of the browser interface shall generate an InvalidBrowserException.
+<H3>
+<a NAME="NodeServices"></a>B.5.3 Node services</H3>
+
+<H4>
+<a NAME="NodeRepresentation"></a>B.5.3.1 Node Representation</H4>
+<TT>vrml.eai.Node</TT>
+
+<P>The ability to list all of the fields of a node reference and their
+values is not available as part of the standard implementation. It is not
+possible to get the name of the node. The implementation of the node services
+is implemented as the class <TT>vrml.eai.Node</TT>.
+<H4>
+<a NAME="getName_getType"></a>B.5.3.2 getName/getType</H4>
+<TT>String Node.getType()</TT>
+
+<P>The <a HREF="servRef.html#getType">6.4.5 getType</a> and <a HREF="servRef.html#getName">6.4.4
+getName</a> services are combined into a single method request getType()
+that returns the name of the node as a <TT>String</TT>.
+<H4>
+<a NAME="getField"></a>B.5.3.3 getField</H4>
+<TT>EventIn Node.getEventIn(String)</TT>
+<BR><TT>EventOut Node.getEventOut(String)</TT>
+
+<P><a HREF="servRef.html#getField">6.4.3 getField</a> service is implemented
+as two separate methods <TT>getEventIn()</TT>
+and <TT>getEventOut()</TT>
+which allows access to <I>eventIn</I>s and <I>eventOut</I>s but not to
+<I>field</I>s. An exposedField may be accessed as either the eventIn or
+eventOut portion separately through these two methods. The normal field
+name or with the <I>set_</I> modifier may be used with the getEventIn method.
+The normal field name or the <I>_changed</I> modifier may be used with
+the getEventOut method.
+<H4>
+<a NAME="NodeServicesDispose"></a>B.5.3.4 Dispose</H4>
+<TT>void Node.dispose()</TT>
+
+<P>Dispose shall notify the browser that the Java implementation is no
+longer interested in this node instance and it is free to do as required
+with the node representation. Any further requests to methods of this instance
+of the node reference shall generate an InvalidNodeException. If two separate
+instances of the same class represent the same node (as defined by the
+<TT>equals()</TT> method returning <TT>true</TT>) and one has dispose called,
+this shall not effect the other instance.
+<H3>
+<a NAME="FieldServices"></a>B.5.4 Field services</H3>
+
+<H4>
+<a NAME="FieldRepresentation"></a>B.5.4.1 Field Representation</H4>
+<TT>vrml.eai.field
+package</TT>
+<BR><TT>vrml.eai.field.BaseField</TT>
+and subclasses.
+
+<P>The Java implementation of the field services does not directly follow
+the model outlined in <a HREF="servRef.html#FieldServices">6.5 Field Services</a>.
+Instead, it makes heavy use of the Object Oriented nature of Java to provide
+directly the capabilities suggested by the services specified. All the
+services are implemented in the classes provided in the <TT>vrml.eai.field</TT>
+package.
+
+<P>The following outlines how the Java binding conforms to the requirements
+of the EAI.
+<H4>
+<a NAME="getAccessType"></a>B.5.4.2 getAccessType</H4>
+<a HREF="servRef.html#getAccessType">6.5.2 getAccessType</a> is not a directly
+callable method in the Java implementation. The access type is implied
+by the class that represents the field. For example, calling
+<BLOCKQUOTE><TT>EventIn trans = some_transform.getEventIn("set_translation");</TT></BLOCKQUOTE>
+will return an EventIn
+class reference. From this the implication is that the access type of this
+field is an eventIn.
+<H4>
+<a NAME="getType"></a>B.5.4.3 getType</H4>
+<TT>int BaseField.getType()</TT>
+
+<P>The <TT>getType()</TT>
+method of <TT>vrml.eai.field.BaseField</TT>
+returns an identifier of the type of field that the instance of the class
+represents. The list of legal type identifiers is included as public final
+variables in the class. The return value of the <TT>getType()</TT> method
+shall be one of these values.
+
+<P>The class instance is also used as an alternative type of representation
+of the node type. There shall be one class for each type of VRML field,
+one derived from <TT>EventIn</TT>
+and one derived from <TT>EventOut</TT>.
+The class reference returned from a call to <TT>Node.getEventIn()</TT>
+or <TT>Node.getEventOut()</TT>
+shall return an instance of one of these classes respectively.
+<H4>
+<a NAME="FieldServicesgetName"></a>B.5.4.4 getName</H4>
+The <a HREF="servRef.html#FieldServicesGetName">6.5.3 getName</a> service is not supported
+by the Java language bindings
+<H4>
+<a NAME="getValue"></a>B.5.4.5 getValue</H4>
+The <tt>getValue()</tt> method of <TT>vrml.eai.field.BaseField</TT> is supported only on classes derived from
+eventOut.
+It is not possible to read values from eventIn as there is no method to
+support this operation. On fields which are exposedFields, an eventOut
+derived class will be needed to access the field to read its value.
+
+<P>The <tt> getValue()</tt> method returns values in a format appropriate to the individual
+field type. If the method returns an array of values, the array shall
+be guaranteed to be created on each call. The implementation shall not reuse return value references between calls to the methods. This is to
+guarantee thread-safe data integrity.
+
+<P>To provide similarity to <a HREF="../part1/java.html">ISO/IEC
+14772-1 B Java platform scripting reference</a>, a <tt>get1Value()</tt> method is
+provided for MF fields. This allows access to a single value out of the
+many values. When an attempt is made to access a value at an index greater
+than the number of items in that eventOut, a <TT>java.lang.ArrayIndexOutOfBoundsException</TT>
+shall be generated. Each time the <tt> getValue()</tt> method is called, a new instance
+of the returned array shall be generated.
+
+<P>An alternate form of the <tt> getValue()</tt>and <tt>get1Value()</tt> methods shall be available
+for the MF eventOuts. These forms shall take arrays as parameters that
+can be used to write values in. See the javadoc outline of each class for
+proper definitions of what methods are to be provided.
+<H4>
+<a NAME="setValue"></a>B.5.4.6 setValue</H4>
+The <tt>setValue()</tt> method of <TT>vrml.eai.field.BaseField</TT> is supported only on classes derived from EventIn.
+It is not possible to write values from eventIn as there is no method to
+support this operation. On fields which are exposedFields, an EventIn
+derived class will be needed to write a new value.
+
+<P>To provide similarity with <a HREF="../part1/java.html">ISO/IEC
+14772-1 B Java platform scripting reference</a>, a <tt> set1Value()</tt> method is
+provided for MFFields. This allows the ability to change a single value
+of a field without having to re-create the entire array of values. When
+an attempt is made to set a value at an index greater than the number of
+items in that eventIn, a <TT>java.lang.ArrayIndexOutOfBoundsException</TT>
+shall be generated. See <a href="#Set1Value">B.4.6.4 set1Value</a> for other
+behavioural aspects of this method.
+<H4>
+<a NAME="RegisterFieldInterest"></a>B.5.4.7 Register Field Interest</H4>
+<TT>void EventOut.addVrmlEventListener(VrmlEventListener)</TT>
+<BR><TT>void EventOut.removeVrmlEventListener(VrmlEventListener)</TT>
+
+<P>The shall be no capabilities to attach listeners to eventIns. Listening
+to eventOuts is available. This restriction is implemented as part of the
+Java API implementation which has separate classes for eventIn and eventOut
+representation. Where a field is declared to be an exposedField, listeners
+can only be attached to the eventOut portion.
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470 ALIGN=TOP>
+<H2>
+<a NAME="JavaClassHeirarchy"></a>B.6 Java Class Heirarchy</H2>
+
+<H3>
+<a NAME="JavaClassHeirarchyEstablishingBrowserConnections"></a>B.6.1 Establishing Browser Connections</H3>
+
+<H5>
+Classes/Interfaces</H5>
+<TT>vrml.eai.Browser</TT>
+<BR><TT>vrml.eai.BrowserFactory</TT>
+<BR><TT>vrml.eai.BrowserFactoryImpl</TT>
+<BR><TT>vrml.eai.VrmlComponent</TT>
+<H5>
+Exceptions</H5>
+<TT>vrml.eai.NoSuchBrowserException</TT>
+<BR><TT>vrml.eai.NotSupportedException</TT>
+<BR><TT>java.net.UnknownHostException</TT>
+<BR>&nbsp;
+<H3>
+<a NAME="JavaClassHeirarchyBrowserServices"></a>B.6.2 Browser Services</H3>
+
+<H5>
+Classes/Interfaces</H5>
+<TT>vrml.eai.Browser</TT>
+<BR><TT>vrml.eai.Node</TT>
+<BR><TT>vrml.eai.event.BrowserListener</TT>
+<BR><TT>vrml.eai.event.BrowserEvent</TT>
+<H5>
+Exceptions</H5>
+<TT>vrml.eai.InvalidBrowserException</TT>
+<BR><TT>vrml.eai.InvalidVrmlException</TT>
+<BR><TT>vrml.eai.InvalidNodeException</TT>
+<BR><TT>vrml.eai.InvalidURLException</TT>
+<BR><TT>vrml.eai.URLUnavailableException</TT>
+<BR><TT>vrml.eai.field.InvalidEventInException</TT>
+<BR><TT>vrml.eai.field.InvalidEventOutException</TT>
+<H3>
+<a NAME="JavaClassHeirarchyNodeServices"></a>B.6.3 Node Services</H3>
+
+<H5>
+Classes/Interfaces</H5>
+<TT>vrml.eai.Node</TT>
+<BR><TT>vrml.eai.field.EventOut</TT>
+<BR><TT>vrml.eai.field.EventIn</TT>
+<H5>
+Exceptions</H5>
+<TT>vrml.eai.InvalidNodeException</TT>
+<BR><TT>vrml.eai.field.InvalidEventInException</TT>
+<BR><TT>vrml.eai.field.InvalidEventOutException</TT>
+<H3>
+<a NAME="JavaClassHeirarchyFieldServices"></a>B.6.4 Field Services</H3>
+
+<H5>
+Classes/Interfaces</H5>
+<TT>vrml.eai.field.BaseField</TT>
+<BR><TT>vrml.eai.field.EventIn</TT>
+<BR><TT>vrml.eai.field.EventInMFColor</TT>
+<BR><TT>vrml.eai.field.EventInMFFloat</TT>
+<BR><TT>vrml.eai.field.EventInMFInt32</TT>
+<BR><TT>vrml.eai.field.EventInMFNode</TT>
+<BR><TT>vrml.eai.field.EventInMFRotation</TT>
+<BR><TT>vrml.eai.field.EventInMFString</TT>
+<BR><TT>vrml.eai.field.EventInMFTime</TT>
+<BR><TT>vrml.eai.field.EventInMFVec2f</TT>
+<BR><TT>vrml.eai.field.EventInMFVec3f</TT>
+<BR><TT>vrml.eai.field.EventInSFBool</TT>
+<BR><TT>vrml.eai.field.EventInSFColor</TT>
+<BR><TT>vrml.eai.field.EventInSFFloat</TT>
+<BR><TT>vrml.eai.field.EventInSFImage</TT>
+<BR><TT>vrml.eai.field.EventInSFInt32</TT>
+<BR><TT>vrml.eai.field.EventInSFNode</TT>
+<BR><TT>vrml.eai.field.EventInSFRotation</TT>
+<BR><TT>vrml.eai.field.EventInSFString</TT>
+<BR><TT>vrml.eai.field.EventInSFTime</TT>
+<BR><TT>vrml.eai.field.EventInSFVec2f</TT>
+<BR><TT>vrml.eai.field.EventInSFVec3f</TT>
+<BR><TT>vrml.eai.field.EventOut</TT>
+<BR><TT>vrml.eai.field.EventOutMField</TT>
+<BR><TT>vrml.eai.field.EventOutMFColor</TT>
+<BR><TT>vrml.eai.field.EventOutMFFloat</TT>
+<BR><TT>vrml.eai.field.EventOutMFInt32</TT>
+<BR><TT>vrml.eai.field.EventOutMFNode</TT>
+<BR><TT>vrml.eai.field.EventOutMFRotation</TT>
+<BR><TT>vrml.eai.field.EventOutMFString</TT>
+<BR><TT>vrml.eai.field.EventOutMFTime</TT>
+<BR><TT>vrml.eai.field.EventOutMFVec2f</TT>
+<BR><TT>vrml.eai.field.EventOutMFVec3f</TT>
+<BR><TT>vrml.eai.field.EventOutSFBool</TT>
+<BR><TT>vrml.eai.field.EventOutSFColor</TT>
+<BR><TT>vrml.eai.field.EventOutSFFloat</TT>
+<BR><TT>vrml.eai.field.EventOutSFInt32</TT>
+<BR><TT>vrml.eai.field.EventOutSFNode</TT>
+<BR><TT>vrml.eai.field.EventOutSFRotation</TT>
+<BR><TT>vrml.eai.field.EventOutSFString</TT>
+<BR><TT>vrml.eai.field.EventOutSFTime</TT>
+<BR><TT>vrml.eai.field.EventOutSFVec2f</TT>
+<BR><TT>vrml.eai.field.EventOutSFVec3f</TT>
+<BR><TT>vrml.eai.event.VrmlEvent</TT>
+<BR><TT>vrml.eai.event.VrmlEventListener</TT>
+<H5>
+Exceptions</H5>
+<TT>vrml.eai.field.InvalidFieldException</TT>
+<BR><TT>vrml.eai.field.InvalidEventInException</TT>
+<BR><TT>vrml.eai.field.InvalidEventOutException</TT>
+<H3>
+<a NAME="ClassHeirarchy_PackageArrangements"></a>B.6.5 Class Hierarchy/Package Arrangements</H3>
+
+<PRE>Package vrml.eai
+&nbsp;&nbsp; +- vrml.eai.Browser
+&nbsp;&nbsp; +- vrml.eai.BrowserFactory
+&nbsp;&nbsp; +- vrml.eai.Node
+&nbsp;&nbsp; +- vrml.eai.BrowserFactoryImpl
+&nbsp;&nbsp; +- vrml.eai.VrmlComponent
+&nbsp;&nbsp; +- vrml.eai.VrmlException
+&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.InvalidBrowserException
+&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.InvalidVrmlException
+&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.InvalidNodeException
+&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.InvalidURLException
+&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.NoSuchBrowserException
+&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.NotSupportedException
+&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.URLUnavailableException
+
+Package vrml.eai.event
+&nbsp;&nbsp; +- vrml.eai.event.BrowserListener
+&nbsp;&nbsp; +- vrml.eai.event.BrowserEvent
+&nbsp;&nbsp; +- vrml.eai.event.VrmlEvent
+&nbsp;&nbsp; +- vrml.eai.event.VrmlEventListener
+
+Package vrml.eai.field
+&nbsp;&nbsp; +- vrml.eai.field.BaseField
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventIn
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInMFColor
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInMFFloat
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInMFInt32
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInMFNode
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInMFRotation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInMFString
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInMFTime
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInMFVec2f
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInMFVec3f
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInSFBool
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInSFColor
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInSFFloat
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInSFImage
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInSFInt32
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInSFNode
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInSFRotation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInSFString
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInSFTime
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInSFVec2f
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; +- vrml.eai.field.EventInSFVec3f
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOut
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutMField
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutMFColor
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutMFFloat
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutMFInt32
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutMFNode
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutMFRotation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutMFString
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutMFTime
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutMFVec2f
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutMFVec3f
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutSFBool
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutSFColor
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutSFFloat
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutSFInt32
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutSFNode
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutSFRotation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutSFString
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutSFTime
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutSFVec2f
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.EventOutSFVec3f
+&nbsp;&nbsp; +- vrml.eai.VrmlException
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.FieldException
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.InvalidEventInException
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.eai.field.InvalidEventOutException</PRE>
+<H2>
+<a NAME="Examples"></a>B.7 Examples</H2>
+
+The following is an example Java EAI script that finds a Material
+node called BoxMaterial in the scene graph and changes its
+<i>diffuseColor</i> field to be 0 1 0. This has the effect of changing
+the box from its original red color to green. To view this
+example within a web browser, the following HTML segment is used.
+
+<p><a href="box/index.html">index.html</a></p>
+
+<pre>
+  &lt;embed src=&quot;box.wrl&quot; height=&quot;300&quot; width=&quot;300&quot;&gt;
+  &lt;applet code=&quot;box.class&quot; mayscript height=&quot;1&quot; width=&quot;1&quot;&gt;
+  &lt;/applet&gt;
+</pre>
+
+<p><a href="box/box.wrl">box.wrl</a></p>
+
+<pre>
+  #VRML V2.0 utf8
+
+  Shape {
+     appearance Appearance {
+        material DEF BoxMaterial Material {
+          diffuseColor 1 0 0
+        }
+     }
+     geometry Box { size 2 2 2 }
+  }
+</pre>
+
+<p><a href="box/box.java">box.java</a></p>
+
+<pre>
+  import java.applet.*;
+  import vrml.eai.field.*;
+  import vrml.eai.Node;
+  import vrml.eai.BrowserFactory;
+  import vrml.eai.Browser;
+  
+  public class box extends Applet {
+  
+    public void init() {
+      super.init();
+    }
+  
+    public void start() {
+      Browser browser = null;
+      Node material = null;
+      EventInSFColor boxcolor = null;
+  
+      // Get the VRML Browser - try 10 times
+      for (int count = 0; count &lt; 10; count++) {
+        browser = BrowserFactory.getBrowser(this);
+        if (browser != null) break;
+        try {
+  	Thread.sleep(200);
+        } catch (InterruptedException ignored) {}
+      }
+      
+      // Get the diffuseColor eventIn of the DEF'd material node
+      try {
+        material = browser.getNode(&quot;BoxMaterial&quot;);
+        boxcolor = (EventInSFColor) material.getEventIn(&quot;set_diffuseColor&quot;);
+      } catch (vrml.eai.InvalidNodeException ignored) {}
+  
+      // Sleep for 1 second
+      try {
+        Thread.sleep(1000);
+      } catch ( InterruptedException ignored ) {}
+  
+      // Change the material's diffuse color to green (0,1,0)
+      float[] newcolor = new float[3];
+      newcolor[0] = 0.0f;  newcolor[1] = 1.0f;  newcolor[2] = 0.0f;
+      boxcolor.setValue(newcolor);
+    }
+  }
+</pre>
+
+<P><HR ALIGN=LEFT>
+
+The next example shows how to create new geometry and add this
+to an existing scene using the EAI. In this case, the VRML file
+contains a red cuboid and the EAI script creates and overlays 
+a blue sphere. The HTML segment for embedding this example in
+a web browser is as follows.
+
+<P><CENTER><IMG SRC="../Images/redandblue.gif" ALIGN="TOP" width="298" height=
+"296" NATURALSIZEFLAG="0"></CENTER></P>
+
+<H4><CENTER>Figure B.1: CreateVrmlFromString example</CENTER></H4>
+
+<p><a href="create/index.html">index.html</a></p>
+
+<pre>
+  &lt;embed src=&quot;create.wrl&quot; height=&quot;300&quot; width=&quot;300&quot;&gt;
+  &lt;applet code=&quot;create.class&quot; mayscript height=&quot;1&quot; width=&quot;1&quot;&gt;
+  &lt;/applet&gt;
+</pre>
+
+<p><a href="create/create.wrl">create.wrl</a></p>
+
+<pre>
+  #VRML V2.0 utf8
+
+  DEF NewNode Group {}
+  Shape {
+     appearance Appearance {
+        material DEF BoxMaterial Material {
+          diffuseColor 1 0 0
+        }
+     }
+     geometry Box { size 2 2 1 }
+  }
+</pre>
+
+<p><a href="create/create.java">create.java</a></p>
+
+<pre>
+  import java.applet.*;
+  import vrml.eai.field.*;
+  import vrml.eai.Node;
+  import vrml.eai.BrowserFactory;
+  import vrml.eai.Browser;
+  
+  public class create extends Applet {
+  
+    public void init() {
+      super.init();
+    }
+  
+    public void start() {
+      Browser       browser  = null;
+      Node          rootnode = null;
+      EventInMFNode children = null;
+  
+      // Get the VRML Browser - try 10 times
+      for (int count = 0; count &lt; 10; count++) {
+        browser = BrowserFactory.getBrowser(this);
+        if (browser != null) break;
+        try { Thread.sleep(200); } catch (InterruptedException e) {}
+      }
+      
+      // Get the set_children eventIn of the DEF'd Group node
+      try {
+        rootnode = browser.getNode(&quot;NewNode&quot;);
+        children = (EventInMFNode) rootnode.getEventIn(&quot;set_children&quot;);
+      } catch (vrml.eai.InvalidNodeException ignored) {}
+  
+      // Create a new blue Sphere Shape node
+      String newvrml =
+        &quot;#VRML V2.0 utf8\nShape { appearance Appearance { material &quot; +
+        &quot;Material { diffuseColor 0 0 1 } } geometry Sphere { radius 1 } }&quot;;
+      
+      // Create and add the new node to the scene graph
+      children.setValue( browser.createVrmlFromString( newvrml ) );
+    }
+  }
+</pre>
+
+<P><HR ALIGN=LEFT>
+
+This example illustrates cycling between different cameras in
+a scene using the EAI. The VRML file contains a yellow cone 
+with three Viewpoint nodes specified. The EAI script then
+continually binds each viewpoint in succession with a 1 second
+delay between each switch. The HTML segment for embedding this example in
+a web browser is as follows.
+
+<p><a href="viewswitch/index.html">index.html</a></p>
+
+<pre>
+  &lt;embed src=&quot;viewswitch.wrl&quot; height=&quot;300&quot; width=&quot;300&quot;&gt;
+  &lt;applet code=&quot;viewswitch.class&quot; mayscript height=&quot;1&quot; width=&quot;1&quot;&gt;
+  &lt;/applet&gt;
+</pre>
+
+<p><a href="viewswitch/viewswitch.wrl">viewswitch.wrl</a></p>
+
+<pre>
+  #VRML V2.0 utf8
+  
+  DEF View1 Viewpoint {
+     position 0 -3 6
+     orientation 1 0 0 0.46
+     description &quot;Viewpoint 1&quot;
+  }
+  
+  DEF View2 Viewpoint {
+     position 0 7 0
+     orientation 0 -.707 -.707 3.1416
+     description &quot;Viewpoint 2&quot;
+  }
+  
+  DEF View3 Viewpoint {
+     position 0 0 10
+     orientation 0 0 1 0
+     description &quot;Viewpoint 3&quot;
+  }
+  
+  Shape {
+     appearance Appearance {
+        material DEF BoxMaterial Material {
+          diffuseColor 1 1 0
+        }
+     }
+     geometry Cone {}
+  }
+</pre>
+
+<p><a href="viewswitch/viewswitch.java">viewswitch.java</a></p>
+
+<pre>
+  import java.applet.*;
+  import vrml.eai.field.*;
+  import vrml.eai.Node;
+  import vrml.eai.BrowserFactory;
+  import vrml.eai.Browser;
+  
+  public class viewswitch extends Applet {
+  
+    public void init() {
+      super.init();
+    }
+  
+    public void start() {
+      Browser browser = null;
+      EventInSFBool bind1 = null;
+      EventInSFBool bind2 = null;
+      EventInSFBool bind3 = null;
+  
+      // Get the VRML Browser - try 10 times
+      for (int count = 0; count &lt; 10; count++) {
+        browser = BrowserFactory.getBrowser(this);
+        if (browser != null) break;
+        try { Thread.sleep(200); } catch (InterruptedException e) {}
+      }
+      
+      // Get the set_bind eventIns for the three DEF'd Viewpoint nodes
+      try {
+        Node view1 = browser.getNode(&quot;View1&quot;);
+        Node view2 = browser.getNode(&quot;View2&quot;);
+        Node view3 = browser.getNode(&quot;View3&quot;);
+        bind1 = (EventInSFBool) view1.getEventIn(&quot;set_bind&quot;);
+        bind2 = (EventInSFBool) view2.getEventIn(&quot;set_bind&quot;);
+        bind3 = (EventInSFBool) view3.getEventIn(&quot;set_bind&quot;);
+      } catch (vrml.eai.InvalidNodeException ignored) {}
+  
+      // cycle through each Viewpoint node at 1 sec intervals
+      while (true) {
+        try { Thread.sleep(1000); } catch (InterruptedException e) {}
+        bind1.setValue(true);
+        try { Thread.sleep(1000); } catch (InterruptedException e) {}
+        bind2.setValue(true);
+        try { Thread.sleep(1000); } catch (InterruptedException e) {}
+        bind3.setValue(true);
+      }
+    }
+  }
+</pre>
+
+<P><HR ALIGN=LEFT>
+
+This next example shows how to perform scene graph traverals using
+the EAI. The script will search for all Switch nodes in a scene
+and set their <i>whichChoice</i> fields to a certain value.
+Two buttons are created in the applet's canvas to let the
+user set all Switch nodes to their first or second nodes.
+For the particular VRML file show here, this causes a switch between 
+a purple cube and a cyan sphere.
+Note that we use the <tt>beginUpdate()</tt> and <tt>endUpdate()</tt>
+browser methods so that the scene graph is only updated once the
+traversal process has completed.
+
+<p><a href="switcher/index.html">index.html</a></p>
+
+<pre>
+&lt;APPLET CODE=&quot;switcher.class&quot; HEIGHT=&quot;32&quot; WIDTH=&quot;400&quot; MAYSCRIPT&gt;
+&lt;/APPLET&gt;
+&lt;EMBED SRC=&quot;switcher.wrl&quot; WIDTH=&quot;400&quot; HEIGHT=&quot;400&quot;&gt;
+</pre>
+
+<p><a href="switcher/switcher.wrl">switcher.wrl</a></p>
+
+<pre>
+  #VRML V2.0 utf8
+  
+  DEF RootNode Group {
+     children [
+        NavigationInfo { type [ &quot;EXAMINE&quot;, &quot;ANY&quot; ] }
+  
+        Switch {
+           whichChoice 0
+           choice [
+              Shape { # Switch 1
+                 appearance Appearance { material
+                    Material { diffuseColor 1 0 1 }
+                 }
+                 geometry Box { size 4 4 4 }
+              }
+              Shape { # Switch 2
+                 appearance Appearance { material
+                    Material { diffuseColor 0 1 1 }
+                 }
+                 geometry Sphere { radius 2 }
+              }
+           ]
+        }
+     ]
+  }
+</pre>
+
+<p><a href="switcher/switcher.java">switcher.java</a></p>
+
+<pre>
+  import java.awt.*;
+  import java.applet.*;
+  import vrml.eai.Node;
+  import vrml.eai.BrowserFactory;
+  import vrml.eai.Browser;
+  import vrml.eai.field.*;
+  
+  public class switcher extends Applet {
+  
+    Browser browser = null;
+    String  button1 = &quot;Flick Switch 1&quot;;
+    String  button2 = &quot;Flick Switch 2&quot;;
+    
+    // create the two applet buttons and get the browser reference
+    public void start() {
+      setBackground(Color.white);
+      add(new Button(button1));
+      add(new Button(button2));
+  
+      browser = BrowserFactory.getBrowser(this);
+    }
+  
+    // search scene graph for all Switch nodes and update their whichChoice
+    public void set_switch(int value) {
+      browser.beginUpdate();
+      Node root = browser.getNode(&quot;RootNode&quot;);
+      set_switch_recur((EventOutMFNode) root.getEventOut(&quot;children&quot;), value);
+      browser.endUpdate();
+    }
+  
+    // recursive method to do the scene graph traversal
+    public void set_switch_recur(EventOutMFNode children, int value) {
+      if (children == null) return;
+  
+      Node nodes[]  = children.getValue();
+      int num_nodes = nodes.length;
+  
+      for (int i = 0; i &lt; num_nodes; ++i) {
+        String node_type = nodes[i].getType();
+  
+        if (node_type.compareTo(&quot;Switch&quot;) == 0) {
+  
+  	// Grab the whichChoice field of the Switch and change it
+  	EventInSFInt32 whichChoice = (EventInSFInt32)
+  	  nodes[i].getEventIn(&quot;whichChoice&quot;);
+  
+  	whichChoice.setValue(value);
+  
+        } else if (node_type.compareTo(&quot;Group&quot;) == 0 ||
+                   node_type.compareTo(&quot;Transform&quot;) == 0 ||
+                   node_type.compareTo(&quot;Collision&quot;) == 0) {
+  	
+          // recurse into grouping nodes - other grouping nodes possible
+          set_switch_recur((EventOutMFNode) nodes[i].getEventOut(&quot;children&quot;),
+                           value);
+        }
+      }
+    }
+  
+    // The button event handling routine
+    public boolean action(Event event, Object what) {
+      if (event.target instanceof Button &amp;&amp; browser != null) {
+        Button b = (Button) event.target;
+        if (b.getLabel() == button1) {
+          set_switch(0);
+        } else if (b.getLabel() == button2) {
+          set_switch(1);
+        }
+      }
+      return true;
+    }
+  }
+</pre>
+
+<P><HR ALIGN=LEFT>
+
+This final example shows the creation of 
+widgets in a Java applet that can be used to control items in the
+scene graph. Here the EAI is used to build a helix model using an
+Extrusion node and to animate this model. The applet then allows the
+user to change the number of coils in the helix. The HTML segment for
+embedding this example in a web browser is as follows.
+
+<P><CENTER><IMG SRC="../Images/helix.gif" ALIGN="TOP" width="360" height=
+"359" NATURALSIZEFLAG="0"></CENTER></P>
+
+<H4><CENTER>Figure B.2: Helix example</CENTER></H4>
+
+<p><a href="helix/index.html">index.html</a></p>
+
+<pre>
+  &lt;embed src=&quot;helix.wrl&quot; border=0 height=&quot;200&quot; width=&quot;200&quot;&gt;
+  &lt;br&gt;
+  &lt;applet code=&quot;helix.class&quot; mayscript height=&quot;100&quot; width=&quot;200&quot;&gt;
+  &lt;/applet&gt;
+</pre>
+
+<p><a href="helix/helix.wrl">helix.wrl</a></p>
+
+<pre>
+  #VRML V2.0 utf8
+  
+  Viewpoint {
+      position 0 4 5
+      orientation 1 0 0 -0.5
+  }
+  
+  Shape {
+     appearance Appearance {
+        material Material {
+  	 diffuseColor 0.8 0.8 0.9
+  	 shininess 1
+        }
+     }
+     geometry DEF Coil Extrusion {
+        crossSection []
+        spine []
+        creaseAngle 3.14
+     }
+  }
+</pre>
+
+<p><a href="helix/helix.java">helix.java</a></p>
+
+<pre>
+  import java.awt.*;
+  import java.applet.*;
+  import vrml.eai.field.*;
+  import vrml.eai.Node;
+  import vrml.eai.BrowserFactory;
+  import vrml.eai.Browser;
+  
+  public class helix extends Applet implements Runnable {
+  
+    EventInMFVec3f spine = null;
+    EventInMFVec2f crossSection = null;
+    Thread thread = null;
+    Choice choice;
+    
+    int spineLimit = 250;
+    float[][] spineValue = new float[spineLimit+1][3];
+    int crossSectionLimit = 10;
+    float[][] crossSectionValue = new float[crossSectionLimit+1][2];
+    float numCoils = 5f;
+  
+    // set up the applet controls
+    public void init() {
+      super.init();
+      setBackground(Color.white);
+      Panel p1 = new Panel();
+      Label lblNCoils = new Label(&quot;Number of Coils&quot;);
+      p1.add(lblNCoils);
+      choice= new Choice();
+      choice.addItem(&quot;5&quot;); choice.addItem(&quot;4&quot;); choice.addItem(&quot;3&quot;);
+      choice.addItem(&quot;2&quot;); choice.addItem(&quot;1&quot;);
+      p1.add(choice);
+      add(p1);
+    }
+  
+    public void start() {
+      // get the VRML Browser reference
+      Browser browser = null;
+      for (int count = 0; count &lt; 10; count++) {
+        browser = BrowserFactory.getBrowser(this);
+        if (browser != null) break;
+        try { Thread.sleep (200); } catch (InterruptedException e) {}
+      }
+      if (browser == null) {
+        throw new Error(&quot;Failed to get the browser after 10 tries!&quot;);     
+      }
+  
+      // get the spine and crossSection fields of the Extrusion node
+      try {
+        Node coil = browser.getNode(&quot;Coil&quot;);
+        spine = (EventInMFVec3f) coil.getEventIn(&quot;set_spine&quot;);
+        crossSection = (EventInMFVec2f) coil.getEventIn(&quot;set_crossSection&quot;);
+      } catch (vrml.eai.InvalidNodeException ne){
+        System.out.println(&quot;Node Exception Error:&quot; + ne.getMessage());
+      }
+  
+      if (thread == null) {
+        thread = new Thread(this);
+        thread.start();
+      } else
+        thread.resume();
+    }
+  
+    public void stop() {
+      if (thread != null) thread.suspend();
+    }
+  
+    public void destroy() {
+      thread.stop();
+      thread = null;
+    }
+  
+    public void run() {
+      // calculate and set the crossSection values of the Extrusion node
+      float thickness = 0.1f;
+      float diameter = 1.5f;
+      float two_pi = (float) Math.PI * 2.0f;
+      for (int j = 0; j &lt;= crossSectionLimit; j++) {
+        float angle = j * two_pi / crossSectionLimit;
+        crossSectionValue[j][0] = thickness / 2 * (float) Math.sin(angle);
+        crossSectionValue[j][1] = thickness / 2 * (float) Math.cos(angle);
+      }
+      crossSection.setValue(crossSectionValue);
+  
+      // oscilate the spring between 0.3 and 1, with 0.05 increments
+      float inc = 0.05f;
+      float value = 0.3f;
+      float springLength = 2f;
+      while (true) {
+        value += inc;
+        //calculate and set the coordinates for the whole spine
+        for (int i = 0; i &lt;= spineLimit; i++) {
+  	float stepsPerCoil = (float) Math.round(spineLimit / numCoils);
+  	float angle = i * two_pi / stepsPerCoil;
+  	spineValue[i][0] = diameter / 2 * (float) Math.cos(angle);
+  	spineValue[i][1] = springLength / numCoils * value * i / stepsPerCoil;
+  	spineValue[i][2] = diameter / 2 * (float) Math.sin(angle);
+        }
+        spine.setValue(spineValue);
+  
+        // sleep for 0.1 seconds
+        try { thread.sleep(100); } catch (InterruptedException e) {}
+  
+        // reverse movement direction
+        if (value &gt;= 1f &amp;&amp; inc == 0.05f)
+  	inc = -0.05f;
+        else if (value &lt;= 0.3 &amp;&amp; inc == -0.05f)
+  	inc = 0.05f;        
+      }
+    }
+  
+    // handle input (deprecated Java API)
+    public boolean handleEvent(Event event) {
+      if (event.id == Event.ACTION_EVENT &amp;&amp; event.target == choice) 
+        changeNumCoils();
+      return super.handleEvent(event);
+    }
+  
+    // changes number of coils in the helix
+    private void changeNumCoils() {
+      String number = choice.getSelectedItem();
+      numCoils = (new Float(number)).floatValue();
+    }
+  }</pre>
+
+
+<p>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" height=25 width=470 ALIGN=TOP>
+</p>
+<p>&nbsp;
+</BODY>
+</HTML>

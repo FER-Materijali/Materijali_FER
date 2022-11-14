@@ -1,0 +1,117 @@
+<HTML>
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 2.0 Win">
+  <TITLE>VRML97, ISO/IEC 14772-1:1997 -- Annex F, Recommendations for non-normative extensions</TITLE>
+</HEAD>
+<BODY>
+
+<H1><CENTER><IMG SRC="../Images/vrml97.gif" WIDTH="470" HEIGHT="85" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM" ALT="VRML97 logo"></CENTER></H1>
+
+<H1><CENTER>The Virtual Reality Modeling Language</CENTER></H1>
+
+<H1><CENTER>Annex F<BR>
+<FONT SIZE=+1>(informative)</FONT></CENTER></H1>
+
+<H1><CENTER>Recommendations for non-normative extensions</CENTER></H1>
+
+<H3><CENTER>&nbsp;</CENTER></H3>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM" ALT="--- VRML separator bar ---"></P>
+
+<H2><A NAME="F.1"></A><IMG SRC="../Images/cube.gif" WIDTH="20" HEIGHT="19"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"> F.1 Introduction</H2>
+
+<P>This annex describes recommended practice for non-normative extensions
+to ISO/IEC 14772.</P>
+
+<P>F.1 <A HREF="#F.1">Introduction</A><BR>
+F.2 <A HREF="#F.2">URNs </A><BR>
+F.3 <A HREF="#F.3">Browser extensions</A></P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM" ALT="--- VRML separator bar ---"></P>
+
+<H2><A NAME="F.2"></A><IMG SRC="../Images/cube.gif" WIDTH="20" HEIGHT="19"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"> F.2 URNs</H2>
+
+<P>URNs are location-independent pointers to a file or to different representations
+of the same content. In most ways, URNs can be used like URLs except that,
+when fetched, a smart browser should fetch them from the closest source.
+URN resolution over the Internet has not yet been standardized. However,
+URNs may be used now as persistent unique identifiers for referenced entities
+such as files, EXTERNPROTOs, and textures. General information on URNs is
+available at <A HREF="bibliography.html#[URN]">E.[URN]</A>.</P>
+
+<P>URNs may be assigned by anyone with a domain name. For example, if the
+company Foo owns foo.com, it may allocate URNs that begin with &quot;urn:inet:foo.com:&quot;.
+An example of such usage is &quot;urn:inet:foo.com:texture:wood001&quot;.
+See the draft specification referenced in <A HREF="bibliography.html#[URN]">E.[URN]</A>
+for a description of the legal URN syntax.</P>
+
+<P>To reference a texture, EXTERNPROTO, or other file by a URN, the URN
+is included in the <I>url </I>field of another node. For example:</P>
+
+<PRE>
+<B>    ImageTexture {</B>
+<B>        url [ &quot;http://www.foo.com/textures/woodblock_floor.gif&quot;,</B>
+<B>              &quot;urn:inet:foo.com:textures:wood001&quot; ]</B>
+<B>    }</B></PRE>
+
+<P>specifies a URL file as the first choice and a URN as the second choice.</P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM" ALT="--- VRML separator bar ---"></P>
+
+<H2><A NAME="F.3"></A><IMG SRC="../Images/cube.gif" WIDTH="20" HEIGHT="19"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"> F.3 Browser extensions</H2>
+
+<P>Browsers that wish to add functionality beyond the capabilities of ISO/IEC
+14772 can do so by creating <A HREF="concepts.html#4.8">prototypes</A> or
+<A HREF="concepts.html#4.9">external prototypes</A>. If the new node cannot
+be expressed using the prototyping mechanism (i.e.,&nbsp;it cannot be expressed
+in the form of a VRML scene graph), it can be defined as an external prototype
+with a unique URN specification. Authors who use the extended functionality
+may provide multiple, alternative URLs or URNs to represent content to ensure
+it is viewable on all browsers.</P>
+
+<P>For example, suppose a browser wants to create a native Torus geometry
+node implementation:</P>
+
+<PRE>
+<B>    EXTERNPROTO Torus [ field SFFloat bigR, field SFFloat smallR ]</B>
+<B>    [&quot;urn:inet:browser.com:library:Torus&quot;,</B>
+<B>     &quot;http://.../proto_torus.wrl&quot; ]</B></PRE>
+
+<P>This browser will recognize the URN and use the URN resource's own private
+implementation of the Torus node. Other browsers may not recognize the URN,
+and skip to the next entry in the URL list and search for the specified
+prototype file. If no URLs are found, the Torus is assumed to be an empty
+node.</P>
+
+<P>The prototype name &quot;Torus&quot; in the above example has no meaning
+whatsoever. The URN/URL uniquely and precisely defines the name/location
+of the node implementation. The prototype name is strictly a convention
+chosen by the author and shall not be interpreted in any semantic manner.
+The following example uses both &quot;Ring&quot; and &quot;Donut&quot; to
+name the torus node. However, the URN/URL pair &quot;<TT>urn:browser.com:library:Torus</TT>,
+<TT>http://.../proto_torus.wrl</TT>&quot; specifies the actual definitions
+of the Torus node:</P>
+
+<PRE>
+<B><TT>    #VRML V2.0 utf8</TT></B>
+<B><TT>    EXTERNPROTO Ring [field SFFloat bigR, field SFFloat smallR ]</TT></B>
+<B><TT>      [&quot;urn:browser.com:library:Torus&quot;, &quot;http://.../proto_torus.wrl&quot; ]</TT></B>
+<B><TT>    EXTERNPROTO Donut [field SFFloat bigR, field SFFloat smallR ]</TT></B>
+<B><TT>      [&quot;urn:browser.com:library:Torus&quot;, &quot;http://.../proto_torus.wrl&quot; ]</TT></B>
+
+<B>    Transform { ... children Shape { geometry Ring { } } }</B>
+<B>    Transform { ... children Shape { geometry Donut { } } }</B></PRE>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM" ALT="--- VRML separator bar ---"></P>
+
+<PRE><FONT SIZE=-1>http://www.vrml.org/Specifications/VRML97/part1/extensions.html</FONT></PRE>
+</BODY>
+</HTML>

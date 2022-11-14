@@ -1,0 +1,146 @@
+<HTML>
+<HEAD>
+<TITLE>Using the Java examples</TITLE>
+</HEAD>
+<BODY>
+<BODY BGCOLOR=#000000 TEXT=#FFFFFF       LINK=#FFFFFF ALINK=#888888       VLINK=#888888>
+
+
+<FONT COLOR=#FFFF00 SIZE=+1>
+<CENTER><b><i>Introduction to VRML 97</i></b></CENTER>
+</FONT>
+
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>Using the Java examples</I></B></CENTER>
+</FONT>
+<CENTER><IMG SRC="../images/red.jpg" WIDTH=70% HEIGHT=2></CENTER>
+<p>
+<font color=#FFFFFF>
+
+<DL>
+
+<font size=+0>
+<p>
+<dd>
+These tutorial notes include a few VRML worlds that use
+Java program scripts within <font color=#00FF00><tt>Script</tt></font> nodes.
+The text for these program scripts is included in files with
+<font color=#00FF00><tt>.java</tt></font>
+file name extensions.
+Before use, you will need to compile these Java program scripts to
+Java byte-code contained in files with
+<font color=#00FF00><tt>.class</tt></font>
+file name extensions.
+</dd>
+
+<p>
+<dt><font color=#FFFF00 size=+1><b>Java support</b></font></dt>
+<dd>
+<p>
+The VRML 97 specification does not require that a VRML browser
+support the use of Java to create program scripts for
+<font color=#00FF00><tt>Script</tt></font> nodes.
+Fortunately, most VRML browsers do support Java program scripts,
+though you should check your VRML browser's release notes to be sure
+it is Java-enabled.
+<p>
+In principle, all Java-enabled VRML browsers 
+identically support the VRML Java API as documented in the VRML 97
+specification.  
+Similarly, in principle, a compiled Java program script using
+the VRML Java API can be
+executed on any type of computer within any brand of VRML browser
+<p>
+In practice, neither of these ideal cases occurs.
+The Java language is supported somewhat differently on different
+platforms, particularly as the community transitions from
+Java 1.0 to Java 1.1 and beyond.
+Additionally, the VRML Java API is implemented somewhat differently
+by different VRML browsers, making it difficult to insure that
+a compiled Java class file will work for all VRML browsers
+available now and in the future.
+<p>
+Because of Java incompatibilities observed with current VRML browsers,
+these tutorial notes include source Java files, but <I>not</I>
+compiled Java class files.
+Before use, you will need
+to compile the Java program scripts
+yourself on your platform with your VRML browser
+and your version of the Java language and support tools.
+</dd>
+
+
+
+<p>
+<dt><font color=#FFFF00 size=+1><b>Compiling Java</b></font></dt>
+<dd>
+<p>
+To compile the Java examples, you will need:
+<p>
+<ul>
+	<li>The VRML Java API class files for your VRML browser
+	<li>A Java compiler
+</ul>
+<p>
+All VRML browsers that support Java program scripts supply their
+own set of VRML Java API class files.  Typically these are automatically
+installed when you install your VRML browser.
+<p>
+There are multiple Java compilers available for most platforms.
+Sun Microsystems provides the Java Development Kit (JDK) for free
+from its Web site at
+<a href="http://www.javasoft.com">http://www.javasoft.com</a>.
+The JDK includes the <tt>javac</tt> compiler
+and instructions on how to use it.  Multiple commercial Java
+development environments are available from Microsoft, Silicon
+Graphics, Symantec, and others.  An up to date list of available
+Java products is available at Gamelan's Web site at
+<a href="http://www.gamelan.com">http://www.gamelan.com</a>.
+<p>
+Once you have the VRML Java API class files and a Java compiler, you
+will need to compile the supplied Java files.
+Each platform
+and Java compiler is different.  You'll have to consult your software's
+manuals.
+<p>
+Once compiled, place the
+<font color=#00FF00><tt>.class</tt></font>
+files in the
+<font color=#00FF00><tt>examples</tt></font>
+folder along with the other tutorial examples.  Now, when you click on a
+VRML world using a Java program script, the class files will be
+automatically loaded and the example will run.
+</dd>
+
+
+<p>
+<dt><font color=#FFFF00 size=+1><b>What if my VRML browser doesn't support Java ?</b></font></dt>
+<dd>
+<p>
+If your VRML browser doesn't support Java, then
+those worlds that use Java will produce an error when
+loaded into your VRML browser.
+This is unfortunate since Java is an essential
+feature that all VRML browsers should support.
+Perhaps you should consider getting a different brand of VRML browser...
+</dd>
+
+
+<p>
+<dt><font color=#FFFF00 size=+1><b>What if I don't compile the Java program scripts?</b></font></dt>
+<dd>
+<p>
+If you have a VRML browser that doesn't support Java, or if
+if you don't compile the Java program scripts, those worlds that
+use Java will produce an error when loaded into your VRML browser.
+Fortunately, Java
+program scripts are only used in the <em>Writing program scripts
+with Java</em> section of the tutorial slides.  So, if you don't
+compile the Java program scripts, then just skip the VRML examples
+in that section and everything will be fine.
+</dd>
+
+</DL>
+
+</BODY>
+</HTML>

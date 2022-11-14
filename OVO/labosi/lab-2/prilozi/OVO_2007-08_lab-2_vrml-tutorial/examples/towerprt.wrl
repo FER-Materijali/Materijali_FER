@@ -1,0 +1,109 @@
+#VRML V2.0 utf8
+#
+#  Part of a Tower
+#  towerprt.wrl
+#        by David R. Nadeau
+#
+#  Used in "towers.wrl" to built up a multi-level tower.
+#
+
+WorldInfo {
+    title "Tower Part"
+    info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+#
+#  Pole on the left side of an archway
+#
+        Transform {
+            rotation 0.0 1.0 0.0 0.785
+            children [
+                Shape {
+                    appearance Appearance {
+                        material Material {
+                            ambientIntensity 0.6
+                            diffuseColor 1.0 1.0 1.0
+                        }
+                        texture ImageTexture {
+                            url "stone1.jpg"
+                        }
+                        textureTransform TextureTransform {
+                            scale 1.0 16.0
+                        }
+                    }
+                    geometry IndexedFaceSet {
+                        coord Coordinate {
+                            point [
+                                # Left side
+                                -0.25 -3.5 -0.25,
+                                -0.25 -3.5  0.25,
+                                -0.25  3.5  0.25,
+                                -0.25  3.5 -0.25,
+                                # Front side
+                                -0.25 -3.5  0.25,
+                                 0.25 -3.5  0.25,
+                                 0.25  3.5  0.25,
+                                -0.25  3.5  0.25,
+                            ]
+                        }
+                        texCoord TextureCoordinate {
+                            point [
+                                0.0 0.0, 1.0 0.0, 1.0 1.0, 0.0 1.0
+                            ]
+                        }
+                        coordIndex [ 0, 1, 2, 3, -1, 4, 5, 6, 7, -1, ]
+                        texCoordIndex [ 0, 1, 2, 3, -1, 0, 1, 2, 3, -1 ]
+                        solid FALSE
+                    }
+                }
+            ]
+        }
+
+#
+#  Stone archway
+#
+        Transform {
+            translation 2.25 1.1 0.0
+            scale 2.0 2.0 2.0
+            children [
+                Shape {
+                    appearance Appearance {
+                        material Material {
+                            ambientIntensity 0.4
+                            diffuseColor 1.0 1.0 1.0
+                        }
+                        texture ImageTexture {
+                            url "stonebrk.jpg"
+                        }
+                        textureTransform TextureTransform {
+                            scale 5.0 8.0
+                        }
+                    }
+                    geometry IndexedFaceSet {
+                        coord Coordinate {
+                            point [
+                                -1.0  1.2  0.0,
+                                -1.0  0.0  0.0,
+                                -0.87 0.5  0.0,
+                                -0.5  0.87 0.0,
+                                 0.0  1.0  0.0,
+                                 0.5  0.87 0.0,
+                                 0.87 0.5  0.0,
+                                 1.0  0.0  0.0,
+                                 1.0  1.2  0.0,
+                                 0.0  1.2  0.0,
+                            ]
+                        }
+                        coordIndex [
+                            0, 1, 2, -1,
+                            0, 2, 3, -1,
+                            0, 3, 4, 9, -1,
+                            9, 4, 5, 8, -1,
+                            8, 5, 6, -1,
+                            8, 6, 7, -1,
+                        ]
+                        solid FALSE
+                    }
+                }
+            ]
+        }

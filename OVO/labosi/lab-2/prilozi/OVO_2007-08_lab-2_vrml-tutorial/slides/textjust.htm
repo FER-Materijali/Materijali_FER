@@ -1,0 +1,76 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>textjust.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Building primitive shapes</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>textjust.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+
+DEF Marker Shape {
+    appearance DEF White Appearance {
+        material Material { }
+    }
+    geometry Sphere { radius 0.2 }
+}
+
+Shape {
+    appearance USE White
+    geometry Text {
+        string "Begin"
+        fontStyle FontStyle {
+            justify "BEGIN"
+        }
+    }
+}
+
+Transform {
+    translation 0.0 -1.5 0.0
+    children [
+        USE Marker
+        Shape {
+            appearance USE White
+            geometry Text {
+                string "Middle"
+                fontStyle FontStyle {
+                    justify "MIDDLE"
+                }
+            }
+        }
+    ]
+}
+
+Transform {
+    translation 0.0 -3.0 0.0
+    children [
+        USE Marker
+        Shape {
+            appearance USE White
+            geometry Text {
+                string "End"
+                fontStyle FontStyle {
+                    justify "END"
+                }
+            }
+        }
+    ]
+}
+</FONT></PRE>
+</BODY>
+</HTML>

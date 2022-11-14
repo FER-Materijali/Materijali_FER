@@ -1,0 +1,50 @@
+#VRML V2.0 utf8
+
+DEF Marker Shape {
+    appearance DEF White Appearance {
+        material Material { }
+    }
+    geometry Sphere { radius 0.2 }
+}
+
+Shape {
+    appearance USE White
+    geometry Text {
+        string "Begin"
+        fontStyle FontStyle {
+            justify "BEGIN"
+        }
+    }
+}
+
+Transform {
+    translation 0.0 -1.5 0.0
+    children [
+        USE Marker
+        Shape {
+            appearance USE White
+            geometry Text {
+                string "Middle"
+                fontStyle FontStyle {
+                    justify "MIDDLE"
+                }
+            }
+        }
+    ]
+}
+
+Transform {
+    translation 0.0 -3.0 0.0
+    children [
+        USE Marker
+        Shape {
+            appearance USE White
+            geometry Text {
+                string "End"
+                fontStyle FontStyle {
+                    justify "END"
+                }
+            }
+        }
+    ]
+}

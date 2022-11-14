@@ -1,0 +1,193 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>slabs.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Controlling appearance with materials</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>slabs.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  Slab World
+#  slabs.wrl
+#        by David R. Nadeau
+#
+#  This example illustrates use of Appearance and Material nodes to set
+#  the main shading color (diffuseColor), glow color (emissiveColor), and
+#  transparency level of a shape.
+#
+#  Seven slabs are created, each using a Box node.  Each slab is shaded
+#  a different material:
+#
+#        Slab       Diffuse     Emissive    Transparency
+#        White      white       black       0.0
+#        Red        black       red         0.0
+#        Green      green       black       0.5
+#        Blue       blue        white       0.25
+#        Yellow     yellow      black       0.5
+#        Cyan       cyan        black       0.0
+#        Magenta    red         magenta     0.0
+#
+#  Some PC browsers may not support transparency.  Others may not support
+#  shading using both diffuse and emissive colors.  So, your results may
+#  vary.
+#
+#  Things to experiment with:
+#        Try different transparency levels.
+#
+#        Turn off the headlight on your VRML browser and observe which
+#        slabs glow.
+#
+
+
+WorldInfo {
+    title "Slab World"
+    info [ "Copyright (c) 1996, David R. Nadeau" ]
+}
+
+DEF Entry Viewpoint {
+    position 0.0 1.66 15.0
+    description "Entry View"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight TRUE
+}
+
+#
+#  Slabs
+#
+# White slab (shaded)
+Transform {
+    translation 0.0 2.0 4.0
+    children [
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 1.0 1.0 1.0
+		}
+	    }
+	    geometry DEF Slab Box {
+		size 2.0 4.0 0.3
+	    }
+	}
+    ]
+}
+
+# Red slab (emissive)
+Transform {
+    translation 0.0 2.0 0.0
+    children [
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor  0.0 0.0 0.0
+		    emissiveColor 1.0 0.0 0.0
+		}
+	    }
+	    geometry DEF Slab Box {
+		size 2.0 4.0 0.3
+	    }
+	}
+    ]
+}
+
+# Green slab (shaded + transparent)
+Transform {
+    translation -3.0 2.0 2.0
+    children [
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 0.0 1.0 0.0
+		    transparency 0.5
+		}
+	    }
+	    geometry USE Slab
+	}
+    ]
+}
+
+# Blue slab (shaded + emissive + transparent)
+Transform {
+    translation 4.0 2.0 -2.0
+    children [
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 0.2 0.2 0.2
+		    emissiveColor 0.0 0.0 0.8
+		    transparency 0.25
+		}
+	    }
+	    geometry USE Slab
+	}
+    ]
+}
+
+# Yellow slab (shaded + transparent)
+Transform {
+    translation 4.5 2.0 3.0
+    children [
+	# Outer
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 1.0 1.0 0.0
+		    transparency 0.5
+		}
+	    }
+	    geometry USE Slab
+	}
+    ]
+}
+
+# Cyan slab (shaded)
+Transform {
+    translation -3.5 2.0 -5.0
+    children [
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 0.0 1.0 1.0
+		}
+	    }
+	    geometry USE Slab
+	}
+    ]
+}
+
+# Magenta slab (shaded + emissive)
+Transform {
+    translation 2.0 2.0 -6.0
+    children [
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 0.5 0.0 0.0
+		    emissiveColor 0.5 0.0 0.5
+		}
+	    }
+	    geometry USE Slab
+	}
+    ]
+}
+</FONT></PRE>
+</BODY>
+</HTML>

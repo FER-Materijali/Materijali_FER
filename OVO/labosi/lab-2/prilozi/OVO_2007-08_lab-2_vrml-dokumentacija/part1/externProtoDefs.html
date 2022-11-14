@@ -1,0 +1,251 @@
+<HTML>
+<HEAD>
+<!-- Amd 1 joedw 12/10/02 -->
+  <TITLE>VRML97, ISO/IEC 14772-1:1997 -- Annex G, EXTERNPROTO definitions</TITLE>
+</HEAD>
+<BODY>
+
+<H1><CENTER><IMG SRC="../Images/vrml97.gif" WIDTH="470" HEIGHT="85" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM" ALT="VRML97 logo"></CENTER></H1>
+
+<H1><CENTER>The Virtual Reality Modeling Language</CENTER></H1>
+
+<H1><CENTER>Annex G<BR>
+<FONT SIZE=+1>(informative)</FONT></CENTER></H1>
+
+<H1><CENTER>EXTERNPROTO definitions</CENTER></H1>
+
+<H3><CENTER>&nbsp;</CENTER></H3>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM" ALT="--- VRML separator bar ---"></P>
+
+<H2><A NAME="G.1"></A><IMG SRC="../Images/cube.gif" WIDTH="20" HEIGHT="19"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"> G.1 Introduction</H2>
+
+<P>The following EXTERNPROTO definitions are provided for 
+the optional nodes described in this International Standard. 
+The URL for the implementation of each node 
+is left generic to reflect the ability to point 
+to a variety of suitable implementations. </P>
+
+<pre>
+EXTERNPROTO Contour2D [
+  eventIn      MFNode  addChildren
+  eventIn      MFNode  removeChildren
+  exposedField MFNode  children
+] "urn:web3d:vrml97:node:Contour2D"
+
+EXTERNPROTO CoordinateDeformer [
+  eventIn      MFNode   addChildren
+  eventIn      MFNode   removeChildren
+  exposedField MFNode   children
+  exposedField MFVec3f  controlPoint
+  exposedField MFNode   inputCoord
+  exposedField MFNode   inputTransform
+  exposedField MFNode   outputCoord
+  exposedField MFFloat  weight
+  field        SFVec3f  bboxCenter
+  field        SFVec3f  bboxSize
+  field        SFInt32  uDimension
+  field        MFFloat  uKnot
+  field        SFInt32  uOrder
+  field        SFInt32  vDimension
+  field        MFFloat  vKnot
+  field        SFInt32  vOrder
+  field        SFInt32  wDimension
+  field        MFFloat  wKnot
+  field        SFInt32  wOrder
+] "urn:web3d:vrml97:node:CoordinateDeformer"
+
+EXTERNPROTO GeoCoordinate [
+  field   SFNode     geoOrigin
+  field   MFString   geoSystem
+  field   MFString   point
+] "urn:web3d:vrml97:node:GeoCoordinate"
+
+EXTERNPROTO GeoElevationGrid [
+  eventIn        MFFloat    set_height
+  eventIn        SFFloat    set_yScale
+  exposedField   SFNode     color
+  exposedField   SFNode     normal
+  exposedField   SFNode     texCoord
+  field          SFBool     ccw
+  field          SFBool     colorPerVertex
+  field          SFFloat    creaseAngle
+  field          SFNode     geoOrigin
+  field          MFString   geoSystem
+  field          SFString   geoGridOrigin
+  field          MFFloat    height
+  field          SFBool     normalPerVertex
+  field          SFBool     solid
+  field          SFInt32    xDimension
+  field          SFString   xSpacing
+  field          SFFloat    yScale
+  field          SFInt32    zDimension
+  field          SFString   zSpacing
+] "urn:web3d:vrml97:node:GeoElevationGrid"
+
+EXTERNPROTO GeoLocation [
+  exposedField  SFString   geoCoords
+  field         MFNode     children
+  field         SFNode     geoOrigin
+  field         MFString   geoSystem
+] "urn:web3d:vrml97:node:GeoLocation"
+
+EXTERNPROTO GeoLOD [
+  field      SFString  center
+  field      MFString  child1Url
+  field      MFString  child2Url
+  field      MFString  child3Url
+  field      MFString  child4Url
+  field      SFNode    geoOrigin
+  field      MFString  geoSystem
+  field      SFFloat   range
+  field      MFString  rootUrl
+  field      MFNode    rootNode
+  eventOut   MFNode    children
+] "urn:web3d:vrml97:node:GeoLOD"
+
+EXTERNPROTO GeoMetadata [
+  exposedField MFNode    data
+  exposedField MFString  summary
+  exposedField MFString  url
+] "urn:web3d:vrml97:node:GeoMetadata"
+
+EXTERNPROTO GeoOrigin [
+  exposedField   MFString   geoSystem
+  exposedField   SFString   geoCoords
+  field          SFBool     rotateYUp
+] "urn:web3d:vrml97:node:GeoOrigin"
+
+EXTERNPROTO GeoPositionInterpolator [
+  eventIn       SFFloat   set_fraction
+  field         SFNode    geoOrigin
+  field         MFString  geoSystem
+  field         MFFloat   key
+  field         MFString  keyValue
+  eventOut      SFString  geovalue_changed
+  eventOut      SFVec3f   value_changed
+] "urn:web3d:vrml97:node:GeoPositionInterpolator"
+
+EXTERNPROTO GeoTouchSensor [
+  exposedField  SFBool    enabled
+  field         SFNode    geoOrigin
+  field         MFString  geoSystem
+  eventOut      SFVec3f   hitNormal_changed
+  eventOut      SFVec3f   hitPoint_changed
+  eventOut      SFVec2f   hitTexCoord_changed
+  eventOut      SFString  hitGeoCoord_changed
+  eventOut      SFBool    isActive
+  eventOut      SFBool    isOver
+  eventOut      SFTime    touchTime
+] "urn:web3d:vrml97:node:GeoTouchSensor"
+
+EXTERNPROTO GeoViewpoint [
+  eventIn        SFBool       set_bind
+  eventIn        SFString     set_orientation
+  eventIn        SFString     set_position
+  exposedField   SFFloat      fieldOfView
+  exposedField   SFBool       headlight
+  exposedField   SFBool       jump
+  exposedField   MFString     navType
+  field          SFString     description
+  field          SFNode       geoOrigin
+  field          MFString     geoSystem
+  field          SFRotation   orientation
+  field          SFString     position
+  field          SFFloat      speedFactor
+  eventOut       SFTime       bindTime
+  eventOut       SFBool       isBound
+] "urn:web3d:vrml97:node:GeoViewpoint"
+
+EXTERNPROTO InlineLoadControl [
+  exposedField SFBool    load
+  exposedField MFString  url
+  field        SFVec3f   bboxCenter
+  field        SFVec3f   bboxSize
+  eventOut     MFNode    children
+] "urn:web3d:vrml97:node:InlineLoadControl"
+
+EXTERNPROTO NurbsCurve [
+  exposedField MFVec3f controlPoint
+  exposedField MFFloat weight
+  exposedField SFInt32 tessellation
+  field        MFFloat knot
+  field        SFInt32 order
+] "urn:web3d:vrml97:node:NurbsCurve"
+
+EXTERNPROTO NurbsCurve2D [
+  exposedField MFVec2f controlPoint
+  exposedField SFInt32 tessellation
+  exposedField MFFloat weight
+  field        MFFloat knot
+  field        SFInt32 order
+] "urn:web3d:vrml97:node:NurbsCurve2D"
+
+EXTERNPROTO NurbsGroup [
+  eventIn      MFNode  addChildren
+  eventIn      MFNode  removeChildren
+  exposedField MFNode  children
+  exposedField SFFloat tessellationScale
+  field        SFVec3f bboxCenter
+  field        SFVec3f bboxSize
+] "urn:web3d:vrml97:node:NurbsGroup"
+
+EXTERNPROTO NurbsPositionInterpolator [
+  eventIn      SFFloat  set_fraction
+  exposedField SFInt32  dimension
+  exposedField MFVec3f  keyValue
+  exposedField MFFloat  keyWeight
+  exposedField MFFloat  knot
+  exposedField SFInt32  order
+  eventOut     SFVec3f  value_changed
+] "urn:web3d:vrml97:node:NurbsPositionInterpolator"
+
+EXTERNPROTO NurbsSurface [
+  exposedField MFVec3f controlPoint
+  exposedField SFNode  texCoord
+  exposedField SFInt32 uTessellation
+  exposedField SFInt32 vTessellation
+  exposedField MFFloat weight
+  field        SFBool  ccw
+  field        SFBool  solid
+  field        SFInt32 uDimension
+  field        MFFloat uKnot
+  field        SFInt32 uOrder
+  field        SFInt32 vDimension
+  field        MFFloat vKnot
+  field        SFInt32 vOrder
+] "urn:web3d:vrml97:node:NurbsSurface"
+
+EXTERNPROTO NurbsTextureSurface [
+  exposedField MFVec2f   controlPoint
+  exposedField MFFloat   weight
+  field        SFInt32   uDimension
+  field        MFFloat   uKnot
+  field        SFInt32   uOrder
+  field        SFInt32   vDimension
+  field        MFFloat   vKnot
+  field        SFInt32   vOrder
+] "urn:web3d:vrml97:node:NurbsTextureSurface"
+
+EXTERNPROTO Polyline2D [
+ exposedField MFVec2f  point
+] "urn:web3d:vrml97:node:PolyLine2D"
+
+EXTERNPROTO TrimmedSurface [
+  eventIn      MFNode   addTrimmingContour
+  eventIn      MFNode   removeTrimmingContour
+  exposedField MFNode   trimmingContour
+  exposedField SFNode   surface
+] "urn:web3d:vrml97:node:TrimmedSurface"
+
+</pre>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM" ALT="--- VRML separator bar ---"></P>
+
+<PRE><FONT SIZE=-1>http://www.vrml.org/Specifications/VRML97/part1/externProtoDefs.html</FONT></PRE>
+</BODY>
+</HTML>

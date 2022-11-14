@@ -1,0 +1,999 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
+   <META NAME="Author" CONTENT="Justin Couch">
+   <TITLE>ISO/IEC 14772-2:xxxx - Annex A, IDL Interface</TITLE>
+</HEAD>
+<BODY>
+
+<CENTER>
+<H1>
+<IMG SRC="../Images/vrml97-2.gif" ALT="VRML97 logo" naturalsizeflag="0" HEIGHT=85 WIDTH=470 ALIGN=TOP></H1></CENTER>
+
+<CENTER>
+<H1>
+Annex A<BR>
+<FONT SIZE=+1>(normative)</FONT></H1></CENTER>
+
+<CENTER>
+<H1>
+IDL Interface Definition</H1></CENTER>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470 ALIGN=TOP>
+<H2>
+<a NAME="TableOfContentsAndIntroduction"></a>A.1 Table of contents and introduction</H2>
+
+<H3>
+<a NAME="Introduction"></a>A.1.1 Introduction</H3>
+This annex provides a language and platform neutral definition of the ISO/IEC
+14772-2 External Authoring Interface using the <A HREF="http://www.omg.org/">Object
+Management Group</A>'s Interface Definition Language (IDL). IDL is a language-neutral
+syntax, with well-defined mappings to a variety of standard languages,
+it serves as the baseline from which language-specific implementations
+are derived.
+
+<P>Certain aspects of the EAI are of necessity language and platform dependent,
+such as the various <TT>getBrowser</TT> operations. Therefore, implementations
+for specific languages and environments, such as Java Applets and C++ COM,
+are provided as additional annexes. As new implementations are developed,
+it is recommended that they employ the IDL Specification as the initial
+starting point.
+<H3>
+<a NAME="TableOfContents"></a>A.1.2 Table of contents</H3>
+See <a HREF="#TOC">Table A.1</a> for the contents of this annex.
+<BR>&nbsp;
+<TABLE BORDER COLS=2 WIDTH="100%" >
+<CAPTION align="top"><a NAME="TOC"></a><B>Table A.1--Table of contents</B></CAPTION>
+
+<TR>
+<TD VALIGN=TOP><B><a HREF="#TableOfContentsAndIntroduction">A.1 Table of contents and introduction</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#Introduction">A.1.1 Introduction</a>&nbsp;
+<BR>&nbsp;<a HREF="#TableOfContents">A.1.2 Table of Contents</a>&nbsp;
+
+<P><B><a HREF="#Concepts">A.2 Concepts</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#TheBrowserScriptInterface">A.2.1 The browser script interface</a>&nbsp;
+<BR>&nbsp;<a HREF="#ScopeOfSpecification">A.2.2 Scope of specification</a>&nbsp;
+<BR>&nbsp;<a HREF="#Conformance">A.2.3 Conformance</a>&nbsp;
+<BR>&nbsp;<A HREF="#A.2.4">A.2.4 Implementation dependencies</A>&nbsp;
+
+<P><B><a HREF="#DataTypeImplementation">A.3 Data type implementation</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#DataTypeDefinitions">A.3.1 Data type Definitions</a>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIAction">A.3.1.1 EAIAction</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBrowserRef">A.3.1.2 EAIBrowserRef</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIFieldAccess">A.3.1.3 EAIFieldAccess</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIFieldID">A.3.1.4 EAIFieldID</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIFieldName">A.3.1.5 EAIFieldName</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIFieldType">A.3.1.6 EAIFieldType</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIFieldValue">A.3.1.7 EAIFieldValue</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAINodeID">A.3.1.8 EAINodeID</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAINodeType">A.3.1.9 EAINodeType</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIRequestorID">A.3.1.10 EAIRequesterID</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIURL">A.3.1.11 EAIURL</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIString">A.3.1.12 EAIString</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#NULL">A.3.1.13 </a></I><a HREF="#NULL">NULL</a>&nbsp;
+<BR>&nbsp;<a HREF="#ErrorDataTypes">A.3.2 Error data types</a>&nbsp;
+<BR>&nbsp; <I><a HREF="#EAIError">A.3.2.1 EAIError</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIBrowserUnavailable">A.3.2.2 EAI_BROWSER_UNAVAILABLE</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIConnectionError">A.3.2.3 EAI_CONNECTION_ERROR</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIDisposed">A.3.2.4 EAI_DISPOSED</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIInvalidAccessType">A.3.2.5 EAI_INVALID_ACCESS_TYPE</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIInvalidBrowser">A.3.2.6 EAI_INVALID_BROWSER</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIInvalidName">A.3.2.7 EAI_INVALID_NAME</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIInvalidNode">A.3.2.8 EAI_INVALID_NODE</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIInvalidField">A.3.2.9 EAI_INVALID_FIELD</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIInvalidURL">A.3.2.10 EAI_INVALID_URL</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIInvalidVRML">A.3.2.11 EAI_INVALID_VRML</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#EAIURLUnavailable">A.3.2.12 EAI_URL_UNAVAILABLE</a></I>&nbsp;</TD>
+
+<TD VALIGN=TOP><a HREF="#IDLSpecificConcepts"><B>A.4 IDL specific concepts</B>&nbsp;</a>&nbsp;
+<BR>&nbsp;<a HREF="#FieldAccess">A.4.1 Field Access</a>&nbsp;
+<BR><I>&nbsp; <a HREF="#MFFieldRepresentations">A.4.1.1 MF Field representations</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#Set1Value">A.4.1.2 set1Value</a></I>&nbsp;
+
+<P><B><a HREF="#BindingImplementationDependencies">A.5 Binding implementation dependencies</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#EstablishingBrowserConnections">A.5.1 Establishing browser connections</a>&nbsp;
+<BR>&nbsp;<a HREF="#BrowserServices">A.5.2 Browser services</a>&nbsp;
+<BR><I>&nbsp; <a HREF="#getName">A.5.2.1 getName</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getVersion">A.5.2.2 getVersion</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getCurrentSpeed">A.5.2.3 getCurrentSpeed</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getCurrentFrameRate">A.5.2.4 getCurrentFrameRate</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getWorldURL">A.5.2.5 getWorldURL</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#replaceWorld">A.5.2.6 replaceWorld</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#loadURL">A.5.2.7 loadURL</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#setDescription">A.5.2.8 setDescription</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#createVrmlFromString">A.5.2.9 createVrmlFromString</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#createVrmlFromURL">A.5.2.10 createVrmlFromURL</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#AddRoute_DeleteRoute">A.5.2.11 addRoute/deleteRoute</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#BeginUpdate_EndUpdate">A.5.2.12 beginUpdate/endUpdate</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#RegisterInterest">A.5.2.13 Register Interest</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#GetNode">A.5.2.14 getNode</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#Dispose">A.5.2.15 Dispose</a></I>&nbsp;
+<BR>&nbsp;<a HREF="#NodeServices">A.5.3 Node services</a>&nbsp;
+<BR><I>&nbsp; <a HREF="#getName_getType">A.5.3.1 getName/getType</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getField">A.5.3.2 getField</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#NodeServicesDispose">A.5.3.3 Dispose</a></I>&nbsp;
+<BR>&nbsp;<a HREF="#FieldServices">A.5.4 Field services</a>&nbsp;
+<BR><I>&nbsp; <a HREF="#getAccessType">A.5.4.1 getAccessType</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#FieldServicesGetType">A.5.4.2 getType</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#FieldServicesGetName">A.5.4.3 getName</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#getValue">A.5.4.4 getValue</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#setValue">A.5.4.5 setValue</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#FieldServicesRegisterInterest">A.5.4.6 Register Interest</a></I>&nbsp;
+
+<P><B><a HREF="#IDLSpecification">A.6 IDL specification</a></B></TD>
+</TR>
+</TABLE>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470 ALIGN=TOP>
+<H2>
+<a NAME="Concepts"></a>A.2 Concepts</H2>
+
+<H3>
+<a NAME="TheBrowserScriptInterface"></a>A.2.1 The browser script interface</H3>
+As with scripts within the VRML scene, the EAI allows access to the full
+functionality of the <a HREF="../part1/concepts.html#4.12">Browser
+script interface</a>. Browser state can be queried, routes can be added
+and deleted, and new nodes can be created. The EAI extends the basic browser
+interface with a number of extra capabilities such as retrieving node references
+and registering interest in browser events.
+<H3>
+<a NAME="ScopeOfSpecification"></a>A.2.2 Scope of specification</H3>
+The IDL language provides an outline guide to the EAI specification. It
+provides a complete definition of the binding to the specification within
+the restrictions and implementation specific capabilities as noted in this part
+of ISO/IEC 14772. This specification does not provide a complete implementation
+of ISO/IEC 14772-2 as the capabilities for obtaining a reference to the
+Browser object, the starting point of a session, is by necessity environment
+specific.
+<H3>
+<a NAME="Conformance"></a>A.2.3 Conformance</H3>
+A conforming, language-specific implementation must match the language
+bindings as generated by the IDL mapping for that language. Conforming
+implementations must implement all the interfaces and methods defined in
+this annex. Implementations may add additional functions, method calls,
+or constructors.
+<H3>
+<a NAME="ImplementationDependencies"></a>A.2.4 Implementation dependencies</H3>
+The process for obtaining the initial reference to a browser object is
+implementation dependent.
+<H3>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470 ALIGN=TOP></H3>
+
+<H2>
+<a NAME="DataTypeImplementation"></a>A.3 Data type Implementation</H2>
+
+<H3>
+<a NAME="DataTypeDefinitions"></a>A.3.1 Data type Definitions</H3>
+
+<H4>
+<a NAME="EAIAction"></a>A.3.1.1 EAIAction</H4>
+The action type is dependent on the method used.
+<H4>
+<a NAME="EAIBrowserRef"></a>A.3.1.2 EAIBrowserRef</H4>
+The browser reference type is defined to be an instance of the <TT>Browser</TT>
+interface.
+<H4>
+<a NAME="EAIFieldAccess"></a>A.3.1.3 EAIFieldAccess</H4>
+Field access is defined by a set of interfaces used to represent the EAIFieldID.
+The base interface <TT>BaseField</TT> defines the basic field properties.
+The interfaces <TT>EventIn</TT> and <TT>EventOut</TT> inherited from <TT>BaseField</TT>
+provide representations of the access types.
+
+<P>There is a distinct difference between the access type of the underlying
+field that was retrieved from the node and how it is represented by the
+interfaces. A request is made of the node to access any field to be viewed
+as either an eventIn or an eventOut. The node interface then either returns
+the type or generates an error condition. The acceptable conditions for successful
+completion of the request are defined in <a HREF="#RulesForMappingVRMLFieldTypesToIDLInterfaces">Table
+A.2</a>
+<BR>&nbsp;
+<CENTER><TABLE BORDER COLS=4 WIDTH="50%" >
+<CAPTION><a NAME="RulesForMappingVRMLFieldTypesToIDLInterfaces"></a><B>Table A.2 -- Rules for mapping VRML
+Field types to IDL interfaces</B></CAPTION>
+
+<TR>
+<TD></TD>
+
+<TD></TD>
+
+<TD COLSPAN="2">
+<CENTER><B>Interface</B></CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD></TD>
+
+<TD></TD>
+
+<TD>
+<CENTER><B><TT>EventIn</TT></B></CENTER>
+</TD>
+
+<TD>
+<CENTER><B><TT>EventOut</TT></B></CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD ROWSPAN="4"><B>VRML Field Types</B></TD>
+
+<TD><B>field</B></TD>
+
+<TD>
+<CENTER>Exception</CENTER>
+</TD>
+
+<TD>
+<CENTER>Exception</CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD><B>eventIn</B></TD>
+
+<TD>
+<CENTER>yes</CENTER>
+</TD>
+
+<TD>
+<CENTER>Exception</CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD><B>eventOut</B></TD>
+
+<TD>
+<CENTER>Exception</CENTER>
+</TD>
+
+<TD>
+<CENTER>yes</CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD><B>exposedField</B></TD>
+
+<TD>
+<CENTER>yes</CENTER>
+</TD>
+
+<TD>
+<CENTER>yes</CENTER>
+</TD>
+</TR>
+</TABLE></CENTER>
+
+<H4>
+<a NAME="EAIFieldID"></a>A.3.1.4 EAIFieldID</H4>
+The field identifier is an instance of the <TT>BaseField</TT> interface.
+<H4>
+<a NAME="EAIFieldName"></a>A.3.1.5 EAIFieldName</H4>
+The name of the field is represented as a IDL <TT>string</TT> data type.
+<H4>
+<a NAME="EAIFieldType"></a>A.3.1.6 EAIFieldType</H4>
+The field type may be represented in two alternative fashions.
+
+<P>&nbsp;The first alternative is provided through <TT>getType()</TT> method
+provided in the <TT>BaseField</TT> interface. This returns a long which
+has one of the values defined by the constant types also defined in that
+interface.
+
+<P>&nbsp;The second alternative is provided by the interface hierarchy.
+The EventIn and EventOut interfaces are further derived to provide interfaces
+for each exact field type.
+<H4>
+<a NAME="EAIFieldValue"></a>A.3.1.7 EAIFieldValue</H4>
+The field value is defined on a per class and per field type instance.
+<H4>
+<a NAME="EAINodeID"></a>A.3.1.8 EAINodeID</H4>
+The node identifiers is represented as an instance of the <TT>Node</TT>
+interface.
+<H4>
+<a NAME="EAINodeType"></a>A.3.1.9 EAINodeType</H4>
+The node type is represented as a IDL <TT>string</TT> data type.
+<H4>
+<a NAME="EAIRequestorID"></a>A.3.1.10 EAIRequestorID</H4>
+The requestor ID is represented as one of two interfaces depending on what
+information is being requested.
+
+<P>&nbsp;The requestor ID is an instance of the <TT>BrowserListener</TT>
+interface when the service request is <a HREF="servRef.html#RegisterBrowserInterest">Register
+Browser Interest</a>.
+
+<P>&nbsp;The requestor ID is an instance of the <TT>VrmlEventListener</TT>
+interface when the service request is <a HREF="servRef.html#RegisterFieldInterest">Register
+Field_Interest</a>.
+<H4>
+<a NAME="EAIURL"></a>A.3.1.11 EAIURL</H4>
+The URL is represented as a IDL <TT>string</TT> data type.
+<H4>
+<a NAME="EAIString"></a>A.3.1.12 EAIString</H4>
+The string is represented as a IDL <TT>string</TT> data type.
+<H4>
+<a NAME="NULL"></a>A.3.1.13 NULL</H4>
+The null is typically represented as the empty string.
+<H3>
+<a NAME="ErrorDataTypes"></a>A.3.2 Error data types</H3>
+Errors are represented as IDL exceptions.
+<H4>
+<a NAME="EAIError"></a>A.3.2.1 EAIError</H4>
+The error type is represented as a <TT>VrmlException</TT>.
+<H4>
+<a NAME="EAIBrowserUnavailable"></a>A.3.2.2 EAI_BROWSER_UNAVAILABLE</H4>
+The error type is represented as a <TT>NoSuchBrowserException</TT>.
+<H4>
+<a NAME="EAIConnectionError"></a>A.3.2.3 EAI_CONNECTION_ERROR</H4>
+The error type is represented as a <TT>ConnectionException</TT>.
+<H4>
+<a NAME="EAIDisposed"></a>A.3.2.4 EAI_DISPOSED</H4>
+The error type is represented as two separate dual purpose exceptions depending
+on their scope.
+
+<P><TT>InvalidBrowserException</TT> is used to indicate an <a HREF="#EAIBrowserRef">EAIBrowserRef</a>
+has been disposed of.
+<BR><TT>InvalidNodeException</TT> is used to indicate an <a HREF="#EAINodeID">EAINodeID</a>
+has been disposed of.
+<H4>
+<a NAME="EAIInvalidAccessType"></a>A.3.2.5 EAI_INVALID_ACCESS_TYPE</H4>
+The error type is represented as two separate exceptions based on the implementation
+of <a HREF="#EAINodeID">EAINodeID</a> and the rules defined in <a HREF="#RulesForMappingVRMLFieldTypesToIDLInterfaces">Table
+A.2</a>.
+
+<P><TT>InvalidEventInException</TT> is used to indicate the named field
+is not accessable as an eventIn from the <TT>Node.getEventIn()</TT> method.
+
+<P><TT>InvalidEventOutException</TT> is used to indicate the named field
+is not accessable as an eventOut from the <TT>Node.getEventOut()</TT> method.
+<H4>
+<a NAME="EAIInvalidBrowser"></a>A.3.2.6 EAI_INVALID_BROWSER</H4>
+The error type is represented as an <TT>InvalidBrowserException</TT>.
+<H4>
+<a NAME="EAIInvalidName"></a>A.3.2.7 EAI_INVALID_NAME</H4>
+The error type is expresented as different exceptions depending on the
+situation. The <TT>Browser.getNode()</TT> method uses <TT>InvalidNodeException</TT>.
+The <TT>Node</TT> interface <TT>getEventIn()</TT> and <TT>getEventOut()</TT>
+methods use <TT>InvalidEventInException</TT> and <TT>InvalidEventOutException</TT>
+respectively.
+<H4>
+<a NAME="EAIInvalidNode"></a>A.3.2.8 EAI_INVALID_NODE</H4>
+The error type is represented as an <TT>InvalidNodeException</TT>.
+<H4>
+<a NAME="EAIInvalidField"></a>A.3.2.9 EAI_INVALID_FIELD</H4>
+The error type is represented as an <TT>InvalidFieldException</TT>, an
+<TT>InvalidEventInException</TT>, or an <TT>InvalidEventOutException</TT>.
+<H4>
+<a NAME="EAIInvalidURL"></a>A.3.2.10 EAI_INVALID_URL</H4>
+The error type is represented as an <TT>InvalidURLException</TT>.
+<H4>
+<a NAME="EAIInvalidVRML"></a>A.3.2.11 EAI_INVALID_VRML</H4>
+The error type is represented as an <TT>InvalidvrmlException</TT>.
+<H4>
+<a NAME="EAIURLUnavailable"></a>A.3.2.12 EAI_URL_UNAVAILABLE</H4>
+The error type is represented as an <TT>URLUnavailableException</TT>.
+<H2>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470 ALIGN=TOP></H2>
+
+<H2>
+<a NAME="IDLSpecificConcepts"></a>A.4 IDL specific concepts</H2>
+
+<H3>
+<a NAME="FieldAccess"></a>A.4.1 Field Access</H3>
+
+<H4>
+<a NAME="MFFieldRepresentations"></a>A.4.1.1 MF field representations</H4>
+In MF fields, sequences are used to represent the data contained in the
+VRML field. Setting the value of that field with a sequence of length 0
+shall result in the contents of the field being cleared and is the equivalent
+of the VRML text file declaration of
+
+<P><TT>SomeNode {</TT>
+<BR><TT>&nbsp; <I>MFField</I> []</TT>
+<BR><TT>}</TT>
+
+<P>An empty MF field shall return an sequence of length zero if queried
+about its value. The size() method of the MField base interfaces shall
+return a value of 0.
+<H4>
+<a NAME="Set1Value"></a>A.4.1.2 set1Value</H4>
+MField interfaces contain a set1Value method for setting an individual
+value in the field.
+
+<P>If beginUpdate has been called and multiple set1Values have been called
+on that field, the result when endUpdate is called shall be a single event
+with all of the individual values set. If two calls are made to set a particular
+array index, the last value written shall be used.
+
+<P>If beginUpdate has not been called, the result shall be an event that
+contains the entire field value with the individual value changed. Multiple
+set1Value calls to the field shall result in the equivalent number of events
+being generated inside the VRML browser.&nbsp;<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470 ALIGN=TOP>
+<H2>
+<a NAME="BindingImplementationDependencies"></a>A.5 Binding implementation dependencies</H2>
+
+<H3>
+<a NAME="EstablishingBrowserConnections"></a>A.5.1 Establishing browser connections</H3>
+The IDL specification does not define an interface for establishing a Browser
+interface, as this is necessarily dependent upon the representation of
+a VRML Browser for a specific language binding. Refer to specific language
+bindings for that binding's implementation.
+<H3>
+<a NAME="BrowserServices"></a>A.5.2 Browser services</H3>
+Once a reference to a browser has been established, services may be requested
+of the browser. This clause defines the IDL representation of the browser
+services. The browser reference is represented by the <TT>Browser</TT>
+interface.
+<H4>
+<a NAME="getName"></a>A.5.2.1 getName</H4>
+The name returned is a string representing the name of the browser. If
+this is not supported, the empty string shall be returned.
+<H4>
+<a NAME="getVersion"></a>A.5.2.2 getVersion</H4>
+The version returned is a string representing the version number of the
+browser. If this is not supported, the empty string shall be returned.
+<H4>
+<a NAME="getCurrentSpeed"></a>A.5.2.3 getCurrentSpeed</H4>
+The speed value returned shall be a floating point number or 0.0 if it
+is not supported.
+<H4>
+<a NAME="getCurrentFrameRate"></a>A.5.2.4 getCurrentFrameRate</H4>
+The frame rate value shall be a floating point number or 0.0 if it is not
+supported.
+<H4>
+<a NAME="getWorldURL"></a>A.5.2.5 getWorldURL</H4>
+The world URL shall be a string indicating the complete world URL as defined
+in <a HREF="servRef.html#getWorldURL">6.3.11 getWorldURL</a>.
+<H4>
+<a NAME="replaceWorld"></a>A.5.2.6 replaceWorld</H4>
+The parameter shall be a sequence of Node instances which shall be used
+to replace the currently loaded world. If one or more of the node instances
+have been disposed of, an <TT>IllegalArgumentException</TT> shall be generated.
+<H4>
+<a NAME="loadURL"></a>A.5.2.7 loadURL</H4>
+The parameters shall be a sequence of strings for the URL list and a sequence
+of strings for the parameters. If the browser determines that it cannot
+load any of the URLs passed, the browser event listener shall receive an
+event notifying it of an error.
+<H4>
+<a NAME="setDescription"></a>A.5.2.8 setDescription</H4>
+This service sets the description string of the browser. If the browser
+is running as a Web Browser plugin, this shall set the title of the page
+(if the containing web browser supports this). For component browsers the
+result shall be implementation dependent.
+<H4>
+<a NAME="createVrmlFromString"></a>A.5.2.9 createVrmlFromString</H4>
+The parameter shall be a string that contains legal syntax as defined in
+ISO/IEV 14772-1. The only difference is that the file header #VRML V2.0
+utf8 need not be present as the first line in the string. If the string
+does not contain legal VRML97 syntax, an InvalidVrmlException shall be
+generated. Returned is an sequence of the top level Nodes in the order
+that they are declared in the string parameter.
+<H4>
+<a NAME="createVrmlFromURL"></a>A.5.2.10 createVrmlFromURL</H4>
+The parameter list shall consist of a sequence of strings describing the
+list of URLs, a reference to a destination Node and a string which is the
+name of the eventIn to send the loaded URL nodes to. If the browser determines
+that it cannot load any of the URLs passed, the browser event listener
+shall receive and event notifying it of an error.
+<H4>
+<a NAME="AddRoute_DeleteRoute"></a>A.5.2.11 addRoute/deleteRoute</H4>
+This service is split into two separate methods: addRoute and deleteRoute.
+They both take the same argument list. The first parameter is a Node reference
+that the event will leave from. The second is a string describing the name
+of the eventOut. Third and forth parameters are the destination node reference
+and the eventIn as a string. If either of the Node references have been
+disposed of, an InvalidNodeException shall be generated. If either of the
+nodes do not contain the nominated eventIn/eventOut, an InvalidEventIn/EventOutException
+shall be generated appropriately.
+<H4>
+<a NAME="BeginUpdate_EndUpdate"></a>A.5.2.12 beginUpdate/endUpdate</H4>
+This service is split into two separate methods beginUpdate and endUpdate.
+The functionality remains as described in <a HREF="servRef.html#UpdateControl">6.3.16
+Update Control</a>.
+<H4>
+<a NAME="RegisterInterest"></a>A.5.2.13 Register interest</H4>
+Registering interest in browser events is through a browser event listener.
+The listener is an interface which is passed browser events when the state
+of the browser changes or asyncrhonous error messages must be sent (for
+example, inability to load and of the requested URLs). Methods shall be
+provided to allow listeners to be added and removed dynamically. A separate
+event interface shall be used to indicate the event information. This interface
+has a predefined number of events although specific browser implementations
+may send more events than the defined values. Any extra event types must
+not have values below the figure defined by <TT>LAST_IDENTIFIER</TT>.
+<H4>
+<a NAME="GetNode"></a>A.5.2.14 getNode</H4>
+The return value is a Node reference. The parameter is a string defining
+the DEF name of the required node. If the browser cannot find the node
+name, an InvalidNodeException shall be generated.
+<H4>
+<a NAME="Dispose"></a>A.5.2.15 Dispose</H4>
+Dispose shall notify the browser that the application is no longer interested
+in the VRML browser. Any further requests to methods of this instance of
+the browser interface shall generate an InvalidBrowserException.
+<H3>
+<a NAME="NodeServices"></a>A.5.3 Node services</H3>
+
+<H4>
+<a NAME="getName_getType"></a>A.5.3.1 getName/getType</H4>
+The <a HREF="servRef.html#getType">6.4.5 getType</a> and <a HREF="servRef.html#getName">6.4.4
+getName</a> services are method requests that return the name of the node
+as a string.
+<H4>
+<a NAME="getField"></a>A.5.3.2 getField</H4>
+The <a HREF="servRef.html#getField">6.4.3 getField</a> service is implemented
+as two separate methods <TT>getEventIn()</TT> and <TT>getEventOut()</TT>
+which allow access to <I>eventIn</I>s and <I>eventOut</I>s but not to <I>field</I>s.
+An exposedField may be accessed as either the eventIn or eventOut portion
+separately through these two methods. The normal field name or with the
+<I>set_</I> modifier may be used with the getEventIn method. The normal
+field name or the <I>_changed</I> modifier may be used with the getEventOut
+method.
+<H4>
+<a NAME="NodeServicesDispose"></a>A.5.3.3 Dispose</H4>
+Dispose shall notify the browser that the application is no longer interested
+in this node instance and it is free to do as required with the node representation.
+Any further requests to methods of this instance of the node reference
+shall generate an InvalidNoderException.
+<H3>
+<a NAME="FieldServices"></a>A.5.4 Field services</H3>
+Field services are implemented using the BaseField interface and its derived
+interfaces.
+<H4>
+<a NAME="getAccessType"></a>A.5.4.1 getAccessType</H4>
+<a HREF="servRef.html#getAccessType">6.5.2 getAccessType</a> returns a long which
+has one of the values defined by the BaseField interface.
+<H4>
+<a NAME="FieldServicesGetType"></a>A.5.4.2 getType</H4>
+The <TT>getType</TT> method of <TT>BaseField</TT> returns a long representing
+the type of field represented. The list of legal type identifiers is defined
+in the BaseField interface. The return value of the <TT>getType()</TT>
+method shall be one of these values.
+<H4>
+<a NAME="FieldServicesGetName"></a>A.5.4.3 getName</H4>
+The <TT>getName</TT> method of <TT>BaseField</TT> returns a string containing
+the name of the field.
+<H4>
+<a NAME="getValue"></a>A.5.4.4 getValue</H4>
+The getValue service is supported only on interfaces derived from EventOut.
+It is not possible to read values from eventIn as there is no method to
+support this operation. On fields which are exposedFields, an eventOut
+derived interface must be used to access the field to read its value.
+
+<P>A get1Value method is provided for MF fields. This allows access to
+a single value out of the many values. When an attempt is made to access
+a value at an index greater than the number of items in that eventOut,
+an <TT>ArrayIndexOutOfBoundsException</TT> shall be generated.
+
+<P>Specific language bindings may define additional or overloaded getValue
+methods as appropriate for the particular language.
+<H4>
+<a NAME="setValue"></a>A.5.4.5 setValue</H4>
+The setValue service is supported only on interfaces derived from EventIn.
+It is not possible to write values from eventIn as there is no method to
+support this operation. On fields which are exposedFields, an EventIn
+derived interface must be used to write a new value.
+
+<P>A set1Value method is provided for MFFields. This allows the ability
+to change a single value of a field without having to re-create the entire
+array of values. When an attempt is made to set a value at an index greater
+than the number of items in that eventIn, an <TT>ArrayIndexOutOfBoundsException</TT>
+shall be generated.
+
+<P>Specific language bindings may define additional or overloaded setValue
+methods as appropriate for the particular language.
+<H4>
+&nbsp;<a NAME="FieldServicesRegisterInterest"></a>A.5.4.6 Register interest</H4>
+Registering interest is accomplished through the <TT>addVrmlEventListener</TT>
+method of the <TT>BaseField</TT> interface.&nbsp;<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470 ALIGN=TOP>
+<H2>
+<a NAME="IDLSpecification"></a>A.6 IDL specification</H2>
+
+<PRE>typedef sequence&lt;string&gt; stringarray;
+typedef sequence&lt;float&gt; floatarray;
+typedef sequence&lt;long&gt; longarray;
+typedef sequence&lt;double&gt; doublearray;
+typedef sequence&lt;octet&gt; bytearray;
+
+typedef sequence&lt;stringarray&gt; stringdoublearray;
+typedef sequence&lt;floatarray&gt; floatdoublearray;
+typedef sequence&lt;longarray&gt; longdoublearray;
+
+module vrml {
+&nbsp;&nbsp;&nbsp; /* forward declarations */
+&nbsp;&nbsp;&nbsp; module eai {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface Browser;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; module field {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface BaseField;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventIn;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOut;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; module event {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface BrowserEvent {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long INITIALIZED = 1;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long SHUTDOWN&nbsp;&nbsp;&nbsp; = 2;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long URL_ERROR&nbsp;&nbsp; = 3;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long CONNECTION_ERROR = 4;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long LAST_IDENTIFIER&nbsp; = 5;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; long getID();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Browser getSource();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface BrowserListener {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void browserChanged(in BrowserEvent evt);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface VrmlEvent {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; field::BaseField getSource();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double getTime();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface VrmlEventListener {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void eventOutChanged(in VrmlEvent evt);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; exception VrmlException {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; exception IllegalArgumentException {};
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; exception ArrayIndexOutOfBoundsException {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; module field {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; exception InvalidFieldException {};
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; exception InvalidEventInException {};
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; exception InvalidEventOutException {};
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; exception InvalidBrowserException {};
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; exception InvalidNodeException {};
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; exception InvalidVrmlException {};
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; exception NoSuchBrowserException {};
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; exception NotSupportedException {};
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; exception ConnectionException {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface Node {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string getType()
+              raises (InvalidNodeException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string getName()
+              raises (InvalidNodeException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eai::field::EventIn getEventIn(in string name)
+              raises (eai::field::InvalidEventInException, InvalidNodeException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eai::field::EventOut getEventOut(in string name)
+              raises (eai::field::InvalidEventOutException, InvalidNodeException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void dispose()
+              raises (InvalidNodeException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; typedef sequence&lt;Node&gt; nodearray;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface Browser {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string getName()
+               raises (InvalidBrowserException, ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string getVersion()
+               raises (InvalidBrowserException, ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; float getCurrentSpeed()
+               raises (InvalidBrowserException, ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; float getCurrentFrameRate()
+               raises (InvalidBrowserException, ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string getWorldURL()
+               raises (InvalidBrowserException, ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void replaceWorld(in nodearray node_names)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raises (IllegalArgumentException, InvalidBrowserException,
+                      ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void loadURL(in stringarray url, in stringarray parameter)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raises (InvalidBrowserException, ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setDescription(in string description)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raises (InvalidBrowserException, ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nodearray createVrmlFromString(in string vrmlSyntax)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raises (InvalidVrmlException, InvalidBrowserException,
+                      ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void createVrmlFromURL(in stringarray url, in Node node,
+                                   in string event)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raises (InvalidBrowserException, InvalidNodeException,
+                      ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Node getNode(in string name)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raises (InvalidNodeException, InvalidBrowserException,
+                      ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void addRoute(in Node fromNode, in string fromEventOut,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in Node toNode, in string toEventIn)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raises (eai::field::InvalidEventInException,
+                      eai::field::InvalidEventOutException,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InvalidBrowserException, InvalidNodeException,
+                      ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void deleteRoute(in Node fromNode, in string fromEventOut,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in Node toNode, in string toEventIn)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raises (eai::field::InvalidEventInException,
+                      eai::field::InvalidEventOutException,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InvalidBrowserException, InvalidNodeException,
+                      ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void beginUpdate()
+               raises (InvalidBrowserException, ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void endUpdate()
+               raises (InvalidBrowserException, ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void dispose();
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void addBrowserListener(in eai::event::BrowserListener l)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raises (InvalidBrowserException, ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void removeBrowserListener(in eai::event::BrowserListener l)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raises (InvalidBrowserException, ConnectionException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; module field {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface BaseField {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long SFBool&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 1;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long SFColor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 2;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long SFFloat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 3;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long SFImage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 4;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long SFInt32&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 5;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long SFNode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 6;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long SFRotation&nbsp;&nbsp; = 7;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long SFString&nbsp;&nbsp;&nbsp;&nbsp; = 8;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long SFTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 9;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long SFVec2f&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 10;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long SFVec3f&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 11;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long MFColor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 12;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long MFFloat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 13;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long MFInt32&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 14;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long MFNode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 15;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long MFRotation&nbsp;&nbsp; = 16;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long MFString&nbsp;&nbsp;&nbsp;&nbsp; = 17;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long MFTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 18;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long MFVec2f&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 19;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long MFVec3f&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 20;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long UNSET_FIELD&nbsp; = 21;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* access types */
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long EVENTIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 22;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long EVENTOUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 23;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const long EXPOSEDFIELD = 24;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; long getType();
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; long getAccessType();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string getName();
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void addVrmlEventListener(in eai::event::VrmlEventListener l);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void removeVrmlEventListener(in eai::event::VrmlEventListener l);
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; note:&nbsp; IDL does not support overloading methods, so each interface has only one
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setValue and getValue method.&nbsp; Specific language bindings are free to add additional overloaded
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; methods
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventIn: BaseField {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInMFColor: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in floatdoublearray value)
+                   raises(IllegalArgumentException,
+                          ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void set1Value(in long index, in floatarray value)
+                   raises(IllegalArgumentException,
+                          ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInMFFloat: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in floatarray value);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void set1Value(in long index, in float value)
+                   raises(ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInMFInt32: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in longarray value);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void set1Value(in long index, in long value)
+                   raises(ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInMFNode: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in nodearray node)
+                   raises(InvalidNodeException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void set1Value(in long index, in Node node)
+                   raises(InvalidNodeException, ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInMFRotation: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in floatdoublearray value)
+                   raises(ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void set1Value(in long index, in floatarray value)
+                   raises(ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInMFString: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in stringarray value);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void set1Value(in long index, in string value)
+                   raises(ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInMFTime: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in doublearray value);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void set1Value(in long index, in double value)
+                   raises(ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInMFVec2f: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in floatdoublearray value)
+                   raises(ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void set1Value(in long index, in floatarray value)
+                   raises(ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInMFVec3f: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in floatdoublearray value)
+                   raises(ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void set1Value(in long index, in floatarray value)
+                   raises(ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInSFBool: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in boolean value);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInSFColor: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in floatarray value)
+                   raises(IllegalArgumentException,
+                          ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInSFFloat: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in float value);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInSFImage: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in long width, in long height,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in long numComponents, in longarray pixels)
+                   raises(IllegalArgumentException, ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInSFInt32: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in long value);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInSFNode: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in Node value)
+                   raises(InvalidNodeException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInSFRotation: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in floatarray value)
+                   raises(ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInSFString: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in string value);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInSFTime: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in double value);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInSFVec2f: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in floatarray value)
+                   raises(ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventInSFVec3f: EventIn {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void setValue(in floatarray value)
+                   raises(ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOut {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutMField: EventOut {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; long size();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutMFColor: EventOutMField {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; floatdoublearray getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; floatarray get1Value(in long index)
+                   raises (ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutMFFloat: EventOutMField {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; floatarray getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; float get1Value(in long index)
+                   raises (ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutMFInt32: EventOutMField {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; longarray getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; long get1Value(in long index)
+                   raises (ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutMFNode: EventOutMField {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nodearray getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Node get1Value(in long index)
+                   raises (ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutMFRotation: EventOutMField {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; floatdoublearray getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; floatarray get1Value(in long index)
+                   raises (ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutMFString: EventOutMField {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; stringarray getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string get1Value(in long index)
+                   raises (ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutMFTime: EventOutMField {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; doublearray getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double get1Value(in long index)
+                   raises (ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutMFVec2f: EventOutMField {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; floatdoublearray getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; floatarray get1Value(in long index)
+                   raises (ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutMFVec3f: EventOutMField {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; floatdoublearray getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; floatarray get1Value(in long index)
+                   raises (ArrayIndexOutOfBoundsException);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutSFBool: EventOut {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; boolean getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutSFColor: EventOut {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; floatarray getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutSFFloat: EventOut {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; float getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutSFImage: EventOut {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; long getWidth();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; long getHeight();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; long getNumComponents();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; longarray getPixels();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutSFInt32: EventOut {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; long getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutSFNode: EventOut {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Node getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutSFRotation: EventOut {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; floatarray getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutSFString: EventOut {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutSFTime: EventOut {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutSFVec2f: EventOut {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; floatarray getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface EventOutSFVec3f: EventOut {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; floatarray getValue();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+&nbsp;&nbsp;&nbsp; };
+};</PRE>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470 ALIGN=TOP>
+
+</BODY>
+</HTML>

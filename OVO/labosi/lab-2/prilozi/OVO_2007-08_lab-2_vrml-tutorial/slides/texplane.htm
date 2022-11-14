@@ -1,0 +1,192 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>texplane.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Summary examples</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>texplane.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  texplane.wrl
+#  An animating textured plane
+#    by David R. Nadeau
+#
+#  This world illustrates the use of the 'TexturePlane' node type defined in
+#  the external file 'cut.wrl'.  That node creates a textured square whose
+#  texture changes based upon an input fraction.  This world animates that
+#  fraction to cause the texture to animate.
+#
+
+#
+#  Externally defined node types
+#
+EXTERNPROTO TexturePlane [
+    field MFNode textures
+    eventIn SFFloat set_fraction
+] "cut.wrl#TexturePlane"
+
+
+#
+#  Header
+#
+WorldInfo {
+    title "Animating textured plane"
+    info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+Viewpoint {
+    position 0.0 0.0 3.0
+    description "Entry view"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight TRUE
+}
+
+Background {
+    skyColor [
+        0.0 0.0 0.0
+        0.0 0.0 0.0
+        0.0 0.1 0.3
+    ]
+    skyAngle [
+        1.57,
+        1.87,
+    ]
+}
+
+
+
+#
+#  Build a box with a grid texture on the sides.  Only include the
+#  side, bottom, and end.  The cutting planes will slide back and
+#  forth within the box.
+#
+Shape {
+    appearance Appearance {
+        # no material - emissive
+        texture ImageTexture {
+            url "grill.png"
+        }
+        textureTransform TextureTransform {
+            translation 0.5 0.5
+        }
+    }
+    geometry IndexedFaceSet {
+        coord Coordinate {
+            point [
+            # Back
+                -1.0 -1.0 -0.05,
+                 1.0 -1.0 -0.05,
+                 1.0  1.0 -0.05,
+                -1.0  1.0 -0.05,
+            ]
+        }
+        coordIndex [
+            0, 1, 2, 3, -1,
+        ]
+        texCoord TextureCoordinate {
+            point [
+                0.0 0.0,
+                4.0 0.0,
+                4.0 4.0,
+                0.0 4.0,
+            ]
+        }
+        texCoordIndex [
+            0, 1, 2, 3, -1,
+        ]
+        solid FALSE
+    }
+}
+
+
+
+
+#
+#  Create two moving cutting planes, one initially at the front and
+#  the other initially at the back.
+#
+DEF Plane TexturePlane {
+    textures [
+        ImageTexture {
+            url "cp1.png"
+            repeatS FALSE
+            repeatT FALSE
+        }
+        ImageTexture {
+            url "cp2.png"
+            repeatS FALSE
+            repeatT FALSE
+        }
+        ImageTexture {
+            url "cp3.png"
+            repeatS FALSE
+            repeatT FALSE
+        }
+        ImageTexture {
+            url "cp4.png"
+            repeatS FALSE
+            repeatT FALSE
+        }
+        ImageTexture {
+            url "cp5.png"
+            repeatS FALSE
+            repeatT FALSE
+        }
+        ImageTexture {
+            url "cp6.png"
+            repeatS FALSE
+            repeatT FALSE
+        }
+        ImageTexture {
+            url "cp7.png"
+            repeatS FALSE
+            repeatT FALSE
+        }
+        ImageTexture {
+            url "cp8.png"
+            repeatS FALSE
+            repeatT FALSE
+        }
+        ImageTexture {
+            url "cp9.png"
+            repeatS FALSE
+            repeatT FALSE
+        }
+        ImageTexture {
+            url "cp10.png"
+            repeatS FALSE
+            repeatT FALSE
+        }
+    ]
+}
+
+DEF Clock TimeSensor {
+    cycleInterval 3.0
+    startTime 1.0
+    stopTime 0.0
+    loop TRUE
+}
+
+ROUTE Clock.fraction_changed TO Plane.set_fraction
+</FONT></PRE>
+</BODY>
+</HTML>

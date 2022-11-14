@@ -1,0 +1,83 @@
+<HTML>
+<HEAD>
+<!-- Amd 1 joedw 12/08/02 -->
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 2.0 Win">
+  <TITLE>VRML97, ISO/IEC 14772-1:1997 -- 1 Scope</TITLE>
+</HEAD>
+<BODY>
+
+<H1><CENTER><IMG SRC="../Images/vrml97.gif" ALIGN="BOTTOM" WIDTH="470" 
+HEIGHT="85" NATURALSIZEFLAG="0" ALT="VRML97 logo"></CENTER></H1>
+
+<P><CENTER><B><FONT SIZE=+2>Information technology --<BR>
+Computer graphics and image processing --<BR>
+The Virtual Reality Modeling Language --<BR>
+Part 1: Functional specification and UTF-8 encoding</FONT></B></CENTER></P>
+
+<H1><CENTER>1 Scope</CENTER></H1>
+
+<H1><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM" ALT="--- VRML separator bar ---"></H1>
+
+<P>ISO/IEC 14772, the Virtual Reality Modeling Language (VRML), defines
+a file format that integrates 3D graphics and multimedia. Conceptually,
+each VRML file is a 3D time-based space that contains graphic and aural
+objects that can be dynamically modified through a variety of mechanisms.
+This part of ISO/IEC 14772 defines a primary set of objects and mechanisms
+that encourage composition, encapsulation, and extension.</P>
+
+<P>The semantics of VRML describe an abstract functional behaviour of time-based,
+interactive 3D, multimedia information. ISO/IEC 14772 does not define physical
+devices or any other implementation-dependent concepts (e.g., screen resolution
+and input devices). ISO/IEC 14772 is intended for a wide variety of devices
+and applications, and provides wide latitude in interpretation and implementation
+of the functionality. For example, ISO/IEC 14772 does not assume the existence
+of a mouse or 2D display device.</P>
+
+<P>Each VRML file:</P>
+
+<P><!--NOEDIT--><OL START="1" TYPE="a">
+  <LI>implicitly establishes a world coordinate space for all objects defined
+  in the file, as well as all objects included by the file;
+  <LI>explicitly defines and composes a set of 3D and multimedia objects;
+  <LI>can specify hyperlinks to other files and applications;
+  <LI>can define object behaviours.
+</OL><!--/NOEDIT--></P>
+
+<P>An important characteristic of VRML files is the ability to compose files
+together through inclusion and to relate files together through hyperlinking.
+For example, consider the file <I>earth.wrl</I> which specifies a world
+that contains a sphere representing the earth. This file may also contain
+references to a variety of other VRML files representing cities on the earth
+(e.g., file <I>paris.wrl)</I>. The enclosing file, <I>earth.wrl</I>, defines
+the coordinate system that all the cities reside in. Each city file defines
+the world coordinate system that the city resides in but that becomes a
+local coordinate system when contained by the earth file.</P>
+
+<P>Hierarchical file inclusion enables the creation of arbitrarily large,
+dynamic worlds. Therefore, VRML ensures that each file is completely described
+by the objects contained within it.</P>
+
+<P>Another essential characteristic of VRML is that it is intended to be
+used in a distributed environment such as the World Wide Web. There are
+various objects and mechanisms built into the language that support multiple
+distributed files, including:</P>
+
+<P><!--NOEDIT--><OL START="5" TYPE="a">
+  <LI>in-lining of other VRML files;
+  <LI>hyperlinking to other files;
+  <LI>using established Internet and ISO standards for other file formats;
+  <LI>defining a compact syntax.
+</OL><!--/NOEDIT--></P>
+
+<p>
+VRML geospatial capabilities provide precise association between
+objects within a VRML world and physical locations on the Earth.
+</p>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM" ALT="--- VRML separator bar ---"></P>
+
+<PRE><FONT SIZE=-1>http://www.vrml.org/Specifications/VRML97/part1/scope.html</FONT></PRE>
+</BODY>
+</HTML>

@@ -1,0 +1,26 @@
+#VRML V2.0 utf8
+
+DEF TRANS Transform {
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.84 0.86 0.042
+				}
+			}
+			geometry Box {
+				size 2.0 2.0 2.0
+			}
+		}
+	]
+}
+DEF TIMER TimeSensor {
+	loop TRUE
+	cycleInterval 2.0
+}
+DEF ROTATOR OrientationInterpolator {
+	key [ 0, 0.5, 1 ]
+	keyValue [ 0 1 0 0, 0 1 0 3.141, 0 1 0 6.282 ]
+}
+ROUTE TIMER.fraction_changed TO ROTATOR.set_fraction
+ROUTE ROTATOR.value_changed TO TRANS.set_rotation

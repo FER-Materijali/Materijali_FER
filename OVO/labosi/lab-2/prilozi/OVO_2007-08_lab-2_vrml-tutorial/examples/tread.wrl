@@ -1,0 +1,111 @@
+#VRML V2.0 utf8
+#
+#  Stair Tread
+#  tread.wrl
+#        by David R. Nadeau
+#
+#  This file builds a stair tread (a marble slab) and decorations for the
+#  tread (a sphere and pyramid at either end).  The tread is used in the
+#  larger example "doorway.wrl"
+#
+
+#
+#  Stair tread
+#
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1.0 1.0 1.0
+                }
+                texture ImageTexture {
+                    url "granit_g.jpg"
+                }
+                textureTransform TextureTransform {
+                    scale 0.25 0.25
+                }
+            }
+            geometry Box {
+                size 10.0 0.4 2.0
+            }
+        }
+
+#
+#  Stair archway
+#
+        Transform {
+            translation -4.0 1.0 0.0
+            children [
+                DEF Ball Shape {
+                    appearance Appearance {
+                        material Material {
+                            ambientIntensity 0.0
+                            diffuseColor 1.0 1.0 1.0
+                            specularColor 0.7 0.7 0.7
+                            shininess 0.2
+                        }
+                        texture DEF Marble ImageTexture {
+                            url "marble_g.jpg"
+                        }
+                    }
+                    geometry Sphere {
+                        radius 1.0
+                    }
+                }
+            ]
+        }
+        Transform {
+            translation -4.0 2.0 0.0
+            children [
+                DEF Pyramid Shape {
+                    appearance Appearance {
+                        material Material {
+                            ambientIntensity 0.0
+                            diffuseColor 1.0 1.0 1.0
+                            specularColor 0.7 0.7 0.7
+                            shininess 0.2
+                        }
+                        texture USE Marble
+                    }
+                    geometry IndexedFaceSet {
+                        coord Coordinate {
+                            point [
+                                -0.8 0.0  0.8,
+                                 0.8 0.0  0.8,
+                                 0.8 0.0 -0.8,
+                                -0.8 0.0 -0.8,
+                                 0.0 4.0  0.0,
+                            ]
+                        }
+                        coordIndex [
+                            0, 3, 2, 1, -1,
+                            0, 1, 4, -1,
+                            1, 2, 4, -1,
+                            2, 3, 4, -1,
+                            3, 0, 4, -1,
+                        ]
+                        texCoord TextureCoordinate {
+                            point [
+                                0.0 0.2, 1.0 0.2, 0.5 1.0,
+                                0.0 0.0, 1.0 0.0, 1.0 1.0, 0.0 1.0,
+                            ]
+                        }
+                        texCoordIndex [
+                            3, 4, 5, 6, -1,
+                            0, 1, 2, -1,
+                            0, 1, 2, -1,
+                            0, 1, 2, -1,
+                            0, 1, 2, -1,
+                        ]
+                    }
+                }
+            ]
+        }
+
+        Transform {
+            translation 4.0 1.0 0.0
+            children [ USE Ball ]
+        }
+        Transform {
+            translation 4.0 2.0 0.0
+            children [ USE Pyramid ]
+        }

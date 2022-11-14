@@ -1,0 +1,26 @@
+#VRML V2.0 utf8
+
+DEF XForm Transform { 
+    children [ 
+        Shape {
+            appearance Appearance {
+                material Material { diffuseColor 1 0 0 }
+            }
+            geometry Box {} 
+        }
+        DEF Clicker TouchSensor {}
+
+        # Run once for 2 sec.
+        DEF TimeSource TimeSensor { cycleInterval 2.0 } 
+
+        # Animate one full turn about Y axis:
+        DEF Animation OrientationInterpolator {
+            key      [ 0,      .33,       .66,        1.0 ]
+            keyValue [ 0 1 0 0, 0 1 0 2.1, 0 1 0 4.2, 0 1 0 0 ]
+        }
+    ]
+}
+
+ROUTE Clicker.touchTime TO TimeSource.startTime
+ROUTE TimeSource.fraction_changed TO Animation.set_fraction
+ROUTE Animation.value_changed TO XForm.rotation

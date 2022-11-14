@@ -1,0 +1,56 @@
+<polozaj oka => 0,0,2:
+
+<velicina prozora => 2:
+<rezolucija prozora => 400:
+
+<pozicija svijetla => 0,2,-2:
+<broj objekata u sceni => 4:
+
+<parametri 1. kugle>
+	<polozaj => 0,-1,-1.5:
+	<radius => 0.5:
+	<doprinosi zraka>
+		<udio reflektirane zrake => 0.6:
+		<udio refraktirane zrake => 0.8:
+	<koeficijenti materijala>
+		<ambientna komponenta ka=>0.4, 0.4, 0.4:
+		<difuzna komponenta kd=>0.7, 0.7, 0.7:
+		<spekularna komponenta ks=>0.6, 0.6, 0.6:
+				<n =>10:
+		<faktor refrakcije ni=> 1.03:
+<parametri 2. kugle>
+	<polozaj => 1,-1,-4:
+	<radius => 1:
+	<doprinosi zraka>
+		<udio reflektirane zrake => 0.2:
+		<udio refraktirane zrake => 0:
+	<koeficijenti materijala>
+		<ambientna komponenta ka=>0.1, 1, 0.1:
+		<difuzna komponenta kd=>0.8, 0.8, 0.8:
+		<spekularna komponenta ks=>0.5, 0.5, 0.5:
+				<n =>10:
+		<faktor refrakcije ni=> 1.5:
+<parametri 3. kugle>
+	<polozaj => -1,-1,-4:
+	<radius => 1:
+	<doprinosi zraka>
+		<udio reflektirane zrake => 1:
+		<udio refraktirane zrake => 0:
+	<koeficijenti materijala>
+		<ambientna komponenta ka=>0.2, 0.2, 1:
+		<difuzna komponenta kd=>0.8, 0.8, 0.8:
+		<spekularna komponenta ks=>0.2, 0.2, 0.2:
+				<n =>10:
+		<faktor refrakcije ni=> 1.2:
+<parametri 4. kugle>
+	<polozaj => 0.6,0.2,-3.4:
+	<radius => 0.2:
+	<doprinosi zraka>
+		<udio reflektirane zrake => 0.2:
+		<udio refraktirane zrake => 0:
+	<koeficijenti materijala>
+		<ambientna komponenta ka=>1, 0.1, 1:
+		<difuzna komponenta kd=>0.7, 0.7, 0.7:
+		<spekularna komponenta ks=>0.7, 0.7, 0.7:
+				<n =>10:
+		<faktor refrakcije ni=> 1.2

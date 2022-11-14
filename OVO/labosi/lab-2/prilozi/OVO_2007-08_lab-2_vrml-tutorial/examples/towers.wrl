@@ -1,0 +1,297 @@
+#VRML V2.0 utf8
+#
+#  The Tower
+#  towers.wrl
+#        by David R. Nadeau
+#
+#  This world illustrates the use of translation, rotation, and scaling to
+#  build a multi-level tower.
+#
+#  A tower is built starting with a single pole and archway inlined
+#  from "towerprt.wrl".  This part is instanced 12 times around the perimeter
+#  of the tower by doing successive rotations.  Add a cylinder for the
+#  ceiling, and a level is complete.
+#
+#  A level is then instanced three more times to build the next three upper
+#  levels of the tower.  Each instance moves up to the next level, then
+#  scales the generic level down a bit and puts it there.  This repeated
+#  scaling is what gives the tower it's diminishing size for the upper
+#  levels.
+#
+#  A glowing, rotating cube is added to the top of the generic tower.  An
+#  OrientationInterpolator keeps the cube rotating.
+#
+#  Things to experiment with:
+#        Add sound!
+#
+#        Add a spiraling ramp that leads to the upper levels.  Perhaps put
+#        something interesting on each level.  Perhaps make the rotating
+#        cube on top do something... such as be an Anchor leading to
+#        another world!
+#
+
+WorldInfo {
+    title "The Tower"
+    info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+Viewpoint {
+    position 0.0 1.6 20.0
+    orientation 1.0 0.0 0.0 0.2
+    description "Entry View"
+}
+NavigationInfo {
+    type [ "WALK", "ANY" ]
+    headlight FALSE
+    speed 2.0
+}
+
+Background {
+    skyColor [
+        0.0 0.0 0.0,
+        0.0 0.0 0.0,
+        0.0 0.5 0.0,
+    ]
+    skyAngle [
+        1.37,
+        1.57,
+    ]
+}
+
+
+#
+#  Generic lighting
+#
+DirectionalLight {
+    direction 1.0 -0.5 -1.0
+    color 1.0 1.0 1.0
+    ambientIntensity 0.2
+    intensity 1.0
+}
+DirectionalLight {
+    direction -1.0 1.0 -1.0
+    color 0.0 0.3 1.0
+    ambientIntensity 0.2
+    intensity 0.7
+}
+
+
+#
+#  Tower
+#
+Transform {
+    scale 0.4 0.4 0.4
+    children [
+#
+#  Bottom tower level
+#
+    DEF OneLevel Transform {
+        translation 0.0 3.5 0.0
+        scale 2.0 1.0 2.0
+        children [
+    #
+    #  Half a level using 6 pole-and-arch parts in a half
+    #  circle
+    #
+        DEF HalfLevel Group {
+            children [
+                DEF Part Transform {
+                    translation 0.0 0.0 7.73
+                    rotation 0.0 1.0 0.0 0.26
+                    children [
+                        Inline {
+                            url "towerprt.wrl"
+                        }
+                    ]
+                }
+                Transform {
+                    rotation 0.0 1.0 0.0 0.52
+                    children [ USE Part ]
+                }
+                Transform {
+                    rotation 0.0 1.0 0.0 1.05
+                    children [ USE Part ]
+                }
+                Transform {
+                    rotation 0.0 1.0 0.0 1.57
+                    children [ USE Part ]
+                }
+                Transform {
+                    rotation 0.0 1.0 0.0 2.09
+                    children [ USE Part ]
+                }
+                Transform {
+                    rotation 0.0 1.0 0.0 2.62
+                    children [ USE Part ]
+                }
+            ]
+        }
+
+    #
+    #  Another half a level in order to complete a full circle
+    #
+        Transform {
+            rotation 0.0 1.0 0.0 3.14
+            children [ USE HalfLevel ]
+        }
+
+    #
+    #  A ceiling for the level
+    #
+        Transform {
+            translation 0.0 3.5 0.0
+            children [
+                Shape {
+                    appearance Appearance {
+                        material Material {
+                            ambientIntensity 0.6
+                        }
+                        texture ImageTexture {
+                            url "marble_g.jpg"
+                        }
+                        textureTransform TextureTransform {
+                            scale 1.0 1.0
+                        }
+                    }
+                    geometry Cylinder {
+                        height 0.05
+                        radius 8.2
+                        side FALSE
+                    }
+                }
+            ]
+        }
+
+        ]
+    }
+
+#
+#  A fake shadow under the first level
+#
+    Shape {
+        appearance Appearance {
+            material Material {
+                diffuseColor 0.0 0.0 0.0
+                transparency 0.25
+            }
+        }
+        geometry Cylinder {
+            height 0.05
+            radius 16.4
+            side FALSE
+            bottom FALSE
+        }
+    }
+
+
+#
+#  Second tower level
+#
+    Transform {
+        translation 0.0 7.0 0.0
+        rotation 0.0 1.0 0.0 0.26
+        scale 0.8 0.9 0.8
+        children [ USE OneLevel ]
+    }
+
+
+#
+#  Third tower level
+#
+    Transform {
+        translation 0.0 13.3 0.0
+        scale 0.6 0.8 0.6
+        children [ USE OneLevel ]
+    }
+
+
+#
+#  Fourth tower level
+#
+    Transform {
+        translation 0.0 18.9 0.0
+        rotation 0.0 1.0 0.0 0.26
+        scale 0.4 0.7 0.4
+        children [ USE OneLevel ]
+    }
+
+
+
+#
+#  Glowing thing
+#
+    DEF Thing Transform {
+        translation 0.0 31.0 0.0
+        rotation 0.0 1.0 0.0 0.0
+        children [
+            Transform {
+                rotation -1.0 1.0 1.0 0.785
+                children [
+                    Shape {
+                        appearance Appearance {
+                            material Material {
+                                ambientIntensity 1.0
+                                diffuseColor 0.0 1.0 0.0
+                            }
+                            texture DEF BlurImage ImageTexture {
+                                url "fire_g.jpg"
+                            }
+                        }
+                        geometry Box {
+                            size 3.0 3.0 3.0
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    ]
+}
+
+
+#
+#  Floor
+#
+Shape {
+    appearance Appearance {
+        material Material {
+            ambientIntensity 0.8
+            diffuseColor 0.0 1.0 0.3
+        }
+        texture USE BlurImage
+        textureTransform TextureTransform {
+            scale 5.0 5.0
+        }
+    }
+    geometry IndexedFaceSet {
+        coord Coordinate {
+            point [
+                -40.0 0.0  80.0,
+                 40.0 0.0  80.0,
+                 40.0 0.0 -40.0,
+                -40.0 0.0 -40.0,
+            ]
+        }
+        coordIndex [ 0, 1, 2, 3, -1, ]
+        solid TRUE
+    }
+}
+
+
+#
+#  Animation control
+#
+DEF ThingTimer TimeSensor {
+    cycleInterval 4.0
+    loop TRUE
+    startTime 1.0
+    stopTime 0.0
+}
+
+DEF ThingSpinner OrientationInterpolator {
+    key [ 0.0, 0.5, 1.0 ]
+    keyValue [ 0.0 1.0 0.0 0.0, 0.0 1.0 0.0 3.14, 0.0 1.0 0.0 6.28 ]
+}
+
+ROUTE ThingTimer.fraction_changed TO ThingSpinner.set_fraction
+ROUTE ThingSpinner.value_changed  TO Thing.set_rotation

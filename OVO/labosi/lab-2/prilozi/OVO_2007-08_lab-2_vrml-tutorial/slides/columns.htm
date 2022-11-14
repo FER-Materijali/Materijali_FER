@@ -1,0 +1,203 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>columns.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Summary examples</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>columns.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  columns.wrl
+#  Columns and torches
+#    by David R. Nadeau
+#
+#  This world uses an EXTERNPROTO to reference an externally defined
+#  'Torch' node #  with an animated flame.  That torch is then placed
+#  on a column, which is in turn instanced multiple times to form a
+#  double row of columns.  A glowing window at the end creates a goal
+#  for the column row... whatever it is.
+#
+
+EXTERNPROTO Torch [ ] "atorch.wrl#Torch"
+
+WorldInfo {
+    title "Columns and torches"
+    info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+DEF Entry Viewpoint {
+    position 0.0 1.6 10.0
+    description "Entry view"
+}
+
+NavigationInfo {
+    type [ "WALK", "ANY" ]
+    headlight FALSE
+    speed 4.0
+}
+
+
+#
+#  Background and fog (both black)
+#    These forces the lighting to dim in the distance, making the
+#    world seem more real
+#
+Background {
+    skyColor [ 0.0 0.0 0.0 ]
+}
+
+
+#
+#  Lights - roughly one for each pair of torches on columns
+#
+PointLight {
+    color 1.0 1.0 1.0
+    ambientIntensity 0.0
+    intensity 1.0
+    location 0.0 0.5 -6.0
+}
+PointLight {
+    color 1.0 0.8 0.5
+    ambientIntensity 0.0
+    intensity 1.0
+    location 0.0 0.5 0.0
+}
+PointLight {
+    color 0.8 0.0 0.0
+    ambientIntensity 0.0
+    intensity 1.0
+    location 0.0 0.5 6.0
+}
+
+
+#
+#  Columns
+#
+DEF ColumnRow Transform {
+    translation -1.5 0.0 0.0
+    children [
+        DEF ColumnAndTorch Transform {
+            rotation 0.0 1.0 0.0  1.571
+            children [
+                DEF Column Transform {
+                    scale 0.5 0.7 0.5
+                    children Inline { url "column.wrl" }
+                }
+                Transform {
+                    translation 0.0 2.0 0.15
+                    scale 0.5 0.5 0.5
+                    children Torch { }
+                }
+            ]
+        }
+        Transform { translation 0.0 0.0 -9.0 children USE Column }
+        Transform { translation 0.0 0.0 -6.0 children USE ColumnAndTorch }
+        Transform { translation 0.0 0.0 -3.0 children USE Column }
+        Transform { translation 0.0 0.0  3.0 children USE Column }
+        Transform { translation 0.0 0.0  6.0 children USE ColumnAndTorch }
+        Transform { translation 0.0 0.0  9.0 children USE Column }
+    ]
+}
+Transform {
+    rotation 0.0 1.0 0.0 3.14159
+    children USE ColumnRow
+}
+
+
+#
+#  Window
+#
+Transform {
+    translation 0.0 1.5 -9.0
+    scale 0.5 0.5 0.5
+    children [
+        Shape {
+            appearance Appearance {
+                material NULL  # emissive texturing
+                texture ImageTexture { url "window.jpg" }
+            }
+            geometry IndexedFaceSet {
+                coord Coordinate {
+                    point [
+                        -1.5 0.0 0.0,
+                         1.5 0.0 0.0,
+                         1.5 3.0 0.0,
+                        -1.5 3.0 0.0,
+                    ]
+                }
+                solid FALSE
+                coordIndex [ 0, 1, 2, 3 ]
+		texCoord TextureCoordinate {
+			point [
+				0.0 0.0,
+				1.0 0.0,
+				1.0 1.0,
+				0.0 1.0,
+			]
+		}
+		texCoordIndex [ 0, 1, 2, 3 ]
+            }
+        }
+    ]
+}
+
+
+#
+#  Floor
+#    Use an elevation grid so that we get a grid of polygons that will
+#    be individually lit.  This insures that we get bright spots where
+#    the lights are, which adds realism and depth to the world.
+#
+Transform {
+    translation -3.5 0.0 -12.0
+    children Shape {
+        appearance Appearance {
+            material Material { ambientIntensity 0.5 }
+            texture ImageTexture { url "stone2.jpg" }
+            textureTransform TextureTransform { scale 4.0 15.0 }
+        }
+        geometry ElevationGrid {
+            xDimension 8
+            zDimension 15
+            xSpacing 1.0
+            zSpacing 2.0
+            height [
+                0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0,
+                0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0,
+                0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0,
+                0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0,
+                0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0,
+                0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0,
+                0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0,
+                0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0,
+                0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0,
+                0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0,
+                0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0,
+                0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0,
+                0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0,
+                0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0,
+                0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0,
+            ]
+            solid FALSE
+        }
+    }
+}
+</FONT></PRE>
+</BODY>
+</HTML>

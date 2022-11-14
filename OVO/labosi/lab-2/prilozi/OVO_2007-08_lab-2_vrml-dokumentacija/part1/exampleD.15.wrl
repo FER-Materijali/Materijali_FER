@@ -1,0 +1,98 @@
+#VRML V2.0 utf8
+
+EXTERNPROTO Shuttle [ 
+    field        SFTime  rate
+    field        SFFloat distance
+    field        MFNode  children
+    exposedField SFTime  startTime
+    exposedField SFTime  stopTime
+    field        SFBool  loop
+]
+"exampleD.14.wrl#Shuttle"
+
+EXTERNPROTO Pendulum [
+    field        SFTime  rate
+    field        SFFloat maxAngle
+    field        MFNode  children
+    exposedField SFTime  startTime
+    exposedField SFTime  stopTime
+    field        SFBool  loop
+]
+"exampleD.14.wrl#Pendulum"
+
+Viewpoint {
+    position 0 0 150
+}
+
+DEF Near ProximitySensor { size 200 200 200 } 
+
+DEF Walk Shuttle {
+    stopTime 1
+    rate 10
+    distance 20
+
+    children [
+	# The Robot
+        Transform {
+            rotation 0 1 0 1.57
+            
+	    children [ 
+		Shape {
+		    appearance DEF A Appearance {
+			material Material { 
+			    diffuseColor 0 0.5 0.7
+			}
+		    }
+		    geometry Box { } # head
+		}
+		Transform {
+		    scale 1 5 1
+		    translation 0 -5 0
+		    children
+			Shape {
+			    appearance USE A
+			    geometry Sphere { } 
+			} # body
+		}
+		Transform {
+		    rotation 0 1 0 1.57
+		    translation 1.5 0 0
+	
+		    children DEF Arm Pendulum {
+                        stopTime 1
+			rate 1
+			maxAngle 0.52 # 30 degrees
+	
+			children [ 
+			    Transform {
+				translation 0 -3 0
+	
+				children Shape { 
+			            appearance USE A
+				    geometry Cylinder { 
+			                height 4
+					radius 0.5
+			            }
+				}
+                            }
+                        ]
+                    }
+                }
+
+                # duplicate arm on other side and flip so it swings
+                # in opposition
+                Transform {
+                    rotation 0 -1 0 1.57
+                    translation -1.5 0 0
+                    children USE Arm
+                }
+            ]
+        }
+    ]
+}
+
+ROUTE Near.enterTime TO Walk.startTime
+ROUTE Near.enterTime TO Arm.startTime
+ROUTE Near.exitTime TO Walk.stopTime
+ROUTE Near.exitTime TO Arm.stopTime
+

@@ -1,0 +1,176 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>squisher.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Animating transforms</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>squisher.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  squisher.wrl
+#  Squishy ball
+#	by David R. Nadeau
+#
+#  This world illustrates the use of orientation, color, and position
+#  interpolators.  The world contains left, center, and right balls.
+#  The left and right balls swing back and forth, pivoting about a
+#  common point above the center ball.  Each time the left and right
+#  balls swing inward, striking the center ball, the center ball squishes
+#  and turns red.
+#
+#  To make this effect, two orientation interpolators swing the left
+#  and right balls back and forth.  A position interpolator's output
+#  is used as a scale value to squish the center ball.  Finally, a
+#  color interpolator repeatedly turns the center ball red, then blue.
+
+WorldInfo {
+    title "Squishy ball"
+    info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+DEF Entry Viewpoint {
+    position 0.0 1.6 10.0
+    description "Entry View"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight TRUE
+}
+
+Background {
+    skyColor [ 0.0 0.0 0.0 ]
+}
+
+
+#
+# Center ball
+#
+Transform {
+	center 0.0 4.0 0.0
+	children [
+		DEF Squishee Transform {
+			children Shape {
+				appearance Appearance {
+					material DEF Coloree Material { }
+				}
+				geometry Sphere { }
+			}
+		}
+		DEF Stick Transform {
+			translation 0.0 2.0 0.0
+			children Shape {
+				appearance Appearance {
+					material Material { }
+				}
+				geometry Cylinder {
+					height 4.0
+					radius 0.1
+				}
+			}
+		}
+	]
+}
+
+#
+#  Left and right balls
+#
+DEF Swingee1 Transform {
+	center 0.0 4.0 0.0
+	children [
+		DEF Ball Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.0 0.5 1.0
+				}
+			}
+			geometry Sphere { }
+		}
+		USE Stick
+	]
+}
+DEF Swingee2 Transform {
+	center 0.0 4.0 0.0
+	children [
+		USE Ball
+		USE Stick
+	]
+}
+
+
+#
+#  Animation
+#
+DEF Clock TimeSensor {
+	cycleInterval 2.0
+	loop TRUE
+	startTime 1.0
+	stopTime 0.0
+}
+
+DEF Swinger1 OrientationInterpolator {
+	key [ 0.0, 0.5, 1.0 ]
+	keyValue [
+		0.0 0.0 1.0 -0.5,
+		0.0 0.0 1.0 -0.2,
+		0.0 0.0 1.0 -0.5,
+	]
+}
+
+ROUTE Clock.fraction_changed TO Swinger1.set_fraction
+ROUTE Swinger1.value_changed TO Swingee1.set_rotation
+
+DEF Swinger2 OrientationInterpolator {
+	key [ 0.0, 0.5, 1.0 ]
+	keyValue [
+		0.0 0.0 1.0  0.5,
+		0.0 0.0 1.0  0.2,
+		0.0 0.0 1.0  0.5,
+	]
+}
+
+ROUTE Clock.fraction_changed TO Swinger2.set_fraction
+ROUTE Swinger2.value_changed TO Swingee2.set_rotation
+
+DEF Squisher PositionInterpolator {
+	key [ 0.0, 0.5, 1.0 ]
+	keyValue [
+		1.0 1.0 1.0,
+		0.5 1.4 1.4,
+		1.0 1.0 1.0,
+	]
+}
+
+ROUTE Clock.fraction_changed TO Squisher.set_fraction
+ROUTE Squisher.value_changed TO Squishee.set_scale
+
+DEF Colorer ColorInterpolator {
+	key [ 0.0, 0.5, 1.0 ]
+	keyValue [
+		0.0 0.5 1.0,
+		1.0 0.0 0.0,
+		0.0 0.5 1.0,
+	]
+}
+
+ROUTE Clock.fraction_changed TO Colorer.set_fraction
+ROUTE Colorer.value_changed  TO Coloree.set_diffuseColor
+</FONT></PRE>
+</BODY>
+</HTML>

@@ -1,0 +1,176 @@
+#VRML V2.0 utf8
+
+WorldInfo 
+{
+    title "Suncev sustav"
+}
+
+Viewpoint  #	pozicija odakle se promatra scena 
+{
+    position -12.0 10.0 40.0
+    orientation -0.5 -0.5 0.0 0.4
+}
+Background {
+    frontUrl  "Svemir.jpg"	#Postavljam background sliku oko cijele scene
+	backUrl   "Svemir.jpg"
+    leftUrl   "Svemir.jpg"
+    rightUrl  "Svemir.jpg"
+    topUrl    "Svemir.jpg"
+    bottomUrl "Svemir.jpg"
+}
+
+DEF Sve Transform			#	Cvor koji se sastoji od djeteta "Sunce" i "Sustav_Zemlja"
+{
+	children
+	[
+		DEF Sunce Transform	#	Definiram oblik,velicinu i izgled Sunca, dijete "Sve" cvora
+		{
+			scale 6.96 6.96 6.96
+			children
+			[
+				DEF SUNCE Shape
+				{
+					appearance Appearance
+					{
+						material Material
+						{
+							diffuseColor 0.84 0.86 0.042
+						}
+						
+					}
+					geometry Sphere{}
+				}
+			]
+		}
+	,
+	DEF Sustav_Zemlja Transform	#Dijete "Sve" cvora. Sadrzi djecu "Zemlja" i "Sustav_Mjesec"
+	{
+		translation 14.96 0.0 0.0
+		rotation 1.0 0.0 0.0 0.0
+		
+		children
+		[
+			DEF Zemlja Transform	#	Definiram oblik, velicinu i izgled Zemlje. Dijete cvora "Sustav_Zemlja"
+			{
+				scale 0.63 0.63 0.63
+				children
+				[
+					DEF ZEMLJA Shape
+					{
+						appearance Appearance
+						{
+							material Material
+							{
+								diffuseColor 0.0 0.5 0.75
+							}
+							
+						}
+						geometry Sphere {}
+					}
+				]
+			}
+		,
+		DEF Sustav_Mjesec Transform	# Dijete cvora "Sustav_Zemlja". Sadrzi u sebi dijete "Mjesec".
+		{
+			translation 1.0 0.0 0.0
+			rotation 1.0 0.0 0.0 0.0
+			children
+			[
+				DEF Mjesec Transform	#	Definiram oblik, velicinu i izgled Mjeseca. Dijete cvora "Sustav_Mjesec"
+				{
+					scale 0.17 0.17 0.17
+					children
+					[
+						DEF MJESEC Shape
+						{
+							appearance Appearance
+							{
+								material Material
+								{
+									diffuseColor 0.75 0.75 0.75
+								}
+								
+							}
+							geometry Sphere{}
+						}
+					]
+				}
+			]
+		}
+		]
+	}
+	]
+}
+
+#Timeri----------------------------------------------------------
+
+DEF TIMER1 TimeSensor	#	Timer koji ce koristiti cvor "Sve" za rotaciju svog sustava oko y-osi
+{
+	loop TRUE
+	cycleInterval 60.0
+}
+
+DEF TIMER2 TimeSensor 	#	Timer koji ce koristiti cvor "Sustav_Zemlja" za rotaciju svog sustava oko y-osi
+{
+	loop TRUE
+	cycleInterval 4.83
+}
+
+DEF TIMER_ZEMLJE TimeSensor	#	Timer koji ce koristiti cvor "Zemlja" za rotaciju svog sustava oko y-osi.
+{							#	cycleInterval je manji od onoga u "TIMER2" jer zelimo da se Zemlja okrece brze nego sto Mjesec kruzi oko nje
+	loop TRUE
+	cycleInterval 0.161
+}
+
+DEF TIMER_SUNCA TimeSensor	#	Timer koji ce koristiti cvor "Zemlja" za rotaciju svog sustava oko y-osi.
+{							#	cycleInterval je manji od onoga u "TIMER2" jer zelimo da se Zemlja okrece brze nego sto Mjesec kruzi oko nje
+	loop TRUE
+	cycleInterval 4.1
+}
+
+#Interpolatori---------------------------------------------------
+
+DEF SVE OrientationInterpolator 	#interpolatori za cvorove, za vrtnju po y-osi
+{
+	key [ 0, 0.5, 1 ]
+	keyValue [ 0 1 0 0, 0 1 0 3.141, 0 1 0 6.282 ]
+}
+DEF SUNCE OrientationInterpolator		#ovdje je velicina kuta negativna jer zelimo ponistiti vrtnju Sunca (Sunce se vrti zbog cvora "Sve", on je njegovo dijete)
+{
+	key [ 0, 0.5, 1 ]
+	keyValue [ 0 1 0 0, 0 1 0 3.141, 0 1 0 6.282 ]
+}
+
+DEF SUSTAV_ZEMLJA OrientationInterpolator
+{
+	key [ 0, 0.5, 1 ]
+	keyValue [ 0 1 0 0, 0 1 0 3.141, 0 1 0 6.282 ]
+}
+
+DEF ZEMLJA OrientationInterpolator
+{
+	key [ 0, 0.5, 1 ]
+	keyValue [ 0 1 0 0, 0 1 0 3.141, 0 1 0 6.282 ]
+}
+
+
+
+#Vrtnja Zemlje oko Sunca-----------------------------------------
+ROUTE TIMER1.fraction_changed TO SVE.set_fraction
+ROUTE SVE.value_changed TO Sve.set_rotation
+
+ROUTE TIMER_SUNCA.fraction_changed TO SUNCE.set_fraction
+ROUTE SUNCE.value_changed TO Sunce.set_rotation
+
+
+
+#Vrtnja Mjeseca oko Zemlje---------------------------------------
+ROUTE TIMER2.fraction_changed TO SUSTAV_ZEMLJA.set_fraction
+ROUTE SUSTAV_ZEMLJA.value_changed TO Sustav_Zemlja.set_rotation
+
+ROUTE TIMER_ZEMLJE.fraction_changed TO ZEMLJA.set_fraction
+ROUTE ZEMLJA.value_changed TO Zemlja.set_rotation
+
+
+
+						

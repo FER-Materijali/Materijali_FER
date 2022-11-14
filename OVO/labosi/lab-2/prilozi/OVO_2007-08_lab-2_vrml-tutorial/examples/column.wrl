@@ -1,0 +1,148 @@
+#VRML V2.0 utf8
+#
+#  Gothic marble column
+#  column.wrl
+#        by David R. Nadeau
+#
+#  This file builds a column, such as might be found in gothic architecture.
+#  The column is used in multiple other examples.
+#
+
+#
+#  Column base
+#
+Collision {
+    collide FALSE
+    children [
+        Transform {
+            translation 0.0 0.2 0.0
+            children [
+                Shape {
+                    appearance Appearance {
+                        material DEF MarbleMaterial Material {
+                            ambientIntensity 0.4
+                        }
+                        texture DEF MarbleImage ImageTexture {
+                            url "marble_g.jpg"
+                        }
+                        textureTransform TextureTransform {
+                            translation 0.2 0.2
+                            rotation 0.1
+                            scale 1.0 0.1
+                        }
+                    }
+                    geometry Box { size 0.9 0.4 0.9 }
+                }
+            ]
+        }
+    ]
+}
+
+
+
+#
+#  Main column
+#
+        Transform {
+            translation 0.0 2.5 0.0
+            children [
+                Shape {
+                    appearance Appearance {
+                        material USE MarbleMaterial
+                        texture USE MarbleImage
+                    }
+                    geometry Cylinder {
+                        height 4.2
+                        radius 0.4
+                        bottom FALSE
+                        top FALSE
+                    }
+                }
+            ]
+        }
+
+
+
+
+#
+#  Column top
+#
+
+Collision {
+    collide FALSE
+    children [
+        Transform {
+            translation 0.0 4.6 0.0
+            children [
+                Shape {
+                    appearance Appearance {
+                        material USE MarbleMaterial
+                        texture USE MarbleImage
+                        textureTransform TextureTransform {
+                            translation 0.1 0.3
+                            rotation 0.4
+                            scale 1.0 0.2
+                        }
+                    }
+                    geometry IndexedFaceSet {
+                        coord Coordinate {
+                            point [
+                                -0.30 0.0  0.30,
+                                 0.30 0.0  0.30,
+                                 0.30 0.0 -0.30,
+                                -0.30 0.0 -0.30,
+                                -0.40 0.2  0.40,
+                                 0.40 0.2  0.40,
+                                 0.40 0.2 -0.40,
+                                -0.40 0.2 -0.40,
+                            ]
+                        }
+                        coordIndex [
+                            0, 1, 5, 4, -1,  1, 2, 6, 5, -1,
+                            2, 3, 7, 6, -1,  3, 0, 4, 7, -1,
+                        ]
+                        solid TRUE
+                    }
+                }
+            ]
+        }
+
+        Transform {
+            translation 0.0 4.85 0.0
+            children [
+                Shape {
+                    appearance Appearance {
+                        material USE MarbleMaterial
+                        texture USE MarbleImage
+                        textureTransform TextureTransform {
+                            translation 0.2 0.3
+                            rotation 0.5
+                            scale 1.0 0.2
+                        }
+                    }
+                    geometry Box {
+                        size 1.0 0.1 1.0
+                    }
+                }
+            ]
+        }
+
+        Transform {
+            translation 0.0 5.05 0.0
+            children [
+                Shape {
+                    appearance Appearance {
+                        material USE MarbleMaterial
+                        texture USE MarbleImage
+                        textureTransform TextureTransform {
+                            translation 0.1 0.3
+                            rotation 0.4
+                            scale 1.0 0.2
+                        }
+                    }
+                    geometry Box { size 1.1 0.3 1.1 }
+                }
+            ]
+        }
+    ]
+}

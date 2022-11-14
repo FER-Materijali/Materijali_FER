@@ -1,0 +1,106 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>Java script example code</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<TABLE WIDTH=100%
+	BORDER=0
+	CELLSPACING=0
+	CELLPADDING=0
+>
+<TR >
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0000.htm><B><IMG SRC="../images/arwtoc2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0435.htm><B><IMG SRC="../images/arwndx2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0453.htm><B><IMG SRC="../images/arwprev2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0455.htm><B><IMG SRC="../images/arwnext2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=4%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	454
+</TD>
+</TR>
+</TABLE>
+<P>
+
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Writing program scripts with Java</CENTER>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>Java script example code</I></B></CENTER>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<FONT COLOR=#FFFFFF SIZE=+2>
+<DL>
+
+<B><TT><FONT COLOR=#FF9900 SIZE=+2><pre>import vrml.*;
+import vrml.field.*;
+import vrml.node.*;
+
+public class bounce2
+    extends Script
+{
+    private float bounceHeight;
+    private SFVec3f value_changedObj;
+
+    public void initialize( )
+    {
+        // Get the fields and eventOut
+        SFFloat floatObj = (SFFloat) getField( "bounceHeight" );
+        bounceHeight     = (float)   floatObj.getValue( );
+        value_changedObj = (SFVec3f) getEventOut( "value_changed" );
+    }
+
+    public void processEvent( Event event )
+    {
+        ConstSFFloat flt = (ConstSFFloat) event.getValue( );
+        float frac       = (float) flt.getValue( );
+
+        float y = (float)(4.0 * bounceHeight * frac * (1.0 - frac));
+
+        float[] changed = new float[3];
+        changed[0] = (float)0.0;
+        changed[1] = y;
+        changed[2] = (float)0.0;
+        value_changedObj.setValue( changed );
+    }
+}</pre></FONT></TT></B>
+
+
+
+</BODY>
+</HTML>

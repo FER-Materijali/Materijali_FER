@@ -1,0 +1,21 @@
+#VRML V2.0 utf8
+
+DEF myColor ColorInterpolator { 
+    key        [   0.0,    0.5,    1.0 ]
+    keyValue   [ 1 0 0,  0 1 0,  0 0 1 ] # red, green, blue
+}
+
+DEF myClock TimeSensor {
+    cycleInterval 10.0      # 10 second animation
+    loop          TRUE      # infinitely cycling animation
+}
+
+Shape {
+    appearance Appearance {
+        material DEF myMaterial Material { }
+    }
+    geometry Sphere { }
+}
+
+ROUTE myClock.fraction_changed TO myColor.set_fraction
+ROUTE myColor.value_changed TO myMaterial.set_diffuseColor

@@ -1,0 +1,15 @@
+#VRML V2.0 utf8
+
+LOD { 
+    range [ 10, 50 ]
+    level [
+        LOD {
+            level [
+                Shape { geometry Sphere { } }
+                DEF LoRes Shape { geometry Box { } }
+            ]
+        }
+        USE LoRes,
+        Shape { } # Display nothing
+    ]
+}

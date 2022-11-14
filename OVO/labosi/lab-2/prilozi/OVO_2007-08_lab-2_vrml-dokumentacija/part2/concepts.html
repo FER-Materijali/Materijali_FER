@@ -1,0 +1,485 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Justin Couch">
+   <META NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
+   <TITLE>VRML97, ISO/IEC 14772-2:xxxx -- 4 Concepts</TITLE>
+</HEAD>
+<BODY>
+
+<CENTER>
+<H1>
+<IMG SRC="../Images/vrml97-2.gif" ALT="VRML97 logo" naturalsizeflag="0" HEIGHT=85 WIDTH=470></H1></CENTER>
+
+<CENTER>
+<H1>
+4 Concepts</H1></CENTER>
+
+<H1>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H1>
+
+<H2>
+<a NAME="IntroductionAndTOC"></a>4.1 Introduction and table of Contents</H2>
+
+<H3>
+<a NAME="Introduction"></a>4.1.1 Introduction</H3>
+This clause describes key concepts in this part of ISO/IEC 14772. This
+includes describing the various components of the browser and how the interactions
+with the browser may be consummated. It does not define what the individual
+interactions are. Those descriptions can be found in <A HREF="servRef.html">6
+Services reference</A>.
+<H3>
+<a NAME="TableOfContents"></a>4.1.2 Table of contents</H3>
+See <a HREF="#TOC">Table 4.1</a> for the table of contents for this
+clause.
+<CENTER>&nbsp;</CENTER>
+&nbsp;
+<CENTER><TABLE BORDER COLS=2 >
+<CAPTION align="top"><a NAME="TOC"></a><B>Table 4.1 -- Table of contents,
+Concepts</B>&nbsp;</CAPTION>
+
+<TR>
+<TD VALIGN=TOP><B><a HREF="#IntroductionAndTOC">4.1 Introduction and table of contents</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#Introduction">4.1.1 Introduction</a>&nbsp;
+<BR>&nbsp;<a HREF="#TableOfContents">4.1.2 Table of contents</a>&nbsp;
+
+<P><B><a HREF="#Overview">4.2 Overview</a></B>&nbsp;
+
+<P><B><a HREF="#ImplementationDependencies">4.3 Implementation dependencies</a></B>&nbsp;
+
+<P><B><a HREF="#InterfaceComponents">4.4 Interface components</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#Concepts">4.4.1 Concepts</a>&nbsp;
+<BR>&nbsp;<a HREF="#Application">4.4.2 Application</a>&nbsp;
+<BR>&nbsp;<a HREF="#Session">4.4.3 Session</a>&nbsp;
+<BR>&nbsp;<a HREF="#Browser">4.4.4 Browser</a>&nbsp;
+<BR>&nbsp;<a HREF="#Node">4.4.5 Node</a>&nbsp;
+<BR>&nbsp;<a HREF="#Field">4.4.6 Field</a></TD>
+
+<TD VALIGN=TOP><B><a HREF="#Events">4.5 Events</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#EventsConcepts">4.5.1 Concepts</a>&nbsp;
+<BR>&nbsp;<a HREF="#InternalToBrowser">4.5.2 Internal to browser</a>&nbsp;
+<BR>&nbsp;<a HREF="#BrowserToExternalApplication">4.5.3 Browser to external application</a>&nbsp;
+<BR><I>&nbsp; <a HREF="#BrowserToExternalApplicationOverview">4.5.3.1 Overview</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#Initialize">4.5.3.2 Initialize</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#Shutdown">4.5.3.3 Shutdown</a></I>&nbsp;
+<BR><I>&nbsp; <a HREF="#NoURLSAvailable">4.5.3.4 No URLs available</a></I>&nbsp;
+<BR><I>&nbsp; <a href="#ConnectionLost">4.5.3.5 Connection lost</a></I>&nbsp;
+
+<P><B><a HREF="#Identifiers">4.6 Identifiers</a></B>&nbsp;
+
+<P><B><a HREF="#RelativeURLs">4.7 Relative URLs</a></B>&nbsp;
+
+<P><B><a HREF="#ExecutionModel">4.8 Execution model</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#UpdatingTheSceneGraph">4.8.1 Updating the scene graph</a>&nbsp;
+<BR>&nbsp;<a HREF="#SynchronizingMultipleApplications">4.8.2 Synchronizing multiple applications</a>&nbsp;
+<BR>&nbsp;<a HREF="#ServiceGuarantees">4.8.3 Service guarantees</a></TD>
+</TR>
+</TABLE></CENTER>
+&nbsp;
+<H2>
+&nbsp;<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H2>
+
+<H2>
+<a NAME="Overview"></a>4.2 Overview</H2>
+An application may interact with a VRML scene graph through use of the
+interface defined in this part of ISO/IEC 14772. This interface is a protocol
+for manipulating the VRML scene graph while not directly part of the scene
+graph itself.
+
+<P>This specification is aimed at providing a language neutral representation
+of all actions that can be performed by an external application across
+this interface. <span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Bindings
+to specific languages are defined in the annexes. </span>The EAI forms this interface by giving access to the top-level
+named nodes in the system to the external environment. <i><span lang="EN-GB" style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:EN-GB;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA">Top level named nodes</span></i><span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-GB;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"> are those nodes at the outermost layer of name
+scope which have an associated DEF name. </span>The interface mimics
+the access of the Script node with a reference to the named node. To facilitate
+the sending of events <I>to</I> the external environment, a new mechanism
+is made available. To receive notification when an event is sent to an eventOut, the external environment registers interest in it. This mechanism
+is similar in concept to the <a HREF="../part1/concepts.html#4.10.3">processEvents</a>
+functionality in ISO/IEC 14772-1, but differs due to the asynchronous
+nature of the external environment.
+
+<P>Conceptually, the External Authoring Interface allows four types of
+access into the VRML scene:
+<UL>
+<LI>
+Accessing the functionality of the Browser Script Interface <a HREF="../part1/concepts.html#4.12"><span style="font-size: 11.0pt; mso-bidi-font-size: 10.0pt; font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">(</span><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">see
+ISO/IEC 14772-1 4.12.10 </span>Browser
+Script Interface</a>).</LI>
+
+<LI>
+Sending events to eventIns of nodes inside the scene.</LI>
+
+<LI>
+Reading the last value sent from eventOuts of nodes inside the scene.</LI>
+
+<LI>
+Getting notified when events change values of node fields inside the scene.</LI>
+</UL>
+As with scripts within the VRML scene, the EAI allows access to the full
+functionality of the <a HREF="../part1/concepts.html#4.12">Browser
+Script Interface</a>. Browser state can be queried, routes can be added
+and deleted, and new nodes can be created. The EAI extends the basic browser
+interface with a number of extra capabilities including retrieving node
+references and registering interest in browser events.
+<H2>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H2>
+
+<H2>
+<a NAME="ImplementationDependencies"></a>4.3 Implementation dependencies</H2>
+Implementation dependence is defined in terms of the language binding or
+protocol encoding of the services defined in this specification. If a service
+is defined to be implementation dependent, it is a requirement of each
+binding and encoding to specify how that service is to be implemented,
+if at all.
+
+<P>Bindings and encodings to these services may define their own implementation
+dependent parts within that specification.
+<H2>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H2>
+
+<H2>
+<a NAME="InterfaceComponents"></a>4.4 Interface components</H2>
+
+<H3>
+<a NAME="Concepts"></a>4.4.1 Concepts</H3>
+There are three main items in a VRML browser that can be accessed from
+an external application: The browser, nodes within the scene graph, and
+fields within nodes. The definition and specifications are framed in terms
+of services. A VRML browser exposes a set of services which allow external
+applications to interact with it.
+<H3>
+<a NAME="Application"></a>4.4.2 Application</H3>
+An application is the external process that is not implicitly part of the
+VRML browser. This application makes some form of connection to the VRML
+browser along which requests are made of the browser. The application does
+not exist as part of the VRML browser as defined in <a HREF="../part1/concepts.html#Figure4.1">ISO/IEC
+14772-1 Figure 4.1</a> nor forms part of the <a HREF="../part1/concepts.html#4.10.3">ISO/IEC
+14772-1 4.10.3 VRML execution model</a>. An application may reside on another
+machine from the VRML browser.
+<H3>
+<a NAME="Session"></a>4.4.3 Session</H3>
+A session defines the life of a single connection between the application
+and the VRML browser. It is possible for a single browser to be servicing
+multiple sessions simultaneously. It is also possible that a single application
+may contain a number of separate sessions to multiple browsers. Multiple
+simultaneous sessions between external applications and multiple VRML browsers
+is permissible. However, individual implementations may place some restrictions
+on such multiple simultaneous sessions.<P>A session is not an implementable part of this specification. It is
+purely a conceptual mechanism by which the services can make requests for
+services. It may exist prior to any connection being established between
+a browser and external application or is established simultaneously
+with the request for a browser connection.
+<H3>
+<a NAME="Browser"></a>4.4.4 Browser</H3>
+The browser is the basic encapsulation mechanism for an active VRML scene
+graph (that is one where time is progressing - not as a file stored on
+disk). As it contains the entire scene graph,&nbsp; it also provides a
+core set of capabilities for dynamically manipulating that scene graph
+at a coarse level. <span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">For
+example, new content may be dynamically generated from a string of characters.</span>
+
+<P>A user may have many VRML browsers running simultaneously on their machine.
+Therefore, each browser shall be represented by a unique identifier within
+that session. This identifier is required to be identical for multiple
+requests of a single browser instance. This is to enable two applications
+that have access to the one browser instance to share information in an unambiguous
+way.
+
+<P>Any action that requires use of the browser functionality shall identify
+the service request with a browser identifier.
+<H3>
+<a NAME="Node"></a>4.4.5 Node</H3>
+The smallest unit of interaction with the elements in the scene graph is
+the node. A node is equivalent to the VRML nodes that are defined in ISO/IEC
+14772-1. A node can be removed as a unit from the scene graph, stored and
+then re-inserted at another position at some later time in the same session
+without detrimental effect.
+
+<P>Each node is defined by a unique identifier. This identifier is unique
+for that session. That is, it is possible that a single browser may be
+servicing multiple applications simultaneously and therefore all node identifiers
+are unique and invariant for the life of the session. This allows two external
+applications to potentially share data between themselves unambiguously and still have either make service requests of the browser with that shared
+data.
+
+<P>It is not possible to directly manipulate a node's properties as separate
+entities to the node itself.
+
+<P>Most operations in the EAI begin by obtaining a reference to a node.
+To reference a node it must be named using the DEF construct. Once a reference
+is obtained, the eventIns and eventOuts of that node can be accessed. Since
+an exposedField implicitly contains an eventIn and an eventOut, these are
+accessible as well using the field name or with the <I>set_</I> and <I>_changed</I>
+modifiers.
+
+<P>Node identifiers may also be used to represent an empty node. <span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">An
+empty SFNode or MFNode field value is represented by a NULL value. For empty
+MFNode fields, the count of available nodes shall be zero when the field value
+is NULL.</span>
+<H3>
+<a NAME="Field"></a>4.4.6 Field</H3>
+Individual fields are within nodes. While it is not possible to directly
+manipulate a node, a field is the method of direct manipulation of individual
+properties.
+
+<P>The access granted to individual fields is defined by Part 1 of this
+standard.
+For example, it is not possible to change the value of a "field" field. &quot;exposedField&quot;s may have values written to them and values read from them.
+A field is assigned a field identifier. This is non-unique and requires
+a node identifier plus the field identifier to specify a particular field with which to interact.
+
+<P>Fields may be read or written at any time during the course of the session.
+An application may register and unregister to receive notification of
+when values of the field changes. During the registration process the application
+can supply a token that will be returned along with the data value of the
+event. This token can be used by the application to uniquely identify this
+event in cases where events are not implicitly unique. The token is not
+required to be passed along with the service request and may be kept as
+part of the internals of the implementation on the application interface.
+
+<P>Any eventOut of a node to which the application has a reference can
+be read. The value read is the last value sent to that eventOut or the
+default value for that eventOut type if no event has ever been sent. The
+data read is specific to the field type of that eventOut and is formatted
+appropriate to the language or protocol used.
+<H3>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H3>
+
+<H2>
+<a NAME="Events"></a>4.5 Events</H2>
+
+<H3>
+<a NAME="EventsConcepts"></a>4.5.1 Concepts</H3>
+Any transient variant data is carried around the VRML scene graph through
+the use of events. The application may register to receive events from
+the VRML scene graph, and may initiate new events. Events are considered
+transient and generated only at the time when the specific action occurs.
+Events shall not be stored and have the delivery deferred to parties who
+have not expressed interest in the event at the time it occurred. For example
+an application that connects to a browser after the world has loaded shall
+not be delivered an Initialize event.
+<H3>
+<a NAME="InternalToBrowser"></a>4.5.2 Internal to browser</H3>
+In many cases, fields and events are used interchangeably as terms to describe
+the changing of the properties of a field. In this specification, there
+is a difference.
+
+<P>An application may write a value to a field or read a value from a field.
+This value does not become an event until that value is internally represented
+within the VRML browser. The border of the browser to the application is
+where an event stops. Events cannot exist externally from the VRML browser;
+that is, the application cannot be inserted in the middle of an event cascade.
+The application may be notified of events, initiate new events, but cannot
+process and pass on events while holding up processing of the current timestamp
+event cascades within the browser when it is notified of an event.
+<H3>
+<a NAME="BrowserToExternalApplication"></a>4.5.3 Browser to external application</H3>
+<H4>
+<a NAME="BrowserToExternalApplicationOverview"></a>4.5.3.1 Overview</H4>
+The browser may directly communicate to external applications with its
+own set of events. These events are used to indicate the status of the
+browser or of some asynchronous problem. The number and type of events
+available shall be implementation dependent. At a minimum, the following
+events shall be provided in all implementations of this specification.
+
+<P>Event delivery from the browser to the external application shall be
+guaranteed.
+<H4>
+<a NAME="Initialize"></a>4.5.3.2 Initialize</H4>
+The initialize event is used to indicate that the browser has had a world
+loaded where it has run through the initialization process (where the browser
+has loaded the world and just before it is about to issue its first time-related
+event). At this point in time, node identifiers shall be available from
+the getNode service of the browser (see <a HREF="servRef.html#getNode">6.3.15,
+getNode</a>).
+
+<P>The initialize event shall be generated immediately at the browser and
+delivered to the application. The event is considered to be asynchronous.
+That is, the delivery of the event (and any implementation dependent acknowledgement
+scheme) shall not delay the browser in starting the execution model evaluation.
+<H4>
+<a NAME="Shutdown"></a>4.5.3.3 Shutdown</H4>
+The shutdown event is used to indicate that the browser is about to stop
+running the world. This may occur under a number of different conditions:
+The world is being replaced (See <a HREF="servRef.html#replaceWorld">6.3.14, replaceWorld</a>
+and <a HREF="servRef.html#loadURL">6.3.12, loadURL</a>), the browser itself
+is exiting, or the client application has disposed of its connection to
+the browser (see <a HREF="servRef.html#Dispose">6.3.4, Dispose</a>).
+
+<P>The shutdown event shall be generated immediately at the browser and
+delivered to the application. The event is considered to be asynchronous.
+That is, the delivery of the event (and any implementation dependent acknowledgement
+scheme) shall not delay the browser in halting the execution model evaluation
+and closing down of the browser resources except where needed to ensure
+the delivery of the event to the application.
+<H4>
+<a NAME="NoURLSAvailable"></a>4.5.3.4 No URLs available</H4>
+The no URL event is used to notify the application that the browser was
+not able to load any of the URL/URNs in one of the asynchronous invocations
+of the <B>loadURL</B> service (See <a HREF="servRef.html#loadURL">6.3.12,
+loadURL</a>) or the <B>createVrmlFromString</B> service (see <a HREF="servRef.html#CreateVRMLFromString">6.3.3,
+createVrmlFromURL</a>) indicating that no valid content was able to be
+loaded from any of the URLs specified in these calls. Other calls that
+may involve other asynchronous loads such as <B>replaceWorld</B> (see <a HREF="servRef.html#replaceWorld">6.3.14,
+replaceWorld</a>) and <B>createVrmlFromString</B> (see <a HREF="servRef.html#CreateVRMLFromString">6.3.2,
+createVrmlFromString</a>) may also use this event to indicate loading problems
+for items such as Inlines and EXTERNPROTOs although it shall not be required
+and shall be implementation dependent.
+<H4>
+<a NAME="ConnectionLost"></a>4.5.3.5 Connection lost</H4>
+The connection lost error is used to notify the application that the underlying
+implementation has lost the connection between the browser and the application
+that would result in service requests not being able to be honoured. An
+example would be a TCP network connection timing out or other similar problem.
+
+<P>An implementation may delay sending an event that the connection has
+been lost if it implements some automatic reconnection attempt. It shall
+only be sent at the point where it is deemed no longer possible to connect
+to the browser. There shall be no requirement for the implementation to
+attempt to re-establish the connection after this event has been generated
+or to attempt any form of automatic reconnection capability.
+<H3>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H3>
+
+<H2>
+<a NAME="Identifiers"></a>4.6 Identifiers</H2>
+What constitutes an identifier is implementation dependent. In some cases
+it may be more efficient to represent a node identifier as the entire node
+which includes all field information. Requests for field information are
+then made on the local node. In other implementations an identifier may
+be only a simple integer. The job of ensuring unique identifiers is the
+sole responsibility of the browser such that applications may share data
+within reasonable constraints of the environment. The constraints on that
+environment may be specified as part of the individual implementation as
+defined in the attached appendicies.
+
+<P>It is not considered reasonable that two applications using different
+service implementations
+be able to exchange data outside of the browser environment.
+<H3>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H3>
+
+<H2>
+<a NAME="RelativeURLs"></a>4.7 Relative URLs</H2>
+<a HREF="../part1/concepts.html#4.5.3">ISO/IEC
+14772-1 4.5.3 Relative URLs</a>  (RURL) defines the rules for dealing with
+relative URLs within a browser environment. The declaring file shall be
+defined as the base URL of the currently loaded world in the browser. The
+currently loaded world can be obtained by a request of the getWorldURL
+service(see <a HREF="servRef.html#getWorldURL">6.3.11, getWorldURL</a>). In the
+case where a browser does not yet have a VRML file loaded, the base document
+directory shall be taken to be the current working directory of the browser.
+Where the browser is part of a web page, the current working directory
+shall be treated as the base URL of the page in which the web browser is
+embedded.
+
+<P>When nested relative URLs are generated (such as an EXTERNPROTO containing
+a reference to a script file) the top level RURL base is then resolved
+in accordance with&nbsp; ISO/IEC 14772-1.
+<H3>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H3>
+
+<H2>
+<a NAME="ExecutionModel"></a>4.8 Execution model</H2>
+
+<H3>
+<a NAME="UpdatingTheSceneGraph"></a>4.8.1 Updating the scene graph</H3>
+A characteristic of external applications is that they will make a lot
+of changes in bursts to the VRML browser. It is also possible that a single
+browser may have a number of applications connected to it, all making requests
+of the browser.
+
+<P>Events can be batched to aid in performance of the application. The
+mechanism provided by this is a simple gate mechanism to hold all requests
+(<B>beginUpdate</B>) to update the currently loaded world until the gate
+is released (<B>endUpdate</B>).
+
+<P>When <B>beginUpdate</B> is invoked, all requests to modify the contents
+of the current world are buffered and not passed to the browser. This buffering
+effects all requests to modify the current world including calls to <B>loadURL</B>
+and <B>replaceWorld</B>. Once a call to <B>beginUpdate</B> has been made,
+any further <B>beginUpdate </B>requests are ignored until the next call to <B>endUpdate</B>
+at which time <B>endUpdate</B> releases all of the currently buffered updates
+to the browser for processing.
+
+<P>If a modification service request is made on the scene after an <B>endUpdate</B>
+and before a <B>beginUpdate</B>, it shall be passed to the scene immediately
+with the timestamp at the discretion of the browser.
+
+<P><B>beginUpdate</B>/<B>endUpdate</B> requests shall be limited to the
+individual session. A request by one application to <B>beginUpdate</B>
+shall only buffer the requests made by that application and not any others
+that may be connected to that same browser instance.
+
+<P>When <B>endUpdate</B> is invoked, the following order of execution of
+requests shall be applied
+<OL>
+<LI>
+node setValues</LI>
+
+<LI>
+event cascade evaluation as per <a HREF="../part1/concepts.html#4.10.3">ISO/IEC
+14772-1 4.10.3 Execution Model</a></LI>
+</OL>
+loadURL/replaceWorld service requests are not affected by the update control
+process. As soon as the browser receives these requests their execution
+is begun. The service definitions define the complete behaviour of these
+requests.
+
+<P>Buffered requests from the application shall be processed before processing
+any more requests either through another buffered queue or individual requests.
+<H3>
+<a NAME="SynchronizingMultipleApplications"></a>4.8.2 Synchronizing multiple applications</H3>
+When multiple applications make requests of the browser, the requests shall
+be serviced in order of arrival time at the browser. The browser shall
+determine the arrival time. Buffered updates to the scene graph shall have
+their arrival time determined to be at the time that <B>endUpdate</B> is
+requested. The arrival time is not necessarily the same as the timestamp
+at which the browser chooses to send events into the scene graph. The timestamp
+that the events are sent to the scene graph shall be determined by the
+browser but shall be no earlier than the time that <B>endUpdate</B> is
+requested. The arrival time is used to sort out conflicting requests from
+multiple applications to ensure consistent results in the application of
+events in the correct order.
+
+<P>Should the browser determine that two requests arrive simultaneously
+the result is implementation dependent. Note that it is permissible for
+the external applications to send new values to a given eventIn simultaneously.
+For such situations the browser shall obey <a HREF="../part1/concepts.html#4.10.5">ISO/IEC
+14772-1 4.10.5 Fan-in and Fan-out</a>.
+
+<P>Should the browser receive a request to <B>loadURL</B> or <B>replaceWorld</B>
+while currently processing a similar request, the old request is immediately
+terminated and the new one begun. See <a HREF="servRef.html#replaceWorld">6.3.14,
+replaceWorld</a> and <a HREF="servRef.html#loadURL">6.3.12, loadURL</a> for more information.
+<H3>
+<a NAME="ServiceGuarantees"></a>4.8.3 Service guarantees</H3>
+All requests for services shall be guaranteed to be honoured where the underlying
+implementation supports that service. Once the application has made a service
+request, that request shall be transmitted to the browser assuming that
+a connection is still available. That is, all communications are assumed
+to be reliable. Delivery is not guaranteed if the connection between the
+browser and application has been broken (for example, a TCP connection
+fails). Implementations shall define an error condition that notifies the
+user that the connection has failed for each service request. Also, the
+browser interface may include an event that provides asynchronous notification
+to the user of the failure.
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470>
+
+</BODY>
+</HTML>

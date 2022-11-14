@@ -1,0 +1,144 @@
+#VRML V2.0 utf8
+#
+#  Robot Billboard
+#  robobill.wrl
+#        by David R. Nadeau
+#
+#  This example illustrates the use of Group, Transform, and Billboard groups.
+#
+#  Two robots are built with their heads in Billboard groups, but their torsos
+#  left out of it.  As the viewer walks about the robot, the heads always
+#  turn to face the viewer.  The left robot's head is constrained to rotate
+#  about the Y axis, while the right robot's head can rotate freely.
+#
+#  To make it clear what is, and is not moving to track the viewer, the
+#  torso of the robot remains fixed, as does a background of blue slabs.
+#
+#  Things to experiment with:
+#        Place the entire robot in the Billboard group so that the whole
+#        robot tracks the viewer, not just the robot's head.
+#
+#        Add textures to the environment.
+#
+#        Add light sources, such as one placed in the lower ball of the
+#        robot.  Make that ball emissive as well so that it looks like the
+#        ball is the source of light.  Remember to put the light source
+#        inside the robot's transform group so that as the robot moves,
+#        the light source moves with it.
+#
+#        Add behavior to the robot.  Make it move on its own!
+#
+
+WorldInfo {
+    title "Robot Billboard"
+    info [ "Copyright (c) 1998, David R. Nadeau" ]
+}
+
+DEF Entry Viewpoint {
+    position 0.0 3.0 12.0
+    description "Entry View"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight TRUE
+}
+
+Background {
+    skyColor [ 0.0 0.0 0.0 ]
+}
+
+
+#
+#  Left Robot - Y-axis head rotation
+#
+Transform {
+    translation -2.0 1.0 0.0
+    scale 2.0 2.0 2.0
+    children [
+	#  Stationary body parts for the robot (the torso)
+	DEF RoboBody Inline { url "robobody.wrl" }
+
+	#  Parts that track the viewer using a Billboard group
+	Transform {
+	    translation 0.0 1.4 0.0
+	    children [
+		Billboard {
+		    # Rotate around Y axis
+		    axisOfRotation 0.0 1.0 0.0
+		    children [
+			DEF RoboHead Inline { url "robohead.wrl" }
+		    ]
+		}
+	    ]
+	}
+    ]
+}
+
+
+#
+#  Right Robot - unconstrained head rotation
+#
+Transform {
+    translation 2.0 1.0 0.0
+    scale 2.0 2.0 2.0
+    children [
+	#  Stationary body parts for the robot (the torso)
+	USE RoboBody
+
+	#  Parts that track the viewer using a Billboard group
+	Transform {
+	    translation 0.0 1.4 0.0
+	    children [
+		Billboard {
+		    # Rotate around any axis
+		    axisOfRotation 0.0 0.0 0.0
+		    children [
+			USE RoboHead
+		    ]
+		}
+	    ]
+	}
+    ]
+}
+
+
+#
+#  Environment
+#
+Transform {
+    translation 0.0 2.0 -6.0
+    children [
+	DEF Slab Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 0.0 0.1 0.5
+		    emissiveColor 0.0 0.3 0.5
+		}
+	    }
+	    geometry Box {
+		size 2.0 4.0 0.3
+	    }
+	}
+    ]
+}
+
+Transform {
+    translation -6.0 2.0 0.0
+    children [ USE Slab ]
+}
+
+Transform {
+    translation 6.0 2.0 0.0
+    children [ USE Slab ]
+}
+
+Transform {
+    translation -4.3 2.0 -4.3
+    children [ USE Slab ]
+}
+
+Transform {
+    translation 4.3 2.0 -4.3
+    children [ USE Slab ]
+}

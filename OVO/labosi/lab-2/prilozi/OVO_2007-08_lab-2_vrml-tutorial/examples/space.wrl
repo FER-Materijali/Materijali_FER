@@ -1,0 +1,63 @@
+#VRML V2.0 utf8
+#
+#  Space Station
+#  space.wrl
+#        by David R. Nadeau
+#        published in "The VRML 2.0 Sourcebook" by Ames, Nadeau, and Moreland
+#
+#  This file illustrates the use of multiple Shape nodes in the same file.
+#  Notice that all of the shapes are built overlapping each other!
+#
+
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Box {
+        size 1.0 1.0 1.0
+    }
+}
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Sphere {
+        radius 0.7
+    }
+}
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Cylinder {
+        radius 1.25
+        height 0.05
+    }
+}
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Cylinder {
+        radius 0.4
+        height 2.0
+    }
+}
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Cylinder {
+        radius 0.3
+        height 3.0
+    }
+}
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Cylinder {
+        radius 0.1
+        height 6.0
+    }
+}

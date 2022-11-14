@@ -1,0 +1,531 @@
+#VRML V2.0 utf8
+#
+#  Temple of the Orb
+#  temple.wrl
+#        by David R. Nadeau
+#
+#  This world creates a glowing rotating orb when the pedestal is touched.
+#
+#  The orb animations include:
+#        1.  An OrientationInterpolator rotating an inner emissive textured
+#            sphere.
+#        2.  An OrientationInterpolator rotating an outer emissive textured
+#            semi-transparent sphere.
+#        3.  An OrientationInterpolator rotating a pair of rings, angled at
+#            a 45 degree angle.
+#        4.  An OrientationInterpolator rotating a second pair of rings, angled
+#            at a 45 degree angle.
+#
+#  A ScalarInterpolator with semi-random floating point keyValue that
+#  are routed in to a PointLight, thereby causing a flickering
+#  effect.  That effect is turned on only after the pedestal has
+#  been touched.
+#
+
+WorldInfo {
+    title "Temple of the Orb"
+    info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+Viewpoint {
+    position 0.0 1.6 9.0
+    description "Entry View"
+}
+
+NavigationInfo {
+    type [ "WALK", "ANY" ]
+    headlight FALSE
+    speed 2.0
+}
+
+Background {
+     skyColor [
+         0.0 0.1 0.2,
+         0.0 0.1 0.3,
+         0.0 0.0 0.0,
+     ]
+     skyAngle [
+         1.371,
+         1.571,
+     ]
+}
+
+
+#
+#  Light Sources
+#
+DEF OrbLight PointLight {
+    intensity 0.0
+    # animated intensity
+    ambientIntensity 0.0
+    color 0.3 0.7 1.0
+    location 0.0 2.0 0.0
+}
+
+DirectionalLight {
+    ambientIntensity 0.0
+    intensity 1.0
+    color 1.0 0.5 0.0
+    direction 1.0 0.1 -0.5
+}
+DirectionalLight {
+    ambientIntensity 0.0
+    intensity 1.0
+    color 1.0 0.5 0.0
+    direction 1.0 0.1 -0.5
+}
+
+DirectionalLight {
+    ambientIntensity 0.0
+    intensity 1.0
+    color 1.0 0.0 0.0
+    direction -1.0 -0.4 -0.5
+}
+DirectionalLight {
+    ambientIntensity 0.0
+    intensity 1.0
+    color 1.0 0.0 0.0
+    direction -1.0 -0.4 -0.5
+}
+
+
+#
+#  Vaulted Ceiling
+#
+# Center vaulted ceiling
+Transform {
+    translation 0.0 3.64 0.0
+    children [
+        DEF VaultedCeiling Group {
+            children [
+                DEF Vault Inline {
+                    url "vault.wrl"
+                }
+                Transform {
+                    rotation 0.0 1.0 0.0 1.57
+                    children [ USE Vault ]
+                }
+                Transform {
+                    rotation 0.0 1.0 0.0 3.14
+                    children [ USE Vault ]
+                }
+                Transform {
+                    rotation 0.0 1.0 0.0 -1.57
+                    children [ USE Vault ]
+                }
+            ]
+        }
+
+        # Left, right, front, and back vaulted ceilings
+        Transform {
+            translation -2.0 0.0 0.0
+            children [ USE VaultedCeiling ]
+        }
+        Transform {
+            translation  2.0 0.0 0.0
+            children [ USE VaultedCeiling ]
+        }
+        Transform {
+            translation 0.0 0.0 -2.0
+            children [ USE VaultedCeiling ]
+        }
+        Transform {
+            translation 0.0 0.0 2.0
+            children [ USE VaultedCeiling ]
+        }
+    ]
+}
+
+# Columns supporting the vaulted ceilings
+Transform {
+    translation -3.0 0.0 -1.0
+    children [
+        DEF Column Transform {
+            scale 0.5 0.7 0.5
+            children Inline { url "column.wrl" }
+        }
+    ]
+}
+Transform {
+    translation -1.0 0.0 -1.0
+    children [ USE Column ]
+}
+Transform {
+    translation  1.0 0.0 -1.0
+    children [ USE Column ]
+}
+Transform {
+    translation  3.0 0.0 -1.0
+    children [ USE Column ]
+}
+Transform {
+    translation -3.0 0.0  1.0
+    children [ USE Column ]
+}
+Transform {
+    translation -1.0 0.0  1.0
+    children [ USE Column ]
+}
+Transform {
+    translation  1.0 0.0  1.0
+    children [ USE Column ]
+}
+Transform {
+    translation  3.0 0.0  1.0
+    children [ USE Column ]
+}
+Transform {
+    translation -1.0 0.0 -3.0
+    children [  USE Column ]
+}
+Transform {
+    translation -1.0 0.0  3.0
+    children [  USE Column ]
+}
+Transform {
+    translation  1.0 0.0 -3.0
+    children [  USE Column ]
+}
+Transform {
+    translation  1.0 0.0  3.0
+    children [  USE Column ]
+}
+
+
+#
+#  Floor
+#
+Transform {
+    translation -11.5 0.0 -11.5
+    children Shape {
+        appearance Appearance {
+            material Material {
+                ambientIntensity 0.5
+                diffuseColor 1.0 1.0 1.0
+            }
+            texture ImageTexture { url "stone2.jpg" }
+            textureTransform TextureTransform {
+                scale 16.0 16.0
+            }
+        }
+        geometry ElevationGrid {
+            xDimension 8
+            zDimension 8
+            xSpacing   3.0
+            zSpacing   3.0
+            solid      FALSE
+            height [
+                0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+                0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+                0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+                0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+                0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+                0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+                0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+                0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+            ]
+        }
+    }
+}
+
+
+#
+#  Orb
+#
+Collision {
+    collide FALSE
+    children [
+	DEF OrbAll Transform {
+	    translation 0.0 1.625 0.0
+	    scale 0.01 0.01 0.01
+	    # animated scale
+	    children [
+
+	#
+	#  Rings
+	#
+		Transform {
+		    rotation    0.0 0.0 1.0 0.785
+		    children [
+			DEF RingSet1 Transform {
+			    rotation 0.0 1.0 0.0 0.0
+			    children [
+				DEF Ring1 Transform {
+				    translation 0.0 0.0525 0.0
+				    rotation    0.0 0.0 1.0 0.35
+				    children [
+					DEF Ring Shape {
+					    appearance Appearance {
+						material Material {
+						    ambientIntensity 0.0
+						    diffuseColor  0.0 0.0 0.0
+						    emissiveColor 0.0 0.3 0.8
+						    specularColor 0.0 0.1 0.1
+						    shininess 2.0
+						}
+					    }
+					    geometry Cylinder {
+						height 0.008
+						radius 0.15
+						bottom FALSE
+						top    FALSE
+					    }
+					}
+				    ]
+				}
+				DEF Ring2 Transform {
+				    translation 0.0 -0.0525 0.0
+				    rotation    0.0 0.0 1.0 -0.35
+				    children [ USE Ring ]
+				}
+			    ]
+			}
+		    ]
+		}
+
+		Transform {
+		    rotation    0.0 0.0 1.0 -0.785
+		    children [
+			DEF RingSet2 Transform {
+			    rotation 0.0 1.0 0.0 0.0
+			    scale 0.9 0.9 0.9
+			    children [ USE Ring1, USE Ring2 ]
+			}
+		    ]
+		}
+
+
+	#
+	#  Glowing orb
+	#
+		DEF Orb Transform {
+		    rotation    0.0 1.0 0.0 0.0
+		    children [
+			Shape {
+			    appearance Appearance {
+				# no material - force emissive texturing
+				texture ImageTexture { url "brtsky.jpg" }
+				textureTransform TextureTransform {
+				    scale 2.0 2.0
+				}
+			    }
+			    geometry Sphere { radius 0.1 }
+			}
+		    ]
+		}
+
+	    ]
+	}
+    ]
+}
+
+
+#
+#  Sound Sources
+#
+Transform {
+    translation 0.0 1.625 0.0
+    children [
+        DEF OrbSound Sound {
+            source DEF OrbClip AudioClip {
+                url "willow1.wav"
+                loop FALSE
+                startTime -1.0
+                stopTime  0.0
+            }
+            maxFront 15.0
+            maxBack 15.0
+            minFront 1.0
+            minBack 1.0
+            spatialize TRUE
+            intensity 0.0
+            # animated intensity
+        }
+    ]
+}
+
+
+#
+#  Pedestal
+#
+Collision {
+    collide FALSE
+    children [
+	Transform {
+	    translation 0.0 0.015 0.0
+	    scale 3.25 3.25 3.25
+	    children [
+		Shape {
+		    appearance Appearance {
+			material DEF GranitMaterial Material {
+			    ambientIntensity 0.0
+			    diffuseColor 0.8 0.8 1.0
+			}
+			texture DEF GranitTexture ImageTexture {
+			    url "granit_g.jpg"
+			}
+		    }
+		    geometry IndexedFaceSet {
+			coord Coordinate {
+			    point [
+				# Around the base
+				-0.06 0.0  0.06,
+				 0.06 0.0  0.06,
+				 0.06 0.0 -0.06,
+				-0.06 0.0 -0.06,
+				# Tip
+				 0.0  0.3  0.0,
+			    ]
+			}
+			coordIndex [
+			    0, 1, 4, -1,  1, 2, 4, -1,
+			    2, 3, 4, -1,  3, 0, 4, -1,
+			]
+			texCoord TextureCoordinate {
+			    point [
+				0.0 0.0, 1.0 0.0, 0.5 1.0,
+			    ]
+			}
+			texCoordIndex [
+			    0, 1, 2, -1,  0, 1, 2, -1,
+			    0, 1, 2, -1,  0, 1, 2, -1,
+			]
+			solid TRUE
+		    }
+		}
+		DEF PedestalTouch TouchSensor { }
+	    ]
+	}
+
+
+	#
+	#  Pedestal base
+	#
+	Transform {
+	    translation 0.0 0.008 0.0
+	    scale 3.25 3.25 3.25
+	    children [
+		Shape {
+		    appearance Appearance {
+			material USE GranitMaterial
+			texture  USE GranitTexture
+		    }
+		    geometry Box {
+			size 0.2 0.025 0.2
+		    }
+		}
+	    ]
+	}
+    ]
+}
+
+
+
+#
+#  Orb Rotation
+#
+DEF OrbTimer TimeSensor {
+    cycleInterval 20.0
+    loop TRUE
+    startTime -1.0
+    stopTime 0.0
+}
+
+
+DEF OrbRotator OrientationInterpolator {
+    key [ 0.0, 0.5, 1.0 ]
+    keyValue [ 0.0 1.0 0.0 0.0, 0.0 1.0 0.0 3.14, 0.0 1.0 0.0 6.28 ]
+}
+ROUTE OrbTimer.fraction_changed TO OrbRotator.set_fraction
+ROUTE OrbRotator.value_changed  TO Orb.set_rotation
+
+
+#
+#  Ring Rotation
+#
+DEF RingSet1Timer TimeSensor {
+    cycleInterval 2.0
+    loop TRUE
+    startTime -1.0
+    stopTime 0.0
+}
+
+DEF RingSet2Timer TimeSensor {
+    cycleInterval 2.2
+    loop TRUE
+    startTime -1.0
+    stopTime 0.0
+}
+
+
+DEF RingSet1Rotator OrientationInterpolator {
+    key [ 0.0, 0.5, 1.0 ]
+    keyValue [ 0.0 1.0 0.0 0.0, 0.0 1.0 0.0 -3.14, 0.0 1.0 0.0 -6.28 ]
+}
+ROUTE RingSet1Timer.fraction_changed TO RingSet1Rotator.set_fraction
+ROUTE RingSet1Rotator.value_changed  TO RingSet1.set_rotation
+
+DEF RingSet2Rotator OrientationInterpolator {
+    key [ 0.0, 0.5, 1.0 ]
+    keyValue [ 0.0 1.0 0.0 0.0, 0.0 1.0 0.0 3.14, 0.0 1.0 0.0 6.28 ]
+}
+ROUTE RingSet2Timer.fraction_changed TO RingSet2Rotator.set_fraction
+ROUTE RingSet2Rotator.value_changed  TO RingSet2.set_rotation
+
+
+#
+#  Orb Lighting
+#
+DEF OrbLightTimer TimeSensor {
+    cycleInterval 12.0
+    loop FALSE
+    startTime -1.0
+    stopTime 0.0
+}
+
+DEF OrbLightIntensity ScalarInterpolator {
+    key [ 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0 ]
+#    keyValue [ 0.2, 1.0, 0.3, 0.4, 0.9, 0.4, 1.0, 0.3, 0.8, 0.5 ]
+    keyValue [ 0.0, 0.5, 0.7, 1.0, 0.9, 0.8, 1.0, 0.9, 0.9, 0.5, 0.0 ]
+}
+ROUTE OrbLightTimer.fraction_changed  TO OrbLightIntensity.set_fraction
+ROUTE OrbLightIntensity.value_changed TO OrbLight.set_intensity
+
+
+#
+#  Orb Scaling
+#
+DEF OrbScaleTimer TimeSensor {
+    cycleInterval 12.0
+    loop FALSE
+    startTime -1.0
+    stopTime 0.0
+}
+
+DEF OrbScaler PositionInterpolator {
+    key [ 0.0, 0.3, 0.9, 1.0 ]
+    keyValue [
+        0.001 0.001 0.001,
+        3.25 3.25 3.25,
+        3.25 3.25 3.25,
+        0.001 0.001 0.001,
+    ]
+}
+
+DEF OrbVolume ScalarInterpolator {
+    key [ 0.0, 0.3, 0.9, 1.0 ]
+    keyValue [
+        0.0, 1.0, 1.0, 0.0
+    ]
+}
+
+ROUTE PedestalTouch.touchTime TO OrbScaleTimer.set_startTime
+ROUTE PedestalTouch.touchTime TO OrbLightTimer.set_startTime
+ROUTE PedestalTouch.touchTime TO OrbClip.set_startTime
+ROUTE PedestalTouch.touchTime TO OrbTimer.set_startTime
+ROUTE PedestalTouch.touchTime TO RingSet1Timer.set_startTime
+ROUTE PedestalTouch.touchTime TO RingSet2Timer.set_startTime
+ROUTE OrbScaleTimer.fraction_changed TO OrbScaler.set_fraction
+ROUTE OrbScaleTimer.fraction_changed TO OrbVolume.set_fraction
+ROUTE OrbScaler.value_changed TO OrbAll.set_scale
+ROUTE OrbVolume.value_changed TO OrbSound.set_intensity

@@ -1,0 +1,63 @@
+#VRML V2.0 utf8
+#
+#  Twisted bar
+#  bartwist.wrl
+#        by David R. Nadeau
+#        published in "The VRML 2.0 Sourcebook" by Ames, Nadeau, and Moreland
+#
+#  Illustrate the use of an Extrusion to build a twisted bar.
+#
+
+WorldInfo {
+	title "Twisted bar"
+	info [ "Copyright (c) 1997, Andrea L. Ames, David R. Nadeau, John L. Moreland" ]
+}
+
+Viewpoint {
+	position 0.0 2.0 11.0
+	description "Entry view"
+}
+
+NavigationInfo {
+	type [ "EXAMINE", "ANY" ]
+	headlight TRUE
+}
+Shape {
+	appearance Appearance {
+		material Material {
+			diffuseColor 1.0 0.5 0.0
+		}
+	}
+	geometry Extrusion {
+		creaseAngle 0.785
+		crossSection [
+		# Square
+			-1.0  1.0,   1.0  1.0,
+			 1.0 -1.0,  -1.0 -1.0,
+			-1.0  1.0
+		]
+		spine [
+		# Straight-line
+			0.0 0.0 0.0,
+			0.0 0.5 0.0,
+			0.0 1.0 0.0,
+			0.0 1.5 0.0,
+			0.0 2.0 0.0,
+			0.0 2.5 0.0,
+			0.0 3.0 0.0,
+			0.0 3.5 0.0,
+			0.0 4.0 0.0
+		]
+		orientation [
+			0.0 1.0 0.0 0.0,
+			0.0 1.0 0.0 0.175,
+			0.0 1.0 0.0 0.349,
+			0.0 1.0 0.0 0.524,
+			0.0 1.0 0.0 0.698,
+			0.0 1.0 0.0 0.873,
+			0.0 1.0 0.0 1.047,
+			0.0 1.0 0.0 1.222,
+			0.0 1.0 0.0 1.396,
+		]
+	}
+}

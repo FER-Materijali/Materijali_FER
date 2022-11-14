@@ -1,0 +1,55 @@
+1. Zadatak
+
+Prvo sam definirao boju pozadine (plava boja). Model sam zamislio tako da mi se krila sastoje od jednog dijela, a motori od tri dijela. Trup i rep sam veæ dobio u zadatku, te samo se poslužio veæ gotovim èvorovima.
+Krila sam napravio od èvora koji je bio rotiran po x-osi za 90 stupnjeva. Buduæi da sam na njega morao ispisati svoje inicijale, napravio sam za njega poseban Shape imena "Krilo" koji je koristio texturu "Inicijali.png".
+
+Motor se sastoji od dva dijela:
+
+-Elipsoid: "Tijelo" motora, koristio se cvor Kugla2 za njegov oblik, koji se translatirao i rotirao (definiran u kodu, ispod komentara ".Motor1").
+
+-Propeler: Sam propeler se sastoji od dva jako uska elipsoida, koji su rotirani za 45 stupnjeva po x-osi, jedan prema negativnom kvadrantu, drugi prema pozitivnom. Dva elipsoida se sijeku u sredini, te su translatirani na vrh "tijela" motora.
+
+Napravljeni model motora je kopiran, i namješten svaki posebno na svoj dio krila.
+
+
+3. Zadatak
+
+Za pozadinu sam koristio sliku "Svemir.jpg", koju sam oblijepio na sve "plohe kocke" koja obavija scenu.
+Svi modeli imaju sferni oblik. 
+
+Buduæi da se Zemlja mora rotirati oko Sunca, a Mjesec oko Zemlje, te Zemlja oko sebe (svi razlièite brzine), napravio sam tri èvora koja èine svoj lokalni sustav:
+
+- èvor "Sve" koji ima iste koordinate kao i ishodišni sustav
+- èvor "Sustav_Zemlja" koji je translatiran od èvora "Sve" za
+- èvor "Sustav_Mjesec" koji je translatiran od èvora   "Sustav_Zemlja". Iako nije bilo potrebno za Mjesec raditi poseban sustav, no napravio sam ga èisto radi urednosti koda.
+
+Èvor "Sve" se sastoji od djece "Sunce" i "Sustav_Zemlja".
+Za cvor "Sunce" korištena je tekstura pod nazivom "Sunce.png".
+ 
+Èvor "Sustav_Zemlja" se sastoji od èvorova "Zemlja" i "Sustav_Mjesec". Translatiran je za 20 jedinica po x-osi od ishodišnog koordinatnog sustava.
+Èvor "Zemlja" koristi teksturu "Zemlja.jpg".
+
+Èvor "Sustav_Mjesec" sadrži u sebi dijete "Mjesec", koje je translatirano za 2 jedinice od koordinatnog sustava èvora "Sustav_Zemlja". Mjesec koristi teksturu "Mjesec.jpg".
+
+Animacija:
+Definirao sam tri timera:
+- TIMER1 služi za okretanje èvora "Sve" oko ishodišta. po y-osi. Interval je 20 sekundi. Njime postižemo da se cijeli sustav okreæe oko ishodišta (Zemlja i Mjesec oko Sunca).
+-TIMER_SUNCA služi za okretanje Sunca oko vlastite osi. Okrene se oko sebe za 4.1 sekundu, kako je i zadano u zadatku.
+
+- TIMER2 služi za okretanje èvora "Sustav_Zemlja" oko lokalnog koordinatnog sustava. Time sam postigao da se Mjesec okreæe oko Zemlje (skupa sa Zemljom). Da bih ubrzao Zemlju, jer se Zemlja brže okreæe oko sebe nego Mjesec oko nje, dodao sam još jedan timer. Interval iznosi 4.83, što je jednako 30x0.161 (0.161 predstavlja vrijeme okretanja Zemlje oko sebe).
+
+-TIMER_ZEMLJE služi za okretanje Zemlje oko svoje osi brzinom 0.161, što je jednako jednom danu.
+
+
+Omjeri velièina:
+
+Sunce:Zemlja:Mjesec -- 6.96 : 0.63 : 0.17
+
+
+
+2. Zadatak
+
+Sve je potpuno isto kao i u treæem zadatku, samo što su umjesto tekstura korištene boje zadane u pripremi.
+
+
+

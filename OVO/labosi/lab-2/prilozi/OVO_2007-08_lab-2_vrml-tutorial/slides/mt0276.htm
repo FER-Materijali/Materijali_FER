@@ -1,0 +1,448 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>Controlling how textures are mapped</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<TABLE WIDTH=100%
+	BORDER=0
+	CELLSPACING=0
+	CELLPADDING=0
+>
+<TR >
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0000.htm><B><IMG SRC="../images/arwtoc2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0276.htm><B><IMG SRC="../images/arwndx2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0275.htm><B><IMG SRC="../images/arwprev2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0277.htm><B><IMG SRC="../images/arwnext2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=4%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	276
+</TD>
+</TR>
+</TABLE>
+<P>
+
+<FONT COLOR=#FFFF00 SIZE=+2>
+<CENTER>Controlling how textures are mapped</CENTER>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+
+<CENTER>
+<TABLE WIDTH=100% CELLSPACING=8 CELLPADDING=8>
+<TD VALIGN=TOP WIDTH=100%>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0277.htm>Motivation</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;277
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0278.htm>Working through the texturing process</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;278
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0279.htm>Using texture coordinate system</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;279
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0280.htm>Specifying texture coordinates</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;280
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0281.htm>Applying texture transforms</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;281
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0282.htm>Texturing a face</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;282
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0283.htm>Working through the texturing process</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;283
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0284.htm>Syntax: TextureCoordinate</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;284
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0285.htm>Syntax: IndexedFaceSet</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;285
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0286.htm>Syntax: ElevationGrid</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;286
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0287.htm>Syntax: Appearance</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;287
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0288.htm>Syntax: TextureTransform</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;288
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0289.htm>No texture transform example</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;289
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0290.htm>Texture translation example</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;290
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0291.htm>Texture rotation example</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;291
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0292.htm>Texture scale example</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;292
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0293.htm>Texture coordinates example</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;293
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0294.htm>Texture scale example</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;294
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0295.htm>Scaling, rotating, and translating</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;295
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0296.htm>Scaling, rotating, and translating</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;296
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0297.htm>Texture scale and rotation example</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;297
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD WIDTH=0%>&nbsp;</TD>
+<TD NOWRAP>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	<A HREF=mt0298.htm>Summary</A>&nbsp;
+</TD>
+<TD VALIGN=top WIDTH=100%>
+	<HR SIZE=1>
+</TD>
+<TD VALIGN=top ALIGN=right>
+	<FONT COLOR=#FFFFFF SIZE=+0>
+	&nbsp;298
+</TD>
+</TR>
+</TABLE>
+
+</TD>
+</TABLE>
+</CENTER>
+
+</BODY>
+</HTML>

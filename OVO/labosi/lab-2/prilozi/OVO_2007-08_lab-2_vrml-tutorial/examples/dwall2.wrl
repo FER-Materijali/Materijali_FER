@@ -1,0 +1,39 @@
+#VRML V2.0 utf8
+#
+#  dwall2.wrl
+#  Dungeon wall #2
+#	by David R. Nadeau
+#
+#  This is a simple rectangular floor textured with a stone block
+#  image.  An ElevationGrid node is used so that the floor is made
+#  up of multiple polygons, each subject to individual lighting
+#  calculations.  This insures that when a PointLight is placed
+#  near the all, the area beside the light is bright, while the areas at
+#  the corners are not.
+#
+
+Shape {
+	appearance Appearance {
+		material Material { diffuseColor 1.0 1.0 1.0 }
+		texture ImageTexture { url "stonewal.jpg" }
+	}
+	geometry IndexedFaceSet {
+		coord Coordinate {
+			point [
+				-5.0 0.0 0.0, -1.5 0.0 0.0,
+				-1.5 2.5 0.0,  1.5 2.5 0.0,
+				 1.5 0.0 0.0,  5.0 0.0 0.0,
+				 5.0 3.5 0.0, -5.0 3.5 0.0,
+			]
+		}
+		texCoord TextureCoordinate {
+			point [
+				0.0 0.0,  0.7 0.0,  0.7 0.7,  1.3 0.7,
+				1.3 0.0,  2.0 0.0,  2.0 1.0,  0.0 1.0
+			]
+		}
+		coordIndex [ 0, 1, 2, 3, 4, 5, 6, 7 ]
+		convex FALSE
+		solid FALSE
+	}
+}

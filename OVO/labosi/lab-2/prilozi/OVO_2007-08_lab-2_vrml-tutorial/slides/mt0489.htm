@@ -1,0 +1,87 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>Syntax: EXTERNPROTO</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<TABLE WIDTH=100%
+	BORDER=0
+	CELLSPACING=0
+	CELLPADDING=0
+>
+<TR >
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0000.htm><B><IMG SRC="../images/arwtoc2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0471.htm><B><IMG SRC="../images/arwndx2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0488.htm><B><IMG SRC="../images/arwprev2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0490.htm><B><IMG SRC="../images/arwnext2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=4%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	489
+</TD>
+</TR>
+</TABLE>
+<P>
+
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Creating new node types</CENTER>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>Syntax: EXTERNPROTO</I></B></CENTER>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<FONT COLOR=#FFFFFF SIZE=+2>
+<DL>
+
+<dd><li>Prototypes are typically in a separate <i>external</i> file,
+referenced by an <B><TT><FONT COLOR=#00FF00 SIZE=+2>EXTERNPROTO</FONT></TT></B>
+<dl>
+	<dd><li><i>name</i>, <i>fields</i>, <i>events</i>  -  as from
+<B><TT><FONT COLOR=#00FF00 SIZE=+2>PROTO</FONT></TT></B>, minus initial values
+	<dd><li><i>url</i>  -  the URL of the prototype file
+	<dd><li><i>#name</i>  -  name of <B><TT><FONT COLOR=#00FF00 SIZE=+2>PROTO</FONT></TT></B> in file
+</dl>
+<p>
+<dd><B><TT><FONT COLOR=#00FF00 SIZE=+2><pre>EXTERNPROTO BouncingBall [
+    field SFFloat bounceHeight
+    field SFTime  bounceTime
+] "bounce4.wrl#BouncingBall"</pre></FONT></TT></B>
+
+
+
+</BODY>
+</HTML>

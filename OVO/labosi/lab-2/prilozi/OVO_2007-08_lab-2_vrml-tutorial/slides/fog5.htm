@@ -1,0 +1,51 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>fog5.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Adding fog</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>fog5.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+Fog {
+    color 1.0 1.0 1.0
+    fogType "LINEAR"
+    visibilityRange 30.0
+}
+Background {
+    skyColor [
+        0.0 0.2 0.7,
+        0.0 0.5 1.0,
+        1.0 1.0 1.0
+    ]
+    skyAngle [ 1.309, 1.571 ]
+    groundColor [
+        0.1 0.10 0.0,
+        0.4 0.25 0.2,
+        0.6 0.60 0.6,
+    ]
+    groundAngle [ 1.309, 1.571 ]
+    frontUrl "mountns.png"
+    backUrl  "mountns.png"
+    leftUrl  "mountns.png"
+    rightUrl "mountns.png"
+}
+Inline { url "fogworld.wrl" }
+</FONT></PRE>
+</BODY>
+</HTML>

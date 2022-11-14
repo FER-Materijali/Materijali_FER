@@ -1,0 +1,214 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Justin Couch">
+   <META NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
+   <TITLE>VRML97 ISO/IEC 14772-2:xxxx - Annex B, Java Language Binding</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<CENTER>
+<H1>
+<IMG SRC="../Images/vrml97-2.gif" ALT="VRML97 logo" naturalsizeflag="0" HEIGHT=85 WIDTH=470 ALIGN=TEXTTOP></H1></CENTER>
+
+<CENTER>
+<H1>
+Annex C<BR>
+<FONT SIZE=+1>(informative)</FONT></H1></CENTER>
+
+<CENTER>
+<H1>
+Backwards compatibility</H1></CENTER>
+
+
+<P><br>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" height=25 width=470 ALIGN=TEXTTOP>
+<H2>
+<a NAME="Table of Contents and Introduction" href="file:///D:/ANSI/VRML/EAI/part2/backComp.html"></a>C.1 Table of contents and introduction</H2>
+
+<H3>
+<a NAME="Introduction"></a>C.1.1 Introduction</H3>
+This annex provides describes how it is possible to support the initial proposed
+EAI implemented in some VRML browsers. These implementations used the&nbsp; <A HREF="http://java.sun.com/">Java<SUP><FONT SIZE=-2>tm</FONT></SUP>
+ platform</A> described in Annex B.&nbsp; This backwards compatible support
+assumes support for the functionality described in Annex B.
+<p>
+The EAI specification has existed in a previous <I>de facto</I> form based
+on partial working specs and implementations prior to formalization. This
+specification provides the option for implementing backwards compatible
+implementations although a new implementation is not required to provide
+backwards compatibility in the java implementation. The specification is
+designed to encourage movement to the standard as quickly as possible using
+standard mechanisms provided by Java.</p>
+<H3>
+<a NAME="Table of Contents"></a>C.1.2 Table of contents</H3>
+See <a HREF="#TOC">Table C.1</a> for the contents of this annex.
+<BR>&nbsp;
+<BR>&nbsp;
+<TABLE BORDER COLS=2 WIDTH="99%" >
+<CAPTION align="top"><a NAME="TOC"></a><B>Table C.1 --Table of contents</B></CAPTION>
+
+<TR>
+<TD VALIGN=TOP><B><a HREF="#Table of Contents and Introduction">C.1 Table of contents and introduction</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#Introduction">C.1.1 Introduction</a>&nbsp;
+<BR>&nbsp;<a HREF="#Table of Contents">C.1.2 Table of contents</a>&nbsp;
+<BR>&nbsp;<a HREF="#Conventions">C.1.3 Conventions</a>&nbsp;<P><b><a HREF="#Concepts">C.2 Concepts</a></b>&nbsp;
+<BR>&nbsp;<a HREF="#Scope of specification">C.2.1 Scope of specification</a>&nbsp;
+<BR>&nbsp;<a HREF="#Conformance">C.2.2 Conformance</a>&nbsp;
+<BR>&nbsp;<a HREF="#Implementation dependencies">C.2.6 Implementation dependencies</a>&nbsp;<br>
+<BR><B><a HREF="#Java class hierarchy">C.3 Java class hierarchy</a></B>&nbsp;
+<BR></TD>
+
+</TR>
+</TABLE>
+
+<H3>
+<a NAME="Conventions"></a>C.1.3 Conventions</H3>
+The following type-setting conventions are used to indicate a particular
+meaning to the text in this document.
+<BR>&nbsp;
+<TABLE CELLPADDING=3 WIDTH="100%" >
+<TR VALIGN=TOP>
+<TD WIDTH="10%"><TT>name</TT></TD>
+
+<TD>Words written in monospaced font are direct description of a particular
+Java class, field or property. This text may also provide a link to the
+specific documentation (provided in javadoc style docuementation) to provide
+greater definition of the information</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>methodName()</TT></TD>
+
+<TD>Indicates a particular java method call. This may be representative
+of the general method name (where there are overloaded versions of the
+method) or just the method. No arguments definitions are provided unless
+needed in context to define the particular method specifically. The
+  capitalization
+of the method name exactly follows the name of the method</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>ClassName.methodName()</TT></TD>
+
+<TD>The first word indicates the name of the class and is qualified with
+the method name. The capitalization of the class name follows the exact
+naming of the class. The method argument presentation is the same as that
+for the plain method name.</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>package.name.ClassName</TT></TD>
+
+<TD>All words up to the class name represent the package definition that
+the class belongs to. Referred to as the fully qualified class name. The
+last word is the name of the class. Capitalization follows the exact definition
+of the class and package.</TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470 ALIGN=TEXTTOP>
+<H2>
+<a NAME="Concepts"></a>C.2 Concepts</H2>
+
+<H3>
+<a NAME="Scope of specification"></a>C.2.1 Scope of specification</H3>
+The Java platform provides an implementation of the <i>de facto</i> EAI specification.
+<H3>
+<a NAME="Conformance"></a>C.2.2 Conformance</H3>
+Support for the <i>de facto</i> EAI is not required for a conforming implementation of the EAI.
+If a browser supports a Java language interface from an external environment, it shall conform with all of the requirements specified in
+Annex B. If a browser supports the <i>de facto</i> EAI, it shall conform with
+all of the requirements specified in this annex.
+
+<P>An implementation shall not modify the classes defined in this specification
+with their own specific methods or additional methods.
+<p>The classes in the following packages shall have all classes marked with the <tt>@deprecated</tt>
+tag.
+<p><tt>vrml.external</tt><br>
+<tt>vrml.external.exception</tt><br>
+<tt>vrml.external.field</tt>
+<p>An implementation is not required to provide the backwards compatible class
+implementation. This specification does not define the behaviour of the
+backwards compatible classes.</p>
+<H3>
+<a NAME="Implementation dependencies"></a>C.2.3 Implementation dependencies</H3>
+Implementation dependent for the scope of this annex is defined to be the
+browser writer implementation of the java classes and how they interact
+with the environment and the VRML browser.
+
+<P>This specification does not implement the full capabilities of the EAI
+specification. Additional capabilites may be be provided by individual
+implementations but shall not form part of the standard&nbsp; <TT>vrml.external</TT> package hierarchy and classes as defined in this
+specification. Any implementation dependent provision of these capabilities
+shall be provided under a non-VRML package such as the vendor's own hierarchy.
+The listing of the implementation of all java classes used for binding
+to the services are provided in <a HREF="#Java class hierarchy">C.3 Java class heirarchy</a>.
+
+<h3><a name="Java class hierarchy"></a>C.3 Java class hierarchy</h3>
+<pre>vrml.external
+&nbsp; |
+&nbsp; +- vrml.external.IBrowser
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.Browser
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.CBrowser
+&nbsp; |
+&nbsp; +- vrml.external.Node
+&nbsp; +- vrml.external.field
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventIn
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInMFColor
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInMFFloat
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInMFInt32
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInMFNode
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInMFRotation
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInMFString
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInMFVec2f
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInMFVec3f
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInSFBool
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInSFColor
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInSFFloat
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInSFImage
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInSFInt32
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInSFNode
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInSFRotation
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInSFString
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInSFTime
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInSFVec2f
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventInSFVec3f
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOut
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutMField
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutMFColor
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutMFFloat
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutMFInt32
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutMFNode
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutMFRotation
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutMFString
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutMFVec2f
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutMFVec3f
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutSFBool
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutSFColor
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutSFFloat
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutSFImage
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutSFInt32
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutSFNode
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutSFRotation
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutSFString
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutSFTime
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutSFVec2f
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutSFVec3f
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.EventOutObserver
+&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.field.FieldTypes
+&nbsp; |
+&nbsp; +- vrml.external.exception
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.exception.InvalidEventInException
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.exception.InvalidEventOutException
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.exception.InvalidNodeException
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +- vrml.external.exception.InvalidVrmlException</pre>
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470 ALIGN=TOP>
+<p>&nbsp;
+</BODY>
+</HTML>

@@ -1,0 +1,123 @@
+#VRML V2.0 utf8
+#
+#  Load VRML using a script
+#  loader.wrl
+#	by David R. Nadeau
+#
+#  This example illustrates use of a JavaScript/VRMLscript script that
+#  loads VRML from a file through use of the Browser object.  When
+#  sent a URL for a file to load, the script loads it, waits for the
+#  load to complete, then adds the loaded shape into a group.
+#
+
+WorldInfo {
+	title "Load VRML using a script"
+	info [ "Copyright (c) 1998, David R. Nadeau" ]
+}
+
+NavigationInfo {
+	type [ "EXAMINE", "ANY" ]
+	headlight TRUE
+}
+
+Viewpoint {
+	position 0.0 0.0 10.0
+	description "Entry view"
+}
+
+Background {
+    skyColor [
+        0.0 0.0 0.0,
+        0.0 0.0 0.0,
+        0.0 0.8 0.2,
+        0.0 0.0 0.0,
+    ]
+    skyAngle [
+        1.37
+        1.57,
+        1.77,
+    ]
+}
+
+EXTERNPROTO Button [
+	field SFVec3f translation
+	field MFString texture
+	field MFString url
+	eventOut MFString url_changed
+] "button.wrl#Button"
+
+
+#
+#  Button shapes
+#
+DEF Button1 Button {
+	translation -4.0 2.0 0.0
+	url "one.wrl"
+	texture "one.jpg"
+}
+DEF Button2 Button {
+	translation -4.0 0.0 0.0
+	url "two.wrl"
+	texture "two.jpg"
+}
+DEF Button3 Button {
+	translation -4.0 -2.0 0.0
+	url "three.wrl"
+	texture "three.jpg"
+}
+
+#
+#  Label indicating what file is currently loaded
+#
+Transform {
+	translation -4.0 -3.5 0.0
+	children Shape {
+		appearance Appearance {
+			material Material { }
+		}
+		geometry DEF Label Text {
+			string ""
+			fontStyle FontStyle {
+				size 0.75
+				justify "MIDDLE"
+			}
+		}
+	}
+}
+
+#
+#  Group to hold loaded data
+#
+DEF Loaded Transform {
+	translation 1.0 0.0 0.0
+	children [ ]
+}
+
+#
+#  Script to load the data when it is sent a URL
+#
+DEF Loader Script {
+	field SFNode myself USE Loader
+	field MFString lastUrl ""
+	eventIn  MFString loadUrl
+	eventIn  MFNode   vrmlLoaded
+	eventOut MFNode   node_changed
+	eventOut MFString string_changed
+	url "vrmlscript:
+		function loadUrl( str, ts ) {
+			lastUrl = str;
+			Browser.createVrmlFromURL( str, myself, 'vrmlLoaded' );
+			string_changed[0] = 'Loading...';
+		}
+		function vrmlLoaded( nd, ts ) {
+			node_changed = nd;
+			string_changed[0] = lastUrl[0];
+		}
+	"
+}
+
+ROUTE Button1.url_changed   TO Loader.loadUrl
+ROUTE Button2.url_changed   TO Loader.loadUrl
+ROUTE Button3.url_changed   TO Loader.loadUrl
+ROUTE Loader.node_changed   TO Loaded.set_children
+ROUTE Loader.string_changed TO Label.set_string

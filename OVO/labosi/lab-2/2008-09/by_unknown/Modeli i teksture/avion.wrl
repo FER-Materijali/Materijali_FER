@@ -1,0 +1,217 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+	title "Avion"
+}
+
+#Postavljanje koordinata kamere tj. COP-a
+Viewpoint {
+	position 0.0 0.0 5.0
+    description "Entry view"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight TRUE
+}
+
+#Promijenjene boje pozadine kako bi se vidjelo i tlo
+Background {
+    skyColor    [ 0.0 0.0 1.0 ]
+    groundColor [ 0.0 0.4 0.0 ]
+}
+
+#Prvo se u graf scene dodaje èvor koji definira cijeli avion
+#AVION
+DEF Avion Transform {
+    children [
+		
+		#Zatim se dodaje trup
+		#TRUP
+		Transform {
+			scale 1.9 0.3 0.4
+			children [
+				DEF Kugla1 Shape {
+					appearance Appearance {
+						material Material {diffuseColor 1.0 1.0 1.0}
+						texture ImageTexture {url "trup.jpg"}
+					}
+					geometry Sphere { }
+				}
+				
+				#DESNO KRILO
+				Transform {
+					translation -0.25 0.8 2.1
+					rotation 0.0 1.0 0.0 -0.020
+					scale 0.20 0.18 3.6
+					children [
+						DEF Krilo Shape {
+							appearance Appearance {
+								material Material {diffuseColor 1.0 1.0 1.0}
+							}
+							geometry Sphere { radius 1.0 }
+						}
+						Transform {
+							translation 0.2 1.0 0.12
+							rotation 0.0 1.0 0.0 -0.020
+							scale 1.5 2.5 0.1
+							children [
+								#MOTOR NA DESNOM KRILU
+								DEF Motor Shape {
+									appearance Appearance {
+										material Material {diffuseColor 1.0 1.0 1.0}
+										texture ImageTexture {url "motor.jpg"}
+									}
+									geometry Sphere { radius 1.0 }
+								}
+								#PROPELERI
+								Transform {
+									translation 0.95 0.0 0.0
+									scale 0.05 3.5 0.5
+									children [
+										DEF Propeler Shape {
+											appearance Appearance {
+												material Material {diffuseColor 0.25 0.25 0.25}
+											}
+											geometry Sphere { radius 0.5 }
+										}
+									]
+								}
+								Transform {
+									translation 0.95 0.0 0.0
+									rotation 1.0 0.0 0.0 1.5705
+									scale 0.05 3.5 0.5
+									children [
+										USE Propeler
+									]
+								}
+							]
+						}
+					]
+				}
+				
+				#LIJEVO KRILO
+				Transform {
+					translation -0.25 0.8 -2.1
+					rotation 0.0 1.0 0.0 0.020
+					scale 0.20 0.18 3.6
+					children [
+						USE Krilo
+						#MOTOR NA LIJEVOM KRILU
+						Transform {
+							translation 0.2 1.0 -0.12
+							rotation 0.0 1.0 0.0 0.020
+							scale 1.5 2.5 0.1
+							children [
+								USE Motor
+								
+								#PROPELERI
+								Transform {
+									translation 0.95 0.0 0.0
+									scale 0.05 3.5 0.5
+									children [
+										USE Propeler
+									]
+								}
+								Transform {
+									translation 0.95 0.0 0.0
+									rotation 1.0 0.0 0.0 1.5705
+									scale 0.05 3.5 0.5
+									children [
+										USE Propeler
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+		
+		#REP
+		Transform {
+			translation -1.6 0.3 0.0
+			rotation 0.0 0.0 1.0 -0.8
+			scale 0.55 0.18 0.05
+			children [
+				#USE Kugla1
+				
+				USE Krilo
+				Shape {
+					appearance Appearance {
+						material Material {diffuseColor 1.0 1.0 1.0}
+						texture ImageTexture {url "rep.jpg"}
+					}
+					geometry Sphere { }
+				}
+				
+				#DESNI MALI REP
+				Transform {
+					translation -0.75 0.25 6.0
+					rotation 0.0 0.0 1.0 2.85
+					scale 0.06 0.7 10.5
+					children [
+						USE Krilo
+					]
+				}
+				
+				#LIJEVI MALI REP
+				Transform {
+					translation -0.75 0.25 -6.0
+					rotation 0.0 0.0 1.0 2.85
+					scale 0.06 0.7 10.5
+					children [
+						USE Krilo
+					]
+				}
+				
+				#MOTOR NA REPU
+				Transform {
+					translation -0.7 1.0 0.0
+					rotation 0.0 0.0 1.0 1.30
+					scale 1.8 0.3 2.0
+					children [
+						USE Motor
+						
+						#PROPELERI
+						Transform {
+							translation 0.97 -0.1 0.0
+							rotation 0.0 0.0 1.0 -0.243
+							scale 0.05 0.55 3.5
+							children [
+								USE Propeler
+							]
+						}	
+						Transform {
+							translation 0.97 -0.1 0.0
+							rotation 0.0 0.0 1.0 -0.243
+							scale 0.05 3.0 0.7
+							children [
+								USE Propeler
+							]
+						}
+					]
+				}
+			]
+		}
+		
+		#Dodavanje inicijala
+		#INICIJALI
+		Transform {
+			translation -0.5 0.3 2.0
+			rotation 0.0 1.0 0.0 1.5705
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {diffuseColor 1.0 0.0 0.0}
+					}
+					geometry Text {
+						string [ "D. S." ]
+						fontStyle FontStyle {style "BOLD"}
+					}
+				}
+			]
+		}
+	]
+} 
+

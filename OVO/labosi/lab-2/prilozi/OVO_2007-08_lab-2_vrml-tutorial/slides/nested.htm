@@ -1,0 +1,126 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>nested.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Sensing viewer actions</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>nested.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  nested.wrl
+#  Nested sensors
+#	by John L. Moreland
+#
+#  This world illustrates the use of nested sensors where one sensor
+#  covers shapes in an inner Transform group, and another sensor covers
+#  shapes in an outer Transform group.
+#
+
+WorldInfo {
+    title "Nested sensors"
+    info [ "Copyright (c) 1998, John L. Moreland" ]
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+}
+
+Viewpoint {
+    position 0.0 1.0 2.0
+    orientation 1.0 0.0 0.0  -0.25
+    description "Entry view"
+}
+
+#
+#  An arm with a joint and a pair of SphereSensors, one per arm segment
+#
+DEF TopTf Transform {
+    children [
+        # Segment 1 Transform
+        DEF Segment1Tf Transform {
+            center      0.0 -0.25  0.0
+            translation 0.0  0.25  0.0
+            children [
+
+                DEF Segment1Ss SphereSensor { }
+
+                # Segment 1 Pieces
+                DEF Block Transform {
+                    scale 0.1 0.5 0.1
+                    children [
+                        Shape {
+                            appearance DEF Appear Appearance {
+                                material Material {
+                                    diffuseColor 1 1 0
+                                }
+                            }
+                            geometry Sphere {
+                                radius 0.5
+                            }
+                        }
+                    ]
+                }
+                # Joint
+                Transform {
+                    translation 0.0 0.25 0.0
+                    children [
+                        Shape {
+                            appearance USE Appear
+                            geometry Sphere {
+                                radius 0.05
+                            }
+                        }
+                    ]
+                }
+
+                # Segment 2 Transform
+                DEF Segment2Tf Transform {
+                    center 0.0 0.25 0.0
+                    children [
+
+                        DEF Segment2Ss SphereSensor { }
+
+                        # Segment 2 Pieces
+                        Transform {
+                            translation 0.0 0.5 0.0
+                            children USE Block
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+ROUTE Segment1Ss.rotation_changed TO Segment1Tf.set_rotation
+ROUTE Segment2Ss.rotation_changed TO Segment2Tf.set_rotation
+
+
+# Ground
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Box {
+        size 2.0 0.02 2.0
+    }
+}
+</FONT></PRE>
+</BODY>
+</HTML>

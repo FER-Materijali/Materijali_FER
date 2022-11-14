@@ -1,0 +1,37 @@
+#VRML V2.0 utf8
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Text {
+        string "Serif"
+        fontStyle FontStyle {
+            family "SERIF"
+            style "BOLD"
+        }
+    }
+}
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Text {
+        string [ "", "Sans" ]
+        fontStyle FontStyle {
+            family "SANS"
+            style "BOLD"
+        }
+    }
+}
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Text {
+        string [ "", "", "Typewriter" ]
+        fontStyle FontStyle {
+            family "TYPEWRITER"
+            style "BOLD"
+        }
+    }
+}

@@ -1,0 +1,216 @@
+#VRML V2.0 utf8
+#
+#  Gothic vaulted ceiling archway
+#  vault.wrl
+#        by David R. Nadeau
+#
+#  This file builds a piece of a vaulted ceiling using an IndexedFaceSet
+#  node.  This piece is then used to build a full ceiling in "ceiling.wrl",
+#  and finally a full building in "temple.wrl".
+#
+
+
+#
+#  Main vault
+#
+Collision {
+    collide FALSE
+    children [
+        Shape {
+            appearance Appearance {
+                material DEF StoneMaterial Material {
+                    diffuseColor 1.0 1.0 1.0
+                }
+                texture DEF StoneBrick ImageTexture {
+                    url "stonebrk.jpg"
+                }
+                textureTransform TextureTransform {
+                    scale 4.0 4.0
+                }
+            }
+            geometry IndexedFaceSet {
+                coord Coordinate {
+                    point [
+                        # Circular arc
+                        -1.1  0.0   1.0,
+                        -1.1  0.26  0.97,
+                        -1.1  0.5   0.87,
+                        -1.1  0.71  0.71,
+                        -1.1  0.87  0.5,
+                        -1.1  0.97  0.26,
+                        -1.1  1.0   0.0,
+                        -1.1  0.97 -0.26,
+                        -1.1  0.87 -0.5,
+                        -1.1  0.71 -0.71,
+                        -1.1  0.5  -0.87,
+                        -1.1  0.26 -0.97,
+                        -1.1  0.0  -1.0,
+                        # Angled circular arc
+                        -1.0  0.0   1.0,
+                        -0.97 0.26  0.97,
+                        -0.87 0.5   0.87,
+                        -0.71 0.71  0.71,
+                        -0.5  0.87  0.5,
+                        -0.26 0.96  0.26,
+                         0.0  1.0   0.0,
+                        -0.26 0.96 -0.26,
+                        -0.5  0.87 -0.5,
+                        -0.71 0.71 -0.71,
+                        -0.87 0.5  -0.87,
+                        -0.97 0.26 -0.97,
+                        -1.0  0.0  -1.0,
+                    ]
+                }
+                coordIndex [
+                     0, 13, 14,  1, -1,
+                     1, 14, 15,  2, -1,
+                     2, 15, 16,  3, -1,
+                     3, 16, 17,  4, -1,
+                     4, 17, 18,  5, -1,
+                     5, 18, 19,  6, -1,
+                     6, 19, 20,  7, -1,
+                     7, 20, 21,  8, -1,
+                     8, 21, 22,  9, -1,
+                     9, 22, 23, 10, -1,
+                    10, 23, 24, 11, -1,
+                    11, 24, 25, 12, -1,
+                ]
+                convex TRUE
+                ccw    FALSE
+                solid  TRUE
+                creaseAngle 0.785
+            }
+        }
+
+
+#
+#  Vault ribbing
+#
+        Transform {
+            translation -1.0 0.0 0.0
+            children [
+                Shape {
+                    appearance Appearance {
+                        material USE StoneMaterial
+                        texture  ImageTexture {
+                            url "stone2.jpg"
+                        }
+                        textureTransform TextureTransform {
+                            scale 1.0 1.0
+                        }
+                    }
+                    geometry IndexedFaceSet {
+                        coord Coordinate {
+                            point [
+                                # Inner radius, right
+                                0.00 0.00 -0.90,
+                                0.00 0.39 -0.81,
+                                0.00 0.70 -0.56,
+                                0.00 0.88 -0.20,
+                                0.00 0.88 0.20,
+                                0.00 0.70 0.56,
+                                0.00 0.39 0.81,
+                                0.00 0.00 0.90,
+                                # Inner radius, left
+                                -0.10 0.00 -0.90,
+                                -0.10 0.39 -0.81,
+                                -0.10 0.70 -0.56,
+                                -0.10 0.88 -0.20,
+                                -0.10 0.88 0.20,
+                                -0.10 0.70 0.56,
+                                -0.10 0.39 0.81,
+                                -0.10 0.00 0.90,
+                                # Outer radius, right
+                                0.00 0.00 -1.00,
+                                0.00 0.43 -0.90,
+                                0.00 0.78 -0.62,
+                                0.00 0.97 -0.22,
+                                0.00 0.97 0.22,
+                                0.00 0.78 0.62,
+                                0.00 0.43 0.90,
+                                0.00 0.00 1.00,
+                                # Outer radius, left
+                                -0.10 0.00 -1.00,
+                                -0.10 0.43 -0.90,
+                                -0.10 0.78 -0.62,
+                                -0.10 0.97 -0.22,
+                                -0.10 0.97 0.22,
+                                -0.10 0.78 0.62,
+                                -0.10 0.43 0.90,
+                                -0.10 0.00 1.00,
+                            ]
+                        }
+                        coordIndex [
+                            # Right side
+                            0, 16, 17, 1, -1,
+                            1, 17, 18, 2, -1,
+                            2, 18, 19, 3, -1,
+                            3, 19, 20, 4, -1,
+                            4, 20, 21, 5, -1,
+                            5, 21, 22, 6, -1,
+                            6, 22, 23, 7, -1,
+                            # Left side
+                            24, 8, 9, 25, -1,
+                            25, 9, 10, 26, -1,
+                            26, 10, 11, 27, -1,
+                            27, 11, 12, 28, -1,
+                            28, 12, 13, 29, -1,
+                            29, 13, 14, 30, -1,
+                            30, 14, 15, 31, -1,
+                            # Bottom
+                            8, 0, 1, 9, -1,
+                            9, 1, 2, 10, -1,
+                            10, 2, 3, 11, -1,
+                            11, 3, 4, 12, -1,
+                            12, 4, 5, 13, -1,
+                            13, 5, 6, 14, -1,
+                            14, 6, 7, 15, -1,
+                            # Top
+                            16, 24, 25, 17, -1,
+                            17, 25, 26, 18, -1,
+                            18, 26, 27, 19, -1,
+                            19, 27, 28, 20, -1,
+                            20, 28, 29, 21, -1,
+                            21, 29, 30, 22, -1,
+                            22, 30, 31, 23, -1,
+                            # Caps
+                            0, 8, 24, 16, -1,
+                            7, 23, 31, 15, -1,
+                        ]
+                        texCoord TextureCoordinate {
+                            point [
+                                0.0 0.0, 1.0 0.0, 1.0 1.0, 0.0 1.0,
+                            ]
+                        }
+                        texCoordIndex [
+                            # Right side
+                            0, 1, 2, 3, -1,        0, 1, 2, 3, -1,        0, 1, 2, 3, -1,        0, 1, 2, 3, -1,        0, 1, 2, 3, -1,        0, 1, 2, 3, -1,        0, 1, 2, 3, -1,        # Left side
+                            0, 1, 2, 3, -1,        0, 1, 2, 3, -1,        0, 1, 2, 3, -1,        0, 1, 2, 3, -1,        0, 1, 2, 3, -1,        0, 1, 2, 3, -1,        0, 1, 2, 3, -1,        # Bottom
+                            0, 1, 2, 3, -1,
+                            0, 1, 2, 3, -1,
+                            0, 1, 2, 3, -1,
+                            0, 1, 2, 3, -1,
+                            0, 1, 2, 3, -1,
+                            0, 1, 2, 3, -1,
+                            0, 1, 2, 3, -1,
+                            # Top
+                            0, 1, 2, 3, -1,
+                            0, 1, 2, 3, -1,
+                            0, 1, 2, 3, -1,
+                            0, 1, 2, 3, -1,
+                            0, 1, 2, 3, -1,
+                            0, 1, 2, 3, -1,
+                            0, 1, 2, 3, -1,
+                            # Caps
+                            0, 1, 2, 3, -1,
+                            0, 1, 2, 3, -1,
+                        ]
+                        solid TRUE
+                        convex FALSE
+                        creaseAngle 0.785
+                    }
+                }
+            ]
+        }
+    ]
+}

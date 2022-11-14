@@ -1,0 +1,14 @@
+#VRML V2.0 utf8
+#
+#  Gothic vaulted ceiling
+#  ceiling.wrl
+#        by David R. Nadeau
+#
+#  This file combines together four vaulted ceiling pieces to create a
+#  vaulted ceiling, such as might be found in gothic architecture.
+#
+
+DEF Vault Inline { url "vault.wrl" }
+Transform { rotation 0.0 1.0 0.0 1.57  children USE Vault }
+Transform { rotation 0.0 1.0 0.0 3.14  children USE Vault }
+Transform { rotation 0.0 1.0 0.0 -1.57 children USE Vault }

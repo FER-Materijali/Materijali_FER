@@ -1,0 +1,129 @@
+#VRML V2.0 utf8
+
+# "Submarine"
+
+NavigationInfo {
+	type [ "EXAMINE", "ANY" ]
+}
+
+######################################################################
+# World
+
+# Sub
+Group {
+	children [
+		# Body
+		Transform {
+			scale 0.2 0.2 1.0
+			children [
+				Shape {
+					appearance DEF Yellow Appearance {
+						material Material {
+							diffuseColor 1.0 1.0 0.0
+						}
+					}
+					geometry Sphere {
+						radius 5.0
+					}
+				}
+			]
+		}
+		# Bridge
+		Transform {
+			translation 0.0 1.3 0.0
+			scale 0.3 1.0 1.0
+			children [
+				Shape {
+					appearance USE Yellow
+					geometry Cylinder {
+						radius 1.0
+						height 1.0
+					}
+				}
+			]
+		}
+		# Periscope
+		DEF Periscope Transform {
+			translation 0.0 1.7 0.0
+			children [
+				Shape {
+					appearance USE Yellow
+					geometry Extrusion {
+						crossSection [
+							 0.1 -0.1,
+							-0.1 -0.1,
+							-0.1  0.1,
+							 0.1  0.1,
+							 0.1 -0.1,
+						]
+						spine [
+							0.0 0.0 0.0,
+							0.0 0.6 0.0,
+							0.0 0.6 0.5,
+						]
+					}
+				}
+			]
+		}
+	]
+}
+
+######################################################################
+# Ambient Sounds
+
+Transform {
+	scale 1.0 0.5 1.0
+	children [
+		Sound {
+			minFront 15.0
+			minBack 15.0
+			maxFront 30.0
+			maxBack 30.0
+			spatialize TRUE
+			source DEF Ping AudioClip {
+				url "ping.wav"
+				pitch 0.5
+			}
+		}
+	]
+}
+Transform {
+	scale 1.0 0.5 1.0
+	children [
+		Sound {
+			minFront 15.0
+			minBack 15.0
+			maxFront 30.0
+			maxBack 30.0
+			spatialize TRUE
+			source AudioClip {
+				url "prop.wav"
+				startTime 1.0
+				stopTime  0.0
+				loop TRUE
+			}
+		}
+	]
+}
+
+######################################################################
+# Make the sub navigate and the ping ping
+
+DEF Time TimeSensor {
+	cycleInterval 4.0
+	loop TRUE
+}
+
+ROUTE Time.cycleTime TO Ping.set_startTime
+
+DEF Nav OrientationInterpolator {
+	key [ 0.0, 0.5, 1.0 ]
+	keyValue [
+		0.0 1.0 0.0  0.0,
+		0.0 1.0 0.0  3.14159,
+		0.0 1.0 0.0  6.283,
+	]
+}
+
+ROUTE Time.fraction_changed TO Nav.set_fraction
+ROUTE Nav.value_changed TO Periscope.set_rotation

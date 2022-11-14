@@ -1,0 +1,256 @@
+#VRML V2.0 utf8
+#
+#  lamp2.wrl
+#  Desk lamp with light toggle switch
+#	by David R. Nadeau
+#
+#  This file builds a desk lamp that can be moved about.  Dragging
+#  on the lamp base slides the lamp back and forth.  Dragging on the
+#  lamp arms turns the lamp arm.  Dragging on the lamp shade turns
+#  the lamp shade.  Touching the lamp's light switch (on the top of the
+#  lamp shade) turns the lamp on and off.
+#
+#  To make the lamp go on and off, a TouchSensor is routed into a
+#  'toggle' script that alternates between TRUE and FALSE outputs,
+#  sending TRUE on the first TRUE input, then FALSE on the next TRUE
+#  input.  These TRUE/FALSE values are routed into a SpotLight node
+#  within the lamp, turning it on and off.
+#
+#  A second script converts an incoming TRUE or FALSE in to one of
+#  two colors.  Those colors are routed into the lamp's bulb to change
+#  it from an on color to an off color.
+#
+
+WorldInfo {
+    title "Desk lamp with light toggle switch"
+    info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+DEF Entry Viewpoint {
+    position 0.0 0.1 1.0
+    description "Entry View"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight FALSE
+}
+
+Background {
+    skyColor [ 0.0 0.0 0.0 ]
+}
+
+DirectionalLight {
+  direction 0.0 -1.0 -1.0
+  intensity 0.3
+}
+
+Transform {
+  translation -1.0 0.0 -1.0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { }
+        texture ImageTexture { url "wood.jpg" }
+      }
+      geometry ElevationGrid {
+        xDimension 10
+        zDimension 10
+        xSpacing 0.25
+        zSpacing 0.25
+        creaseAngle 3.14
+        height [
+          0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+          0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+          0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+          0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+          0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+          0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+          0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+          0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+          0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+          0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+        ]
+      }
+    }
+  ]
+}
+
+
+Transform {
+  translation 0.0 0.01 0.0
+  rotation 1.0 0.0 0.0 1.571
+  children [
+  # Lamp
+    DEF MoveLamp PlaneSensor { }
+    DEF Lamp Transform {
+      rotation 1.0 0.0 0.0 -1.571
+      children [
+      # Lamp base
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.5 0.5 0.5 }
+          }
+          geometry Cylinder {
+            radius 0.1
+            height 0.01
+          }
+        }
+      # Base - First arm joint
+        Group {
+          children [
+            DEF MoveFirstArm CylinderSensor { }
+            DEF FirstArm Transform {
+              children [
+Transform {
+translation 0.0 0.15 0.0
+rotation    1.0 0.0 0.0  -0.7
+center      0.0 -0.15 0.0
+children [
+              # Lower arm
+                DEF LampArm Shape {
+                  appearance DEF Red Appearance {
+                    material Material { diffuseColor 1.0 0.2 0.2 }
+                  }
+                  geometry Cylinder {
+                    radius 0.01
+                    height 0.3
+                  }
+                }
+              # First arm - second arm joint
+                Group {
+                  children [
+                    DEF MoveSecondArm CylinderSensor { }
+                    DEF SecondArm Transform {
+                      children [
+Transform {
+translation 0.0 0.3 0.0
+rotation  1.0 0.0 0.0  1.9
+center    0.0 -0.15 0.0
+children [
+                      # Second arm
+                        USE LampArm,
+                      # Second arm - shade joint
+                        Group {
+                          children [
+                            DEF MoveLampShade SphereSensor {
+                              offset 1.0 0.0 0.0 -1.25
+                            }
+                            DEF LampShade Transform {
+                              translation 0.0 0.075 0.0
+                              rotation  1.0 0.0 0.0  -1.25
+                              center    0.0 0.075 0.0
+                              children [
+                              # Shade
+                                Shape {
+                                  appearance USE Red
+                                  geometry Cone {
+                                    height 0.15
+                                    bottomRadius 0.12
+                                    bottom FALSE
+                                  }
+                                }
+			      # Switch
+			        Transform {
+			          translation 0.0 0.075 0.0
+			          children [
+			            DEF LightSwitch TouchSensor { }
+			            Shape {
+			              appearance Appearance {
+			                material Material {
+			                  diffuseColor 1.0 1.0 1.0
+			                }
+			              }
+			              geometry Cylinder {
+			                radius 0.007
+			                height 0.03
+			              }
+			            }
+			          ]
+			        }
+                              # Light bulb
+                                Transform {
+                                  translation 0.0 -0.05 0.0
+                                  children [
+				    DEF LampLight SpotLight {
+				      ambientIntensity 0.2
+				      intensity 1.0
+				      direction 0.0 -1.0 0.0
+				      location 0.0 0.0 0.0
+				      beamWidth 0.6
+				      cutOffAngle 1.571
+				    }
+				    Shape {
+                                      appearance Appearance {
+                                        material DEF BulbMaterial Material {
+                                           diffuseColor 0.0 0.0 0.0
+                                           emissiveColor 1.0 1.0 1.0
+                                        }
+                                      }
+                                      geometry Sphere {
+                                        radius 0.05
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+] }
+                      ]
+                    }
+                  ]
+                }
+] }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+ROUTE MoveLamp.translation_changed   TO Lamp.set_translation
+ROUTE MoveFirstArm.rotation_changed  TO FirstArm.set_rotation
+ROUTE MoveSecondArm.rotation_changed TO SecondArm.set_rotation
+ROUTE MoveLampShade.rotation_changed TO LampShade.set_rotation
+
+
+DEF Toggle Script {
+	field    SFBool on TRUE
+	eventIn  SFBool set_active
+	eventOut SFBool on_changed
+
+	# use 'javascript' on newer browsers
+	url "vrmlscript:
+		function set_active( b, tm ) {
+			// ignore button releases
+			if ( b == FALSE ) return;
+
+			// toggle on button presses
+			if ( on == TRUE ) on = FALSE;
+			else              on = TRUE;
+			on_changed = on;
+		}"
+}
+
+DEF ColorSelector Script {
+	field    SFColor onColor  1.0 1.0 1.0
+	field    SFColor offColor 0.0 0.0 0.0
+	eventIn  SFBool  set_selection
+	eventOut SFColor color_changed
+
+	# use 'javascript' on newer browsers
+	url "vrmlscript:
+		function set_selection( b, tm ) {
+			if ( b == TRUE )
+				color_changed = onColor;
+			else
+				color_changed = offColor;
+		}"
+}
+ROUTE LightSwitch.isActive TO Toggle.set_active
+ROUTE Toggle.on_changed    TO LampLight.set_on
+ROUTE Toggle.on_changed    TO ColorSelector.set_selection
+ROUTE ColorSelector.color_changed TO BulbMaterial.set_emissiveColor

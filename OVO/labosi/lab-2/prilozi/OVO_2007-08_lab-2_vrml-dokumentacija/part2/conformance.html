@@ -1,0 +1,601 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
+   <META NAME="Author" CONTENT="Justin Couch">
+   <TITLE>VRML97, ISO/IEC 14772-2:xxxx -- 7 Conformance and minimum support requirements</TITLE>
+</HEAD>
+<BODY>
+
+<CENTER>
+<H1>
+<IMG SRC="../Images/vrml97-2.gif" ALT="VRML97 logo" naturalsizeflag="0" HEIGHT=85 WIDTH=470></H1></CENTER>
+
+<CENTER>
+<H1>
+7 Conformance and minimum support requirements</H1></CENTER>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470>
+<H2>
+<a NAME="Introduction"></a>7.1 Introduction</H2>
+
+<H3>
+<a NAME="TableOfContents"></a>7.1.1 Table of contents</H3>
+<a HREF="#TOC">Table 7.1</a> defines the topics in this clause.
+<BR>&nbsp;
+<CENTER><TABLE BORDER COLS=2 >
+<CAPTION align="top"><a NAME="TOC"></a><B>Table 7.1 -- Table of contents</B></CAPTION>
+
+<TR>
+<TD VALIGN=TOP><a HREF="#Introduction"><B>7.1 Introduction</B>&nbsp;</a>&nbsp;
+<BR>&nbsp;<a HREF="#TableOfContents">7.1.1 Table of contents</a>&nbsp;
+<BR>&nbsp;<a HREF="#Objectives">7.1.2 Objectives</a>&nbsp;
+<BR>&nbsp;<a HREF="#Scope">7.1.3 Scope</a>&nbsp;
+
+<P><B><a HREF="#Conformance">7.2 Conformance</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#ConformanceToISO_IEC14772_1">7.2.1 Conformance to ISO/IEC 14772 Part 1</a>&nbsp;
+<BR>&nbsp;<a HREF="#LanguageBindings">7.2.2 Language Bindings</a></TD>
+
+<TD VALIGN=TOP><B><a HREF="#MinimumRequirements">7.3 Minimum support requirements&nbsp;</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#RequirementsForImplementations">7.3.1 Requirements for implementations</a>&nbsp;
+<BR>&nbsp;<a HREF="#BaseProfile">7.3.2 Base Profile</a>
+<BR>&nbsp;</TD>
+</TR>
+</TABLE></CENTER>
+&nbsp;
+<H3>
+<a NAME="Objectives"></a>7.1.2 Objectives</H3>
+This clause addresses conformance of VRML browsers that provide an external
+authoring interface.
+
+<P>The primary objectives of the specifications in this clause are:
+<OL type="a">
+<LI>
+to promote interoperability by eliminating arbitrary subsets of, or extensions
+to, ISO/IEC 14772;</LI>
+
+<LI>
+to promote uniformity in the development of conformance tests;</LI>
+
+<LI>
+to promote consistent results across VRML browsers;</LI>
+
+<LI>
+to facilitate automated test generation.</LI>
+</OL>
+
+<H3>
+<a NAME="Scope"></a>7.1.3 Scope</H3>
+Conformance is defined for language bindings to this specification and
+therefore VRML Browsers and applications that use the facilities provided
+by the External Authoring Interface language-specific bindings.
+
+<P>Due to the nature of this Part, it is not possible to specify the conformance
+tests of individual language bindings to the specification. Separate
+Conformance clauses shall be provided within each language that provide
+the necessary information to implement language specific binding conformance
+tests.
+
+<P>A concept of base profile conformance is defined to ensure interoperability
+of VRML applications and VRML browsers. Base profile conformance is based
+on a set of limits and minimal requirements. Base profile conformance is
+intended to provide a functional level of reasonable utility for VRML language
+bindings while limiting the complexity and resource requirements of VRML
+browsers. Base profile conformance may not be adequate for all uses of
+the EAI.
+<H2>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H2>
+
+<H2>
+<a NAME="Conformance"></a>7.2 Conformance</H2>
+
+<H3>
+<a NAME="ConformanceToISO_IEC14772_1"></a>7.2.1 Conformance to ISO/IEC 14772-1</H3>
+A VRML browser is only conformant to this part of ISO/IEC 14772 if it is required
+to also be conformant to ISO/IEC 14772-1. See <a HREF="../part1/conformance.html">ISO/IEC
+14772-1 7 Conformance and minimum support criteria</a>. In addition, the
+following conditions shall be met:
+<OL type="a" start="1">
+<LI>
+Requests of the Browser services shall conform exactly to the behaviour
+as specified in <a HREF="../part1/concepts.html#4.12">ISO/IEC
+14772-1 4.12 Scripting</a>. Where there are differences, the provisions
+of <a HREF="servRef.html#BrowserServices">6.3, Browser Services</a> shall take
+precedence over ISO/IEC 14772-1 4.12.</LI>
+
+<LI>
+Where a browser is required to read and parse VRML content, it shall be
+able to handle any VRML file that conforms to the base profile defined
+in <a HREF="../part1/conformance.html#7.3.3">ISO/IEC
+14772-1 7.3.3 VRML requirements for conforming to the base profile</a>.</LI>
+
+<LI>
+Only nodes in the top level world (the file defined by the getWorldURL
+service) that are named with the DEF construct shall be visible to the
+getNode browser service request.</LI>
+
+<LI>
+There shall be no difference in treatment of events that result from an
+external service request compared to events generated within the VRML browser
+environment. That is, externally generated event cascades shall have no
+favoured treatment.</LI>
+</OL>
+
+<H3>
+<a NAME="LanguageBindings"></a>7.2.2 Language bindings</H3>
+A language binding to this part of ISO/IEC 14772 is conforming if:
+<OL type="a" start="1">
+<LI>
+It implements the services defined in this specification including return
+values, error conditions and asynchronous events.</LI>
+
+<LI>
+The services implemented conform to the base profile of required services.</LI>
+
+<LI>
+It provides sections outlining conformance and minimum requirements of
+implementations of that binding.</LI>
+</OL>
+
+<H2>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H2>
+
+<H2>
+<a NAME="MinimumRequirements"></a>7.3 Minimum Requirements</H2>
+
+<H3>
+<a NAME="RequirementsForImplementations"></a>7.3.1 Requirements for implementations</H3>
+All implementations of the EAI specification are required to support the
+minimum level of functionality as defined in this section. There are two
+levels of conformance, that of the language binding and the browser implementation.
+
+<P>A language binding must at a minimum implement the service requirements
+outlined in <a HREF="#BaseProfile">7.3.2 Base Profile</a>. It may also define
+its own optional set of minimum requirements that are no less than the
+requirements of this section. A browser implementation must, in addition
+to the base support profile, also support the minimum capabilities defined
+in 7.3.2 Base Profile. In general, the browser requirements are specified
+as more general requirements with the underlying representation that specific
+language issues.
+
+<P>Where a browser implements two or more language bindings with different
+levels of minimum requirements, the browser must support the minimum requirements
+for each language separately. Therefore, if one language has higher requirements,
+the lower requirements of the other shall not be used.
+<H3>
+<a NAME="BaseProfile"></a>7.3.2 Base Profile</H3>
+Table 7.2 defines the minimum requirements for a base profile. The first
+column specifies the items for which conformance is being defined. These refer
+to the services as defined by this specification. The second column defines
+the requirements for a language binding specification of that item. The
+third column defines the requirements of a browser implementation of that
+service.
+
+<P>For all these requirements it shall be assumed that the language binding
+shall provide complete implementation of all the parameters required for
+the individual services. Language bindings of data types may be implemented
+as primitive types in the target language rather than separate data types.
+Table 7.2 indicates where this may be permitted.
+<BR>&nbsp;
+<CENTER><TABLE BORDER CELLPADDING=3 WIDTH="95%" >
+<CAPTION><a NAME="SpecificationsForEAIImplementationConformingToBaseProfile"></a><B>Table 7.2 Specifications for EAI implementations
+conforming to the base profile</B>&nbsp;</CAPTION>
+
+<TR>
+<TH>Item</TH>
+
+<TH>Binding Support</TH>
+
+<TH>Minimum Browser Support</TH>
+</TR>
+
+<TR>
+<TD>EAIAction</TD>
+
+<TD>Full support as required by the individual service request</TD>
+
+<TD>As defined by the language</TD>
+</TR>
+
+<TR>
+<TD>EAIBrowserApp</TD>
+
+<TD>Full support if createBrowser supported.&nbsp;
+
+<P>Not required if only getBrowser supported.</TD>
+
+<TD>Optional (based on getBrowser/createBrowser requirements)</TD>
+</TR>
+
+<TR>
+<TD>EAIBrowserName</TD>
+
+<TD>Primitive type</TD>
+
+<TD>n/a</TD>
+</TR>
+
+<TR>
+<TD>EAIBrowserRef</TD>
+
+<TD>Full support</TD>
+
+<TD>Full support</TD>
+</TR>
+
+<TR>
+<TD>EAIBrowserVersion</TD>
+
+<TD>Primitive type</TD>
+
+<TD>n/a</TD>
+</TR>
+
+<TR>
+<TD>EAIFieldAccess</TD>
+
+<TD>Separate data types for the four types defined by ISO/IEC 14772-1.</TD>
+
+<TD>Full support</TD>
+</TR>
+
+<TR>
+<TD>EAIFieldID</TD>
+
+<TD>Full support</TD>
+
+<TD>Full support</TD>
+</TR>
+
+<TR>
+<TD>EAIFieldName</TD>
+
+<TD>Primitive type</TD>
+
+<TD>Full support</TD>
+</TR>
+
+<TR>
+<TD>EAIFieldType</TD>
+
+<TD>Separate data types for all types defined in ISO/IEC 14772-1, 5 Field
+and Event Reference</TD>
+
+<TD>Full support</TD>
+</TR>
+
+<TR>
+<TD>EAIFieldValue</TD>
+
+<TD>Primitive type as appropriate to the given field.&nbsp;
+<BR>Where field is an SF/MFNode shall be EAINodeID</TD>
+
+<TD>Number of values for setting and getting defined by <a HREF="../part1/conformance.html#Table7.1">ISO/IEC
+14772-1, Table 7.1 Specifications for VRML browsers conforming to the base
+profile</a></TD>
+</TR>
+
+<TR>
+<TD>EAIFrameRate</TD>
+
+<TD>Primitive type</TD>
+
+<TD>n/a</TD>
+</TR>
+
+<TR>
+<TD>EAINavSpeed</TD>
+
+<TD>Primitive type</TD>
+
+<TD>n/a</TD>
+</TR>
+
+<TR>
+<TD>EAINodeID</TD>
+
+<TD>Full support</TD>
+
+<TD>Full support</TD>
+</TR>
+
+<TR>
+<TD>EAINodeType</TD>
+
+<TD>Primitive type</TD>
+
+<TD>EAIString representation of the node name</TD>
+</TR>
+
+<TR>
+<TD>EAIParameterList</TD>
+
+<TD>As required by language and service definition.</TD>
+
+<TD>Dependent on language and browser implementation</TD>
+</TR>
+
+<TR>
+<TD>EAIPropertyList</TD>
+
+<TD>Primitive type</TD>
+
+<TD>5 key value pairs. Values dependent on language bindings</TD>
+</TR>
+
+<TR>
+<TD>EAIRequesterID</TD>
+
+<TD>Full support</TD>
+
+<TD>n/a</TD>
+</TR>
+
+<TR>
+<TD>EAIURL</TD>
+
+<TD>Both URL and URN support</TD>
+
+<TD>See <a HREF="../part1/conformance.html#Table7.1">ISO/IEC
+14772-1, Table 7.1 Specifications for VRML browsers conforming to the base
+profile</a>, all <I>url</I> fields</TD>
+</TR>
+
+<TR>
+<TD>EAIString</TD>
+
+<TD>Primitive type</TD>
+
+<TD>n/a</TD>
+</TR>
+
+<TR>
+<TD>EAIError</TD>
+
+<TD>Separate types for each error condition that may occur as defined in <a HREF="dataRef.html#ErrorTypes">5.3 Error Types</a>.</TD>
+
+<TD>Generate error conditions as appropriate.</TD>
+</TR>
+
+<TR>
+<TH ALIGN=LEFT COLSPAN="3" BGCOLOR="#C0C0C0">Establishing a Connection</TH>
+</TR>
+
+<TR>
+<TD>getBrowser, createBrowser</TD>
+
+<TD>At least one of getBrowser or createBrowser services shall be provided.</TD>
+
+<TD>At least one method of connection with a browser shall be provided.
+Unsupported connection methods shall throw an error.&nbsp;
+<BR>Ignore <I>EAIParameterList</I></TD>
+</TR>
+
+<TR>
+<TH ALIGN=LEFT COLSPAN="3" BGCOLOR="#C0C0C0">Browser Services</TH>
+</TR>
+
+<TR>
+<TD>Browser getName</TD>
+
+<TD>Shall provide</TD>
+
+<TD>Return NULL if not supported</TD>
+</TR>
+
+<TR>
+<TD>getVersion</TD>
+
+<TD>Shall provide</TD>
+
+<TD>Return NULL if not supported.</TD>
+</TR>
+
+<TR>
+<TD>getCurrentSpeed</TD>
+
+<TD>Shall provide</TD>
+
+<TD>Return 0.0 if not supported</TD>
+</TR>
+
+<TR>
+<TD>getCurrentFrameRate</TD>
+
+<TD>Shall provide</TD>
+
+<TD>Return 0.0 if not supported</TD>
+</TR>
+
+<TR>
+<TD>getWorldURL</TD>
+
+<TD>Shall provide</TD>
+
+<TD>Full support</TD>
+</TR>
+
+<TR>
+<TD>replaceWorld</TD>
+
+<TD>Full support</TD>
+
+<TD>500 EAINodeIDs set in single call. See <a HREF="../part1/conformance.html#Table7.1">ISO/IEC
+14772-1, Table 7.1 Specifications for VRML browsers conforming to the base
+profile</a>, all groups</TD>
+</TR>
+
+<TR>
+<TD>loadURL</TD>
+
+<TD>Shall provide</TD>
+
+<TD>Full support. Ignore <I>EAIPropertyList</I> parameter values.&nbsp;</TD>
+</TR>
+
+<TR>
+<TD>setDescription</TD>
+
+<TD>Shall provide</TD>
+
+<TD>No restriction</TD>
+</TR>
+
+<TR>
+<TD>createVrmlFromString</TD>
+
+<TD>Shall provide</TD>
+
+<TD>Support File Limits as defined by <a HREF="../part1/conformance.html#Table7.1">ISO/IEC
+14772-1, Table 7.1 Specifications for VRML browsers conforming to the base
+profile</a>.</TD>
+</TR>
+
+<TR>
+<TD>createVrmlFromURL</TD>
+
+<TD>Shall provide</TD>
+
+<TD>Support File Limits as defined by <a HREF="../part1/conformance.html#Table7.1">ISO/IEC
+14772-1, Table 7.1 Specifications for VRML browsers conforming to the base
+profile</a>.</TD>
+</TR>
+
+<TR>
+<TD>Dynamic Route Handling</TD>
+
+<TD>EAIActions of add and delete route</TD>
+
+<TD>Full support.</TD>
+</TR>
+
+<TR>
+<TD>Update Control</TD>
+
+<TD>EAIActions of start buffering and end buffering</TD>
+
+<TD>Full support</TD>
+</TR>
+
+<TR>
+<TD>Register Browser Interest</TD>
+
+<TD>EAIActions of add and remove interest.</TD>
+
+<TD>Events for initialisation, shutdown, invalid URLs and connection lost.</TD>
+</TR>
+
+<TR>
+<TD>getNode</TD>
+
+<TD>Full support</TD>
+
+<TD>Full support</TD>
+</TR>
+
+<TR>
+<TD>dispose</TD>
+
+<TD>Shall provide</TD>
+
+<TD>No restrictions</TD>
+</TR>
+
+<TR>
+<TH ALIGN=LEFT COLSPAN="3" BGCOLOR="#C0C0C0">Node Services</TH>
+</TR>
+
+<TR>
+<TD>getName</TD>
+
+<TD>Shall provide</TD>
+
+<TD>Full support</TD>
+</TR>
+
+<TR>
+<TD>getType</TD>
+
+<TD>Shall provide</TD>
+
+<TD>no restrictions</TD>
+</TR>
+
+<TR>
+<TD>getField</TD>
+
+<TD>Full support</TD>
+
+<TD>field, eventIn and eventOut fields shall be accesible.</TD>
+</TR>
+
+<TR>
+<TD>dispose</TD>
+
+<TD>Shall provide</TD>
+
+<TD>No restrictions</TD>
+</TR>
+
+<TR>
+<TH ALIGN=LEFT COLSPAN="3" BGCOLOR="#C0C0C0">Field Services</TH>
+</TR>
+
+<TR>
+<TD>getAccessType</TD>
+
+<TD>Shall provide</TD>
+
+<TD>Full support</TD>
+</TR>
+
+<TR>
+<TD>getType</TD>
+
+<TD>see EAIFieldType</TD>
+
+<TD>Full support</TD>
+</TR>
+
+<TR>
+<TD>getName</TD>
+
+<TD>Not required</TD>
+
+<TD>Field name without <I>set_</I> or <I>_changed</I> modifiers</TD>
+</TR>
+
+<TR>
+<TD>getValue</TD>
+
+<TD>Full support</TD>
+
+<TD>Full support</TD>
+</TR>
+
+<TR>
+<TD>setValue</TD>
+
+<TD>Full support</TD>
+
+<TD>Full support. Where fields are MF fields, minimum number of values
+to be supported defined by <a HREF="../part1/conformance.html#Table7.1">ISO/IEC
+14772-1, Table 7.1 Specifications for VRML browsers conforming to the base
+profile</a></TD>
+</TR>
+
+<TR>
+<TD>Register Field Interest</TD>
+
+<TD>EAIActions of add and remove interest&nbsp;
+
+<P>eventOut and the output side of exposedFields shall be supported</TD>
+
+<TD>As per supported langauge binding(s).&nbsp;</TD>
+</TR>
+</TABLE></CENTER>
+&nbsp;
+<H2>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H2>
+
+</BODY>
+</HTML>

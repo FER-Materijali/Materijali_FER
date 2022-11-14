@@ -1,0 +1,1434 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Justin Couch">
+   <META NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
+   <TITLE>VRML97, ISO/IEC 14772-2:xxxx -- 6 Service Reference</TITLE>
+</HEAD>
+<BODY>
+
+<CENTER>
+<H1>
+<IMG SRC="../Images/vrml97-2.gif" ALT="VRML97 logo" naturalsizeflag="0" height=85 width=470></H1></CENTER>
+
+<CENTER>
+<H1>
+6 Services reference</H1></CENTER>
+
+<H1>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H1>
+
+<H2>
+<a NAME="IntroductionAndOverview"></a>6.1 Introduction and overview</H2>
+
+<H3>
+<a NAME="Introduction"></a>6.1.1 Introduction</H3>
+This clause provides a detailed definition of the semantics of the services
+that a browser shall provide to external applications as defined in this
+part of ISO/IEC 14772.
+<H3>
+<a NAME="TableOfContents"></a>6.1.2 Table of contents</H3>
+<a HREF="#TOC">Table 6.1</a> defines the topics in this clause.
+<BR>&nbsp;
+<CENTER><TABLE BORDER COLS=2 WIDTH="100%" >
+<CAPTION align="top"><a NAME="TOC"></a><B>Table 6.1 -- Table of contents</B></CAPTION>
+
+<TR>
+<TD VALIGN=TOP><B><a HREF="#IntroductionAndOverview">6.1 Introduction and overview</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#Introduction">6.1.1 Introduction</a>&nbsp;
+<BR>&nbsp;<a HREF="#TableOfContents">6.1.2 Table of Contents</a>&nbsp;
+<BR>&nbsp;<a HREF="#Conventions">6.1.3 Conventions</a>&nbsp;
+
+<P><B><a HREF="#EstablishingAConnection">6.2 Establishing a connection</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#EstablishingAConnectionIntroduction">6.2.1 Introduction</a>&nbsp;
+<BR>&nbsp;<a HREF="#getBrowser">6.2.2 getBrowser</a>&nbsp;
+<BR>&nbsp;<a HREF="#createBrowser">6.2.3 createBrowser</a>&nbsp;<P><B><a HREF="#BrowserServices">6.3 Browser services</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#BrowserServicesIntroduction">6.3.1 Introduction</a>&nbsp;
+<BR>&nbsp;<a HREF="#createVrmlFromString">6.3.2 createVrmlFromString</a>&nbsp;
+<BR>&nbsp;<a HREF="#createVrmlFromURL">6.3.3 createVrmlFromURL</a>&nbsp;
+<BR>&nbsp;<a HREF="#Dispose">6.3.4 Dispose<br>
+  </a>&nbsp;<a HREF="#DynamicRouteHandling">6.3.5 Dynamic Route Handling</a>&nbsp;
+<BR>&nbsp;<a HREF="#getCurrentFrameRate">6.3.6 getCurrentFrameRate</a>&nbsp;
+<BR>&nbsp;<a HREF="#getCurrentSpeed">6.3.7 getCurrentSpeed</a>&nbsp;
+<BR>&nbsp;<a HREF="#getName">6.3.8 getName</a>&nbsp;
+<BR>&nbsp;<a HREF="#getNode">6.3.9 getNode</a>&nbsp;
+<BR>&nbsp;<a HREF="#getVersion">6.3.10 getVersion</a>&nbsp;
+<BR>&nbsp;<a HREF="#getWorldURL">6.3.11 getWorldURL</a>&nbsp;
+<BR>&nbsp;<a HREF="#loadURL">6.3.12 loadURL</a>&nbsp;
+<BR>&nbsp;<a HREF="#RegisterBrowserInterest">6.3.13 Register Browser Interest</a>&nbsp;
+<BR>&nbsp;<a HREF="#replaceWorld">6.3.14 replaceWorld</a>&nbsp;
+<BR>&nbsp;<a HREF="#setDescription">6.3.15 setDescription</a>&nbsp;
+<BR>&nbsp;<a HREF="#UpdateControl">6.3.16 Update Control</a>&nbsp;
+<BR></TD>
+
+<TD VALIGN=TOP><B><a HREF="#NodeServices">6.4 Node services</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#NodeServicesIntroduction">6.4.1 Introduction</a>&nbsp;
+<BR>&nbsp;<a HREF="#NodeServicesDispose">6.4.2 Dispose</a>&nbsp;<a HREF="#getField"><br>
+  &nbsp;6.4.3 getField</a>&nbsp;
+<BR>&nbsp;<a HREF="#NodeServicesgetName">6.4.4 getName</a>&nbsp;
+<BR>&nbsp;<a HREF="#getType">6.4.5 getType</a>&nbsp;<P><B><a HREF="#FieldServices">6.5 Field services</a></B>&nbsp;
+<BR>&nbsp;<a HREF="#FieldServicesIntroduction">6.5.1 Introduction</a>&nbsp;
+<BR>&nbsp;<a HREF="#getAccessType">6.5.2 getAccessType</a>&nbsp;
+<BR>&nbsp;<a HREF="#FieldServicesGetName">6.5.3 getName</a>&nbsp;
+<BR>&nbsp;<a HREF="#FieldServicesGetType">6.5.4 getType</a>&nbsp;
+<BR>&nbsp;<a HREF="#getValue">6.5.5 getValue</a>&nbsp;
+<BR>&nbsp;<a HREF="#setValue">6.5.6 Register Field Interest</a>
+<BR>&nbsp;<a HREF="#setValue">6.5.7 setValue</a>&nbsp;
+<BR></TD>
+</TR>
+</TABLE></CENTER>
+&nbsp;
+<H3>
+<a NAME="Conventions"></a>6.1.3 Conventions</H3>
+Each item in this clause defines a particular request that can be made
+through the External Authoring Interface. Each request is defined by a
+number of characteristics in tabular form. <a href="#Characteristics types">Table
+6.2</a> contains three columns: the first column specifies each characteristic type,
+the second column defines the characteristics type, and the third column defines the properties
+of that characteristic.
+<p align="center">&nbsp;<a NAME="Characteristics types"></a><B>Table 6.2 --
+Characteristics types</B></p>
+<TABLE BORDER=2 width="627" >
+<TR>
+<TD width="88">
+  <p align="center"><b>Characteristic Type</b></TD>
+
+<TD width="308">
+  <p align="center"><b>Definition</b></TD>
+
+<TD width="211">
+  <p align="center"><b>Properties</b></TD>
+</TR>
+
+<TR>
+<TD width="88"><TT>parameters:</TT></TD>
+
+<TD width="308">
+The list of values that are required in order to complete a service request.
+These values may take any form as required by the particular language binding.</TD>
+
+<TD width="211">first parameter data type, second parameter, [optional parameter data type]</TD>
+</TR>
+
+<TR>
+<TD width="88"><TT>returns:</TT></TD>
+
+<TD width="308">
+Immediate, synchronous values that are passed back to the external application
+upon completion of a service request. The request is blocked until these
+values are sent, if specified.</TD>
+
+<TD width="211">The list of return values data types or expected ranges</TD>
+</TR>
+
+<TR>
+<TD width="88"><TT>errors:</TT></TD>
+
+<TD width="308">
+Error conditions that can be generated as part of a service invocation.
+Errors are fatal for the service request issuing the error. No return value
+shall be generated if an error is generated. Errors are synchronous with
+the request.</TD>
+
+<TD width="211">List of errors data types</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP width="88"><TT>events:</TT></TD>
+
+<TD VALIGN=TOP width="308">
+Asynchronous events that are generated to listeners that have registered
+interest in this particular object (browser or field) resulting in notification
+to the listener of the event. The listener may not be the same as the caller
+that generated the event condition. For example, consider two applications
+registered as browser listeners. One invokes the loadURL service but both
+will receive shutdown and initialize events. The required event types are
+defined in <a HREF="concepts.html#Events">4.5 Events</a>.</TD>
+
+<TD VALIGN=TOP width="211">The first event&nbsp;
+<BR>The second event</TD>
+</TR>
+
+<TR>
+<TD width="88"><TT>buffered:</TT></TD>
+
+<TD width="308">
+Indicator to say whether this service request is effected by <a HREF="#UpdateControl">6.3.16
+Update control</a>
+</TD>
+
+<TD width="211"><span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Yes,
+  No, or Not Applicable (N/A)</span></TD>
+</TR>
+</TABLE>
+<br>
+Parameters shown in square brackets [] are optional and not required to
+be passed with that service request.
+
+<P>All characteristics defined for every service shall be implemented for
+each language binding. At the end of each table, some explanatory text
+will follow which includes extra information pertinent to the implementation
+of that service.
+<H2>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H2>
+
+<H2>
+<a NAME="EstablishingAConnection"></a>6.2 Establishing a connection</H2>
+
+<H3>
+<a NAME="EstablishingAConnectionIntroduction"></a>6.2.1 Introduction</H3>
+The following services can be used to establish a session and obtain
+a browser reference. Individual browser implementations may support one
+or both of these methods. At least one shall be required to be supported.
+<H3>
+<a NAME="getBrowser"></a>6.2.2 getBrowser</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIParameterList</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>EAIBrowserRef&nbsp;</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>EAI_BROWSER_UNAVAILABLE&nbsp;</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>none</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>N/A</TD>
+</TR>
+</TABLE>
+This is a blocking call. No further requests from this external application
+will be processed until an EAIBrowserRef value has been generated (which may
+include the need to start a new instance of a VRML browser) or an error
+condition is generated.
+
+<P>If an application makes a request for the same browser twice in the
+same session, the same browser identifier shall be returned.
+
+<P>An implementation may define more than one variant of this service with
+different parameter types. For example there may be alternate forms to
+access a browser embedded in a HTML page and one for remote access from
+another machine within the same language binding.
+
+<P>Additional error types may be added by individual language bindings
+to deal with platform specific issues.
+<H3>
+<a NAME="createBrowser"></a>6.2.3 createBrowser</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIParameterList, EAIPropertyList</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>EAIBrowserApp&nbsp;</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>EAI_BROWSER_UNAVAILABLE&nbsp;</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>none</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>N/A</TD>
+</TR>
+</TABLE>
+Create a new instance of a browser application. The browser shall start
+with no URL set (that is no active VRML scene graph). The URL may be set
+at a later time using the loadURL (see <a HREF="#loadURL">6.3.12 loadURL</a>)
+or replaceWorld (see <a HREF="#replaceWorld">6.3.14 replaceWorld</a>) service requests.
+
+<P>The property list is used to define the properties of the browser application
+itself. The service request shall use the same property list definitions
+as those defined in loadURL. It is not required to support exactly the
+same capabilities, but the property list format shall be identical and
+any behaviours are identical.
+
+<P>This is a blocking request. No further requests from this external application
+will be processed until an EAIBrowserApp value has been generated (which may
+include the need to start a new instance of a VRML browser) or an error
+condition is generated.
+
+<P>Each request of this service shall produce a new browser application
+instance in accordance with the supplied parameter values.
+
+<P>An implementation may define more than one variant of this service with
+different parameter types. For example there may be alternate forms to
+start a browser on a remote machine or to create a new window within a
+running application.
+
+<P>Additional error types may be added by individual language bindings
+to deal with platform specific issues.
+<H2>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H2>
+
+<H2>
+<a NAME="BrowserServices"></a>6.3 Browser services</H2>
+
+<H3>
+<a NAME="BrowserServicesIntroduction"></a>6.3.1 Introduction</H3>
+The following services can be requested from a browser. The titles of each
+service correspond to the appropriate titles defined in <a HREF="../part1/concepts.html#4.12.10">ISO/IEC
+14772-1 4.12.10, Browser script interface</a>. Default values <span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">are
+defined in</span> the appropriate subclause of ISO/IEC 14772-1. A brief description
+of each service is defined here indicating where it matches or
+differs from that in ISO/IEC 14772-1.
+
+<P>Although not specified, all services are capable of throwing an EAI_CONNECTION_ERROR
+whenever a request is made if the session between the application and the
+browser has failed.
+
+<P><I>Note:</I>&nbsp; <span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">The
+data representation of the parameters or return values is not specified in this
+clause. Actual representations are defined in the language bindings.</span>
+<H3>
+<a NAME="createVrmlFromString"></a>6.3.2 createVrmlFromString</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIBrowserRef, EAIString&nbsp;</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>EAINodeID [EAINodeID]s</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>errors:</TT></TD>
+
+<TD>EAI_INVALID_VRML&nbsp;
+<BR>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+Create VRML nodes from a string. The string shall contain valid VRML syntax;
+otherwise an error is generated. If any relative URLs are encountered in
+this string, the base is assumed to be the current browser location.
+The string is not required to contain the VRML file header <TT>#VRML V2.0
+utf8</TT>. If it is present, it shall be treated as an&nbsp; indicator to
+the version of VRML contained. If absent, the default version assumed
+shall be that provided in <a HREF="../part1/concepts.html#4.2.2">ISO/IEC
+14772-1 4.2.2 Header</a>. A browser is not required to support any versions
+prior to ISO/IEC 14772-1.
+
+<P>If the string contains legal VRML statements but does not contain any
+node instances,&nbsp; a NULL is returned. For example, the string may contain
+EXTERNPROTO declarations but no instances of any node. The order of EAINodeID
+values returned is guaranteed to be in the order that the top level nodes
+are declared in the string.
+<H3>
+<a NAME="createVrmlFromURL"></a>6.3.3 createVrmlFromURL</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIBrowserRef, EAIURL [EAIURLs], EAINodeID, EAIFieldID</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>errors:</TT></TD>
+
+<TD VALIGN=TOP>EAI_INVALID_URL&nbsp;
+<BR>EAI_INVALID_NODE&nbsp;
+<BR>EAI_INVALID_FIELD&nbsp;
+<BR>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>EAI_B_URLError&nbsp;</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+Create nodes from the contents of the file represented by the URL. The
+URL may be a relative URL which is considered to be using the browser location
+as
+the base document. The destination node identifier is not required to be
+part of the currently rendered scene graph. It is legal to create a node
+with createVrmlFromString and use that as the destination for a createVrmlFromURL
+request without having added the node to the active VRML scene graph.
+
+<P>The EAIFieldID value shall designate an MFNode eventIn to pass the nodes
+as created otherwise an error is generated. The order of nodes passed to
+the destination node shall remain in the same order that the top level
+nodes are declared in the file.
+<H3>
+<a NAME="Dispose"></a>6.3.4 Dispose</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIBrowserRef</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>EAI_B_Shutdown</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+The client is about to exit this session and the browser is free to dispose
+of any resources that this client may have consumed. An EAI_B_Shutdown
+event is sent only to this client and may be generated internally by the
+language implementation on the client machine (that is, it is not required
+that the browser itself generates this event, just that the event is generated).
+If any events have been held because beginUpdate has been called, disposing
+of the browser shall also call endUpdate to release those events to the
+browser.
+<H3>
+<a NAME="DynamicRouteHandling"></a>6.3.5 Dynamic Route Handling</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIBrowserRef, EAINodeID, EAIFieldID, EAINodeID, EAIFieldID, EAIAction</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>errors:</TT></TD>
+
+<TD VALIGN=TOP>EAI_INVALID_NODE&nbsp;
+<BR>EAI_INVALID_FIELD&nbsp;
+<BR>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>Yes</TD>
+</TR>
+</TABLE>
+The parameter of type EAIAction specifies whether this should be an add
+or delete of this route. Other actions may be added, such as to query the existence
+of the nominated route. The EAINodeID/EAIFieldID pair parameters
+are considered as defining the source field and destination fields for the
+route request.
+
+<P>Route modification requests are to fit with the general event model
+scheme as defined in <a HREF="../part1/concepts.html#4.10">ISO/IEC
+14772-1 4.10 Execution Processing</a>. The end of the event cascade is
+considered to be the cascade that is initiated by the application sending
+events into the VRML browser environment. Any new cascades generated as
+a result of the processing of the initial events are shall not be considered
+for the determination of the event cascade.
+
+<P>If a single event is sent to the browser, at the point that its
+event cascade has completed is considered to be the end of the event cascade
+defined in <a HREF="../part1/concepts.html#4.10.3">Step
+1 of ISO/IEC 14772-1 4.10.3 Execution Model</a>. If events are batched
+together through the use of Update Control (see <A HREF="#6.3.13">6.3.16,
+Update Control</A>), the end of the event cascade is considered to
+be the end of all the primary cascades caused by the release of the events
+at end update. That is, all event cascades shall have been completed before <a href="../part1/concepts.html#4.10.3">
+steps 2 - 8 of ISO/IEC 14772-1 4.10.3 Execution Model</a> are permitted to operate.
+<H3>
+<a NAME="getCurrentFrameRate"></a>6.3.6 getCurrentFrameRate</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIBrowserRef</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>EAIFrameRate</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+Get the current frame display rate of the browser. If this is not supported
+the value returned is zero.
+<H3>
+<a NAME="getCurrentSpeed"></a>6.3.7 getCurrentSpeed</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIBrowserRef</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>returns:</TT></TD>
+
+<TD VALIGN=TOP>EAINavSpeed&nbsp;</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>no</TD>
+</TR>
+</TABLE>
+The current speed is the average navigation speed for the currently bound
+NavigationInfo node in metres per second in the coordinate system of the
+currently bound viewpoint.
+<H3>
+<a NAME="getName"></a>6.3.8 getName</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIBrowserRef</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT>&nbsp;</TD>
+
+<TD>EAIBrowserName</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>no</TD>
+</TR>
+</TABLE>
+The name of the browser is implementation dependent. If this service is
+not supported, a NULL value shall be returned.
+<H3>
+<a NAME="getNode"></a>6.3.9 getNode</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIBrowserRef, EAIString</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>EAINodeID</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>errors:</TT></TD>
+
+<TD VALIGN=TOP>EAI_INVALID_NAME&nbsp;
+<BR>EAI_URL_UNAVAILABLE&nbsp;
+<BR>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+The EAIString is to identify the name of the node that has been marked
+with a DEF statement in the currently loaded VRML scene. Access is only
+available to DEF names in the top level file that is loaded as a result
+of loadURL (see <a HREF="#loadURL">6.3.12 loadURL</a>) or the initial loading of the browser. DEFs in Inlined files
+and from dynamically created content shall not be accessible in accordance
+with <a HREF="../part1/concepts.html#4.6.2">ISO/IEC
+14772-1 4.6.2 DEF/USE Semantics</a>.<P>If the world contents have been replaced with a call to replaceWorld (see
+<a HREF="#replaceWorld">6.3.14 replaceWorld</a>) , an EAI_INVALID_NAME error shall be generated as DEF names are not
+kept once the load has taken place.
+<H3>
+<a NAME="getVersion"></a>6.3.10 getVersion</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIBrowserRef</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>EAIBrowserVersion</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>no</TD>
+</TR>
+</TABLE>
+The version number of the browser is implementation dependent. If this
+service is not supported, a NULL value shall be returned.
+<H3>
+<a NAME="getWorldURL"></a>6.3.11 getWorldURL</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIBrowserRef</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>EAIURL</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>errors:</TT></TD>
+
+<TD VALIGN=TOP>EAI_URL_UNAVAILABLE&nbsp;
+<BR>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>no</TD>
+</TR>
+</TABLE>
+Get the fully qualified URL of the currently loaded world. This returns
+the entire URL including&nbsp; any possible arguments that might be associated
+with a CGI call or similar mechanism. If the initial world is replaced
+with loadURL (see <a HREF="#loadURL">6.3.12 loadURL</a>), the string will reflect the new
+URL. If replaceWorld (see <a HREF="#replaceWorld">6.3.14 replaceWorld</a>) is called, the URL still
+represents the original world.
+<H3>
+<a NAME="loadURL"></a>6.3.12 loadURL</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIBrowserRef, EAIURL [EAIURL]s, EAIPropertyList</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>errors:</TT></TD>
+
+<TD>EAI_INVALID_URL&nbsp;
+<BR>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>events:</TT></TD>
+
+<TD VALIGN=TOP>EAI_B_Shutdown&nbsp;
+<BR>EAI_B_Initialize&nbsp;
+<BR>EAI_B_URLError</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+The EAI_B_Shutdown event is generated immediately upon receiving this service
+request if the parameter list is such that the browser is about to be shutdown
+(for example replaces an HTML frame where the browser was embedded).
+
+<P>The EAI_B_Initialized event is generated when the new nodes have been
+set and all browser specific initialization has taken place but before
+the first time driven event cascade has been started (event cascades may
+have previously resulted due to the initialization process through internal
+scripts).
+
+<P>The property list definition shall include at least one property that
+defines loading the URL supplied as a new world in the supplied EAIBrowserRef.
+If the property list is empty, the action is to replace the world of
+the current browser with the new world if the successful URL is a VRML
+file.
+
+<P>If another replaceWorld (see <a HREF="#replaceWorld">6.3.14 replaceWorld</a>) or loadURL (see
+<a HREF="#loadURL">6.3.12 loadURL</a>) request is made during the processing
+of the current request, the current request is terminated and the new one
+started. In this case, no extra shutdown event shall be generated. The initialize
+event shall be generated at the point where the world is ready
+to be run if replaceWorld was called.
+<H3>
+<a NAME="RegisterBrowserInterest"></a>6.3.13 Register Browser Interest</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIBrowserRef, EAIAction, EAIRequesterID</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>events:</TT></TD>
+
+<TD VALIGN=TOP>Receiver of all EAIBrowserEvents</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+This service nominates the requester as the receiver of all EAIBrowserEvents.
+The act of making this service request itself does not imply any events
+shall be generated.
+
+<P>The parameter of type EAIRequesterID could be inferred from the source
+of the input and may not need to be part of the parameters and is implementation
+dependent. Each binding to this service shall specify this requirement.
+
+<P>The parameter of type EAIAction specifies whether this is a request
+to add interest in events, or to remove interest in the events.
+
+<P>Any change to the current browser shall be notified to the listener
+that has registered interest in these events. These event notifications shall be made independent of the method of communicating with the browser.
+
+<P>As a minimum, a conforming implementation shall provide the events defined
+in <a HREF="concepts.html#BrowserToExternalApplication"> 4.5.3, Browser to External Application</a>.
+<H3>
+<a NAME="replaceWorld"></a>6.3.14 replaceWorld</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIBrowserRef, EAINodeID [EAINodeID]s</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>None&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>errors:</TT></TD>
+
+<TD VALIGN=TOP>EAI_INVALID_NODE&nbsp;
+<BR>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>events:</TT></TD>
+
+<TD VALIGN=TOP>EAI_B_Shutdown&nbsp;
+<BR>EAI_B_Initialized</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+The EAI_B_Shutdown event is generated immediately upon receiving this service
+request.
+<BR>The EAI_B_Initialized event is generated when the new nodes have been
+set and all browser specific initialization has taken place but before
+the first time driven event cascade has been started (event cascades may
+have previously resulted due to the initialization process through internal
+scripts).
+
+<P>Replace the current world with the EAINodeID value(s) as the new root
+nodes. If another replaceWorld (see <a HREF="#replaceWorld">6.3.14 replaceWorld</a>)&nbsp;
+or loadURL (see <a HREF="#loadURL">6.3.12 loadURL</a>) request is made during the processing of the current request, the current
+request is terminated and the new one started. In this case, no extra shutdown
+event shall be generated. The initialize event shall be generated at the
+point where the world is ready to be run.
+<H3>
+<a NAME="setDescription"></a>6.3.15 setDescription</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIBrowserRef, EAIString</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+If the browser supports a description title, it shall be set to the new
+description. Typically, this will be the title in a window title bar. In
+cases where there may be multiple browsers on a single window, the result
+is implementation dependent.
+<H3>
+<a NAME="UpdateControl"></a>6.3.16 Update control</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAIBrowserRef, EAIAction</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>events:</TT></TD>
+
+<TD VALIGN=TOP>None&nbsp;</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>N/A</TD>
+</TR>
+</TABLE>
+The EAIAction parameter specifies whether this should be to start the buffer
+(begin update) or to empty it (end update). Other actions may be added,
+such as to query the number of items, or the state of the buffer and are
+implementation dependent.
+
+<P>The timestamp of events generated at the call to endUpdate are implementation
+dependent but should be consistent with the time within the current world.
+That is, timestamps cannot be in the "past" relative to the other current
+events generated internally with event model at the time when they are
+generated.
+
+<P>Begin update and End update are not nesting calls. Once begin update
+has been called, it may be called any number of times, but only a single
+end update call is needed to release the buffered events into the scene graph.
+A call to end update without a previous matching begin update has no effect.
+<H3>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H3>
+
+<H2>
+<a NAME="NodeServices"></a>6.4 Node services</H2>
+
+<H3>
+<a NAME="NodeServicesIntroduction"></a>6.4.1 Introduction</H3>
+The following services can be requested of an individual node. Each service
+requires that you have an identifier for that node. After a request of
+an individual node to dispose of their resources, any further request made
+to a node service shall generate&nbsp; a disposed error.
+
+<P>Although not specified, all services are capable of throwing an EAI_CONNECTION_ERROR
+whenever a request is made if the session between the application and the
+browser has failed.
+<H3>
+<a NAME="NodeServicesDispose"></a>6.4.2 Dispose</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAINodeID</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>Yes</TD>
+</TR>
+</TABLE>
+The client has no further interest in the resource represented by this
+node. The browser is now free to take whatever action is necessary to reclaim
+any resources consumed by this node, at any time in the future. If this
+node has already been disposed, further requests have no effect.
+
+<P>Disposing of a node does not remove the node from the scene graph (if
+it was inserted in the first place) but rather removes any local information
+per client to it. The underlying VRML node representation is only disposed
+of if no other applications or scene graph structures contain references
+to this node and the responsibility and timing for this action is browser
+implementation specific.
+<H3>
+<a NAME="getField"></a>6.4.3 getField</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAINodeID, EAIFieldName&nbsp;</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>EAIFieldID</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>errors:</TT></TD>
+
+<TD VALIGN=TOP>EAI_INVALID_NAME&nbsp;
+<BR>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+Request a field identifier so that operations can be performed on the node
+properties. If the field requested is an <I>exposedField</I>, either
+the field name or the set_ and _changed modifiers may be used to access
+the appropriate form of the node as required. Access to <I>field</I>s is
+implementation dependent.
+<H3>
+<a NAME="NodeServicesgetName"></a>6.4.4 getName</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAINodeID</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>EAIString</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+Request the name of this node. The name is the name as specified in <a HREF="../part1/nodesRef.html">ISO/IEC
+14772-1 6 Node Reference</a>. If the node represents a PROTO node instance, the name returned is the name of the PROTO declaration.
+<H3>
+<a NAME="getType"></a>6.4.5 getType</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAINodeID</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>EAINodeType</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>EAI_DISPOSED</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None&nbsp;</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+The type indicator is either the type defined for the basic node types
+in the VRML specification, or the PROTO type name if it is a prototyped
+node. This is not required to be supported for a conforming implementation.
+<H3>
+<IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470></H3>
+
+<H2>
+<a NAME="FieldServices"></a>6.5 Field services</H2>
+
+<H3>
+<a NAME="FieldServicesIntroduction"></a>6.5.1 Introduction</H3>
+The following are services that can be requested of individual fields of
+a node. If the node that a field was retrieved from has been disposed,
+field services are still permitted to operate providing that the field
+reference has been obtained before disposing of the node. If a call is
+made to a field service after requesting to dispose of the field, a disposed
+error shall be generated.
+
+<P>Although not specified, all services are capable of throwing an EAI_CONNECTION_ERROR
+whenever a request is made if the session between the application and the
+browser has failed.
+<H3>
+<a NAME="getAccessType"></a>6.5.2 getAccessType</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAINodeID, EAIFieldID</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>EAIFieldAccess</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+The representation of the access type is implementation dependent.
+<H3>
+<a NAME="FieldServicesGetName"></a>6.5.3 getName</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAINodeID, EAIFieldID</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>EAIFieldName</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+If supported by the implementation, this will return the name of the field
+as it was requested from the node. If the service requested the <I>set_children</I>
+field of a grouping node, this will return "set_children", but if a different
+request was for <I>children</I> on the same node, "children" will be returned.
+<H3>
+<a NAME="FieldServicesGetType"></a>6.5.4 getType</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAINodeID, EAIFieldID</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>EAIFieldType</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+The type of the field is implementation dependent.
+<H3>
+<a NAME="getValue"></a>6.5.5 getValue</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAINodeID, EAIFieldID</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>EAIFieldValue</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>EAI_INVALID_ACCESS_TYPE</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+Get the value represented by this field as it exists in the world. This
+will represent the current value of the field at the time of the request.
+If the request is made of a field that has a setValue request buffered
+through beginUpdate, the value returned shall be the old value prior to
+the setValue request. The value of the field may be a NODE if the field
+represents an MFNode or SFNode.
+<H3>
+<a NAME="RegisterFieldInterest"></a>6.5.6 Register Field Interest</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAINodeID, EAIFieldID, EAIAction, EAIRequesterID</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>EAI_INVALID_ACCESS_TYPE</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>EAIFieldEvent</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>No</TD>
+</TR>
+</TABLE>
+This service nominates the requester as the receiver of all EAIFieldEvents.
+The act of making this service request itself does not imply any events
+shall be generated.
+
+<P>The parameter of type EAIRequesterID could be inferred from the source
+of the input and may not need to be part of the parameters.
+
+<P>The parameter of type EAIAction specifies whether this is a request
+to add interest&nbsp; in events, or to remove interest in the events.
+
+<P>What capabilities are permitted to be listened to are implementation
+dependent. For example, some implementations may permit listening to eventIn
+values and eventOut values while others will only permit eventOut values
+to be listened to.
+
+<H3>
+<a NAME="setValue"></a>6.5.7 setValue</H3>
+
+<TABLE BORDER=0 >
+<TR>
+<TD><TT>parameters:</TT></TD>
+
+<TD>EAINodeID, EAIFieldID, EAIFieldValue</TD>
+</TR>
+
+<TR>
+<TD><TT>returns:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>errors:</TT></TD>
+
+<TD>EAI_INVALID_ACCESS_TYPE</TD>
+</TR>
+
+<TR>
+<TD><TT>events:</TT></TD>
+
+<TD>None</TD>
+</TR>
+
+<TR>
+<TD><TT>buffered:</TT></TD>
+
+<TD>Yes</TD>
+</TR>
+</TABLE>
+Set the value of this field. Set requests shall obey the requirements as
+specified the buffer_events service.
+
+<P>The value of the field may be a NODE if the field represents an MFNode
+or SFNode. It is permitted to send a <TT>null</TT> to a node or field in
+order to clear the value from that field. For example sending a <TT>null</TT>
+to the appearance eventIn of a Shape (<a HREF="../part1/nodesRef.html#Shape">ISO/IEC
+14772-1 6.41 Shape</a>)&nbsp; node shall result in the <I>appearance</I>
+field being cleared and set to the default value of <TT>NULL</TT>.
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALT="--- VRML separator bar ---" naturalsizeflag="0" HEIGHT=25 WIDTH=470>
+<PRE>&nbsp;</PRE>
+
+</BODY>
+</HTML>

@@ -1,0 +1,150 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>space2.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Summary examples</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>space2.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  space2.wrl
+#  Simple spaceship
+#	by David R. Nadeau
+#
+#  This file illustrates the use of VRML primitive shapes to build a
+#  more complex shape.  Transform nodes are used to position and orient
+#  the shapes.  Scaling in the Transform node squishes and stretches shapes,
+#  enabling you to create flattened ellipsoids out of spheres, and more.
+#
+
+WorldInfo {
+    title "Simple spaceship"
+    info [ "copyright (c) 1997, David R. Nadeau" ]
+}
+
+Viewpoint {
+    position 0.0 0.0 4.0
+    description "Entry view"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight TRUE
+}
+
+# Wing
+DEF LeftWing Transform {
+    translation 0.0 0.0 -0.9
+    rotation 0.0 1.0 0.0 0.52
+    scale 0.4 0.035 1.5
+    children [
+        DEF WingSphere Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.7 0.7 1.0
+                    specularColor 1.0 1.0 1.0
+                    shininess 0.1
+                }
+            }
+            geometry Sphere { }
+        }
+    ]
+}
+DEF RightWing Transform {
+    translation 0.0 0.0 0.9
+    rotation 0.0 1.0 0.0 -0.52
+    scale 0.4 0.035 1.5
+    children [ USE WingSphere ]
+}
+
+# Fuselage
+DEF Fuselage Transform {
+    scale 2.0 0.2 0.5
+    children [
+        DEF FuselageSphere Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.5 0.5 1.0
+                    specularColor 0.4 0.7 1.0
+                    shininess 0.1
+                }
+            }
+            geometry Sphere { }
+        }
+    ]
+}
+
+# Dome
+Transform {
+    scale 0.6 0.4 0.375
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    ambientIntensity 0.5
+                    diffuseColor 0.7 0.5 1.0
+                    specularColor 1.0 0.0 0.3
+                    shininess 0.5
+                }
+            }
+            geometry Sphere { }
+        }
+    ]
+}
+
+# Engines
+Transform {
+    translation -0.6 0.0 -1.5
+    scale 0.6 0.06 0.1
+    children [
+        DEF EngineSphere Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.3 0.3 0.7
+                }
+            }
+            geometry Sphere { }
+        }
+    ]
+}
+Transform {
+    translation -0.6 0.0 1.5
+    scale 0.6 0.06 0.1
+    children [ USE EngineSphere ]
+}
+
+# Tail
+Transform {
+    translation -2.0 0.5 0.0
+    scale 0.4 0.4 0.4
+    children [
+        USE LeftWing
+        USE RightWing
+        USE Fuselage
+    ]
+}
+Transform {
+    translation -1.5 0.25 0.0
+    rotation 0.0 0.0 1.0 -0.6
+    scale 0.5 0.2 0.075
+    children [ USE FuselageSphere ]
+}
+</FONT></PRE>
+</BODY>
+</HTML>

@@ -1,0 +1,94 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>Building a color selector</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<TABLE WIDTH=100%
+	BORDER=0
+	CELLSPACING=0
+	CELLPADDING=0
+>
+<TR >
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0000.htm><B><IMG SRC="../images/arwtoc2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0409.htm><B><IMG SRC="../images/arwndx2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0430.htm><B><IMG SRC="../images/arwprev2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0432.htm><B><IMG SRC="../images/arwnext2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=4%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	431
+</TD>
+</TR>
+</TABLE>
+<P>
+
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Writing program scripts with JavaScript</CENTER>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>Building a color selector</I></B></CENTER>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<FONT COLOR=#FFFFFF SIZE=+2>
+<DL>
+
+<dd><li>The turns lamp on and off, but the
+light bulb doesn't change color!
+<p>
+<dd><li>A color selector script sends an <em>on</em> color on a
+<B><TT><FONT COLOR=#00FF00 SIZE=+2>TRUE</FONT></TT></B> input, and an <em>off</em> color on a
+<B><TT><FONT COLOR=#00FF00 SIZE=+2>FALSE</FONT></TT></B> input
+<p>
+<B><TT><FONT COLOR=#00FF00 SIZE=+2><pre>DEF ColorSelector Script {
+    field    SFColor onColor  1.0 1.0 1.0
+    field    SFColor offColor 0.0 0.0 0.0
+    eventIn  SFBool  set_selection
+    eventOut SFColor color_changed
+    url "<B><TT><FONT COLOR=#00AAFF SIZE=+2>vrmlscript:
+        function set_selection( b, ts ) {
+            if ( b == TRUE )
+                color_changed = onColor;
+            else
+                color_changed = offColor;
+        }</FONT></TT></B>"
+}</pre></FONT></TT></B>
+
+
+
+</BODY>
+</HTML>

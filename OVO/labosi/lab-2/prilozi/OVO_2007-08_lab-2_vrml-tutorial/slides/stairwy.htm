@@ -1,0 +1,793 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>stairwy.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Grouping nodes</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>stairwy.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  The Stairway
+#  stairwy.wrl
+#        by David R. Nadeau
+#
+#  This world uses a twisting, branching, floating stairway to lead the
+#  visitor to six doorways.  Each doorway is an anchor leading to another
+#  world.
+#
+#  This world was *hand authored*, which is way tough to do given the
+#  number of stairs to be positioned and oriented.  This accounts for
+#  the heavy use of DEF and USE and rather convoluted nested transforms.
+#  By using a world builder application (when they become available),
+#  you can position each stair or group of stairs interactively, instead
+#  of typing in translations and rotations and hoping they work out.
+#
+#  Things to experiment with:
+#        Change the anchor urls to point to your own worlds.
+#
+#        Add a flock of birds following a path animated by a
+#        PositionInterpolator and an OrientationInterpolator.
+#
+#        Drop the sky background wall and replace it with a Background node.
+#
+#        Add sound.  Perhaps a gentle wind with some occasional wind chimes.
+#
+
+WorldInfo {
+    title "The Stairway"
+    info [ "copyright (c) 1997, David R. Nadeau" ]
+}
+
+Background {
+    skyColor [
+        0.0 0.0 0.0,
+        0.0 0.0 0.0,
+        0.0 0.1 0.5,
+        0.0 0.0 0.0,
+    ]
+    skyAngle [
+        1.37,
+        1.57,
+        1.77,
+    ]
+}
+
+Transform {
+    scale 0.4 0.4 0.4
+    children [
+        Viewpoint {
+            position 9.0 -5.0 25.0
+            orientation 1.0 0.0 0.0 0.1
+            description "Entry View"
+        }
+	NavigationInfo {
+	    type [ "WALK", "ANY" ]
+	    headlight FALSE
+	    avatarSize [ 0.5, 4.0, 1.5 ]
+	    speed 4.0
+	}
+
+
+#
+#  Lighting
+#
+        DirectionalLight {
+            ambientIntensity 0.0
+            color 0.0 0.3 1.0
+            direction -3.0 2.0 -1.0
+        }
+        PointLight {
+            ambientIntensity 0.3
+            color 1.0 1.0 1.0
+            location 14.0 10.0 14.0
+        }
+
+
+
+#
+#  (Main) platform
+#
+        Transform {
+            translation 5.0 -3.0 5.0
+            children [
+                DEF Platform Shape {
+                    appearance DEF Marble Appearance {
+                        material Material {
+                            diffuseColor 1.0 1.0 1.0
+                        }
+                        texture ImageTexture {
+                            url "marble_g.jpg"
+                        }
+                    }
+                    geometry Box {
+                        size 4.0 0.25 4.0
+                    }
+                }
+            ]
+        }
+
+#
+#  (Main, +Y -Z) Stairs
+#
+        Transform {
+            translation 5.0 -2.5 2.5
+            children [
+                DEF ThreeUpStraightStairs Group {
+                    children [
+                        DEF Stair Shape {
+                            appearance USE Marble
+                            geometry Box {
+                                size 4.0 0.25 1.0
+                            }
+                        }
+                        Transform {
+                            translation 0.0 0.5 -1.0
+                            children [ USE Stair ]
+                        }
+                        Transform {
+                            translation 0.0 1.0 -2.0
+                            children [ USE Stair ]
+                        }
+                    ]
+                }
+            ]
+        }
+        Transform {
+            translation 5.0 -1.0 -0.5
+            children [ USE ThreeUpStraightStairs ]
+        }
+
+#
+#  (Main, +Y -Z) Platform
+#
+        Transform {
+            translation 5.0 0.5 -5.0
+            children [ USE Platform ]
+        }
+
+#
+#  (Main, +Y -Z, +Y -Z) Stairs
+#
+        Transform {
+            translation 5.0 1.0 -7.5
+            children [ USE ThreeUpStraightStairs ]
+        }
+
+#
+#  (Main, +Y -Z, +Y -Z) Door
+#
+        Transform {
+            translation 5.0 5.0 -10.1
+            children [
+                Anchor {
+                    url "temple.wrl"
+                    description "Temple of the Orb"
+                    children [
+                        DEF Door Group {
+                            children [
+                                Shape {
+                                    appearance Appearance {
+                                        material Material {
+                                            diffuseColor 1.0 1.0 1.0
+                                        }
+                                        texture ImageTexture {
+                                            url "panel.jpg"
+                                        }
+                                        textureTransform TextureTransform {
+                                            scale 1.0 2.0
+                                        }
+                                    }
+                                    geometry Box {
+                                        size 3.0 6.0 0.2
+                                    }
+                                }
+                                Transform {
+                                    translation 1.18 -0.0 0.2
+                                    children [
+                                        Shape {
+                                            appearance Appearance {
+                                                material Material {
+                                                    diffuseColor 1.0 1.0 1.0
+                                                }
+                                                texture ImageTexture {
+                                                    url "blur.jpg"
+                                                }
+                                            }
+                                            geometry Sphere {
+                                                radius 0.15
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+
+#
+#  (Main, +Y -Z, -X +Y -Z) Stairs
+#
+        Transform {
+            translation 2.5 1.0 -5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [
+                DEF ThreeUpRightCurvingStairs Transform {
+                    translation 5.0 0.0 0.0
+                    children [
+                        DEF OffToLeftStair Transform {
+                            translation -5.0 0.0 0.0
+                            children [ USE Stair ]
+                        }
+                        Transform {
+                            translation 0.0 0.5 0.0
+                            rotation 0.0 1.0 0.0 -0.26
+                            children [ USE OffToLeftStair ]
+                        }
+                        Transform {
+                            translation 0.0 1.0 0.0
+                            rotation 0.0 1.0 0.0 -0.52
+                            children [ USE OffToLeftStair ]
+                        }
+                    ]
+                }
+            ]
+        }
+        Transform {
+            translation 2.5 2.5 -5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [
+                Transform {
+                    rotation 0.0 1.0 0.0 -0.785
+                    center 5.0 0.0 0.0
+                    children [ USE ThreeUpRightCurvingStairs ]
+                }
+            ]
+        }
+        Transform {
+            translation 2.5 4.0 -5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [
+                Transform {
+                    rotation 0.0 1.0 0.0 -1.57
+                    center 5.0 0.0 0.0
+                    children [ USE ThreeUpRightCurvingStairs ]
+                }
+            ]
+        }
+
+#
+#  (Main, +Y -Z, -X +Y -Z) Door
+#
+        Transform {
+            translation 2.5 5.0 -5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [
+                Transform {
+                    rotation 0.0 1.0 0.0 -2.09
+                    center 5.0 0.0 0.0
+                    children [
+                        Transform {
+                            translation 0.0 3.0 -0.6
+                            children [
+                                Anchor {
+                                    url "prim.wrl"
+                                    description "Primitives on Pedestals"
+                                    children [ USE Door ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+
+#
+#  (Main, +Y -Z, +X -Y -Z) Stairs
+#
+        Transform {
+            translation 7.5 0.0 -5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [
+                DEF ThreeDownLeftCurvingStairs Transform {
+                    translation 5.0 0.0 0.0
+                    children [
+                        USE OffToLeftStair,
+                        Transform {
+                            translation 0.0 -0.5 0.0
+                            rotation 0.0 1.0 0.0 0.26
+                            children [ USE OffToLeftStair ]
+                        }
+                        Transform {
+                            translation 0.0 -1.0 0.0
+                            rotation 0.0 1.0 0.0 0.52
+                            children [ USE OffToLeftStair ]
+                        }
+                    ]
+                }
+            ]
+        }
+        Transform {
+            translation 7.5 -1.5 -5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [
+                Transform {
+                    rotation 0.0 1.0 0.0 0.785
+                    center 5.0 0.0 0.0
+                    children [ USE ThreeDownLeftCurvingStairs ]
+                }
+            ]
+        }
+
+#
+#  (Main, +Y -Z, +X -Y -Z) Door
+#
+        Transform {
+            translation 7.5 -2.5 -5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [
+                Transform {
+                    rotation 0.0 1.0 0.0 1.31
+                    center 5.0 0.0 0.0
+                    children [
+                        Transform {
+                            translation 0.0 3.0 0.6
+                            rotation 0.0 1.0 0.0 3.14
+                            children [
+                                Anchor {
+                                    url "doorway.wrl"
+                                    description "The Doorway"
+                                    children [ USE Door ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+
+#
+#  (Main, -X +Y) Stairs
+#
+        Transform {
+            translation 2.5 -2.5 5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [ USE ThreeUpStraightStairs ]
+        }
+
+
+#
+#  (Main, -X +Y) Platform
+#
+        Transform {
+            translation -2.0 -1.0 5.0
+            children [ USE Platform ]
+        }
+
+
+#
+#  (Main, -X +Y, +Y -Z) Stairs
+#
+        Transform {
+            translation -2.0 -0.5 2.5
+            children [
+                DEF ThreeUpLeftCurvingStairs Transform {
+                    translation -5.0 0.0 0.0
+                    children [
+                        DEF OffToRightStair Transform {
+                            translation 5.0 0.0 0.0
+                            children [ USE Stair ]
+                        }
+                        Transform {
+                            translation 0.0 0.5 0.0
+                            rotation 0.0 1.0 0.0 0.26
+                            children [ USE OffToRightStair ]
+                        }
+                        Transform {
+                            translation 0.0 1.0 0.0
+                            rotation 0.0 1.0 0.0 0.52
+                            children [ USE OffToRightStair ]
+                        }
+                    ]
+                }
+            ]
+        }
+
+#
+#  (Main, -X +Y, +Y -Z) Door
+#
+        Transform {
+            translation -2.0 0.5 2.5
+            children [
+                Transform {
+                    rotation 0.0 1.0 0.0 0.52
+                    center -5.0 0.0 0.0
+                    children [
+                        Transform {
+                            translation 0.0 3.0 -0.6
+                            children [
+                                Anchor {
+                                    url "monolith.wrl"
+                                    description "Monolith World"
+                                    children [ USE Door ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+
+#
+#  (Main, -X +Y, -X +Y) Stairs
+#
+        Transform {
+            translation -4.5 -0.5 5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [ USE ThreeUpStraightStairs ]
+        }
+        Transform {
+            translation -7.5 1.0 5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [ USE ThreeUpStraightStairs ]
+        }
+
+#
+#  (Main, -X +Y, -X +Y) Door
+#
+        Transform {
+            translation -10.1 5.0 5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [
+                Anchor {
+                    url "towers.wrl"
+                    description "The Tower"
+                    children [ USE Door ]
+                }
+            ]
+        }
+
+#
+#  (Main, +X -Y) Stairs
+#
+        Transform {
+            translation 9.5 -4.5 5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [ USE ThreeUpStraightStairs ]
+        }
+
+
+#
+#  (Main, +X -Y) Platform
+#
+        Transform {
+            translation 12.0 -5.0 5.0
+            children [ USE Platform ]
+        }
+
+#
+#  (Main, +X -Y, -Y +Z) Stairs
+#
+        Transform {
+            translation 12.0 -6.5 9.5
+            children [ USE ThreeUpStraightStairs ]
+        }
+
+#
+#  (Main, +X -Y, -Y +Z) Platform
+#
+        Transform {
+            translation 12.0 -7.0 12.0
+            children [ USE Platform ]
+        }
+
+#
+#  (Main, +X -Y, -Y +Z, -Y +Z) Stairs
+#
+        Transform {
+            translation 12.0 -8.5 16.5
+            children [ USE ThreeUpStraightStairs ]
+        }
+
+#
+#  (Main, -X -Y +Z) Stairs
+#
+        Transform {
+            translation 5.0 -3.5 7.5
+            rotation 0.0 1.0 0.0 3.14
+            children [
+                DEF ThreeDownRightCurvingStairs Transform {
+                    translation 5.0 0.0 0.0
+                    children [
+                        USE OffToLeftStair,
+                        Transform {
+                            translation 0.0 -0.5 0.0
+                            rotation 0.0 1.0 0.0 -0.26
+                            children [ USE OffToLeftStair ]
+                        }
+                        Transform {
+                            translation 0.0 -1.0 0.0
+                            rotation 0.0 1.0 0.0 -0.52
+                            children [ USE OffToLeftStair ]
+                        }
+                    ]
+                }
+            ]
+        }
+        Transform {
+            translation 5.0 -5.0 7.5
+            rotation 0.0 1.0 0.0 3.14
+            children [
+                Transform {
+                    rotation 0.0 1.0 0.0 -0.785
+                    center 5.0 0.0 0.0
+                    children [ USE ThreeDownRightCurvingStairs ]
+                }
+            ]
+        }
+
+#
+#  (Main, -X -Y +Z) Door
+#
+        Transform {
+            translation 5.0 -6.0 7.5
+            children [
+                Transform {
+                    rotation 0.0 1.0 0.0 -1.48
+                    center -5.0 0.0 0.0
+                    children [
+                        Transform {
+                            translation 0.0 3.0 -0.6
+                            rotation 0.0 1.0 0.0 3.14
+                            children [
+                                Anchor {
+                                    url "robobill.wrl"
+                                    description "Robot Bill"
+                                    children [ USE Door ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+
+#
+#  Floor
+#
+        Shape {
+            appearance Appearance {
+                material Material {
+                    ambientIntensity 0.3
+                    diffuseColor 0.8 0.8 0.8
+                }
+                texture ImageTexture {
+                    url "stone2.jpg"
+                }
+                textureTransform TextureTransform {
+                    scale 20.0 20.0
+                }
+            }
+            geometry IndexedFaceSet {
+                coord Coordinate {
+                    point [
+                        -30.0 -9.0  30.0,
+                         30.0 -9.0  30.0,
+                         30.0 -9.0 -30.0,
+                        -30.0 -9.0 -30.0,
+                    ]
+                }
+                coordIndex [ 0, 1, 2, 3, -1, ]
+                solid FALSE
+            }
+        }
+
+#
+#  Fake shadows on the floor
+#
+        Shape {
+            appearance DEF ShadowColor Appearance {
+                material Material {
+                    ambientIntensity 0.0
+                    diffuseColor 0.1 0.1 0.1
+                    transparency 0.25
+                }
+            }
+            geometry IndexedFaceSet {
+                coord Coordinate {
+                    point [
+                        10.0 -8.5 17.0,
+                        14.0 -8.5 17.0,
+                        14.0 -8.5 3.0,
+                        10.0 -8.5 3.0,
+
+                        -10.0 -8.5 7.0,
+                         10.0 -8.5 7.0,
+                         10.0 -8.5 3.0,
+                        -10.0 -8.5 3.0,
+
+                         3.0 -8.5  7.0,
+                         7.0 -8.5  7.0,
+                         7.0 -8.5 -10.0,
+                         3.0 -8.5 -10.0,
+                    ]
+                }
+                coordIndex [
+                    0, 1, 2, 3, -1,
+                    4, 5, 6, 7, -1,
+                    8, 9, 10, 11, -1,
+                ]
+            }
+        }
+        Transform {
+            translation 2.5 -8.5 -5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [
+                DEF ThreeUpRightCurvingShadows Transform {
+                    translation 5.0 0.0 0.0
+                    children [
+                        DEF OffToLeftShadow Transform {
+                            translation -5.0 0.0 0.0
+                            children [
+                                DEF Shadow Shape {
+                                    appearance USE ShadowColor
+                                    geometry IndexedFaceSet {
+                                        coord Coordinate {
+                                            point [
+                                                -2.0 0.0 0.5,
+                                                 2.0 0.0 0.5,
+                                                 2.0 0.0 -0.5,
+                                                -2.0 0.0 -0.5,
+                                            ]
+                                        }
+                                        coordIndex [ 0, 1, 2, 3, -1, ]
+                                    }
+                                }
+                            ]
+                        }
+                        Transform {
+                            rotation 0.0 1.0 0.0 -0.26
+                            children [ USE OffToLeftShadow ]
+                        }
+                        Transform {
+                            rotation 0.0 1.0 0.0 -0.52
+                            children [ USE OffToLeftShadow ]
+                        }
+                    ]
+                }
+            ]
+        }
+        Transform {
+            translation 2.5 -8.5 -5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [
+                Transform {
+                    rotation 0.0 1.0 0.0 -0.785
+                    center 5.0 0.0 0.0
+                    children [ USE ThreeUpRightCurvingShadows ]
+                }
+            ]
+        }
+        Transform {
+            translation 2.5 -8.5 -5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [
+                Transform {
+                    rotation 0.0 1.0 0.0 -1.57
+                    center 5.0 0.0 0.0
+                    children [ USE ThreeUpRightCurvingShadows ]
+                }
+            ]
+        }
+        Transform {
+            translation 7.5 -8.5 -5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [
+                DEF ThreeDownLeftCurvingShadows Transform {
+                    translation 5.0 0.0 0.0
+                    children [
+                        USE OffToLeftShadow,
+                        Transform {
+                            translation 0.0 0.0 0.0
+                            rotation 0.0 1.0 0.0 0.26
+                            children [ USE OffToLeftShadow ]
+                        }
+                        Transform {
+                            translation 0.0 0.0 0.0
+                            rotation 0.0 1.0 0.0 0.52
+                            children [ USE OffToLeftShadow ]
+                        }
+                    ]
+                }
+            ]
+        }
+        Transform {
+            translation 7.5 -8.5 -5.0
+            rotation 0.0 1.0 0.0 1.57
+            children [
+                Transform {
+                    rotation 0.0 1.0 0.0 0.785
+                    center 5.0 0.0 0.0
+                    children [ USE ThreeDownLeftCurvingShadows ]
+                }
+            ]
+        }
+        Transform {
+            translation -2.0 -8.5 2.5
+            children [
+                DEF ThreeUpLeftCurvingShadows Transform {
+                    translation -5.0 0.0 0.0
+                    children [
+                        DEF OffToRightShadow Transform {
+                            translation 5.0 0.0 0.0
+                            children [ USE Shadow ]
+                        }
+                        Transform {
+                            translation 0.0 0.0 0.0
+                            rotation 0.0 1.0 0.0 0.26
+                            children [ USE OffToRightShadow ]
+                        }
+                        Transform {
+                            translation 0.0 0.0 0.0
+                            rotation 0.0 1.0 0.0 0.52
+                            children [ USE OffToRightShadow ]
+                        }
+                    ]
+                }
+            ]
+        }
+        Transform {
+            translation 5.0 -8.5 7.5
+            rotation 0.0 1.0 0.0 3.14
+            children [
+                DEF ThreeDownRightCurvingShadows Transform {
+                    translation 5.0 0.0 0.0
+                    children [
+                        USE OffToLeftShadow,
+                        Transform {
+                            translation 0.0 0.0 0.0
+                            rotation 0.0 1.0 0.0 -0.26
+                            children [ USE OffToLeftShadow ]
+                        }
+                        Transform {
+                            translation 0.0 0.0 0.0
+                            rotation 0.0 1.0 0.0 -0.52
+                            children [ USE OffToLeftShadow ]
+                        }
+                    ]
+                }
+            ]
+        }
+        Transform {
+            translation 5.0 -8.5 7.5
+            rotation 0.0 1.0 0.0 3.14
+            children [
+                Transform {
+                    rotation 0.0 1.0 0.0 -0.785
+                    center 5.0 0.0 0.0
+                    children [ USE ThreeDownRightCurvingShadows ]
+                }
+            ]
+        }
+    ]
+}
+</FONT></PRE>
+</BODY>
+</HTML>

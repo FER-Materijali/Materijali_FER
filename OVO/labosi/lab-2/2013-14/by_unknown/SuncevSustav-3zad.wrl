@@ -1,0 +1,165 @@
+#VRML V2.0 utf8
+
+WorldInfo 
+{
+    title "Suncev sustav"
+}
+
+Viewpoint	#	promatranje scene 
+{
+    position -12.0 10.0 40.0
+    orientation -0.5 -0.5 0.0 0.4
+}
+
+Background {
+    frontUrl  "Svemir.jpg"	#pozadina
+	backUrl   "Svemir.jpg"
+    leftUrl   "Svemir.jpg"
+    rightUrl  "Svemir.jpg"
+    topUrl    "Svemir.jpg"
+    bottomUrl "Svemir.jpg"
+}
+
+DEF Sve Transform			#	Cvor: djeca "Sunce" i "Sustav_Zemlja"
+{
+	children
+	[
+		DEF Sunce Transform	#	Oblik,velicina i izgled Sunca
+		{
+			scale 6.96 6.96 6.96
+			children
+			[
+				DEF SUNCE Shape
+				{
+					appearance Appearance
+					{
+						texture ImageTexture {url "Sunce.png"}
+					}
+					geometry Sphere{}
+				}
+			]
+		}
+	,
+	DEF Sustav_Zemlja Transform	#	Sadrzi djecu "Zemlja" i "Sustav_Mjesec"
+	{
+		translation 14.96 0.0 0.0
+		rotation 1.0 0.0 0.0 0.0
+		
+		children
+		[
+			DEF Zemlja Transform	#	Oblik, velicina i izgled Zemlje.
+			{
+				scale 0.63 0.63 0.63
+				children
+				[
+					DEF ZEMLJA Shape
+					{
+						appearance Appearance
+						{
+							texture ImageTexture {url "Zemlja.jpg"}
+						}
+						geometry Sphere {}
+					}
+				]
+			}
+		,
+		DEF Sustav_Mjesec Transform	# Dijete "Mjesec".
+		{
+			translation 1.0 0.0 0.0
+			rotation 1.0 0.0 0.0 0.0
+			children
+			[
+				DEF Mjesec Transform	#	Oblik, velicina i izgled Mjeseca.
+				{
+					scale 0.17 0.17 0.17
+					children
+					[
+						DEF MJESEC Shape
+						{
+							appearance Appearance
+							{
+								texture ImageTexture {url "Mjesec.jpg"}
+							}
+							geometry Sphere{}
+						}
+					]
+				}
+			]
+		}
+		]
+	}
+	]
+}
+
+#Timeri----------------------------------------------------------
+
+DEF TIMER1 TimeSensor	#	Timer koristi cvor "Sve" za rotaciju sustava oko y-osi
+{
+	loop TRUE
+	cycleInterval 60.0
+}
+
+DEF TIMER2 TimeSensor 	#	Timer koristi cvor "Sustav_Zemlja" za rotaciju sustava oko y-osi
+{
+	loop TRUE
+	cycleInterval 4.83
+}
+
+DEF TIMER_ZEMLJE TimeSensor	#	Timer koristi cvor "Zemlja" za rotaciju sustava oko y-osi.
+{						
+	loop TRUE
+	cycleInterval 0.161
+}
+
+DEF TIMER_SUNCA TimeSensor	#	Timer koristi cvor "Zemlja" za rotaciju sustava oko y-osi.
+{							
+	loop TRUE
+	cycleInterval 4.1
+}
+
+#Interpolatori---------------------------------------------------
+
+DEF SVE OrientationInterpolator 	#interpolatori za cvorove ; vrtnju po y-osi
+{
+	key [ 0, 0.5, 1 ]
+	keyValue [ 0 1 0 0, 0 1 0 3.141, 0 1 0 6.282 ]
+}
+DEF SUNCE OrientationInterpolator		# Velicina kuta negativna -> zelimo ponistiti vrtnju Sunca (Sunce se vrti zbog cvora "Sve", on je njegovo dijete)
+{
+	key [ 0, 0.5, 1 ]
+	keyValue [ 0 1 0 0, 0 1 0 3.141, 0 1 0 6.282 ]
+}
+
+DEF SUSTAV_ZEMLJA OrientationInterpolator
+{
+	key [ 0, 0.5, 1 ]
+	keyValue [ 0 1 0 0, 0 1 0 3.141, 0 1 0 6.282 ]
+}
+
+DEF ZEMLJA OrientationInterpolator
+{
+	key [ 0, 0.5, 1 ]
+	keyValue [ 0 1 0 0, 0 1 0 3.141, 0 1 0 6.282 ]
+}
+
+
+
+#Vrtnja Zemlje oko Sunca-----------------------------------------
+ROUTE TIMER1.fraction_changed TO SVE.set_fraction
+ROUTE SVE.value_changed TO Sve.set_rotation
+
+ROUTE TIMER_SUNCA.fraction_changed TO SUNCE.set_fraction
+ROUTE SUNCE.value_changed TO Sunce.set_rotation
+
+
+
+#Vrtnja Mjeseca oko Zemlje---------------------------------------
+ROUTE TIMER2.fraction_changed TO SUSTAV_ZEMLJA.set_fraction
+ROUTE SUSTAV_ZEMLJA.value_changed TO Sustav_Zemlja.set_rotation
+
+ROUTE TIMER_ZEMLJE.fraction_changed TO ZEMLJA.set_fraction
+ROUTE ZEMLJA.value_changed TO Zemlja.set_rotation
+
+
+
+						

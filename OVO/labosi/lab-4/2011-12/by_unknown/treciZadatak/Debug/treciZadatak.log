@@ -1,0 +1,28 @@
+﻿Build started 11.6.2012. 15:18:09.
+     1>Project "C:\Users\Gooseman\Desktop\OVO\4.Labos\treciZadatak\treciZadatak.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\Debug\treciZadatak.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt treci.c
+         treci.c
+     1>c:\users\gooseman\desktop\ovo\4.labos\trecizadatak\treci.c(199): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : see declaration of '_ftime64'
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\Debug\treciZadatak.exe.embed.manifest.res" .\Debug\treciZadatak_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\treciZadatak.exe" /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib glut32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\Debug\treciZadatak.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Gooseman\Desktop\OVO\4.Labos\treciZadatak\Debug\treciZadatak.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\treciZadatak.lib" /MACHINE:X86 .\Debug\treciZadatak.exe.embed.manifest.res
+         .\Debug\treci.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\Debug\treciZadatak.exe.embed.manifest" /manifest .\Debug\treciZadatak.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         treciZadatak.vcxproj -> C:\Users\Gooseman\Desktop\OVO\4.Labos\treciZadatak\.\Debug\treciZadatak.exe
+       FinalizeBuildStatus:
+         Deleting file ".\Debug\treciZadatak.unsuccessfulbuild".
+         Touching ".\Debug\treciZadatak.lastbuildstate".
+     1>Done Building Project "C:\Users\Gooseman\Desktop\OVO\4.Labos\treciZadatak\treciZadatak.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.94

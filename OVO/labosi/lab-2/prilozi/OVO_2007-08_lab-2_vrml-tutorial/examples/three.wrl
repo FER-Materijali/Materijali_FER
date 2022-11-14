@@ -1,0 +1,68 @@
+#VRML V2.0 utf8
+#
+#  Tumbling Spheres
+#  three.wrl
+#        by David R. Nadeau
+#
+#  This world builds a batch of perpetually tumbling spheres.
+#
+
+WorldInfo {
+    title "Tumbling Spheres"
+    info [ "Copyright (c) 1998, David R. Nadeau" ]
+}
+
+EXTERNPROTO TumbleGroup [
+    field MFNode children
+    field SFTime xTumbleInterval
+    field SFTime yTumbleInterval
+    field SFTime zTumbleInterval
+    field SFVec3f translation
+] "tumgrp.wrl#TumbleGroup"
+
+
+TumbleGroup {
+    children DEF Block Shape {
+        appearance Appearance {
+            material Material { }
+            texture ImageTexture { url "bluesat.jpg" }
+        }
+        geometry Sphere { radius 2.0 }
+    }
+    xTumbleInterval 27.0
+    yTumbleInterval 13.0
+    zTumbleInterval 45.0
+    translation 0.0 0.0 0.0
+}
+
+TumbleGroup {
+    children USE Block
+    xTumbleInterval 29.0
+    yTumbleInterval 31.0
+    zTumbleInterval 25.0
+    translation 0.0 0.5 0.0
+}
+
+TumbleGroup {
+    children USE Block
+    xTumbleInterval 38.0
+    yTumbleInterval 27.0
+    zTumbleInterval 43.0
+    translation 0.5 1.0 0.0
+}
+
+TumbleGroup {
+    children USE Block
+    xTumbleInterval 32.0
+    yTumbleInterval 23.0
+    zTumbleInterval 41.0
+    translation 0.0 -0.5 1.5
+}
+
+TumbleGroup {
+    children USE Block
+    xTumbleInterval 25.0
+    yTumbleInterval 32.0
+    zTumbleInterval 39.0
+    translation -1.0 0.0 -0.5
+}

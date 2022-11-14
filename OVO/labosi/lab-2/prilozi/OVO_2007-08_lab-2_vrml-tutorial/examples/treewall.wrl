@@ -1,0 +1,219 @@
+#VRML V2.0 utf8
+#
+#  treewall.wrl
+#  A set of trees in front of a wall
+#    by David R. Nadeau
+#
+#  This world illustrates the use of textures with a transparency
+#  channel (alpha channel).  Such textures include pixel-by-pixel
+#  info about what parts of the image are transparent.  A tree texture,
+#  for instance, should be opaque where there are leaves, branches, or
+#  the trun, and transparent everywhere else.  To illustrate this
+#  use of transparency channel textures, this world places three trees
+#  side-by-side in front of a wall.  The left 'tree' polygon has no
+#  texture on it.  The middle polygon has a tree texture without
+#  the transparency channel.  The right polygon has a tree texture with
+#  a transparency texture.  All three trees are in Billboard nodes so
+#  that they always turn to face the viewer.
+#
+WorldInfo {
+    title "Trees in front of a wall"
+    info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+Viewpoint {
+    position 0.0 1.5 10.0
+    description "Entry View"
+}
+
+NavigationInfo {
+    type [ "WALK", "ANY" ]
+    headlight TRUE
+    speed 2.0
+}
+
+# Ground and lower wall
+Shape {
+    appearance DEF Concrete Appearance {
+	material Material { }
+    }
+    geometry IndexedFaceSet {
+	coord Coordinate {
+	    point [
+		-5.0 0.0   5.0,   5.0 0.0   5.0,
+		 5.0 0.0   1.0,  -5.0 0.0   1.0,
+		 5.0 0.05  1.0,  -5.0 0.05  1.0,
+		 5.0 0.05 -2.0,  -5.0 0.05 -2.0,
+		 5.0 0.25 -2.0,  -5.0 0.25 -2.0,
+		 5.0 0.25 -2.05, -5.0 0.25 -2.05,
+	    ]
+	}
+	coordIndex [
+	    0, 1, 2, 3, -1,
+	    3, 2, 4, 5, -1,
+	    5, 4, 6, 7, -1,
+	    7, 6, 8, 9, -1,
+	    9, 8, 10, 11, -1,
+	]
+	solid FALSE
+    }
+}
+
+# Brick wall
+Shape {
+    appearance DEF Brick Appearance {
+	material Material { }
+	texture ImageTexture { url "brick.jpg" }
+	textureTransform TextureTransform {
+	    scale 15.0 15.0
+	}
+    }
+    geometry IndexedFaceSet {
+	coord Coordinate {
+	    point [
+		-5.0 0.25 -2.05,  5.0 0.25 -2.05,
+		 5.0 5.0  -2.05, -5.0 5.0  -2.05,
+	    ]
+	}
+	coordIndex [ 0, 1, 2, 3 ]
+	texCoord TextureCoordinate {
+	    point [
+		0.0 0.0, 1.0 0.0,
+		1.0 1.0, 0.0 1.0,
+	    ]
+	}
+	texCoordIndex [ 0, 1, 2, 3 ]
+	solid FALSE
+    }
+}
+
+# Planter
+DEF Planter Transform {
+    scale 0.5 0.5 0.5
+    children [
+	Shape {
+	    appearance USE Concrete
+	    geometry IndexedFaceSet {
+		coord DEF PlanterCoordinates Coordinate {
+		    point [
+			-1.0 0.5  1.0,
+			 1.0 0.5  1.0,
+			 1.0 0.5 -1.0,
+			-1.0 0.5 -1.0,
+			-0.8 0.5  0.9,
+			 0.8 0.5  0.9,
+			 0.8 0.5 -0.9,
+			-0.8 0.5 -0.9,
+			-1.0 0.0  1.0,
+			 1.0 0.0  1.0,
+			 1.0 0.0 -1.0,
+			-1.0 0.0 -1.0,
+			-0.8 0.3  0.9,
+			 0.8 0.3  0.9,
+			 0.8 0.3 -0.9,
+			-0.8 0.3 -0.9,
+		    ]
+		}
+		coordIndex [
+		    0, 1, 5, 4, -1,
+		    1, 2, 6, 5, -1,
+		    2, 3, 7, 6, -1,
+		    3, 0, 4, 7, -1,
+		    0, 8, 9, 1, -1,
+		    9, 10, 2, 1, -1,
+		    10, 11, 3, 2, -1,
+		    11, 8, 0, 3, -1,
+		    15, 14, 6, 7, -1,
+		    14, 13, 5, 6, -1,
+		    13, 12, 4, 5, -1,
+		    12, 15, 7, 4, -1,
+		]
+	    }
+	}
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 0.0 0.5 0.0
+		}
+	    }
+	    geometry IndexedFaceSet {
+		coord USE PlanterCoordinates
+		coordIndex [ 12, 13, 14, 15 ]
+	    }
+	}
+    ]
+}
+
+# Tree faces
+
+# Right tree
+Transform {
+    translation  3.5 0.0 0.0
+    children [
+	USE Planter
+	Billboard {
+	    axisOfRotation 0.0 1.0 0.0
+	    children [
+		Shape {
+		    appearance Appearance {
+			# No material, use emissive texturing
+			texture ImageTexture { url "tree1.png" }
+		    }
+		    geometry DEF TreeFace IndexedFaceSet {
+			coord Coordinate {
+			    point [
+				-1.51 0.05 0.0,   1.51 0.05 0.0,
+				 1.51 3.05 0.0,  -1.51 3.05 0.0,
+			    ]
+			}
+			coordIndex [ 0, 1, 2, 3 ]
+			texCoord TextureCoordinate {
+			    point [
+				0.0 0.0, 1.0 0.0,
+				1.0 1.0, 0.0 1.0,
+			    ]
+			}
+			texCoordIndex [ 0, 1, 2, 3 ]
+			solid FALSE
+		    }
+		}
+	    ]
+	}
+    ]
+}
+Transform {
+    children [
+	DEF Tree Billboard {
+	    axisOfRotation 0.0 1.0 0.0
+	    children [
+		Shape {
+		    appearance Appearance {
+			# No material, use emissive texturing
+			texture ImageTexture { url "tree1.jpg" }
+		    }
+		    geometry USE TreeFace
+		}
+	    ]
+	}
+    ]
+}
+
+# Left tree
+# Now do one face without the tree texture to show the difference
+Transform {
+    translation -3.5 0.0 0.0
+    children [
+	USE Planter
+	Billboard {
+	    axisOfRotation 0.0 1.0 0.0
+	    children [
+		Shape {
+		    appearance Appearance {
+			material Material { }
+		    }
+		    geometry USE TreeFace
+		}
+	    ]
+	}
+    ]
+}

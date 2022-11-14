@@ -1,0 +1,43 @@
+#VRML V2.0 utf8
+#
+#  dfloor.wrl
+#  Dungeon floor
+#	by David R. Nadeau
+#
+#  This is a simple rectangular floor textured with a stone block
+#  image.  An ElevationGrid node is used so that the floor is made
+#  up of multiple polygons, each subject to individual lighting
+#  calculations.  This insures that when a PointLight is placed
+#  over the floor, the area underneath is bright, while the areas at
+#  the corners are not.
+#
+
+Transform {
+	translation -5.0 0.0 -2.5
+	children Shape {
+		appearance Appearance {
+			material Material { diffuseColor 1.0 1.0 1.0 }
+			texture ImageTexture { url "stone2.jpg" }
+			textureTransform TextureTransform {
+				scale 16.0 8.0
+			}
+		}
+		geometry ElevationGrid {
+			xDimension 8
+			zDimension 8
+			xSpacing   1.4285714
+			zSpacing   0.7142857
+			solid      FALSE
+			height [
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+			]
+		}
+	}
+}

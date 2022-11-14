@@ -1,0 +1,367 @@
+#VRML V2.0 utf8
+#
+#  Windmill
+#  windmill.wrl
+#      by David R. Nadeau
+#
+#    This world builds a windmill who's sails spin about.  Several
+#    viewpoints are added to look at the windmill from different angles.
+#
+#  EXPERIMENTATION
+#    Add additional windmills to the world.  Make each windmill's sails
+#    rotate at a slightly different speed.  This will insure that the
+#    windmills don't all rotate in sync, thereby making the scene look
+#    more natural.
+#
+#    Make the windmill door an anchor.  Clicking on the door leads to
+#    another world describing the windmill interior.
+#
+#    Add panorama cloud and mountain textures to the Background node.
+#
+#    Remove the windmill's sails and, instead, create a rotating
+#    water wheel.
+#
+
+WorldInfo {
+    title "Windmill"
+    info "Copyright (c) 1997, David R. Nadeau"
+}
+Viewpoint {
+    position 0.0 1.65 35.0
+    orientation 1.0 0.0 0.0 0.2
+    description "Entry View"
+}
+Viewpoint {
+    position 0.0 1.65 15.0
+    orientation 1.0 0.0 0.0 0.5
+    description "Close-up"
+}
+Viewpoint {
+    position 7.05 1.65 7.05
+    orientation 0.0 1.0 0.0  0.785
+    description "Front door"
+}
+Viewpoint {
+    position 35.0 1.65 -35.0
+    orientation 0.0 1.0 0.0  2.356
+    description "Far away"
+}
+Viewpoint {
+    position 0.0 14.43 2.0
+    orientation 0.00128 0.959 0.282 3.1503
+    description "Roof top"
+}
+# One more viewpoint is below, inside the Transform for the
+# windmill sails...
+
+NavigationInfo {
+    type [ "WALK", "ANY" ]
+    headlight FALSE
+    speed 3.0
+}
+Background {
+    skyColor [
+        0.0 0.2 0.8,
+        0.1 0.3 0.9
+        0.7 0.7 0.7
+    ]
+    skyAngle [
+        1.3,
+        1.471
+    ]
+}
+
+
+#
+#  Light
+#
+DirectionalLight {
+    color 1.0 1.0 1.0
+    intensity 1.0
+    ambientIntensity 0.8
+    direction -1.0 -1.0 -1.0
+}
+
+
+#
+#  Ground
+#
+Transform {
+    translation 0.0 -0.005 0.0
+    children Shape {
+        appearance Appearance {
+            material Material {
+                ambientIntensity 0.7
+                diffuseColor 0.0 0.5 0.1
+            }
+            texture ImageTexture { url "fire_g.jpg" }
+            textureTransform TextureTransform { scale 2.0 2.0 }
+        }
+        geometry IndexedFaceSet {
+            coord Coordinate {
+                point [
+                    -100.0 0.0 100.0,
+                     100.0 0.0 100.0,
+                     100.0 0.0 -100.0,
+                    -100.0 0.0 -100.0,
+                ]
+            }
+            coordIndex [ 0, 1, 2, 3 ]
+            texCoord TextureCoordinate {
+                point [
+                    0.0 0.0,
+                    1.0 0.0,
+                    1.0 1.0,
+                    0.0 1.0,
+                ]
+            }
+            texCoordIndex [ 0, 1, 2, 3 ]
+        }
+    }
+}
+
+
+#
+#  Windmill tower
+#
+Transform {
+    translation 0.0 5.0 0.0
+    children Shape {
+        appearance Appearance {
+            material Material {
+                ambientIntensity 0.3
+                diffuseColor 1.0 1.0 1.0
+            }
+            texture ImageTexture { url "swall1.jpg" }
+            textureTransform TextureTransform { scale 2.0 2.0 }
+        }
+        geometry Cylinder {
+            radius 5.0
+            height 10.0
+            top FALSE
+            bottom FALSE
+        }
+    }
+}
+
+
+#
+#  Windmill roof
+#
+Transform {
+    translation 0.0 12.0 0.0
+    children Shape {
+        appearance DEF Tile Appearance {
+            material Material {
+                ambientIntensity 0.3
+                diffuseColor 0.8 0.0 0.0
+            }
+            texture ImageTexture { url "wtile.jpg" }
+            textureTransform TextureTransform { scale 4.0 4.0 }
+        }
+        geometry Cone {
+            bottomRadius 6.0
+            height 4.0
+        }
+    }
+}
+
+
+#
+#  Windmill doorway
+#
+Transform {
+    translation 3.55 0.0 3.55
+    rotation 0.0 1.0 0.0  0.785
+    children [
+    #
+    #  Doorway roof
+    #
+        Transform {
+            translation 0.0 3.6 0.0
+            children Shape {
+                appearance USE Tile
+                geometry Cone {
+                    bottomRadius 1.5
+                    height 2.0
+                }
+            }
+        }
+    #
+    #  Door
+    #
+        Shape {
+            appearance Appearance {
+                material Material {
+                    ambientIntensity 0.3
+                    diffuseColor 0.4 0.2 0.0
+                }
+                texture ImageTexture { url "wdoor.jpg" }
+            }
+            geometry IndexedFaceSet {
+                coord Coordinate {
+                    point [
+                        -0.7 0.0 0.15,
+                         0.7 0.0 0.15,
+                         0.7 2.9 0.15,
+                        -0.7 2.9 0.15,
+    
+                        -0.7 0.0 -0.05,
+                         0.7 0.0 -0.05,
+                         0.7 2.9 -0.05,
+                        -0.7 2.9 -0.05,
+                    ]
+                }
+                coordIndex [
+                    0, 1, 2, 3, -1,
+                    4, 0, 3, 7, -1,
+                    1, 5, 6, 2, -1,
+                ]
+                texCoord TextureCoordinate {
+                    point [
+                        0.0 0.0,
+                        1.0 0.0,
+                        1.0 1.0,
+                        0.0 1.0,
+    
+                        0.0 0.0,
+                        0.08 0.0,
+                        0.08 1.0,
+                        0.0 1.0,
+                    ]
+                }
+                texCoordIndex [
+                    0, 1, 2, 3, -1,
+                    4, 5, 6, 7, -1,
+                    4, 5, 6, 7, -1,
+                ]
+            }
+        }
+    #
+    #  Stair
+    #
+        Transform {
+            translation 0.0 0.05 0.5
+            children Shape {
+                appearance Appearance {
+                    material Material {
+                        diffuseColor 0.4 0.4 0.4
+                    }
+                }
+                geometry Box {
+                    size 2.0 0.1 1.0
+                }
+            }
+        }
+    ]
+}
+
+
+#
+#  Windmill sails (animated)
+#
+DEF Sails Transform {
+    translation 0.0 8.0 6.5
+    # rotation is animated to spin around the Z axis
+    children [
+    #
+    #  Nauseating viewpoint
+    #
+        Viewpoint {
+            position 0.0 6.5 -0.1
+            #orientation 0.0 1.0 0.0 1.571
+            description "On a sail"
+        }
+    #
+    #  Shaft
+    #
+        Transform {
+            translation 0.0 0.0 -0.75
+            rotation 1.0 0.0 0.0  1.571
+            children Shape {
+                appearance DEF Wood Appearance {
+                    material Material {
+                        diffuseColor 0.6 0.4 0.0
+                    }
+                }
+                geometry Cylinder {
+                    radius 0.8
+                    height 1.5
+                    bottom FALSE
+                }
+            }
+        }
+    #
+    #  First sail
+    #
+        DEF Sail Transform {
+            translation 0.0 3.5 0.1
+            children [
+            #
+            # Sail
+            #
+                Transform {
+                    translation 0.0 1.0 0.1
+                    children Shape {
+                        appearance Appearance {
+                            material Material {
+                                diffuseColor 1.0 1.0 1.0
+                            }
+                            texture ImageTexture { url "sails.jpg" }
+                            textureTransform TextureTransform {
+                                scale 2.0 6.0
+                            }
+                        }
+                        geometry Box {
+                            size 2.0 6.0 0.1
+                        }
+                    }
+                }
+            #
+            #  Support for sail
+            #
+                Shape {
+                    appearance USE Wood
+                    geometry Box {
+                        size 0.1 7.0 0.1
+                    }
+                }
+            ]
+        }
+    #
+    #  Other three sails
+    #
+        Transform {
+            rotation 0.0 0.0 1.0  1.571
+            children USE Sail
+        }
+        Transform {
+            rotation 0.0 0.0 1.0  -1.571
+            children USE Sail
+        }
+        Transform {
+            rotation 0.0 0.0 1.0  3.141
+            children USE Sail
+        }
+    ]
+}
+
+
+DEF Clock TimeSensor {
+    cycleInterval 10.0
+    loop TRUE
+    startTime 1.0
+    stopTime  0.0
+}
+
+DEF Rotator OrientationInterpolator {
+    key [ 0.0, 0.5, 1.0 ]
+    keyValue [
+        0.0 0.0 1.0  0.0,
+        0.0 0.0 1.0  3.141,
+        0.0 0.0 1.0  6.282
+    ]
+}
+
+ROUTE Clock.fraction_changed TO Rotator.set_fraction
+ROUTE Rotator.value_changed  TO Sails.set_rotation

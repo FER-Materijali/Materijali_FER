@@ -1,0 +1,362 @@
+#VRML V2.0 utf8
+#
+#  Robot generator
+#  robot.wrl
+#	by David R. Nadeau
+#
+#  This file illustrates the use of PROTO to create new node types.
+#  For this example, we create a new "Robot" node type that has three
+#  fields, one each for setting the robot's metal color (it's body),
+#  its eye color, and it's rod color (gadgets on the body).  Those
+#  three fields are used within the body of the PROTO where the robot's
+#  form is constructed.  Each time a PROTO field (metal, eye, and rod
+#  colors) is used within the PROTO body, use the "IS" syntax to say:
+#
+#	"this field within the PROTO body IS equal to the argument in
+#	the PROTO interface"
+#
+
+WorldInfo {
+    title "Robot Generator"
+    info [ "Copyright (c) 1998, David R. Nadeau" ]
+}
+
+Viewpoint {
+    position 0.0 3.6 6.8
+    orientation 1.0 0.0 0.0 -0.34
+    description "Entry view"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight TRUE
+}
+
+Background {
+    skyColor [
+        0.0 0.0 0.0,
+        0.0 0.0 0.0,
+        0.4 0.0 0.0,
+        0.6 0.0 0.0,
+    ]
+    skyAngle [
+        1.77
+        1.87,
+        1.97,
+    ]
+}
+
+
+#
+#  Build a Robot with field to set the robot's colors.
+#  Use those colors within the Robot node's body definition using
+#  the "IS" syntax.
+#
+PROTO Robot [
+    field SFColor metalColor 0.6 0.6 0.8
+    field SFColor eyeColor   0.6 0.0 0.0
+    field SFColor rodColor   1.0 1.0 0.0
+] {
+    Group {
+        children [
+        # Body
+                # Torso sphere
+                Shape {
+                    appearance DEF RobotColor Appearance {
+                        material Material {
+                            diffuseColor IS metalColor
+                        }
+                    }
+                    geometry Sphere {
+                        radius 0.5
+                    }
+                }
+
+                # Support rods
+                DEF Rod Transform {
+                    translation 0.4 0.6 0.0
+                    rotation 0.0 0.0 1.0 -0.785
+                    children [
+                        Shape {
+                            appearance DEF RobotGlow Appearance {
+                                material Material {
+                                    diffuseColor 0.0 0.0 0.0
+                                    emissiveColor IS rodColor
+                                }
+                            }
+                            geometry Cylinder {
+                                height 0.65
+                                radius 0.04
+                            }
+                        }
+                    ]
+                }
+                Transform {
+                    rotation 0.0 1.0 0.0 1.57
+                    children [ USE Rod ]
+                }
+                Transform {
+                    rotation 0.0 1.0 0.0 3.14
+                    children [ USE Rod ]
+                }
+                Transform {
+                    rotation 0.0 1.0 0.0 -1.57
+                    children [ USE Rod ]
+                }
+
+                # Shoulders
+                Transform {
+                    translation 0.0 0.85 0.0
+                    children [
+                        Shape {
+                            appearance USE RobotColor
+                            geometry Cylinder {
+                                height 0.1
+                                radius 0.8
+                            }
+                        }
+                    ]
+                }
+
+                # Neck
+                Transform {
+                    translation 0.0 0.95 0.0
+                    children [
+                        Shape {
+                            appearance USE RobotColor
+                            geometry Cylinder {
+                                height 0.1
+                                radius 0.2
+                            }
+                        }
+                    ]
+                }
+
+
+        # Head
+            Billboard {
+                axisOfRotation 0.0 1.0 0.0
+                children [
+                    Transform {
+                        translation 0.0 1.4 0.0
+                        children [
+                            # Head
+                            Shape {
+                                appearance USE RobotColor
+                                geometry Sphere {
+                                    radius 0.5
+                                }
+                            }
+    
+                            # Eyebrow
+                            Transform {
+                                translation 0.0 0.25 0.35
+                                children [
+                                    Shape {
+                                        appearance Appearance {
+                                            material Material {
+                                                diffuseColor 0.2 0.2 0.2
+                                            }
+                                        }
+                                        geometry Box {
+                                            size 0.6 0.05 0.2
+                                        }
+                                    }
+                                ]
+                            }
+    
+                            # Right Eye
+                            Transform {
+                                translation 0.1 0.15 0.38
+                                children [
+                                    DEF Eye Shape {
+                                        appearance Appearance {
+                                            material Material {
+                                                diffuseColor 0.0 0.0 0.0
+                                                emissiveColor IS eyeColor
+                                            }
+                                        }
+                                        geometry Sphere {
+                                            radius 0.09
+                                        }
+                                    }
+                                ]
+                            }
+    
+                            # Left Eye
+                            Transform {
+                                translation -0.1 0.15 0.38
+                                children [ USE Eye ]
+                            }
+    
+                            # Right Antenae
+                            Transform {
+                                translation 0.85 0.1 0.0
+                                children [
+                                    Transform {
+                                        translation -0.2 0.0 0.0
+                                        rotation 0.0 0.0 1.0 1.57
+                                        children [
+                                            DEF AntenaeBar Shape {
+                                                appearance USE RobotColor
+                                                geometry Cylinder {
+                                                    height 0.4
+                                                    radius 0.04
+                                                }
+                                            }
+                                        ]
+                                    }
+                                    Shape {
+                                        appearance USE RobotColor
+                                        geometry Sphere {
+                                            radius 0.09
+                                        }
+                                    }
+                                    Transform {
+                                        translation 0.0 0.58 0.0
+                                        children [
+                                            Shape {
+                                                appearance USE RobotGlow
+                                                geometry Cone {
+                                                    height 1.0
+                                                    bottomRadius 0.02
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+    
+                            # Left Antenae
+                            Transform {
+                                translation -0.85 0.1 0.0
+                                children [
+                                    Transform {
+                                        translation 0.2 0.0 0.0
+                                        rotation 0.0 0.0 1.0 -1.57
+                                        children [ USE AntenaeBar ]
+                                    }
+                                    Transform {
+                                        rotation 0.0 0.0 1.0 0.785
+                                        children [
+                                            Shape {
+                                                appearance USE RobotColor
+                                                geometry Box {
+                                                    size 0.2 0.2 0.2
+                                                }
+                                            }
+                                            Transform {
+                                                translation 0.0 0.58 0.0
+                                                children [
+                                                    Shape {
+                                                        appearance USE RobotGlow
+                                                        geometry Box {
+                                                            size 0.02 1.0 0.02
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                            Transform {
+                                                translation 0.0 0.95 0.0
+                                                children [
+                                                    Shape {
+                                                        appearance USE RobotGlow
+                                                        geometry Box {
+                                                            size 0.2 0.02 0.02
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                            Transform {
+                                                translation 0.0 0.85 0.0
+                                                children [
+                                                    Shape {
+                                                        appearance USE RobotGlow
+                                                        geometry Box {
+                                                            size 0.4 0.02 0.02
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
+
+
+
+#
+#  Build an army of robots
+#
+Robot {
+	metalColor 0.6 0.6 0.8
+	eyeColor   1.0 0.0 0.0
+	rodColor   1.0 1.0 0.0
+}
+Transform {
+	translation -2.0 0.0 0.0
+	children [
+		Robot {
+			metalColor 0.6 0.5 0.3
+			eyeColor   0.0 1.0 0.0
+			rodColor   1.0 0.5 0.0
+		}
+	]
+}
+Transform {
+	translation 2.0 0.0 0.0
+	children [
+		Robot {
+			metalColor 0.6 0.3 0.8
+			eyeColor   0.0 0.8 1.0
+			rodColor   0.0 0.8 1.0
+		}
+	]
+}
+Transform {
+	translation 4.5 0.0 -3.0
+	children [
+		Robot {
+			metalColor 0.0 0.4 0.9
+			eyeColor   0.0 0.0 0.0
+			rodColor   1.0 0.0 0.5
+		}
+	]
+}
+Transform {
+	translation 1.5 0.0 -3.0
+	children [
+		Robot {
+			metalColor 0.6 0.6 0.5
+			eyeColor   0.0 1.0 0.0
+			rodColor   1.0 1.0 0.0
+		}
+	]
+}
+Transform {
+	translation -1.5 0.0 -3.0
+	children [
+		Robot {
+			metalColor 1.0 0.5 0.5
+			eyeColor   1.0 1.0 0.0
+			rodColor   1.0 0.0 1.0
+		}
+	]
+}
+Transform {
+	translation -4.5 0.0 -3.0
+	children [
+		Robot {
+			metalColor 0.0 0.5 1.0
+			eyeColor   1.0 0.0 0.0
+			rodColor   0.5 0.0 1.0
+		}
+	]
+}

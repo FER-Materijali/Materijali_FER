@@ -1,0 +1,354 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>colors.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Controlling appearance with materials</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>colors.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  Colors
+#  colors.wrl
+#        by David R. Nadeau
+#
+#  This world is simply used as something colorful.  Orientation interpolators
+#  slowly spin 9 frames, each with a slightly different speed.  At first
+#  there is a clear structure, but as the animation evolves the structure
+#  dissolves in to chaos.  If you wait long enough, they'll all get back in
+#  sync again... after about 560 years!
+#
+#  Things to experiment with:
+#        Try using other time keyValue for the rotation speed of the 9 squares.
+#        If the keyValue are multiples of a common factor, the squares will
+#        get in sync sooner than if they don't have a common factor.
+#
+
+
+WorldInfo {
+    title "Colors"
+    info [ "Copyright (c) 1996, David R. Nadeau" ]
+}
+
+DEF Entry Viewpoint {
+    position 0.0 0.0 3.0
+    description "Entry View"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight TRUE
+}
+
+Background {
+    skyColor [ 0.0 0.0 0.0 ]
+}
+
+#
+#  Red frame
+#
+DEF Frame1 Transform {
+    children [
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 1.0 0.0 0.0
+		}
+	    }
+	    geometry DEF Frame IndexedFaceSet {
+		coord Coordinate {
+		    point [
+			# Outer front
+			-1.0 -1.0 0.1,
+			-0.9 -1.0 0.1,
+			 0.9 -1.0 0.1,
+			 1.0 -1.0 0.1,
+			 1.0  1.0 0.1,
+			 0.9  1.0 0.1,
+			-0.9  1.0 0.1,
+			-1.0  1.0 0.1,
+			# Outer back
+			-1.0 -1.0 -0.1,
+			-0.9 -1.0 -0.1,
+			 0.9 -1.0 -0.1,
+			 1.0 -1.0 -0.1,
+			 1.0  1.0 -0.1,
+			 0.9  1.0 -0.1,
+			-0.9  1.0 -0.1,
+			-1.0  1.0 -0.1,
+			# Inner front
+			-0.9 -0.9 0.1,
+			 0.9 -0.9 0.1,
+			 0.9  0.9 0.1,
+			-0.9  0.9 0.1,
+			# Inner front
+			-0.9 -0.9 -0.1,
+			 0.9 -0.9 -0.1,
+			 0.9  0.9 -0.1,
+			-0.9  0.9 -0.1,
+		    ]
+		}
+		coordIndex [
+		    0, 1, 6, 7, -1,
+		    1, 2, 17, 16, -1,
+		    2, 3, 4, 5, -1,
+		    19, 18, 5, 6, -1,
+		    11, 10, 13, 12, -1,
+		    10, 9, 20, 21, -1,
+		    9, 8, 15, 14, -1,
+		    22, 23, 14, 13, -1,
+		    3, 11, 12, 4, -1,
+		    4, 12, 15, 7, -1,
+		    8, 0, 7, 15, -1,
+		    0, 8, 11, 3, -1,
+		    16, 17, 21, 20, -1,
+		    21, 17, 18, 22, -1,
+		    19, 23, 22, 18, -1,
+		    16, 20, 23, 19, -1,
+		]
+	    }
+	}
+    ]
+}
+
+#
+#  Orange frame
+#
+DEF Frame2 Transform {
+    translation 0.0 0.0 -0.4
+    children [
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 1.0 0.5 0.0
+		}
+	    }
+	    geometry USE Frame
+	}
+    ]
+}
+
+#
+#  Yellow frame
+#
+DEF Frame3 Transform {
+    translation 0.0 0.0 -0.8
+    children [
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 1.0 1.0 0.0
+		}
+	    }
+	    geometry USE Frame
+	}
+    ]
+}
+
+#
+#  Light green frame
+#
+DEF Frame4 Transform {
+    translation 0.0 0.0 -1.2
+    children [
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 0.5 1.0 0.0
+		}
+	    }
+	    geometry USE Frame
+	}
+    ]
+}
+
+#
+#  Green frame
+#
+DEF Frame5 Transform {
+    translation 0.0 0.0 -1.6
+    children [
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 0.0 1.0 0.0
+		}
+	    }
+	    geometry USE Frame
+	}
+    ]
+}
+
+#
+#  Light Cyan frame
+#
+DEF Frame6 Transform {
+    translation 0.0 0.0 -2.0
+    children [
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 0.0 1.0 0.5
+		}
+	    }
+	    geometry USE Frame
+	}
+    ]
+}
+
+#
+#  Cyan frame
+#
+DEF Frame7 Transform {
+    translation 0.0 0.0 -2.4
+    children [
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 0.0 1.0 1.0
+		}
+	    }
+	    geometry USE Frame
+	}
+    ]
+}
+
+#
+#  Dark Cyan frame
+#
+DEF Frame8 Transform {
+    translation 0.0 0.0 -2.8
+    children [
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 0.0 0.5 1.0
+		}
+	    }
+	    geometry USE Frame
+	}
+    ]
+}
+
+#
+#  Blue frame
+#
+DEF Frame9 Transform {
+    translation 0.0 0.0 -3.2
+    children [
+	Shape {
+	    appearance Appearance {
+		material Material {
+		    diffuseColor 0.0 0.0 1.0
+		}
+	    }
+	    geometry USE Frame
+	}
+    ]
+}
+
+
+#
+#  Trigger things on touch
+#
+DEF Touch TouchSensor { }
+
+
+#
+#  Animation control
+#
+
+DEF Timer1 TimeSensor { cycleInterval 10.0 loop TRUE startTime -1 }
+DEF Timer2 TimeSensor { cycleInterval 11.0 loop TRUE startTime -1 }
+DEF Timer3 TimeSensor { cycleInterval 12.0 loop TRUE startTime -1 }
+DEF Timer4 TimeSensor { cycleInterval 13.0 loop TRUE startTime -1 }
+DEF Timer5 TimeSensor { cycleInterval 14.0 loop TRUE startTime -1 }
+DEF Timer6 TimeSensor { cycleInterval 15.0 loop TRUE startTime -1 }
+DEF Timer7 TimeSensor { cycleInterval 16.0 loop TRUE startTime -1 }
+DEF Timer8 TimeSensor { cycleInterval 17.0 loop TRUE startTime -1 }
+DEF Timer9 TimeSensor { cycleInterval 18.0 loop TRUE startTime -1 }
+
+DEF Rot1 OrientationInterpolator {
+    key [ 0.0, 0.5, 1.0 ]
+    keyValue [ 0.0 0.0 1.0 0.0, 0.0 0.0 1.0 3.14, 0.0 0.0 1.0 6.28 ]
+}
+DEF Rot2 OrientationInterpolator {
+    key [ 0.0, 0.5, 1.0 ]
+    keyValue [ 0.0 0.0 1.0 0.0, 0.0 0.0 1.0 3.14, 0.0 0.0 1.0 6.28 ]
+}
+DEF Rot3 OrientationInterpolator {
+    key [ 0.0, 0.5, 1.0 ]
+    keyValue [ 0.0 0.0 1.0 0.0, 0.0 0.0 1.0 3.14, 0.0 0.0 1.0 6.28 ]
+}
+DEF Rot4 OrientationInterpolator {
+    key [ 0.0, 0.5, 1.0 ]
+    keyValue [ 0.0 0.0 1.0 0.0, 0.0 0.0 1.0 3.14, 0.0 0.0 1.0 6.28 ]
+}
+DEF Rot5 OrientationInterpolator {
+    key [ 0.0, 0.5, 1.0 ]
+    keyValue [ 0.0 0.0 1.0 0.0, 0.0 0.0 1.0 3.14, 0.0 0.0 1.0 6.28 ]
+}
+DEF Rot6 OrientationInterpolator {
+    key [ 0.0, 0.5, 1.0 ]
+    keyValue [ 0.0 0.0 1.0 0.0, 0.0 0.0 1.0 3.14, 0.0 0.0 1.0 6.28 ]
+}
+DEF Rot7 OrientationInterpolator {
+    key [ 0.0, 0.5, 1.0 ]
+    keyValue [ 0.0 0.0 1.0 0.0, 0.0 0.0 1.0 3.14, 0.0 0.0 1.0 6.28 ]
+}
+DEF Rot8 OrientationInterpolator {
+    key [ 0.0, 0.5, 1.0 ]
+    keyValue [ 0.0 0.0 1.0 0.0, 0.0 0.0 1.0 3.14, 0.0 0.0 1.0 6.28 ]
+}
+DEF Rot9 OrientationInterpolator {
+    key [ 0.0, 0.5, 1.0 ]
+    keyValue [ 0.0 0.0 1.0 0.0, 0.0 0.0 1.0 3.14, 0.0 0.0 1.0 6.28 ]
+}
+
+ROUTE Touch.touchTime TO Timer1.set_startTime
+ROUTE Touch.touchTime TO Timer2.set_startTime
+ROUTE Touch.touchTime TO Timer3.set_startTime
+ROUTE Touch.touchTime TO Timer4.set_startTime
+ROUTE Touch.touchTime TO Timer5.set_startTime
+ROUTE Touch.touchTime TO Timer6.set_startTime
+ROUTE Touch.touchTime TO Timer7.set_startTime
+ROUTE Touch.touchTime TO Timer8.set_startTime
+ROUTE Touch.touchTime TO Timer9.set_startTime
+
+ROUTE Timer1.fraction_changed TO Rot1.set_fraction
+ROUTE Timer2.fraction_changed TO Rot2.set_fraction
+ROUTE Timer3.fraction_changed TO Rot3.set_fraction
+ROUTE Timer4.fraction_changed TO Rot4.set_fraction
+ROUTE Timer5.fraction_changed TO Rot5.set_fraction
+ROUTE Timer6.fraction_changed TO Rot6.set_fraction
+ROUTE Timer7.fraction_changed TO Rot7.set_fraction
+ROUTE Timer8.fraction_changed TO Rot8.set_fraction
+ROUTE Timer9.fraction_changed TO Rot9.set_fraction
+
+ROUTE Rot1.value_changed TO Frame1.set_rotation
+ROUTE Rot2.value_changed TO Frame2.set_rotation
+ROUTE Rot3.value_changed TO Frame3.set_rotation
+ROUTE Rot4.value_changed TO Frame4.set_rotation
+ROUTE Rot5.value_changed TO Frame5.set_rotation
+ROUTE Rot6.value_changed TO Frame6.set_rotation
+ROUTE Rot7.value_changed TO Frame7.set_rotation
+ROUTE Rot8.value_changed TO Frame8.set_rotation
+ROUTE Rot9.value_changed TO Frame9.set_rotation
+</FONT></PRE>
+</BODY>
+</HTML>

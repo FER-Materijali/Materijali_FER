@@ -1,0 +1,28 @@
+#VRML V2.0 utf8
+
+PROTO Rotor [ 
+    field        SFTime  rate      1
+    field        MFNode  children  [ ]
+    exposedField SFTime  startTime 0
+    exposedField SFTime  stopTime  0
+] {
+    DEF F Transform { children IS children }
+    DEF T TimeSensor {
+        cycleInterval IS rate
+        startTime IS startTime
+        stopTime IS stopTime
+        loop TRUE
+    }
+
+    DEF I OrientationInterpolator {
+        key [ 0, 0.25, 0.5, 0.75, 1 ]
+        keyValue [ 0 1 0 0, 
+                   0 1 0 1.57, 
+                   0 1 0 3.14, 
+                   0 1 0 4.71, 
+                   0 1 0 0 ]
+    }
+
+    ROUTE T.fraction_changed TO I.set_fraction
+    ROUTE I.value_changed TO F.set_rotation
+}

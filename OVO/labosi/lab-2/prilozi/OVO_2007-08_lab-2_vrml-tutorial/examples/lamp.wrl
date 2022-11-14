@@ -1,0 +1,171 @@
+#VRML V2.0 utf8
+#
+#  Desk lamp
+#  lamp.wrl
+#        by David R. Nadeau
+#        published in "The VRML 2.0 Sourcebook" by Ames, Nadeau, and Moreland
+#
+#  Illustrate the use of multiple sensors, nested into groups within
+#  groups along with the shapes they sense.
+#
+
+WorldInfo {
+    title "Desk lamp"
+    info [ "Copyright (c) 1997, Andrea L. Ames, David R. Nadeau, John L. Moreland" ]
+}
+
+Viewpoint {
+    position 0.0 0.15 1.0
+    description "Entry View"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight TRUE
+}
+
+Transform {
+  translation 0.0 0.0 0.0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+            diffuseColor 0.0 0.0 0.0
+            emissiveColor 0.7 0.7 0.7
+        }
+      }
+      geometry Box { size 2.25 0.01 2.25 }
+    }
+  ]
+}
+
+
+Transform {
+  translation 0.0 0.01 0.0
+  rotation 1.0 0.0 0.0 1.571
+  children [
+  # Lamp
+    DEF MoveLamp PlaneSensor { }
+    DEF Lamp Transform {
+      rotation 1.0 0.0 0.0 -1.571
+      children [
+      # Lamp base
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.5 0.5 0.5 }
+          }
+          geometry Cylinder {
+            radius 0.1
+            height 0.01
+          }
+        }
+      # Base - First arm joint
+        Group {
+          children [
+            DEF MoveFirstArm CylinderSensor { }
+            DEF FirstArm Transform {
+              children [
+Transform {
+translation 0.0 0.15 0.0
+rotation    1.0 0.0 0.0  -0.7
+center      0.0 -0.15 0.0
+children [
+              # Lower arm
+                DEF LampArm Shape {
+                  appearance DEF Red Appearance {
+                    material Material { diffuseColor 1.0 0.2 0.2 }
+                  }
+                  geometry Cylinder {
+                    radius 0.01
+                    height 0.3
+                  }
+                }
+              # First arm - second arm joint
+                Group {
+                  children [
+                    DEF MoveSecondArm CylinderSensor { }
+                    DEF SecondArm Transform {
+                      children [
+Transform {
+translation 0.0 0.3 0.0
+rotation  1.0 0.0 0.0  1.9
+center    0.0 -0.15 0.0
+children [
+                      # Second arm
+                        USE LampArm,
+                      # Second arm - shade joint
+                        Group {
+                          children [
+                            DEF MoveLampShade SphereSensor {
+                              offset 1.0 0.0 0.0 -1.25
+                            }
+                            DEF LampShade Transform {
+                              translation 0.0 0.075 0.0
+                              rotation  1.0 0.0 0.0  -1.25
+                              center    0.0 0.075 0.0
+                              children [
+                              # Shade
+                                Shape {
+                                  appearance USE Red
+                                  geometry Cone {
+                                    height 0.15
+                                    bottomRadius 0.12
+                                    bottom FALSE
+                                  }
+                                }
+			      # Switch
+			        Transform {
+			          translation 0.0 0.075 0.0
+			          children [
+			            Shape {
+			              appearance Appearance {
+			                material Material {
+			                  diffuseColor 1.0 1.0 1.0
+			                }
+			              }
+			              geometry Cylinder {
+			                radius 0.007
+			                height 0.03
+			              }
+			            }
+			          ]
+			        }
+                              # Light bulb
+                                Transform {
+                                  translation 0.0 -0.05 0.0
+                                  children [
+				    Shape {
+                                      appearance Appearance {
+                                        material Material {
+                                           diffuseColor 0.0 0.0 0.0
+                                           emissiveColor 1.0 1.0 1.0
+                                        }
+                                      }
+                                      geometry Sphere {
+                                        radius 0.05
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+] }
+                      ]
+                    }
+                  ]
+                }
+] }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+ROUTE MoveLamp.translation_changed   TO Lamp.set_translation
+ROUTE MoveFirstArm.rotation_changed  TO FirstArm.set_rotation
+ROUTE MoveSecondArm.rotation_changed TO SecondArm.set_rotation
+ROUTE MoveLampShade.rotation_changed TO LampShade.set_rotation

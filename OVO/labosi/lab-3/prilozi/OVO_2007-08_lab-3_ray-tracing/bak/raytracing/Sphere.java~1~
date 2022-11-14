@@ -1,0 +1,77 @@
+package raytracing;
+
+/**
+ * <p>Title: Sphere</p>
+ * <p>Description: </p>
+ * Klasa predstavlja kuglu u prostoru. Nasljeduje apstraktnu klasu Object. Kugla
+ * je odredena svojim polozajem, radijusom, bojom, parametrima materijala i
+ * udjelima pojedninih zraka (osnovne, odbijene i lomljene).
+ * <p>Copyright: Copyright (c) 2003</p>
+ * @author Milenka Gadze, Miran Mosmondor
+ * @version 1.0
+ */
+
+
+import java.awt.*;
+import javax.swing.*;
+import java.awt.geom.*;
+import java.awt.event.*;
+
+public class Sphere extends Object{
+
+  private double radius;
+  private double rayDistanceFromCenter;
+  private Point nearIntersectionPoint, farIntersectionPoint;
+
+  /**
+   * Inicijalni konstruktor koji postavlja sve parametre kugle. Za prijenos
+   * parametara koristi se pomocna klasa SphereParameters.
+   *
+   * @param sphereParameters parametri kugle
+   */
+  public Sphere(SphereParameters sphereParameters) {
+    super(sphereParameters.getCenterPosition(), sphereParameters.getRaysContributions(), sphereParameters.getMaterialParameters(),sphereParameters.getN(), sphereParameters.getNi());
+    this.radius=sphereParameters.getRadius();
+  }
+
+  /**
+   * Metoda ispituje postojanje presjeka zrake ray s kuglom. Ako postoji presjek
+   * postavlja tocke presjeka nearIntersectionPoint i farIntersectionPoint, te
+   * vraca logicku vrijednost true.
+   *
+   * @param ray zraka za koju se ispituje postojanje presjeka sa kuglom
+   * @return logicku vrijednost postojanja presjeka zrake s kuglom
+   */
+  public boolean intersection(Ray ray) {
+  }
+
+  /**
+   * Vraca tocku presjeka kugle sa zrakom koja je bliza pocetnoj tocki zrake.
+   *
+   * @return tocka presjeka zrake s kuglom koja je bliza izvoru zrake
+   */
+  public Point getNearIntersectionPoint() {
+    return nearIntersectionPoint;
+  }
+
+  /**
+	* Vraca normalu na kugli u tocki point
+	*
+	* @param point na kojoj se racuna normala na kugli
+	* @return normal vektor normale
+	*/	
+  public Vector getNormal(Point point) {
+	return normal;
+  }
+
+
+  /**
+   * Vraca tocku presjeka kugle sa zrakom koja je daljnja pocetnoj tocki zrake.
+   *
+   * @return tocka presjeka zrake s kuglom koja je dalja izvoru zrake
+   */
+  public Point getFarIntersectionPoint() {
+    return farIntersectionPoint;
+  }
+
+}

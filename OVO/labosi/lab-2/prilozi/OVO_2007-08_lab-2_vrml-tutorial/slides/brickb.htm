@@ -1,0 +1,60 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>brickb.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Controlling how textures are mapped</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>brickb.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+
+# Texture without textureTransform
+Transform {
+	translation -1.5 0 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material { }
+				texture DEF BrickTexture ImageTexture {
+						url "brick.jpg"
+				}
+			}
+			geometry Box { }
+		}
+	]
+}
+
+# Texture scaled with textureTransform
+Transform {
+	translation 1.5 0 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material { }
+				texture	USE BrickTexture
+				textureTransform TextureTransform {
+						scale 3.0 3.0
+				}
+			}
+			geometry Box { }
+		}
+	]
+}
+</FONT></PRE>
+</BODY>
+</HTML>

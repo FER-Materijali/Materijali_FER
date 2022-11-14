@@ -1,0 +1,55 @@
+#VRML V2.0 utf8
+
+EXTERNPROTO Rotor [ 
+    field        SFTime  rate
+    field        MFNode  children
+    exposedField SFTime  startTime
+    exposedField SFTime  stopTime
+]
+"rotor.wrl"
+
+PROTO Chopper [ 
+    field SFTime rotorSpeed 1 
+] {
+    Group {
+        children [
+            DEF Touch TouchSensor { } # Gotta get touch events
+            Inline { url "chopperbody.wrl" }
+            DEF Top Rotor {
+                stopTime 1 # initially, the rotor should not spin
+                rate IS rotorSpeed
+                children Inline { url "chopperrotor.wrl" } 
+            }
+        ]
+    }
+
+    DEF RotorScript Script {
+        eventIn  SFTime startOrStopEngine
+        eventOut SFTime startEngine
+        eventOut SFTime stopEngine
+        field    SFBool engineStarted FALSE
+
+        url "javascript:
+            function startOrStopEngine(value) {
+                // start or stop engine:
+                if (!engineStarted) {
+                    startEngine = value;
+                    engineStarted = TRUE;
+                }
+                else {
+                    stopEngine = value;
+                    engineStarted = FALSE;
+                }
+            }"
+    }
+
+    ROUTE Touch.touchTime TO RotorScript.startOrStopEngine
+    ROUTE RotorScript.startEngine TO Top.startTime
+    ROUTE RotorScript.stopEngine TO Top.stopTime
+}
+
+Viewpoint { position 0 0 5 }
+DEF MyScene Group {
+    children DEF MikesChopper Chopper { }
+}
+

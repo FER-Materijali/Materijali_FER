@@ -1,0 +1,50 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>torches.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Controlling detail</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>torches.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  torches.wrl
+#  A torch
+#	by David R. Nadeau
+#       published in "The VRML 2.0 Sourcebook" by Ames, Nadeau, and Moreland
+#
+#  This file illustrates the use of an LOD node to automatically
+#  switch among different versions of a shape based upon the
+#  distance the viewer is from that shape.
+#
+
+LOD {
+    center 0.0 0.0 0.0
+    range [ 7.0, 10.0 ]
+    level [
+    # High-detail
+        Inline { url "torch1.wrl" },
+    # Medium-detail
+        Inline { url "torch2.wrl" },
+    # Low-detail
+        Inline { url "torch3.wrl" }
+    ]
+}
+</FONT></PRE>
+</BODY>
+</HTML>

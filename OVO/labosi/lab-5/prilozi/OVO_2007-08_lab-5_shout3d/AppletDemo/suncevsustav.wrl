@@ -1,0 +1,74 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+    title "Suncev Sustav"
+}
+
+Viewpoint {
+					position 0.0 50.0 14.0
+					orientation 1.0 0.0 0.0 -1.32
+    description "Entry view"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight TRUE
+}
+
+Background {
+    skyColor    [ 0.0 0.0 1.0 ]
+    groundColor [ 0.0 0.0 1.0 ]
+}
+
+DEF Sunce Shape {
+        appearance Appearance {
+        											material Material {
+        																				diffuseColor 0.84 0.86 0.042
+        											}
+        }
+        geometry Sphere {
+        									radius 6.96
+        }
+}
+
+DEF SuncevSustav Transform {
+children [
+									DEF ZemljinSustav Transform {
+													translation 14.96 0.0 0.0
+													children [
+																						DEF Kugla Shape {
+													        					appearance Appearance {
+        																								material Material {
+        																								diffuseColor 0.0 0.5 0.75
+        																								}
+																										}
+																						geometry Sphere {
+																			  					radius 0.63
+																									 }
+																						}
+												#sad u koordinatni sustav zemlje dodajemo mjesec
+            DEF Mjesec Transform {
+												translation 1.0 0.0 0.0
+																children [
+													DEF Kugla Shape {
+													        appearance Appearance {
+        																								material Material {
+        																								diffuseColor 0.75 0.75 0.75
+        											}
+        					}
+																			geometry Sphere {
+																			  			radius 0.17
+																			}
+													}
+				]
+}
+
+													]
+										}
+							]
+}
+
+
+
+
+

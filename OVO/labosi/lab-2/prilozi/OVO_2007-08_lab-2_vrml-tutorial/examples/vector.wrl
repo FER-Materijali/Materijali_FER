@@ -1,0 +1,71 @@
+#VRML V2.0 utf8
+#
+#  vector.wrl
+#  Vector
+#	by David R. Nadeau
+#
+#  This world illustrates the use of a PROTO to define a generic
+#  vector whose position, orientation, scale, and color are all
+#  set by incoming fields.  The vector is used by "vecfld1.wrl"
+#  to fill a volume with vectors, all pointing different directions
+#  and with different colors.
+#
+
+WorldInfo {
+    title "Vector"
+    info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+PROTO Vector [
+    field  SFVec3f     translation  0.0 0.0 0.0
+    field  SFRotation  rotation     0.0 1.0 0.0  0.0
+    field  SFVec3f     scale        1.0 1.0 1.0
+    field  SFColor     color        0.8 0.8 0.8
+] {
+    Transform {
+        translation IS translation
+        rotation IS rotation
+        scale IS scale
+        children [
+            DEF flatArrow Shape {
+                appearance Appearance {
+                    material Material {
+                        ambientIntensity 0.0
+                        diffuseColor 0.0 0.0 0.0
+                        emissiveColor IS color
+                    }
+                }
+                geometry IndexedFaceSet {
+                    solid FALSE
+                    coord Coordinate {
+                        point [
+                            # base
+                            -0.1 0.0  0.0,
+                             0.1 0.0  0.0,
+                             0.1 0.75 0.0,
+                            -0.1 0.75 0.0,
+                            # tip
+                            -0.25 0.75 0.0,
+                             0.25 0.75 0.0,
+                             0.0  1.0  0.0,
+                        ]
+                    }
+                    coordIndex [
+                        # base
+                        0, 1, 2, 3, 0,
+                        # face separator
+                        -1,
+                        # tip
+                        4, 5, 6, 4,
+                    ]
+                }
+            }
+
+            # A second flat arrow turned 90 degrees
+            Transform {
+                rotation 0.0 1.0 0.0  1.57
+                children USE flatArrow
+            }
+        ]
+    }
+}

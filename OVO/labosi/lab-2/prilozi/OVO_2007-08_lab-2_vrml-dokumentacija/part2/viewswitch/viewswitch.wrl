@@ -1,0 +1,30 @@
+#VRML V2.0 utf8
+
+DEF View1 Viewpoint {
+   position 0 -3 6
+   orientation 1 0 0 0.46
+   description "Viewpoint 1"
+}
+
+DEF View2 Viewpoint {
+   position 0 7 0
+   orientation 0 -.707 -.707 3.1416
+   description "Viewpoint 2"
+}
+
+DEF View3 Viewpoint {
+   position 0 0 10
+   orientation 0 0 1 0
+   description "Viewpoint 3"
+}
+
+Shape {
+   appearance Appearance {
+      material DEF BoxMaterial Material {
+	 diffuseColor 1 1 0
+      }
+   }
+   geometry Cone {}
+}
+
+

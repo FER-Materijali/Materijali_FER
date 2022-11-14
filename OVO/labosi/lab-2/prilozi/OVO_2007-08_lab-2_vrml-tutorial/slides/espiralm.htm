@@ -1,0 +1,146 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>espiralm.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Summary examples</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>espiralm.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  Spiral flow with particle paths
+#  espiralm.wrl
+#        by David R. Nadeau
+#
+#  Show how to move a set of particles (spheres) along a
+#  pre-computed animation path.  Such an approach might be
+#  used to visualize the results of a fluid flow simulation.
+#
+
+WorldInfo {
+	title "Spiral flow with particle paths"
+	info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+Viewpoint {
+	position 0.0 8.0 30.0
+	description "Entry view"
+}
+
+NavigationInfo {
+	type [ "EXAMINE", "ANY" ]
+	headlight TRUE
+}
+
+#
+#  Center pole
+#
+Transform {
+	translation 0.0 8.0 0.0
+	children [
+		Shape {
+			appearance DEF BaseColor Appearance {
+				material Material {
+					diffuseColor 0.0 0.5 1.0
+				}
+			}
+			geometry Cylinder {
+				height 18.0
+				radius 0.5
+			}
+		}
+	]
+}
+
+#
+#  Ground under pole
+#
+Transform {
+	translation 0.0 -1.0 0.0
+	children [
+		Shape {
+			appearance USE BaseColor
+			geometry Cylinder {
+				height 0.25
+				radius 6.0
+			}
+		}
+	]
+}
+
+
+#
+#  Particle source
+#
+Transform {
+	translation 0.00 16.00 0.00
+	children [
+		Transform {
+			translation 4.50 0.0 -1.0
+			rotation 1.0 0.0 0.0 -1.571
+			children Shape {
+				appearance USE BaseColor
+				#geometry Box { size 2.5 2.5 2.5 }
+				geometry Cone {
+					height 2.5
+					bottomRadius 1.2
+				}
+			}
+		}
+		Transform {
+			translation 2.25 0.0 0.0
+			children Shape {
+				appearance USE BaseColor
+				geometry Box { size 4.5 0.5 0.5 }
+			}
+		}
+	]
+}
+
+
+#
+#  Particle sink
+#
+Transform {
+	children [
+		Transform {
+			translation 4.50 0.0 1.0
+			rotation 1.0 0.0 0.0 1.571
+			children Shape {
+				appearance USE BaseColor
+				#geometry Box { size 2.5 2.5 2.5 }
+				geometry Cone {
+					height 2.5
+					bottomRadius 1.2
+				}
+			}
+		}
+		Transform {
+			translation 2.25 0.0 0.0
+			children Shape {
+				appearance USE BaseColor
+				geometry Box { size 4.5 0.5 0.5 }
+			}
+		}
+	]
+}
+
+Inline { url "espiral.wrl" }
+</FONT></PRE>
+</BODY>
+</HTML>

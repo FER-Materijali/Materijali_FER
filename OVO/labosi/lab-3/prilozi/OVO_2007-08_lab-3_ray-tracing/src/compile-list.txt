@@ -1,0 +1,13 @@
+raytracing\ColorVector.java 
+raytracing\FileReader.java 
+raytracing\Main.java 
+raytracing\Object.java 
+raytracing\Picture.java 
+raytracing\Point.java 
+raytracing\PropertyVector.java 
+raytracing\Ray.java 
+raytracing\Scene.java 
+raytracing\Screen.java 
+raytracing\Sphere.java 
+raytracing\SphereParameters.java 
+raytracing\Vector.java 

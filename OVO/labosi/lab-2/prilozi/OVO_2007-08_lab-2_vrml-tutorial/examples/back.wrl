@@ -1,0 +1,15 @@
+#VRML V2.0 utf8
+Background {
+    skyColor [
+        0.0 0.2 0.7,
+        0.0 0.5 1.0,
+        1.0 1.0 1.0
+    ]
+    skyAngle [ 1.309, 1.571 ]
+    groundColor [
+        0.1 0.10 0.0,
+        0.4 0.25 0.2,
+        0.6 0.60 0.6,
+    ]
+    groundAngle [ 1.309, 1.571 ]
+}

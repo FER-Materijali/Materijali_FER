@@ -1,0 +1,1628 @@
+<HTML>
+<HEAD>
+<!-- Amd 1 joedw 12/10/02 -->
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 2.0 Win">
+  <!-- SGI_COMMENT COSMOCREATE -->
+  <!-- SGI_COMMENT VERSION NUMBER="1.0.2" -->
+  <TITLE>VRML97, ISO/IEC 14772-1:1997 -- Annex D, Examples</TITLE>
+</HEAD>
+<BODY>
+
+<H1><CENTER><IMG SRC="../Images/vrml97.gif" ALT="VRML97 logo" ALIGN="BOTTOM"
+WIDTH="470" HEIGHT="85" NATURALSIZEFLAG="3"></CENTER></H1>
+
+<H1><CENTER>The Virtual Reality Modeling Language</CENTER></H1>
+
+<H1><CENTER>Annex D<BR>
+<FONT SIZE=+1>(informative)</FONT></CENTER></H1>
+
+<H1><CENTER>Examples</CENTER></H1>
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALIGN="TOP" WIDTH="470" HEIGHT="25"
+ALT="--- VRML separator bar ---" NATURALSIZEFLAG="0"></P>
+
+<H2><A NAME="D.1"></A><IMG SRC="../Images/cube.gif" WIDTH="20" HEIGHT="19"
+ALT="+" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.1 Introduction and table of
+contents</H2>
+
+<P>This annex provides a variety of VRML examples.</P>
+
+<P><A HREF="#D.1">D.1 Introduction and table of contents</A> <BR>
+<A HREF="#D.2">D.2 Simple example</A> <BR>
+<A HREF="#D.3">D.3 Instancing (sharing)</A> <BR>
+<A HREF="#D.4">D.4 Prototype example</A> <BR>
+<A HREF="#D.5">D.5 Scripting example</A> <BR>
+<A HREF="#D.6">D.6 Geometric properties</A> <BR>
+<A HREF="#D.7">D.7 Prototypes and alternate representations</A> <BR>
+<A HREF="#D.8">D.8 Anchor</A> <BR>
+<A HREF="#D.9">D.9 Directional light</A> <BR>
+<A HREF="#D.10">D.10 PointSet</A> <BR>
+<A HREF="#D.11">D.11 Level of detail</A> <BR>
+<A HREF="#D.12">D.12 Color interpolator</A> <BR>
+<A HREF="#D.13">D.13 TimeSensor</A> &nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#D.13.1">D.13.1
+Introduction</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#D.13.2">D.13.2
+Click to animate</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#D.13.3">D.13.3
+Alarm clock</A> <BR>
+<A HREF="#D.14">D.14 Shuttles and pendulums</A> <BR>
+<A HREF="#D.15">D.15 Robot</A> <BR>
+<A HREF="#D.16">D.16 Chopper</A> <BR>
+<A HREF="#D.17">D.17 Guided tour</A> <BR>
+<A HREF="#D.18">D.18 Elevator<BR>
+</A><A HREF="#D.19">D.19 Execution model</A><BR>
+
+
+
+</P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALIGN="TOP" WIDTH="470" HEIGHT="25"
+ALT="--- VRML separator bar ---" NATURALSIZEFLAG="0"></P>
+
+<H2><A NAME="D.2"></A><IMG SRC="../Images/cube.gif" WIDTH="20" HEIGHT="19"
+ALT="+" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.2 Simple example</H2>
+
+<P>This example contains a simple scene defining a view of a red sphere
+and a blue box, lit by a directional light:</P>
+
+<P><CENTER><IMG SRC="../Images/rsmbb.jpg" ALIGN="TOP" WIDTH="353" HEIGHT=
+"203" SGI_SRC="/usr/people/rikk/VRML/spec.DIS/Images/rsmbb.jpg" NATURALSIZEFLAG=
+"0"></CENTER></P>
+
+<H4><CENTER>Figure D.1: Red sphere meets blue box</CENTER></H4>
+
+<P><CENTER>&nbsp;</CENTER></P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+<B>Transform {</B>
+<B>  children [</B>
+<B>    NavigationInfo { headlight FALSE } # We'll add our own light</B>
+
+<B>    DirectionalLight {        # First child</B>
+<B>        direction 0 0 -1      # Light illuminating the scene</B>
+<B>    }</B>
+
+<B>    Transform {               # Second child - a red sphere</B>
+<B>      translation 3 0 1</B>
+<B>      children [</B>
+<B>        Shape {</B>
+<B>          geometry Sphere { radius 2.3 }</B>
+<B>          appearance Appearance {</B>
+<B>            material Material { diffuseColor 1 0 0 }   # Red</B>
+<B>         }</B>
+<B>        }</B>
+<B>      ]</B>
+<B>    }</B>
+
+<B>    Transform {               # Third child - a blue box </B>
+<B>      translation -2.4 .2 1</B>
+<B>      rotation     0 1 1  .9</B>
+<B>      children [</B>
+<B>        Shape {</B>
+<B>          geometry Box {}</B>
+<B>          appearance Appearance {</B>
+<B>            material Material { diffuseColor 0 0 1 }  # Blue</B>
+<B>         }</B>
+<B>        }</B>
+<B>      ]</B>
+<B>    }</B>
+
+<B>  ] # end of children for world</B>
+<B>}</B></PRE>
+
+<P><A HREF="exampleD.2.wrl">Click here to view this example in a VRML browser.</A></P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.3"></A><IMG SRC="../Images/cube.gif" WIDTH="20" HEIGHT="19"
+ALT="+" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.3 Instancing (sharing)</H2>
+
+<P>Reading the following file results in three spheres being drawn. The
+first sphere defines a unit sphere at the origin named &quot;Joe&quot;,
+the second sphere defines a smaller sphere translated along the +x axis,
+the third sphere is a reference to the second sphere and is translated along
+the -x axis. If any changes occur to the second sphere (e.g. radius changes),
+then the third sphere, will change too:</P>
+
+<P><CENTER><IMG SRC="../Images/instancing.jpg" WIDTH="290" HEIGHT="156"
+SGI_SRC="/usr/people/rikk/VRML/spec.DIS/Images/instancing.jpg" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM"></CENTER></P>
+
+<H4><CENTER>Figure D.2: Instancing</CENTER></H4>
+
+<P>&nbsp;</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+<B>Transform {</B>
+<B>  children [</B>
+<B>    DEF Joe Shape { geometry Sphere {} }</B>
+<B>    Transform {</B>
+<B>      translation 2 0 0</B>
+<B>      children    DEF Joe Shape { geometry Sphere { radius .2 } }</B>
+<B>    }</B>
+<B>    Transform {</B>
+<B>      translation -2 0 0</B>
+<B>      children    USE Joe </B>
+<B>    }</B>
+
+<B>  ]</B>
+<B>}</B></PRE>
+
+<P><A HREF="exampleD.3.wrl">Click here to view this example in a VRML browser.</A>
+(Note that the spheres are unlit because no appearance was specified.)</P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.4"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20" 
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.4 Prototype example</H2>
+
+<P>A simple table with variable colours for the legs and top might be prototyped
+as:</P>
+
+<P><CENTER><IMG SRC="../Images/proto.jpg" WIDTH="289" HEIGHT="252" SGI_SRC="/usr/people/rikk/VRML/spec.DIS/Images/proto.jpg"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></CENTER></P>
+
+<H4><CENTER>Figure D.3: Prototype</CENTER></H4>
+
+<P>&nbsp;</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+<B>PROTO TwoColorTable [ field SFColor legColor  .8 .4 .7</B>
+<B>                      field SFColor topColor .6 .6 .1 ]</B>
+<B>{</B>
+<B>  Transform {</B>
+<B>    children [</B>
+<B>      Transform {   # table top</B>
+<B>       translation 0 0.6 0</B>
+<B>        children</B>
+<B>          Shape {</B>
+<B>            appearance Appearance {</B>
+<B>              material Material { diffuseColor IS topColor }</B>
+<B>            }</B>
+<B>            geometry Box { size 1.2 0.2 1.2 }</B>
+<B>          }</B>
+<B>      }</B>
+
+<B>      Transform {   # first table leg</B>
+<B>       translation -.5 0 -.5</B>
+<B>        children</B>
+<B>          DEF Leg Shape {</B>
+<B>            appearance Appearance {</B>
+<B>              material Material { diffuseColor IS legColor }</B>
+<B>            }</B>
+<B>            geometry Cylinder { height 1 radius .1 }</B>
+<B>          }</B>
+<B>      }</B>
+<B>      Transform {   # another table leg</B>
+<B>       translation .5 0 -.5</B>
+<B>        children USE Leg</B>
+<B>      }</B>
+<B>      Transform {   # another table leg</B>
+<B>       translation -.5 0 .5</B>
+<B>        children USE Leg</B>
+<B>      }</B>
+<B>      Transform {   # another table leg</B>
+<B>       translation .5 0 .5</B>
+<B>        children USE Leg</B>
+<B>      }</B>
+<B>    ] # End of root Transform's children</B>
+<B>  } # End of root Transform</B>
+<B>} # End of prototype</B>
+
+<B># The prototype is now defined. Although it contains a </B>
+<B># number of nodes, only the legColor and topColor fields </B>
+<B># are public. Instead of using the default legColor and </B>
+<B># topColor, this instance of the table has red legs and </B>
+<B># a green top:</B>
+
+
+<B>TwoColorTable {</B>
+<B>  legColor 1 0 0 topColor 0 1 0</B>
+<B>}</B>
+<B>NavigationInfo { type &quot;EXAMINE&quot; }      # Use the Examine viewer</B></PRE>
+
+<P><A HREF="exampleD.4.wrl">Click here to view this example in a VRML browser.</A></P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.5"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20" 
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.5 Scripting example</H2>
+
+<P>This Script node decides whether or not to open a bank vault given openVault
+and combinationEntered messages. To do this, it remembers whether or not
+the correct combination has been entered. The Script node combined with
+a Sphere, a TouchSensor and a Sound node to show how is works. When the
+pointing device is over the sphere, the <I>combinationEntered</I> eventIn
+of the Script is sent. Then, when the Sphere is touched (typically when
+the mouse button is pressed) the Script is sent the <I>openVault</I> eventIn.
+This generates the <I>vaultUnlocked</I> eventOut which starts a 'click'
+sound. Here is the example:</P>
+
+<PRE>
+<B><TT>#VRML V2.0 utf8</TT></B>
+
+<B>DEF OpenVault Script { </B>
+<B>    # Declarations of what's in this Script node:</B>
+<B>    eventIn SFTime openVault</B>
+<B>    eventIn SFBool combinationEntered</B>
+<B>    eventOut SFTime vaultUnlocked</B>
+<B>    field SFBool unlocked FALSE</B>
+
+<B>    # Implementation of the logic:</B>
+<B>    url &quot;javascript:</B>
+<B>        function combinationEntered(value) { unlocked = value; }</B>
+<B>        function openVault(value) {</B>
+<B>        if (unlocked) vaultUnlocked = value;</B>
+<B>    }&quot;</B>
+<B>}</B>
+
+<B>Shape {</B>
+<B>    appearance Appearance {</B>
+<B>        material Material { diffuseColor 1 0 0 }</B>
+<B>    }</B>
+<B>    geometry Sphere { }</B>
+<B>}</B>
+
+<B>Sound {</B>
+<B>    source     DEF Click AudioClip {</B>
+<B>             url       &quot;click.wav&quot;</B>
+<B>             stopTime 1</B>
+<B>    }</B>
+
+<B>    minFront   1000</B>
+<B>    maxFront   1000</B>
+<B>    minBack    1000</B>
+<B>    maxBack    1000</B>
+<B>}</B>
+
+
+<B>DEF TS TouchSensor { }</B>
+
+<B>ROUTE TS.isOver TO OpenVault.combinationEntered</B>
+<B>ROUTE TS.touchTime TO OpenVault.openVault</B>
+<B>ROUTE OpenVault.vaultUnlocked TO Click.startTime</B></PRE>
+
+<P>Note that the <I>openVault</I> eventIn and the <I>vaultUnlocked</I> eventOut
+are of type SFTime, which allows them to be wired directly to a TouchSensor
+or TimeSensor.</P>
+
+<P><A HREF="exampleD.5.wrl">Click here to view this example in a VRML browser.</A></P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.6"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20" 
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.6 Geometric properties</H2>
+
+<P>The following IndexedFaceSet (contained in a Shape node) uses all four
+of the geometric property nodes to specify vertex coordinates, colours per
+vertex, normals per vertex, and texture coordinates per vertex (note that
+the material sets the overall transparency):</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+
+<B>Shape { </B>
+<B>    geometry IndexedFaceSet {</B>
+<B>        coordIndex [ 0, 1, 3, -1, 0, 2, 3, -1 ]</B>
+<B>        coord Coordinate { </B>
+<B>            point [ 0 0 0, 1 0 0, 1 0 -1, 0.5 1 0 ] </B>
+<B>        }</B>
+<B>        color Color {</B>
+<B>            color [ 0.2 0.7 0.8, 0.5 0 0, 0.1 0.8 0.1, 0 0 0.7 ] </B>
+<B>        }</B>
+<B>        normal Normal {</B>
+<B>            vector [ 0 0 1, 0 0 1, 0 0 1, 0 0 1 ] </B>
+<B>        }</B>
+<B>        texCoord TextureCoordinate { </B>
+<B>            point [ 0 0, 1 0, 1 0.4, 1 1 ]</B>
+<B>        }</B>
+<B>    }</B>
+<B>    appearance Appearance { </B>
+<B>        material Material { transparency 0.5 }</B>
+<B>        texture  PixelTexture { </B>
+<B>            image 2 2 1 0xFF 0x80 0x80 0xFF </B>
+<B>        }</B>
+<B>    }</B>
+<B>}</B></PRE>
+
+<P><A HREF="exampleD.6.wrl">Click here to view this example in a VRML browser.</A></P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.7"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20" 
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.7 Prototypes and alternate
+representations</H2>
+
+<P>VRML&nbsp;2.0 has the capability to define new nodes. The following is
+an example of a new node RefractiveMaterial. This node behaves as a Material
+node with an added field, <I>indexOfRefraction</I>. The list of URLs for
+the EXTERNPROTO are searched in order. If the browser recognizes the URN,
+<B><CODE>urn:inet:foo.com:types:RefractiveMaterial</CODE></B>, it may treat
+it as a native type (or load the implementation). Otherwise, the URL, <B><CODE>http://www.myCompany.com/vrmlNodes/RefractiveMaterial.wrl</CODE></B>,
+is used as a backup to ensure that the node is supported on any browsers.
+See below for the PROTO implementation that treats RefractiveMaterial as
+a Material (and ignores the <I>refractiveIndex</I> field).</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+
+<B># external protype definition</B>
+<B>EXTERNPROTO RefractiveMaterial [</B>
+<B>    exposedField SFFloat ambientIntensity</B>
+<B>    exposedField SFColor diffuseColor</B>
+<B>    exposedField SFColor specularColor</B>
+<B>    exposedField SFColor emissiveColor</B>
+<B>    exposedField SFFloat shininess</B>
+<B>    exposedField SFFloat transparency</B>
+<B>    exposedField SFFloat indexOfRefraction  ]</B>
+<B>[</B>
+<B>  &quot;urn:inet:foo.com:types:RefractiveMaterial&quot;,</B>
+<B>  &quot;http://www.myCompany.com/vrmlNodes/RefractiveMaterial.wrl&quot;, </B>
+<B>  &quot;refractivematerial.wrl&quot;,</B>
+<B>]</B>
+
+<B>Shape {</B>
+<B>    geometry Sphere { }</B>
+<B>    appearance Appearance {</B>
+<B>        # Instance of a RefractiveMaterial</B>
+<B>        material RefractiveMaterial {               </B>
+<B>            ambientIntensity  0.2</B>
+<B>            diffuseColor      1 0 0</B>
+<B>            indexOfRefraction 0.3</B>
+<B>        }</B>
+<B>    }</B>
+<B>}</B></PRE>
+
+<P>The URL <B><CODE>http://www.myCompany.com/vrmlNodes/RefractiveMaterial.wrl</CODE></B>
+contains the following:</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+
+<B>PROTO RefractiveMaterial [            # prototype definition</B>
+<B>    exposedField SFFloat ambientIntensity  0</B>
+<B>    exposedField SFColor diffuseColor      0.5 0.5 0.5</B>
+<B>    exposedField SFColor specularColor     0 0 0</B>
+<B>    exposedField SFColor emissiveColor     0 0 0</B>
+<B>    exposedField SFFloat shininess         0</B>
+<B>    exposedField SFFloat transparency      0</B>
+<B>    exposedField SFFloat indexOfRefraction 0.1 ]</B>
+<B>{</B>
+<B>    Material {</B>
+<B>        ambientIntensity IS ambientIntensity</B>
+<B>        diffuseColor     IS diffuseColor</B>
+<B>        specularColor    IS specularColor</B>
+<B>        emissiveColor    IS emissiveColor</B>
+<B>        shininess        IS shininess</B>
+<B>        transparency     IS transparency</B>
+<B>    }</B>
+<B>}</B></PRE>
+
+<P>Note that the name of the new node type, <B>RefractiveMaterial</B>, is
+not used by the browser to decide if the node is native or not; the URL/URN
+names determine the node's implementation.</P>
+
+<P><A HREF="exampleD.7.wrl">Click here to view this example in a VRML browser.</A></P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.8"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20" 
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.8 Anchor</H2>
+
+<P>The <I>target</I> parameter can be used by the anchor node to send a
+request to load a URL into another frame:</P>
+
+<PRE>
+<B>Anchor { </B>
+<B>  url &quot;http://somehost/somefile.html&quot;</B>
+<B>  parameter [ &quot;target=name_of_frame&quot; ]</B>
+<B>  children Shape { geometry Cylinder {} }</B>
+<B>}</B></PRE>
+
+<P>An Anchor may be used to bind the viewer to a particular <I>viewpoint</I>
+in a virtual world by specifying a URL ending with <I>#viewpointName</I>,
+where <I>viewpointName</I> is the DEF name of a viewpoint defined in the
+world. For example:</P>
+
+<PRE>
+<B>Anchor { </B>
+<B>  url &quot;http://www.school.edu/vrml/someScene.wrl#OverView&quot;</B>
+<B>  children Shape { geometry Box {} }</B>
+<B>}</B></PRE>
+
+<P>specifies an anchor that puts the viewer in the <I>someScene</I> world
+bound to the viewpoint named <I>OverView</I> when the box is chosen (note
+that <I>OverView</I> is the DEF name of the viewpoint, not the value of
+the viewpoint's description field).</P>
+
+<P>If no world is specified, the current scene is implied. For example:</P>
+
+<PRE>
+<B>Anchor { </B>
+<B>  url &quot;#Doorway&quot;</B>
+<B>  children Shape { geometry Sphere {} }</B>
+<B>}</B></PRE>
+
+<P>binds the user's view to the viewpoint with the DEF name <I>Doorway</I>
+in the current scene.</P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.9"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20" 
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.9 Directional light</H2>
+
+<P>A directional light source illuminates only the objects in its enclosing
+grouping node. The light illuminates everything within this coordinate system
+including the objects that precede it in the scene graph as shown below:</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+
+<B>Group { </B>
+<B>    children [</B>
+<B>       DEF UnlitShapeOne Transform {</B>
+<B>            translation -3 0 0</B>
+
+<B>           children Shape { </B>
+<B>               appearance DEF App Appearance {</B>
+<B>                   material Material { </B>
+<B>                       diffuseColor 0.8 0.4 0.2 </B>
+<B>                   }</B>
+<B>               }</B>
+<B>               geometry Box { } </B>
+<B>           }</B>
+<B>        }</B>
+
+<B>       DEF LitParent Group {</B>
+<B>           children [</B>
+<B>               DEF LitShapeOne Transform {</B>
+<B>                    translation 0 2 0</B>
+
+<B>                   children Shape {</B>
+<B>                       appearance USE App</B>
+<B>                       geometry Sphere { }</B>
+<B>                   }</B>
+<B>               }</B>
+
+<B>               # lights the shapes under LitParent</B>
+<B>               DirectionalLight { } </B>
+<B>               DEF LitShapeTwo Transform {</B>
+<B>                    translation 0 -2 0</B>
+
+<B>                   children Shape {</B>
+<B>                       appearance USE App</B>
+<B>                       geometry Cylinder { }</B>
+<B>                    }</B>
+<B>                }</B>
+<B>           ]</B>
+<B>       }</B>
+
+<B>       DEF UnlitShapeTwo Transform {</B>
+<B>            translation 3 0 0</B>
+
+<B>           children Shape { </B>
+<B>               appearance USE App</B>
+<B>               geometry Cone { }</B>
+<B>            }</B>
+<B>       }</B>
+<B>    ]</B>
+<B>}</B></PRE>
+
+<P><A HREF="exampleD.9.wrl">Click here to view this example in a VRML browser.</A></P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.10"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20"
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.10 PointSet</H2>
+
+<P>This simple example defines a PointSet composed of 3 points. The first
+point is red (1 0 0), the second point is green (0 1 0), and the third point
+is blue (0 0 1). The second PointSet instances the Coordinate node defined
+in the first PointSet, but defines different colours:</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+
+<B>Shape { </B>
+<B>    geometry PointSet {</B>
+<B>        coord DEF mypts Coordinate { </B>
+<B>            point [ 0 0 0, 2 2 2, 3 3 3 ] </B>
+<B>        }</B>
+<B>        color Color { color [ 1 0 0, 0 1 0, 0 0 1 ] }</B>
+<B>    }</B>
+<B>}</B>
+
+<B>Transform {</B>
+<B>    translation 2 0 0</B>
+
+<B>    children Shape {</B>
+<B>        geometry PointSet {</B>
+<B>           coord USE mypts</B>
+<B>           color Color { color [ .5 .5 0, 0 .5 .5, 1 1 1 ] }</B>
+<B>        }</B>
+<B>    }</B>
+<B>}</B></PRE>
+
+<P><A HREF="exampleD.10.wrl">Click here to view this example in a VRML browser.</A></P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.11"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20"
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.11 Level of detail</H2>
+
+<P>The LOD node is typically used for switching between different versions
+of geometry at specified distances from the viewer. However, if the range
+field is left at its default value, the browser selects the most appropriate
+child from the list given. It can make this selection based on performance
+or perceived importance of the object. Children should be listed with most
+detailed version first just as for the normal case. This &quot;performance
+LOD&quot; feature can be combined with the normal LOD function to give the
+browser a selection of children from which to choose at each distance.</P>
+
+<P>In this example, the browser is free to choose either a detailed or a
+less-detailed version of the object when the viewer is closer than 10 meters
+(as measured in the coordinate space of the LOD). The browser should display
+the less detailed version of the object if the viewer is between 10 and
+50 meters and should display nothing at all if the viewer is farther than
+50 meters. Browsers should try to honor the hints given by authors, and
+authors should try to give browsers as much freedom as they can to choose
+levels of detail based on performance.</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+
+<B>LOD { </B>
+<B>    range [ 10, 50 ]</B>
+<B>    level [</B>
+<B>        LOD {</B>
+<B>            level [</B>
+<B>                Shape { geometry Sphere { } }</B>
+<B>                DEF LoRes Shape { geometry Box { } }</B>
+<B>            ]</B>
+<B>        }</B>
+<B>        USE LoRes,</B>
+<B>        Shape { } # Display nothing</B>
+<B>    ]</B>
+<B>}</B></PRE>
+
+<P>For best results, ranges should be specified only where necessary and
+LOD nodes should be nested with and without ranges.</P>
+
+<P><A HREF="exampleD.11.wrl">Click here to view this example in a VRML browser.</A></P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.12"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20"
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.12 Color interpolator</H2>
+
+<P>This example interpolates from red to green to blue in a 10 second cycle:</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+
+<B>DEF myColor ColorInterpolator { </B>
+<B>    key        [   0.0,    0.5,    1.0 ]</B>
+<B>    keyValue   [ 1 0 0,  0 1 0,  0 0 1 ] # red, green, blue</B>
+<B>}</B>
+
+<B>DEF myClock TimeSensor {</B>
+<B>    cycleInterval 10.0      # 10 second animation</B>
+<B>    loop          TRUE      # infinitely cycling animation</B>
+<B>}</B>
+
+<B>Shape {</B>
+<B>    appearance Appearance {</B>
+<B>        material DEF myMaterial Material { }</B>
+<B>    }</B>
+<B>    geometry Sphere { }</B>
+<B>}</B>
+
+<B>ROUTE myClock.fraction_changed TO myColor.set_fraction</B>
+<B>ROUTE myColor.value_changed TO myMaterial.set_diffuseColor</B></PRE>
+
+<P><A HREF="exampleD.12.wrl">Click here to view this example in a VRML browser.</A></P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.13"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20"
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.13 TimeSensor</H2>
+
+<H3><A NAME="D.13.1"></A>D.13.1 Introduction</H3>
+
+<P>The TimeSensor is very flexible. The following are some of the many ways
+in which it can be used:</P>
+
+<P><!--NOEDIT--><OL TYPE="a">
+  <LI>a TimeSensor can be triggered to run continuously by setting <I>cycleInterval</I>
+  &gt; 0, and <I>loop</I> = TRUE, and then routing a time output from another
+  node that triggers the loop (<I>e.g.,</I>, the <I>touchTime</I> eventOut
+  of a TouchSensor can be routed to the TimeSensor's <I>startTime</I> to
+  start the TimeSensor running).
+  <LI>a TimeSensor can be made to run continuously upon reading by setting
+  <I>cycleInterval</I> &gt; 0, <I>startTime</I> &gt; 0, <I>stopTime</I> =
+  0, and <I>loop</I> = TRUE.
+</OL><!--/NOEDIT--></P>
+
+<H3><A NAME="D.13.2"></A>D.13.2 Click to animate</H3>
+
+<P>The first example animates a box when the user clicks on it:</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+
+<B>DEF XForm Transform { </B>
+<B>    children [ </B>
+<B>        Shape {</B>
+<B>            appearance Appearance {</B>
+<B>                material Material { diffuseColor 1 0 0 }</B>
+<B>            }</B>
+<B>            geometry Box {} </B>
+<B>        }</B>
+<B>        DEF Clicker TouchSensor {}</B>
+
+<B>        # Run once for 2 sec.</B>
+<B>        DEF TimeSource TimeSensor { cycleInterval 2.0 } </B>
+
+<B>        # Animate one full turn about Y axis:</B>
+<B>        DEF Animation OrientationInterpolator {</B>
+<B>            key      [ 0,      .33,       .66,        1.0 ]</B>
+<B>            keyValue [ 0 1 0 0, 0 1 0 2.1, 0 1 0 4.2, 0 1 0 0 ]</B>
+<B>        }</B>
+<B>    ]</B>
+<B>}</B>
+<B>ROUTE Clicker.touchTime TO TimeSource.startTime</B>
+<B>ROUTE TimeSource.fraction_changed TO Animation.set_fraction</B>
+<B>ROUTE Animation.value_changed TO Xform.rotation</B></PRE>
+
+<P><A HREF="exampleD.13.1.wrl">Click here to view this example in a VRML
+browser.</A></P>
+
+<H3><A NAME="D.13.3"></A>D.13.3 Alarm clock</H3>
+
+<P>The second example plays chimes once an hour:</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+
+<B>Group { </B>
+<B>    children [</B>
+<B>        DEF Hour TimeSensor {</B>
+<B>            loop          TRUE</B>
+<B>            cycleInterval 3600.0 # 60*60 seconds == 1 hour</B>
+<B>        }</B>
+
+<B>        Sound {</B>
+<B>            source DEF Sounder AudioClip {</B>
+<B>                url &quot;click.wav&quot; }</B>
+<B>            }</B>
+<B>        }</B>
+<B>    ]</B>
+<B>}</B>
+
+<B>ROUTE Hour.cycleTime TO Sounder.startTime</B></PRE>
+
+<P><A HREF="exampleD.13.2.wrl">Click here to view this example in a VRML
+browser.</A></P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.14"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20"
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.14 Shuttles and pendulums</H2>
+
+<P>Shuttles and pendulums are great building blocks for composing interesting
+animations. This shuttle translates its children back and forth along the
+X axis, from -1 to 1 (by default). The <I>distance</I> field can be used
+to change this default. The pendulum rotates its children about the Z axis,
+from 0 to 3.14159 radians and back again (by default). The <I>maxAngle</I>
+field can be used to change this default.</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+
+<B>PROTO Shuttle [ </B>
+<B>    field        SFTime  rate      1</B>
+<B>    field        SFFloat distance  1</B>
+<B>    field        MFNode  children  [ ]</B>
+<B>    exposedField SFTime  startTime 0</B>
+<B>    exposedField SFTime  stopTime  0</B>
+<B>    field        SFBool  loop      TRUE</B>
+<B>] {</B>
+<B>    DEF F Transform { children IS children }</B>
+<B>    DEF T TimeSensor {</B>
+<B>        cycleInterval IS rate</B>
+<B>        startTime IS startTime</B>
+<B>        stopTime IS stopTime</B>
+<B>        loop IS loop</B>
+<B>    }</B>
+
+<B>    DEF S Script {</B>
+<B>        field    SFFloat    distance IS distance</B>
+<B>        eventOut MFVec3f    position</B>
+
+<B>        url &quot;javascript:</B>
+<B>            function initialize() {</B>
+<B>                // constructor:setup interpolator,</B>
+<B>                pos1 = new SFVec3f(-distance, 0, 0);</B>
+<B>                pos2 = new SFVec3f(distance, 0, 0);</B>
+<B>                position = new MFVec3f(pos1, pos2, pos1);</B>
+<B>            }&quot;,</B>
+<B>    }</B>
+
+<B>    DEF I PositionInterpolator {</B>
+<B>        key [ 0, 0.5, 1 ]</B>
+<B>        keyValue [ -1 0 0, 1 0 0, -1 0 0 ]</B>
+<B>    }</B>
+
+<B>    ROUTE T.fraction_changed TO I.set_fraction</B>
+<B>    ROUTE I.value_changed TO F.set_translation</B>
+<B>    ROUTE S.position TO I.set_keyValue</B>
+<B>}</B>
+
+<B>PROTO Pendulum [</B>
+<B>    field        SFTime  rate      1</B>
+<B>    field        SFFloat maxAngle  3.14159</B>
+<B>    field        MFNode  children  [ ]</B>
+<B>    exposedField SFTime  startTime 0</B>
+<B>    exposedField SFTime  stopTime  0</B>
+<B>    field        SFBool  loop      TRUE</B>
+<B>] {</B>
+<B>    DEF F Transform { children IS children }</B>
+<B>    DEF T TimeSensor { </B>
+<B>        cycleInterval IS rate</B>
+<B>        startTime IS startTime</B>
+<B>        stopTime IS stopTime</B>
+<B>        loop IS loop</B>
+<B>    }</B>
+<B>    DEF S Script {</B>
+<B>        field    SFFloat    maxAngle IS maxAngle</B>
+<B>        eventOut MFRotation rotation</B>
+
+<B>        url &quot;javascript:</B>
+<B>            function initialize() {</B>
+<B>                // constructor:setup interpolator,</B>
+<B>                rot1 = new SFRotation(0, 0, 1, 0);</B>
+<B>                rot2 = new SFRotation(0, 0, 1, maxAngle/2);</B>
+<B>                rot3 = new SFRotation(0, 0, 1, maxAngle);</B>
+<B>                rotation = new MFRotation(rot1, rot2, rot3, </B>
+<B>                                          rot2, rot1);</B>
+<B>            }&quot;,</B>
+<B>    }</B>
+<B>    DEF I OrientationInterpolator {</B>
+<B>        key [ 0, 0.25, 0.5, 0.75, 1 ]</B>
+<B>        keyValue [ 0 0 1 0, </B>
+<B>                   0 0 1 1.57, </B>
+<B>                   0 0 1 3.14, </B>
+<B>                   0 0 1 1.57, </B>
+<B>                   0 0 1 0 ]</B>
+<B>    }</B>
+
+<B>    ROUTE T.fraction_changed TO I.set_fraction</B>
+<B>    ROUTE I.value_changed TO F.set_rotation</B>
+<B>    ROUTE S.rotation TO I.set_keyValue</B>
+<B>}</B>
+
+<B>Transform {</B>
+<B>    translation -3 0 0</B>
+<B>    children Pendulum {</B>
+<B>        rate 3</B>
+<B>        maxAngle 6.28</B>
+<B>        children Shape { geometry Cylinder { height 5 } }</B>
+<B>    }</B>
+<B>}</B>
+
+<B>Transform {</B>
+<B>    translation 3 0 0</B>
+<B>    children Shuttle {</B>
+<B>        rate 2</B>
+<B>        children Shape { geometry Sphere { } }</B>
+<B>    }</B>
+<B>}</B></PRE>
+
+<P><A HREF="exampleD.14.wrl">Click here to view this example in a VRML browser.</A></P>
+
+<P>These nodes can be used to do a continuous animation when <I>loop</I>
+is TRUE. When <I>loop</I> is FALSE they can perform a single cycle under
+control of the <I>startTime</I> and <I>stopTime</I> fields. The <I>rate</I>
+field controls the speed of the animation. The <I>children</I> field holds
+the children to be animated.</P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.15"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20"
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.15 Robot</H2>
+
+<P>This example is a simple implementation of a robot. This robot has very
+simple body parts: a cube for his head, a sphere for his body and cylinders
+for arms (he hovers so he has no feet!). He is something of a sentry--he
+walks forward and walks back across a path. He does this whenever the viewer
+is near. This makes use of the Shuttle and Pendulum of <A HREF="#D.14">D.14</A>.</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+
+<B>EXTERNPROTO Shuttle [ </B>
+<B>    field        SFTime  rate</B>
+<B>    field        SFFloat distance</B>
+<B>    field        MFNode  children</B>
+<B>    exposedField SFTime  startTime</B>
+<B>    exposedField SFTime  stopTime</B>
+<B>    field        SFBool  loop</B>
+<B>]</B>
+<B>&quot;exampleD.14.wrl#Shuttle&quot;</B>
+
+<B>EXTERNPROTO Pendulum [</B>
+<B>    field        SFTime  rate</B>
+<B>    field        SFFloat maxAngle</B>
+<B>    field        MFNode  children</B>
+<B>    exposedField SFTime  startTime</B>
+<B>    exposedField SFTime  stopTime</B>
+<B>    field        SFBool  loop</B>
+<B>]</B>
+<B>&quot;exampleD.14.wrl#Pendulum&quot;</B>
+
+<B>Viewpoint {</B>
+<B>    position 0 0 150</B>
+<B>}</B>
+
+<B>DEF Near ProximitySensor { size 200 200 200 } </B>
+
+<B>DEF Walk Shuttle {</B>
+<B>    stopTime 1</B>
+<B>    rate 10</B>
+<B>    distance 20</B>
+
+<B>    children [</B>
+<B>        # The Robot</B>
+<B>        Transform {</B>
+<B>            rotation 0 1 0 1.57</B>
+<B>            </B>
+<B>            children [ </B>
+<B>                Shape {</B>
+<B>                    appearance DEF A Appearance {</B>
+<B>                        material Material { </B>
+<B>                            diffuseColor 0 0.5 0.7</B>
+<B>                        }</B>
+<B>                    }</B>
+<B>                    geometry Box { } # head</B>
+<B>                }</B>
+<B>                Transform {</B>
+<B>                    scale 1 5 1</B>
+<B>                    translation 0 -5 0</B>
+<B>                    children Shape {</B>
+<B>                        appearance USE A</B>
+<B>                        geometry Sphere { } </B>
+<B>                    } # body</B>
+<B>                }</B>
+<B>                Transform {</B>
+<B>                    rotation 0 1 0 1.57</B>
+<B>                    translation 1.5 0 0</B>
+<B>       </B>
+<B>                    children DEF Arm Pendulum {</B>
+<B>                        stopTime 1</B>
+<B>                        rate 1</B>
+<B>                        maxAngle 0.52 # 30 degrees</B>
+<B>       </B>
+<B>                        children [ </B>
+<B>                            Transform {</B>
+<B>                                translation 0 -3 0</B>
+<B>       </B>
+<B>                                children Shape { </B>
+<B>                                    appearance USE A</B>
+<B>                                    geometry Cylinder { </B>
+<B>                                        height 4</B>
+<B>                                        radius 0.5</B>
+<B>                                    }</B>
+<B>                                }</B>
+<B>                            }</B>
+<B>                        ]</B>
+<B>                    }</B>
+<B>                }</B>
+<B>       </B>
+<B>                # duplicate arm on other side and flip so </B>
+<B>                # it swings in opposition</B>
+<B>                Transform {</B>
+<B>                    rotation 0 -1 0 1.57</B>
+<B>                    translation -1.5 0 0</B>
+<B>                    children USE Arm</B>
+<B>                }</B>
+<B>            ]</B>
+<B>        }</B>
+<B>    ]</B>
+<B>}</B>
+
+<B>ROUTE Near.enterTime TO Walk.startTime</B>
+<B>ROUTE Near.enterTime TO Arm.startTime</B>
+<B>ROUTE Near.exitTime TO Walk.stopTime</B>
+<B>ROUTE Near.exitTime TO Arm.stopTime</B></PRE>
+
+<P><A HREF="exampleD.15.wrl">Click here to view this example in a VRML browser.</A></P>
+
+<P>Move closer to the robot to start the animation.</P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.16"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20"
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.16 Chopper</H2>
+
+<P>This example of a helicopter demonstrates how to do simple animation
+triggered by a TouchSensor. It uses an EXTERNPROTO to include a Rotor node
+from the Internet which does the actual animation.</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+
+<B>EXTERNPROTO Rotor [ </B>
+<B>    field        SFTime  rate</B>
+<B>    field        MFNode  children</B>
+<B>    exposedField SFTime  startTime</B>
+<B>    exposedField SFTime  stopTime</B>
+<B>]</B>
+<B>&quot;rotor.wrl&quot;</B>
+
+<B>PROTO Chopper [ </B>
+<B>    field SFTime rotorSpeed 1 </B>
+<B>] {</B>
+<B>    Group {</B>
+<B>        children [</B>
+<B>            DEF Touch TouchSensor { } # Gotta get touch events</B>
+<B>            Inline { url &quot;chopperbody.wrl&quot; }</B>
+<B>            DEF Top Rotor {</B>
+<B>                # initially, the rotor should not spin</B>
+<B>                stopTime 1 </B>
+<B>                rate IS rotorSpeed</B>
+<B>                children Inline { url &quot;chopperrotor.wrl&quot; } </B>
+<B>            }</B>
+<B>        ]</B>
+<B>    }</B>
+
+<B>    DEF RotorScript Script {</B>
+<B>        eventIn  SFTime startOrStopEngine</B>
+<B>        eventOut SFTime startEngine</B>
+<B>        eventOut SFTime stopEngine</B>
+<B>        field    SFBool engineStarted FALSE</B>
+
+<B>        url &quot;javascript:</B>
+<B>            function startOrStopEngine(value) {</B>
+<B>                // start or stop engine:</B>
+<B>                if (!engineStarted) {</B>
+<B>                    startEngine = value;</B>
+<B>                    engineStarted = TRUE;</B>
+<B>                }</B>
+<B>                else {</B>
+<B>                    stopEngine = value;</B>
+<B>                    engineStarted = FALSE;</B>
+<B>                }</B>
+<B>            }&quot;</B>
+<B>    }</B>
+
+<B>    ROUTE Touch.touchTime TO RotorScript.startOrStopEngine</B>
+<B>    ROUTE RotorScript.startEngine TO Top.startTime</B>
+<B>    ROUTE RotorScript.stopEngine TO Top.stopTime</B>
+<B>}</B>
+
+<B>Viewpoint { position 0 0 5 }</B>
+<B>DEF MyScene Group {</B>
+<B>    children DEF MikesChopper Chopper { }</B>
+<B>}</B></PRE>
+
+<P><A HREF="exampleD.16.wrl">Click here to view this example in a VRML browser.</A></P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.17"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20"
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.17 Guided tour</H2>
+
+<P>VRML provides control of the viewer's camera through use of a script.
+This is useful for things such as guided tours, merry-go-round rides, and
+transportation devices such as buses and elevators. These next two examples
+show a couple of ways to use this feature.</P>
+
+<P>This example is a simple guided tour through the world. Upon entry, a
+guide orb hovers in front of the viewer. Click on this and a tour through
+the world begins. The orb follows the user around on his tour. A ProximitySensor
+ensures that the tour is started only if the user is close to the initial
+starting point. Note that this is done without scripts thanks to the <I>touchTime</I>
+output of the TouchSensor.</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+
+<B>Group { </B>
+<B>    children [</B>
+<B>        Transform {</B>
+<B>            translation 0 -1 0</B>
+
+<B>            children Shape {</B>
+<B>                appearance Appearance {</B>
+<B>                    material Material { }</B>
+<B>                }</B>
+<B>                geometry Box { size 30 0.2 30 }</B>
+<B>            }</B>
+<B>        }</B>
+<B>        Transform {</B>
+<B>            translation -1 0 0</B>
+
+<B>            children Shape {</B>
+<B>                appearance Appearance {</B>
+<B>                    material Material { </B>
+<B>                        diffuseColor 0.5 0.8 0 </B>
+<B>                    }</B>
+<B>                }</B>
+<B>                geometry Cone { }</B>
+<B>            }</B>
+<B>        }</B>
+<B>        Transform {</B>
+<B>            translation 1 0 0</B>
+
+<B>            children Shape {</B>
+<B>                appearance Appearance {</B>
+<B>                    material Material { </B>
+<B>                        diffuseColor 0 0.2 0.7 </B>
+<B>                    }</B>
+<B>                }</B>
+<B>                geometry Cylinder { }</B>
+<B>            }</B>
+<B>        }</B>
+
+<B>        DEF GuideTransform Transform {</B>
+<B>            children [</B>
+<B>                DEF TourGuide Viewpoint { jump FALSE },</B>
+<B>                DEF ProxSensor ProximitySensor { size 50 50 50 }</B>
+<B>                DEF StartTour TouchSensor { },</B>
+<B>                Transform {</B>
+<B>                    translation 0.6 0.4 8</B>
+
+<B>                    children Shape { </B>
+<B>                        appearance Appearance {</B>
+<B>                            material Material { </B>
+<B>                                diffuseColor 1 0.6 0 </B>
+<B>                            }</B>
+<B>                        }</B>
+<B>                        geometry Sphere { radius 0.2 } </B>
+<B>                    } # the guide orb</B>
+<B>                }</B>
+<B>            ]</B>
+<B>        }</B>
+<B>    ]</B>
+<B>}</B>
+
+<B>DEF GuidePI PositionInterpolator {</B>
+<B>    key [ 0, 0.2, 0.3, 0.5, 0.6, 0.8, 0.9, 1 ]</B>
+<B>    keyValue [ 0 0 0, 0 0 -5,</B>
+<B>               2 0 -5, 2 6 -15</B>
+<B>               -4 6 -15, -4 0 -5,</B>
+<B>               0 0 -5, 0 0 0</B>
+<B>    ]</B>
+<B>}</B>
+
+<B>DEF GuideRI OrientationInterpolator {</B>
+<B>    key [ 0, 0.2, 0.3, 0.5, 0.6, 0.8, 0.9, 1 ]</B>
+<B>    keyValue [ 0 1 0 0, 0 1 0 0, </B>
+<B>               0 1 0 1.2, 0 1 0 3, </B>
+<B>               0 1 0 3.5, 0 1 0 5, </B>
+<B>               0 1 0 0, 0 1 0 0, </B>
+<B>    ]</B>
+<B>}</B>
+
+<B>DEF TS TimeSensor { cycleInterval 30 } # 60 second tour</B>
+
+<B>ROUTE ProxSensor.isActive TO StartTour.set_enabled</B>
+<B>ROUTE StartTour.touchTime TO TS.startTime</B>
+<B>ROUTE TS.isActive TO TourGuide.set_bind</B>
+<B>ROUTE TS.fraction_changed TO GuidePI.set_fraction</B>
+<B>ROUTE TS.fraction_changed TO GuideRI.set_fraction</B>
+<B>ROUTE GuidePI.value_changed TO GuideTransform.set_translation</B>
+<B>ROUTE GuideRI.value_changed TO GuideTransform.set_rotation</B></PRE>
+
+<P><A HREF="exampleD.17.wrl">Click here to view this example in a VRML browser.</A></P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.18"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20"
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.18 Elevator</H2>
+
+<P>This is another example of animating the camera by depicting an elevator
+to ease access to a multi-storey building. For this example, a 2 storey
+building is shown and it is assumed that the elevator is already at the
+ground floor. To go up, the user just steps onto the elevator platform.
+A ProximitySensor fires and starts the elevator up automatically. Additional
+features such as call buttons for outside the elevator, elevator doors,
+and floor selector buttons could be added to make the elevator easier to
+use.</P>
+
+<PRE>
+<B>#VRML V2.0 utf8</B>
+
+<B>Transform {</B>
+<B>    translation 0 0 -3.5</B>
+
+<B>    children Shape {</B>
+<B>        appearance Appearance {</B>
+<B>            material Material { </B>
+<B>                diffuseColor 0 1 0 </B>
+<B>            }</B>
+<B>        }</B>
+<B>        geometry Cone { }</B>
+<B>    }</B>
+<B>}</B>
+
+<B>Transform {</B>
+<B>    translation 0 4 -3.5</B>
+
+<B>    children Shape {</B>
+<B>        appearance Appearance {</B>
+<B>            material Material { </B>
+<B>                diffuseColor 1 0 0 </B>
+<B>            }</B>
+<B>        }</B>
+<B>        geometry Cone { }</B>
+<B>    }</B>
+<B>}</B>
+
+<B>Transform {</B>
+<B>    translation 0 8 -3.5</B>
+
+<B>    children Shape {</B>
+<B>        appearance Appearance {</B>
+<B>            material Material { </B>
+<B>                diffuseColor 0 0 1 </B>
+<B>            }</B>
+<B>        }</B>
+<B>        geometry Cone { }</B>
+<B>    }</B>
+<B>}</B>
+
+<B>Group { </B>
+<B>    children [</B>
+<B>        DEF ETransform Transform {</B>
+<B>            children [</B>
+<B>                DEF EViewpoint Viewpoint { jump FALSE }</B>
+<B>                DEF EProximity ProximitySensor { size 2 5 5 }</B>
+<B>                Transform {</B>
+<B>                    translation 0 -1 0</B>
+
+<B>                    children Shape {</B>
+<B>                        appearance Appearance {</B>
+<B>                            material Material { }</B>
+<B>                        }</B>
+<B>                        geometry Box { size 2 0.2 5 }</B>
+<B>                    }</B>
+<B>                }</B>
+<B>            ]</B>
+<B>        }</B>
+<B>    ]</B>
+<B>}</B>
+
+<B>DEF ElevatorPI PositionInterpolator {</B>
+<B>    key [ 0, 1 ]</B>
+<B>    keyValue [ 0 0 0, 0 8 0 ] # a floor is 4 meters high</B>
+<B>}</B>
+<B>DEF TS TimeSensor { cycleInterval 10 } # 10 second travel time</B>
+
+<B>ROUTE EProximity.enterTime TO TS.startTime</B>
+<B>ROUTE TS.isActive TO EViewpoint.set_bind</B>
+<B>ROUTE TS.fraction_changed TO ElevatorPI.set_fraction</B>
+<B>ROUTE ElevatorPI.value_changed TO ETransform.set_translation</B></PRE>
+
+<P><A HREF="exampleD.18.wrl">Click here to view this example in a VRML browser.</A></P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.19"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20"
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.19</H2>
+
+<P>This example illustrates the execution model example described in <A
+HREF="concepts.html#4.10.3">4.10.3, Execution model</A>.</P>
+
+<PRE><B>#VRML V2.0 utf8</B>
+<B>DEF TS TouchSensor { }</B>
+<B>DEF Script1 Script {
+    eventIn  SFTime touchTime
+    eventOut SFBool toScript2
+    eventOut SFBool toScript3
+    eventOut SFString string</B>
+<B>    url &quot;javascript:
+        function touchTime() {
+            toScript2 = TRUE;
+        }
+        function eventsProcessed() {
+            string = 'Script1.eventsProcessed';
+            toScript3 = TRUE;
+        }&quot;
+}</B>
+<B>DEF Script2 Script {
+   eventIn  SFBool fromScript1
+   eventOut SFBool toScript4
+    eventOut SFString string</B>
+<B>    url &quot;javascript:
+        function fromScript1() {
+        }
+        function eventsProcessed() {
+            string = 'Script2.eventsProcessed';
+            toScript4 = TRUE;
+        }&quot;
+}</B>
+<B>DEF Script3 Script {
+   eventIn  SFBool fromScript1
+   eventOut SFBool toScript5
+   eventOut SFBool toScript6
+   eventOut SFString string</B>
+<B>    url &quot;javascript:
+        function fromScript1() {
+            toScript5 = TRUE;
+        }
+        function eventsProcessed() {
+            string = 'Script3.eventsProcessed';
+            toScript6 = TRUE;
+        }&quot;
+}</B>
+<B>DEF Script4 Script {
+    eventIn SFBool fromScript2</B>
+<B>    url &quot;javascript:
+        function fromScript2() {
+        }&quot;
+}</B>
+<B>DEF Script5 Script {
+    eventIn SFBool fromScript3</B>
+<B>    url &quot;javascript:
+        function fromScript3() {
+        }&quot;
+}</B>
+<B>DEF Script6 Script {
+    eventIn  SFBool fromScript3
+    eventOut SFBool toScript7
+    eventOut SFString string</B>
+<B>    url &quot;javascript:
+        function fromScript3() {
+            toScript7 = TRUE;
+        }
+        function eventsProcessed() {
+            string = 'Script6.eventsProcessed';
+        }&quot;
+}</B>
+<B>DEF Script7 Script {
+    eventIn  SFBool fromScript6</B>
+<B>    url &quot;javascript:
+        function fromScript6() {
+        }&quot;
+}</B>
+<B>ROUTE TS.touchTime TO Script1.touchTime
+ROUTE Script1.toScript2 TO Script2.fromScript1
+ROUTE Script1.toScript3 TO Script3.fromScript1
+ROUTE Script2.toScript4 TO Script4.fromScript2
+ROUTE Script3.toScript5 TO Script5.fromScript3
+ROUTE Script3.toScript6 TO Script6.fromScript3
+ROUTE Script6.toScript7 TO Script7.fromScript6</B>
+<B></B>
+<B># Display the results</B>
+<B>DEF Collector Script {
+    eventOut   MFString string
+    eventIn SFString fromString
+    url &quot;javascript:
+        function initialize() { string[0] = 'Event Sequence:'; }
+        function fromString(s) {
+            i = string.length;
+            string[i] = '    '+i+') '+s+' occurred';
+        }&quot;
+}</B>
+<B>Transform {
+    translation 0 2 0
+    children Shape {
+        appearance Appearance {
+            material Material { diffuseColor 0 0.6 0 }
+        }
+        geometry Sphere { }
+    }
+}</B>
+<B>Shape { geometry DEF Result Text { } }</B>
+<B>Viewpoint { position 7 -1 18 }</B>
+<B>ROUTE Script1.string TO Collector.fromString
+ROUTE Script2.string TO Collector.fromString
+ROUTE Script3.string TO Collector.fromString
+ROUTE Script6.string TO Collector.fromString
+ROUTE Collector.string TO Result.string</B>
+</PRE>
+
+<P><A HREF="exampleD.19.wrl">Click here to view this example in a VRML browser.</A></P>
+
+<P>Clicking on the green sphere should display a text string for each eventsProcessed
+event. The two possible correct displays for this example are:</P>
+
+<PRE>Event Sequence:
+  1) Script1.eventsProcessed occurred
+  2) Script2.eventsProcessed occurred
+  3) Script3.eventsProcessed occurred
+  4) Script6.eventsProcessed occurred</PRE>
+
+<P>or</P>
+
+<PRE>Event Sequence:
+  1) Script2.eventsProcessed occurred
+  2) Script1.eventsProcessed occurred
+  3) Script3.eventsProcessed occurred
+  4) Script6.eventsProcessed occurred</PRE>
+
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.20"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20"
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.20 Georeferencing VRML objects</h2>
+
+<p>This example displays a standard
+VRML cone at the latitude/longitude location of Lossiemouth,
+Scotland. The Cone is rotated through 180 degrees about the X axis to
+point straight down rather than up. The GeoElevationGrid node is used
+in order to provide a (coarse) underlying reference model of the
+Earth. The Cone is 500 km high and 200 km above the surface of the
+Earth so that it can be seen as shown in Figure D.4.</p>
+
+<center>
+<p><img border="0" src="../Images/geoloc.gif" width="195" height="150">
+
+<h4>Figure D.4 -- GeoSpatial Example.</h4>
+</center>
+
+<pre>#VRML V2.0 utf8
+
+EXTERNPROTO GeoLocation [
+  exposedField SFString geoCoords
+  field        MFNode   children
+  field        SFNode   geoOrigin
+  field        MFString geoSystem
+] [ &quot;urn:web3d:vrml97:node:GeoLocation&quot;
+    &quot;file:///C:/Program%20Files/GeoVRML/1.1/protos/GeoLocation.wrl&quot;
+    &quot;file:///C|/Program%20Files/GeoVRML/1.1/protos/GeoLocation.wrl&quot;
+    &quot;http://www.geovrml.org/1.1/protos/GeoLocation.wrl&quot; ]
+
+EXTERNPROTO GeoElevationGrid [
+  exposedField SFNode   color
+  exposedField SFNode   normal
+  exposedField SFNode   texCoord
+  field        SFBool   ccw
+  field        SFBool   colorPerVertex
+  field        SFFloat  creaseAngle
+  field        SFNode   geoOrigin
+  field        MFString geoSystem
+  field        SFString geoGridOrigin
+  field        MFFloat  height
+  field        SFBool   normalPerVertex
+  field        SFBool   solid
+  field        SFInt32  xDimension
+  field        SFString xSpacing
+  field        SFInt32  zDimension
+  field        SFString zSpacing
+] [ &quot;urn:web3d:vrml97:node:GeoElevationGrid&quot;
+    &quot;file:///C:/Program%20Files/GeoVRML/1.1/protos/GeoElevationGrid.wrl&quot;
+    &quot;file:///C|/Program%20Files/GeoVRML/1.1/protos/GeoElevationGrid.wrl&quot;
+    &quot;http://www.geovrml.org/1.1/protos/GeoElevationGrid.wrl&quot; ]
+
+EXTERNPROTO GeoViewpoint [
+  eventIn      SFBool     set_bind
+  eventIn      SFString   set_position
+  eventIn      SFString   set_orientation
+  exposedField SFFloat    fieldOfView
+  exposedField SFBool     headlight
+  exposedField SFBool     jump
+  exposedField MFString   navType
+  field        SFString   description
+  field        SFNode     geoOrigin
+  field        MFString   geoSystem
+  field        SFRotation orientation
+  field        SFString   position
+  field        SFFloat    speed
+  eventOut     SFTime     bindTime
+  eventOut     SFBool     isBound
+] [ &quot;urn:web3d:vrml97:node:GeoViewpoint&quot;
+    &quot;file:///C:/Program%20Files/GeoVRML/1.1/protos/GeoViewpoint.wrl&quot;
+    &quot;file:///C|/Program%20Files/GeoVRML/1.1/protos/GeoViewpoint.wrl&quot;
+    &quot;http://www.geovrml.org/1.1/protos/GeoViewpoint.wrl&quot; ]
+
+Group {
+  children [
+    Background { skyColor 1 1 1 }
+    GeoViewpoint {
+       geoSystem [ &quot;GD&quot; ]
+       position &quot;51.5122 -40.0 10000000&quot;
+       orientation 1 0 0 -1.57
+       description &quot;Initial GeoViewpoint&quot;
+    }
+    Shape {
+       appearance Appearance {
+	  material Material { diffuseColor 0.8 1.0 0.3 }
+	  texture ImageTexture {
+	     url &quot;http://www.geovrml.org/1.0/doc/images/earth.jpg&quot;
+	  }
+       }
+       geometry GeoElevationGrid {
+	  geoSystem [ &quot;GD&quot; ]
+	  geoGridOrigin &quot;-90 -180 0&quot;
+	  xDimension 11
+	  zDimension 11
+	  xSpacing &quot;36&quot;
+	  zSpacing &quot;18&quot;
+          creaseAngle 1.05
+	  height [
+		  0 0 0 0 0 0 0 0 0 0 0
+		  0 0 0 0 0 0 0 0 0 0 0
+		  0 0 0 0 0 0 0 0 0 0 0
+		  0 0 0 0 0 0 0 0 0 0 0
+		  0 0 0 0 0 0 0 0 0 0 0
+		  0 0 0 0 0 0 0 0 0 0 0
+		  0 0 0 0 0 0 0 0 0 0 0
+		  0 0 0 0 0 0 0 0 0 0 0
+		  0 0 0 0 0 0 0 0 0 0 0
+		  0 0 0 0 0 0 0 0 0 0 0 
+		  0 0 0 0 0 0 0 0 0 0 0 ]
+       }
+    }
+    GeoLocation {
+      geoSystem [ &quot;GD&quot; ]
+      geoCoords &quot;57.7174 -3.286119 200000&quot; # Lossiemouth, Scotland, elev 200km
+      children [
+         Transform { 
+	   rotation 1 0 0 3.1415926
+           children [
+             Shape {
+              appearance Appearance { material Material { diffuseColor 1 1 0 }}
+	      geometry Cone { bottomRadius 100000 height 500000 }
+	     }
+	   ] 
+         }
+      ]
+    }
+  ]
+}</pre>
+
+<pre>&nbsp;</pre>
+
+<p><a href="georef.wrl">Click here to view this example in a
+VRML browser.</a>
+
+<p>Note that the EXTERNPROTO definitions should include a URN in the
+format "urn:web3d:vrml97:node:&lt;<i>nodename</i>&gt;"
+and may include further
+browser-specific URNs. For example, if the VRML file includes the
+GeoCoordinate node, an EXTERNPROTO such as the following shall
+also be provided.</p>
+
+<p>
+<pre>
+  EXTERNPROTO GeoCoordinate [
+    field SFNode   geoOrigin
+    field MFString geoSystem
+    field MFString point
+  ]["urn:web3d:vrml97:node:GeoCoordinate",
+    "file:///C:/Program%20Files/GeoVRML/1.1/protos/GeoCoordinate.wrl",
+    "file:///C|/Program%20Files/GeoVRML/1.1/protos/GeoCoordinate.wrl",
+    "http://www.geovrml.org/1.1/protos/GeoCoordinate.wrl" ]"
+</pre>
+</p>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2><A NAME="D.20"></A><IMG SRC="../Images/cube.gif" ALT="+" WIDTH="20"
+HEIGHT="19" NATURALSIZEFLAG="0" ALIGN="BOTTOM">D.21 NURBS</h2>
+
+<p>This example shows an animated NURBS surface containing a
+texture. The animation causes the surface to bulge and retract.</p>
+
+
+<pre>
+#VRML V2.0 utf8 
+
+EXTERNPROTO NurbsSurface [
+  exposedField MFVec3f controlPoint
+  exposedField SFNode  texCoord
+  exposedField SFInt32 uTessellation
+  exposedField SFInt32 vTessellation
+  exposedField MFFloat weight
+  field        SFBool  ccw
+  field        SFBool  solid
+  field        SFInt32 uDimension
+  field        MFFloat uKnot
+  field        SFInt32 uOrder
+  field        SFInt32 vDimension
+  field        MFFloat vKnot
+  field        SFInt32 vOrder
+] "urn:web3d:vrml97:node:NurbsSurface"
+
+WorldInfo {
+  title &quot;Simple NurbsSurface&quot;
+  info &quot;NurbsSurface with CV-Animation&quot;
+} 
+NavigationInfo {
+  type [&quot;EXAMINE&quot;,&quot;ANY&quot;]
+} 
+Transform {
+   translation -1.5 -1.5 0
+   children [ 
+      Shape {
+         geometry
+            DEF nurb NurbsSurface {
+               uOrder 4
+               vOrder 4
+               uDimension 4
+               vDimension 4
+               uKnot [ 0, 0, 0, 0, 3, 3, 3, 3]
+               vKnot [ 0, 0, 0, 0, 3, 3, 3, 3]
+               controlPoint[ 0 0 0,1 0 0, 2 0 0, 3 0 0,
+                                   0 1 0, 1 1 0, 2 1 0, 3 1 0,
+                                   0 2 0, 1 2 0, 2 2 0, 3 2 0,
+                                   0 3 0, 1 3 0, 2 3 0, 3 3 0]
+               weight [ 1.000000, 1.000000, 1.000000, 1.000000,
+                            1.000000, 1.000000, 1.000000, 1.000000,
+                            1.000000, 2.000000, 1.000000, 1.000000,
+                            1.000000, 1.000000, 1.000000, 1.000000,]
+            }
+         appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 1
+                    emissiveColor 1 0 0
+                }
+                texture ImageTexture {url &quot;Images/texture.jpg&quot;}
+         }
+      }
+   ]
+}
+DEF animate Script {
+   eventIn SFFloat setTime
+   field SFNode nurb
+   USE nurb
+      directOutput TRUE
+      url &quot;javascript: 
+      function setTime(value) { 
+        nurb.controlPoint[10].z = 10*Math.sin(value*2*Math.PI); } &quot;
+}
+DEF TimeSource TimeSensor { cycleInterval 2.0 loop TRUE}
+ROUTE TimeSource.fraction_changed TO animate.setTime
+</pre>
+
+<p><a href="nurbsanimation.wrl">Click here to view this example
+using a VRML browser.</a></p>
+
+<p>Note that the EXTERNPROTO definitions should include a URN in the
+format "urn:web3d:vrml97:node:&lt;<i>nodename</i>&gt;"
+and may include further
+browser-specific URNs. For example, if the VRML file includes the
+NurbsCurve node, an EXTERNPROTO such as the following shall
+also be provided.</p>
+
+<pre>
+  EXTERNPROTO NurbsCurve [
+    exposedField MFVec3f controlPoint
+    exposedField MFFloat weight
+    exposedField SFInt32 tessellation
+    field        MFFloat knot
+    field        SFInt32 order
+  ] "urn:web3d:vrml97:node:NurbsCurve""
+</pre>
+
+<P><IMG SRC="../Images/vrmlbar.gif" ALIGN="TOP" WIDTH="470" HEIGHT="25"
+ALT="--- VRML separator bar ---" NATURALSIZEFLAG="0"></P>
+
+<PRE><FONT SIZE=-1>http://www.vrml.org/Specifications/VRML97/part1/examples.html</FONT></PRE>
+</BODY>
+</HTML>

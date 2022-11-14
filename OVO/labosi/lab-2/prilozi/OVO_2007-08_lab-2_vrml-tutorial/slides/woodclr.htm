@@ -1,0 +1,117 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>woodclr.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Mapping textures</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>woodclr.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  Wood coloring
+#  woodclr.wrl
+#        by David R. Nadeau
+#        published in "The VRML 2.0 Sourcebook" by Ames, Nadeau, and Moreland
+#
+#  Illustrate the use of material colors and a grayscale texture to
+#  colorize the texture as it is applied to a shape.
+#
+Viewpoint {
+	position 1.75 -0.25 6.0
+	description "Entry view"
+}
+NavigationInfo {
+	type [ "EXAMINE", "ANY" ]
+	headlight TRUE
+}
+
+# Top left
+Shape {
+    appearance Appearance {
+        material Material { diffuseColor 1.0 0.35 0.23 }
+        texture DEF wood ImageTexture { url "wood_g.jpg" }
+    }
+    geometry DEF square IndexedFaceSet {
+        solid FALSE
+        coord Coordinate {
+            point [
+                 0.0 1.0 0.0,  0.0 0.0 0.0,
+                 1.1 0.0 0.0,  1.1 1.0 0.0
+            ]
+        }
+        coordIndex [ 0, 1, 2, 3 ]
+    }
+}
+# Top center
+Transform {
+    translation 1.25 0.0 0.0
+    children Shape {
+        appearance Appearance {
+            material Material { diffuseColor 1.0 0.45 0.23 }
+            texture USE wood
+        }
+        geometry USE square
+    }
+}
+# Top right
+Transform {
+    translation 2.50 0.0 0.0
+    children Shape {
+        appearance Appearance {
+            material Material { diffuseColor 1.0 0.55 0.23 }
+            texture USE wood
+        }
+        geometry USE square
+    }
+}
+# Bottom left
+Transform {
+    translation 0.0 -1.25 0.0
+    children Shape {
+        appearance Appearance {
+            material Material { diffuseColor 1.0 0.65 0.53 }
+            texture USE wood
+        }
+        geometry USE square
+    }
+}
+# Bottom center
+Transform {
+    translation 1.25 -1.25 0.0
+    children Shape {
+        appearance Appearance {
+            material Material { diffuseColor 1.0 0.55 0.43 }
+            texture USE wood
+        }
+        geometry USE square
+    }
+}
+# Bottom right
+Transform {
+    translation 2.50 -1.25 0.0
+    children Shape {
+        appearance Appearance {
+            material Material { diffuseColor 1.0 0.55 0.53 }
+            texture USE wood
+        }
+        geometry USE square
+    }
+}
+</FONT></PRE>
+</BODY>
+</HTML>

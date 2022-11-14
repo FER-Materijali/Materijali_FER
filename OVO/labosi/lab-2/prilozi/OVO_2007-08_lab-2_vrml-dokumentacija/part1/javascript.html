@@ -1,0 +1,1677 @@
+<HTML>
+<HEAD>
+<!-- Amd 1 joedw 12/10/02 -->
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 2.0 Win">
+  <!-- SGI_COMMENT COSMOCREATE -->
+  <!-- SGI_COMMENT VERSION NUMBER="1.0.2" -->
+  <TITLE>VRML97, ISO/IEC 14772-1:1997 -- Annex C, ECMAScript Scripting Reference</TITLE>
+</HEAD>
+<BODY>
+
+<H1><CENTER><IMG SRC="../Images/vrml97.gif" ALIGN="TOP" ALT="VRML97 logo"
+WIDTH="470" HEIGHT="85" NATURALSIZEFLAG="0"></CENTER></H1>
+
+<H1><CENTER>The Virtual Reality Modeling Language</CENTER></H1>
+
+<H1><CENTER>Annex C<BR>
+<FONT SIZE=+1>(normative)</FONT></CENTER></H1>
+
+<H1><CENTER>ECMAScript scripting reference</CENTER></H1>
+
+<H3><CENTER>&nbsp;</CENTER></H3>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+NATURALSIZEFLAG="0" ALIGN="BOTTOM"></P>
+
+<H2>C.1 <A NAME="JavaScript Introduction"></A>Introduction and table of
+contents</H2>
+
+<P>This annex describes the ECMAScript programming language that enables
+Script nodes (see <A HREF="nodesRef.html#Script">6.59,&nbsp;Script</A>)
+to interact with VRML scenes. Any access of ECMAScript from within VRML
+Script nodes shall conform with the requirements specified in
+this annex.</P>
+
+<P><A HREF="#JavaScript Introduction">C.1 Introduction</A> <BR>
+<A HREF="#Language">C.2 Language</A> <BR>
+<A HREF="#Protocol">C.3 Supported Protocol in the Script node's <I>url</I>
+field</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#Access">C.3.1 <I>url</I>
+&nbsp;field</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#FileExtension">C.3.2
+File extension</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#MIMEtype">C.3.3 MIME
+type</A> <BR>
+<A HREF="#EventIn">C.4 eventIn handling</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#Receiving eventIns">C.4.1
+Receiving eventIns</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#ParameterPassing">C.4.2
+Parameter passing and the eventIn function</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#EventsProcessed">C.4.3
+eventsProcessed( ) function</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#Initialize">C.4.4 initialize(
+) function</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#Shutdown">C.4.5 shutdown(
+) function</A> <BR>
+<A HREF="#AccessingFields">C.5 Accessing fields and events</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#AccessingScript">C.5.1
+Accessing fields and eventOuts of the script</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#AccessingOtherNodes">C.5.2
+Accessing fields and eventOuts of other nodes</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#SendingEventOuts">C.5.3
+Sending eventOuts</A> <BR>
+<A HREF="#ExposedClasses">C.6 ECMAScript objects</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#NotationalConventions">C.6.1
+Notational conventions</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#VRMLFieldToJavaScriptVariableConversion">C.6.2
+VRML field to ECMAScript variable conversion</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#BrowserClass">C.6.3
+Browser object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#SFColor">C.6.4 SFColor
+object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#SFImage">C.6.5 SFImage
+object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#SFNode">C.6.6 SFNode
+object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#SFRotation">C.6.7 SFRotation
+object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#SFVec2f">C.6.8 SFVec2f
+object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#SFVec3f">C.6.9 SFVec3f
+object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#MFColor">C.6.10 MFColor
+object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#MFFloat">C.6.11 MFFloat
+object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#MFInt32">C.6.12 MFInt32
+object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#MFNode">C.6.13 MFNode
+object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#MFRotation">C.6.14 MFRotation
+object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#MFString">C.6.15 MFString
+object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#MFTime">C.6.16 MFTime
+object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#MFVec2f">C.6.17 MFVec2f
+object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#MFVec3f">C.6.18 MFVec3f
+object</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#VrmlMatrix">C.6.19 VrmlMatrix
+object</A> <BR>
+<A HREF="#Example">C.7 Examples</A></P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+ALIGN="BOTTOM" NATURALSIZEFLAG="0"></P>
+
+<H2><IMG SRC="../Images/cube.gif" ALIGN="TOP" WIDTH="20" HEIGHT="19" ALT=
+"+" NATURALSIZEFLAG="0"> C.2 <A NAME="Language"></A>Language</H2>
+
+<P>ECMAScript is a general purpose, cross-platform programming language
+that can be used with ISO/IEC 14772 to provide scripting of events, objects,
+and actions. ECMAScript is fully described in <A HREF="references.html#[ESCR]">2.[ESCR]</A>.
+Prior to standardization as ECMA-262, ECMAScript was known as Netscape JavaScript.
+Several syntactic entities in this annex reflect this origin.</P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+ALIGN="BOTTOM" NATURALSIZEFLAG="0"></P>
+
+<H2><IMG SRC="../Images/cube.gif" WIDTH="20" HEIGHT="19" ALT="+" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM"> C.3 <A NAME="Protocol"></A>Supported protocol in the
+Script node's <I>url</I> field</H2>
+
+<H3>C.3.1 <A NAME="Access"></A><I>url</I> field</H3>
+
+<P>The <I>url</I> field of the Script node may contain URL references to
+ECMAScript code as illustrated below:</P>
+
+<PRE>
+<B>    Script { url &quot;http://foo.com/myScript.js&quot; }</B></PRE>
+
+<P>The <A HREF="concepts.html#4.5.4">javascript: protocol</A> allows the
+script to be placed inline as follows:</P>
+
+<PRE>
+<B>    Script { url &quot;javascript: function foo</B>(&nbsp;)<B> { ... }&quot; }</B></PRE>
+
+<P>Browsers shall support the javascript: protocol as well as the other required protocols (see <A
+HREF="conformance.html">7,&nbsp;Conformance and minimum support requirements</A>).</P>
+
+<P>The <I>url</I> field may contain multiple URL's referencing either a
+remote file or in-line code as shown in the following example:</P>
+
+<PRE><B>    Script {</B>
+<B>      url [ &quot;http://foo.com/myScript.js&quot;,</B>
+<B>      &quot;javascript: function foo</B>(&nbsp;)<B> { ... }&quot; ]</B>
+<B>    }</B></PRE>
+
+<H3>C.3.2 <A NAME="FileExtension"></A>File extension</H3>
+
+<P>The file extension for ECMASCript source code is '.js', unless a protocol
+returning mime types is used (such as HTTP). In that case, any suffix is
+allowed as long as the proper mime type is returned (see <A HREF="#MIMEtype">C.3.3,
+Mime type</A>).</P>
+
+<H3>C.3.3 <A NAME="MIMEtype"></A>MIME type</H3>
+
+<P>The MIME type for ECMAScript source code is defined as follows:</P>
+
+<PRE>
+<B>     application/x-javascript</B></PRE>
+
+<H2><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+ALIGN="BOTTOM" NATURALSIZEFLAG="0"></H2>
+
+<H2><IMG SRC="../Images/cube.gif" WIDTH="20" HEIGHT="19" ALT="+" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM"> C.4 <A NAME="EventIn"></A>eventIn handling<A NAME="Eventin"></A></H2>
+
+<H3><A NAME="Eventin"></A>C.4.1 <A NAME="Receiving eventIns"></A>Receiving
+eventIns</H3>
+
+<P>Events sent to the Script node are passed to the corresponding ECMAScript
+function in the script. The script is specified in the <I>url</I> field
+of the Script node. The function's name is the same as the eventIn and is
+passed two arguments, the event value and its timestamp (see <A HREF="#ParameterPassing">C.4.2,&nbsp;Parameter
+passing and the eventIn function</A>). If there is no corresponding ECMAScript
+function in the script, the browser's behaviour is undefined.</P>
+
+<P>For example, the following Script node has one eventIn field whose name
+is <I>start</I>:</P>
+
+<PRE>
+<B>    Script {</B>
+<B>      eventIn SFBool start</B>
+<B>      url &quot;javascript: function start(value, timestamp) { ... }&quot;</B>
+<B>    }</B></PRE>
+
+<P>In the above example, when the <I>start</I> eventIn is sent, the start(
+) function is executed.</P>
+
+<H3>C.4.2 <A NAME="ParameterPassing"></A>Parameter passing and the eventIn
+function</H3>
+
+<P>When a Script node receives an eventIn, a corresponding function in the
+file specified in the <I>url</I> field of the Script node is called. This
+function has two arguments. The value of the eventIn is passed as the first
+argument and the timestamp of the eventIn is passed as the second argument.
+The type of the value is the same as the type of the eventIn and the type
+of the timestamp is SFTime. <A HREF="#VRMLFieldToJavaScriptVariableConversion">C.6.1,
+VRML field to ECMAScript variable conversion</A>,<I> </I>provides a description
+of how VRML types appear in ECMAScript. The values of the parameters have
+no visibility outside the function.</P>
+
+<H3>C.4.3 <A NAME="EventsProcessed"></A>eventsProcessed(&nbsp;)<A NAME=
+"EventsProcessed"></A> function</H3>
+
+<P>Authors may define an eventsProcessed() function that is called after
+some set of events has been received. This allows Script nodes that do not
+rely on the ordering of events received to generate fewer events than an
+equivalent Script node that generates events whenever events are received
+(see <A HREF="#Receiving eventIns">C.4.1,&nbsp;Receiving&nbsp;eventIns</A>).</P>
+
+<P>The eventsProcessed(&nbsp;) function takes no parameters. Events generated
+from it are given the timestamp of the last event processed.</P>
+
+<H3>C.4.4 <A NAME="Initialize"></A>initialize(&nbsp;)<A NAME="Initialize"></A>
+function</H3>
+
+<P>Authors may define a function named initialize(&nbsp;) which is invoked
+before the browser presents the world to the user and before any events
+are processed by any nodes in the same VRML file as the Script node containing
+this script (see&nbsp;<A HREF="concepts.html#4.12.3">4.12.3,&nbsp;Initialize()&nbsp;and&nbsp;shutdown()</A>).</P>
+
+<P>The initialize(&nbsp;) function has no parameters. Events generated from
+initialize(&nbsp;) are given the timestamp of when the Script node was loaded.</P>
+
+<H3>C.4.5 <A NAME="Shutdown"></A>shutdown(&nbsp;)<A NAME="Shutdown"></A>
+function</H3>
+
+<P>Authors may define a function named shutdown(&nbsp;) which is invoked
+when the corresponding Script node is deleted or when the world containing
+the Script node is unloaded or replaced by another world (see&nbsp;<A HREF=
+"concepts.html#4.12.3">4.12.3,&nbsp;Initialize()&nbsp;and&nbsp;shutdown()</A>).</P>
+
+<P>The shutdown(&nbsp;) function has no parameters. Events generated from
+shutdown(&nbsp;) are given the timestamp of when the Script node was deleted.</P>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+ALIGN="BOTTOM" NATURALSIZEFLAG="0"></P>
+
+<H2><IMG SRC="../Images/cube.gif" WIDTH="20" HEIGHT="19" ALT="+" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM"> C.5 <A NAME="AccessingFields"></A>Accessing fields and
+events</H2>
+
+<H3>C.5.1 <A NAME="AccessingScript"></A>Accessing fields and eventOuts of
+the Script</H3>
+
+<P>The fields and eventOuts of a Script node are accessible from its ECMAScript
+functions. As in all other nodes, the fields are accessible only within
+the Script. The eventIns are not accessible. The Script node's eventIns
+can be routed to and its eventOuts can be routed from. Another Script node
+with a reference to this node can access its eventIns and eventOuts as for
+any other node.</P>
+
+<P>A field defined in a Script node is available to the script by using
+its name. Its value can be read or written. This value is persistent across
+function calls. EventOuts defined in the script node can also be read. The
+value is the last value assigned.</P>
+
+<H3>C.5.2 <A NAME="AccessingOtherNodes"></A>Accessing fields and eventOuts
+of other nodes</H3>
+
+<P>The script can access any exposedField, eventIn or eventOut of any node
+to which it has access:</P>
+
+<PRE>
+<B>    DEF SomeNode Transform { }</B>
+<B>    Script {</B>
+<B>      field SFNode node USE SomeNode</B>
+<B>      eventIn SFVec3f pos</B>
+<B>      directOutput TRUE</B>
+<B>      url &quot;javascript:</B>
+<B>        function pos(value) {</B>
+<B>          node.set_translation = value;</B>
+<B>        }&quot;</B>
+<B>    }</B></PRE>
+
+<P>This example sends a set_translation eventIn to the Transform node. An
+eventIn on a passed node can appear only on the left side of the assignment.
+An eventOut in the passed node can appear only on the right side, which
+reads the last value sent out. Fields in the passed node cannot be accessed.
+However, exposedFields can either send an event to the &quot;<I>set_</I>...&quot;
+eventIn or read the current value of the &quot;...<I>_changed</I>&quot;
+eventOut. This follows the routing model of the rest of ISO/IEC 14772.</P>
+
+<P>Events generated by setting an eventIn on a node are sent at the completion
+of the currently executing function. The eventIn shall be assigned a value
+of the same datatype; no partial assignments are allowed. For example, it
+is not possible to assign the red value of an SFColor eventIn. Since eventIns
+are strictly write-only, the remainder of the partial assignment would have
+invalid field values. Assigning to the eventIn field multiple times during
+one execution of the function still only sends one event and that event
+is the last value assigned.</P>
+
+<H3>C.5.3 <A NAME="SendingEventOuts"></A>Sending eventOuts</H3>
+
+<P>Assigning to an eventOut of a Script node, or a component of an eventOut
+(i.e. MF eventOut or a property of an SF eventOut), sends an event to that
+eventOut. Events are sent at the end of script execution. An eventOut may
+be assigned a value multiple times within the script, but the value sent
+shall be the last value assigned to the eventOut. If the value of individual
+components of an eventOut are changed, the last value given to each component
+shall be sent. Components that are not changed in the script, send their
+initial value determined at the beginning of the script execution. For example,
+the following script segment produces an eventOut value of (4,&nbsp;3,&nbsp;1)
+for the eventOut SFVec3f <I>foo_changed</I> with an initial value of (6,&nbsp;6,&nbsp;6):</P>
+
+<PRE>
+<TT>	a = foo_changed; // copy by reference a(6,6,6)</TT>
+<TT>	a.x = 5;         // foo_changed(5,6,6)</TT>
+<TT>	a.z = 1;         // foo_changed(5,6,1)</TT>
+<TT>	b = foo_changed; // copy by reference b(5,6,1)</TT>
+<TT>	b.x = 4;         // foo_changed(4,6,1)</TT>
+<TT>	c = a;           // copy by reference c(4,6,1)</TT>
+<TT>	c.y = 3;         // foo_changed(4,3,1))</TT></PRE>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+ALIGN="BOTTOM" NATURALSIZEFLAG="0"></P>
+
+<H2><IMG SRC="../Images/cube.gif" WIDTH="20" HEIGHT="19" ALT="+" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM"> C.6 <A NAME="ExposedClasses"></A>ECMAScript objects</H2>
+
+<H3>C.6.1 <A NAME="NotationalConventions"></A>Notational conventions</H3>
+
+<P>Since ECMAScript is an untyped language it has no language constructs
+to describe the types of parameters passed to, or values returned from,
+functions. Therefore this annex uses a notational convention to describe
+these types. Parameters passed are preceded by their type, and the type
+of any return value precedes the function name. Normally these types correspond
+to VRML field types, so those names are used. In the case of no return value,
+the identifier <I>void</I> is used. In the case of a ECMAScript numeric
+value or numeric array return, the identifier <I>numeric</I> or <I>numeric[
+]</I> is used. In the case of a string return, the identifier <I>String</I>
+is used.</P>
+
+<H3>C.6.2 <A NAME="VRMLFieldToJavaScriptVariableConversion"></A>VRML field
+to ECMAScript variable conversion</H3>
+
+<P>ECMAScript native datatypes consist of boolean, numeric and string. The
+language is not typed, so datatypes are implicit upon assignment. The VRML
+SFBool is mapped to the ECMAScript boolean. In addition to the ECMAScript
+<I>true</I> and <I>false</I> constants, the VRML TRUE and FALSE values may
+be used. The VRML SFInt32, SFFloat and SFTime fields are mapped to the numeric
+datatype and will be maintained in double precision accuracy. These types
+are passed by value in function calls. All other VRML fields are mapped
+to ECMAScript objects. ECMAScript objects are passed by reference.</P>
+
+<P>The ECMAScript boolean, numeric and string are automatically converted
+to other datatypes when needed. See <A HREF="references.html#[ESCR]">2.[ESCR]</A>
+for more details.</P>
+
+<P>In ECMAScript, assigning a new value to a variable gives the variable
+the datatype of the new value, in addition to the value. Scalar values (boolean
+and numeric)&nbsp;are assigned by copying the value. Other objects are assigned
+by reference.</P>
+
+<P>When assignments are made to eventOuts and fields, the values are converted
+to the VRML field type. Values assigned are always copied. This contrasts
+with normal assignment in ECMAScript where all assignments except for scalar
+are performed by reference.</P>
+
+<P>For eventOut objects, assignment copies the value to the eventOut, which
+will be sent upon completion of the current function. Assigning an eventOut
+to an internal variable copies by reference. Subsequent assignments to that
+internal variable will behave like assignments to the eventOut (i.e., an
+event will be sent at the end of the function). Field objects behave identically
+to eventOut objects, except that no event is sent upon completion of the
+function.</P>
+
+<P>Assigning an element of an MF object to an internal variable creates
+a reference to that element. The type shall be the corresponding SF object
+type. If the MF object is an eventOut and an assignment is made to the internal
+variable, an event will be sent at the end of the function. Assigning an
+SF object to an element of an MF object which is a field or eventOut (which
+shall be of the corresponding type) copies the value of the SF object into
+the MF object element. If the MF object is an eventOut an event will be
+sent at the end of the function.</P>
+
+<H3>C.6.3 <A NAME="BrowserClass"></A>Browser object</H3>
+
+<P>This subclause lists the class static functions available in the <I>Browser
+</I>object which allow scripts to get and set browser information. Descriptions
+of the functions are provided in <A HREF="concepts.html#4.12.10">4.12.10,&nbsp;Browser&nbsp;script&nbsp;interface</A>.
+The syntax for a call is:</P>
+
+<PRE>
+<B>    mymfnode = Browser.createVrmlFromString('Sphere {}');</B></PRE>
+
+<P><A HREF="#TableC.1">Table C.1</A> describes the Browser object's functions,
+parameters, and return values.</P>
+
+<H4><CENTER><A NAME="TableC.1"></A>Table C.1 -- Browser object functions</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="8" CELLSPACING="4" WIDTH="93%">
+<TR ALIGN="LEFT">
+<TH><B>Return&nbsp;value</B></TH>
+<TH><B>Function</B></TH></TR>
+<TR ALIGN="LEFT">
+<TD ALIGN="CENTER">String</TD>
+<TD NOWRAP><B>getName</B>(&nbsp;)</TD></TR>
+<TR ALIGN="LEFT">
+<TD ALIGN="CENTER">String</TD>
+<TD NOWRAP><B>getVersion</B>(&nbsp;)</TD></TR>
+<TR ALIGN="LEFT">
+<TD ALIGN="CENTER">numeric</TD>
+<TD NOWRAP><B>getCurrentSpeed</B>(&nbsp;)</TD></TR>
+<TR ALIGN="LEFT">
+<TD ALIGN="CENTER">numeric</TD>
+<TD NOWRAP><B>getCurrentFrameRate</B>(&nbsp;)</TD></TR>
+<TR ALIGN="LEFT">
+<TD ALIGN="CENTER">String</TD>
+<TD NOWRAP><B>getWorldURL</B>(&nbsp;)</TD></TR>
+<TR ALIGN="LEFT">
+<TD ALIGN="CENTER">void</TD>
+<TD NOWRAP><B>replaceWorld</B>( MFNode nodes )</TD></TR>
+<TR ALIGN="LEFT">
+<TD ALIGN="CENTER">MFNode</TD>
+<TD NOWRAP><B>createVrmlFromString</B>( String vrmlSyntax )</TD></TR>
+<TR ALIGN="LEFT">
+<TD ALIGN="CENTER">void</TD>
+<TD NOWRAP><B>createVrmlFromURL</B>( MFString url, Node node, String event )</TD></TR>
+<TR ALIGN="LEFT">
+<TD ALIGN="CENTER">void</TD>
+<TD NOWRAP><B>addRoute</B>( SFNode fromNode, String fromEventOut, <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SFNode
+toNode, String toEventIn)</TD></TR>
+<TR ALIGN="LEFT">
+<TD ALIGN="CENTER">void</TD>
+<TD NOWRAP><B>deleteRoute</B>( SFNode fromNode, String fromEventOut,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SFNode
+toNode, String toEventIn )</TD></TR>
+<TR ALIGN="LEFT">
+<TD ALIGN="CENTER">void</TD>
+<TD NOWRAP><B>loadURL</B>( MFString url, MFString parameter )</TD></TR>
+<TR ALIGN="LEFT">
+<TD ALIGN="CENTER">void</TD>
+<TD NOWRAP><B>setDescription</B>( String description )</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.4 <A NAME="SFColor"></A>SFColor object</H3>
+
+<H4>C.6.4.1 Description</H4>
+
+<P>The SFColor object corresponds to a VRML SFColor field. All properties
+are accessed using the syntax <I>sfColorObjectName.&lt;property&gt;</I>,
+where <I>sfColorObjectName</I> is an instance of an SFColor object. The
+properties may also be accessed by the indices [0] for red, [1] for green
+and [2] blue. All functions are invoked using the syntax <I>sfColorObjectName.method(&lt;argument-list&gt;)</I>,
+where <I>sfColorObjectName</I> is an instance of an SFColor object.</P>
+
+<H4>C.6.4.2 Instance creation function</H4>
+
+<P><I>sfColorObjectName =</I><B> </B>new SFColor(float <I>r, </I>float<I>
+g, </I>float<I> b)</I></P>
+
+<P>where</P>
+
+<P><I>r, g, </I>and <I>b</I> are the red, green, and blue values of the
+colour. Missing values will be filled by 0.0.</P>
+
+<H4>C.6.4.3 Properties</H4>
+
+<P>The properties of the SFColor object are described in <A HREF="#TableC.2">Table
+C.2</A>.</P>
+
+<H4><CENTER><A NAME="TableC.2"></A>Table C.2 -- SFColor properties</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4" WIDTH="51%">
+<TR VALIGN="BOTTOM">
+<TD WIDTH="27%"><B>Property</B></TD>
+<TD WIDTH="73%"><B>Description</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>r</I></TD>
+<TD>red component of the colour</TD></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>g</I></TD>
+<TD>green component of the colour</TD></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>b</I></TD>
+<TD>blue component of the colour</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H4>C.6.4.4 Functions</H4>
+
+<P>The functions of the SFColor object are described in <A HREF="#TableC.3">Table
+C.3</A>.</P>
+
+<H4><CENTER><A NAME="TableC.3"></A>Table C.3 -- SFColor functions</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4" WIDTH="100%">
+<TR ALIGN="CENTER">
+<TH><B>Function</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD WIDTH="237" NOWRAP>void setHSV(float <I>h</I>,&nbsp;float <I>s,&nbsp;</I>float<I> v</I>)</TD>
+<TD>Sets the value of the colour by specifying the values of <I>hue</I>, <I>saturation</I>,
+and <I>value</I>.</TD></TR>
+<TR>
+<TD NOWRAP>numeric[3] getHSV(&nbsp;)</TD>
+<TD>Returns the value of the colour in a 3 element numeric array, with <I>hue</I>
+at index 0, <I>saturation</I> at index 1, and <I>value</I> at index 2.</TD></TR>
+<TR>
+<TD NOWRAP>String toString(&nbsp;)</TD>
+<TD>Returns a String containing the ISO/IEC 14772 UTF-8 encoded value of <I>r</I>,
+<I>g</I> and <I>b</I>.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.5 <A NAME="SFImage"></A>SFImage object</H3>
+
+<H4>C.6.5.1 Description</H4>
+
+<P>The SFImage object corresponds to a VRML SFImage field.</P>
+
+<H4>C.6.5.2 Instance creation function</H4>
+
+<P><I>sfImageObjectName = </I>new SFImage(numeric <I>x, </I>numeric<I> y,
+</I>numeric<I> comp, </I>MFInt32<I> array)</I></P>
+
+<P>where</P>
+
+<P><I>x</I> is the x-dimension of the image. <I>y</I> is the y-dimension
+of the image. <I>comp</I> is the number of components of the image (1 for
+greyscale, 2 for greyscale+alpha, 3 for rgb, 4 for rgb+alpha). <I>Array</I>
+contains the <I>x </I>&times; <I>y</I> values for the pixels of the image.
+The format of each pixel is an SFImage as in the <A HREF="nodesRef.html#PixelTexture">PixelTexture</A>
+node.</P>
+
+<H4>C.6.5.3 Properties</H4>
+
+<P>The properties of the SFImage object are listed in <A HREF="#TableC.4">Table
+C.4</A>.</P>
+
+<H4><CENTER><A NAME="TableC.4"></A>Table C.4 -- SFImage properties</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Property</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">numeric<I> x</I></TD>
+<TD>x dimension of the image</TD></TR>
+<TR>
+<TD ALIGN="CENTER">numeric<I> y</I></TD>
+<TD>y dimension of the image</TD></TR>
+<TR>
+<TD ALIGN="CENTER">numeric<I> comp</I></TD>
+<TD><DL>
+  <DT>number of components of the image:
+  <DD>1: greyscale
+  <DD>2: greyscale + alpha
+  <DD>3: rgb
+  <DD>4: rgb + alpha
+</DL>
+</TD></TR>
+<TR>
+<TD ALIGN="CENTER">MFInt32<I> array</I></TD>
+<TD>image data</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H4>C.6.5.4 Functions</H4>
+
+<P>The function of the SFImage object is described in <A HREF="#TableC.5">Table
+C.5</A>.</P>
+
+<H4><CENTER><A NAME="TableC.5"></A>Table C.5 -- SFImage function</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR>
+<TD><B>Function</B></TD>
+<TD><B>Description</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER" NOWRAP>String&nbsp;toString(&nbsp;)</TD>
+<TD>Returns a String containing the ISO/IEC 14772 UTF-8 encoded value of x,
+y, comp and array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.6 <A NAME="SFNode"></A>SFNode object</H3>
+
+<H4>C.6.6.1 Description</H4>
+
+<P>The SFNode object corresponds to a VRML SFNode field.</P>
+
+<H4>C.6.6.2 Instance creation function</H4>
+
+<P><I>sfNodeObjectName = </I>new SFNode(String <I>vrmlstring)</I></P>
+
+<P>where</P>
+
+<P><I>vrmlstring</I> is an ISO 10646 string containing a legal VRML string
+as described in <A HREF="concepts.html#4.12.10.9">4.12.10.9,&nbsp;MFNode
+createVrmlFromString( SFString vrmlSyntax&nbsp;)</A>. If the string produces
+other than one top-level node, the results are undefined. The string may
+contain any number of ROUTE's, PROTO's, and EXTERNPROTO's in accordance
+with <A HREF="concepts.html#4.12.10.9">4.12.10.9,&nbsp;MFNode&nbsp;createVrmlFromString(
+SFString vrmlSyntax&nbsp;)</A>.</P>
+
+<H4>C.6.6.3 Properties</H4>
+
+<P>Each node may assign values to its eventIns and obtain the last output
+values of its eventOuts using the <I>sfNodeObjectName.eventName</I> syntax.</P>
+
+<H4>C.6.6.4 functions</H4>
+
+<P>The function of the SFNode object is described in <A HREF="#TableC.6">Table
+C.6</A>.</P>
+
+<H4><CENTER><A NAME="TableC.6"></A>Table C.6 -- SFNode function</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Function</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR ALIGN="LEFT">
+<TD>String&nbsp;toString(&nbsp;)</TD>
+<TD>Returns the VRML UTF-8 string that, if parsed as the value of an SFNode
+field, would produce this node. If the browser is unable to reproduce this
+node, the name of the node followed by the open brace and close brace shall
+be returned. Additional information may be included as one or more VRML
+comment strings.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.7 <A NAME="SFRotation"></A>SFRotation object</H3>
+
+<H4>C.6.7.1 Description</H4>
+
+<P>The SFRotation object corresponds to a VRML SFRotation field. It has
+four numeric properties:&nbsp;x, y, z (the axis of rotation) and angle.
+These may also be addressed by indices [0] through [3].</P>
+
+<H4>C.6.7.2 Instance creation functions</H4>
+
+<P><I>sfRotationObjectName = </I>new SFRotation(numeric <I>x, </I>numeric
+<I>y, </I>numeric <I>z, </I>numeric <I>angle)</I></P>
+
+<P>where</P>
+
+<P><I>x</I>, <I>y</I>, and <I>z</I> are the axis of the rotation. <I>angle</I>
+is the angle of the rotation (in radians). Missing values default to 0.0,
+except <I>y</I>, which defaults to 1.0.</P>
+
+<P><I>sfRotationObjectName</I> = new SFRotation(SFVec3f <I>axis, </I>numeric<I>
+angle</I>)</P>
+
+<P>where</P>
+
+<P><I>axis</I> is the axis of rotation. <I>angle</I> is the angle of the
+rotation (in radians)</P>
+
+<P><I>sfRotationObjectName</I> = new SFRotation(SFVec3f <I>fromVector, </I>SFVec3f
+<I>toVector</I>)</P>
+
+<P>where</P>
+
+<P><I>fromVector</I> and <I>toVector</I> are normalized and the rotation
+value that would rotate from the <I>fromVector</I> to the <I>toVector</I>
+is stored in the object.</P>
+
+<H4>C.6.7.3 Properties</H4>
+
+<P>The properties of the SFRotation object are described in <A HREF="#TableC.7">Table
+C.7</A>.</P>
+
+<H4><CENTER><A NAME="TableC.7"></A>Table C.7 -- SFRotation properties</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Property</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>x</I></TD>
+<TD>first value of the axis vector</TD></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>y</I></TD>
+<TD>second value of the axis vector</TD></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>z</I></TD>
+<TD>third value of the axis vector</TD></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>angle</I></TD>
+<TD>the angle of the rotation (in radians)</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H4>C.6.7.4 Functions</H4>
+
+<P>The functions of the SFRotation object are described in <A HREF="#TableC.8">Table
+C.8</A>.</P>
+
+<H4><CENTER><A NAME="TableC.8"></A>Table C.8 -- SFRotation functions</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR>
+<TH><B>Function</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD WIDTH="250" NOWRAP>SFVec3f getAxis(&nbsp;)</TD>
+<TD>Returns the axis of rotation.</TD></TR>
+<TR>
+<TD NOWRAP>SFRotation inverse(&nbsp;)</TD>
+<TD>Returns the inverse of this object's rotation.</TD></TR>
+<TR>
+<TD NOWRAP>SFRotation multiply(SFRotation <I>rot</I>)</TD>
+<TD>Returns the object multiplied by the passed value.</TD></TR>
+<TR>
+<TD NOWRAP>SFVec3f multVec(SFVec3f <I>vec</I>)</TD>
+<TD>Returns the value of <I>vec</I> multiplied by the matrix corresponding to
+this object's rotation.</TD></TR>
+<TR>
+<TD NOWRAP>void setAxis(SFVec3f <I>vec</I>)</TD>
+<TD>Sets the axis of rotation to the value passed in <I>vec</I>.</TD></TR>
+<TR>
+<TD WIDTH="300" NOWRAP>SFRotation slerp(SFRotation <I>dest,&nbsp;</I>numeric<I> t</I>)</TD>
+<TD>Returns the value of the spherical linear interpolation between this object's
+rotation and <I>dest</I> at value 0 &lt;= <I>t</I> &lt;= 1. For <I>t</I>
+= 0, the value is this object's rotation. For <I>t</I> = 1, the value is
+<I>dest</I>.</TD></TR>
+<TR>
+<TD NOWRAP>String toString(&nbsp;)</TD>
+<TD>Returns a String containing the ISO/IEC 14772 UTF-8 encoded value of x,
+y, z, and angle.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.8 <A NAME="SFVec2f"></A>SFVec2f object</H3>
+
+<H4>C.6.8.1 Description</H4>
+
+<P>The SFVec2f object corresponds to a VRML SFVec2f field. Each component
+of the vector can be accessed using the <I>x</I> and <I>y</I> properties
+or using C-style array dereferencing (i.e.,<I>&nbsp;sfVec2fObjectName[0]
+</I>or <I>sfVec2fObjectName[1]).</I></P>
+
+<H4>C.6.8.2 Instance creation function</H4>
+
+<P><I>sfVec2fObjectName = </I>new SFVec2f(numeric <I>x, </I>numeric<I> y)</I></P>
+
+<P>Missing values default to 0.0.</P>
+
+<H4>C.6.8.3 Properties</H4>
+
+<P>The properties of the SFVec2f object are described in <A HREF="#TableC.9">Table
+C.9</A>.</P>
+
+<H4><CENTER><A NAME="TableC.9"></A>Table C.9 -- SFVec2f properties</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TD><B>Property</B></TD>
+<TD><B>Description</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>x</I></TD>
+<TD>First value of the vector.</TD></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>y</I></TD>
+<TD>Second value of the vector.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H4>C.6.8.4 Functions</H4>
+
+<P>The functions of the SFVec2f object are described in <A HREF="#TableC.10">Table
+C.10</A>.</P>
+
+<H4><CENTER><A NAME="TableC.10"></A>Table C.10 -- SFVec2f functions</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Function</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD WIDTH="250" NOWRAP>SFVec2f add(SFVec2f <I>vec</I>)</TD>
+<TD>Returns the value of the passed value added, component-wise, to the object.</TD></TR>
+<TR>
+<TD WIDTH="30%" NOWRAP>SFVec2f divide(numeric <I>n</I>)</TD>
+<TD>Returns the value of the object divided by the passed value.</TD></TR>
+<TR>
+<TD NOWRAP>numeric dot(SFVec2f <I>vec</I>)</TD>
+<TD>Returns the dot product of this vector and the passed value.</TD></TR>
+<TR>
+<TD NOWRAP>numeric length(&nbsp;)</TD>
+<TD>Returns the geometric length of this vector.</TD></TR>
+<TR>
+<TD NOWRAP>SFVec2f multiply(numeric <I>n</I>)</TD>
+<TD>Returns the value of the object multiplied by the passed value.</TD></TR>
+<TR>
+<TD NOWRAP>SFVec2f normalize(&nbsp;)</TD>
+<TD>Returns the object converted to unit length .</TD></TR>
+<TR>
+<TD NOWRAP>SFVec2f subtract(SFVec2f <I>vec</I>)</TD>
+<TD>Returns the value of the passed value subtracted, component-wise, from the
+object.</TD></TR>
+<TR>
+<TD NOWRAP>String toString(&nbsp;)</TD>
+<TD>Returns a String containing the ISO/IEC 14772 UTF-8 encoded value of x and
+y.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.9 <A NAME="SFVec3f"></A>SFVec3f object</H3>
+
+<H4>C.6.9.1 Description</H4>
+
+<P>The SFVec3f object corresponds to a VRML SFVec3f field. Each component
+of the vector can be accessed using the x, y, and z properties or using
+C-style array dereferencing (i.e.,<I>&nbsp;sfVec3fObjectName[0], sfVec3fObjectName[1]
+</I>or <I>sfVec3fObjectName[2]).</I></P>
+
+<H4>C.6.9.2 Instance creation function</H4>
+
+<P><I>sfVec3fObjectName = </I>new SFVec3f(numeric<I> x, </I>numeric<I> y,
+</I>numeric<I> z)</I></P>
+
+<P>Missing values default to 0.0.</P>
+
+<H4>C.6.9.3 Properties</H4>
+
+<P>The properties of the SFVec3f object are described in <A HREF="#TableC.11">Table
+C.11</A>.</P>
+
+<H4><CENTER><A NAME="TableC.11"></A>Table C.11 -- SFVec2f properties</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR>
+<TD><B>Property</B></TD>
+<TD><B>Description</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>x</I></TD>
+<TD>First value of the vector.</TD></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>y</I></TD>
+<TD>Second value of the vector.</TD></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>z</I></TD>
+<TD>Third value of the vector.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H4>C.6.9.4 Functions</H4>
+
+<P>The functions of the SFVec3f object are described in <A HREF="#TableC.12">Table
+C.12</A>.</P>
+
+<H4><CENTER><A NAME="TableC.12"></A>Table C.12 -- SFVec3f functions</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Function</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD WIDTH="250" NOWRAP>SFVec3f add(SFVec3f <I>vec</I>)</TD>
+<TD>Returns the value of the passed value added, component-wise, to the object.</TD></TR>
+<TR>
+<TD NOWRAP>SFVec3f cross(SFVec3f <I>vec</I>)</TD>
+<TD>Returns the cross product of the object and the passed value.</TD></TR>
+<TR>
+<TD WIDTH="30%" NOWRAP>SFVec3f divide(numeric <I>n</I>)</TD>
+<TD>Returns the value of the object divided by the passed value.</TD></TR>
+<TR>
+<TD NOWRAP>numeric dot(SFVec3f <I>vec</I>)</TD>
+<TD>Returns the dot product of this vector and the passed value.</TD></TR>
+<TR>
+<TD NOWRAP>numeric length(&nbsp;)</TD>
+<TD>Returns the geometric length of this vector.</TD></TR>
+<TR>
+<TD NOWRAP>SFVec3f multiply(<I>numeric n</I>)</TD>
+<TD>Returns the value of the object multiplied by the passed value.</TD></TR>
+<TR>
+<TD NOWRAP>SFVec3f negate(&nbsp;)</TD>
+<TD>Returns the value of the component-wise negation of the object.</TD></TR>
+<TR>
+<TD NOWRAP>SFVec3f normalize(&nbsp;)</TD>
+<TD>Returns the object converted to unit length .</TD></TR>
+<TR>
+<TD NOWRAP>SFVec3f subtract(SFVec3f <I>vec</I>)</TD>
+<TD>Returns the value of the passed value subtracted, component-wise, from the
+object.</TD></TR>
+<TR>
+<TD NOWRAP>String toString(&nbsp;)</TD>
+<TD>Returns a String containing the ISO/IEC 14772 UTF-8 encoded value of x,
+y, and z.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.10 <A NAME="MFColor"></A>MFColor object</H3>
+
+<H4>C.6.10.1 Description</H4>
+
+<P>The MFColor object corresponds to a VRML MFColor field. It is used to
+store a one-dimensional array of SFColor objects. Individual elements of
+the array can be referenced using the standard C-style dereferencing operator
+(e.g.,&nbsp;<I>mfColorObjectName</I>[<I>index</I>], where <I>index</I> is
+an integer-valued expression with 0 &lt;= <I>index </I>&lt; length and length
+is the number of elements in the array). Assigning to an element with <I>index</I>
+&gt;= length results in the array being dynamically expanded to contain
+length elements. All elements not explicitly initialized are set to SFColor
+(0, 0, 0).</P>
+
+<H4>C.6.10.2 Instance creation function</H4>
+
+<P><I>mfColorObjectName = </I>new MFColor(SFColor<I> c1, </I>SFColor<I>
+c2, ...)</I></P>
+
+<P>The creation function shall initialize the array using 0 or more SFColor-valued
+expressions passed as parameters.</P>
+
+<H4>C.6.10.3 Property</H4>
+
+<P>The property of the MFColor object is described in <A HREF="#TableC.13">Table
+C.13</A>.</P>
+
+<H4><CENTER><A NAME="TableC.13"></A>Table C.13 -- MFColor properties</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Property</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>length</I></TD>
+<TD>property for getting/setting the number of elements in the array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H4>C.6.10.4 Function</H4>
+
+<P>The single function of the MFColor object is described in <A HREF="#TableC.14">Table
+C.14</A>.</P>
+
+<H4><CENTER><A NAME="TableC.14"></A>Table C.14 -- MFColor functions</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Function</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">String&nbsp;toString(&nbsp;)</TD>
+<TD>Returns a String containing the ISO/IEC 14772 utf 8 encoded value of the
+MFColor array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.11 <A NAME="MFFloat"></A>MFFloat object</H3>
+
+<H4>C.6.11.1 Description</H4>
+
+<P>The MFFloat object corresponds to a VRML MFFloat field. It is used to
+store a one-dimensional array of SFFloat values. Individual elements of
+the array can be referenced using the standard C-style dereferencing operator
+(e.g.,&nbsp;<I>mfFloatObjectName</I>[<I>index</I>], where <I>index</I> is
+an integer-valued expression with 0 &lt;= <I>index </I>&lt; length and length
+is the number of elements in the array). Assigning to an element with <I>index
+&gt;= length</I> results in the array being dynamically expanded to contain
+length elements. All elements not explicitly initialized are set to 0.0.</P>
+
+<H4>C.6.11.2 Instance creation function</H4>
+
+<P><I>mfFloatObjectName = </I>new MFFloat(numeric<I> n1, </I>numeric<I>
+n2, ...)</I></P>
+
+<P>where</P>
+
+<P>The creation function shall initialize the array using 0 or more numeric-valued
+expressions passed as parameters.</P>
+
+<H4>C.6.11.3 Property</H4>
+
+<P>The property of the MFFloat object is described in <A HREF="#TableC.15">Table
+C.15</A>.</P>
+
+<H4><CENTER><A NAME="TableC.15"></A>Table C.15 -- MFFloat properties</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TD><B>Property</B></TD>
+<TD><B>Description</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>length</I></TD>
+<TD>property for getting/setting the number of elements in the array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H4>C.6.11.4 Function</H4>
+
+<P>The single function of the MFFloat object is described in <A HREF="#TableC.16">Table
+C.16</A>.</P>
+
+<H4><CENTER><A NAME="TableC.16"></A>Table C.16 -- MFFloat function</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TD><B>Function</B></TD>
+<TD><B>Description</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER">String&nbsp;toString(&nbsp;)</TD>
+<TD>Returns a String containing the ISO/IEC 14772 utf 8 encoded value of the
+MFFloat array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.12 <A NAME="MFInt32"></A>MFInt32 object</H3>
+
+<H4>C.6.12.1 Description</H4>
+
+<P>The MFInt32 object corresponds to a VRML MFInt32 field. It is used to
+store a one-dimensional array of SFInt32 values. Individual elements of
+the array can be referenced using the standard C-style dereferencing operator
+(e.g.,&nbsp;<I>mfInt32ObjectName</I>[<I>index]</I>, where <I>index</I> is
+an integer-valued expression with 0 &lt;= <I>index </I>&lt; length and length
+is the number of elements in the array). Assigning to an element with <I>index
+&gt;= length</I> results in the array being dynamically expanded to contain
+length elements. All elements not explicitly initialized are set to 0.</P>
+
+<H4>C.6.12.2 Instance creation function</H4>
+
+<P><I>mfInt32ObjectName = </I>new MFInt32(numeric<I> n1, </I>numeric<I>
+n2, ...)</I></P>
+
+<P>where</P>
+
+<P>The creation function shall initialize the array using 0 or more integer-valued
+expressions passed as parameters.</P>
+
+<H4>C.6.12.3 Property</H4>
+
+<P>The property of the MFInt32 object is described in <A HREF="#TableC.17">Table
+C.17</A>.</P>
+
+<H4><CENTER><A NAME="TableC.17"></A>Table C.17 -- MFInt32 property</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Property</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>length</I></TD>
+<TD>property for getting/setting the number of elements in the array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H4>C.6.12.4 Function</H4>
+
+<P>The single function of the MFInt32 object is described in <A HREF="#TableC.18">Table
+C.18</A>.</P>
+
+<H4><CENTER><A NAME="TableC.18"></A>Table C.18 -- MFInt32 function</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TD><B>Function</B></TD>
+<TD><B>Description</B></TD></TR>
+<TR>
+<TD ALIGN="CENTER">String&nbsp;toString(&nbsp;)</TD>
+<TD>Returns a String containing the ISO/IEC 14772 utf 8 encoded value of the
+MFInt32 array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.13 <A NAME="MFNode"></A>MFNode object</H3>
+
+<H4>C.6.13.1 Description</H4>
+
+<P>The MFNode object corresponds to a VRML MFNode field. It is used to store
+a one-dimensional array of SFNode objects. Individual elements of the array
+can be referenced using the standard C-style dereferencing operator (e.g.,&nbsp;<I>mfNodeObjectName</I>[<I>index</I>],
+where <I>index</I> is an integer-valued expression with 0 &lt;= <I>index
+</I>&lt; length and length is the number of elements in the array). Assigning
+to an element with <I>index &gt;= length</I> results in the array being
+dynamically expanded to contain length elements. All elements not explicitly
+initialized are set to NULL.</P>
+
+<H4>C.6.13.2 Instance creation function</H4>
+
+<P><I>mfNodeObjectName = </I>new MFNode(SFNode<I> n1, </I>SFNode<I> n2,
+...)</I></P>
+
+<P>where</P>
+
+<P>The creation function shall initialize the array using 0 or more SFNode-valued
+expressions passed as parameters.</P>
+
+<H4>C.6.13.3 Property</H4>
+
+<P>The property of the MFNode object is described in<A HREF="#TableC.19">
+Table C.19</A>.</P>
+
+<H4><CENTER><A NAME="TableC.19"></A>Table C.19 -- MFNode property</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Property</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>length</I></TD>
+<TD>property for getting/setting the number of elements in the array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H4>C.6.13.4 Function</H4>
+
+<P>The single function of the MFNode object is described in <A HREF="#TableC.20">Table
+C.20</A>.</P>
+
+<H4><CENTER><A NAME="TableC.20"></A>Table C.20 -- MFNode function</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Function</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">String&nbsp;toString(&nbsp;)</TD>
+<TD>Returns the VRML UTF-8 string that, if parsed as the value of a MFNode field,
+would produce this array of nodes. If the browser is unable to reproduce
+this node, the name of the node followed by the open brace and close brace
+shall be returned. Additional information may be included as one or more
+VRML comment strings</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.14 <A NAME="MFRotation"></A>MFRotation object</H3>
+
+<H4>C.6.14.1 Description</H4>
+
+<P>The MFRotation object corresponds to a VRML MFRotation field. It is used
+to store a one-dimensional array of SFRotation objects. Individual elements
+of the array can be referenced using the standard C-style dereferencing
+operator (e.g.,&nbsp;<I>mfRotationObjectName</I>[<I>index</I>], where <I>index</I>
+is an integer-valued expression with 0 &lt;= <I>index </I>&lt; length and
+length is the number of elements in the array). Assigning to an element
+with <I>index &gt;= length</I> results in the array being dynamically expanded
+to contain length elements. All elements not explicitly initialized are
+set to SFRotation (0, 0, 1, 0).</P>
+
+<H4>C.6.14.2 Instance creation function</H4>
+
+<P><I>mfRotationObjectName = </I>new MFRotation(SFRotation<I> r1, </I>SFRotation<I>
+r2, ...)</I></P>
+
+<P>where</P>
+
+<P>The creation function shall initialize the array using 0 or more SFRotation-valued
+expressions passed as parameters.</P>
+
+<H4>C.6.14.3 Property</H4>
+
+<P>The property of the MFRotation object is described in <A HREF="#TableC.21">Table
+C.21</A>.</P>
+
+<H4><CENTER><A NAME="TableC.21"></A>Table C.21 -- MFRotation property</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Property</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>length</I></TD>
+<TD>property for getting/setting the number of elements in the array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H4>C.6.14.4 Function</H4>
+
+<P>The single function of the MFRotation object is described in <A HREF=
+"#TableC.22">Table C.22</A>.</P>
+
+<H4><CENTER><A NAME="TableC.22"></A>Table C.22 -- MFRotation function</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Function</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">String&nbsp;toString(&nbsp;)</TD>
+<TD>Returns a String containing the ISO/IEC 14772 utf 8 encoded value of the
+MFRotation array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.15 <A NAME="MFString"></A>MFString object</H3>
+
+<H4>C.6.15.1 Description</H4>
+
+<P>The MFString object corresponds to a VRML 2.0 MFString field. It is used
+to store a one-dimensional array of String objects. Individual elements
+of the array can be referenced using the standard C-style dereferencing
+operator (e.g.,&nbsp;<I>mfStringObjectName</I>[<I>index</I>], where <I>index</I>
+is an integer-valued expression with 0 &lt;= <I>index </I>&lt; length and
+length is the number of elements in the array). Assigning to an element
+with <I>index &gt;= length</I> results in the array being dynamically expanded
+to contain length elements. All elements not explicitly initialized are
+set to the empty string.</P>
+
+<H4>C.6.15.2 Instance creation function</H4>
+
+<P><I>mfStringObjectName = </I>new MFString(String<I> s1, </I>String<I>
+s2, ...)</I></P>
+
+<P>where</P>
+
+<P>The creation function shall initialize the array using 0 or more String-valued
+expressions passed as parameters.</P>
+
+<H4>C.6.15.3 Property</H4>
+
+<P>The property of the MFString object is described in <A HREF="#TableC.23">Table
+C.23</A>.</P>
+
+<H4><CENTER><A NAME="TableC.23"></A>Table C.23 -- MFString property</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Property</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>length</I></TD>
+<TD>property for getting/setting the number of elements in the array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H4>C.6.15.4 Function</H4>
+
+<P>The single function of the MFString object is described in <A HREF="#TableC.24">Table
+C.24</A>.</P>
+
+<H4><CENTER><A NAME="TableC.24"></A>Table C.24 -- MFString function</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Function</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">String&nbsp;toString(&nbsp;)</TD>
+<TD>Returns a String containing the ISO/IEC 14772 utf 8 encoded value of the
+MFString array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.16 <A NAME="MFTime"></A>MFTime object</H3>
+
+<H4>C.6.16.1 Description</H4>
+
+<P>The MFTime object corresponds to a VRML MFTime field. It is used to store
+a one-dimensional array of SFTime values. Individual elements of the array
+can be referenced using the standard C-style dereferencing operator (e.g.,&nbsp;<I>mfTimeObjectName</I>[<I>index</I>],
+where <I>index</I> is an integer-valued expression with 0 &lt;= <I>index
+</I>&lt; length and length is the number of elements in the array). Assigning
+to an element with <I>index &gt;= length</I> results in the array being
+dynamically expanded to contain length elements. All elements not explicitly
+initialized are set to 0.0.</P>
+
+<H4>C.6.16.2 Instance creation function</H4>
+
+<P><I>mfTimeObjectName = </I>new MFTime(numeric<I> n1, </I>numeric<I> n2,
+...)</I></P>
+
+<P>The creation function shall initialize the array using 0 or more numeric-valued
+expressions passed as parameters.</P>
+
+<H4>C.6.16.3 Property</H4>
+
+<P>The property of the MFTime object is described in <A HREF="#TableC.25">Table
+C.25</A>.</P>
+
+<H4><CENTER><A NAME="TableC.25"></A>Table C.25 -- MFTime property</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Property</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>length</I></TD>
+<TD>property for getting/setting the number of elements in the array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H4>C.6.16.4 Function</H4>
+
+<P>The function of the MFTime object is described in <A HREF="#TableC.26">Table
+C.26</A>.</P>
+
+<H4><CENTER><A NAME="TableC.26"></A>Table C.26 -- MFTime function</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Function</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">String&nbsp;toString(&nbsp;)</TD>
+<TD>Returns a String containing the ISO/IEC 14772 utf 8 encoded value of the
+MFTime array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.17 <A NAME="MFVec2f"></A>MFVec2f object</H3>
+
+<H4>C.6.17.1 Description</H4>
+
+<P>The MFVec2f object corresponds to a VRML MFVec2f field. It is used to
+store a one-dimensional array of SFVec2f objects. Individual elements of
+the array can be referenced using the standard C-style dereferencing operator
+(e.g.,&nbsp;<I>mfVec2fObjectName</I>[<I>index</I>], where <I>index</I> is
+an integer-valued expression with 0 &lt;= <I>index </I>&lt; length and length
+is the number of elements in the array). Assigning to an element with <I>index
+&gt;= length</I> results in the array being dynamically expanded to contain
+length elements. All elements not explicitly initialized are set to SFVec2f
+(0, 0).</P>
+
+<H4>C.6.17.2 Instance creation function</H4>
+
+<P><I>mfVec2fObjectName = </I>new MFVec2f(SFVec2f<I> v1, </I>SFVec2f<I>
+v2, ...)</I></P>
+
+<P>The creation function shall initialize the array using 0 or more SFVec2f-valued
+expressions passed as parameters.</P>
+
+<H4>C.6.17.3 Property</H4>
+
+<P>The property of the MFVec2f object is described in <A HREF="#TableC.27">Table
+C.27</A>.</P>
+
+<H4><CENTER><A NAME="TableC.27"></A>Table C.27 -- MFVec2f property</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Property</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>length</I></TD>
+<TD>property for getting/setting the number of elements in the array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H4>C.6.17.4 Function</H4>
+
+<P>The single function of the MFVec2f object is described in <A HREF="#TableC.28">Table
+C.28</A>.</P>
+
+<H4><CENTER><A NAME="TableC.28"></A>Table C.28 -- MFVec2f function</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Function</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">String&nbsp;toString(&nbsp;)</TD>
+<TD>Returns a String containing the ISO/IEC 14772 utf 8 encoded value of the
+MFVec2f array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.18 <A NAME="MFVec3f"></A>MFVec3f object</H3>
+
+<H4>C.6.18.1 Description</H4>
+
+<P>The MFVec3f object corresponds to a VRML MFVec3f field. It is used to
+store a one-dimensional array of SFVec3f objects. Individual elements of
+the array can be referenced using the standard C-style dereferencing operator
+(e.g.,&nbsp;<I>mfVec3fObjectName</I>[<I>index</I>], where <I>index</I> is
+an integer-valued expression with 0 &lt;= <I>index </I>&lt; length and length
+is the number of elements in the array). Assigning to an element with <I>index
+&gt;= length</I> results in the array being dynamically expanded to contain
+length elements. All elements not explicitly initialized are set to SFVec3f
+(0, 0, 0).</P>
+
+<H4>C.6.18.2 Instance creation function</H4>
+
+<P><I>mfVec3fObjectName = </I>new MFVec3f(SFVec3f<I> v1, </I>SFVec3f<I>
+v2,...)</I></P>
+
+<P>where</P>
+
+<P>The creation function shall initialize the array using 0 or more SFVec3f-valued
+expressions passed as parameters.</P>
+
+<H4>C.6.18.3 Property</H4>
+
+<P>The property of the MFVec3f object is described in <A HREF="#TableC.29">Table
+C.29</A>.</P>
+
+<H4><CENTER><A NAME="TableC.29"></A>Table C.29 -- MFVec3f property</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Property</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">numeric <I>length</I></TD>
+<TD>property for getting/setting the number of elements in the array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H4>C.6.18.4 Function</H4>
+
+<P>The single function of the MFVec3f object is described in <A HREF="#TableC.30">Table
+C.30</A>.</P>
+
+<H4><CENTER><A NAME="TableC.30"></A>Table C.30 -- MFVec3f function</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Function</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD ALIGN="CENTER">String&nbsp;toString(&nbsp;)</TD>
+<TD>Returns a String containing the ISO/IEC 14772 utf 8 encoded value of the
+MFVec3f array.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H3>C.6.19 <A NAME="VrmlMatrix"></A>VrmlMatrix object</H3>
+
+<H4>C.6.19.1 Description</H4>
+
+<P>The VrmlMatrix object provides many useful functions for performing manipulations
+on 4x4 matrices. Each of element of the matrix can be accessed using C-style
+array dereferencing (i.e.,<I>&nbsp;</I>vrmlMatrixObjectName[0][1] is the
+element in row 0, column 1). The results of dereferencing a VrmlMatrix object
+using a single index (i.e.<I>,&nbsp;</I>vrmlMatrixObjectName[0]) are undefined.
+The translation elements are in the fourth row. For example, vrmlMatrixObjectName[3][0]
+is the X offset.</P>
+
+<H4>C.6.19.2 Instance creation functions</H4>
+
+<P><I>VrmlMatrixObjectName = </I>new VrmlMatrix(<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numeric
+<I>f11, </I>numeric <I>f12, </I>numeric <I>f13, </I>numeric <I>f14,</I><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numeric
+<I>f21, </I>numeric <I>f22, </I>numeric <I>f23, </I>numeric <I>f24, </I><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numeric
+<I>f31, </I>numeric <I>f32, </I>numeric <I>f33, </I>numeric <I>f34, </I><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numeric
+<I>f41, </I>numeric <I>f42, </I>numeric <I>f43, </I>numeric <I>f44)</I></P>
+
+<P>A new matrix initialized with the values in <I>f11</I> through <I>f44</I>
+is created and returned. The translation values will be <I>f41, f42</I>,
+and <I>f43</I>.</P>
+
+<P><I>VrmlMatrixObjectName = </I>new VrmlMatrix(&nbsp;)</P>
+
+<P>A new matrix initialized with the identity matrix is created and returned.</P>
+
+<H4>C.6.19.3 Properties</H4>
+
+<P>The VRMLMatrix object has no properties.</P>
+
+<H4>C.6.19.4 Functions</H4>
+
+<P>The functions of the VRMLMatrix object are listed in <A HREF="#TableC.31">Table
+C.31</A>.</P>
+
+<H4><CENTER><A NAME="TableC.31"></A>Table C.31 -- VRMLMatrix functions</CENTER></H4>
+
+<P><CENTER><TABLE BORDER="1" CELLPADDING="6" CELLSPACING="4">
+<TR ALIGN="CENTER">
+<TH><B>Function</B></TH>
+<TH><B>Description</B></TH></TR>
+<TR>
+<TD WIDTH="300" NOWRAP>void setTransform(SFVec3f <I>translation</I>,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SFRotation
+<I>rotation</I>,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SFVec3f
+<I>scale</I>, <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SFRotation
+<I>scaleOrientation</I>, <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SFVec3f
+<I>center</I>)</TD>
+<TD>Sets the VrmlMatrix to the passed values. Any of the rightmost parameters
+may be omitted. The function has 0 to 5 parameters. For example, specifying
+0 parameters results in an identity matrix while specifying 1 parameter
+results in a translation and specifying 2 parameters results in a translation
+and a rotation. Any unspecified parameter is set to its default as specified
+for the <A HREF="nodesRef.html#Transform">Transform</A> node.</TD></TR>
+<TR>
+<TD WIDTH="300">void getTransform(SFVec3f <I>translation</I>,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SFRotation
+<I>rotation</I>, <BR>
+<I>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</I>SFVec3f<I>
+scale</I>)</TD>
+<TD>Decomposes the VrmlMatrix and returns the components in the passed <I>translation</I>,
+<I>rotation</I>, and <I>scale </I>objects<I>. </I>The types of these passed
+objects is the same as the first three arguments to <B>setTransform</B>.
+If any passed object is not sent, or if the null object is sent for any
+value, that value is not returned. Any projection or shear information in
+the matrix is ignored.</TD></TR>
+<TR>
+<TD WIDTH="300">VrmlMatrix inverse(&nbsp;)</TD>
+<TD>Returns a VrmlMatrix whose value is the inverse of this object.</TD></TR>
+<TR>
+<TD WIDTH="300">VrmlMatrix transpose(&nbsp;)</TD>
+<TD>Returns a VrmlMatrix whose value is the transpose of this object.</TD></TR>
+<TR>
+<TD WIDTH="300">VrmlMatrix multLeft(VrmlMatrix <I>matrix</I>)</TD>
+<TD>Returns a VrmlMatrix whose value is the object multiplied by the passed
+<I>matrix</I> on the left.</TD></TR>
+<TR>
+<TD WIDTH="300">VrmlMatrix multRight(VrmlMatrix <I>matrix</I>)</TD>
+<TD>Returns a VrmlMatrix whose value is the object multiplied by the passed
+<I>matrix</I> on the right.</TD></TR>
+<TR>
+<TD WIDTH="300">SfVec3f multVecMatrix(SFVec3f <I>vec</I>)</TD>
+<TD>Returns an SFVec3f whose value is the object multiplied by the passed row
+vector.</TD></TR>
+<TR>
+<TD WIDTH="300">SFVec3f multMatrixVec(SFVec3f <I>vec</I>)</TD>
+<TD>Returns an SFVec3f whose value is the object multiplied by the passed column
+vector.</TD></TR>
+<TR>
+<TD WIDTH="300">String toString(&nbsp;)</TD>
+<TD>Returns a String containing the values of the VrmlMatrix.</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<H2><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+ALIGN="BOTTOM" NATURALSIZEFLAG="0"></H2>
+
+<H2><IMG SRC="../Images/cube.gif" WIDTH="20" HEIGHT="19" ALT="+" NATURALSIZEFLAG=
+"0" ALIGN="BOTTOM"> C.7 <A NAME="Example"></A>Examples</H2>
+
+<P>The following is an example of a <A HREF="nodesRef.html#Script">Script</A>
+node which determines whether a given colour contains a lot of red. The
+Script node exposes a Color field, an eventIn, and an eventOut:</P>
+
+<PRE>
+<B>DEF Example_1 Script {</B>
+<B>        field    SFColor currentColor 0 0 0</B>
+<B>    eventIn  SFColor colorIn</B>
+<B>    eventOut SFBool  isRed</B>
+
+<B>    url &quot;javascript: </B>
+<B>        function colorIn(newColor, ts) {</B>
+<B>            // This function is called when a colorIn event is received</B>
+<B>            currentColor = newColor;</B>
+<B>        }</B>
+
+<B>        function eventsProcessed</B>(&nbsp;)<B> {</B>
+<B>            if (currentColor[0] &gt;= 0.5)</B>
+<B>                // if red is at or above 50%</B>
+<B>                isRed = true;</B>
+<B>        }&quot;</B>
+<B>}</B></PRE>
+
+<P>Details on when the functions defined in Example_1 Script are called
+are provided in <A HREF="concepts.html#4.12.2">4.12.2,&nbsp;Script execution</A>.</P>
+
+<P>The following example illustrate use of the createVrmlFromURL(&nbsp;)
+function:</P>
+
+<PRE>
+ <B>DEF Example_2 Script { </B>
+<B>    field   SFNode myself USE Example_2</B>
+<B>    field   SFNode root USE ROOT_TRANSFORM</B>
+<B>    field   MFString url &quot;foo.wrl&quot;</B>
+<B>    eventIn MFNode   nodesLoaded</B>
+<B>    eventIn SFBool   trigger_event</B>
+
+<B>    url &quot;javascript:</B>
+<B>        function trigger_event(value, ts){</B>
+<B>            // do something and then fetch values</B>
+<B>            Browser.createVRMLFromURL(url, myself, 'nodesLoaded');</B>
+<B>        }</B>
+
+<B>        function nodesLoaded(value, timestamp){</B>
+<B>            if (value.length &gt; 5) {</B>
+<B>                 // do something more than 5 nodes in this MFNode...</B>
+<B>            }</B>
+<B>            root.addChildren = value;</B>
+<B>        }&quot;</B>
+<B>}</B></PRE>
+
+<P>The following example illustrates use of the addRoute(&nbsp;) function:</P>
+
+<PRE>
+
+<B>DEF Sensor TouchSensor {}</B>
+
+<B>DEF Baa Script {</B>
+<B>    field   SFNode myself USE Baa</B>
+<B>    field   SFNode fromNode USE Sensor</B>
+<B>    eventIn SFBool clicked</B>
+<B>    eventIn SFBool trigger_event</B>
+
+<B>    url &quot;javascript: </B>
+<B>        function trigger_event(eventIn_value){</B>
+<B>            // do something and then add routing</B>
+<B>            Browser.addRoute(fromNode, 'isActive', myself, 'clicked');</B>
+<B>        }</B>
+
+<B>        function clicked(value){</B>
+<B>            // do something</B>
+<B>        }&quot;</B>
+<B>}</B></PRE>
+
+<P>The following example illustrates assigning with references and assigning
+by copying:</P>
+
+<PRE><B>Script {</B>
+<B>    eventIn  SFBool  eI</B>
+<B>    eventOut SFVec3f eO</B>
+<B>    field    MFVec3f f []</B>
+
+<B>    url &quot;javascript:</B>
+<B>        function eI( ) {</B>
+<B>            eO = new SFVec3f(0,1,2);  // 'eO' contains the value</B>
+<B>                                      // (0,1,2) which will be sent</B>
+<B>                                      // out when the function </B>
+<B>                                      // is complete.</B>
+<B>            a = eO;                   // 'a' references the eventOut</B>
+<B>                                      // 'e0'</B>
+<B>            b = a;                    // 'a' and 'b' now both reference</B>
+<B>                                      // 'e0'</B>
+<B>            a.x = 3;                  // 'e0' will send (3,1,2) at the</B>
+<B>                                      // end of the function</B>
+<B>            f[1] = a;                 // 'f[1]' contains the value</B>
+<B>                                      // (3,1,2).</B>
+<B>            c = f[1];                 // 'c' reference the field </B>
+<B>                                      // element f[1]</B>
+<B>            f[1].y = 4;               // 'f[1]' and 'c' both contain</B>
+<B>                                      // (3,4,2)</B>
+<B>        }&quot;</B>
+<B>}</B></PRE>
+
+<P>The following example illustrates uses of the fields and functions of
+SFVec3f and MFVec3f:</P>
+
+<PRE>
+<B>DEF SCR-VEC3F Script {</B>
+<B>    eventIn SFTime touched1</B>
+<B>    eventIn SFTime touched2</B>
+<B>    eventIn SFTime touched3</B>
+<B>    eventIn SFTime touched4</B>
+<B>    eventOut SFVec3f new_translation</B>
+<B>    field SFInt32 count 1</B>
+<B>    field MFVec3f verts  []</B>
+
+<B>    url &quot;javascript: </B>
+<B>        function initialize</B>(&nbsp;)<B> {</B>
+<B>            verts[0] = new SFVec3f(0, 0, 0);</B>
+<B>            verts[1] = new SFVec3f(1, 1.732, 0);</B>
+<B>            verts[2] = new SFVec3f(2, 0, 0); </B>
+<B>            verts[3] = new SFVec3f(1, 0.577, 1.732);</B>
+<B>        }</B>
+
+<B>        function touched1 (value) {</B>
+<B>            new_translation = verts[count]; // move sphere around tetra</B>
+<B>            count++;</B>
+<B>            if (count &gt;= verts.length) count = 1;</B>
+<B>        }</B>
+
+<B>        function touched2 (value) {</B>
+<B>            var tVec;</B>
+<B>            tVec = new_translation.divide(2); // Zeno's paradox to origin</B>
+<B>            new_translation = new_translation.subtract(tVec);</B>
+<B>        }</B>
+
+<B>        function touched4 (value) {</B>
+<B>            new_translation = new_translation.negate</B>(&nbsp;)<B>;</B>
+<B>        }</B>
+
+<B>        function touched3 (value) {</B>
+<B>            var a;</B>
+<B>            a = verts[1].length</B>(&nbsp;)<B>; </B>
+<B>            a = verts[3].dot(verts[2].cross(verts[1]));</B>
+<B>            a = verts[1].x;</B>
+<B>            new_translation = verts[2].normalize</B>(&nbsp;)<B>;</B>
+<B>            new_translation = new_translation.add(new_translation);</B>
+<B>        }&quot;</B>
+<B>}</B></PRE>
+
+<P><IMG SRC="../Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" ALT="--- VRML separator bar ---"
+ALIGN="BOTTOM" NATURALSIZEFLAG="0"></P>
+
+<PRE><FONT SIZE=-1>http://www.vrml.org/Specifications/VRML97/part1/javascript.html</FONT></PRE>
+</BODY>
+</HTML>

@@ -1,0 +1,83 @@
+
+**** SCENA:****
+
+#VRML V2.0 utf8 
+
+Transform { 
+     children [ 
+      Shape { 
+           appearance Appearance { 
+                material DEF cube_material Material { 
+                 diffuseColor 1 0 0 
+                 } 
+            } 
+           geometry Box { } 
+           } 
+     ] 
+} 
+
+ 
+ 
+**** APPLET: ****  
+
+import vrml.external.*; 
+import vrml.external.field.*; 
+import vrml.external.exception.*; 
+import java.awt.*; 
+import java.applet.*; 
+  
+
+public class ColorTest extends Applet { 
+  
+   //osnovni objekt:
+   Browser browser = null; 
+   Node material = null; 
+   EventInSFColor diffuseColor = null; 
+
+   //ovaj primjer koristi starije AWT klase (a ne Swing) 
+   TextArea output = null; 
+   Button b1 = null; 
+   boolean red = true; 
+   boolean error = true; 
+
+   public void init() { 
+     output = new TextArea(5,40); 
+     add(output); 
+     b1 = new Button("Change Color"); 
+     add(b1); 
+   } 
+
+ public void start() {  
+     browser = Browser.getBrowser(this); 
+     material = browser.getNode("cube_material"); 
+     diffuseColor = (EventInSFColor) material.getEventIn("set_diffuseColor"); 
+ } 
+
+ //action, slican actionListener-u (Swing), reagira na bilo koju akciju  
+ public boolean action(Event e, Object o) { 
+  if (e.target instanceof Button) { 
+   String s = (String)o; 
+   if (s.equals("Change Color")) { 
+    if (red) { 
+       output.appendText("Changing to red...\n"); 
+     float[] val = new float[3]; 
+     val[0] = 1.0f; 
+     val[1] = 0.0f; 
+     val[2] = 0.0f; 
+     diffuseColor.setValue(val); 
+     red = false; 
+    } 
+    else { 
+       output.appendText("Changing to blue...\n"); 
+     float[] val = new float[3]; 
+     val[0] = 0.0f; 
+     val[1] = 0.0f; 
+     val[2] = 1.0f; 
+     diffuseColor.setValue(val); 
+     red = true; 
+    } 
+     } 
+     } 
+  return true; 
+ }
+}

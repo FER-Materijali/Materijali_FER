@@ -1,0 +1,61 @@
+#VRML V2.0 utf8
+#
+#  Donut
+#  donut.wrl
+#        by David R. Nadeau
+#        published in "The VRML 2.0 Sourcebook" by Ames, Nadeau, and Moreland
+#
+#  Illustrate the use of an Extrusion to build a donut (torus).
+#
+
+WorldInfo {
+	title "Donut"
+	info [ "Copyright (c) 1997, Andrea L. Ames, David R. Nadeau, John L. Moreland" ]
+}
+
+Viewpoint {
+	position 0.0 0.0 11.0
+	description "Entry view"
+}
+
+NavigationInfo {
+	type [ "EXAMINE", "ANY" ]
+	headlight TRUE
+}
+
+Shape {
+	appearance Appearance {
+		material Material {
+			diffuseColor 1.0 0.0 1.0
+		}
+	}
+	geometry Extrusion {
+		creaseAngle 1.57
+		beginCap FALSE
+		endCap   FALSE
+		crossSection [
+		# Circle
+			 1.00  0.00,   0.92 -0.38,
+			 0.71 -0.71,   0.38 -0.92,
+			 0.00 -1.00,  -0.38 -0.92,
+			-0.71 -0.71,  -0.92 -0.38,
+			-1.00 -0.00,  -0.92  0.38,
+			-0.71  0.71,  -0.38  0.92,
+			 0.00  1.00,   0.38  0.92,
+			 0.71  0.71,   0.92  0.38,
+			 1.00  0.00
+		]
+		spine [
+		# Circle
+			 2.00 0.0  0.00,   1.85 0.0 0.77,
+			 1.41 0.0  1.41,   0.77 0.0 1.85,
+			 0.00 0.0  2.00,  -0.77 0.0 1.85,
+			-1.41 0.0  1.41,  -1.85 0.0 0.77,
+			-2.00 0.0  0.00,  -1.85 0.0 -0.77,
+			-1.41 0.0 -1.41,  -0.77 0.0 -1.85,
+			 0.00 0.0 -2.00,   0.77 0.0 -1.85,
+			 1.41 0.0 -1.41,   1.85 0.0 -0.77,
+			 2.00 0.0  0.00,
+		]
+	}
+}

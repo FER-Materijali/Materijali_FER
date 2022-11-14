@@ -1,0 +1,129 @@
+<HTML>
+<HEAD>
+<TITLE>Using the JavaScript examples</TITLE>
+</HEAD>
+<BODY>
+<BODY BGCOLOR=#000000 TEXT=#FFFFFF       LINK=#FFFFFF ALINK=#888888       VLINK=#888888>
+
+
+<FONT COLOR=#FFFF00 SIZE=+1>
+<CENTER><b><i>Introduction to VRML 97</i></b></CENTER>
+</FONT>
+
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>Using the JavaScript examples</I></B></CENTER>
+</FONT>
+<CENTER><IMG SRC="../images/red.jpg" WIDTH=70% HEIGHT=2></CENTER>
+<p>
+<font color=#FFFFFF>
+
+<DL>
+
+<font size=+0>
+<p>
+<dd>
+These tutorial notes include several VRML worlds that use
+JavaScript program scripts within <font color=#00FF00><tt>Script</tt></font> nodes.
+The text for these program scripts is included directly within
+the <font color=#00FF00><tt>Script</tt></font> node within the VRML file.
+</dd>
+
+<p>
+<dt><font color=#FFFF00 size=+1><b>JavaScript support</b></font></dt>
+<dd>
+<p>
+The VRML 97 specification does not require that a VRML browser
+support the use of JavaScript to create program scripts for
+<font color=#00FF00><tt>Script</tt></font> nodes.
+Fortunately, most VRML browsers do support JavaScript program scripts,
+though you should check your VRML browser's release notes to be sure
+it is JavaScript-enabled.
+<p>
+Some VRML browsers, particularly those from Cosmo Software (Silicon Graphics),
+support
+a derivative of JavaScript called <em>VRMLscript</em>.  The language
+is essentially identical to JavaScript.  Because of Cosmo Software's
+strength in the VRML market, most VRML browser vendors have modified
+their VRML browsers to support VRMLscript as well as JavaScript.
+<p>
+JavaScript and VRMLscript program scripts are included as text
+within the
+<font color=#00FF00><tt>url</tt></font> field of a
+<font color=#00FF00><tt>Script</tt></font> node.  To indicate the
+program script's language, the field value starts with either
+"<font color=#00FF00><tt>javascript:</tt></font>" for JavaScript,
+or "<font color=#00FF00><tt>vrmlscript:</tt></font>" for VRMLscript, like this:
+<p>
+<dl>
+	<dd><font color=#00FF00><pre>Script {
+    field SFFloat bounceHeight 1.0
+    eventIn SFFloat set_fraction
+    eventOut SFVec3f value_changed
+
+    url "<b>vrmlscript:</b>
+        function set_fraction( frac, tm ) {
+            y = 4.0 * bounceHeight * frac * (1.0 - frac);
+            value_changed[0] = 0.0;
+            value_changed[1] = y;
+            value_changed[2] = 0.0;
+        }"
+}</pre></font>
+</dd></dl>
+<p>
+For compatibility with Cosmo Software VRML browsers, all JavaScript
+program script examples in these notes are
+tagged as "<font color=#00FF00><tt>vrmlscript:</tt></font>",
+like the above example.  If you have a VRML browser that does not
+support VRMLscript, but does support JavaScript, then you can convert
+the examples to JavaScript simply by changing the tag
+"<font color=#00FF00><tT>vrmlscript:</tt></font>"
+to "<font color=#00FF00><tT>javascript:</tt></font>" like this:
+<p>
+<dl>
+	<dd><font color=#00FF00><pre>Script {
+    field SFFloat bounceHeight 1.0
+    eventIn SFFloat set_fraction
+    eventOut SFVec3f value_changed
+
+    url "<b>javascript:</b>
+        function set_fraction( frac, tm ) {
+            y = 4.0 * bounceHeight * frac * (1.0 - frac);
+            value_changed[0] = 0.0;
+            value_changed[1] = y;
+            value_changed[2] = 0.0;
+        }"
+}</pre></font>
+</dd></dl>
+
+</dd>
+
+
+<p>
+<dt><font color=#FFFF00 size=+1><b>What if my VRML browser doesn't support JavaScript?</b></font></dt>
+<dd>
+<p>
+If your VRML browser doesn't support JavaScript or VRMLscript, then
+those worlds that
+use these languages will produce an error when loaded into your VRML browser.
+This is unfortunate since JavaScript or VRMLscript is an essential
+feature that all VRML browsers should support.  Perhaps you should
+consider getting a different VRML browser...
+<p>
+If you can't get another VRML browser right now, there are only a
+few VRML worlds in these tutorial notes that you will not be able to view.
+Those worlds are contained as examples in the following tutorial sections:
+<p>
+<ul>
+	<li>Introducing script use
+	<li>Writing program scripts with JavaScript
+	<li>Creating new node types
+</ul>
+<p>
+So, if you don't have a VRML browser with JavaScript or VRMLscript support,
+just skip the above sections and everything will be fine.
+</dd>
+
+</DL>
+
+</BODY>
+</HTML>

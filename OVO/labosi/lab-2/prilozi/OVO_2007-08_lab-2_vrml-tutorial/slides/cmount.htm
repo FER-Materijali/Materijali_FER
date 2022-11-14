@@ -1,0 +1,115 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>cmount.wrl</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Controlling color on coordinate-based geometry</CENTER></FONT>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>cmount.wrl</I></B></CENTER></FONT>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<PRE>	
+<FONT COLOR=#00FF00 SIZE=+1>
+#VRML V2.0 utf8
+#
+#  Simple colored mountain
+#  cmount.wrl
+#        by David R. Nadeau
+#        published in "The VRML 2.0 Sourcebook" by Ames, Nadeau, and Moreland
+#
+#  Illustrate the use of an ElevationGrid to build a colored mountain.  Use a
+#  very small grid so the code is easy to read and modify.
+#
+
+WorldInfo {
+	title "Simple colored mountain"
+	info [ "Copyright (c) 1997, Andrea L. Ames, David R. Nadeau, John L. Moreland" ]
+}
+
+Viewpoint {
+	position 4.5 4.0 15.0
+	orientation 1.0 0.0 0.0  -0.2
+	description "Entry view"
+}
+NavigationInfo {
+	type [ "EXAMINE", "ANY" ]
+	headlight TRUE
+}
+
+Shape {
+	appearance Appearance {
+		material Material { }
+	}
+	geometry ElevationGrid {
+		xDimension  9
+		zDimension  9
+		xSpacing    1.0
+		zSpacing    1.0
+		solid       FALSE
+		height [
+			0.0, 0.0, 0.5, 1.0, 0.5, 0.0, 0.0, 0.0, 0.0,
+			0.0, 0.0, 0.0, 0.0, 2.5, 0.5, 0.0, 0.0, 0.0,
+			0.0, 0.0, 0.5, 0.5, 3.0, 1.0, 0.5, 0.0, 1.0,
+			0.0, 0.0, 0.5, 2.0, 4.5, 2.5, 1.0, 1.5, 0.5,
+			1.0, 2.5, 3.0, 4.5, 5.5, 3.5, 3.0, 1.0, 0.0,
+			0.5, 2.0, 2.0, 2.5, 3.5, 4.0, 2.0, 0.5, 0.0,
+			0.0, 0.0, 0.5, 1.5, 1.0, 2.0, 3.0, 1.5, 0.0,
+			0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 1.5, 0.5,
+			0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0,
+		]
+		colorPerVertex TRUE
+		color Color {
+			color [
+				0.0 0.3 1.0,  0.0 0.3 1.0,  0.0 0.5 0.1,
+				0.2 0.6 0.0,  0.0 0.5 0.1,  0.0 0.3 1.0,
+				0.0 0.3 1.0,  0.0 0.3 1.0,  0.0 0.3 1.0,
+				
+				0.0 0.3 1.0,  0.0 0.3 1.0,  0.0 0.3 1.0,
+				0.0 0.3 1.0,  0.5 0.4 0.0,  0.0 0.5 0.1,
+				0.0 0.3 1.0,  0.0 0.3 1.0,  0.0 0.3 1.0,
+				
+				0.0 0.3 1.0,  0.0 0.3 1.0,  0.0 0.5 0.1,
+				0.0 0.5 0.1,  0.5 0.4 0.0,  0.2 0.6 0.0,
+				0.0 0.5 0.1,  0.0 0.3 1.0,  0.2 0.6 0.0,
+				
+				0.0 0.3 1.0,  0.0 0.3 1.0,  0.0 0.5 0.1,
+				0.4 0.3 0.1,  0.7 0.7 0.7,  0.5 0.4 0.0,
+				0.2 0.6 0.1,  0.3 0.6 0.6,  0.0 0.5 0.1,
+				
+				0.2 0.6 0.0,  0.5 0.4 0.0,  0.5 0.4 0.0,
+				0.7 0.7 0.7,  0.8 0.8 0.8,  0.5 0.5 0.7,
+				0.5 0.5 0.7,  0.2 0.6 0.0,  0.0 0.3 1.0,
+				
+				0.0 0.5 0.1,  0.2 0.6 0.1,  0.2 0.6 0.1,
+				0.2 0.6 0.1,  0.5 0.5 0.7,  0.7 0.7 0.7,
+				0.5 0.4 0.0,  0.0 0.5 0.1,  0.0 0.3 1.0,
+				
+				0.0 0.5 0.1,  0.0 0.3 1.0,  0.0 0.5 0.1,
+				0.2 0.6 0.1,  0.2 0.6 0.0,  0.5 0.4 0.0,
+				0.5 0.5 0.7,  0.2 0.6 0.0,  0.0 0.3 1.0,
+				
+				0.0 0.3 1.0,  0.0 0.3 1.0,  0.0 0.3 1.0,
+				0.0 0.3 1.0,  0.0 0.3 1.0,  0.0 0.5 0.1,
+				0.5 0.4 0.0,  0.2 0.6 0.0,  0.0 0.5 0.1,
+				
+				0.0 0.3 1.0,  0.0 0.3 1.0,  0.0 0.3 1.0,
+				0.0 0.3 1.0,  0.0 0.3 1.0,  0.0 0.3 1.0,
+				0.0 0.5 0.1,  0.0 0.3 1.0,  0.0 0.3 1.0,
+			]
+		}
+	}
+}
+</FONT></PRE>
+</BODY>
+</HTML>

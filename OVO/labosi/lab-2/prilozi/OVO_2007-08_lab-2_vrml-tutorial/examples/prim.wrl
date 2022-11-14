@@ -1,0 +1,198 @@
+#VRML V2.0 utf8
+#
+#  VRML Primitives
+#  prim.wrl
+#        by David R. Nadeau
+#
+#  This file highlights the VRML primitives, placing each one above
+#  a gothic pedestal.  Of note is that the pedestal itself is built using
+#  only the primitives.
+#
+
+WorldInfo {
+    title "VRML Primitives"
+    info [ "Copyright (c) 1997, David R. Nadeau" ]
+}
+
+Viewpoint {
+    position 5.0 1.6 8.0
+    orientation 0.0 1.0 0.0 0.52
+    description "Entry View"
+}
+NavigationInfo {
+    type [ "WALK", "ANY" ]
+    headlight FALSE
+}
+
+Background {
+    skyColor [
+        0.0 0.0 0.0,
+        0.0 0.0 0.0,
+        0.0 0.1 0.5,
+        0.0 0.0 0.0,
+    ]
+    skyAngle [
+        1.37,
+        1.57,
+        1.77,
+    ]
+}
+
+
+#
+#  Light Sources
+#
+PointLight {
+    ambientIntensity 0.2
+    color 0.7 0.7 0.7
+    location 0.0 8.0 10.0
+}
+
+
+
+#
+#  Primitives on pedestals
+#
+# Box
+Transform {
+    translation -3.0 0.0 0.0
+    children [
+	# Pedestal
+	DEF Pedestal Inline {
+	    url "pedestal.wrl"
+	}
+	# Box Primitive
+	Transform {
+	    translation 0.0 2.5 0.0
+	    scale 0.375 0.375 0.375
+	    children [
+		Shape {
+		    appearance Appearance {
+			material Material { diffuseColor 1.0 0.2 0.2 }
+		    }
+		    geometry Box { }
+		}
+	    ]
+	}
+    ]
+}
+
+# Cone
+Transform {
+    translation -1.0 0.0 0.0
+    children [
+	# Pedestal
+	USE Pedestal,
+	# Cone Primitive
+	Transform {
+	    translation 0.0 2.5 0.0
+	    scale 0.375 0.375 0.375
+	    children [
+		Shape {
+		    appearance Appearance {
+			material Material { diffuseColor 0.0 1.0 0.0 }
+		    }
+		    geometry Cone { }
+		}
+	    ]
+	}
+    ]
+}
+
+# Cylinder
+Transform {
+    translation 1.0 0.0 0.0
+    children [
+	# Pedestal
+	USE Pedestal,
+	# Cylinder Primitive
+	Transform {
+	    translation 0.0 2.5 0.0
+	    scale 0.375 0.375 0.375
+	    children [
+		Shape {
+		    appearance Appearance {
+			material Material { diffuseColor 0.0 0.8 1.0 }
+		    }
+		    geometry Cylinder { }
+		}
+	    ]
+	}
+    ]
+}
+
+# Sphere
+Transform {
+    translation 3.0 0.0 0.0
+    children [
+	# Pedestal
+	USE Pedestal,
+	# Sphere Primitive
+	Transform {
+	    translation 0.0 2.5 0.0
+	    scale 0.375 0.375 0.375
+	    children [
+		Shape {
+		    appearance Appearance {
+			material Material { diffuseColor 1.0 1.0 0.0 }
+		    }
+		    geometry Sphere { }
+		}
+	    ]
+	}
+    ]
+}
+
+# Text
+Transform {
+    translation 5.0 0.0 0.0
+    children [
+	# Pedestal
+	USE Pedestal,
+	# Sphere Primitive
+	Transform {
+	    translation 0.0 2.2 0.0
+	    scale 0.375 0.375 0.375
+	    children [
+		Shape {
+		    appearance Appearance {
+			material Material { diffuseColor 1.0 1.0 1.0 }
+		    }
+		    geometry Text {
+		        string "Text"
+		        fontStyle FontStyle {
+		            size 2.0
+		            style "BOLD"
+		            family "SERIF"
+		            justify "MIDDLE"
+		        }
+		    }
+		}
+	    ]
+	}
+    ]
+}
+
+
+#
+#  Floor
+#
+Shape {
+    appearance Appearance {
+	material Material { ambientIntensity 0.1 }
+	texture ImageTexture { url "stone2.jpg" }
+	textureTransform TextureTransform { scale 20.0 20.0 }
+    }
+    geometry IndexedFaceSet {
+	coord Coordinate {
+	    point [
+		-10.0 0.0  10.0,
+		 10.0 0.0  10.0,
+		 10.0 0.0 -10.0,
+		-10.0 0.0 -10.0,
+	    ]
+	}
+	coordIndex [ 0, 1, 2, 3, -1, ]
+	solid FALSE
+    }
+}

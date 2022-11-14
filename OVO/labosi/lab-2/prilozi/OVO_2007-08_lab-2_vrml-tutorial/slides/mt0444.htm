@@ -1,0 +1,94 @@
+
+<HTML>
+<HEAD>
+<!-- Created by mktalk.pl on 4/20/98 at 6:30:21 PM -->
+<TITLE>Accessing eventOuts from Java</TITLE>
+</HEAD>
+
+<BODY
+	
+	BGCOLOR=#000000
+	TEXT=#FFFFFF
+	LINK=#FFFFFF
+	ALINK=#00FF00
+	VLINK=#888888
+>
+<TABLE WIDTH=100%
+	BORDER=0
+	CELLSPACING=0
+	CELLPADDING=0
+>
+<TR >
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0000.htm><B><IMG SRC="../images/arwtoc2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0435.htm><B><IMG SRC="../images/arwndx2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0443.htm><B><IMG SRC="../images/arwprev2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=24%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	<A HREF=mt0445.htm><B><IMG SRC="../images/arwnext2.gif" BORDER=0 WIDTH=24 HEIGHT=24></B></A>
+</TD>
+<TD ALIGN=CENTER WIDTH=4%>
+	<FONT
+		COLOR=#FFFFFF
+		SIZE=-1
+	>
+	444
+</TD>
+</TR>
+</TABLE>
+<P>
+
+<FONT COLOR=#FFFF00 SIZE=+0>
+<CENTER>Writing program scripts with Java</CENTER>
+<FONT COLOR=#FFFF00 SIZE=+3>
+<CENTER><B><I>Accessing eventOuts from Java</I></B></CENTER>
+<CENTER><IMG SRC="../images/red.jpg" HEIGHT=2 WIDTH=70% BORDER=0></CENTER>
+<P>
+<FONT COLOR=#FFFFFF SIZE=+2>
+<DL>
+
+<dd><li>Each interface eventOut can be read and written
+<dl>
+	<dd><li>Call <B><TT><FONT COLOR=#FF9900 SIZE=+2>getEventOut</FONT></TT></B> to
+	get an eventOut object
+	<dl>
+		<dd><B><TT><FONT COLOR=#FF9900 SIZE=+2><pre>obj = (SFVec3f) getEventOut( "value_changed" );</pre></FONT></TT></B>
+	</dl>
+	<p>
+	<dd><li>Call <B><TT><FONT COLOR=#FF9900 SIZE=+2>getValue</FONT></TT></B> to get
+	the last event sent
+	<dl>
+		<dd><B><TT><FONT COLOR=#FF9900 SIZE=+2><pre>lastval = obj.getValue( );</pre></FONT></TT></B>
+	</dl>
+	<p>
+	<dd><li>Call <B><TT><FONT COLOR=#FF9900 SIZE=+2>setValue</FONT></TT></B> to send
+	an event
+	<dl>
+		<dd><B><TT><FONT COLOR=#FF9900 SIZE=+2><pre>obj.setValue( newval );</pre></FONT></TT></B>
+	</dl>
+</dl>
+
+
+
+</BODY>
+</HTML>

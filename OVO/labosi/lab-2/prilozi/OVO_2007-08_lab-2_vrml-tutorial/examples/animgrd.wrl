@@ -1,0 +1,71 @@
+#VRML V2.0 utf8
+#
+#  animgrd.wrl
+#  Animated grid
+#	by John L. Moreland
+#
+#  This world illustrates the use of a script to change the whichChoice
+#  field of a Switch node.  When animated, this enables switching among
+#  different pieces of geometry, such as different elevation grids,
+#  like in this example.
+#
+
+WorldInfo {
+    title "Animated grid"
+    info [ "Copyright (c) 1998, John L. Moreland" ]
+}
+
+Viewpoint {
+	position 0.0 12.0 12.0
+	orientation 1.0 0.0 0.0 -0.83
+	description "Entry view"
+}
+
+NavigationInfo {
+	type "EXAMINE"
+	headlight FALSE
+}
+
+DirectionalLight {
+	direction 1.0 -1.0 -1.0
+}
+DirectionalLight {
+	direction -1.0 1.0 1.0
+}
+
+DEF Grids Switch {
+	whichChoice 0
+	# animated whichChoice
+	choice [
+		Inline { url "ter00.wrl" bboxSize 14.0 5.0 14.0 }
+		Inline { url "ter01.wrl" bboxSize 14.0 5.0 14.0 }
+		Inline { url "ter02.wrl" bboxSize 14.0 5.0 14.0 }
+		Inline { url "ter03.wrl" bboxSize 14.0 5.0 14.0 }
+		Inline { url "ter04.wrl" bboxSize 14.0 5.0 14.0 }
+		Inline { url "ter05.wrl" bboxSize 14.0 5.0 14.0 }
+		Inline { url "ter06.wrl" bboxSize 14.0 5.0 14.0 }
+		Inline { url "ter07.wrl" bboxSize 14.0 5.0 14.0 }
+		Inline { url "ter08.wrl" bboxSize 14.0 5.0 14.0 }
+		Inline { url "ter09.wrl" bboxSize 14.0 5.0 14.0 }
+	]
+}
+
+DEF Clock TimeSensor {
+	cycleInterval 2.0
+	startTime 1.0
+	stopTime 0.0
+	loop TRUE
+}
+
+DEF Switcher Script {
+	field    SFInt32 numberOfChoices 10
+	eventIn  SFFloat set_fraction
+	eventOut SFInt32 choice_changed
+	url "vrmlscript:
+		function set_fraction( frac, stamp ) {
+			choice_changed = frac * numberOfChoices;
+		}"
+}
+
+ROUTE Clock.fraction_changed  TO Switcher.set_fraction
+ROUTE Switcher.choice_changed TO Grids.set_whichChoice

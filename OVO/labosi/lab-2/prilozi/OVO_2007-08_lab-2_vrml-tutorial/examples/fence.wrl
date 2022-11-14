@@ -1,0 +1,81 @@
+#VRML V2.0 utf8
+#
+#  Chain-link fence
+#  fence.wrl
+#        by David R. Nadeau
+#        published in "The VRML 2.0 Sourcebook" by Ames, Nadeau, and Moreland
+#
+#  Illustrate the use of rotation and scaling within texture transforms.
+#
+
+Viewpoint {
+	position 0.0 0.0 5.0
+	description "Entry view"
+}
+
+NavigationInfo {
+	type [ "EXAMINE", "ANY" ]
+	headlight TRUE
+}
+
+# Chain-link fence
+Shape {
+    appearance Appearance {
+	material Material { }
+	texture ImageTexture { url "grill.png" }
+	textureTransform TextureTransform {
+	    rotation .7853981750
+	    scale 8.5 8.5
+	    center 0.5 0.5
+	}
+    }
+    geometry IndexedFaceSet {
+	solid FALSE
+	coord Coordinate {
+	    point [
+		-4.0 -1.0 0.1,  -2.0 -1.0 0.1,
+		-2.0  1.0 0.1,  -4.0  1.0 0.1,
+
+		-2.0 -1.0 0.1,   0.0 -1.0 0.1,
+		 0.0  1.0 0.1,  -2.0  1.0 0.1,
+
+		 0.0 -1.0 0.1,   2.0 -1.0 0.1,
+		 2.0  1.0 0.1,   0.0  1.0 0.1,
+
+		 2.0 -1.0 0.1,   4.0 -1.0 0.1,
+		 4.0  1.0 0.1,   2.0  1.0 0.1,
+	    ]
+	}
+	coordIndex [
+             0,  1,  2,  3, -1
+             4,  5,  6,  7, -1,
+             8,  9, 10, 11, -1,
+            12, 13, 14, 15,
+        ]
+	texCoord TextureCoordinate {
+	    point [
+		0.0 0.0,  1.0 0.0,
+		1.0 1.0,  0.0 1.0,
+	    ]
+	}
+	texCoordIndex [
+            0, 1, 2, 3, -1,
+            0, 1, 2, 3, -1,
+            0, 1, 2, 3, -1,
+            0, 1, 2, 3,
+        ]
+    }
+}
+
+# Fence posts
+DEF Post Shape {
+    appearance Appearance {
+	material Material { }
+    }
+    geometry Cylinder {
+	height 2.0
+	radius 0.1
+    }
+}
+Transform { translation -4.0 0.0 0.0  children USE Post }
+Transform { translation  4.0 0.0 0.0  children USE Post }
