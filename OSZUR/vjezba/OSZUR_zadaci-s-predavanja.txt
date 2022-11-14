@@ -1,0 +1,95 @@
+1.
+--
+
+#define INC() \
+  do { a1++; if (a1 == 0) a2++; } while (0);
+
+2.
+--
+
+#define SET_SIZE(obj, struct_name, size) ( (obj).##struct_name##_size = size )
+
+3.
+--
+
+#define NONZERO(a,b,c,d) (a?a:(b?b:(c?c:(d?d:-1))))
+
+4.
+--
+
+ldscript.ld:
+------------
+
+ROM = 0x100
+RAM = 0x100000
+
+SECTIONS {
+	.init ROM : AT(ROM) {
+		init.o ( * )
+	}
+	
+	start = ROM + SIZEOF( .init );
+	
+	.ostalo RAM : AT(start) {
+		* ( * )
+	}
+
+	velicina = SIZEOF( .ostalo )
+}
+
+init.c:
+-------
+
+void init() {
+	extern char ROM, RAM, start, velicina;
+	
+	char *src = &start;
+	chat *dst = &RAM;
+	
+	for (i = 0; i < (size_t) &velicina; i++)
+		dst[i] = src[i];
+}
+
+for (; src < &start + &velicina;)
+	*dst++ = *src++;
+
+5.
+--
+
+#define N 30
+
+void (*hnd[N]) (int irq); // knd[i] = NULL
+char *base = 0x4000;
+
+int rq[N], cp = N + 1, scp[N]; // rq[i] = 0, scp[i] = 0
+
+void register (int irq, void *handler) {
+	hnd[irq] = handler;
+}
+
+void interrupt_handler() {
+	int i, hprq = cp;
+	
+	for (i = 0; i < N; i++) {
+		if (base[i]) {
+			rq[i] = 1;
+			base[i] = 0;
+
+			if (i < hprq)
+				hprq = i;
+	}
+
+	while (hprq < cp) {
+		rq[hprq] = 0;
+		scp[hprq] = cp;
+		cp = hprq;
+		enable_interrupts();
+		hnd[cp](cp);
+		disable_interrupts();
+		cp = scp[hprq];
+
+		for (hprq = 0; hprq < cp; hprq++)
+			if (rq[hprq])
+				break;
+	}
+}
