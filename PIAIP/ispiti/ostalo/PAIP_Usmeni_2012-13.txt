@@ -1,0 +1,17 @@
+1. Y-D start motora -> el. i relegna shema
+2. podjela tokova informacija 
+3. karakteristika rastalnih osiguraca
+2. 3 vrste projekata (misli se na financijski, marketinški, tehnièki)
+3. Zaštitni ureðaj diferencijalne zaštite ( FID sklopka), princip rada...
+1. Reverziranje motora, energetska i strujna shema
+2. Vrste projektnih crteža (barem 3) i objasniti
+3. Motorska zaštitna sklopka
+(izmeðu ostaloga još pita (Vražiæ): bimetali, sve vezano uz tokove informacija (vrste primarnih, sekundarnih, tercijarnih, koje vrste tercijarnih i sl.), gromobrani, rastalni osiguraèi. FID-sklopke, karakteristika osiguraèa, koje sve informacije trebamo reæi prodavaèu kada kupujemo osiguraèe, kojim ureðajem štitimo od prenapona(odvodnici prenapona/varistori))...
+eto toliko (alen iz plivaèke ekipe voli deèke)
+1. Energetska shema i upravljaèka AM za dvije brzine ili nešto tak - (jedna grana prazna - druga grana sa otpornicima serijski poveznani sa uzbudom)
+2. Koja je razlika sheme vezivanja i prikljuène sheme
+3. Bimetalna zaštita - (bok caplja) tu je trebalo prièati da je to strujna zaštita koja radi na termièkom principu
+Ako si kod Vrražiæa onda æe ti zadati da nacrtaš spoj trokut-zvijezda ili reverziranje i nacrtati u relejnoj logici...bio je i zadatak da se nacrta karakteristika osiguraèa....
+Pita što je FID-ovka,gdje se ugraðuje, (krisbi je bio ovdje... 1.2.2013... 23:47) koje sheme imamo(jednopolne...)"
+osiguraèi - vrste zaštite
+tokovi u industrijskom postrojenju
