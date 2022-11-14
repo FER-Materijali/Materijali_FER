@@ -1,0 +1,4 @@
+Treæe pitanje nisam stigao uslikat, 8. pitanje je "Što od navedenoga mogu biti veze(relacije) dva obrasca uporabe? 
+a) asocijacija, b)include, c) extend, d) generalizacija
+
+Odgovori su: b, c, --, c, c, a, c, bcd, d, a, ac, b
