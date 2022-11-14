@@ -1,0 +1,103 @@
+Naslov|Reziser|Glumac|Jezik zvuka|Omjer slike|Regija|Trajanje|Ocjena
+enim nisl elementum|Marvin Mckay|Clementine Burks|Hrvatski|4:3|2|45|5
+enim nisl elementum|Yen Bass|Clementine Burks|Hrvatski|4:3|2|45|5
+nec, cursus a, enim. Suspendisse aliquet,|Neville Mccullough|Madaline Craig|Hrvatski|2.35:1|4|46|3
+Duis risus odio,|Orlando Hart|Heather Sexton|Hrvatski|2.35:1|7|47|3
+auctor|Dillon Adkins|Gretchen Bates|Hrvatski|4:3|4|48|1
+egestas|Lawrence Frazier|Ivana Harper|Hrvatski|4:3|9|49|3
+Fusce diam nunc, ullamcorper eu, euismod|Hyatt Potts|Elaine Cox|Hrvatski|2.35:1|2|50|2
+et, eros. Proin ultrices.|Bruce Preston|Xantha Travis|Hrvatski|16:9|6|51|5
+neque. In ornare sagittis|Solomon Houston|Phyllis Kline|Hrvatski|4:3|1|52|2
+augue|Bruno Barlow|TaShya Deleon|Hrvatski|4:3|0|53|5
+orci lacus vestibulum lorem, sit amet|Chaim Mcgee|Gail Crawford|Hrvatski|16:9|9|54|4
+Sed id|Clayton Trujillo|Halee Glass|Hrvatski|16:9|7|55|1
+hendrerit|Omar Hutchinson|Yen Bass|Hrvatski|4:3|7|56|5
+turpis. In condimentum. Donec at arcu.|Arden Greer|Ulla Harvey|Hrvatski|4:3|4|57|2
+gravida. Aliquam|Price Taylor|Paloma Carson|Hrvatski|4:3|1|58|4
+amet,|Russell Parks|Katell Diaz|Hrvatski|4:3|6|59|2
+elit erat vitae|Knox Short|Lenore Thompson|Hrvatski|16:9|4|60|1
+luctus|Lamar Glover|Hollee Ballard|Hrvatski|16:9|ALL|61|1
+Donec fringilla. Donec feugiat metus sit|Tad Sears|Jenna Silva|Hrvatski|2.35:1|3|62|2
+lacinia at, iaculis quis, pede.|Zachary Schultz|Savannah Puckett|Hrvatski|2.35:1|7|63|3
+Integer|Byron Ramsey|Maia Wells|Hrvatski|4:3|7|64|1
+Donec consectetuer mauris id sapien.|David Atkins|Anjolie Johnston|Hrvatski|16:9|5|65|4
+lectus pede,|Burton Payne|Naida Hogan|Hrvatski|2.35:1|3|66|4
+tellus non magna. Nam ligula|Vaughan Shepard|Kylie Warren|Hrvatski|2.35:1|8|67|3
+aliquet odio. Etiam ligula tortor, dictum|Alexander Fowler|Alisa Mays|Hrvatski|4:3|0|68|1
+Quisque ac libero nec ligula|Kyle Rivas|Camille Ray|Hrvatski|16:9|0|69|2
+arcu vel quam dignissim|Guy Horne|Savannah Chambers|Hrvatski|2.35:1|4|70|5
+magna a neque. Nullam ut nisi|Lamar Watson|Adria Johnston|Hrvatski|4:3|2|71|5
+turpis. Aliquam|Kamal Dillon|Victoria Richard|Hrvatski|16:9|6|72|5
+lacus vestibulum lorem, sit amet ultricies|Alec Parsons|Shelby Becker|Hrvatski|2.35:1|6|73|2
+pede,|Quentin Bonner|Caryn Hood|Hrvatski|4:3|1|74|2
+montes, nascetur ridiculus mus.|Chaney Guzman|Nyssa Cross|Hrvatski|2.35:1|8|75|2
+convallis est, vitae|John Deleon|Bryar Gaines|Hrvatski|16:9|2|76|3
+luctus|Eaton Walls|Jenette Boyer|Hrvatski|16:9|4|77|3
+In scelerisque scelerisque dui.|Colorado Lawson|Deanna Sosa|Hrvatski|4:3|ALL|78|4
+Vivamus euismod urna.|Jerry Kirby|Basia Osborne|Hrvatski|4:3|4|79|2
+Mauris magna.|Raymond Byrd|Cecilia Vaughn|Hrvatski|2.35:1|7|80|4
+dui quis accumsan convallis, ante|Ross Hayes|Fallon Kennedy|Hrvatski|16:9|0|81|1
+massa. Mauris vestibulum,|Nehru Berry|Brynne Savage|Hrvatski|2.35:1|0|82|3
+vestibulum,|Orlando Ramos|MacKenzie Warner|Hrvatski|16:9|0|83|2
+dolor|Shad Bradford|Lacota Schultz|Hrvatski|2.35:1|6|84|2
+ut, molestie in, tempus eu,|Fritz Bishop|Victoria Farmer|Hrvatski|16:9|3|85|4
+tortor, dictum eu, placerat eget,|Branden Giles|Josephine Strong|Hrvatski|2.35:1|1|86|5
+ridiculus mus.|Kyle Henry|Xyla Pate|Hrvatski|4:3|0|87|2
+Etiam ligula tortor, dictum eu,|Conan Hunt|Idona Weaver|Hrvatski|16:9|1|88|3
+nibh. Donec est mauris, rhoncus id,|Dale Fitzgerald|Claudia Hawkins|Hrvatski|4:3|6|89|4
+massa|Josiah Hughes|Dai Cole|Hrvatski|4:3|ALL|90|5
+Nam ac nulla. In tincidunt congue|Mark Hardin|Denise Weeks|Hrvatski|4:3|4|91|2
+euismod in,|Christian Carr|Rhonda Goodwin|Hrvatski|4:3|8|92|4
+scelerisque neque. Nullam nisl. Maecenas malesuada|Ciaran Eaton|Mechelle Whitley|Hrvatski|4:3|1|93|5
+magna tellus faucibus leo, in|Clark Donovan|Kessie Page|Hrvatski|16:9|6|94|2
+Fusce feugiat. Lorem ipsum|Ahmed Holt|Whoopi Hammond|Hrvatski|4:3|2|95|5
+eu, ligula. Aenean|Galvin Briggs|Yolanda Vargas|Hrvatski|16:9|7|96|4
+sem,|Tucker Zimmerman|Haley Anderson|Hrvatski|2.35:1|3|97|4
+Nunc pulvinar arcu et|Cedric Knox|Kylie Kelly|Hrvatski|16:9|7|98|1
+eget|Brent Hawkins|Nora Castaneda|Hrvatski|16:9|8|99|2
+Cum sociis natoque penatibus|Leonard Dodson|Deanna Mendoza|Hrvatski|16:9|8|100|2
+Lorem ipsum|Ulysses Walter|Laurel Maddox|Hrvatski|16:9|3|101|1
+Class|Wade Lucas|Kimberly Whitney|Hrvatski|16:9|9|102|3
+Cras sed|Hector Good|Cheyenne Holman|Hrvatski|2.35:1|1|103|4
+lobortis|Otto Knowles|Alma Leblanc|Hrvatski|16:9|0|104|5
+tristique neque venenatis lacus. Etiam|Cole King|Lois Hopkins|Hrvatski|4:3|5|105|2
+egestas. Aliquam fringilla cursus|Ross Bradford|Raven Hurst|Hrvatski|4:3|4|106|4
+nisl. Maecenas|Elijah Maddox|Olympia Gill|Hrvatski|4:3|ALL|107|2
+porttitor scelerisque neque. Nullam nisl. Maecenas|Kevin Cash|Shafira Montoya|Hrvatski|4:3|2|108|4
+lectus pede et|Kamal Christensen|Orli Dickson|Hrvatski|2.35:1|9|109|4
+dictum magna. Ut|Jerry Barrera|Ursula Glenn|Hrvatski|2.35:1|9|110|2
+Vestibulum ut eros non enim commodo|Reuben Price|Fatima Dorsey|Hrvatski|16:9|0|111|3
+Mauris non dui nec urna|Rahim Petersen|Sybil Rice|Hrvatski|4:3|8|112|5
+vel est tempor|Kenyon Barton|Mia Page|Hrvatski|2.35:1|8|113|5
+dolor. Nulla|Upton Carey|Ramona Medina|Hrvatski|16:9|ALL|114|2
+vulputate,|Slade Lowe|Yael Alvarez|Hrvatski|4:3|9|115|4
+mattis ornare, lectus ante dictum|Tarik Webb|Ivory Lewis|Hrvatski|16:9|9|116|5
+pede. Suspendisse dui. Fusce diam|Blaze Ellison|Nyssa Ayala|Hrvatski|4:3|7|117|5
+leo elementum sem, vitae|Charles Landry|Kelly Solis|Hrvatski|16:9|7|118|4
+eu enim. Etiam|Merrill Nielsen|Chloe Dillon|Hrvatski|2.35:1|4|119|3
+tellus id nunc interdum feugiat. Sed|Boris Marshall|Kevyn Wynn|Hrvatski|16:9|4|120|4
+erat eget ipsum. Suspendisse|Elliott Conner|Madeson Brock|Hrvatski|2.35:1|3|121|1
+dictum sapien. Aenean massa. Integer|Michael Kelly|Pascale Long|Hrvatski|4:3|9|122|2
+Curabitur|Joseph Mcpherson|Mariam Cole|Hrvatski|2.35:1|5|123|4
+aliquet odio. Etiam ligula|Joel Reilly|Mara Dixon|Hrvatski|2.35:1|6|124|1
+pellentesque a,|Castor Rasmussen|Bo Burks|Hrvatski|4:3|8|125|1
+Donec feugiat metus sit amet|Elijah Todd|Angela Peterson|Hrvatski|16:9|0|126|4
+pede. Praesent eu dui.|Edward Wooten|Minerva Strong|Hrvatski|2.35:1|0|127|3
+accumsan|Denton Underwood|Lillian Johnston|Hrvatski|2.35:1|4|128|4
+velit.|Alvin Higgins|Aiko Sharpe|Hrvatski|2.35:1|2|129|5
+ut odio|Harding Stephens|Florence Morse|Hrvatski|16:9|5|130|5
+ac urna. Ut|Keefe Mcleod|Breanna Conway|Hrvatski|16:9|6|131|3
+eros|Russell Callahan|Keelie Terry|Hrvatski|16:9|0|132|1
+sed turpis nec mauris blandit mattis.|Ali Gallagher|Bo Richardson|Hrvatski|4:3|0|133|4
+dui. Cras pellentesque. Sed dictum.|Oleg Mcmahon|Alisa Colon|Hrvatski|4:3|3|134|4
+dolor sit amet, consectetuer|Ryan Glass|Lila Fox|Hrvatski|2.35:1|9|135|5
+ut, sem. Nulla interdum.|Jasper Pope|Azalia Le|Hrvatski|16:9|7|136|4
+tincidunt, nunc ac mattis ornare, lectus|Jelani Dunn|MacKenzie Boone|Hrvatski|16:9|1|137|5
+lobortis tellus|Raymond Cleveland|April Franco|Hrvatski|2.35:1|9|138|4
+Donec luctus aliquet odio.|Christopher Baker|Leslie Velazquez|Hrvatski|4:3|4|139|4
+felis purus|Joel Ayers|Amena Bauer|Hrvatski|16:9|0|140|2
+ornare, facilisis eget, ipsum. Donec sollicitudin|Myles Glover|Kai Owen|Hrvatski|4:3|7|141|3
+dui nec urna suscipit nonummy.|Alan Carpenter|Quin Chang|Hrvatski|4:3|6|142|4
+mi, ac mattis velit|Garrett Hamilton|Sigourney Greer|Hrvatski|4:3|4|143|1
+diam eu dolor egestas|Kane Petty|Galena Little|Hrvatski|16:9|4|144|4
+diam eu dolor egestas|Kane Petty|Alan Carpenter|Hrvatski|16:9|4|144|4

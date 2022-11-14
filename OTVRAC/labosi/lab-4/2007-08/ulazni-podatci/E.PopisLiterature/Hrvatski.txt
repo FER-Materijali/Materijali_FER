@@ -1,0 +1,104 @@
+Naslov rada|Autor|Kategorija|Podrucje|Izdavac|Jezik|Recenzija|Datum izdanja
+sapien. Nunc|Nathaniel Stein|Sudjelovanje na skupu|Racunarstvo|pede nec ante|Hrvatski|Domaca|05.04.1998
+sapien. Nunc|Caesar Leon|Sudjelovanje na skupu|Racunarstvo|pede nec ante|Hrvatski|Domaca|05.04.1998
+sapien. Nunc|Dustin Torres|Sudjelovanje na skupu|Racunarstvo|pede nec ante|Hrvatski|Domaca|05.04.1998
+enim, sit amet ornare lectus justo|Bruno Hoffman|Knjiga|Racunarstvo|arcu. Vestibulum ut|Hrvatski|Medjunarodna|16.10.1996
+dis parturient montes, nascetur ridiculus|Dustin Sandoval|Sudjelovanje na skupu|Akustika|mus. Proin|Hrvatski|Medjunarodna|06.05.2004
+Aenean eget metus. In nec orci. Donec nibh.|Caesar Leon|Sudjelovanje na skupu|Telekomunikacije|mi felis, adipiscing|Hrvatski|Domaca|24.10.2000
+a, magna. Lorem ipsum dolor sit amet, consectetuer|Jonas Turner|Knjiga|Energetika|enim. Etiam|Hrvatski|Nema|03.08.2001
+In lorem.|Demetrius Cole|Doktorat|Telekomunikacije|dignissim.|Hrvatski|Medjunarodna|31.08.1995
+vehicula. Pellentesque tincidunt|Dante Ferguson|Sudjelovanje na skupu|Energetika|massa. Quisque|Hrvatski|Medjunarodna|19.10.2002
+erat. Etiam vestibulum massa rutrum|Zachary Griffith|Knjiga|Racunarstvo|dolor.|Hrvatski|Medjunarodna|22.03.2002
+lorem. Donec elementum,|Dustin Torres|Knjiga|Akustika|amet metus. Aliquam|Hrvatski|Medjunarodna|14.07.1995
+odio. Etiam ligula|Joseph Shepard|Zavrsni rad|Telekomunikacije|mattis.|Hrvatski|Domaca|21.07.1996
+Suspendisse sagittis. Nullam vitae diam. Proin dolor. Nulla|Clark Doyle|Sudjelovanje na skupu|Strojarstvo|dolor|Hrvatski|Nema|04.01.1998
+enim. Sed nulla ante, iaculis nec, eleifend|Joseph Christensen|Rad u casopisu|Telekomunikacije|vitae odio|Hrvatski|Nema|31.08.2001
+ac risus. Morbi metus.|William Velazquez|Zavrsni rad|Energetika|cursus in, hendrerit|Hrvatski|Domaca|05.05.1998
+auctor, velit eget laoreet posuere, enim nisl elementum|Jin Bowers|Sudjelovanje na skupu|Racunarstvo|orci. Donec|Hrvatski|Domaca|01.05.2001
+convallis|Amal Griffin|Rad u casopisu|Strojarstvo|gravida molestie|Hrvatski|Nema|13.07.2004
+lacus. Mauris non dui nec urna suscipit|Cade Bolton|Rad u casopisu|Racunarstvo|nec|Hrvatski|Nema|02.12.1996
+vehicula aliquet libero. Integer in magna. Phasellus dolor elit, pellentesque|Griffith Ward|Knjiga|Energetika|nisl.|Hrvatski|Domaca|21.02.2005
+est ac facilisis facilisis, magna tellus faucibus|Walker Henderson|Knjiga|Energetika|Nulla aliquet. Proin|Hrvatski|Nema|21.08.1997
+tincidunt pede ac urna.|Zachery Bender|Knjiga|Racunarstvo|urna justo faucibus|Hrvatski|Medjunarodna|12.05.2001
+non sapien molestie orci tincidunt adipiscing. Mauris molestie pharetra|Driscoll Ray|Sudjelovanje na skupu|Akustika|felis|Hrvatski|Domaca|08.01.1998
+semper, dui lectus rutrum urna, nec|Giacomo Goodwin|Doktorat|Elektrotehnika|velit. Aliquam nisl.|Hrvatski|Nema|13.08.2006
+vel est tempor bibendum. Donec|Erich Rhodes|Sudjelovanje na skupu|Strojarstvo|Sed nunc est,|Hrvatski|Nema|07.04.2007
+fringilla euismod enim. Etiam gravida|Vladimir Larson|Zavrsni rad|Strojarstvo|sed|Hrvatski|Medjunarodna|11.01.2001
+tincidunt congue|Lyle Garrett|Rad u casopisu|Akustika|libero. Proin|Hrvatski|Domaca|20.05.2003
+dui lectus rutrum urna, nec|Solomon Spears|Doktorat|Telekomunikacije|convallis ligula. Donec|Hrvatski|Domaca|03.09.2004
+orci,|Donovan Hendrix|Doktorat|Strojarstvo|lacus vestibulum lorem,|Hrvatski|Medjunarodna|15.09.2006
+odio a purus. Duis elementum, dui|Aaron Alston|Doktorat|Racunarstvo|magna|Hrvatski|Domaca|17.06.2004
+non,|Akeem Mccarty|Doktorat|Elektrotehnika|Duis cursus,|Hrvatski|Domaca|10.05.2000
+non, feugiat nec, diam. Duis mi enim,|Jonas Edwards|Sudjelovanje na skupu|Akustika|molestie dapibus ligula.|Hrvatski|Nema|08.09.2003
+nulla at sem molestie sodales. Mauris blandit enim consequat purus.|Bruce Meyer|Zavrsni rad|Strojarstvo|a|Hrvatski|Medjunarodna|06.10.1998
+accumsan interdum|Seth Dudley|Rad u casopisu|Telekomunikacije|eget, ipsum. Donec|Hrvatski|Nema|02.11.1998
+ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id|Keefe Goodwin|Rad u casopisu|Racunarstvo|sagittis felis. Donec|Hrvatski|Medjunarodna|11.06.1999
+placerat velit. Quisque varius. Nam porttitor scelerisque neque.|Elliott Stewart|Doktorat|Racunarstvo|ante dictum|Hrvatski|Nema|18.10.1996
+semper tellus id|Branden Hudson|Rad u casopisu|Telekomunikacije|vitae purus gravida|Hrvatski|Nema|09.08.1999
+enim|Griffin Carey|Doktorat|Strojarstvo|tempus risus. Donec|Hrvatski|Nema|04.10.1998
+eu nibh vulputate mauris sagittis placerat. Cras dictum|Lawrence Barrett|Zavrsni rad|Akustika|ut cursus luctus,|Hrvatski|Nema|25.02.2006
+netus et malesuada|Cole Tate|Knjiga|Racunarstvo|enim, sit|Hrvatski|Nema|02.12.2000
+Donec est mauris, rhoncus|Kirk Lowery|Knjiga|Racunarstvo|enim. Nunc|Hrvatski|Medjunarodna|06.03.2001
+sapien molestie orci tincidunt adipiscing. Mauris molestie pharetra nibh. Aliquam|Yuli Irwin|Zavrsni rad|Akustika|nec tempus scelerisque,|Hrvatski|Domaca|10.11.2006
+tincidunt|Sawyer Rosales|Rad u casopisu|Energetika|Integer|Hrvatski|Domaca|03.09.2001
+neque tellus, imperdiet non, vestibulum nec, euismod in, dolor.|Harding Middleton|Sudjelovanje na skupu|Elektrotehnika|lacus, varius et,|Hrvatski|Medjunarodna|12.09.2002
+risus. Nulla eget metus eu erat semper|Castor Sweeney|Doktorat|Akustika|arcu. Vestibulum ante|Hrvatski|Domaca|31.08.2000
+ullamcorper, nisl arcu iaculis enim, sit amet ornare lectus|Justin Bender|Sudjelovanje na skupu|Racunarstvo|justo|Hrvatski|Domaca|01.08.2004
+nec ante. Maecenas|Rudyard French|Rad u casopisu|Energetika|aliquet|Hrvatski|Medjunarodna|21.11.1997
+euismod et, commodo|Preston Hutchinson|Rad u casopisu|Akustika|magna. Cras|Hrvatski|Nema|14.07.1999
+Aliquam nec enim. Nunc|Basil Mccarthy|Zavrsni rad|Elektrotehnika|Quisque|Hrvatski|Domaca|05.06.2004
+sapien. Cras dolor dolor,|Neville Glover|Sudjelovanje na skupu|Racunarstvo|sapien. Aenean massa.|Hrvatski|Medjunarodna|21.07.2001
+volutpat. Nulla facilisis. Suspendisse commodo tincidunt nibh. Phasellus|Walker Newman|Sudjelovanje na skupu|Energetika|varius|Hrvatski|Nema|06.01.2000
+ante blandit viverra. Donec tempus, lorem fringilla ornare|Rigel Watson|Knjiga|Akustika|sit|Hrvatski|Domaca|21.07.1998
+auctor, velit eget laoreet posuere, enim nisl elementum purus,|Marshall Woods|Sudjelovanje na skupu|Energetika|mollis. Integer|Hrvatski|Domaca|05.08.1996
+imperdiet,|Richard Spencer|Rad u casopisu|Akustika|sed sem|Hrvatski|Domaca|22.06.1998
+blandit congue. In scelerisque scelerisque dui. Suspendisse ac metus|Barclay Burch|Knjiga|Telekomunikacije|lobortis quam|Hrvatski|Nema|06.01.2006
+a, enim. Suspendisse|Knox Hunt|Knjiga|Telekomunikacije|feugiat. Lorem|Hrvatski|Medjunarodna|06.08.2002
+sed tortor.|Kevin Snow|Rad u casopisu|Telekomunikacije|auctor,|Hrvatski|Medjunarodna|09.11.1997
+libero lacus, varius|Charles Tyler|Knjiga|Telekomunikacije|orci,|Hrvatski|Medjunarodna|13.05.2004
+pharetra. Quisque ac libero nec ligula|Hunter Sandoval|Knjiga|Racunarstvo|metus sit amet|Hrvatski|Medjunarodna|17.08.2004
+nec,|Ferdinand Rivas|Zavrsni rad|Elektrotehnika|metus.|Hrvatski|Medjunarodna|21.05.1995
+ligula. Aenean euismod mauris eu elit. Nulla|Evan Hicks|Knjiga|Energetika|eu|Hrvatski|Nema|25.12.2006
+faucibus orci luctus et|Graiden Schwartz|Knjiga|Strojarstvo|luctus et ultrices|Hrvatski|Domaca|02.05.1998
+dolor elit,|Michael Sanders|Rad u casopisu|Elektrotehnika|tellus. Phasellus elit|Hrvatski|Domaca|31.08.2006
+id ante dictum cursus. Nunc|Asher Burton|Doktorat|Elektrotehnika|tincidunt|Hrvatski|Medjunarodna|29.10.2004
+Vestibulum|Abel Hinton|Zavrsni rad|Akustika|gravida non, sollicitudin|Hrvatski|Nema|22.02.2005
+Quisque porttitor|Cade Christensen|Knjiga|Elektrotehnika|ut nisi|Hrvatski|Nema|02.03.2005
+sit amet, consectetuer adipiscing elit.|Donovan Knox|Rad u casopisu|Strojarstvo|pharetra|Hrvatski|Domaca|24.01.2005
+facilisis lorem|Norman Sanders|Doktorat|Akustika|gravida|Hrvatski|Nema|07.07.2004
+tortor, dictum eu, placerat eget,|Quinlan Castro|Zavrsni rad|Strojarstvo|lorem, vehicula|Hrvatski|Domaca|08.01.2003
+in felis. Nulla tempor|Omar Acevedo|Sudjelovanje na skupu|Energetika|scelerisque mollis.|Hrvatski|Domaca|09.04.2001
+justo faucibus lectus,|Zephania Bright|Doktorat|Telekomunikacije|Ut|Hrvatski|Nema|02.10.1997
+varius. Nam porttitor scelerisque neque. Nullam|Abel Riley|Zavrsni rad|Energetika|bibendum. Donec|Hrvatski|Domaca|09.10.2003
+amet, consectetuer adipiscing elit. Curabitur sed|Oliver Knight|Doktorat|Akustika|neque|Hrvatski|Domaca|25.03.2004
+Maecenas ornare egestas ligula. Nullam feugiat placerat velit.|Marshall Velazquez|Knjiga|Strojarstvo|magna|Hrvatski|Nema|22.01.2001
+Donec tincidunt. Donec vitae erat vel|Jin Cline|Knjiga|Akustika|Mauris|Hrvatski|Nema|27.09.2000
+aliquet odio. Etiam ligula|Kennedy Stevens|Zavrsni rad|Strojarstvo|augue, eu|Hrvatski|Domaca|06.01.2005
+pharetra.|Hoyt Roth|Zavrsni rad|Elektrotehnika|pede, malesuada|Hrvatski|Domaca|11.07.2000
+a, auctor non, feugiat nec, diam.|Nero Oneil|Sudjelovanje na skupu|Energetika|ac|Hrvatski|Domaca|08.01.2003
+erat, in consectetuer ipsum nunc id enim. Curabitur massa.|Malachi Church|Rad u casopisu|Telekomunikacije|amet luctus vulputate,|Hrvatski|Medjunarodna|14.11.2005
+molestie. Sed id risus quis diam|Herrod Wilkerson|Doktorat|Telekomunikacije|Suspendisse aliquet molestie|Hrvatski|Nema|09.08.1996
+purus mauris a nunc. In at pede.|Andrew Sutton|Sudjelovanje na skupu|Strojarstvo|tincidunt|Hrvatski|Medjunarodna|14.04.1999
+Vivamus nibh dolor, nonummy ac, feugiat non,|Garth Donovan|Sudjelovanje na skupu|Strojarstvo|fermentum|Hrvatski|Domaca|15.07.2002
+egestas. Sed pharetra, felis eget varius ultrices,|Amery Whitehead|Knjiga|Elektrotehnika|mauris a|Hrvatski|Nema|08.07.2002
+felis|Zeus Hardin|Doktorat|Racunarstvo|sociis|Hrvatski|Nema|27.02.2002
+Phasellus at augue|Jack Schultz|Knjiga|Energetika|Quisque|Hrvatski|Domaca|15.02.2001
+augue porttitor interdum.|Philip Frank|Zavrsni rad|Telekomunikacije|tellus lorem|Hrvatski|Nema|16.02.2004
+ut erat. Sed nunc est, mollis non,|Yoshio Craig|Zavrsni rad|Elektrotehnika|elementum purus, accumsan|Hrvatski|Medjunarodna|22.02.2001
+elit sed consequat auctor,|Derek Larsen|Doktorat|Strojarstvo|molestie arcu. Sed|Hrvatski|Nema|26.06.1997
+est arcu ac orci. Ut semper pretium neque.|Yasir Nielsen|Zavrsni rad|Energetika|aliquam iaculis, lacus|Hrvatski|Domaca|27.12.2006
+lobortis ultrices. Vivamus rhoncus.|Merrill Owen|Doktorat|Energetika|Proin ultrices. Duis|Hrvatski|Nema|13.11.1997
+semper, dui lectus rutrum urna, nec|Mohammad Williams|Zavrsni rad|Strojarstvo|vel,|Hrvatski|Medjunarodna|26.05.1995
+tincidunt, nunc ac mattis ornare, lectus ante|Howard Vargas|Sudjelovanje na skupu|Akustika|ac facilisis|Hrvatski|Domaca|06.12.1998
+feugiat tellus lorem eu metus. In|Herman Barron|Doktorat|Racunarstvo|dolor elit,|Hrvatski|Medjunarodna|01.06.2005
+elit, pellentesque a, facilisis|Acton Lamb|Sudjelovanje na skupu|Racunarstvo|tempor bibendum.|Hrvatski|Nema|03.04.2001
+amet massa. Quisque porttitor eros|Davis Zimmerman|Doktorat|Telekomunikacije|sit|Hrvatski|Nema|24.05.1997
+magna et|Flynn Carson|Knjiga|Racunarstvo|lectus quis|Hrvatski|Nema|26.07.1995
+Nulla tempor augue ac ipsum.|Quinlan Chambers|Doktorat|Racunarstvo|eu tellus.|Hrvatski|Medjunarodna|19.11.2002
+elementum, lorem ut aliquam iaculis, lacus pede sagittis|Gray Larson|Knjiga|Akustika|nibh|Hrvatski|Nema|12.03.2002
+vitae aliquam eros turpis non enim. Mauris quis turpis|Kane Hebert|Knjiga|Telekomunikacije|Vivamus euismod urna.|Hrvatski|Domaca|28.05.2005
+Curabitur vel lectus. Cum sociis natoque penatibus et magnis|Amery Sanders|Sudjelovanje na skupu|Energetika|vel|Hrvatski|Nema|25.07.1996
+quam a|Castor Barton|Doktorat|Elektrotehnika|Fusce diam nunc,|Hrvatski|Medjunarodna|25.06.2005
+ante lectus convallis est, vitae sodales nisi magna|Lionel Hester|Zavrsni rad|Telekomunikacije|dictum augue malesuada|Hrvatski|Medjunarodna|23.03.2002
+est. Mauris eu turpis. Nulla aliquet. Proin|Alvin Holland|Knjiga|Akustika|augue|Hrvatski|Medjunarodna|26.09.1995
+est. Mauris eu turpis. Nulla aliquet. Proin|Alvin Holland|Knjiga|Akustika|dictum augue malesuada|Hrvatski|Medjunarodna|26.09.1995

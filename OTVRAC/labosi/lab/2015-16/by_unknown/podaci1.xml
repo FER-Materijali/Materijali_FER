@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="pretvorba1.xsl"?>
+<prvenstvo xmlns="http://www.w3schools.com"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.w3schools.com gramatika.xsd">
+
+    <utrka idutrka="1">
+        <imeutrke>Velika Nagrada Katra</imeutrke>
+        <facebookid>1054363954625795</facebookid>
+        <staza>
+            <imestaze>Losail International Circuit</imestaze>
+            <grad>Doha</grad>
+            <drzava>Katar</drzava>
+            <detaljistaze brojzavoja="16">
+                <duzinakruga>5380</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Losail.svg</slikastaze>
+        </staza>
+        <detaljiutrke>
+            <pobjednik motorpobjednika="Yamaha">
+                <imepobjednika>Jorge</imepobjednika>
+                <prezimepobjednika>Lorenzo</prezimepobjednika>
+            </pobjednik>
+            <odustajanje uzrokdnf="sudar">
+                <imednf>Stefan</imednf>
+                <prezimednf>Bradl</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="izlijetanje">
+                <imednf>Loris</imednf>
+                <prezimednf>Baz</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="izlijetanje">
+                <imednf>Andrea</imednf>
+                <prezimednf>Iannone</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="sudar">
+                <imednf>Cal</imednf>
+                <prezimednf>Crutchlow</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="kvar">
+                <imednf>Yonny</imednf>
+                <prezimednf>Hernandez</prezimednf>
+            </odustajanje>
+            <vrijeme>
+                <naoblaka>Sunčano</naoblaka>
+                <temperatura>29</temperatura>
+            </vrijeme>
+            <vrijeme>
+                <naoblaka>Sunčano</naoblaka>
+                <temperatura>30</temperatura>
+            </vrijeme>
+        </detaljiutrke>
+        <datumutrke>2016-03-20</datumutrke>
+    </utrka>
+
+    <utrka idutrka="2">
+        <imeutrke>Velika Nagrada Argentine</imeutrke>
+        <facebookid>684509671652050</facebookid>
+        <staza>
+            <imestaze>Autodromo de Termas de Rio Hondo</imestaze>
+            <grad>Termas de Rio Hondo</grad>
+            <drzava>Argentina</drzava>
+            <detaljistaze brojzavoja="14">
+                <duzinakruga>4805</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Termas.svg</slikastaze>
+        </staza>
+        <detaljiutrke>
+            <pobjednik motorpobjednika="Honda">
+                <imepobjednika>Marc</imepobjednika>
+                <prezimepobjednika>Marquez</prezimepobjednika>
+            </pobjednik>
+            <odustajanje uzrokdnf="sudar">
+                <imednf>Yonny</imednf>
+                <prezimednf>Hernandez</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="sudar">
+                <imednf>Jack</imednf>
+                <prezimednf>Miller</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="izlijetanje">
+                <imednf>Jorge</imednf>
+                <prezimednf>Lorenzo</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="puknuće gume">
+                <imednf>Loris</imednf>
+                <prezimednf>Baz</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="kvar">
+                <imednf>Scott</imednf>
+                <prezimednf>Redding</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="sudar">
+                <imednf>Maverick</imednf>
+                <prezimednf>Vinales</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="sudar">
+                <imednf>Cal</imednf>
+                <prezimednf>Crutchlow</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="izlijetanje">
+                <imednf>Andrea</imednf>
+                <prezimednf>Iannone</prezimednf>
+            </odustajanje>
+            <vrijeme>
+                <naoblaka>Kišovito</naoblaka>
+                <temperatura>23</temperatura>
+            </vrijeme>
+            <vrijeme>
+                <naoblaka>Kišovito</naoblaka>
+                <temperatura>25</temperatura>
+            </vrijeme>
+        </detaljiutrke>
+        <datumutrke>2016-04-03</datumutrke>
+    </utrka>
+
+    <utrka idutrka="3">
+        <imeutrke>Velika Nagrada Amerike</imeutrke>
+        <facebookid>198450570488772</facebookid>
+        <staza>
+            <imestaze>Circuit Of The Americas</imestaze>
+            <grad>Austin</grad>
+            <drzava>Sjedinjene Američke Države</drzava>
+            <detaljistaze brojzavoja="20">
+                <duzinakruga>5513</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Austin.svg</slikastaze>
+        </staza>
+        <detaljiutrke>
+            <pobjednik motorpobjednika="Honda">
+                <imepobjednika>Marc</imepobjednika>
+                <prezimepobjednika>Marquez</prezimepobjednika>
+            </pobjednik>
+            <odustajanje uzrokdnf="izlijetanje">
+                <imednf>Valentino</imednf>
+                <prezimednf>Rossi</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="sudar">
+                <imednf>Andrea</imednf>
+                <prezimednf>Dovizioso</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="kvar">
+                <imednf>Dani</imednf>
+                <prezimednf>Pedrosa</prezimednf>
+            </odustajanje>
+            <vrijeme>
+                <naoblaka>Oblačno</naoblaka>
+                <temperatura>24</temperatura>
+            </vrijeme>
+            <vrijeme>
+                <naoblaka>Oblačno</naoblaka>
+                <temperatura>26</temperatura>
+            </vrijeme>
+            <vrijeme>
+                <naoblaka>Sunčano</naoblaka>
+                <temperatura>28</temperatura>
+            </vrijeme>
+        </detaljiutrke>
+        <datumutrke>2016-04-10</datumutrke>
+    </utrka>
+
+    <utrka idutrka="4">
+        <imeutrke>Velika Nagrada Španjolske</imeutrke>
+        <facebookid>459233414266149</facebookid>
+        <staza>
+            <imestaze>Circuito de Jerez</imestaze>
+            <grad>Jerez</grad>
+            <drzava>Španjolska</drzava>
+            <detaljistaze brojzavoja="13">
+                <duzinakruga>4428</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Jerez.svg</slikastaze>
+        </staza>
+        <detaljiutrke>
+            <pobjednik motorpobjednika="Yamaha">
+                <imepobjednika>Valentino</imepobjednika>
+                <prezimepobjednika>Rossi</prezimepobjednika>
+            </pobjednik>
+            <odustajanje uzrokdnf="izlijetanje">
+                <imednf>Alvaro</imednf>
+                <prezimednf>Bautista</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="kvar">
+                <imednf>Andrea</imednf>
+                <prezimednf>Dovizioso</prezimednf>
+            </odustajanje>
+            <vrijeme>
+                <naoblaka>Sunčano</naoblaka>
+                <temperatura>26</temperatura>
+            </vrijeme>
+            <vrijeme>
+                <naoblaka>Sunčano</naoblaka>
+                <temperatura>27</temperatura>
+            </vrijeme>
+            <vrijeme>
+                <naoblaka>Sunčano</naoblaka>
+                <temperatura>27</temperatura>
+            </vrijeme>
+            <vrijeme>
+                <naoblaka>Oblačno</naoblaka>
+                <temperatura>28</temperatura>
+            </vrijeme>
+        </detaljiutrke>
+        <datumutrke>2016-04-24</datumutrke>
+    </utrka>
+
+    <utrka idutrka="5">
+        <imeutrke>Velika Nagrada Francuske</imeutrke>
+        <facebookid>1724820274403437</facebookid>
+        <staza>
+            <imestaze>Circuit Bugatti</imestaze>
+            <grad>Maine</grad>
+            <drzava>Francuska</drzava>
+            <detaljistaze brojzavoja="11">
+                <duzinakruga>4273</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Bugatti.svg</slikastaze>
+        </staza>
+        <detaljiutrke>
+            <pobjednik motorpobjednika="Yamaha">
+                <imepobjednika>Jorge</imepobjednika>
+                <prezimepobjednika>Lorenzo</prezimepobjednika>
+            </pobjednik>
+            <odustajanje uzrokdnf="kvar">
+                <imednf>Scott</imednf>
+                <prezimednf>Redding</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="izlijetanje">
+                <imednf>Yonny</imednf>
+                <prezimednf>Hernandez</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="izlijetanje">
+                <imednf>Cal</imednf>
+                <prezimednf>Crutchlow</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="izlijetanje">
+                <imednf>Esteve</imednf>
+                <prezimednf>Rabat</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="sudar">
+                <imednf>Andrea</imednf>
+                <prezimednf>Iannone</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="izlijetanje">
+                <imednf>Andrea</imednf>
+                <prezimednf>Dovizioso</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="izlijetanje">
+                <imednf>Jack</imednf>
+                <prezimednf>Miller</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="izlijetanje">
+                <imednf>Bradley</imednf>
+                <prezimednf>Smith</prezimednf>
+            </odustajanje>
+            <vrijeme>
+                <naoblaka>Sunčano</naoblaka>
+                <temperatura>21</temperatura>
+            </vrijeme>
+            <vrijeme>
+                <naoblaka>Sunčano</naoblaka>
+                <temperatura>22</temperatura>
+            </vrijeme>
+            <vrijeme>
+                <naoblaka>Vjetrovito</naoblaka>
+                <temperatura>23</temperatura>
+            </vrijeme>
+        </detaljiutrke>
+
+        <datumutrke>2016-05-08</datumutrke>
+    </utrka>
+
+    <utrka idutrka="6">
+        <imeutrke>Velika Nagrada Italije</imeutrke>
+        <facebookid>422286921299455</facebookid>
+        <staza>
+            <imestaze>Mugello Circuit</imestaze>
+            <grad>Mugello</grad>
+            <drzava>Italija</drzava>
+            <detaljistaze brojzavoja="14">
+                <duzinakruga>5245</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Mugello.svg</slikastaze>
+        </staza>
+        <detaljiutrke>
+            <pobjednik motorpobjednika="Yamaha">
+                <imepobjednika>Jorge</imepobjednika>
+                <prezimepobjednika>Lorenzo</prezimepobjednika>
+            </pobjednik>
+            <odustajanje uzrokdnf="kvar">
+                <imednf>Valentino</imednf>
+                <prezimednf>Rossi</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="kvar">
+                <imednf>Scott</imednf>
+                <prezimednf>Redding</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="izlijetanje">
+                <imednf>Jack</imednf>
+                <prezimednf>Miller</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="sudar">
+                <imednf>Alvaro</imednf>
+                <prezimednf>Bautista</prezimednf>
+            </odustajanje>
+            <odustajanje uzrokdnf="sudar">
+                <imednf>Loris</imednf>
+                <prezimednf>Baz</prezimednf>
+            </odustajanje>
+            <vrijeme>
+                <naoblaka>Sunčano</naoblaka>
+                <temperatura>22</temperatura>
+            </vrijeme>
+            <vrijeme>
+                <naoblaka>Sunčano</naoblaka>
+                <temperatura>22</temperatura>
+            </vrijeme>
+            <vrijeme>
+                <naoblaka>Sunčano</naoblaka>
+                <temperatura>21</temperatura>
+            </vrijeme>
+        </detaljiutrke>
+        <datumutrke>2016-05-22</datumutrke>
+    </utrka>
+
+    <utrka idutrka="7">
+        <imeutrke>Velika Nagrada Katalonije</imeutrke>
+        <facebookid>173554719663028</facebookid>
+        <staza>
+            <imestaze>Circuit de Catalunya</imestaze>
+            <grad>Montmelo</grad>
+            <drzava>Španjolska</drzava>
+            <detaljistaze brojzavoja="16">
+                <duzinakruga>4655</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Catalunya.svg</slikastaze>
+        </staza>
+        <datumutrke>2016-06-05</datumutrke>
+    </utrka>
+
+    <utrka idutrka="8">
+        <imeutrke>Velika Nagrada Nizozemske</imeutrke>
+        <facebookid>1727570544143751</facebookid>
+        <staza>
+            <imestaze>TT Circuit Assen</imestaze>
+            <grad>Assen</grad>
+            <drzava>Nizozemska</drzava>
+            <detaljistaze brojzavoja="21">
+                <duzinakruga>4545</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Assen.svg</slikastaze>
+        </staza>
+        <datumutrke>2016-06-26</datumutrke>
+    </utrka>
+
+    <utrka idutrka="9">
+        <imeutrke>Velika Nagrada Njemačke</imeutrke>
+        <facebookid>1066042473430388</facebookid>
+        <staza>
+            <imestaze>Sachsenring</imestaze>
+            <grad>Hohenstein-Ernstthal</grad>
+            <drzava>Njemačka</drzava>
+            <detaljistaze brojzavoja="14">
+                <duzinakruga>3700</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Sachsenring.svg</slikastaze>
+        </staza>
+        <datumutrke>2016-07-17</datumutrke>
+    </utrka>
+
+    <utrka idutrka="10">
+        <imeutrke>Velika Nagrada Austrije</imeutrke>
+        <facebookid>508897662620989</facebookid>
+        <staza>
+            <imestaze>Red Bull Ring</imestaze>
+            <grad>Spielberg</grad>
+            <drzava>Austrija</drzava>
+            <detaljistaze brojzavoja="9">
+                <duzinakruga>4326</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/RedBullRing.svg</slikastaze>
+        </staza>
+        <datumutrke>2016-08-14</datumutrke>
+    </utrka>
+
+    <utrka idutrka="11">
+        <imeutrke>Velika Nagrada Češke</imeutrke>
+        <facebookid>969965753077339</facebookid>
+        <staza>
+            <imestaze>Automotodrom Brno</imestaze>
+            <grad>Brno</grad>
+            <drzava>Češka</drzava>
+            <detaljistaze brojzavoja="15">
+                <duzinakruga>5403</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Brno.svg</slikastaze>
+        </staza>
+        <datumutrke>2016-08-21</datumutrke>
+    </utrka>
+
+    <utrka idutrka="12">
+        <imeutrke>Velika Nagrada Velike Britanije</imeutrke>
+        <facebookid>1528649467460691</facebookid>
+        <staza>
+            <imestaze>Silverstone Circuit</imestaze>
+            <grad>Silverstone</grad>
+            <drzava>Velika Britanija</drzava>
+            <detaljistaze brojzavoja="18">
+                <duzinakruga>5891</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Silverstone.svg</slikastaze>
+        </staza>
+        <datumutrke>2016-09-04</datumutrke>
+    </utrka>
+
+    <utrka idutrka="13">
+        <imeutrke>Velika Nagrada San Marina</imeutrke>
+        <facebookid>154621241562628</facebookid>
+        <staza>
+            <imestaze>Misano World Circuit</imestaze>
+            <grad>Misano</grad>
+            <drzava>San Marino</drzava>
+            <detaljistaze brojzavoja="16">
+                <duzinakruga>4064</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Misano.svg</slikastaze>
+        </staza>
+        <datumutrke>2016-09-11</datumutrke>
+    </utrka>
+
+    <utrka idutrka="14">
+        <imeutrke>Velika Nagrada Aragona</imeutrke>
+        <facebookid>1691250921123524</facebookid>
+        <staza>
+            <imestaze>Motorland Aragon</imestaze>
+            <grad>Alcaniz</grad>
+            <drzava>Španjolska</drzava>
+            <detaljistaze brojzavoja="18">
+                <duzinakruga>5344</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Aragon.svg</slikastaze>
+        </staza>
+        <datumutrke>2016-09-25</datumutrke>
+    </utrka>
+
+    <utrka idutrka="15">
+        <imeutrke>Velika Nagrada Japana</imeutrke>
+        <facebookid>1157820907565999</facebookid>
+        <staza>
+            <imestaze>Twin Ring Motegi</imestaze>
+            <grad>Motegi</grad>
+            <drzava>Japan</drzava>
+            <detaljistaze brojzavoja="18">
+                <duzinakruga>4800</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Motegi.svg</slikastaze>
+        </staza>
+        <datumutrke>2016-10-16</datumutrke>
+    </utrka>
+
+    <utrka idutrka="16">
+        <imeutrke>Velika Nagrada Australije</imeutrke>
+        <facebookid>511215125704976</facebookid>
+        <staza>
+            <imestaze>Phillip Island Circuit</imestaze>
+            <grad>Phillip Island</grad>
+            <drzava>Australija</drzava>
+            <detaljistaze brojzavoja="12">
+                <duzinakruga>4445</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/PhillipIsland.svg</slikastaze>
+        </staza>
+        <datumutrke>2016-10-23</datumutrke>
+    </utrka>
+
+    <utrka idutrka="17">
+        <imeutrke>Velika Nagrada Malezije</imeutrke>
+        <facebookid>515091891983746</facebookid>
+        <staza>
+            <imestaze>Sepang International Circuit</imestaze>
+            <grad>Selangor</grad>
+            <drzava>Malezija</drzava>
+            <detaljistaze brojzavoja="15">
+                <duzinakruga>5543</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Sepang.svg</slikastaze>
+        </staza>
+        <datumutrke>2016-10-30</datumutrke>
+    </utrka>
+
+    <utrka idutrka="18">
+        <imeutrke>Velika Nagrada Valencije</imeutrke>
+        <facebookid>1698634953704795</facebookid>
+        <staza>
+            <imestaze>Circuit Ricardo Tormo</imestaze>
+            <grad>Valencia</grad>
+            <drzava>Španjolska</drzava>
+            <detaljistaze brojzavoja="14">
+                <duzinakruga>4005</duzinakruga>
+            </detaljistaze>
+            <slikastaze>./images/tracks/Valencia.svg</slikastaze>
+        </staza>
+        <datumutrke>2016-11-13</datumutrke>
+    </utrka>
+</prvenstvo>

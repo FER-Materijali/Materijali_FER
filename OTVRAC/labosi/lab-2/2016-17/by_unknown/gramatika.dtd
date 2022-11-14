@@ -1,0 +1,27 @@
+<!ELEMENT klubovi (klub*)>
+
+<!ELEMENT klub (ime,grad,fid,predsjednik,kapacitet,navijaci?,trofeji,kontakt?)>
+
+<!ATTLIST klub id CDATA #REQUIRED>
+<!ATTLIST klub drzava (Hrvatska|Italija|Spanjolska|Grcka|Izrael|Rusija) #REQUIRED>
+<!ATTLIST klub navijac CDATA #REQUIRED>
+<!ATTLIST klub osvajac CDATA #REQUIRED>
+<!ATTLIST klub osnivac CDATA #REQUIRED>
+<!ATTLIST klub redovit CDATA #IMPLIED>
+
+<!ELEMENT ime (#PCDATA)>
+<!ELEMENT grad (#PCDATA)>
+<!ELEMENT fid (#PCDATA)>
+<!ELEMENT predsjednik (imepred,prezimepred,uprava)>
+    <!ELEMENT imepred (#PCDATA)>
+    <!ELEMENT prezimepred (#PCDATA)>
+    <!ELEMENT uprava (clanovi)>
+    <!ELEMENT clanovi (#PCDATA)>
+        <!ATTLIST clanovi broj_clanova CDATA #REQUIRED>
+<!ELEMENT kapacitet (#PCDATA)>
+<!ATTLIST kapacitet velicina (mali|srednji|veliki) #REQUIRED>
+<!ELEMENT navijaci (#PCDATA)>
+<!ELEMENT trofeji (#PCDATA)>
+<!ELEMENT kontakt (tel*, web*)>
+    <!ELEMENT tel (#PCDATA)>
+    <!ELEMENT web (#PCDATA)>

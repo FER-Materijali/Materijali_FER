@@ -1,0 +1,29 @@
+<!ELEMENT telefonski_imenik (osoba*)>
+
+<!ELEMENT osoba (ime, prezime, telefon*, adresa?, mail_adresa*, zanimanje?, datum_rodjenja?)>
+<!ATTLIST osoba oib CDATA #REQUIRED>
+<!ATTLIST osoba kategorija (prijatelj | kolega | obitelj | bez_kategorije) #REQUIRED>
+
+<!ELEMENT ime (#PCDATA)>
+<!ELEMENT prezime (#PCDATA)>
+
+<!ELEMENT telefon (broj)>
+<!ATTLIST telefon tip (mobilni | fiksni | telefaks) #REQUIRED>
+<!ELEMENT broj (#PCDATA)>
+<!ATTLIST broj pozivni_broj (099 | 098 | 097 | 095 | 092 | 091 | 043 | 035 | 020 | 052 | 047 | 048 | 049 | 053 | 040 | 031 | 034 | 051 | 044 | 021 | 022 | 042 | 033 | 032 | 023 | 01) #REQUIRED>
+
+<!ELEMENT adresa (ulica, kucni_broj, mjesto, drzava)>
+<!ELEMENT mjesto (#PCDATA)>
+<!ATTLIST mjesto postanski_broj CDATA #REQUIRED>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT kucni_broj (#PCDATA)>
+<!ELEMENT drzava (#PCDATA)>
+
+<!ELEMENT mail_adresa (#PCDATA)>
+
+<!ELEMENT zanimanje (kljucne_rijeci, naziv_tvrtke?)>
+<!ATTLIST zanimanje vrsta_djelatnosti (sve_djelatnosti | transport | kultura | sport | trgovina | opce | financije | usluge | turizam | ostalo) #REQUIRED>
+<!ELEMENT naziv_tvrtke (#PCDATA)>
+<!ELEMENT kljucne_rijeci (#PCDATA)>
+
+<!ELEMENT datum_rodjenja (#PCDATA)>

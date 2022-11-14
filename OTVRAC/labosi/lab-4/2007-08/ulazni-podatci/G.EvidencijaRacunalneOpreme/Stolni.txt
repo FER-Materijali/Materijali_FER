@@ -1,0 +1,101 @@
+Hostname|Procesor|Frekvencija (GHz)|Broj procesora|Tvrdi disk(ovi)|Kapacitet svakog (GB)|Kolicina RAM-a (GB)|Namjena|Datum kupnje|Inventarski broj|Lokacija|OS
+VEFBJZ061|Core2 Duo|1|4|3|193|1GB|Osobno racunalo|16-09-06|1 62 536|ZPM|Windows
+LKHVJJ450|Opteron|2|3|5|201|12GB|Server|03-03-06|1 16 376|PCLAB|Windows
+GEGQNR159|Core2 Solo|2|2|6|210|4GB|Osobno racunalo|17-05-04|1 90 266|PCLAB|Linux
+SYIFQN760|Xeon|3|3|8|332|12GB|Osobno racunalo|30-05-05|1 49 601|PCLAB|Windows
+UCNLQH077|Core2 Solo|3|1|2|52|6GB|Server|19-08-06|1 99 809|CIP|Linux
+VGEMNG221|Core2 Duo|2|4|6|265|8GB|Server|23-08-03|1 47 631|PCLAB|Unix
+EMLSSR980|Xeon|3|2|1|316|8GB|Server|22-02-08|1 17 122|ZPM|Windows
+CQCVHB736|Xeon|3|3|1|395|4GB|Osobno racunalo|02-03-04|1 21 643|ZPM|Windows
+DIZLJR709|Opteron|1|2|5|175|4GB|Server|21-11-04|1 78 506|CIP|Linux
+FRCPJV632|Core2 Solo|1|2|6|347|1GB|Osobno racunalo|25-04-05|1 29 285|ZARI|Unix
+WOQFJG562|Xeon|3|3|3|356|8GB|Osobno racunalo|13-06-07|1 71 429|ZPM|Windows
+XVNHCB924|Core2 Solo|3|1|8|324|1GB|Osobno racunalo|28-07-07|1 90 582|ZARI|Windows
+FRLHSJ512|Opteron|2|1|5|121|2GB|Server|16-11-02|1 28 846|PCLAB|Windows
+OSJHBY432|Xeon|4|3|8|174|6GB|Server|27-10-02|1 17 278|ZPM|Windows
+WLLYJW265|Opteron|1|2|7|387|8GB|Osobno racunalo|28-11-07|1 92 983|ZARI|Linux
+VEWFAC854|Core2 Duo|3|3|5|343|4GB|Osobno racunalo|16-08-04|1 59 974|ZARI|Linux
+KSEKVB923|Core2 Duo|3|2|6|275|4GB|Osobno racunalo|09-02-08|1 97 146|CIP|Windows
+HLMCNK382|Core2 Duo|3|2|5|311|4GB|Server|26-03-03|1 87 349|ZARI|Windows
+RMKEWU010|Opteron|2|3|4|230|6GB|Osobno racunalo|11-04-04|1 32 922|ZPM|Windows
+SQHOLI750|Core2 Solo|2|3|7|81|1GB|Server|01-07-04|1 38 147|ZARI|Unix
+RYZCGR634|Core2 Duo|2|2|7|184|6GB|Server|30-12-07|1 73 249|CIP|Windows
+NEGUWW126|Core2 Solo|2|3|5|119|6GB|Server|23-01-06|1 87 375|CIP|Linux
+YDSVZU065|Xeon|4|2|1|388|8GB|Osobno racunalo|22-02-05|1 72 229|ZPM|Linux
+ZCTZXW649|Opteron|4|2|6|144|12GB|Server|08-10-04|1 65 260|ZPM|Windows
+OYMLVC975|Xeon|2|1|7|384|4GB|Osobno racunalo|18-08-03|1 22 724|PCLAB|Windows
+PEQKGO187|Xeon|3|1|2|354|6GB|Server|23-04-03|1 62 905|ZARI|Windows
+JLUQZY474|Core2 Solo|1|1|1|144|2GB|Osobno racunalo|13-03-06|1 61 317|ZPM|Linux
+ZGHZEU766|Core2 Duo|4|4|8|215|1GB|Osobno racunalo|12-02-04|1 81 552|ZPM|Unix
+XTCCOU714|Core2 Solo|2|4|7|349|6GB|Osobno racunalo|18-12-07|1 34 952|ZPM|Windows
+MHEACY155|Xeon|4|3|7|120|4GB|Server|18-12-06|1 56 376|CIP|Linux
+EUZHSD821|Core2 Solo|1|1|2|169|8GB|Server|18-08-04|1 77 742|ZPM|Windows
+QBUJFQ632|Core2 Duo|4|3|8|143|6GB|Osobno racunalo|14-07-07|1 59 581|ZARI|Windows
+HCSNSI901|Opteron|4|2|3|157|4GB|Server|14-09-03|1 13 511|ZPM|Linux
+OEDHMB363|Core2 Solo|2|1|6|68|6GB|Osobno racunalo|06-05-04|1 90 311|CIP|Windows
+VKMIMU986|Xeon|3|4|1|226|2GB|Osobno racunalo|15-05-04|1 35 342|ZARI|Unix
+WNHIIG199|Core2 Duo|2|4|2|72|4GB|Server|28-06-05|1 16 225|PCLAB|Unix
+DMXLTC464|Core2 Duo|2|3|8|189|1GB|Server|27-03-06|1 11 253|ZPM|Unix
+AISTKD494|Core2 Duo|2|3|2|123|8GB|Server|02-03-03|1 11 230|PCLAB|Linux
+UHSFLD199|Core2 Solo|2|4|5|177|8GB|Osobno racunalo|23-02-05|1 18 601|CIP|Unix
+ZENKIQ324|Xeon|4|1|3|340|1GB|Server|17-01-05|1 75 990|CIP|Linux
+THACYI343|Opteron|1|3|1|123|4GB|Server|31-01-06|1 75 880|CIP|Windows
+BBGAJQ475|Core2 Duo|3|4|7|338|6GB|Server|15-09-05|1 17 601|ZARI|Unix
+FNXODJ271|Opteron|1|1|5|38|6GB|Osobno racunalo|13-04-02|1 70 581|PCLAB|Windows
+XCTBMB762|Opteron|1|4|4|120|2GB|Server|21-08-03|1 89 792|PCLAB|Windows
+QQGCRZ790|Opteron|4|4|4|176|4GB|Osobno racunalo|10-03-04|1 22 948|CIP|Linux
+KSRCSK075|Xeon|2|2|7|75|4GB|Server|24-01-05|1 60 152|ZPM|Linux
+LHTDSU822|Core2 Duo|1|2|5|49|4GB|Osobno racunalo|14-02-06|1 65 684|ZPM|Unix
+JJEBEB238|Core2 Duo|2|3|8|380|1GB|Osobno racunalo|17-02-03|1 52 991|PCLAB|Unix
+DUNHVU667|Xeon|1|3|1|237|12GB|Osobno racunalo|07-01-07|1 86 991|PCLAB|Linux
+OADKUU053|Core2 Solo|2|4|8|152|8GB|Server|14-08-05|1 74 695|PCLAB|Windows
+BHSVBU345|Xeon|4|4|1|123|8GB|Osobno racunalo|31-07-07|1 33 987|CIP|Linux
+ERTFLD692|Xeon|2|4|3|250|1GB|Server|30-04-02|1 16 573|ZPM|Unix
+YBZKFQ340|Opteron|1|4|8|366|8GB|Server|20-11-06|1 65 399|ZARI|Unix
+KQPPGY030|Xeon|1|3|8|250|2GB|Osobno racunalo|21-10-02|1 73 362|CIP|Windows
+MHZTFZ024|Core2 Duo|2|2|3|218|2GB|Osobno racunalo|04-06-06|1 34 949|CIP|Unix
+XGODFR464|Core2 Duo|1|3|4|391|12GB|Osobno racunalo|07-09-06|1 11 690|ZPM|Linux
+PISUZD449|Opteron|2|4|1|358|2GB|Server|06-01-03|1 36 635|ZARI|Windows
+QLBQPN053|Core2 Duo|1|3|5|396|12GB|Osobno racunalo|12-11-07|1 32 684|ZARI|Linux
+SOLIBN839|Xeon|1|3|2|313|4GB|Server|14-05-02|1 70 522|CIP|Unix
+IZNJNJ748|Opteron|2|3|7|103|6GB|Osobno racunalo|23-07-03|1 34 651|ZPM|Unix
+SVZFET605|Opteron|4|4|2|325|2GB|Osobno racunalo|16-02-03|1 47 958|ZARI|Windows
+YWFDPW110|Xeon|1|1|7|126|2GB|Server|17-06-05|1 82 374|ZARI|Linux
+EVXURC873|Core2 Duo|1|3|7|95|1GB|Osobno racunalo|03-06-04|1 99 844|ZARI|Linux
+WKROMO385|Xeon|3|1|8|100|2GB|Server|08-07-04|1 72 319|ZARI|Windows
+WQRIFA171|Core2 Duo|3|2|8|321|1GB|Osobno racunalo|24-03-07|1 21 401|PCLAB|Windows
+TNTYNX664|Opteron|2|2|8|38|8GB|Server|08-04-06|1 31 148|CIP|Windows
+DTFRRX200|Xeon|1|1|5|185|8GB|Server|30-04-03|1 44 210|ZARI|Unix
+VFQMCX516|Core2 Duo|4|1|2|160|2GB|Server|04-06-03|1 46 144|ZPM|Windows
+RLXUIM992|Core2 Solo|3|4|4|132|6GB|Server|05-11-02|1 69 197|CIP|Windows
+ZZWHMU273|Core2 Solo|3|2|3|100|12GB|Server|06-11-04|1 12 788|PCLAB|Windows
+XBRJWX118|Opteron|2|3|6|270|2GB|Server|15-03-05|1 41 822|ZARI|Unix
+OFNKCQ596|Core2 Duo|2|1|5|190|6GB|Osobno racunalo|18-02-03|1 71 303|CIP|Unix
+BDMEUB148|Xeon|4|4|6|378|8GB|Osobno racunalo|26-07-05|1 95 320|ZPM|Windows
+VHIQIL020|Core2 Duo|2|1|8|306|1GB|Osobno racunalo|26-07-04|1 38 736|ZARI|Linux
+THMBTN289|Core2 Solo|4|3|1|136|12GB|Osobno racunalo|21-11-07|1 66 624|ZARI|Unix
+RZNKNU245|Core2 Solo|3|3|6|310|4GB|Osobno racunalo|30-07-03|1 84 320|PCLAB|Unix
+OZRBUX539|Xeon|4|2|3|101|4GB|Osobno racunalo|04-04-04|1 51 451|ZPM|Unix
+QVSLTF764|Core2 Solo|4|3|5|73|12GB|Server|22-12-02|1 54 263|ZPM|Linux
+JPKCVE727|Xeon|3|1|7|101|2GB|Osobno racunalo|21-06-04|1 66 708|PCLAB|Linux
+IJBEOV428|Xeon|2|4|7|196|12GB|Osobno racunalo|28-11-07|1 79 360|ZPM|Linux
+JXVXSH153|Opteron|4|4|1|238|8GB|Osobno racunalo|07-07-06|1 53 142|ZPM|Unix
+AYUSFY350|Opteron|2|2|5|246|4GB|Server|20-09-06|1 68 182|ZARI|Linux
+HESMCZ014|Opteron|3|3|4|324|8GB|Server|09-10-05|1 40 466|PCLAB|Unix
+EBUHBW451|Core2 Duo|1|4|5|60|12GB|Osobno racunalo|15-08-07|1 45 709|ZARI|Windows
+JVMKRY985|Core2 Duo|1|2|7|171|2GB|Osobno racunalo|29-05-04|1 61 258|PCLAB|Unix
+RVPITN128|Opteron|1|4|3|371|12GB|Server|08-08-02|1 92 173|CIP|Windows
+NSQHFU506|Core2 Duo|2|1|5|276|6GB|Osobno racunalo|08-04-05|1 40 179|PCLAB|Linux
+TOFZJU993|Core2 Duo|1|1|4|88|6GB|Server|20-01-07|1 81 487|CIP|Linux
+HAPQVP614|Core2 Duo|2|2|6|132|4GB|Server|21-10-03|1 41 719|CIP|Windows
+UXTPNJ796|Xeon|1|1|4|88|6GB|Server|16-05-05|1 91 887|PCLAB|Windows
+ZPBMZV465|Xeon|1|1|6|162|12GB|Osobno racunalo|06-12-06|1 16 183|ZARI|Unix
+VFMVBY459|Core2 Solo|2|4|4|346|1GB|Server|22-08-04|1 48 775|CIP|Linux
+WEPYDA501|Core2 Solo|3|3|3|203|2GB|Server|30-08-06|1 17 355|PCLAB|Windows
+KRANSO682|Core2 Duo|3|3|2|369|6GB|Osobno racunalo|15-10-04|1 62 605|ZPM|Linux
+HYFZNV876|Opteron|4|4|1|298|12GB|Osobno racunalo|23-07-06|1 59 297|CIP|Unix
+RIWEDT979|Core2 Duo|2|1|5|224|6GB|Osobno racunalo|21-12-04|1 53 228|CIP|Linux
+HLULET212|Opteron|1|3|1|215|4GB|Osobno racunalo|26-04-02|1 40 727|ZARI|Windows
+TAWYTC192|Xeon|4|3|1|284|6GB|Osobno racunalo|31-12-07|1 32 408|PCLAB|Windows
+DVBXYE823|Xeon|1|4|8|185|1GB|Server|27-09-06|1 60 955|CIP|Linux
+JMRHQP590|Xeon|1|1|4|368|4GB|Server|06-12-02|1 40 403|PCLAB|Linux

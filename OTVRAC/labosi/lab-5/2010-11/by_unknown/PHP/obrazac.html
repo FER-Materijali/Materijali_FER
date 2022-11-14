@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="dizajn.css" />
+        <title>Knjižnica</title>
+      </head>
+      
+      <body>
+        <div id="header">
+      <a href="index.html">
+        <img src="images/logo.png" alt="" class="image" />
+      </a>
+      <a href="index.html" id="header_text">
+        Nacionalna i sveučilišna knjižnica
+      </a>
+    </div>
+
+    <div id="menu">
+      <ul>
+        <li><a href="index.html">Početna stranica</a></li>
+        <li><a href="podaci.xml">Katalog knjiga</a></li>
+        <li><a href="obrazac.html">Pretraga</a></li>
+        <li><a href="http://www.rasip.fer.hr/">RASIP</a></li>
+        <li><a href="http://www.fer.hr/" target="_blank">FER</a></li>
+        <li><a href="mailto:Viktor.Fonic@FER.hr">Kontakt (e-mail)</a></li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <h1>Pretraga knjiga</h1>
+
+      <form action="pretraga.php" method="get">
+        <table class="table_stripes">
+          <tr><th colspan="3">Knjiga</th></tr>
+          <tr>
+            <td>ISBN</td>
+            <td colspan="2"><input type="text" name="isbn" /></td>
+          </tr>
+          <tr>
+            <td>Naslov</td>
+            <td colspan="2"><input type="text" name="naslov" /></td>
+          </tr>
+          <tr>
+            <td>Podnaslov</td>
+            <td colspan="2"><input type="text" name="podnaslov" /></td>
+          </tr>
+          <tr>
+            <td rowspan="2">Autor</td>
+            <td>Ime</td>
+            <td><input type="text" name="ime_autora" /></td>
+          </tr>
+          <tr>
+            <td>Prezime</td>
+            <td><input type="text" name="prezime_autora" /></td>
+          </tr>
+          <tr>
+            <td colspan="2">Jezik</td>
+            <td>
+              <input type="checkbox" name="jezik[]" value="Hrvatski" id="hrvatski" /><label
+                    for="hrvatski">Hrvatski</label><br />
+              <input type="checkbox" name="jezik[]" value="Engleski" id="engleski" /><label
+                    for="engleski">Engleski</label><br />
+              <input type="checkbox" name="jezik[]" value="Njemacki" id="njemacki" /><label
+                    for="njemacki">Njemački</label><br />
+              <input type="checkbox" name="jezik[]" value="Slovenski" id="slovenski" /><label
+                    for="slovenski">Slovenski</label><br />
+              <input type="checkbox" name="jezik[]" value="Švedski" id="svedski" /><label
+                    for="svedski">Švedski</label><br />
+            </td>
+          </tr>
+          <tr>
+            <td>Broj stranica</td>
+            <td colspan="2"><input type="text" name="broj_stranica" /></td>
+          </tr>
+          <tr>
+            <td rowspan="2">Izdavač</td>
+            <td colspan="2">
+              <input type="checkbox" name="izdavac" value="postoji" id="postoji" />
+              <label for="postoji">Postoji li izdavač?</label>
+            </td>
+          </tr>
+          <tr> 
+            <td>Naziv</td>
+            <td><input type="text" name="naziv_izdavaca" /></td>
+          </tr>
+          <tr> 
+            <td>Izdanje </td>
+            <td colspan="2">
+              <select name="izdanje" size="4">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </td>
+          </tr>
+          <tr> 
+            <td> Datum izdanja </td>
+            <td colspan="2"><input type="text" name="datum_izdanja" /></td>
+          </tr>
+          <tr>
+            <td> Uvez </td>
+            <td colspan="2">
+              <input type="radio" name="uvez" value="Tvrdi" id="tvrdi" /><label for="tvrdi">Tvrdi</label>
+              <input type="radio" name="uvez" value="Meki" id="meki" /><label for="meki">Meki</label>
+            </td>
+          </tr>
+          <tr>
+            <td> Ocjena </td>
+            <td colspan="2">
+              <input type="checkbox" name="ocjena[]" value="1" id="o1" /><label for="o1">1</label>
+              <input type="checkbox" name="ocjena[]" value="2" id="o2" /><label for="o2">2</label>
+              <input type="checkbox" name="ocjena[]" value="3" id="o3" /><label for="o3">3</label>
+              <input type="checkbox" name="ocjena[]" value="4" id="o4" /><label for="o4">4</label>
+              <input type="checkbox" name="ocjena[]" value="5" id="o5" /><label for="o5">5</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Kategorija</td>
+            <td colspan="2">
+              <select name="kategorija">
+                <option value="">Odaberite kategoriju</option>
+                <option value="Software development">Software development</option>
+                <option value="Avanturistički roman">Avanturistički roman</option>
+                <option value="Znanstvena fantastika">Znanstvena fantastika</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" align="right">
+              <input class="btn" type="submit" value="Pretraga" />
+              <input class="btn" type="reset" value="Poništi" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <div id="footer">
+      © Nacionalna i sveučilišna knjižnica u Zagrebu 2005. Sva prava pridržana. | Ul. Hrvatske bratske zajednice 4 p.p. 550, 10000 Zagreb.HRVATSKA | Tel. ++ 385 1 616-4111 | webmaster: Viktor Fonić | Mob. ++ 385 98 181 24 33
+    </div>
+  </body>
+</html>

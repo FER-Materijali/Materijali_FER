@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1201.3054"
+   height="892.91034"
+   id="svg2383"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   inkscape:export-filename="d:\Images\Race Tracks\Losail.png"
+   inkscape:export-xdpi="90.015755"
+   inkscape:export-ydpi="90.015755"
+   sodipodi:docname="Losail.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <defs
+     id="defs2385">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9724">
+      <path
+         id="path9726"
+         d="M 727.23942,720.30758 C 1333.36,720.30758 1939.4804,720.30758 2545.601,720.30758 C 2545.601,974.89282 2545.601,1229.4779 2545.601,1484.0631 C 1939.4804,1484.0631 1333.36,1484.0631 727.23942,1484.0631 C 727.23942,1229.4779 727.23942,974.89282 727.23942,720.30758 L 727.23942,720.30758 z"
+         style="fill:#6a6a6a;fill-opacity:1;fill-rule:nonzero;stroke:#010101;stroke-width:0.94262564;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3490">
+      <rect
+         style="opacity:1;fill:#006a00;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="rect3492"
+         width="1511.7875"
+         height="1003.7479"
+         x="683.1405"
+         y="104.1039"
+         transform="matrix(-0.7183395,0.6956928,-0.6956928,-0.7183395,0,0)" />
+    </clipPath>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="18.181098"
+       height="18.137641"
+       patternTransform="matrix(0.1737876,0,0,0.1737876,763.47719,1693.9071)"
+       id="pattern4912">
+      <g
+         id="g4907"
+         transform="translate(-1025.5348,-1215.2814)">
+        <rect
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4899"
+           width="18.172573"
+           height="18.095789"
+           x="1025.5348"
+           y="1215.2814" />
+        <rect
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4903"
+           width="9.0746527"
+           height="9.0746527"
+           x="1025.5348"
+           y="1215.2814" />
+        <rect
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4905"
+           width="9.0746527"
+           height="9.0746527"
+           x="1034.6412"
+           y="1224.3444" />
+      </g>
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4912"
+       id="pattern4166"
+       patternTransform="matrix(0.4562459,1.6264824e-8,-1.6264824e-8,0.4562459,-1778.2267,454.6431)" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3494">
+      <rect
+         style="opacity:1;fill:#006a00;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="rect3496"
+         width="2168.1926"
+         height="1468.4177"
+         x="-4232.8457"
+         y="-2372.1296"
+         transform="matrix(-0.9472965,-0.3203582,0.9519016,-0.3064038,0,0)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9716">
+      <path
+         id="path9718"
+         d="M 871.13547,932.36346 C 1314.8756,1345.252 1758.6155,1758.1404 2202.3556,2171.029 C 2375.7787,1984.6474 2549.2018,1798.266 2722.6249,1611.8845 C 2278.8848,1198.996 1835.1448,786.10758 1391.4047,373.21904 C 1217.9816,559.60052 1044.5586,745.98194 871.13547,932.36346 z"
+         style="fill:#6a6a6a;fill-opacity:1;fill-rule:nonzero;stroke:#010101;stroke-width:0.9426257;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective2391" />
+    <inkscape:perspective
+       id="perspective2400"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#ffffff"
+     borderopacity="0.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="0"
+     inkscape:zoom="0.92394496"
+     inkscape:cx="600.65271"
+     inkscape:cy="446.45517"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1677"
+     inkscape:window-height="1031"
+     inkscape:window-x="1276"
+     inkscape:window-y="-4" />
+  <metadata
+     id="metadata2388">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Track map for Losail</dc:title>
+        <dc:date>8-2-2008</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Will Pittenger</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Will Pittenger</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Losail</rdf:li>
+            <rdf:li>racing</rdf:li>
+            <rdf:li>road couse</rdf:li>
+            <rdf:li>Qatar</rdf:li>
+            <rdf:li>MotoGP</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>Created in Inkscape with data from Google Earth</dc:description>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-405.60707,-126.99867)">
+    <path
+       sodipodi:nodetypes="cssssss"
+       id="path3180"
+       d="M 1550.1135,982.59922 C 1543.0848,982.79547 1506.3443,979.99009 1500.24,979.68309 C 1495.9731,979.4685 1441.4686,971.30855 1441.4686,971.30855 C 1399.0974,972.40522 1356.7368,974.37444 1314.355,974.59855 C 1187.0526,975.27171 1059.675,972.49058 932.41591,974.00036 C 900.01034,974.38482 867.77225,979.7293 835.36091,980.28127 C 783.39575,981.1637 748.72425,985.35336 705.25637,985.25366"
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755" />
+    <path
+       sodipodi:nodetypes="csssssssssssssssssssssssssssssssssssssss"
+       id="path3182"
+       d="M 967.85818,991.34764 C 831.07487,991.67177 699.56679,988.43036 569.76818,988.05765 C 493.15161,987.83764 484.04852,903.05153 526.4,880.08582 C 573.97896,854.28544 618.73077,832.37987 665.17819,805.31309 C 700.05852,784.98692 702.80847,729.38171 659.79454,707.51036 C 614.28113,684.36809 586.15698,669.26871 542.25182,644.40218 C 531.54091,638.33585 517.40448,622.26368 513.24,610.60491 C 477.77196,511.30972 448.42479,420.18883 414.83909,319.58945 C 404.60178,288.9256 419.03803,260.66963 453.12272,249.00401 C 479.35588,240.0256 491.01398,235.66496 519.22182,226.57218 C 544.50147,218.42331 576.53587,239.64519 587.11546,266.94946 C 609.23683,324.0413 624.97925,380.74958 643.34455,437.13218 C 647.53548,449.9986 665.21363,466.07439 675.94545,465.84491 C 684.44247,465.66321 700.73053,458.0264 702.26545,447.60036 C 715.66218,356.60242 728.72142,265.65364 740.25,174.82946 C 742.59904,156.32327 761.84345,141.72003 775.24364,135.94764 C 787.76466,130.55397 806.35128,133.15718 818.31273,138.93855 C 830.27855,144.72203 841.92001,157.30216 847.02545,170.64218 C 854.28243,189.60397 853.74455,211.36721 861.38181,230.46036 C 871.29121,255.23387 883.30783,280.76112 901.75909,300.44763 C 914.43914,313.97657 936.66733,328.19795 950.76246,344.56667 C 959.36113,354.55233 976.64929,373.06105 969.95182,396.15673 C 962.0363,423.45276 943.30299,477.0469 931.36909,533.73855 C 928.39957,547.84517 936.58946,565.93152 947.52,573.21854 C 960.51674,581.88303 985.323,581.35942 1001.9546,576.50855 C 1033.1776,567.40184 1065.2775,555.24173 1093.4764,536.72946 C 1117.5187,520.94598 1137.5045,501.15526 1156.8836,479.90218 C 1171.8157,463.52607 1185.1116,444.61 1194.5691,424.27128 C 1222.1989,364.85242 1244.1826,303.82644 1268.7436,242.424 C 1276.0857,224.06886 1288.7139,200.74308 1304.6345,191.27945 C 1314.294,185.53766 1333.2335,176.97495 1344.1146,176.92309 C 1388.2946,176.71255 1413.022,176.40958 1457.7691,177.22218 C 1469.3,177.43299 1490.4142,190.39709 1495.7536,200.55128 C 1519.3945,245.51016 1540.1128,281.38839 1565.1428,324.37491 C 1571.8922,335.96634 1572.5029,362.47242 1561.8527,374.92127 C 1508.785,436.95137 1469.6484,485.61073 1414.7,546.89855 C 1399.031,564.37527 1389.1449,595.51828 1401.54,614.49309 C 1465.4461,712.32236 1518.2115,803.79172 1591.1636,903.11582 C 1615.6549,936.4606 1591.0458,986.34424 1550.1882,986.56218 C 1352.7885,987.61517 1167.6519,990.87419 967.85818,991.34764 z"
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:12;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 967.85818,991.34764 C 831.07487,991.67177 699.56679,988.43036 569.76818,988.05765 C 493.15161,987.83764 484.04852,903.05153 526.4,880.08582 C 573.97896,854.28544 618.73077,832.37987 665.17819,805.31309 C 700.05852,784.98692 702.80847,729.38171 659.79454,707.51036 C 614.28113,684.36809 586.15698,669.26871 542.25182,644.40218 C 531.54091,638.33585 517.40448,622.26368 513.24,610.60491 C 477.77196,511.30972 448.42479,420.18883 414.83909,319.58945 C 404.60178,288.9256 419.03803,260.66963 453.12272,249.00401 C 479.35588,240.0256 491.01398,235.66496 519.22182,226.57218 C 544.50147,218.42331 576.53587,239.64519 587.11546,266.94946 C 609.23683,324.0413 624.97925,380.74958 643.34455,437.13218 C 647.53548,449.9986 665.21363,466.07439 675.94545,465.84491 C 684.44247,465.66321 700.73053,458.0264 702.26545,447.60036 C 715.66218,356.60242 728.72142,265.65364 740.25,174.82946 C 742.59904,156.32327 761.84345,141.72003 775.24364,135.94764 C 787.76466,130.55397 806.35128,133.15718 818.31273,138.93855 C 830.27855,144.72203 841.92001,157.30216 847.02545,170.64218 C 854.28243,189.60397 853.74455,211.36721 861.38181,230.46036 C 871.29121,255.23387 883.30783,280.76112 901.75909,300.44763 C 914.43914,313.97657 936.66733,328.19795 950.76246,344.56667 C 959.36113,354.55233 976.64929,373.06105 969.95182,396.15673 C 962.0363,423.45276 943.30299,477.0469 931.36909,533.73855 C 928.39957,547.84517 936.58946,565.93152 947.52,573.21854 C 960.51674,581.88303 985.323,581.35942 1001.9546,576.50855 C 1033.1776,567.40184 1065.2775,555.24173 1093.4764,536.72946 C 1117.5187,520.94598 1137.5045,501.15526 1156.8836,479.90218 C 1171.8157,463.52607 1185.1116,444.61 1194.5691,424.27128 C 1222.1989,364.85242 1244.1826,303.82644 1268.7436,242.424 C 1276.0857,224.06886 1288.7139,200.74308 1304.6345,191.27945 C 1314.294,185.53766 1333.2335,176.97495 1344.1146,176.92309 C 1388.2946,176.71255 1413.022,176.40958 1457.7691,177.22218 C 1469.3,177.43299 1490.4142,190.39709 1495.7536,200.55128 C 1519.3945,245.51016 1540.1128,281.38839 1565.1428,324.37491 C 1571.8922,335.96634 1572.5029,362.47242 1561.8527,374.92127 C 1508.785,436.95137 1469.6484,485.61073 1414.7,546.89855 C 1399.031,564.37527 1389.1449,595.51828 1401.54,614.49309 C 1465.4461,712.32236 1518.2115,803.79172 1591.1636,903.11582 C 1615.6549,936.4606 1591.0458,986.34424 1550.1882,986.56218 C 1352.7885,987.61517 1167.6519,990.87419 967.85818,991.34764 z"
+       id="path2406"
+       sodipodi:nodetypes="csssssssssssssssssssssssssssssssssssssss"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 1550.1135,982.59922 C 1543.0848,982.79547 1506.3443,979.99009 1500.24,979.68309 C 1495.9731,979.4685 1441.4686,971.30855 1441.4686,971.30855 C 1399.0974,972.40522 1356.7368,974.37444 1314.355,974.59855 C 1187.0526,975.27171 1059.675,972.49058 932.41591,974.00036 C 900.01034,974.38482 867.77225,979.7293 835.36091,980.28127 C 783.39575,981.1637 748.72425,985.35336 705.25637,985.25366"
+       id="path3178"
+       sodipodi:nodetypes="cssssss"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755" />
+    <g
+       id="g3363"
+       transform="translate(-12.361663,21.078353)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         transform="matrix(0.8974359,0,0,0.8974359,-834.31625,75.139081)"
+         d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+         sodipodi:ry="23.32909"
+         sodipodi:rx="23.32909"
+         sodipodi:cy="928.53857"
+         sodipodi:cx="1537.9254"
+         id="path3361"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         id="text3184"
+         y="921.95856"
+         x="535.97089"
+         style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="921.95856"
+           x="535.97089"
+           id="tspan3186"
+           sodipodi:role="line">1</tspan></text>
+    </g>
+    <g
+       id="g3356"
+       transform="translate(10.082984,17.945455)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         transform="matrix(0.8974359,0,0,0.8974359,-731.73172,-94.744586)"
+         d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+         sodipodi:ry="23.32909"
+         sodipodi:rx="23.32909"
+         sodipodi:cy="928.53857"
+         sodipodi:cx="1537.9254"
+         id="path3354"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         id="text3188"
+         y="752.07489"
+         x="638.85815"
+         style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="752.07489"
+           x="638.85815"
+           id="tspan3190"
+           sodipodi:role="line">2</tspan></text>
+    </g>
+    <g
+       id="g3349"
+       transform="translate(-10.197032,19.767942)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         transform="matrix(0.8974359,0,0,0.8974359,-818.31912,-242.85927)"
+         d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+         sodipodi:ry="23.32909"
+         sodipodi:rx="23.32909"
+         sodipodi:cy="928.53857"
+         sodipodi:cx="1537.9254"
+         id="path3347"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         id="text3192"
+         y="603.72583"
+         x="552.71997"
+         style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="603.72583"
+           x="552.71997"
+           id="tspan3194"
+           sodipodi:role="line">3</tspan></text>
+    </g>
+    <g
+       id="g3342"
+       transform="translate(-7.6902569,21.762642)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         transform="matrix(0.8974359,0,0,0.8974359,-925.52307,-561.32637)"
+         d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+         sodipodi:ry="23.32909"
+         sodipodi:rx="23.32909"
+         sodipodi:cy="928.53857"
+         sodipodi:cx="1537.9254"
+         id="path3340"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         id="text3196"
+         y="285.4931"
+         x="445.04727"
+         style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="285.4931"
+           x="445.04727"
+           id="tspan3198"
+           sodipodi:role="line">4</tspan></text>
+    </g>
+    <g
+       id="g3335"
+       transform="translate(-8.2604974,26.776193)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         transform="matrix(0.8974359,0,0,0.8974359,-830.99081,-597.90584)"
+         d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+         sodipodi:ry="23.32909"
+         sodipodi:rx="23.32909"
+         sodipodi:cy="928.53857"
+         sodipodi:cx="1537.9254"
+         id="path3333"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         id="text3200"
+         y="248.40582"
+         x="539.56"
+         style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="248.40582"
+           x="539.56"
+           id="tspan3202"
+           sodipodi:role="line">5</tspan></text>
+    </g>
+    <g
+       id="g3321"
+       transform="translate(-10.767273,15.552727)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         transform="matrix(0.8974359,0,0,0.8974359,-578.34323,-675.63042)"
+         d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+         sodipodi:ry="23.32909"
+         sodipodi:rx="23.32909"
+         sodipodi:cy="928.53857"
+         sodipodi:cx="1537.9254"
+         id="path3319"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         id="text3208"
+         y="170.64218"
+         x="791.99274"
+         style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="170.64218"
+           x="791.99274"
+           id="tspan3210"
+           sodipodi:role="line">7</tspan></text>
+    </g>
+    <g
+       id="g3314"
+       transform="translate(-13.16,21.534545)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         transform="matrix(0.8974359,0,0,0.8974359,-445.34182,-591.0011)"
+         d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+         sodipodi:ry="23.32909"
+         sodipodi:rx="23.32909"
+         sodipodi:cy="928.53857"
+         sodipodi:cx="1537.9254"
+         id="path3312"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         id="text3212"
+         y="255.584"
+         x="924.78906"
+         style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="255.584"
+           x="924.78906"
+           id="tspan3214"
+           sodipodi:role="line">8</tspan></text>
+    </g>
+    <g
+       id="g3307"
+       transform="translate(-3.5890909,-1.1963636)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         transform="matrix(0.8974359,0,0,0.8974359,-443.07601,-448.59478)"
+         d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+         sodipodi:ry="23.32909"
+         sodipodi:rx="23.32909"
+         sodipodi:cy="928.53857"
+         sodipodi:cx="1537.9254"
+         id="path3297"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         id="text3216"
+         y="397.95126"
+         x="927.18182"
+         style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="397.95126"
+           x="927.18182"
+           id="tspan3218"
+           sodipodi:role="line">9</tspan></text>
+    </g>
+    <g
+       id="g3292"
+       transform="translate(-14.982487,30.307118)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         transform="matrix(0.8974359,0,0,0.8974359,-396.68228,-318.23018)"
+         d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+         sodipodi:ry="23.32909"
+         sodipodi:rx="23.32909"
+         sodipodi:cy="928.53857"
+         sodipodi:cx="1537.9254"
+         id="path3290"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         id="text3220"
+         y="528.35492"
+         x="961.87634"
+         style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="528.35492"
+           x="961.87634"
+           id="tspan3222"
+           sodipodi:role="line">10</tspan></text>
+    </g>
+    <g
+       id="g3285"
+       transform="translate(27.516364,1.1963636)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         transform="matrix(0.8974359,0,0,0.8974359,-279.97073,-374.69365)"
+         d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+         sodipodi:ry="23.32909"
+         sodipodi:rx="23.32909"
+         sodipodi:cy="928.53857"
+         sodipodi:cx="1537.9254"
+         id="path3283"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         id="text3224"
+         y="472.12582"
+         x="1080.3164"
+         style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="472.12582"
+           x="1080.3164"
+           id="tspan3226"
+           sodipodi:role="line">11</tspan></text>
+    </g>
+    <g
+       id="g3278"
+       transform="translate(-12.817856,-12.361663)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         transform="matrix(0.8974359,0,0,0.8974359,-41.479396,-606.78821)"
+         d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+         sodipodi:ry="23.32909"
+         sodipodi:rx="23.32909"
+         sodipodi:cy="928.53857"
+         sodipodi:cx="1537.9254"
+         id="path3276"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         id="text3228"
+         y="240.03127"
+         x="1317.1964"
+         style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="240.03127"
+           x="1317.1964"
+           id="tspan3230"
+           sodipodi:role="line">12</tspan></text>
+    </g>
+    <g
+       id="g3271"
+       transform="translate(2.1646311,1.652556)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         transform="matrix(0.8974359,0,0,0.8974359,78.523168,-623.30292)"
+         d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+         sodipodi:ry="23.32909"
+         sodipodi:rx="23.32909"
+         sodipodi:cy="928.53857"
+         sodipodi:cx="1537.9254"
+         id="path3269"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         id="text3232"
+         y="223.28218"
+         x="1438.0291"
+         style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="223.28218"
+           x="1438.0291"
+           id="tspan3234"
+           sodipodi:role="line">13</tspan></text>
+    </g>
+    <g
+       id="g3264"
+       transform="translate(15.950754,26.32)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         transform="matrix(0.8974359,0,0,0.8974359,140.50449,-507.49001)"
+         d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+         sodipodi:ry="23.32909"
+         sodipodi:rx="23.32909"
+         sodipodi:cy="928.53857"
+         sodipodi:cx="1537.9254"
+         id="path3262"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         id="text3236"
+         y="339.32947"
+         x="1499.0436"
+         style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="339.32947"
+           x="1499.0436"
+           id="tspan3238"
+           sodipodi:role="line">14</tspan></text>
+    </g>
+    <g
+       id="g3257"
+       transform="translate(-25.407615,18.799674)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         transform="matrix(0.8974359,0,0,0.8974359,74.079564,-260.80477)"
+         d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+         sodipodi:ry="23.32909"
+         sodipodi:rx="23.32909"
+         sodipodi:cy="928.53857"
+         sodipodi:cx="1537.9254"
+         id="path3255"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         id="text3240"
+         y="585.78033"
+         x="1433.2437"
+         style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="585.78033"
+           x="1433.2437"
+           id="tspan3242"
+           sodipodi:role="line">15</tspan></text>
+    </g>
+    <g
+       id="g3250"
+       transform="translate(21.192402,14.982487)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         transform="matrix(0.8974359,0,0,0.8974359,163.15732,95.711652)"
+         d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+         sodipodi:ry="23.32909"
+         sodipodi:rx="23.32909"
+         sodipodi:cy="928.53857"
+         sodipodi:cx="1537.9254"
+         id="path3248"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         id="text3244"
+         y="942.29675"
+         x="1521.7745"
+         style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="942.29675"
+           x="1521.7745"
+           id="tspan3246"
+           sodipodi:role="line">16</tspan></text>
+    </g>
+    <g
+       style="display:inline"
+       transform="matrix(-0.7208327,0.693109,-0.693109,-0.7208327,2585.0162,592.39015)"
+       id="g4801"
+       clip-path="url(#clipPath9716)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <path
+         clip-path="url(#clipPath3494)"
+         transform="matrix(-0.358939,0.3679125,-1.1151124,-1.0879142,3587.0721,1686.6577)"
+         d="M 1695.937,1398.5206 L 1671.4558,1398.5206 L 1683.6964,1377.3193 L 1695.937,1398.5206 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="true"
+         sodipodi:arg2="1.5707963"
+         sodipodi:arg1="0.52359878"
+         sodipodi:r2="7.0671172"
+         sodipodi:r1="14.134234"
+         sodipodi:cy="1391.4535"
+         sodipodi:cx="1683.6964"
+         sodipodi:sides="3"
+         id="path3463"
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#ffffff;stroke-width:0.83812821;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;display:inline"
+         sodipodi:type="star" />
+      <rect
+         clip-path="url(#clipPath3490)"
+         ry="0"
+         transform="matrix(-0.7183395,-0.6956928,0.6956928,-0.7183395,0,0)"
+         y="376.01733"
+         x="-1620.8837"
+         height="53.588943"
+         width="13.041035"
+         id="rect3457"
+         style="opacity:1;fill:url(#pattern4166);fill-opacity:1;stroke:#000000;stroke-width:0.74999946;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    </g>
+    <g
+       style="display:inline"
+       id="g3804"
+       transform="translate(-1060.1427,-139.56937)"
+       clip-path="url(#clipPath9724)"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <text
+         id="text3180"
+         y="964.03094"
+         x="2073.4658"
+         style="font-size:64px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+         xml:space="preserve"><tspan
+           y="964.03094"
+           x="2073.4658"
+           id="tspan3182"
+           sodipodi:role="line">N</tspan></text>
+      <path
+         id="path2745"
+         d="M 2128.5134,924.72759 L 2168.9637,961.6468 L 2169.4948,960.76284 L 2164.7554,946.50409 L 2179.5704,943.99433 L 2180.1014,943.11052 L 2128.5134,924.72759 z"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <g
+       id="g3503"
+       inkscape:export-filename="D:\Losail.jpg.png"
+       inkscape:export-xdpi="90.015755"
+       inkscape:export-ydpi="90.015755">
+      <g
+         transform="translate(-8.767273,7.1781818)"
+         id="g3328">
+        <path
+           sodipodi:type="arc"
+           style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.11428571;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="path3326"
+           sodipodi:cx="1537.9254"
+           sodipodi:cy="928.53857"
+           sodipodi:rx="23.32909"
+           sodipodi:ry="23.32909"
+           d="M 1561.2545,928.53857 A 23.32909,23.32909 0 1 1 1514.5963,928.53857 A 23.32909,23.32909 0 1 1 1561.2545,928.53857 z"
+           transform="matrix(0.8974359,0,0,0.8974359,-700.13797,-449.83019)" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+           x="669.96362"
+           y="396.75491"
+           id="text3204"><tspan
+             sodipodi:role="line"
+             id="tspan3206"
+             x="669.96362"
+             y="396.75491">6</tspan></text>
+      </g>
+      <path
+         sodipodi:type="star"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.83812821;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;display:inline"
+         id="path3501"
+         sodipodi:sides="3"
+         sodipodi:cx="1683.6964"
+         sodipodi:cy="1391.4535"
+         sodipodi:r1="14.134234"
+         sodipodi:r2="7.0671172"
+         sodipodi:arg1="0.52359878"
+         sodipodi:arg2="1.5707963"
+         inkscape:flatsided="true"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="M 1695.937,1398.5206 L 1671.4558,1398.5206 L 1683.6964,1377.3193 L 1695.937,1398.5206 z"
+         transform="matrix(-0.5075169,8.1384156e-2,-0.2466688,-1.5382415,1873.8877,2430.5643)"
+         clip-path="url(#clipPath3494)" />
+    </g>
+  </g>
+</svg>

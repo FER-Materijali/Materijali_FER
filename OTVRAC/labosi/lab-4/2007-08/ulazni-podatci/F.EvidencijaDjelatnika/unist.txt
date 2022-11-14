@@ -1,0 +1,103 @@
+Ime i prezime|Radno mjesto|Datum pocetka rada|Odjel|Koeficijent place (postoci)|Bonus (postoci)|Ulica|Mjesto|Pbr|Titula
+Micah Walsh|Docent|21/04/1971|Brodogradnja|166|17|9720 Molestie Av.|Fl.|5629DU|dipl.ing
+Micah Walsh|Docent|21/04/1971|Brodogradnja|166|17|9720 Molestie Av.|Fl.|5629DU|mr.sc
+Micah Walsh|Docent|21/04/1971|Brodogradnja|166|17|9720 Molestie Av.|Fl.|5629DU|dr.sc
+Travis Santiago|Docent|28/04/1978|Brodogradnja|190|39|7647 Enim. Ave|Fl.|9091PE|mr.sc
+Hammett Mckenzie|Profesor|11/11/1982|Strojarstvo|116|38|3104 Erat St.|N.-H.|5107FH|mr.sc
+Cody Scott|Novak|05/03/1978|Brodogradnja|112|26|Ap #277-6387 Dapibus Rd.|N.-Br.|8702LP|dipl.ing
+Emery Neal|Docent|15/03/1999|Elektronika|171|26|P.O. Box 570, 1529 Lacus. Ave|Zld.|6203RY|dr.sc
+Cole Mclaughlin|Profesor|12/05/1974|Brodogradnja|190|37|Ap #939-3007 Ante Avenue|Overijssel|8846IC|mr.sc
+Hoyt Morales|Docent|05/09/1974|Brodogradnja|159|18|Ap #297-8594 Et St.|Flevoland|4339UE|mr.sc
+Sylvester Bennett|Profesor|11/01/1973|Strojarstvo|175|27|Ap #451-4991 Ultricies Street|N.-H.|4828NS|dr.sc
+Lionel Woods|Docent|17/11/2005|Strojarstvo|160|42|668-8381 Mi Road|Zeeland|4404QN|dr.sc
+Gabriel Rasmussen|Novak|16/10/1991|Brodogradnja|169|36|P.O. Box 450, 4457 Sodales Rd.|Z.-H.|6851JY|dr.sc
+Gavin Cole|Docent|03/07/2000|Brodogradnja|175|46|742-6629 Id, St.|Groningen|7745JB|dipl.ing
+Carlos Porter|Asistent|28/09/1974|Brodogradnja|113|45|800-3808 Metus Rd.|Z.-H.|4032RD|mr.sc
+Marvin Franklin|Asistent|21/10/2004|Elektronika|103|13|P.O. Box 185, 1472 Sem Street|Noord Brabant|9657RB|mr.sc
+Dalton King|Docent|24/05/1985|Elektronika|178|47|Ap #773-2169 Neque. St.|Dr.|1235BG|dr.sc
+Alec Wall|Novak|04/01/1972|Strojarstvo|114|16|Ap #765-9033 Sem Avenue|U.|0212AH|dr.sc
+Sean Mcdonald|Asistent|21/09/1984|Brodogradnja|196|29|1593 Adipiscing Avenue|Zuid Holland|5013QF|dipl.ing
+Fletcher Ramos|Docent|24/08/1980|Brodogradnja|187|43|669-827 Tellus St.|N.-H.|7059UA|dipl.ing
+Grady Monroe|Profesor|30/01/1983|Elektronika|144|14|Ap #784-4845 Quisque Rd.|Utrecht|9849OH|mr.sc
+Clarke Raymond|Docent|16/03/1999|Elektronika|173|23|8028 Sed St.|Z.-H.|5914WA|dipl.ing
+Ivor Goodman|Asistent|11/04/2003|Brodogradnja|109|23|189 Cursus. Ave|Fl.|0198QW|dipl.ing
+Ahmed Tucker|Profesor|11/05/1988|Brodogradnja|168|23|Ap #339-1117 Molestie St.|L.|4278XV|dr.sc
+Moses Moore|Asistent|01/05/2001|Strojarstvo|166|41|148-1207 Vivamus Ave|Drenthe|1629IT|mr.sc
+Kaseem Clay|Docent|06/01/1982|Brodogradnja|177|41|869 Magna. Rd.|Friesland|2913RZ|dr.sc
+Daniel Jimenez|Novak|06/08/2004|Elektronika|192|36|380-7193 Eget Avenue|Ov.|8506CI|dr.sc
+Lionel Ford|Docent|08/05/1989|Elektronika|119|29|P.O. Box 328, 5639 Quisque Avenue|Fr.|9911UZ|dipl.ing
+Lucius Riddle|Asistent|11/12/2001|Elektronika|122|48|Ap #427-1830 Enim Ave|Gelderland|8336UG|dipl.ing
+Geoffrey Gray|Asistent|25/12/1978|Elektronika|139|45|166-1333 Senectus St.|Z.-H.|9521QB|dipl.ing
+Orlando England|Asistent|09/12/1974|Elektronika|117|36|353-6203 At, Ave|L.|6612PD|dipl.ing
+Donovan Harper|Asistent|07/03/2000|Brodogradnja|152|50|Ap #502-7610 Duis St.|Friesland|8538AX|dr.sc
+Carl Campbell|Novak|04/10/1983|Brodogradnja|191|27|266-5578 Blandit Rd.|Gelderland|0743QF|dipl.ing
+Beau Sykes|Docent|30/01/1997|Brodogradnja|142|49|685-4869 Metus St.|Fr.|7749XM|mr.sc
+Quinn Harrington|Asistent|22/05/1981|Elektronika|119|19|848 Eget Street|Overijssel|3646OP|dr.sc
+Alfonso Guthrie|Docent|20/05/1976|Brodogradnja|153|10|Ap #594-695 In, Av.|Fr.|2464ZZ|mr.sc
+Knox Mclaughlin|Profesor|02/08/2002|Strojarstvo|106|34|306 Ornare Rd.|U.|4906GY|dipl.ing
+Kamal Garza|Profesor|13/10/2007|Strojarstvo|197|18|515-9108 Magna. Av.|Zeeland|9068FD|mr.sc
+Preston Barr|Novak|24/05/1979|Strojarstvo|148|24|417-8498 Porttitor Rd.|Friesland|1005VZ|dipl.ing
+Sawyer Santana|Profesor|22/10/1991|Elektronika|137|14|P.O. Box 946, 5259 Duis St.|N.-Br.|4605RF|dipl.ing
+Philip Herman|Novak|05/10/2003|Brodogradnja|158|17|6617 Libero St.|Gr.|2378JR|dr.sc
+Phillip Solis|Asistent|13/05/2008|Elektronika|186|12|Ap #333-3699 Aenean Av.|Noord Brabant|2400TH|dipl.ing
+Burton Ray|Profesor|06/12/2007|Strojarstvo|140|49|Ap #648-8420 Consequat Ave|Gr.|7251XU|dipl.ing
+Salvador Griffin|Docent|29/11/2008|Elektronika|115|42|P.O. Box 208, 1274 In St.|U.|7581QQ|dr.sc
+Orlando Gibson|Docent|08/08/1974|Elektronika|148|14|P.O. Box 806, 6472 Dolor, Av.|Zld.|0688BO|dipl.ing
+Orson Buckley|Asistent|29/12/1994|Brodogradnja|139|36|319-3774 Facilisis Street|Drenthe|7274FU|mr.sc
+Lucas Camacho|Asistent|20/05/1998|Brodogradnja|159|30|P.O. Box 965, 5135 Nam Av.|Fr.|5810QV|mr.sc
+Driscoll Little|Profesor|30/01/1992|Elektronika|116|45|P.O. Box 246, 218 Commodo Rd.|Dr.|5884VL|dr.sc
+Jason Thompson|Asistent|19/06/1996|Strojarstvo|136|28|1241 Suspendisse St.|N.-Br.|6677RJ|mr.sc
+Cooper Olson|Novak|12/04/1994|Strojarstvo|185|49|P.O. Box 484, 4632 Arcu St.|Gr.|4591QR|mr.sc
+Griffin Hayes|Novak|13/12/1990|Strojarstvo|114|38|1868 Parturient Road|Zld.|3787II|dr.sc
+Dolan Griffin|Asistent|28/06/1995|Strojarstvo|151|38|Ap #514-5160 Odio. Road|Zuid Holland|9122OR|mr.sc
+Hall Fields|Asistent|20/04/1976|Strojarstvo|169|10|691-3177 Luctus, Rd.|Drenthe|5474US|dr.sc
+Vaughan Chandler|Novak|14/08/1972|Strojarstvo|131|44|495 Urna. Road|Dr.|6927ZD|mr.sc
+Stone Moses|Docent|11/11/1985|Brodogradnja|141|12|P.O. Box 653, 3185 Phasellus Avenue|Zld.|0996SQ|dipl.ing
+Evan Mclean|Docent|09/12/1983|Strojarstvo|129|31|P.O. Box 910, 6630 Felis. Rd.|Utrecht|2908WB|dipl.ing
+Nasim Mccarty|Docent|22/05/2000|Elektronika|161|26|Ap #340-975 Leo. Rd.|U.|5594QD|dipl.ing
+Zachery Cruz|Asistent|05/04/1980|Brodogradnja|150|40|Ap #594-7037 Nibh Street|Fl.|2473MI|mr.sc
+Noah Lee|Asistent|16/07/1973|Brodogradnja|192|25|8201 Sollicitudin Road|Overijssel|2834EH|dipl.ing
+Austin Vazquez|Profesor|20/07/1995|Brodogradnja|134|12|Ap #513-4658 Dictum Rd.|Zuid Holland|5847QU|dr.sc
+Chandler Parrish|Profesor|25/06/2007|Elektronika|144|41|8779 Mauris Avenue|Drenthe|5852RI|dipl.ing
+Reuben Melton|Docent|20/09/1996|Brodogradnja|187|30|3137 Ligula St.|N.-H.|5765DF|mr.sc
+Phillip Hendrix|Asistent|08/06/1991|Brodogradnja|192|27|Ap #369-9442 Et, St.|Utrecht|1760JE|dipl.ing
+Paul Sweeney|Profesor|17/10/1992|Strojarstvo|160|10|5061 Ante. Av.|L.|7506RA|mr.sc
+Lyle Sheppard|Novak|10/12/1995|Elektronika|148|46|7217 Bibendum. Road|Utrecht|7811JB|dipl.ing
+Armand Leblanc|Asistent|15/11/1971|Elektronika|117|41|Ap #204-2555 Nec, Ave|Noord Brabant|2605MW|dipl.ing
+Anthony Reynolds|Novak|24/07/1981|Strojarstvo|123|41|Ap #104-9964 Tellus Street|Z.-H.|0976DZ|mr.sc
+Kelly Ramirez|Asistent|04/02/1990|Brodogradnja|199|14|Ap #656-4789 Velit. Ave|Utrecht|8023EG|dr.sc
+Thor Hawkins|Docent|23/10/1982|Elektronika|173|28|P.O. Box 336, 112 Faucibus. Av.|Zeeland|4004NW|dipl.ing
+Chandler Meyer|Novak|29/10/1983|Elektronika|144|12|2144 Tortor Avenue|Gelderland|5004SG|dipl.ing
+Cullen Garner|Docent|04/02/2009|Strojarstvo|138|11|5704 Vestibulum Avenue|Drenthe|0262IE|mr.sc
+Darius Fox|Docent|08/09/1974|Elektronika|155|18|204-7011 Lorem. Street|Utrecht|4924GG|dipl.ing
+Jonas Ball|Docent|06/05/1971|Elektronika|159|46|Ap #487-7109 Phasellus Rd.|Overijssel|4240NV|dr.sc
+Davis Floyd|Asistent|19/03/1985|Elektronika|133|46|Ap #142-5990 A Ave|Noord Brabant|2652GA|dipl.ing
+Basil Wong|Docent|14/11/1995|Strojarstvo|173|39|Ap #977-1622 Pede. Street|Ov.|2175YA|dr.sc
+Cullen Holden|Asistent|08/02/2007|Elektronika|158|42|P.O. Box 256, 667 Tempor Road|Limburg|5952EU|dipl.ing
+Dustin Graves|Novak|20/12/2001|Brodogradnja|149|48|Ap #638-9611 Gravida St.|Zld.|9077WI|mr.sc
+Knox Tran|Profesor|12/02/2006|Brodogradnja|183|50|7561 Torquent St.|Zld.|5874BA|dr.sc
+Nigel Daniel|Docent|12/09/1996|Elektronika|185|31|P.O. Box 979, 5361 Tincidunt Ave|Friesland|9589FJ|dipl.ing
+Ryder Simmons|Docent|24/11/1986|Elektronika|189|38|374-7494 Auctor St.|Drenthe|5711SE|dipl.ing
+Arsenio Summers|Novak|28/12/1978|Elektronika|178|13|Ap #568-1555 Dolor, Rd.|Ov.|4432IX|mr.sc
+Abel Rhodes|Asistent|12/06/1980|Elektronika|127|33|262-1417 Tincidunt, St.|N.-H.|7712CR|dr.sc
+Ulric Wyatt|Profesor|08/10/2001|Elektronika|113|11|Ap #405-4305 Senectus Av.|Groningen|5682BP|mr.sc
+Samson Bright|Novak|05/09/2002|Strojarstvo|190|41|Ap #204-2878 Non, Street|Zeeland|3830CV|dipl.ing
+Barrett Quinn|Profesor|12/08/1995|Brodogradnja|184|44|676-4112 Sed Rd.|Utrecht|1440KU|dipl.ing
+Thaddeus Barrett|Novak|04/07/2003|Brodogradnja|145|39|1446 Sit Av.|Noord Holland|2131CT|dipl.ing
+Burton Hawkins|Asistent|07/10/1983|Elektronika|139|17|7790 Enim Road|Noord Brabant|4220ZG|dr.sc
+Josiah Lott|Docent|18/04/1996|Strojarstvo|128|41|302-417 Quisque Rd.|Noord Holland|4195UI|mr.sc
+Griffith Payne|Novak|10/08/2006|Strojarstvo|112|14|Ap #548-7012 Facilisi. Avenue|Flevoland|1785DG|mr.sc
+Phelan Klein|Novak|02/01/1976|Strojarstvo|181|33|2043 Integer Rd.|Flevoland|6817YI|dipl.ing
+Brock Jacobs|Docent|01/01/1975|Strojarstvo|170|17|8473 Praesent Street|Noord Brabant|4135GQ|mr.sc
+Reece Wilder|Docent|30/09/1974|Strojarstvo|136|27|P.O. Box 825, 2586 Aenean Rd.|L.|2592EM|dipl.ing
+Aristotle Mcclure|Docent|28/09/1994|Strojarstvo|167|15|547-7786 Vitae Road|Dr.|3437XP|dr.sc
+Ronan Kelly|Profesor|27/06/1977|Elektronika|123|37|805 Nulla Street|Dr.|5186FR|dipl.ing
+Zahir Owens|Profesor|20/02/1985|Brodogradnja|150|41|P.O. Box 393, 7788 Mauris Rd.|Overijssel|7382CK|dipl.ing
+Addison Mckenzie|Asistent|07/03/1973|Elektronika|183|17|Ap #212-458 Pede, Street|Overijssel|4024WB|dipl.ing
+Cyrus Trevino|Profesor|28/05/1987|Strojarstvo|142|12|Ap #406-2044 Id, St.|N.-H.|6908NO|dipl.ing
+Zeph Rose|Novak|22/08/1993|Brodogradnja|163|37|9470 Quisque Ave|L.|7173YF|dr.sc
+Elvis Stein|Novak|21/10/1973|Brodogradnja|160|10|P.O. Box 428, 7346 Lorem St.|Utrecht|8317UW|dipl.ing
+Daquan Torres|Docent|06/06/1993|Strojarstvo|132|11|5577 Eu, Rd.|N.-Br.|9338WB|dr.sc
+Caesar Huffman|Asistent|23/12/1978|Brodogradnja|130|28|Ap #761-4914 Sapien, St.|Ov.|2619GB|dr.sc
+Tad Clay|Profesor|13/01/2009|Elektronika|137|45|P.O. Box 732, 4202 Augue Avenue|U.|3613FK|mr.sc
+Eaton Day|Novak|04/09/2007|Brodogradnja|151|42|5279 Non Road|Friesland|8917YP|dr.sc

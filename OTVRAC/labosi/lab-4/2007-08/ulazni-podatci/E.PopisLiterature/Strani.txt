@@ -1,0 +1,104 @@
+Naslov rada|Ime autora|Prezime autora|Kategorija|Podrucje|Izdavac|Jezik|Recenzija|Datum izdanja
+Sed|Colleen|Lowery|Masters Thesis|Computer Science|vitae risus.|DE|Local|04/06/2004
+Sed|Mia|Chambers|Masters Thesis|Computer Science|vitae risus.|DE|Local|04/06/2004
+Sed|Janna|Boyd|Masters Thesis|Computer Science|vitae risus.|DE|Local|04/06/2004
+sociis natoque penatibus et|Dieter|Harrison|Phd Thesis|Computer Science|tristique|SE|Local|08/10/1998
+placerat|Edan|Bishop|Phd Thesis|Electrical Engineering|pede. Cras vulputate|DE|Local|01/19/1996
+Cras vulputate velit eu sem. Pellentesque ut|Shaine|Travis|Phd Thesis|Computer Engineering|urna.|SI|International|02/21/1993
+nulla. In tincidunt congue turpis. In condimentum.|Kenyon|Gordon|Paper|Electrical Engineering|ut|SE|Local|10/21/2003
+sit amet risus. Donec egestas. Aliquam nec enim.|Jeanette|Russo|Masters Thesis|Computer Engineering|risus|SE|International|01/08/2005
+rhoncus. Proin nisl sem, consequat nec, mollis|Ethan|Ortiz|Masters Thesis|Computer Engineering|pharetra, felis|SI|International|07/14/2005
+dictum eu, placerat eget, venenatis a,|Noelani|Mccarthy|Phd Thesis|Electrical Engineering|viverra.|HR|None|03/06/2003
+dignissim magna a tortor. Nunc commodo auctor velit. Aliquam|Damon|Pruitt|Masters Thesis|Computer Engineering|aliquam adipiscing lacus.|DE|Local|04/19/1998
+est. Nunc ullamcorper,|Mia|Chambers|Paper|Computer Science|adipiscing ligula.|EN|Local|02/24/2006
+et libero. Proin mi.|Bruce|Martinez|Phd Thesis|Electrical Engineering|elementum, dui|SE|International|08/21/1993
+nec, imperdiet nec, leo. Morbi neque tellus, imperdiet non, vestibulum|Arsenio|Ferguson|Book|Computer Engineering|lorem lorem,|HR|International|11/16/2002
+Quisque|Melissa|Mathews|Phd Thesis|Electrical Engineering|laoreet|EN|Local|12/10/1993
+sed|Clio|Rojas|Masters Thesis|Computer Science|non, luctus|SE|International|01/31/2000
+tellus non magna. Nam ligula elit, pretium|Maggie|Perez|Book|Computer Engineering|nascetur ridiculus mus.|HR|International|06/09/2001
+quis lectus. Nullam suscipit, est ac facilisis facilisis, magna tellus|Tyler|Hampton|Phd Thesis|Computer Science|ac turpis|HR|None|03/27/2004
+at fringilla purus|Janna|Boyd|Book|Electrical Engineering|non, luctus sit|SI|Local|09/03/2005
+Duis volutpat nunc sit amet metus.|Darryl|Knowles|Phd Thesis|Computer Science|blandit congue. In|DE|International|01/30/1994
+quis, pede. Praesent eu dui. Cum|Ulysses|Joyner|Paper|Electrical Engineering|felis. Nulla|SE|International|09/01/2003
+parturient montes, nascetur ridiculus mus.|Aline|Lloyd|Paper|Computer Science|diam|SE|International|11/04/1996
+placerat eget, venenatis a,|Drew|Patton|Masters Thesis|Computer Science|nostra, per|DE|International|02/05/2006
+non, sollicitudin a, malesuada id, erat.|Carol|Tillman|Paper|Electrical Engineering|non magna.|SE|International|11/17/2002
+purus. Maecenas libero est, congue a,|Lucy|Potts|Phd Thesis|Computer Science|euismod mauris|SI|Local|01/17/2006
+ornare egestas ligula. Nullam feugiat|Unity|Pollard|Phd Thesis|Electrical Engineering|magna.|HR|Local|12/15/1997
+dolor|Chandler|Clemons|Masters Thesis|Computer Engineering|eget magna.|DE|International|05/23/1999
+sem|Ronan|Burton|Paper|Computer Engineering|tempus eu,|DE|International|01/18/1994
+Quisque|Harper|Santos|Masters Thesis|Electrical Engineering|Ut|EN|International|11/23/1993
+torquent per conubia nostra, per inceptos hymenaeos. Mauris|Tatum|Clark|Book|Electrical Engineering|tellus. Suspendisse sed|HR|International|12/22/1993
+dui, in sodales elit erat vitae risus. Duis a mi|Mia|Brady|Phd Thesis|Computer Science|vitae velit|SI|None|01/12/1994
+enim nec tempus|Clayton|Bauer|Book|Electrical Engineering|ipsum leo elementum|SI|Local|02/20/2004
+eget laoreet posuere, enim nisl elementum purus,|Violet|Sampson|Masters Thesis|Electrical Engineering|at, egestas|HR|International|09/03/2002
+erat semper|Jasmine|Butler|Phd Thesis|Computer Science|cursus et, eros.|SI|Local|01/19/2006
+sem semper erat, in consectetuer|Evelyn|Sutton|Paper|Computer Engineering|lectus ante dictum|HR|International|03/17/1997
+Curabitur egestas nunc sed libero.|Heather|Livingston|Paper|Electrical Engineering|pede. Cras vulputate|EN|Local|07/27/1997
+vel est tempor bibendum. Donec felis orci, adipiscing non,|Alden|Campbell|Paper|Electrical Engineering|vestibulum,|HR|International|12/01/2002
+ornare tortor at risus. Nunc ac|Chanda|Barker|Paper|Computer Science|porttitor eros|HR|None|07/12/2001
+lacus, varius et, euismod et, commodo|Dillon|Mcmillan|Book|Computer Engineering|parturient montes, nascetur|SI|None|10/28/2001
+malesuada malesuada. Integer id magna et ipsum cursus|Ciara|Santana|Phd Thesis|Electrical Engineering|magna.|HR|None|03/04/1993
+pede et risus. Quisque libero lacus, varius et, euismod et,|Plato|Morin|Book|Computer Engineering|luctus|EN|Local|10/04/2000
+dictum eu, placerat eget, venenatis|Giacomo|Rivas|Phd Thesis|Computer Engineering|cursus a, enim.|EN|International|04/30/1994
+lorem. Donec elementum, lorem|Adara|Waller|Paper|Computer Science|orci,|SE|Local|12/10/2006
+eget ipsum. Suspendisse sagittis. Nullam vitae diam. Proin|Flavia|Reid|Paper|Electrical Engineering|Sed auctor odio|EN|Local|10/28/2002
+ac mattis velit justo nec ante. Maecenas|Mason|Shaw|Book|Computer Engineering|nisl sem,|EN|None|05/08/1999
+hendrerit consectetuer, cursus et, magna.|Yolanda|Tillman|Book|Electrical Engineering|semper pretium|SI|Local|01/10/2005
+viverra.|Jillian|Alvarez|Book|Computer Engineering|scelerisque dui.|SE|Local|08/08/1997
+vel arcu eu odio tristique|Jerry|Buchanan|Book|Computer Engineering|dui.|SE|None|06/15/2005
+Aliquam erat volutpat. Nulla|Hoyt|Snider|Paper|Computer Science|magna. Phasellus|SI|Local|10/06/1999
+mi|Charde|Scott|Paper|Electrical Engineering|Suspendisse commodo|HR|None|09/18/1994
+non, bibendum sed, est. Nunc laoreet lectus quis massa.|Ashton|Cochran|Masters Thesis|Computer Science|Aenean sed|EN|Local|08/14/1998
+sed consequat auctor, nunc nulla|Ross|Juarez|Paper|Electrical Engineering|blandit. Nam nulla|DE|International|06/24/1995
+lorem.|Chiquita|Morse|Paper|Computer Engineering|nibh.|HR|Local|04/28/1998
+Suspendisse commodo tincidunt nibh. Phasellus nulla. Integer vulputate, risus a|Xyla|Anthony|Book|Computer Science|Phasellus|DE|International|03/03/2000
+fermentum fermentum arcu. Vestibulum ante ipsum primis|Zephania|Snyder|Masters Thesis|Electrical Engineering|faucibus. Morbi vehicula.|EN|Local|02/17/1998
+est, vitae sodales nisi magna sed dui. Fusce aliquam,|Uriah|Odonnell|Book|Electrical Engineering|congue|DE|None|04/08/1994
+gravida sit amet,|Odette|Farmer|Paper|Electrical Engineering|cursus luctus, ipsum|DE|International|09/26/2000
+non, egestas a, dui.|Vernon|Fisher|Phd Thesis|Electrical Engineering|a nunc. In|HR|Local|06/02/1997
+Fusce mi lorem, vehicula et,|Zena|Morales|Paper|Computer Science|risus. Nunc ac|EN|Local|07/10/2001
+elementum at, egestas a, scelerisque sed, sapien. Nunc pulvinar arcu|Lucas|Hayes|Phd Thesis|Electrical Engineering|purus,|SI|International|03/20/2002
+tellus, imperdiet|Erica|Moreno|Paper|Computer Engineering|bibendum|EN|International|08/17/2003
+quis massa. Mauris vestibulum,|Darryl|Heath|Phd Thesis|Computer Engineering|Donec porttitor|EN|International|04/15/2006
+nibh enim, gravida sit amet, dapibus id,|Demetria|Britt|Masters Thesis|Computer Science|Cras|SE|Local|12/01/1994
+nisl sem, consequat|Alexis|Snow|Masters Thesis|Computer Engineering|quis,|DE|International|01/24/1996
+aliquet molestie tellus. Aenean egestas hendrerit neque. In ornare|Anjolie|Burks|Masters Thesis|Computer Engineering|eu odio|HR|International|01/18/2003
+mattis. Cras|Kaseem|Holden|Paper|Computer Science|est|HR|International|02/22/2003
+nec ligula consectetuer rhoncus. Nullam velit dui,|Sonia|Stevenson|Paper|Electrical Engineering|Praesent|SE|International|07/10/2001
+arcu eu odio tristique pharetra. Quisque ac libero nec ligula|Xerxes|Holder|Book|Electrical Engineering|orci.|SE|Local|08/11/2000
+est ac facilisis facilisis,|Sarah|Mitchell|Phd Thesis|Electrical Engineering|malesuada fringilla est.|EN|None|10/19/2000
+Curabitur consequat, lectus|Jakeem|Trujillo|Phd Thesis|Electrical Engineering|cursus.|EN|None|07/29/1993
+Maecenas iaculis aliquet diam.|Lydia|Bolton|Paper|Computer Science|mauris, aliquam eu,|EN|International|05/12/1999
+rhoncus id, mollis nec, cursus a, enim. Suspendisse|Alvin|Sanders|Phd Thesis|Electrical Engineering|eu dolor egestas|HR|Local|05/04/1994
+Curabitur ut odio vel|Janna|Gamble|Paper|Computer Science|commodo hendrerit. Donec|HR|Local|01/27/1997
+aliquet nec, imperdiet|Linda|Donaldson|Phd Thesis|Computer Science|Proin|HR|Local|02/08/1995
+fermentum risus, at fringilla purus|Priscilla|Levine|Phd Thesis|Computer Engineering|vestibulum nec, euismod|EN|None|04/29/1996
+neque|Blake|Boone|Paper|Electrical Engineering|Vivamus sit amet|SI|None|07/06/1995
+ante ipsum primis in faucibus orci luctus et|Xantha|Browning|Phd Thesis|Computer Science|mauris eu|SI|None|07/02/2003
+magna. Duis dignissim tempor arcu. Vestibulum ut eros non|Hiram|York|Book|Computer Science|sollicitudin adipiscing|SE|None|09/21/1996
+pharetra. Nam ac nulla. In tincidunt congue turpis.|Stephanie|Reid|Paper|Electrical Engineering|euismod ac,|SI|International|09/08/1997
+ac nulla. In tincidunt congue turpis. In condimentum. Donec|Akeem|Mendoza|Phd Thesis|Computer Science|est|SE|None|01/06/2002
+nec, mollis vitae, posuere at, velit. Cras lorem|Montana|Cabrera|Phd Thesis|Electrical Engineering|urna|DE|International|01/03/2002
+Curabitur ut odio vel est|Abigail|Mayo|Phd Thesis|Computer Science|et|SE|International|07/29/2002
+hendrerit a, arcu. Sed et libero. Proin mi. Aliquam|Imogene|Jarvis|Book|Computer Science|metus eu erat|DE|None|02/16/2007
+eu enim. Etiam imperdiet dictum|Whoopi|Cardenas|Paper|Computer Science|tristique|HR|None|07/11/2000
+Proin eget odio. Aliquam vulputate ullamcorper magna. Sed eu|Aidan|Kent|Masters Thesis|Computer Science|Duis sit|DE|Local|05/02/2005
+lacinia at, iaculis quis, pede.|Halla|Mcintosh|Phd Thesis|Electrical Engineering|arcu. Nunc|SI|None|01/16/2007
+enim nisl elementum purus, accumsan|Felicia|Stevenson|Paper|Computer Engineering|pretium|SE|None|06/16/2001
+consectetuer adipiscing elit. Etiam|Quynn|Downs|Phd Thesis|Electrical Engineering|facilisis vitae, orci.|EN|International|01/30/2005
+lobortis, nisi nibh lacinia orci, consectetuer euismod est arcu|Hillary|Brooks|Masters Thesis|Computer Science|consectetuer adipiscing elit.|DE|International|06/10/2004
+pharetra, felis eget varius|Malik|York|Masters Thesis|Electrical Engineering|et arcu|HR|Local|12/02/1995
+eu lacus. Quisque imperdiet, erat nonummy|Amy|Rowe|Book|Electrical Engineering|ligula. Nullam|EN|International|11/25/1996
+nisl. Maecenas malesuada fringilla est. Mauris eu turpis. Nulla aliquet.|Kaye|Mclaughlin|Paper|Computer Science|Suspendisse|DE|International|12/19/2004
+in magna. Phasellus dolor elit, pellentesque a,|Destiny|Flores|Book|Computer Engineering|Quisque imperdiet,|SI|None|09/16/2006
+in lobortis tellus justo sit amet nulla. Donec non justo.|Sydney|Wood|Paper|Computer Engineering|Duis sit|EN|Local|05/21/1999
+augue malesuada malesuada. Integer id magna et ipsum cursus vestibulum.|Moses|Strong|Paper|Computer Science|justo sit amet|DE|None|01/24/1999
+luctus et ultrices posuere cubilia Curae; Donec tincidunt.|Tashya|Barker|Book|Computer Science|Donec|SI|None|08/22/1999
+ridiculus mus. Proin vel arcu|Carter|Patterson|Book|Computer Science|Curabitur vel|SI|Local|05/10/1994
+egestas hendrerit|Nehru|Murray|Book|Computer Engineering|eget lacus. Mauris|HR|International|05/01/2000
+pede|Bevis|Meyers|Masters Thesis|Computer Science|Duis|HR|Local|10/01/2000
+nibh dolor, nonummy ac, feugiat non, lobortis quis,|Magee|Macias|Paper|Electrical Engineering|mauris. Morbi non|HR|Local|10/29/2000
+risus. Donec nibh enim, gravida sit amet,|Isabella|Stanley|Masters Thesis|Computer Engineering|Nunc|HR|Local|08/05/2002
+iaculis nec, eleifend non, dapibus rutrum, justo. Praesent luctus.|Lilah|Foley|Phd Thesis|Computer Engineering|eget nisi dictum|SI|Local|08/05/2005
+iaculis nec, eleifend non, dapibus rutrum, justo. Praesent luctus.|Lilah|Foley|Phd Thesis|Computer Engineering|Donec|SI|Local|08/05/2005

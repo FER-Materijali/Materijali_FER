@@ -1,0 +1,432 @@
+body
+{
+	font: 70% "Trebuchet MS", sans-serif, arial;
+	color: #444;
+	background: #474747 url(images/bg.png);
+}
+
+html, body 
+{
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+
+input[type="submit"],
+input[type="reset"]
+{
+	width: 85px;
+	height: 35px;
+	margin: 5px;
+}
+
+h2 
+{
+	text-align: center;
+	font-size: 23px;
+	font-family: georgia, "Lucidia grande";
+	font-variant: small-caps;
+	letter-spacing: -0.5px;
+	font-weight: 600;
+	text-shadow: 0.3px 0.3px 2px #ccc;
+	padding-top: 10px;
+}
+
+#wrapper 
+{
+   min-height: 100%;
+}
+
+#main 
+{
+	overflow: auto;
+	padding-bottom: 70px;
+} 
+
+body:before 
+{
+	content: "";
+	height: 100%;
+	float: left;
+	width: 0;
+	margin-top: -32767px;
+}
+
+#header 
+{
+	border-top: 5px solid #fece2f;
+	height: 110px;
+}
+
+#header a
+{
+	text-decoration: none;
+	font: 44px georgia, "Lucida Grande", Arial, sans-serif;
+	color: #ccc; 
+	text-shadow: 0px 4px 10px #2a2a2a;
+	letter-spacing: -1.5px;
+	
+	position: absolute;
+	left: 220px;
+	top: 30px;
+}
+
+#header a:hover
+{
+	color: #d5d5d5; 
+	text-shadow: 0px 5px 8px #2a2a2a;
+}
+
+#header img
+{
+	width: 50px;
+	position: relative;
+	top: 10px;
+	border: 0;
+}
+
+#menu
+{
+  margin-left: -40px;
+  position: fixed;
+  width: 210px;
+  font: small-caps 16px 'Segoe UI Semibold','Segoe-Semibold',Tahoma,Arial,Helvetica,sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+}
+
+#menu ul
+{
+  list-style-type: none;
+}
+
+#menu ul li
+{
+  border-left: 4px solid transparent;
+  line-height: 35px;
+  width: 180px;
+}
+
+#menu a
+{
+  text-decoration: none;
+  color: #ccc; 
+  text-shadow: 0px 3px 8px #2a2a2a;
+  display: block;
+  width: 150px;
+  height: 37px;
+  padding-left: 30px;
+}
+
+#menu ul li:hover
+{
+  background-color: #555;
+  color: #d3d3d3; 
+  text-shadow: 0px 5px 8px #2a2a2a;
+}
+
+#menu .active
+{
+	border-left: 4px solid #fece2f;
+}
+
+#menu .active a
+{
+	color: #fece2f !important;
+}
+
+#content
+{
+	margin-left: 220px;
+	margin-right: 220px;
+	padding-left: 50px;
+	padding-top: 20px;
+	padding-bottom: 60px;
+	padding-right: 50px;
+	background: #fff;
+
+	-moz-box-shadow: inset 0px 0px 8px #444;
+	-webkit-box-shadow: inset 0px 0px 8px #444;
+	box-shadow: inset 0px 0px 8px #444;
+}
+
+#content a
+{
+	text-decoration: none;
+	color: #ef8c08;
+}
+
+#content a:hover
+{
+	text-decoration: none;
+	color: #555;
+}
+
+#contenttext
+{
+	font-size: 12px;
+	text-align: justify;
+	width: 55%;
+	padding-left: 5%;
+	float: left;
+}
+
+#contentimage
+{
+	float: right;
+	width: 35%;
+}
+
+#footer
+{
+	position: relative;
+	width: 100%;
+	color: #999;
+	margin-top: -50px;
+	height: 67px;
+	clear: both;
+	border-bottom: 3px solid #fece2f;
+}
+
+#footer a
+{
+	text-decoration: none;
+	color: #999;
+	position: absolute;
+	bottom: 5px;
+	right: 45%;
+}
+
+#footer a:hover
+{
+	text-decoration: none;
+	color: #ccc;
+}
+
+table 
+{
+    border-collapse: collapse;
+}
+
+table td 
+{
+    vertical-align: middle;
+    padding: 4px;
+}
+
+table.fancy
+{
+	margin: auto;
+	text-align: center;
+	width: 100%;
+    
+    line-height: 1.2em;
+    border-collapse: collapse;
+}
+
+table.fancy thead th, table.fancy tfoot td
+{
+    background: #474747 url(images/bg.png);
+    border-right: 1px dotted #666;
+    border-top: 2px solid #666;
+    -moz-box-shadow: 0px -1px 3px #000;
+    -webkit-box-shadow: 0px -1px 3px #000;
+    box-shadow: 0px -1px 3px #000;
+}
+
+table.fancy thead th
+{
+    padding: 20px 10px 20px 10px;
+}
+
+
+table.fancy tfoot th
+{
+    padding: 5px;
+}
+
+table.fancy tfoot td
+{
+    border-top: none;
+    border-bottom: 2px solid #ffaa2a;
+    -moz-box-shadow: 0px 1px 4px #000;
+    -webkit-box-shadow: 0px 1px 4px #000;
+    box-shadow: 0px 1px 4px #000;
+}
+
+table.fancy thead th
+{
+	color: #ffaa2a; 
+	font-family:  Georgia, serif, Helvetica, "Trebutchet MS";
+	letter-spacing: -0.5px;
+	font-variant: small-caps;
+	font-weight: 520;
+	font-size: 15px;
+	text-shadow: 0px 3px 8px #2a2a2a;
+}
+
+table.fancy tbody a
+{
+	color: #333 !important;
+	text-shadow: 1px 1px 1px #ccc;
+}
+
+table.fancy tbody a:hover
+{
+	color: #ffa525 !important;
+}
+
+table.fancy thead :nth-last-child(1), 
+table.fancy tbody :nth-last-child(1),
+table.fancy tfoot :nth-last-child(1)
+{
+    border-right: none;
+}
+
+table.fancy tbody td
+{
+    padding: 10px;
+    border-right: 1px dotted #999;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+table.fancy tbody tr
+{
+    background-color: #f9f9f9;
+	color: #333;
+}
+
+table.fancy tbody tr:hover
+{
+    color: #555;
+	background-color: #aaa;
+    -moz-box-shadow: 0px -1px 3px #777;
+    -webkit-box-shadow: 0px -1px 3px #777;
+    box-shadow: 0px -1px 3px #777;
+}
+
+table.fancy tbody tr:hover a:hover
+{
+    color: #ef8010 !important;
+	text-shadow: 0px 1px 1px #666;
+}
+
+
+/* Tooltip
+----------------------------------*/
+.ui-tooltip {
+	position: absolute;
+	z-index: 9999;
+}
+
+.ui-tooltip-content {
+	background: #474747 url(images/bg.png);
+	color: #ccc;
+	margin: -2px;
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+	line-height: 180%;
+	text-shadow: 0px 2px 3px #333;
+    font: 12px "Trebuchet MS", "Lucida Grande";
+	
+	border-left: 4px solid #ffa525;
+	
+	-o-box-shadow: 0px 0px 8px #ccc;
+	-moz-box-shadow: 0px 0px 8px #ccc;
+	-webkit-box-shadow:0px 0px 8px #ccc;
+	box-shadow: 0px 0px 8px #ccc;
+}
+
+/* Fades and background-images don't work well together in IE6, drop the image */
+* html .ui-tooltip {
+	background-image: none;
+}
+
+body .ui-tooltip { border-width: 2px; }
+
+div .buttonContainer
+{
+	margin: 0 auto;
+	width: 420px;
+	height: 60px;
+	text-align: right;
+}
+
+div .buttonReset, div .buttonSend
+{
+	height: 35px;
+	width: 95px;
+	line-height: 35px;
+	text-align: center;
+	/*border-bottom: 2px solid #777;*/
+	display: inline-block;
+	margin-top: 40px;
+	margin-left: 10px;
+}
+
+div .buttonReset a, div .buttonSend a
+{
+	color: #777 !important;
+	font-size: 15px;
+	display: block;
+	letter-spacing: 2px;
+}
+
+div .buttonReset
+{
+	background: #eee;
+}
+
+div .buttonReset a:hover
+{
+	background: #ddd;
+}
+
+div .buttonSend
+{
+	background: #ffb700;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffd500), to(#ffb700));
+	background: -webkit-linear-gradient(top, #ffd500, #ffb700);
+	background: -moz-linear-gradient(top, #ffd500, #ffb700);
+	background: -ms-linear-gradient(top, #ffd500, #ffb700);
+	background: -o-linear-gradient(top, #ffd500, #ffb700);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd500', endColorstr='#ffb700');
+}
+
+div .buttonSend a:hover
+{
+	background: #eee;
+}
+
+
+form
+{
+	width: 450px;
+	margin: 0 auto;
+}
+
+form table
+{
+	margin: 0 auto;
+}
+
+form table tr td:first-child
+{
+	width: 110px !important;
+}
+
+div .pretragaLabel
+{
+	line-height: 30px;
+	font: small-caps 1.308em/1.923em 'Segoe UI Semibold','Segoe-Semibold',Tahoma,Arial,Helvetica,sans-serif;
+	background: #fff;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #666;
+	letter-spacing: 1px;
+}

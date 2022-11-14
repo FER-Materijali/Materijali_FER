@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="WINDOWS-1250" standalone="no"?>
+<jardesc>
+    <jar path="D:/Java/apache-tomcat-6.0.18/webapps/funkcije/WEB-INF/lib/servletFje.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/DZ_12/lib/fje.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=DZ_12/src"/>
+        <file path="/DZ_12/.project"/>
+        <file path="/DZ_12/.classpath"/>
+    </selectedElements>
+    <fatjar builder="org.eclipse.jdt.ui.plain_jar_builder" launchConfig=""/>
+</jardesc>

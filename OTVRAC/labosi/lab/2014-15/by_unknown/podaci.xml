@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE poslovnice SYSTEM "gramatika.dtd">
+
+<?xml-stylesheet type="text/xsl" href="pretvorba.xsl"?>
+
+<poslovnice>
+	<poslovnica id="pos1" kod="11111" regija="Sjeverna" placanje="Gotovina">
+		<fid>315820155166561</fid>
+		<ime>Citroen CiB Commerce Zagreb</ime>
+		
+		<modeli>
+			<vrsta>C5</vrsta>
+			<godina>2015</godina>			
+			<popis>
+				<usluga>Prodaja</usluga> 
+				<usluga>Ostalo</usluga>
+			</popis>
+		</modeli>
+		<probna>Da</probna>
+		<email>Ne</email>
+		<termin>Srijeda</termin>
+		<rvrijeme>
+			<radnop>09</radnop>
+			<radnok>19</radnok>
+		</rvrijeme>
+		<dezurni>Ne</dezurni>
+		<grad>Žagreb</grad>
+		<pbr>10000</pbr>
+		<ulica>Nadinska</ulica>
+		<br>9</br>
+	</poslovnica>
+	
+	<poslovnica id="pos2" kod="22222" regija="Srednja" placanje="Kartica">
+		<fid>259949097437506</fid>
+		<ime>Citroen Savska</ime>
+	
+		<modeli>
+			<vrsta>DS3</vrsta>			
+			<godina>2013</godina>			
+			<popis>
+				
+				<usluga>Servis</usluga>
+				
+			</popis>
+		</modeli>
+		<probna>Da</probna>
+		<email>Da</email>
+		<termin>Cetvrtak</termin>
+		<rvrijeme>
+			<radnop>08</radnop>
+			<radnok>19</radnok>
+		</rvrijeme>
+		<dezurni>Da</dezurni>
+		<grad>Zagreb</grad>
+		<pbr>10000</pbr>
+		<ulica>Savska</ulica>
+		<br>41</br>
+	</poslovnica>
+
+	<poslovnica id="pos3" kod="33333" regija="Srednja" placanje="Kartica">
+		<fid>353322114746771</fid>
+		<ime>CS Zagreb</ime>
+	
+		<modeli>
+			<vrsta>C3</vrsta>			
+			<godina>2008</godina>			
+			<popis>
+				<usluga>Servis</usluga>
+			</popis>
+		</modeli>
+		<probna>Ne</probna>
+		<email>Ne</email>
+		<termin>Ponedeljak</termin>
+		<rvrijeme>
+			<radnop>07</radnop>
+			<radnok>14</radnok>
+		</rvrijeme>
+		<dezurni>Da</dezurni>
+		<grad>Zagreb</grad>
+		<pbr>10000</pbr>
+		<ulica>Tratinska</ulica>
+		<br>32</br>
+	</poslovnica>
+	
+	<poslovnica id="pos4" kod="44444" regija="Dalmatinska" placanje="Kartica">
+		<fid>13750358194823651</fid>
+		<ime>Citroen M.T.A. THOMAS</ime>
+		<modeli>
+			<vrsta>DS5</vrsta>			
+			<godina>2015</godina>			
+			<popis>
+				<usluga>Prodaja</usluga>
+			</popis>
+		</modeli>
+		
+		<probna>Da</probna>
+		<email>Ne</email>
+		<termin>Subota</termin>
+		<rvrijeme>
+			<radnop>08</radnop>
+			<radnok>15</radnok>
+		</rvrijeme>
+		<dezurni>Da</dezurni>
+		<grad>Zadar</grad>
+		<pbr>23000</pbr>
+		<ulica>Jadranska</ulica>
+		<br>141</br>
+	</poslovnica>
+	
+	<poslovnica id="pos5" kod="55555" regija="Istarska" placanje="Gotovina">
+		<fid>220911514620489</fid>
+		<ime>Citroen AC Ivančić</ime>
+		
+		<modeli>
+			<vrsta>C1</vrsta>			
+			<godina>2010</godina>
+			<popis>
+				<usluga>Ostalo</usluga>
+				
+			</popis>
+		</modeli>
+		
+		
+		
+		
+		
+		<probna>Ne</probna>
+		<email>Da</email>
+		<termin>Ponedeljak</termin>
+		<rvrijeme>
+			<radnop>08</radnop>
+			<radnok>17</radnok>
+		</rvrijeme>
+		<dezurni>Da</dezurni>
+		<grad>Split</grad>
+		<pbr>23000</pbr>
+		<ulica>Lovački put</ulica>
+		<br>1</br>
+	</poslovnica>
+	
+</poslovnice>
+		
+			

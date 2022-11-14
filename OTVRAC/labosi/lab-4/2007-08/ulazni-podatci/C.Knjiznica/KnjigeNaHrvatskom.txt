@@ -1,0 +1,104 @@
+ISBN|Naslov|Autor|Jezik|Broj stranica|Izdavac|Izdanje|Datum izdanja|Ocjena
+142-6-17-358397-8|nec, cursus a, enim. Suspendisse aliquet,|Walton, Reece S.|Hrvatski|75|nisi. Cum sociis|VIII|14.01.2008|5
+142-6-17-358397-8|nec, cursus a, enim. Suspendisse aliquet,|Booker, Quamar S.|Hrvatski|75|nisi. Cum sociis|VIII|14.01.2008|5
+491-1-26-066753-8|taciti sociosqu ad|Dunlap, Kylee U.|Hrvatski|76|ultrices a,|V|07.12.2007|4
+300-9-07-672966-2|sit amet|Pacheco, Yvonne E.|Hrvatski|77|feugiat placerat|VII|01.08.2007|4
+156-8-23-119731-6|lacus pede sagittis|Stevenson, Rama F.|Hrvatski|78|cubilia Curae;|V|16.06.2007|1
+321-5-33-517770-5|mauris ut mi. Duis|Booker, Quamar S.|Hrvatski|79|sed sem egestas|VI|09.07.2007|4
+676-9-37-604759-7|consectetuer adipiscing elit.|Gill, Isaac W.|Hrvatski|80|metus|VI|06.01.2008|3
+837-5-98-974947-9|Donec egestas. Aliquam nec enim. Nunc ut erat.|Cunningham, Quinn V.|Hrvatski|81|dignissim magna a|VII|07.06.2007|4
+835-6-22-027817-9|non leo. Vivamus nibh dolor, nonummy ac, feugiat|Savage, Phyllis Q.|Hrvatski|82|faucibus. Morbi|VII|04.10.2007|3
+723-0-35-816505-5|sollicitudin adipiscing ligula. Aenean gravida nunc sed|Finch, Brooke P.|Hrvatski|83|metus. In|VII|09.04.2008|2
+586-9-67-518066-4|amet luctus vulputate, nisi sem semper erat,|Faulkner, Aaron T.|Hrvatski|84|aliquet. Phasellus fermentum|VII|28.10.2007|2
+681-3-43-159798-6|aliquam arcu. Aliquam ultrices iaculis odio. Nam interdum|Riddle, Ingrid W.|Hrvatski|85|Vivamus non|VI|02.12.2007|3
+461-7-77-757527-6|est ac mattis semper, dui lectus|Burt, Jane Q.|Hrvatski|86|erat volutpat.|VII|01.05.2007|3
+583-2-69-912779-2|dapibus quam|Powell, Ryan L.|Hrvatski|87|penatibus|II|30.10.2007|2
+106-9-07-175197-1|purus ac tellus. Suspendisse sed dolor.|Beard, Liberty D.|Hrvatski|88|eu tellus|II|16.03.2008|3
+727-5-34-043861-3|turpis vitae purus|Sanford, Joan P.|Hrvatski|89|neque.|III|12.06.2007|1
+609-9-14-301433-6|Mauris blandit enim consequat purus. Maecenas libero|Stout, Clinton W.|Hrvatski|90|sit amet,|III|16.07.2007|4
+267-5-97-641009-1|mauris ipsum|Mccray, Aphrodite I.|Hrvatski|91|semper tellus|IX|13.02.2007|1
+748-4-02-512534-3|sed tortor. Integer|Vargas, Neil T.|Hrvatski|92|vel|V|29.02.2008|4
+275-3-36-589923-9|nec urna suscipit nonummy. Fusce fermentum fermentum arcu.|Willis, Odette X.|Hrvatski|93|orci quis|IX|02.06.2007|1
+900-5-68-550850-0|Aliquam auctor,|Poole, Ulla P.|Hrvatski|94|dictum|I|07.05.2007|4
+547-3-93-478470-4|vitae risus. Duis a mi fringilla|Tillman, Aretha K.|Hrvatski|95|vitae purus|III|18.01.2007|1
+526-8-63-611768-5|quis urna. Nunc quis arcu vel|Contreras, Uriel W.|Hrvatski|96|fringilla est. Mauris|II|17.02.2007|2
+668-9-30-107954-6|eu dui. Cum sociis natoque|Henderson, Keiko A.|Hrvatski|97|fermentum risus,|VIII|19.03.2008|5
+435-4-46-242617-3|cursus. Nunc mauris elit, dictum eu,|Booker, Garth Z.|Hrvatski|98|pede,|IX|11.04.2007|5
+145-7-69-920756-9|ligula tortor, dictum eu, placerat eget, venenatis a,|Dillon, Ursula C.|Hrvatski|99|erat semper|II|25.11.2007|4
+501-5-04-580279-0|ultrices posuere cubilia Curae; Phasellus ornare.|Fitzgerald, Britanni G.|Hrvatski|100|ligula. Nullam feugiat|X|03.10.2007|3
+685-0-43-171178-3|libero est, congue a, aliquet vel, vulputate eu,|Richardson, Maile O.|Hrvatski|101|euismod urna.|V|14.03.2007|5
+636-0-44-151090-2|lorem. Donec elementum, lorem ut|Boyer, Rebecca E.|Hrvatski|102|sollicitudin|III|21.11.2007|1
+380-7-05-915931-8|vitae mauris|Doyle, Zorita N.|Hrvatski|103|faucibus ut,|III|10.07.2007|5
+672-2-63-767848-0|sit amet ante. Vivamus|Richard, Len O.|Hrvatski|104|commodo hendrerit.|V|21.06.2007|1
+102-4-88-162076-1|sed leo. Cras|Aguirre, Olympia Z.|Hrvatski|105|lectus pede et|X|01.07.2007|1
+526-3-33-531254-6|Ut sagittis lobortis|Carey, Lisandra J.|Hrvatski|106|Curabitur dictum. Phasellus|II|24.08.2007|4
+395-6-49-764237-6|blandit. Nam nulla magna, malesuada vel, convallis in,|Vaughan, Anthony B.|Hrvatski|107|nonummy ultricies|VIII|22.12.2007|3
+990-8-67-380059-9|consequat, lectus sit amet luctus|Ellis, Xerxes S.|Hrvatski|108|Mauris|III|10.04.2008|3
+327-9-66-061057-9|diam. Pellentesque habitant morbi tristique|Morrison, Luke L.|Hrvatski|109|sed|IV|17.02.2008|2
+977-5-74-770565-5|Vestibulum ante ipsum|Finch, Amal W.|Hrvatski|110|sit|IV|19.01.2007|3
+866-2-33-299842-0|sit amet, dapibus id, blandit|Pierce, Winifred S.|Hrvatski|111|orci. Phasellus|I|22.03.2007|5
+570-7-09-784990-5|In scelerisque scelerisque dui. Suspendisse ac metus vitae|Hurley, Conan U.|Hrvatski|112|lorem, eget mollis|X|17.03.2007|3
+585-5-64-064013-7|mauris ipsum porta|Fisher, Lacy S.|Hrvatski|113|dui|I|10.05.2007|1
+882-2-98-799063-9|eu tellus. Phasellus|Mason, Macy Q.|Hrvatski|114|semper|IX|29.04.2007|3
+646-4-16-413815-4|purus gravida sagittis. Duis gravida. Praesent|Rodriquez, Anastasia N.|Hrvatski|115|elit. Curabitur|III|08.03.2008|4
+918-5-60-841489-6|est. Nunc ullamcorper, velit in aliquet lobortis, nisi|Ellis, Brennan S.|Hrvatski|116|ullamcorper, nisl arcu|VI|04.12.2007|3
+199-1-83-332291-9|luctus|Albert, Mark T.|Hrvatski|117|nulla|III|08.06.2007|1
+576-8-09-128329-7|felis, adipiscing fringilla, porttitor vulputate, posuere vulputate,|Cleveland, Justina U.|Hrvatski|118|Nullam|IV|02.03.2008|3
+519-4-22-364333-2|dictum ultricies ligula. Nullam enim. Sed nulla ante,|Wiley, Alma K.|Hrvatski|119|dapibus gravida. Aliquam|VI|22.08.2007|1
+530-7-76-200629-1|felis, adipiscing fringilla,|Berry, Kirk W.|Hrvatski|120|Vestibulum accumsan neque|I|10.01.2008|3
+487-0-17-179182-0|ac, eleifend vitae, erat.|Guthrie, Ursula H.|Hrvatski|121|a|IV|05.01.2007|5
+602-3-29-338643-0|mus. Donec dignissim|Hayden, Emi O.|Hrvatski|122|accumsan neque et|VIII|21.02.2007|2
+404-3-38-202506-2|egestas a, scelerisque|Ferguson, Rana Y.|Hrvatski|123|Nam|IX|09.09.2007|2
+754-5-74-735458-4|tempor diam dictum|Holmes, Igor Z.|Hrvatski|124|sapien. Aenean|VI|13.02.2008|1
+847-2-20-765619-7|aliquet diam. Sed diam lorem,|Cash, Oscar M.|Hrvatski|125|arcu et|IX|21.09.2007|2
+794-8-71-332308-6|urna et arcu imperdiet ullamcorper. Duis at|Chen, Charles B.|Hrvatski|126|mauris ipsum porta|VI|15.05.2007|1
+432-5-75-806774-7|amet nulla. Donec non justo. Proin non massa|Mercer, Raja L.|Hrvatski|127|non|IX|15.09.2007|2
+261-7-42-319898-4|mattis semper, dui lectus rutrum urna,|Salas, Sybill I.|Hrvatski|128|egestas blandit. Nam|X|07.12.2007|5
+915-1-57-036983-4|Nam consequat dolor vitae dolor. Donec|Montgomery, Raymond Z.|Hrvatski|129|semper et, lacinia|IV|27.01.2007|1
+482-0-96-784031-1|a,|Bowen, Blythe D.|Hrvatski|130|amet luctus vulputate,|I|13.01.2008|3
+408-0-77-470691-4|lacus.|Stewart, Keelie D.|Hrvatski|131|a|VIII|09.02.2007|1
+476-1-24-183223-4|Proin nisl sem, consequat nec, mollis vitae,|Bond, MacKenzie Y.|Hrvatski|132|accumsan sed, facilisis|VIII|27.03.2008|1
+117-5-26-859207-4|non quam. Pellentesque habitant morbi tristique|Lindsay, Hilel X.|Hrvatski|133|blandit mattis. Cras|VIII|27.07.2007|3
+703-4-99-319165-9|odio|Barlow, Suki R.|Hrvatski|134|Morbi|IX|30.05.2007|3
+390-1-32-148749-8|auctor, velit eget|Mckinney, Kendall S.|Hrvatski|135|mi enim,|III|03.03.2007|5
+216-4-31-306289-2|eros non enim commodo|Acosta, Yuri W.|Hrvatski|136|non|III|26.01.2007|5
+259-3-99-928942-4|orci tincidunt adipiscing. Mauris|Mack, Haley X.|Hrvatski|137|enim.|X|26.12.2007|4
+748-6-40-535880-1|suscipit, est|Lowery, Zeus E.|Hrvatski|138|mauris id|IV|13.09.2007|1
+432-4-85-064176-6|eu, ligula. Aenean euismod mauris eu elit.|Graham, Tad V.|Hrvatski|139|Cras lorem|VIII|18.02.2008|2
+921-5-38-946614-8|mauris|Kline, Nita B.|Hrvatski|140|orci. Donec nibh.|IX|12.05.2007|1
+912-7-07-478969-7|massa. Mauris vestibulum,|Boyd, Savannah N.|Hrvatski|141|odio.|X|15.03.2007|3
+334-0-71-977841-2|semper auctor. Mauris|Mendoza, Raja J.|Hrvatski|142|justo|IV|26.01.2007|4
+822-9-19-794827-0|ac,|Cabrera, Ian R.|Hrvatski|143|arcu eu|I|02.12.2007|1
+549-4-19-901602-0|nascetur ridiculus mus. Proin|Smith, Nita R.|Hrvatski|144|pellentesque.|VII|23.12.2007|4
+919-8-19-070285-5|porttitor scelerisque neque. Nullam nisl.|Park, Coby M.|Hrvatski|145|ligula.|IX|14.04.2007|2
+103-0-01-029685-0|fermentum|Callahan, Juliet L.|Hrvatski|146|nisi. Mauris nulla.|I|20.07.2007|2
+213-3-16-384885-0|blandit viverra. Donec|Dean, Jolene A.|Hrvatski|147|nisi. Mauris nulla.|IX|08.04.2007|3
+376-9-04-492995-6|lacinia mattis. Integer eu|Harmon, Martena E.|Hrvatski|148|Morbi|VI|06.02.2007|4
+251-6-90-880455-2|accumsan neque|Farley, Illiana X.|Hrvatski|149|quam dignissim|II|03.05.2007|2
+289-2-78-213745-6|a nunc. In at pede. Cras vulputate|Glenn, Lee N.|Hrvatski|150|eu|II|04.10.2007|3
+253-0-75-459928-7|mauris sit amet lorem semper auctor. Mauris|Singleton, Felicia N.|Hrvatski|151|non,|X|14.03.2008|1
+275-6-10-613592-7|lobortis augue|Little, Dara P.|Hrvatski|152|penatibus et magnis|VII|27.02.2008|5
+132-1-03-452625-7|et netus et malesuada|Haley, Flynn K.|Hrvatski|153|lacus.|III|02.04.2008|2
+494-7-40-012587-6|a, aliquet|Fleming, Zephr E.|Hrvatski|154|felis.|VII|04.05.2007|1
+460-4-62-720582-6|id, ante. Nunc mauris sapien, cursus in,|Sweeney, Silas B.|Hrvatski|155|Quisque imperdiet,|X|24.04.2007|5
+827-0-99-147416-0|nec|Mcneil, Blaze H.|Hrvatski|156|fermentum arcu.|I|18.08.2007|1
+745-6-60-401011-5|risus, at|Perkins, Ruby A.|Hrvatski|157|laoreet|X|05.05.2007|4
+195-0-36-237499-2|vel quam dignissim pharetra. Nam ac|Woodard, Elijah S.|Hrvatski|158|mollis. Duis sit|II|12.12.2007|1
+462-0-86-825852-5|ac arcu. Nunc mauris. Morbi non sapien|Shepherd, Dante N.|Hrvatski|159|natoque penatibus|VIII|10.01.2008|3
+218-8-91-386635-9|quis, tristique ac, eleifend vitae,|Chapman, Jena S.|Hrvatski|160|Donec tincidunt. Donec|IV|01.12.2007|4
+393-4-31-195690-0|consequat nec, mollis vitae,|Gay, Nelle Z.|Hrvatski|161|libero.|I|23.03.2008|3
+640-7-50-329323-6|ac orci. Ut semper pretium neque. Morbi quis|Cline, Lila I.|Hrvatski|162|eu lacus.|VIII|21.01.2008|4
+702-7-34-677036-7|habitant morbi tristique senectus et netus et malesuada|Hudson, Brett Q.|Hrvatski|163|id|X|12.07.2007|4
+879-3-47-150730-6|Quisque fringilla euismod enim.|Odonnell, Dustin H.|Hrvatski|164|ornare lectus|IV|24.01.2008|4
+284-8-90-973037-5|aliquam, enim nec tempus scelerisque, lorem|Blair, Sasha T.|Hrvatski|165|pulvinar arcu et|IV|12.09.2007|3
+606-6-94-907754-1|gravida sit amet, dapibus|Gates, Wylie O.|Hrvatski|166|nisi. Aenean eget|II|20.07.2007|1
+349-6-49-414838-3|Sed neque. Sed|Bell, Wendy H.|Hrvatski|167|vel, faucibus id,|I|08.12.2007|2
+784-6-35-129052-2|lobortis. Class aptent taciti sociosqu|Dyer, Kathleen X.|Hrvatski|168|Etiam imperdiet dictum|VIII|22.02.2008|5
+252-7-64-670896-1|euismod et, commodo at,|Ferguson, Zorita M.|Hrvatski|169|eros non|VIII|19.06.2007|5
+679-1-36-226830-7|consectetuer rhoncus. Nullam|Sharpe, Dale X.|Hrvatski|170|Vestibulum|II|08.08.2007|2
+607-2-29-803986-2|nisi.|Griffin, Chaim T.|Hrvatski|171|lobortis risus. In|V|01.01.2007|5
+554-5-45-833564-0|id nunc interdum feugiat. Sed nec metus|Hughes, Rae Z.|Hrvatski|172|Sed|V|08.02.2007|3
+418-8-01-257655-3|convallis dolor. Quisque|Goodwin, Glenna W.|Hrvatski|173|neque.|IX|18.02.2007|1
+887-9-03-768302-3|vestibulum. Mauris magna. Duis|Luna, Ciaran B.|Hrvatski|174|Donec porttitor tellus|III|26.01.2008|3
+887-9-03-768302-3|vestibulum. Mauris magna. Duis|Luna, Ciaran B.|Hrvatski|174|Etiam imperdiet dictum|III|26.01.2008|3
+887-9-03-768302-3|vestibulum. Mauris magna. Duis|Luna, Ciaran B.|Hrvatski|174|pulvinar arcu et|III|26.01.2008|3

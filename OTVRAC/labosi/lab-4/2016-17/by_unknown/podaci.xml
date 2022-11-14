@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE klubovi SYSTEM "gramatika.dtd">
+<?xml-stylesheet type="text/xsl" href="pretvorba.xsl"?>
+
+<klubovi>
+
+<klub id="k0"  drzava="Hrvatska" navijac="Da" osvajac="Da" osnivac="Ne" redovit="Ne">
+	<ime>Cibona</ime>
+	<grad>Zagreb</grad>
+	<fid>166291480059508</fid>
+	<predsjednik>
+			<imepred>Branko </imepred>
+			<prezimepred>Mamić</prezimepred>
+			<uprava>
+					<clanovi broj_clanova="14"/>
+			</uprava>
+	</predsjednik>
+	<kapacitet velicina="srednji">5000</kapacitet>
+	<navijaci>Smogovci</navijaci>
+	<trofeji>2</trofeji>
+	<kontakt>
+			<tel>098 5678765</tel>
+			<tel>099 2299389</tel>
+			<tel>01 4104990</tel>
+			<web>www.cibona.com</web>
+	</kontakt>
+</klub>
+	
+<klub id="k1"  drzava="Hrvatska" navijac="Da" osvajac="Ne" osnivac="Ne" redovit="Ne">
+		<ime>Zadar</ime>
+		<grad>Zadar</grad>
+		<fid>179353191224</fid>
+		<predsjednik>
+			<imepred>Branko </imepred>
+			<prezimepred>Skroće</prezimepred>
+			<uprava>
+					<clanovi broj_clanova="14"/>
+			</uprava>
+		</predsjednik>
+		<kapacitet velicina="veliki">10000</kapacitet>
+		<navijaci>Tornado</navijaci>
+		<trofeji>0</trofeji>
+		<kontakt>
+		<tel>023 876789</tel>
+		<web>www.kkzadar.net</web>
+		</kontakt>
+</klub>
+	
+	
+	
+	
+<klub id="k2" drzava="Spanjolska" navijac="Da" osvajac="Da" osnivac="DA" redovit="Da">
+		<ime>Real Madrid</ime>
+		<grad>Madrid</grad>
+		<fid>41549690725</fid>
+		<predsjednik>
+			<imepred>Sergio</imepred>
+			<prezimepred>Alvez</prezimepred>
+			<uprava>
+					<clanovi broj_clanova="34"/>
+			</uprava>
+		</predsjednik>
+		<kapacitet velicina="veliki">12000</kapacitet>
+		<navijaci>Madrisimos</navijaci>		
+		<trofeji>9</trofeji>
+	</klub>
+	
+<klub id="k3"  drzava="Rusija" navijac="Ne" osvajac="Da" osnivac="Da" redovit="Da">
+		<ime>CSKA</ime>
+		<grad>Moskva</grad>
+		<fid>136809531794</fid>
+		<predsjednik>
+			<imepred>Rodion</imepred>
+			<prezimepred>Romanović</prezimepred>
+					<uprava>
+						<clanovi broj_clanova="24"/>
+					</uprava>
+		</predsjednik>
+		<kapacitet velicina="veliki">15000</kapacitet>
+		<navijaci></navijaci>		
+		<trofeji>7</trofeji>
+</klub>	
+	
+<klub id="k4"  drzava="Izrael" navijac="Da" osvajac="Da" osnivac="Ne" redovit="Da">
+		<ime>Maccabi</ime>
+		<grad>Tel Aviv</grad>
+		<fid>9987461830</fid>
+		<predsjednik>
+			<imepred>Shimon</imepred>
+			<prezimepred>Mizrahi</prezimepred>
+					<uprava>
+						<clanovi broj_clanova="8"/>
+					</uprava>
+		</predsjednik>
+		<kapacitet velicina="veliki">10800</kapacitet>
+		<navijaci>Ultras</navijaci>		
+		<trofeji>6</trofeji>
+		<kontakt>
+		<tel>021 554655</tel>
+		</kontakt>
+</klub>		
+	
+<klub id="k5"  drzava="Grcka" navijac="Ne" osvajac="Da" osnivac="Ne" redovit="Ne">
+		<ime>Panathinaikos </ime>
+		<grad>Atena</grad>
+		<fid>213376272021124</fid>
+		<predsjednik>
+			<imepred>Pavlos</imepred>
+			<prezimepred>Giannakopoulos</prezimepred>
+					<uprava>
+						<clanovi broj_clanova="40"/>
+					</uprava>
+		</predsjednik>
+		<kapacitet velicina="veliki">19000</kapacitet>	
+		<navijaci>Ultras</navijaci>
+		<trofeji>6</trofeji>
+		<kontakt>
+		<tel>021 555658</tel>
+		<tel>060 885323</tel>
+		<tel>099 9857485</tel>
+		<web>www.kkcedevita.hr</web>
+		</kontakt>
+	</klub>		
+		
+<klub id="k6"  drzava="Hrvatska" navijac="Da" osvajac="Da" osnivac="Ne" redovit="Ne">
+		<ime>Split Jugoplastika</ime>
+		<grad>Split</grad>
+		<fid>204455676311196</fid>
+		<predsjednik>
+			<imepred>Mate</imepred>
+			<prezimepred>Vlak</prezimepred>
+					<uprava>
+					<clanovi broj_clanova="7"/>
+					</uprava>
+		</predsjednik>
+		<kapacitet velicina="mali">4500</kapacitet>
+		<navijaci>Torcida</navijaci>		
+		<trofeji>2</trofeji>
+		<kontakt>
+		<tel>03548596</tel>
+		<tel>0235620</tel>
+		<web>www.kk-split.com</web>
+		</kontakt>
+		
+	</klub>		
+	
+		
+<klub id="k7"  drzava="Italija" navijac="Ne" osvajac="Da" osnivac="Ne" redovit="Da">
+		<ime>Olimpia Milano</ime>
+		<grad>Milano</grad>
+		<fid>134473006626000</fid>
+		<predsjednik>
+			<imepred>Giorgio</imepred>
+			<prezimepred>Armani</prezimepred>
+					<uprava>
+					<clanovi broj_clanova="20"/>
+					</uprava>
+		</predsjednik>
+		<kapacitet velicina="veliki">12500</kapacitet>	
+		<navijaci></navijaci>
+		<trofeji>3</trofeji>
+		<kontakt>
+		<tel>035 42138596</tel>
+		<tel>023 455620</tel>
+		<tel>035 448596</tel>
+		</kontakt>
+</klub>		
+</klubovi>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.w3schools.com"
+           xmlns="http://www.w3schools.com"
+           elementFormDefault="qualified">
+
+    <!-- definition of simple elements -->
+
+    <xs:element name="prvenstvo" type="championship"/>
+
+    <xs:simpleType name="broj">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="25"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="weatherstate">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Kišovito"/>
+            <xs:enumeration value="Sunčano"/>
+            <xs:enumeration value="Oblačno"/>
+            <xs:enumeration value="Poluoblačno"/>
+            <xs:enumeration value="Grmljavina"/>
+            <xs:enumeration value="Vjetrovito"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="bike">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Ducati"/>
+            <xs:enumeration value="Aprilia"/>
+            <xs:enumeration value="Honda"/>
+            <xs:enumeration value="Suzuki"/>
+            <xs:enumeration value="Yamaha"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="cause">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="kvar"/>
+            <xs:enumeration value="puknuće gume"/>
+            <xs:enumeration value="izlijetanje"/>
+            <xs:enumeration value="sudar"/>
+            <xs:enumeration value="nije startao"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="length">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="2000"/>
+            <xs:maxInclusive value="7000"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="curves">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="2"/>
+            <xs:maxInclusive value="25"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- definition of complex elements -->
+    <xs:complexType name="championship">
+        <xs:sequence>
+            <xs:element name="utrka" type="race" maxOccurs="22"/>
+        </xs:sequence>
+        <xs:attribute name="godina" type="xs:string" use="optional" default="2016"/>
+    </xs:complexType>
+
+    <xs:complexType name="race">
+        <xs:sequence>
+            <xs:element name="imeutrke" type="xs:string"/>
+            <xs:element name="facebookid" type="xs:string" minOccurs="0"/>
+            <xs:element name="staza" type="track"/>
+            <xs:element name="detaljiutrke" type="racedetails" minOccurs="0"/>
+            <xs:element name="datumutrke" type="xs:date"/>
+        </xs:sequence>
+        <xs:attribute name="idutrka" type="broj" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="track">
+        <xs:sequence>
+            <xs:element name="imestaze" type="xs:string"/>
+            <xs:element name="grad" type="xs:string" minOccurs="0"/>
+            <xs:element name="drzava" type="xs:string"/>
+            <xs:element name="detaljistaze" type="details"/>
+            <xs:element name="slikastaze" type="xs:anyURI"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="details">
+        <xs:sequence>
+            <xs:element name="duzinakruga" type="length"/>
+        </xs:sequence>
+        <xs:attribute name="brojzavoja" type="curves" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="racedetails">
+        <xs:sequence>
+            <xs:element name="pobjednik" type="winner"/>
+            <xs:element name="odustajanje" type="DNF" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="vrijeme" type="weather" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="weather">
+        <xs:sequence>
+            <xs:element name="naoblaka" type="weatherstate"/>
+            <xs:element name="temperatura" type="xs:positiveInteger"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="winner">
+        <xs:sequence>
+            <xs:element name="imepobjednika" type="xs:string"/>
+            <xs:element name="prezimepobjednika" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="motorpobjednika" type="bike" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="DNF">
+        <xs:sequence>
+            <xs:element name="imednf" type="xs:string"/>
+            <xs:element name="prezimednf" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="uzrokdnf" type="cause" use="required"/>
+    </xs:complexType>
+
+</xs:schema>

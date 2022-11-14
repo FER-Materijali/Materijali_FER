@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Laboratorijske vježbe iz OR">
+    <meta name="keywords" content="MotoGP,CSS Vježba,HTML vježba">
+    <meta name="author" content="Jure Knezović">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dizajn.css"/>
+    <link rel="icon" type="image/png" href="images/web-logo.png"/>
+    <title>MotoGP - Pretraga</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#forma').submit(function () {
+                $('#loader').show();
+                window.scrollBy(0, 1);
+                window.scrollBy(0, -1);
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="loader">
+</div>
+<div class="row">
+    <div class="col-12">
+        <header>
+            <h1>
+                <a href="index.html"><img id="logo" src="images/logo.svg" alt="MotoGp"/></a>
+                MotoGP Prvenstvo
+            </h1>
+        </header>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <nav>
+            <a href="index.html">Početna</a>
+            <a href="podaci.xml">Utrke v1</a>
+            <a href="podaci1.xml">Utrke v2</a>
+            <a href="obrazac.html" class="active">Pretraga v1</a>
+            <a href="obrazac1.html">Pretraga v2</a>
+            <a href="http://www.fer.unizg.hr/predmet/or" target="_top">Otvoreno računarstvo</a>
+            <a href="http://www.fer.unizg.hr/" target="_blank">FER</a>
+            <a href="mailto:jure.knezovic@fer.hr">Kontaktirajte autora</a>
+        </nav>
+    </div>
+    <div class="col-9">
+        <section>
+            <h2 class="naslov naslovObrazac"> Pretraživanje</h2>
+
+            <p>
+                Na stranici pretraživanje možete pretraživati osnovne podatke o utrkama koji se nalaze u našoj bazi
+                podataka.
+            </p>
+
+            <form method="post" action="pretraga.php" id="forma">
+                <table id="obrazac">
+                    <tr>
+                        <td colspan="2" class="red">
+                            Utrka
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Ime utrke :
+                        </td>
+                        <td><input type="text" name="RaceName"/></td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Ime pobjednika :
+                        </td>
+                        <td><input type="text" name="RaceWinnerName"/></td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Prezime pobjednika :
+                        </td>
+                        <td><input type="text" name="RaceWinnerLastname"/></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tdRight">
+                            Motor pobjednika :
+                        </td>
+                        <td>
+                            <select multiple="multiple" name="RaceWinnerBike[]" size="5" style="overflow:hidden">
+                                <option value="Honda">Honda</option>
+                                <option value="Yamaha">Yamaha</option>
+                                <option value="Ducati">Ducati</option>
+                                <option value="Suzuki">Suzuki</option>
+                                <option value="Aprilia">Aprilia</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Broj sudionika koji su završili utrku :
+                        </td>
+                        <td>
+                            <input type="number" name="Quantity" min="0" max="22"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="red">
+                            Staza
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Ime :
+                        </td>
+                        <td>
+                            <input type="text" name="TrackName"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Grad :
+                        </td>
+                        <td>
+                            <input type="text" name="TrackCity"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Država :
+                        </td>
+                        <td>
+                            <input type="text" name="TrackCountry"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Broj zavoja :
+                        </td>
+                        <td>
+                            <input type="number" name="CornerNum" min="2" max="25"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="red">
+                            Vrijeme
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight" rowspan="5">
+                            Naoblaka:
+                        </td>
+                        <td>
+                            <input id="sun" type="radio" name="Weather" value="Sunčano"/><label
+                                for="sun">Sunčano</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="rain" type="radio" name="Weather" value="Kišovito"/><label
+                                for="rain">Kišovito </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="cloud" type="radio" name="Weather" value="Oblačno"/><label
+                                for="cloud">Oblačno</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="thunder" type="radio" name="Weather" value="Grmljavina"/><label for="thunder">Grmljavina</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="wind" type="radio" name="Weather" value="Vjetrovito"/><label for="wind">Vjetrovito</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Temperatura :
+                        </td>
+                        <td>
+                            <input type="number" name="Temperature" min="0" max="45"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Datum utrke :
+                        </td>
+                        <td>
+                            <input type="date" name="RaceDate"/>
+                        </td>
+                    </tr>
+                    <tfoot>
+                    <tr>
+                        <td><input type="submit" id="subButton" value="Pretraži"/></td>
+                        <td><input type="reset" id="resButton" value="Izbriši sve"/></td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </form>
+        </section>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <footer>
+            <p>&copy;Jure Knezović - Otvoreno računarstvo 2015/16</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

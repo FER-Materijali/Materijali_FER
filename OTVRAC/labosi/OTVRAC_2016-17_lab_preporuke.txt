@@ -1,0 +1,33 @@
+generalno labosi
+-radite ih na vrijeme i proæi æete, 99% ljudi dobije 4 na prvom
+-prvo pitaju teorijska klasièna pitanja koja se ponavljaju od pamtivijeka
+-za sve labose vam daju zadaèiæ kojeg guglate i riješavate tamo
+
+1.labos
+-pomakni tablicu lijevo, a sliku desno bzvz
+2.labos
+-dodaj u tablicu koliko klub ima trofeja, a njih zapišite kao n tagova
+(ili ilustrativno, pobroji koliko telefona ima klub i zapiši) funkcija count
+-operacije po DTDu, tipa da se nešto smije zapisati na ovaj ili onaj redoslijed (a,b ili b,a)
+3.labos
+-sortiraj po abecedi ispis tablice
+4.labos
+-dodaj broj lajkova s fejsa
+-promjeni nominatim u json
+5.labos
+-dodaj AJAX za vijesti
+-dodaj ajax za ispis iz baze
+-onclick, onmouse i razne funkcije
+6.labos
+-uvali 2 boda jer vam je API statièki, odnosno traži interakciju
+
+završni ispit
+-dali su javaskript zadatak(7bodova), restful api(3 boda), dtd definicija (3boda), 
+ostali zadatci svi nose 0,5 do 1,5
+
+
+poanta za život
+kako ova Bosniæka se uvlaèi studentima da je tako ocjenjuju, nisu istine.
+na ARH1 je sve vriðala i rušila, sad kad se zna sve, onda je ka super 
+i kupi svakakve nagrade zbog vaših anketa!!
+spavaš li mirno Bosniæ Ivana?

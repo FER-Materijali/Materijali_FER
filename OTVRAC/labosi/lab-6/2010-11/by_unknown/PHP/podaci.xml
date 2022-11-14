@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE knjiznica SYSTEM "gramatika.dtd">
+<?xml-stylesheet type="text/xsl" href="test.xsl" ?>
+
+<knjiznica>
+  <knjiga id="bk1" jezik="Engleski" broj_stranica="505" isbn="0036441105123" izdanje="3" uvez="Tvrdi">
+    <naslov>Thinking in Java</naslov>
+    <podnaslov>Learning Java programming language</podnaslov>
+    <autor>
+      <ime>Bruce</ime>
+      <prezime>Eckel</prezime>
+    </autor>
+    <izdavac>
+      <naziv>Prentice-Hall</naziv>
+    </izdavac>
+    <datum_izdanja>
+      <dan>12</dan>
+      <mjesec>12</mjesec>
+      <godina>2005</godina>
+    </datum_izdanja>
+    <ocjena>5</ocjena>
+    <nacin_distribucije>knjiga</nacin_distribucije>
+    <kategorija>Software development</kategorija>
+    <cijena>179.99kn</cijena>
+    <recenzija>
+      <recenzent>
+        <ime>Heri</ime>
+        <prezime>Poter</prezime>
+      </recenzent>
+      <sadrzaj>Jako dosadna knjiga. Radnja je nikakva.</sadrzaj>
+    </recenzija>
+    <recenzija>
+      <recenzent>
+        <ime>Heri</ime>
+        <prezime>Poter</prezime>
+      </recenzent>
+      <sadrzaj>Zanimljivo-dosadna knjiga. Radnja je nikakva.</sadrzaj>
+    </recenzija>
+  </knjiga>
+  
+  <knjiga id="bk2" jezik="Hrvatski Engleski" broj_stranica="773" isbn="0036441105124" izdanje="1" uvez="Tvrdi">
+    <naslov>Harry Potter</naslov>
+    <podnaslov>Harry Potter and the order of phoenix</podnaslov>
+    <autor>
+      <ime>J.K.</ime>
+      <prezime>Rowling</prezime>
+    </autor>
+    <izdavac>
+      <naziv>Prentice-Hall</naziv>
+    </izdavac>
+    <datum_izdanja>
+      <dan>10</dan>
+      <mjesec>12</mjesec>
+      <godina>2003</godina>
+    </datum_izdanja>
+    <ocjena>5</ocjena>
+    <nacin_distribucije>knjiga</nacin_distribucije>
+    <kategorija>Znanstvena fantastika</kategorija>
+    <cijena>159.99kn</cijena>
+    <recenzija>
+      <recenzent>
+        <ime>Heri</ime>
+        <prezime>Poter</prezime>
+      </recenzent>
+      <sadrzaj>Puno bolja knjiga od prethodne.</sadrzaj>
+    </recenzija>
+  </knjiga>
+  
+  <knjiga id="bk3" jezik="Engleski" broj_stranica="145" isbn="0036441105125" izdanje="1" uvez="Meki">
+    <naslov>Learning XML</naslov>
+    <autor>
+      <ime>Erik T.</ime>
+      <prezime>Ray</prezime>
+    </autor>
+    <izdavac>
+      <naziv>Prentice-Hall</naziv>
+    </izdavac>
+    <datum_izdanja>
+      <dan>10</dan>
+      <mjesec>12</mjesec>
+      <godina>2003</godina>
+    </datum_izdanja>
+    <ocjena>3</ocjena>
+    <nacin_distribucije>elektronička knjiga</nacin_distribucije>
+    <kategorija>Software development</kategorija>
+    <cijena>59.99kn</cijena>
+  </knjiga>
+  
+  <knjiga id="bk4" jezik="Engleski" broj_stranica="345" isbn="0036441105126" izdanje="1" uvez="Tvrdi">
+    <naslov>Gospodar prstenova</naslov>
+    <podnaslov>Gospodar prstenova: Povratak kralja</podnaslov>
+    <autor>
+      <ime>John Ronald Reuel</ime>
+      <prezime>Tolkien</prezime>
+    </autor>
+    <izdavac>
+      <naziv>Algoritam</naziv>
+    </izdavac>
+    <datum_izdanja>
+      <dan>21</dan>
+      <mjesec>3</mjesec>
+      <godina>1995</godina>
+    </datum_izdanja>
+    <ocjena>4</ocjena>
+    <nacin_distribucije>knjiga</nacin_distribucije>
+    <kategorija>Avanturistički roman</kategorija>
+    <cijena>159.99kn</cijena>
+  </knjiga>
+  
+  <knjiga id="bk5" jezik="Engleski Hrvatski" broj_stranica="728" isbn="0036441105127" izdanje="1" uvez="Tvrdi">
+    <naslov>Pjesma leda i vatre</naslov>
+    <podnaslov>Pjesma leda i vatre: Igra prijestolja</podnaslov>
+    <autor>
+      <ime>George R.R.</ime>
+      <prezime>Martin</prezime>
+    </autor>
+    <izdavac>
+      <naziv>Algoritam</naziv>
+    </izdavac>
+    <datum_izdanja>
+      <dan>28</dan>
+      <mjesec>7</mjesec>
+      <godina>2001</godina>
+    </datum_izdanja>
+    <ocjena>4</ocjena>
+    <nacin_distribucije>knjiga</nacin_distribucije>
+    <kategorija>Avanturistički roman</kategorija>
+    <cijena>259.99kn</cijena>
+  </knjiga>
+</knjiznica>

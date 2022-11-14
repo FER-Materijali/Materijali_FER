@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Pretraživanje klubova</title>
+		
+		<link rel="stylesheet" type="text/css" href="dizajn.css">
+	</head>
+	<body>
+		<div class="zaglavlje">
+			<div class="logo">
+				<a href="index.html"><img src="znak1.jpg" alt="logo"  ></a>
+			</div>
+			<div class="naslov">
+				<h1 class="naslov">Košarkaški klubovi Eurolige</h1>
+			</div>		
+		</div>
+		
+	<div class="izbor" >
+	<ul  id="izbornik" style="list-style-type:none">
+	<li class="izbor"><a class="link" href="index.html">Naslovna</a></li> 		
+	<li class="izbor"><a class="link" href="obrazac.html">Pretraživanje klubova</a></li>
+	<li class="izbor"><a class="link" href="podaci.xml">Podatci</a></li> 
+	<li class="izbor"><a class="link"  href="http://www.fer.hr">fer.hr</a></li> 				
+	<li class="izbor"><a class="link" href="http://www.fer.unizg.hr/predmet/or" 
+		onclick="window.open(this.href, '_blank');return false;" >OR</a></li> 
+	<li class="izbor"><a class="link" href="mailto:@fer.hr">email me</a></li>
+	</ul>
+	</div>
+		
+<!-- ---------------------------------- -->
+		<div class="prvi" > 
+		<h3> Pretraživanje klubova Eurolige!</h3>
+		
+		<form action="pretraga.php" method="get" name="pretraga">
+		<table>
+			<tr><td colspan="3"> Ovdje upišite podatke o klubu:</td></tr> 
+			<tr><td>Ime:</td>      <td colspan="2"><input type="text" name="ime"></td> </tr>
+			<tr><td>Grad:</td>  <td colspan="2"><input type="text" name="grad"></td> </tr>
+			<tr><td rowspan="2">Predsjednik</td>  <td>Ime:</td><td><input type="text" name="imepred"></td> </tr>
+			<tr>								  <td>Prezime:</td><td><input type="text" name="prezimepred"></td> </tr>
+			
+						<tr><td>Država:</td><td colspan="2">
+						<select name="drzava[]" multiple>
+						<option value="Hrvatska"  >Hrvatska</option>
+						<option value="Spanjolska"  >Španjolska</option>
+						<option value="Rusija"  >Rusija</option>
+						<option value="Grcka"  >Grčka</option>
+						<option value="Italija"  >Italija</option>
+						<option value="Izrael"  >Izrael</option>
+						</select>
+						</td>
+					</tr>
+			
+			<tr><td>Redovit član:</td>  <td colspan="2"> <input type="radio" name="stalni" value="da"><label>Da</label>
+														<input type="radio" name="stalni" value="ne"><label>Ne</label></td> </tr>
+														
+			<tr><td>Kapacitet dvorane:</td><td><select name="velicina">
+			<option value="">Klik</option>
+			<option value="mali">0000-4999</option>
+			<option value="srednji">5000-9999</option>
+			<option value="veliki"> 10000+</option>
+			</select>	</td>	<td></tr>
+			
+			<tr><td>Tagovi kluba:</td><td colspan="2">
+				<input type="checkbox" name="tag" value="osnivac">Sudjelovao u 2000/01
+				<input type="checkbox" name="tag" value="osvajac">Osvojio trofej
+				<input type="checkbox" name="tag" value="navijac">Navijačka skupina</td>
+				
+
+					
+			<tr><td>Navijačka skupina:</td>      <td colspan="2"><input type="text" name="navijaci"></td> </tr>	
+			<tr><td>Minimalno trofeja:</td>      <td colspan="2"><input type="text" name="trofej"></td> </tr>
+
+			
+			<tr><td></td><td colspan="2">  <button type="submit" value="Traži">Submit</button>
+ 				 	<button type="reset" value="Reset">Reset</button> </td></tr>
+			
+		
+		</table>
+		</form>	
+		</div>
+		
+		<!-------------------------------------->
+		<div class="footer">
+		<p class="foot">autor: Karonja</p>
+		</div>
+	</body>
+</html>

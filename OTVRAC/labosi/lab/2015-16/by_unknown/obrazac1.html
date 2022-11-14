@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Laboratorijske vježbe iz OR">
+    <meta name="keywords" content="MotoGP,CSS Vježba,HTML vježba">
+    <meta name="author" content="Jure Knezovic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dizajn.css"/>
+    <link rel="icon" type="image/png" href="images/web-logo.png"/>
+    <title>MotoGP - Pretraga</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#forma').submit(function () {
+                $('#loader').show();
+                window.scrollBy(0, 1);
+                window.scrollBy(0, -1);
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="loader">
+</div>
+<div class="row">
+    <div class="col-12">
+        <header>
+            <h1>
+                <a href="index.html"><img id="logo" src="images/logo.svg" alt="MotoGp"/></a>
+                MotoGP Prvenstvo
+            </h1>
+        </header>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <nav>
+            <a href="index.html">Početna</a>
+            <a href="podaci.xml">Utrke v1</a>
+            <a href="podaci1.xml">Utrke v2</a>
+            <a href="obrazac.html">Pretraga v1</a>
+            <a href="obrazac1.html" class="active">Pretraga v2</a>
+            <a href="http://www.fer.unizg.hr/predmet/or" target="_top">Otvoreno računarstvo</a>
+            <a href="http://www.fer.unizg.hr/" target="_blank">FER</a>
+            <a href="mailto:jure.knezovic@fer.hr">Kontaktirajte autora</a>
+        </nav>
+    </div>
+    <div class="col-9">
+        <section>
+            <h2 class="naslov naslovObrazac"> Pretraživanje</h2>
+
+            <p>
+                Na stranici pretraživanje možete pretraživati osnovne podatke o utrkama koji se nalaze u našoj bazi
+                podataka.
+            </p>
+
+            <form method="post" action="pretraga1.php" id="forma">
+                <table id="obrazac">
+                    <tr>
+                        <td colspan="2" class="red">
+                            Utrka
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Ime utrke :
+                        </td>
+                        <td><input type="text" name="RaceName"/></td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Ime pobjednika :
+                        </td>
+                        <td><input type="text" name="RaceWinnerName"/></td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Prezime pobjednika :
+                        </td>
+                        <td><input type="text" name="RaceWinnerLastname"/></td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight" rowspan="5">
+                            Motor pobjednika :
+                        </td>
+                        <td>
+                            <input id="honda" type="checkbox" name="Bike[]" value="Honda"/><label
+                                for="honda">Honda</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="suzuki" type="checkbox" name="Bike[]" value="Suzuki"/><label
+                                for="suzuki">Suzuki</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="aprilia" type="checkbox" name="Bike[]" value="Aprilia"/><label for="aprilia">Aprilia</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="yamaha" type="checkbox" name="Bike[]" value="Yamaha"/><label
+                                for="yamaha">Yamaha</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="ducati" type="checkbox" name="Bike[]" value="Ducati"/><label
+                                for="ducati">Ducati</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Broj sudionika koji su završili utrku :
+                        </td>
+                        <td>
+                            <input type="number" name="Quantity" min="1" max="22"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="red">
+                            Staza
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Ime :
+                        </td>
+                        <td>
+                            <input type="text" name="TrackName"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Grad :
+                        </td>
+                        <td>
+                            <input type="text" name="TrackCity"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Država :
+                        </td>
+                        <td>
+                            <input type="text" name="TrackCountry"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Broj zavoja :
+                        </td>
+                        <td>
+                            <select multiple="multiple" name="CornerNum[]" size="10">
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="red">
+                            Vrijeme
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight" rowspan="5">
+                            Naoblaka:
+                        </td>
+                        <td>
+                            <input id="sun" type="radio" name="Weather" value="Sunčano"/><label
+                                for="sun">Sunčano</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="rain" type="radio" name="Weather" value="Kišovito"/><label
+                                for="rain">Kišovito </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="cloud" type="radio" name="Weather" value="Oblačno"/><label
+                                for="cloud">Oblačno</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="thunder" type="radio" name="Weather" value="Grmljavina"/><label for="thunder">Grmljavina</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="wind" type="radio" name="Weather" value="Vjetrovito"/><label for="wind">Vjetrovito</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight">
+                            Temperatura :
+                        </td>
+                        <td>
+                            <input type="number" name="Temperature" min="0" max="45"/>
+                        </td>
+                    </tr>
+                    <tfoot>
+                    <tr>
+                        <td><input type="submit" id="subButton" value="Pretraži"/></td>
+                        <td><input type="reset" id="resButton" value="Izbriši sve"/></td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </form>
+        </section>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <footer>
+            <p>&copy;Jure Knezovic - Otvoreno racunarstvo 2015/16</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

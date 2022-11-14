@@ -1,0 +1,28 @@
+<!ELEMENT poslovnice (poslovnica*)>
+
+<!ELEMENT poslovnica (((fid, ime) | (ime, fid)), modeli+, probna, email, termin, rvrijeme, dezurni, grad, pbr, ulica, br)>
+<!ATTLIST poslovnica id ID #REQUIRED>
+<!ATTLIST poslovnica kod CDATA #REQUIRED>
+<!ATTLIST poslovnica regija (Sjeverna|Srednja|Istocna|Gorska|Istarska|Dalmatinska|Juzna) #REQUIRED>
+<!ATTLIST poslovnica placanje (Gotovina|Kartica) #REQUIRED>
+
+<!ELEMENT fid (#PCDATA)>
+<!ELEMENT ime (#PCDATA)>
+<!ELEMENT modeli (vrsta, starost, popis)>
+<!ELEMENT vrsta (#PCDATA)>
+<!ELEMENT starost (godina)>
+<!ELEMENT godina (#PCDATA)>
+<!ELEMENT popis (usluga+)>
+<!ELEMENT usluga (#PCDATA)>
+<!ELEMENT probna (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT termin (#PCDATA)>
+<!ELEMENT rvrijeme (radnop, radnok)>
+<!ELEMENT radnop (#PCDATA)>
+<!ELEMENT radnok (#PCDATA)>
+<!ELEMENT dezurni (#PCDATA)>
+<!ELEMENT grad (#PCDATA)>
+<!ELEMENT pbr (#PCDATA)>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT br (#PCDATA)>
+

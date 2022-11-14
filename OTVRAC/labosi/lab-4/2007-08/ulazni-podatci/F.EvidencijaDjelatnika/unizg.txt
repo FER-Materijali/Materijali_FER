@@ -1,0 +1,101 @@
+Ime|Prezime|Radno mjesto|Datum pocetka rada|Odjel|Koeficijent place (postoci)|Ulica |Mjesto|Pbr|Broj dana godisnjeg
+Cameron|Monroe|Asistent|30.11.98|Odrzavanje|134|Ap #565-6902 Volutpat Rd.|Dixon|6255QN|26
+Henry|Bender|Tehnicar|19.11.02|Racunarstvo|166|Ap #371-9056 Metus. Street|Ansonia|7522HN|27
+Vernon|Rowland|Tehnicar|22.01.06|Elektronika|115|9236 Nascetur Rd.|Spartanburg|5961GN|22
+Sybil|Franks|Profesor|01.01.83|Odrzavanje|146|7134 Ipsum Road|Franklin|3449KJ|33
+Paloma|Wade|Docent|16.02.04|Odrzavanje|122|9337 Maecenas St.|Powell|8103CU|29
+Serena|Brock|Profesor|11.12.98|Racunarstvo|156|Ap #768-4885 Congue Rd.|Sault Ste. Marie|7775RL|26
+Kibo|Mcpherson|Asistent|18.04.85|Odrzavanje|153|4498 Velit Rd.|Huntington Park|0176WG|26
+Karina|Weiss|Novak|20.10.98|Racunarstvo|125|6753 Urna Street|Plantation|0235GT|34
+Imani|Richards|Profesor|23.04.97|Racunarstvo|141|8367 Fusce Rd.|Fargo|2524NW|22
+Acton|Vang|Tehnicar|08.07.00|Odrzavanje|186|P.O. Box 369, 7395 Nullam Street|Austin|1030WR|33
+Bernard|Cortez|Tehnicar|29.07.82|Elektronika|119|1363 Quam, Street|Nashua|9922HY|24
+Aileen|Brady|Portir|30.09.03|Racunarstvo|124|9111 Sit Av.|New Iberia|7879QV|29
+Leah|Santiago|Portir|27.12.90|Odrzavanje|184|7763 Sit Street|Garland|0598NV|28
+Cherokee|Mccarty|Novak|10.12.81|Odrzavanje|155|Ap #687-926 Lorem Road|Texas City|9488GE|33
+Ezekiel|Preston|Novak|21.01.05|Odrzavanje|102|925 Risus. Ave|Villa Park|6682JZ|21
+Teegan|Thomas|Novak|19.12.80|Odrzavanje|165|9489 Risus. Road|Birmingham|1178DU|32
+Mia|Holman|Novak|07.10.85|Elektronika|144|P.O. Box 287, 4152 Vitae, Rd.|Shawnee|0179DW|25
+Delilah|Wiley|Profesor|21.08.88|Racunarstvo|144|884-7037 Natoque Avenue|Baltimore|0552YJ|30
+Aladdin|Macdonald|Asistent|09.05.92|Racunarstvo|139|110-761 Magna Street|Midland|3572FU|29
+Desirae|Graham|Portir|28.12.87|Odrzavanje|155|6634 Dis Ave|Oro Valley|0733TK|34
+Claudia|Rocha|Profesor|05.10.03|Elektronika|111|320-5456 Vulputate Road|Saginaw|0108TR|34
+Rosalyn|Hodges|Docent|21.09.91|Odrzavanje|140|P.O. Box 190, 920 Consectetuer Rd.|Terre Haute|8260VL|25
+Thomas|Le|Tehnicar|28.03.03|Odrzavanje|194|Ap #315-776 Ultrices Ave|Westlake Village|4465NO|31
+Gage|Santiago|Novak|04.02.90|Odrzavanje|117|135-7209 Pharetra. Rd.|Rosemead|9451NM|33
+Uta|Valenzuela|Profesor|07.11.86|Elektronika|154|957-248 Consequat Rd.|Parkersburg|3233AD|25
+Wyoming|Mclaughlin|Profesor|15.11.81|Racunarstvo|147|686-4893 Ornare Ave|Gloversville|6856VF|31
+Chantale|Lawson|Profesor|18.05.87|Elektronika|184|P.O. Box 675, 634 Metus. St.|Mequon|5261TY|26
+Ian|Reynolds|Profesor|06.06.05|Elektronika|188|P.O. Box 360, 7329 Lacus. Street|Arvada|3030CX|22
+Malachi|Contreras|Asistent|13.05.86|Odrzavanje|114|242-8169 Vitae St.|Yakima|1214YF|29
+Fritz|Durham|Profesor|26.08.93|Racunarstvo|123|293 Elit St.|Hudson|1844ZF|27
+acqueline|Hancock|Docent|21.07.89|Elektronika|168|P.O. Box 303, 8095 Sed Street|Akron|0839VS|25
+acqueline|Lamb|Novak|27.02.81|Odrzavanje|161|P.O. Box 172, 5814 Orci St.|Clemson|9471HU|27
+Garrett|Mckee|Novak|29.01.02|Elektronika|135|852-9336 Semper Rd.|New Iberia|5766JW|26
+Elvis|Gill|Profesor|23.04.91|Elektronika|167|P.O. Box 912, 4746 Ac St.|Brunswick|3552NE|30
+Blair|Walls|Portir|15.08.07|Elektronika|143|964-1341 Sed St.|Asheville|4073OX|28
+Troy|Hurley|Docent|03.10.93|Racunarstvo|109|174-918 Magna, Rd.|Saint Louis|1990BZ|31
+Jada|Benjamin|Portir|30.09.05|Elektronika|143|Ap #474-8863 Quis, Av.|Torrington|7378MO|25
+Lucas|Jordan|Tehnicar|05.01.97|Racunarstvo|192|160-4711 Lacinia. Avenue|Carrollton|1915VC|20
+Lavinia|Joseph|Novak|13.03.06|Elektronika|106|722-3793 Mauris Road|Pico Rivera|1691CB|30
+Constance|Wooten|Novak|02.05.05|Odrzavanje|160|5748 A Road|Weymouth|6229YP|30
+Kelly|Peck|Portir|20.05.06|Elektronika|147|463-1903 Faucibus Road|Pendleton|7527BF|29
+Nichole|Hooper|Docent|10.01.96|Racunarstvo|169|P.O. Box 833, 6053 Pharetra. St.|San Fernando|0154JG|24
+Cameron|Riddle|Asistent|01.10.97|Odrzavanje|131|Ap #633-4481 Curae; Rd.|Sioux City|7845LF|34
+Kalia|Harrell|Asistent|08.06.98|Racunarstvo|179|Ap #392-8821 Porta Street|Pomona|1237SE|35
+Jennifer|Bartlett|Portir|07.09.95|Odrzavanje|140|P.O. Box 313, 6716 Imperdiet Ave|Natchitoches|4958VH|27
+Vera|Lawson|Tehnicar|05.02.93|Racunarstvo|102|Ap #743-5637 Facilisis Rd.|Muskegon|5327AV|32
+Kameko|Robles|Novak|25.11.88|Odrzavanje|159|Ap #822-885 Augue Road|New Haven|8145SA|30
+Demetrius|Hancock|Portir|20.05.89|Elektronika|120|368 Egestas St.|Palmdale|6831RL|33
+Jerome|Frank|Novak|22.08.00|Elektronika|133|Ap #292-8239 Quis Avenue|Nome|0888XO|33
+Kasimir|Hewitt|Portir|23.06.96|Odrzavanje|151|P.O. Box 475, 4402 Sed Av.|Champaign|8141YC|33
+Yoshi|Wolfe|Docent|06.03.08|Elektronika|197|Ap #689-3672 Dolor. Av.|Peabody|8532AN|35
+Theodore|Morgan|Portir|14.10.05|Elektronika|163|1470 Nunc Rd.|Spokane Valley|1947QW|27
+Rebekah|Nunez|Docent|14.08.84|Elektronika|130|9665 Varius. Avenue|Somerville|5499KB|33
+Barrett|Carey|Tehnicar|24.03.92|Odrzavanje|110|P.O. Box 517, 472 Vehicula Road|Waterloo|3332HF|31
+Sacha|Pacheco|Tehnicar|13.06.96|Odrzavanje|144|2098 Etiam Ave|Brigham City|3543ZN|24
+Hiram|Snider|Asistent|05.02.03|Elektronika|172|1365 Sed Rd.|Chico|9676MA|32
+Lawrence|Frank|Profesor|10.12.98|Elektronika|143|Ap #474-5243 Et Rd.|Green Bay|2860YV|21
+Summer|Holder|Asistent|01.10.91|Odrzavanje|166|1295 Sed Av.|Roanoke|5210RR|26
+Salvador|Underwood|Tehnicar|28.01.05|Racunarstvo|176|Ap #870-9397 A, Rd.|Cheyenne|5785VQ|23
+Hammett|Vaughn|Profesor|09.04.87|Elektronika|110|324-9916 Justo Avenue|Fort Wayne|9968VV|33
+Ingrid|Lloyd|Docent|30.10.06|Racunarstvo|154|Ap #166-3877 Vel Avenue|Livonia|3445KT|29
+Guy|Mullins|Profesor|01.12.90|Elektronika|181|P.O. Box 184, 7217 Neque Avenue|Memphis|9419WS|22
+Charde|Burke|Portir|19.11.87|Racunarstvo|154|Ap #212-4557 Aliquam Rd.|Costa Mesa|3114XS|21
+Robert|Cochran|Profesor|10.11.99|Racunarstvo|159|3022 Lorem Rd.|Manchester|8644TY|30
+Melissa|Franks|Novak|13.10.89|Elektronika|169|Ap #196-3032 Nam Street|Wisconsin Dells|8988GJ|33
+Bernard|Whitaker|Tehnicar|31.10.82|Elektronika|200|Ap #701-2035 Blandit Road|Decatur|3504VB|30
+Oprah|Barry|Profesor|10.08.98|Elektronika|172|1381 Ac, Rd.|Sherrill|1998RC|20
+Akeem|Hinton|Docent|12.06.94|Odrzavanje|123|Ap #800-1553 Elit, Ave|Webster Groves|8808AW|26
+Camden|Sparks|Profesor|09.01.05|Elektronika|165|P.O. Box 867, 1856 Blandit Ave|Fairbanks|1069EP|27
+Amanda|Jarvis|Docent|13.07.05|Odrzavanje|159|6852 Dolor, Ave|Frederick|3944VR|31
+Travis|Rush|Asistent|17.01.00|Odrzavanje|159|P.O. Box 164, 1501 In Av.|Rancho Palos Verdes|7307BJ|28
+Hayden|Gordon|Profesor|15.09.85|Racunarstvo|130|P.O. Box 778, 3924 Dolor St.|Costa Mesa|0041FE|27
+Vanna|Livingston|Asistent|11.01.89|Racunarstvo|116|3579 Ultricies Rd.|McKeesport|6158YX|21
+Drake|Wolf|Portir|14.11.87|Odrzavanje|141|P.O. Box 148, 869 Donec Avenue|Woodward|2770DI|26
+Reed|Kennedy|Novak|11.05.04|Elektronika|190|P.O. Box 358, 5385 Suspendisse Avenue|Lynwood|6477NR|20
+Portia|Joyce|Asistent|15.12.85|Elektronika|116|8464 Nec St.|Rosemead|7169MF|28
+Carolyn|Tate|Novak|01.08.94|Racunarstvo|104|Ap #673-3136 Urna, St.|Bismarck|4134AC|23
+Quinn|Faulkner|Asistent|17.03.84|Elektronika|120|Ap #410-2883 Magna. Rd.|Superior|7904GE|31
+Nina|Gilbert|Profesor|20.11.80|Racunarstvo|120|237-750 Lacus, St.|Flint|8901EX|29
+Xander|Scott|Portir|24.06.94|Racunarstvo|109|P.O. Box 321, 6441 At Rd.|North Adams|5776WB|20
+Nina|Whitaker|Asistent|06.08.03|Odrzavanje|113|5675 Urna, Av.|Newport|6558UF|28
+Dara|Ray|Profesor|30.11.99|Elektronika|101|P.O. Box 545, 2715 Iaculis Av.|Everett|3713IT|26
+Zoe|Foley|Asistent|06.10.90|Odrzavanje|172|3880 Parturient Road|Syracuse|3455XV|33
+Chastity|Davidson|Portir|23.10.92|Elektronika|137|226-2515 Porttitor Av.|San Diego|9148MJ|30
+Tara|Rojas|Tehnicar|19.05.86|Racunarstvo|192|2850 Molestie Av.|San Angelo|6761WX|34
+Wilma|Summers|Tehnicar|31.08.94|Odrzavanje|161|710-1680 Elit Av.|Council Bluffs|0479RO|32
+Gage|Fitzpatrick|Portir|24.05.00|Racunarstvo|134|3901 Magna St.|Johnstown|9013TH|28
+Nathan|Goodman|Portir|31.01.04|Odrzavanje|134|969-7282 Elit, Road|Nashua|0129OS|22
+Kiara|Reeves|Docent|10.01.05|Odrzavanje|129|7249 Vestibulum Street|Gastonia|0925WZ|22
+Bradley|Barrera|Portir|18.12.95|Racunarstvo|184|985-6568 Est. Street|Lynwood|9118XL|31
+Yeo|Goodwin|Profesor|14.01.84|Elektronika|104|8049 Congue Avenue|Bell|6469MH|27
+Hall|Dickson|Profesor|14.05.85|Elektronika|129|Ap #722-8222 Id St.|St. Petersburg|8557JR|22
+Alexa|Chaney|Asistent|20.08.81|Racunarstvo|118|4581 Sit Road|Dana Point|7942RH|22
+Fulton|Cameron|Docent|10.01.00|Racunarstvo|177|941-6138 Sed St.|Jeannette|7965KW|34
+Buckminster|Snyder|Novak|28.11.81|Elektronika|123|455-7662 Elit Ave|Joliet|6555EZ|32
+Walter|Vinson|Portir|08.03.93|Odrzavanje|177|454-6004 Vel, Ave|Chesapeake|3897PK|35
+Damian|Wade|Portir|24.04.92|Racunarstvo|107|958-2236 Non, Ave|Newcastle|0314YH|21
+Geoffrey|Burnett|Profesor|14.07.87|Racunarstvo|159|P.O. Box 419, 4969 Sagittis. Rd.|Marshall|0289NM|31
+Len|Shaffer|Asistent|16.05.92|Racunarstvo|121|Ap #414-9154 Ornare. Avenue|Anchorage|6400ZO|27
+Acton|Stanton|Novak|25.01.99|Elektronika|153|Ap #267-5350 Cras Road|Somersworth|8701SB|21

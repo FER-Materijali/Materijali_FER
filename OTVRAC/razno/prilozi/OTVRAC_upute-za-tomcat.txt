@@ -1,0 +1,555 @@
+==========================================================
+Sekcija 0: Važne adrese
+==========================================================
+
+JSR-000245 JavaServerTM Pages 2.2
+http://jcp.org/aboutJava/communityprocess/mrel/jsr245/index.html
+
+JSR-000315 JavaTM Servlet 3.0
+http://jcp.org/aboutJava/communityprocess/final/jsr315/index.html
+
+JSTL (Java Standard Template Library)
+http://jstl.java.net/download.html
+==> Odabrati link "JSTL Implementation" --> pa skinuti javax.servlet.jsp.jstl-1.2.1.jar i javax.servlet.jsp.jstl-1.2.1-sources.jar
+==> Odabrati link "JSTL API" --> pa skinuti javax.servlet.jsp.jstl-api-1.2.1.jar i javax.servlet.jsp.jstl-api-1.2.1-sources.jar
+
+==========================================================
+Sekcija 1: Instalacija Tomcata
+==========================================================
+
+Na linuxu - mogucnost uporabe paketnih managera; ne razmatramo ovdje
+
+Windowsi/Linux: Skinuti tomcat
+http://tomcat.apache.org/download-70.cgi
+(direktni link)
+http://ftp.carnet.hr/misc/apache/tomcat/tomcat-7/v7.0.27/bin/apache-tomcat-7.0.27.zip
+
+Skinite ujedno i ZIP s izvornim kodovima (Source Code Distributions na dnu stranice, ZIP).
+
+Raspakirati ga negdje; npr:
+d:\usr\apache-tomcat-7.0.27
+/home/pero/apache-tomcat-7.0.27
+
+Taj direktorij označavat ćemo s CATALINA_HOME.
+
+Imamo poddirektorije:
+CATALINA_HOME/bin
+CATALINA_HOME/conf
+CATALINA_HOME/logs
+CATALINA_HOME/webapps
+CATALINA_HOME/...
+
+Napraviti (pazi, prilagodi staze po potrebi tako da odgovaraju stanju na Vašem računalu!!!)
+windowsi:  CATALINA_HOME\bin\setenv.bat
+-------------------
+set "JAVA_HOME=c:\Program Files (x86)\Java\jdk1.7.0_03"
+set "PATH=%JAVA_HOME%\jre\bin;%JAVA_HOME%\bin;%PATH%"
+set "CATALINA_HOME=d:\usr\apache-tomcat-7.0.27"
+exit /b 0
+-------------------
+
+linux:  CATALINA_HOME/bin/setenv.sh
+-------------------
+JRE_HOME=/usr/java/latest
+CATALINA_HOME=/home/pero/apache-tomcat-7.0.27
+-------------------
+
+Pretpostavimo da smo u konzoli i da je trenutni direktorij CATALINA_HOME.
+
+Pokretanje Tomcata:
+bin\startup.bat   (windowsi)
+bin/startup.sh    (linux)
+
+Gašenje Tomcata:
+bin\shutdown.bat  (windowsi)
+bin/shutdown.sh   (linux)
+
+Osnovna konfiguracija poslužitelja:
+
+CATALINA_HOME/conf/server.xml
+
+Pronaći u toj datoteci <Connector port="8080" protocol="HTTP/1.1" ... /> i dodati atribut URIEncoding="UTF-8".
+
+Pogledati i CATALINA_HOME/conf/web.xml ==> mime-mapping.
+
+==========================================================
+Sekcija 2: Rad u Eclipse-u
+==========================================================
+
+Važno: Eclipse, izbornik Window -> Preferences:
+
+   General -> Workspace -> Text File Encoding ==> Other: UTF-8
+
+1) Napraviti novi projekt u Eclipse-u
+2) U projektu napraviti novi direktorij weblib
+3) U njega iskopirati CATALINA_HOME/lib\servlet-api.jar i CATALINA_HOME/lib\jsp-api.jar
+4) Refresh-ati projekt; dodati servlet-api.jar i jsp-api.jar u classpath projekta
+5) Povezivanje s izvornim kodovima: 
+     Desni klik na weblib\servlet-api.jar, pa iz iskočnog izbornika "Properties"; Kliknuti na "Java Source Attachment" pa gumb "External File" i odabrati ZIP arhivu sa izvornim kodovima od Tomcata, pa OK. 
+     Ponoviti za jsp-api.jar. 
+     Time cemo dobiti pristup izvornim kodovima od razreda Servlet i drugih.
+
+U Eclipse-u napraviti novu strukturu direktorija:
+ * web/aplikacija1/WEB-INF/classes
+
+Desni klik na projekt, "Build path" --> "Configure Build Path":
+ * Na kartici "Source" podesiti "Default output folder" s "vasProjekt/bin" u "vasProjekt/web/aplikacija1/WEB-INF/classes"
+
+U Eclipse-u napraviti novu strukturu direktorija:
+* web/aplikacija1/WEB-INF/lib
+
+i unutra iskopirati: javax.servlet.jsp.jstl-1.2.1.jar i javax.servlet.jsp.jstl-api-1.2.1.jar; 
+desni klik na svaki od njih i potom im kao source dodati javax.servlet.jsp.jstl-1.2.1-sources.jar tj. javax.servlet.jsp.jstl-api-1.2.1-sources.jar 
+(ali njih ostaviti tamo gdje su bili; ne ih kopirati u lib direktorij)
+
+Time će Eclipse java datoteke kompajlirati u taj classes direktorij a ne bin kao prije.
+
+==========================================================
+Sekcija 3: Prva web aplikacija
+==========================================================
+
+Napraviti opisnik web aplikacije: web/aplikacija1/WEB-INF/web.xml
+---------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+
+  <display-name>Moja prva aplikacija</display-name>
+  <description>
+     Prva aplikacija
+  </description>
+
+</web-app>
+---------------------------------------------------------------------------------------
+
+Dodati u web.xml definiciju servleta, prije zatvarajućeg <web-app> taga:
+
+---------------------------------------------------------------------------------------
+  <servlet>
+    <servlet-name>servlet1</servlet-name>
+    <servlet-class>hr.fer.zemris.java.tecaj_12.servleti.PrviServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet1</servlet-name>
+    <url-pattern>/prvi</url-pattern>
+  </servlet-mapping>
+---------------------------------------------------------------------------------------
+
+Uočite, dodajemo deklaraciju servleta te mapping servleta (koja ga staza aktivira).
+
+Napraviti sada i sam servlet: hr.fer.zemris.java.tecaj_12.servleti.PrviServlet iz HttpServlet-a, i overrideati doGet:
+
+PrintWriter writer = resp.getWriter();
+writer.println("<h1>Hello, World!</h1>");
+
+U eclipse-u dodati u vršni direktorij projekta još jednu datoteku: deployment descriptor (desni klik na projekt, New->File); nazvati je aplikacija1.xml i definirati sadržaj:
+---------------------------------------------------------------------------------------
+<Context path="/aplikacija1" docBase="${WORKSPACE}\web\aplikacija1" />
+---------------------------------------------------------------------------------------
+
+Pri tome ${WORKSPACE} zamijeniti stazom do Vašeg Eclipse projekta; primjerice, ako je staza do projekta:
+d:\eclipse_workspaces\tecaj112C\web1
+konačni sadržaj datoteke će biti:
+---------------------------------------------------------------------------------------
+<Context path="/aplikacija1" docBase="d:\eclipse_workspaces\tecaj112C\web1\web\aplikacija1" />
+---------------------------------------------------------------------------------------
+
+Uočite da je puna staza do datoteke aplikacija1.xml: d:\eclipse_workspaces\tecaj112C\web1\aplikacija1.xml (trebat ce nam kasnije kod deploy-a).
+
+==========================================================
+Sekcija 3.1: Omogućavanje deploya preko weba u Tomcatu
+==========================================================
+
+Otvorite u CATALINA_HOME/conf/tomcat-users.xml i dodajte na kraju (prije zadnjeg taga):
+
+---------------------------------------------------------------------------------------
+  <role rolename="tecajAdmin"/>
+  <user username="tecajAdmin" password="27ee123456" roles="manager-gui"/>
+---------------------------------------------------------------------------------------
+
+Pokrenite (ili restartajte) tomcat.
+
+U pregledniku zatražite aplikaciju manager:
+
+http://localhost:8080/manager
+
+Prijavite se podatcima "tecajAdmin" : "27ee123456".
+
+==========================================================
+Sekcija 3.2: Upogonjavanje naše prve aplikacije
+==========================================================
+
+Pri kraju stranice pronadite "Deploy", i unutar toga "Deploy directory or WAR file located on server". Unesite:
+
+Context Path (required): /aplikacija1
+XML Configuration file URL: d:\eclipse_workspaces\tecaj112C\web1\aplikacija1.xml
+WAR or Directory URL: (ostavite prazno)
+
+i kliknite na Deploy. Ako je sve u redu, na vrhu ekrana dobit ćete poruku:
+
+OK - Deployed application at context path /aplikacija1
+
+Pokušajte sada dohvatiti naš prvi servlet; staza je:
+
+http://localhost:8080/aplikacija1/prvi
+
+==========================================================
+Sekcija 3.3: Sitno podešavanje
+==========================================================
+
+Dodajte u web.xml mapping kojim se i staza /index.html povezuje s našim prvim servletom. Time će se on pozivati ako korisnik zada i URL:
+
+http://localhost:8080/aplikacija1
+
+(naime, provjerite da je u CATALINA_HOME/conf/web.xml kao jedan od welcome-file-ova naveden i index.html pa kad mi ne zatražimo ništa, tomcat pokuša nalijepiti index.html i to onda pokrene ovog servleta.
+
+
+
+
+==========================================================
+Sekcija 4: Tehnologija JSP
+==========================================================
+
+Dodati u Eclipse-u novu datoteku: web\aplikacija1\datum.jsp
+---------------------------------------------------------------------------------------
+<%@ page import="java.util.Date,java.util.Calendar" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!-- Primjer bloka u kojem možemo deklarirati funkcije -->
+<%! 
+private void zapisiDatum(javax.servlet.jsp.JspWriter out, Date now) throws java.io.IOException {
+	out.print(now);
+}
+%>
+<html>
+   <body>
+     <p>Pozdrav! Sada je:
+      <% 
+         Date now = new Date();
+         out.println(now);
+      %>
+	  a to možemo napisati i ovako: <%= now %> i ovako <% zapisiDatum(out, now); %>.</p>
+	  <p>
+	  <% if (Calendar.getInstance().get(Calendar.AM_PM) == Calendar.AM) {%>
+        Good Morning
+      <% } else { %>
+        Good Afternoon
+      <% } %>
+	  </p>
+	  <p>Ispis preko taga: <c:out value="abc" />, ispis preko EL-izraza: ${"abc"}.</p>
+	  <p><c:forEach var="brojac" begin="1" end="5">${brojac},</c:forEach>
+   </body>
+</html>
+---------------------------------------------------------------------------------------
+
+Direktiva contentType konfigurira writer koji ćemo dobiti kada prvi puta nešto treba zapisati prema klijentu. Direktiva pageEncoding govori u kojoj jekondoj stranici napisan izvorni kod ove JSP stranice.
+JSTL je implementacija standardnih tagova (vidi <c:out> u primjeru) koju definira Sun/Oracle. Međutim, Tomcat ne dolazi s potrebnim jarovima; zato smo ih kopirali u aplikacija1/WEB-INF/lib.
+<c:out> po defaultu escape-a tekst koji ispisuje (rješava se problem koji nastaje ako tekst sadrži znakove poput <, &, > i slično). To se može isključiti ovako:
+ 
+<c:out value="<b>abc</b>" />
+<c:out value="<b>abc</b>" escapeXml="false" />
+  
+ 
+Procesiranje anotacija radi ako u web.xml nije zadan atribut metadata-complete="true"; dakle, ako ga nema iako je prisutan ali je metadata-complete="false", servlet containter je dužan pretražiti sve
+razrede za eventualnim anotacijama i njih koristiti za konfiguraciju kao nadopuna datoteke web.xml.
+
+
+
+
+
+==========================================================
+Sekcija 5: Anotacije, Filtri, Listeneri
+==========================================================
+
+Od Servlet specifikacije 3 više nije nužno sve navoditi u web.xml; moguće je koristiti i anotacije direktno u izvornom kodu. 
+Primjer anotiranog servleta:
+
+---------------------------------------------------------------------------------------
+package hr.fer.zemris.java.tecaj_12.servleti;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet(name="S2",urlPatterns={"/dr","/drugi"})
+public class DrugiServlet extends HttpServlet {
+
+	private static final long serialVersionUID = 1L;
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		resp.setCharacterEncoding("UTF-8");
+		resp.getWriter().print("<h1>Hello, World, drugi pokušaj!</h1>");
+	}
+	
+}
+---------------------------------------------------------------------------------------
+
+Primjer anotiranog filtra:
+
+---------------------------------------------------------------------------------------
+package hr.fer.zemris.java.tecaj_12.servleti;
+
+import java.io.IOException;
+
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
+
+@WebFilter("/dr")
+public class PrimjerFiltera implements Filter {
+
+	@Override
+	public void init(FilterConfig filterConfig) throws ServletException {
+	}
+
+	@Override
+	public void doFilter(ServletRequest request, ServletResponse response,
+			FilterChain chain) throws IOException, ServletException {
+		System.out.println("Ušao sam u filter!");
+		request.setCharacterEncoding("UTF-8");
+		chain.doFilter(request, response);
+		System.out.println("Izašao sam iz filtera!");
+	}
+
+	@Override
+	public void destroy() {
+	}
+
+}
+---------------------------------------------------------------------------------------
+
+Primjer anotiranog listenera:
+
+---------------------------------------------------------------------------------------
+package hr.fer.zemris.java.tecaj_12.servleti;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
+
+@WebListener
+public class Informacije implements ServletContextListener {
+
+	@Override
+	public void contextInitialized(ServletContextEvent sce) {
+		System.out.println("Dojava da je aplikacija pokrenuta!");
+	}
+
+	@Override
+	public void contextDestroyed(ServletContextEvent sce) {
+		System.out.println("Dojava da se aplikacija gasi!");
+	}
+
+}
+---------------------------------------------------------------------------------------
+
+
+
+
+
+==========================================================
+Sekcija 6: Sigurnost
+==========================================================
+
+U tomcat/conf/tomcat-users.xml dodati:
+
+  <role rolename="administrator"/>
+  <user username="a" password="123" roles="administrator"/>
+
+Napraviti sigurni servlet:
+
+---------------------------------------------------------------------------------------
+package hr.fer.zemris.java.tecaj_12.servleti;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class SigurniServlet extends HttpServlet {
+
+	private static final long serialVersionUID = 1L;
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		PrintWriter writer = resp.getWriter();
+		writer.println("<h1>Sigurnost na djelu!</h1>");
+		writer.println("<p>Bok "+req.getRemoteUser()+"</b>");
+		writer.println("<p>request.isUserInRole(\"ADM\")? "+req.isUserInRole("ADM")+"</b>");
+	}
+}
+---------------------------------------------------------------------------------------
+
+Napravite WEB-INF/pages/prijava.jsp
+---------------------------------------------------------------------------------------
+<form method="post" action="j_security_check">
+Ime: <input type="text" name="j_username"><br>
+Zaporka: <input type="text" name="j_password"><br>
+<input type="submit">
+</form>
+---------------------------------------------------------------------------------------
+
+Napravite WEB-INF/pages/pogreska.jsp
+---------------------------------------------------------------------------------------
+Dogodila se pogreška.
+---------------------------------------------------------------------------------------
+
+Podesite web.xml
+---------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="false">
+
+  <display-name>Moja prva aplikacija</display-name>
+  <description>
+     Prva aplikacija
+  </description>
+
+  <servlet>
+    <servlet-name>servlet1</servlet-name>
+    <servlet-class>hr.fer.zemris.java.tecaj_12.servleti.PrviServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>servlet3</servlet-name>
+    <servlet-class>hr.fer.zemris.java.tecaj_12.servleti.SigurniServlet</servlet-class>
+    <security-role-ref>
+      <description>Može samo administrator</description>
+      <role-name>ADM</role-name>
+      <role-link>administrator</role-link>
+    </security-role-ref>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet1</servlet-name>
+    <url-pattern>/prvi</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servlet1</servlet-name>
+    <url-pattern>/index.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servlet3</servlet-name>
+    <url-pattern>/sig</url-pattern>
+  </servlet-mapping>
+
+  <session-config>
+    <session-timeout>15</session-timeout>
+  </session-config>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Stranice za administraciju</web-resource-name>
+      <url-pattern>/sig</url-pattern>
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>administrator</role-name>
+    </auth-constraint>
+  </security-constraint>  
+  
+  <login-config>
+    <auth-method>FORM</auth-method>
+    <form-login-config>
+      <form-login-page>/WEB-INF/pages/prijava.jsp</form-login-page>
+      <form-error-page>/WEB-INF/pages/pogreska.jsp</form-error-page>
+    </form-login-config>
+  </login-config>
+
+  <security-role>
+    <description>Administrator sustava</description>
+    <role-name>administrator</role-name>
+  </security-role>  
+  
+</web-app>
+---------------------------------------------------------------------------------------
+
+Napomene:
+
+web.xml mora deklarirati koje sve uloge koristi (vidi <security-role> pri kraju web.xml datoteke). Moguc je scenarij i u kojem servlet koristi nepostojece (virtualne) uloge a koje zelimo namapirati
+na konkretne postojece uloge. Primjerice, recimo da servlet zeli koristiti ulogu "ADM" pa koristi upit tipa req.isUserInRole("ADM"), a mi zelimo da "ADM" alias za ulogu "administrator"; tada se u 
+deklaraciji pojedinih servleta mogu navesti takva mapiranja uporabom taga <security-role-ref> (vidi gore primjer).
+
+==========================================================
+Sekcija 7: Web i MVC
+==========================================================
+
+Napraviti primjer u kojem servlet računa sve što treba i rezultat zakvači u atribute zahtjeva te napravi forward na JSP; taj JSP onda nacrta rezultat korisniku.
+Za prosljeđivanje koristiti req.getRequestDispatcher("/WEB-INF/pages/pogled.jsp").forward(req, resp);
+Riješite to na primjeru servleta koji ispisuje kvadrate zadanog raspona brojeva; raspon se predaje preko parametara "a" i "b"; defaultne vrijednosti su 0 i 20.
+
+==========================================================
+Sekcija 8: Dodatak
+==========================================================
+
+Directives
+Directive elements have a syntax of the form <%@ directive...%>.
+
+Scripting Elements
+
+EL expressions can be used in JSP standard and custom actions and template data. EL expressions use the syntax ${expr} and #{expr};
+For example:
+<mytag attr1="${bean.property}".../>
+${map[entry]}
+<lib:myAction>${3+counter}</lib:myAction>
+
+Chapter JSP.2, “Expression Language” provides more details on the EL.
+There are three language-based types of scripting elements: declarations,
+scriptlets, and expressions. Declarations follow the syntax <%! ... %>. Scriptlets
+follow the syntax <% ... %>. Expressions follow the syntax <%= ... %>.
+
+
+-------------------------------------------------------
+<% response.setContentType("....");
+whatever... %><?xml version=”1.0” ?>
+<%@ page buffer=”8kb” %>
+The rest of the document goes here
+-------------------------------------------------------
+
+Implicitni objekti koji stoje na raspolaganju:
+ * request:      javax.servlet.ServletRequest ili podtip (npr. javax.servlet.HttpServletRequest)
+ * response:     javax.servlet.ServletResponse ili podtip (npr. javax.servlet.HttpServletResponse)
+ * pageContext:  javax.servlet.jsp.PageContext
+ * session:      javax.servlet.http.HttpSession
+ * application:  javax.servlet.ServletContext (getServletConfig().getContext())
+ * out:          javax.servlet.jsp.JspWriter, omata response.getWriter()
+ * config:       javax.servlet.ServletConfig
+ * page:         java.lang.Object (za JSP skriptu koja koristi jezik Javu je "page" sinonim za "this")
+
+Ako je JSP stranica proglasena Error stranicom, još ima na raspolaganju objekt:
+ * exception:    java.lang.Throwable
+
+Unutar JSP-a autorima je zabranjeno da ispisuju direktno na response.getWriter() ili response.getOutputStream().
+
+Scope-ovi:
+ * "page":         vidljivo samo unutar te stranice; cim se posalje odgovore, reference se gube; objekti se pohranjuju u pageContext objekt
+ * "request":      vidljivo od trenutka stvaranja pa do kraja lanca obrade zahtjeva (ako jsp nesto npr. forwarda dalje); pohranjuje se u request objekt
+ * "session":      vidljivo od svih stranica koje sudjeluju u istoj sjednici; reference na pohranjene objekte se otpustaju kad sjednica zavrsi; pohranjuju se u session objekt
+ * "application":  vidljivo na razini web aplikacije; objekti se pohranjuju u application objektu (koji je zapravo ServletContext dobiven pri konfiguraciji servlet objekta)
+
+Uključivanje sadržaja u JSP stranicu - dva načina:
+1) <%@ include file="xyz" %> uključuje xyz kao #include<xyz> u C-u (uključi tijelo od xyz u trenutnu stranicu i onda sve skupa kompajlira)
+2) <jsp:include page="xyz" /> u trenutku izvođenja izvrši stranicu xyz i ovno što je ona generirala zalijepi na ovo mjesto
+

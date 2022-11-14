@@ -1,0 +1,205 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+ 
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+		<meta name="description" content="Popis poslovnica marke Citroën">
+		<meta name="keywords" content="Citroën, poslovnice, HTML, CSS, vježba, OR, FER">
+		<meta name="author" content="0036467500">
+	    <link rel="stylesheet" type="text/css" href="dizajn.css">
+		<title>Popis poslovnica</title>
+	</head>
+	
+	<body>
+	
+
+	</form>
+	
+		<div id="header">
+			<a id="hlink"href="index.html">
+			<img src="slika1.jpg" alt="Logo Citroëna" width="75" height="75"></a><h1 id="hnaslov">Popis poslovnica marke Citroën</h1>
+			
+			
+		
+		</div>
+		<div id="container">
+			<div id="navigation">
+			<ul id="lista">
+				<li><a class="link" href="index.html">Home</a></li>
+				<li><a class="link" href="podaci.xml">XML Podaci</a></li>
+				<li><a class="link" href="obrazac.html">Pretraživanje</a></li>
+				<li><a class="link" href="http://www.fer.unizg.hr/predmet/or">FER Otvoreno Računarstvo</a></li>
+				<li><a class="link" href="http://www.fer.hr/" target="_blank">FER Početna stranica</a></li>
+				<li><a class="link" href="mailto:">Pošalji e-mail</a>
+			</ul>
+	
+			</div>
+		
+			<div id="body">
+			
+			<h2 id="bnaslov2">Pretraga poslovnica</h2>
+			
+			<p>Na obrascu ispod možete pretraživati poslovnice ovisno o unesenim podacima.
+			</p>
+			
+			<form action="pretraga.php" method="post" name="pretraga">
+				<table SUMMARY="obrazac">
+				<tr>
+					<td class="imena">Ime poslovnice</td> 
+					<td class="unosi" colspan="2">
+						<input type="text" name="ime">
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="imena">Interni kod poslovnice</td> 
+					<td class="unosi" colspan="2">
+						<input type="text" name="kod">
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="imena">Način plaćanja</td> 
+					<td class="unosi" colspan="2">
+						<input type="radio" name="placanje" value="Gotovina">Gotovina
+						<input type="radio" name="placanje" value="Kartica">Kartica
+					</td>
+				</tr>
+				
+				<tr>
+					<td rowspan="3" class="imena">Modeli</td>
+					<td class="unosi">Vrsta modela</td>
+					<td class="modeli">
+						<input type="checkbox" name="vrsta[]" value="C1"><label>C1</label><br>
+						<input type="checkbox" name="vrsta[]" value="C4"><label>C4</label><br>
+						<input type="checkbox" name="vrsta[]" value="C5"><label>C5</label><br>
+						<input type="checkbox" name="vrsta[]" value="DS3" ><label>DS3</label><br>
+						<input type="checkbox" name="vrsta[]" value="DS5" ><label>DS5</label><br>
+					</td>
+				</tr>
+					
+					
+					
+					<tr>
+						<td class="unosi" >Godina</td> <td class="modeli"><input type="text" name="godina"></td>
+					</tr>
+					
+					<tr>
+					<td class="unosi" >Vrsta usluge</td>
+					<td class="modeli">
+						<input type="checkbox" name="usluga[]" value="Prodaja"><label>Prodaja</label><br>
+						<input type="checkbox" name="usluga[]" value="Servis"><label>Servis</label><br>
+						<input type="checkbox" name="usluga[]" value="Ostalo"><label>Ostalo</label><br>
+						
+					</td>
+					</tr>
+					
+					<tr>
+						<td class="imena">Regija</td>
+						<td class="unosi" colspan="2">
+						<select name="regija[]" multiple>
+						<option value="Sjeverna" name="regija[]">Sjeverna</option>
+						<option value="Srednja" name="regija[]">Srednja</option>
+						<option value="Istocna" name="regija[]">Istočna</option>
+						<option value="Gorska" name="regija[]">Gorska</option>
+						<option value="Dalmatinska" name="regija[]">Dalmatinska</option>
+						<option value="Juzna" name="regija[]">Južna</option>
+						</select>
+						</td>
+					</tr>
+					
+					<tr>
+						<td class="imena">Probna vožnja</td>
+						<td class="unosi" colspan="2">
+							<input type="radio" name="probna" value="Da"><label>Da</label>
+							<input type="radio" name="probna" value="Ne"><label>Ne</label>
+						</td>
+					</tr>
+					
+					<tr>
+						<td class="imena">E-mail konzultacije</td>
+						<td class="unosi" colspan="2">
+							<input type="radio" name="email" value="Da"><label>Da</label>
+							<input type="radio" name="email" value="Ne"><label>Ne</label>
+						</td>
+					</tr>
+					
+					<tr>
+						
+						<td class="imena">Radno vrijeme</td>
+						<td class="unosi" colspan="2" colspan="2">
+						<table>
+						<tr>
+						<td>Radno vrijeme početak</td> 
+							<td><input type="text" name="radnop">
+						</td>
+						</tr>
+						<td>Radno vrijeme kraj</td> 
+							<td><input type="text" name="radnok">
+						</td>
+						</table>
+						</td>
+					</tr>
+					
+					
+					<tr>
+						<td class="imena">Dežurni servis</td>
+						<td class="unosi" colspan="2">
+							<input type="radio" name="dezurni" value="Da"><label>Da</label>
+							<input type="radio" name="dezurni" value="Ne"><label>Ne</label>
+						</td>
+					</tr>
+								
+					<tr>
+						<td class="imena">Grad</td>
+							<td class="unosi" colspan="2"><input type="text" name="grad">
+						</td>
+					</tr>
+				
+					<tr>
+						<td class="imena">Poštanski broj</td>
+						<td class="unosi" colspan="2">
+							<input type="text" name="testradno">
+						</td>
+					</tr>
+					<tr>
+						<td class="imena">Ulica</td> 
+						<td class="unosi" colspan="2">
+							<input type="text" name="ulica">
+						</td>
+					</tr>
+					<tr>
+						<td class="imena">Broj</td> 
+						<td class="unosi" colspan="2">
+							<input type="text" name="br">
+						</td>
+					</tr>
+					<tr>
+						
+				
+				
+				
+					<tr align="center">
+						<td colspan="3" align="center">
+							<input  type="submit" value="Traži" name="posalji">
+							<input  type="reset" value="Resetiraj" name="ponisti">
+						</td>
+								
+				</table>			
+			</form>
+				
+			
+			</div>
+		</div>
+		
+		
+		<div id="footer">
+			Autor: sipe 2015
+		
+		</div>
+
+		
+	</body>
+
+
+</html>

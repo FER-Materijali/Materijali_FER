@@ -1,0 +1,28 @@
+<!ELEMENT knjiznica (knjiga*)>
+
+<!ELEMENT knjiga (naslov, podnaslov?, autor+, izdavac, datum_izdanja, ocjena?, nacin_distribucije?, kategorija, cijena, recenzija*)>
+<!ATTLIST knjiga id ID #REQUIRED>
+<!ATTLIST knjiga jezik CDATA #REQUIRED>
+<!ATTLIST knjiga broj_stranica CDATA #REQUIRED>
+<!ATTLIST knjiga isbn CDATA #REQUIRED>
+<!ATTLIST knjiga izdanje CDATA #IMPLIED>
+<!ATTLIST knjiga uvez (Tvrdi|Meki) #REQUIRED>
+
+<!ELEMENT naslov (#PCDATA)>
+<!ELEMENT podnaslov (#PCDATA)>
+<!ELEMENT autor (ime, prezime)>
+<!ELEMENT ime (#PCDATA)>
+<!ELEMENT prezime (#PCDATA)>
+<!ELEMENT izdavac (naziv)>
+<!ELEMENT naziv (#PCDATA)>
+<!ELEMENT datum_izdanja (dan, mjesec, godina)>
+<!ELEMENT dan (#PCDATA)>
+<!ELEMENT mjesec (#PCDATA)>
+<!ELEMENT godina (#PCDATA)>
+<!ELEMENT nacin_distribucije (#PCDATA)>
+<!ELEMENT kategorija (#PCDATA)>
+<!ELEMENT cijena (#PCDATA)>
+<!ELEMENT ocjena (#PCDATA)>
+<!ELEMENT recenzija (recenzent, sadrzaj)>
+<!ELEMENT recenzent (ime, prezime)>
+<!ELEMENT sadrzaj (#PCDATA)>

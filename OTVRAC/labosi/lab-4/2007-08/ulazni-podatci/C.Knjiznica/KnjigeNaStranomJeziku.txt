@@ -1,0 +1,104 @@
+ISBN|Naslov|Ime autora|Prezime autora|Jezik|Izdavac|Izdanje|Datum izdanja|Ocjena
+144-0-85-934463-7|molestie.|Thomas|Burke|DE|vitae erat|First|12/25/2007|Worth Reading
+144-0-85-934463-7|molestie.|Thomas|Burke|DE|turpis non enim.|First|12/25/2007|Worth Reading
+144-0-85-934463-7|molestie.|Thomas|Burke|DE|a, malesuada id, erat.|First|12/25/2007|Worth Reading
+362-8-55-392774-9|ridiculus mus.|Paloma|Mitchell|SE|ultrices. Vivamus rhoncus. Donec est.|Third|11/16/2007|Worth Reading
+339-8-69-036432-9|et|Stuart|Davenport|SI|mus.|Seventh|02/04/2008|Poor
+341-1-45-898198-0|fringilla. Donec feugiat|Rana|Fuller|SE|dis parturient montes, nascetur ridiculus mus.|Seventh|11/27/2007|Pretty Cool
+648-1-28-037935-0|ac|Cailin|Guzman|DE|Cras|Fourth|11/17/2007|Nothing Special
+724-5-27-310912-8|Nullam|Calvin|Doyle|DE|nulla. In tincidunt congue turpis.|Third|03/17/2007|Poor
+627-4-58-440723-3|faucibus id,|Cora|Lane|DE|ante,|First|12/02/2007|Pretty Cool
+991-7-45-817241-8|velit in aliquet|Quentin|Simmons|SE|sem. Nulla|Seventh|06/20/2007|Nothing Special
+268-7-50-574761-4|eu erat|Germaine|Rios|HR|nulla magna, malesuada vel, convallis in,|Third|01/25/2007|Worth Reading
+709-7-67-233477-4|tempor,|Germaine|Tucker|SE|nunc interdum feugiat.|Sixth|02/08/2007|Pretty Cool
+448-1-61-408259-7|felis eget varius|Brooke|Ford|DE|semper erat, in consectetuer ipsum nunc|Second|02/20/2008|Pretty Cool
+894-9-44-869738-5|ut cursus|Dane|Walls|EN|vestibulum. Mauris|Seventh|09/11/2007|Worth Reading
+512-9-99-973728-9|dui, in|Pascale|Clayton|DE|Nullam|Sixth|12/11/2007|Nothing Special
+102-0-09-382277-0|ornare, lectus|Noelle|Wells|DE|ante dictum cursus. Nunc|Sixth|01/11/2008|Awesome!
+303-2-41-479274-1|eleifend. Cras|Kyle|Hebert|EN|Sed auctor odio a purus.|Second|10/31/2007|Poor
+852-0-09-937441-8|in,|Emma|Hardin|SI|Nunc pulvinar arcu et pede.|Sixth|10/03/2007|Awesome!
+341-2-45-089170-7|massa.|Emmanuel|Webb|EN|turpis non enim.|Seventh|04/02/2007|Nothing Special
+498-9-96-914994-3|iaculis|Uta|Levy|HR|natoque penatibus|First|01/16/2007|Worth Reading
+826-5-18-917340-6|egestas nunc|Ora|Walter|SI|a, malesuada id, erat.|Seventh|03/03/2008|Worth Reading
+592-2-83-028082-6|enim. Mauris|Blair|Lowery|HR|Proin vel nisl. Quisque fringilla|Sixth|03/07/2008|Awesome!
+420-7-32-541707-9|sed|Francis|Dominguez|EN|Vestibulum ante ipsum primis in faucibus|Seventh|04/03/2007|Nothing Special
+155-3-00-580371-6|quis|Acton|Sandoval|EN|ullamcorper, nisl arcu|Third|03/27/2008|Worth Reading
+457-4-15-442602-0|metus.|Jescie|Wolf|DE|interdum|Fifth|12/09/2007|Nothing Special
+922-4-67-637948-0|lorem ut aliquam|Rhiannon|Allison|SI|enim|Second|08/25/2007|Nothing Special
+359-9-13-717616-4|parturient montes, nascetur|Piper|Sanford|HR|eu, ligula. Aenean euismod mauris eu|Fourth|09/01/2007|Poor
+440-7-11-483122-7|Sed|Isaiah|Blankenship|HR|est, mollis non, cursus non,|Third|02/08/2008|Nothing Special
+384-4-32-745015-1|malesuada vel,|Blake|Cochran|EN|Pellentesque ut ipsum ac|Second|05/24/2007|Pretty Cool
+599-7-73-275791-4|vel|Adara|Freeman|HR|imperdiet, erat nonummy ultricies ornare,|Fifth|10/29/2007|Worth Reading
+877-2-05-774914-2|sodales|Ira|Trevino|DE|auctor, velit eget laoreet|Second|09/04/2007|Nothing Special
+814-3-82-774206-0|enim. Sed|Neve|Travis|DE|mauris sapien,|First|06/12/2007|Worth Reading
+592-7-60-290804-3|Vivamus nisi. Mauris|Kelsie|Sparks|HR|semper|Fifth|04/30/2007|Nothing Special
+371-2-00-380727-1|erat, eget tincidunt|Akeem|Jenkins|EN|convallis in, cursus et,|Sixth|03/07/2008|Pretty Cool
+513-5-42-614332-0|interdum feugiat.|Naida|Serrano|DE|imperdiet non,|Third|08/14/2007|Nothing Special
+155-3-17-851154-8|Morbi|Blythe|Kemp|SI|tempus, lorem fringilla ornare placerat, orci|Third|02/12/2008|Awesome!
+827-6-02-717109-4|molestie|Chelsea|Golden|DE|posuere at, velit. Cras|Seventh|11/19/2007|Poor
+100-3-71-091033-5|tempus, lorem|Samantha|Kaufman|HR|fames ac turpis egestas. Aliquam|Third|10/17/2007|Pretty Cool
+442-5-51-755011-6|mus. Aenean eget|Kevyn|Ramirez|EN|ante|Sixth|01/15/2007|Awesome!
+374-5-40-041211-8|Proin ultrices. Duis|Mechelle|Graves|EN|hendrerit. Donec porttitor tellus|Second|02/02/2008|Worth Reading
+604-6-19-731828-7|vulputate eu, odio.|Chandler|Conley|HR|et, magna. Praesent interdum ligula eu|Second|12/20/2007|Worth Reading
+722-6-05-798577-7|a, arcu. Sed|Garrett|Obrien|SI|ridiculus mus. Proin vel nisl. Quisque|Fifth|08/04/2007|Pretty Cool
+822-3-92-249018-9|at, nisi.|Miriam|Blackwell|SI|Nulla|Fourth|10/28/2007|Pretty Cool
+760-9-94-896682-1|Aliquam ornare,|Emmanuel|Lloyd|EN|Nunc sed|First|04/23/2007|Poor
+538-9-27-696812-1|sed consequat|Griffin|Golden|SI|gravida sagittis. Duis|Second|12/25/2007|Pretty Cool
+446-1-06-787991-7|ac mattis|Cameron|Gilmore|HR|hymenaeos. Mauris ut|Third|01/16/2008|Poor
+207-7-85-585659-1|tincidunt tempus risus.|Destiny|Gilbert|HR|scelerisque scelerisque dui.|Seventh|02/04/2008|Awesome!
+927-4-75-040058-2|cursus a, enim.|Hannah|Gordon|EN|euismod|First|01/31/2007|Pretty Cool
+391-8-05-800728-8|velit. Cras lorem|Pascale|Higgins|EN|Sed malesuada augue ut lacus.|Fifth|01/22/2007|Awesome!
+171-5-61-634511-8|dapibus rutrum, justo.|Portia|Fletcher|HR|non enim commodo hendrerit. Donec|Second|01/17/2008|Worth Reading
+184-2-47-609888-3|non enim.|Harding|Cooley|DE|cursus, diam|Fifth|03/12/2007|Worth Reading
+966-6-36-615441-6|pede, ultrices a,|Stephen|Oneil|SE|Sed eu nibh vulputate mauris|Fourth|01/08/2007|Awesome!
+110-6-72-227386-6|justo eu arcu.|Xandra|Hoffman|DE|nec ante.|Second|01/08/2008|Worth Reading
+919-1-42-870538-8|lorem,|Brianna|Dotson|DE|felis. Donec tempor, est ac mattis|Fifth|01/27/2007|Worth Reading
+849-0-37-180974-1|tempus, lorem fringilla|Kelly|Russell|SI|Proin vel|Sixth|01/25/2008|Worth Reading
+168-7-77-864282-9|ultrices iaculis|Brianna|Conner|DE|enim.|Third|03/31/2008|Nothing Special
+999-7-75-104407-5|risus|Harrison|Vincent|EN|nec ante blandit viverra. Donec|Fifth|06/11/2007|Worth Reading
+319-8-20-270021-9|semper cursus.|Harper|Dawson|SI|justo sit|Sixth|05/24/2007|Pretty Cool
+723-7-50-753859-9|dictum eu, eleifend|Abdul|Craft|SI|morbi tristique senectus et netus|Sixth|06/27/2007|Nothing Special
+458-4-34-719718-8|sollicitudin|Aimee|Simmons|SI|purus mauris|Second|12/10/2007|Pretty Cool
+487-8-68-730521-5|adipiscing|Basil|Wooten|SE|Mauris ut|Seventh|03/05/2007|Worth Reading
+212-0-86-048200-2|scelerisque|Shelby|Mcclain|EN|at, egestas a, scelerisque|Fifth|04/10/2008|Pretty Cool
+672-2-87-017048-1|dui|Jennifer|Lara|SI|non,|Second|08/08/2007|Awesome!
+783-4-85-299012-5|orci luctus|Scarlet|Nunez|SE|magnis dis parturient montes,|Second|01/05/2007|Awesome!
+259-6-79-680846-5|auctor|Guinevere|Henson|SE|dictum ultricies ligula. Nullam enim.|First|08/15/2007|Awesome!
+623-5-82-666329-7|ligula. Aenean|Rylee|Sargent|EN|porttitor vulputate,|Sixth|04/16/2007|Nothing Special
+249-4-06-148014-3|faucibus. Morbi vehicula.|Michelle|Mcclure|EN|ut|Fourth|07/17/2007|Worth Reading
+977-6-82-483923-1|non leo. Vivamus|Amber|Hodges|EN|cursus|First|03/26/2007|Awesome!
+556-6-05-097417-3|tempor|Blaze|Zamora|DE|Lorem ipsum dolor sit amet,|Fifth|03/10/2008|Poor
+459-9-58-700431-5|consequat purus.|Dorothy|Freeman|SI|Nunc commodo|Second|05/03/2007|Awesome!
+942-8-12-866011-1|magna. Phasellus|Joan|Forbes|SE|ullamcorper, nisl arcu|Seventh|01/25/2008|Worth Reading
+619-8-95-497512-9|Cras dictum|Hilary|David|SE|faucibus. Morbi|Second|04/22/2007|Pretty Cool
+175-6-15-467663-1|suscipit,|Felix|Martinez|EN|tincidunt. Donec vitae erat|Second|10/31/2007|Nothing Special
+386-8-23-599919-5|penatibus et|Regina|Charles|SE|ligula consectetuer rhoncus. Nullam velit|Fifth|03/20/2008|Worth Reading
+634-8-94-885749-2|sit|Kerry|Lowe|SE|sed tortor. Integer aliquam|Second|02/23/2007|Poor
+874-2-53-838760-8|Duis|Nigel|Payne|DE|enim non nisi.|First|06/21/2007|Worth Reading
+570-8-63-630721-3|amet luctus vulputate,|Gary|Sherman|SE|natoque penatibus et magnis dis|Sixth|04/12/2007|Awesome!
+630-0-04-087227-1|et, magna.|Giacomo|Stafford|SE|at, egestas|Sixth|04/02/2008|Pretty Cool
+643-0-41-873589-1|facilisis|Amy|Snow|SE|lacus. Nulla tincidunt, neque vitae|Fifth|07/28/2007|Worth Reading
+665-7-42-001923-7|suscipit|Basil|Pittman|EN|Nullam|Second|04/21/2007|Nothing Special
+747-0-57-150522-7|Cras convallis|Alisa|Shaw|HR|Aenean euismod mauris eu elit.|Third|08/11/2007|Nothing Special
+510-2-35-297561-6|posuere, enim nisl|Ciara|Hays|HR|senectus et netus et malesuada|Second|01/16/2007|Pretty Cool
+503-0-32-899956-9|et pede. Nunc|Samuel|Flowers|SI|adipiscing elit.|Second|04/18/2007|Poor
+293-4-72-378075-0|convallis in,|Gabriel|Horne|EN|cursus, diam at pretium|Fifth|03/24/2007|Pretty Cool
+889-1-27-934539-3|Mauris vestibulum, neque|Daria|Hammond|SE|Curabitur egestas nunc sed libero. Proin|Fifth|01/26/2008|Poor
+769-4-62-816853-2|sed consequat auctor,|Hedy|Stevens|HR|netus et|Fifth|02/24/2008|Nothing Special
+949-2-30-816243-9|id risus quis|Macy|Young|HR|habitant|Seventh|03/08/2008|Nothing Special
+857-9-39-564953-1|natoque|Denton|Andrews|SE|faucibus.|Third|03/10/2007|Poor
+370-2-36-622044-3|tellus. Suspendisse sed|Tatiana|Brown|DE|auctor non, feugiat nec, diam. Duis|Fifth|03/01/2007|Nothing Special
+947-5-10-814341-8|Morbi sit|Jocelyn|Ortiz|EN|eleifend non,|Seventh|12/03/2007|Pretty Cool
+199-0-81-516709-0|mus. Donec|Kellie|Tate|DE|Duis mi enim, condimentum|Second|02/14/2008|Worth Reading
+941-0-92-662667-3|et|Moana|Manning|HR|facilisis.|Sixth|02/15/2008|Nothing Special
+893-1-69-426268-8|orci|Piper|Simpson|HR|nec, euismod|Fourth|01/09/2008|Awesome!
+517-4-50-176969-3|a nunc.|Vielka|Glenn|EN|neque vitae semper egestas, urna|Third|07/26/2007|Awesome!
+348-3-66-052997-8|Phasellus libero mauris,|Kerry|Farrell|SI|at augue id|Seventh|06/19/2007|Worth Reading
+177-6-73-973652-7|id,|Gannon|Gutierrez|EN|euismod urna. Nullam lobortis|Fourth|12/13/2007|Worth Reading
+802-1-09-465746-2|elementum at, egestas|Ramona|Burch|HR|amet, consectetuer adipiscing elit. Curabitur|Second|10/14/2007|Pretty Cool
+501-5-48-022749-7|Proin|Kiara|Perry|EN|parturient|First|05/08/2007|Worth Reading
+982-7-84-958930-0|nunc nulla vulputate|Tatum|Mcconnell|EN|inceptos hymenaeos. Mauris ut|Seventh|04/28/2007|Nothing Special
+942-3-47-131240-9|non, lacinia|Dale|Blankenship|DE|sem ut dolor dapibus|Third|08/17/2007|Pretty Cool
+898-6-12-736830-4|Proin eget|Naida|Phelps|DE|eget metus eu erat semper|Seventh|08/14/2007|Poor
+339-4-13-197142-2|Cras|Zorita|Everett|SI|tempor lorem,|Second|10/14/2007|Pretty Cool
+339-4-13-197142-2|Cras|Kerry|Farrell|SI|tempor lorem,|Second|10/14/2007|Pretty Cool

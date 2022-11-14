@@ -1,0 +1,1603 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE telefonski_imenik SYSTEM "gramatika.dtd">
+
+<?xml-stylesheet type="text/xsl" href="pretvorba.xsl" ?>
+
+<telefonski_imenik>
+  <osoba oib="15242136442" kategorija="kolega">
+    <ime>Cristiano</ime>
+    <prezime>Ronaldo</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="092">171-7328</broj>
+    </telefon>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="044">571-7177</broj>
+    </telefon>
+    <adresa>
+      <ulica>Adamičeva</ulica>
+      <kucni_broj>233</kucni_broj>
+      <mjesto postanski_broj="21846">Đulovac</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>cristiano.ronaldo@gmail.com</mail_adresa>
+    <datum_rodjenja>26.10.1999.</datum_rodjenja>
+  </osoba>
+  <osoba oib="15942389058" kategorija="prijatelj">
+    <ime>Zlatan</ime>
+    <prezime>Ibrahimovic</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="034">745-3654</broj>
+    </telefon>
+    <adresa>
+      <ulica>Sudete Đure</ulica>
+      <kucni_broj>217</kucni_broj>
+      <mjesto postanski_broj="39880">Osijek</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>zlatan.ibrahimovic@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="turizam">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>22.7.1973.</datum_rodjenja>
+  </osoba>
+  <osoba oib="17005519807" kategorija="prijatelj">
+    <ime>Lionel</ime>
+    <prezime>Messi</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="044">164-1558</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="032">247-3103</broj>
+    </telefon>
+    <adresa>
+      <ulica>Sljemenska</ulica>
+      <kucni_broj>571</kucni_broj>
+      <mjesto postanski_broj="28562">Viljevo</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>lionel.messi@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="opce">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>1.7.1992.</datum_rodjenja>
+  </osoba>
+  <osoba oib="17792384233" kategorija="bez_kategorije">
+    <ime>Samuel</ime>
+    <prezime>Eto’o</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="098">679-4367</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="031">613-7094</broj>
+    </telefon>
+    <adresa>
+      <ulica>Zoranićeve planine</ulica>
+      <kucni_broj>548</kucni_broj>
+      <mjesto postanski_broj="39379">Obrovac</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>samuel.etoo@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="ostalo">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>20.1.1997.</datum_rodjenja>
+  </osoba>
+  <osoba oib="19716496924" kategorija="prijatelj">
+    <ime>Emmanuel</ime>
+    <prezime>Adebayor</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="092">492-6467</broj>
+    </telefon>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="048">653-5908</broj>
+    </telefon>
+    <adresa>
+      <ulica>Knežija</ulica>
+      <kucni_broj>57</kucni_broj>
+      <mjesto postanski_broj="37817">Privlaka</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>emmanuel.adebayor@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="ostalo">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>12.11.1990.</datum_rodjenja>
+  </osoba>
+  <osoba oib="19755820671" kategorija="prijatelj">
+    <ime>Karim</ime>
+    <prezime>Benzema</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="033">140-4696</broj>
+    </telefon>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="048">243-2075</broj>
+    </telefon>
+    <adresa>
+      <ulica>Sortina</ulica>
+      <kucni_broj>618</kucni_broj>
+      <mjesto postanski_broj="99894">Senj</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>karim.benzema@gmail.com</mail_adresa>
+    <datum_rodjenja>1.2.1974.</datum_rodjenja>
+  </osoba>
+  <osoba oib="20095098472" kategorija="obitelj">
+    <ime>Carlos</ime>
+    <prezime>Tevez</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="020">314-4184</broj>
+    </telefon>
+    <adresa>
+      <ulica>Kozari put</ulica>
+      <kucni_broj>143</kucni_broj>
+      <mjesto postanski_broj="34046">Mljet</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>carlos.tevez@gmail.com</mail_adresa>
+    <datum_rodjenja>25.9.1984.</datum_rodjenja>
+  </osoba>
+  <osoba oib="20737229934" kategorija="obitelj">
+    <ime>John</ime>
+    <prezime>Terry</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="033">519-7443</broj>
+    </telefon>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="099">129-1787</broj>
+    </telefon>
+    <adresa>
+      <ulica>Remetinec</ulica>
+      <kucni_broj>456</kucni_broj>
+      <mjesto postanski_broj="92702">Klana</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>john.terry@gmail.com</mail_adresa>
+    <datum_rodjenja>24.8.1991.</datum_rodjenja>
+  </osoba>
+  <osoba oib="21267596797" kategorija="obitelj">
+    <ime>Frank</ime>
+    <prezime>Lampard</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="023">720-6383</broj>
+    </telefon>
+    <adresa>
+      <ulica>Orešići</ulica>
+      <kucni_broj>162</kucni_broj>
+      <mjesto postanski_broj="50871">Trpanj</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>frank.lampard@gmail.com</mail_adresa>
+    <datum_rodjenja>18.11.1978.</datum_rodjenja>
+  </osoba>
+  <osoba oib="21832883348" kategorija="prijatelj">
+    <ime>Thierry</ime>
+    <prezime>Henry</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="022">276-5519</broj>
+    </telefon>
+    <adresa>
+      <ulica>Janečeka, gustava</ulica>
+      <kucni_broj>433</kucni_broj>
+      <mjesto postanski_broj="90038">Mihovljan</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>thierry.henry@gmail.com</mail_adresa>
+    <datum_rodjenja>14.11.1984.</datum_rodjenja>
+  </osoba>
+  <osoba oib="23987531493" kategorija="obitelj">
+    <ime>Steven</ime>
+    <prezime>Gerrard</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="098">976-2499</broj>
+    </telefon>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="043">661-7986</broj>
+    </telefon>
+    <adresa>
+      <ulica>Vrbovska</ulica>
+      <kucni_broj>247</kucni_broj>
+      <mjesto postanski_broj="95774">Buje</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>steven.gerrard@gmail.com</mail_adresa>
+    <datum_rodjenja>19.9.1986.</datum_rodjenja>
+  </osoba>
+  <osoba oib="24456652397" kategorija="obitelj">
+    <ime>Daniel</ime>
+    <prezime>Alves</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="031">719-4728</broj>
+    </telefon>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="095">349-3266</broj>
+    </telefon>
+    <adresa>
+      <ulica>Čigiri</ulica>
+      <kucni_broj>669</kucni_broj>
+      <mjesto postanski_broj="39569">Zagvozd</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>daniel.alves@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="ostalo">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>2.3.1982.</datum_rodjenja>
+  </osoba>
+  <osoba oib="24835534574" kategorija="kolega">
+    <ime>Michael</ime>
+    <prezime>Ballack</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="040">246-2554</broj>
+    </telefon>
+    <adresa>
+      <ulica>Pirinova ulica</ulica>
+      <kucni_broj>536</kucni_broj>
+      <mjesto postanski_broj="33387">Vratišinec</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>michael.ballack@gmail.com</mail_adresa>
+    <datum_rodjenja>5.1.1987.</datum_rodjenja>
+  </osoba>
+  <osoba oib="25815692130" kategorija="prijatelj">
+    <ime>Rio</ime>
+    <prezime>Ferdinand</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="031">548-5855</broj>
+    </telefon>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="099">555-7345</broj>
+    </telefon>
+    <adresa>
+      <ulica>Nodilova</ulica>
+      <kucni_broj>236</kucni_broj>
+      <mjesto postanski_broj="52771">Gradište</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>rio.ferdinand@gmail.com</mail_adresa>
+    <datum_rodjenja>7.5.1976.</datum_rodjenja>
+  </osoba>
+  <osoba oib="26260939272" kategorija="kolega">
+    <ime>Kolo</ime>
+    <prezime>Toure</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="091">981-1986</broj>
+    </telefon>
+    <adresa>
+      <ulica>Šipkovica</ulica>
+      <kucni_broj>126</kucni_broj>
+      <mjesto postanski_broj="86279">Rovinj</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>kolo.toure@gmail.com</mail_adresa>
+    <datum_rodjenja>12.6.1995.</datum_rodjenja>
+  </osoba>
+  <osoba oib="26287049073" kategorija="prijatelj">
+    <ime>Wayne</ime>
+    <prezime>Rooney</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="021">600-7165</broj>
+    </telefon>
+    <adresa>
+      <ulica>Požarinje 7</ulica>
+      <kucni_broj>778</kucni_broj>
+      <mjesto postanski_broj="16865">Rešetari</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>wayne.rooney@gmail.com</mail_adresa>
+    <datum_rodjenja>12.11.1982.</datum_rodjenja>
+  </osoba>
+  <osoba oib="27748380487" kategorija="obitelj">
+    <ime>Iker</ime>
+    <prezime>Casillas</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="020">587-4976</broj>
+    </telefon>
+    <adresa>
+      <ulica>Žuti jarak</ulica>
+      <kucni_broj>24</kucni_broj>
+      <mjesto postanski_broj="47307">Višnjan</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>iker.casillas@gmail.com</mail_adresa>
+    <datum_rodjenja>26.9.1997.</datum_rodjenja>
+  </osoba>
+  <osoba oib="28758944502" kategorija="obitelj">
+    <ime>Victor</ime>
+    <prezime>Valdez</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="092">505-2662</broj>
+    </telefon>
+    <adresa>
+      <ulica>Zelengradska</ulica>
+      <kucni_broj>479</kucni_broj>
+      <mjesto postanski_broj="40667">Benkovac</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>victor.valdez@gmail.com</mail_adresa>
+    <datum_rodjenja>25.9.1970.</datum_rodjenja>
+  </osoba>
+  <osoba oib="29024171305" kategorija="obitelj">
+    <ime>Frederic</ime>
+    <prezime>Kanoute</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="099">447-3934</broj>
+    </telefon>
+    <adresa>
+      <ulica>Dugoratska</ulica>
+      <kucni_broj>678</kucni_broj>
+      <mjesto postanski_broj="65472">Lukač</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>frederic.kanoute@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="ostalo">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>8.8.1997.</datum_rodjenja>
+  </osoba>
+  <osoba oib="30408902830" kategorija="prijatelj">
+    <ime>Didier</ime>
+    <prezime>Drogba</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="049">979-8368</broj>
+    </telefon>
+    <adresa>
+      <ulica>Kotorvaroška</ulica>
+      <kucni_broj>563</kucni_broj>
+      <mjesto postanski_broj="33553">Đurmanec</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>didier.drogba@gmail.com</mail_adresa>
+    <datum_rodjenja>4.7.1977.</datum_rodjenja>
+  </osoba>
+  <osoba oib="30834238611" kategorija="prijatelj">
+    <ime>Gianluigi</ime>
+    <prezime>Buffon</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="01">255-1131</broj>
+    </telefon>
+    <adresa>
+      <ulica>Rastočka</ulica>
+      <kucni_broj>734</kucni_broj>
+      <mjesto postanski_broj="18818">Bjelovar</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>gianluigi.buffon@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="ostalo">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>7.7.1978.</datum_rodjenja>
+  </osoba>
+  <osoba oib="31306419010" kategorija="kolega">
+    <ime>Francesco</ime>
+    <prezime>Totti</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="044">120-2075</broj>
+    </telefon>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="095">128-3320</broj>
+    </telefon>
+    <adresa>
+      <ulica>Šegrtska</ulica>
+      <kucni_broj>380</kucni_broj>
+      <mjesto postanski_broj="83177">Markušica</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>francesco.totti@gmail.com</mail_adresa>
+    <datum_rodjenja>18.11.1981.</datum_rodjenja>
+  </osoba>
+  <osoba oib="32360366105" kategorija="prijatelj">
+    <ime>Luca</ime>
+    <prezime>Toni</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="042">495-7816</broj>
+    </telefon>
+    <adresa>
+      <ulica>Krbavska</ulica>
+      <kucni_broj>644</kucni_broj>
+      <mjesto postanski_broj="40440">Velika Kopanica</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>luca.toni@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="opce">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>18.4.1995.</datum_rodjenja>
+  </osoba>
+  <osoba oib="33119927282" kategorija="obitelj">
+    <ime>David</ime>
+    <prezime>Villa</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="053">878-8329</broj>
+    </telefon>
+    <adresa>
+      <ulica>Strmečka</ulica>
+      <kucni_broj>237</kucni_broj>
+      <mjesto postanski_broj="78556">Veliko Trgovišće</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>david.villa@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="trgovina">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>1.3.1997.</datum_rodjenja>
+  </osoba>
+  <osoba oib="33394920082" kategorija="prijatelj">
+    <ime>Arjen</ime>
+    <prezime>Robben</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="098">710-1876</broj>
+    </telefon>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="020">711-7757</broj>
+    </telefon>
+    <adresa>
+      <ulica>Kanalski put</ulica>
+      <kucni_broj>362</kucni_broj>
+      <mjesto postanski_broj="45212">Lukač</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>arjen.robben@gmail.com</mail_adresa>
+    <datum_rodjenja>6.3.1988.</datum_rodjenja>
+  </osoba>
+  <osoba oib="34735066064" kategorija="bez_kategorije">
+    <ime>Ashley</ime>
+    <prezime>Cole</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="099">800-5936</broj>
+    </telefon>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="053">766-7550</broj>
+    </telefon>
+    <adresa>
+      <ulica>Kranjčecov breg</ulica>
+      <kucni_broj>5</kucni_broj>
+      <mjesto postanski_broj="94929">Čiovo</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>ashley.cole@gmail.com</mail_adresa>
+    <datum_rodjenja>25.11.1976.</datum_rodjenja>
+  </osoba>
+  <osoba oib="35272515602" kategorija="bez_kategorije">
+    <ime>Fernando</ime>
+    <prezime>Torres</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="098">291-9951</broj>
+    </telefon>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="092">687-4943</broj>
+    </telefon>
+    <adresa>
+      <ulica>Ogulinčeva</ulica>
+      <kucni_broj>642</kucni_broj>
+      <mjesto postanski_broj="36748">Skradin</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>fernando.torres@gmail.com</mail_adresa>
+    <datum_rodjenja>12.8.1975.</datum_rodjenja>
+  </osoba>
+  <osoba oib="36310517347" kategorija="kolega">
+    <ime>Gareth</ime>
+    <prezime>Barry</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="033">508-7196</broj>
+    </telefon>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="022">693-2663</broj>
+    </telefon>
+    <adresa>
+      <ulica>Hrastovac</ulica>
+      <kucni_broj>167</kucni_broj>
+      <mjesto postanski_broj="79240">Kanfanar</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>gareth.barry@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="kultura">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>19.11.1986.</datum_rodjenja>
+  </osoba>
+  <osoba oib="37144247692" kategorija="obitelj">
+    <ime>Patrick</ime>
+    <prezime>Vieira</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="048">981-1954</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="049">586-3595</broj>
+    </telefon>
+    <adresa>
+      <ulica>Jalovečka</ulica>
+      <kucni_broj>827</kucni_broj>
+      <mjesto postanski_broj="49738">Bizovac</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>patrick.vieira@gmail.com</mail_adresa>
+    <datum_rodjenja>15.10.1987.</datum_rodjenja>
+  </osoba>
+  <osoba oib="37657230124" kategorija="kolega">
+    <ime>Charles</ime>
+    <prezime>Puyol</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="047">615-4683</broj>
+    </telefon>
+    <adresa>
+      <ulica>Trnava 2</ulica>
+      <kucni_broj>344</kucni_broj>
+      <mjesto postanski_broj="74891">Orahovica</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>charles.puyol@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="opce">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>6.5.1973.</datum_rodjenja>
+  </osoba>
+  <osoba oib="38477310257" kategorija="bez_kategorije">
+    <ime>Andres</ime>
+    <prezime>Iniesta</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="092">922-7062</broj>
+    </telefon>
+    <adresa>
+      <ulica>Lisinskoga</ulica>
+      <kucni_broj>562</kucni_broj>
+      <mjesto postanski_broj="29247">Peteranec</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>andres.iniesta@gmail.com</mail_adresa>
+    <datum_rodjenja>15.5.1970.</datum_rodjenja>
+  </osoba>
+  <osoba oib="38762300855" kategorija="prijatelj">
+    <ime>Sergio</ime>
+    <prezime>Aguero</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="021">504-6178</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="043">511-8993</broj>
+    </telefon>
+    <adresa>
+      <ulica>Račkoga, mirka</ulica>
+      <kucni_broj>841</kucni_broj>
+      <mjesto postanski_broj="49064">Žakanje</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>sergio.aguero@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="transport">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>4.10.1986.</datum_rodjenja>
+  </osoba>
+  <osoba oib="39293337038" kategorija="bez_kategorije">
+    <ime>Andreas</ime>
+    <prezime>Pirlo</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="047">312-2375</broj>
+    </telefon>
+    <adresa>
+      <ulica>Pavelićeva</ulica>
+      <kucni_broj>65</kucni_broj>
+      <mjesto postanski_broj="54402">Bošnjaci</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>andreas.pirlo@gmail.com</mail_adresa>
+    <datum_rodjenja>20.8.1980.</datum_rodjenja>
+  </osoba>
+  <osoba oib="40101728068" kategorija="obitelj">
+    <ime>Willy</ime>
+    <prezime>Sagnol</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="043">808-2070</broj>
+    </telefon>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="097">590-2403</broj>
+    </telefon>
+    <adresa>
+      <ulica>Delkovečka</ulica>
+      <kucni_broj>171</kucni_broj>
+      <mjesto postanski_broj="11202">Lastovo</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>willy.sagnol@gmail.com</mail_adresa>
+    <datum_rodjenja>23.1.1978.</datum_rodjenja>
+  </osoba>
+  <osoba oib="40891706407" kategorija="kolega">
+    <ime>Frank</ime>
+    <prezime>Ribery</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="040">425-1916</broj>
+    </telefon>
+    <adresa>
+      <ulica>Ježdovec</ulica>
+      <kucni_broj>34</kucni_broj>
+      <mjesto postanski_broj="25991">Donji Vidovec</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>frank.ribery@gmail.com</mail_adresa>
+    <datum_rodjenja>9.9.1972.</datum_rodjenja>
+  </osoba>
+  <osoba oib="41401390483" kategorija="kolega">
+    <ime>David</ime>
+    <prezime>Beckham</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="023">395-2880</broj>
+    </telefon>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="095">162-8253</broj>
+    </telefon>
+    <adresa>
+      <ulica>Jordanovačke liv. 2</ulica>
+      <kucni_broj>299</kucni_broj>
+      <mjesto postanski_broj="44533">Vrsi</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>david.beckham@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="opce">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>10.10.1997.</datum_rodjenja>
+  </osoba>
+  <osoba oib="41726962432" kategorija="obitelj">
+    <ime>Wayne</ime>
+    <prezime>Bridge</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="053">856-8207</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="031">880-9597</broj>
+    </telefon>
+    <adresa>
+      <ulica>Paška</ulica>
+      <kucni_broj>691</kucni_broj>
+      <mjesto postanski_broj="57649">Sali</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>wayne.bridge@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="transport">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>9.8.1986.</datum_rodjenja>
+  </osoba>
+  <osoba oib="43270493148" kategorija="kolega">
+    <ime>Lassana</ime>
+    <prezime>Diarra</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="051">487-2871</broj>
+    </telefon>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="091">616-2305</broj>
+    </telefon>
+    <adresa>
+      <ulica>Bastalićeva</ulica>
+      <kucni_broj>566</kucni_broj>
+      <mjesto postanski_broj="24358">Biskupija</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>lassana.diarra@gmail.com</mail_adresa>
+    <datum_rodjenja>9.2.1991.</datum_rodjenja>
+  </osoba>
+  <osoba oib="43505846313" kategorija="obitelj">
+    <ime>Dimitar</ime>
+    <prezime>Berbatov</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="021">973-8329</broj>
+    </telefon>
+    <adresa>
+      <ulica>Zmajevac</ulica>
+      <kucni_broj>458</kucni_broj>
+      <mjesto postanski_broj="60145">Svetvinčenat</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>dimitar.berbatov@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="trgovina">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>5.9.1971.</datum_rodjenja>
+  </osoba>
+  <osoba oib="43615628019" kategorija="prijatelj">
+    <ime>Andrei</ime>
+    <prezime>Arshavin</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="091">985-6383</broj>
+    </telefon>
+    <adresa>
+      <ulica>Desinićka</ulica>
+      <kucni_broj>107</kucni_broj>
+      <mjesto postanski_broj="40171">Jesenje</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>andrei.arshavin@gmail.com</mail_adresa>
+    <datum_rodjenja>10.4.1983.</datum_rodjenja>
+  </osoba>
+  <osoba oib="44110485601" kategorija="bez_kategorije">
+    <ime>Nicolas</ime>
+    <prezime>Anelka</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="031">240-9660</broj>
+    </telefon>
+    <adresa>
+      <ulica>Gupca, matije</ulica>
+      <kucni_broj>473</kucni_broj>
+      <mjesto postanski_broj="69874">Tovarnik</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>nicolas.anelka@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="financije">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>11.5.1987.</datum_rodjenja>
+  </osoba>
+  <osoba oib="44335408294" kategorija="prijatelj">
+    <ime>Ryan</ime>
+    <prezime>Giggs</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="032">773-9554</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="048">376-9154</broj>
+    </telefon>
+    <adresa>
+      <ulica>Branovečina</ulica>
+      <kucni_broj>107</kucni_broj>
+      <mjesto postanski_broj="99171">Netretić</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>ryan.giggs@gmail.com</mail_adresa>
+    <datum_rodjenja>1.7.1977.</datum_rodjenja>
+  </osoba>
+  <osoba oib="46251754400" kategorija="kolega">
+    <ime>Aljoša</ime>
+    <prezime>Asanović</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="051">129-6634</broj>
+    </telefon>
+    <adresa>
+      <ulica>Bračunova</ulica>
+      <kucni_broj>731</kucni_broj>
+      <mjesto postanski_broj="94585">Čepin</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>aljosa.asanovic@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="sport">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>18.1.1974.</datum_rodjenja>
+  </osoba>
+  <osoba oib="46673769951" kategorija="prijatelj">
+    <ime>Slaven</ime>
+    <prezime>Bilić</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="044">720-2795</broj>
+    </telefon>
+    <adresa>
+      <ulica>Dunda maroja</ulica>
+      <kucni_broj>643</kucni_broj>
+      <mjesto postanski_broj="25963">Štitar</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>slaven.bilic@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="usluge">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>2.7.1971.</datum_rodjenja>
+  </osoba>
+  <osoba oib="47515673888" kategorija="kolega">
+    <ime>Zvonimir</ime>
+    <prezime>Boban</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="021">407-9024</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="040">133-9765</broj>
+    </telefon>
+    <adresa>
+      <ulica>Vugrovečka</ulica>
+      <kucni_broj>4</kucni_broj>
+      <mjesto postanski_broj="43740">Đurđenovac</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>zvonimir.boban@gmail.com</mail_adresa>
+    <datum_rodjenja>8.5.1986.</datum_rodjenja>
+  </osoba>
+  <osoba oib="48717718027" kategorija="obitelj">
+    <ime>Alen</ime>
+    <prezime>Bokšić</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="048">825-4246</broj>
+    </telefon>
+    <adresa>
+      <ulica>Mletačka</ulica>
+      <kucni_broj>168</kucni_broj>
+      <mjesto postanski_broj="36761">Muć</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>alen.boksic@gmail.com</mail_adresa>
+    <datum_rodjenja>1.8.1981.</datum_rodjenja>
+  </osoba>
+  <osoba oib="49398096154" kategorija="obitelj">
+    <ime>Boško</ime>
+    <prezime>Balaban</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="043">358-3155</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="053">295-9581</broj>
+    </telefon>
+    <adresa>
+      <ulica>Poljanička</ulica>
+      <kucni_broj>293</kucni_broj>
+      <mjesto postanski_broj="35294">Starigrad</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>bosko.balaban@gmail.com</mail_adresa>
+    <datum_rodjenja>27.1.1996.</datum_rodjenja>
+  </osoba>
+  <osoba oib="50680087522" kategorija="obitelj">
+    <ime>Robert</ime>
+    <prezime>Jarni</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="049">580-8419</broj>
+    </telefon>
+    <adresa>
+      <ulica>Kusova</ulica>
+      <kucni_broj>139</kucni_broj>
+      <mjesto postanski_broj="28924">Vodice</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>robert.jarni@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="sport">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>20.6.1985.</datum_rodjenja>
+  </osoba>
+  <osoba oib="51745434166" kategorija="kolega">
+    <ime>Niko</ime>
+    <prezime>Kovač</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="023">842-7223</broj>
+    </telefon>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="098">198-5841</broj>
+    </telefon>
+    <adresa>
+      <ulica>Ferenščica 5</ulica>
+      <kucni_broj>732</kucni_broj>
+      <mjesto postanski_broj="78890">Oroslavje</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>niko.kovac@gmail.com</mail_adresa>
+    <datum_rodjenja>18.10.1989.</datum_rodjenja>
+  </osoba>
+  <osoba oib="52319285717" kategorija="obitelj">
+    <ime>Robert</ime>
+    <prezime>Kovač</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="095">326-7671</broj>
+    </telefon>
+    <adresa>
+      <ulica>Vramčeva</ulica>
+      <kucni_broj>562</kucni_broj>
+      <mjesto postanski_broj="70916">Bakar</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>robert.kovac@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="sport">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>25.11.1976.</datum_rodjenja>
+  </osoba>
+  <osoba oib="53391542534" kategorija="kolega">
+    <ime>Igor</ime>
+    <prezime>Tudor</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="031">207-7869</broj>
+    </telefon>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="023">920-1990</broj>
+    </telefon>
+    <adresa>
+      <ulica>Klanski put</ulica>
+      <kucni_broj>235</kucni_broj>
+      <mjesto postanski_broj="68469">Trpanj</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>igor.tudor@gmail.com</mail_adresa>
+    <datum_rodjenja>21.1.1973.</datum_rodjenja>
+  </osoba>
+  <osoba oib="53760876433" kategorija="prijatelj">
+    <ime>Dražen</ime>
+    <prezime>Ladić</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="035">268-4519</broj>
+    </telefon>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="099">262-5368</broj>
+    </telefon>
+    <adresa>
+      <ulica>Orlečka</ulica>
+      <kucni_broj>828</kucni_broj>
+      <mjesto postanski_broj="78739">Drenje</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>drazen.ladic@gmail.com</mail_adresa>
+    <datum_rodjenja>21.6.1977.</datum_rodjenja>
+  </osoba>
+  <osoba oib="55212970162" kategorija="prijatelj">
+    <ime>Robert</ime>
+    <prezime>Prosinečki</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="095">408-3408</broj>
+    </telefon>
+    <adresa>
+      <ulica>Nazorova</ulica>
+      <kucni_broj>277</kucni_broj>
+      <mjesto postanski_broj="99481">Oriovac</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>robert.prosinecki@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="ostalo">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>13.3.1975.</datum_rodjenja>
+  </osoba>
+  <osoba oib="56230426103" kategorija="bez_kategorije">
+    <ime>Dado</ime>
+    <prezime>Pršo</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="031">799-6054</broj>
+    </telefon>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="091">870-6475</broj>
+    </telefon>
+    <adresa>
+      <ulica>Šafrani</ulica>
+      <kucni_broj>117</kucni_broj>
+      <mjesto postanski_broj="89242">Bol</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>dado.prso@gmail.com</mail_adresa>
+    <datum_rodjenja>17.6.1987.</datum_rodjenja>
+  </osoba>
+  <osoba oib="57102346865" kategorija="prijatelj">
+    <ime>Zvonimir</ime>
+    <prezime>Soldo</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="032">571-8116</broj>
+    </telefon>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="095">584-9516</broj>
+    </telefon>
+    <adresa>
+      <ulica>Bosutska</ulica>
+      <kucni_broj>400</kucni_broj>
+      <mjesto postanski_broj="91229">Donji Kraljevec</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>zvonimir.soldo@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="ostalo">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>26.3.1975.</datum_rodjenja>
+  </osoba>
+  <osoba oib="57380303772" kategorija="kolega">
+    <ime>Mario</ime>
+    <prezime>Stanić</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="048">161-4719</broj>
+    </telefon>
+    <adresa>
+      <ulica>Imprićeva</ulica>
+      <kucni_broj>109</kucni_broj>
+      <mjesto postanski_broj="52562">Oroslavje</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>mario.stanic@gmail.com</mail_adresa>
+    <datum_rodjenja>16.3.1983.</datum_rodjenja>
+  </osoba>
+  <osoba oib="57840950470" kategorija="bez_kategorije">
+    <ime>Dario</ime>
+    <prezime>Šimić</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="095">573-2079</broj>
+    </telefon>
+    <adresa>
+      <ulica>Bilajska</ulica>
+      <kucni_broj>346</kucni_broj>
+      <mjesto postanski_broj="49561">Satnica Đakovačka</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>dario.simic@gmail.com</mail_adresa>
+    <datum_rodjenja>5.2.1995.</datum_rodjenja>
+  </osoba>
+  <osoba oib="58575315838" kategorija="bez_kategorije">
+    <ime>Igor</ime>
+    <prezime>Štimac</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="031">381-2250</broj>
+    </telefon>
+    <adresa>
+      <ulica>Zadravečka</ulica>
+      <kucni_broj>2</kucni_broj>
+      <mjesto postanski_broj="20574">Križevci</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>igor.stimac@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="ostalo">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>27.8.1992.</datum_rodjenja>
+  </osoba>
+  <osoba oib="58746588936" kategorija="kolega">
+    <ime>Davor</ime>
+    <prezime>Šuker</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="022">675-8237</broj>
+    </telefon>
+    <adresa>
+      <ulica>Botrena steza</ulica>
+      <kucni_broj>651</kucni_broj>
+      <mjesto postanski_broj="62961">Trilj</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>davor.suker@gmail.com</mail_adresa>
+    <datum_rodjenja>11.1.1993.</datum_rodjenja>
+  </osoba>
+  <osoba oib="59812171216" kategorija="obitelj">
+    <ime>Goran</ime>
+    <prezime>Vlaović</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="035">315-9083</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="034">464-1905</broj>
+    </telefon>
+    <adresa>
+      <ulica>Sudiščak</ulica>
+      <kucni_broj>707</kucni_broj>
+      <mjesto postanski_broj="36622">Veliki Bukovec</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>goran.vlaovic@gmail.com</mail_adresa>
+    <datum_rodjenja>14.2.1977.</datum_rodjenja>
+  </osoba>
+  <osoba oib="60805520464" kategorija="bez_kategorije">
+    <ime>Ivan</ime>
+    <prezime>Kelava</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="092">651-6805</broj>
+    </telefon>
+    <adresa>
+      <ulica>Dujšinova</ulica>
+      <kucni_broj>601</kucni_broj>
+      <mjesto postanski_broj="10378">Klenovnik</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>ivan.kelava@gmail.com</mail_adresa>
+    <datum_rodjenja>8.5.1976.</datum_rodjenja>
+  </osoba>
+  <osoba oib="62623291200" kategorija="obitelj">
+    <ime>Stipe</ime>
+    <prezime>Pletikosa</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="049">344-1819</broj>
+    </telefon>
+    <adresa>
+      <ulica>Smajića, petra</ulica>
+      <kucni_broj>672</kucni_broj>
+      <mjesto postanski_broj="44726">Dekanovec</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>stipe.pletikosa@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="ostalo">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>10.2.1970.</datum_rodjenja>
+  </osoba>
+  <osoba oib="63533076817" kategorija="bez_kategorije">
+    <ime>Vedran</ime>
+    <prezime>Runje</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="021">355-1016</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="035">742-2676</broj>
+    </telefon>
+    <adresa>
+      <ulica>Žaje, andrije</ulica>
+      <kucni_broj>835</kucni_broj>
+      <mjesto postanski_broj="70891">Babina Greda</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>vedran.runje@gmail.com</mail_adresa>
+    <datum_rodjenja>11.7.1976.</datum_rodjenja>
+  </osoba>
+  <osoba oib="64559089765" kategorija="bez_kategorije">
+    <ime>Danijel</ime>
+    <prezime>Subašić</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="031">363-7361</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="01">737-2724</broj>
+    </telefon>
+    <adresa>
+      <ulica>Galovići</ulica>
+      <kucni_broj>34</kucni_broj>
+      <mjesto postanski_broj="41094">Veliko Trojstvo</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>danijel.subasic@gmail.com</mail_adresa>
+    <datum_rodjenja>16.9.1970.</datum_rodjenja>
+  </osoba>
+  <osoba oib="64899425375" kategorija="kolega">
+    <ime>Vedran</ime>
+    <prezime>Ćorluka</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="022">602-3160</broj>
+    </telefon>
+    <adresa>
+      <ulica>Padine</ulica>
+      <kucni_broj>87</kucni_broj>
+      <mjesto postanski_broj="51483">Andrijevci</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>vedran.corluka@gmail.com</mail_adresa>
+    <datum_rodjenja>1.3.1983.</datum_rodjenja>
+  </osoba>
+  <osoba oib="65988506895" kategorija="prijatelj">
+    <ime>Dejan</ime>
+    <prezime>Lovren</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="092">203-1771</broj>
+    </telefon>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="092">607-7437</broj>
+    </telefon>
+    <adresa>
+      <ulica>Miloša, tvrtka</ulica>
+      <kucni_broj>82</kucni_broj>
+      <mjesto postanski_broj="40550">Marina</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>dejan.lovren@gmail.com</mail_adresa>
+    <datum_rodjenja>12.1.1980.</datum_rodjenja>
+  </osoba>
+  <osoba oib="66170037103" kategorija="prijatelj">
+    <ime>Danijel</ime>
+    <prezime>Pranjić</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="044">295-3351</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="040">966-1567</broj>
+    </telefon>
+    <adresa>
+      <ulica>Dobronićeva</ulica>
+      <kucni_broj>368</kucni_broj>
+      <mjesto postanski_broj="53162">Otok</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>danijel.pranjic@gmail.com</mail_adresa>
+    <datum_rodjenja>22.1.1976.</datum_rodjenja>
+  </osoba>
+  <osoba oib="66416828044" kategorija="kolega">
+    <ime>Gordon</ime>
+    <prezime>Schildenfeld</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="042">105-1852</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="049">682-8640</broj>
+    </telefon>
+    <adresa>
+      <ulica>Trnjanska</ulica>
+      <kucni_broj>166</kucni_broj>
+      <mjesto postanski_broj="90979">Brodski Stupnik</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>gordon.schildenfeld@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="sport">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>22.9.1974.</datum_rodjenja>
+  </osoba>
+  <osoba oib="66659991094" kategorija="bez_kategorije">
+    <ime>Ivan</ime>
+    <prezime>Strinić</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="022">832-8726</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="031">593-6159</broj>
+    </telefon>
+    <adresa>
+      <ulica>Novoselski odvojak</ulica>
+      <kucni_broj>842</kucni_broj>
+      <mjesto postanski_broj="46939">Belica</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>ivan.strinic@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="ostalo">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>25.1.1990.</datum_rodjenja>
+  </osoba>
+  <osoba oib="67419151262" kategorija="kolega">
+    <ime>Josip</ime>
+    <prezime>Šimunić</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="022">663-7293</broj>
+    </telefon>
+    <adresa>
+      <ulica>Rudeški ogranak 4</ulica>
+      <kucni_broj>385</kucni_broj>
+      <mjesto postanski_broj="78025">Raša</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>josip.simunic@gmail.com</mail_adresa>
+    <datum_rodjenja>16.3.1998.</datum_rodjenja>
+  </osoba>
+  <osoba oib="68644260276" kategorija="bez_kategorije">
+    <ime>Domagoj</ime>
+    <prezime>Vida</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="098">296-5996</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="020">749-9675</broj>
+    </telefon>
+    <adresa>
+      <ulica>Malešnica</ulica>
+      <kucni_broj>424</kucni_broj>
+      <mjesto postanski_broj="52936">Donja Voća</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>domagoj.vida@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="ostalo">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>14.1.1993.</datum_rodjenja>
+  </osoba>
+  <osoba oib="69180420612" kategorija="kolega">
+    <ime>Šime</ime>
+    <prezime>Vrsaljko</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="021">276-5684</broj>
+    </telefon>
+    <adresa>
+      <ulica>Čigiri</ulica>
+      <kucni_broj>527</kucni_broj>
+      <mjesto postanski_broj="37992">Baška Voda</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>sime.vrsaljko@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="turizam">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>12.11.1979.</datum_rodjenja>
+  </osoba>
+  <osoba oib="69527224312" kategorija="prijatelj">
+    <ime>Milan</ime>
+    <prezime>Badelj</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="047">273-3540</broj>
+    </telefon>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="044">769-3802</broj>
+    </telefon>
+    <adresa>
+      <ulica>Zumbulska</ulica>
+      <kucni_broj>186</kucni_broj>
+      <mjesto postanski_broj="28216">Blato</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>milan.badelj@gmail.com</mail_adresa>
+    <datum_rodjenja>12.6.1983.</datum_rodjenja>
+  </osoba>
+  <osoba oib="71169260554" kategorija="obitelj">
+    <ime>Tomislav</ime>
+    <prezime>Dujmović</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="095">527-1283</broj>
+    </telefon>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="097">791-9219</broj>
+    </telefon>
+    <adresa>
+      <ulica>Risnjačka</ulica>
+      <kucni_broj>301</kucni_broj>
+      <mjesto postanski_broj="71854">Đelekovec</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>tomislav.dujmovic@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="financije">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>16.5.1972.</datum_rodjenja>
+  </osoba>
+  <osoba oib="71647324738" kategorija="prijatelj">
+    <ime>Ivo</ime>
+    <prezime>Iličević</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="053">562-9484</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="049">991-8423</broj>
+    </telefon>
+    <adresa>
+      <ulica>Basaričekova</ulica>
+      <kucni_broj>417</kucni_broj>
+      <mjesto postanski_broj="40592">Vrbanja</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>ivo.ilicevic@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="turizam">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>4.9.1970.</datum_rodjenja>
+  </osoba>
+  <osoba oib="71697566526" kategorija="obitelj">
+    <ime>Mato</ime>
+    <prezime>Jajalo</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="032">196-8091</broj>
+    </telefon>
+    <adresa>
+      <ulica>Pisarovinska</ulica>
+      <kucni_broj>712</kucni_broj>
+      <mjesto postanski_broj="17944">Majur</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>mato.jajalo@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="sport">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>27.9.1980.</datum_rodjenja>
+  </osoba>
+  <osoba oib="72144051691" kategorija="prijatelj">
+    <ime>Niko</ime>
+    <prezime>Kranjčar</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="01">567-4631</broj>
+    </telefon>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="043">825-5206</broj>
+    </telefon>
+    <adresa>
+      <ulica>Otavička</ulica>
+      <kucni_broj>765</kucni_broj>
+      <mjesto postanski_broj="13900">Vrbovec</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>niko.kranjcar@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="usluge">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>9.4.1993.</datum_rodjenja>
+  </osoba>
+  <osoba oib="72907984936" kategorija="prijatelj">
+    <ime>Luka</ime>
+    <prezime>Modrić</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="091">548-7376</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="020">173-8575</broj>
+    </telefon>
+    <adresa>
+      <ulica>Domitrovićeva</ulica>
+      <kucni_broj>476</kucni_broj>
+      <mjesto postanski_broj="67019">Ervenik</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>luka.modric@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="opce">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>27.6.1995.</datum_rodjenja>
+  </osoba>
+  <osoba oib="73200200957" kategorija="obitelj">
+    <ime>Ivan</ime>
+    <prezime>Perišić</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="01">827-7905</broj>
+    </telefon>
+    <adresa>
+      <ulica>Poldina</ulica>
+      <kucni_broj>294</kucni_broj>
+      <mjesto postanski_broj="79568">Ivankovo</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>ivan.perisic@gmail.com</mail_adresa>
+    <datum_rodjenja>11.4.1988.</datum_rodjenja>
+  </osoba>
+  <osoba oib="73725997725" kategorija="bez_kategorije">
+    <ime>Ivan</ime>
+    <prezime>Rakitić</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="040">583-9663</broj>
+    </telefon>
+    <adresa>
+      <ulica>Trnjanska cesta</ulica>
+      <kucni_broj>746</kucni_broj>
+      <mjesto postanski_broj="78308">Goričan</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>ivan.rakitic@gmail.com</mail_adresa>
+    <datum_rodjenja>5.3.1985.</datum_rodjenja>
+  </osoba>
+  <osoba oib="75368211317" kategorija="bez_kategorije">
+    <ime>Darijo</ime>
+    <prezime>Srna</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="032">319-9413</broj>
+    </telefon>
+    <adresa>
+      <ulica>Vijenac</ulica>
+      <kucni_broj>322</kucni_broj>
+      <mjesto postanski_broj="83462">Privlaka</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>darijo.srna@gmail.com</mail_adresa>
+    <datum_rodjenja>4.9.1989.</datum_rodjenja>
+  </osoba>
+  <osoba oib="76149300295" kategorija="obitelj">
+    <ime>Ognjen</ime>
+    <prezime>Vukojević</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="092">885-1826</broj>
+    </telefon>
+    <adresa>
+      <ulica>Visinov prilaz</ulica>
+      <kucni_broj>499</kucni_broj>
+      <mjesto postanski_broj="13961">Kalinovac</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>ognjen.vukojevic@gmail.com</mail_adresa>
+    <datum_rodjenja>27.9.1980.</datum_rodjenja>
+  </osoba>
+  <osoba oib="77391846333" kategorija="kolega">
+    <ime>Nikica</ime>
+    <prezime>Jelavić</prezime>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="032">669-3019</broj>
+    </telefon>
+    <telefon tip="telefaks">
+      <broj pozivni_broj="032">548-8344</broj>
+    </telefon>
+    <adresa>
+      <ulica>Kirinščak</ulica>
+      <kucni_broj>720</kucni_broj>
+      <mjesto postanski_broj="84895">Bakar</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>nikica.jelavic@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="transport">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>10.7.1973.</datum_rodjenja>
+  </osoba>
+  <osoba oib="78542886590" kategorija="prijatelj">
+    <ime>Nikola</ime>
+    <prezime>Kalinić</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="022">192-8295</broj>
+    </telefon>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="031">229-8794</broj>
+    </telefon>
+    <adresa>
+      <ulica>Draganići</ulica>
+      <kucni_broj>629</kucni_broj>
+      <mjesto postanski_broj="25218">Zažablje</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>nikola.kalinic@gmail.com</mail_adresa>
+    <datum_rodjenja>10.1.1972.</datum_rodjenja>
+  </osoba>
+  <osoba oib="79475272145" kategorija="bez_kategorije">
+    <ime>Ivan</ime>
+    <prezime>Klasnić</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="053">771-8288</broj>
+    </telefon>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="049">172-9157</broj>
+    </telefon>
+    <adresa>
+      <ulica>Rožići</ulica>
+      <kucni_broj>309</kucni_broj>
+      <mjesto postanski_broj="93850">Viškovci</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>ivan.klasnic@gmail.com</mail_adresa>
+    <zanimanje vrsta_djelatnosti="sport">
+      <kljucne_rijeci></kljucne_rijeci>
+      <naziv_tvrtke></naziv_tvrtke>
+    </zanimanje>
+    <datum_rodjenja>5.6.1989.</datum_rodjenja>
+  </osoba>
+  <osoba oib="80810376144" kategorija="obitelj">
+    <ime>Mario</ime>
+    <prezime>Mandžukić</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="042">887-5479</broj>
+    </telefon>
+    <adresa>
+      <ulica>Brusinina</ulica>
+      <kucni_broj>121</kucni_broj>
+      <mjesto postanski_broj="94606">Slavonski Brod</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>mario.mandzukic@gmail.com</mail_adresa>
+    <datum_rodjenja>12.3.1985.</datum_rodjenja>
+  </osoba>
+  <osoba oib="81136340672" kategorija="bez_kategorije">
+    <ime>Ivica</ime>
+    <prezime>Olić</prezime>
+    <telefon tip="fiksni">
+      <broj pozivni_broj="035">321-8785</broj>
+    </telefon>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="092">973-2118</broj>
+    </telefon>
+    <adresa>
+      <ulica>Mikin put</ulica>
+      <kucni_broj>359</kucni_broj>
+      <mjesto postanski_broj="87453">Sirač</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>ivica.olic@gmail.com</mail_adresa>
+    <datum_rodjenja>18.4.1999.</datum_rodjenja>
+  </osoba>
+  <osoba oib="82041312549" kategorija="bez_kategorije">
+    <ime>Mladen</ime>
+    <prezime>Petrić</prezime>
+    <telefon tip="mobilni">
+      <broj pozivni_broj="095">939-8134</broj>
+    </telefon>
+    <adresa>
+      <ulica>Schrottova</ulica>
+      <kucni_broj>783</kucni_broj>
+      <mjesto postanski_broj="86299">Oriovac</mjesto>
+      <drzava>Hrvatska</drzava>
+    </adresa>
+    <mail_adresa>mladen.petric@gmail.com</mail_adresa>
+    <datum_rodjenja>9.11.1989.</datum_rodjenja>
+  </osoba>
+</telefonski_imenik>

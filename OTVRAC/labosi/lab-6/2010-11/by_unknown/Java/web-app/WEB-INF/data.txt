@@ -1,0 +1,6 @@
+# ID | Jezik | Broj stranica | ISBN | Izdanje | Uvez | Naslov | Podnaslov | Ocijena | Nacin distribucije | Kategorija | Cijena | Autori | Izdavaci | Datum izdanja | Recenzije
+bk1 | Engleski | 505 | 0036441105123 | 3 | Tvrdi | Thinking in Java | Learning Java programming language | 5 | knjiga | Software development | 179.99kn | Bruce.Eckel | Prentice-Hall | 2005-12-12 | Heri.Poter,Jako dosadna knjiga Radnja je nikakva;Heri.Poter,Zanimljivo-dosadna knjiga Radnja je nikakva
+bk2 | Hrvatski;Engleski | 773 | 0036441105124 | 1 | Tvrdi | Harry Potter | Harry Potter and the order of phoenix | 5 | knjiga | Znanstvena fantastika | 159.99kn | Joanna.Rowling | Prentice-Hall | 2010-10-30 | Heri.Poter,Puno bolja knjiga od prethodne
+bk3 | Engleski | 145 | 0036441105125 | 1 | Meki | Learning XML |  | 3 | elektronička knjiga | Software development | 59.99kn | Erik T. Ray | Prentice-Hall | 2010-10-30
+bk4 | Engleski | 345 | 0036441105126 | 1 | Tvrdi | Gospodar prstenova | Gospodar prstenova: Povratak kralja | 4 | knjiga | Avanturistički roman | 159.99kn | John Ronald Reuel.Tolkien | Algoritam | 2010-10-30
+bk5 | Engleski;Hrvatski | 728 | 0036441105127 | 1 | Tvrdi | Pjesma leda i vatre | Pjesma leda i vatre: Igra prijestolja | 4 | knjiga | Avanturistički roman | 259.99kn | George R R .Martin | Algoritam | 2010-10-30

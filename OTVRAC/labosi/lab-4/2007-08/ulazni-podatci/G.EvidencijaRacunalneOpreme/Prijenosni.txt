@@ -1,0 +1,102 @@
+Model|Procesor|Frekvencija (GHz)|Tvrdi disk|Kapacitet (GB)|Kolicina RAM-a (GB)|Namjena|Datum kupnje|Inventarski broj|OS
+L98X1|Turion|1|Maxtor|530|1GB|desktop replacement|16.03.07|286-130|Debian
+L98X1|Turion|1|Seagate|40|1GB|desktop replacement|16.03.07|286-130|Debian
+K47k1|Sempron|1|Maxtor|201|512MB|desktop replacement|09.03.03|773-335|Debian
+R60b4|Core Duo|2|Seagate|460|512MB|desktop replacement|06.05.05|825-511|Debian
+P60q7|Core Duo|1|Maxtor|428|2GB|desktop replacement|18.08.05|932-601|WindowsXP
+S18p3|Turion|1|Hitachi|147|512MB|ultra prijenosnik|12.02.05|632-001|Debian
+W54D1|Core Solo|1|Hitachi|282|1GB|desktop replacement|13.01.07|586-292|Debian
+I64z3|Sempron|1|Seagate|482|2GB|poslovni|26.03.04|964-949|WindowsVista
+E83C6|Sempron|1|Hitachi|566|1GB|ultra prijenosnik|21.04.05|217-736|WindowsXP
+P86y8|Sempron|1|Hitachi|222|2GB|ultra prijenosnik|08.03.05|794-516|WindowsXP
+J95t1|Core Duo|1|Hitachi|516|2GB|ultra prijenosnik|19.10.02|108-015|WindowsXP
+B21z5|Turion|1|Hitachi|96|2GB|ultra prijenosnik|06.09.05|917-718|WindowsVista
+V95N5|Sempron|2|Seagate|288|2GB|ultra prijenosnik|15.04.05|161-970|Debian
+V33J2|Core Solo|1|Hitachi|390|512MB|poslovni|13.01.08|380-691|WindowsVista
+C11r9|Turion|2|Maxtor|145|1GB|poslovni|09.10.02|796-209|WindowsVista
+P92b3|Sempron|2|Maxtor|454|512MB|desktop replacement|23.01.03|106-183|Debian
+O25k1|Turion|2|Fujitsu|394|512MB|ultra prijenosnik|28.08.04|770-630|Debian
+F53D9|Core Duo|2|Maxtor|486|512MB|desktop replacement|28.03.04|234-952|WindowsXP
+V26F8|Sempron|1|Hitachi|595|512MB|ultra prijenosnik|22.12.05|475-127|WindowsXP
+T29V8|Turion|2|Seagate|219|512MB|ultra prijenosnik|05.09.05|858-852|Debian
+K99s6|Core Solo|2|Fujitsu|476|512MB|poslovni|30.11.05|857-885|WindowsXP
+J98C2|Core Solo|2|Fujitsu|542|2GB|desktop replacement|27.01.07|630-729|Debian
+T14v8|Turion|1|Seagate|81|512MB|desktop replacement|05.01.07|676-322|WindowsVista
+Z92Y9|Sempron|1|Maxtor|97|2GB|ultra prijenosnik|08.05.04|739-216|WindowsXP
+A20m0|Core Solo|2|Fujitsu|414|1GB|desktop replacement|19.12.05|481-309|WindowsXP
+D96T6|Core Solo|2|Seagate|60|2GB|desktop replacement|27.05.02|759-403|WindowsVista
+T31j3|Turion|1|Hitachi|562|512MB|desktop replacement|11.06.02|857-524|WindowsVista
+X16h3|Core Duo|2|Hitachi|118|2GB|ultra prijenosnik|12.06.04|411-289|WindowsXP
+K21k0|Turion|2|Fujitsu|169|512MB|poslovni|18.02.05|208-951|Debian
+L95q9|Turion|2|Hitachi|566|2GB|desktop replacement|15.03.07|428-060|WindowsVista
+Y66H0|Core Solo|2|Seagate|149|2GB|ultra prijenosnik|12.02.05|175-769|WindowsVista
+A64D4|Core Solo|2|Hitachi|117|2GB|desktop replacement|09.06.02|866-906|WindowsXP
+J36T6|Sempron|1|Hitachi|61|512MB|poslovni|04.01.08|878-826|WindowsXP
+O54f8|Core Solo|1|Fujitsu|113|1GB|poslovni|12.03.04|209-727|Debian
+Q66N2|Core Duo|2|Maxtor|43|512MB|poslovni|29.07.04|258-770|WindowsXP
+S94B1|Core Solo|1|Seagate|282|2GB|poslovni|19.12.06|281-463|Debian
+B85n2|Core Solo|2|Maxtor|184|512MB|poslovni|18.08.02|960-482|WindowsVista
+S93N4|Core Solo|1|Maxtor|406|1GB|desktop replacement|11.12.03|440-430|WindowsVista
+N16B3|Sempron|1|Maxtor|25|512MB|poslovni|21.11.03|207-060|WindowsXP
+N97J2|Core Solo|2|Fujitsu|273|2GB|ultra prijenosnik|08.08.03|869-921|Debian
+G70L5|Core Solo|1|Fujitsu|291|1GB|desktop replacement|27.09.06|856-895|WindowsXP
+O80v3|Turion|2|Hitachi|425|1GB|ultra prijenosnik|16.05.06|643-922|WindowsXP
+B55L0|Core Duo|1|Hitachi|53|2GB|ultra prijenosnik|18.09.03|195-792|WindowsVista
+F55M6|Core Solo|2|Maxtor|444|512MB|desktop replacement|12.01.08|930-971|WindowsVista
+X95K7|Core Solo|1|Fujitsu|488|1GB|poslovni|21.06.03|811-471|WindowsXP
+C59X8|Sempron|1|Maxtor|336|512MB|poslovni|30.12.02|637-055|Debian
+B97v8|Core Duo|1|Hitachi|386|2GB|ultra prijenosnik|23.04.02|383-459|WindowsVista
+A38z8|Turion|2|Fujitsu|361|2GB|poslovni|12.06.04|877-110|WindowsXP
+N55t5|Core Duo|2|Fujitsu|87|1GB|ultra prijenosnik|15.12.03|756-164|WindowsVista
+P14q0|Core Solo|2|Seagate|269|512MB|poslovni|25.09.05|900-137|WindowsVista
+Y45T1|Sempron|1|Fujitsu|349|2GB|poslovni|29.06.06|708-008|WindowsVista
+Z49l8|Turion|2|Maxtor|453|1GB|desktop replacement|25.11.03|919-426|Debian
+R69V9|Turion|2|Seagate|220|512MB|desktop replacement|12.02.04|301-860|WindowsXP
+M33k0|Turion|1|Seagate|521|512MB|desktop replacement|04.12.03|234-107|WindowsVista
+P82M7|Core Duo|1|Maxtor|339|512MB|poslovni|18.06.06|589-181|Debian
+F61V7|Core Solo|2|Seagate|410|1GB|poslovni|04.02.06|703-118|WindowsVista
+A91h3|Turion|2|Fujitsu|297|512MB|desktop replacement|02.02.03|490-577|Debian
+X79V9|Core Solo|1|Hitachi|39|2GB|ultra prijenosnik|23.05.03|238-812|WindowsVista
+V59q8|Turion|2|Hitachi|562|1GB|poslovni|16.12.05|261-074|WindowsXP
+G68t7|Turion|1|Maxtor|155|1GB|desktop replacement|29.01.05|281-522|WindowsVista
+J98P1|Sempron|1|Fujitsu|192|1GB|desktop replacement|19.06.06|478-260|Debian
+Q40V4|Core Solo|1|Hitachi|575|512MB|ultra prijenosnik|13.02.03|263-627|Debian
+Z12x8|Core Duo|1|Maxtor|361|512MB|ultra prijenosnik|06.07.04|660-381|WindowsVista
+U29J9|Turion|1|Maxtor|569|2GB|poslovni|12.04.08|171-198|WindowsVista
+D61X9|Turion|2|Fujitsu|426|2GB|ultra prijenosnik|15.09.04|479-629|Debian
+D42M3|Turion|1|Seagate|387|2GB|ultra prijenosnik|26.02.03|648-792|WindowsXP
+X78D9|Sempron|1|Hitachi|125|1GB|ultra prijenosnik|21.11.04|920-967|WindowsXP
+N38F7|Core Solo|2|Seagate|536|2GB|poslovni|22.10.05|912-932|WindowsVista
+G81K6|Sempron|1|Seagate|553|1GB|ultra prijenosnik|24.09.07|189-379|Debian
+V92J5|Sempron|1|Seagate|441|1GB|ultra prijenosnik|30.12.05|105-826|WindowsVista
+Z40m8|Core Duo|2|Maxtor|263|1GB|poslovni|29.11.07|172-003|Debian
+E32M2|Core Duo|2|Fujitsu|140|2GB|ultra prijenosnik|11.01.07|255-666|WindowsXP
+R51f3|Sempron|2|Fujitsu|281|1GB|desktop replacement|12.03.04|785-507|Debian
+L73p9|Core Duo|2|Fujitsu|234|512MB|desktop replacement|25.05.02|910-797|WindowsXP
+G62J7|Turion|2|Seagate|231|2GB|ultra prijenosnik|25.12.03|878-738|WindowsVista
+Q91l3|Core Duo|1|Hitachi|575|1GB|desktop replacement|02.11.05|630-868|WindowsXP
+P94k0|Sempron|2|Maxtor|290|2GB|poslovni|03.07.03|830-797|Debian
+P77J3|Turion|2|Seagate|81|2GB|poslovni|09.01.05|325-403|WindowsVista
+D78r3|Core Duo|1|Seagate|426|512MB|ultra prijenosnik|05.12.07|102-175|Debian
+Z46P7|Core Duo|1|Hitachi|240|1GB|ultra prijenosnik|29.11.06|161-002|WindowsVista
+J89c8|Turion|2|Fujitsu|231|2GB|poslovni|14.10.03|240-461|Debian
+D20P3|Sempron|1|Hitachi|584|1GB|ultra prijenosnik|11.12.02|620-903|WindowsVista
+T92v3|Turion|2|Seagate|247|1GB|desktop replacement|26.11.02|390-317|WindowsVista
+Q75V3|Core Solo|2|Maxtor|559|512MB|desktop replacement|14.03.07|251-925|WindowsVista
+X10K6|Core Duo|1|Maxtor|323|1GB|desktop replacement|24.01.08|364-946|WindowsXP
+O72B0|Sempron|2|Hitachi|178|1GB|desktop replacement|13.10.04|603-375|WindowsVista
+M58g4|Core Duo|2|Fujitsu|122|1GB|poslovni|07.06.06|609-305|Debian
+Y28K3|Turion|2|Seagate|298|512MB|ultra prijenosnik|01.12.04|884-879|WindowsXP
+J92H2|Core Solo|1|Hitachi|435|2GB|poslovni|03.11.04|690-408|WindowsVista
+U14W8|Turion|2|Maxtor|297|1GB|ultra prijenosnik|07.03.07|244-790|WindowsXP
+M88H6|Core Solo|2|Fujitsu|106|1GB|desktop replacement|02.01.07|634-666|WindowsVista
+J10B5|Core Solo|1|Fujitsu|577|1GB|desktop replacement|22.08.06|697-182|Debian
+Y28H2|Sempron|1|Seagate|171|512MB|poslovni|27.08.02|636-692|WindowsXP
+K49S8|Turion|1|Maxtor|115|2GB|poslovni|06.03.06|170-406|WindowsXP
+I78l2|Turion|2|Maxtor|113|1GB|poslovni|17.10.02|555-895|WindowsXP
+B76k9|Turion|2|Seagate|499|512MB|ultra prijenosnik|03.08.07|627-902|WindowsXP
+D42J3|Turion|2|Seagate|441|512MB|ultra prijenosnik|15.08.07|475-721|WindowsVista
+D23V4|Core Solo|1|Fujitsu|309|2GB|poslovni|27.03.06|992-696|WindowsXP
+K76V8|Core Solo|1|Fujitsu|523|512MB|desktop replacement|22.11.02|310-489|Debian
+R46Y0|Core Duo|2|Maxtor|512|2GB|poslovni|30.05.05|386-878|Debian
+J88x4|Turion|1|Hitachi|148|1GB|poslovni|03.08.06|172-265|WindowsVista

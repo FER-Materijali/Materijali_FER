@@ -1,0 +1,362 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="dizajn.css">
+		<title>Telefonski imenik</title>
+		
+		<link type="text/css" href="css/flick/jquery-ui-1.8.18.custom.css" rel="Stylesheet">
+		<link rel="shortcut icon" href="images/phone_icon_tab.png">
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+		<script type="text/javascript" src="js/multiselect.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.selectmenu.js"></script>
+	</head>
+	<body>
+		
+		<div id="wrapper">
+			<div id="main">
+				<div id="header">
+					<h1>
+						<a href="index.html" id="title">
+							<img src="images/phone_icon.png" alt="phone">
+							Telefonski Imenik
+						</a>
+					</h1>
+				</div>
+				
+				<div id="menu">
+					<ul>
+						<li><a href="index.html">Početna</a></li>
+						<li class="active"><a href="obrazac.html">Pretraga</a></li>
+						<li><a href="podaci.xml">Pregled</a></li>
+						<li><a href="http://www.rasip.fer.hr/">Rasip</a></li>
+						<li><a href="http://www.fer.hr/" target="_blank">Fer</a></li>
+						<li><a href="mailto:matej.miklecic@fer.hr">Kontakt</a>
+					</ul>
+				</div>
+				
+				<div id="content">
+				
+					<h2>Pretraga Telefonskog Imenika</h2>
+					
+					<br>
+					
+					<form action="pretraga.php" method="post" name="pretraga">
+
+						<div class="pretragaLabel">osobni podaci</div>
+						
+						<table summary="Osobni podaci">
+							<tr>
+								<td>
+									OIB
+								</td>
+								<td>
+									<input type="text" name="oib">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Ime
+								</td>
+								<td>
+									<input type="text" name="ime">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Prezime
+								</td>
+								<td>
+									<input type="text" name="prezime">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Kategorija
+								</td>
+								<td class="buttonset">
+									<input type="checkbox" name="kategorija[]" value="prijatelj" id="prijatelj"> 
+									<label for="prijatelj">Prijatelj</label>
+									
+									<input type="checkbox" name="kategorija[]" value="kolega" id="kolega"> 
+									<label for="kolega">Kolega</label>
+									
+									<input type="checkbox" name="kategorija[]" value="obitelj" id="obitelj"> 
+									<label for="obitelj">Obitelj</label>
+									
+									<input type="checkbox" name="kategorija[]" value="bez_kategorije" id="bezkategorije"> 
+									<label for="bezkategorije">Bez kategorije</label>
+								</td>
+							</tr>
+						</table>
+
+						<div class="pretragaLabel">telefon</div>
+					
+						<table summary="Telefon">
+							<tr>
+								<td>
+									Tip
+								</td>
+								<td class="buttonset">
+									<input type="radio" name="tiptelefon" value="mobilni" id="mobilni"> 
+									<label for="mobilni">Mobilni</label>
+									
+									<input type="radio" name="tiptelefon" value="fiksni" id="fiksni"> 
+									<label for="fiksni">Fiksni</label>
+									
+									<input type="radio" name="tiptelefon" value="telefaks" id="telefaks"> 
+									<label for="telefaks">Telefaks</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Broj
+								</td>
+								<td>
+									<input type="text" name="broj">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Pozivni broj mreže
+								</td>
+								<td>
+									<select name="pozivni[]" id="pozivni" multiple="multiple">
+										<option value="099">099 T-mobile</option>
+										<option value="098">098 T-mobile</option>
+										<option value="097">098 Bonbon</option>
+										<option value="095">095 Tele2</option>
+										<option value="092">092 Tomato</option>
+										<option value="091">091 VIP</option>
+										<option value="043">043	Bjelovarsko-bilogorska </option>
+										<option value="035">035	Brodsko-posavska </option>
+										<option value="020">020	Dubrovačko-neretvanska </option>
+										<option value="052">052	Istarska </option>
+										<option value="047">047	Karlovačka </option>
+										<option value="048">048	Koprivničko-križevačka </option>
+										<option value="049">049	Krapinsko-zagorska </option>
+										<option value="053">053	Ličko-senjska </option>
+										<option value="040">040	Međimurska </option>
+										<option value="031">031	Osječko-baranjska </option>
+										<option value="034">034	Požeško-slavonska </option>
+										<option value="051">051	Primorsko-goranska </option>
+										<option value="044">044	Sisačko-moslavačka </option>
+										<option value="021">021	Splitsko-dalmatinska </option>
+										<option value="022">022	Šibensko-kninska </option>
+										<option value="042">042	Varaždinska </option>
+										<option value="033">033	Virovitičko-podravska </option>
+										<option value="032">032	Vukovarsko-srijemska </option>
+										<option value="023">023	Zadarska </option>
+										<option value="01">01	Grad Zagreb i zagrebačka </option>
+									</select>
+								</td>
+							</tr>
+						</table>
+						
+						<div class="pretragaLabel">adresa</div>
+					
+						<table summary="Adresa">
+							<tr>
+								<td>
+									Ulica
+								</td>
+								<td>
+									<input type="text" name="ulica">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Kućni broj
+								</td>
+								<td>
+									<input type="text" name="kucni_broj">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Mjesto
+								</td>
+								<td>
+									<input type="text" name="mjesto">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Poštanski broj
+								</td>
+								<td>
+									<input type="text" name="postanski_broj">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Država
+								</td>
+								<td>
+									<input type="text" name="drzava">
+								</td>
+							</tr>
+							<tr>
+								<td> </td>
+								<td>
+									<input type="checkbox" name="koristiadresu" value="koristiadresu" id="koristiadresu"> 
+									<label for="koristiadresu">Koristi adresu?</label>
+								</td>
+							</tr>
+						</table>
+						
+						<div class="pretragaLabel">zanimanje</div>
+						
+						<table summary="Zanimanje">
+							<tr>
+								<td>
+									Vrsta djelatnosti
+								</td>
+								<td>
+									<select name="vrsta_djelatnosti">
+										<option value="none">Izaberite djelatnost</option>
+										<option value="ostalo">ostalo</option>
+										<option value="transport">transport</option>
+										<option value="kultura">kultura</option>
+										<option value="sport">sport</option>
+										<option value="trgovina">trgovina</option>
+										<option value="opce">opće</option>
+										<option value="financije">financije</option>
+										<option value="usluge">usluge</option>
+										<option value="turizam">turizam</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Ključne riječi
+								</td>
+								<td>
+									<input type="text" name="kljucne_rijeci">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Naziv tvrtke
+								</td>
+								<td>
+									<input type="text" name="naziv_tvrtke">
+								</td>
+							</tr>
+						</table>
+						
+						<div class="pretragaLabel">ostalo</div>
+					
+						<table summary="Ostalo">
+							<tr>
+								<td>
+									Datum rođenja
+								</td>
+								<td>
+									<input type="text" name="datum_rodjenja">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									E-mail adresa
+								</td>
+								<td>
+									<input type="text" name="mail_adresa">
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<input type="checkbox" name="koristimail" value="koristimail" id="koristimail"> 
+									<label for="koristimail">Koristi e-mail adresu?</label>
+								</td>
+							</tr>
+						</table>
+
+						<div class="buttonContainer">
+							<div class="buttonReset" onclick="document.pretraga.reset(); return false;">
+								<a href="#">
+									poništi
+								</a>
+							</div>
+							<div class="buttonSend" onclick="document.pretraga.submit(); return false;">
+								<a href="#">
+									pošalji
+								</a>
+							</div>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/hr/legalcode" target="_blank">
+				© 2012 Matej Miklečić
+			</a>
+		</div>
+		
+		<script type="text/javascript">
+			$(document).ready( function() {
+				$('.buttonset').buttonset();
+				$("select[id='pozivni']").multiselect({
+					noneSelectedText: 'Izaberite pozivni broj',
+					minWidth: 300,
+					checkAllText: 'Označi sve',
+					uncheckAllText: 'Odznači sve',
+					selectedText: '# / # odabrano'
+				});
+				$("select[name='vrsta_djelatnosti']").selectmenu({
+					style: 'dropdown',
+					width: '297px'
+				});
+				$('input[name="datum_rodjenja"]').datepicker({
+					changeMonth: true,
+					changeYear: true,
+					dateFormat: "dd.mm.yy.",
+					maxDate: "0y",
+					dayNames: ["Ponedjeljak", "Utorak", "Srijeda", "Četvrtak", "Petak", "Subota", "Nedjelja"],
+					dayNamesMin: ["P", "U", "S", "Č", "P", "S", "N"],
+					dayNamesShort: ["Pon", "Uto", "Sri", "Čet", "Pet", "Sub", "Ned"],
+					monthNamesShort: ["Siječanj", "Veljača", "Ožujak", "Travanj", "Svibanj", "Lipanj", "Srpanj", "Kolovoz", "Rujan", "Listopad", "Studeni", "Prosinac"]
+				});
+				$('input[name="datum_rodjenja"]').attr("readonly", "readonly");
+			});
+			
+			$('#koristimail').click( function() {
+				if(this.checked) {
+					$('input[name="mail_adresa"]').removeAttr('disabled');
+				} else {
+					$('input[name="mail_adresa"]').attr('disabled', 'disabled');
+				}
+			});
+				
+			$('#koristiadresu').click( function() {
+				if(this.checked) {
+					$('input[name="ulica"]').removeAttr('disabled');
+					$('input[name="kucni_broj"]').removeAttr('disabled');
+					$('input[name="mjesto"]').removeAttr('disabled');
+					$('input[name="postanski_broj"]').removeAttr('disabled');
+					$('input[name="drzava"]').removeAttr('disabled');
+				} else {
+					$('input[name="ulica"]').attr('disabled', 'disabled');
+					$('input[name="kucni_broj"]').attr('disabled', 'disabled');
+					$('input[name="mjesto"]').attr('disabled', 'disabled');
+					$('input[name="postanski_broj"]').attr('disabled', 'disabled');
+					$('input[name="drzava"]').attr('disabled', 'disabled');
+				}
+			});
+			
+			$('input[name="mail_adresa"]').attr('disabled', 'disabled');
+			$('input[name="ulica"]').attr('disabled', 'disabled');
+			$('input[name="kucni_broj"]').attr('disabled', 'disabled');
+			$('input[name="mjesto"]').attr('disabled', 'disabled');
+			$('input[name="postanski_broj"]').attr('disabled', 'disabled');
+			$('input[name="drzava"]').attr('disabled', 'disabled');
+			
+		</script>
+	
+	</body>
+</html>
