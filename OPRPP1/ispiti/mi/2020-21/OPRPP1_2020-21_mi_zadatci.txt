@@ -1,0 +1,149 @@
+OPRPP1 - Međuispit
+
+================================================================================================
+=  Zadatak 1.                                                                                 ==
+================================================================================================
+
+Rješava se u HW03.
+
+Pretpostavimo da imamo razred Par<T> koji čuva dva elementa tipa T. Relevantan dio koda prikazan je u nastavku.
+
+import java.util.Arrays;
+import java.util.Objects;
+
+public class Par<T> {
+  @SuppressWarnings("unchecked")
+  private T[] par = (T[])new Object[2];
+  
+  public Par(T a, T b) {
+    par[0] = Objects.requireNonNull(a);
+    par[1] = Objects.requireNonNull(b);
+  }
+  
+  public T[] get() {
+    return Arrays.copyOf(par, 2);
+  }
+}
+
+Objasnite koji je temeljni problem prisutan u ovom kodu? Prikažite demonstracijski program koji će se uredno prevesti (prevodilac neće javiti nikakvu pogrešku), ali će pri izvođenju generirati iznimku koja je uzrokovana opisanim problemom. O kojoj se iznimci radi? Ovaj je problem izbjegnut u standardnim javinim kolekcijama - objasnite o kojoj se metodi tamo radi, te kako je problem izbjegnut.
+
+
+================================================================================================
+=  Zadatak 2.                                                                                 ==
+================================================================================================
+
+Rješava se u HW03.
+
+Doradite sučelje Collection iz treće domaće zadaće tako da podrži metodu addModified:
+
+c.addModified(c2, m);
+
+c i c2 su pri tome neke kolekcije. Objekt m prima jedan element, po potrebi ga nekako modificira i vraća taj novi objekt (primjer jednog takvog objekta bi bio objekt koji može primiti string i vratiti string u kojem su sva slova velika). 
+Metoda addModified svaki element kolekcije c2 pošalje objektu m, te rezultat koji objekt m vrati doda u sebe.
+
+a) Modelirajte objekt m vlastitim prikladnim parametriziranim sučeljem (tj. napišite to sučelje).
+b) U sučelje Collection dodajte prikladno parametriziranu metodu addModified (važno: pri parametrizaciji razmotrite najopćenitiji slučaj) kao defaultnu metodu i napišite njezinu implementaciju.
+c) Objasnite zašto ste metodu addModified parametrizirali kako jeste, te za preostale parametrizacije bi li bile legalne ili ne (i zašto).
+d) Napišite glavni program koji demonstrira uporabu ove metode: neka koristeći ovu metodu u kolekciju koja sadrži neke stringove doda sve elemente iz druge kolekcije koja sadrži neke stringove ali neka ih pri tome pretvori u sve velika slova.
+
+
+================================================================================================
+=  Zadatak 3.                                                                                 ==
+================================================================================================
+
+Rješava se u HW03.
+
+Doradite sučelje Collection iz treće domaće zadaće tako da podrži metodu transferInto:
+
+c.transferInto(c2, f);
+
+c i c2 su pri tome neke kolekcije. Objekt f prima jedan element, te provjerava treba li ga proslijediti u drugu kolekciju. Ako objekt f kaže da treba, element se briše iz trenutne kolekcije i prosljeđuje u predanu kolekciju.
+
+Metoda transferInto svaki element e kolekcije c pošalje objektu f, te ako se objekt f složi, obriše element e iz sebe i doda ga u kolekciju c2.
+
+a) Modelirajte objekt f vlastitim prikladnim parametriziranim sučeljem (tj. napišite to sučelje).
+b) U sučelje Collection dodajte prikladno parametriziranu metodu transferInto (važno: pri parametrizaciji razmotrite najopćenitiji slučaj) kao defaultnu metodu i napišite njezinu implementaciju.
+c) Objasnite zašto ste metodu transferInto parametrizirali kako jeste, te za preostale parametrizacije bi li bile legalne ili ne (i zašto).
+d) Napišite glavni program koji demonstrira uporabu ove metode: neka koristeći ovu metodu iz kolekcije koja sadrži neke cijele brojeve u predanu kolekciju premjesti one koji su veći od 7.
+
+================================================================================================
+=  Zadatak 4.                                                                                 ==
+================================================================================================
+
+Rješava se u HW01.
+
+Želimo proširiti mogućnosti programa StackDemo iz prve domaće zadaće. Kao pripremu za rješavanje zadatka najprije promijenite strukturu tog programa tako da okvirno odgovara sljedećem pseudokodu:
+
+  main()
+    izr = dohvati_izraz_iz_argumenata
+    rez = CalcUtil.izracunaj(izr)
+    ako je rezultat vraćen
+      ispiši ga
+    inače
+      ispiši da izraz nije ispravan
+
+Pri tome smo metodu izracunaj izbacili u pomoćni razred CalcUtil. Primijetite da metoda izracunaj može i ne mora vratiti rezultat izračuna (pričali smo o modeliranju ovakvog ponašanja metoda i kako se ono specificira u Javi).
+
+Korisnik sada želi iz metode main, bez uporabe statičkih varijabli, biti u stanju konfigurirati metodu izracunaj, tako da podrži specificiranje operacija koje su podržane, te unarnih funkcija. Evo konkretnog primjera podržanih operacija: korisnik bi mogao poželjeti koristiti znak # kao specifikaciju operacije koja će izračunati 2*a+3*b, gdje su a i b argumenti, te znak + za zbrajanje a i b. Ako je to jedino što dozvolimo metodi izracunaj, tada bi izraz:
+
+4 1 3 # +
+
+trebao vratiti 15, a izraz:
+
+4 1 3 # -
+
+ne bi smio vratiti rezultat jer je neispravan (pa će glavni program ispisati poruku o pogrešci).
+
+Evo i primjera unarnih funkcija. Korisnik bi mogao poželjeti specificirati da se fact koristi za izračun faktorijele. U tom slučaju bi izračun izraza:
+
+3 fact
+
+vratio 6.
+
+Važna napomena: svaki puta kada korisnik poželi specificirati što je podržano, a što ne, odnosno kakvo je značenje pojedinih znakova kod operacija te imena kod unarnih funkcija, programski kod metode izracunaj ne smije se mijenjati (i svakako unaprijed ne možemo znati što će sve korisnik htjeti moći računati). Jedino što smijete jest proširiti signaturu te metode, u smislu da joj možete poslati dodatne argumente koje ćete pripremiti u metodi main, no i broj argumenata metode main mora biti fiksan: ne smijete u metodu slati varijabilan broj argumenata sintaksom "tip ... ime"). 
+
+U okviru rješavanja ovog zadatka smijete koristiti standardne kolekcije iz Java Collection Frameworka ako su Vam potrebne (skupove, liste, mape) za ostvarivanje traženih modifikacija. Međutim, metoda izracunaj i dalje za pohranu međurezultata treba koristiti ObjectStack iz Vaše prve zadaće, kao što je to radilo i osnovno rješenje ovog zadatka.
+
+Napišite demonstracijski program StackDemo2 koji metodi izracunaj dopušta samo da simbolom + obavlja zbrajanje te tekstom fact računa faktorijelu.
+
+================================================================================================
+=  Zadatak 5.                                                                                 ==
+================================================================================================
+
+Rješava se u HW04.
+
+Razmatramo proširenje programa za rad s bazom studenata (zadatak 2 u HW04). Želimo proširiti podržanu sintaksu upita, tako da prije svakog od uvjeta znakom ! možemo negirati uvjet. Konkretno primjeri:
+
+query ! jmbag="0000000003"
+
+dohvaća studente čiji JMBAG nije 0000000003.
+
+query firstName>"A" and ! lastName LIKE "B*ć"
+
+dohvaća studente čije je ime veće od "A" a prezime nije oblika "B*ć". 
+
+query ! firstName>"A" and ! lastName LIKE "B*ć"
+
+dohvaća studente čije je ime nije veće od "A" i prezime nije oblika "B*ć". 
+
+Drugim riječima, ! negira uvjet koji je izravno dan u nastavku; jedan upit može imati više uvjeta pa time i na više mjesta negacije. Nije podržano zadavanje više uzastopnih negacija; sljedeći upit je neispravan:
+
+query !! jmbag="0000000003"
+
+i program to treba na prikladan način prijaviti.
+
+a) Objasnite što u kodu treba promijeniti.
+b) Napravite tražene izmjene.
+
+================================================================================================
+=  Zadatak 6.                                                                                 ==
+================================================================================================
+
+Rješava se u HW02.
+
+Proširite parser dokumenata tako da podrži novi tag DATE koji prima jedan argument tipa string koji predstavlja format za prikaz datuma (ali u okviru ovog zadatka NE trebate kontrolirati je taj string ispravnog formata - bitno da je prisutan). Zadavanje manje ili više argumenata treba baciti prikladnu iznimku. Primjer dokumenta s ovim tagom:
+
+---------------------------------------
+Slijedi datum: {$ DATE "yyyy-MM-dd" $}.
+---------------------------------------
+

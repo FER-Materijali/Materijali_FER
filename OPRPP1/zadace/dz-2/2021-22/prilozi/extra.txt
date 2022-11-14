@@ -1,0 +1,23 @@
+U src/test/resources raspakirati extra.zip; time će nastati datoteke:
+src/test/resources/extra/primjer1.txt
+...
+src/test/resources/extra/primjer9.txt
+
+U razred s testovima koji testira lexer još dodati metodu:
+private String readExample(int n) {
+  try(InputStream is = this.getClass().getClassLoader().getResourceAsStream("extra/primjer"+n+".txt")) {
+    if(is==null) throw new RuntimeException("Datoteka extra/primjer"+n+".txt je nedostupna.");
+    byte[] data = is.readAllBytes();
+    String text = new String(data, StandardCharsets.UTF_8);
+    return text;
+  } catch(IOException ex) {
+    throw new RuntimeException("Greška pri čitanju datoteke.", ex);
+  }
+}
+
+Potom u isti razred dodati po jedan test za svaki primjer; test će biti oblika:
+
+String text = readExample(1);
+// isparsiraj text
+// assertaj da si dobio točno jedan textnode
+// ne hvataj nikakve iznimke! Ako pukne čitanje datoteke, to ne fail-a test već je error i toga junit framework treba postati svjestan

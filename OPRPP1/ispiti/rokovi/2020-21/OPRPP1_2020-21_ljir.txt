@@ -1,0 +1,128 @@
+====================================
+TEORIJSKI DIO ISPITA
+=====================================
+
+1.Zadatak
+--------------------------------------
+Imate definarnu dva razreda:
+public S{ 
+	String a; 
+	int b ;
+	
+	public S(String a, int b){ 
+		this.a = a; 
+		this.b = b;
+	}
+}
+
+public class R{ 
+	S s;
+	int c;
+	
+	public R(S s, int c){ 
+		this.s = s; 
+		this.c = c;
+	}	
+
+}
+Zadan je program main i prikažite stanje u memoriji do komentara xxxxxxxxxx:
+public void main(){
+	S s = new S("aaa", 13);
+	R[] arr = {new R(new S("bbb",12),5), new R(new S("ccc", 14), 6)};
+	arr[1] = s;
+	//xxxxxxxxxx
+	//ostatak koda....
+}
+
+2.Zadatak
+--------------------------------------
+Zadan je razred Par koji sadrži 2 string(s1 i s2) atributa te metode min i max.
+U nastavku je dan pokazni primjer :
+main(){
+Par p = new Par("Krapina", "Zagreb");
+System.out.println(p.min()); //vraća Krapina zbog prirodnog leksikografskog poretka
+System.out.println(p.max()); //vraća Zagreb zbog prirodnog leksikografskog poretka
+
+}
+Zadatak je napisati napisati novu implementaciju klase Par koja će omogućiti rad s 
+bilo kakvim objektima a ne samo s Stringovima.(hint:Parametrizacija klase)
+
+3.Zadatak
+--------------------------------------
+Zamislimo da imamo nekakav posao kojeg treba obaviti nad datotekama u podstablima nekog direktorija.
+Kako takav posao možemo obaviti ako nam je na raspolaganju u prvom slučaju objekti i metode iz paketa java.io,
+a kako ako su nam u drugom slučaju dostupni objekti i metode iz paketa java.nio.file.Napišite demonstracijski primjer,
+i objasnite koja je prednost u drugom slučaju u odnosu na prvi slučaj?
+
+4.Zadatak
+--------------------------------------
+Zamislite da imate polje objekata R(1.zadatak), sljedeće zadatke riješite pomoću tokovnog API:
+
+1)Izračunajte sum svih b-ova(oprez!!)?
+2)Lista koja sadrži b-ove, ali takve da atribut a započinje sa slovom b.
+3)Objasnite razliku između metoda .map i .flatMap te demostrirajte na primjeru.
+
+5.Zadatak
+---------------------------------------
+Zadatak je ispisati sumu brojeva dvije liste(sum=lista1+lista2) od kojih svaka sadrži 10 slučajno generiranih brojeva.
+Liste se pune paraleleno, odnosno modelirajte dodvanje brojeva u listu kao posao.
+(Hint:Višedretvenost s predavanja, sučelje Runnable, nove dretve...).Napišite cijeli program
+
+
+==================================================================================================
+PRAKTIČNI DIO ISPITA
+==================================================================================================
+-Napravite novi Eclipse projekt
+-u njemu napravite sljeće razrede:
+razred Knjiga - ima dva svojstva author i title, konstruktor(author, title), te SAMO GETERE za ta dva svojstva - ovaj razred ne smijete mijenjati prilikom rješavanja zadatka
+razred BazaKnjiga - ima listu knjiga, konstruktor(), te metode addBook(k),count(),getBook(index);
+metoda addBook: public int addBook(Knjiga k){
+		int size = knjige.size();
+		knjige.add(knjiga);		
+		return size;
+		}
+metoda count: public int count(){
+	 	return knjige.size();
+		}
+metoda getBook:public Knjiga getBook(int index){
+	 	return knjige.get(index);
+		}  
+
+Napraviti GUI aplikaciju koja će sadržavati sljedeće:
+	* na lijevoj strani prozora Tablicu(Redni broj knjige, Autor, Naslov knjige)
+	* na desnoj strani prozora Listu(Autor:Naslov knjige <- String)
+	* pri dnu prozora će imati gum Dodaj kojim će se moći dodavati nova knjiga
+
+prilikom pokretanja programa(metode main) obavlja se sljedeće:
+BazaKnjiga baza = new BazaKnjiga();
+baza.addBook(new Knjiga("J.K.Rowling","Harry Potter and the Philosopher's Stone"));
+baza.addBook(new Knjiga("F. Dostoevsky", "Crime and punishment"));
+pokretanje prozora....
+
+klikom na gumb Dodaj obavlja se sljedeći kod kojeg NE SMIJETE MIJANJATI prilikom izrade zadatka:
+Knjiga nova = new Knjiga(randomString(), randomString());
+baza.addBook(nova);
+
+randomString metodu implementirajte najednostavnije tako da vrati nekakav random String
+
+ZADACI:
+1)Napravite prethodno navedene razrede
+2)Napravite GUI aplikaciju koja ispunjava prethodno zadane uvjete (uvjeti *)
+3)S obzirom da ne smijete mijenjati razred Knjiga te kod koji se izvrašava prilikom klika 
+  na gumb Dodaj, ali smijete dodavati kod u BazaKnjiga razmislite kako ispravno implementirati taj dio zadatka
+  kako bi komponente Tablica i Lista ispravno prikazivali novedodane knjige.Također ako se poželi u budućnosti 
+  dodati nova komponenta u GUI koja će prikazivati knjige koje su sadržane u bazi knjiga, kod u klasi 
+  BazaKnjiga se neće smijeti naknadno mijenjati zbog tako novododane komponente.   
+4)Napravite novi izbornik Save koji će omogućiti da se korisnika pita gdje želi spremiti bazu knjiga.
+ Svaki redak datoteke sadrži jednog autora te naslov knjige. Autor i knjiga su odvojeni tabulatorom.
+5)Napravite vlastiti LayoutManager koji će razmjestiti komponente tako da je širina Tablice zauzima 
+  80% širine prozora, dok širina Liste zauzima 20%.
+ 
+
+
+
+
+
+
+
+
