@@ -1,0 +1,117 @@
+JAKOBOVIÆ
+
+****6. poglavlje****
+1. Sinkronizacija rada dviju dretvi, tako da se obavljaju naizmjenièno
+	- npr. 2 binarna semafora
+
+2. Što je potpuni zastoj?
+	- stanje sustava u kojem su sve dretve blokirane u nekom redu uvjeta
+
+3. Nužni uvjeti za nastajanje potpunog zastoja su?
+	- sredstva se koriste meðusobno iskljuèivo
+	- dretvi se sredstvo ne može oduzeti
+	- dok traži dodatna sredstva dretva drži dodijeljena (ovo rješavamo monitorima)
+	* barem 2 dretve se natjeèu za barem 2 sredstva
+
+4. Navesti jezgrine strukture podataka i funkcije potrebne za ostvarivanje monitora
+	- monitorski semafor, redovi uvjeta	
+	- uæi_u_monitor(M), izaæi_iz_monitora(M), uvrstiti_u_red_uvjeta(M,K), osloboditi_iz_reda_uvjeta(M,K)
+
+5. Kojim jezgrinim mehanizmom su zaštiæene korisnièke monitorske funkcije?
+	- monitorskim semaforom
+
+6. Razlika izmeðu monitorskog i binarnog semafora
+	- binarni - 2 fje, monitorski - 2 + 2 koje utjeèu neizravno
+
+7. Koja je zadnja aktivnost unutar monitorske funkcije?
+	- izlazak iz monitora ili oslobaðanje druge dretve iz njenog reda uvjeta
+
+****7. poglavlje****
+8. Objasniti pojmove:
+    a) iskoristivost(optereæenje) ro= alfa/beta = Tp/Td - omjer vremena trajanja posluživanja i perioda dolazaka (ni=ro*100%)
+    b) alfa - broj dolazaka novih poslova u jedinici vremena
+    c) beta - broj poslova koje poslužitelj može obaviti u jedinici vremena
+    d) n potez - prosjeèan broj poslova u sustavu
+    e) T potez - prosjeèno vrijeme zadržavanja posla u sustavu (~ kvaliteta usluge)
+
+9. Littleovo pravilo?
+	- n potez = alfa * T potez (vrijedi uvijek) 
+
+10. Markovljev lanac skicirat
+	- sustav se u trenutku t+dt može naæi u stanju i na 3 naèina:
+		a)u trenutku t je bio u stanju i-1 i u intervalu dt se dogodio 1 dolazak
+		b)u trenutku t je bio u stanju i+1 i u intervalu dt se dogodio 1 odlazak
+		c)u trenutku t je bio u stanju i i nije se dogodio niti 1 dolazak niti 1 odlazak
+
+11. U kojem sluèaju se može dozvoliti veliki faktor iskorištenja (<=1)? 
+	- kada su trenuci dolazaka i trajanje obrade poslova deterministièki - inaèe: zagušenje
+
+12. O èemu ovisi ß? - o vrsti posla i poslužitelju
+
+13. U kružnom posluživanju dretvama višeg prioriteta može se dodjeljivati dva ili više uzastopna kvanta procesorskog vremena.
+
+
+
+JELENKOVIÆ
+
+1. Kako se pozivaju jezgrine funkcije? - sklopovskim i programskim prekidima
+
+2. Od èega se sastoji jezgra? - strukture podataka jezgre () i jezgrinih fja
+
+3. Što sadrži opisnik dretve? - kazaljke (2), PID, TID, stanje, prioritet, poèetna adresa adresnog prostora, velièina adresnog prostora, adresa prve 	instrukcije, zadano kašnjenje, prostor za kontext (+PC)
+
+4. Navedi strukture podataka jezgre. - opisnici dretvi, zaglavlja redova/listi dretvi
+
+5. Koja su blokirna stanja dretve? - red_Bsem, red_Osem, red_UI, red_odgoðenih
+
+6. Opiši kako radi binarni semafor. 
+	- poprima dvije vrijednosti (0-prolazan/1-neprolazan), dretva koja naiðe na prolazan semafor bit æe propuštena i jezgra æe postaviti Bsem[i].v u 0. 	ako jedna ili više dretvi pokušaju proæit uz neprolazni semafor, bit æe zaustavljene i uvrštene u red pridružen tom semaforu; postavljanje semafora = 	poveæanje vrijednosti za 1 [3 stanja!!]
+
+7. Opiši kako radi opæi semafor. 
+	- poprima vrijednost cijelog broja; kada dretva pokuša proæi semafor, jezgra smanji njegovu vrijednost za 1 i ako je nakon toga Osem[i].v>=0 			dozvoljava dretvi prolaz; ako je Osem[i].v<0 dretva biva blokirana u redu pridruženom tom semaforu;postavljanje semafora= poveæanje vrijednosti za 1
+	(ovako se ponaša Os; Osem poprima samo vrijednosti >=0, te se prvo ispituje je li Osem[i].v>=1, pa tek zatim smanjuje ako je dozvoljen prolaz)
+
+8. Skiciraj graf stanja dretva
+
+9. Što obavlja instrukcija "aktiviraj prvu dretvu"?
+	- premjestiti 1. opisnik iz reda Pripravne_D u red Aktivna_D
+	- obnoviti kontext iz opisnika Aktivna_D
+	- omoguæiti prekidanje
+	- vratiti se iz prekidnog naèina
+
+10. Èemu služe semafori? - za sinkronizaciju i meðusobno iskljuèivo izvoðenje kritiènih odjeèaka dretvi 
+
+11. Koju strukturu podataka ima binarni i opæi semafor? - varijabla (zastavica) i kazaljka na red opisnika dretvi koje nisu uspjele proæi semafor
+
+12. Zadatak sa semaforima.
+
+13. Na koji naèin se obavljaju jezgrine funkcije na jednojezgrenom procesoru, a kako na višejezgrenom procesoru? 
+	-1proc - meðusobno iskljuèivo (zbog naèina pozivanja sklop. ili prog. prekidom - zabrana prekida prilikom izvoðenja j-fja)
+	-višeproc - uvodimo varijablu OGRADA_JEZGRE ~zastavica koju na svom poèetku treba ispitati svaka j-fja; koristimo instrukciju TAS
+	(zabrana prekida djeluje samo na taj procesor, a jedino se pohranjivanje kontexta u opisnik iz reda Aktivna_D može obaviti samostalno, svaka daljnja 		akcija zaštiæena je ogradom)
+
+14. Navedi naèine meðusobnog iskljuèivanja (programske)? - Dekker, Peterson (2 dretve), Lamport (više dretvi)
+
+15. Problem proizvoðaèa i potrošaèa.
+16. Naizmjenièno obavljanje 2 dretve.
+
+19. Što je to monitor? - nadzorni program za razrješavanje cjelovitih problema, uz složenije uvjete [sastoji se od strukture podataka (mon.sem., redovi 	uvjeta) i fja koje nad tom strukturom djeluju (obavljaju se meðusobno iskljuèivo)]
+
+20. Koje su jezgrine strukture podataka za ostvarivanje monitora? - monitorski semafor i redovi uvjeta
+
+21. Kada se mogu naæi 2 dretve u monitoru? - prilikom pozivanja funkcije osloboditi_iz_reda_uvjeta(M,K); zato se uvijek poziva na kraju m-fje
+
+22. U pseudokodu napisati jezgrine funkcije za:
+          * problem 5 filozofa
+          * problem 5 pušaèa s monitorom
+          * problem mosta.
+
+23. Što je to monitorska funkcija? - funkcije kojima (jedino njima) pristupamo strukturi podataka (objektu) monitora ; koristi j-fje za izgradnju monitora; 		gradimo je u korisnièkom naèinu rada; ispitivanje složenijih uvjeta unutar nje (K.O.)
+
+25. Zadatak sa sinkronizacijom
+26. Riješiti problem ping-pong dretvi sa monitorom i semaforom.
+27. Analiza vremenskih svojstava monitora
+29. zadatak s deterministièkim i periodièkim sustavima
+32. Zadatak u kojem u sustav ulaze kratki i dugi poslovi, koji su parametri ? i ß, vrijeme zadržavanja.
+33. prepoznati koji algoritmi za sinkronizaciju ne rade i zašto. (iz 4. poglavlja)
+
