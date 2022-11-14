@@ -1,0 +1,1 @@
+int trazi( char *s );

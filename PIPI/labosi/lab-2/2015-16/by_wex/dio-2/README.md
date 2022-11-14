@@ -1,0 +1,1 @@
+Ne garantiram da su svi programi tocni, ili da sam pravilno interpretirao što pojedini zadatak traži - wex :P

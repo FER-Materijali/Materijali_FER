@@ -1,0 +1,1 @@
+void prosjek( int *polje, int r, int s, int maxs, double *redak, double *stupac );

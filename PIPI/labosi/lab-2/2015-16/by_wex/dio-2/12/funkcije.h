@@ -1,0 +1,1 @@
+void brojac(int stat[], char ulaz[]);

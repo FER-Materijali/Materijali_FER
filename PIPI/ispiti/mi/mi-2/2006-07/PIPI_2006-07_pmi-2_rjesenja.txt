@@ -1,0 +1,139 @@
+
+                      PONOVLJENI 2 MI , PIPI 5. SIJEÈNJA 2007
+
+
+
+1 Zadatak 
+
+
+
+#include <stdio.h>
+
+
+int main(int argc, char *argv[])
+{
+  int p[1000], i , cl=0, djeljivih, j;
+  for (i=0; i<1000; i++){
+      scanf ("%d", &p[cl++]);
+      if (p[cl-1]==0) {cl-=1; break;}
+      }
+  for (i=0; i<cl; i++) {
+      djeljivih=0;
+      for (j=0; j<cl;j++) {
+          if (i==j) continue;
+          else {
+                 if (p[i]%p[j]==0) djeljivih++;
+                 }
+                 }
+      printf ("%d: %d\n", p[i], djeljivih);
+}
+  
+  system("PAUSE");	
+  return 0;
+}
+
+
+
+
+2 ZDATAK
+
+
+
+#include <stdio.h>
+void zrcali (char *niz) {
+     int i=0, max=0;
+     char pom;
+     while (niz[i]) {
+           ++max;
+           ++i;
+           }
+           printf("%d", max);
+           printf ("%c\n", niz[max-1]);
+     for  (i=0; i<(max/2); i++) {
+          pom = niz[i]; 
+          niz[i]= niz[max-1-i]; 
+          niz[max-1-i] = pom; 
+          }
+          
+} 
+
+int main(int argc, char *argv[])
+{
+  char niz[50];
+  gets(niz);
+  zrcali(niz);
+  printf ("%s", niz);
+  
+  system("PAUSE");	
+  return 0;
+}
+
+
+
+
+3 ZADATAK 
+
+
+#include <stdio.h>
+#define MAX 60
+int main(int argc, char *argv[])
+{
+  int m1[MAX][MAX], m2[MAX][MAX], i,j, m, n;
+  do {
+      scanf ("%d %d", &m, &n);
+      } while (m<1 || n<1 || m>MAX || n>MAX);
+  for (i=0; i<m; i++) {
+      for (j=0; j<n; j++) {
+          scanf ("%d", &m1[i][j]);
+          m2[j][i]= m1 [i][j];
+          }
+          }
+  for (i=0; i<n; i++) {
+      for (j=0; j<m; j++) {
+          printf ("%d", m2 [i][j]);
+          }
+      printf ("\n");
+      }
+  system("PAUSE");	
+  return 0;
+}
+
+
+
+
+
+
+
+$ ZADATAK  ne garantiram tocnost jer je meni nes stekalo sa tim, ali compiler nije javlajo gresku
+
+
+
+
+
+
+#include <stdio.h>
+
+void razdvoji (int broj, int *parni, int *neparni){
+     int pp=1, pn=1;
+    
+     printf ("%d ", pp);
+     while (broj) {
+           printf ("%d ", pp);
+           if ((broj%10)%2) {(*neparni)+=((broj%10)*pn); pn*=10; printf("%d ", *neparni);}
+           else {(*parni)+=((broj%10)*pp); pp*=10; printf("%d ", *parni);}
+     
+     broj/=10;
+     printf ("%d %d", pp, pn);
+     printf("%d \n", broj);
+     }
+     
+}
+int main(int argc, char *argv[])
+{
+  int br, *parni=0, *neparni=0;
+  scanf ("%d", &br);
+  razdvoji (br, parni, neparni);
+  printf ("%d\n%d", *parni, *neparni);
+  system("PAUSE");	
+  return 0;
+}

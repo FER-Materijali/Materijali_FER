@@ -1,0 +1,1 @@
+void simulirajIgru (int brojIgraca, int brojKrugova);

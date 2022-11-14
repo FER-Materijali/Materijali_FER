@@ -1,0 +1,1 @@
+int analiza(char *s);
