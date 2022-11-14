@@ -1,0 +1,9 @@
+img = rgb2gray(imread('4.2.07.tiff'));
+rub = edge(img, 'sobel');
+imshow(rub)
+rub2 = edge(img, 'sobel', 0.02);
+figure, imshow(rub2)
+rub3 = edge(img, 'sobel', 0.08);
+figure, imshow(rub3)
+rub4 = edge(img, 'sobel', 0.001);
+figure, imshow(rub4)

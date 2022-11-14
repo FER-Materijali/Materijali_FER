@@ -1,0 +1,8 @@
+[img, map] = imread('saturn.tif');
+imgGN = imnoise(img, 'gaussian');
+imgSP = imnoise(img, 'salt & pepper');
+figure, imshow(imgGN)
+figure, imshow(imgSP)
+maske = ones(5);
+maska = maska / sum(maska(:));
+imgSF = 

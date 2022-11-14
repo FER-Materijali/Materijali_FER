@@ -1,0 +1,7 @@
+[img, map]=imread('forest.tif');
+img = ind2gray(img, map);
+imgEQ = histeq(img);
+figure, imshow(img)
+figure, imshow(imgEQ)
+
+[img2, map]=imread()

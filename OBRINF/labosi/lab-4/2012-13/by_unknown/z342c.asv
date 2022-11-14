@@ -1,0 +1,12 @@
+img = rgb2gray(imread('4.2.07.tiff'));
+rub = edge(img, 'zerocross');
+rub1 = edge(img, 'log', [], 4);
+figure, imshow(rub)
+figure, imshow(rub1)
+IMG = imnoise(img, 'gaussian');
+rub2 = edge(IMG, 'sobel');
+rub3 = edge(IMG, 'zerocross');
+rub4 = edge(IMG, 'log', [], 4);
+figure, imshow(rub2)
+figure, imshow(rub3)
+figure, imshow(rub4)
