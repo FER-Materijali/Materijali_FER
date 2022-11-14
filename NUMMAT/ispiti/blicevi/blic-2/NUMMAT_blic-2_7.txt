@@ -1,0 +1,13 @@
+1. Red konvergencije kompozitne Simpsonove formula za numerièku integraciju jednak je 5. netoèno
+
+2. Kompozitne formule za numericku integraciju gube jedan red tocnosti obzirom na pripadne jednostavne kvadraturne formule. toèno
+
+3. Greška aproksimacije funkcije linearnim splajnom je reda 2. (TOÈNO)
+
+4. Hornerovim algoritmom raèunaju se koeficijenti interpolacijskog polinoma (NETOÈNO)
+
+5. Kompozitne formule za numerièku integraciju gube jedan red toènosti obzirom na pripadne jednostavne kvadraturne formule. (TOÈNO)
+
+6. Na mreži zadane podatke interpoliramo kubiènim splajnom. Tada imamo ukupno 3n stupnjeva slobode. (NETOÈNO)
+
+7. Interpolacijski polinom u standardnoj bazi prostora daje dobru aproksimaciju funkcije za velik broj interpolacijskih èvorova. (NETOÈNO)
