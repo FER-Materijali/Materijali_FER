@@ -1,0 +1,22 @@
+%implements s0_b0_wo7nh_Terminate "C"
+
+%function Terminate(block, system) Output
+%assign tlcTerminateFcnOfS0B0 = OpaqueTLCBlockFcn("Terminate", 0, 0)
+%assign tlcTerminateFcnOfS0B1 = OpaqueTLCBlockFcn("Terminate", 0, 1)
+%assign tlcTerminateFcnOfS0B2 = OpaqueTLCBlockFcn("Terminate", 0, 2)
+%assign tlcTerminateFcnOfS0B3 = OpaqueTLCBlockFcn("Terminate", 0, 3)
+%assign tlcTerminateFcnOfS0B4 = OpaqueTLCBlockFcn("Terminate", 0, 4)
+%assign tlcTerminateFcnOfS0B5 = OpaqueTLCBlockFcn("Terminate", 0, 5)
+%assign tlcTerminateFcnOfS0B6 = OpaqueTLCBlockFcn("Terminate", 0, 6)
+%assign tlcTerminateFcnOfS0B7 = OpaqueTLCBlockFcn("Terminate", 0, 7)
+%assign tlcTerminateFcnOfS0B8 = OpaqueTLCBlockFcn("Terminate", 0, 8)
+%<tlcTerminateFcnOfS0B0>\
+%<tlcTerminateFcnOfS0B1>\
+%<tlcTerminateFcnOfS0B2>\
+%<tlcTerminateFcnOfS0B3>\
+%<tlcTerminateFcnOfS0B4>\
+%<tlcTerminateFcnOfS0B5>\
+%<tlcTerminateFcnOfS0B6>\
+%<tlcTerminateFcnOfS0B7>\
+%<tlcTerminateFcnOfS0B8>\
+%endfunction

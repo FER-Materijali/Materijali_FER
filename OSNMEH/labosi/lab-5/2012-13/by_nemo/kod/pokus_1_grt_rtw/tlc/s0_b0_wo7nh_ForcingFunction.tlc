@@ -1,0 +1,14 @@
+%implements s0_b0_wo7nh_ForcingFunction "C"
+
+%function ForcingFunction(block, system) Output
+%assign tlcForcingFunctionFcnOfS0B1 = OpaqueTLCBlockFcn("ForcingFunction", 0, 1)
+%assign tlcForcingFunctionFcnOfS0B8 = OpaqueTLCBlockFcn("ForcingFunction", 0, 8)
+%<tlcForcingFunctionFcnOfS0B1>\
+
+/* ForcingFunction for Integrator: '<Root>/Integrator' */
+%<SLibCG_DRV(5, 1, 0, 0, 1, -1, "", 0)> = %<SLibCG_BOV(0, 7, 7, 0, 0, 1, "", -1, "", 0)>;
+%<tlcForcingFunctionFcnOfS0B8>\
+
+/* ForcingFunction for Integrator: '<S1>/Integrator' */
+%<SLibCG_DRV(5, 3, 0, 0, 1, -1, "", 0)> = %<SLibCG_BOV(0, 8, 8, 0, 0, 1, "", -1, "", 0)>;
+%endfunction

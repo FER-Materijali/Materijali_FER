@@ -1,0 +1,22 @@
+%implements s0_b0_wo7nh_Start "C"
+
+%function Start(block, system) Output
+%assign tlcStartFcnOfS0B0 = OpaqueTLCBlockFcn("Start", 0, 0)
+%assign tlcStartFcnOfS0B1 = OpaqueTLCBlockFcn("Start", 0, 1)
+%assign tlcStartFcnOfS0B2 = OpaqueTLCBlockFcn("Start", 0, 2)
+%assign tlcStartFcnOfS0B3 = OpaqueTLCBlockFcn("Start", 0, 3)
+%assign tlcStartFcnOfS0B4 = OpaqueTLCBlockFcn("Start", 0, 4)
+%assign tlcStartFcnOfS0B5 = OpaqueTLCBlockFcn("Start", 0, 5)
+%assign tlcStartFcnOfS0B6 = OpaqueTLCBlockFcn("Start", 0, 6)
+%assign tlcStartFcnOfS0B7 = OpaqueTLCBlockFcn("Start", 0, 7)
+%assign tlcStartFcnOfS0B8 = OpaqueTLCBlockFcn("Start", 0, 8)
+%<tlcStartFcnOfS0B0>\
+%<tlcStartFcnOfS0B1>\
+%<tlcStartFcnOfS0B2>\
+%<tlcStartFcnOfS0B3>\
+%<tlcStartFcnOfS0B4>\
+%<tlcStartFcnOfS0B5>\
+%<tlcStartFcnOfS0B6>\
+%<tlcStartFcnOfS0B7>\
+%<tlcStartFcnOfS0B8>\
+%endfunction

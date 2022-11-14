@@ -1,0 +1,14 @@
+%implements s0_b0_wo7nh_Derivatives "C"
+
+%function Derivatives(block, system) Output
+%assign tlcDerivativesFcnOfS0B1 = OpaqueTLCBlockFcn("Derivatives", 0, 1)
+%assign tlcDerivativesFcnOfS0B8 = OpaqueTLCBlockFcn("Derivatives", 0, 8)
+%<tlcDerivativesFcnOfS0B1>\
+
+/* Derivatives for Integrator: '<Root>/Integrator' */
+%<SLibCG_DRV(5, 1, 0, 0, 1, -1, "", 0)> = %<SLibCG_BOV(0, 7, 7, 0, 0, 1, "", -1, "", 0)>;
+%<tlcDerivativesFcnOfS0B8>\
+
+/* Derivatives for Integrator: '<S1>/Integrator' */
+%<SLibCG_DRV(5, 3, 0, 0, 1, -1, "", 0)> = %<SLibCG_BOV(0, 8, 8, 0, 0, 1, "", -1, "", 0)>;
+%endfunction

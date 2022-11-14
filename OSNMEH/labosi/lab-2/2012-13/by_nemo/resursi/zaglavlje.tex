@@ -1,0 +1,69 @@
+%\input{d:/tex_template/WINcp1250.tex}
+\usepackage{eso-pic}
+\usepackage{rotating}
+\usepackage[croatian]{babel}
+\usepackage{fixltx2e}
+
+%\usepackage[textwidth=17cm,textheight=24cm,left=2cm,right=2.5cm]{geometry}
+\usepackage{afterpage}
+\usepackage{capt-of}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{amssymb,amsmath}
+\numberwithin{table}{section}
+\numberwithin{figure}{section}
+\numberwithin{equation}{section}
+
+\renewcommand{\theequation}{\thesection-\arabic{equation}}
+\renewcommand{\topfraction}{.85}
+\renewcommand{\bottomfraction}{.7}
+\renewcommand{\textfraction}{.15}
+\renewcommand{\floatpagefraction}{.66}
+\renewcommand{\dbltopfraction}{.66}
+\renewcommand{\dblfloatpagefraction}{.66}
+
+\setcounter{topnumber}{9}
+\setcounter{bottomnumber}{9}
+\setcounter{totalnumber}{20}
+\setcounter{dbltopnumber}{9}
+
+\usepackage{ccaption}
+\captionnamefont{\bfseries}
+\captiontitlefont{\small\sffamily}
+
+% dodajem okvir na stranicu
+%kraj okvira
+%\setcounter{section}{\brvjezbe} 
+
+\AddToShipoutPicture{\setlength{\unitlength}{1cm} \put(2,1){\framebox(18,27.7)[lt]{} }}
+\AddToShipoutPicture*{
+\put(2,23.2){\framebox(18,5.5)[l]{\parbox{5.5cm}{\begin{center}
+						  \ime \\ \vspace{0.1cm} \jmbag 
+                                                   \end{center}}}}%
+\put(8,27.2){\framebox(10,1.5)[l]{\parbox{10cm}{\begin{center}
+                                                 \fakultet  
+						 \\ \zavod 
+                                                \end{center}}}}% 5-ic
+\put(8,26.2){\framebox(10,1)[l]{\parbox{10cm}{\begin{center}
+                                  		\predmet
+                                 		\end{center}}}}% 5-ic
+
+
+\put(8,23.2){\framebox(10,3)[l]{\parbox{10cm}{\begin{center}
+                                                \imevjezbe
+						
+                                                \end{center}}}}% 5-ic% 5-ic
+\put(18,26.6){\parbox[0,0]{2cm}
+{
+\begin{center}
+\begin{rotate}{-90}
+\the\day.\the\month.\the\year
+\end{rotate}
+\end{center}}
+}
+}
+
+\vspace*{5cm}
+
+\newenvironment{popis}{\begin{list}{}{\setlength{\itemsep}{0pt}}}{\end{list}}

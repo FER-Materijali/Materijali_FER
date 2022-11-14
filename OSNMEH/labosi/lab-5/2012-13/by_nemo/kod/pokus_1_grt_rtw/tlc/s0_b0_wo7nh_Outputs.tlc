@@ -1,0 +1,130 @@
+%implements s0_b0_wo7nh_Outputs "C"
+
+%function Outputs(block, system) Output
+%<SLibCGIRAccessLocalVar(17, 0)> %% rtb_EncoderInput
+%<SLibCGIRAccessLocalVar(18, 0)> %% rtb_derivacijasfiltriranjem
+
+{
+real_T currentTime;
+real_T rtb_Step1;
+real_T rtb_Step2;
+real_T rtb_Sum1_d;
+%assign tlcOutputsFcnOfS0B0 = OpaqueTLCBlockFcn("Outputs", 0, 0)
+%assign tlcOutputsFcnOfS0B1 = OpaqueTLCBlockFcn("Outputs", 0, 1)
+%assign tlcOutputsFcnOfS0B2 = OpaqueTLCBlockFcn("Outputs", 0, 2)
+%assign tlcOutputsFcnOfS0B3 = OpaqueTLCBlockFcn("Outputs", 0, 3)
+%assign tlcOutputsFcnOfS0B4 = OpaqueTLCBlockFcn("Outputs", 0, 4)
+%assign tlcOutputsFcnOfS0B5 = OpaqueTLCBlockFcn("Outputs", 0, 5)
+%assign tlcOutputsFcnOfS0B6 = OpaqueTLCBlockFcn("Outputs", 0, 6)
+%assign tlcOutputsFcnOfS0B7 = OpaqueTLCBlockFcn("Outputs", 0, 7)
+%assign tlcOutputsFcnOfS0B8 = OpaqueTLCBlockFcn("Outputs", 0, 8)
+
+/* Step: '<Root>/Step1' */
+currentTime = %<LibGetTaskTime(0)>;
+if(currentTime < %<SLibCG_SE(SLibCGIR_PV(2, 0, 0, 0, 0, 1, -1, "", 0))>) {
+rtb_Step1 = %<SLibCGIR_PV(2, 1, 1, 0, 0, 1, -1, "", 0)>;
+} else {
+rtb_Step1 = %<SLibCGIR_PV(2, 2, 2, 0, 0, 1, -1, "", 0)>;
+}
+
+/* Step: '<Root>/Step2' */
+currentTime = %<LibGetTaskTime(0)>;
+if(currentTime < %<SLibCG_SE(SLibCGIR_PV(2, 3, 3, 0, 0, 1, -1, "", 0))>) {
+rtb_Step2 = %<SLibCGIR_PV(2, 4, 4, 0, 0, 1, -1, "", 0)>;
+} else {
+rtb_Step2 = %<SLibCGIR_PV(2, 5, 5, 0, 0, 1, -1, "", 0)>;
+}
+
+/* Step: '<Root>/Step3' */
+currentTime = %<LibGetTaskTime(0)>;
+if(currentTime < %<SLibCG_SE(SLibCGIR_PV(2, 6, 6, 0, 0, 1, -1, "", 0))>) {
+rtb_derivacijasfiltriranjem = %<SLibCGIR_PV(2, 7, 7, 0, 0, 1, -1, "", 0)>;
+} else {
+rtb_derivacijasfiltriranjem = %<SLibCGIR_PV(2, 8, 8, 0, 0, 1, -1, "", 0)>;
+}
+
+/* Step: '<Root>/Step4' */
+currentTime = %<LibGetTaskTime(0)>;
+if(currentTime < %<SLibCG_SE(SLibCGIR_PV(2, 9, 9, 0, 0, 1, -1, "", 0))>) {
+rtb_Sum1_d = %<SLibCGIR_PV(2, 10, 10, 0, 0, 1, -1, "", 0)>;
+} else {
+rtb_Sum1_d = %<SLibCGIR_PV(2, 11, 11, 0, 0, 1, -1, "", 0)>;
+}
+
+/* Gain: '<Root>/amplituda' incorporates:
+ *  Sum: '<Root>/Sum4'
+ */
+%<SLibCG_SetBOV(0, 0, 0, 0, 0, 1, "", -1, "", 0, "(((rtb_Step1 + rtb_Step2) + rtb_derivacijasfiltriranjem) + rtb_Sum1_d) * %<SLibCG_SE(SLibCGIR_PV(2, 12, 12, 0, 0, 1, -1, "", 0))>")>\
+
+/* Gain: '<Root>/stup->rad' */
+rtb_Sum1_d = %<SLibCG_SE(SLibCGIR_PV(2, 13, 13, 0, 0, 1, -1, "", 0))> * %<SLibCG_SE(SLibCG_BOV(0, 0, 0, 0, 0, 1, "", -1, "", 0))>;
+if(%<LibIsSampleHit(2)>) {
+%<tlcOutputsFcnOfS0B0>\
+
+/* Gain: '<Root>/imp//rad' */
+%<SLibCG_SetBOV(0, 1, 1, 0, 0, 1, "", -1, "", 0, "%<SLibCG_SE(SLibCGIR_PV(2, 15, 15, 0, 0, 1, -1, "", 0))> * rtb_EncoderInput")>\
+}
+
+/* Gain: '<Root>/Kp1' incorporates:
+ *  Sum: '<Root>/Sum2'
+ */
+currentTime = (rtb_Sum1_d - %<SLibCG_SE(SLibCG_BOV(0, 1, 1, 0, 0, 1, "", -1, "", 0))>) * %<SLibCG_SE(SLibCGIR_PV(2, 16, 16, 0, 0, 1, -1, "", 0))>;
+%<tlcOutputsFcnOfS0B1>\
+
+/* Gain: '<Root>/1//K_kab' incorporates:
+ *  Gain: '<Root>/Kv1'
+ *  Sum: '<Root>/Sum3'
+ */
+rtb_derivacijasfiltriranjem = (currentTime - %<SLibCG_SE(SLibCGIR_PV(2, 21, 21, 0, 0, 1, -1, "", 0))> * %<SLibCG_SE(SLibCG_BOV(0, 2, 2, 0, 0, 1, "", -1, "", 0))>) * %<SLibCG_SE(SLibCGIR_PV(2, 22, 22, 0, 0, 1, -1, "", 0))>;
+
+/* Saturate: '<Root>/Limiter' */
+%<SLibCG_SetBOV(0, 3, 3, 0, 0, 1, "", -1, "", 0, "rt_SATURATE(rtb_derivacijasfiltriranjem, %<SLibCGIR_PV(2, 24, 24, 0, 0, 1, -1, "", 0)>, %<SLibCGIR_PV(2, 23, 23, 0, 0, 1, -1, "", 0)>)")>\
+if(%<LibIsSampleHit(2)>) {
+%<tlcOutputsFcnOfS0B2>\
+}
+if(%<LibIsSampleHit(1)>) {
+%<tlcOutputsFcnOfS0B3>\
+%<tlcOutputsFcnOfS0B4>\
+}
+if(%<LibIsSampleHit(2)>) {
+
+/* Gain: '<Root>/rad>stup1' */
+%<SLibCG_SetBOV(0, 4, 4, 0, 0, 1, "", -1, "", 0, "%<SLibCG_SE(SLibCGIR_PV(2, 27, 27, 0, 0, 1, -1, "", 0))> * %<SLibCG_SE(SLibCG_BOV(0, 1, 1, 0, 0, 1, "", -1, "", 0))>")>\
+}
+if(%<LibIsSampleHit(1)>) {
+%<tlcOutputsFcnOfS0B5>\
+}
+
+/* Integrator: '<Root>/Integrator' */
+%<SLibCG_SetBOV(0, 5, 5, 0, 0, 1, "", -1, "", 0, "%<SLibCG_CS(3, 1, 0, 0, 1, -1, "", 0)>")>\
+
+/* Gain: '<Root>/rad>stup' */
+%<SLibCG_SetBOV(0, 6, 6, 0, 0, 1, "", -1, "", 0, "%<SLibCG_SE(SLibCGIR_PV(2, 29, 29, 0, 0, 1, -1, "", 0))> * %<SLibCG_SE(SLibCG_BOV(0, 5, 5, 0, 0, 1, "", -1, "", 0))>")>\
+if(%<LibIsSampleHit(1)>) {
+%<tlcOutputsFcnOfS0B6>\
+%<tlcOutputsFcnOfS0B7>\
+}
+%<tlcOutputsFcnOfS0B8>\
+
+/* Integrator: '<S1>/Integrator' */
+%<SLibCG_SetBOV(0, 7, 7, 0, 0, 1, "", -1, "", 0, "%<SLibCG_CS(3, 3, 0, 0, 1, -1, "", 0)>")>\
+
+/* Sum: '<Root>/Sum1' incorporates:
+ *  Gain: '<Root>/Kp'
+ *  Gain: '<Root>/Kv'
+ *  Sum: '<Root>/Sum'
+ */
+rtb_Sum1_d = (rtb_Sum1_d - %<SLibCG_SE(SLibCG_BOV(0, 5, 5, 0, 0, 1, "", -1, "", 0))>) * %<SLibCG_SE(SLibCGIR_PV(2, 34, 34, 0, 0, 1, -1, "", 0))> - %<SLibCG_SE(SLibCGIR_PV(2, 35, 35, 0, 0, 1, -1, "", 0))> * rtb_derivacijasfiltriranjem;
+
+/* Gain: '<S1>/Inercija' incorporates:
+ *  Gain: '<S1>/Napon - > Struja'
+ *  Gain: '<S1>/Protuelektromotorna sila e'
+ *  Gain: '<S1>/Stuja -> Moment'
+ *  Gain: '<S1>/Viskozno trenje'
+ *  Saturate: '<S1>/UPM napon zasicenja'
+ *  Sum: '<S1>/Sum'
+ *  Sum: '<S1>/Sum1'
+ */
+%<SLibCG_SetBOV(0, 8, 8, 0, 0, 1, "", -1, "", 0, "((rt_SATURATE(rtb_Sum1_d, %<SLibCGIR_PV(2, 39, 39, 0, 0, 1, -1, "", 0)>, %<SLibCGIR_PV(2, 38, 38, 0, 0, 1, -1, "", 0)>) - %<SLibCG_SE(SLibCGIR_PV(2, 40, 40, 0, 0, 1, -1, "", 0))> * %<SLibCG_SE(SLibCG_BOV(0, 7, 7, 0, 0, 1, "", -1, "", 0))>) * %<SLibCG_SE(SLibCGIR_PV(2, 41, 41, 0, 0, 1, -1, "", 0))> * %<SLibCG_SE(SLibCGIR_PV(2, 42, 42, 0, 0, 1, -1, "", 0))> - %<SLibCG_SE(SLibCGIR_PV(2, 37, 37, 0, 0, 1, -1, "", 0))> * %<SLibCG_SE(SLibCG_BOV(0, 7, 7, 0, 0, 1, "", -1, "", 0))>) * %<SLibCG_SE(SLibCGIR_PV(2, 43, 43, 0, 0, 1, -1, "", 0))>")>\
+}
+%endfunction

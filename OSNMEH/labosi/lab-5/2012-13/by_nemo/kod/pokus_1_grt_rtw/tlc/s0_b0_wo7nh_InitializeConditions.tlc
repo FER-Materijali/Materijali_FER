@@ -1,0 +1,16 @@
+%implements s0_b0_wo7nh_InitializeConditions "C"
+
+%function InitializeConditions(block, system) Output
+%assign tlcInitializeConditionsFcnOfS0B0 = OpaqueTLCBlockFcn("InitializeConditions", 0, 0)
+%assign tlcInitializeConditionsFcnOfS0B1 = OpaqueTLCBlockFcn("InitializeConditions", 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B8 = OpaqueTLCBlockFcn("InitializeConditions", 0, 8)
+%<tlcInitializeConditionsFcnOfS0B0>\
+%<tlcInitializeConditionsFcnOfS0B1>\
+
+/* InitializeConditions for Integrator: '<Root>/Integrator' */
+%<SLibCG_CS(3, 1, 0, 0, 1, -1, "", 0)> = %<SLibCGIR_PV(2, 28, 28, 0, 0, 1, -1, "", 0)>;
+%<tlcInitializeConditionsFcnOfS0B8>\
+
+/* InitializeConditions for Integrator: '<S1>/Integrator' */
+%<SLibCG_CS(3, 3, 0, 0, 1, -1, "", 0)> = %<SLibCGIR_PV(2, 36, 36, 0, 0, 1, -1, "", 0)>;
+%endfunction
