@@ -1,0 +1,1 @@
+napraviti obilaznik hash tablice da vrati novi key kod svakog poziva

@@ -1,0 +1,6 @@
+ime	prezime	proizvod	cijena	email
+Pero	Perić	Superljepilo	12,60	Pero.Peric@acme.org
+Ivo	Ivić	Superljepilo	12,60	Ivo.Ivic@acme.org
+Ankica	Ankić	Biserna narukvica	124,99	Ankica.Ankic@acme.org
+Linda	Abar-Mitarović	4 tone lososa	100000,00	Olinda.Abar-Mitarović@acme.org
+

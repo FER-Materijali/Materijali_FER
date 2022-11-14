@@ -1,0 +1,4 @@
+Pogledati hr.fer.oop.streams.Example0
+
+  -- napisali smo ga na predavanju.
+  

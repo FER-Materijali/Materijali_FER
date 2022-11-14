@@ -1,0 +1,10 @@
+Bok ${ime}!
+
+Posebno nam je zadovoljstvo ponuditi Vam naš najnoviji proizvod: ${proizvod}. Isti je moguće kupiti po
+odličnoj cijeni od samo ${cijena} kuna! Nikako nemoj propustiti ovu priliku.
+
+Ponuda vrijedi do 24. prosinca 2016. ili do isteka zaliha.
+
+Tvoja omiljena tvrtka
+
+Napomena: ova poruka poslana je osobi ${ime} ${prezime} na e-mail adresu ${email}.

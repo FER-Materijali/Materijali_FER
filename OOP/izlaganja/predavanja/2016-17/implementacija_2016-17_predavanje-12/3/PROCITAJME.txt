@@ -1,0 +1,16 @@
+Ovaj projekt sadrži istovjetan kod kao što je na službenom github repozitoriju.
+
+Razlike su:
+
+1) podpaket example1b
+   - napisali smo ga pri pojasnjenju ideje delegiranja zadaće testiranja prihvatljivosti
+     nekom drugom objektu kako bismo mogli napisati opcenitu metodu za obradu koja za
+     prihvatljivost pita predani objekt (oblikovni obrazac Strategija); time imamo mogucnost 
+     izvana definirati nove objekte koji obavljaju razlicita testiranja, a nasa (jedna - nismo 
+     radili dupliciranje koda) opcenita metoda moze raditi sa svima njima - jer smo ih 
+     modelirali prikladnim suceljem.
+     
+2) u podpaketu example2
+   - dobro proučite razred Main; niz demonstracija koje kreću od stvaranja primjeraka anonimnih razreda,
+     pa idu preko lambda izraza sve do "method-handle"-ova.
+     

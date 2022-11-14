@@ -1,0 +1,5 @@
+1	Programiranje
+2	Algoritmi i strukture podataka
+3	Baze podataka
+4	OOP
+5	Mreže računala

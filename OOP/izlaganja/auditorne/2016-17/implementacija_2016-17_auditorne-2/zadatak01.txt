@@ -1,0 +1,45 @@
+Potrebno je napisati program koji kao argumente naredbenog retka dobiva:
+1) putanju do datoteke s predloškom teksta,
+2) putanju do datoteke s vrijednostima zamjenskih varijabli,
+3) putanju do direktorija u koji treba pohranjivati rezultate.
+Ako odredišni direktorij (argument 3) ne postoji, potrebno ga je stvoriti i o tome izvijestiti korisnika.
+
+Datoteka s predloškom teksta sadrži tekst u kojem se pojavljuju posebne oznake koje označavaju da ih treba supstituirati određenom vrijednošću.
+Te su oznake oblika ${naziv}, gdje je "naziv" ime varijable. Primjer je dan u datoteci predlozak01.txt pa pogledajte.
+
+Datoteka ulaz01.txt u prvom retku sadrži nazive varijabli (odvojeno znakom tab) a potom u svakom sljedećem retku sadrži vrijednosti za te varijable (također odvojeno znakom tab).
+
+Retke s podatcima numerirat ćemo od 1 na dalje. Za svaki pronađeni redak s podatcima u izlaznom je direktoriju potrebno stvoriti datoteku čije je ime rednibroj.txt (npr. 1.txt) i koja sadrži tekst koji se dobije kada se u predlošku zamijene sve varijable vrijednostima navedenim u ulaznoj datoteci.
+
+Zadatak riješiti na dva načina.
+
+Prvi: za svaki redak s podatcima uzeti predložak, pronaći varijable i generirati konačni tekst; ako se pojavi varijabla koja ne postoji u podatcima, treba baciti neprovjeravanu iznimku UnknownVariableException (napravite je).
+
+Drugi: ulazni predložak unaprijed razmotrite (dakle samo jednom smijete "parsirati" taj dokument, tražiti gdje su varijable i slično) te za svaki redak s podatcima izgenerirajte traženi dokument. U slučaju pronalaska nepostojeće varijable također vratite iznimku.
+
+Razlika između prvog i drugog načina je što se u prvom slučaju predložak analizira onoliko puta koliko ima podataka, i eventualna pogreška utvrđuje se prilikom generiranja prve izlazne datoteke.
+U drugom slučaju, analiza se radi jednom (i ako postoje pogreške, tada se utvrđuju), a tek se nakon toga bez novih analiza kreće u brzo generiranje izlaznih dokumenata.
+
+Pravila za analizu datoteke s predloškom.
+Jednostavan slučaj: svako pojavljivanje "${" definira da sada slijedi ime; ime se proteže sve do "}" koji je u istom retku (inače iznimka). Ime varijable je trim onoga što je ograđeno tim znakovima.
+Složeniji slučaj: znakovi "${" i "}" mogu biti u različitim retcima. U tekstu želimo dopustiti da može postojati i ${ koji treba tako doslovno propustiti korisniku a ne ga tretirati kao početak definicije varijable. Stoga ćemo uvesti mehanizam escapeanja. Slijed \\ predstavlja jedan znak \, slijed \$ predstavlja znak $ koji tretiramo kao običan znak. Bilo koji treći znak iza \ predstavlja grešku (baciti iznimku).
+
+Jednostavan slučaj omogućava da radimo obradu predloška redak po redak. Kod složenijeg slučaja, to nije moguće.
+
+U složenijem slučaju, predložak:
+-----------------------------------------------------
+Varijabla \${ime} ima vrijednost ${ 
+    ime
+
+}.
+-----------------------------------------------------
+nakon obrade uz ime=Pero trebao bi generirati tekst:
+-----------------------------------------------------
+Varijabla ${ime} ima vrijednost Pero.
+-----------------------------------------------------
+
+Primjer pokretanja:
+
+java Glavni predlozak01.txt ulaz01.txt ./izlaz
+
+

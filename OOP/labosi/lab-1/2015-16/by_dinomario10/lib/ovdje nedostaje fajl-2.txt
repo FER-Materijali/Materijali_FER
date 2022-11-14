@@ -1,0 +1,1 @@
+U ovom folderu nedostaju datoteke "commons-math3-3.5.jar", "commons-math3-3.5-bin.zip" i "commons-math3-3.5-javadoc.jar" zbog prevelike memorije (22,2 MB).
