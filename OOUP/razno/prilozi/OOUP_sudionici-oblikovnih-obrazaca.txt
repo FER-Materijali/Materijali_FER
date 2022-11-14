@@ -1,0 +1,216 @@
+OBLIKOVNI OBRAZAC STRATEGIJA (engl. Strategy)
+--------------------------------------------------
+	- STRATEGIJA (pribavljanje slike)
+		- deklarira zajedničko sučelje svih podržanih postupaka
+		- preko tog sučelja Kontekst poziva konkretne postupke
+	- KONKRETNA STRATEGIJA (pribavljanje slike iz .avi datoteke)
+		- implementira postupak preko zajedničkog sučelja
+		- često je jedna od strategija nul-objekt koji ne radi ništa (to je korisno za ispitivanje)
+	- KONTEKST
+		- konfigurira se preko pokazivača na konkretnu Strategiju
+		- može definirati sučelje preko kojeg Strategije mogu pristupiti njegovim podacima
+
+
+OBLIKOVNI OBRAZAC OKVIRNA METODA (engl. Template Method)
+--------------------------------------------------
+	- APSTRAKTAN RAZRED (zajednički dio svih igara)
+		- deklarira APSTRAKTNE PRIMITIVE u okviru kojih će izvedeni razredi definirati korake algoritma
+		- izvodi OKVIRNU METODU, modelira grubu strukturu postupka
+		- okvirna metoda koristi apstraktne primitive, te po potrebi ostale metode Apstraktnog Razreda, odnosno metode ostalih objekata
+	- KONKRETAN RAZRED (labirint, konjićev skok, minesweeper, ...)
+		- implementiraju primitive, izvode odgovarajuće korake postupka
+
+
+OBLIKOVNI OBRAZAC PROMATRAČ (engl. Observer)
+--------------------------------------------------
+	- SUBJEKT (izdavač, izvor informacija)
+		- poznaje Promatrače preko apstraktnog sučelja
+		- pruža sučelje za prijavu novih i odjavu postojećih Promatrača
+		- sadrži original stanja koje je od interesa Promatračima (pruža sučelje za pristup tom stanju)
+		- obavještava Promatrače o promjenama stanja
+	- PROMATRAČ (pretplatnik, element prikaza)
+		- pruža sučelje za obavještavanje o promjenama u Subjektu
+	- KONKRETAN PROMATRAČ (tablica, histogram, grafikon)
+		- sadrži referencu na Subjekt
+		- može imati kopiju podskupa stanja Subjekta
+		- implementira sučelje za obavještavanje
+
+
+OBLIKOVNI OBRAZAC DEKORATOR (engl. Decorator)
+--------------------------------------------------
+	- KOMPONENTA (java.io.OutputStream)
+		- definira sučelje za objekte kojima se odgovornosti mogu dinamički konfigurirati
+	- KONKRETNA KOMPONENTA (java.io.FileOutputStream)
+		- definira izvedbu objekata s dinamičkim odgovornostima
+	- DEKORATOR (java.io.FilterOutputStream)
+		- nasljeđuje sučelje Komponente
+		- sadrži referencu na umetnutu Komponentu
+		- može pružiti implementacije metoda Komponente koje posao delegiraju umetnutoj Komponenti
+	- KONKRETNI DEKORATOR (java.io.BufferedOutputStream)
+		- izvodi dodatne odgovornosti Komponente
+
+
+OBLIKOVNI OBRAZAC NAREDBA (engl. Command)
+--------------------------------------------------
+	- NAREDBA (Command, listić s narudžbom)
+		- deklarira jednostavno sučelje za izvođenje operacije
+	- KONKRETNA NAREDBA (CmdPaste, ćevapi s lukom)
+		- definira vezu između Pozivatelja i Primatelja
+		- implementira sučelje Naredbe pozivajući Primatelja
+	- POZIVATELJ (MenuItem, konobar)
+		- inicira zahtjev preko sučelja Naredbe
+	- PRIMATELJ (MyDocument, kuhar)
+		- zna koje operacije mora obaviti kako bi se zadovoljio zahtjev
+	- KLIJENT (MyApp)
+		- kreira Konkretnu naredbu i predaje je Pozivatelju
+
+
+OBLIKOVNI OBRAZAC JEDINSTVENI OBJEKT (engl. Singleton)
+--------------------------------------------------
+	- JEDINSTVENI OBJEKT
+		- definira statičku metodu za pristup objektu instance()
+		- definira privatni (ili zaštićeni) konstruktor
+		- pristupna metoda može implementirati odgođeno instanciranje
+	- KLIJENTI
+		- pristupaju Jedinstvenom Objektu preko pristupne metode instance()
+
+
+OBLIKOVNI OBRAZAC ITERATOR (engl. Iterator)
+--------------------------------------------------
+	- ITERATOR
+		- deklarira sučelje za pristupanje i slijedni pristup elementima
+	- KONKRETNI ITERATOR
+		- implementira apstraktno sučelje, evidentira tekući položaj
+	- APSTRAKTNI SKUPNI OBJEKT
+		- deklarira sučelje za kreiranje Iteratora
+	- KONKRETNI SKUPNI OBJEKT
+		- izvodi apstraktno sučelje, stvara odgovarajući Konkretni Iterator
+
+
+OBLIKOVNI OBRAZAC PRILAGODNIK (engl. Adapter)
+--------------------------------------------------
+	- CILJNI RAZRED
+		- definira sučelje specifično za domenu klijenta
+	- KLIJENT
+		- surađuje s objektima koji implementiraju sučelje Ciljnog Razreda
+	- VANJSKA KOMPONENTA (ili razred)
+		- implementira korisnu funkcionalnost kroz nekompatibilno sučelje
+	- PRILAGODNIK:
+		- prilagođava sučelje Vanjske komponente sučelju Ciljnog Razreda
+
+
+OBLIKOVNI OBRAZAC KOMPOZIT (engl. Composite)
+--------------------------------------------------
+	- KOMPONENTA (element vektorskog crteža)
+		- deklarira zajedničko osnovno sučelje za Primitive i Kompozite
+	- PRIMITIV (poligon, tekst, rasterska slika)
+		- predstavlja listove hijerarhije (listovi nemaju djecu)
+		- definira ponašanje atomarnih konkretnih komponenti
+	- KOMPOZIT (Grupa)
+		- definira ponašanje složenih komponenata (roditelja)
+		- odgovoran za pohranjivanje sastavnih komponenata (djece)
+		- delegira operacije sastavnim komponentama (djeci)
+	- KLIJENT
+		- transparentno manipulira složenim objektima i primitivima preko sučelja Komponente
+
+
+OBLIKOVNI OBRAZAC STANJE (engl. State)
+--------------------------------------------------
+	- KONTEKST (TCPConnection)
+		- definira sučelje koje koriste klijenti
+		- održava referencu na konkretni razred koji definira tekuće stanje
+	- STANJE (TCPState)
+		- deklarira sučelje za enkapsuliranje ponašanja koje ovisi o tekućem stanju
+	- KONKRETNO STANJE (TCPEstablished, TCPListen, TCPClosed)
+		- svaki izvedeni razred definira skup ponašanja vezanih uz pojedinačno stanje
+
+
+OBLIKOVNI OBRAZAC ZAMJENSKI OBJEKT (engl. Proxy)
+--------------------------------------------------
+	- SUBJEKT (ImageBase)
+		- zajedničko sučelje za Proxy i konkretni subjekt
+	- PROXY (ImageProxy)
+		- čuva referencu na ciljni subjekt (ili zajednički bazni razred)
+		- nasljeđuje sučelje Subjekta kako bi se omogućila transparentnost
+		- kontrolira pristup stvarnom subjektu, može biti odgovaran za stvaranje i brisanje (detalji ovise o vrsti Proxyja)
+	- STVARNI SUBJEKT (Image)
+		- definira stvarni objekt koji ne zna za Proxy koji ga predstavlja
+
+
+OBLIKOVNI OBRAZAC MOST (engl. Bridge)
+--------------------------------------------------
+	- APSTRAKCIJA (Shape)
+		- sučelje prema klijentima, sadrži referencu na Izvođača
+	- PRILAGOĐENA APSTRAKCIJA (Polygon)
+		- proširuje sučelje Apstrakcije
+	- IZVOĐAČ (Renderer)
+		- definira sučelje za implementacijske razrede
+		- u odnosu prema Apstrakciji, operacije su primitivnije i niže razine
+	- KONKRETNI IZVOĐAČ (RenderSVG)
+		- izvodi sučelje Izvođača, definira konkretnu implementaciju
+
+
+OBLIKOVNI OBRAZAC PROTOTIP (engl. Prototype)
+--------------------------------------------------
+	- APSTRAKTNI ELEMENT (Graphic)
+		- deklarira sučelje za kloniranje
+	- KONKRETNI ELEMENT (HalfNote)
+		- implementira sučelje za kloniranje
+	- KLIJENT (ToolAddObject)
+		- održava pokazivač na aktivni prototip Apstraktnog Elementa
+		- instancira nove elemente kloniranjem prototipa
+
+
+OBLIKOVNI OBRAZAC POSJETITELJ (engl. Visitor)
+--------------------------------------------------
+	- POSJETITELJ (Operation)
+		- deklarira po jednu varijantu operacije za svaki konkretni objekt
+	- KONKRETNI POSJETITELJ (OperationPay)
+		- modelira konkretnu operaciju: čuva kontekst, izvodi varijante te akumulira rezultat
+	- ELEMENT (Employee)
+		- deklarira metodu accept koja prima refrencu na Posjetitelja
+	- KONKRETNI ELEMENT (Manager)
+		- izvodi metodu accept, poziva odgovarajuću metodu posjetitelja
+	- KLIJENT (Client)
+		- kreira odgovarajućeg posjetitelja, iterativno ga šalje elementima
+
+
+OBLIKOVNI OBRAZAC METODA TVORNICA (engl. Factory Method)
+--------------------------------------------------
+	- PROIZVOD (Document)
+		- definira sučelje za objekte koje stvara metoda tvornica
+	- KONKRETAN PROIZVOD (MyDocument)
+		- implementira sučelje Proizvoda
+	- KREATOR (Application)
+		- deklarira metodu tvornicu koja vraća objekt razreda Proizvod
+		- može pozvati metodu tvornicu kako bi instancirao novi Proizvod
+	- KONKRETNI KREATOR (MyApplication)
+		- izvodi metodu tvornicu koja instancira Konkretni Proizvod
+
+
+OBLIKOVNI OBRAZAC APSTRAKTNA TVORNICA (engl. Abstract Factory)
+--------------------------------------------------
+	- APSTRAKTNA TVORNICA (tvornica GUI elemenata)
+		- deklarira sučelje za instanciranje apstraktnih proizvoda
+	- KONKRETNA TVORNICA (tvornice GDK, WxWindows, ...)
+		- instancira konkretne objekte iz odgovarajuće obitelji
+	- APSTRAKTNI PROIZVOD (GUI element)
+		- Zajedničko sučelje apstraktnih proizvoda dane vrste
+	- KONKRETNI PROIZVOD (GDK prozor, ...)
+		- proizvod iz obitelji definiranom odabranom tvornicom
+	- KLIJENT (aplikacija)
+		- koristi apstraktna sučelja tvornice i proizvoda
+		- konkretna tvornica se kreira na najvišoj razini programa
+
+
+OBLIKOVNI OBRAZAC MODEL-POGLED-UPRAVLJAČ (engl. Model-View-Controller)
+--------------------------------------------------
+	- MODEL (Model)
+		- sadrži podatke aplikacije i pravila za njihovu manipulaciju
+	- POGLED (View)
+		- prikazuje aplikacijske podatke na koristan i praktičan način; može prikazivati i elemente GUIja
+		- može biti više pogleda koji mogu biti istovremeno prikazani
+	- UPRAVLJAČ (Controller)
+		- odgovoran za komunikaciju s korisnikom (obrada tipkovnice, miša, ...)
+
+

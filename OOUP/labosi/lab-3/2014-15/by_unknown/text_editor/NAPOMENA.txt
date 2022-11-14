@@ -1,0 +1,3 @@
+Ukoliko Vam ne radi enter(kad pritisnete enter nista se ne događa) u klasi InsertTextAction koja se nalazi u paketu hr.fer.ooup.lab3.command
+78 liniju koja izgleda ovako "if(String.valueOf(c).equals(System.lineSeparator())) {" zamjenite s ovom linijom "if(String.valueOf(c).equals('\n')) {"
+Ovaj problem se zna pojaviti na Windowsima. 

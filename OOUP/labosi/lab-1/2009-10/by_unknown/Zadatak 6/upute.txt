@@ -1,0 +1,178 @@
+1) Prevedi i isprobaj program zadan na stranici predavanja "Metode: C++". Promijeni redak:
+
+Derived d;
+
+u
+
+Derived2 d;
+
+Dodaj još i:
+
+#include "derived2.hpp"
+
+Pokreni program.
+
+Implementiraj novu izvedenu klasu, Derived3. Suèelje stavi u datoteku "derived3.hpp", implementacijsku datoteku ne moraš imati (sve metode mogu biti "umetnute" (inline)). Sada ukljuèi derived3.hpp u main, te reci "Derived3 d;" Pokreni program.
+
+Stara implementacija klijenta radi s novom izvedbom osnovne klase. Klijenta nismo morali ni pipnuti (èak ni prevesti!).
+
+Koje naèelo kaže da *stari kod* treba moæi koristiti *novi kod*?
+
+2) Prevedi i isprobaj program zadan na stranici predavanja "Metode: generici".
+
+Pokaži da isti mymax radi i za parametre tipa std::string!
+
+Koje naèelo kaže da *stari kod* treba moæi koristiti *novi kod*?
+
+3) Prevedi i isprobaj program:
+
+  #include <vector>
+  #include <list>
+  #include <algorithm>
+  #include <iostream>
+
+  int main(){
+    std::vector<int> v(2);
+    v[0] = 7;
+    v[1] = v[0] + 3;
+    v.push_back(5);
+    v.insert(v.begin(),1);
+
+    std::reverse(v.begin(), v.end());
+    for (int i = 0; i < v.size(); ++i)
+      std::cout << "v[" << i << "] = " << v[i] <<"\n";
+  }
+
+Pokaži da ista komponenta vector radi i za parametre tipa std::string!
+
+Koje naèelo kaže da *stari kod* treba moæi koristiti *novi kod*?
+
+4) Prevedi i isprobaj priloženi dopunjeni program s predavanja (str.~``Logièka naèela: NBP i proceduralni stil?'').
+
+  #include <iostream>
+  #include <assert.h>
+
+  struct Point{
+    int x; int y;
+  };
+  struct Shape{
+    enum EType {circle, square};
+    EType type_;
+  };
+  struct Circle{
+     Shape::EType type_;
+     double radius_;
+     Point center_;
+  };
+  struct Square{
+     Shape::EType type_;
+     double radius_;
+     Point center_;
+  };
+  void drawSquare(struct Square*){
+    std::cerr <<"in drawSquare\n";
+  }
+  void drawCircle(struct Circle*){
+    std::cerr <<"in drawCircle\n";
+  }
+  void drawShapes(Shape** list, int n){
+    for (int i=0; i<n; ++i){
+      struct Shape* s = list[i];
+      switch (s->type_){
+      case Shape::square:
+        drawSquare((struct Square*)s);
+        break;
+      case Shape::circle:
+        drawCircle((struct Circle*)s);
+        break;
+      default:
+        assert(0); 
+        exit(0);
+      }
+    }
+  }
+  int main(){
+    Shape* list[4];
+    list[0]=(Shape*)new Circle;
+    list[0]->type_=Shape::circle;
+    list[1]=(Shape*)new Square;
+    list[1]->type_=Shape::square;
+    list[2]=(Shape*)new Square;
+    list[2]->type_=Shape::square;
+    list[3]=(Shape*)new Circle;
+    list[3]->type_=Shape::circle;
+
+    drawShapes(list, 4);
+  }
+
+Dodaj metodu moveShapes(). Isprobaj.
+
+Dodaj razred Rhomb. Dodaj jedan objekt tipa Rhomb u listu objekata u main(). Sjeti se, sad moramo promijeniti i drawShapes().
+
+Ovo je domino-efekt (krutost), kojeg æemo kasnije pokušati zauzdati. Za probu, zaboravi adekvatno promijeniti moveShapes(). Isprobaj ponovo. Sad bi moveShapes trebao "puknuti". To je krhkost uzrokovana redundancijom. Ni to ne želimo imati u programu.
+
+Konaèno, implementiraj rješenje s predavanja, i komentiraj njegovu funkciju.
+
+5) Prevedi i isprobaj program s predavanja na stranici ``Logièka naèela: NBP i GP''. Pokušaj pisati izvan granica niza, u sluèajevima da je prevoðenje izvršeno bez postavljenog makroa NDEBUG, ili s njim. Kod mnogih razvojnih okruženja NDEBUG se postavlja automatski kad god zatražimo optimizaciju. NDEBUG utjeèe na semantiku poziva assert(), za detalje proèitajte dokumentaciju.
+
+6) Primijeni program sa stranice ``Logièka naèela: NBP i GP, primjer std::map" na ovim uputstvima. Koja rijeè je najèešæa?
+
+7) Prevedi i pokreni program na stranici ``Logièka naèela: LNS - primjer 2''. Dodaj kod za hvatanje iznimke. Kako iznimke pospješuju èitljivost programa?
+
+8) Prevedi i pokreni program na stranici ``Logièka naèela: NIO, injekcija ovisnosti''. Objasni naèela inverzije i injekcije ovisnosti.
+
+9) Napiši funkciju za dijalog s korisnikom, kojom korisnik preko standardnog ulaza unosi listu brojeva odvojenih razmacima. Neka je duljina liste proizvoljna, odnosno neka kraj unosa oznaèava znak za novi red '\n'. U prvoj verziji, koristi sljedeæu funkciju standardne biblioteke C-a.
+
+char *gets(char *s);
+
+Isjeèak iz dokumentacije:
+
+  gets() reads a line from stdin into the buffer pointed to by s until 
+  either a terminating newline or EOF, which it replaces with '\0'.
+
+Komentiraj lakoæu održavanja funkcije, s obzirom na oèekivano produžavanje elemenata liste u skoroj buduænosti. Koje naèelo je prekršeno? Pokušaj poboljšati nadogradivost funkcije korištenjem sljedeæih standardnih funkcija:
+
+    * char *fgets(char *s, int size, FILE *stream);
+    * istream& getline ( istream& is, string& str ); 
+
+Komentiraj važnost suèelja funkcija vanjskih biblioteka u kontekstu dugoroènog korištenja programa.
+
+Onima koje interesira opseg problema koje može izazvati nepažljivo rukovanje ulaznim podatcima predlažemo sljedeæu dodatnu literaturu:
+
+    * opæenito o preljevu spremnika
+    * zašto moguænost preljeva spremnika može biti opasna 
+
+10) Napomena: ovo je bonus zadatak. Upoznaj se s tehnikom neprozirnih tipova u C-u i C++-u (wikipedia). Kako ta tehnika pospješuje naèelo zatvorenosti? Neka su zadane sljedeæe komponente ProzorRoditelj i ProzorDijete:
+
+//////////////////////////////////
+// MainWindow.hpp
+#include "ChildWindow.hpp"
+
+class MainWindow{
+  std::vector<ChildWindow&> children_;
+public:
+  MainWindow();
+  // ...
+public:
+  void addChild(ChildWindow&);
+  int numChildren();
+};
+///////////////////////////////////
+
+//////////////////////////////////
+// ChildWindow.hpp
+#include "MainWindow.hpp"
+class ChildWindow{
+  MainWindow* parent_;
+public:
+  ChildWindow(MainWindow* p):parent_(p){}
+public:
+  // ...
+public:
+  int numberOfSiblings();
+};
+
+
+Nastao je problem cirkularne ovisnosti jer prozor-dijete treba znati neke podatke o ostaloj djeci istog roditelja (npr, koliko ih ukupno ima). Cirkularna ovisnost je vrlo neželjena pojava u programskoj arhitekturi jer onemoguæava testiranje komponenti u izolaciji. Naravno, zadatak je prekrojiti program na naèin da se izbjegne cirkularna ovisnost.
+
+Uputa: prekroji suèelje komponente ChildWindow na naèin da otkloniš potebu za ovisnošæu o roditelju, ali na naèin da se klijentima ipak omoguæi postizanje iste funkcionalnosti. Pokazivaè na roditelja u razredu ChildWindow izvedi tehnikom neprozirnog objekta. 

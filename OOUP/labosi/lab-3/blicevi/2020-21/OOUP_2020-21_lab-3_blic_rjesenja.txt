@@ -1,0 +1,71 @@
+Oblikovni obrasci u programiranju - Treći labos - pitalice 
+
+1. Koja od metoda modela tekstovnog dokumenta posredno ili neposredno 
+	poziva barem jednu metodu razreda TextObserver?
+	
+	a) deleteRange
+	b) getUndoManager
+	c) updateCursorLocation
+	d) getSelectionRange
+	
+2. Na kojem oblikovnom obrascu počiva organizacija podrške za opoziv izmjena u dokumentu?
+	
+	a) iterator
+	b) dinamički polimorfizam
+	c) dekorator
+	d) naredba
+	
+3. U zadatku s tvornicama u C-u, kako glasi ispravna deklaracija tipa koji je pokazivač na funkciju name?
+	
+	a) typedef char const* (*fptr) (char *)
+	b) typedef void (*fptr) (struct animal *)
+	c) typedef struct animal *(*fptr) (void)
+	d) typedef char const* (*fptr) (struct animal *)
+	
+4. Koliki je sizeof(struct animal) na 32-bitnoj arhitekturi?
+
+	a) 4
+	b) 1
+	c) 2
+	d) 3
+	
+5. Postoji li mogućnost da neka komponenta X poziva potprograme 
+	koji su napisani nakon što je komponenta X prevedena i povezana u izvršivu datoteku?
+
+	a) da, ali samo ako se koristi Jedinstveni Objekt
+	b) ta mogućnost ne postoji
+	c) da
+	d) da, ali samo ako se koristi prototip
+	
+6. S obzirom na trenutnu implementaciju životinja, 
+	koliko virtualnih funkcija nužno treba kao argument dobiti pokazivač na životinju?
+	
+	a) 2
+	b) 4
+	c) 3
+	d) 1
+	
+7. Koje podatkovne članove treba imati iterator redaka tekstovnog dokumenta pored reference na model tekstovnog dokumenta?
+
+	a) jedan cijeli broj i jedan znakovni niz
+	b) dva znakovna niza
+	c) dva cijela broja
+	d) jedan znakovni niz
+	
+8. Funkciju myFactory koristimo kako bismo:
+
+	a) distribuirali odgovornost kreiranja objekata
+	b) zadanom objektu dali nove odgovornosti
+	c) distribuirali odgovornost za ponašanje objekata
+	d) lokalizirali odgovornost kreiranja objekata
+	
+9. Kolika je veličina u bajtovima tablica virtualnih funkcija konkretnih životinja na 32-bitnoj arhitekturi?
+
+	a) 20
+	b) 4
+	c) 12
+	d) 8
+	
+10. ?
+
+Rješenja: 1.a) 2.d) 3.d) 4.a) 5.c) 6.d) 7.c) 8.d) 9.c) 10.?

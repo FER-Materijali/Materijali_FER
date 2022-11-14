@@ -1,0 +1,161 @@
+---------------------------------------------------------------------------------------ZADATAK 1-------------------------------------------------------------------------------------------
+
+
+- Što je dinamički polimorfizam? 
+Dinamički polimorfizam jedan je od ključnih koncepata objektno orijentiranog oblikovanja koji se ocituje u situaciji kada nam poziv neke funkcije nad nekim razredom daje nepoznato odrediste koje se odreduje tek tijekom izvodenja programa.
+
+
+- Zašto su nam potrebne dvije zasebne tablice funkcija?
+Zato što svaki objekt koji instanciramo (u ovom slučaju dvije strukture Animal koje reprezentiraju primjerke Cat i Dog) treba imati svoju tablicu virtualnih funkcija, a pošto se one međusobno razlikuju, potrebno je kreirati dvije zasebne tablice funkcija.
+
+
+- Što je potrebno dodati u svaki od izvedenih razreda (Cat, Dog) kako bi se omogućio dinamički polimorfizam?
+Nadjačati metode nadrazreda Animal (u našem slučaju kreirati tablice virtualnih funkcija s određenim implementacijama).
+
+
+- Ima li to kakve posljedice na memorijsko zauzeće primjeraka razreda Cat i Dog?
+Ima, jer moraju zauzeti određenu memoriju (4 bytea?) za pokazivač na tablicu virtualnih funkcija.
+
+
+- Gdje se nalazi tablica virtualnih funkcija i kome ona pripada: primjercima razreda ili razredima?
+Tablica virtualnih funkcija nalazi se na heapu zajedno s primjercima razreda i pripadaju razredima. Primjerci razreda sadrže samo pokazivač na određenu tablicu.
+
+
+- Kakve bi posljedice na memorijsko zauzeće primjeraka razreda Cat i Dog imalo dodavanje još sedam novih virtualnih funkcija?
+Nikakve, primjerci razreda sadrže samo pokazivač na tablicu tako da dodavanje novih funkcija (slotova u tablici) nema nikakvog utjecaja na njihovo memorijsko zauzeće.
+
+
+- Što bi sve trebalo izmijeniti ako želimo dodati novu virtualnu funkciju?
+Trebali bismo definirati funkciju (povratni tip i argumente), definirati pokazivač koji može pokazivati na takvu funkciju i dodati ime funkcije u tablicu virtualnih funkcija.
+
+
+- Zašto je dobro odvojiti zauzimanje memorije od konstrukcije (inicijalizacije) objekta?
+Zato da se omogući nasljeđivanje, odnosno poziv konstruktora nadrazreda prilikom konstruiranja objekta tipa podrazreda Kad bi svaki konstruktor zauzeo novi blok memorije, tada bi se kod stvaranja objekta zauzelo onoliko blokova koliko ima nadrazreda u hijerarhiji razreda (prvi konstruktor zauzme blok i zove konstruktor nadrazreda, koji opet zauzme novi blok itd.) Kad je zauzimanje memorije odvojeno od konstrukcije, memorija se zauzme samo jednom, a nakon toga se može zvati odgovarajući broj konstruktora (prvo se pozove konstruktor nadrazreda, a zatim konstruktor podrazreda, pri čemu svaki inicijalizira samo "svoje" članske varijable). Na taj način je omogućeno pozivanje konstruktora nadrazreda prilikom stvaranja objekta tipa podrazreda.
+
+
+- Uspostavite vezu s terminologijom iz objektno orijentiranih jezika: koji elementi vašeg rješenja odgovaraju podatkovnim članovima objekta, metodama, virtualnim metodama, konstruktorima te tablicama virtualnih funkcija? Pronađite ih direktno u vašem kodu.
+
+Objekt -> alocirana stuktura Animal
+Metode -> animalPrintGreeting, animalPrintMenu
+Virtualne metode -> catGreet, catMenu, dogGreet, dogMenu
+Konstruktori -> constructCat i constructDog
+Tablice virtualnih funkcija -> CatVFTable, DogVFTable
+
+
+
+---------------------------------------------------------------------------------------ZADATAK 2-------------------------------------------------------------------------------------------
+
+
+
+- Koja je razlika između nasljeđivanja (class Square: public Linear{...}) i sadržavanja (class Square{ Linear l_; ...})?
+Nasljeđivanje u ovom slučaju znači da Square zapravo JEST Linear tj. on je proširenje Lineara, specifično implementira funkcionalnost koju Linear već posjeduje. Razred Square može pristupati svim neprivatnim članovima razreda Linear (varijablama i metodama) ili ih po potrebi specifičnije implementirati (nadjačavati). Kod sadržavanja određeni razred sadrži kao člansku varijablu referencu na neki drugi objekt (u ovom slučaju razred Square će kao člansku varijablu imati jednu referencu na primjerak razreda Linear koji će po potrebi inicijalizirati i koristiti njegovu funkcionalnost). Glavna razlika između ova dva koncepta je u memorijskom zauzeću (kod sadržavanja će jedan razred morati zauzeti dovoljnu memoriju za sadržavanje reference na neki drugi primjerak razreda) i načinu korištenja.
+
+
+- Zašto se pokazivač na objekt tipa Linear može poslati funkciji koja prima Unary_Function*?
+Zato što Linear JEST Unary_Function po tipu pošto je Linear razred dijete roditeljskog razreda Unary_Function.
+
+
+- Koje elemente moraju sadržavati funkcije za inicijalizaciju struktura Square i Linear?
+Memorijski prostor na kojem će se alocirati dovoljno memorije za primjerak određenog razreda, pokazivač na njegovu tablicu virtualnih funkcija te inicijalne vrijednosti članskih varijabli.
+
+
+- Koji problem bismo susreli pri pisanju konstruktora razreda Linear ako bi konstruktor razreda Unary_Function bio zadužen za zauzimanje memorije za svoj objekt?
+Dvostruko zauzimanje memorije (prvo u konstruktoru Unary_Function, a zatim u konstruktoru Linear).
+
+
+- Koliko bajta memorije zahtijevaju primjerci strukture Square?
+Pokazivač na tablicu virtualnih funkcija (4 bajta) te dva integer broja (8 bajtova) = 12 bajtova
+
+
+- Koliko argumenata imaju C-ovske verzije funkcija tabulate odnosno same_functions_for_ints?
+Funkcija tabulate je funkcija koja pripada određenom objektu stoga mora imati kao argument pokazivač na objekt koji ju poziva, a funkcija same_functions_for_ints je funkcija koja pripada razredu pa ne treba nikakve reference na objekt koji ju poziva.
+
+Tabulate -> Unary_Function* kao argument (1 argument)
+same_functions_for_ints -> i dalje 3 argumenta
+
+
+- Objasnite razliku u pozivanju C-ovskih verzija funkcija tabulate, value_at odnosno same_functions_for_ints.
+Tabulate se poziva tako da se kao argument funkcije pošalje objekt nad kojim se ta funkcija poziva.
+
+Value_at metoda se mora dohvatiti preko pokazivača na tablicu virtualnih funkcija i zatim se također šalje kao argument funkcije određeni objekt nad kojim se ona mora pozvati kao i dodatni argumenti koji su potrebni za njezinu implementaciju.
+
+Same_functions_for_ints se poziva kao normalna funkcija u C-u (u C++-u bi se ona trebala pozvati nad cijelim razredom pošto je definirana kao statička).
+
+
+
+---------------------------------------------------------------------------------------ZADATAK 3-------------------------------------------------------------------------------------------
+
+
+
+- Objasnite razliku u rezultatu koji vraća operator sizeof za razrede CoolClass i PlainOldClass.
+Razred CoolClass uz varijablu x koja je po tipu integer, sadrzi i pokazivac na tablicu virtualnih funkcija pošto ima definirane virtualne funkcije unutar svoje strukture dok PlainOldClass nema tj. funkcije tog razreda ne utječu na njegovo memorijsko zauzeće.
+
+
+- Pretpostavite da smo u oba razreda dodali još jedan podatkovni član (int _y) i metode za njegov dohvat i postavljanje; u razredu PlainOldClass to su "normalne" metode a u razredu CoolClass one su virtualne. Što će tada vratiti operator sizeof za oba razreda? Kolika je razlika između vrijednosti koju vraća sizeof za ovu novu izvedbu CoolClass i vrijednosti koju vraća sizeof za originalnu izvedbu CoolClass.
+
+Sizeof za oba razreda će vratiti samo 4 bajta više u svakom razredu zato što smo dodali novu integer varijablu (dodavanje metoda nije imalo nikakvih utjecaja). Razlika je 4 bajta.
+
+
+
+
+---------------------------------------------------------------------------------------ZADATAK 4-------------------------------------------------------------------------------------------
+
+
+
+- Pregledajte asemblerski kod koji nastaje prevođenjem zadanog programa. Iako razredi PlainOldClass i CoolClass nemaju definirane konstruktore, u asemblerskom kodu ćete pronaći da postoji konstruktor. Koji od ovih razreda ima napisani konstruktor i što taj konstruktor radi?
+CoolClass će u ovom primjeru imati konstruktor, a on će ključnom riječi new zauzeti potrebnu memoriju i inicijalizirati varijable na defaultne vrijednosti (pošto je varijabla tipa integer, on nema defaultnu vrijednost pa će nešto varijabla biti inicijalizirana na neku random vrijednost).
+
+
+- Pronađite gdje se u asemblerskom kodu u memoriju objekta upisuje referenca na pripadnu tablicu virtualnih funkcija? Na kojoj se memorijskoj lokaciji (u odnosu na početnu memorijsku lokaciju zauzetu za primjerak razreda) nalazi referenca na tablicu virtualnih funkcija? 
+Naredbom "mov DWORD PTR [eax], OFFSET FLAT:_vtable for Base 8" se upisuje referenca na pripadnu tablicu vf. Ta referenca se nalazi odmah na prvom mjestu memorijske lokacije zauzete za primjerak razreda.⁠⁠⁠⁠
+
+
+- Prilikom stvaranja jednog primjerka razreda CoolClass koliko se puta, kada i kojim redoslijedom mijenja referenca na tablicu virtualnih funkcija?
+Referenca na tablicu virtualnih funkcija prvi puta se dobije u najvišem razredu u hijerarhiji. Nakon toga, ona se mijenja onoliko puta koliko ima nadrazreda razredu čiji smo objekt instancirali. U ovom primjeru, kod instanciranja razreda CoolClass pokazivač prvo pokazuje na tablicuvf razreda Base, dok se ne inicijaliziraju sve njegove varijable, te nakon toga pokazivač se mijenja na tablicuvf razreda CoolClass. Zato nije sigurno pozivati virtualne funkcije iz konstruktora.
+
+
+- Na Intelovim procesorima, za pohranu podataka na stog koristi se asemblerska naredba push. Koji registar čuva pokazivač na vrh stoga i kako se vrijednost tog pokazivača mijenja tijekom izvođenja naredbe push (drugim riječima, u kojem smjeru raste stog)?
+Registar esp čuva pokazivač na vrh stoga, stog raste u padajućem smjeru što znači da se smanjuje njegova vrijednost kada se izvodi naredba push.
+
+
+- Prilikom poziva funkcije, parametri se prenose putem stoga. Što se točno i kojim redoslijedom postavlja na stog prilikom poziva funkcije set nad primjerkom razreda CoolClass? Jednom kad je funkcija pozvana (dakle kad se nalazimo u implementaciji te funkcije) na kojem mjestu na stogu se nalazi parametar x i zašto?
+Prvo se rezervira mjesto na stogu za konstantu koju će se staviti na stog prilikom poziva funkcije set (argument funkcije). Zatim se iz memorije dohvaća pokazivač na tablicu virutalnih funkcija i dereferencira se kako bi se dohvatila funkcija koju trebamo. Zatim se na stog stavlja konstanta 42 i poziva se funkcija čija se adresa nalazila u jednom od registara.
+Parametar x se nalazi 8 bajtova iznad pokazivača na stog, znači [esp+8] jer je na [esp+4] povratna adresa od maina, a trenutni pokazivač stoga pokazuje na funkciju set.
+
+
+- Objasnite pozivanje koje vrste funkcija troši manje instrukcija i zašto?
+Pozivanje nevirtualnih funkcija troši manje instrukcija jer se one direktno pozivaju s neke memorijske lokacije i nije potrebno dohvaćati i dereferencirati pokazivač na tablicu virtualnih funkcija.
+
+
+- Za koju od tih dviju vrsta metoda optimizirajući prevoditelj može napraviti umetanje koda (tj. inlining)?
+Za normalne metode.
+
+
+
+---------------------------------------------------------------------------------------ZADATAK 6-------------------------------------------------------------------------------------------
+
+(Očito ne postoje pitanja za 5. zadatak)
+
+- Što očekujete da će se ispisati kao rezultat izvođenja ovog programa?
+Očekujem gluposti...i dosadu!
+
+- Objasnite dobiveni ispis! Objašnjenje potkrijepite dijelovima asemblerskog koda iz kojeg je stvarno vidljivo da se događa to što tvrdite da se događa.
+Pri kreiranju objekta tipa Derived se poziva se konstruktor nadrazreda tj. razreda Base koji u svom konstruktoru poziva metodu metoda() koja zatim poziva metodu virtualnaMetoda() nad trenutnim objektom (a on je tipa Base, pa se izvede ispis da smo trenutno u baznoj implementaciji). Zatim se poziva konstruktor razreda Derived koji ponavlja gornje opisani postupak i pošto smo sad u razredu Derived, ispisuje se da smo u izvedenoj implementaciji. Na kraju se ponovno zove metoda metoda() u main programu preko objekta koji je tipa Derived i on naravno poziva virtualnu metodu koju sadrži te se opet nalazimo u izvedenoj implementaciji.
+
+
+Za strpljive...
+
+- Kako se u Javi definira da su funkcije virtualne odnosno da ih se može polimorfno nadjačavati (engl. override)?
+U Javi su sve funkcije virtualne.
+
+- Na koji se način u Javi definiraju čiste virtualne funkcije ("ono" što u C++-u završava s =0)?
+Ključnom riječi abstract.
+
+- Koje ograničenje u Javi postoji na rad s odnosno uporabu razreda koji su apstraktni?
+Ne možemo instancirati takve objekte.
+
+- Kako se to radi u Pythonu?
+Python masters unite! (neće pitat na labosu)
+
+- Koja je osnovna razlika prilikom pisanja koda koji pristupa podatkovnim članovima ili članskim funkcijama razreda iz članskih funkcija razreda u programskim jezicima Java i Python?
+Python masters unite! (neće pitat na labosu)

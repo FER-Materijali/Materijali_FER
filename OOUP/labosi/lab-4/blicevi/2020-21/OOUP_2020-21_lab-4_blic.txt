@@ -1,0 +1,64 @@
+Oblikovni obrasci u programiranju - Četvrti labos - pitalice 
+
+1. Koliko kontrolnih točaka koristimo za izmjenu ovalnog oblika?
+	a) 4
+	b) 5
+	c) 2
+	d) 1
+	
+2. Objekte koje program može iscrtati modeliramo:
+	a) s tri sučelja
+	b) jednim sučeljem i jednim konkretnim razredom
+	c) s tri konkretna razreda
+	d) jednim sučeljem i s dva razreda
+	
+3. Koji oblikovni obrazac omogućava izradu alatne trake za unos novih elemenata crteža (oblika) 
+   koja ne ovisi o podržanim geometrijskim oblicima?
+	a) posjetitelj
+	b) iterator
+	c) prototip
+	d) stanje
+
+4. Kontrolne točke (hot-point) prvenstveno služe za:
+	a) dodavanje objekta
+	b) brisanje objekta
+	c) pomicanje objekta
+	d) izmjenu oblika objekta
+
+5. Koja od metoda sučelja GeometricalObject pripada oblikovnom obrascu Prototip?
+	a) niti jedna
+	b) render(Renderer r)
+	c) translate(...)
+	d) duplicate()
+	
+6. Koji oblikovni obrazac omogućava ažuran prikaz podatkovnog modela crteža?
+	a) stanje
+	b) iterator
+	c) prototip
+	d) promatrač
+	
+7. Koja se podatkovna struktura koristi prilikom učitavanja objekata crteža iz nativnog formata?
+	a) tablica raspršenog adresiranja
+	b) red
+	c) stablo
+	d) stog
+	
+8. Koji oblikovni obrazac je prikladan za transparentno iscrtavanje crteža i eksportiranje u različite slikovne formate?
+	a) promatrač
+	b) kompozit
+	c) tvornica
+	d) most
+	
+9. Koji oblikovni obrazac omogućava dodavanje novih alata bez izmjena u komponenti koja obrađuje korisnički unos?
+	a) stanje
+	b) kompozit
+	c) most
+	d) iterator
+	
+10. Vektorski crtež možemo bez gubitka informacije...
+	a) samo umanjiti i translatirati
+	b) samo umanjiti
+	c) samo povećati
+	d) i umanjiti i povećati i translatirati
+	
+Rješenja: 1.c) 2.d) 3.c) 4.d) 5.d) 6.d) 7.d) 8.d) 9.a) 10.d)

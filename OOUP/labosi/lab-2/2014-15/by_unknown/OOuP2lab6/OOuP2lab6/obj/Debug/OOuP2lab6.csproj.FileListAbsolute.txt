@@ -1,0 +1,5 @@
+c:\users\ante\documents\visual studio 2013\Projects\OOuP2lab6\OOuP2lab6\obj\Debug\OOuP2lab6.csprojResolveAssemblyReference.cache
+c:\users\ante\documents\visual studio 2013\Projects\OOuP2lab6\OOuP2lab6\bin\Debug\OOuP2lab6.exe
+c:\users\ante\documents\visual studio 2013\Projects\OOuP2lab6\OOuP2lab6\bin\Debug\OOuP2lab6.pdb
+c:\users\ante\documents\visual studio 2013\Projects\OOuP2lab6\OOuP2lab6\obj\Debug\OOuP2lab6.exe
+c:\users\ante\documents\visual studio 2013\Projects\OOuP2lab6\OOuP2lab6\obj\Debug\OOuP2lab6.pdb

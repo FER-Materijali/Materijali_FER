@@ -1,0 +1,15 @@
+Projekt sa kodovima za prva tri zadatka se nalazi u OOUP_3.labos
+Dovoljno je samo importati projekt u eclipse.
+
+Kodovi bi trebali biti ok, na labosu mi nisu ništa prigovarali.
+
+zadatak3dodatak je dodatak 3. zadatku, nije obavezan za labos
+više u postu:
+http://www.fer2.net/showpost.php?p=1476327
+
+
+za pregled dijagrama morate imati instaliran plugin u eclipseu
+http://www.objectaid.com/
+
+upute za instalaciju:
+http://www.objectaid.com/installation

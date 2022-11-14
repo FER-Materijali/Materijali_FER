@@ -1,0 +1,5 @@
+c:\users\ante\documents\visual studio 2013\Projects\OOuP2lab4\OOuP2lab4\bin\Debug\OOuP2lab4.exe
+c:\users\ante\documents\visual studio 2013\Projects\OOuP2lab4\OOuP2lab4\bin\Debug\OOuP2lab4.pdb
+c:\users\ante\documents\visual studio 2013\Projects\OOuP2lab4\OOuP2lab4\obj\Debug\OOuP2lab4.exe
+c:\users\ante\documents\visual studio 2013\Projects\OOuP2lab4\OOuP2lab4\obj\Debug\OOuP2lab4.pdb
+C:\Users\Ante\documents\visual studio 2013\Projects\OOuP2lab4\OOuP2lab4\obj\Debug\OOuP2lab4.csprojResolveAssemblyReference.cache
