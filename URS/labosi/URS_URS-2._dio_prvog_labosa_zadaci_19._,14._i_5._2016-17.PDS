@@ -1,0 +1,196 @@
+;PALASM Design Description
+
+;---------------------------------- Declaration Segment ------------
+TITLE    ALU 5_14_19
+PATTERN  ZAD
+REVISION 1.0
+AUTHOR   Filip Tomas
+COMPANY  FER
+DATE     11/03/16
+
+CHIP  ZAD  PAL22V10
+
+;---------------------------------- PIN Declarations ---------------
+PIN  2..4      XIN[2..0]                                  COMBINATORIAL                                  
+PIN  1          CLK                                        COMBINATORIAL
+PIN  5..6        S[1..0]                                    COMBINATORIAL
+PIN  24         VCC
+PIN  12         GND
+PIN  20,19,17   A[2..0]                                    REGISTERED
+PIN  14,15,16   X[2..0]                                    REGISTERED
+PIN  21         FIN                                        REGISTERED
+PIN  18         FOUT		     			   REGISTERED
+PIN  9          FIN_INPUT			           COMBINATORIAL
+PIN  23         COUT2                                      COMBINATORIAL
+PIN  22		COUT1					COMBINATORIAL
+           
+
+
+
+
+;----------------------------------- Boolean Equation Segment ------
+EQUATIONS
+X[2..0]=XIN[2..0]
+FIN=FIN_INPUT
+CASE (S[1..0])
+	BEGIN
+		#b00: BEGIN
+			A[2]:=X[2]
+			A[1]:=X[1]
+			A[0]:=X[0]
+			FOUT:=FOUT
+		END
+
+		#b01: BEGIN
+			FOUT=FOUT
+			A[2..0]=(A[2..0]:+:X[2..0])
+				
+		END
+		#b10: BEGIN
+			CASE(A[2..0])
+			BEGIN
+			#b000: BEGIN
+				A[2..0]:=#b000
+				FOUT:=FOUT
+			END
+			#b001: BEGIN
+				A[2..0]:=#b111
+				FOUT:=FOUT
+			END
+			#b010: BEGIN 
+				A[2..0]:=#b110
+				FOUT:=FOUT
+			END
+			#b011: BEGIN
+				A[2..0]:=#b101
+				FOUT:=FOUT
+			END
+			#b100: BEGIN
+				A[2..0]:=#b100
+				FOUT:=FOUT
+			END
+			#b101: BEGIN
+				A[2..0]:=#b011
+				FOUT:=FOUT
+			END
+			#b110: BEGIN
+				A[2..0]:=#b010
+				FOUT:=FOUT
+			END
+			#b111: BEGIN
+				A[2..0]:=#b001
+				FOUT:=FOUT
+			END
+		END
+		END
+		#b11: 
+			BEGIN
+			A[0]:=	A[0]*/X[0]*/FIN+
+				/A[0]*X[0]*/FIN+
+				/A[0]*/X[0]*FIN+											A[0]*X[0]*FIN
+			COUT1:=	/A[0]*X[0]+
+				X[0]*FIN+
+				/A[0]*FIN
+			A[1]:=	A[1]*/X[1]*/COUT1+
+				/A[1]*X[1]*/COUT1+
+				/A[1]*/X[1]*COUT1+											A[1]*X[1]*COUT1
+			COUT2=	/A[1]*X[1]+
+				X[1]*COUT1+
+				/A[1]*COUT1
+			A[2]:=	A[2]*/X[2]*/COUT2+
+				/A[2]*X[2]*/COUT2+
+				/A[2]*/X[2]*COUT2+											A[2]*X[2]*COUT2
+			FOUT:= 	/A[2]*X[2]+
+				X[2]*COUT2+
+				/A[2]*COUT2
+			END
+END
+
+;----------------------------------- Simulation Segment ------------
+SIMULATION
+
+TRACE_ON CLK XIN[2..0] S[1..0] X[2..0] A[2..0] FOUT FIN FIN_INPUT
+
+; provjera prosljedjivanja XIN
+SETF /CLK
+SETF XIN[2] XIN[1] /XIN[0] FIN_INPUT
+SETF CLK
+CHECK X[2] X[1] /X[0] FIN
+
+; provjera prve 
+SETF /CLK
+SETF /S[1] /S[0]
+SETF CLK
+CHECK A[2] A[1] /A[0]
+
+SETF /CLK /XIN[2] /XIN[1] /XIN[0] 
+SETF CLK
+SETF /CLK	
+SETF CLK
+;provjera drugog
+
+SETF /CLK /S[1] S[0] /XIN[2] XIN[1] /XIN[0]		;A 000, X000
+SETF CLK		;A XOR 0X, X postaje 010
+SETF /CLK XIN[2] XIN[1] /XIN[0];A 000, X010, XIN 110
+SETF CLK ;A XOR XV1, X110
+CHECK /A[2] A[1] /A[0]
+SETF /CLK XIN[2] /XIN[1] /XIN[0];A010, X110
+SETF CLK 
+CHECK A[2] /A[1] /A[0]
+SETF /CLK /XIN[2] /XIN[1] /XIN[0] ; A100, X100
+SETF CLK; A000, X000
+CHECK /A[2] /A[1] /A[0]
+CHECK /X[2] /X[1] /X[0]
+;provjera treceg
+
+SETF /CLK  /S[1] /S[0] XIN[2] XIN[1] /XIN[0]
+SETF CLK ;A000 X 110
+CHECK /A[2] /A[1] /A[0]
+SETF /CLK 
+SETF CLK ;A=110
+SETF /CLK  S[1] /S[0] 
+SETF CLK
+CHECK /A[2] A[1] /A[0]
+SETF /CLK
+SETF CLK
+CHECK A[2] A[1] /A[0]
+
+;provjera èetvrtog
+
+SETF /CLK /S[1] /S[0] /XIN[2] /XIN[1] /XIN[0] /FIN_INPUT;
+SETF CLK;
+SETF /CLK;
+SETF CLK; reset a000, x000, fin000
+					;BEZ POSUDBE
+SETF /CLK XIN[2] /XIN[1] /XIN[0]
+SETF CLK;X100, A000
+SETF /CLK 
+SETF CLK;A100,X100
+SETF /CLK S[1] S[0]
+SETF CLK
+CHECK /A[2] /A[1] /A[0]
+CHECK /FOUT
+
+SETF /CLK /S[1] /S[0] /XIN[2] /XIN[1] /XIN[0] /FIN_INPUT;
+SETF CLK;
+SETF /CLK;
+SETF CLK; reset a000, x000, fin000
+				;S POSUDBOM
+SETF /CLK XIN[2] /XIN[1] /XIN[0] FIN_INPUT
+SETF CLK;X100, A000, FIN1
+SETF /CLK 
+SETF CLK;A100,X100
+SETF /CLK S[1] S[0]
+SETF CLK
+CHECK A[2] A[1] A[0]
+CHECK FOUT
+
+
+
+
+
+
+
+TRACE_OFF
+
+;-------------------------------------------------------------------

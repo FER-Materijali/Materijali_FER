@@ -1,0 +1,139 @@
+;PALASM Design Description 
+ 
+;---------------------------------- Declaration Segment ------------ 
+TITLE    Sedamsegmentni dekoder kombinaciona varijanta II (vektorski) 
+PATTERN  DEC7SEG 
+REVISION 1.0 
+AUTHOR   Davorka 
+COMPANY  FER/ZESOI 
+DATE     10/17/98 
+ 
+CHIP  DEC7SEG  PALCE16V8 
+ 
+;---------------------------------- PIN Declarations --------------- 
+PIN  2,3,4,5    D[3..0]                          COMBINATORIAL ; INPUT 
+PIN  17,16,14..12,18,19,15      S[7..0]          COMBINATORIAL ; OUTPUT 
+PIN   9         /TST                             COMBINATORIAL ; INPUT 
+PIN  10         GND                                            ; 
+PIN  20         VCC                                            ;        
+ 
+STRING        SVI       ' S[7]  S[6]  S[5]  S[4]  S[3]  S[2]  S[1]  S[0]' 
+STRING        NULA      ' S[7]  S[6]  S[5]  S[4]  S[3]  S[2] /S[1] /S[0]' 
+STRING        JEDAN     '/S[7]  S[6]  S[5] /S[4] /S[3] /S[2] /S[1] /S[0]' 
+STRING        DVA       ' S[7]  S[6] /S[5]  S[4]  S[3] /S[2]  S[1] /S[0]' 
+STRING        TRI       ' S[7]  S[6]  S[5]  S[4] /S[3] /S[2]  S[1] /S[0]' 
+STRING        CETIRI    '/S[7]  S[6]  S[5] /S[4] /S[3]  S[2]  S[1] /S[0]' 
+STRING        PET       ' S[7] /S[6]  S[5]  S[4] /S[3]  S[2]  S[1] /S[0]' 
+STRING        SEST      ' S[7] /S[6]  S[5]  S[4]  S[3]  S[2]  S[1] /S[0]' 
+STRING        SEDAM     ' S[7]  S[6]  S[5] /S[4] /S[3] /S[2] /S[1] /S[0]' 
+STRING        OSAM      ' S[7]  S[6]  S[5]  S[4]  S[3]  S[2]  S[1] /S[0]' 
+STRING        DEVET     ' S[7]  S[6]  S[5]  S[4] /S[3]  S[2]  S[1] /S[0]' 
+STRING        HEXAA     ' S[7]  S[6]  S[5] /S[4]  S[3]  S[2]  S[1] /S[0]' 
+STRING        HEXAB     '/S[7] /S[6]  S[5]  S[4]  S[3]  S[2]  S[1] /S[0]' 
+STRING        HEXAC     ' S[7] /S[6] /S[5]  S[4]  S[3]  S[2] /S[1] /S[0]' 
+STRING        HEXAD     '/S[7]  S[6]  S[5]  S[4]  S[3] /S[2]  S[1] /S[0]' 
+STRING        HEXAE     ' S[7] /S[6] /S[5]  S[4]  S[3]  S[2]  S[1] /S[0]' 
+STRING        HEXAF     ' S[7] /S[6] /S[5] /S[4]  S[3]  S[2]  S[1] /S[0]' 
+                                                                       
+;----------------------------------- Boolean Equation Segment ------ 
+EQUATIONS 
+ 
+IF (TST) THEN 
+   BEGIN 
+        S[7..0] = #B11111111  
+   END 
+ELSE 
+   BEGIN 
+        CASE (D[3..0]) 
+        BEGIN 
+             #b0000: BEGIN 
+                     S[7..0]=#B11111100 
+                     END 
+             #b0001: BEGIN 
+                     S[7..0]=#B01100000 
+                     END 
+             #b0010: BEGIN 
+                     S[7..0]=#B11011010 
+                     END 
+             #b0011: BEGIN 
+                     S[7..0]=#B11110010 
+                     END 
+             #b0100: BEGIN 
+                     S[7..0]=#B01100110 
+                     END 
+             #b0101: BEGIN 
+                     S[7..0]=#B10110110 
+                     END 
+             #b0110: BEGIN 
+                     S[7..0]=#B10111110 
+                     END 
+             #b0111: BEGIN 
+                     S[7..0]=#B11100000 
+                     END 
+             #b1000: BEGIN 
+                     S[7..0]=#B11111110 
+                     END 
+             #b1001: BEGIN 
+                     S[7..0]=#B11110110 
+                     END 
+             #b1010: BEGIN 
+                     S[7..0]=#B11101110 
+                     END 
+             #b1011: BEGIN 
+                     S[7..0]=#B00111110 
+                     END 
+             #b1100: BEGIN 
+                     S[7..0]=#B10011100 
+                     END 
+             #b1101: BEGIN 
+                     S[7..0]=#B01111010 
+                     END 
+             #b1110: BEGIN 
+                     S[7..0]=#B10011110 
+                     END 
+             #b1111: BEGIN 
+                     S[7..0]=#B10001110 
+                     END 
+        END 
+END 
+;----------------------------------- Simulation Segment ------------ 
+SIMULATION 
+TRACE_ON /TST D[3..0] S[7..0] 
+SETF /D[3] /D[2] D[1] D[0] TST 
+CHECK SVI 
+SETF /D[3] /D[2] /D[1] /D[0] /TST 
+CHECK NULA  
+SETF /D[3] /D[2] /D[1] D[0] /TST 
+CHECK JEDAN 
+SETF /D[3] /D[2]  D[1] /D[0] /TST 
+CHECK DVA   
+SETF /D[3] /D[2]  D[1] D[0] /TST 
+CHECK TRI   
+SETF /D[3]  D[2] /D[1] /D[0] /TST 
+CHECK CETIRI 
+SETF /D[3]  D[2] /D[1] D[0] /TST 
+CHECK PET   
+SETF /D[3]  D[2]  D[1] /D[0] /TST 
+CHECK SEST   
+SETF /D[3]  D[2]  D[1] D[0] /TST 
+CHECK SEDAM 
+SETF  D[3] /D[2] /D[1] /D[0] /TST 
+CHECK OSAM  
+SETF  D[3] /D[2] /D[1] D[0] /TST 
+CHECK DEVET 
+SETF  D[3] /D[2]  D[1] /D[0] /TST 
+CHECK HEXAA 
+SETF  D[3] /D[2]  D[1] D[0] /TST 
+CHECK HEXAB 
+SETF  D[3]  D[2] /D[1] /D[0] /TST 
+CHECK HEXAC 
+SETF  D[3] D[2] / D[1] D[0] /TST 
+CHECK HEXAD 
+SETF  D[3]  D[2]  D[1] /D[0] /TST 
+CHECK HEXAE 
+SETF  D[3]  D[2]  D[1] D[0] /TST 
+CHECK HEXAF 
+TRACE_OFF 
+ 
+;------------------------------------------------------------------- 
+                   

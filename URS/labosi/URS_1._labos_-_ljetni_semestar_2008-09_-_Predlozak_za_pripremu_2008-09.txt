@@ -1,0 +1,74 @@
+;PALASM Design Description
+
+;---------------------------------- Declaration Segment ------------
+TITLE    URS - Prvi labos
+PATTERN  <tu sam ja ukuco broj zadataka koje sam imo>
+REVISION <verzija rada>
+AUTHOR   <ime prezime>
+COMPANY  FER
+DATE     <datum :D>
+
+CHIP  _Lab1  PALCE16V8
+
+;---------------------------------- PIN Declarations ---------------
+PIN  1          CLK                                   COMBINATORIAL ; INPUT      
+PIN  2..4       X_in[2..0]                            COMBINATORIAL ; INPUT      
+PIN  5,6        S[1,0]                                COMBINATORIAL ; INPUT      
+PIN  9          Fin_input                             COMBINATORIAL ; INPUT      
+PIN  18..16     X[2..0]                               REGISTERED ; OUTPUT      
+PIN  12..14     A[2..0]                               REGISTERED ; OUTPUT      
+PIN  19         Fin                                   REGISTERED ; OUTPUT      
+PIN  15         Fout                                  REGISTERED ; OUTPUT
+PIN  11         /OE                                   COMBINATORIAL ; ENABLE       
+PIN  10         GND                                              ;       
+PIN  20         VCC                                              ;       
+
+;----------------------------------- Boolean Equation Segment ------
+EQUATIONS
+X[2..0] := X_in[2..0] ; ucitaj sa ulaznih pinova trobitnu vrijednost za X i spremi u registre
+Fin := Fin_input ; ucitaj sa ulaznog pina Fin_input u spremi u registar Fin
+
+CASE (S[1..0]) ; ovo je elegantan nacin da odaberete koju operaciju vrsite
+	BEGIN
+		#b00: BEGIN ; ako je preko S[1,0] poslan signal 00 izvedi slijedece
+			A[2..0] := X[2..0] ; svima je ista prva operacija, znaci vrijednost se prebacuje iz registara X[2..0] u registre A[2..0]
+			END
+		
+		#b01: BEGIN ; ako je preko S[1,0] poslan signal 01 izvedi slijedece
+; ovdje ide kod vase prve funckije
+		END
+		
+		#b10: BEGIN ; ako je preko S[1,0] poslan signal 10 izvedi slijedece
+; ovdje ide kod vase druge funckije
+		END
+		
+		#b11: BEGIN ; ako je preko S[1,0] poslan signal 01 izvedi slijedece
+; ovdje ide kod vase trece funckije
+		END
+	END
+
+;----------------------------------- Simulation Segment ------------
+SIMULATION ; kljucna rijec
+TRACE_ON /OE CLK X_in[2..0] S[1,0] Fin_input X[2..0] A[2..0] Fin Fout ; ovdje upisujete koje signale prati simulacija, tj. koji vas zanimaju 
+SETF /OE ; postavljamo output enable u nule (aktivan je u nuli)
+
+;--------------------- A = X -----------------------
+ SETF /X_in[2] X_in[1] X_in[0] /S[1] /S[0] ; postavi X_in[2] = 0, X_in[1] = 1, X_in[0] = 1, S[1] = 0, S[0] = 0 znaci ako hocemo postavit neki signal na 1 onda napisemo njegovo ime, ako zelimo na nulu onda stavimo ispred imena "/"
+ CLOCKF ; odvrti jedan cijeli ciklus clocka
+ CLOCKF ; odvrti jos jedan
+ CHECK /X[2] X[1] X[0] /A[2] A[1] A[0] ; provjeri jesu li vrijednosti one kakve nam trebaju. Tj. provjeri jer je dobro ocito unos 011 sa ulaznog Xa, stavio to u X registre i onda isto prekopiro u A registre
+
+; ovdje trebate napisati jos tri primjera za testiranje
+
+;------------------ <druga funkcija> --------------------
+; ovdje idu 4 primjera testiranja druge funkcije
+
+;------------------- <treca funkcija> ----------------------
+; ovdje idu 4 primjera testiranja trece funkcije
+
+
+;--------------------- <cetvrta funkcija> -----------------------
+; ovdje idu 4 primjera testiranja druge funkcije
+ 
+TRACE_OFF ; kraj pracenja simulacije
+;-------------------------------------------------------------------

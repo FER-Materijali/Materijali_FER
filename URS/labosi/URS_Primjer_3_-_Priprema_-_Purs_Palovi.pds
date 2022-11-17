@@ -1,0 +1,109 @@
+;PALASM Design Description 
+ 
+;---------------------------------- Declaration Segment ------------ 
+TITLE    3-bitno binarno brojilo sa UP/DOWN linijom 
+PATTERN  BIN3CNT2 
+REVISION 1.0 
+AUTHOR   Davorka Petrinovic 
+COMPANY  FER/ZESOI 
+DATE     10/26/98 
+ 
+CHIP  BIN3CNT2  PALCE16V8 
+ 
+;---------------------------------- PIN Declarations --------------- 
+PIN  1          CLK                          COMBINATORIAL ; INPUT  
+PIN  2          CE                           COMBINATORIAL ; INPUT 
+PIN  3          UD                           COMBINATORIAL ; INPUT 
+PIN  9          /RES                         COMBINATORIAL ; INPUT 
+PIN  10         GND                                        ;        
+PIN  20         VCC                                        ;        
+PIN  17         B2                           REGISTERED ; OUTPUT 
+PIN  19         B1                           REGISTERED ; OUTPUT 
+PIN  13         B0                           REGISTERED ; OUTPUT 
+PIN  12         E                            COMBINATORIAL ; OUTPUT 
+PIN  14         C                            COMBINATORIAL ; OUTPUT 
+PIN  15         DP                           COMBINATORIAL ; OUTPUT 
+PIN  16         B                            COMBINATORIAL ; OUTPUT 
+PIN  18         F                            COMBINATORIAL ; OUTPUT 
+PIN  11         /OE                          COMBINATORIAL ; ENABLE 
+ 
+;----------------------------------- Boolean Equation Segment ------ 
+EQUATIONS 
+ 
+; slijedeci izlazi postavljaju se u nulu da ne bi nakon dovoðenja  
+; napajanja bili upaljeni 
+E  = GND 
+C  = GND 
+DP = GND 
+B  = GND 
+F  = GND 
+ 
+; aktivni izlazi brojila 
+ 
+B0 = /RES * (  CE * /B0 + 
+              /CE *  B0 ) + 
+      RES * GND 
+ 
+ 
+B1 = /RES * (  UD * CE * ( /B2 * /B1 *  B0 + 
+                           /B2 *  B1 * /B0 + 
+                            B2 * /B1 *  B0 + 
+                            B2 *  B1 * /B0 ) + 
+              /UD * CE * ( /B2 * /B1 * /B0 + 
+                           /B2 *  B1 *  B0 + 
+                            B2 * /B1 * /B0 + 
+                            B2 *  B1 *  B0 ) + 
+              /CE * B1 ) + 
+      RES * GND 
+B2 = /RES * (  UD * CE * ( /B2 *  B1 *  B0 + 
+                            B2 * /B1 * /B0 + 
+                            B2 * /B1 *  B0 + 
+                            B2 *  B1 * /B0 ) + 
+              /UD * CE * ( /B2 * /B1 * /B0 + 
+                            B2 * /B1 *  B0 + 
+                            B2 *  B1 * /B0 + 
+                            B2 *  B1 *  B0 ) + 
+              /CE * B2 ) + 
+      RES * GND 
+ 
+;----------------------------------- Simulation Segment ------------ 
+SIMULATION 
+ 
+TRACE_ON /OE CLK /RES CE UD B2 B1 B0 
+SETF /CLK OE 
+SETF RES  
+SETF CLK 
+SETF /CLK 
+SETF /RES CE UD 
+FOR I := 1 TO 10 DO 
+  BEGIN 
+        SETF CLK 
+        SETF /CLK 
+  END 
+CHECK  /B2 B1 /B0 
+SETF /CE 
+FOR I := 1 TO 3 DO 
+  BEGIN 
+        SETF CLK 
+        SETF /CLK 
+  END 
+CHECK  /B2 B1 /B0 
+SETF CE 
+FOR I := 1 TO 3 DO 
+  BEGIN 
+        SETF CLK 
+        SETF /CLK 
+  END  
+CHECK   B2 /B1 B0 
+SETF /UD 
+FOR I := 1 TO 6 DO 
+  BEGIN 
+        SETF CLK 
+        SETF /CLK 
+  END 
+CHECK   B2 B1 B0 
+TRACE_OFF 
+ 
+;------------------------------------------------------------------- 
+ 
+       

@@ -1,0 +1,233 @@
+;PALASM Design Description
+
+;---------------------------------- Declaration Segment ------------
+TITLE    ALU 9 16 24
+PATTERN  
+REVISION 
+AUTHOR   Dumont
+COMPANY
+DATE     11/05/15
+
+CHIP  ALU  PAL22V10
+
+;---------------------------------- PIN Declarations ---------------
+PIN  2..4       XIN[2..0]                             COMBINATORIAL ; INPUT 
+PIN  1          CLK                                   COMBINATORIAL ; INPUT 
+PIN  24         VCC                                                 ; 
+PIN  12         GND                                                 ;  
+PIN  5..6       S[1..0]                               COMBINATORIAL ; INPUT 
+PIN  18..16     X[2..0]                               REGISTERED    ; OUTPUT
+PIN  20..22     A[2..0]                               REGISTERED    ; OUTPUT
+PIN  19         FOUT                                  REGISTERED    ; OUTPUT
+PIN  15         FIN                                   REGISTERED    ; OUTPUT
+PIN  14         COUT1                                 COMBINATORIAL ; OUTPUT
+PIN  9          FIN_INPUT                             COMBINATORIAL ; OUTPUT
+STRING COUT0 '(A[0]*X[0])'
+;----------------------------------- Boolean Equation Segment ------
+EQUATIONS
+X[2..0]=XIN[2..0]                                       
+FIN=FIN_INPUT
+CASE(S[1..0])
+        BEGIN
+    #b00:BEGIN                  ;A=X
+         A[2..0]=X[2..0]
+         FOUT=FOUT
+        END
+    #b01:
+       BEGIN                  ;A=LSHR(A)
+        FOUT=A[0]
+        A[0]=A[1]
+        A[1]=A[2]
+        A[2]=0
+       END
+        #b10: BEGIN            ; A=A+X
+              A[0] := /A[0] *  X[0] +
+                       A[0] * /X[0]        
+              A[1] := /A[1] * /X[1] * COUT0 +
+                      /A[1] *  X[1] * /COUT0 +
+                       A[1] * /X[1] * /COUT0 +
+                       A[1] *  X[1] * COUT0
+
+              COUT1 =  A[1] * COUT0 +
+                       A[1] * X[1] * /COUT0 +
+                      /A[1] * X[1] * COUT0
+
+
+
+
+              A[2] := /A[2] * /X[2] * COUT1 +
+                      /A[2] *  X[2] * /COUT1 +
+                       A[2] * /X[2] * /COUT1 +
+                       A[2] *  X[2] * COUT1
+              FOUT :=  A[2] * COUT1 +
+                       A[2] * X[2] * /COUT1 +
+                      /A[2] * X[2] * COUT1
+              END
+    #b11:                    ;A>X?
+       BEGIN
+       X[2..0]:=XIN[2..0]
+       FOUT =  /A[2] *  X[2] +
+               /A[2] * /X[2] * A[1] * /X[1]+
+               /A[2] *  A[1] * A[0] *  X[1] * /X[0]+
+               /A[2] * /A[1] * A[0] * /X[2] * /X[1]* /X[0]+
+                A[2] *  A[1] * X[2] * /X[1]+
+                A[2] *  A[1] * A[0] *  X[2] *  X[1] * /X[0]+
+                A[2] * /A[1] * A[0] *  X[2] * /X[1] * /X[0]
+
+
+       
+
+       END
+END
+;----------------------------------- Simulation Segment ------------
+SIMULATION
+TRACE_ON CLK S[1..0] XIN[2..0] X[2..0] A[2..0] FIN_INPUT FIN FOUT
+
+SETF /CLK
+SETF /XIN[2] XIN[1] /XIN[0] FIN_INPUT
+SETF CLK
+CHECK /X[2] X[1] /X[0] FIN
+
+;PRVA FUNKCIJA A=X
+
+;TEST 1
+SETF /CLK
+SETF /S[1] /S[0]
+SETF CLK
+CHECK /A[2] A[1] /A[0]
+
+;TEST 2
+SETF /CLK
+SETF XIN[2] XIN[1] /XIN[0]
+SETF CLK
+SETF /CLK
+SETF CLK
+CHECK A[2] A[1] /A[0]
+
+;TEST 3
+SETF /CLK
+SETF /XIN[2] XIN[1] XIN[0]
+SETF CLK
+SETF /CLK
+SETF CLK
+CHECK /A[2] A[1] A[0]
+
+;TEST 4
+SETF /CLK
+SETF XIN[2] XIN[1] XIN[0]
+SETF CLK
+SETF /CLK
+SETF CLK
+CHECK A[2] A[1] A[0]
+
+;DRUGA FUNKCIJA A=LSHR(A)
+
+;TEST 1
+SETF /S[1] S[0]
+SETF /CLK
+SETF CLK
+CHECK /A[2] A[1] A[0] FOUT                                           
+
+;TEST 2
+SETF /CLK
+SETF CLK
+CHECK /A[2] /A[1] A[0] FOUT
+
+;TEST 3
+SETF /CLK
+SETF CLK
+CHECK /A[2] /A[1] /A[0] FOUT
+
+;TEST 4
+SETF /CLK
+SETF CLK 
+CHECK /A[2] /A[1] /A[0] /FOUT
+
+;TRECA FUNKCIJA
+
+;TEST 1   0+1=1
+SETF /CLK
+SETF /S[1] /S[0]  /XIN[2] /XIN[1] /XIN[0]
+SETF CLK
+SETF /CLK
+SETF CLK
+CHECK /A[2] /A[1] /A[0]      ;0
+
+SETF /XIN[2] /XIN[1] XIN[0]  ;1
+SETF /CLK
+SETF CLK
+SETF S[1] /S[0]
+SETF /CLK
+SETF CLK
+CHECK /A[2] /A[1] A[0] /FOUT    ; rez=1
+SETF /CLK
+SETF CLK
+
+;TEST 2  2+2=4  
+SETF /CLK
+SETF /S[1] /S[0]  /XIN[2] XIN[1] /XIN[0]
+SETF CLK
+SETF /CLK
+SETF CLK
+CHECK /A[2] A[1] /A[0]      ;2
+
+SETF /XIN[2] XIN[1] /XIN[0]  ;2
+SETF /CLK
+SETF CLK
+SETF S[1] /S[0]
+SETF /CLK
+SETF CLK
+CHECK A[2] /A[1] /A[0] /FOUT    ; rez=4
+SETF /CLK
+SETF CLK
+
+;TEST 3  3+(-1)=2
+SETF /CLK
+SETF /S[1] /S[0]  /XIN[2] XIN[1] XIN[0] 
+SETF CLK
+SETF /CLK
+SETF CLK
+CHECK /A[2] A[1] A[0]      ;3
+
+SETF XIN[2] XIN[1] XIN[0]  ;(-1)
+SETF /CLK
+SETF CLK
+SETF S[1] /S[0]
+SETF /CLK
+SETF CLK
+CHECK /A[2] A[1] /A[0] FOUT    ; rez=2
+SETF /CLK
+SETF CLK
+
+;TEST 4    4+(-1)=3
+SETF /CLK
+SETF /S[1] /S[0]  XIN[2] /XIN[1] /XIN[0]
+SETF CLK
+SETF /CLK
+SETF CLK
+CHECK A[2] /A[1] /A[0]      ;4
+
+SETF XIN[2] XIN[1] XIN[0]  ;(-1)
+SETF /CLK
+SETF CLK
+SETF S[1] /S[0]
+SETF /CLK
+SETF CLK
+CHECK /A[2] A[1] A[0] FOUT    ; rez=3
+
+;CETVRTA FUNKCIJA
+SETF CLK
+SETF /CLK
+SETF /XIN[2] XIN[1] XIN[0] FIN_INPUT
+SETF CLK
+CHECK X[2] X[1] X[0] FIN
+SETF /CLK
+SETF CLK
+SETF /CLK
+SETF S[1] S[0]
+SETF CLK
+SETF /CLK
+CHECK FOUT
+
+
+;-------------------------------------------------------------------

@@ -1,0 +1,133 @@
+;PALASM Design Description
+
+;---------------------------------- Declaration Segment ------------
+TITLE    ALU_broj_54 sa cipom PAL16V8
+
+
+CHIP  _ALU_54  PALCE16V8
+
+;---------------------------------- PIN Declarations ---------------
+PIN  1          CLK                                   COMBINATORIAL ; INPUT   
+PIN  2..4       X_in[2..0]                            COMBINATORIAL ; INPUT 
+PIN  5,6        S[1..0]                               COMBINATORIAL ; INPUT 
+PIN  9          Fin_input                             COMBINATORIAL ; INPUT 
+PIN  10         GND                                              ;       
+PIN  20         VCC                                              ;       
+PIN  18..16     X[2..0]                               REGISTERED ; OUTPUT
+PIN  12..14     A[2..0]                               REGISTERED ; OUTPUT
+PIN  19         Fin                                   REGISTERED ; OUTPUT
+PIN  15         Fout                                  REGISTERED ; OUTPUT
+PIN  11         /OE                                   COMBINATORIAL ; ENABLE
+
+;----------------------------------- Boolean Equation Segment ------
+EQUATIONS
+
+X[2..0] = X_in[2..0]
+Fin = Fin_input
+
+CASE(S[1..0])
+BEGIN
+	#b00:BEGIN					;OP0 A = X
+			 A[2..0] = X [2..0]	
+		 END
+	#b01:BEGIN					;OP8 A = NOT(A XOR X)	
+			 A[2..0] = A[2..0] :*: X[2..0]
+		 END
+	#b10:BEGIN					;OP21 A = A - 1 posudba u Fout
+			 A[2] = /A[2]*/A[1]*/A[0] + A[2]*/A[1]*A[0] + A[2]*A[1]*/A[0] + A[2]*A[1]*A[0]
+			 A[1] = /A[2]*/A[1]*/A[0] + /A[2]*A[1]*A[0] + A[2]*/A[1]*/A[0] + A[2]*A[1]*A[0]
+			 A[0] = /A[2]*/A[1]*/A[0] + /A[2]*A[1]*/A[0] + A[2]*/A[1]*/A[0] + A[2]*A[1]*/A[0]
+			 Fout = A[2]*/A[1]*/A[0]
+		 END
+	#b11:BEGIN					;OP22 A < X ispisuje s Fout true ili false
+			 CASE(A[2],X[2])
+			 BEGIN
+				#b10:BEGIN
+					 A[2..0] = A[2..0]
+					 Fout = VCC
+					 END
+				#b01:BEGIN
+					 A[2..0] = A[2..0]
+					 Fout = GND
+					 END
+				OTHERWISE:
+					 BEGIN
+					 A[2..0] = A[2..0]
+					 Fout = 	/A[1]*/A[0]*/X[1]*X[0] + /A[1]*/A[0]*X[1]*/X[0] + /A[1]*/A[0]*X[1]*X[0]
+							+	/A[1]*A[0]*X[1]*/X[0]  + /A[1]*A[0]*X[1]*X[0]
+							+	A[1]*/A[0]*X[1]*X[0]
+					 END
+			 END
+		 END        
+END
+;----------------------------------- Simulation Segment ------------
+SIMULATION
+TRACE_ON CLK X_in[2..0] X[2..0] A[2..0] S[1..0] Fin_input Fin Fout
+
+; testiranje OP0 A = X
+SETF /X_in[2] X_in[1] X_in[0] /S[1] /S[0] /CLK
+SETF CLK
+CHECK /X[2] X[1] X[0] 
+SETF /CLK /X_in[2] /X_in[1] /X_in[0]
+SETF CLK
+CHECK /A[2] A[1] A[0] /X[2] /X[1] /X[0] 
+SETF /CLK X_in[2] /X_in[1] /X_in[0]
+SETF CLK
+CHECK /A[2] /A[1] /A[0] X[2] /X[1] /X[0] 
+SETF /CLK X_in[2] X_in[1] X_in[0]
+SETF CLK
+CHECK X[2] X[1] X[0] A[2] /A[1] /A[0]
+SETF /CLK X_in[2] /X_in[1] X_in[0]
+SETF CLK
+CHECK A[2] A[1] A[0] X[2] /X[1] X[0]
+
+; testiranje OP8 A = NOT(A XOR X)
+SETF /S[1] S[0] /CLK
+SETF CLK 
+CHECK A[2] /A[1] A[0] ; X ostaje 101
+SETF /CLK /X_in[2] X_in[1] X_in[0]
+SETF CLK 
+CHECK A[2] A[1] A[0] /X[2] X[1] X[0]
+SETF /CLK X_in[2] /X_in[1] /X_in[0]
+SETF CLK 
+CHECK /A[2] A[1] A[0] X[2] /X[1] /X[0]
+SETF /CLK X_in[2] /X_in[1] /X_in[0]
+SETF CLK 
+CHECK /A[2] /A[1] /A[0] X[2] /X[1] /X[0]
+
+; testiranje OP21 A = A - 1 posudba u Fout
+SETF /CLK S[1] /S[0] ; u A je sad 000
+SETF CLK 
+CHECK A[2] A[1] A[0] /Fout
+SETF /CLK /S[1] /S[0] 
+SETF CLK			 ; ucitavam A = X = 100
+CHECK A[2] /A[1] /A[0] /Fout
+SETF /CLK S[1] /S[0] 
+SETF CLK 
+CHECK /A[2] A[1] A[0] Fout
+SETF /CLK
+SETF CLK
+CHECK /A[2] A[1] /A[0] /Fout
+SETF /CLK
+SETF CLK
+CHECK /A[2] /A[1] A[0] /Fout
+
+; testiranje OP22 A < X ispisuje s Fout true ili false
+SETF /CLK S[1] S[0] /X_in[2] X_in[1] /X_in[0] ;trenutno je A = 001, a X = 100, sljedeci X = 010
+SETF CLK
+CHECK /Fout /X[2] X[1] /X[0] /A[2] /A[1] A[0]
+SETF /CLK /X_in[2] /X_in[1] /X_in[0] ;jos je A = 001, sad je X = 010, sljedeci X = 000
+SETF CLK
+CHECK Fout /X[2] /X[1] /X[0] /A[2] /A[1] A[0]
+SETF /CLK X_in[2] /X_in[1] X_in[0] ;jos je A = 001, sad je X = 000, sljedeci X = 101
+SETF CLK
+CHECK /Fout X[2] /X[1] X[0]
+SETF /CLK /S[1] /S[0] X_in[2] X_in[1] /X_in[0]
+SETF CLK
+CHECK A[2] /A[1] A[0] /Fout X[2] X[1] /X[0]; postavljam A  = 101 (-3), a X = 110 (-2)
+SETF /CLK S[1] S[0]	; 
+SETF CLK
+CHECK Fout
+TRACE_OFF
+
+;-------------------------------------------------------------------

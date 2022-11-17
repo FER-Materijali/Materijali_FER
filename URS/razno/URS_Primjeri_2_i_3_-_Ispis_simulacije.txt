@@ -1,0 +1,57 @@
+PALASM4  PLDSIM   - MARKET RELEASE 1.5 (7-10-92)
+ (C) - COPYRIGHT ADVANCED MICRO DEVICES INC., 1992
+
+PALASM SIMULATION HISTORY LISTING
+
+Title     : Sedamsegmentni dekoder k Author   : Davorka          
+Pattern   : DEC7SEG                  Company  : FER/ZESOI        
+Revision  : 1.0                      Date     : 10/17/98         
+
+PAL16V8        
+Page : 1 
+       ggggggggggggggggg                                           
+ D[3]  LLLLLLLLLHHHHHHHH                                           
+ D[2]  LLLLLHHHHLLLLHHHH                                           
+ D[1]  HLLHHLLHHLLHHLLHH                                           
+ D[0]  HLHLHLHLHLHLHLHLH                                           
+/TST   LHHHHHHHHHHHHHHHH                                           
+ GND   LLLLLLLLLLLLLLLLL                                           
+ S[3]  HHLHLLLHLHLHHHHHH                                           
+ S[4]  HHLHHLHHLHHLHHHHL                                           
+ S[5]  HHHLHHHHHHHHHLHLL                                           
+ S[0]  HLLLLLLLLLLLLLLLL                                           
+ S[6]  HHHHHHLLHHHHLLHLL                                           
+ S[7]  HHLHHLHHHHHHLHLHH                                           
+ S[2]  HHLLLHHHLHHHHHLHH                                           
+ S[1]  HLLHHHHHLHHHHLHHH                                           
+ VCC   HHHHHHHHHHHHHHHHH                                           
+
+______________________________________________________________________
+PALASM4  PLDSIM   - MARKET RELEASE 1.5 (7-10-92)
+ (C) - COPYRIGHT ADVANCED MICRO DEVICES INC., 1992
+
+PALASM SIMULATION HISTORY LISTING
+
+Title     : 3-bitno binarno brojilo  Author   : Davorka Petrinovi
+Pattern   : BIN3CNT2                 Company  : FER/ZESOI        
+Revision  : 1.0                      Date     : 10/26/98         
+
+PAL16V8        
+Page : 1 
+       gggggggggggggggggggggggggggggggggggggggggggggggggggg        
+ CLK   LLHLLHLHLHLHLHLHLHLHLHLHLLHLHLHLLHLHLHLLHLHLHLHLHLHL        
+ CE    LLLLHHHHHHHHHHHHHHHHHHHHHLLLLLLLHHHHHHHHHHHHHHHHHHHH        
+ UD    LLLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLLLLLLLLLLLLL        
+/RES   LLLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH        
+ GND   LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL        
+/OE    LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL        
+ E     LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL        
+ B0    HHLLLHHLLHHLLHHLLHHLLHHLLLLLLLLLLHHLLHHHLLHHLLHHLLHH        
+ C     LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL        
+ DP    LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL        
+ B     LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL        
+ B2    HHLLLLLLLLLHHHHHHHHLLLLLLLLLLLLLLLLHHHHHHHLLLLLLLLHH        
+ F     LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL        
+ B1    HHLLLLLHHHHLLLLHHHHLLLLHHHHHHHHHHHHLLLLLLLHHHHLLLLHH        
+ VCC   HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH        
+

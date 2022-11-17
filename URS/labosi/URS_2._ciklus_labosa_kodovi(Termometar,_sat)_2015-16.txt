@@ -1,0 +1,90 @@
+#include<stdio.h>
+#include<reg51.h>
+void PisiControl (unsigned char rijec);
+void PisiKomandu (unsigned char komanda);
+int CitajTemp(void);
+
+
+void ispis(unsigned char d,unsigned char znak){
+	unsigned char xdata *pok;
+	if(d=='l'){				//5.zadatak
+		pok=0x8000;
+	}else{
+		pok=0x8001;
+	} 
+	if(znak==0) *pok=0x77;
+	if(znak==1) *pok=0x14;
+	if(znak==2) *pok=0xB3;
+	if(znak==3) *pok=0xB6;
+	if(znak==4) *pok=0xD4;
+	if(znak==5) *pok=0xE6;
+	if(znak==6) *pok=0xE7;
+	if(znak==7) *pok=0x34;
+	if(znak==8) *pok=0xF7;
+	if(znak==9) *pok=0xF6;
+}
+sbit  grijac=P1^3;
+main (){
+int temp;
+volatile unsigned char xdata *mem;
+unsigned char vtest;
+bit bdata test=1;
+	TMOD=0x20;
+	TH1=0xF4;
+	TL1=0xF4;
+	TR1=1;
+	SCON=0x52;
+printf("Zadatak 3 uspjesno obavljen\n");
+for(mem=0;mem<=0x7FFF;mem++){			//4. zadatak
+	*mem=0xAA;
+	vtest=*mem;
+	if(vtest!=0xAA){
+			 test=0;
+			 break;
+				}
+			 }
+if(test==1){
+	printf("Memorija je ispravna;\n");
+	}else{
+	printf("Memorija je neispravna;\n");
+	}
+TMOD=0x21;					//Inicijalizacije za 10.
+TH0=0X4B;
+TL0=0XFF;
+EA=1;
+ET0=1;
+PT0=0;
+TR0=1;
+PisiControl(0x02);
+PisiKomandu(0xEE);
+while(1){
+temp=CitajTemp();				//6. zadatak
+temp=temp/2;
+printf("Izmjerena je temperatura od %d stupnjeva!\n",temp);
+if(temp<30) {grijac=0;}				//7. zadatak
+	else if (temp>32) {grijac=1;}
+}
+while(1){}
+}
+
+
+
+//Datoteka sat.c				//10. zadatak
+
+#include<stdio.h>
+#include<reg51.h>
+void ispis(unsigned char,unsigned char);
+void sat (void) interrupt 1 using 1{
+	static int brojac=0;
+	static int sekunde;
+	TH0=0X4B;
+        TL0=0XFF;
+	if(brojac==20){
+		sekunde++;
+		if(sekunde>99) {sekunde=0;}
+		brojac=0;
+	}
+	ispis('d', sekunde%10);
+	ispis('l', sekunde/10);
+	brojac++;
+}

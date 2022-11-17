@@ -1,0 +1,67 @@
+;PALASM Design Description
+
+;---------------------------------- Declaration Segment ------------
+TITLE    ..
+PATTERN  ..
+REVISION jk
+AUTHOR   kj                                  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+COMPANY  10/21/11
+DATE     10/21/11
+
+CHIP  _zad2   PALCE16V8
+
+;---------------------------------- PIN Declarations ---------------
+PIN  2                  SMJER                                    COMBINATORIAL ; INPUT
+PIN 11                 /OE                                       COMBINATORIAL ; INPUT
+PIN 1                  CLK                                       COMBINATORIAL ; INPUT
+PIN 20                 VCC
+PIN 10                 GND
+PIN 17                 SA                                        COMBINATORIAL ; OUTPUT
+PIN 16                 SB                                        REGISTERED ; OUTPUT
+PIN 14                 SC                                        REGISTERED ; OUTPUT
+PIN 13                 SD                                        COMBINATORIAL ; OUTPUT
+PIN 12                 SE                                        REGISTERED ; OUTPUT
+PIN 18                 SF                                        REGISTERED ; OUTPUT
+PIN 19                 SG                                        COMBINATORIAL ; OUTPUT
+PIN 15                 SDP                                       REGISTERED ; OUTPUT
+;----------------------------------- Boolean Equation Segment ------
+EQUATIONS
+SA = GND
+SD = GND
+SG = GND
+
+
+SC =( /SMJER*SB*/SC*/SE*/SF+SMJER*SE*/SB*/SF*/SC+GND)
+SE =( /SMJER*SC*/SB*/SE*/SF+SMJER*SF*/SB*/SE*/SC+GND)
+SF =( /SMJER*SE*/SC*/SB*/SF+SMJER*SB*/SC*/SF*/SE+GND)
+SB =( /SMJER*SF*/SC*/SE*/SB+SMJER*SC*/SB*/SF*/SE+/SC*/SB*/SF*/SE*VCC+GND)
+SDP = SMJER
+
+;----------------------------------- Simulation Segment ------------
+SIMULATION
+TRACE_ON /SMJER  /OE CLK SB SC SE SF SDP
+SETF /CLK
+SETF /SMJER OE
+SETF CLK
+SETF /CLK
+SETF CLK
+SETF /CLK
+
+CHECK SB /SC /SE /SF /SDP
+ FOR X:= 1 TO 5 DO
+   BEGIN
+    SETF CLK
+    SETF /CLK
+   END
+CHECK /SB SC /SE /SF /SDP
+SETF SMJER
+FOR X:= 1 TO 5 DO
+BEGIN
+SETF CLK
+SETF /CLK
+END
+CHECK    SB /SC /SE /SF SDP
+TRACE_OFF
+
+
+;-------------------------------------------------------------------
