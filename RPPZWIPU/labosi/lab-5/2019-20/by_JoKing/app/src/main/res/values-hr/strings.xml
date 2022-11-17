@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toast_message">Artikl je dodan u košaricu</string>
+    <string name="product_categories">KATEGORIJE PROIZVODA</string>
+    <string name="price_list">CJENIK</string>
+    <string name="app_name" translatable="false">Snaga cvijeća</string>
+</resources>

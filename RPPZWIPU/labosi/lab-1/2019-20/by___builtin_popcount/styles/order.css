@@ -1,0 +1,66 @@
+.photo-box {
+    text-align: center;
+}
+
+.photo-box-title {
+    font-size: 30px;
+}
+
+.photo-box-image {
+    width: 200px;
+    height: 200px;
+    background-color: #e0aacd;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+.photo-box-image-tulips {
+    background-image: url(../images/tulip.jpg);
+}
+
+.photo-box-image-fuchsia {
+    background-image: url(../images/fuchsia.jpg);
+}
+
+.photo-box-image-lavender {
+    background-image: url(../images/lavender.jpg);
+}
+
+.photo-box-image-rake {
+    background-image: url(../images/rake.jpg);
+}
+
+.photo-box-image-shovel {
+    background-image: url(../images/shovel.jpg);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 1em;
+}
+
+.main-sidebar-grid {
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+.overlay {
+    box-sizing: border-box;
+
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ab4f8b;
+
+    color: #ffffff;
+    text-align: left;
+    padding: 20px;
+}
+
+.photo-box-image:hover .overlay {
+    opacity: 1;
+}

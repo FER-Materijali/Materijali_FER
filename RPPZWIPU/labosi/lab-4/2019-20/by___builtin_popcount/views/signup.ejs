@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flower power!</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./images/flower-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="./vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head>
+
+<body class="content">
+
+<%- include(`partials/header`); %>
+
+<main class="main">
+    <section class="section secondary-color-bg">
+        <div class="container">
+            <img class="scaled-image" src="images/wild-flowers.jpg" alt="Company jumbo image">
+        </div>
+    </section>
+
+    <section class="section primary-color-bg">
+        <div class="container">
+            <div class="centered-container">
+                <div class="separator"></div>
+                <form action="/signup" method="post">
+                    <fieldset>
+                        <legend>User registration form</legend>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" maxlength="20" minlength="12"> <br>
+
+                        <label for="firstname">First name:</label>
+                        <input type="text" name="firstName" id="firstname" maxlength="20" minlength="2"> <br>
+
+                        <label for="lastname">Last name:</label>
+                        <input type="text" name="lastName" id="lastname" maxlength="20" minlength="2"> <br>
+
+                        <br>
+                        <label for="password1">Password (1):</label>
+                        <input type="password" maxlength="20" minlength="8" id="password1" name="password1"><br>
+
+                        <label for="password2">Password (2):</label>
+                        <input type="password" maxlength="20" minlength="8" id="password2" name="password2"><br>
+                        <br>
+
+                        <label for="street">Street:</label>
+                        <input type="text" maxlength="40" minlength="10" id="street" name="street"><br>
+
+                        <br>
+                        <label for="postcode">Post/zip code:</label>
+                        <input type="text" maxlength="40" minlength="5" id="postcode" name="postcode"><br>
+
+                        <br>
+                        <label for="city">City:</label>
+                        <input type="text" maxlength="40" minlength="5" id="city" name="city"><br>
+
+                        <br>
+                        <label for="city">Country:</label>
+                        <input type="text" maxlength="40" minlength="5" id="country" name="country"><br>
+
+                        <br>
+                        <input type="submit"> <input type="reset">
+                        <br>
+                        <% if (err !== undefined ) { %>
+                            <p style="justify-content: center; color: red;"><%= err %></p>
+                        <% } %>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="separator"></div>
+        </div>
+        <section class="section container">
+            <div class="container-grid container-grid-halves">
+                <div class="news">
+                    <h3 class="main-color font-secondary news-title "> News, Events &amp; Such</h3>
+                    <div class="infobox infobox-news">
+                        <h4 class="infobox-title main-color-emphasized">
+                            Beautiful new flowers
+                        </h4>
+                        <h5 class="infobox-subtitle main-color-emphasized">
+                            January 25, 2020
+                        </h5>
+                        <p class="infobox-content">
+                            New arrivals in our store! Many more beautiful new flowers are now available. We can't
+                            wait for you to check them out.
+                        </p>
+                        <a class="link infobox-link" href="#">Read more</a>
+                    </div>
+                    <div class="infobox infobox-calendar">
+                        <h4 class="infobox-title main-color-emphasized">
+                            Flower workshop on Tuesday
+                        </h4>
+                        <h5 class="infobox-subtitle main-color-emphasized">
+                            January 25, 2020
+                        </h5>
+                        <p class="infobox-content">
+                            Workshop on proper care of various flower species. Focused on the beautiful orchids and
+                            how to maintain your blue orchid.
+                        </p>
+                        <a class="link infobox-link" href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="vertical-center">
+                    <img class="scaled-image" src="images/chrysanthemum.jpg" alt="Blue Chrysanthemum image">
+                </div>
+
+
+            </div>
+        </section>
+        <div class="separator"></div>
+    </section>
+</main>
+
+<%- include(`partials/footer`); %>
+
+</body>
+
+</html>

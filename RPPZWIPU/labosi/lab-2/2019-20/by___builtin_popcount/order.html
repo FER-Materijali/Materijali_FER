@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flower power!</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="images/flower-icon.png" rel="shortcut icon" type="image/png"/>
+    <link href="vendor/normalize.css" rel="stylesheet" type="text/css">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+</head>
+
+
+<body class="content body-header-fixed">
+    <header class="header header-fixed primary-color-bg">
+        <nav class="navigation container">
+            <div class="menu">
+                <a class="link menu-item" href="index.html">Home</a>
+                <a class="link menu-item link-active" href="order.html">Order</a>
+                <a class="link" href="index.html">
+                    <img alt="Company logo" class="scaled-image scaled-image-fixed" src="images/logo.svg">
+                </a>
+                <a class="link menu-item" href="#">Contact us</a>
+                <a class="link menu-item cart-menu" href="cart.html">
+                    <img alt="Cart icon" src="images/cart-icon.svg">
+                    <div class="cart-menu-status">
+                        <div id="cart-items">0</div>
+                        <div>items</div>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="loader centered-container">
+            <div class="loader-text main-color-emphasized font-secondary">Please wait</div>
+            <div class="loader-pulsar"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="menu menu-distributed">
+                <div class="infobox infobox-marginless infobox-copyright">
+                    <h4 class="infobox-title infobox-title-secondary-color main-color-emphasized">
+                        Copy this as much as you like
+                    </h4>
+                </div>
+                <div class="infobox infobox-marginless infobox-flower">
+                    <h4 class="infobox-title infobox-title-secondary-color main-color-emphasized">
+                        Flower power
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <template id="category-template">
+        <section class="section secondary-color-bg">
+            <div class="centered-container">
+                <h1 class="decorated-title font-secondary main-color">
+                    <span class="main-color-emphasized">Category name</span>
+                    Inventory</h1>
+                <div class="separator"></div>
+            </div>
+            <div class="gallery">
+            </div>
+        </section>
+    </template>
+    <template id="product-template">
+        <div class="photo-box" data-id="">
+            <img class="photo-box-image" src=""/>
+            <div class="photo-box-title font-secondary main-color-emphasized">Product name</div>
+            <div class="cart-btn"></div>
+        </div>
+    </template>
+    <script src="scripts/main.js"></script>
+    <script>
+        let categoriesLeftToLoad;
+
+        let addToCart = function (clickEvent) {
+            let productId = clickEvent.target.dataset.productId;
+
+            cart = getCart();
+            if (!(productId in cart)) {
+                cart[productId] = 0;
+            }
+
+            cart[productId]++;
+
+            setCart(cart);
+        };
+
+        let getData = async function () {
+            let response = await fetch("https://wimlab2.azurewebsites.net/categories?delay=3000");
+            let data = await response.json();
+
+            categoriesLeftToLoad = data.length;
+
+            addCategories(data);
+        };
+
+        let addCategories = async function (categories) {
+            let main = document.querySelector("main");
+            let categoryTemplate = document.querySelector("#category-template");
+
+            for (let index = 0; index < categories.length; index++) {
+                let category = categoryTemplate.content.cloneNode(true);
+                let categoryTitleElement = category.querySelector(".decorated-title > span");
+                categoryTitleElement.textContent = categories[index].name;
+
+                let galleryElement = category.querySelector(".gallery");
+
+                main.appendChild(category);
+
+                getCategory(categories[index].id, galleryElement);
+            }
+        };
+
+        let getCategory = async function (categoryId, gallery) {
+            let response = await fetch("https://wimlab2.azurewebsites.net/products?delay=3000&categoryId=" + categoryId);
+            let data = await response.json();
+
+            --categoriesLeftToLoad;
+            if (categoriesLeftToLoad === 0) {
+                let loader = document.querySelector(".loader");
+                loader.classList.add("hidden");
+            }
+
+            addProducts(data, gallery);
+        };
+
+        let addProducts = async function (products, gallery) {
+            let productTemplate = document.querySelector("#product-template");
+
+            for (let index = 0; index < products.length; index++) {
+                let product = productTemplate.content.cloneNode(true);
+
+                let productTitleElement = product.querySelector(".photo-box-title");
+                productTitleElement.textContent = products[index].name;
+
+                let productImageElement = product.querySelector(".photo-box-image");
+                productImageElement.src = products[index].imageUrl;
+
+                let productCartButton = product.querySelector(".cart-btn");
+                productCartButton.dataset.productId = products[index].id;
+                productCartButton.addEventListener("click", addToCart);
+
+                gallery.appendChild(product);
+            }
+        };
+
+        getData();
+
+    </script>
+</body>
+
+</html>

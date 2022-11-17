@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./images/flower-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="./vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head>
+
+<body class="content">
+
+<%- include(`partials/header`); %>
+
+<main class="main">
+
+    <% for (const category of categories) { %>
+        <%#
+            Većina ovog HTML-a dolazi iz predloška za 2. labos, gdje se on nalazi unutar <template> oznaka.
+            https://gitlab.com/fer-wim1/public/-/blob/master/lab2-baseline/order.html
+        %>
+        <section class="section secondary-color-bg">
+            <div class="centered-container">
+                <h1 class="font-secondary main-color">
+                    <span class="main-color-emphasized"><%= category.name %></span>
+                    Inventory</h1>
+                <div class="separator"></div>
+            </div>
+
+            <% if (category.items.length !== 0) { %>
+                <div class="gallery">
+                    <% for (const item of category.items) { %>
+                        <div class="photo-box">
+                            <img class="photo-box-image" src="<%= item.imageurl %>">
+                            <div class="photo-box-title font-secondary main-color-emphasized"><%= item.name %></div>
+                        </div>
+
+                    <% } %>
+                </div>
+            <% } else { %>
+                <div class="centered-container">
+                    <span class="photo-box-title font-secondary main-color">
+                        No items in this category
+                    </span>
+                </div>
+            <% } %>
+
+        </section>
+    <% } %>
+
+</main>
+
+<%- include(`partials/footer`); %>
+
+</body>
+
+</html>

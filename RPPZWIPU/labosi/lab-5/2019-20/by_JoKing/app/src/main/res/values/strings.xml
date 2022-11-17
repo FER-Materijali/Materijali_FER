@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Flower Power</string>
+    <string name="toast_message">Item added to cart</string>
+    <string name="address" translatable="false">Kunska 3, Zagreb</string>
+    <string name="phone_number" translatable="false">+385 1 6129 999</string>
+    <string name="email" translatable="false">email: %1$s</string>
+    <string name="email_address" translatable="false">info@ciklama.fer.hr</string>
+    <string name="web_page" translatable="false">http://www.ciklama.fer.hr</string>
+    <string name="author_name" translatable="false">App by: JoKing</string>
+    <string name="pdf_uri" translatable="false">http://zpr.fer.hr/wim/cjenik.pdf</string>
+    <string name="product_categories">PRODUCT CATEGORIES</string>
+    <string name="price_list">PRICE LIST</string>
+</resources>

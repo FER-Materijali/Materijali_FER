@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="../images/flower-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="../vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head>
+
+<body class="content">
+
+<%- include(`partials/header`); %>
+
+<main class="main">
+    <div class="centered-container">
+        <h1 class="decorated-title font-secondary main-color">Delete <span class="main-color-emphasized">
+                            Existing</span> Item</h1>
+        <div class="separator"></div>
+    </div>
+    <section class="section secondary-color-bg">
+        <div class="container">
+            <fieldset class="fieldset">
+                <% for (const item of items) { %>
+                    <form action="/management/deleteitem" method="post" class="deleteFieldTextButton"
+                          onsubmit="return confirm('Are you sure you want to delete this item?')">
+                        <span><%= item.name %></span>
+                        <input type="hidden" name="itemId" value="<%= item.id %>">
+                        <input type="submit" value="Delete" class="btn">
+                    </form>
+                <% } %>
+            </fieldset>
+        </div>
+    </section>
+</main>
+
+<%- include(`partials/footer`); %>
+
+</body>
+
+</html>

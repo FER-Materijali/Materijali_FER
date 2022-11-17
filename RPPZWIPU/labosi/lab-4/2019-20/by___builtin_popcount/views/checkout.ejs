@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./images/flower-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="./vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head>
+
+<body class="content">
+
+<%- include(`partials/header`); %>
+
+<main class="main">
+
+    <div class="centered-container">
+        <h1 class="decorated-title font-secondary main-color">Thank you for your purchase!</h1>
+    </div>
+    <div class="separator"></div>
+    <div class="cart-gallery">
+        <div class="cart-row">
+            <div class="cart-box-title font-secondary main-color-emphasized">Product</div>
+            <div class="cart-box-title font-secondary main-color-emphasized"></div>
+            <div class="cart-box-title font-secondary main-color-emphasized">Unit price</div>
+            <div class="cart-box-title font-secondary main-color-emphasized">Quantity</div>
+        </div>
+        <% for (item of Object.values(cart.items)) { %>
+            <div class="cart-row" data-id="<%= item.id %>">
+                <img class="cart-box-image" src="<%= item.imageurl %>"></img>
+                <div class="cart-box-title font-secondary main-color-emphasized"><%= item.name %></div>
+                <div class="cart-box-title font-secondary main-color-emphasized"><%= item.price %></div>
+                <div class="cart-box-title font-secondary main-color-emphasized"><%= item.quantity %></div>
+                <div class="buttons"></div>
+            </div>
+
+        <% } %>
+        <div class="separator"></div>
+        <div class="cart-row">
+            <div class="cart-box-title font-secondary main-color-emphasized"></div>
+            <div class="cart-box-title font-secondary main-color-emphasized"></div>
+            <div class="cart-box-title font-secondary main-color-emphasized">TOTAL PRICE:</div>
+            <div class="cart-box-title font-secondary main-color-emphasized"><%= cart.totalAmount %></div>
+        </div>
+    </div>
+
+</main>
+
+<%- include(`partials/history`); %>
+
+<%- include(`partials/footer`); %>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./images/flower-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="./vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <script>
+        async function addItemToCart(id) {
+            response = await fetch('/cart/add/' + id)
+            if (!response.ok)
+                alert("Error adding the product to the cart")
+            else
+                location.reload()
+        }
+
+        async function removeItemFromCart(id) {
+            response = await fetch('/cart/remove/' + id)
+            if (!response.ok)
+                alert("Error removing the product from the cart")
+            else
+                location.reload()
+        }
+
+        async function clearFromCart(id) {
+            response = await fetch('/cart/clear/' + id)
+            if (!response.ok)
+                alert("Error clearing the product from the cart")
+            else
+                location.reload()
+        }
+
+    </script>
+
+</head>
+
+<body class="content">
+
+<%- include(`partials/header`); %>
+
+<main class="main">
+
+    <% if ((!cart) || (Object.values(cart.items).length == 0)) { %>
+        <div class="centered-container">
+            <h2 class="decorated-title font-secondary main-color">No items in cart</h2>
+        </div>
+    <% } else { %>
+
+        <div class="cart-gallery">
+            <div class="cart-row">
+                <div class="cart-box-title font-secondary main-color-emphasized">Product</div>
+                <div class="cart-box-title font-secondary main-color-emphasized"></div>
+                <div class="cart-box-title font-secondary main-color-emphasized">Unit price</div>
+                <div class="cart-box-title font-secondary main-color-emphasized">Quantity</div>
+            </div>
+            <% for (item of Object.values(cart.items)) { %>
+                <div class="cart-row" data-id="<%= item.id %>">
+                    <img class="cart-box-image" src="<%= item.imageurl %>"></img>
+                    <div class="cart-box-title font-secondary main-color-emphasized"><%= item.name %></div>
+                    <div class="cart-box-title font-secondary main-color-emphasized"><%= item.price %></div>
+                    <div class="cart-box-title font-secondary main-color-emphasized"><%= item.quantity %></div>
+                    <div class="buttons">
+                        <button class="math-btn" onClick="removeItemFromCart(<%= item.id %>)">-</button>
+                        <button class="math-btn" onClick="addItemToCart(<%= item.id %>)">+</button>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn" onClick="clearFromCart(<%= item.id %>)">Remove all</button>
+                    </div>
+                </div>
+
+            <% } %>
+            <div class="separator"></div>
+            <div class="cart-row">
+                <div class="cart-box-title font-secondary main-color-emphasized"></div>
+                <div class="cart-box-title font-secondary main-color-emphasized"></div>
+                <div class="cart-box-title font-secondary main-color-emphasized">TOTAL PRICE:</div>
+                <div class="cart-box-title font-secondary main-color-emphasized"><%= cart.totalAmount %></div>
+                <% if (user !== undefined) { %>
+                    <div class="buttons">
+                        <button class="btn" onClick=" location.replace('./checkout')"> Order now !</button>
+                    </div>
+                <% } else { %>
+                    <div class="buttons">
+                        <button class="btn-disabled" disabled> Login to order</button>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+
+    <% } %>
+
+</main>
+
+<%- include(`partials/history`); %>
+
+<%- include(`partials/footer`); %>
+
+</body>
+
+</html>
