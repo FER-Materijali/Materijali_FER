@@ -1,0 +1,119 @@
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+root         1     0  0   771   604   0 05:26 ?        00:00:02 /sbin/init
+root         2     0  0     0     0   0 05:26 ?        00:00:00 [kthreadd]
+root         3     2  0     0     0   0 05:26 ?        00:00:00 [migration/0]
+root         4     2  0     0     0   0 05:26 ?        00:00:00 [ksoftirqd/0]
+root         5     2  0     0     0   0 05:26 ?        00:00:00 [watchdog/0]
+root         6     2  0     0     0   0 05:26 ?        00:00:00 [events/0]
+root         7     2  0     0     0   0 05:26 ?        00:00:00 [khelper]
+root         8     2  0     0     0   0 05:26 ?        00:00:00 [kstop/0]
+root         9     2  0     0     0   0 05:26 ?        00:00:00 [kintegrityd/0]
+root        10     2  0     0     0   0 05:26 ?        00:00:00 [kblockd/0]
+root        11     2  0     0     0   0 05:26 ?        00:00:00 [kacpid]
+root        12     2  0     0     0   0 05:26 ?        00:00:00 [kacpi_notify]
+root        13     2  0     0     0   0 05:26 ?        00:00:00 [cqueue]
+root        14     2  0     0     0   0 05:26 ?        00:00:04 [ata/0]
+root        15     2  0     0     0   0 05:26 ?        00:00:00 [ata_aux]
+root        16     2  0     0     0   0 05:26 ?        00:00:00 [ksuspend_usbd]
+root        17     2  0     0     0   0 05:26 ?        00:00:00 [khubd]
+root        18     2  0     0     0   0 05:26 ?        00:00:00 [kseriod]
+root        19     2  0     0     0   0 05:26 ?        00:00:00 [kmmcd]
+root        20     2  0     0     0   0 05:26 ?        00:00:00 [btaddconn]
+root        21     2  0     0     0   0 05:26 ?        00:00:00 [btdelconn]
+root        22     2  0     0     0   0 05:26 ?        00:00:03 [pdflush]
+root        23     2  0     0     0   0 05:26 ?        00:00:01 [pdflush]
+root        24     2  0     0     0   0 05:26 ?        00:00:00 [kswapd0]
+root        25     2  0     0     0   0 05:26 ?        00:00:00 [aio/0]
+root        26     2  0     0     0   0 05:26 ?        00:00:00 [ecryptfs-kthrea]
+root        29     2  0     0     0   0 05:26 ?        00:00:00 [pciehpd]
+root        30     2  0     0     0   0 05:26 ?        00:00:01 [scsi_eh_0]
+root        31     2  0     0     0   0 05:26 ?        00:00:01 [scsi_eh_1]
+root        32     2  0     0     0   0 05:26 ?        00:00:00 [kstriped]
+root        33     2  0     0     0   0 05:26 ?        00:00:00 [kmpathd/0]
+root        34     2  0     0     0   0 05:26 ?        00:00:00 [kmpath_handlerd]
+root        35     2  0     0     0   0 05:26 ?        00:00:00 [ksnapd]
+root        36     2  0     0     0   0 05:26 ?        00:00:00 [kondemand/0]
+root        37     2  0     0     0   0 05:26 ?        00:00:00 [krfcommd]
+root       252     2  0     0     0   0 05:26 ?        00:00:00 [mpt_poll_0]
+root       623     2  0     0     0   0 05:26 ?        00:00:00 [scsi_eh_2]
+root       797     2  0     0     0   0 05:26 ?        00:00:02 [kjournald]
+root       931     1  0   585   660   0 05:26 ?        00:00:00 /sbin/udevd --daemon
+root      1408     2  0     0     0   0 05:26 ?        00:00:00 [kpsmoused]
+root      1694     2  0     0     0   0 05:26 ?        00:00:00 [kgameportd]
+root      2424     1  0   452   428   0 05:26 tty4     00:00:00 /sbin/getty 38400 tty4
+root      2425     1  0   452   428   0 05:26 tty5     00:00:00 /sbin/getty 38400 tty5
+root      2431     1  0   452   428   0 05:26 tty2     00:00:00 /sbin/getty 38400 tty2
+root      2433     1  0   452   428   0 05:26 tty3     00:00:00 /sbin/getty 38400 tty3
+root      2434     1  0   452   428   0 05:26 tty6     00:00:00 /sbin/getty 38400 tty6
+root      2504     1  0   551   628   0 05:26 ?        00:00:00 /usr/sbin/acpid -c /etc/acpi/events -s /var/run/acpid.socket
+syslog    2549     1  0   510   644   0 05:26 ?        00:00:00 /sbin/syslogd -u syslog
+root      2572     1  0   492   456   0 05:26 ?        00:00:00 /bin/dd bs 1 if /proc/kmsg of /var/run/klogd/kmsg
+klog      2574     1  0   901  2148   0 05:26 ?        00:00:00 /sbin/klogd -P /var/run/klogd/kmsg
+108       2597     1  0   776  1508   0 05:26 ?        00:00:00 /bin/dbus-daemon --system
+root      2637     1  0  4122  2640   0 05:26 ?        00:00:00 /usr/sbin/console-kit-daemon
+root      2797     1  0   889  1324   0 05:26 ?        00:00:00 /usr/sbin/bluetoothd
+root      2830     1  0  4105  2540   0 05:26 ?        00:00:00 /usr/sbin/NetworkManager --pid-file /var/run/NetworkManager/NetworkManager.pid
+root      2838     1  0  1069  1164   0 05:26 ?        00:00:00 /sbin/wpa_supplicant -u -f /var/log/wpa_supplicant.log
+root      2841     1  0  1762  3036   0 05:26 ?        00:00:00 /usr/sbin/nm-system-settings --config /etc/NetworkManager/nm-system-settings.conf
+avahi     2856     1  0   736  1480   0 05:26 ?        00:00:00 avahi-daemon: running [ubuntu.local]
+avahi     2857  2856  0   736   484   0 05:26 ?        00:00:00 avahi-daemon: chroot helper
+root      2882     1  0  1532  2164   0 05:26 ?        00:00:00 /usr/sbin/cupsd
+root      2918     1  0  1081  1164   0 05:26 ?        00:00:00 /usr/bin/system-tools-backends
+daemon    2998     1  0   524   448   0 05:26 ?        00:00:00 /usr/sbin/atd
+root      3028     1  0   870  1024   0 05:26 ?        00:00:00 /usr/sbin/cron
+root      3173  2830  0   569   868   0 05:26 ?        00:00:00 /sbin/dhclient -d -sf /usr/lib/NetworkManager/nm-dhcp-client.action -pf /var/run/dhclient-eth0.pid -lf /var/lib/dhcp3/dhclient-eth0.lease -cf /var/run/nm-dhclient-eth0.conf eth0
+111       8248     1  0  1673  3696   0 05:29 ?        00:00:00 /usr/sbin/hald
+root      8249  8248  0   832  1136   0 05:29 ?        00:00:00 hald-runner
+root      8279  8249  0  1294  1784   0 05:29 ?        00:00:00 hald-addon-input: Listening on /dev/input/event0 /dev/input/event2
+root      8326  8249  0  1295  1800   0 05:29 ?        00:00:02 hald-addon-storage: polling /dev/sr0 (every 2 sec)
+root      8327  8249  0  1295  1800   0 05:29 ?        00:00:02 hald-addon-storage: polling /dev/sr1 (every 2 sec)
+root      8328  8249  0  1295  1796   0 05:29 ?        00:00:00 hald-addon-storage: no polling on /dev/fd0 because it is explicitly disabled
+111       8330  8249  0  1258  1748   0 05:29 ?        00:00:00 hald-addon-acpi: listening on acpid socket /var/run/acpid.socket
+root     11551     2  0     0     0   0 05:29 ?        00:00:00 [vmmemctl]
+root     11789     1  0  3467  2804   0 05:29 ?        00:00:02 /usr/sbin/vmtoolsd
+root     11898     1  0  3757  1804   0 05:29 ?        00:00:00 /usr/sbin/gdm
+root     11903 11898  0  3899  3384   0 05:29 ?        00:00:00 /usr/sbin/gdm
+root     11913     1  0   452   528   0 05:29 tty1     00:00:00 /sbin/getty 38400 tty1
+root     13715     1  0  3397  9104   0 06:26 ?        00:00:00 /usr/bin/python /usr/lib/system-service/system-service-d
+root     14055 11903  5  7540 20820   0 06:30 tty7     00:05:17 /usr/X11R6/bin/X :0 -br -audit 0 -auth /var/lib/gdm/:0.Xauth -nolisten tcp vt7
+bruno    14080     1  0  6417  2960   0 06:31 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+bruno    14093 11903  0  6601  7112   0 06:31 ?        00:00:00 x-session-manager
+bruno    14146 14093  0  1196   604   0 06:31 ?        00:00:00 /usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session /usr/bin/pulse-session /usr/bin/seahorse-agent --execute x-session-manager
+bruno    14149     1  0   786   692   0 06:31 ?        00:00:00 /usr/bin/dbus-launch --exit-with-session /usr/bin/pulse-session /usr/bin/seahorse-agent --execute x-session-manager
+bruno    14150     1  0   767  1264   0 06:31 ?        00:00:00 //bin/dbus-daemon --fork --print-pid 6 --print-address 9 --session
+bruno    14155     1  0 23665  5352   0 06:31 ?        00:00:00 /usr/bin/pulseaudio --start
+bruno    14156 14155  0  1961  2632   0 06:31 ?        00:00:00 /usr/lib/pulseaudio/pulse/gconf-helper
+bruno    14158     1  0  1900  4464   0 06:31 ?        00:00:00 /usr/lib/libgconf2-4/gconfd-2
+bruno    14169 14093  0  4797  6404   0 06:31 ?        00:00:00 /usr/bin/seahorse-agent --execute x-session-manager
+bruno    14172     1  0  1404  2136   0 06:31 ?        00:00:00 /usr/lib/gvfs/gvfsd
+bruno    14179     1  0  8622 14548   0 06:31 ?        00:00:02 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+bruno    14182     1  0  7396  2388   0 06:31 ?        00:00:00 /usr/lib/gvfs//gvfs-fuse-daemon /home/bruno/.gvfs
+bruno    14193 14093  0  5609 13384   0 06:31 ?        00:00:12 /usr/bin/metacity --replace
+bruno    14212 14093  0  9304 20372   0 06:31 ?        00:00:13 gnome-panel
+bruno    14213 14093  0 15567 25724   0 06:31 ?        00:00:08 nautilus
+bruno    14215     1  0 10219  3548   0 06:31 ?        00:00:00 /usr/lib/bonobo-activation/bonobo-activation-server --ac-activate --ior-output-fd=19
+bruno    14218     1  0  7024 11980   0 06:31 ?        00:00:02 /usr/lib/vmware-tools/bin32/vmware-user-loader --blockFd 3
+bruno    14221 14093  0  5961 12440   0 06:31 ?        00:00:00 nm-applet --sm-disable
+bruno    14222 14093  0  4028  6600   0 06:31 ?        00:00:00 bluetooth-applet
+bruno    14225 14093  0  6970 14556   0 06:31 ?        00:00:00 update-notifier --startup-delay=60
+bruno    14227 14093  0  8639 11376   0 06:31 ?        00:00:00 /usr/lib/evolution/2.26/evolution-alarm-notify
+bruno    14233 14093  0  6952 14208   0 06:31 ?        00:00:00 python /usr/share/system-config-printer/applet.py
+bruno    14241     1  0  1996  3552   0 06:31 ?        00:00:00 /usr/lib/gvfs/gvfs-hal-volume-monitor
+bruno    14243     1  0  5971 10736   0 06:31 ?        00:00:00 /usr/lib/gnome-applets/trashapplet --oaf-activate-iid=OAFIID:GNOME_Panel_TrashApplet_Factory --oaf-ior-fd=18
+bruno    14247     1  0  4374  7656   0 06:31 ?        00:00:00 /usr/lib/notify-osd/notify-osd
+bruno    14249     1  0  2090  3124   0 06:31 ?        00:00:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+bruno    14253     1  0  5636  9164   0 06:31 ?        00:00:00 /usr/lib/indicator-applet/indicator-applet --oaf-activate-iid=OAFIID:GNOME_IndicatorApplet_Factory --oaf-ior-fd=21
+bruno    14256     1  0 11092 14600   0 06:31 ?        00:00:00 /usr/lib/gnome-applets/mixer_applet2 --oaf-activate-iid=OAFIID:GNOME_MixerApplet_Factory --oaf-ior-fd=24
+bruno    14258     1  0  1485  2724   0 06:31 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.5 /org/gtk/gvfs/exec_spaw/0
+bruno    14261     1  0  6803 13900   0 06:31 ?        00:00:00 /usr/lib/fast-user-switch-applet/fast-user-switch-applet --oaf-activate-iid=OAFIID:GNOME_FastUserSwitchApplet_Factory --oaf-ior-fd=27
+bruno    14266     1  0  6188  8616   0 06:31 ?        00:00:00 gnome-power-manager
+bruno    14272     1  0  1404  2232   0 06:31 ?        00:00:00 /usr/lib/gvfs/gvfsd-burn --spawner :1.5 /org/gtk/gvfs/exec_spaw/1
+bruno    14297     1  0  4161  5228   0 06:31 ?        00:00:13 gnome-screensaver
+bruno    14339     1  1 18036 44952   0 06:33 ?        00:01:03 evince /home/bruno/Documents/Labos1_2010.pdf
+bruno    14391     1  0  8641 15072   0 06:36 ?        00:00:10 gnome-terminal
+bruno    14392 14391  0   509   700   0 06:36 ?        00:00:00 gnome-pty-helper
+bruno    14393 14391  0  1454  3100   0 06:36 pts/0    00:00:00 bash
+bruno    14439 14393  0  1456  3128   0 06:38 pts/0    00:00:00 bash
+bruno    14462 14439  0  1456  3168   0 06:39 pts/0    00:00:00 bash
+bruno    15825     1  0  9257 17616   0 07:39 ?        00:00:01 gedit /home/bruno/Documents/zadatak 1/zadatak1.sh
+bruno    16695 14462  0   692  1032   0 08:05 pts/0    00:00:00 ps -e -F

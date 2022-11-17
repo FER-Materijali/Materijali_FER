@@ -1,0 +1,42 @@
+   2:21pm  up 247 day(s),  5:37,  40 users,  load average: 3.09, 3.12, 3.14
+User     tty           login@  idle   JCPU   PCPU  what
+gd38913  pts/4        Wed11pm  2:07   1:05      8  bash
+ip13491  pts/5        18Jan10  3:09      1         bash
+am43516  pts/6         2:14pm     4                bash
+gg10484  pts/16        2:18pm     1                bash
+bb45998  pts/17       10:53pm  3:17                -csh
+hs44683  pts/24        9:50am  1:23      2      2  pico program.cpp
+tj41460  pts/25        2:17pm     3                -csh
+mg42510  pts/26        1:17pm     5                bash proba.sh student2.txt
+ac43517  pts/6         2:14pm     4                bash
+dg10474  pts/11        2:18pm     1                bash
+hb45013  pts/12       10:53pm 13:20                -csh
+ps44633  pts/21        9:50am  4:30      2      2  pico lab1.py
+tk41470  pts/7         2:17pm     3                -csh
+mm42411  pts/26        1:17pm     5                joe proba.sh
+dz38959  pts/4        17Mar10  2:10   1:06      8  bash
+pp11499  pts/5        18Jan10  1:23      1         bash
+km24353  pts/9         2:17pm    35      1         bash
+bk44105  pts/12       12Jan10  1:13                pico
+bh41789  pts/14        7Dec09  2:31                pico signali.c
+lp43897  pts/16        1:14pm     6     11      1  bash
+ac44317  pts/17        2:45pm    17                -csh
+fm43516  pts/24        1:48pm     4                bash
+ff45018  pts/26       Wed 2pm  6:52                bash
+zp43274  pts/27        1:38pm     7                vis
+mc42591  pts/4        11:28pm     2                more /home/nastava/epek/fpors/vi
+jp13461  pts/5        18Jan10     8      1         bash
+ak44357  pts/6        11:33pm     2                -csh
+ak44439  pts/9         8:51pm  1:30     45      1  pico simulator_moj_po_alonsusovo
+vk44105  pts/12       12Jan10  2:44                pico
+bv41789  pts/14        7Dec09  1:11                pico signali.c
+tr42751  pts/16        7:17pm     4      1         vis
+dd38959  pts/20       10:20pm    33                bash
+kk44356  pts/21       10:23pm    24      2      1  pico automat.txt
+rz42991  pts/22       10:33pm    41      1         vis
+mm44343  pts/24       11:21pm    11                bash
+dp43054  pts/25       10:29pm  1:09                more -s /tmp/mpTzaGlv
+fb45008  pts/26       Wed 2pm 14:27                bash
+ib43266  pts/27       10:19pm  1:05                bash
+kalfa    pts/29       11:39pm                      w
+zf43211  pts/30       10:51pm    19                pico posteno.fair

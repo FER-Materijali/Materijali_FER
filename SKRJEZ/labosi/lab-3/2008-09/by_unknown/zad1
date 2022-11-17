@@ -1,0 +1,62 @@
+#!/usr/bin/python
+
+#generira rijetku matricu na temelju zadanog formata zapisa
+def genmatrix(blok):
+	linije = blok.split('\n')
+	dim = linije[0].split(' ')
+	dim = [int(P) for P in dim]
+
+	matrix = {}
+	matrix['dim'] = dim
+
+	for linija in linije[1:]:
+		s = linija.split(' ')
+		s[0] = int(s[0])
+		s[1] = int(s[1])
+		s[2] = float(s[2])
+		matrix[(s[0], s[1])] = s[2]
+
+	return matrix
+
+#glavni dio programa
+ulaz = open('zad1data1.txt', 'r').read().split('\n\n')
+
+m1 = genmatrix(ulaz[0])
+m2 = genmatrix(ulaz[1])
+
+m1r = m1['dim'][0]
+m1s = m1['dim'][1]
+m2r = m2['dim'][0]
+m2s = m2['dim'][1]
+
+print "Matrica 1: " + str(m1)
+print "Matrica 2: " + str(m2)
+
+if m1s != m2r:
+	exit("Broj stupaca prve matrice mora biti jednak broju redaka druge")
+
+umnozak = {}
+umnozak['dim'] = [m1s, m2r]
+
+for i in range(1, m1r + 1):
+	for j in range(1, m2s + 1):
+		umnozak[i,j] = 0
+
+		for k in range(1, m1s + 1):
+			umnozak[i,j] += float(m1.get((i,k), 0) * m2.get((k,j), 0))
+			
+		if umnozak[i,j] == 0:
+			del umnozak[i,j]
+		else:
+			print "[" + str(i) + "," + str(j) + "] : " + str(umnozak[i,j])
+
+izlazna = open('zad1out.txt','w')
+izlazna.write(str(m1s) + ' ' + str(m2r) + '\n')
+for key in umnozak.keys():
+	if key != 'dim':
+		izlazna.write(str(key[0]) + ' ' + str(key[1]) + ' ' + str(umnozak[key]) + '\n')
+
+
+
+
+

@@ -1,0 +1,55 @@
+#!/usr/bin/python
+
+import sys, urllib, webbrowser, re
+
+url = "http://www.fer.hr/"
+
+if len(sys.argv) != 2:
+    print "Niste zadali argument - URL web stranice za analizu."
+    print "Program ce nastaviti s defaultnim URL-om: " + url
+else:
+    url = sys.argv[1]
+
+#webbrowser.open(url)
+    
+html = urllib.urlopen(url).read()
+print html
+
+print "\n\n**************************************************************\n\n"
+
+#LINKOVI I HOSTOVI
+hostovi = {}
+hreflist = re.findall('href=".[^"]*', html)
+for href in hreflist:
+    stavka = href.replace('href="','')
+    print stavka
+    
+    if "http://" in stavka:
+        host = stavka.replace("http://", "")
+        
+        if "/" in host:
+            host = host.partition("/")[0] 
+        if host.startswith("www."):
+            host = host.replace("www.","")
+            
+        if host not in hostovi.keys():
+            hostovi[host] = 1
+        else:
+            hostovi[host] += 1
+            
+#HOSTOVI
+print "\nIspis hostova s brojem referenciranja"
+for host in hostovi.keys():
+    print "(" + str(hostovi[host]) + ") \t" + host
+
+
+#E-MAILOVI
+print "\nIspis detektiranih e-mail adresa ('mailto' linkovi):\n"
+maillist = re.findall('mailto:.[^"]*', html)   
+for mail in maillist:
+    print mail
+
+#SLIKE    
+imglist = re.findall('<img(.+)src="([^"]+)"(.+)>', html)
+print "\nUkupno slika (<img src= />): " + str(len(imglist))
+

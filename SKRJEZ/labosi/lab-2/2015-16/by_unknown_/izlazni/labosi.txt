@@ -1,0 +1,13 @@
+LAB02-01	Skriptni jezici - 2. laboratorijska vježba (LAB02-01)	16	 14.05.2013. (uto)	 08:00 - 11:00	 180	 A209	
+LAB02-02	Skriptni jezici - 2. laboratorijska vježba (LAB02-02)	16	 14.05.2013. (uto)	 17:00 - 20:00	 180	 A209	
+LAB02-03	Skriptni jezici - 2. laboratorijska vježba (LAB02-03)	15	 16.05.2013. (čet)	 14:00 - 17:00	 180	 A209	
+LAB02-04	Skriptni jezici - 2. laboratorijska vjebža (LAB02-04)	16	 15.05.2013. (sri)	 17:00 - 20:00	 180	 A209	
+LAB02-05	Skriptni jezici - 2. laboratorijska vježba (LAB02-05)	15	 13.05.2013. (pon)	 08:00 - 11:00	 180	 A210	
+LAB02-06	Skriptni jezici - 2. laboratorijska vježba (LAB02-06)	16	 16.05.2013. (čet)	 17:00 - 20:00	 180	 A210	
+LAB02-07	Skriptni jezici - 2. laboratorijska vježba (LAB02-07)	15	 17.05.2013. (pet)	 08:00 - 11:00	 180	 A209	
+LAB02-08	Skriptni jezici - 2. laboratorijska vježba (LAB02-08)	16	 14.05.2013. (uto)	 11:00 - 14:00	 180	 A210	
+LAB02-09	Skriptni jezici - 2. laboratorijska vježba (LAB02-09)	14	 15.05.2013. (sri)	 10:00 - 13:00	 180	 A209	
+LAB02-10	Skriptni jezici - 2. laboratorijska vježba (LAB02-10)	15	 13.05.2013. (pon)	 11:00 - 14:00	 180	 A210	
+LAB02-11	Skriptni jezici - 2. laboratorijska vježba (LAB02-11)	15	 16.05.2013. (čet)	 08:00 - 11:00	 180	 A209	
+LAB02-12	Skriptni jezici - 2. laboratorijska vježba (LAB02-12)	16	 13.05.2013. (pon)	 10:00 - 13:00	 180	 A209	
+LAB02-13	Skriptni jezici - 2. laboratorijska vježba (LAB02-13)	15	 17.05.2013. (pet)	 13:00 - 16:00	 180	 A209

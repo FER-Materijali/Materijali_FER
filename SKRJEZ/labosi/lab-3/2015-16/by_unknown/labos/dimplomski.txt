@@ -1,0 +1,25 @@
+KljuÄŤariÄŤek, Maja;Procjena optiÄŤkog toka duĹľ konture;2005
+Hucaljuk, Marina;Primjena Kalmanovog filtra u vizualnom praÄ‡enju objekata;2005
+MikĹˇa, Igor;UÄŤenje i raspoznavanje uzoraka u boji;2006
+LombaroviÄ‡, Mladen;Detekcija osoba u infracrvenim slikama;2006
+Petrak, Danijela;Detekcija lica primjenom neuronskih mreĹľa;2006
+MijatoviÄ‡, Daniel;Sustav za segmentaciju slike pomakom prema srednjoj vrijednosti;2006
+KoĹľul, Luka;PraÄ‡enje objekata ÄŤestiÄŤnim filtrima;2006
+KuljiĹˇ, Marko;Detekcija objekata deformabilnim predloĹˇcima;2006
+Lokin, BoĹˇko;Mjere sliÄŤnosti slikovnih uzoraka u boji;2006
+PetraĹˇ, Deni;Lokalizacija objekata primjenom aktivnih modela oblika;2007
+RuĹˇkan, Damir;Poravnavanje slika koriĹˇtenjem modela usmjeravanja paĹľnje;2007
+StojeviÄ‡, Mislav;Uporaba znaÄŤajki boje koĹľe za detekciju lica;2007
+Pokupec, Tomislav;Programski alat za praÄ‡enje rada i dijagnostiku sloĹľenih sustava;2007
+BagariÄ‡, Magdalena;Detekcija lica pomoÄ‡u Gaborovih znaÄŤajki;2008
+BobesiÄ‡, Antonija;Primjena pravokutnih znaÄŤajki za detekciju lica;2008
+BoroĹˇ, Marko;PraÄ‡enje objekata u prometnim scenama;2008
+ÄŚepo, Domagoj;Primjena strojnog uÄŤenja u detekciji osoba u slikama;2008
+CeroveÄŤki, SiniĹˇa;Automatizirano traĹľenje sigurnosnih propusta u Web aplikacijama;2008
+ÄŚlekoviÄ‡, Vibor;Sustav za pohranu i pretraĹľivanje slika poĹˇtanskih maraka;2008
+DugandĹľiÄ‡, Martina;Detekcija prometnih znakova u slikama u boji;2008 
+GrabiÄ‡, Tatjana;PretraĹľivanje slikovnih baza temeljeno na lokalnim znaÄŤajkama boje;2008 
+Svalina, Marin;PretraĹľivanje slikovnih baza temeljeno na znaÄŤajkama teksture;2009
+Valent, Tomislav;Analiza oblika kontura koĹˇtica maslina;2009
+Zuban, Tadija;PraÄ‡enje objekata adaptivnim pomicanjem prozora pretraĹľivanja;2009
+	

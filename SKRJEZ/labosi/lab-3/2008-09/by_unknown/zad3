@@ -1,0 +1,48 @@
+#!/usr/bin/python
+import os, re
+
+studlinije = open('zad3stud.txt', 'r').read().split('\n')
+
+data = {}
+initval = '-'
+
+print "Ucitani studenti:\n"
+for linija in studlinije:
+    info = linija.split(' ')
+    jmbag = info[0]
+    prezime = info[1]
+    ime = info[2]
+    
+    data[jmbag] = {'ime': ime, 'prezime': prezime, 'lab1': initval, 'lab2': initval, 'lab3': initval}
+    print prezime + ", " + ime + " (" + jmbag + ")"
+
+print "\nDetektirani labosi:\n"
+
+filenames = os.listdir(".")
+
+for filename in filenames:
+    lab = re.match('zad3lab(?P<rbr>\d+)g', filename)
+
+    if (lab):
+        #print filename + " => lab" + lab.group('rbr')
+        labkey = "lab" + str(lab.group('rbr'))
+    
+        lablinije = open(filename, 'r').read().split('\n')
+        for linija in lablinije:
+            labdata = linija.split(' ')
+            jmbag = labdata[0]
+            bodovi = int(labdata[1])
+            
+            if data[jmbag][labkey] != initval:
+                print "Upozorenje: Visestruki zapis kod <" + labkey + "> za studenta " + str(jmbag) + " u datoteci " + filename + "."
+                print "            Novi zapis biti ce zanemaren."
+            else:
+                data[jmbag][labkey] = bodovi
+
+print "\nJMBAG\t\tPrezime, Ime\tLAB1\tLAB2\tLAB3\n"
+for key in data.keys():
+    lab1 = str(data[key]['lab1'])
+    lab2 = str(data[key]['lab2'])
+    lab3 = str(data[key]['lab3'])
+
+    print str(key) + "\t" + data[key]['prezime'] + ", " + data[key]['ime'] + "\t" + lab1 + "\t" + lab2 + "\t" + lab3
