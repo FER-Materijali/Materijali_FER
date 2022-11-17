@@ -1,0 +1,22 @@
+1. Zadan je kabel, traži se polumjer vodièa r kad je gradijent napona na površini vodièa minimalan za odreðene vrijednosti prikljuèenog napona U i polumjera plašta R.
+Traži se r, vanjski polumjer izolacije 6 cm, napon 200 kV, uz najviši dopušteni gradijent napona: a) 90,61 kV/cm, b) 100 kV/cm.
+
+2. Proizvodnja i mjerenje visokog istosmjernog napona (shema s labosa). Koja je uloga svakog elementa?
+U strujni krug je spojena konfiguracija suosnih elektroda tako da se na unutrašnju elektrodu polumjera 20 mm dovodi napon dok je vanjska elektroda od 72 mm uzemljena. Mikroampermetar u trenutku proboja mjeri 350 uA efektivno. Kolika je gustoæa zraka , zadano A, B, K, K1, K2.
+
+3. Pravokutni val amplitude U putuje vodom valne impedancije Z0, zakljuèenim kondenzatorom C. Izraz za prolazni val?
+Odredite vrijednost prolaznog vala napona i prolazne struje ako je U=80 kV, Z0=400 ohma, C=12 nF, u trenutku t1 =5 us.
+
+4. Prenaponski val strmog èela i dugog trajanja amplitude 360 kV nailazi zraènim vodom preko kabela duljine 300 m na sabirnicu na koju je još prikljuèen transformator vrlo velike ulazne impedancije, kabel i dva zraèna voda. Odredite napon na transformatoru nakon beskonaèno mnogo refleksija. Impedancije kabela su 50 ohma, a vodova 400 ohma. Brzina prostiranja kabelom je 150 m/us.
+
+5. Unutarnja parcijalna izbijanja, zašto nastaju, mjerna jedinica.
+
+6. Koliko iznosu vrijednost el. polja u èeliènom kontejneru pozicioniranom m od središnje osi 110 kV voda tipa portal na visini 1 m iznad donjeg ruba? Kolike su graniène vrijednosti el. polja u Hrvatskoj?
+
+7. Probojna èvrstoæa izolacijskih tekuæina jako zavisi o _________________? Dielektrièna èvrstoæa tekuæih dielektrika veæa je od dielektriène èvrstoæe plinovitih ili krutih dielektrika (zaokruži toèan) i iznosi oko _________?
+
+8. Na koje naèine se postiže brzo poveæavanje razmaka izmeðu kontakata prekidaèa i smanjivanje presjeka luka kod gašenja luka.
+
+9. Definirajte trajni radni napon, nazivni napon, preostali napon i nazivnu struju za metal-oksidni odvodnik prenapona.
+
+10. Shema Teslinog transformatora, izraèunaj napon na sekundaru, koji mu je uvjet rada? 
