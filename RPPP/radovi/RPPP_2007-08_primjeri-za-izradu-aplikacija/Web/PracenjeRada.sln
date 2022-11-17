@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\PracenjeRada\", "PracenjeRada", "{D438802A-3915-4869-A6B4-4332DD46A510}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		Debug.AspNetCompiler.VirtualPath = "/PracenjeRada"
+		Debug.AspNetCompiler.PhysicalPath = "..\RPPP_Primjeri\Web\PracenjeRada\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\PracenjeRada\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/PracenjeRada"
+		Release.AspNetCompiler.PhysicalPath = "..\RPPP_Primjeri\Web\PracenjeRada\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\PracenjeRada\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "29980"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dellboy.zpr.fer.hr:8143/
+		SccWebProject0 = true
+		SccProjectUniqueName0 = PracenjeRada
+		SccProjectName0 = PracenjeRada
+		SccLocalPath0 = PracenjeRada
+		SccProjectEnlistmentChoice0 = 2
+		SccLocalPath1 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D438802A-3915-4869-A6B4-4332DD46A510}.Debug|.NET.ActiveCfg = Debug|.NET
+		{D438802A-3915-4869-A6B4-4332DD46A510}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

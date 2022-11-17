@@ -1,0 +1,435 @@
+- analiza,oblikovanje,ugradnja i provjera su (faze iterativnog životnog ciklusa)
+-što nije svojstvo programske potpore (upravljanje ljudskim aktivnostima)
+-pretvorba nekog vrijednosnog tipa podatka u referencijski tip object (boxing)
+-izdvajanje vrijednosnog tipa podatka iz tipa object (unboxing)
+- kako neki string s pospremiti u integer x
+-s kojom rječju se eksplicitno uvode sva imena sadržana u prostoru imena (using)
+-1.predavanje slajd 61 slika
+-osoba koja osigurava resurse za projekt (sponzor projekta)
+-vrste resursa (resursi rada i resursi materijala)
+-Čemu služi prozor Locals (za praćenje stanja varijabli tijekom izvođenja programa)
+-Kako se sa TFS-a skinu verzije (to znate :P )
+-Svaka pojava,pojam ili predmet (stvarni ili zamišljeni) o kojem se prate podaci i način rukovanja podacima (objekt)
+-Obrazac prema kojem se stvaraju instance razreda (razred)
+-Modifikator pristupa public (neograničen pristup)
+-Operator koji stvara novu instancu (new)
+-svojstva get i set (indekseri i još nešto)
+-funkcionalni zahtjevi odgovaraju na pitanje (što)
+-scenarij (niz koraka koji opisuje interakciju korisnik-sustav)
+-što označava dijamant kod dijagrama razreda (agregaciju)
+-programi koji se sastoje od slijeda naredbi i djeluju nad globalnim varijablama (nestrukturirano programiranje)
+-Bazni razred za iznimke koji generira CLR (SystemException)
+- neki mali kod s try, catch i finally što će se ispisati
+- neki mali kod s nasljeđivanjem i overloadom, što će se ispisati
+-IDataReader (odgovor je nešto s vraćanjem u prethodni redak, ne sjećam se)
+-Prikaz informacije o pogrešci (ErrorProvider)
+-Vrste DataSet skupova (Typed, UnTyped)
+-Složeno povezivanje (povezivanje složene komponente s više redaka)
+-što je zabranjeno za događaj i bili ponuđeni neki izrazi s +=, -=, =
+
+
+1) Za C# NE vrijedi (C# je proceduralni jezik)
+2) Što je od ovog type reference (array)
+3) Što je od ovog type value (enum)
+4) Nabacana gomila teksta kao opis IDE-a, je li točno/netočno (točno)
+5) Jezik koji i onda opis u kojem se riječ 'procedura' pojavljuje tri puta je (proceduralno orijentiran)
+6) Vođa projekta je (osoba koja se brine da cilj projekta bude postignut)
+7) Operator koji pokazuje na trenutnu instancu (this)
+8) Što radi ADO .NET (pribavlja podatke)
+9) ADO .NET omogućava pristup podacima, ukoliko postoji provider, točno /netočno (točno)
+10) Koji simbol od navedenih predstavlja izvođenje (izduljena elipsa)
+11) Definicija programske potpore je (najdulji odgovor, imate definiciju na slajdovima)
+12) Definicija programskog inženjerstva je (vidi iznad)
+13) Za dobiti 10.8 bodova iz blica treba (pročitati prezentacije jednom)
+14) Naziv za izvođenjem dodatnih operacija ukoliko su zadovoljeni uvjeti (proširenje)
+15) Svi tipovi podataka u C# su izvedeni iz (System.Object)
+16) Apstraktni razred se može instancirati, točno/netočno (netočno)
+17) Definicija apstrakcije, ne sjećam se kako točno ide (apstrakcija, očito)
+
+
+1. nestrukturirano programiranje
+2. IDbCommand
+3.13-16 sati 200% radni utorak i srijeda.. koliko tjedno osoba radi?
+4. OleDbDataReader i SqlDataReader - implementiraju System.Data.IDataReader
+5. System.Data.IDataReader
+6. using je trebalo odabrat - ono sa prostorom imena i to
+7. boxing
+8. unboxing
+9.varijante vodopadnog modela
+10. u kojoj fazi ciklusa je dizajn arhitekture i baze.. oblikovanje
+11. nabroje ti faze ekstremnog programiranja pa ti zakljucis da je to ekstremno
+12.ToString
+13. iz stringa u int - int c = int.Parse(s)
+14.simple binding što je
+15. bila nacrtana neka strelica nekakvo povezivanje neznam..
+16. kritični put - niz zadataka bla bla na vrijeme
+17. kako se salje datoteke na posluzitelj (check in)
+18. definicija objekta - i onda ti kliknes objekt
+19. konstruktori su se spominjali
+20. gdje se moze koristit get i set (u postupcima i svojstvima)
+21. def tvrdnje
+22. preporuke za korištenje tvrdnji ( sto je krivo)
+23. nemodalni prikaz forme (show)
+24. na koje pitanje odg poslovni zahtjevi ( zašto)
+25. nes sa dijagramom razreda il tako nes (povezivanje)
+26. izvedeni razred mora u potpunosti ugraditi nedovršene postupke - nes je bilo s tim nisam siguran tocno što (uglavnom apstraktni razredi) 
+
+
+200% = 2 osobe rade
+utorak i srijeda = 2 dana tjedno
+13-16 = 3 sata dnevno
+2*2*3 = 12 ukupno
+
+
+nesto kako prikazati nemodalnu formu( Show())
+- plan iteracija, analiza, oblikovanje, izrada itd (aktivnosti iterativnog modela )
+- u kojoj fazi se radi dizajn arhitekture, sučelja itd (oblikovanje)
+- nesto kao sto je PropertyManager ili tak nekaj (odgovor je da u njemu se mogu namještati i pregledavat svojstva objekta)
+- ona strelica za generalizaciju u dijagramu razreda i pita kaj to označava(generalizaciju)
+- pitanje točno/netočno za izgled strelice za include u obrascu upotrebe. Ne sjecam se tocno kak ide ali tocno je.
+
+
+public – pristup nije ograničen
+private - pristup ograničen na razred u kojem je član definiran
+protected – pristup ograničen na razred i naslijeđene razrede
+
+
+-napisano je
+this.button1.Click += new System.EventHandler(this.button1_Click);
+pitanje je što je this.button1.Click (event)
+
+
+-nešto u smislu s čim se bavi plan projekta
+
+-što se ne može izvesti
+i sad su tu bili primjeri sa varom
+var x=7;
+var x= int.parse("123");
+var x; // rješenje
+var x=12.toString();
+
+
+što je major versio.minor version.build.reviion(verzija asemblija)
+što je asemblij
+što se preporučuje kod hvatanja iznimki
+kako se otvara nemodalna forma( show)
+koji se događaj okine kada se pokreće forma(load)
+kada se stvara specifikacija zahtjeva
+defincija spec. zahtjeva i treba odabrati s. z.
+da li se poziva konstruktor klase koja je nasljeđena (poziva se)
+da li binding source ima enkapsuliran podatak i referencu na trenutni podatak
+kada se može izvesti dio koda sa foreach petljom (bili su primjeri i točan odgovor je kada se ne mijenja lista i kada se ne mijenja trenutni element)
+bila su dva pitanja koliko osoba ima radnih sati ako radi 12-15 h utorak i srijedu
+ako je 200% onda 12
+ako je 50% onda 3 
+
+
+1. Action<object> (što je object)
+2. Func<A,B,C> (što su A,B,C - a,b parametri, C povratna vrijednost)
+3.ADO, sve o procedurama (i sve je bilo tocno)
+4.što nastaje kad nastaje entity model(dbcontext bla bla dbset bla bla tak nes)
+5.prednost generičkih nad negeneričkim kolekcija(perfomanse)
+6.windows location, dekstop location, new point()
+imamo vertikalni taskbar na lijevoj strani(900x80) na ekranu(1600x900)
+forma 600x200, koja komanda da forma dodiruje taskbar i donji dio ekrana
+7.ok, no , retry....(enum dialog neceg)
+8.try using throw catch
+overridan je dispose metoda da ispisiuje koji se objekt disposo
+try {
+objekt r1 = new objekt()
+using ( r2 objekt = new r2()) {
+r3 objekt = new r3();
+throw exception;
+}
+r1.dispose();
+catch {}
+
+ispisat ce se Dispode : R2
+
+9.try using catch sa datotekom, otvaranje datoteke, u slucaju greske
+ispisuje se pogreska i zatvara datoteka
+10.analiza
+11. produkt oblikovanja (specifikacija sustava)
+12.razred
+13.što se može unijeti u bazu iz entita(tabice,view, stored procedure, funkcije)
+14.value, reference, sta ce se ispisati
+15.osoba radi pon-pet, 8-12 , 75% raspolozivosti , koliko je radno vriejme(15 sati)
+16.protected internal
+17.ADO baratanje sa vise rezultata(executereader() i nextresult())
+18.najljepsi nacin da napisemo redni broj pitanja koji je atribut ?u bazi?(RbrPitanja)
+19.najjepsi nacin ifovanja
+bool ispravan = Fja();
+if (ispravan) { ... }
+20.kompozicija (jedno nemože postojati bez drugoga)
+21.korisnk mora moci stornirat racun(korisnicki zahtjev)
+22.stringbuilder (dodavanje elemenata u niz)
+23.type safety (zaštita od unosa podataka nedozvoljenog tipa)
+24.undo pending changes
+25.nulabilni tip (tip?)
+26.sto je uml (jezik za sustave programske podrške)
+27.barikada (razredi koji blokiraju nečiste razrede koji barataju ulaznim podacima)
+28.povelja projekta (ovlast za provedbu)
+29.modularnost (grupiranje u module koji mogu sadržavati lokalne atribute)
+
+
+Jedina nova kojih se sjećam su nešto sa izdavačem i pretplatnikom, ako želimo da aplikacija ima vlastitu kontrolu - odg. kontrola je izdavač, a aplikacija pretplatnik
+onda nešto gdje su nabrojane kolekcije , pa je odgovor kolekcije
+onda neki sa K1, K2 i K3 binding sourcovima, koji će ubaciti neki element, a koji neće - sjeća li se itko točnog zadatka da ostane za sljedeće generacije?
+par pitanja sa iterativnim modelom (neki odgovor je bio iterativni i inkrementalni)
+
+
+Meni je došao ovaj s K1, K2, K3.
+Pitanje je bilo nešto tipa:
+Imate dva razreda A i B. B implementira INotifyPropertyChanged.
+Imate formu s 3 kontrole. Na svaku je spojen binding source Ki.
+K1 = new List<A>();
+K2 = new BindingList<A>();
+K3 = new BindingList<B>();
+Pitanje je ako se programski doda novi element u listu, na kojoj kontroli će se vidjeti promjena.
+Točan odgovor je na kontroli K3. 
+
+
+koja se notacija koristi kod prostora imena, i drugo pitanje isto to samo za postupke.
+Pascal oba čini mi se 
+
+
+1.Varijante vodopadnog modela (klasični, pseudostrukturni, radikalni)
+2.Kod iterativnog postupka razvoja svaka se iteracija obavlja (standardnim zivotnim ciklusom koju ukljucuje oblikovanje, ugradnju...)
+3. Za koji je razvoj karakteristicno da se softver razvija i objavljuje po dijelovima, a glavne faze se obavljaju kroz niz iteracija (iterativni i ikrementalni)
+4. Ugrađeni postupak za pretvorbu nekog objekta u tip string je (ToString() )
+5. Kojom kljucnom rjeci neki projekt ukljucuje prostor imena (using)
+6. Plan projekta je dokument koji (opisuje sveukupnu organizaciju projekta)
+7. Koje vrste projektnih zadataka postoje (primitivni, skupni i prekretnice)
+8. Koja je tvrdnja istina (rjesenje (solution) se moze sastojati od vise projekata)
+9. public modifikator oznacava (neogranicen pristup)
+10. protected modifikator oznacava (pristup ogranicen na razred i nasljeđene razrede)
+11. Za automatsko oslobađanje memorije koja je zauzeta referencama koje vise ne postoje, zaduzen je (garbage collector)
+12. štapićasti čovječuljci u dijagramima sluč. koristenja predstavljaju (sudionike)
+13. za vrijeme dokumentiranja sustava za unos narudzbi otkrijemo da netko tko nije kupac moze nazvati i napraviti narudzbu. 
+	U ovom slucaju koristenja "Napravi narudzbu" ce koristiti sluacj koristenja "Napravi kupca" kako bi prikupio podatke o kupcu.
+	O kojoj vezi izmedu slucajeva se radi (Prosirenje)
+14. Koja tvrdnja *NIJE* tocna (Apstraktrni razred ne moze implementirati sučelje)
+15. Razred koji implementira neki od ICollection, IEnumerator, IEnumerable,IDictionary, IList naziva se (kolekcija)
+16. Skup prog. naredbi koje obavljaju jedan zadatak ili jedan dio zadatka, npr gl. program, potprogram zovu se (prog. cjelina)
+17.Preporucena notacija za privatne varijable (camel case)
+18. obrada iznimke najcesce je oblika (try catch finally)
+19. Koja tvrdnja *NIJE* istina (obrada greske izaziva nepredvideni prekid izvodenja programa)
+20. Što je izdavac(publisher) a sto pretplatnik (subscriber) u modelu s app i vlastitom kontrolom (kontrola-izdavac, app - pretplatnik)
+21. Nacelo oblikovanja korisnickog sucelja po kojem se prepoznaje da novi i iskusni korisnik imaju razlicit odnos prema sucelju je 
+	(iskustvo korisnika (user experience))
+22. Korisnicko sucelje: (definira interakciju s krajnjim korisnikom)
+23. Kako se naziva forma koja je sadrzana u formi roditelj (Dijete(MDIChild))
+24. Kod svakog postavljanja svojstva forme ili postavljanja kontrole na formu prog. kod unutar funkcije InitializeComponent se: (generira automatski)
+25. Osnovna namjena kontrole gumb-button:(pokretanje akcija)
+26. Razred FileInfo sadrzi postupke za (stvaranje, premjestanje,...,brisanje i otvaranje datoteke)
+27. Razred koji sluzi za dohvat postavki iz konfiguracijske datoteke je (ConfigurationManager)
+28. Tehnika izrade EF modela u koje se baza stvara kroz rucno pisane razrede te nema vizualnog modela (code first)
+29.Tehnika izrade EF modela u koje se bazavec postoji, a EF model se pravi reverznim inzenjerstvom (database first)
+30. Imate dva razreda A i B. B implementira INotifyPropertyChanged.
+Imate formu s 3 kontrole. Na svaku je spojen binding source Ki.
+K1 = new List<A>();
+K2 = new BindingList<A>();
+K3 = new BindingList<B>();
+
+Pitanje je ako se programski doda novi element u listu, na kojoj kontroli će se vidjeti promjena.
+
+Točan odgovor je na kontroli K3. 
+
+
+1)MDI
+2) user experience
+3) this.button1.Click += new System.EventHandler(this.button1_Click);
+->što predstavlja system.eventhandler (delegat)
+4) -> sto predstavlja this.button1_click (event handler - postupak)
+5) gdje se odreduju spec. zahtjevi? -> u fazi analize
+6) 7) nesto osnovno o iznimkama, ne mogu se sjetit al je bilo trivijalno
+8) System.IO (čitanje i pisanje podataka)
+9) niz imenovanih konstanti -> enum
+10) nestrukturirano programiranje
+11) OleDbDataReader i SqlDataReader -> implementiraju IDataReader
+12) Simple binding (jedna stavka/redak)
+13) sto je binding opcenito (mehanizam vezanja elemenata grafičkog sučelja na podatke)
+
+
+sučelja se određuju za vrijeme (oblikovanja)
+vrste vodopadnog modela (klasični, pseudostrukturni i radikalni)
+string NIJE (isto što i niz znakova u jeziku C#)
+voditelj je (osoba imenovana kako bi ostvarila ciljeve projekta)
+planprojekta (opisuje sveokupnu organizaciju projekta)
+private (pristup ograničen na razred u kojem je član definiran)
+public (neograničeni pristup)
+scenarij (niz koraka koji opisuju interakciju sustav-korisnik)
+NIJE točno (private varijable i postupci se nasljeđuju)
+nadjačanom članu Postupak() se pristupa (instanca.Postupak())
+vrsta programiranja gdje se radi s globalnim varijablama i ponavljanje postupka znači kopiranje koda (nestrukturirano programiranje)
+skup programskih naredbi ili cijeli program se naziva (programska cjelina)
+osnovni razred za iznimke koje geneira pogon programa (SystemException)
+osnovni razred za iznimke aplikacije (ApplicationException)
+pitanja o višenitnosti, što je nit i pitanje o dijalogu
+.... aplikacija okida događaje vlastite kontrole (kontrola - izdavač, aplikacija - pretplatnik)
+CamelCase je programsko načelo (Estetike)
+brzi odabir na formi (Funkcijska tipka)
+izvor podataka za povezivanje na kontrolu (Sve od navedenog)
+simple binding (jedna vrijednost)
+complex binding ( složena kontrola s više redaka)
+pitanje što sadrži DirectoryInfo - bazni razred za razrede
+dohvat postavki iz konfiguracijske datoteke (ConfigurationManager)
+
+
+1. Koje su vrste resursa? (resursi rada i materijala)
+2. Koja operacija obavlja download datoteka u TFS-u? (get latest version)
+3. Što je od navedenih mogući nadrazred od zaposlenika? (osoba)
+4. Kako izgleda generalizacija u dijagramu strukture? (prazna strelica)
+5. Što simbolizira dijamant u dijagramu razreda? (agregacija)
+6. Varijable deklarirane na vrhu razreda se zovu? (članske varijable ja mislim)
+7. Što znači da je razred parcijalan? (može se protezati u više datoteka)
+8. Skup zajedničkih tipova podataka platforme .NET se zovu...? (Common Type System)
+9. Internal modifikator pristupa razredima i članovima razreda označava? (samo unutar programa)
+10. Internal protected modifikator pristupa razredima i članovima razreda označava? (unutar programa i naslijeđenih razreda)
+11. Za neku osobu se evidentira radno vrijeme u utorak i srijedu 12-15h, 50% raspoloživosti radnika znači da radnik tjedno radi koliko? (3h)
+12. Pojam koji se odnosi na suradnika koji radi na projektu je? (uloga)
+13. Razred predložak koji definira porodicu razreda i ne ovisi o tipu podataka naziva se? (parametrizirani razred)
+14. Što je tipska sigurnost? (zaštita od unosa podataka neželjenog tipa)
+15. Koji je ispravan poziv postupka Task<string> RunAsync(int a, int b)? int a = 4; int b = 3; string s = RunAsync (a, b);
+16. Značenje svojstva InvokeRequired? (dali je pozivatelj na drugoj niti)
+17. Što znači delegat tipa Action<object>? (postupak bez argumenata koji vraća objekt tipa object)
+
+
+1. Suradnik koji obavlja određeni posao, npr. voditelj projekta, arhitekt, programer? Uloga
+2. Prikupljanje informacija, modeliranje procesa, modeliranje podataka spada u SDLC fazu Analiza
+3. Modeliranje sustava pripada fazi: Oblikovanje
+4. Apstraktan opisP svojstava, varijabli i metoda objekata istog tipa: Razred
+5. Kod i sto ce se ispisati (ovako nekako, znam da je bilo na hrv):
+Class Razred
+{
+int broj;
+}
+
+int x1 = 1;
+int x2 = x1;
+x2 = 5;
+
+Razred r1 = new Razred();
+Razred r2 = r1;
+r2.broj = 9;
+
+Ispis(x1, x2, r1.broj, r2.broj)
+
+"1 5 9 9"
+6. int? num nazivamo Nulabilni tip
+7. Ako kalendar evidentira radno vrijeme Pon-Pet od 8 do 12 sati. 75% raspolozivosti za nekog radnika znaci 15 sati rada tjedno
+8. Povelja projekta je (ovo sam gadjao i pogodio, ne sjecam se tocno kako je islo, znam da je dokument i da nema veze s prvim sastankom): Dokument od strane sponzora i voditelja projekta
+9. Otkazivanje lokalnih izmjena: Undo Pending Changes
+10. Razlaganje slozenih sustava u lakse upravljive djelove: Modularnost
+11. Protected Internal: Pristup dozvoljen nasljedjenim crazredima i svima iz programa u kojem je razred definiran
+12. Dobra praksa pisanja ili tako nesto pa izabrati od ponudjenih djelova koda
+condition = Provjeri(JMBG);
+if( condition )
+{
+...
+}
+bitno je da ne smije funkcija pidi u if ()
+13. Kako bi u bazi podataka oznacili atribut? RbrAtributa
+14. Korisnik mora moci prijaviti gubitak kartice je: Korisnicki zahtjev
+15. Objekt moze pripadati samo jednoj cjelini, elementi postoje tako dugo dok postoji cjelina: Kompozicija
+16. Prednosti generickih kolekcija na negenerickim: Bolje performanse
+17. Tipska sigurnost je: Zastita od unosa podataka nezeljenog tipa
+18. Konstrukcija sucelja kao granica prema sigurnim dijelovima koda je: Koncept barikada
+
+
+1. Vrste resursa (resursi rada i resursi materijala)
+2. Kako se dohvaćaju datoteke s TFS-a (Get Latest Version)
+3. Kako se naziva postupak koji se koristi prilikom stvaranja instance (konstruktor)
+4. Što može biti nadrazred razreda zaposlenik (osoba)
+5. Oznaka za generalizaciju (prazna strelica)
+6. Što znači dijamant u dijagramu razreda (agregacija)
+7. Varijable definirane na vrhu razreda (članske varijable)
+8. Što znači da je razred parcijalan (znači da se pojedini dijelovi mogu pokrenuti u drugim datoteka)
+9. Kako se zove načelo oblikovanja korisničkog sučelja prema kojemu se radi ograničenje selekcije listama 
+  (lakoća korištenja, minimalni napor korisnika)
+10. Koliko najviše može biti izbornika zavisnih o kontekstu (ContextMenuStrip) na formi/kontroli? (1)
+11. Nešto u stilu:
+int a = 0; int b = 0;
+try {
+try {
+Console.WriteLine("T1 ");
+int c = b/a;
+}
+finally
+{
+Console.WriteLine("F1 ");
+}
+}
+catch (Exception e)
+{
+Console.WriteLine("E1 ");
+}
+finally
+{
+Console.WriteLine("F2 ");
+}
+RJEŠENJE: T1 F1 E1 F2
+12. Nešto u stilu:
+int a = 0; int b = 0;
+try {
+try {
+Console.WriteLine("T1 ");
+}
+finally
+{
+Console.WriteLine("F1 ");
+}
+}
+catch (Exception e)
+{
+Console.WriteLine("E1 ");
+}
+finally
+{
+Console.WriteLine("F2 ");
+}
+RJEŠENJE: T1 F1 F2
+13. Ono pitanje sa zajedničkim i općim tipovima podataka (odgovor je CTS)
+14. Za internal modifikator definiran kod razreda i programa vrijedi sljedeće (pristup je ograničen na programe u kojem je razred definiran)
+15. Već viđeno pitanje - ako netko radi utorkom i srijedom 12-15 s 50% raspodjelom, radi (3h tjedno)
+16. Glavne faze za UDP/RUP (počinjanje, elaboracija, konstrukcija, prijelaz)
+17. Metodologija razvoja softvera koja sadrži niz predložaka razvojnog procesa za različite modele razvoja, 
+	a obavlja se kroz razvojne faze organizacijske iteracije (RUP)
+18. Razlika računalne znanosti i programskog inženjerstva (računalna znanost je teorijska, programsko inženjerstvo se temelji na praktičnoj primjeni programske potpore, odgovor u nekom takvom stilu)
+19. Nešto u stilu
+public class Osoba
+{
+public Zaposlenik zap;
+.....
+}
+Kako se naziva ovo? (kompozicija)
+20. Razred-predložak koji definira porodicu razreda i ne ovisi o tipu podataka naziva se (parametrizirani razred)
+21. Točan zapis metode za ispisivanje adrese isporuke zaposlenika (IspisiAdresuIsporuke)
+22. Elementi sučelja koje stvara programer, a može ih se koristiti u različitim programima se nazivaju (vlastite kontrole)
+23. Postupak kojim se na osnovu spremljenih podataka objekt naknadno rekonstruira (deserijalizacija)
+24. Koja je naredba naredbe SqlCommand() za ispis broja određenih zapisa? ExecuteNonQuery()
+25. Što se koristi za asinkrono izvšavanje od C# 5.0? (async i await)
+26. Task<String> RunAsync(int a, int b) - ispravni poziv programa za asinkrono izvršavanje? (string s = await RunAsync(2,5);)
+27. Značenje InvokeRequired (vraća odgovor da li je pozivatelj na drugoj niti)
+28. Ono s definiranjem DataSource:
+DataSource=rppp.fer.hr\SQL2012; Initial Catalog=firma; UserId = rppp; Password = test;
+29. Neš u stilu:
+using (var test = new SQLConnection(ne sjećam se šta je tu bilo)
+{
+.....
+}
+Što će se dogoditi ako nije napisan test.close()? (Zatvorit će se konekcija nakon izvršavanja isječka neovisno o tome je li se dogodila iznimka ili ne)
+30. Kod ADO.NET upita s više rezultata se koristi (ExecuteReader i NextResult)
+
+
+1) Što je instanca razreda? Objekt
+2) Razred zadužen za iznimke? System.Exception
+3) Bila je ponuđena nekakva definicija, a odgovor je bio Nefunkcionalno ono nešt
+4) this.button1.Click += new System.EventHandler(this.button1_Click) - što je što, event, delegat, event handler ja mislim.
+5) što nije, ponuđeno je MDI, SDI, TDI i LDI? LDI nekakav long... to ne postoji
+6) OleDbDataReader i SqlDataReader? implementiraju IDataReader
+7) System.IO? Za datoteke
+8) Dokument za sve moguće, bla bla nekak definicija valjda? Specifikacija zahtjeva
+9) Od kuda su dobiveni svi tipovi u C#? System.Object
+10) Nekak opis nasljeđivanja, deriviranja? Nasljeđivanje
+11) Ado NETčemu služi? Za pristup podacima

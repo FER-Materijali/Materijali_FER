@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{98DCBCE5-2F06-462A-99F8-58734DFF840B}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firma.Framework", "Firma.Framework\Firma.Framework.csproj", "{548AFCB9-5681-4A32-9AC5-0837EB9CC863}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firma.Shared", "Firma.Shared\Firma.Shared.csproj", "{D0CE41C6-FAC7-4463-8BC9-8CBF5C3545BF}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firma.DAL", "Firma.DAL\Firma.DAL.csproj", "{0843D066-FD41-4839-B7DF-30FCB3A7CF51}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firma.BLL", "Firma.BLL\Firma.BLL.csproj", "{55816143-527F-4295-99A8-37EF036DAE7A}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firma", "Firma\Firma.csproj", "{2F03FF90-5CF7-48B2-BFDB-CA57F9BBF948}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://dellboy.zpr.fer.hr:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Firma.Framework\\Firma.Framework.csproj
+		SccProjectName1 = Firma.Framework
+		SccLocalPath1 = Firma.Framework
+		SccProjectUniqueName2 = Firma.Shared\\Firma.Shared.csproj
+		SccProjectName2 = Firma.Shared
+		SccLocalPath2 = Firma.Shared
+		SccProjectUniqueName3 = Firma.DAL\\Firma.DAL.csproj
+		SccProjectName3 = Firma.DAL
+		SccLocalPath3 = Firma.DAL
+		SccProjectUniqueName4 = Firma.BLL\\Firma.BLL.csproj
+		SccProjectName4 = Firma.BLL
+		SccLocalPath4 = Firma.BLL
+		SccProjectUniqueName5 = Firma\\Firma.csproj
+		SccProjectName5 = Firma
+		SccLocalPath5 = Firma
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{548AFCB9-5681-4A32-9AC5-0837EB9CC863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{548AFCB9-5681-4A32-9AC5-0837EB9CC863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{548AFCB9-5681-4A32-9AC5-0837EB9CC863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{548AFCB9-5681-4A32-9AC5-0837EB9CC863}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0CE41C6-FAC7-4463-8BC9-8CBF5C3545BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0CE41C6-FAC7-4463-8BC9-8CBF5C3545BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0CE41C6-FAC7-4463-8BC9-8CBF5C3545BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0CE41C6-FAC7-4463-8BC9-8CBF5C3545BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0843D066-FD41-4839-B7DF-30FCB3A7CF51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0843D066-FD41-4839-B7DF-30FCB3A7CF51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0843D066-FD41-4839-B7DF-30FCB3A7CF51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0843D066-FD41-4839-B7DF-30FCB3A7CF51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55816143-527F-4295-99A8-37EF036DAE7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55816143-527F-4295-99A8-37EF036DAE7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55816143-527F-4295-99A8-37EF036DAE7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55816143-527F-4295-99A8-37EF036DAE7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F03FF90-5CF7-48B2-BFDB-CA57F9BBF948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F03FF90-5CF7-48B2-BFDB-CA57F9BBF948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F03FF90-5CF7-48B2-BFDB-CA57F9BBF948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F03FF90-5CF7-48B2-BFDB-CA57F9BBF948}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

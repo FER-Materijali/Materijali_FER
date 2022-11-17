@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Firma.LogInForm" Collapsed="true">
+    <Position X="1.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>LogInForm.cs</FileName>
+      <HashCode>AAAQAAAAACAAABAIAQSABAACEAAAQAAAAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="sec" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Firma.SecurityBllProvider">
+    <Position X="4" Y="1.75" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Firma.SecurityDalProvider">
+    <Position X="6" Y="1.75" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+</ClassDiagram>

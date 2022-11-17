@@ -1,0 +1,119 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assert", "Assert\Assert.csproj", "{2573E2EF-F83F-490B-843E-72095555261B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barikade", "Barikade\Barikade.csproj", "{76B98FD1-AB0E-4877-8A0D-9245B92D4B95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debug", "Debug\Debug.csproj", "{F866BAEB-333A-4679-9B19-AEEB47210F84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rethrow", "Rethrow\Rethrow.csproj", "{B46E454E-070E-43CC-A593-E42E180DE659}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionInfo", "ExceptionInfo\ExceptionInfo.csproj", "{5E801F31-97F2-494B-8353-63F2AC301DAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryCatch", "TryCatch\TryCatch.csproj", "{01F6544B-6833-492C-932A-F659DE8EEE91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InnerException", "InnerException\InnerException.csproj", "{B2C70B41-3AE4-4D60-904B-757B98E1C38F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StandardKodiranja", "StandardKodiranja\StandardKodiranja.csproj", "{018BACFF-814A-44CE-B13E-C674D7960C21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomException", "CustomException\CustomException.csproj", "{9A3AEB4C-2038-4572-A82D-7EF60C83D5F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentraliziraniSustav", "CentraliziraniSustav\CentraliziraniSustav.csproj", "{81F3D355-B758-4CDD-A4EE-B901562C2CD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckedUnchecked", "CheckedUnchecked\CheckedUnchecked.csproj", "{294C8AB3-B045-41A6-B420-0DFCFDB7CBC9}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dellboy.zpr.fer.hr:8143/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Assert\\Assert.csproj
+		SccProjectName1 = Assert
+		SccLocalPath1 = Assert
+		SccProjectUniqueName2 = Barikade\\Barikade.csproj
+		SccProjectName2 = Barikade
+		SccLocalPath2 = Barikade
+		SccProjectUniqueName3 = Debug\\Debug.csproj
+		SccProjectName3 = Debug
+		SccLocalPath3 = Debug
+		SccProjectUniqueName4 = ExceptionInfo\\ExceptionInfo.csproj
+		SccProjectName4 = ExceptionInfo
+		SccLocalPath4 = ExceptionInfo
+		SccProjectUniqueName5 = InnerException\\InnerException.csproj
+		SccProjectName5 = InnerException
+		SccLocalPath5 = InnerException
+		SccProjectUniqueName6 = Rethrow\\Rethrow.csproj
+		SccProjectName6 = Rethrow
+		SccLocalPath6 = Rethrow
+		SccProjectUniqueName7 = TryCatch\\TryCatch.csproj
+		SccProjectName7 = TryCatch
+		SccLocalPath7 = TryCatch
+		SccProjectUniqueName8 = StandardKodiranja\\StandardKodiranja.csproj
+		SccProjectName8 = StandardKodiranja
+		SccLocalPath8 = StandardKodiranja
+		SccProjectUniqueName9 = CustomException\\CustomException.csproj
+		SccProjectName9 = CustomException
+		SccLocalPath9 = CustomException
+		SccProjectUniqueName10 = CentraliziraniSustav\\CentraliziraniSustav.csproj
+		SccProjectName10 = CentraliziraniSustav
+		SccLocalPath10 = CentraliziraniSustav
+		SccProjectUniqueName11 = CheckedUnchecked\\CheckedUnchecked.csproj
+		SccProjectName11 = CheckedUnchecked
+		SccLocalPath11 = CheckedUnchecked
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2573E2EF-F83F-490B-843E-72095555261B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2573E2EF-F83F-490B-843E-72095555261B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2573E2EF-F83F-490B-843E-72095555261B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2573E2EF-F83F-490B-843E-72095555261B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76B98FD1-AB0E-4877-8A0D-9245B92D4B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B98FD1-AB0E-4877-8A0D-9245B92D4B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B98FD1-AB0E-4877-8A0D-9245B92D4B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B98FD1-AB0E-4877-8A0D-9245B92D4B95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F866BAEB-333A-4679-9B19-AEEB47210F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F866BAEB-333A-4679-9B19-AEEB47210F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F866BAEB-333A-4679-9B19-AEEB47210F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F866BAEB-333A-4679-9B19-AEEB47210F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B46E454E-070E-43CC-A593-E42E180DE659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B46E454E-070E-43CC-A593-E42E180DE659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B46E454E-070E-43CC-A593-E42E180DE659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B46E454E-070E-43CC-A593-E42E180DE659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E801F31-97F2-494B-8353-63F2AC301DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E801F31-97F2-494B-8353-63F2AC301DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E801F31-97F2-494B-8353-63F2AC301DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E801F31-97F2-494B-8353-63F2AC301DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01F6544B-6833-492C-932A-F659DE8EEE91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01F6544B-6833-492C-932A-F659DE8EEE91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01F6544B-6833-492C-932A-F659DE8EEE91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01F6544B-6833-492C-932A-F659DE8EEE91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C70B41-3AE4-4D60-904B-757B98E1C38F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C70B41-3AE4-4D60-904B-757B98E1C38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C70B41-3AE4-4D60-904B-757B98E1C38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C70B41-3AE4-4D60-904B-757B98E1C38F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{018BACFF-814A-44CE-B13E-C674D7960C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{018BACFF-814A-44CE-B13E-C674D7960C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{018BACFF-814A-44CE-B13E-C674D7960C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{018BACFF-814A-44CE-B13E-C674D7960C21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A3AEB4C-2038-4572-A82D-7EF60C83D5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A3AEB4C-2038-4572-A82D-7EF60C83D5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A3AEB4C-2038-4572-A82D-7EF60C83D5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A3AEB4C-2038-4572-A82D-7EF60C83D5F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81F3D355-B758-4CDD-A4EE-B901562C2CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F3D355-B758-4CDD-A4EE-B901562C2CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F3D355-B758-4CDD-A4EE-B901562C2CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F3D355-B758-4CDD-A4EE-B901562C2CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{294C8AB3-B045-41A6-B420-0DFCFDB7CBC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{294C8AB3-B045-41A6-B420-0DFCFDB7CBC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{294C8AB3-B045-41A6-B420-0DFCFDB7CBC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{294C8AB3-B045-41A6-B420-0DFCFDB7CBC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

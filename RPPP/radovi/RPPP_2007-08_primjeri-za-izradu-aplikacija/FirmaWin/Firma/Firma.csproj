@@ -1,0 +1,267 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F03FF90-5CF7-48B2-BFDB-CA57F9BBF948}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Firma</RootNamespace>
+    <AssemblyName>Firma</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FirmaApp.cs" />
+    <Compile Include="Forms\ArtiklForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ArtiklForm.designer.cs">
+      <DependentUpon>ArtiklForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\BaseForm.designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\FormToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\FormToolbar.Designer.cs">
+      <DependentUpon>FormToolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\IBusinessObjectForm.cs" />
+    <Compile Include="Core\Utils.cs" />
+    <Compile Include="LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInForm.Designer.cs">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\DokumentWizard.cs" />
+    <Compile Include="Wizard\DokumentWizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizard\DokumentWizardForm.designer.cs">
+      <DependentUpon>DokumentWizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\PartnerWizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizard\PartnerWizardForm.Designer.cs">
+      <DependentUpon>PartnerWizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DokumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DokumentForm.designer.cs">
+      <DependentUpon>DokumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\GenericForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\GenericForm.Designer.cs">
+      <DependentUpon>GenericForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PartnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PartnerForm.Designer.cs">
+      <DependentUpon>PartnerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ArtiklForm.resx">
+      <DependentUpon>ArtiklForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\FormToolbar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormToolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\DokumentWizardForm.resx">
+      <DependentUpon>DokumentWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\PartnerWizardForm.resx">
+      <DependentUpon>PartnerWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DokumentForm.resx">
+      <DependentUpon>DokumentForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\GenericForm.resx">
+      <DependentUpon>GenericForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PartnerForm.resx">
+      <DependentUpon>PartnerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\WizardBaseForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WizardBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Core\StatusBarInfo.cs" />
+    <Compile Include="Core\StatusBusy.cs" />
+    <Compile Include="Core\WizardBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\WizardBaseForm.Designer.cs">
+      <DependentUpon>WizardBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\WizardResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Firma.BLL\Firma.BLL.csproj">
+      <Project>{55816143-527F-4295-99A8-37EF036DAE7A}</Project>
+      <Name>Firma.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Firma.DAL\Firma.DAL.csproj">
+      <Project>{0843D066-FD41-4839-B7DF-30FCB3A7CF51}</Project>
+      <Name>Firma.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Firma.Framework\Firma.Framework.csproj">
+      <Project>{548AFCB9-5681-4A32-9AC5-0837EB9CC863}</Project>
+      <Name>Firma.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Firma.Shared\Firma.Shared.csproj">
+      <Project>{D0CE41C6-FAC7-4463-8BC9-8CBF5C3545BF}</Project>
+      <Name>Firma.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_cascade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_tile_horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_tile_vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Doc\Firma.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Doc\Firma.hhp" />
+    <None Include="Doc\Log1.log" />
+    <None Include="Doc\toc.hhc" />
+    <None Include="Model\UniverzalnaForma.cd" />
+    <None Include="Model\Dokument.cd" />
+    <None Include="Model\FirmaSecurity.cd" />
+    <None Include="Model\Artikl.cd" />
+    <None Include="Model\ArtiklGUI.cd" />
+    <None Include="Model\FirmaPL.cd" />
+    <None Include="Model\FirmaWin.cd" />
+    <None Include="Properties\DataSources\Artikl.datasource" />
+    <None Include="Properties\DataSources\Dokument.datasource" />
+    <None Include="Properties\DataSources\Mjesto.datasource" />
+    <None Include="Properties\DataSources\Stavka.datasource" />
+    <None Include="Resources\user-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Doc\Firma_files\doc-image001.jpg" />
+    <Content Include="Doc\Firma_files\doc-image002.jpg" />
+    <Content Include="Doc\Firma_files\doc-image003.jpg" />
+    <Content Include="Doc\Firma.htm" />
+    <Content Include="Doc\Firma_files\image001.jpg" />
+    <Content Include="Doc\Firma_files\image002.jpg" />
+    <Content Include="Doc\Firma_files\image003.jpg" />
+    <Content Include="Doc\Firma_files\image004.jpg" />
+    <Content Include="Doc\Firma_files\image005.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

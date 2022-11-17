@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvidencijaPoslova", "EvidencijaPoslova\EvidencijaPoslova.csproj", "{F9A80C97-E169-4DA3-B66C-53758985DE52}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocketNotepad", "PocketNotepad\PocketNotepad.csproj", "{B18ACD1A-9182-4A91-81C8-AF82B6ADA73B}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skladiste", "Skladiste\Skladiste.csproj", "{637B797D-FB6F-40C7-9BFC-CBABF5802E2D}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirmaServis", "FirmaServis\FirmaServis.csproj", "{1A0C528C-A2B9-456A-B814-4C9EDAD84215}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dellboy.zpr.fer.hr:8143/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = EvidencijaPoslova\\EvidencijaPoslova.csproj
+		SccProjectName1 = EvidencijaPoslova
+		SccLocalPath1 = EvidencijaPoslova
+		SccProjectUniqueName2 = PocketNotepad\\PocketNotepad.csproj
+		SccProjectName2 = PocketNotepad
+		SccLocalPath2 = PocketNotepad
+		SccProjectUniqueName3 = Skladiste\\Skladiste.csproj
+		SccProjectName3 = Skladiste
+		SccLocalPath3 = Skladiste
+		SccProjectUniqueName4 = FirmaServis\\FirmaServis.csproj
+		SccProjectName4 = FirmaServis
+		SccLocalPath4 = FirmaServis
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9A80C97-E169-4DA3-B66C-53758985DE52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A80C97-E169-4DA3-B66C-53758985DE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A80C97-E169-4DA3-B66C-53758985DE52}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F9A80C97-E169-4DA3-B66C-53758985DE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A80C97-E169-4DA3-B66C-53758985DE52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A80C97-E169-4DA3-B66C-53758985DE52}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B18ACD1A-9182-4A91-81C8-AF82B6ADA73B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B18ACD1A-9182-4A91-81C8-AF82B6ADA73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B18ACD1A-9182-4A91-81C8-AF82B6ADA73B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B18ACD1A-9182-4A91-81C8-AF82B6ADA73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B18ACD1A-9182-4A91-81C8-AF82B6ADA73B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B18ACD1A-9182-4A91-81C8-AF82B6ADA73B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{637B797D-FB6F-40C7-9BFC-CBABF5802E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{637B797D-FB6F-40C7-9BFC-CBABF5802E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{637B797D-FB6F-40C7-9BFC-CBABF5802E2D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{637B797D-FB6F-40C7-9BFC-CBABF5802E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{637B797D-FB6F-40C7-9BFC-CBABF5802E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{637B797D-FB6F-40C7-9BFC-CBABF5802E2D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1A0C528C-A2B9-456A-B814-4C9EDAD84215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A0C528C-A2B9-456A-B814-4C9EDAD84215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A0C528C-A2B9-456A-B814-4C9EDAD84215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A0C528C-A2B9-456A-B814-4C9EDAD84215}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

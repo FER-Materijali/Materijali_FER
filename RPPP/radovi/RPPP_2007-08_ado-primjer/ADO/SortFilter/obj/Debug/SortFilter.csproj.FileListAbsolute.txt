@@ -1,0 +1,9 @@
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\SortFilter\bin\Debug\SortFilter.exe.config
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\SortFilter\bin\Debug\SortFilter.exe
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\SortFilter\bin\Debug\SortFilter.pdb
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\SortFilter\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\SortFilter\obj\Debug\SortFilter.Properties.Resources.resources
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\SortFilter\obj\Debug\SortFilter.SortFilterForm.resources
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\SortFilter\obj\Debug\SortFilter.csproj.GenerateResource.Cache
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\SortFilter\obj\Debug\SortFilter.exe
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\SortFilter\obj\Debug\SortFilter.pdb

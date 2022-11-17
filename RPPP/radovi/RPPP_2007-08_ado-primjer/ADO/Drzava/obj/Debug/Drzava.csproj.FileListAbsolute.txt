@@ -1,0 +1,12 @@
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Drzava\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Drzava\obj\Debug\Drzava.DrzavaForm.resources
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Drzava\obj\Debug\UnosDrzava.Properties.Resources.resources
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Drzava\obj\Debug\Drzava.csproj.GenerateResource.Cache
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Drzava\bin\Debug\UnosDrzava.exe.config
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Drzava\bin\Debug\UnosDrzava.exe
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Drzava\bin\Debug\UnosDrzava.pdb
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Drzava\obj\Debug\UnosDrzava.exe
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Drzava\obj\Debug\UnosDrzava.pdb
+D:\My Documents\FER\RPPP\backup\ADO\Drzava\bin\Debug\UnosDrzava.exe.config
+D:\My Documents\FER\RPPP\backup\ADO\Drzava\obj\Debug\UnosDrzava.exe
+D:\My Documents\FER\RPPP\backup\ADO\Drzava\obj\Debug\UnosDrzava.pdb

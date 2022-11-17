@@ -1,0 +1,9 @@
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DokumentStavka\bin\Debug\MasterDetail.exe.config
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DokumentStavka\bin\Debug\MasterDetail.exe
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DokumentStavka\bin\Debug\MasterDetail.pdb
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DokumentStavka\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DokumentStavka\obj\Debug\MasterDetail.DokumentStavka.resources
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DokumentStavka\obj\Debug\MasterDetail.Properties.Resources.resources
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DokumentStavka\obj\Debug\DokumentStavka.csproj.GenerateResource.Cache
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DokumentStavka\obj\Debug\MasterDetail.exe
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DokumentStavka\obj\Debug\MasterDetail.pdb

@@ -1,0 +1,83 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td colspan="2">
+          <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em"
+          PathSeparator=" : ">
+          <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
+          <CurrentNodeStyle ForeColor="#333333" />
+          <NodeStyle Font-Bold="True" ForeColor="#990000" />
+          <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
+          </asp:SiteMapPath>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+            <hr />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <asp:Menu ID="Menu1" runat="server" BackColor="#FFFBD6" DynamicHorizontalOffset="2"
+            Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000"
+            StaticSubMenuIndent="10px" Orientation="Horizontal">
+            <StaticSelectedStyle BackColor="#FFCC66" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+            <DynamicMenuStyle BackColor="#FFFBD6" />
+            <DynamicSelectedStyle BackColor="#FFCC66" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+            <Items>
+            <asp:MenuItem NavigateUrl="1.aspx" Text="1. stranica" Value="1. stranica">
+            <asp:MenuItem NavigateUrl="4.aspx" Text="4. stranica" Value="4. stranica">
+            <asp:MenuItem NavigateUrl="7.aspx" Text="7. stranica" Value="7. stranica"></asp:MenuItem>
+            <asp:MenuItem NavigateUrl="8.aspx" Text="8. stranica" Value="8. stranica">
+            <asp:MenuItem NavigateUrl="9.aspx" Text="9. stranica" Value="9. stranica"></asp:MenuItem>
+            </asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem NavigateUrl="5.aspx" Text="5. stranica" Value="5. stranica"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem NavigateUrl="2.aspx" Text="2. stranica" Value="2. stranica"></asp:MenuItem>
+            <asp:MenuItem NavigateUrl="3.aspx" Text="3. stranica" Value="3. stranica"></asp:MenuItem>
+            </Items>
+            </asp:Menu>
+        </td>        
+      </tr>
+      <tr>
+        <td style="width:150px">
+          <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ImageSet="XPFileExplorer"
+          NodeIndent="15">
+          <ParentNodeStyle Font-Bold="False" />
+          <HoverNodeStyle Font-Underline="True" ForeColor="#6666AA" />
+          <SelectedNodeStyle BackColor="#B5B5B5" Font-Underline="False" HorizontalPadding="0px"
+          VerticalPadding="0px" />
+          <NodeStyle Font-Names="Tahoma" Font-Size="8pt" ForeColor="Black" HorizontalPadding="2px"
+          NodeSpacing="0px" VerticalPadding="2px" />
+          </asp:TreeView>
+          <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+</td>
+        <td><asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder></td>
+      </tr>
+      <tr>
+        <td colspan="2"></td>        
+      </tr>
+
+      </table>
+      
+        
+    </div>
+    </form>
+</body>
+</html>

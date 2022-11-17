@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "NadzornikInstall", "NadzornikInstall\MyServiceInstaller.vdproj", "{6D73470B-16A1-4CCD-8252-8275511A71DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NadzornikManager", "NadzornikManager\NadzornikManager.csproj", "{B047837F-3DD0-4B15-BCF7-7B5F30881B76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NadzornikServis", "NadzornikServis\NadzornikServis.csproj", "{A52E6C5D-5B9A-4BD5-871D-487BA9069FDF}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://dellboy.zpr.fer.hr:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = NadzornikInstall\\MyServiceInstaller.vdproj
+		SccProjectName1 = NadzornikInstall
+		SccLocalPath1 = NadzornikInstall
+		SccProjectUniqueName2 = NadzornikManager\\NadzornikManager.csproj
+		SccProjectName2 = NadzornikManager
+		SccLocalPath2 = NadzornikManager
+		SccProjectUniqueName3 = NadzornikServis\\NadzornikServis.csproj
+		SccProjectName3 = NadzornikServis
+		SccLocalPath3 = NadzornikServis
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D73470B-16A1-4CCD-8252-8275511A71DF}.Debug|Any CPU.ActiveCfg = Debug
+		{6D73470B-16A1-4CCD-8252-8275511A71DF}.Debug|Any CPU.Build.0 = Debug
+		{6D73470B-16A1-4CCD-8252-8275511A71DF}.Release|Any CPU.ActiveCfg = Release
+		{6D73470B-16A1-4CCD-8252-8275511A71DF}.Release|Any CPU.Build.0 = Release
+		{B047837F-3DD0-4B15-BCF7-7B5F30881B76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B047837F-3DD0-4B15-BCF7-7B5F30881B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B047837F-3DD0-4B15-BCF7-7B5F30881B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B047837F-3DD0-4B15-BCF7-7B5F30881B76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A52E6C5D-5B9A-4BD5-871D-487BA9069FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A52E6C5D-5B9A-4BD5-871D-487BA9069FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A52E6C5D-5B9A-4BD5-871D-487BA9069FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A52E6C5D-5B9A-4BD5-871D-487BA9069FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

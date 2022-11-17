@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Segoe UI" Size="9" />
+  <Class Name="Custom.Form1">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Form1.cs</FileName>
+      <HashCode>AAAAAAAEAGAAAAAIAICAAAACAAIIAAAAAUCAAAAAgEA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="userControlAdresaSjedista" />
+      <Field Name="userControlAdresaIsporuke" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="userControlAdresaIsporuke" Type="Adresa.UserControlAdresa" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.25" Y="1.812" />
+        <Point X="6.5" Y="1.812" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="Adresa.UserControlAdresa">
+    <Position X="6.5" Y="0.5" Width="2" />
+    <TypeIdentifier />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="Adresa.UserControlAdresa.ComboBoxIndexChangedHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+    </NestedTypes>
+  </Class>
+</ClassDiagram>

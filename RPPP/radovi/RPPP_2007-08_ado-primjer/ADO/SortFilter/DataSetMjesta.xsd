@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetMjesta" targetNamespace="http://tempuri.org/DataSetMjesta.xsd" xmlns:mstns="http://tempuri.org/DataSetMjesta.xsd" xmlns="http://tempuri.org/DataSetMjesta.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetMjesta" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSetMjesta" msprop:Generator_DataSetName="DataSetMjesta">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MjestoDrzava" msprop:Generator_UserTableName="MjestoDrzava" msprop:Generator_RowDeletedName="MjestoDrzavaRowDeleted" msprop:Generator_RowChangedName="MjestoDrzavaRowChanged" msprop:Generator_RowClassName="MjestoDrzavaRow" msprop:Generator_RowChangingName="MjestoDrzavaRowChanging" msprop:Generator_RowEvArgName="MjestoDrzavaRowChangeEvent" msprop:Generator_RowEvHandlerName="MjestoDrzavaRowChangeEventHandler" msprop:Generator_TableClassName="MjestoDrzavaDataTable" msprop:Generator_TableVarName="tableMjestoDrzava" msprop:Generator_RowDeletingName="MjestoDrzavaRowDeleting" msprop:Generator_TablePropName="MjestoDrzava">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdMjesta" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="IdMjesta" msprop:Generator_ColumnPropNameInRow="IdMjesta" msprop:Generator_ColumnVarNameInTable="columnIdMjesta" msprop:Generator_ColumnPropNameInTable="IdMjestaColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NazMjesta" msprop:Generator_UserColumnName="NazMjesta" msprop:Generator_ColumnPropNameInRow="NazMjesta" msprop:Generator_ColumnVarNameInTable="columnNazMjesta" msprop:Generator_ColumnPropNameInTable="NazMjestaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PostBrMjesta" msprop:Generator_UserColumnName="PostBrMjesta" msprop:Generator_ColumnPropNameInRow="PostBrMjesta" msprop:Generator_ColumnVarNameInTable="columnPostBrMjesta" msprop:Generator_ColumnPropNameInTable="PostBrMjestaColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="PostNazMjesta" msprop:Generator_UserColumnName="PostNazMjesta" msprop:Generator_ColumnPropNameInRow="PostNazMjesta" msprop:Generator_ColumnVarNameInTable="columnPostNazMjesta" msprop:Generator_ColumnPropNameInTable="PostNazMjestaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NazDrzave" msprop:Generator_UserColumnName="NazDrzave" msprop:Generator_ColumnPropNameInRow="NazDrzave" msprop:Generator_ColumnVarNameInTable="columnNazDrzave" msprop:Generator_ColumnPropNameInTable="NazDrzaveColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OznDrzave" msprop:Generator_UserColumnName="OznDrzave" msprop:Generator_ColumnPropNameInRow="OznDrzave" msprop:Generator_ColumnVarNameInTable="columnOznDrzave" msprop:Generator_ColumnPropNameInTable="OznDrzaveColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ISO3Drzave" msprop:Generator_UserColumnName="ISO3Drzave" msprop:Generator_ColumnPropNameInRow="ISO3Drzave" msprop:Generator_ColumnVarNameInTable="columnISO3Drzave" msprop:Generator_ColumnPropNameInTable="ISO3DrzaveColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SifDrzave" msprop:Generator_UserColumnName="SifDrzave" msprop:Generator_ColumnPropNameInRow="SifDrzave" msprop:Generator_ColumnVarNameInTable="columnSifDrzave" msprop:Generator_ColumnPropNameInTable="SifDrzaveColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

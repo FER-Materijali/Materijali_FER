@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Partner">
+</Property><Property Name="Solution File" Value="D:\FER\Semestar 6\Razvoj primijenjene programske potpore\TFS\RPPP_Primjeri\GUI\Partner\Partner.sln">
+</Property><Property Name="Date" Value="1. travnja 2008">
+</Property><Property Name="Time" Value="19:38:46">
+</Property></Properties><Event ErrorLevel="2" Project="Partner" Source="Partner.csproj" Description="Project file is not writable: D:\FER\Semestar 6\Razvoj primijenjene programske potpore\TFS\RPPP_Primjeri\GUI\Partner\Partner.csproj">
+</Event><Event ErrorLevel="0" Project="Partner" Source="Partner.csproj" Description="Project file successfully backed up as D:\FER\Semestar 6\Razvoj primijenjene programske potpore\TFS\RPPP_Primjeri\GUI\Partner\Backup\Partner.csproj">
+</Event><Event ErrorLevel="0" Project="Partner" Source="Form1.cs" Description="File successfully backed up as D:\FER\Semestar 6\Razvoj primijenjene programske potpore\TFS\RPPP_Primjeri\GUI\Partner\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="Partner" Source="Form1.Designer.cs" Description="File successfully backed up as D:\FER\Semestar 6\Razvoj primijenjene programske potpore\TFS\RPPP_Primjeri\GUI\Partner\Backup\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Partner" Source="Program.cs" Description="File successfully backed up as D:\FER\Semestar 6\Razvoj primijenjene programske potpore\TFS\RPPP_Primjeri\GUI\Partner\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="Partner" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\FER\Semestar 6\Razvoj primijenjene programske potpore\TFS\RPPP_Primjeri\GUI\Partner\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Partner" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as D:\FER\Semestar 6\Razvoj primijenjene programske potpore\TFS\RPPP_Primjeri\GUI\Partner\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Partner" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as D:\FER\Semestar 6\Razvoj primijenjene programske potpore\TFS\RPPP_Primjeri\GUI\Partner\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Partner" Source="Properties\Settings.settings" Description="File successfully backed up as D:\FER\Semestar 6\Razvoj primijenjene programske potpore\TFS\RPPP_Primjeri\GUI\Partner\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="Partner" Source="slike\nepoznato.jpg" Description="File successfully backed up as D:\FER\Semestar 6\Razvoj primijenjene programske potpore\TFS\RPPP_Primjeri\GUI\Partner\Backup\slike\nepoznato.jpg">
+</Event><Event ErrorLevel="0" Project="Partner" Source="slike\slika1.jpg" Description="File successfully backed up as D:\FER\Semestar 6\Razvoj primijenjene programske potpore\TFS\RPPP_Primjeri\GUI\Partner\Backup\slike\slika1.jpg">
+</Event><Event ErrorLevel="0" Project="Partner" Source="Form1.resx" Description="File successfully backed up as D:\FER\Semestar 6\Razvoj primijenjene programske potpore\TFS\RPPP_Primjeri\GUI\Partner\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="Partner" Source="Properties\Resources.resx" Description="File successfully backed up as D:\FER\Semestar 6\Razvoj primijenjene programske potpore\TFS\RPPP_Primjeri\GUI\Partner\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="2" Project="Partner" Source="Partner.csproj" Description="Unable to save converted project file.">
+</Event><Event ErrorLevel="3" Project="Partner" Source="Partner.csproj" Description="Not Converted">
+</Event></UpgradeLog>

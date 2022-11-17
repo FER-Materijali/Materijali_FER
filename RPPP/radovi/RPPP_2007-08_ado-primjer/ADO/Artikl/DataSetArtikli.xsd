@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetArtikli" targetNamespace="http://tempuri.org/DataSetArtikli.xsd" xmlns:mstns="http://tempuri.org/DataSetArtikli.xsd" xmlns="http://tempuri.org/DataSetArtikli.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetArtikli" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSetArtikli" msprop:Generator_DataSetName="DataSetArtikli">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Artikl" msprop:Generator_UserTableName="Artikl" msprop:Generator_RowDeletedName="ArtiklRowDeleted" msprop:Generator_TableClassName="ArtiklDataTable" msprop:Generator_RowChangedName="ArtiklRowChanged" msprop:Generator_RowClassName="ArtiklRow" msprop:Generator_RowChangingName="ArtiklRowChanging" msprop:Generator_RowEvArgName="ArtiklRowChangeEvent" msprop:Generator_RowEvHandlerName="ArtiklRowChangeEventHandler" msprop:Generator_TablePropName="Artikl" msprop:Generator_TableVarName="tableArtikl" msprop:Generator_RowDeletingName="ArtiklRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SifArtikla" msprop:Generator_UserColumnName="SifArtikla" msprop:Generator_ColumnPropNameInRow="SifArtikla" msprop:Generator_ColumnVarNameInTable="columnSifArtikla" msprop:Generator_ColumnPropNameInTable="SifArtiklaColumn" type="xs:int" />
+              <xs:element name="NazArtikla" msprop:Generator_UserColumnName="NazArtikla" msprop:Generator_ColumnPropNameInRow="NazArtikla" msprop:Generator_ColumnVarNameInTable="columnNazArtikla" msprop:Generator_ColumnPropNameInTable="NazArtiklaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JedMjere" msprop:Generator_UserColumnName="JedMjere" msprop:Generator_ColumnPropNameInRow="JedMjere" msprop:Generator_ColumnVarNameInTable="columnJedMjere" msprop:Generator_ColumnPropNameInTable="JedMjereColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CijArtikla" msprop:Generator_UserColumnName="CijArtikla" msprop:Generator_ColumnPropNameInRow="CijArtikla" msprop:Generator_ColumnVarNameInTable="columnCijArtikla" msprop:Generator_ColumnPropNameInTable="CijArtiklaColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ZastUsluga" msprop:Generator_UserColumnName="ZastUsluga" msprop:Generator_ColumnPropNameInRow="ZastUsluga" msprop:Generator_ColumnVarNameInTable="columnZastUsluga" msprop:Generator_ColumnPropNameInTable="ZastUslugaColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SlikaArtikla" msprop:Generator_UserColumnName="SlikaArtikla" msprop:Generator_ColumnPropNameInRow="SlikaArtikla" msprop:Generator_ColumnVarNameInTable="columnSlikaArtikla" msprop:Generator_ColumnPropNameInTable="SlikaArtiklaColumn" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Artikl" />
+      <xs:field xpath="mstns:SifArtikla" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

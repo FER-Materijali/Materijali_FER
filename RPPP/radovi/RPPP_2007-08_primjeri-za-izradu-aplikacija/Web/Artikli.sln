@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\ArtikliWebService\", "..\..\WebSites\ArtikliWebService", "{AE381CFA-956A-49E5-83EB-B1ADD41715E1}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		Debug.AspNetCompiler.VirtualPath = "/ArtikliWebService"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\ArtikliWebService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ArtikliWebService\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ArtikliWebService"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\ArtikliWebService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ArtikliWebService\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56453"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\ArtikliNTier\", "ArtikliNTier", "{EE494FC7-217E-449B-8906-3C5E31D65337}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		Debug.AspNetCompiler.VirtualPath = "/ArtikliNTier"
+		Debug.AspNetCompiler.PhysicalPath = "ArtikliNTier\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ArtikliNTier\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ArtikliNTier"
+		Release.AspNetCompiler.PhysicalPath = "ArtikliNTier\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ArtikliNTier\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "25286"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dellboy.zpr.fer.hr:8143/
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = ..\\..\\WebSites\\ArtikliWebService
+		SccProjectName1 = ArtikliWebService
+		SccLocalPath1 = C:\\SystemData\\My\u0020Documents\\Visual\u0020Studio\u00202005\\Projects\\WebSites\\ArtikliWebService\\
+		SccProjectEnlistmentChoice1 = 2
+		SccWebProject2 = true
+		SccProjectUniqueName2 = ArtikliNTier
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = ArtikliNTier\\
+		SccProjectEnlistmentChoice2 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE381CFA-956A-49E5-83EB-B1ADD41715E1}.Debug|.NET.ActiveCfg = Debug|.NET
+		{AE381CFA-956A-49E5-83EB-B1ADD41715E1}.Debug|.NET.Build.0 = Debug|.NET
+		{EE494FC7-217E-449B-8906-3C5E31D65337}.Debug|.NET.ActiveCfg = Debug|.NET
+		{EE494FC7-217E-449B-8906-3C5E31D65337}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

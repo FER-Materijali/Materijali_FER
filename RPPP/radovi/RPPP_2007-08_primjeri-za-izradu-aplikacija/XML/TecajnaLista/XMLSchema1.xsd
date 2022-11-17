@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="XMLSchema1" targetNamespace="http://tempuri.org/XMLSchema1.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/XMLSchema1.xsd" xmlns:mstns="http://tempuri.org/XMLSchema1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:simpleType name="IDString">
+    <xs:restriction base="xs:string">
+      <xs:length value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ChoiceGroup">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element name="Value1" type="xs:string" />
+        <xs:element name="Value2" type="xs:string" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:attribute name="companyName" type="xs:string" fixed="XML, Inc." />
+  <xs:element name="element1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Id" type="xs:short" />
+        <xs:element name="Naziv" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Document">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Artikl">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SifArtikla" type="xs:int" />
+              <xs:element name="NazArtikla" type="xs:string" minOccurs="0" />
+              <xs:element name="JedMjere" type="xs:string" minOccurs="0" />
+              <xs:element name="CijArtikla" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ZastUsluga" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SlikaArtikla" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="DocumentKey1">
+      <xs:selector xpath=".//mstns:Artikl" />
+      <xs:field xpath="mstns:SifArtikla" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

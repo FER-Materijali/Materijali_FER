@@ -1,0 +1,164 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JednostavnaForma", "JednostavnaForma\JednostavnaForma.csproj", "{283C7999-2B45-4481-A8D6-18ABA9E632AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Partner", "Partner\Partner.csproj", "{719FD8A2-4723-4E7A-AA89-5EB4F6D213FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KreiranjeKontrola", "KreiranjeKontrola\KreiranjeKontrola.csproj", "{2E85B020-4A7A-4A9D-AEE0-95B975717CDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaDatoteka", "ListaDatoteka\ListaDatoteka.csproj", "{0EEAED80-8E2E-4EA4-BBC8-6B5030504E2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vjesala", "Vjesala\Vjesala.csproj", "{4C0CF0CC-03B8-4812-82C6-BB09983AB512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RacunanjePI", "RacunanjePI\RacunanjePI.csproj", "{B2A56021-7D23-47B9-8CC2-158750DF8527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zastave", "Zastave\Zastave.csproj", "{4D114F06-A4FD-40E5-9A06-DDCE2E74AD54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Html", "Html\Html.csproj", "{EC1F9A71-1FD3-4883-B1A3-7DC3290A6CBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adresa", "Adresa\Adresa.csproj", "{CA9F9B26-41C3-4907-B181-B51F1F83D848}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom", "Custom\Custom.csproj", "{9568D77D-A772-4C5B-97EA-88019B599E5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timer", "Timer\Timer.csproj", "{55775543-D7DD-4DD8-80C2-CFA4B552EEAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichTextBoxPad", "RichTextBoxPad\RichTextBoxPad.csproj", "{3C89E30D-7163-4CCE-824E-78259894AA6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseEvents", "MouseEvents\MouseEvents.csproj", "{F1ADCB4B-00DC-4121-B61A-64751954F7C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollBars", "ScrollBars\ScrollBars.csproj", "{A15DBA50-3B0B-45E5-9C72-B8C3BB2AAB53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackBars", "Trackbars\TrackBars.csproj", "{16307A88-DD0F-4DBB-BEE1-C5DDBD792E6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainUpDown", "DomainUpDown\DomainUpDown.csproj", "{3D2FA0F6-21D1-4F29-9ECC-06871C0D380F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 17
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dellboy.zpr.fer.hr:8143/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = JednostavnaForma\\JednostavnaForma.csproj
+		SccProjectName1 = JednostavnaForma
+		SccLocalPath1 = JednostavnaForma
+		SccProjectUniqueName2 = KreiranjeKontrola\\KreiranjeKontrola.csproj
+		SccProjectName2 = KreiranjeKontrola
+		SccLocalPath2 = KreiranjeKontrola
+		SccProjectUniqueName3 = ListaDatoteka\\ListaDatoteka.csproj
+		SccProjectName3 = ListaDatoteka
+		SccLocalPath3 = ListaDatoteka
+		SccProjectUniqueName4 = Partner\\Partner.csproj
+		SccProjectName4 = Partner
+		SccLocalPath4 = Partner
+		SccProjectUniqueName5 = RacunanjePI\\RacunanjePI.csproj
+		SccProjectName5 = RacunanjePI
+		SccLocalPath5 = RacunanjePI
+		SccProjectUniqueName6 = Vjesala\\Vjesala.csproj
+		SccProjectName6 = Vjesala
+		SccLocalPath6 = Vjesala
+		SccProjectUniqueName7 = Zastave\\Zastave.csproj
+		SccProjectName7 = Zastave
+		SccLocalPath7 = Zastave
+		SccProjectUniqueName8 = Html\\Html.csproj
+		SccProjectName8 = Html
+		SccLocalPath8 = Html
+		SccProjectUniqueName9 = Adresa\\Adresa.csproj
+		SccProjectName9 = Adresa
+		SccLocalPath9 = Adresa
+		SccProjectUniqueName10 = Custom\\Custom.csproj
+		SccProjectName10 = Custom
+		SccLocalPath10 = Custom
+		SccProjectUniqueName11 = Timer\\Timer.csproj
+		SccProjectName11 = Timer
+		SccLocalPath11 = Timer
+		SccProjectUniqueName12 = RichTextBoxPad\\RichTextBoxPad.csproj
+		SccProjectName12 = RichTextBoxPad
+		SccLocalPath12 = RichTextBoxPad
+		SccProjectUniqueName13 = MouseEvents\\MouseEvents.csproj
+		SccProjectName13 = MouseEvents
+		SccLocalPath13 = MouseEvents
+		SccProjectUniqueName14 = ScrollBars\\ScrollBars.csproj
+		SccProjectName14 = ScrollBars
+		SccLocalPath14 = ScrollBars
+		SccProjectUniqueName15 = Trackbars\\TrackBars.csproj
+		SccProjectName15 = Trackbars
+		SccLocalPath15 = Trackbars
+		SccProjectUniqueName16 = DomainUpDown\\DomainUpDown.csproj
+		SccProjectName16 = DomainUpDown
+		SccLocalPath16 = DomainUpDown
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{283C7999-2B45-4481-A8D6-18ABA9E632AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{283C7999-2B45-4481-A8D6-18ABA9E632AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{283C7999-2B45-4481-A8D6-18ABA9E632AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{283C7999-2B45-4481-A8D6-18ABA9E632AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{719FD8A2-4723-4E7A-AA89-5EB4F6D213FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{719FD8A2-4723-4E7A-AA89-5EB4F6D213FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{719FD8A2-4723-4E7A-AA89-5EB4F6D213FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{719FD8A2-4723-4E7A-AA89-5EB4F6D213FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E85B020-4A7A-4A9D-AEE0-95B975717CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E85B020-4A7A-4A9D-AEE0-95B975717CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E85B020-4A7A-4A9D-AEE0-95B975717CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E85B020-4A7A-4A9D-AEE0-95B975717CDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EEAED80-8E2E-4EA4-BBC8-6B5030504E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EEAED80-8E2E-4EA4-BBC8-6B5030504E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EEAED80-8E2E-4EA4-BBC8-6B5030504E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EEAED80-8E2E-4EA4-BBC8-6B5030504E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C0CF0CC-03B8-4812-82C6-BB09983AB512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0CF0CC-03B8-4812-82C6-BB09983AB512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0CF0CC-03B8-4812-82C6-BB09983AB512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0CF0CC-03B8-4812-82C6-BB09983AB512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A56021-7D23-47B9-8CC2-158750DF8527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A56021-7D23-47B9-8CC2-158750DF8527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A56021-7D23-47B9-8CC2-158750DF8527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A56021-7D23-47B9-8CC2-158750DF8527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D114F06-A4FD-40E5-9A06-DDCE2E74AD54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D114F06-A4FD-40E5-9A06-DDCE2E74AD54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D114F06-A4FD-40E5-9A06-DDCE2E74AD54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D114F06-A4FD-40E5-9A06-DDCE2E74AD54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC1F9A71-1FD3-4883-B1A3-7DC3290A6CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC1F9A71-1FD3-4883-B1A3-7DC3290A6CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC1F9A71-1FD3-4883-B1A3-7DC3290A6CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC1F9A71-1FD3-4883-B1A3-7DC3290A6CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA9F9B26-41C3-4907-B181-B51F1F83D848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA9F9B26-41C3-4907-B181-B51F1F83D848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA9F9B26-41C3-4907-B181-B51F1F83D848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA9F9B26-41C3-4907-B181-B51F1F83D848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9568D77D-A772-4C5B-97EA-88019B599E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9568D77D-A772-4C5B-97EA-88019B599E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9568D77D-A772-4C5B-97EA-88019B599E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9568D77D-A772-4C5B-97EA-88019B599E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55775543-D7DD-4DD8-80C2-CFA4B552EEAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55775543-D7DD-4DD8-80C2-CFA4B552EEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55775543-D7DD-4DD8-80C2-CFA4B552EEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55775543-D7DD-4DD8-80C2-CFA4B552EEAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C89E30D-7163-4CCE-824E-78259894AA6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C89E30D-7163-4CCE-824E-78259894AA6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C89E30D-7163-4CCE-824E-78259894AA6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C89E30D-7163-4CCE-824E-78259894AA6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1ADCB4B-00DC-4121-B61A-64751954F7C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1ADCB4B-00DC-4121-B61A-64751954F7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1ADCB4B-00DC-4121-B61A-64751954F7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1ADCB4B-00DC-4121-B61A-64751954F7C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15DBA50-3B0B-45E5-9C72-B8C3BB2AAB53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15DBA50-3B0B-45E5-9C72-B8C3BB2AAB53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15DBA50-3B0B-45E5-9C72-B8C3BB2AAB53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15DBA50-3B0B-45E5-9C72-B8C3BB2AAB53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16307A88-DD0F-4DBB-BEE1-C5DDBD792E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16307A88-DD0F-4DBB-BEE1-C5DDBD792E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16307A88-DD0F-4DBB-BEE1-C5DDBD792E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16307A88-DD0F-4DBB-BEE1-C5DDBD792E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D2FA0F6-21D1-4F29-9ECC-06871C0D380F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D2FA0F6-21D1-4F29-9ECC-06871C0D380F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D2FA0F6-21D1-4F29-9ECC-06871C0D380F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D2FA0F6-21D1-4F29-9ECC-06871C0D380F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

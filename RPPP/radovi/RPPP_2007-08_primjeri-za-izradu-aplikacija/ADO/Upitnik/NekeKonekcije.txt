@@ -1,0 +1,5 @@
+Data Source=(local)\SQL05;Integrated Security=SSPI;Initial Catalog=Firma
+
+Provider=SQLOLEDB;Data Source=SERVER\INSTANCA;Integrated Security=SSPI;Initial Catalog=Firma
+
+Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\Projects\Firma.mdb

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="NTier.BusinessBase" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BusinessBase.cs</FileName>
+      <HashCode>ggABpAIAAACUBABIIAECAABAgAEoyIEmAEQDDAhAoIw=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NTier.BusinessBaseList&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BusinessBaseList.cs</FileName>
+      <HashCode>AAAAAgBAAAAAAAAAAAAAAAAAAAIAAAAEAAgBAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NTier.GenericFormAttribute">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GenericFormAttribute.cs</FileName>
+      <HashCode>AAAAECIAABAgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="NTier.IBllObject">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IBllObject.cs</FileName>
+      <HashCode>gAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NTier.IBusinessObject">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IBusinessObject.cs</FileName>
+      <HashCode>gAAAgAIAAACAAAAAAAAAAABAAAEAAAACAEABDABAgAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="State" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="NTier.IBusinessObjectList">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IBusinessObjectList.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="NTier.BusinessObjectState">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BusinessObjectState.cs</FileName>
+      <HashCode>IAAAAAAAAAAAACAAABAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="NTier.NeedBllObjectEventHandler" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>NeedBllObjectEventHandler.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+</ClassDiagram>

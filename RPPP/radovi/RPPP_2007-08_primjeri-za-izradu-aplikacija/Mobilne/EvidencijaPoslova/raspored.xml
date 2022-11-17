@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<raspored>
+	<zadatak>
+    <vrijeme>08:00</vrijeme>
+    <naziv>Šef</naziv>
+    <posao>Sastanak</posao>
+  </zadatak>
+  <zadatak>
+    <vrijeme>12:00</vrijeme>
+    <naziv>RPPP</naziv>
+    <posao>Ispit</posao>
+</zadatak>
+  <zadatak>
+    <vrijeme>10:00</vrijeme>
+    <naziv>ZPR</naziv>
+		<posao>Ručak</posao>
+	</zadatak>
+</raspored>

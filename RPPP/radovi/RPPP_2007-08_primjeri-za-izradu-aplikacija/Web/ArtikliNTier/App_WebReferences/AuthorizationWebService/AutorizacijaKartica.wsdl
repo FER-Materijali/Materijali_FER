@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.zpr.fer.hr/rppp" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.zpr.fer.hr/rppp" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.zpr.fer.hr/rppp">
+      <s:element name="Autorizacija">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="podaci" type="tns:PodaciOKartici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PodaciOKartici">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Iznos" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Vrsta" type="tns:VrstaKartice" />
+          <s:element minOccurs="1" maxOccurs="1" name="MjesecVazenja" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GodinaVazenja" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BrojKartice" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImePrezime" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="VrstaKartice">
+        <s:restriction base="s:string">
+          <s:enumeration value="MasterCard" />
+          <s:enumeration value="Visa" />
+          <s:enumeration value="AmericanExpress" />
+          <s:enumeration value="Diners" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="AutorizacijaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AutorizacijaResult" type="tns:RezultatAutorizacije" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RezultatAutorizacije">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Autorizirirana" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="BrojTransakcije" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Greska" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AutorizacijaSoapIn">
+    <wsdl:part name="parameters" element="tns:Autorizacija" />
+  </wsdl:message>
+  <wsdl:message name="AutorizacijaSoapOut">
+    <wsdl:part name="parameters" element="tns:AutorizacijaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AutorizacijaKarticaSoap">
+    <wsdl:operation name="Autorizacija">
+      <wsdl:input message="tns:AutorizacijaSoapIn" />
+      <wsdl:output message="tns:AutorizacijaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AutorizacijaKarticaSoap" type="tns:AutorizacijaKarticaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Autorizacija">
+      <soap:operation soapAction="http://www.zpr.fer.hr/rppp/Autorizacija" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AutorizacijaKarticaSoap12" type="tns:AutorizacijaKarticaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Autorizacija">
+      <soap12:operation soapAction="http://www.zpr.fer.hr/rppp/Autorizacija" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AutorizacijaKartica">
+    <wsdl:port name="AutorizacijaKarticaSoap" binding="tns:AutorizacijaKarticaSoap">
+      <soap:address location="http://localhost:56453/ArtikliWebService/AutorizacijaKartica.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AutorizacijaKarticaSoap12" binding="tns:AutorizacijaKarticaSoap12">
+      <soap12:address location="http://localhost:56453/ArtikliWebService/AutorizacijaKartica.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

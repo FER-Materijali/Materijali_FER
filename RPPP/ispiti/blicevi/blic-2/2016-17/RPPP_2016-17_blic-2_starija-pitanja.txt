@@ -1,0 +1,125 @@
+Pitanje je bilo kaj je ?p=2&a=2&k=6 ili tak nekaj, nakon url-a stavio sam query string, 
+
+1., 2., 3. : "Ako je u datoteci Startup.cs blabla definirana iduca ruta:" *ruta*, pa koji postupak u kojoj datoteci se poziva, vec bilo pa imate primjere, ez.
+
+4. Moguci rezultati akcije MVC upravljaca izvedeni su iz razreda: IActionResult 
+
+5. Komentari unutar serverskog koda nekog MVC pogleda imaju oblik: @* komentar*@
+
+6. Uz predani model MVC pogledu se iz upravljaca mogu prenijeti vrijednosti koristeci: ViewData i/ili ViewBag
+
+7. PRILIKOM PRIHVATA PODATAKA U MVC APLIKACIJI, PRIDRUZIVANJE VRIJEDNOSTI ARGUMENTIMA[A-Z]* : REQUEST.FORM
+ROUTEDATA.VALUES
+REQUEST.QUERYSTRING
+
+8. Prijenost podataka unutar dvaju zahtjeva: TempData
+
+9. Ako se unutar pogleda koristi razred Mjesto koji ima svojstvo Naziv cija se vrijednost ispisuje unutar pogleda, kako izgleda isjecak takvog pogleda? @model Mjesto
+@Model.Naziv
+
+10. Pocetni redak pogleda moze sadrzavati informaciju koji se razred koristi kao model unutar pogleda: @model Razred
+
+11.Razine vaznosti zapise od najmanje prema najvecoj:
+Trace < Debug < Info < Warn < Err < Crit
+
+12., 13, 14.: Pitaju definicije tih razina. Imate na slajdovima, 9. prezentacija IIRC, ili ako ste ikada koristili linux samo se prisjetite kako ide :) 
+
+15.,16., 17, 18 ako su u bazi definirane 2 tablice (i screen iz nekog sql managera), kako izgleda jedan od ta dva razreda u entity frameworku. pazite na kada ide klasa navigation a kada icollection<klasa>
+
+19, 20, neki dark magic sa "using" unutar i izvan petlje
+
+21. Tip reference "x" selectan u programskom odsjecku. Kopirao bi ga ali "Review" mi ima polomljen ispis (tho na blicu je bio ok) :)
+
+Enivej odgovor je primjerak anonimnog razreda sa svojstvina NazArtikla, CijeArtikla i SifArtikla
+
+24. Parovi oblika etc etc, zadan je URL i trazi se kako se zove zadnji komad Query string
+
+25. Return NotFound() je koji http response? 404 
+
+26. Koji od navedenih formi omogucava prihvat datoteke: asp-action="Edit" method="post" enctype="onajgibberish"
+
+sto se kreira za prikaz glavnih komponenti sustava, njihove fizicke lokacije i nacina njihovog medusobnog povezivanja? -> Mrezni model
+
+sto detaljno opisuje elemente za nabavu i izradu? -> specifikacija racunalne opreme i programske podrske
+
+koncept izrade web aplikacije u kojem aspx stranica sadrzi prezentacijske elemente (html, serverske kontrole, javascript..), te aspx.cs kod koji se izvrsava na posluzitelju zove se: -> odvajanje dizajna od koda
+
+sto ne vrije za ugovor wcf servisa? -> ugovor odreduje nacin implementacije i komunikacije
+
+u mvc-u upraljac predstavlja? -> prezentacijsku logiku
+
+u kojem sloju stvaramo poslovni objekt? -> poslovnom
+
+Koja arhitektura se odvija isključivo na poslužitelju? Odgovor: poslužiteljska
+
+Što ne spada u refleksiju od navedenog? Odgovor: skrivanje podataka (ili tako nešto)
+
+Nešto za dohvaćanje podataka u GridView, treba biti: IEnumerable, IDisposable, IComponent.. Odgovor: IEnumerable 
+
+Naknadno povezivanje - Tehnika kojom se može stvoriti objekt nekog tipa i pozvati njegov postupak bez poznavanja tipa u trenutku kompilacije
+
+Što se ne navodi u konfiguracijskoj datoteci klijenta za opis pristupne točke WCF servisa? Puni naziv razreda koji predstavlja implementaciju servisa
+
+Nedostatak tankog klijenta? Veliko opterećenje glavnog računala, a to znači skupo glavno računalo
+
+Prednost tankog klijenta? Lakše održavanje – centralizirana promjena poslovne logike
+
+Na što se odnosi utvrđivanje strukture programa na temelju modela procesa te preciziranje programske logike? Dizajn programa
+
+Za što služi dizajn sučelja? Za oblikovanje zaslonskih maski i izvješća te definiranje protokola pristupa i razmjene podataka (odgovor u ovakvom stilu, neš slično)
+
+Jednosmjerno povezivanje kod web-stranica? DataBind
+
+Dvosmjerno povezivanje kod web-stranica? Bind
+
+Izvješća služe za: Prikazivanje grafova, tablica, teksta i slika
+
+MVC kontroler zadužen je za: Sve navedeno (Prima ulaz iz pogleda, obrađuje ga, puni i dohvaća model, poziva niže slojeve i određuje redoslijed prikaza pogleda)
+
+Koji se protokoli koriste kod REST servisa? POST, GET, PUT, DELETE
+
+Uobičajeni rezultati akcije upravljača definirani su u: ActionResult (staro pitanje, malo drugačije formulirano)
+
+1. Što ne vrijedi za glavne (master) stranice? Aspx stranica koja referencira glavnu sadrži sve što i obična uz jedan ili više okvira koje popunjava(content).
+
+2. Što nije istinito za pakete(bundles)? Prilikom korištenja paketa potrebno je navesti datoteke od kojih se paket sastoji.
+
+3. Što nije jedno od pravila servisno orijentirane arhitekture? Brzina i mala količina podataka.(već napisano ali malo krivo postavljeno pitanje)
+
+4. Što ne može biti sloj višeslojne aplikacije? Poslovni objekt.
+
+Cemu sluze HttpPost i HttpGet (nesto kao da se napravi razlika izmedju prvog poziva forme i naknadnog slanja)
+
+U kojoj arhitekturi je najveci problem sto server mora citati poruke (serverska)
+
+Navedi poslove servera u dvoslojnoj arhitekturi: data access i data storage
+
+Bio je jedan zadatak s razredom (WCF) i kak izgleda generirani XML (Ako znate inače kak je i šta je XML ovo je pis of kejk)
+
+Koji jedini način prijenosa podataka nije dopusten kod servisa (parallel pipeline)
+
+Kako se zove kontrola za prikaz izvjesca u C# (ReportViewer)
+
+kod koga je skalabilnost? -> klijent i klijent-poslužitelj podjednako
+
+kad se pitamo centralizirana ili distibuirana nešto? Kako?Tehnologije? --> izrada arhitekture sustava
+
+prednost debelog klijenta? --> veća samostalnost klijenta
+
+tehnička specifikacija? --> detaljni dizajn
+
+fizički model, dizajn sučelja? --> detaljni dizajn
+
+koju ekstenziju nemamo kad je stranica na internetu(tako nešto) -->*.cs
+
+refleksija uporaba --> nešto s asemblijima
+
+što NIJE prednost web servisA? --> nešto tipa mali podaci i brzina
+
+
+Bili su mi ponuđeni oni opisi grešaka pa je trebalo odabrat koji je tip greške, 
+Imo sam 4 pitanja na onu foru da ima definirana ruta pa treba otkriti koji od ponuđenih likova je validacija za nju npr. /Mjesta/Edit/1?page=4, 
+Imo sam opise code first i model first pa ih je trebalo odabrat u ponuđenom, 
+Imo sam neke slike entiteta u bazi (ko u sql manager u) I nekaj je pito kak izgleda u kodu ta klasa Al to sam preskočio
+Što je od navedenog jedna od zadaća BLL-a? Ponuđeno: Dohvaća podatke iz baze, sprema podatke u bazu, povezuje prezentacijski i podatkovni sloj, i još neka dva odgovora.
+Nešto u vezi aspx(HTML, JavaScript i još nešto), a uz to još i ide nešto na poslužitelju, šta je to? Sjećam se da jedan od ponuđenih bio višeslojna arhitektura, ali to nije točno.

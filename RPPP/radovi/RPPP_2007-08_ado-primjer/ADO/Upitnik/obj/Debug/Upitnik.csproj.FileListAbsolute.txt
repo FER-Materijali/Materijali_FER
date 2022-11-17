@@ -1,0 +1,8 @@
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Upitnik\bin\Debug\QueryManager.exe
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Upitnik\bin\Debug\QueryManager.pdb
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Upitnik\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Upitnik\obj\Debug\QueryManager.Properties.Resources.resources
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Upitnik\obj\Debug\QueryManager.Upitnik.resources
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Upitnik\obj\Debug\Upitnik.csproj.GenerateResource.Cache
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Upitnik\obj\Debug\QueryManager.exe
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Upitnik\obj\Debug\QueryManager.pdb

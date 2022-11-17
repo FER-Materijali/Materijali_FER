@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.zpr.fer.hr/rppp" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.zpr.fer.hr/rppp" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.zpr.fer.hr/rppp">
+      <s:element name="BrojNarudzbi">
+        <s:complexType />
+      </s:element>
+      <s:element name="BrojNarudzbiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BrojNarudzbiResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BrojNarudzbiSoapIn">
+    <wsdl:part name="parameters" element="tns:BrojNarudzbi" />
+  </wsdl:message>
+  <wsdl:message name="BrojNarudzbiSoapOut">
+    <wsdl:part name="parameters" element="tns:BrojNarudzbiResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PodaciOProdajiSoap">
+    <wsdl:operation name="BrojNarudzbi">
+      <wsdl:input message="tns:BrojNarudzbiSoapIn" />
+      <wsdl:output message="tns:BrojNarudzbiSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PodaciOProdajiSoap" type="tns:PodaciOProdajiSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BrojNarudzbi">
+      <soap:operation soapAction="http://www.zpr.fer.hr/rppp/BrojNarudzbi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PodaciOProdajiSoap12" type="tns:PodaciOProdajiSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BrojNarudzbi">
+      <soap12:operation soapAction="http://www.zpr.fer.hr/rppp/BrojNarudzbi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PodaciOProdaji">
+    <wsdl:port name="PodaciOProdajiSoap" binding="tns:PodaciOProdajiSoap">
+      <soap:address location="http://localhost:56453/ArtikliWebService/PodaciOProdaji.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PodaciOProdajiSoap12" binding="tns:PodaciOProdajiSoap12">
+      <soap12:address location="http://localhost:56453/ArtikliWebService/PodaciOProdaji.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

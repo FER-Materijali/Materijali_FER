@@ -1,0 +1,13 @@
+
+SELECT * FROM Drzava
+
+SELECT * FROM Mjesto
+
+SELECT COUNT(*) AS BrojDokumenata FROM Dokument
+
+INSERT INTO Drzava (OznDrzave, NazDrzave) VALUES ('SI', 'Slovenia')
+
+INSERT INTO Artikl (SifArtikla, NazArtikla, JedMjere, CijArtikla)
+VALUES (99999, "Duga devetka", "kom", 9);
+
+DELETE FROM Artikl WHERE SifArtikla >= 99999;

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\PozdravWeb\", "PozdravWeb", "{1E085FFA-2B02-48A5-9D78-30505BA4467D}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		Debug.AspNetCompiler.VirtualPath = "/PozdravWeb"
+		Debug.AspNetCompiler.PhysicalPath = "..\RPPP_Primjeri\Web\PozdravWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\PozdravWeb\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/PozdravWeb"
+		Release.AspNetCompiler.PhysicalPath = "..\RPPP_Primjeri\Web\PozdravWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\PozdravWeb\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "24205"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dellboy.zpr.fer.hr:8143/
+		SccWebProject0 = true
+		SccProjectUniqueName0 = PozdravWeb
+		SccProjectName0 = PozdravWeb
+		SccLocalPath0 = PozdravWeb
+		SccProjectEnlistmentChoice0 = 2
+		SccLocalPath1 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E085FFA-2B02-48A5-9D78-30505BA4467D}.Debug|.NET.ActiveCfg = Debug|.NET
+		{1E085FFA-2B02-48A5-9D78-30505BA4467D}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

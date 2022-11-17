@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokumenti", "Dokumenti\Dokumenti.csproj", "{A0291CE8-93E4-4F5F-803A-C9E9E3A40068}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DokumentiStavke", "DokumentiStavke\DokumentiStavke.csproj", "{35CCCD30-49E1-4B1A-AC0F-389FA5216B86}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dellboy.zpr.fer.hr:8143/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Dokumenti\\Dokumenti.csproj
+		SccProjectName1 = Dokumenti
+		SccLocalPath1 = Dokumenti
+		SccProjectUniqueName2 = DokumentiStavke\\DokumentiStavke.csproj
+		SccProjectName2 = DokumentiStavke
+		SccLocalPath2 = DokumentiStavke
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0291CE8-93E4-4F5F-803A-C9E9E3A40068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0291CE8-93E4-4F5F-803A-C9E9E3A40068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0291CE8-93E4-4F5F-803A-C9E9E3A40068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0291CE8-93E4-4F5F-803A-C9E9E3A40068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35CCCD30-49E1-4B1A-AC0F-389FA5216B86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35CCCD30-49E1-4B1A-AC0F-389FA5216B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35CCCD30-49E1-4B1A-AC0F-389FA5216B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35CCCD30-49E1-4B1A-AC0F-389FA5216B86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

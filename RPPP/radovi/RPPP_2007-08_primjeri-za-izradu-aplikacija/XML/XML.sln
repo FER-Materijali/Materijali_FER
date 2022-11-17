@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TecajnaLista", "TecajnaLista\TecajnaLista.csproj", "{75D71C15-6A7F-4515-868C-4F0E958E863F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dellboy.zpr.fer.hr:8143/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TecajnaLista\\TecajnaLista.csproj
+		SccProjectName1 = TecajnaLista
+		SccLocalPath1 = TecajnaLista
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75D71C15-6A7F-4515-868C-4F0E958E863F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75D71C15-6A7F-4515-868C-4F0E958E863F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75D71C15-6A7F-4515-868C-4F0E958E863F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75D71C15-6A7F-4515-868C-4F0E958E863F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

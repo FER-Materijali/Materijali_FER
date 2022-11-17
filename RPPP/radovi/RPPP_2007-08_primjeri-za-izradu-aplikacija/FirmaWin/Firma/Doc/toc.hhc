@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Glavni izbornik">
+		<param name="Local" value="Firma.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Traka s alatima i standardne tipke">
+		<param name="Local" value="Firma.htm#Traka_s_alatima_i_standardne_tipke">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Firma">
+		<param name="Local" value="Firma.htm#Firma">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Zaprimanje dokumenata">
+			<param name="Local" value="Firma.htm#Firma-Zaprimanje_dokumenata">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Izlaz">
+			<param name="Local" value="Firma.htm#Firma-Izlaz">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Matièni podaci">
+		<param name="Local" value="Firma.htm#Maticni_podaci">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Partner">
+			<param name="Local" value="Firma.htm#Maticni_podaci-Partner">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Artikl">
+			<param name="Local" value="Firma.htm#Maticni_podaci-Artikl">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dokument">
+			<param name="Local" value="Firma.htm#Maticni_podaci-Dokument">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Tablice (šifrarnici)">
+		<param name="Local" value="Firma.htm#Tablice">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Artikl">
+			<param name="Local" value="Firma.htm#Tablice-Artikl">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Država">
+			<param name="Local" value="Firma.htm#Tablice-Drzava">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Mjesto">
+			<param name="Local" value="Firma.htm#Tablice-Mjesto">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

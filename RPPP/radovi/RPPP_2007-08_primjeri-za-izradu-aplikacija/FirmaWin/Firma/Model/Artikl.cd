@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Firma.ArtiklForm" Collapsed="true">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Forms\ArtiklForm.cs</FileName>
+      <HashCode>AAAEBCggACEQAQAhAAKIQgaiIAAFQAAg4AAAAAAQAIg=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="artiklBll" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="artiklBll" Type="Firma.ArtiklBllProvider" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="1.13" />
+        <Point X="2" Y="1.437" />
+        <Point X="3.25" Y="1.437" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.279" Y="0.1" Height="0.16" Width="0.879" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="Firma.ArtiklBllProvider" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="0.5" Width="2" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Firma.ArtiklDalProvider">
+    <Position X="5.75" Y="0.5" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Firma.Artikl">
+    <Position X="3.25" Y="3" Width="1.5" />
+    <TypeIdentifier />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="NTier.BusinessBase" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.75" Y="3.312" />
+        <Point X="3" Y="3.312" />
+        <Point X="3" Y="4.305" />
+        <Point X="3.25" Y="4.305" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Firma.ArtiklList">
+    <Position X="5.25" Y="2.75" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="NTier.BusinessBase" Collapsed="true">
+    <Position X="1.25" Y="3" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+</ClassDiagram>

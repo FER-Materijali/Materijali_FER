@@ -1,0 +1,8 @@
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DataSetUntyped\bin\Debug\MasterDetailUntyped.exe
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DataSetUntyped\bin\Debug\MasterDetailUntyped.pdb
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DataSetUntyped\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DataSetUntyped\obj\Debug\MasterDetailUntyped.DatasetUntyped.resources
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DataSetUntyped\obj\Debug\MasterDetailUntyped.Properties.Resources.resources
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DataSetUntyped\obj\Debug\DatasetUntyped.csproj.GenerateResource.Cache
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DataSetUntyped\obj\Debug\MasterDetailUntyped.exe
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\DataSetUntyped\obj\Debug\MasterDetailUntyped.pdb

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Firma.DokumentDalProvider">
+    <Position X="2.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>DokumentDalProvider.cs</FileName>
+      <HashCode>gAQAAEAAAAAAAAAAAAkAAAAAAAEBAAAAAAAAAAABAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dalStavka" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Firma.ArtiklDalProvider">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ArtiklDalProvider.cs</FileName>
+      <HashCode>gAQAAEAAAAAAAAAAAAEAAAAAAAEBAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firma.MjestoDalProvider">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MjestoDalProvider.cs</FileName>
+      <HashCode>gAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firma.PartnerDalProvider">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PartnerDalProvider.cs</FileName>
+      <HashCode>gAQQAEAAAAAAAAAAAAEAAAAAAQEBAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firma.SecurityDalProvider" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SecurityDalProvider.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firma.StavkaDalProvider">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>StavkaDalProvider.cs</FileName>
+      <HashCode>gAQAAEAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+</ClassDiagram>

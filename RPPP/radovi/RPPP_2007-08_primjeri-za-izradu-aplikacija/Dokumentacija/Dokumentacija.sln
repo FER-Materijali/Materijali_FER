@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleClassLib", "ExampleClassLib\ExampleClassLib.csproj", "{8817F325-3394-426E-9AC2-E6CC41DD4BF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContextHelp", "ContextHelp\ContextHelp.csproj", "{DC373A1F-E9F7-45C0-A92D-CEB26280CE0C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://dellboy.zpr.fer.hr:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ContextHelp\\ContextHelp.csproj
+		SccProjectName1 = ContextHelp
+		SccLocalPath1 = ContextHelp
+		SccProjectUniqueName2 = ExampleClassLib\\ExampleClassLib.csproj
+		SccProjectName2 = ExampleClassLib
+		SccLocalPath2 = ExampleClassLib
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8817F325-3394-426E-9AC2-E6CC41DD4BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8817F325-3394-426E-9AC2-E6CC41DD4BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8817F325-3394-426E-9AC2-E6CC41DD4BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8817F325-3394-426E-9AC2-E6CC41DD4BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC373A1F-E9F7-45C0-A92D-CEB26280CE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC373A1F-E9F7-45C0-A92D-CEB26280CE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC373A1F-E9F7-45C0-A92D-CEB26280CE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC373A1F-E9F7-45C0-A92D-CEB26280CE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

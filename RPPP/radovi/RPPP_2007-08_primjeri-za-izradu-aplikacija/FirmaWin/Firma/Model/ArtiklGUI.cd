@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Firma.ArtiklForm">
+    <Position X="6" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Forms\ArtiklForm.cs</FileName>
+      <HashCode>AAAEBCggACEQAQAhAAKIQgaiIAAFQAAg4AAAAAAQAIg=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="artiklBll" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="Firma.BaseForm" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="1.849" />
+        <Point X="5.75" Y="1.849" />
+        <Point X="5.75" Y="2" />
+        <Point X="6" Y="2" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="artiklBll" Type="Firma.ArtiklBllProvider" ManuallyRouted="true">
+      <Path>
+        <Point X="8.75" Y="3.938" />
+        <Point X="9.688" Y="3.938" />
+        <Point X="9.688" Y="2.509" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="Firma.BaseForm">
+    <Position X="3.5" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Core\BaseForm.cs</FileName>
+      <HashCode>ggQAAMIgACCQAyAgMACAgAECkQEEgIomjAAChLwECII=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Firma.ArtiklBllProvider" Collapsed="true">
+    <Position X="9" Y="2" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+</ClassDiagram>

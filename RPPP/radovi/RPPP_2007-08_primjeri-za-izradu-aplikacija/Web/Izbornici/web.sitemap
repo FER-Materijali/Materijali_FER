@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Izbornik">
+    <siteMapNode url="1.aspx" title="1. stranica" >
+      <siteMapNode url="4.aspx" title="4. stranica" >
+        <siteMapNode url="7.aspx" title="7. stranica" />
+        <siteMapNode url="8.aspx" title="8. stranica" >
+          <siteMapNode url="9.aspx" title="9. stranica" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="5.aspx" title="5. stranica" />
+    </siteMapNode>
+    <siteMapNode url="2.aspx" title="2. stranica" />
+    <siteMapNode url="3.aspx" title="3. stranica" />
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,10 @@
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Artikl\bin\Debug\Artikl.exe
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Artikl\bin\Debug\Artikl.pdb
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Artikl\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Artikl\obj\Debug\UnosArtikala.Artikl.resources
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Artikl\obj\Debug\UnosArtikala.Properties.Resources.resources
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Artikl\obj\Debug\Artikl.csproj.GenerateResource.Cache
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Artikl\obj\Debug\Artikl.exe
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Artikl\obj\Debug\Artikl.pdb
+D:\My Documents\FER\RPPP\backup\ADO\Artikl\obj\Debug\Artikl.exe
+D:\My Documents\FER\RPPP\backup\ADO\Artikl\obj\Debug\Artikl.pdb

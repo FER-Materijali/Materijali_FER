@@ -1,0 +1,9 @@
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Transakcije\bin\Debug\Transakcije.exe.config
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Transakcije\bin\Debug\Transakcije.exe
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Transakcije\bin\Debug\Transakcije.pdb
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Transakcije\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Transakcije\obj\Debug\Transakcije.TransakcijeForm.resources
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Transakcije\obj\Debug\Transakcije.Properties.Resources.resources
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Transakcije\obj\Debug\Transakcije.csproj.GenerateResource.Cache
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Transakcije\obj\Debug\Transakcije.exe
+D:\My Documents\FER\RPPP\RPPP_Primjeri\ADO\Transakcije\obj\Debug\Transakcije.pdb

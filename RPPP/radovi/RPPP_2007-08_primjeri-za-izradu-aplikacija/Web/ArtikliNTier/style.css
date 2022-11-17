@@ -1,0 +1,20 @@
+﻿body {
+}
+
+.button 
+{
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	font-style: normal; 
+	line-height: normal; 
+	font-weight: normal; 
+	font-variant: normal; 
+	color: #000000; 
+	text-decoration: none; 
+	height: 20px; 
+	width: 120px; 
+	border: #3D3D3B outset; 
+	clip: rect( ); 
+	border-width: 1pt 1px 1px ; 
+	background-color: #C4DC4B;
+}

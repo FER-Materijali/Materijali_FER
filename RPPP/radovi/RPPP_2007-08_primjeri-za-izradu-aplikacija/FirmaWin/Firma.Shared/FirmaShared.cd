@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Firma.Artikl" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Artikl.cs</FileName>
+      <HashCode>QAQAAAAgAACkAIgMAAAAAgAAAAAAwAABACEQAWABkAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="NTier.BusinessBase" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="1.312" />
+        <Point X="6.5" Y="1.312" />
+        <Point X="6.5" Y="1.13" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Firma.ArtiklList" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ArtiklList.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="NTier.BusinessBaseList&lt;T&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="6.875" Y="3.75" />
+        <Point X="6.875" Y="2.505" />
+        <Point X="6.5" Y="2.505" />
+        <Point X="6.5" Y="2.13" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Firma.Dokument" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Dokument.cs</FileName>
+      <HashCode>AAAAgAACAAGEAgAMEQABAgUAAaIdQAAiAQABAQAAAAQ=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="NTier.BusinessBase" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="1.312" />
+        <Point X="5.125" Y="1.312" />
+        <Point X="5.125" Y="1.13" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Firma.DokumentList" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DokumentList.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="NTier.BusinessBaseList&lt;T&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="6.875" Y="3.75" />
+        <Point X="6.875" Y="2.505" />
+        <Point X="4.75" Y="2.505" />
+        <Point X="4.75" Y="2.13" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Firma.Mjesto" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Mjesto.cs</FileName>
+      <HashCode>AgQBAAIAAACEIAQMACgAAgAKAAAAQAAAAAAAAAAGBAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="NTier.BusinessBase" FixedFromPoint="true">
+      <Path>
+        <Point X="7.75" Y="1.312" />
+        <Point X="2.123" Y="1.312" />
+        <Point X="2.123" Y="0.815" />
+        <Point X="2" Y="0.815" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Firma.MjestoList" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MjestoList.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="NTier.BusinessBaseList&lt;T&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="6.875" Y="3.75" />
+        <Point X="6.875" Y="2.505" />
+        <Point X="1.25" Y="2.505" />
+        <Point X="1.25" Y="2.13" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Firma.Partner" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Partner.cs</FileName>
+      <HashCode>AAFBABQBQCCEAAEsAAADAhAAgRAQRIAQAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="NTier.BusinessBase" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="1.312" />
+        <Point X="3" Y="1.312" />
+        <Point X="3" Y="1.13" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Firma.PartnerList" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PartnerList.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="NTier.BusinessBaseList&lt;T&gt;" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="6.875" Y="3.75" />
+        <Point X="6.875" Y="2.484" />
+        <Point X="3" Y="2.484" />
+        <Point X="3" Y="2.13" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Firma.Stavka" Collapsed="true">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Stavka.cs</FileName>
+      <HashCode>AAAAAAAiAACEAgEIAAAgBhIAIAQBQAAgASEAABABgQA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="NTier.BusinessBase" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="1.509" />
+        <Point X="8.5" Y="2.794" />
+        <Point X="6.958" Y="2.794" Type="JumpStart" />
+        <Point X="6.792" Y="2.794" Type="JumpEnd" />
+        <Point X="5.5" Y="2.794" />
+        <Point X="5.5" Y="2.875" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Firma.StavkaList" Collapsed="true">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>StavkaList.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firma.TipPartneraConverter" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TipPartnera.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NTier.BusinessBase" Collapsed="true">
+    <Position X="7.75" Y="1" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NTier.BusinessBaseList&lt;T&gt;" Collapsed="true">
+    <Position X="6.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Firma.IStavkaDalProvider" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IStavkaDalProvider.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Firma.TipPartnera" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TipPartnera.cs</FileName>
+      <HashCode>AAAAIAAAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

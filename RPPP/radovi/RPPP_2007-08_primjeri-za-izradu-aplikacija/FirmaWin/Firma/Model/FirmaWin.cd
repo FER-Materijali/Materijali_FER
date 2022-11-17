@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Firma.BaseForm" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Core\BaseForm.cs</FileName>
+      <HashCode>ggQAAMIgACCQAyAgMACAgAECkQEEgIomjAAChLwECII=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Firma.FormToolbar" Collapsed="true">
+    <Position X="3.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Core\FormToolbar.cs</FileName>
+      <HashCode>AIAAgAUAACAgAEEAAAGEAFACAAAIAhoQAQBAAANAAQQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firma.GenericForm" Collapsed="true">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Core\GenericForm.cs</FileName>
+      <HashCode>AQAAQAAEACAAACAgABCAAAACAAAFAAAgAAAQCAATAIA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="formToolbar1" />
+    </ShowAsAssociation>
+    <AssociationLine Name="formToolbar1" Type="Firma.FormToolbar" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="2.63" />
+        <Point X="5" Y="3.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.442" Y="0.414" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="Firma.StatusBarInfo">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Core\StatusBarInfo.cs</FileName>
+      <HashCode>AAARAABAAAAAAAAAAAAAAAEACAABAAAAEAAAIBAAECA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firma.StatusBusy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Core\StatusBusy.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAABAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Firma.Utils" Collapsed="true">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Core\Utils.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firma.WizardBaseForm" Collapsed="true">
+    <Position X="1.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Core\WizardBaseForm.cs</FileName>
+      <HashCode>AAgAAAAACCAAQAAABAiABAADAAAAAAAEAAAAAQAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firma.FirmaApp" Collapsed="true">
+    <Position X="10.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FirmaApp.cs</FileName>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firma.ArtiklForm" Collapsed="true">
+    <Position X="1" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Forms\ArtiklForm.cs</FileName>
+      <HashCode>AAAEBCggACEQAQAhAAKIQgaiIAAFQAAg4AAAAAAQAIg=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="formToolbar1" />
+    </ShowAsAssociation>
+    <AssociationLine Name="formToolbar1" Type="Firma.FormToolbar" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.75" Y="2.63" />
+        <Point X="1.75" Y="4.062" />
+        <Point X="3.75" Y="4.062" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="Firma.DokumentForm" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Forms\DokumentForm.cs</FileName>
+      <HashCode>AiEAACABGDEIAKAjEwTFAAKjQAgFAQAoEEIACAAwAIQ=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="formToolbar1" />
+    </ShowAsAssociation>
+    <AssociationLine Name="formToolbar1" Type="Firma.FormToolbar">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.07" Y="0.402" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="Firma.PartnerForm" Collapsed="true">
+    <Position X="6.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Forms\PartnerForm.cs</FileName>
+      <HashCode>AAACAQCAACAEAADqAACAAIICBABHAAAlAKAQAEAQCMM=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="formToolbar1" />
+    </ShowAsAssociation>
+    <AssociationLine Name="formToolbar1" Type="Firma.FormToolbar" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="2.63" />
+        <Point X="7.5" Y="4" />
+        <Point X="5.25" Y="4" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="Firma.LogInForm" Collapsed="true">
+    <Position X="8.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>LogInForm.cs</FileName>
+      <HashCode>AAAQAAAAACAAABAIAQSABAACEAAAQAAAAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firma.MainForm" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MainForm.cs</FileName>
+      <HashCode>BSgAQCBAASICAAoIAACBIhAiEIRGCQQCwABBwBAEACk=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="statusBar" />
+      <Field Name="sblModuleName" />
+      <Field Name="sblFunction" />
+      <Field Name="sblStatus" />
+      <Field Name="sblUser" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="statusBar" Type="System.Windows.Forms.StatusStrip" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="1.13" />
+        <Point X="10" Y="3.125" />
+        <Point X="10.5" Y="3.125" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.515" Y="0.518" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="sblModuleName" Type="System.Windows.Forms.ToolStripStatusLabel" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.5" Y="0.875" />
+        <Point X="12.5" Y="0.875" />
+        <Point X="12.5" Y="1.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.258" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="sblFunction" Type="System.Windows.Forms.ToolStripStatusLabel" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.188" Y="1.13" />
+        <Point X="10.214" Y="1.252" />
+        <Point X="10.214" Y="2.125" />
+        <Point X="11.75" Y="2.125" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="sblStatus" Type="System.Windows.Forms.ToolStripStatusLabel" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.438" Y="1.13" />
+        <Point X="10.438" Y="1.876" />
+        <Point X="11.75" Y="1.876" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="sblUser" Type="System.Windows.Forms.ToolStripStatusLabel" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.672" Y="1.13" />
+        <Point X="10.672" Y="1.562" />
+        <Point X="11.75" Y="1.562" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="Firma.Program" Collapsed="true">
+    <Position X="8.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Program.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firma.DokumentWizard" BaseTypeListCollapsed="true">
+    <Position X="1.5" Y="7.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Wizard\DokumentWizard.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAIAAAEAEABAAAAAAI=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="p" />
+      <Field Name="d" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Firma.DokumentWizardForm" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Wizard\DokumentWizardForm.cs</FileName>
+      <HashCode>AqEgACABGDEIAKADEgTNAAKjcAgAAQAqEEIACAAwAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firma.PartnerWizardForm" Collapsed="true">
+    <Position X="2.75" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Wizard\PartnerWizardForm.cs</FileName>
+      <HashCode>AAACAQCAACAEAADaAADAAIICFEBCAAAFAaAQAEAQCEk=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firma.Properties.Resources" Collapsed="true">
+    <Position X="8.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAgAEABQAAAAAAQAAAABEAAAAQAQAAAAIgAABAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firma.Properties.Settings" Collapsed="true">
+    <Position X="10.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.StatusStrip" Collapsed="true">
+    <Position X="10.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="System.Windows.Forms.ToolStripStatusLabel" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="Firma.IBusinessObjectForm" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Core\IBusinessObjectForm.cs</FileName>
+      <HashCode>ggAAAEIAAAAAAyAAEAAAAAAAAQEAAAoCCAACADAEAIA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Firma.WizardResult">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Core\WizardResult.cs</FileName>
+      <HashCode>AgAAAAAAQAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

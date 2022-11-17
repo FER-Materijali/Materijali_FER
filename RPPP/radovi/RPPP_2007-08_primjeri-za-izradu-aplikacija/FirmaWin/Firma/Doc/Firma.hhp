@@ -1,0 +1,15 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Firma.chm
+Contents file=toc.hhc
+Default topic=Firma.htm
+Display compile progress=No
+Index file=Index.hhk
+Language=0x41a Croatian (Croatia)
+
+
+[FILES]
+Firma.htm
+
+[INFOTYPES]
+

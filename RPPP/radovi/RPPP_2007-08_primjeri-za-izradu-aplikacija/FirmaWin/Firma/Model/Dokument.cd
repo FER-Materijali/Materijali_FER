@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Firma.DokumentForm">
+    <Position X="2.25" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Forms\DokumentForm.cs</FileName>
+      <HashCode>AiEAACABGDEIAKAjEwTFAAKjQAgFAQAoEEIACAAwAIQ=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="artiklBll" />
+      <Field Name="dokumentBll" />
+      <Field Name="partnerBll" />
+      <Field Name="stavkaBll" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="Firma.DokumentBllProvider">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Firma.PartnerBllProvider" Collapsed="true">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Firma.ArtiklBllProvider" Collapsed="true">
+    <Position X="5.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Firma.StavkaBllProvider" Collapsed="true">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Firma.ArtiklDalProvider">
+    <Position X="8.75" Y="7" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Firma.PartnerDalProvider">
+    <Position X="4.5" Y="6.25" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Firma.StavkaDalProvider">
+    <Position X="9" Y="4.25" Width="1.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Firma.Artikl">
+    <Position X="6.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="Firma.Stavka">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="Firma.DokumentDalProvider">
+    <Position X="9" Y="1" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Firma.Dokument">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="Firma.Partner">
+    <Position X="2.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+</ClassDiagram>
