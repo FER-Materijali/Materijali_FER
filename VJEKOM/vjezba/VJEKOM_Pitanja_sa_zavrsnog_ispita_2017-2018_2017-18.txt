@@ -1,0 +1,334 @@
+Cilj svake prezentacije u živo treba biti:
+Odaberite jedan odgovor:
+a. prenijeti emociju
+b. da se publika što bolje zabavi
+c. biti što precizniji
+d. ništa od navedenog
+e. sve navedeno
+f. prenijeti što više informacije
+
+Mail Transfer Agent može pristupiti Desktop Mail User Agentu protokolima:
+Odaberite jedan odgovor:
+a. IMAP.
+b. ni jednim od navedenih.
+c. SMTP.
+d. SSH.
+e. MTA uopće ne pristupa MUA.
+f. FTP.
+g. HTTP/HTTPS.
+h. POP3.
+
+Što je svrha psiholoških instrumenata osobnosti?
+Odaberite jedan odgovor:
+a. Razumjeti čovjeka i njegovu osobnost
+b. Utvrditi koja je osobnost najbolja
+c. Razumjeti kako najbolje manipulirati ljudima
+d. ništa od navedenog
+e. Utvrditi tko je normalan, a tko nije
+f. sve navedeno
+g. Svakog čovjeka staviti u njegovu kategoriju pri odabiru radnog mjesta
+
+Prikaz prezentacije na projektoru i na zaslonu računala:
+Odaberite jedan odgovor:
+a. Su isti ako se koristi bijelo platno i dobra rasvjeta u prostoriji.
+b. Su različiti.
+c. Su isti.
+
+U zaključku opisujemo:
+Odaberite jedan odgovor:
+a. Sve navedeno, jer ovisi o vrsti teksta
+b. Analizu rezultata
+c. Ništa od navedenog
+d. Rezultate rada
+e. Što možemo zaključiti o postignutom, gdje i kad se može primijeniti i što se dalje treba/može raditi (u budućim radovima)
+f. Druge radove na sličnu temu i njihove rezultate
+g. Polazne pretpostavke
+
+Kad netko nešto krivo ili loše napravi, kritiku treba uputiti tako da:
+Odaberite jedan odgovor:
+a. nabrojimo njegove nedostatke koji su više puta došli do izražaja
+b. nabrojimo njegove nedostatke koji su sad, najnovije došli do izražaja
+c. ništa od navedenog
+d. kažemo kako bi se on trebao osjećati sada
+e. kažemo koje njegovo svojstvo kao čovjeka je loše
+f. kažemo kako se mi osjećamo sada nakon njegovog postupka
+
+Kako biti uvjerljiv u komunikaciji sa sugovornikom?
+Odaberite jedan odgovor:
+a. pozvati se ne autoritet popularno prihvaćen
+b. koristiti svoj autoritet
+c. opširnim i detaljnim objašnjaanjem
+d. nekoliko puta ponoviti isto
+e. sve navedeno
+f. koristiti argumente, a ne dogme
+g. uvjerljivim tonom
+h. polagano naglašavajući riječi
+i. govoreći brzo i puno
+j. povišenim glasom
+
+Koliko su geste kao jezik univerzalne u različitim kulturama i sigurne za korištenje?
+Odaberite jedan odgovor:
+a. ni jedan odgovor nije točan
+b. geste pripadaju u tzv. jezik tijela i kao takve su univerzalne u ljudskoj vrsti i svim kulturama i sigurne za korištenje
+c. većina pozitivnih gesti su univerzalne i sigurne
+d. neke su geste univerzalne i sigurne, poput onih za pohvalu, zahvaljivanje, nadu, pobjedu
+e. praktički nema geste koja bi bila univerzalnog značenja i sigurna za korištenje u svim kulturama
+
+U našoj kulturi (prema definiciji s predavanja) dok sjedite za stolom za kojim se jede, uobičajeno je da ubrus držite:
+Odaberite jedan odgovor:
+a. zataknuto u ovratnik
+b. ispod tanjura
+c. ni jedan odgovor nije točan
+d. oko vrata
+e. na stolu
+f. na krilu
+
+Znanstveni tekst kojim se prikazuje neko istraživanje, se piše iz perspektive:
+Odaberite jedan odgovor:
+a. Stručne javnosti
+b. Pravne utemeljenosti
+c. Čitatelja
+d. Etičke prikladnosti
+e. Znanstvene argumentacije
+f. Ništa od navedenog
+g. Tržišnog značaja
+
+Koji su nedostaci kompromisa?
+Odaberite jedan odgovor:
+a. sve navedeno
+b. treba poštovati drugu stranu
+c. ništa od navedenog
+d. zahtjeva puno vremena da se postigne
+e. može dovesti do ogorčenosti u odnosu
+
+U prezentacijama je preporučeno koristiti:
+Odaberite jedan odgovor:
+a. kratke rečenice
+b. dugačke rečenice
+
+Koji od navedenih testova je test osobnosti?
+Odaberite jedan odgovor:
+a. Johnson i Masters
+b. Marshmallow test
+c. Ni jedan od navedenih
+d. Belbinov test
+e. Myers-Briggs
+f. Milgramov test
+g. Svi navedeni
+h. Freudov test osobnosti
+i. Shere Hite test
+
+U Europassu, u osobne vještine ne spada:
+Odaberite jedan odgovor:
+a. ne spada ništa od navedenog
+b. radno iskustvo
+c. organizacijske vještine
+d. komunikacijske vještine
+e. materinjski jezik
+f. poslovne vještine
+g. spada sve navedeno
+h. digitalna kompetencija
+i. ostali jezici
+
+U skladu s preporukom nastavnika, koje dijelove e-mail poruke je preporučeno koristiti kad se prvi put obraćamo nekome?
+Odaberite jedan odgovor:
+a. Oslovljavanje, Potpis, Attachment.
+b. Tko je nama primatelj, Tko smo mi, O čemu je riječ, Što želimo od primatelja, Što da primatelj učini ako se slaže s našom molbom.
+c. To, Cc, Oslovljavanje, Potpis, Sender.
+d. Header, Body, Tail, In line picture, Attachement.
+
+Što su “Zotero” i “Mendeley”?
+Odaberite jedan odgovor:
+a. besplatni alati za vođenje osobne bibliografije pročitanih znanstvenih i stručnih radova, internetskih stranica i drugih sadržaja
+b. baze podataka domaćih časopisa
+c. on-line časopisi svjetskih znanstvenih i stručnih članaka
+d. ništa od navedenog
+e. on-line katalozi svjetskih znanstvenih članaka
+
+Zbog čega su informacije na Internetu loše, netočne?
+Odaberite jedan odgovor:
+a. Ljudi to rade nenamjerno
+b. Sve su informacije na Internetu točne
+c. Ponekad to ljudi rade namjerno, a često i nenamjerno
+d. Ljudi to rade namjerno
+e. ni jedan odgovor nije točan
+
+Kako možete postići da vaše web stranice nisu dohvatljive kroz internetske pretraživače?
+Odaberite jedan odgovor:
+a. ni jedan odgovor nije točan
+b. Postavljanjem ./robots.txt datoteke na poslužitelju na kojem su vaše stranice
+c. Primjenom “dark web” enkripcije podataka na vašoj stranici
+d. Prijavom svoje stranice u “dark web” registar
+e. svi su odgovori točni
+f. Dopisom vlasniku pretraživača u kojem tražite da vašu adresu isključi iz pretraživanja
+g. Primjenom “dark web” protokola
+
+Adresa osobe kojoj poruka nije izravno namijenjena, ne mora na nju reagirati, ali mora znati za vašu poruku i primatelj mora znati da je i ona dobila vašu poruku stavlja se u polje:
+Odaberite jedan odgovor:
+a. BCC.
+b. Receiver.
+c. From.
+d. CC.
+e. Sender.
+f. To.
+g. Subject.
+
+Prezentacija za predavanje je ista kao prezentacija za samostalni prikaz:
+Odaberite jedan odgovor:
+a. Da.
+b. Ne.
+
+Jesu li boje univerzalnog značenja u različitim kulturama?
+Odaberite jedan odgovor:
+a. neke, poput crne i bijele, nisu, ostale jesu
+b. neke, poput zelene i crvene, jesu, ostale nisu
+c. neke, poput crne i bijele, jesu, ostale nisu
+d. nisu
+e. jesu
+f. neke, poput zelene i crvene, nisu, ostale jesu
+
+Označite ispravne oblike:
+Odaberite jedan ili više odgovora:
+a.
+Od svih potencijalnih mogućnosti, najoptimalnija je ona u kojoj je namjera dobronamjerna, a cijena jeftina.
+b.
+Od svih mogućnosti, optimalna je ona koja je dobronamjerna i cijena joj je jeftina.
+c.
+Od svih mogućnosti, optimalna je ona koja je jeftina i dobronamjerna.
+d.
+Od svih mogućnosti, najoptimalnija je ona u kojoj je namjera dobra, a cijena niska.
+e.
+Od svih mogućnosti, optimalna je ona u kojoj je namjera dobra, a cijena niska.
+f.
+Od svih potencijalnih mogućnosti, optimalna je ona koja je jeftina i dobronamjerna.
+g.
+Od svih mogućnosti, najoptimalnija je ona koja je jeftina i dobronamjerna.
+h.
+Od svih mogućnosti, optimalna je ona u kojoj je namjera dobra, a cijena jeftina.
+i. Od svih mogućnosti, optimalna je ona u kojoj je namjera dobronamjerna, a cijena niska.
+j.
+Od svih potencijalnih mogućnosti, optimalna je ona u kojoj je namjera dobra, a cijena niska.
+
+Ako se želimo usredotočiti na svog sugovornika, onda moramo razmišljati o tome:
+Odaberite jedan odgovor:
+a. sve navedeno
+b. koje su njegove vrijednosti
+c. što je njemu važno
+d. kakvo je njegovo iskustvo
+e. što zna, a što ne
+f. na što je sad fokusiran
+g. ništa od navedenog
+
+Algoritam kojim internetski pretraživači rangiraju odgovore:
+Odaberite jedan odgovor:
+a. jednak je za sve tražilice i javan, opisan RFC standardom
+b. različit je za svaku tražilicu i tajan
+c. različit je za svaku tražilicu, ali mora biti javan
+d. ni jedan odgovor nije točan
+e. svi su odgovori točni
+f. jedna je za sve tražilice, ali tajan za javnost
+g. jednak je za sve tražilice i javan, ali se često mijenja
+
+Čime se mogu ilustrirati poruke i tvrdnje koje iznosimo u prezentciji uživo:
+Odaberite jedan odgovor:
+a. tablicama podataka
+b. citatima
+c. svime navedenim
+d. fotografijama
+e. audio i video materijalima
+f. ničim od navedenog
+g. crtežima
+h. grafikonima
+
+Je li PowerPoint je jedini alat za izradu prezentacija sa prikaznicama?
+Odaberite jedan odgovor:
+a. Da.
+b. Ne.
+
+Ako putem tražilice Google želite naći podatke samo o hotelima koji se zovu “Jadran” najbolji oblik upita je:
+Odaberite jedan odgovor:
+a. “hotel jadran”
+b. hotel –jadran
+c. +hotel jadran
+d. ni jedan ponuđeni odgovor nije dobar
+e. hotel “jadran”
+f. svi su ponuđeni odgovori jednako dobri
+g. hotel +jadran
+
+Kod video snimanja, kako treba pomicati video kameru za vrijeme snimanja?
+Odaberite jedan odgovor:
+a. suprotno od smjera kretanja objekta snimanja
+b. okomito na objekt snimanja
+c. istovremenim korištenjem zuma, da kadar ostane što sličniji
+d. ako se baš mora, vrlo polagano i minimalno
+e. ako se baš mora, brzo sa zastojima
+f. ako se baš mora, brzo i glatko
+g. ni jedan odgovor nije točan
+
+Koji je glavni razlog da se ne razumijemo u komunikaciju sa sugovornikom?
+Odaberite jedan odgovor:
+a. jer nas ne slušaju
+b. ništa od navedenog
+c. jer ne znamo dobro “odbrusiti”
+d. sve navedeno
+e. jer nismo vješti na riječima
+f. jer smo usredotočeni na sebe, a trebali bismo na sugovornika
+
+Za koju se svrhu koristi životopis:
+Odaberite jedan odgovor:
+a. kad se natječete za neku nagradu
+b. sve od navedenog
+c. kad se natječete za stipendiju
+d. kad se natječete za neku funkciju
+e. kad tražite posao
+f. ni jedno od navedenog
+g. uz molbu za upis na studij
+h. kao prilog uz neko vaše djelo (pisano, vizualno, glazbeno, tehničko …)
+
+Temeljni zadatak popularnog teksta najčešće je da:
+Odaberite jedan odgovor:
+a. dade obilje referenci sa stručnim i znanstvenim objašnjenjima
+b. precizno objasni stručni aspekt teme
+c. privuče čitatelja temi i motivira ga za daljnje čitanje i saznavanje o temi
+d. ništa od navedenog
+e. dade kritički osvrt utemeljen na znanstvenim činjenicama
+
+Niti jedno učenje ne bi smjeli započeti bez da prije toga da
+
+Odaberite jedan odgovor:
+a. ne zadovoljimo svoje fiziološke potrebe.
+b. si ne postavimo pitanja na koja ćemo učenjem tražiti odgovor, i da ta pitanja ne zapišemo.
+c. ne potražimo najboljeg učitelja za tu temu.
+d. ne pribavimo sve potrebne udžbenike.
+
+Strukturirani životopis:
+Odaberite jedan odgovor:
+a. sve navedeno
+b. se sastoji od dva ili više dijelova, svaki na drugom jeziku
+c. se sastoji od unaprijed definiranih poglavlja
+d. ima uvod, srednji dio i zaključak
+e. ništa od navedenog
+
+Nekoliko minuta prije prezentacije preporučeno je (u skladu s objašnjenim na predavanju):
+Odaberite jedan odgovor:
+a. razmišljati samo o osjećajima koje želite u sebi pobuditi i prenijeti publici
+b. ništa od navedenog
+c. razmišljati o informacijama koje želite prenijeti i konkretnim rečenicama koje ćete koristiti
+d. sve navedeno
+e. razmišljati o glavnim porukama i željenim rezultatima prezentacije
+
+Fotografija je oštra kad:
+Odaberite jedan odgovor:
+a. kad se fotoaparat ne miče
+b. se objekt snimanja ne miče
+c. je fokus objektiva podešen na objekt snimanja
+d. kad je ispravna dubinska oštrina
+e. ni jedna odgovor nije točan
+
+Gdje treba u sceni fotografije biti točka interesa:
+Odaberite jedan odgovor:
+a. ni jedan odgovor nije točan
+b. u karakterističnim točkama zlatnog reza
+c. svejedno, točka interesa proizlazi iz poruke fotografije
+d. tako gdje je dobro osvjetljenje
+e. svejedno, točka interesa se postiže drugim tehničkim mjerama
