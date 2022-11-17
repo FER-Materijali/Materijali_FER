@@ -1,0 +1,4 @@
+True
+p
+-p q
+q

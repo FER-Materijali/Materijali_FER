@@ -1,0 +1,55 @@
+Klasa = Sitcom, Crtic, Herojska, Dramska, Detektivska, Izmisljena, Politicka
+Superheroji = da, ne
+Kriminalisticka = da, ne
+Trajanje = kratka, srednja, duga
+Komedija = da, ne
+Kriminalistika = da, ne
+Nadrealno = da, ne
+Drama = da, ne
+Animirano = da, ne
+Ratovi = puno, srednje, malo
+Politika = da, ne
+LjubavnaPrica = da, ne
+Glumci = jako_poznati, poznati, nepoznati
+Drzava = Britanija, Amerika
+Nacionalnost = Britansko, Americko
+IMDB_Ocjena = visoka, srednja, niska
+Serija = How_I_Met_Your_Mother, Wire, Game_Of_Thrones, Sherlock, Castle, Silicon_Valley, True_Detective, House_Of_Cards, Daredevil, Family_Guy
+1 IF Komedija = da & Trajanje = kratka
+THEN Klasa = Sitcom
+2 IF Animirano = da
+THEN Klasa = Crtic
+3 IF Superheroji = da & Nadrealno = da
+THEN Klasa = Herojska
+4 IF Nadrealno = da
+THEN Klasa = Izmisljena
+5 IF Kriminalistika = da
+THEN Klasa = Detektivska
+6 IF Drama = da
+THEN Klasa = Dramska
+7 IF Politika = da
+THEN Klasa = Politicka
+8 IF Drzava = Britanija
+THEN Nacionalnost = Britansko
+9 IF Drzava = Amerika
+THEN Nacionalnost = Americko
+10 IF Nacionalnost = Americko & Klasa = Crtic
+THEN Serija = Family_Guy
+12 IF Klasa = Sitcom & Nacionalnost = Americko
+THEN Serija = How_I_Met_Your_Mother
+13 IF Klasa = Politicka & Glumci = jako_poznati & Trajanje = srednje & IMDB_Ocjena = visoka
+THEN Serija = House_Of_Cards
+14 IF Klasa = Detektivska & Nacionalnost = Britansko & Trajanje = duga & IMDB_Ocjena = visoka
+THEN Serija = Sherlock
+15 IF Klasa = Detektivska & Nacionalnost = Americka & Trajanje = srednja & IMDB_Ocjena = visoka
+THEN Serija = Wire
+16 IF Klasa = Izmisljena & IMDB_Ocjena = visoka & Ratovi = puno
+THEN Serija = Game_Of_Thrones
+17 IF Klasa = Detektivska & IMDB_Ocjena = srednja & LjubavnaPrica = da
+THEN Serija = Castle
+18 IF Klasa = Dramska & Trajanje = kratko & IMDB_Ocjena = srednja
+THEN Serija = Silicon_Valley
+19 IF Klasa = Detektivska & Nacionalnost = Americko & IMDB_Ocjena = visoka
+THEN Serija = True_Detective
+20 IF Klasa = Herojska & IMDB_Ocjena = visoka & Trajanje = srednja
+THEN Serija = Daredevil

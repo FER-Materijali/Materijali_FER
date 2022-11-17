@@ -1,0 +1,3 @@
+UI2: Zadatak 2.2: Pretvorba formule predikatne logike u klauzalni oblik 
+
+Napišite program koji formulu predikatne logike pretvara u standardizirani klauzalni oblik. Pretpostavite da je ulazna formula dobro oblikovana formula i da ne sadržava slobodne varijable. Formulu u memoriji prikažite prikladnom strukturom podataka; generiranje te strukture na temelju tekstovnog zapisa (parsanje) nije potrebno napraviti. Program treba ispisivati korake pri pretvorbi formule, formulu u preneks normalnom obliku, te naposlijetku formulu u standardiziranom klauzalnom obliku. Definirajte barem tri primjera nad kojima æete demonstrirati rad svog programa.

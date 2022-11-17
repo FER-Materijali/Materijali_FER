@@ -1,0 +1,9 @@
+True
+t -e d
+-t c
+e -d i
+-g -d i
+t c -d g
+-c
+-i -g
+-d -e

@@ -1,0 +1,7 @@
+C:\Documents and Settings\Andrea\My Documents\Visual Studio 2008\Projects\UI2\UI2\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Andrea\My Documents\Visual Studio 2008\Projects\UI2\UI2\obj\Debug\UI2.Properties.Resources.resources
+C:\Documents and Settings\Andrea\My Documents\Visual Studio 2008\Projects\UI2\UI2\obj\Debug\UI2.csproj.GenerateResource.Cache
+C:\Documents and Settings\Andrea\My Documents\Visual Studio 2008\Projects\UI2\UI2\bin\Debug\UI2.exe
+C:\Documents and Settings\Andrea\My Documents\Visual Studio 2008\Projects\UI2\UI2\bin\Debug\UI2.pdb
+C:\Documents and Settings\Andrea\My Documents\Visual Studio 2008\Projects\UI2\UI2\obj\Debug\UI2.exe
+C:\Documents and Settings\Andrea\My Documents\Visual Studio 2008\Projects\UI2\UI2\obj\Debug\UI2.pdb

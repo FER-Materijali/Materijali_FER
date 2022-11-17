@@ -1,0 +1,4 @@
+True
+a f
+-a g
+f g

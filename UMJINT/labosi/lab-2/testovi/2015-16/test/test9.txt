@@ -1,0 +1,6 @@
+True
+a -i
+-w i
+-a
+w i f
+f

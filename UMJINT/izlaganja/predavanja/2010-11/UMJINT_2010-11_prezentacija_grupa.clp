@@ -1,0 +1,6 @@
+(assert (grupa Marko Mirko Slavko))
+(assert (grupa Tina Marina))
+(defrule pobroji_ljude (grupa $?ljudi)
+	=> (printout t "Grupa: " ?ljudi crlf))
+(defrule daj_drugoga (grupa ? ?drugi $?)
+	=> (printout t "Drugi: " ?drugi crlf))
