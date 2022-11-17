@@ -1,0 +1,10 @@
+A GRUPA: A B B A A 	E C A D A	 C A F F B	 A C D A E
+
+
+B GRUPA: B C C A C	D F C E E 	 D B F F A	 A D D D D
+
+
+C GRUPA: D D A A B	A E E C B	 B D F F A	 A B E A A 
+
+
+D GRUPA: C B D A D 	B F B B C	 B C F F B	 A A A D C

@@ -1,0 +1,21 @@
+ A grupa:
+
+D, C, C, D, A, A, E, D, D, A, A i E, B, A, C, A, B, B, D, B, C
+
+ 
+
+ B grupa:
+
+E, C, C, D, F, A, D, B, C, A, E, B, E, D, C, B, B, C, C, D
+
+ 
+
+ C grupa:
+
+C, C, C, D, B, A, E, B, D, A, F, B, D, A, A, B, A, D, B, B
+
+ 
+
+ D grupa:
+
+B, C, C, D, A, A, E, A, C, A, A, B, E, C, C, A, D, B, B, E

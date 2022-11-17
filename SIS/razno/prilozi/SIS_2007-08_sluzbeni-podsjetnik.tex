@@ -1,0 +1,411 @@
+% Pregled formula - SIS - FER2
+% Copyright (C) 2007 University of Zagreb - FER - ZESOI
+% Copyright (C) 2007 Tomislav Petkovic (tomislav.petkovic.ml@fer.hr)
+% May be freely distributed.
+% This file is intended to be processed by plain TeX.
+\overfullrule=0pt
+\def\leftdisplay#1$${\leftline{\indent$\displaystyle{#1}$}$$}
+\everydisplay{\leftdisplay}
+\newdimen\fullhsize
+\newtoks\naslov
+\newtoks\upozorenje
+\font\mali=cmr8
+\font\maliit=cmsl8
+\font\malitt=cmtt8
+\font\diofnt=cmb10 at 13pt
+\font\poddiofnt=cmb10 at 12pt
+\font\podpoddiofnt=cmb10 at 11pt
+\naslov={Pregled formula iz {\it Signala i sustava} (FER-2)}
+\upozorenje={\mali Na pismenom ispitu  iz {\maliit Signala i sustava}
+dozvoljeno je imati isklju\v civo pribor za pisanje, kalkulator bez
+bilje\v zaka vezanih uz predmet te ovaj \v salabahter. Ovaj \v salabahter je dostupan
+na stranicama predmeta {\malitt http://www.fer.hr/predmet/sis2}.
+\copyright\ Sveu\v cili\v ste u Zagrebu-FER-ZESOI, 2007.
+Dozovljeno je umna\v zanje i distribucija ovog \v salabahtera samo ako svaka kopija sadr\v zi
+gore navedenu informaciju o autorskim pravima te ovu dozvolu o umna\v zanju.}
+\fullhsize=18cm
+\hsize=8,5cm
+\hoffset=-1,04cm
+\vsize=24,5cm
+\voffset=-0,04cm
+\def\fullline{\hbox to\fullhsize}
+\let\lr=L
+\newbox\leftcolumn
+\output{\twocolumnoutput}
+\def\twocolumnoutput{
+  \if L\lr
+    \global\setbox\leftcolumn=\columnbox
+    \global\let\lr=R
+  \else
+    \shipout\vbox{
+      \ifnum\pageno=1 \firstheadline \else \makeheadline \fi
+      \fullline{\box\leftcolumn\hfil\vrule\hfil\columnbox}
+      \ifnum\pageno=1 \firstfootline \else \makefootline \fi
+    }
+    \advancepageno
+    \global\let\lr=L
+  \fi
+  \ifnum\outputpenalty>-20000
+  \else
+    \dosupereject
+  \fi
+}
+\def\makeheadline{
+  \vbox to 0pt{
+    \vskip -25.3pt
+    \fullline{\vbox to8.5pt{}\the\headline}
+    \vss
+  }
+  \nointerlineskip
+}
+\def\firstheadline{
+  \vbox to 0pt{
+    \vskip -25.3pt
+    \hbox{\vbox {
+      \offinterlineskip
+      \hrule
+      \hbox to\fullhsize{\vbox to1pt{}\vrule\hfil\vrule}
+      \hbox to\fullhsize{\vbox to8.5pt{}\vrule\hfil\the\naslov\hfil\vrule}
+      \hbox to\fullhsize{\vbox to1pt{}\vrule\hfil\vrule}
+      \hrule}
+    }
+    \vss
+  }
+  \nointerlineskip
+}
+\def\makefootline{
+  \baselineskip=24pt
+  \lineskiplimit=0pt
+  \fullline{\the\footline}
+}
+\def\firstfootline{
+  \baselineskip=11pt
+  \lineskiplimit=0pt
+  \hsize=\fullhsize
+  \vskip 10pt
+  \fullline{\vbox{\the\upozorenje}}
+}
+\def\columnbox{\leftline{\pagebody}}
+\outer\def\bye{
+  \par\vfill\supereject
+  \if R\lr \null\vfill\eject\fi
+  \end
+}
+\font\bigfnt=cmb10 at 12pt
+\outer\def\dio#1\par{
+  \smallskip\vskip5pt plus4\smallskipamount\penalty-250\vskip0pt plus-4\smallskipamount
+  \begingroup\bigfnt #1\endgroup\par
+}
+\outer\def\poddio#1\par{
+  \smallskip\vskip4pt plus6\smallskipamount\penalty-250\vskip0pt plus-4\smallskipamount
+  \begingroup\poddiofnt #1\endgroup\par
+}
+\outer\def\podpoddio#1\par{
+  \smallskip\vskip3pt plus4\smallskipamount\penalty-250\vskip0pt plus-4\smallskipamount
+  \begingroup\podpoddiofnt #1\endgroup\par
+}
+
+\def\rect{\mathop{\rm rect}\nolimits}
+\def\sinc{\mathop{\rm sinc}\nolimits}
+\def\sgn{\mathop{\rm sgn}\nolimits}
+\def\ln{\mathop{\rm ln}\nolimits}
+\def\tg{\mathop{\rm tg}\nolimits}
+\def\ctg{\mathop{\rm ctg}\nolimits}
+\def\dirac{\mathop{\delta}\nolimits}
+\def\real{\mathop{\rm Re}\nolimits}
+\def\erf{\mathop{\rm erf}\nolimits}
+\def\erfc{\mathop{\rm erfc}\nolimits}
+\def\imag{\mathop{\rm Im}\nolimits}
+\def\step{\mathop{\mu}\nolimits}
+\def\tri{\mathop{\rm tri}\nolimits}
+\def\dft{\mathop{\rm DFT}\nolimits}
+\def\uvrem{\nonscript\mskip-\medmuskip\mkern5mu
+  \mathbin{\bullet\mkern-7mu-\mkern-9mu-\mkern-3mu\bigcirc}\penalty900\mkern5mu\nonscript\mskip-\medmuskip} 
+\def\ufrek{\nonscript\mskip-\medmuskip\mkern5mu
+  \mathbin{\bigcirc\mkern-7mu-\mkern-9mu-\mkern-4mu\bullet}\penalty900\mkern5mu\nonscript\mskip-\medmuskip}
+\headline={}
+\parindent=0cm
+\parskip=4pt plus 2pt minus 2pt
+
+\def\rmdj {d\llap{\raise 1.22ex\hbox
+  {\vrule height 0.09ex width 0.315em}\kern 0.04em}}
+\def\sldj {d\llap{\raise 1.22ex\hbox
+  {\vrule height 0.09ex width 0.265em}}\rlap{\raise 1.22ex\hbox
+  {\vrule height 0.09ex width 0.05em}}}
+\def\itdj {d\llap{\raise 1.22ex\hbox
+  {\vrule height 0.09ex width 0.2em}}\rlap{\raise 1.22ex\hbox
+  {\vrule height 0.09ex width 0.06em}}}
+\def\bfdj {d\llap{\raise 1.16ex\hbox
+  {\vrule height 0.126ex width 0.308em}\kern 0.04em}}
+\def\ttdj {\rlap{\kern 0.17em\raise 1.1ex\hbox
+  {\vrule height 0.09ex width 0.295em}}d}
+\def\scdj {\rlap{\kern 0.04em\raise 0.57ex\hbox
+  {\vrule height 0.09ex width 0.20em}}d}
+\def\sfdj {d\llap{\raise 1.22ex\hbox
+  {\vrule height 0.10ex width 0.3em}\kern 0.02em}}
+
+\def\dj{\ifcase\fam \rmdj \or \or \or
+  \or \itdj \or \sldj \or \bfdj \or \ttdj \or \sfdj \or \scdj \else \rmdj \fi}
+
+\def\rmDi {\rlap{\kern 0.05em\raise 0.76ex\hbox
+  {\vrule height 0.10ex width 0.28em}}D}
+\def\slDi {\rlap{\kern 0.1em\raise 0.76ex\hbox
+  {\vrule height 0.1ex width 0.28em}}D}
+\def\itDi {\rlap{\kern 0.145em\raise 0.76ex\hbox
+  {\vrule height 0.1ex width 0.274em}}D}
+\def\bfDi {\rlap{\kern 0.044em\raise 0.72ex\hbox
+  {\vrule height 0.126ex width 0.287em}}D}
+\def\ttDi {\rlap{\kern 0.02em\raise 0.67ex\hbox
+  {\vrule height 0.105ex width 0.20em}}D}
+\def\scDi {\rlap{\kern 0.08em\raise 0.73ex\hbox
+  {\vrule height 0.12ex width 0.24em}}D}
+\def\sfDi {\rlap{\kern 0.02em\raise 0.727ex\hbox
+  {\vrule height 0.126ex width 0.26em}}D}
+
+\def\Di{\ifcase\fam \rmDi \or \or \or
+  \or \itDi \or \slDi \or \bfDi \or \ttDi \or \sfDi \or \scDi \else \rmDi \fi}
+
+\def\Dj {\hbox{\Di }} 
+
+\dio Osnovne trigonometrijske jednakosti
+
+$$\sin\Bigl(x\pm{\pi\over2}\Bigr)=\pm\cos x$$
+$$\cos\Bigl(x\pm{\pi\over2}\Bigr)=\mp\sin x$$
+
+$$\sin(x\pm y)=\sin x\cos y\pm\cos x\sin y$$
+$$\cos(x\pm y)=\cos x\cos y\mp\sin x\sin y$$
+
+$$\sin x+\sin y=2\sin{x+y\over2}\cos{x-y\over2}$$
+$$\sin x-\sin y=2\sin{x-y\over2}\cos{x+y\over2}$$
+$$\cos x+\cos y=2\cos{x+y\over2}\cos{x-y\over2}$$
+$$\cos x-\cos y=2\sin{x+y\over2}\sin{y-x\over2}$$
+
+$$\sin x\sin y={1\over2}\bigl(\cos(x-y)-\cos(x+y)\bigr)$$
+$$\cos x\cos y={1\over2}\bigl(\cos(x-y)+\cos(x+y)\bigr)$$
+$$\sin x\cos y={1\over2}\bigl(\sin(x-y)+\sin(x+y)\bigr)$$
+
+$$\sin(2x)=2\sin x\cos x$$
+$$\cos(2x)=\cos^2x-\sin^2x$$
+$$2\sin^2x=1-\cos(2x)$$
+$$2\cos^2x=1+\cos(2x)$$
+
+
+\dio Tablice suma i integrala
+
+\poddio Kona\v cne sume
+
+$$\sum_{i=1}^{n}i={n(n+1)\over2}$$
+$$\sum_{i=1}^{n}i^2={n(n+1)(2n+1)\over6}$$
+$$\sum_{i=1}^{n}i^3={n^2(n+1)^2\over4}$$
+$$\sum_{i=0}^{n}x^i={x^{n+1}-1\over x-1}$$
+$$\sum_{i=0}^{n}e^{j(\theta+i\phi)}={
+\sin\bigl({(n+1)\phi/2}\bigr)\over\sin(\phi/2)}e^{j(\theta+n\phi/2)}$$
+$$\sum_{i=0}^{n}{n\choose i}=\sum_{i=1}^{n}{n!\over i!(n-i)!}=2^n$$
+
+\poddio Neodre\dj eni integrali
+
+\podpoddio Racionalne funkcije
+
+$$\int(ax+b)^n\,dx={(ax+b)^{n+1}\over a(n+1)},\quad 0<n$$
+$$\int{1\over ax+b}\,dx={1\over a}\ln|ax+b|$$
+$$\int{dx\over a^2x^2+b^2}={1\over ab}\tg^{-1}\Bigl({ax\over b}\Bigr)$$
+$$\int{x\,dx\over a^2+x^2}={1\over2}\ln(a^2+x^2)$$
+$$\int{x^2\,dx\over a^2+x^2}=x-a\tg^{-1}\Bigl({x\over a}\Bigr)$$
+$$\int{dx\over(a^2+x^2)^2}={x\over2a^2(a^2+x^2)}+{1\over2a^3}\tg^{-1}\Bigl({x\over a}\Bigr)$$
+$$\int{x\,dx\over(a^2+x^2)^2}={-1\over2(a^2+x^2)}$$
+$$\int{x^2\,dx\over(a^2+x^2)^2}={-x\over2(a^2+x^2)}+{1\over2a}\tg^{-1}\Bigl({x\over a}\Bigr)$$
+
+\podpoddio Trigonometrijske funkcije
+
+$$\int\cos(x)\,dx=\sin(x)$$
+$$\int x\cos(x)\,dx=\cos(x)+x\sin(x)$$
+$$\int x^2\cos(x)\,dx=2x\cos(x)+(x^2-2)\sin(x)$$
+$$\int\sin(x)\,dx=-\cos(x)$$
+$$\int x\sin(x)\,dx=\sin(x)-x\cos(x)$$
+$$\int x^2\sin(x)\,dx=2x\sin(x)+(2-x^2)\cos(x)$$
+
+\podpoddio Eksponencijalne funkcije
+
+$$\int e^{ax}\,dx={1\over a}e^{ax}$$
+$$\int xe^{ax}\,dx=\Bigl({x\over a}-{1\over a^2}\Bigr)e^{ax}$$
+$$\int x^2e^{ax}\,dx=\Bigl({x^2\over a}-{2x\over a^2}+{2\over a^3}\Bigr)e^{ax}$$
+$$\int x^3e^{ax}\,dx=\Bigl({x^3\over a}-{3x^2\over a^2}+{6x\over a^3}-{6\over a^4}\Bigr)e^{ax}$$
+$$\int \sin(x)e^{ax}\,dx={1\over a^2+1}\bigl(a\sin(x)-\cos(x)\bigr)e^{ax}$$
+$$\int \cos(x)e^{ax}\,dx={1\over a^2+1}\bigl(a\cos(x)+\sin(x)\bigr)e^{ax}$$
+
+\poddio Odre\dj eni integrali
+
+$$\int_{-\infty}^{+\infty}e^{-a^2x^2+bx}\,dx={\sqrt\pi\over a}e^{b^2\over4a^2},\quad a>0$$
+$$\int_{0}^{+\infty}x^2e^{-x^2}\,dx={\sqrt\pi\over4}$$
+$$\int_{0}^{+\infty}{\sin(x)\over x}\,dx={\pi\over2}$$
+$$\int_{0}^{+\infty}{\sin^2(x)\over x^2}\,dx={\pi\over2}$$
+
+\dio Laplaceova transformacija
+
+Laplaceova transformacija funkcije $x(t)$ je:
+$$\strut\displaystyle {\cal L} \bigl[f(t)\bigr] = \int _{0^-}^{+\infty}f(t)e^{-st}dt $$
+Ka\v zemo da su $x(t)$ i $X(s)$ transformacijski par i pi\v semo $x(t)\ufrek X(s)$.
+
+\poddio Tablica $\cal L$ transformacije
+$$1\ufrek{1\over s}$$
+$$t\ufrek{1\over s^2}$$
+$$e^{-at}\ufrek{1\over s+a}$$
+$${1\over b-a}(e^{-at}-e^{-bt})\ufrek{1\over (s+a)(s+b)}$$
+$${1\over a-b}(ae^{-at}-be^{-bt})\ufrek{s\over (s+a)(s+b)}$$
+$${1\over a}e^{-bt}\sin(at)\ufrek{1\over (s+b)^2+a^2}$$
+$$e^{-bt}\bigl(\cos(at)-{b\over a}\sin(at)\bigr)\ufrek{s\over (s+b)^2+a^2}$$
+
+\dio Fourierova transformacija
+
+Fourierova transformacija funkcije $x(t)$ je:
+$${\cal F}\bigl[x(t)\bigr]=X(\omega)=\int_{-\infty}^{+\infty}x(t)e^{-j\omega t}\,dt$$
+Inverzna transformacija je:
+$${\cal F}^{-1}\bigl[X(\omega)\bigr]=x(t)={1\over2\pi}\int_{-\infty}^{+\infty}X(\omega)e^{j\omega t}\,d\omega$$
+Ka\v zemo da su $x(t)$ i $X(\omega)$ transformacijski par i pi\v semo $x(t)\ufrek X(\omega)$.
+
+\poddio Tablica $\cal F$ transformacije
+
+Neka je:
+
+$$\step(x)=\left\{\eqalign{&1,\cr&0,\cr}
+\eqalign{x&>0\cr x&<0\cr}\right.$$
+$$\rect(x)=\left\{
+\eqalign{&1,\strut\phantom{1\over2}\cr&0,\strut\phantom{1\over2}\cr}
+\eqalign{-{1\over2}&<\phantom{|}x\phantom{|}<{1\over2}\cr{1\over2}&<|x|\cr}\right.$$
+$$\tri(x)=\left\{\eqalign{&1-|x|,\cr&0,\cr}
+\eqalign{|x|&<1\cr|x|&>1\cr}\right.$$
+$$\sinc(x)={\sin(\pi x)\over\pi x}$$
+
+Uz te oznake va\v znije transformacije su:
+
+$$1\ufrek2\pi\dirac(\omega)$$
+$$\dirac(t)\ufrek1$$
+$$\step(t)\ufrek\pi\dirac(\omega)+{1\over j\omega}$$
+$${1\over2}\dirac(t)-{1\over2\pi jt}\ufrek\step(\omega)$$
+$$\sgn(t)\ufrek{2\over j\omega}$$
+$$\rect\Bigl({t\over T}\Bigr)\ufrek T\sinc\Bigl({\omega T\over2\pi}\Bigr)$$
+$$\sinc(at)\ufrek{1\over a}\rect\Bigl({\omega\over2\pi a}\Bigr)$$
+$$\tri\Bigl({t\over T}\Bigr)\ufrek T\sinc^2\Bigl({\omega T\over2\pi}\Bigr)$$
+$$\sinc^2(at)\ufrek{1\over a}\tri\Bigl({\omega\over2\pi a}\Bigr)$$
+$$e^{j\omega_0t}\ufrek2\pi\dirac(\omega-\omega_0)$$
+$$\delta(t-t_0)\ufrek e^{-j\omega t_0}$$
+$$\sin(\omega_0t)\ufrek-j\pi\bigr(\delta(\omega-\omega_0)-\delta(\omega+\omega_0)\bigl)$$
+$$\cos(\omega_0t)\ufrek\pi\bigr(\delta(\omega-\omega_0)+\delta(\omega+\omega_0)\bigl)$$
+$$\sum_{i=-\infty}^{+\infty}\delta(t-iT_0)\ufrek{2\pi\over T_0}\sum_{i=-\infty}^{+\infty}
+\delta\Bigl({\omega\over2\pi}-{i\over T_0}\Bigr)$$
+$$\sin(\omega_0t)\step(t)\ufrek-{j\pi\over2}\bigr(\delta(\omega-\omega_0)-\delta(\omega+\omega_0)\bigl)+
+{j\omega\over\omega_0^2-\omega^2}$$
+$$\cos(\omega_0t)\step(t)\ufrek{\pi\over2}\bigr(\delta(\omega-\omega_0)+\delta(\omega+\omega_0)\bigl)+
+{j\omega\over\omega_0^2-\omega^2}$$
+$$e^{-at}\step(t)\ufrek{1\over a+j\omega},\quad a>0$$
+$$te^{-at}\step(t)\ufrek{1\over (a+j\omega)^2},\quad a>0$$
+$$t^2e^{-at}\step(t)\ufrek{2\over (a+j\omega)^3},\quad a>0$$
+$$t^3e^{-at}\step(t)\ufrek{6\over (a+j\omega)^4},\quad a>0$$
+$$e^{-a|t|}\ufrek{2a\over a^2+\omega^2}$$
+$$e^{-{t^2\over2a^2}}\ufrek a\sqrt{2\pi}e^{-a^2\omega^2\!/2}$$
+
+
+\dio Vremenski diskretna Fourierova\hfil\break transformacija
+
+Vremenski diskretna Fourierova transformacija (DTFT -- {\sl Discrete-Time Fourier Transform}) niza $x[n]$ je:
+$${\cal F}_{\rm vd}\bigl[x[n]\bigr]=X(\omega)=\sum_{n=-\infty}^{+\infty}x[n]e^{-j\omega n}$$
+Inverzna transformacija je:
+$${\cal F}^{-1}_{\rm vd}\bigl[X(\omega)\bigr]=x[n]={1\over2\pi}\int_{-\pi}^{+\pi}X(\omega)e^{j\omega n}\,d\omega$$
+Niz $x[n]$ i njegov spektar $X(\omega)$ \v cine transformacijski par
+$x[n]\ufrek X(\omega)$.
+
+
+\poddio Tablica $\cal F_{\rm vd}$ transformacije
+
+$$\delta[n]\ufrek1$$
+$$1\ufrek\sum_{i=-\infty}^{+\infty}2\pi\delta(\omega+2\pi i)$$
+$$e^{j\omega_0 n}\ufrek\sum_{i=-\infty}^{+\infty}2\pi\delta(\omega-\omega_0+2\pi i)$$
+$$\step[n]\ufrek{1\over1-e^{-j\omega}}+\sum_{i=-\infty}^{+\infty}\pi\delta(\omega+2\pi i)$$
+$$a^n\step[n]\ufrek{1\over1-ae^{-j\omega}},\quad|a|<1$$
+$$na^n\step[n]\ufrek{ae^{j\omega}\over(e^{-j\omega}-a)^2},\quad|a|<1$$
+$$\sin(\omega_0 n)\ufrek\!\!\sum_{i=-\infty}^{+\infty}\!
+j\pi\bigl(\delta(\omega+\omega_0+2\pi i)-\delta(\omega-\omega_0+2\pi i)\bigr)$$
+$$\cos(\omega_0 n)\ufrek\!\!\sum_{i=-\infty}^{+\infty}
+\pi\bigl(\delta(\omega+\omega_0+2\pi i)+\delta(\omega-\omega_0+2\pi i)\bigr)$$
+$$a^n\sin(\omega_0 n)\step[n]\ufrek{ae^{j\omega}\sin(\omega_0)\over
+e^{2j\omega}-2ae^{j\omega}\cos(\omega_0)+a^2},\quad|a|<1$$
+$$a^n\cos(\omega_0 n)\step[n]\ufrek{e^{j\omega}\bigl(e^{j\omega}-a\cos(\omega_0)\bigr)\over
+e^{2j\omega}-2ae^{j\omega}\cos(\omega_0)+a^2},\quad|a|<1$$
+
+
+\dio Diskretna Fourierova transformacija
+
+Diskretna Fourierova transformacija kona\v cnog niza $x[n]$ duljine $N$ je:
+$$X[k]=\sum_{n=0}^{N-1}x[n]W^{nk}_N,\quad 0\le k\le N-1$$
+Pri tome je $W^{nk}_N=e^{-2\pi jnk/N}$.
+Inverzna transformacija je:
+$$x[n]={1\over N}\sum_{k=0}^{N-1}X[k]W^{-nk}_N,\quad 0\le n\le N-1$$
+Niz $x[n]$ i njegov spektar $X[k]$ \v cine transformacijski par
+$x[n]\ufrek X[k]$.
+
+
+\dio $\cal Z$-transformacija
+
+$\cal Z$-transformacija niza $f[n]$ je:
+$\strut\displaystyle {\cal Z} \bigl[f[n]\bigr] = \sum _{n=0}^{+\infty} f[n] z^{-n}$
+
+\poddio Tablica $\cal Z$ transformacije
+
+$$ \delta [n] \ufrek 1 $$
+$$ \delta [n-m] \ufrek z^{-m} $$
+$$ n \ufrek {z\over (z-1)^2}$$
+$$ {1^n}\ufrek {{1}\over {1-z^{-1}}} = {{z}\over {z-1}}$$
+$$ {a^n}\ufrek {{1}\over {1-az^{-1}}} = {{z}\over {z-a}} $$
+$$ (n+1)a^n\ufrek {{z^2}\over {(z-a)^2}} $$
+$$ {(n+1)(n+2)\over 2!}a^n \ufrek {z^3\over(z-a)^3}$$
+$$ {{{(n+1)(n+2)\dots (n+m-1)}\over {(m-1)!}} a^n}\ufrek {{z^m}\over {(z-a)^m}} $$
+$$ {{n(n-1)(n-2)\dots (n-m+1)\over m!} a^{n-m}}\ufrek {{z}\over {(z-a)^{m+1}}} $$
+$$ {a^n - \delta [n]}\ufrek{a\over {z - a}}$$
+$$ {\sin {[an]}}\ufrek {{z \sin {(a)}}\over {z^2 - 2z \cos {(a)} + 1}} $$
+$$ {\cos {[an]}}\ufrek {{z^2 - z \cos {(a)}}\over {z^2 - 2z \cos {(a)} + 1}} $$
+
+
+
+\par\vfill\supereject
+\if R\lr \null\vfill\eject\fi
+\output{\simpleoutput}
+\footline={}
+\hsize=\fullhsize
+\everydisplay{}
+\def\simpleoutput{
+  \shipout\vbox{
+    \makeheadline
+    \fullline{\hfil\columnbox\hfill}
+    \makefootline
+  }
+  \advancepageno
+  \ifnum\outputpenalty>-20000
+  \else
+    \dosupereject
+  \fi
+}
+\hsize=17cm
+
+\poddio Odre\dj ivanja po\v cetnih uvjeta
+
+Za sustav opisan diferencijalnom jednad\v zbom
+$$y^{(N)}(t)+a_{1}y^{(N-1)}(t)+\cdots+a_{N-1}y^{(1)}(t)+a_{N}y(t)
+=b_{0}u^{(N)}(t)+b_{1}u^{(N-1)}(t)+\cdots+b_{N-1}u^{(1)}(t)+b_{N}u(t)$$
+potrebno je odrediti po\v cetne uvjete $y(0^{+})$, $y'(0^{+})$, $y''(0^{+})$, \dots, $y^{(N-1)}(0^{+})$
+iz onih u $0^-$. Ako pobuda ne sadr\v zi Diracovu distribuciju rje\v savamo sustav jednad\v zbi:
+$$\eqalign{
+                                    \Delta y&=b_0u(0^+)\cr
+                  \Delta y^{(1)}+a_1\Delta y&=b_0u^{(1)}(0^+)+b_1u(0^+)\cr
+\Delta y^{(2)}+a_1\Delta y^{(1)}+a_2\Delta y&=b_0u^{(2)}(0^+)+b_1u^{(1)}(0^+)+b_2u(0^+)\cr
+\cr
+\Delta y^{(N-1)}+a_1\Delta y^{(N-2)}+\cdots+a_{N-1}\Delta y
+&=b_0u^{(N-1)}(0^+)+\cdots+b_{N-2}u^{(1)}(0^+)+b_{N-1}u(0^+)\cr
+}$$
+Pri tome je $\Delta y^{(i)}=y^{(i)}(0^+)-y^{(i)}(0^-)$.
+
+Ako je pobuda $u(t)=\delta(t)$ onda je $y^{(N-1)}(0^+)=y^{(N-1)}(0^-)+1$, a ostali
+po\v cetni uvjeti se ne razlikuju.
+
+\bye
+
+
