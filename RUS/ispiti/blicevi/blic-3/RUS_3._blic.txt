@@ -1,0 +1,33 @@
+2. pitanja su parametri, ona pojaèanja. (jedno je 1/T a drugo 1/(T*(M+1)) )
+jedno pitanje je koja je zadnja linija one funkcije fundisk ali prepravljene (bude nešto su + spf)
+
+onda bilo je jedno pitanje koliki je u0 ako je step 0.8 a pojaèanje sustava 1.2 (nemam pojma, još je otvorena debata po tom pitanju...)
+izraèunaj m0 dani su n1, n2 i m1 (m0=1+n1+n2-m1)
+i pitanje kako se provodi optimizacija u 2 koraka. (prvo regulator kompenzacije, pa prefiltar referenca)
+----
+Parametri koji su se pojavili u B grupi: Kseu = 1 / T i Ksu = 1 / (T / (M + 1)) ako se dobro sjeæam (jedino Kseu ima 1/T, ostala 3 parametra su 1 / (T / (M + 1))). 
+Zadnji red funkcije je bio f=spf(end)+su(end)
+u0 sam stavio 0.8/1.2
+
+Sva pitanja su bila na zaokruživanje, A i B grupa su imali drugaèiji m0 (A grupa 0.2, B grupa 0.4).
+----
+1. Zadatak Kseu = 1/T
+2. Zadatak m0 racunanje - izraèunaj m0 dani su n1, n2 i m1 (m0=1+n1+n2-m1)
+3. Zadatak kako smo radili optimizaciju - kako se provodi optimizacija u 2 koraka. (prvo regulator kompenzacije, pa prefiltar referenca)
+4. Zadatak Imamo PI regulator kao na slici(ista slika ko na labosu) i ako nam je referentna velicina 0.8delta(S),a pojacanje sustava 1.2, koliki nam mora biti u0
+5. Zadatak Ksu = 1/T(M+1)
+6. Zadatak Dodajte zadnju liniju koda(filter je vec ugradjen) za optimizaciju filtra f=spf(end)+su(end)
+
+Ksu = 1 / (T *(M + 1));
+Kse = 1 /( T *(M + 1));
+Kseu = 1 / T;
+Kspf = 1 /( T * (M + 1));
+----
+1. zadan T odredit K=1/T
+2. ponuðeno je bilo 5 prijenosnih funkcija filtra, od toga su 3 zadovoljavale m0=1+n1+n2-m1. Ja sam odabrao jednu sa 0.48 koeficijentom u nazivniku (i ispalo je tocno) jer je jedina imala sve stabilne polove. Druge dvije su imale po jedan pol veci od 1 po apsolutnoj vrijednosti. 
+3.isti
+4.Zadatak Imamo PI regulator kao na slici(ista slika ko na labosu) i ako nam je referentna velicina 0.8delta(S),a pojacanje PROCESA 1.2, koliki nam mora biti u0. 
+Vjerojatno je i te godine sto je Mima stavila bilo procesa a ne sustava u pitanju, ali je krivo prepisano. 
+Ugl, bila je zadana prijenosna f-ja procesa s opcim brojevima. njeno pojacanje u beskonacnosti (limes s->0) je ispalo na/nb. Kako mora biti izlazna vrijednost jednaka referenci (0.6), a izlaz iz procesa je y, ulaz je u, u beskonacnosti vrijedi y=Pojacanje_procesa * u0. Za nas slucaj 0.6=na/nb * u0, pa je u0 bio 0.6nb/na.
+5.ista stvar.
+6.ista stvar.
