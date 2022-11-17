@@ -1,0 +1,31 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Howler</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Howler: <a href="/home">Home</a></div>
+	<p><b>GET /index</b>	otvara glavnu stranicu preko koje se ulogiravamo</p>
+	<p><b>GET /login</b>		otvara stranicu za login</p>
+	<p><b>POST /login</b>		nakon unosa podataka, korisnik je ulogiran u stranicu, ako ne postoji, kreirati ce se</p>
+	<p><b>GET /logout</b>		izlogiravanje, preusmjeravanje na /index stranicu</p>
+	<p><b>GET /home</b>		prikaz glavne stranice</p>
+	<p><b>GET /posts/</b>		prikaz stranice sa postovima</p>
+	<p><b>GET /users/</b>		prikaz stranice sa korisnicima</p>
+	<p><b>GET /posts/newpost</b>		prikaz stranice za dodavanje novog posta</p>
+	<p><b>POST /posts/newpost</b>		stavljanje novog posta na stranicu, te preusmjeravanje na /posts/ stranicu</p>
+	<p><b>GET /posts/deletepost</b>		prikaz stranice za brisanje posta</p>
+	<p><b>POST /posts/deletepost</b>		brisanje posta sa stranice, te preusmjeravanje na /posts/ stranicu</p>
+	<p><b>GET /posts/<post_id></b>		prikaz posta oznacenog sa <post_id></p>
+	<p><b>GET /users/<user></b>		prikaz postova i stranice <user> korisnika</p>
+	<p><b>GET /resursi/<name></b>		dohvat resursa imena <name></p>
+	<p><b>POST /resursi/<name></b>		prikaz resursa imena <name> </p>
+	<p><b>POST /loginas/<user></b>		prijava <user> korisnika, sa lozinkom spremljenom u "data" argument imena password, odnosno password="<lozinka>"</p>
+	<p><b>GET /api/</b>		prikaz API stranice</p>
+	{% block content %}{% endblock %}
+  </body>
+ 
+</html>

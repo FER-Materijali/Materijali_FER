@@ -1,0 +1,29 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Howler</title>
+    {% endif %}
+  </head>
+  <body>
+	<div>Logged in as {{cuser}}!</div>
+    <div>Howler: <a href="/home">Home</a></div>
+	<div><a href="/users/{{cuser}}">My page</a></div>
+	<div><a href="/users/">User list</a></div>
+	<div><a href="/posts/">Post list</a></div>
+	<div><a href="/logout">Logout</a></div>
+    <hr>
+	<p>Write a new post:</p>
+	<form action="" method="post" name="newpost">
+    {{form.hidden_tag()}}
+    <p>
+        Enter your post:<br>
+        {{form.text(size=80)}}<br>
+    </p>
+	<p><input type="submit" value="Post!"></p>
+	</form>
+	{% block content %}{% endblock %}
+  </body>
+ 
+</html>

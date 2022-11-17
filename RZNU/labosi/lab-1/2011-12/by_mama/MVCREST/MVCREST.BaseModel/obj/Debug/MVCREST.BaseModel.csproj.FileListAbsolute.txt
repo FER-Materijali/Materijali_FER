@@ -1,0 +1,5 @@
+D:\Fax\Racunarstvo zasnovano na uslugama\Lab1Upute\MVCREST\MVCREST.BaseModel\bin\Debug\MVCREST.BaseModel.dll
+D:\Fax\Racunarstvo zasnovano na uslugama\Lab1Upute\MVCREST\MVCREST.BaseModel\bin\Debug\MVCREST.BaseModel.pdb
+D:\Fax\Racunarstvo zasnovano na uslugama\Lab1Upute\MVCREST\MVCREST.BaseModel\obj\Debug\ResolveAssemblyReference.cache
+D:\Fax\Racunarstvo zasnovano na uslugama\Lab1Upute\MVCREST\MVCREST.BaseModel\obj\Debug\MVCREST.BaseModel.dll
+D:\Fax\Racunarstvo zasnovano na uslugama\Lab1Upute\MVCREST\MVCREST.BaseModel\obj\Debug\MVCREST.BaseModel.pdb

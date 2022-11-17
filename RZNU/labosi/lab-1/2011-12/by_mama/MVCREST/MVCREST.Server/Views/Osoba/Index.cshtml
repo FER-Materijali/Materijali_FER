@@ -1,0 +1,43 @@
+﻿@model JSONOdgovorOsobe
+@using MVCREST.Service.Models
+@using MVCREST.BaseModel;
+@{
+    ViewBag.Title = "Lista osoba";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<fieldset>
+<legend>Osobe</legend>
+@if (Model.Osobe.Count == 0)
+{
+    <div class="editor-label">
+        Nema osoba za dohvat!
+    </div>
+}
+else
+{
+    foreach (Osoba o in Model.Osobe)
+    {
+        <fieldset>
+            <legend>@o.Ime @o.Prezime (ID:@o.Id)</legend>
+
+            <div class="editor-label">
+                Id: <font style="font-weight:bold">@o.Id</font>
+            </div>
+
+            <div class="editor-label">
+                Ime: <font style="font-weight:bold">@o.Ime</font>
+            </div>
+
+            <div class="editor-label">
+                Prezime: <font style="font-weight:bold">@o.Prezime</font>
+            </div>
+
+            <div class="editor-label">
+                <a title="Prikaži detalje" href="@Url.RouteUrl("PrikaziOsobu", new { id = o.Id })">Prikaži detalje</a>
+            </div>
+        </fieldset>
+    }
+}
+</fieldset>
+

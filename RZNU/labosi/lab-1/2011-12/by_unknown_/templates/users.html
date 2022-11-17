@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}users{% endblock %}
+
+{% block content %}
+  <table border="1">
+  {% for user in us %}
+    <tr>
+      <td>#{{ user[0] }}</td>
+      <td>{{ user[2] }}</td>
+      <td><a href="/user/{{ user[0] }}/">{{ user[1] }}</a></td>
+    </tr>
+  {% endfor %}
+  </table>
+{% endblock %}

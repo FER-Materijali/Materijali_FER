@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}home{% endblock %}
+
+{% block content %}
+  <form method="post" action="/">
+    <textarea name="bit"></textarea><br />
+    Your name, if any: <input type="text" name="author" />
+    <input type="submit" value="post a bit" />
+  </form>
+{% endblock %}

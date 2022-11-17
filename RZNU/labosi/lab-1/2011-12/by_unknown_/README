@@ -1,0 +1,18 @@
+You need:
+
+    * python2.X
+    * curl
+    * flask (sudo pip2 install flask)
+    * Flask-Markdown (sudo pip2 install Flask-Markdown)
+
+Run the server with:
+
+    $ python2 main.py
+
+Run the tests (while the server is running) with:
+
+    $ python2 test.py
+
+Requests are logged in:
+
+    * dnevnik.log

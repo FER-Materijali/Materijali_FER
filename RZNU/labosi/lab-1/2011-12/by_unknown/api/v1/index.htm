@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Filminfo API</title>
+</head>
+<body>
+    <h1>Filminfo</h1>
+    <p>Servis za upravljanje i pronalaženje informacija o filmovima.</p>
+    <h2>REST API sredstva - V1</h2>
+    <p>Slijedi opis svih sredstava unutar pojedinih grupa sredstava. Sva sredstva primaju i vraćaju informaciju u <b>Json</b> formatu.</p>
+    
+    <h3>Directors</h3>
+    <table border="1" cellpadding="5" style="border-color:Black;" >
+    <tr style="font-weight:bold" >
+        <td>CRUD</td> <td>Sredstvo</td> <td>URL sredstva</td> <td>Opis</td>
+    </tr>
+    <tr>
+        <td>GET</td> <td>/directors</td> <td>http://host:port/Filminfo/directors</td> <td>Dohvaća listu svih postojećih redatelja.</td>
+    </tr>
+    <tr>
+        <td>GET</td> <td>/directors/ime</td> <td>http://host:port/Filminfo/directors/ime</td> <td>Dohvaća sve redatelje sa danim prvim imenom. Ako takvih nema, vraća se prazna lista.</td>
+    </tr>
+    <tr>
+        <td>GET</td> <td>/directors/_prezime</td> <td>http://host:port/Filminfo/directors/_prezime</td> <td>Dohvaća sve redatelje sa danim prezimenom. Ako takvih nema, vraća se prazna lista.</td>
+    </tr>
+    <tr>
+        <td>GET</td> <td>/directors/ime_prezime</td> <td>http://host:port/Filminfo/ime_prezime</td> <td>Dohvaća redatelja sa danim imenom i prezimenom. Ako takvog nema, vraća se prazni skup.</td>
+    </tr>
+    <tr>
+        <td>POST</td> <td>/directors</td> <td>http://host:port/Filminfo/directors</td> <td>Primljeni podatak (redatelj) postavlja se u bazu redatelja.</td>
+    </tr>
+    <tr>
+        <td>PUT</td> <td>/directors/ime_prezime</td> <td>http://host:port/Filminfo/ime_prezime</td> <td>Redatelj sa danim imenom i prezimenom zamjenjuje se primljenim podatkom (redatelj).</td>
+    </tr>
+    <tr>
+        <td>PUT</td> <td>/directors/id</td> <td>http://host:port/Filminfo/directors/id</td> <td>Redatelj sa oznakom id zamijeniti će se primljenim podatkom (redatelj).</td>
+    </tr>
+    <tr>
+        <td>PUT</td> <td>/directors</td> <td>http://host:port/Filminfo/directors</td> <td>Skup redatelja zamijeniti će se primljenim podatcima (redateljima) na temelju njihovih oznaka.</td>
+    </tr>  
+    <tr>
+        <td>DELETE</td> <td>/directors/ime_prezime</td> <td>http://host:port/Filminfo/ime_prezime</td> <td>Uklanja redatelja sa danim imenom i prezimenom i sve filmove koje je on režirao.</td>
+    </tr>
+    <tr>
+        <td>DELETE</td> <td>/directors/id</td> <td>http://host:port/Filminfo/directors/id</td> <td>Uklanja redatelja sa unesenom oznakom i sve filmove koje je on režirao.</td>
+    </tr>     
+    </table>
+
+    <h3>Films</h3>
+    <table border="1" cellpadding="5" style="border-color:Black;" >
+    <tr style="font-weight:bold" >
+        <td>CRUD</td> <td>Sredstvo</td> <td>URL sredstva</td> <td>Opis</td>
+    </tr>
+    <tr>
+        <td>GET</td> <td>/films</td> <td>http://host:port/Filminfo/films</td> <td>Dohvaća listu svih postojećih filmova.</td>
+    </tr>
+    <tr>
+        <td>GET</td> <td>/films/id</td> <td>http://host:port/Filminfo/films/id</td> <td>Dohvaća film prema zadanoj oznaci id. Ako takav ne postoji vraća se prazan element.</td>
+    </tr>
+    <tr>
+        <td>GET</td> <td>/films/d_id</td> <td>http://host:port/Filminfo/films/d_id</td> <td>Dohvaća listu svih filmova ćiji redatelj ima oznaku id. Ako ne postoji niti jedan takav film, vraća se prazna lista.</td>
+    </tr>  
+    <tr>
+        <td>GET</td> <td>/films/ime_prezime</td> <td>http://host:port/Filminfo/films/d_id</td> <td>Dohvaća listu svih filmova ćiji je redatelj danog imena i prezimena. Ako ne postoji niti jedan takav film, vraća se prazna lista.</td>
+    </tr>  
+    <tr>
+        <td>POST</td> <td>/films/ime_prezime</td> <td>http://host:port/Filminfo/films</td> <td>Primljeni podatak (film) postavlja se u bazu filmova, a kao redatelj uzima se onaj sa danim imenom i prezimenom.</td>
+    </tr>
+    <tr>
+        <td>PUT</td> <td>/films/id</td> <td>http://host:port/Filminfo/films/id</td> <td>Film sa oznakom id zamjenjuje se primljenim podatkom (filmom).</td>
+    </tr>
+    <tr>
+        <td>PUT</td> <td>/films</td> <td>http://host:port/Filminfo/films</td> <td>Skup filmova zamijeniti će se primljenim podatcima (filmovima) na temelju njihovih oznaka.</td>
+    </tr>  
+    <tr>
+        <td>DELETE</td> <td>/films/id</td> <td>http://host:port/Filminfo/films/id</td> <td>Uklanja film sa unesenom oznakom.</td>
+    </tr>     
+    </table>
+
+</body>
+</html>

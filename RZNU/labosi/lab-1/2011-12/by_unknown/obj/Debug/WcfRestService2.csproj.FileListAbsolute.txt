@@ -1,0 +1,10 @@
+C:\Users\Bruno\Documents\My Dropbox\VS 2010\WcfRestService2\WcfRestService2\bin\WcfRestService2.dll
+C:\Users\Bruno\Documents\My Dropbox\VS 2010\WcfRestService2\WcfRestService2\bin\WcfRestService2.pdb
+C:\Users\Bruno\Documents\My Dropbox\VS 2010\WcfRestService2\WcfRestService2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Bruno\Documents\My Dropbox\VS 2010\WcfRestService2\WcfRestService2\obj\Debug\WcfRestService2.dll
+C:\Users\Bruno\Documents\My Dropbox\VS 2010\WcfRestService2\WcfRestService2\obj\Debug\WcfRestService2.pdb
+E:\My Dropbox\VS 2010\WcfRestService2\WcfRestService2\bin\WcfRestService2.dll
+E:\My Dropbox\VS 2010\WcfRestService2\WcfRestService2\bin\WcfRestService2.pdb
+E:\My Dropbox\VS 2010\WcfRestService2\WcfRestService2\obj\Debug\ResolveAssemblyReference.cache
+E:\My Dropbox\VS 2010\WcfRestService2\WcfRestService2\obj\Debug\WcfRestService2.dll
+E:\My Dropbox\VS 2010\WcfRestService2\WcfRestService2\obj\Debug\WcfRestService2.pdb

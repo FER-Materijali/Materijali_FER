@@ -1,0 +1,15 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Howler</title>
+    {% endif %}
+  </head>
+  <body>
+	<p>You are not logged in.</p>
+	<div><a href="/login">Login</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,8 @@
+body {
+  font-family: monospace;
+}
+
+textarea {
+  width: 80ex;
+  height: 10em;
+}

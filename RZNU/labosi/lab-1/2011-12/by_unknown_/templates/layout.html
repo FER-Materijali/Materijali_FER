@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="/static/favicon.png"/>
+    <link rel="stylesheet" href="/static/style.css" type="text/css"/>
+    <title>{% block title %}{% endblock %} - bits</title>
+  </head>
+  <body>
+    <a href="/">home</a> <a href="/all/">all</a> <a href="/users/">users</a>
+    <a href="/api/">api</a>
+    <br /><br />
+    {% block content %}{% endblock %}
+  </body>
+</html>

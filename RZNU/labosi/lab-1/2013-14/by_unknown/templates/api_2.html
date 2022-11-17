@@ -1,0 +1,16 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <div>Howler: <a href="/home">Home</a></div>
+    <hr>
+	{% if line %}
+    <ul>
+	{% for message in line %}
+        <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+  </body>
+ 
+</html>

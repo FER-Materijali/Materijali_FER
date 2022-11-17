@@ -1,0 +1,39 @@
+﻿@model JSONOdgovorOsoba
+@using MVCREST.Service.Models
+@using MVCREST.BaseModel;
+@{
+    ViewBag.Title = "Prikaz osobe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (@Model.Osoba == null)
+{
+    <p>@Model.Odgovor.Text</p>
+}
+else
+{
+    <fieldset>
+        <legend>@Model.Osoba.Ime @Model.Osoba.Prezime (ID:@Model.Osoba.Id)</legend>
+
+        <div class="editor-label">
+            Ime
+        </div>
+        <div class="editor-field">
+            @Model.Osoba.Ime
+        </div>
+
+        <div class="editor-label">
+            Prezime
+        </div>
+        <div class="editor-field">
+            @Model.Osoba.Prezime
+        </div>
+            
+        <div class="editor-label">
+            Broj računa
+        </div>
+        <div class="editor-field">
+            @Model.Osoba.Racuni.Count
+        </div>
+    </fieldset>
+}

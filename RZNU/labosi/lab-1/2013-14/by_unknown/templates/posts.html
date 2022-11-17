@@ -1,0 +1,37 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Howler</title>
+    {% endif %}
+  </head>
+  <body>
+  <div>Logged in as {{cuser}}!</div>
+    <div>Howler: <a href="/home">Home</a></div>
+	<div><a href="/users/{{cuser}}">My page</a></div>
+	<div><a href="/users/">User list</a></div>
+	<div><a href="/posts/newpost">New post</a></div>
+	<div><a href="/posts/deletepost">Delete post</a></div>
+	<div><a href="/logout">Logout</a></div>
+    <hr>
+	{% if line %}
+    <ul>
+    {% for message in line %}
+        <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+	
+	<p>Link to posts:</p>
+	{% if numbers %}
+    <ul>
+    {% for message in numbers %}
+        <li><a href="/posts/{{ message }}">{{ message }}</a></li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+	{% block content %}{% endblock %}
+  </body>
+ 
+</html>

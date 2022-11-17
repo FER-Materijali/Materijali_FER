@@ -1,0 +1,5 @@
+/mojapi/	4
+/vehicles/	4
+/vehicles/1	2
+/vehicles/2/model	2
+/vehicles/9	4

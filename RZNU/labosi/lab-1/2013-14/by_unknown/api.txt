@@ -1,0 +1,15 @@
+GET /users/		prikaz stranice sa korisnicima
+GET /index		otvara glavnu stranicu preko koje se ulogiravamo
+GET /login		otvara stranicu za login
+POST /login		nakon unosa podataka, korisnik je ulogiran u stranicu, ako ne postoji, kreirati ce se
+GET /logout		izlogiravanje, preusmjeravanje na /index stranicu
+GET /home		prikaz glavne stranice
+GET /posts/		prikaz stranice sa postovima
+GET /users/		prikaz stranice sa korisnicima
+GET /posts/newpost		prikaz stranice za dodavanje novog posta
+POST /posts/newpost		stavljanje novog posta na stranicu, te preusmjeravanje na /posts/ stranicu
+GET /posts/deletepost		prikaz stranice za brisanje posta
+POST /posts/deletepost		brisanje posta sa stranice, te preusmjeravanje na /posts/ stranicu
+GET /posts/<post_id>		prikaz posta oznacenog sa <post_id>
+GET /users/<user>		prikaz postova i stranice <user> korisnika
+GET /api/		prikaz API stranice

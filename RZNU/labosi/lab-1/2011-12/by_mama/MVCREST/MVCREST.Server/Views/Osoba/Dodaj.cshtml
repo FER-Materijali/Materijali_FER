@@ -1,0 +1,36 @@
+﻿@model ViewModelOsoba
+@using MVCREST.Service.Models
+@{
+    ViewBag.Title = "Unos osobe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "Greška tijekom unosa osobe. Popravite pogreške i pokušajte ponovo.")
+    <div>
+        <fieldset>
+            <legend>Unos osobe</legend>
+
+            <div class="editor-label">
+                Ime
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Ime)
+                @Html.ValidationMessageFor(m => m.Ime)
+            </div>
+
+            <div class="editor-label">
+                Prezime
+            </div>
+            <div class="editor-field">
+                @Html.PasswordFor(m => m.Prezime)
+                @Html.ValidationMessageFor(m => m.Prezime)
+            </div>
+            
+            <p>
+                <input type="submit" value="Dodaj osobu" />
+            </p>
+        </fieldset>
+    </div>
+}

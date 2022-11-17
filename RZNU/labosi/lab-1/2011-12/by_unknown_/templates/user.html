@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}user #{{ user[0]}}{% endblock %}
+
+{% block content %}
+  user #{{ user[0] }} is <b>{{ user[1] }}</b>, registered at {{ user[2] }}<br /><br />
+  {% if bits != [] %}
+    <table border="1">
+    {% for b in bits %}
+    <tr>
+      <td>#{{ b[0] }}</td>
+      <td>{{ b[2] }}</td>
+      <td><a href="/bit/{{ b[0] }}/">{{ b[1][:40] }}...</a></td>
+    </tr>
+    {% endfor %}
+    </table>
+  {% else %}
+    <i>no posts</i>
+  {% endif %}
+{% endblock %}

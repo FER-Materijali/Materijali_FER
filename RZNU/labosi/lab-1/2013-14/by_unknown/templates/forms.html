@@ -1,0 +1,25 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Howler</title>
+    {% endif %}
+  </head>
+  <body>
+	<form action="" method="post" name="login">
+    {{form.hidden_tag()}}
+    <p>
+        Please enter your username:<br>
+        {{form.user(size=40)}}<br>
+    </p>
+	<p>
+        Please enter your password:<br>
+        {{form.password(size=40)}}<br>
+    </p>
+	<p><input type="submit" value="Sign In"></p>
+	</form>
+	{% block content %}{% endblock %}
+  </body>
+ 
+</html>

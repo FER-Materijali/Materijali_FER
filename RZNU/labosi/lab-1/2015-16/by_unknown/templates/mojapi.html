@@ -1,0 +1,23 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Howler</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Howler: <a href="/home">Home</a></div>
+	<p><b>GET /mojapi</b>	otvara popis svih dostupnih metoda</p>
+	<p><b>GET /vehicles</b>	 popis svih vozila</p>
+	<p><b>GET /agent</b>	vraća ime user agenta (browsera)</p>
+	<p><b>GET /vehicles/id</b>		vraća informacije o vozilu koje čiji smo specificirali id</p>
+	<p><b>GET /brands/id</b>		vraća ime proizvođača vozila čiji smo id specificirali</p>
+	<p><b>GET /brands/id/model</b>		vraća popis vozila čijeg proizvođača smo specificirali</p>
+	<p><b>POST /vehicles</b>		dodajemo novo vozilo</p>
+	<p><b>PUT /vehicles/id</b>		ažuriramo podatke vozila čiji smo id specificirali</p>
+	<p><b>DELETE /vehicles/id</b>		brišemo vozilo čiji smo id specificirali</p>
+	{% block content %}{% endblock %}
+  </body>
+ 
+</html>

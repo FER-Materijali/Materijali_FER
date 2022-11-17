@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}bit #{{ bit[0] }}{% endblock %}
+
+{% block content %}
+  <form method="post" action="/bit/{{ bit[0] }}/delete">
+    post <b>#{{ bit[0] }}</b>, made at {{ bit[2] }} by
+    <b><a href="/user/{{ bit[3] }}/">{{ bit[4] }}</a></b>
+    <input name="delete" type="submit" value="delete">
+  </form>
+  <hr />
+  {{ bit[1]|markdown }}
+{% endblock %}

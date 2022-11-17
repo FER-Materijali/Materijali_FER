@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}api{% endblock %}
+
+{% block content %}
+  web api dokumentacija <br /><br />
+  <table border="1">
+    <tr>
+      <th>action</th>
+      <th>method</th>
+      <th width="150">ulazni parametri</th>
+      <th>format odgovora</th>
+      <th>detaljniji opis</th>
+    </tr>
+    
+    {% for a in api %}
+    <tr>
+      <td>{{ a['action']|markdown }}</td>
+      <td>{{ a['method'] }}</td>
+      <td>{{ a['params']|markdown }}</td>
+      <td>{{ a['output'] }}</td>
+      <td>{{ a['desc']|markdown }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
