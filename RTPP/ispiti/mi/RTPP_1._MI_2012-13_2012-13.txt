@@ -1,0 +1,20 @@
+1. a)Smartphone aplikacija koja nudi akcije na pica u kaficima. Nakon logiranja korisnik
+odabere akciju i dobije barkod na telefon kojeg skenira u kaficu i dobije popust. Placa
+u kaficu gotovinom ili karticom. Na telefonmu stizu ponude za akcije koje su mu najblize.
+Ponudu moze podijeliti na FB, Twitter-u, Google Plus-u i moze ih ocijeniti. Ponude koje stizu sadrze ime, sliku, logo, lokaciju na karti, udaljenost. Navesti 6 programskih zahtjeva. (3b)
+1. b) Odaberi i objasni dvije metode skupljanja zahtjeva za navedenu aplikaciju. Objasni odabir. (2b)
+1. c) Nacrtaj tablicu ovisnosti zahtjeva aplikacije (konflikti, preklapanje). (2b)
+------------------------------------------------------------------------------------------
+2. a) Sto je poslovni plan i kad se daje investitoru? (2b)
+2. b) Navesti i objasniti bar 3 poglavlja poslovnog plana. (3b)
+------------------------------------------------------------------------------------------
+3. a) Nacrtati MVC arhitekturu za primjer web aplikacije koja ima bazu podataka (MySQL), poslovnu logiku (Java EE), smartphone klijent(jQuery mobile) i desktop klijent (jQuery). Pored svakog elementa arhitekture navesti tehnologiju koja se koristi. (3b)
+3. b) Nacrtati tijek jednog zahtjeva na toj arhitekturi. Tko odlucuje sto ce se prikazati klijentu? (2b)
+3. c) Kako promijeniti arhitekturu da se aplikacija moze koristiti s tableta? (1b)
+------------------------------------------------------------------------------------------
+4. Otvorili ste start-up tvrtku, kada ima smisla traziti investiciju od poslovnih andjela, a kad od ulagackih fondova? (2b)
+------------------------------------------------------------------------------------------
+5. a) Evolucijski model, prednosti, nedostaci, primjena. (4b)
+5. b) Kako bi primijenili evolucijski model na aplikaciju iz 1. zadatka s timom od 10 studenata? (3b)
+5. c) Zasto je vizija potrebna na pocetku, kome ona sluzi? (3b)
+------------------------------------------------------------------------------------------
