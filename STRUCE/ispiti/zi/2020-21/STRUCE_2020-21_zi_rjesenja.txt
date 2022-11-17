@@ -1,0 +1,9 @@
+          0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2
+          1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4
+       -+------------------------------------------------
+Grupa A | D B B A C A C D A A C A B D C B A B B D C D C A
+Grupa B | B A A D B C B A A D B A A A B B C C B A B C C B
+Grupa C | C C A A A D A D C C D B B D C A B C A D C D B D
+Grupa D | C B A C B D A B C B D D C D B C C C A A D D A C
+Grupa E | D C C C A B A B B C D C A D B C C C A A D C C C
+Grupa F | D D A C D D A A C C B B A C D B B A D D D D D D

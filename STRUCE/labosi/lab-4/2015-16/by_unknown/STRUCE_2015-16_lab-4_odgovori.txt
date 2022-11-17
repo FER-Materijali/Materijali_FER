@@ -1,0 +1,47 @@
+1. ZADATAK
+Q: Koja vrijednost odgovara ML-procjenama i zašto?
+A: Vrijednost je m/N. Zato što je najizglednija procjena (ML) upravo relativna frekvencija događaja u uzorku, odnosno srednja vrijednost uzorka.
+
+Q: Koja je ML-procjena za μ i što je problem s takvom procjenom u ovome slučaju?
+A: Procjena je 0, problem je što je ML lako može dovesti do prenaučenosti modela i budući da imamo malo (samo 10) primjera, a svi su klase 0, to se i dogodilo.
+
+Q: Koje parametere biste odabrali za modeliranje apriornog znanja o parametru μμ za novčić za koji mislite da je "donekle pravedan, ali malo češće pada na glavu"? Koje biste parametre odabrali za novčić za koji držite da je posve pravedan? Zašto uopće koristimo beta-distribuciju, a ne neku drugu?
+A: Npr. beta=2, alfa=4. Beta=2,alfa=2. Zato što je ona konjugatna apriorna distribucija za Bernoullijevu razdiobu; kombinacija Bernoullijeve i beta distribucije će opet biti beta distribucija, a maksimum beta distribucije je lako pronaći.
+
+Q: Koje vrijednosti odgovaraju MAP-procjeni za μ? Usporedite ih sa ML-procjenama.
+A: MAP procjena je pomaknuta od ML procjene prema očekivanoj, apriornoj (beta) distribuciji.
+
+Q: Možete li, na temelju dobivenih log-izglednosti, zaključiti koja se značajka najbolje pokorava normalnoj distribuciji?
+A: Značajka 4, jer ima najveću log izglednost. 
+
+
+2. ZADATAK
+Q: Kada je prebrojavanje bolje od usrednjavanja? Zašto? A obratno?
+A: Prebrojavanje je bolje od usrednjavanja kada ne znamo koliko su pouzdani klasifikatori svaki za sebe. Primjerice, ako imamo 2 klasifikatora koja generalno daju točnu predikciju, a jedan koji generalno daje lošu predikciju, kod glasovanja će 2 dobra klasifikatora uvijek nadglasati lošeg, što kod usrednjavanja ne mora biti slučaj (npr. ako imamo klase 0 i 1, prva 2 klasifikatora daju 60% šanse za klasu 0, dok loš klasifikator daje 10% šanse za klasu 0, izlaz glasanja će biti klasa 0, a izlaz usrednjavanja klasa 1). Obratno, usrednjavanje je bolje od prebrojavanja kada znamo da imamo dobro kalibrirane klasifikatore, tada će i prebrojavanje i usrednjavanje davati podjednake rezultate, ali usrednjavanje ipak daje i probabilistički izlaz.
+
+
+3. ZADATAK
+
+Q: Što možete zaključiti iz ovih grafikona? 
+A: S porastom broja stabala pogreška učenja odlazi u nulu, a ispitna pogreška ostaje relativno konstantnom.
+
+Q: Ima li smisla uopće optimirati hiperparametre pojedinih modela u baggingu?
+A: Generalno nema potrebe, jer bagging inherentno smanjuje varijancu i sprječava prenaučenost (samo moramo odabrati dovoljan broj stabala).
+
+
+4. ZADATAK
+
+AdaBoost objašnjen: https://www.analyticsvidhya.com/blog/2015/11/quick-introduction-boosting-algorithms-machine-learning/
+
+Q: Je li AdaBoost linearan klasifikator? Pojasnite.
+A: AdaBoost je generalno nelinearan klasifikator. AdaBoost linearno kombinira izlaze pojedinih klasifikatora, no pojedini klasifikatori sami za sebe ne moraju biti linearni. Sa slike se vidi da je za L=1 granica linearna, a za L=2,3,50 granica nelinearna.
+
+Q: Može li uopće doći do prenaučenosti pri korištenju boosting-algoritama?
+A: Može, ali jako teško (u vrlo specifičnim slučajevima, npr. jako visok šum); vidi se i s grafa da s povećanjem broja klasifikatora u ansamblu pogreška ispitivanja ostaje relativno konstantna - nije došlo do prenaučenosti.
+
+Q: Isplati li se koristiti ansambl u obliku boostinga? Idu li grafikoni tome u prilog?
+A: Ako postoji opasnost od prenaučenosti, isplati se.
+
+Q: Koja je prednost boostinga nad korištenjem jednog jakog klasifikatora?
+A: 1. u mom slučaju je boosting dao manju ispitnu pogrešku nego jaki klasifikator; 2. boostingom je teže prenaučiti model; 3. kod boostinga nije potrebno optimirati hiperparametre, a kod jakog klasifikatora je (upravo zato da se spriječi prenaučenost)
+
