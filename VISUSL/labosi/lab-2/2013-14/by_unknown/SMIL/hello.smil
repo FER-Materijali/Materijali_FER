@@ -1,0 +1,37 @@
+<smil>
+
+	<head>
+		<layout>
+			<root-layout width="800" height="600"
+				background-color="#aaaaaa" />
+			
+			<region id="pic2" width="195" height="195" left="100" top="150" />
+			<region id="pic1" width="195" height="195" left="300" top="150" />
+			<region id="pic3" width="195" height="195" left="500" top="150" />
+			<region id="pic4" width="550" height="365" left="125" top="150" />
+			<region id="txt1" width="400" height="100" left="200" top="500" />
+			<refion id="txt2" width="400" height="50" left="200" top="500" />
+			
+		</layout>
+	</head>
+
+	<body>
+		<par dur="10s">
+			<audio src="audio1.mp3"
+				dur="10s" />
+			<text src="txt1.txt"
+				begin="2s"
+				region="txt1"/>
+			<img src="pic1.jpg" region="pic1" begin="5s" />
+			<img src="pic2.jpg" region="pic2" begin="7s" />
+			<img src="pic3.jpg" region="pic3" begin="9s" />
+		</par>
+		
+		<par dur="5s">
+			<audio src	="audio2.wav" />
+			<img src="pic4.jpg" region="pic4" />
+			<text src="txt2.txt"
+				regin="txt2"/>
+		</par>
+	</body>
+</smil>

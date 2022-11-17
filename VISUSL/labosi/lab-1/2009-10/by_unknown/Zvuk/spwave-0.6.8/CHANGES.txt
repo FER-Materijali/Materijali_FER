@@ -1,0 +1,217 @@
+Stable
+------
+Version 0.6.8-3				2002/4/29
+ * Fixed a bug that compilation using some versions of gcc fails 
+   because of SJIS characters.
+ * Fixed a bug that labels including only one column cannot be loaded.
+
+Version 0.6.8-2				2002/4/7
+ * Fixed a bug that 8bit files sometimes cannot be saved.
+ * Fixed a bug that causes a crash on Mac OS 8.
+
+Version 0.6.8				2002/3/11
+ * Implemented displaying overview of waveform.
+ * Implemented maximize.
+ * Implemented inserting a pause.
+ * Added official support for Windows 2000/XP.
+ * Fixed a bug that the relation between dB value and rate value is incorrect 
+   in the amplify dialog.
+ * Fixed a bug that temporary data of a clipboard is not removed after quiting.
+ * Implemented enlarging a region by shift + arrow key.
+Version 0.6.7-3b (private release)	2002/2/5
+Version 0.6.7-2b (private release)	2002/1/18
+Version 0.6.7-1b (private release)	2002/1/15
+ * Enhanced label handling.
+ * Implemented enlarging a region by shift + click.
+ * Implemented the Ogg Vorbis plugin.
+ * Implemented the plugin based on libsndfile which adds supports 
+   for many file types such as ADPCM WAV and AU.
+ * Fixed a bug that information dialog doesn't save a track number.
+ * Fixed a bug that labels are sometimes removed by cropping.
+ * Fixed a bug that time information is sometimes not updated
+   by moving with scroll bar.
+
+Version 0.6.6-1b (beta 1 release for Mac OS X)	2001/10/28
+ * Added support for Mac OS X.
+ * Implemented preemptive multi-thread edit on Mac OS X based on pthread.
+ * Implemented a peak file so as to zoom in/out a big file quickly.
+ * Implemented concatenating commands (this is based on a patch provided by 
+   Hiroaki GOTO. Thanks.)
+ * Fixed a bug that very long files (over 25 minutes approximately 
+   in 44.1 kHz sampling, stereo) cannot be loaded correctly.
+ * Fixed a bug that the window containing the file that hasn't been saved yet
+   will be closed without saving the file on quiting, if just one window exists.
+ * Fixed a bug that menu items and tool items intended to be inaccessible 
+   sometimes can be clicked on thread editing.
+ * Fixed a bug that drawing a waveform is not updated until reading is finished on Mac OS.
+ * Reimplemented audio functions on Mac OS so as to decrease audible gaps.
+ * Fixed a bug of invalid cursor drawing on Mac OS.
+ * Fixed a bug on Mac OS that closing a window on playing sound sometimes causes a crash.
+
+Version 0.6.5				2001/3/12
+ * Implemented cut & paste and copy & paste.
+ * Implemented multi-thread edit.
+ * Implemeted loop play.
+ * Implemented region change on playing sound.
+ * Implemented changing amplitude value.
+ * Implemented displaying progress of reading.
+ * Fixed a problem that spwave eats so much CPU time while playing sound on Windows.
+ * Fixed a bug of spComponent that causes a crash on Windows 2000.
+ * Fixed a bug that resizing a window eats too much resources on Windows.
+ * Fixed a bug that a thread sometimes falls into deadlock on stopping processing.
+ * Fixed a bug that gtk version falls into deadlock when an edit fails 
+  (introduced from version 0.5.2-5).
+ * Fixed a bug that some parameters are not updated into files on saving 
+   as some formats such as MP3.
+ * Fixed a bug of drawing on scrolling by dragging the edge of a region.
+ * Fixed a bug that messages for sampling frequency conversion are strange.
+ * Fixed a bug that the selected region is not correct on redoing.
+
+Version 0.6.4 (private release)
+Version 0.6.3 (private release)
+Version 0.6.2 (private release)
+Version 0.6.1 (private release)
+
+Version 0.6.0				2001/1/4
+ * Implemented selection of each channel of multichannel data.
+ * Implemented monauralizing of multichannel data.
+ * Fixed a bug that drag & drop is allowed while processing.
+ * Fixed a bug that the window displaying spectrum still displays spectrum
+   after a file is loaded into the window, when a window associated with the window is analyzed.
+ * Fixed a bug that MP3 files that include the ID3 Version 3 tag sometimes
+   cannot be loaded (a bug fix of the MPEG input plugin).
+ * Fixed a bug that a suitable plugin is not searched correctly.
+ * Fixed a bug on Mac OS that causes a crash on closing a dialog by a menu.
+ * Fixed a bug that a tab control blinks many times by clicking on Mac OS 9.
+ * Added support for smart scrolling on Mac OS 9.
+
+
+Developmental
+-------------
+Version 0.5.2-5				2000/11/29
+ * Implemented window closing by a default button and an escape key 
+   in a dialog on some environments.
+ * Implemented focus change by a tab key on Windows.
+ * Fixed a bug that drawing of a dialog is strange when the design of Windows is changed.
+ * Implemented tool bars and tool tips on Mac OS.
+ * Added support for Mac OS 7.5.3 and later.
+ * Added support for appearance on Mac OS 8.1 and later.
+ * Implemented shortcuts on Mac OS 8.1 and later that use shift and control keys.
+ * Fixed a bug that drawing of a dialog of gtk version is strange 
+   when the theme is changed.
+ * Fixed a bug that some parameters are not initialized when opening a file
+   into the spectrum window.
+ * Fixed a bug that you can extend a region on the left edge of the window
+   even if no region is selected.
+
+Version 0.5.2-4				2000/10/30
+ * Fixed a bug that some temporary files cannot be removed on Windows.
+ * Changed a default value of sampling frequency conversion.
+
+Version 0.5.2-3				2000/10/26
+ * Fixed a bug that spwave cannot exit after saving a file.
+
+Version 0.5.2				2000/10/21
+ * Fixed a plugin's critical bug that the saved file with a header changes into
+   8000 Hz monaural forcedly. I highly recommend to update spwave and plugins 
+   if you use version 0.5.0 or 0.5.1.
+ * Added support for opening files by drag & drop (Windows, gtk and Mac OS version).
+ * Added support for 24 bit, 32bit, and float 32bit files.
+ * Added support for bits/sample conversion.
+ * Added support for sampling frequency conversion.
+ * Added support for amplitude conversion, fade in, and fade out.
+ * Added support for playing sound using thread.
+ * Added support for editing using thread (version 0.5.2-2).
+ * Fixed a bug of sampling frequency conversion (version 0.5.2-2).
+ * Changed undo and redo implementation so as to process fast.
+ * Changed the way of getting maximum and minimum value of waveforms.
+ * Implemented the preference dialog for plug-ins.
+ * Added support for label cropping with waveform cropping.
+ * Fixed a bug that the file information cannot be saved 
+   without modification of the file.
+ * Fixed a bug that temporary files for ulaw change into 8bit linear files.
+ * Implemented changing the mouse cursor into the watch cursor on heavy processing.
+ * Fixed a bug that the scroll bar is incorrect 
+   when the zoom factor is big and the file is very long.
+ * Fixed a bug that the zoom factor is wrong after reading a file
+   if the window was zoomed in before reading .
+ * Fixed a bug that region labels change into normal labels after extraction.
+ * Implemented the menu disablement when the region is not set.
+
+Version 0.5.1				2000/8/14
+ * Support for waveform extraction by drag & drop.
+ * Implemented region labels.
+ * Changed some shortcut keys. 
+   The shortcut keys of Windows version are worked by Ctrl key mainly.
+ * Implemented swapping Alt key and Ctrl key for the shortcuts.
+ * Added support for size change of the region by mouse operation.
+ * Implemented scrolling on the window edge when selecting a region.
+ * Fixed 0.5.0's bug that spwave reads the file header of an autosave file as data. 
+ * Changed implementation of the format dialog so as to be shown at startup.
+
+Version 0.5.0				2000/8/7
+ * Added support for long files.
+ * Added support for a stop function of playing sound.
+ * Added support for plug-ins.
+ * Added support for undo and redo.
+ * Added support for editing file information.
+ * Changed implementation of dealing with a label file.
+ * Added support for autosaving of an extracted region.
+ * Added support for adding a label with a value.
+
+Version 0.3.4-2				1999/6/21
+ * Fixed a bug which causes a failure when reading file having 
+   Japanese filename on Windows.
+ * Fixed version 0.3.3's bug which causes a crash 
+   when reading non-existing file.
+ * Fixed a bug on Windows that the top and left sides of the canvas are drawed
+   with black color when resizing a window.
+
+Version 0.3.4				1999/6/14
+ * Added support for displaying scale.
+ * Fixed version 0.3.3's bug that the spwave reads wav file header as data. 
+ * Fixed a bug on Windows which generates noise when playing sound.
+
+Version 0.3.3-2				1999/6/9
+ * Fixed a bug which causes analysis errors for multichannel data.
+
+Version 0.3.3				1999/6/8
+ * Added support for analysis.
+ * Fixed a bug which causes a crash when reading multichannel raw file.
+
+Version 0.3.2				1999/5/30
+ * Added support for labels.
+ * Fixed a bug in the preference dialog which causes occasional crash.
+ * Fixed a bug when playing file by a shortcut.
+
+Version 0.3.1				1999/5/22
+ * Added a tool bar.
+ * Fixed a bug in the spComponent.
+
+Version 0.3.0				1999/5/13
+ * Improvement of the preference dialog.
+ * Added some menu items.
+
+
+Stable
+------
+Version 0.4.1				1999/12/17
+ * Fixed a bug of Windows version when scrolling.
+ * Fixed a bug when reading label.
+
+Version 0.4.0-2				1999/7/21
+ * Fixed a drawing bug of GTK version when selecting region.
+
+Version 0.4.0				1999/6/26
+ * Almost same as version 0.3.4-2.
+
+Version 0.2.1-3				1999/5/3
+ * Fixed a bug on Windows which causes a crash when long file is played
+   repeatedly.
+
+Version 0.2.1				1999/4/25
+ * Fixed a bug when opening the format selection dialog.
+ * Added the simple preference dialog.
+
+Version 0.2.0				1999/4/10
+ * First release

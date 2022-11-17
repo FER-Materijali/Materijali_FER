@@ -1,0 +1,39 @@
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="author" content="Ime Prezime">
+          <TITLE>Primjer HTML obrasca</TITLE>
+</head>
+        <BODY>
+	   <h2>Upitnik</h2>
+          <FORM method="GET" action="./mojaperlskripta.pl">
+            <h3>Ime:</h3>
+            <p><INPUT type="text" name="FirstName"></p>
+            <h3>Prezime:</h3>
+            <p><INPUT type="text" name="LastName"></p>
+            <h3>Označi kućicu ako si student:</h3>
+            <p><INPUT type="checkbox" name="isStudent"></p>
+            <h3>Spol:</h3>
+            <p>
+              <INPUT type="radio" name="Gender" value="isFemale">Cura
+              <INPUT type="radio" name="Gender" value="isMale">Dečko
+            </p>
+            <h3>Koliko godina studiraš?</h3>
+            <p>
+            <SELECT name="numYrs" size="5">
+              <OPTION value="1" selected>Jednu, tek se zagrijavam
+              <OPTION value="2">Dvije lijepe godine
+              <OPTION value="3">Trica
+              <OPTION value="4">Četiri i brojim
+              <OPTION value="5-8">Od 5 do 8
+              <OPTION value="lots">Puno!
+            </SELECT>
+            </p>
+            <h3>Kratki komentar:</h3>
+	    <input type=text name="Comment"><p>
+            <h3>Gumbi</h3>
+            <p><INPUT type="submit" value="Pošalji obrazac!">
+            <INPUT type="reset" value="Očisti obrazac"></p>
+        </FORM>
+      </BODY>
+    </HTML>

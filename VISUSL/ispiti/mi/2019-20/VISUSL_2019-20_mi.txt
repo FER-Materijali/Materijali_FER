@@ -1,0 +1,12 @@
+1. Trebalo je klasificirati 3 usluge po zahtjevima na kasnjenje (voip, iptv, mail)
+2. Razlika izmedu sinkrone i asinkrone komunikacije, navesti primjer komunikacije koja je asinkrona
+3. Sto je Racunarstvo u oblaku?
+4. Bio je screenshot neke jednostavne web stranice i trebalo je napisati html kod koji ju opisuje
+5. Zadana skica funkcioniranja AJAX-a, bilo je potrebno nadopuniti neke dijelove. 
+6. Navedi barem dvije bitne razlike izmedu kodera valnog oblika i kodera zasnovanih na modelu. Jel bi koristio kodere zasnovane na modelu za kodiranje zvucnog zapisa nekog koncerta i zasto?
+7. U kojim sve dijelovima kodiranja dolazi do gubitka informacije? Zadane dvije kvantizacijske tablice, koju bi koristio za kodiranje boje, a koju za kodiranje svjetline i zasto? 
+8. Zadan slijed 3 okvira, prvi je I okvir, treci je P. Drugi okvir moze biti P ili B. U kojem slucaju je kompresija efikasnija i zasto? 
+9. Skiciraj hibridni koder s kompenzacijom gibanja i objasni svaki korak 
+10. Zadana dva uzastopna okvira (dvije slike) , potrebno objasniti kako se odreduje vektor pomaka
+11. Zadana 4 paketa sa svojim vremenskim oznakama i kasnjenjima, potrebno izracunati minimalno reprodukcijsko kasnjenje uz koje bi svi paketi dosli do odredišta prije pocetka reprodukcije
+12. Zadan graf koji prikazuje kolicinu podataka u bufferu kroz vrijeme. Potrebno oznaciti mjesto u kojem pocinje reprodukcija, izracunati brzinu praznjenja buffera, brzinu downloada podataka i sl.

@@ -1,0 +1,86 @@
+<html>
+<head>
+<title> Help for Interactive JPEG Image Compression
+</title>
+</head>
+<body>
+<h1><center> Help for Interactive JPEG Image Compression </center></h1>
+<hr>
+<b>WARNING:</B> This is a Java program running in its interpretive mode. Be prepared to wait for a few seconds after each submission.
+<hr>
+<p>
+1. QM1 to QM6 are several predefined <I>Quantization Matrices</I>.
+QM1 is from the book <i> "Image and Video Compression Standards"</i>  by
+V. Bhaskaran and K. Konstantinides, Kluwer, 1995.
+<p>
+<b>Choose one of the matrices, followed by "submit" to see the JPEG
+encoding and decoding results.</b>
+<ul>
+<li>The first row shows the encoder.  The original image is at the left,
+the YIQ images are shown in the middle, the DCT results are at the right.
+<li>Use right mouse button to click anywhere in one of the YIQ images,
+the numeric values of the DCT and quantized 8x8 blocks will be displayed
+in the second row.
+<li>The last row shows the decoding results.  The quantized DCT images
+are at the left, followed by the decoded YIQ, and then the decoded color image.
+<li>The <I>compression ratio</I> (size_of_original_image / size_of_compressed_image) is shown in the area below the quantization table.
+</ul>
+<p>
+2. In the area below the quantization table, you may type in one
+of the following commands:
+<ul>
+<li> <b>inner operation</b> :
+<ul>
+<li> <b> ia</b><i> number</i> / <b>IA</b><i> number</i>: all the elements in the matrix whose x-coordinates and y-coordinates are both less than or equal to those of the current position pointed by the little rectangle are added the <i>number</i>, but the sum should not be more than 300. <p>
+
+<li> <b> is</b><i> number</i> / <b>IS</b><i> number</i>: all the elements in the matrix whose x-coordinates and y-coordinates are both less than or equal to those of the current position pointed by the little rectangle are deducted by the <i>number</i>, but the results should not be less than 1. <p>
+
+<li> <b> it</b><i> number</i> / <b>IT</b><i> number</i>: all the elements in the matrix whose x-coordinates and y-coordinates are both less than or equal to those of the current position pointed by the little rectangle are multiplied by the <i>number</i>, but the results should not be more than 300. <p>
+
+<li> <b> id</b><i> number</i> / <b>ID</b><i> number</i>: all the elements in the matrix whose x-coordinates and y-coordinates are both less than or equal to those of the current position pointed by the little rectangle are divided by the <i>number</i>, but the results should not be less than 1. <p>
+</ul>
+<hr>
+<li> <b> outer operation</b> :
+<ul>
+<li> <b> oa</b><i> number</i> / <b>OA</b><i> number</i>: all the elements in the matrix whose either x-coordinates or y-coordinates is more than that of the current position pointed by the little rectangle are added the <i>number</i>, but the sum should not be more than 300. <p>
+
+
+<li> <b> os</b><i> number</i> / <b>OS</b><i> number</i>: all the elements in the matrix whose either x-coordinates or y-coordinates is more than that of the current position pointed by the little rectangle are deducted by the <i>number</i>, but the results should not be less than 1. <p>
+
+<li> <b> ot</b><i> number</i> / <b>OT</b><i> number</i>: all the elements in the matrix whose either x-coordinates or y-coordinates is more than that of the current position pointed by the little rectangle are multiplied by the <i>number</i>, but the results should not be more than 300. <p>
+
+<li> <b> od</b><i> number</i> / <b>OD</b><i> number</i>: all the elements in the matrix whose either x-coordinates or y-coordinates is more than that of the current position pointed by the little rectangle are divided by the <i>number</i>, but the results should not be less than 1. <p>
+</ul>
+<hr>
+<li> <b>line operation</b> :
+<ul>
+<li> <b> la</b><i> number</i> / <b>LA</b><i> number</i>: all the elements in the matrix whose either x-coordinates or y-coordinates is equal to that of the current position pointed by the little rectangle are added the <i>number</i>, but the sum should not be more than 300. <p>
+
+
+<li> <b> ls</b><i> number</i> / <b>LS</b><i> number</i>: all the elements in the matrix whose either x-coordinates or y-coordinates is equal to that of the current position pointed by the little rectangle are deducted by the <i>number</i>, but the results should not be less than 1. <p>
+
+<li> <b> lt</b><i> number</i> / <b>LT</b><i> number</i>: all the elements in the matrix whose either x-coordinates or y-coordinates is equal to that of the current position pointed by the little rectangle are multiplied by the <i>number</i>, but the results should not be more than 300. <p>
+
+<li> <b> ld</b><i> number</i> / <b>LD</b><i> number</i>: all the elements in the matrix whose either x-coordinates or y-coordinates is equal to that of the current position pointed by the little rectangle are divided by the <i>number</i>, but the results should not be less than 1. <p>
+</ul>
+<hr>
+<li> <b>global operation</b> :
+<ul>
+<li> <b> ga</b><i> number</i> / <b>GA</b><i> number</i>: all the elements in the matrix are added the <i>number</i>, but the sum should not be more than 300.<p> 
+
+<li> <b> gs</b><i> number</i> / <b>GS</b><i> number</i>: all the elements in the matrix are deducted by the <i>number</i>, but the results should not be less than 1. <p>
+
+
+<li> <b> gt</b><i> number</i> / <b>GT</b><i> number</i>: all the elements in the matrix are multiplied by the <i>number</i>, but the results should not be more than 300. <p>
+
+<li> <b> gd</b><i> number</i> / <b>GD</b><i> number</i>: all the elements in the matrix are divided by the <i>number</i>, but the results should not be less than 1. <p>
+
+</ul>
+<hr>
+<li><b>New matrix operation</b> <p>
+ <b> nm</b><i> number</i> / <b>NM</b><i> number</i>: a new matrix indexed as <i>number</i> is loaded, ranging from <i>1</i> to <i>6</i>, which is the matrix QM <i>number</i> as in those buttons. <p>
+</ul>
+<hr> 
+<i>This java program is first created by <b>Malte von Ruden</b>, revised by <b>Jie Wei</b> and <b>Ze-Nian Li</b></i>.
+</body>
+</html>
