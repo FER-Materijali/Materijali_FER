@@ -1,0 +1,1260 @@
+
+Prednost magnetskih volumetara je u:
+	a. niskim troškovima ugradnje 	
+	b. zanemarivom gubitku linijskog tlaka Toèno 	
+	c. Niti jedan odgovor nije toèan 	
+	d. moguænosti ugradnje u svim položajima  	
+
+
+Ultrazvuènim protokomjerom brzina strujanja fluida odreðuje se temeljem:
+
+	a. frekvencije ultrazvuènog impulsa koji prolazi kroz mjernu stazu
+	b. Niti jedan odgovor nije toèan 	
+	c. vremena prolaza ultrazvuènog impulsa kroz mjernu stazu Toèno 	
+	d. promjene otklona ultrazvuènog impulsa u odnosu na os cjevovoda 
+
+Rotametri su mjerila protoka:
+
+	a. s vertikalnim pomiènim plovkom Toèno 	
+	b. Niti jedan odgovor nije toèan 	
+	c. s rotirajuæom turbinom 	
+	d. s rotirajuæim zasunom 	
+
+Pomoæu rezonantnih osjetnika tlak se odreðuje temeljem:
+
+	a. Niti jedan odgovor nije toèan 	
+	b. faznog kuta izlaznog napona 
+	c. frekvencije izlaznog napona Toèno 	
+	d. amplitude izlaznog napona 
+
+Prednost optièkih osjetnika tlaka je:
+
+	a. niska cijena 	
+	b. Niti jedan odgovor nije toèan 	
+	c. neosjetljivost na promjenu temperature Toèno 	
+	d. velika histereza 	
+
+Signal osjetnika protoka s vruæom žicom proporcionalan je:
+
+	a. dinamièkom tlaku fluida	
+	b. temperaturi fluida 	
+	c. Niti jedan odgovor nije toèan 	
+	d. brzini strujanja fluida Toèno 	
+
+Kapacitivni osjetnici tlaka rade na principu:
+
+	a. promjene elektriènog kapaciteta mjerne kapsule Toèno 	
+	b. Niti jedan odgovor nije toèan  	
+	c. promjene volumnog kapaciteta mjerne kapsule 
+	d. promjene toplinskog kapaciteta mjerne kapsule 	
+
+Emisivnost apsolutno crnog tijela je:
+
+	a. = 0  	
+	b. > 1 	
+	c. = 1 Toèno 	
+	d. < 1 	
+
+Termistorima se temperatura može mjeriti u opsegu:
+
+	a. Niti jedan odgovor nije toèan	
+	b. 0 oC do 100 oC 	
+	c. 0 K do 423 K 	
+	d. - 40 oC do 150 oC Toèno 	
+
+Nedostatak upotrebe Vortex protokomjera je:
+
+	a. samo za tekuæe fluide  	
+	b. Niti jedan odgovor nije toèan  	
+	c. osjetljivost na neèistoæe u fluidu Toèno 	
+	d. ogranièeni opseg temperature fluida 
+
+Dopplerov efekt javlja se pri kretanju izvora titranja:
+	a. samo u plinovitim fluidima 	
+	b. samo u tekuæim fluidima 
+	c. u svim fluidima Toèno 	
+	d. Niti jedan odgovor nije toèan 	
+
+
+Rezultati mjerenja tlaka pomoæu U-cijevi ovise o:
+
+	a. vlagi zraka  	
+	b. gravitaciji Toèno 	
+	c. Niti jedan odgovor nije toèan 	
+	d. temperaturi okoline 
+
+Napon veæine termoparova za mjerenje temperature u opsegu 0 – 1500 oC kreæe se u granicama:
+
+	a. 0 do 1 V  	
+	b. 0 do 1 mV 	
+	c. 0 do 10 mV  	
+	d. 0 do 100 mV Toèno 	
+
+Odreðivanje protoka pomoæu Venturijeve cijevi temelji se na mjerenju:
+
+	a. razlike tlaka fluida ispred i iza Venturija Toèno 	
+	b. razlike temperatura fluida ispred i iza Venturija 	
+	c. razlike gustoæe fluida ispred i iza Venturija 	
+	d. Niti jedan odgovor nije toèan 	
+
+Elektromagnetski volumetri koriste se za mjerenje protoka:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. samo nevodljivih tekuæih fluida Netoèno 	
+	c. svih plinovitih fluida Netoèno 	
+	d. samo vodljivih tekuæih fluida Toèno 	
+
+Primjena scintilacijskih protokomjera ogranièena je na:
+Odaberite jedan odgovor.
+	a. laminarno strujanje tekuæih fluida Netoèno 	
+	b. strujanje plinovitih fluida Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. turbulentno strujanje tekuæih fluida Toèno 	
+
+Nedostatak piezootpornih osjetnika tlaka je:
+Odaberite jedan odgovor.
+	a. temperaturna ovisnost osjetljivosti Toèno 	
+	b. visoka cijena Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. nemoguænost mjerenja statièkih tlakova Netoèno 	
+
+Protok na mjernom preljevu odreðuje se temeljem:
+Odaberite jedan odgovor.
+	a. razine vode toèno iznad brane Netoèno 	
+	b. razine vode na odreðenoj udaljenosti uzvodno od brane Toèno 	
+	c. razine vode na odreðenoj udaljenosti nizvodno od brane Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Prednost upotrebe ultrazvuènih protokomjera je:
+Odaberite jedan odgovor.
+	a. primjenjivost za sve vrste fluida Netoèno 	
+	b. mjerenje protoka u oba smjera Toèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. neosjetljivost na promjenu gustoæe fluida Netoèno 	
+
+
+RTD osjetnici prikladni su za mjerenje temperature u opsegu:
+Odaberite jedan odgovor.
+	a. 0 oC do 850 oC Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. 0 oC do 125 oC Netoèno 	
+	d. ~ 0 K do 1100 K Toèno 	
+
+Reynoldsov broj:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. ne ovisi o svojstvima fluida Netoèno 	
+	c. proporcionalan je viskozitetu fluida Netoèno 	
+	d. proporcionalan je gustoæi fluida Toèno 	
+
+Odreðivanje protoka pomoæu Venturijeve cijevi temelji se na mjerenju:
+Odaberite jedan odgovor.
+	a. razlike gustoæe fluida ispred i iza Venturija Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. razlike temperatura fluida ispred i iza Venturija Netoèno 	
+	d. razlike tlaka fluida ispred i iza Venturija Toèno 	
+
+Vortex protokomjeri ispravno mjere protok samo ako su ugraðeni:
+Odaberite jedan odgovor.
+	a. horizontalno Netoèno 	
+	b. vertikalno Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. u bilo kojem položaju Toèno 	
+
+Scintilacijski protokomjer odreðuje brzinu strujanja fluida temeljem:
+Odaberite jedan odgovor.
+	a. razlike frekvencije signala na detektorima Netoèno 	
+	b. faznog pomaka signala na detektorima Toèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. razlike amplituda signala na detektorima Netoèno 	
+
+Dopplerov efekt javlja se pri kretanju izvora titranja:
+Odaberite jedan odgovor.
+	a. samo u tekuæim fluidima Netoèno 	
+	b. u svim fluidima Toèno 	
+	c. samo u plinovitim fluidima Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Nedostatak upotrebe Vortex protokomjera je:
+Odaberite jedan odgovor.
+	a. samo za tekuæe fluide Netoèno 	
+	b. osjetljivost na neèistoæe u fluidu Toèno 	
+	c. ogranièeni opseg temperature fluida Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Strujanje fluida je laminarno ako je Reynoldsov broj:
+Odaberite jedan odgovor.
+	a. < 2000 Toèno 	
+	b. 2000 < Re < 3000 Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. > 3000 Netoèno 	
+
+Signal osjetnika protoka s vruæom žicom proporcionalan je:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. brzini strujanja fluida Toèno 	
+	c. dinamièkom tlaku fluida Netoèno 	
+	d. temperaturi fluida Netoèno 	
+	
+
+Gornja granica primjene poluvodièkih osjetnika temperature je:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. 273 K Netoèno 	
+	c. 100 oC Netoèno 	
+	d. 125 oC Toèno 	
+
+	
+
+
+Protok na mjernom preljevu odreðuje se temeljem:
+Odaberite jedan odgovor.
+	a. razine vode toèno iznad brane Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. razine vode na odreðenoj udaljenosti uzvodno od brane Toèno 	
+	d. razine vode na odreðenoj udaljenosti nizvodno od brane Netoèno 	
+
+Nedostatak upotrebe Vortex protokomjera je:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. ogranièeni opseg temperature fluida Netoèno 	
+	c. osjetljivost na neèistoæe u fluidu Toèno 	
+	d. samo za tekuæe fluide Netoèno 	
+
+Prednost korištenja volumetra s mlinskim kolom je u:
+Odaberite jedan odgovor.
+	a. visokoj toènosti mjerenja Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. moguænosti mjerenja protoka u oba smjera Toèno 	
+	d. moguænosti mjerenja protoka pri vrlo malim brzinama strujanja Netoèno 	
+
+RTD osjetnici temperature imaju:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. konstantni temperaturni koeficijent Netoèno 	
+	c. negativni temperaturni koeficijent Netoèno 	
+	d. pozitivni temperaturni koeficijent Toèno 	
+
+Scintilacijski protokomjeri koriste:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. ultrazvuène impulse Toèno 	
+	c. infrazvuène impulse Netoèno 	
+	d. zvuène impulse Netoèno 	
+
+Termistorima se temperatura može mjeriti u opsegu:
+Odaberite jedan odgovor.
+	a. - 40 oC do 150 oC Toèno 	
+	b. 0 oC do 100 oC Netoèno 	
+	c. 0 K do 423 K Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+RTD osjetnici prikladni su za mjerenje temperature u opsegu:
+Odaberite jedan odgovor.
+	a. 0 oC do 125 oC Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. 0 oC do 850 oC Netoèno 	
+	d. ~ 0 K do 1100 K Toèno 	
+
+Nedostatak piezootpornih osjetnika tlaka je:
+Odaberite jedan odgovor.
+	a. nemoguænost mjerenja statièkih tlakova Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. temperaturna ovisnost osjetljivosti Toèno 	
+	d. visoka cijena Netoèno 	
+
+Nedostatak upotrebe Vortex protokomjera je:
+Odaberite jedan odgovor.
+	a. osjetljivost na neèistoæe u fluidu Toèno 	
+	b. samo za tekuæe fluide Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. ogranièeni opseg temperature fluida Netoèno 	
+
+Padom temperature otpor NTC termistora:
+Odaberite jedan odgovor.
+	a. ostaje približno konstantan Netoèno 	
+	b. pada Netoèno 	
+	c. raste Toèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Termistorima se temperatura može mjeriti u opsegu:
+Odaberite jedan odgovor.
+	a. - 40 oC do 150 oC Toèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. 0 oC do 100 oC Netoèno 	
+	d. 0 K do 423 K Netoèno 	
+
+Gornja granica primjene poluvodièkih osjetnika temperature je:
+Odaberite jedan odgovor.
+	a. 273 K Netoèno 	
+	b. 100 oC Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. 125 oC Toèno 	
+
+Nedostatak laserskog protokomjera je:
+Odaberite jedan odgovor.
+	a. osjetljivost na agresivne fluide Netoèno 	
+	b. primjena ogranièena samo na dovoljno prozirne fluide Toèno 	
+	c. spori odziv na promjenu brzine fluida Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Termodinamièki osjetnici protoka koriste princip:
+Odaberite jedan odgovor.
+	a. provoðenja topline Netoèno 	
+	b. zraèenja topline Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. prijenosa topline Toèno 	
+
+Dopplerov efekt javlja se pri kretanju izvora titranja:
+Odaberite jedan odgovor.
+	a. samo u plinovitim fluidima Netoèno 	
+	b. samo u tekuæim fluidima Netoèno 	
+	c. u svim fluidima Toèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Mjerenje razine tekuæine u zatvorenom spremniku moguæe je korištenjem:
+Odaberite jedan odgovor.
+	a. pretvaraèa apsolutnog tlaka Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. pretvaraèa relativnog tlaka Netoèno 	
+	d. pretvaraèa diferencijalnog tlaka Toèno 	
+
+Koliki je iznos napona na sabirnicama VN postrojenja, ako se koristi A/D pretvornik 20mA/1024bit, a rezultat A/D pretvorbe je 750. Konstanta pripadnog mjernog lanca iznosi 0,15 kV/bit:
+Odaberite jedan odgovor.
+	a. 100 kV Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. 112,5 kV Toèno 	
+	d. 97,66 kV Netoèno 	
+
+Prednost upotrebe ultrazvuènih protokomjera je:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. neosjetljivost na promjenu gustoæe fluida Netoèno 	
+	c. primjenjivost za sve vrste fluida Netoèno 	
+	d. mjerenje protoka u oba smjera Toèno 	
+
+Rotametri se mogu instalirati:
+Odaberite jedan odgovor.
+	a. samo u vertikalnom položaju Toèno 	
+	b. samo u horizontalnom položaju Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. u svim položajima Netoèno 	
+
+Prednost korištenja volumetra s mlinskim kolom je u:
+Odaberite jedan odgovor.
+	a. moguænosti mjerenja protoka u oba smjera Toèno 	
+	b. moguænosti mjerenja protoka pri vrlo malim brzinama strujanja Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. visokoj toènosti mjerenja Netoèno 	
+
+RTD osjetnik tipa Pt100 ima na nazivni otpor 100 Ohm pri temperaturi:
+Odaberite jedan odgovor.
+	a. 100 oC Netoèno 	
+	b. 20 oC Netoèno 	
+	c. 273 K Toèno 	
+	d. 0 K Netoèno 	
+
+RTD osjetnici prikladni su za mjerenje temperature u opsegu:
+Odaberite jedan odgovor.
+	a. ~ 0 K do 1100 K Toèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. 0 oC do 850 oC Netoèno 	
+	d. 0 oC do 125 oC Netoèno 	
+
+Pomoæu rezonantnih osjetnika tlak se odreðuje temeljem:
+Odaberite jedan odgovor.
+	a. frekvencije izlaznog napona Toèno 	
+	b. faznog kuta izlaznog napona Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. amplitude izlaznog napona Netoèno 	
+
+Procesna mjerenja provode se:
+Odaberite jedan odgovor.
+	a. periodièki prema specifikacijama procesa Netoèno 	
+	b. nakon popravka kvara na procesnoj opremi Netoèno 	
+	c. kontinuirano tijekom odvijanja procesa Toèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Mjerni sustav sastoji se od:
+Odaberite jedan odgovor.
+	a. mjernog osjetnika i mjernog pretvaraèa Netoèno 	
+	b. mjernog instrumenta i mjeritelja Netoèno 	
+	c. mjernog lanca i korisnièkog suèelja Toèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Protok kroz magnetski volumetar odreðuje se temeljem:
+Odaberite jedan odgovor.
+	a. amplitude induciranog napona na mjernim elektrodama Toèno 	
+	b. razlike uzbudnog i induciranog napona Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. frekvencije induciranog napona na mjernim elektrodama Netoèno 	
+
+Osjetnici deformacija (strain-gage) koriste efekt promjene:
+Odaberite jedan odgovor.
+	a. frekvencije titranja pod utjecajem sile naprezanja Netoèno 	
+	b. otpora pod utjecajem sile naprezanja Toèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. polarizacije kristala pod utjecajem sile naprezanja Netoèno 	
+
+Vortex protokomjeri mogu se koristiti za mjerenje protoka:
+Odaberite jedan odgovor.
+	a. svih vrsta fluida s Re > 50 Toèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. samo tekuæih fluida Netoèno 	
+	d. samo plinovitih fluida i vodene pare Netoèno 	
+
+
+
+Protok kroz turbinski volumetar odreðuje se temeljem:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. frekvencije impulsa magnetskog osjetnika okretanja rotora Toèno 	
+	c. amplitude impulsa magnetskog osjetnika okretanja rotora Netoèno 	
+	d. produkta kutne brzine rotora i razlike tlaka ispred i iza turbine Netoèno 	
+
+Temodinamièka mjerila protoka koriste se za mjerenje protoka:
+Odaberite jedan odgovor.
+	a. tekuæih fluida Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. plinovitih fluida Toèno 	
+	d. tekuæih i plinovitih fluida Netoèno 	
+
+Nedostatak upotrebe Vortex protokomjera je:
+Odaberite jedan odgovor.
+	a. osjetljivost na neèistoæe u fluidu Toèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. ogranièeni opseg temperature fluida Netoèno 	
+	d. samo za tekuæe fluide Netoèno 	
+
+	
+
+Protokomjeri na principu transportnog volumena koriste se za:
+Odaberite jedan odgovor.
+	a. mjerenje protoka samo plinovitih fluida Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. mjerenje protoka plinovitih i tekuæih fluida Netoèno 	
+	d. mjerenje protoka samo tekuæih fluida Toèno 	
+
+Rotametri se mogu instalirati:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. samo u vertikalnom položaju Toèno 	
+	c. u svim položajima Netoèno 	
+	d. samo u horizontalnom položaju Netoèno 	
+
+Vortex protokomjeri ispravno mjere protok samo ako su ugraðeni:
+Odaberite jedan odgovor.
+	a. vertikalno Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. u bilo kojem položaju Toèno 	
+	d. horizontalno Netoèno 	
+
+Cilj provedbe dijagnostièkih mjerenja je:
+Odaberite jedan odgovor.
+	a. rastereæenje nadzornog osoblja Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. smanjenje broja pogonskog osoblja Netoèno 	
+	d. detekcija kvara odnosno procjena stanja opreme Toèno 	
+
+RTD osjetnik tipa Pt100 ima na nazivni otpor 100 Ohm pri temperaturi:
+Odaberite jedan odgovor.
+	a. 0 K Netoèno 	
+	b. 273 K Toèno 	
+	c. 100 oC Netoèno 	
+	d. 20 oC Netoèno 	
+
+Što je metrika?
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. mjera kojom se uspostavlja smisleni odnos izmeðu promatranih svojstava odreðene velièine Toèno 	
+	c. mjerna jedinica pridružena odreðenoj velièini Netoèno 	
+	d. mjerna oprema za provoðenje mjerenja odreðene velièine Netoèno 	
+
+Mjerenje je skup aktivnosti u cilju:
+Odaberite jedan odgovor.
+	a. odluèivanja o primijenjenoj mjernoj metodi Netoèno 	
+	b. prezentacije rezultata oèitanja mjernih instrumenata Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. odreðivanja vrijednosti odreðene velièine Toèno 	
+
+Osjetnici deformacija (strain-gage) koriste efekt promjene:
+Odaberite jedan odgovor.
+	a. frekvencije titranja pod utjecajem sile naprezanja Netoèno 	
+	b. polarizacije kristala pod utjecajem sile naprezanja Netoèno 	
+	c. otpora pod utjecajem sile naprezanja Toèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Vortex protokomjeri mogu se koristiti za mjerenje protoka:
+Odaberite jedan odgovor.
+	a. samo plinovitih fluida i vodene pare Netoèno 	
+	b. svih vrsta fluida s Re > 50 Toèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. samo tekuæih fluida Netoèno 	
+
+Laserski protokomjeri odreðuju brzinu strujanja fluida temeljem:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. intenziteta disperziranog laserskog svjetla Netoèno 	
+	c. promjene frekvencije disperziranog laserskog svjetla Toèno 	
+	d. razlike intenziteta ulaznog i disperziranog laserskog svjetla Netoèno 	
+
+Nedostatak upotrebe Vortex protokomjera je:
+Odaberite jedan odgovor.
+	a. samo za tekuæe fluide Netoèno 	
+	b. ogranièeni opseg temperature fluida Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. osjetljivost na neèistoæe u fluidu Toèno 	
+
+Gornja granica primjene poluvodièkih osjetnika temperature je:
+Odaberite jedan odgovor.
+	a. 125 oC Toèno 	
+	b. 273 K Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. 100 oC Netoèno 	
+
+Scintilacijski protokomjeri koriste:
+Odaberite jedan odgovor.
+	a. zvuène impulse Netoèno 	
+	b. ultrazvuène impulse Toèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. infrazvuène impulse Netoèno 	
+
+Linearizacija R/T karakteristike NTC osjetnika postiže se:
+Odaberite jedan odgovor.
+	a. serijskim spojem konstantnog otpornika R < RT Netoèno 	
+	b. paralelnim spojem konstantnog otpornika R > RT Toèno 	
+	c. paralelnim spojem konstantnog otpornika R < RT Netoèno 	
+	d. serijskim spojem konstantnog otpornika R > RT Netoèno 	
+
+Protok kroz magnetski volumetar odreðuje se temeljem:
+Odaberite jedan odgovor.
+	a. frekvencije induciranog napona na mjernim elektrodama Netoèno 	
+	b. amplitude induciranog napona na mjernim elektrodama Toèno 	
+	c. razlike uzbudnog i induciranog napona Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Rotametri se mogu instalirati:
+Odaberite jedan odgovor.
+	a. u svim položajima Netoèno 	
+	b. samo u vertikalnom položaju Toèno 	
+	c. samo u horizontalnom položaju Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+
+Pitot-ova cijev služi za mjerenje:
+Odaberite jedan odgovor.
+	a. tlaka fluida Netoèno 	
+	b. brzine strujanja fluida Toèno 	
+	c. gustoæe fluida Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Elektrièni signal iz osjetnika tlaka s dijafragmom ostvaruje se prigradnjom:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. osjetnika temperature Netoèno 	
+	c. osjetnika pomaka Toèno 	
+	d. osjetnika titranja Netoèno 	
+
+Osjetnici deformacija (strain-gage) koriste efekt promjene:
+Odaberite jedan odgovor.
+	a. polarizacije kristala pod utjecajem sile naprezanja Netoèno 	
+	b. otpora pod utjecajem sile naprezanja Toèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. frekvencije titranja pod utjecajem sile naprezanja Netoèno 	
+
+Linearizacija R/T karakteristike NTC osjetnika postiže se:
+Odaberite jedan odgovor.
+	a. serijskim spojem konstantnog otpornika R > RT Netoèno 	
+	b. paralelnim spojem konstantnog otpornika R > RT Toèno 	
+	c. serijskim spojem konstantnog otpornika R < RT Netoèno 	
+	d. paralelnim spojem konstantnog otpornika R < RT Netoèno 	
+
+ 	
+
+Rezultat mjerenja je:
+Odaberite jedan odgovor.
+	a. vrijednost pridijeljena odreðenoj velièini dobivena mjerenjem Toèno 	
+	b. vrijednost odreðene velièine dobivena proraèunom Netoèno 	
+	c. pisano izvješæe o primijenjenoj mjernoj metodi Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Elektromagnetski volumetri koriste se za mjerenje protoka:
+Odaberite jedan odgovor.
+	a. svih plinovitih fluida Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. samo nevodljivih tekuæih fluida Netoèno 	
+	d. samo vodljivih tekuæih fluida Toèno 	
+
+
+Protokomjeri na principu transportnog volumena koriste se za:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. mjerenje protoka plinovitih i tekuæih fluida Netoèno 	
+	c. mjerenje protoka samo plinovitih fluida Netoèno 	
+	d. mjerenje protoka samo tekuæih fluida Toèno 	
+
+Dopplerov efekt javlja se pri kretanju izvora titranja:
+Odaberite jedan odgovor.
+	a. samo u plinovitim fluidima Netoèno 	
+	b. u svim fluidima Toèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. samo u tekuæim fluidima Netoèno 	
+
+Nedostatak upotrebe Vortex protokomjera je:
+Odaberite jedan odgovor.
+	a. ogranièeni opseg temperature fluida Netoèno 	
+	b. osjetljivost na neèistoæe u fluidu Toèno 	
+	c. samo za tekuæe fluide Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Bourdonov manometar može se koristiti:
+Odaberite jedan odgovor.
+	a. samo u vertikalnom položaju Netoèno 	
+	b. samo u horizontalnom položaju Netoèno 	
+	c. u svim položajima Toèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Coriolisovim sjetnikom protoka mjeri se:
+Odaberite jedan odgovor.
+	a. brzina strujanja fluida Netoèno 	
+	b. maseni protok fluida Toèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. volumni protok fluida Netoèno 	
+
+Strouhalov broj je bezdimenzionalni broj koji:
+Odaberite jedan odgovor.
+	a. je izravno proporcionalan Reynoldsovom broju za 100 < Re < 10.000.000 Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. je obrnuto proporcionalan Reynoldsovom broju za 100 < Re < 10.000.000 Netoèno 	
+	d. praktièki ne ovisi o Reynoldsovom broju za 100 < Re < 10.000.000 Toèno 	
+
+Primjena scintilacijskih protokomjera ogranièena je na:
+Odaberite jedan odgovor.
+	a. turbulentno strujanje tekuæih fluida Toèno 	
+	b. strujanje plinovitih fluida Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. laminarno strujanje tekuæih fluida Netoèno 	
+
+
+
+Protok kroz magnetski volumetar odreðuje se temeljem:
+Odaberite jedan odgovor.
+	a. amplitude induciranog napona na mjernim elektrodama Toèno 	
+	b. razlike uzbudnog i induciranog napona Netoèno 	
+	c. frekvencije induciranog napona na mjernim elektrodama Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Nedostatak upotrebe Vortex protokomjera je:
+Odaberite jedan odgovor.
+	a. ogranièeni opseg temperature fluida Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. samo za tekuæe fluide Netoèno 	
+	d. osjetljivost na neèistoæe u fluidu Toèno 	
+
+Coriolisovim sjetnikom protoka mjeri se:
+Odaberite jedan odgovor.
+	a. brzina strujanja fluida Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. volumni protok fluida Netoèno 	
+	d. maseni protok fluida Toèno 	
+
+RTD osjetnici prikladni su za mjerenje temperature u opsegu:
+Odaberite jedan odgovor.
+	a. 0 oC do 850 oC Netoèno 	
+	b. ~ 0 K do 1100 K Toèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. 0 oC do 125 oC Netoèno 	
+
+Vortex protokomjeri ispravno mjere protok samo ako su ugraðeni:
+Odaberite jedan odgovor.
+	a. vertikalno Netoèno 	
+	b. u bilo kojem položaju Toèno 	
+	c. horizontalno Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Protok kroz turbinski volumetar odreðuje se temeljem:
+Odaberite jedan odgovor.
+	a. produkta kutne brzine rotora i razlike tlaka ispred i iza turbine Netoèno 	
+	b. frekvencije impulsa magnetskog osjetnika okretanja rotora Toèno 	
+	c. amplitude impulsa magnetskog osjetnika okretanja rotora Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+R/T karakteristika termistora je:
+Odaberite jedan odgovor.
+	a. približno konstantna Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. približno linearna Netoèno 	
+	d. izrazito nelinearna Toèno 	
+
+Dijagnostièka mjerenja provode se:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. prije svakog puštanja u pogon Netoèno 	
+	c. nakon nestanka napona napajanja Netoèno 	
+	d. periodièki i nakon kvara Toèno 	
+
+Vortex protokomjeri ispravno mjere protok samo ako su ugraðeni:
+Odaberite jedan odgovor.
+	a. horizontalno Netoèno 	
+	b. vertikalno Netoèno 	
+	c. u bilo kojem položaju Toèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Turbinski volumetri koriste se za mjerenje:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. mjerenje protoka samo plinovitih fluida Netoèno 	
+	c. mjerenje protoka samo tekuæih fluida Netoèno 	
+	d. mjerenje protoka plinovitih i tekuæih fluida Toèno 	
+
+Temodinamièka mjerila protoka koriste se za mjerenje protoka:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. tekuæih fluida Netoèno 	
+	c. plinovitih fluida Toèno 	
+	d. tekuæih i plinovitih fluida Netoèno 	
+
+Protokomjeri na principu transportnog volumena koriste se za:
+Odaberite jedan odgovor.
+	a. mjerenje protoka plinovitih i tekuæih fluida Netoèno 	
+	b. mjerenje protoka samo tekuæih fluida Toèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. mjerenje protoka samo plinovitih fluida Netoèno 	
+
+Napon veæine termoparova za mjerenje temperature u opsegu 0 – 1500 oC kreæe se u granicama:
+Odaberite jedan odgovor.
+	a. 0 do 10 mV Netoèno 	
+	b. 0 do 100 mV Toèno 	
+	c. 0 do 1 mV Netoèno 	
+	d. 0 do 1 V Netoèno 	
+
+R/T karakteristika termistora je:
+Odaberite jedan odgovor.
+	a. približno konstantna Netoèno 	
+	b. približno linearna Netoèno 	
+	c. izrazito nelinearna Toèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Vortex protokomjeri mogu se koristiti za mjerenje protoka:
+Odaberite jedan odgovor.
+	a. svih vrsta fluida s Re > 50 Toèno 	
+	b. samo plinovitih fluida i vodene pare Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. samo tekuæih fluida Netoèno 	
+
+Signal osjetnika protoka s vruæom žicom proporcionalan je:
+Odaberite jedan odgovor.
+	a. dinamièkom tlaku fluida Netoèno 	
+	b. brzini strujanja fluida Toèno 	
+	c. temperaturi fluida Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Reynoldsov broj:
+Odaberite jedan odgovor.
+	a. ne ovisi o svojstvima fluida Netoèno 	
+	b. proporcionalan je gustoæi fluida Toèno 	
+	c. proporcionalan je viskozitetu fluida Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Kompenzacija hladnog kraja termoparova koristi se u sluèajevima kada:
+Odaberite jedan odgovor.
+	a. se mjere temperature znatno ispod 0 oC Netoèno 	
+	b. postoji velika udaljenost izmeðu mjernog mjesta i mjernog ureðaja Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. temperatura hladnog kraja znatno odstupa od referentne temperature Toèno 	
+
+
+Pomoæu rezonantnih osjetnika tlak se odreðuje temeljem:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. amplitude izlaznog napona Netoèno 	
+	c. frekvencije izlaznog napona Toèno 	
+	d. faznog kuta izlaznog napona Netoèno 	
+
+Reynoldsov broj:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. proporcionalan je gustoæi fluida Toèno 	
+	c. proporcionalan je viskozitetu fluida Netoèno 	
+	d. ne ovisi o svojstvima fluida Netoèno 	
+
+Elektromagnetski volumetri koriste se za mjerenje protoka:
+Odaberite jedan odgovor.
+	a. samo nevodljivih tekuæih fluida Netoèno 	
+	b. svih plinovitih fluida Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. samo vodljivih tekuæih fluida Toèno 	
+
+Konstanta mjernog lanca jednaka je:
+Odaberite jedan odgovor.
+	a. zbroju reciproènih vrijednosti konstanti pojedinih sastavnica lanca Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. zbroju konstanti pojedinih sastavnica lanca Netoèno 	
+	d. produktu konstanti pojedinih sastavnica lanca Toèno 	
+
+Termodinamièki osjetnici protoka koriste princip:
+Odaberite jedan odgovor.
+	a. prijenosa topline Toèno 	
+	b. zraèenja topline Netoèno 	
+	c. provoðenja topline Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+ 	
+
+Protok kroz turbinski volumetar odreðuje se temeljem:
+Odaberite jedan odgovor.
+	a. amplitude impulsa magnetskog osjetnika okretanja rotora Netoèno 	
+	b. frekvencije impulsa magnetskog osjetnika okretanja rotora Toèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. produkta kutne brzine rotora i razlike tlaka ispred i iza turbine Netoèno 	
+
+Prednost turbinskih volumetara je:
+Odaberite jedan odgovor.
+	a. visoka toènost mjerenja za plinovite i tekuæe fluide Toèno 	
+	b. moguænost ugradnje u svim položajima Netoèno 	
+	c. neosjetljivost na neèistoæe u fluidu Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Turbinski volumetri koriste se za mjerenje:
+Odaberite jedan odgovor.
+	a. mjerenje protoka samo plinovitih fluida Netoèno 	
+	b. mjerenje protoka plinovitih i tekuæih fluida Toèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. mjerenje protoka samo tekuæih fluida Netoèno 	
+
+Prednost korištenja volumetra s mlinskim kolom je u:
+Odaberite jedan odgovor.
+	a. moguænosti mjerenja protoka pri vrlo malim brzinama strujanja Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. moguænosti mjerenja protoka u oba smjera Toèno 	
+	d. visokoj toènosti mjerenja Netoèno 	
+
+Termistorima se temperatura može mjeriti u opsegu:
+Odaberite jedan odgovor.
+	a. 0 K do 423 K Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. 0 oC do 100 oC Netoèno 	
+	d. - 40 oC do 150 oC Toèno 	
+
+Coriolisovim sjetnikom protoka mjeri se:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. maseni protok fluida Toèno 	
+	c. brzina strujanja fluida Netoèno 	
+	d. volumni protok fluida Netoèno 	
+
+Procesna mjerenja provode se:
+Odaberite jedan odgovor.
+	a. nakon popravka kvara na procesnoj opremi Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. periodièki prema specifikacijama procesa Netoèno 	
+	d. kontinuirano tijekom odvijanja procesa Toèno 	
+
+
+Elektromagnetski volumetri koriste se za mjerenje protoka:
+Odaberite jedan odgovor.
+	a. samo vodljivih tekuæih fluida Toèno 	
+	b. svih plinovitih fluida Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. samo nevodljivih tekuæih fluida Netoèno 	
+
+Emisivnost apsolutno crnog tijela je:
+Odaberite jedan odgovor.
+	a. < 1 Netoèno 	
+	b. = 1 Toèno 	
+	c. > 1 Netoèno 	
+	d. = 0 Netoèno 	
+
+Nedostatak upotrebe Vortex protokomjera je:
+Odaberite jedan odgovor.
+	a. ogranièeni opseg temperature fluida Netoèno 	
+	b. samo za tekuæe fluide Netoèno 	
+	c. osjetljivost na neèistoæe u fluidu Toèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Volumetri s mlinskim kolom mogu se ugraditi:
+Odaberite jedan odgovor.
+	a. samo u horizontalnom položaju Netoèno 	
+	b. samo u vertikalnom položaju Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. u svim položajima Toèno 	
+
+Vortex protokomjeri mogu se koristiti za mjerenje protoka:
+Odaberite jedan odgovor.
+	a. samo plinovitih fluida i vodene pare Netoèno 	
+	b. svih vrsta fluida s Re > 50 Toèno 	
+	c. samo tekuæih fluida Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Pomoæu rezonantnih osjetnika tlak se odreðuje temeljem:
+Odaberite jedan odgovor.
+	a. frekvencije izlaznog napona Toèno 	
+	b. faznog kuta izlaznog napona Netoèno 	
+	c. amplitude izlaznog napona Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Termistorima se temperatura može mjeriti u opsegu:
+Odaberite jedan odgovor.
+	a. 0 oC do 100 oC Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. - 40 oC do 150 oC Toèno 	
+	d. 0 K do 423 K Netoèno 	
+
+Scintilacijski protokomjer odreðuje brzinu strujanja fluida temeljem:
+Odaberite jedan odgovor.
+	a. razlike amplituda signala na detektorima Netoèno 	
+	b. faznog pomaka signala na detektorima Toèno 	
+	c. razlike frekvencije signala na detektorima Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Scintilacijski protokomjer odreðuje brzinu strujanja fluida temeljem:
+Odaberite jedan odgovor.
+	a. faznog pomaka signala na detektorima Toèno 	
+	b. razlike frekvencije signala na detektorima Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. razlike amplituda signala na detektorima Netoèno 	
+
+
+
+Pitot-ova cijev služi za mjerenje:
+Odaberite jedan odgovor.
+	a. brzine strujanja fluida Toèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. gustoæe fluida Netoèno 	
+	d. tlaka fluida Netoèno 	
+
+Nedostatak protokomjera s transportnim volumenom je:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. visoki linijski pad tlaka Toèno 	
+	c. osjetljivost na promjenu viskoznosti fluida Netoèno 	
+	d. osjetljivost na promjenu temperature fluida Netoèno 	
+
+Što je metrika?
+Odaberite jedan odgovor.
+	a. mjera kojom se uspostavlja smisleni odnos izmeðu promatranih svojstava odreðene velièine Toèno 	
+	b. mjerna oprema za provoðenje mjerenja odreðene velièine Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. mjerna jedinica pridružena odreðenoj velièini Netoèno 	
+
+Termodinamièki osjetnici protoka koriste princip:
+Odaberite jedan odgovor.
+	a. zraèenja topline Netoèno 	
+	b. provoðenja topline Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. prijenosa topline Toèno 	
+
+Dopplerov efekt javlja se pri kretanju izvora titranja:
+Odaberite jedan odgovor.
+	a. u svim fluidima Toèno 	
+	b. samo u plinovitim fluidima Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. samo u tekuæim fluidima Netoèno 	
+
+	
+
+Konstanta mjernog lanca jednaka je:
+Odaberite jedan odgovor.
+	a. zbroju reciproènih vrijednosti konstanti pojedinih sastavnica lanca Netoèno 	
+	b. produktu konstanti pojedinih sastavnica lanca Toèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. zbroju konstanti pojedinih sastavnica lanca Netoèno 	
+
+Padom temperature otpor NTC termistora:
+Odaberite jedan odgovor.
+	a. raste Toèno 	
+	b. pada Netoèno 	
+	c. ostaje približno konstantan Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Procesna mjerenja provode se:
+Odaberite jedan odgovor.
+	a. kontinuirano tijekom odvijanja procesa Toèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. nakon popravka kvara na procesnoj opremi Netoèno 	
+	d. periodièki prema specifikacijama procesa Netoèno 	
+
+Što je metrika?
+Odaberite jedan odgovor.
+	a. mjerna oprema za provoðenje mjerenja odreðene velièine Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. mjerna jedinica pridružena odreðenoj velièini Netoèno 	
+	d. mjera kojom se uspostavlja smisleni odnos izmeðu promatranih svojstava odreðene velièine Toèno 	
+
+Cilj provedbe procesnih mjerenja je:
+Odaberite jedan odgovor.
+	a. skraæenje radnog vremena pogonskog osoblja Netoèno 	
+	b. voðenje tehnoloških procesa Toèno 	
+	c. detekcija ošteæene opreme Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Protok kroz turbinski volumetar odreðuje se temeljem:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. frekvencije impulsa magnetskog osjetnika okretanja rotora Toèno 	
+	c. amplitude impulsa magnetskog osjetnika okretanja rotora Netoèno 	
+	d. produkta kutne brzine rotora i razlike tlaka ispred i iza turbine Netoèno 	
+
+Termodinamièki osjetnici protoka koriste princip:
+Odaberite jedan odgovor.
+	a. provoðenja topline Netoèno 	
+	b. zraèenja topline Netoèno 	
+	c. prijenosa topline Toèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+RTD osjetnik tipa Pt100 ima na nazivni otpor 100 Ohm pri temperaturi:
+Odaberite jedan odgovor.
+	a. 20 oC Netoèno 	
+	b. 0 K Netoèno 	
+	c. 100 oC Netoèno 	
+	d. 273 K Toèno 	
+
+Prednost upotrebe ultrazvuènih protokomjera je:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. primjenjivost za sve vrste fluida Netoèno 	
+	c. mjerenje protoka u oba smjera Toèno 	
+	d. neosjetljivost na promjenu gustoæe fluida Netoèno 	
+
+Volumetri s mlinskim kolom mogu se ugraditi:
+Odaberite jedan odgovor.
+	a. samo u horizontalnom položaju Netoèno 	
+	b. samo u vertikalnom položaju Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. u svim položajima Toèno 	
+
+Napon veæine termoparova za mjerenje temperature u opsegu 0 – 1500 oC kreæe se u granicama:
+Odaberite jedan odgovor.
+	a. 0 do 1 mV Netoèno 	
+	b. 0 do 1 V Netoèno 	
+	c. 0 do 100 mV Toèno 	
+	d. 0 do 10 mV Netoèno 	
+
+Osjetnici protoka fluida s mjernom prigušnicom mjere:
+Odaberite jedan odgovor.
+	a. promjenu dinamièkog tlaka ispred i iza mjerne prigušnice Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. promjenu statièkog tlaka ispred i iza mjerne prigušnice Toèno 	
+	d. promjenu položajnog tlaka ispred i iza mjerne prigušnice Netoèno 	
+
+Bourdonov manometar može se koristiti:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. samo u vertikalnom položaju Netoèno 	
+	c. samo u horizontalnom položaju Netoèno 	
+	d. u svim položajima Toèno 	
+
+Dijagnostièka mjerenja provode se:
+Odaberite jedan odgovor.
+	a. periodièki i nakon kvara Toèno 	
+	b. prije svakog puštanja u pogon Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. nakon nestanka napona napajanja Netoèno 	
+
+Vortex protokomjeri mogu se koristiti za mjerenje protoka:
+Odaberite jedan odgovor.
+	a. svih vrsta fluida s Re > 50 Toèno 	
+	b. samo tekuæih fluida Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. samo plinovitih fluida i vodene pare Netoèno 	
+
+Protok na mjernom preljevu odreðuje se temeljem:
+Odaberite jedan odgovor.
+	a. razine vode toèno iznad brane Netoèno 	
+	b. razine vode na odreðenoj udaljenosti nizvodno od brane Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. razine vode na odreðenoj udaljenosti uzvodno od brane Toèno 	
+
+Što je metrika?
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. mjerna oprema za provoðenje mjerenja odreðene velièine Netoèno 	
+	c. mjerna jedinica pridružena odreðenoj velièini Netoèno 	
+	d. mjera kojom se uspostavlja smisleni odnos izmeðu promatranih svojstava odreðene velièine Toèno 	
+
+Protok kroz turbinski volumetar odreðuje se temeljem:
+Odaberite jedan odgovor.
+	a. produkta kutne brzine rotora i razlike tlaka ispred i iza turbine Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. frekvencije impulsa magnetskog osjetnika okretanja rotora Toèno 	
+	d. amplitude impulsa magnetskog osjetnika okretanja rotora Netoèno 	
+
+Elektrièni signal iz osjetnika tlaka s dijafragmom ostvaruje se prigradnjom:
+Odaberite jedan odgovor.
+	a. osjetnika temperature Netoèno 	
+	b. osjetnika titranja Netoèno 	
+	c. osjetnika pomaka Toèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Elektromagnetski volumetri koriste se za mjerenje protoka:
+Odaberite jedan odgovor.
+	a. svih plinovitih fluida Netoèno 	
+	b. samo nevodljivih tekuæih fluida Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. samo vodljivih tekuæih fluida Toèno 	
+
+RTD osjetnik tipa Pt100 ima na nazivni otpor 100 Ohm pri temperaturi:
+Odaberite jedan odgovor.
+	a. 273 K Toèno 	
+	b. 0 K Netoèno 	
+	c. 100 oC Netoèno 	
+	d. 20 oC Netoèno 	
+
+Dopplerov efekt javlja se pri kretanju izvora titranja:
+Odaberite jedan odgovor.
+	a. u svim fluidima Toèno 	
+	b. samo u tekuæim fluidima Netoèno 	
+	c. samo u plinovitim fluidima Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Scintilacijski protokomjer odreðuje brzinu strujanja fluida temeljem:
+Odaberite jedan odgovor.
+	a. razlike frekvencije signala na detektorima Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. faznog pomaka signala na detektorima Toèno 	
+	d. razlike amplituda signala na detektorima Netoèno 	
+
+Vortex protokomjeri ispravno mjere protok samo ako su ugraðeni:
+Odaberite jedan odgovor.
+	a. vertikalno Netoèno 	
+	b. horizontalno Netoèno 	
+	c. u bilo kojem položaju Toèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Primjena scintilacijskih protokomjera ogranièena je na:
+Odaberite jedan odgovor.
+	a. strujanje plinovitih fluida Netoèno 	
+	b. turbulentno strujanje tekuæih fluida Toèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. laminarno strujanje tekuæih fluida Netoèno 	
+
+Nedostatak piezootpornih osjetnika tlaka je:
+Odaberite jedan odgovor.
+	a. nemoguænost mjerenja statièkih tlakova Netoèno 	
+	b. visoka cijena Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. temperaturna ovisnost osjetljivosti Toèno 	
+
+Scintilacijski protokomjer odreðuje brzinu strujanja fluida temeljem:
+Odaberite jedan odgovor.
+	a. razlike frekvencije signala na detektorima Netoèno 	
+	b. faznog pomaka signala na detektorima Toèno 	
+	c. razlike amplituda signala na detektorima Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Prednost optièkih osjetnika tlaka je:
+Odaberite jedan odgovor.
+	a. velika histereza Netoèno 	
+	b. niska cijena Netoèno 	
+	c. neosjetljivost na promjenu temperature Toèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+RTD osjetnici prikladni su za mjerenje temperature u opsegu:
+Odaberite jedan odgovor.
+	a. ~ 0 K do 1100 K Toèno 	
+	b. 0 oC do 850 oC Netoèno 	
+	c. 0 oC do 125 oC Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Prednost upotrebe ultrazvuènih protokomjera je:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. primjenjivost za sve vrste fluida Netoèno 	
+	c. neosjetljivost na promjenu gustoæe fluida Netoèno 	
+	d. mjerenje protoka u oba smjera Toèno 	
+
+
+R/T karakteristika termistora je:
+Odaberite jedan odgovor.
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. približno konstantna Netoèno 	
+	c. izrazito nelinearna Toèno 	
+	d. približno linearna Netoèno 	
+
+Pitot-ova cijev služi za mjerenje:
+Odaberite jedan odgovor.
+	a. brzine strujanja fluida Toèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. tlaka fluida Netoèno 	
+	d. gustoæe fluida Netoèno 	
+
+Strouhalov broj je bezdimenzionalni broj koji:
+Odaberite jedan odgovor.
+	a. je izravno proporcionalan Reynoldsovom broju za 100 < Re < 10.000.000 Netoèno 	
+	b. praktièki ne ovisi o Reynoldsovom broju za 100 < Re < 10.000.000 Toèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. je obrnuto proporcionalan Reynoldsovom broju za 100 < Re < 10.000.000 Netoèno 	
+
+Turbinski volumetri koriste se za mjerenje:
+Odaberite jedan odgovor.
+	a. mjerenje protoka samo plinovitih fluida Netoèno 	
+	b. mjerenje protoka samo tekuæih fluida Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. mjerenje protoka plinovitih i tekuæih fluida Toèno 	
+
+Vortex protokomjeri mogu se koristiti za mjerenje protoka:
+Odaberite jedan odgovor.
+	a. svih vrsta fluida s Re > 50 Toèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. samo tekuæih fluida Netoèno 	
+	d. samo plinovitih fluida i vodene pare Netoèno 	
+
+Odaberite jedan odgovor.
+	a. vrijednost pridijeljena odreðenoj velièini dobivena mjerenjem Toèno 	
+	b. pisano izvješæe o primijenjenoj mjernoj metodi Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. vrijednost odreðene velièine dobivena proraèunom Netoèno 	
+
+Temodinamièka mjerila protoka koriste se za mjerenje protoka:
+Odaberite jedan odgovor.
+	a. plinovitih fluida Toèno 	
+	b. tekuæih fluida Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. tekuæih i plinovitih fluida Netoèno 	
+
+Laserski protokomjeri odreðuju brzinu strujanja fluida temeljem:
+Odaberite jedan odgovor.
+	a. intenziteta disperziranog laserskog svjetla Netoèno 	
+	b. razlike intenziteta ulaznog i disperziranog laserskog svjetla Netoèno 	
+	c. promjene frekvencije disperziranog laserskog svjetla Toèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Protok kroz magnetski volumetar odreðuje se temeljem:
+Odaberite jedan odgovor.
+	a. amplitude induciranog napona na mjernim elektrodama Toèno 	
+	b. frekvencije induciranog napona na mjernim elektrodama Netoèno 	
+	c. razlike uzbudnog i induciranog napona Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+	a. Niti jedan odgovor nije toèan Netoèno 	
+	b. rastereæenje nadzornog osoblja Netoèno 	
+	c. detekcija kvara odnosno procjena stanja opreme Toèno 	
+	d. smanjenje broja pogonskog osoblja Netoèno 	
+
+Nedostatak laserskog protokomjera je:
+Odaberite jedan odgovor.
+	a. osjetljivost na agresivne fluide Netoèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. primjena ogranièena samo na dovoljno prozirne fluide Toèno 	
+	d. spori odziv na promjenu brzine fluida Netoèno 	
+
+Rotametri se mogu instalirati:
+Odaberite jedan odgovor.
+	a. samo u vertikalnom položaju Toèno 	
+	b. u svim položajima Netoèno 	
+	c. Niti jedan odgovor nije toèan Netoèno 	
+	d. samo u horizontalnom položaju Netoèno 	
+
+Rezultati mjerenja tlaka pomoæu U-cijevi ovise o:
+Odaberite jedan odgovor.
+	a. gravitaciji Toèno 	
+	b. temperaturi okoline Netoèno 	
+	c. vlagi zraka Netoèno 	
+	d. Niti jedan odgovor nije toèan Netoèno 	
+
+Coriolisovim sjetnikom protoka mjeri se:
+Odaberite jedan odgovor.
+	a. maseni protok fluida Toèno 	
+	b. Niti jedan odgovor nije toèan Netoèno 	
+	c. volumni protok fluida Netoèno 	
+	d. brzina strujanja fluida Netoèno 	
