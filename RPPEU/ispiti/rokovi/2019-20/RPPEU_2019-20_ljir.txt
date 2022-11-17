@@ -1,0 +1,7 @@
+lemljenje na valu, 2 nacina
+izrada pcbova sa smd s obje strane
+vrste zakljucenja linija
+blokadni kond.
+pull up/down otpornici, kapacitivna sprega
+sheme s analognim i digitalnim masama, trebalo je odabrati najbolju
+oklopi za zastitu od mag polja

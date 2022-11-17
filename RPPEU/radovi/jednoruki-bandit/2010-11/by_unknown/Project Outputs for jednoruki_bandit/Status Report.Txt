@@ -1,0 +1,6 @@
+   Printed Document[PCB_Jednoruki_bandit.PcbDoc]
+
+Files Generated   : 0
+Documents Printed : 1
+
+Finished Output Generation At 21:37:29 On 28.5.2011.

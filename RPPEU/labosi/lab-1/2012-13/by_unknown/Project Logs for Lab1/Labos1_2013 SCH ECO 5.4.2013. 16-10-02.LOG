@@ -1,0 +1,154 @@
+Removed Parameter Code_JEDEC:DO-204-AH from Part V1
+Removed Parameter ComponentLink1Description:Manufacturer Link from Part V1
+Removed Parameter ComponentLink1URL:http://www.fairchildsemi.com/ from Part V1
+Removed Parameter ComponentLink2Description:Datasheet from Part V1
+Removed Parameter ComponentLink2URL:http://www.fairchildsemi.com/ds/1N%2F1N4148.pdf from Part V1
+Removed Parameter DatasheetVersion:1997 from Part V1
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part C1
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part C4
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part C5
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part C_B1
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part R1
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part R2
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part R3
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part R4
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part S1
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part S2
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part V1
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part X1
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part X2
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part C1
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part C4
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part C5
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part C_B1
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part R1
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part R2
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part R3
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part R4
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part S1
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part S2
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part V1
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part X1
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part X2
+Removed Parameter PackageDescription:Axial Device, Thru-Hole; 2 Leads; 0.4 in Pin Spacing from Part R1
+Removed Parameter PackageDescription:Axial Device, Thru-Hole; 2 Leads; 0.4 in Pin Spacing from Part R2
+Removed Parameter PackageDescription:Axial Device, Thru-Hole; 2 Leads; 0.4 in Pin Spacing from Part R3
+Removed Parameter PackageDescription:Axial Device, Thru-Hole; 2 Leads; 0.4 in Pin Spacing from Part R4
+Removed Parameter PackageDescription:Diode, Axial; Body 3.8 x 1.9 mm (LxDia. max), Lead Dia. 0.53 mm (max) from Part V1
+Removed Parameter PackageDescription:Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing from Part C1
+Removed Parameter PackageDescription:Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing from Part C4
+Removed Parameter PackageDescription:Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing from Part C5
+Removed Parameter PackageDescription:Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing from Part C_B1
+Removed Parameter PackageDescription:Switch; 2 Leads from Part S1
+Removed Parameter PackageDescription:Switch; 2 Leads from Part S2
+Removed Parameter PackageReference:AXIAL-0.4 from Part R1
+Removed Parameter PackageReference:AXIAL-0.4 from Part R2
+Removed Parameter PackageReference:AXIAL-0.4 from Part R3
+Removed Parameter PackageReference:AXIAL-0.4 from Part R4
+Removed Parameter PackageReference:DO-35 from Part V1
+Removed Parameter PackageReference:RAD-0.3 from Part C1
+Removed Parameter PackageReference:RAD-0.3 from Part C4
+Removed Parameter PackageReference:RAD-0.3 from Part C5
+Removed Parameter PackageReference:RAD-0.3 from Part C_B1
+Removed Parameter PackageReference:SPST-2 from Part S1
+Removed Parameter PackageReference:SPST-2 from Part S2
+Removed Parameter Published:8-Jun-2000 from Part C1
+Removed Parameter Published:8-Jun-2000 from Part C4
+Removed Parameter Published:8-Jun-2000 from Part C5
+Removed Parameter Published:8-Jun-2000 from Part C_B1
+Removed Parameter Published:8-Jun-2000 from Part R1
+Removed Parameter Published:8-Jun-2000 from Part R2
+Removed Parameter Published:8-Jun-2000 from Part R3
+Removed Parameter Published:8-Jun-2000 from Part R4
+Removed Parameter Published:8-Jun-2000 from Part V1
+Removed Parameter Published:24-Mar-1999 from Part S1
+Removed Parameter Published:24-Mar-1999 from Part S2
+Removed Parameter Publisher:Altium Limited from Part C1
+Removed Parameter Publisher:Altium Limited from Part C4
+Removed Parameter Publisher:Altium Limited from Part C5
+Removed Parameter Publisher:Altium Limited from Part C_B1
+Removed Parameter Publisher:Altium Limited from Part R1
+Removed Parameter Publisher:Altium Limited from Part R2
+Removed Parameter Publisher:Altium Limited from Part R3
+Removed Parameter Publisher:Altium Limited from Part R4
+Removed Parameter Publisher:Altium Limited from Part S1
+Removed Parameter Publisher:Altium Limited from Part S2
+Removed Parameter Publisher:Altium Limited from Part V1
+Removed Parameter Publisher:Altium Limited from Part X1
+Removed Parameter Publisher:Altium Limited from Part X2
+Removed Parameter Value:1K from Part R1
+Removed Parameter Value:1K from Part R2
+Removed Parameter Value:1K from Part R3
+Removed Parameter Value:1K from Part R4
+Removed Parameter Value:100pF from Part C1
+Removed Parameter Value:100pF from Part C4
+Removed Parameter Value:100pF from Part C5
+Removed Parameter Value:100pF from Part C_B1
+Added Parameter Cijena [Kn]=0,05 to Part R2
+Added Parameter Cijena [Kn]=0,07 to Part R1
+Added Parameter Cijena [Kn]=0,07 to Part R3
+Added Parameter Cijena [Kn]=0,07 to Part R4
+Added Parameter Cijena [Kn]=0,24 to Part C1
+Added Parameter Cijena [Kn]=0,26 to Part C4
+Added Parameter Cijena [Kn]=0,26 to Part C5
+Added Parameter Cijena [Kn]=0,26 to Part C_B1
+Added Parameter Cijena [Kn]=0,32 to Part V1
+Added Parameter Cijena [Kn]=0,33 to Part C2
+Added Parameter Cijena [Kn]=0,33 to Part C3
+Added Parameter Cijena [Kn]=2,86 to Part A1
+Added Parameter Cijena [Kn]=3,40 to Part X2
+Added Parameter Cijena [Kn]=3,84 to Part A2
+Added Parameter Cijena [Kn]=3,94 to Part X1
+Added Parameter Cijena [Kn]=28,89 to Part S1
+Added Parameter Cijena [Kn]=28,89 to Part S2
+Added Parameter Dobavljaè=Farnell to Part A1
+Added Parameter Dobavljaè=Farnell to Part A2
+Added Parameter Dobavljaè=Farnell to Part C1
+Added Parameter Dobavljaè=Farnell to Part C2
+Added Parameter Dobavljaè=Farnell to Part C3
+Added Parameter Dobavljaè=Farnell to Part C4
+Added Parameter Dobavljaè=Farnell to Part C5
+Added Parameter Dobavljaè=Farnell to Part C_B1
+Added Parameter Dobavljaè=Farnell to Part R1
+Added Parameter Dobavljaè=Farnell to Part R2
+Added Parameter Dobavljaè=Farnell to Part R3
+Added Parameter Dobavljaè=Farnell to Part R4
+Added Parameter Dobavljaè=Farnell to Part S1
+Added Parameter Dobavljaè=Farnell to Part S2
+Added Parameter Dobavljaè=Farnell to Part V1
+Added Parameter Dobavljaè=Farnell to Part X1
+Added Parameter Dobavljaè=Farnell to Part X2
+Added Parameter Kat. broj=1127905 to Part R1
+Added Parameter Kat. broj=1127905 to Part R3
+Added Parameter Kat. broj=1127905 to Part R4
+Added Parameter Kat. broj=1127978 to Part R2
+Added Parameter Kat. broj=1357683 to Part S1
+Added Parameter Kat. broj=1357683 to Part S2
+Added Parameter Kat. broj=1459520 to Part A1
+Added Parameter Kat. broj=1575574 to Part A2
+Added Parameter Kat. broj=1694101 to Part C4
+Added Parameter Kat. broj=1694101 to Part C5
+Added Parameter Kat. broj=1694101 to Part C_B1
+Added Parameter Kat. broj=1694233 to Part C1
+Added Parameter Kat. broj=1902919 to Part C3
+Added Parameter Kat. broj=1902922 to Part C2
+Added Parameter Kat. broj=1925631 to Part X1
+Added Parameter Kat. broj=2254692 to Part X2
+Added Parameter Kat. broj=9843680 to Part V1
+Added Parameter Tip=1N4148 to Part V1
+Added Parameter Tip=2-pinski konektor to Part X2
+Added Parameter Tip=3-pinski konektor to Part X1
+Added Parameter Tip=10k to Part R1
+Added Parameter Tip=10k to Part R3
+Added Parameter Tip=10k to Part R4
+Added Parameter Tip=100k to Part R2
+Added Parameter Tip=100n/50V to Part C3
+Added Parameter Tip=100n to Part C4
+Added Parameter Tip=100n to Part C5
+Added Parameter Tip=100n to Part C_B1
+Added Parameter Tip=220pF to Part C1
+Added Parameter Tip=330n/50V to Part C2
+Added Parameter Tip=OpAmp LM358 to Part A1
+Added Parameter Tip=Sklopka M2015SS1W01 to Part S1
+Added Parameter Tip=Sklopka M2015SS1W01 to Part S2
+Added Parameter Tip=UA7805CKCS to Part A2

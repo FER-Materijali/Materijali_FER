@@ -1,0 +1,13 @@
+Field=Designator~String~Designator~100|Field=Comment~String~Comment~100|Field=Footprint~String~Footprint~100|Field=Dobavljaè~String~Dobavljaè~100|Field=Kat. broj~String~Kat. broj~100|Field=Cijena [Kn]~String~Cijena [Kn]~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~Lab1.PrjPcb|ReportField=ProjectFullPath~D:\Dokumenti\FER\Raèunalom podržano projektiranje elektronièkih ureðaja\Lab1\Lab1.PrjPcb|ReportField=Title~Bill of Materials For Project [Lab1.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~17|ReportField=ReportTime~16:16:26|ReportField=ReportDate~5.4.2013.|ReportField=ReportDateTime~5.4.2013. 16:16:26|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~5.4.2013.|ReportField=CurrentTime~16:14:21|ReportField=Date~|ReportField=DocumentFullPathAndName~D:\Dokumenti\FER\Raèunalom podržano projektiranje elektronièkih ureðaja\Lab1\Labos1_2013.SchDoc|ReportField=DocumentName~Labos1_2013.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~5.4.2013.|ReportField=Organization~|ReportField=ProjectName~Lab1.PrjPcb|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~Lab1.PrjPcb|ReportField=DataSourceFullPath~D:\Dokumenti\FER\Raèunalom podržano projektiranje elektronièkih ureðaja\Lab1\Lab1.PrjPcb
+A1|LM358|DIP-8|Farnell|1459520|2,86|1
+A2|uA78L05CKC|KC-03|Farnell|1575574|3,84|1
+C1|220p|RAD-0.1|Farnell|1694233|0,24|1
+C2|330n/50V|CAPPR2-5x6.8|Farnell|1902922|0,33|1
+C3|100n/16V|CAPPR2-5x6.8|Farnell|1902919|0,33|1
+C4, C5, C_B1|100n|RAD-0.1|Farnell|1694101|0,26|3
+R1, R3, R4|10k|AXIAL-0.4|Farnell|1127905|0,07|3
+R2|100k|AXIAL-0.4|Farnell|1127978|0,05|1
+S1, S2|SW-SPST|Toggle|Farnell|1357683|28,89|2
+V1|Diode 1N4148|DO-35|Farnell|9843680|0,32|1
+X1|Signal|HDR1X3|Farnell|1925631|3,94|1
+X2|Header 2|BAT-2|Farnell|2254692|3,40|1

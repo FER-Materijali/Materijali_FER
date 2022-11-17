@@ -1,0 +1,10 @@
+Output: Protel
+Type  : ProtelNetlist
+From  : Project [Lab1.PrjPcb]
+   Generated File[Labos1_2013.NET]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 16:21:12 On 5.4.2013.
