@@ -1,0 +1,17 @@
+for screen_x = x1 to x2 by 1 do
+		x = (screen_x - x1)*fact_x + x_min
+		y = eval(tok, x)
+		if atom(y) then
+			screen_y = y1 + (screen_height - (y - y_min)/fact_y)
+			if screen_y < y1 or screen_y > y2 then
+				fst = 1
+			else
+				if not fst then
+					draw_line(col, {{last_x,last_y},{screen_x, screen_y}})
+				else
+					pixel(col, {screen_x, screen_y})
+				end if
+				last_x = screen_x
+				last_y = screen_y
+				fst = 0
+			end if

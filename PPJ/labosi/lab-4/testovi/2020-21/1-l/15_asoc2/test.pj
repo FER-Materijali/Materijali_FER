@@ -1,0 +1,4 @@
+rez = 12
+za i od 1 do 5
+    rez = rez + i - 2 + 15 - i*i - i
+az

@@ -1,0 +1,88 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="SSPsucelje.Window1"
+	x:Name="Window"
+	Title="Program za računanje rekurzivnih relacija"
+	FontSize="14"
+    WindowStyle="None"
+    ResizeMode="NoResize"
+    MouseLeftButtonDown="Drag_EventHandler"
+	Width="915" Height="357" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" Background="#FFBCBCBC">
+	<Window.Resources>
+		<Color x:Key="Color1">#FF5E71D5</Color>
+		<Color x:Key="Color2">#FF5E71D5</Color>
+		<DrawingBrush x:Key="Brush1" TileMode="FlipX" Viewbox="0,0,20,20" ViewboxUnits="Absolute">
+			<DrawingBrush.Drawing>
+				<DrawingGroup>
+					<GeometryDrawing Brush="#FFD3D3D3">
+						<GeometryDrawing.Geometry>
+							<RectangleGeometry Rect="0,0,20,20"/>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing Brush="#FF000000">
+						<GeometryDrawing.Geometry>
+							<EllipseGeometry Center="0,0" RadiusX="10" RadiusY="10"/>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing Brush="#FF000000">
+						<GeometryDrawing.Geometry>
+							<EllipseGeometry Center="20,20" RadiusX="10" RadiusY="10"/>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing Brush="#FFFFFFFF">
+						<GeometryDrawing.Geometry>
+							<EllipseGeometry Center="20,0" RadiusX="10" RadiusY="10"/>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing Brush="#FFFFFFFF">
+						<GeometryDrawing.Geometry>
+							<EllipseGeometry Center="0,20" RadiusX="10" RadiusY="10"/>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup>
+			</DrawingBrush.Drawing>
+		</DrawingBrush>
+	</Window.Resources>
+	
+	<Grid x:Name="LayoutRoot">
+		<TextBox Margin="29.354,123.512,0,0" Text="f(n) = f(n-1) + f(n-2);" TextWrapping="Wrap" x:Name="unosRekurzijeBox" Opacity="1"   Width="273.662" HorizontalAlignment="Left" Height="36.949" VerticalAlignment="Top"/>
+		<Rectangle Height="45.441" x:Name="HeaderRectangle" VerticalAlignment="Top" Margin="-2.114,-1.903,-0.628,0" RenderTransformOrigin="0.5,0.5" Opacity="0.785" Fill="#FF2235BB" >
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="-1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Label HorizontalAlignment="Left" VerticalAlignment="Top" Content="Program za računanje rekurzivnih relacija" Height="31.458" Width="304.973" Margin="8,8,0,0" FontWeight="Bold" d:IsStaticText="True" FontFamily="./Fonts\#Tahoma"/>
+		<Label  VerticalAlignment="Top" Content="Unesite rekurzivnu relaciju:" Height="28.535" Margin="29.354,94.977,0,0" HorizontalAlignment="Left" Width="177.662"/>
+		<Label Content="Rezultat:" Margin="65.227,0,0,58.339" VerticalAlignment="Bottom" Height="24.535" Width="63.321" HorizontalAlignment="Left"/>
+		<TextBox Margin="141.748,0,0,54.675" Text="" TextWrapping="Wrap" x:Name="rezultatBox" VerticalAlignment="Bottom" Height="28.199" Width="243.97" HorizontalAlignment="Left"/>
+		<TextBox  HorizontalAlignment="Right" Width="106.293" Margin="0,123.512,54.966,66.675" x:Name="dodaniUvjeti"/>
+		<Label  VerticalAlignment="Top" Content="Zadani početni uvjeti:" Height="28.535" Margin="0,90.977,40.272,0" HorizontalAlignment="Right" Width="141.987"/>
+		<Button HorizontalAlignment="Left" Margin="65.227,0,0,112.701" VerticalAlignment="Bottom" Width="73.631" Height="25.173" Content="Izracunaj" BorderThickness="3,3,3,3" Visibility="Visible" Opacity="1" Background="#FFFFFFFF" Click="Pokreni_Program" />
+		<Label  VerticalAlignment="Top" Content="Unesite n:" Height="24.535" Margin="333.056,94.977,0,0" Width="70.662" HorizontalAlignment="Left"/>
+		<TextBox Margin="348,132.512,0,0" Text="" TextWrapping="Wrap" x:Name="unosnBox" Opacity="1"  HorizontalAlignment="Left" Width="46.268" Height="23" VerticalAlignment="Top" />
+		<Button Margin="449.227,0,379.142,99.675" VerticalAlignment="Bottom" Height="25.199" Content="Dodaj uvjet" BorderThickness="3,3,3,3" Visibility="Visible" Opacity="1" Background="#FFFFFFFF" Click="Dodaj_Uvjet" RenderTransformOrigin="0.484,-0.243" />
+		<Button Margin="0,0,259.378,99.675" VerticalAlignment="Bottom" Height="25.173" Content="Obriši sve" BorderThickness="3,3,3,3" Visibility="Visible" Opacity="1" Background="#FFFFFFFF" Click="Obrisi_Sve" HorizontalAlignment="Right" Width="73.631" />
+		<TextBox Margin="0,176.461,379.142,157.539" Text="" TextWrapping="Wrap" x:Name="unosMjestoBox" Opacity="1"  HorizontalAlignment="Right" Width="57.268"  Height="23" RenderTransformOrigin="2.242,0.495" />
+		<TextBox Margin="0,176.461,275.741,157.539" Text="" Height="23" TextWrapping="Wrap" x:Name="unosnVrijednostBox" Opacity="1"  RenderTransformOrigin="-1.495,0.459" HorizontalAlignment="Right" Width="57.268" />
+		<Label Content="Mjesto:" Margin="0,145.512,379.142,0" Width="57.268" HorizontalAlignment="Right" Height="26.949" VerticalAlignment="Top"/>
+		<Label Content="Vrijednost:" Margin="0,144.512,259.378,0" HorizontalAlignment="Right" Width="85.867" Height="27.949" VerticalAlignment="Top" />
+		<Label  VerticalAlignment="Top" FontSize="13" Content="Unesite vrjednost i mjesto početnog uvjeta" Height="34" Margin="437,95.977,214,0"/>
+		<Rectangle x:Name="HeaderRectangle_Copy" Margin="-1.114,0,-1.628,-2.538" RenderTransformOrigin="0.5,0.5" Opacity="0.785" Fill="#FF2235BB" VerticalAlignment="Bottom" Height="24.441" >
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="-1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Button HorizontalAlignment="Right" Margin="0,8,16.369,0" Width="27.631" Content="X" BorderThickness="3,3,3,3" Visibility="Visible" Opacity="1" Background="#FFFFFFFF" Click="Zatvori_Program" VerticalAlignment="Top" Height="25.851" />
+	</Grid>
+</Window>

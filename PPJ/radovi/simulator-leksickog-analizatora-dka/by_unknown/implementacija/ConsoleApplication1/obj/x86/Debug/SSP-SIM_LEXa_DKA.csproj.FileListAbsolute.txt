@@ -1,0 +1,21 @@
+C:\Documents and Settings\Oberon\Desktop\SSP - DKA LEX SIM\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Oberon\Desktop\SSP - DKA LEX SIM\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\Oberon\Desktop\SSP - DKA LEX SIM\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Documents and Settings\Oberon\Desktop\SSP - DKA LEX SIM\ConsoleApplication1\bin\Debug\regularniIzrazi.txt
+C:\Documents and Settings\Oberon\Desktop\SSP - DKA LEX SIM\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\Oberon\Desktop\SSP - DKA LEX SIM\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Documents and Settings\Oberon\Desktop\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\Oberon\Desktop\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Documents and Settings\Oberon\Desktop\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\bin\Debug\regularniIzrazi.txt
+C:\Documents and Settings\Oberon\Desktop\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\Oberon\Desktop\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Documents and Settings\Oberon\Desktop\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\FAKS\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+D:\FAKS\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+D:\FAKS\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\bin\Debug\regularniIzrazi.txt
+D:\FAKS\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\FAKS\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\FAKS\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\FAKS\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\bin\Debug\ulaz.txt
+C:\Documents and Settings\Oberon\Desktop\Izvorni Kod\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\Oberon\Desktop\Izvorni Kod\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb

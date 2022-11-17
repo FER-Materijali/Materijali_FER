@@ -1,0 +1,25 @@
+%pragma
+intok( on, off ); // allow inline token declarations, case insesitive
+dkey( off );      // detect keywords mode is turned off
+rtc( off, 4 );    // resolve token conflicts mode is turned off
+
+alg( lr1 );       // enable LR(1) alogorithm   
+
+%tokens
+'[ \n\t\r]+'                       wspace,     %ignore;
+
+'e'                           	   e,    'e';
+'a'                                a,    'a';
+'b'                                b,    'b';
+
+%production S
+
+S 	: 	a E a 
+	| 	b E b 
+	| 	a E b 
+	| 	b E a 
+	;
+
+E 	: 	S e
+	|	e
+	;

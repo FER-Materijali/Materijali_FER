@@ -1,0 +1,109 @@
+<program>
+ <lista_naredbi>
+  <naredba>
+   <naredba_pridruzivanja>
+    IDN 1 s
+    OP_PRIDRUZI 1 =
+    <E>
+     <T>
+      <P>
+       IDN 1 s
+      <T_lista>
+       OP_PUTA 1 *
+       <T>
+        <P>
+         BROJ 1 1212
+        <T_lista>
+         $
+     <E_lista>
+      $
+  <lista_naredbi>
+   <naredba>
+    <naredba_pridruzivanja>
+     IDN 2 s
+     OP_PRIDRUZI 2 =
+     <E>
+      <T>
+       <P>
+        BROJ 2 1066
+       <T_lista>
+        $
+      <E_lista>
+       OP_PLUS 2 +
+       <E>
+        <T>
+         <P>
+          BROJ 2 307
+         <T_lista>
+          OP_PUTA 2 *
+          <T>
+           <P>
+            IDN 2 s
+           <T_lista>
+            $
+        <E_lista>
+         $
+   <lista_naredbi>
+    <naredba>
+     <naredba_pridruzivanja>
+      IDN 3 a
+      OP_PRIDRUZI 3 =
+      <E>
+       <T>
+        <P>
+         BROJ 3 1176
+        <T_lista>
+         $
+       <E_lista>
+        OP_MINUS 3 -
+        <E>
+         <T>
+          <P>
+           BROJ 3 307
+          <T_lista>
+           OP_PUTA 3 *
+           <T>
+            <P>
+             BROJ 3 50
+            <T_lista>
+             $
+         <E_lista>
+          $
+    <lista_naredbi>
+     <naredba>
+      <naredba_pridruzivanja>
+       IDN 4 e
+       OP_PRIDRUZI 4 =
+       <E>
+        <T>
+         <P>
+          BROJ 4 1006
+         <T_lista>
+          OP_PUTA 4 *
+          <T>
+           <P>
+            IDN 4 a
+           <T_lista>
+            $
+        <E_lista>
+         $
+     <lista_naredbi>
+      <naredba>
+       <naredba_pridruzivanja>
+        IDN 5 z
+        OP_PRIDRUZI 5 =
+        <E>
+         <T>
+          <P>
+           BROJ 5 73
+          <T_lista>
+           OP_PUTA 5 *
+           <T>
+            <P>
+             BROJ 5 505
+            <T_lista>
+             $
+         <E_lista>
+          $
+      <lista_naredbi>
+       $

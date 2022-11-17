@@ -1,0 +1,5 @@
+3
+X,Y,a
+Y,Z,a
+Z,K,a
+X,K,a

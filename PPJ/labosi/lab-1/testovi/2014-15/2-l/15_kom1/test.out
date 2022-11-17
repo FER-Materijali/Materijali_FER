@@ -1,0 +1,5 @@
+IDN 1 a
+OP_PRIDRUZI 1 =
+IDN 1 x
+OP_PLUS 1 +
+IDN 1 y

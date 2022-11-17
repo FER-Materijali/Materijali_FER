@@ -1,0 +1,133 @@
+<program>
+ <lista_naredbi>
+  <naredba>
+   <naredba_pridruzivanja>
+    IDN 1 n
+    OP_PRIDRUZI 1 =
+    <E>
+     <T>
+      <P>
+       BROJ 1 10
+      <T_lista>
+       $
+     <E_lista>
+      $
+  <lista_naredbi>
+   <naredba>
+    <naredba_pridruzivanja>
+     IDN 2 rez
+     OP_PRIDRUZI 2 =
+     <E>
+      <T>
+       <P>
+        BROJ 2 0
+       <T_lista>
+        $
+      <E_lista>
+       $
+   <lista_naredbi>
+    <naredba>
+     <naredba_pridruzivanja>
+      IDN 3 i
+      OP_PRIDRUZI 3 =
+      <E>
+       <T>
+        <P>
+         BROJ 3 15
+        <T_lista>
+         $
+       <E_lista>
+        $
+    <lista_naredbi>
+     <naredba>
+      <za_petlja>
+       KR_ZA 4 za
+       IDN 4 i
+       KR_OD 4 od
+       <E>
+        <T>
+         <P>
+          BROJ 4 1
+         <T_lista>
+          $
+        <E_lista>
+         $
+       KR_DO 4 do
+       <E>
+        <T>
+         <P>
+          IDN 4 n
+         <T_lista>
+          $
+        <E_lista>
+         $
+       <lista_naredbi>
+        <naredba>
+         <naredba_pridruzivanja>
+          IDN 5 rez
+          OP_PRIDRUZI 5 =
+          <E>
+           <T>
+            <P>
+             IDN 5 rez
+            <T_lista>
+             $
+           <E_lista>
+            OP_PLUS 5 +
+            <E>
+             <T>
+              <P>
+               IDN 5 i
+              <T_lista>
+               OP_PUTA 5 *
+               <T>
+                <P>
+                 IDN 5 i
+                <T_lista>
+                 OP_PUTA 5 *
+                 <T>
+                  <P>
+                   IDN 5 i
+                  <T_lista>
+                   $
+             <E_lista>
+              $
+        <lista_naredbi>
+         <naredba>
+          <naredba_pridruzivanja>
+           IDN 6 x
+           OP_PRIDRUZI 6 =
+           <E>
+            <T>
+             <P>
+              BROJ 6 5
+             <T_lista>
+              $
+            <E_lista>
+             $
+         <lista_naredbi>
+          $
+       KR_AZ 7 az
+     <lista_naredbi>
+      <naredba>
+       <naredba_pridruzivanja>
+        IDN 8 i
+        OP_PRIDRUZI 8 =
+        <E>
+         <T>
+          <P>
+           IDN 8 i
+          <T_lista>
+           $
+         <E_lista>
+          OP_PLUS 8 +
+          <E>
+           <T>
+            <P>
+             BROJ 8 1
+            <T_lista>
+             $
+           <E_lista>
+            $
+      <lista_naredbi>
+       $

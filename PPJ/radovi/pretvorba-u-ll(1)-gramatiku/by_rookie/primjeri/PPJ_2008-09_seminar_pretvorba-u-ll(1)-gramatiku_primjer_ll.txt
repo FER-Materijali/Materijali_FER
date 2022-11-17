@@ -1,0 +1,7 @@
+<S>->acdz<A>zz
+<A>->bla2
+<S>->ac<A>
+<A>->bla1
+<S>->aznj
+<S>->acdbc
+<S>->a<A>

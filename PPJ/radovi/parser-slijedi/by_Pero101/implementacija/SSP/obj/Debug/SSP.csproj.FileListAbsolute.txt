@@ -1,0 +1,12 @@
+D:\FAKS\5. semestar\PPJ\SSP\SSP\SSP\obj\Debug\ResolveAssemblyReference.cache
+D:\FAKS\5. semestar\PPJ\SSP\SSP\SSP\obj\Debug\SSP.Form1.resources
+D:\FAKS\5. semestar\PPJ\SSP\SSP\SSP\obj\Debug\SSP.Properties.Resources.resources
+D:\FAKS\5. semestar\PPJ\SSP\SSP\SSP\obj\Debug\SSP.csproj.GenerateResource.Cache
+D:\FAKS\5. semestar\PPJ\SSP\SSP\SSP\bin\Debug\SSP.exe
+D:\FAKS\5. semestar\PPJ\SSP\SSP\SSP\bin\Debug\SSP.pdb
+D:\FAKS\5. semestar\PPJ\SSP\SSP\SSP\obj\Debug\SSP.exe
+D:\FAKS\5. semestar\PPJ\SSP\SSP\SSP\obj\Debug\SSP.pdb
+D:\FAKS\5. semestar\PPJ\SSP\Predaja\Kod - vs2008 projekt\SSP\obj\Debug\SSP.exe
+D:\FAKS\5. semestar\PPJ\SSP\Predaja\Kod - vs2008 projekt\SSP\obj\Debug\SSP.pdb
+C:\Users\Pero\Desktop\SSP\Kod - vs2008 projekt\SSP\obj\Debug\SSP.exe
+C:\Users\Pero\Desktop\SSP\Kod - vs2008 projekt\SSP\obj\Debug\SSP.pdb

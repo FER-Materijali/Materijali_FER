@@ -1,0 +1,44 @@
+function functionname(segmentA, segmentB)
+{
+   while (segmentA != segmentB) {
+    if (segmentA > segmentB) {
+      segmentA = segmentB;
+    } else {
+      segmentB = segmentA;
+    }
+  }
+  return segmentA;
+}
+
+function MyObject(attributeA, attributeB) {
+  this.attributeA = attributeA;
+  this.attributeB = attributeB;
+ attributeA=-1*(atributeA&&0)<2;
+}
+
+var fn = function()
+{  
+   do {
+    statements;
+   } while (condition);
+
+   for (initial;end;statement) {}
+
+  switch (expr) 
+  {
+   case a: 
+     break;
+   case b: 
+     continue;
+   default:
+     break;
+   }
+
+  var x = 1;
+  x = 3*(a<b);
+  document.write( x );
+
+};
+
+var anObject = new Object();
+obj = new MyObject('red', 1000);

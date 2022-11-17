@@ -1,0 +1,6 @@
+x = 1
+n = 10 
+za i od 1 do n
+ x = i * 3    
+az
+y = i + 1

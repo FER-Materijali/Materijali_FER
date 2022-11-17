@@ -1,0 +1,31 @@
+function functionname(attributeA, attributeB)  {
+  this.attributeA = attributeA;
+  this.attributeB = attributeB;
+
+  while (attributeA != attributeB) {
+    if (attributeA > attributeB) {
+      attributeA = attributeB; 
+    }  else 
+      attributeA=-1*(atributeB&&0.1)<2;
+  }
+
+  switch (expr)   {
+   case a:     break;
+   case b:     continue;
+   default:     break;
+  }
+
+   do {
+    statements;
+   } while (condition);
+
+   for (initial;end;statement) {}
+
+  return segmentA;
+}
+
+var fn = function()   { 
+  var anObject = new Object();
+  obj = new MyObject('string', 100);
+  obj.write( x );
+};

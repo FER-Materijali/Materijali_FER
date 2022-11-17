@@ -1,0 +1,5 @@
+c = 123
+x = 5
+za c od c * 2 do c * 3
+ x = x + c
+az

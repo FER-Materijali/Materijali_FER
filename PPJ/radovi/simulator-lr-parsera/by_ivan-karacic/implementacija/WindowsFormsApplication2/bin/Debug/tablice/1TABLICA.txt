@@ -1,0 +1,10 @@
+﻿b	c	!	<S>	<A>	<B>
+p1	o	o	o	o	o
+p2	o	o	o	s3	o
+p5	o	o	o	o	s6
+p4	o	o	o	o	s7
+o	o	r3	o	o	o
+o	r3	o	o	o	o
+o	p8	o	o	o	o
+o	o	r1P	o	o	o
+r2	o	o	o	o	o

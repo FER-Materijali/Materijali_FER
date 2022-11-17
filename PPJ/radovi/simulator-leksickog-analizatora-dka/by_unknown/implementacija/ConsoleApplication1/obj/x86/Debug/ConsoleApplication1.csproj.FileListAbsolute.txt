@@ -1,0 +1,8 @@
+C:\Documents and Settings\Oberon\Local Settings\Application Data\Temporary Projects\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Oberon\Local Settings\Application Data\Temporary Projects\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\Oberon\Local Settings\Application Data\Temporary Projects\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Documents and Settings\Oberon\Local Settings\Application Data\Temporary Projects\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\Oberon\Local Settings\Application Data\Temporary Projects\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Documents and Settings\Oberon\Local Settings\Application Data\Temporary Projects\ConsoleApplication1\bin\Debug\regularniIzrazi.txt
+C:\Documents and Settings\Oberon\Desktop\SSP - DKA LEX SIM\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\Oberon\Desktop\SSP - DKA LEX SIM\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb

@@ -1,0 +1,5 @@
+rez = -43
+za rez od -1 do 2
+    j = rez*rez
+az
+rez = rez + 2

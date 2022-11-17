@@ -1,0 +1,20 @@
+;vibi 1 *Ÿetiri /4 -
+	 `ORG 0
+	LDR R0, vibi
+	LDR R1, #1
+	MUL R0, R0, R1
+	LDR R1, etiri
+	MOV R14, #0
+DIV
+	CMP R0, R1
+	BHI KRAJ
+	SUB R0, R0, R1
+	ADD R14, R14, #1
+	B DIV
+KRAJ
+	MOV R0, R14
+	LDR R1, #4
+	SUB R0, R0, R1
+kraj	SWI	123456
+vibi	DW %D13
+etiri	DW %D8

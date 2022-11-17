@@ -1,0 +1,7 @@
+rez = 0
+za i od 0 do 5
+    k = i*i
+    za j od k do k+2
+        rez = rez + j/2 + k
+    az
+az

@@ -1,0 +1,11 @@
+Tablica2    a           b          c          d         e         $
+ 
+   S      Odbaci      Odbaci     Pomakni    Odbaci    Odbaci    Pronadi
+   A	 Pomakni     Pomakni     Pronadi    Odbaci    Odbaci    Pronadi
+   B	  Odbaci      Odbaci     Pronadi    Odbaci    Odbaci    Pronadi
+   a     Pronadi     Pronadi     Pronadi    Odbaci    Odbaci    Pronadi
+   b      Odbaci      Odbaci      Odbaci   Pomakni   Pomakni     Odbaci
+   c     Pomakni      Odbaci     Pronadi   Pomakni   Pomakni    Pronadi
+   d      Odbaci     Pomakni      Odbaci    Odbaci    Odbaci     Odbaci
+   e     Pronadi     Pronadi     Pronadi    Odbaci    Odbaci    Pronadi
+   #      Odbaci     Pomakni      Odbaci    Odbaci    Odbaci     Odbaci

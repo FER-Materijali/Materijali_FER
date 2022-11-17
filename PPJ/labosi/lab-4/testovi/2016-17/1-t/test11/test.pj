@@ -1,0 +1,6 @@
+i = 5
+rez = -5
+za j od 0 do i*i
+    rez = rez + j*j
+    i = i - 1
+az

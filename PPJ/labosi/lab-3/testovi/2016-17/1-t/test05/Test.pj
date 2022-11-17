@@ -1,0 +1,9 @@
+x = 2 
+k = 0
+za i od 1 do 5
+ x = x * i
+ za j od 5 do 8
+  k = x + 3
+ az
+az
+k = k + 1

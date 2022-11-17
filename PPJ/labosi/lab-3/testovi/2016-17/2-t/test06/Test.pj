@@ -1,0 +1,13 @@
+x = 2 
+za i od 1 do 5
+ za j od 1 do 5
+  za k od 1 do 5
+   za l od 1 do 5
+    za m od 1 do 5
+	 x = i + j + k + l + m
+	az
+   az
+  az
+ az 
+az
+x = x + 3

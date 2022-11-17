@@ -1,0 +1,9 @@
+BROJ 6 123
+BROJ 6 3
+IDN 6 abc312
+IDN 6 abc
+BROJ 6 123
+OP_PLUS 6 +
+IDN 6 x
+OP_MINUS 6 -
+IDN 6 x

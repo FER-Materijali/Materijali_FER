@@ -1,0 +1,12 @@
+D:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\JP\JP\bin\Release\JP.exe
+D:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\JP\JP\bin\Release\JP.pdb
+D:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\JP\JP\obj\Release\ResolveAssemblyReference.cache
+D:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\JP\JP\obj\Release\JP.exe
+D:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\JP\JP\obj\Release\JP.pdb
+D:\work\bezveze\JP\JP1\JP\JP\obj\Release\JP.exe
+D:\work\bezveze\JP\JP1\JP\JP\obj\Release\JP.pdb
+D:\work\bezveze\JP\JP1\JP\JP\bin\Release\JP.exe
+D:\work\bezveze\JP\JP1\JP\JP\bin\Release\JP.pdb
+D:\work\bezveze\JP\JP1\JP\JP\obj\Release\ResolveAssemblyReference.cache
+C:\Fax\PPJ\JP (1)\JP\JP\obj\Release\JP.exe
+C:\Fax\PPJ\JP (1)\JP\JP\obj\Release\JP.pdb

@@ -1,0 +1,6 @@
+C:\Documents and Settings\Oberon\Desktop\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\bin\Release\regularniIzrazi.txt
+C:\Documents and Settings\Oberon\Desktop\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\bin\Release\ConsoleApplication1.exe
+C:\Documents and Settings\Oberon\Desktop\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\bin\Release\ConsoleApplication1.pdb
+C:\Documents and Settings\Oberon\Desktop\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Oberon\Desktop\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\obj\x86\Release\ConsoleApplication1.exe
+C:\Documents and Settings\Oberon\Desktop\PPJ\SSP - DKA LEX SIM\ConsoleApplication1\obj\x86\Release\ConsoleApplication1.pdb

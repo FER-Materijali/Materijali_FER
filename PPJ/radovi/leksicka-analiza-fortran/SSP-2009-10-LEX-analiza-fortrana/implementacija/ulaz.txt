@@ -1,0 +1,49 @@
+PROGRAM imeprograma
+! komentar sve iza uskličnika
+
+  IMPLICIT NONE
+  
+  !deklaracije varijabala:
+  
+  
+  INTEGER, PARAMETER :: a, b=4, c=-2
+  REAL :: r
+  DOUBLE PRECISION :: dubl
+  COMPLEX :: c= (3, 2)
+  CHARACTER (LEN=7) :: char="jdt2345cps!s"
+  CHARACTER (LEN=*), PARAMETER :: char="jdtcpss"
+  LOGICAL :: logika, log=.TRUE.
+  
+  ! uvjeti, petlje...
+  IF(uvjet>50e-7 .OR. (dva2 == tri3 .AND. -3 .LT. 2)) PRINT*,vari45jabla
+  
+  IF(uvjet) THEN
+    a=7
+    b = 3.234E4
+  ELSEIF(uvjet) THEN
+    c=-4 + b
+    PRINT*, a, "neki string", c, -4
+  ELSE
+    d=7
+  ENDIF
+
+  ! predugačka varijabla
+  c = 7 - ovojejakovelikavarijablakojaimapreko254znakagle_imaiunderscoreove_823091382704917309516518746204891703459165198057195781093456810057811589723045968230952395734917_alfktjedugackaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  
+  
+  DO i=1,10d+2,2 ! i će biti 1,3,5,7,9.
+    a=3
+  END DO
+  
+  DO WHILE uvjet
+    c=7
+  END DO
+  
+  !poziv funkcije:
+  
+  rez = fun(3,2)	! ovdje (3,2) nije kompleksni broj
+  
+  READ*, a, b
+
+  !i kraj programa
+END PROGRAM imeprograma

@@ -1,0 +1,8 @@
+-produkcije tipa S->aD
+-bez razmaka
+-epsilon prod tipa T->
+-prva produkcija pocinje pocetnim znakom
+-ZAPoCinjE je tipa A={a,s,d}
+-dka maks 10 stanja
+-zapocinje mora sadrzavat sve nezavrsne
+-produkcije tipa A->A

@@ -1,0 +1,3 @@
+﻿ime (a)(b|$)(h)*
+prvaDefinicija (a|bc|def)(izraz|sa|$)(g|jk|lčć)
+proba (a|bcd|a(e|fg|$|(h|i|j)*|t)|krajprvezagrade)

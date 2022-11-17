@@ -1,0 +1,40 @@
+<program>
+ <lista_naredbi>
+  <naredba>
+   <naredba_pridruzivanja>
+    IDN 1 d
+    OP_PRIDRUZI 1 =
+    <E>
+     <T>
+      <P>
+       BROJ 1 583
+      <T_lista>
+       $
+     <E_lista>
+      $
+  <lista_naredbi>
+   <naredba>
+    <naredba_pridruzivanja>
+     IDN 2 d
+     OP_PRIDRUZI 2 =
+     <E>
+      <T>
+       <P>
+        OP_PLUS 2 +
+        <P>
+         L_ZAGRADA 2 (
+         <E>
+          <T>
+           <P>
+            IDN 2 d
+           <T_lista>
+            $
+          <E_lista>
+           $
+         D_ZAGRADA 2 )
+       <T_lista>
+        $
+      <E_lista>
+       $
+   <lista_naredbi>
+    $

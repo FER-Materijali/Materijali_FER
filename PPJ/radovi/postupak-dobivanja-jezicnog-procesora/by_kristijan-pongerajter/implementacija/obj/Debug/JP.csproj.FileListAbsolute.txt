@@ -1,0 +1,5 @@
+D:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\JP\JP\bin\Debug\JP.exe
+D:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\JP\JP\bin\Debug\JP.pdb
+D:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\JP\JP\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\JP\JP\obj\Debug\JP.exe
+D:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\JP\JP\obj\Debug\JP.pdb

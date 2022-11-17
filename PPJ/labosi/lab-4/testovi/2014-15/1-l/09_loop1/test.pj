@@ -1,0 +1,5 @@
+n = 12
+rez = 0
+za i od 1 do n
+    rez = rez + i
+az

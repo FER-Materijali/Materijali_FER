@@ -1,0 +1,15 @@
+MI iz PPJ (2012./2013.)
+
+1. Nabrojati dijelove analize i sinteze u prevodjenju
+2. Definirati razrj. nejednoznacnosti desnim kontekstom
+3. Definirati kad je (pod kojim uvjetima)atributna prijev. gram 
+   L-atributna prijevodna gram.
+4. ?
+5. Definirati korake izgradnje $NKA za LR(1) parser.
+
+6. regexi za Leks. analizator (sta ce se ispisati za ponudjene nizove)
+7. lijeva rekurzija u produkcijama gramatike (zadana gramatika)-izbaciti
+8. Jezicni procesori (zadani, trazeni...)
+9. Napraviti LL(1) parser za zadane produkcije gramatike
+10. Konstruirati atr. prijevodnu gramatiku (nekakva tezista multiskupa, 
+taj zadatak postoji u zbirci objavljenoj na http://fer.unizg.hr/predmet/ppj_a

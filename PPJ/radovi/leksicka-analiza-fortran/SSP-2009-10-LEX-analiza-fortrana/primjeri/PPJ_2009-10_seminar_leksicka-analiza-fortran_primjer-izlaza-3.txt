@@ -1,0 +1,20 @@
+indeks	identifikator
+---------------------
+0	imeprograma
+1	a
+2	b
+3	c
+4	r
+5	dubl
+6	char
+7	logika
+8	log
+9	uvjet
+10	dva2
+11	tri3
+12	vari45jabla
+13	d
+14	i
+15	rez
+16	fun
+---------------------

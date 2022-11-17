@@ -1,0 +1,11 @@
+<% @TinyPG Language="vb" %>
+
+EOF		-> @"^$";
+a		-> @"a";
+b 		-> @"b";
+c 		-> @"e";
+
+Start		-> S EOF ;
+S		-> a E a | b E b | a E b | b E a ;
+E		-> S c | c ;
+

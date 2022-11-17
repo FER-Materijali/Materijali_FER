@@ -1,0 +1,10 @@
+KR_ZA 1 za
+IDN 1 i
+KR_OD 1 od
+BROJ 1 1
+KR_DO 1 do
+IDN 1 i
+IDN 2 x
+OP_PRIDRUZI 2 =
+BROJ 2 3
+KR_AZ 3 az

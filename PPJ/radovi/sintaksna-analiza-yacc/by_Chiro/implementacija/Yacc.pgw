@@ -1,0 +1,16 @@
+[Application]
+WindowPlacement=2 3 -32000 -32000 -1 -1 22 29 982 583
+[Editor1]
+FileName=.\YACCparser.y
+ReadOnly=0
+WindowPlacement1=0 1 0 641 -4 -30 51 7 1173 476
+WindowOrder1=1
+Position001=0 53
+Cursor001=9 21 9 21
+SyntaxColouring=2
+TargetSyntaxColouring=3
+[Output]
+WindowPlacement1=0 1 160 645 -4 -30 121 404 1243 873
+WindowOrder1=2
+Position1=0 1
+Cursor1=0 1 0 1

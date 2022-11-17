@@ -1,0 +1,32 @@
+<program>
+ <lista_naredbi>
+  <naredba>
+   <naredba_pridruzivanja>
+    IDN 1 rez
+    OP_PRIDRUZI 1 =
+    <E>
+     <T>
+      <P>
+       BROJ 1 1
+      <T_lista>
+       $
+     <E_lista>
+      OP_MINUS 1 -
+      <E>
+       <T>
+        <P>
+         BROJ 1 2
+        <T_lista>
+         $
+       <E_lista>
+        OP_MINUS 1 -
+        <E>
+         <T>
+          <P>
+           BROJ 1 3
+          <T_lista>
+           $
+         <E_lista>
+          $
+  <lista_naredbi>
+   $

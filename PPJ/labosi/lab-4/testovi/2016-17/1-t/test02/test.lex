@@ -1,0 +1,5 @@
+IDN 1 rez
+OP_PRIDRUZI 1 =
+BROJ 1 1
+OP_PLUS 1 +
+BROJ 1 2

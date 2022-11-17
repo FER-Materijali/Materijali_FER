@@ -1,0 +1,9 @@
+n = 10
+rez = 0
+za n od 1 do 5
+    rez = rez + n
+az
+rez = rez + n
+za n od 1 do 5
+    rez = rez + n
+az

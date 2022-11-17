@@ -1,0 +1,18 @@
+indeks	tip	  konstanta
+------------------------------------
+0	integer	  4
+1	integer	  -2
+2	complex	  (3,2)
+3	integer	  7
+4	string	  "jdt2345cps!s"
+5	string	  "jdtcpss"
+6	real	  50e-7
+7	integer	  -3
+8	integer	  2
+9	real	  3.234e4
+10	integer	  -4
+11	string	  "neki string"
+12	integer	  1
+13	real	  10d+2
+14	integer	  3
+------------------------------------

@@ -1,0 +1,7 @@
+proba	aa*
+r1 ako
+r2 onda
+r3 inace
+r4 =
+INT (0|1|2|3)(0|1|2|3)*
+IDN (a|b|c|d)((a|b|c|d)|(0|1|2|3))*

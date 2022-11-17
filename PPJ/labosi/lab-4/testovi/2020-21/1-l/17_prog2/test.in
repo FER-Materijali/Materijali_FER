@@ -1,0 +1,218 @@
+<program>
+ <lista_naredbi>
+  <naredba>
+   <naredba_pridruzivanja>
+    IDN 1 x
+    OP_PRIDRUZI 1 =
+    <E>
+     <T>
+      <P>
+       BROJ 1 13
+      <T_lista>
+       $
+     <E_lista>
+      $
+  <lista_naredbi>
+   <naredba>
+    <naredba_pridruzivanja>
+     IDN 2 y
+     OP_PRIDRUZI 2 =
+     <E>
+      <T>
+       <P>
+        BROJ 2 14
+       <T_lista>
+        $
+      <E_lista>
+       $
+   <lista_naredbi>
+    <naredba>
+     <naredba_pridruzivanja>
+      IDN 3 z
+      OP_PRIDRUZI 3 =
+      <E>
+       <T>
+        <P>
+         IDN 3 x
+        <T_lista>
+         $
+       <E_lista>
+        OP_PLUS 3 +
+        <E>
+         <T>
+          <P>
+           IDN 3 y
+          <T_lista>
+           $
+         <E_lista>
+          OP_MINUS 3 -
+          <E>
+           <T>
+            <P>
+             BROJ 3 13
+            <T_lista>
+             $
+           <E_lista>
+            $
+    <lista_naredbi>
+     <naredba>
+      <naredba_pridruzivanja>
+       IDN 4 w
+       OP_PRIDRUZI 4 =
+       <E>
+        <T>
+         <P>
+          IDN 4 x
+         <T_lista>
+          $
+        <E_lista>
+         OP_PLUS 4 +
+         <E>
+          <T>
+           <P>
+            IDN 4 y
+           <T_lista>
+            $
+          <E_lista>
+           OP_PLUS 4 +
+           <E>
+            <T>
+             <P>
+              IDN 4 z
+             <T_lista>
+              $
+            <E_lista>
+             $
+     <lista_naredbi>
+      <naredba>
+       <naredba_pridruzivanja>
+        IDN 5 rez
+        OP_PRIDRUZI 5 =
+        <E>
+         <T>
+          <P>
+           BROJ 5 2
+          <T_lista>
+           OP_PUTA 5 *
+           <T>
+            <P>
+             IDN 5 x
+            <T_lista>
+             $
+         <E_lista>
+          OP_PLUS 5 +
+          <E>
+           <T>
+            <P>
+             IDN 5 y
+            <T_lista>
+             $
+           <E_lista>
+            OP_PLUS 5 +
+            <E>
+             <T>
+              <P>
+               IDN 5 z
+              <T_lista>
+               $
+             <E_lista>
+              OP_PLUS 5 +
+              <E>
+               <T>
+                <P>
+                 IDN 5 w
+                <T_lista>
+                 $
+               <E_lista>
+                $
+      <lista_naredbi>
+       <naredba>
+        <naredba_pridruzivanja>
+         IDN 6 rez
+         OP_PRIDRUZI 6 =
+         <E>
+          <T>
+           <P>
+            IDN 6 rez
+           <T_lista>
+            $
+          <E_lista>
+           OP_MINUS 6 -
+           <E>
+            <T>
+             <P>
+              BROJ 6 2
+             <T_lista>
+              OP_PUTA 6 *
+              <T>
+               <P>
+                IDN 6 x
+               <T_lista>
+                $
+            <E_lista>
+             $
+       <lista_naredbi>
+        <naredba>
+         <naredba_pridruzivanja>
+          IDN 7 rez
+          OP_PRIDRUZI 7 =
+          <E>
+           <T>
+            <P>
+             IDN 7 rez
+            <T_lista>
+             $
+           <E_lista>
+            OP_MINUS 7 -
+            <E>
+             <T>
+              <P>
+               IDN 7 y
+              <T_lista>
+               $
+             <E_lista>
+              $
+        <lista_naredbi>
+         <naredba>
+          <naredba_pridruzivanja>
+           IDN 8 rez
+           OP_PRIDRUZI 8 =
+           <E>
+            <T>
+             <P>
+              IDN 8 rez
+             <T_lista>
+              $
+            <E_lista>
+             OP_MINUS 8 -
+             <E>
+              <T>
+               <P>
+                IDN 8 z
+               <T_lista>
+                $
+              <E_lista>
+               $
+         <lista_naredbi>
+          <naredba>
+           <naredba_pridruzivanja>
+            IDN 9 rez
+            OP_PRIDRUZI 9 =
+            <E>
+             <T>
+              <P>
+               IDN 9 rez
+              <T_lista>
+               $
+             <E_lista>
+              OP_PLUS 9 +
+              <E>
+               <T>
+                <P>
+                 IDN 9 w
+                <T_lista>
+                 $
+               <E_lista>
+                $
+          <lista_naredbi>
+           $

@@ -1,0 +1,16 @@
+IDN 1 a
+OP_PRIDRUZI 1 =
+BROJ 1 0
+KR_ZA 2 za
+IDN 2 i
+KR_OD 2 od
+OP_MINUS 2 -
+BROJ 2 3
+KR_DO 2 do
+BROJ 2 5
+IDN 3 a
+OP_PRIDRUZI 3 =
+IDN 3 a
+OP_PLUS 3 +
+IDN 3 i
+KR_AZ 4 az

@@ -1,0 +1,8 @@
+x = 2 
+k = 0
+za i od 1 do 5
+ x = x * i
+ y = 3 * x
+ k = x + y
+az
+k = k + 1

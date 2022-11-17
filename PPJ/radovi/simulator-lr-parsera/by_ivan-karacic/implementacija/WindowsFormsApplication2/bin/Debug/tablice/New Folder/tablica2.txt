@@ -1,0 +1,13 @@
+a	b	c	d	!	<S'>	<S>	<A>	<E>
+p4						s1	s2	s3
+	p5			P	
+	r3			r3
+	r4 	p6		r4	
+	r7	r7	p7	r7	
+p4							s8	s3
+p9	
+p11								s10
+	r2			r2
+	r6	r6		r6
+	r5	p6		r5
+	r7	r7		r8

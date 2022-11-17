@@ -1,0 +1,69 @@
+	ključna riječ, operator,
+indeks	  ili specijalni znak
+--------------------------------
+0	    program
+1	    implicit none
+2	    integer
+3	    real
+4	    double precision
+5	    complex
+6	    character
+7	    len
+8	    logical
+9	    parameter
+10	    dimension
+11	    .true.
+12	    .false.
+13	    if
+14	    then
+15	    elseif
+16	    else
+17	    endif
+18	    do
+19	    while
+20	    exit
+21	    print
+22	    read
+23	    end
+24	    call
+25	    contains
+26	    subroutine
+27	    function
+28	    +
+29	    -
+30	    *
+31	    /
+32	    **
+33	    <
+34	    >
+35	    ==
+36	    =
+37	    /=
+38	    <=
+39	    >=
+40	    .lt.
+41	    .gt.
+42	    .eq.
+43	    .ne.
+44	    .le.
+45	    .ge.
+46	    .not.
+47	    .and.
+48	    .or.
+49	    .eqv.
+50	    .neqv.
+51	    _
+52	    :
+53	    ;
+54	    ::
+55	    ?
+56	    $
+57	    &
+58	    %
+59	    '
+60	    .
+61	    ,
+62	    (
+63	    )
+64	    "
+--------------------------------

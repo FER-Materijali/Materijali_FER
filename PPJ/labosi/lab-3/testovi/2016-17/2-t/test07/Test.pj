@@ -1,0 +1,8 @@
+n = 10 
+rez = 0
+i = 15
+za i od 1 do n
+ rez = rez + i*i*i 
+ x = 5
+az
+i = i + 1

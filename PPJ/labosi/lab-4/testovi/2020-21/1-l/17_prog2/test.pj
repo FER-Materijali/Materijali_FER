@@ -1,0 +1,9 @@
+x = 13
+y = 14
+z = x + y - 13
+w = x + y + z
+rez = 2*x + y + z + w
+rez = rez - 2*x
+rez = rez - y
+rez = rez - z
+rez = rez + w

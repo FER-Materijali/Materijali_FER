@@ -1,0 +1,42 @@
+<program>
+ <lista_naredbi>
+  <naredba>
+   <naredba_pridruzivanja>
+    IDN 1 a
+    OP_PRIDRUZI 1 =
+    <E>
+     <T>
+      <P>
+       IDN 1 a
+      <T_lista>
+       $
+     <E_lista>
+      $
+  <lista_naredbi>
+   <naredba>
+    <naredba_pridruzivanja>
+     IDN 2 a
+     OP_PRIDRUZI 2 =
+     <E>
+      <T>
+       <P>
+        BROJ 2 805
+       <T_lista>
+        OP_PUTA 2 *
+        <T>
+         <P>
+          BROJ 2 820
+         <T_lista>
+          $
+      <E_lista>
+       OP_MINUS 2 -
+       <E>
+        <T>
+         <P>
+          IDN 2 a
+         <T_lista>
+          $
+        <E_lista>
+         $
+   <lista_naredbi>
+    $

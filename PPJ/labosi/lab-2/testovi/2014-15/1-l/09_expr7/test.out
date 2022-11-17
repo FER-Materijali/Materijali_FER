@@ -1,0 +1,93 @@
+<program>
+ <lista_naredbi>
+  <naredba>
+   <naredba_pridruzivanja>
+    IDN 1 a
+    OP_PRIDRUZI 1 =
+    <E>
+     <T>
+      <P>
+       BROJ 1 1
+      <T_lista>
+       $
+     <E_lista>
+      OP_PLUS 1 +
+      <E>
+       <T>
+        <P>
+         L_ZAGRADA 1 (
+         <E>
+          <T>
+           <P>
+            L_ZAGRADA 1 (
+            <E>
+             <T>
+              <P>
+               BROJ 1 25
+              <T_lista>
+               $
+             <E_lista>
+              OP_MINUS 1 -
+              <E>
+               <T>
+                <P>
+                 BROJ 1 32
+                <T_lista>
+                 $
+               <E_lista>
+                $
+            D_ZAGRADA 1 )
+           <T_lista>
+            OP_DIJELI 1 /
+            <T>
+             <P>
+              BROJ 1 5
+             <T_lista>
+              $
+          <E_lista>
+           OP_PLUS 1 +
+           <E>
+            <T>
+             <P>
+              BROJ 1 12
+             <T_lista>
+              $
+            <E_lista>
+             OP_MINUS 1 -
+             <E>
+              <T>
+               <P>
+                BROJ 1 11
+               <T_lista>
+                $
+              <E_lista>
+               $
+         D_ZAGRADA 1 )
+        <T_lista>
+         OP_PUTA 1 *
+         <T>
+          <P>
+           L_ZAGRADA 1 (
+           <E>
+            <T>
+             <P>
+              BROJ 1 1
+             <T_lista>
+              $
+            <E_lista>
+             OP_MINUS 1 -
+             <E>
+              <T>
+               <P>
+                BROJ 1 2
+               <T_lista>
+                $
+              <E_lista>
+               $
+           D_ZAGRADA 1 )
+          <T_lista>
+           $
+       <E_lista>
+        $
+  <lista_naredbi>
+   $

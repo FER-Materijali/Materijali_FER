@@ -1,0 +1,6 @@
+<Sent>-><Sent>a
+<Sent>->c
+<A>->a
+*<A>-><Bu>c
+<Bu>->a<A>
+<Bu>->b<Bu>

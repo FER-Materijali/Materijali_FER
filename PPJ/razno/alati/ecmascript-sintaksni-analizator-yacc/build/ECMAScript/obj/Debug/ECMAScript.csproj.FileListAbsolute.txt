@@ -1,0 +1,9 @@
+E:\downloads\fer\ppj\ssp\ECMAScript sintaksni analizator\build\ECMAScript\bin\Debug\ECMAScript.exe
+E:\downloads\fer\ppj\ssp\ECMAScript sintaksni analizator\build\ECMAScript\bin\Debug\ECMAScript.pdb
+E:\downloads\fer\ppj\ssp\ECMAScript sintaksni analizator\build\ECMAScript\bin\Debug\ShiftReduceParser.dll
+E:\downloads\fer\ppj\ssp\ECMAScript sintaksni analizator\build\ECMAScript\obj\Debug\ResolveAssemblyReference.cache
+E:\downloads\fer\ppj\ssp\ECMAScript sintaksni analizator\build\ECMAScript\obj\Debug\ListCollection.Forma.resources
+E:\downloads\fer\ppj\ssp\ECMAScript sintaksni analizator\build\ECMAScript\obj\Debug\ECMAScript.Properties.Resources.resources
+E:\downloads\fer\ppj\ssp\ECMAScript sintaksni analizator\build\ECMAScript\obj\Debug\ECMAScript.csproj.GenerateResource.Cache
+E:\downloads\fer\ppj\ssp\ECMAScript sintaksni analizator\build\ECMAScript\obj\Debug\ECMAScript.exe
+E:\downloads\fer\ppj\ssp\ECMAScript sintaksni analizator\build\ECMAScript\obj\Debug\ECMAScript.pdb

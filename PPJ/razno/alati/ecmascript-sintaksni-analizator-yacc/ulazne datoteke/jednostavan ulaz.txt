@@ -1,0 +1,8 @@
+function x (a) 
+{
+this.a=a;
+return a*2;
+}
+
+x=-1;
+document.write( x );

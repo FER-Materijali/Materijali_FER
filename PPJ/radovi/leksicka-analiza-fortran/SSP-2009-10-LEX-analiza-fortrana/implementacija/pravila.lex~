@@ -1,0 +1,456 @@
+%{
+	#include <ctype.h>
+	#include <string.h>
+	
+	int ocekuj_negativni=0, bio_iden=0, br_linije=1;
+	
+	/* deklaracija tablice ključnih riječi, operatora i specijalnih znakova */
+	char* kros[]={"program", "implicit none", "integer", "real", "double precision", "complex", "character", "len", "logical", "parameter", "dimension", ".true.", ".false.", "if", "then", "elseif", "else", "endif", "do", "while", "exit", "print", "read", "end", "call", "contains", "subroutine", "function", "+", "-", "*", "/", "**", "<", ">", "==", "=", "/=", "<=", ">=", ".lt.", ".gt.", ".eq.", ".ne.", ".le.", ".ge.", ".not.", ".and.", ".or.", ".eqv.", ".neqv.", "_", ":", ";", "::", "?", "$", "&", "%", "'", ".", ",", "(", ")", "\""};
+	
+	/* deklaracija tablice uniformnih znakova */
+	char *tuz_uz;		/* stupac s uniformnim znakovima */
+	int *tuz_p;		/* stupac s "pokazivačima" */
+	int *tuz_bl;		/* stupac s brojevima linija */
+	int tuz_cnt = 0;	/* brojač redaka */
+				/* (definicije u mainu) */
+	
+	/* deklaracija tablice identifikatora */
+	char **tidn;		/* stupac s imenima identifikatora */
+	int tidn_cnt = 0;	/* brojač redaka */
+				/* (definicija u mainu) */
+	
+	/* deklaracija tablice konstanti */
+	char **tkon_val;	/* stupac s vrijednostima */
+	char *tkon_tip;		/* stupac s tipovima konstanti */
+	int tkon_cnt = 0;	/* brojac redaka */
+				/* (definicije u mainu) */
+	
+	
+	
+	
+	/* ----- POMOĆNE FUNKCIJE -----*/
+	
+	int makni_bjeline(char* mojtext){
+		int i, j;
+		
+		for(i=0; mojtext[i] != '\0'; i++){
+			if (mojtext[i] == ' ' || mojtext[i] == '\t'){
+			
+				/* micanje niza za 1 ulijevo */
+				for(j=i; mojtext[j] != '\0'; j++)
+					mojtext[j] = mojtext[j+1];
+				
+				i--;	/* za slučaj dvostrukih bjelina */
+			}
+		}
+		
+		return i;
+	}
+	
+	void greska(char spec, char *poruka, char* mojtext){
+		if(spec=='G')
+			fprintf(stderr, "GREŠKA: ");
+		else if(spec=='U')
+			fprintf(stderr"upozorenje: ");
+
+		fprintf(stderr, "linija %d: %s \n\t\"\"\"%s\"\"\"\n", br_linije, poruka, mojtext);
+	}
+
+
+
+	int is_real(char* mojtext){	/* provjerava je li broj tipa real i usput smanjuje E, D i Q */
+		int i, real=0;
+		
+		for(i=0; mojtext[i] != '\0'; i++){
+			if (mojtext[i]=='E' || mojtext[i]=='D' || mojtext[i]=='Q' ||
+			    mojtext[i]=='e' || mojtext[i]=='d' || mojtext[i]=='q' || mojtext[i]=='.'){
+				mojtext[i] = tolower(mojtext[i]);
+				real=1;
+			}
+		}
+		return real;
+	}
+	
+	
+	
+	
+	/* ----- FUNKCIJE ZA UPRAVLJANJE TABLICAMA ----- */
+	
+	void dodaj_tuz(char uz, int i, char* mojtext){
+		tuz_uz = (char*) realloc (tuz_uz, (tuz_cnt+1)*sizeof(char));
+		tuz_uz[tuz_cnt] = uz;
+		
+		tuz_p = (int*) realloc (tuz_p, (tuz_cnt+1)*sizeof(int));
+		tuz_p[tuz_cnt] = i;
+		
+		tuz_bl = (int*) realloc (tuz_bl, (tuz_cnt+1)*sizeof(int));
+		tuz_bl[tuz_cnt] = br_linije;
+		
+		tuz_cnt++;
+	}
+	
+	void dodaj_tidn(){	/* argumenti su uvijek yytext i yyleng */
+		tidn = (char**) realloc (tidn, (tidn_cnt+1)*sizeof(char*));
+		tidn[tidn_cnt] = (char*) malloc((yyleng+1)*sizeof(char));
+		strcpy(tidn[tidn_cnt], yytext);
+
+		tidn_cnt++;
+	}
+	
+	void dodaj_tkon(char* mojtext, int duljina, char tip){
+		tkon_val = (char**) realloc (tkon_val, (tkon_cnt+1)*sizeof(char*));
+		tkon_val[tkon_cnt] = (char*) malloc((duljina+1)*sizeof(char));
+		strcpy(tkon_val[tkon_cnt], mojtext);
+		
+		tkon_tip = (char*) realloc (tkon_tip, (tkon_cnt+1)*sizeof(char));
+		tkon_tip[tkon_cnt] = tip;
+
+		tkon_cnt++;
+	}
+	
+	int trazi_tkon(char* mojtext, int duljina, char tip){
+		/* Vraća indeks tablice konstanti u kojoj je tražena konstanta.
+		   Ako konstanta nije nađena, dodaje ju i vraća njegn indeks. */
+		   
+		int i;
+		
+		/* pretraga tablice konstanti */
+		for (i=0; i<tkon_cnt; i++){
+			if (strcmp(mojtext, tkon_val[i]) == 0 && tkon_tip[i] == tip) /* ako su jednaki... */
+				return i;
+		}
+		
+		/* ako nije nađeno */
+		dodaj_tkon(mojtext, duljina, tip);
+		
+		return tkon_cnt-1;
+	}
+	
+	
+	
+	
+	
+	/* ----- FUNKCIJE ZA UPRAVLJANJE DOBIVENIM IZRAZIMA ----- */	
+	
+	
+	/* funkcija za upravljanje identifikatorima */
+	void fidn(){
+		int i, nadjeno=0;
+		
+		if(yyleng>254)
+			greska('G', "Varijabla smije imati najviše 254 znaka!", yytext);
+		
+		else{
+			/* pretraga tablice identifikatora */
+			for (i=0; i<tidn_cnt; i++){
+	
+				if (strcmp(yytext, tidn[i]) == 0){ /* ako su jednaki... */
+					dodaj_tuz('I', i, yytext);
+					nadjeno=1;
+					break;
+				}
+			}
+	
+			if (nadjeno==0){
+				dodaj_tuz('I', tidn_cnt, yytext);
+				dodaj_tidn();
+			}
+		}
+	
+		ocekuj_negativni=0;
+		bio_iden=1;
+	}
+
+
+	/* funkcija za upravljanje ključnim riječima, operatorima i specijalnim znakovima */	
+	void fkros(){
+		int i=0, nadjeno=0;
+		char mojtext[17];
+		
+		/* pretvorba izraza u "lowercase" */
+		do{
+			mojtext[i] = tolower(yytext[i]);
+			i++;
+		}while(yytext[i-1]!=0);
+		
+		
+		/* pretraga KROS tablice */
+		for (i=0; i<(sizeof(kros)/sizeof(char*)); i++){
+		
+			if (strcmp(mojtext, kros[i]) == 0){ /* ako su jednaki... */
+				
+				dodaj_tuz('K', i, mojtext);
+				
+				nadjeno=1;
+				break;
+			}
+		}
+		
+		if (nadjeno==0){ /* ako ta kodna riječ nekim čudom nije nađena... */
+			greska('U', "Kodna riječ nije nađena u KROS tablici pa se smatra identifikatorom.", yytext);
+			fidn();
+		}
+	}
+
+
+	/* funkcija za upravljanje konstantama */
+	void fkonst(char spec){
+		int i=0, nadjeno=0, tkonindeks, duljina;
+		char mojtext[17], broj[32];
+			
+		
+		/* broj s minusom na početku */
+		if(spec == 'n'){
+			
+			char r = is_real(yytext) ? 'R' : 'I';	/* r postaje R ako je broj tipa real, a I ako je tipa integer */
+			
+			if(ocekuj_negativni){
+				/* radi se o negativnom broju, a ne o operaciji oduzimanja + pozitivan broj. */
+				tkonindeks = trazi_tkon(yytext, yyleng, r);
+				dodaj_tuz('C', tkonindeks, yytext);
+			}
+			else{  /* znak minus, pa pozitivan broj */
+				
+				/* prepisivanje yytexta bez prvog znaka (koji je '-') */
+				i=1;
+				do{	
+					mojtext[i] = yytext[i];	
+					i++;
+				}while(yytext[i-1]!=0);
+				
+				/* procesiranje znaka minus */
+				yytext[0] = '-'; yytext[1]=0;
+				fkros();
+				ocekuj_negativni=0;
+				
+				/* procesiranje pozitivnog broja */
+				tkonindeks = trazi_tkon(mojtext, yyleng-1, r);
+				dodaj_tuz('C', tkonindeks, mojtext);
+			}
+			
+		}
+		
+		/* broj bez minusa na početku */
+		else if(spec == 'p'){
+			
+			char r = is_real(yytext) ? 'R' : 'I';	/* r postaje R ako je broj tipa real, a I ako je tipa integer */
+			
+			tkonindeks = trazi_tkon(yytext, yyleng, r);
+			dodaj_tuz('C', tkonindeks, yytext);
+		}
+		
+		/* kompleksni broj */
+		else if(spec == 'c'){
+			
+			/* prepisivanje yytexta */
+			do{	
+				mojtext[i] = yytext[i];
+				i++;
+			}while(yytext[i-1]!=0);
+			
+			duljina = makni_bjeline(mojtext);
+			
+			if(bio_iden){ /* prije kompleksnog broja je bio identifikator, dakle ovo su zapravo parametri funkcije */
+				
+				/* procesiranje otvorene zagrade */
+				yytext[0] = '('; yytext[1]=0;
+				fkros();
+				ocekuj_negativni=0;
+				
+				
+				/* izdvajanje i procesiranje prvog broja */
+				for(i=1; mojtext[i] != ','; i++)
+					broj[i-1] = mojtext[i];
+				broj[i-1] = '\0';
+				duljina = i-1;
+				
+				char r = is_real(mojtext) ? 'R' : 'I';	/* r postaje R ako je broj tipa real, a I ako je tipa integer */
+				tkonindeks = trazi_tkon(broj, duljina, r);
+				dodaj_tuz('C', tkonindeks, broj);
+				
+				
+				/* procesiranje zareza */
+				yytext[0] = ','; yytext[1]=0;
+				fkros();
+				ocekuj_negativni=0;
+				
+				
+				/* izdvajanje i procesiranje drugog broja */
+				for(i++; mojtext[i] != ')'; i++)
+					broj[i-duljina-2] = mojtext[i];
+				broj[i-duljina-2] = '\0';
+				duljina = i-2 - duljina;
+				
+				r = is_real(mojtext) ? 'R' : 'I';	/* r postaje R ako je broj tipa real, a I ako je tipa integer */
+				tkonindeks = trazi_tkon(broj, duljina, r);
+				dodaj_tuz('C', tkonindeks, broj);
+				
+				
+				/* procesiranje zatvorene zagrade */
+				yytext[0] = ')'; yytext[1]=0;
+				fkros();
+				ocekuj_negativni=0;				
+				
+			}
+			else { /* ovo zaista jest kompleksni broj */
+				is_real(mojtext);	/* samo da se smanje E, D i Q u e, d i q */
+				tkonindeks = trazi_tkon(mojtext, duljina, 'C');
+				dodaj_tuz('C', tkonindeks, mojtext);
+			}
+		}
+		
+		/* string */
+		else if(spec == 's'){
+			tkonindeks = trazi_tkon(yytext, yyleng, 'S');
+			dodaj_tuz('C', tkonindeks, yytext);
+		}
+		
+		
+		ocekuj_negativni=0;
+		bio_iden=0;
+	}
+	
+
+
+
+	int main(){
+	
+		tuz_uz = (char*) malloc(1*sizeof(char));	/* stupac s uniformnim znakovima */
+		tuz_p = (int*) malloc(1*sizeof(int));		/* stupac s "pokazivačima" */
+		tuz_bl = (int*) malloc(1*sizeof(int));		/* stupac s brojevima linija */
+		
+		tidn = (char**) malloc(1*sizeof(char*));	/* niz pokazivača na stringove */
+		
+		tkon_val = (char**) malloc(1*sizeof(char*));	/* stupac s vrijednostima */
+		tkon_tip = (char*) malloc(1*sizeof(char));	/* stupac s tipovima konstanti */
+		
+		FILE *filetuz, *filekros, *fileiden, *filekon;	/* izlazne datoteke */
+		
+		int i;
+		char *temp, *temp2;
+		
+		
+		
+		yylex();
+		
+		
+		/* ISPIS TABLICA U DATOTEKE */
+		
+		filetuz = fopen("1-uniformni-znakovi.txt", "w");
+		fprintf(filetuz, "       uniformni          linija         izraz\n");
+		fprintf(filetuz, "indeks   znak    kazaljka  koda         iz koda\n");
+		fprintf(filetuz, "---------------------------------------------------------\n");
+		for(i=0; i<tuz_cnt; i++){
+			if (tuz_uz[i] == 'K'){
+				temp = "KROS";
+				temp2 = kros[tuz_p[i]];
+			}
+			if (tuz_uz[i] == 'I'){
+				temp = "IDN";
+				temp2 = tidn[tuz_p[i]];
+			}
+			if (tuz_uz[i] == 'C'){
+				temp = "KON";
+				temp2 = tkon_val[tuz_p[i]];
+			}
+			fprintf(filetuz, "%d\t%s\t   %d\t   %d\t\t%s\n", i, temp, tuz_p[i], tuz_bl[i], temp2);
+		}
+		fprintf(filetuz, "---------------------------------------------------------\n");
+		fclose(filetuz);
+		
+		
+		filekros = fopen("2-kros.txt", "w");
+		fprintf(filekros, "\tključna riječ, operator,\nindeks\t  ili specijalni znak\n");
+		fprintf(filekros, "--------------------------------\n");
+		for(i=0; i<sizeof(kros)/sizeof(char*); i++)
+			fprintf(filekros, "%d\t    %s\n", i, kros[i]);
+		fprintf(filekros, "--------------------------------\n");
+		fclose(filekros);
+		
+		
+		fileiden = fopen("3-identifikatori.txt", "w");
+		fprintf(fileiden, "indeks\tidentifikator\n---------------------\n");
+		for(i=0; i<tidn_cnt; i++)
+			fprintf(fileiden, "%d\t%s\n", i, tidn[i]);
+		fprintf(fileiden, "---------------------\n");
+		fclose(fileiden);
+		
+		
+		filekon = fopen("4-konstante.txt", "w");
+		fprintf(filekon, "indeks\ttip\t  konstanta\n------------------------------------\n");
+		for(i=0; i<tkon_cnt; i++){
+			if(tkon_tip[i]=='R') temp = "real";
+			if(tkon_tip[i]=='I') temp = "integer";
+			if(tkon_tip[i]=='C') temp = "complex";
+			if(tkon_tip[i]=='S') temp = "string";
+			fprintf(filekon, "%d\t%s\t  %s\n", i, temp, tkon_val[i]);
+		}
+		fprintf(filekon, "------------------------------------\n");
+		fclose(filekon);
+		
+		
+		printf("Program uspješno završen. Izlazne su tablice u datotekama u ovom direktoriju.\n");
+		
+		
+		/* oslobađanje memorije */
+		free(tuz_uz);
+		free(tuz_p);
+		free(tuz_bl);
+		
+		for(i=0; i<tidn_cnt; i++)
+			free(tidn[i]);
+			
+		for(i=0; i<tkon_cnt; i++)
+			free(tkon_val[i]);
+		free(tkon_tip);
+		
+		
+		return 0;
+	}
+	
+	
+%}
+
+
+novired		[\n]
+prekidni	[ \t]
+slovo		[a-zA-z]
+brojka		[0-9]
+specznak	"_"|":"|";"|"]"|"?"|"$"|"&"|"%"|"::"|"'"|"."|\"
+operator	"**"|"<"|">"|"=="|"="|"/="|"<="|">="|".lt."|".gt."|".eq."|".ne."|".le."|".ge."|".not."|".and."|".or."|".eqv."|".neqv."|".LT."|".GT."|".EQ."|".NE."|".LE."|".GE."|".NOT."|".AND."|".OR."|".EQV."|".NEQV."
+pmpp		"+"|"-"|"*"|"/"
+komentar	"!".*
+string		(\".*\")|(\'.*\')
+kljucnarijec	"program"|"implicit none"|"integer"|"real"|"double precision"|"complex"|"character"|"len"|"logical"|"parameter"|"dimension"|".true."|".false."|"if"|"then"|"elseif"|"else"|"endif"|"do"|"while"|"exit"|"print"|"read"|"end"|"call"|"contains"|"subroutine"|"function"|"PROGRAM"|"IMPLICIT NONE"|"INTEGER"|"REAL"|"DOUBLE PRECISION"|"COMPLEX"|"CHARACTER"|"LEN"|"LOGICAL"|"PARAMETER"|"DIMENSION"|".TRUE."|".FALSE."|"IF"|"THEN"|"ELSEIF"|"ELSE"|"ENDIF"|"DO"|"WHILE"|"EXIT"|"PRINT"|"READ"|"END"|"CALL"|"CONTAINS"|"SUBROUTINE"|"FUNCTION"
+varijabla	{slovo}({brojka}|{slovo}|"_")*
+pozitivan	{brojka}+("."{brojka}+)?(("e"|"d"|"q"|"E"|"D"|"Q")("+"|"-")?{brojka}+)?
+negativan	"-"{pozitivan}
+broj		{pozitivan}|{negativan}
+kompleksni	"("{prekidni}*{broj}{prekidni}*","{prekidni}*{broj}{prekidni}*")"
+
+
+
+
+%%
+
+
+{prekidni}+		;
+{komentar}		{ocekuj_negativni=0; bio_iden=0;}
+{novired}		{ocekuj_negativni=0; bio_iden=0; br_linije++;}
+
+{kljucnarijec}		{fkros(); ocekuj_negativni=0; bio_iden=0;}
+{operator}		{fkros(); ocekuj_negativni=1; bio_iden=0;}
+{pmpp}			{fkros(); ocekuj_negativni=0; bio_iden=0;}
+{specznak}		{fkros(); ocekuj_negativni=0; bio_iden=0;}
+"("|","			{fkros(); ocekuj_negativni=1; bio_iden=0;}
+")"			{fkros(); ocekuj_negativni=0; bio_iden=0;}
+
+{negativan}		fkonst('n');	/* nakon svake konstante: */
+{pozitivan}		fkonst('p');	/* ocekuj_negativni=0 */
+{kompleksni}		fkonst('c');	/* i bio_iden=0 */
+{string}		fkonst('s');
+
+{varijabla}		fidn();		/* ocekuj_negativni=0, bio_iden=1 */
+
+%%
+

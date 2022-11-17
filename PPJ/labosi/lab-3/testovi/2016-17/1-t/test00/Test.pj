@@ -1,0 +1,8 @@
+x = 3
+y = x + 3
+z = 5 + 8
+x = 2 
+za i od 1 do 5
+ x = y * i + z
+az
+z = z + 1

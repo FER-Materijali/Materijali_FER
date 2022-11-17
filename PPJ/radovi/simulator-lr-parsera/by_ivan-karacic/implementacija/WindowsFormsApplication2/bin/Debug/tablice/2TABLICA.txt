@@ -1,0 +1,13 @@
+a	b	c	d	!	<S'>	<S>	<A>	<E>
+p4	o	o	o	o	o	s1	s2	s3
+o	p5	o	o	P	o	o	o	o
+o	r3	o	o	r3	o	o	o	o
+o	r4 	p6	o	r4	o	o	o	o
+o	r7	r7	p7	r7	o	o	o	o
+p4	o	o	o	o	o	o	s8	s3
+p9	o	o	o	o	o	o	o	o
+p11	o	o	o	o	o	o	o	s10
+o	r2	o	o	r2	o	o	o	o
+o	r6	r6	o	r6	o	o	o	o
+o	r5	p6	o	r5	o	o	o	o
+o	r7	r7	o	r8	o	o	o	o

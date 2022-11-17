@@ -1,0 +1,6 @@
+// stavi sumu kubova prvih deset prirodnih brojeva u varijablu rez
+n = 10 // varijable ne treba deklarirati prije inicijalizacije
+rez = 0
+za i od 1 do n
+  rez = rez + i*i*i
+az

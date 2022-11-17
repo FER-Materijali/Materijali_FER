@@ -1,0 +1,82 @@
+<program>
+ <lista_naredbi>
+  <naredba>
+   <naredba_pridruzivanja>
+    IDN 1 i
+    OP_PRIDRUZI 1 =
+    <E>
+     <T>
+      <P>
+       BROJ 1 0
+      <T_lista>
+       $
+     <E_lista>
+      $
+  <lista_naredbi>
+   <naredba>
+    <naredba_pridruzivanja>
+     IDN 2 rez
+     OP_PRIDRUZI 2 =
+     <E>
+      <T>
+       <P>
+        OP_MINUS 2 -
+        <P>
+         BROJ 2 12
+       <T_lista>
+        $
+      <E_lista>
+       $
+   <lista_naredbi>
+    <naredba>
+     <za_petlja>
+      KR_ZA 3 za
+      IDN 3 i
+      KR_OD 3 od
+      <E>
+       <T>
+        <P>
+         OP_MINUS 3 -
+         <P>
+          BROJ 3 1
+        <T_lista>
+         $
+       <E_lista>
+        $
+      KR_DO 3 do
+      <E>
+       <T>
+        <P>
+         OP_MINUS 3 -
+         <P>
+          BROJ 3 1
+        <T_lista>
+         $
+       <E_lista>
+        $
+      <lista_naredbi>
+       <naredba>
+        <naredba_pridruzivanja>
+         IDN 4 rez
+         OP_PRIDRUZI 4 =
+         <E>
+          <T>
+           <P>
+            IDN 4 rez
+           <T_lista>
+            $
+          <E_lista>
+           OP_MINUS 4 -
+           <E>
+            <T>
+             <P>
+              IDN 4 i
+             <T_lista>
+              $
+            <E_lista>
+             $
+       <lista_naredbi>
+        $
+      KR_AZ 5 az
+    <lista_naredbi>
+     $

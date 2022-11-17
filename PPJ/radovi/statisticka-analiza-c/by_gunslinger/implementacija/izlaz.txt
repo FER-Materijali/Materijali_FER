@@ -1,0 +1,15 @@
+Broj razlicitih identifikatora: 4
+Broj razlicitih konstanti: 3
+Broj linija: 13
+Broj pojavljivanja raznih kljucnih rijeci, operatora i specijalnih znakova:
+'return': 1
+'int': 2
+'(': 1
+'void': 1
+'float': 1
+'char': 1
+')': 1
+'}': 1
+'{': 1
+'=': 3
+';': 7

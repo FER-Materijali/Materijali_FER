@@ -1,0 +1,1399 @@
+<program>
+ <lista_naredbi>
+  <naredba>
+   <naredba_pridruzivanja>
+    IDN 1 e
+    OP_PRIDRUZI 1 =
+    <E>
+     <T>
+      <P>
+       BROJ 1 1131
+      <T_lista>
+       $
+     <E_lista>
+      $
+  <lista_naredbi>
+   <naredba>
+    <naredba_pridruzivanja>
+     IDN 2 h
+     OP_PRIDRUZI 2 =
+     <E>
+      <T>
+       <P>
+        L_ZAGRADA 2 (
+        <E>
+         <T>
+          <P>
+           BROJ 2 328
+          <T_lista>
+           OP_PUTA 2 *
+           <T>
+            <P>
+             BROJ 2 219
+            <T_lista>
+             $
+         <E_lista>
+          $
+        D_ZAGRADA 2 )
+       <T_lista>
+        $
+      <E_lista>
+       OP_PLUS 2 +
+       <E>
+        <T>
+         <P>
+          BROJ 2 468
+         <T_lista>
+          $
+        <E_lista>
+         OP_MINUS 2 -
+         <E>
+          <T>
+           <P>
+            BROJ 2 1187
+           <T_lista>
+            $
+          <E_lista>
+           $
+   <lista_naredbi>
+    <naredba>
+     <naredba_pridruzivanja>
+      IDN 3 j
+      OP_PRIDRUZI 3 =
+      <E>
+       <T>
+        <P>
+         L_ZAGRADA 3 (
+         <E>
+          <T>
+           <P>
+            IDN 3 e
+           <T_lista>
+            $
+          <E_lista>
+           $
+         D_ZAGRADA 3 )
+        <T_lista>
+         OP_PUTA 3 *
+         <T>
+          <P>
+           BROJ 3 155
+          <T_lista>
+           OP_PUTA 3 *
+           <T>
+            <P>
+             OP_PLUS 3 +
+             <P>
+              BROJ 3 1222
+            <T_lista>
+             $
+       <E_lista>
+        OP_PLUS 3 +
+        <E>
+         <T>
+          <P>
+           IDN 3 h
+          <T_lista>
+           $
+         <E_lista>
+          $
+    <lista_naredbi>
+     <naredba>
+      <naredba_pridruzivanja>
+       IDN 4 i
+       OP_PRIDRUZI 4 =
+       <E>
+        <T>
+         <P>
+          L_ZAGRADA 4 (
+          <E>
+           <T>
+            <P>
+             L_ZAGRADA 4 (
+             <E>
+              <T>
+               <P>
+                BROJ 4 624
+               <T_lista>
+                $
+              <E_lista>
+               $
+             D_ZAGRADA 4 )
+            <T_lista>
+             OP_PUTA 4 *
+             <T>
+              <P>
+               BROJ 4 800
+              <T_lista>
+               $
+           <E_lista>
+            OP_MINUS 4 -
+            <E>
+             <T>
+              <P>
+               IDN 4 j
+              <T_lista>
+               $
+             <E_lista>
+              OP_MINUS 4 -
+              <E>
+               <T>
+                <P>
+                 BROJ 4 367
+                <T_lista>
+                 $
+               <E_lista>
+                $
+          D_ZAGRADA 4 )
+         <T_lista>
+          OP_PUTA 4 *
+          <T>
+           <P>
+            OP_MINUS 4 -
+            <P>
+             BROJ 4 174
+           <T_lista>
+            $
+        <E_lista>
+         OP_MINUS 4 -
+         <E>
+          <T>
+           <P>
+            BROJ 4 206
+           <T_lista>
+            OP_PUTA 4 *
+            <T>
+             <P>
+              BROJ 4 1192
+             <T_lista>
+              $
+          <E_lista>
+           $
+     <lista_naredbi>
+      <naredba>
+       <naredba_pridruzivanja>
+        IDN 5 e
+        OP_PRIDRUZI 5 =
+        <E>
+         <T>
+          <P>
+           BROJ 5 314
+          <T_lista>
+           $
+         <E_lista>
+          OP_MINUS 5 -
+          <E>
+           <T>
+            <P>
+             BROJ 5 950
+            <T_lista>
+             OP_PUTA 5 *
+             <T>
+              <P>
+               IDN 5 j
+              <T_lista>
+               $
+           <E_lista>
+            OP_MINUS 5 -
+            <E>
+             <T>
+              <P>
+               BROJ 5 373
+              <T_lista>
+               OP_PUTA 5 *
+               <T>
+                <P>
+                 IDN 5 i
+                <T_lista>
+                 $
+             <E_lista>
+              $
+      <lista_naredbi>
+       <naredba>
+        <naredba_pridruzivanja>
+         IDN 6 n
+         OP_PRIDRUZI 6 =
+         <E>
+          <T>
+           <P>
+            BROJ 6 1098
+           <T_lista>
+            OP_PUTA 6 *
+            <T>
+             <P>
+              BROJ 6 317
+             <T_lista>
+              $
+          <E_lista>
+           $
+       <lista_naredbi>
+        <naredba>
+         <naredba_pridruzivanja>
+          IDN 7 x
+          OP_PRIDRUZI 7 =
+          <E>
+           <T>
+            <P>
+             OP_PLUS 7 +
+             <P>
+              BROJ 7 148
+            <T_lista>
+             $
+           <E_lista>
+            OP_MINUS 7 -
+            <E>
+             <T>
+              <P>
+               BROJ 7 1173
+              <T_lista>
+               $
+             <E_lista>
+              $
+        <lista_naredbi>
+         <naredba>
+          <za_petlja>
+           KR_ZA 8 za
+           IDN 8 p
+           KR_OD 8 od
+           <E>
+            <T>
+             <P>
+              BROJ 8 575
+             <T_lista>
+              $
+            <E_lista>
+             OP_MINUS 8 -
+             <E>
+              <T>
+               <P>
+                BROJ 8 1219
+               <T_lista>
+                OP_PUTA 8 *
+                <T>
+                 <P>
+                  BROJ 8 1127
+                 <T_lista>
+                  $
+              <E_lista>
+               OP_PLUS 8 +
+               <E>
+                <T>
+                 <P>
+                  IDN 8 x
+                 <T_lista>
+                  $
+                <E_lista>
+                 $
+           KR_DO 8 do
+           <E>
+            <T>
+             <P>
+              BROJ 8 616
+             <T_lista>
+              $
+            <E_lista>
+             $
+           <lista_naredbi>
+            <naredba>
+             <naredba_pridruzivanja>
+              IDN 9 j
+              OP_PRIDRUZI 9 =
+              <E>
+               <T>
+                <P>
+                 L_ZAGRADA 9 (
+                 <E>
+                  <T>
+                   <P>
+                    IDN 9 i
+                   <T_lista>
+                    $
+                  <E_lista>
+                   OP_PLUS 9 +
+                   <E>
+                    <T>
+                     <P>
+                      BROJ 9 1041
+                     <T_lista>
+                      $
+                    <E_lista>
+                     $
+                 D_ZAGRADA 9 )
+                <T_lista>
+                 OP_PUTA 9 *
+                 <T>
+                  <P>
+                   IDN 9 j
+                  <T_lista>
+                   $
+               <E_lista>
+                OP_MINUS 9 -
+                <E>
+                 <T>
+                  <P>
+                   IDN 9 n
+                  <T_lista>
+                   OP_PUTA 9 *
+                   <T>
+                    <P>
+                     BROJ 9 651
+                    <T_lista>
+                     $
+                 <E_lista>
+                  $
+            <lista_naredbi>
+             <naredba>
+              <za_petlja>
+               KR_ZA 10 za
+               IDN 10 z
+               KR_OD 10 od
+               <E>
+                <T>
+                 <P>
+                  IDN 10 x
+                 <T_lista>
+                  OP_PUTA 10 *
+                  <T>
+                   <P>
+                    BROJ 10 1200
+                   <T_lista>
+                    $
+                <E_lista>
+                 OP_PLUS 10 +
+                 <E>
+                  <T>
+                   <P>
+                    BROJ 10 274
+                   <T_lista>
+                    $
+                  <E_lista>
+                   $
+               KR_DO 10 do
+               <E>
+                <T>
+                 <P>
+                  IDN 10 h
+                 <T_lista>
+                  $
+                <E_lista>
+                 $
+               <lista_naredbi>
+                <naredba>
+                 <naredba_pridruzivanja>
+                  IDN 11 h
+                  OP_PRIDRUZI 11 =
+                  <E>
+                   <T>
+                    <P>
+                     BROJ 11 996
+                    <T_lista>
+                     OP_PUTA 11 *
+                     <T>
+                      <P>
+                       BROJ 11 523
+                      <T_lista>
+                       $
+                   <E_lista>
+                    $
+                <lista_naredbi>
+                 <naredba>
+                  <naredba_pridruzivanja>
+                   IDN 12 v
+                   OP_PRIDRUZI 12 =
+                   <E>
+                    <T>
+                     <P>
+                      IDN 12 p
+                     <T_lista>
+                      OP_PUTA 12 *
+                      <T>
+                       <P>
+                        BROJ 12 683
+                       <T_lista>
+                        $
+                    <E_lista>
+                     $
+                 <lista_naredbi>
+                  <naredba>
+                   <naredba_pridruzivanja>
+                    IDN 13 e
+                    OP_PRIDRUZI 13 =
+                    <E>
+                     <T>
+                      <P>
+                       BROJ 13 476
+                      <T_lista>
+                       $
+                     <E_lista>
+                      OP_PLUS 13 +
+                      <E>
+                       <T>
+                        <P>
+                         BROJ 13 31
+                        <T_lista>
+                         $
+                       <E_lista>
+                        OP_MINUS 13 -
+                        <E>
+                         <T>
+                          <P>
+                           BROJ 13 841
+                          <T_lista>
+                           $
+                         <E_lista>
+                          $
+                  <lista_naredbi>
+                   <naredba>
+                    <naredba_pridruzivanja>
+                     IDN 14 p
+                     OP_PRIDRUZI 14 =
+                     <E>
+                      <T>
+                       <P>
+                        IDN 14 x
+                       <T_lista>
+                        OP_PUTA 14 *
+                        <T>
+                         <P>
+                          L_ZAGRADA 14 (
+                          <E>
+                           <T>
+                            <P>
+                             OP_PLUS 14 +
+                             <P>
+                              IDN 14 n
+                            <T_lista>
+                             $
+                           <E_lista>
+                            $
+                          D_ZAGRADA 14 )
+                         <T_lista>
+                          $
+                      <E_lista>
+                       $
+                   <lista_naredbi>
+                    $
+               KR_AZ 15 az
+             <lista_naredbi>
+              <naredba>
+               <za_petlja>
+                KR_ZA 16 za
+                IDN 16 w
+                KR_OD 16 od
+                <E>
+                 <T>
+                  <P>
+                   L_ZAGRADA 16 (
+                   <E>
+                    <T>
+                     <P>
+                      L_ZAGRADA 16 (
+                      <E>
+                       <T>
+                        <P>
+                         L_ZAGRADA 16 (
+                         <E>
+                          <T>
+                           <P>
+                            BROJ 16 61
+                           <T_lista>
+                            OP_PUTA 16 *
+                            <T>
+                             <P>
+                              OP_MINUS 16 -
+                              <P>
+                               BROJ 16 289
+                             <T_lista>
+                              $
+                          <E_lista>
+                           OP_PLUS 16 +
+                           <E>
+                            <T>
+                             <P>
+                              BROJ 16 967
+                             <T_lista>
+                              $
+                            <E_lista>
+                             OP_MINUS 16 -
+                             <E>
+                              <T>
+                               <P>
+                                BROJ 16 132
+                               <T_lista>
+                                OP_PUTA 16 *
+                                <T>
+                                 <P>
+                                  IDN 16 h
+                                 <T_lista>
+                                  $
+                              <E_lista>
+                               $
+                         D_ZAGRADA 16 )
+                        <T_lista>
+                         $
+                       <E_lista>
+                        $
+                      D_ZAGRADA 16 )
+                     <T_lista>
+                      OP_PUTA 16 *
+                      <T>
+                       <P>
+                        L_ZAGRADA 16 (
+                        <E>
+                         <T>
+                          <P>
+                           IDN 16 j
+                          <T_lista>
+                           OP_PUTA 16 *
+                           <T>
+                            <P>
+                             OP_PLUS 16 +
+                             <P>
+                              BROJ 16 381
+                            <T_lista>
+                             $
+                         <E_lista>
+                          $
+                        D_ZAGRADA 16 )
+                       <T_lista>
+                        OP_PUTA 16 *
+                        <T>
+                         <P>
+                          BROJ 16 515
+                         <T_lista>
+                          $
+                    <E_lista>
+                     OP_MINUS 16 -
+                     <E>
+                      <T>
+                       <P>
+                        BROJ 16 137
+                       <T_lista>
+                        OP_PUTA 16 *
+                        <T>
+                         <P>
+                          L_ZAGRADA 16 (
+                          <E>
+                           <T>
+                            <P>
+                             BROJ 16 112
+                            <T_lista>
+                             $
+                           <E_lista>
+                            $
+                          D_ZAGRADA 16 )
+                         <T_lista>
+                          $
+                      <E_lista>
+                       $
+                   D_ZAGRADA 16 )
+                  <T_lista>
+                   $
+                 <E_lista>
+                  OP_MINUS 16 -
+                  <E>
+                   <T>
+                    <P>
+                     BROJ 16 736
+                    <T_lista>
+                     OP_PUTA 16 *
+                     <T>
+                      <P>
+                       BROJ 16 641
+                      <T_lista>
+                       $
+                   <E_lista>
+                    $
+                KR_DO 16 do
+                <E>
+                 <T>
+                  <P>
+                   BROJ 16 518
+                  <T_lista>
+                   $
+                 <E_lista>
+                  $
+                <lista_naredbi>
+                 <naredba>
+                  <za_petlja>
+                   KR_ZA 17 za
+                   IDN 17 i
+                   KR_OD 17 od
+                   <E>
+                    <T>
+                     <P>
+                      L_ZAGRADA 17 (
+                      <E>
+                       <T>
+                        <P>
+                         IDN 17 p
+                        <T_lista>
+                         $
+                       <E_lista>
+                        $
+                      D_ZAGRADA 17 )
+                     <T_lista>
+                      $
+                    <E_lista>
+                     $
+                   KR_DO 17 do
+                   <E>
+                    <T>
+                     <P>
+                      OP_PLUS 17 +
+                      <P>
+                       BROJ 17 955
+                     <T_lista>
+                      $
+                    <E_lista>
+                     OP_MINUS 17 -
+                     <E>
+                      <T>
+                       <P>
+                        BROJ 17 1117
+                       <T_lista>
+                        $
+                      <E_lista>
+                       $
+                   <lista_naredbi>
+                    <naredba>
+                     <za_petlja>
+                      KR_ZA 18 za
+                      IDN 18 w
+                      KR_OD 18 od
+                      <E>
+                       <T>
+                        <P>
+                         BROJ 18 305
+                        <T_lista>
+                         OP_PUTA 18 *
+                         <T>
+                          <P>
+                           L_ZAGRADA 18 (
+                           <E>
+                            <T>
+                             <P>
+                              L_ZAGRADA 18 (
+                              <E>
+                               <T>
+                                <P>
+                                 L_ZAGRADA 18 (
+                                 <E>
+                                  <T>
+                                   <P>
+                                    OP_MINUS 18 -
+                                    <P>
+                                     OP_PLUS 18 +
+                                     <P>
+                                      OP_PLUS 18 +
+                                      <P>
+                                       OP_PLUS 18 +
+                                       <P>
+                                        L_ZAGRADA 18 (
+                                        <E>
+                                         <T>
+                                          <P>
+                                           BROJ 18 1127
+                                          <T_lista>
+                                           $
+                                         <E_lista>
+                                          $
+                                        D_ZAGRADA 18 )
+                                   <T_lista>
+                                    $
+                                  <E_lista>
+                                   OP_PLUS 18 +
+                                   <E>
+                                    <T>
+                                     <P>
+                                      BROJ 18 424
+                                     <T_lista>
+                                      $
+                                    <E_lista>
+                                     $
+                                 D_ZAGRADA 18 )
+                                <T_lista>
+                                 $
+                               <E_lista>
+                                $
+                              D_ZAGRADA 18 )
+                             <T_lista>
+                              $
+                            <E_lista>
+                             $
+                           D_ZAGRADA 18 )
+                          <T_lista>
+                           $
+                       <E_lista>
+                        OP_MINUS 18 -
+                        <E>
+                         <T>
+                          <P>
+                           BROJ 18 329
+                          <T_lista>
+                           $
+                         <E_lista>
+                          OP_MINUS 18 -
+                          <E>
+                           <T>
+                            <P>
+                             IDN 18 e
+                            <T_lista>
+                             $
+                           <E_lista>
+                            $
+                      KR_DO 18 do
+                      <E>
+                       <T>
+                        <P>
+                         BROJ 18 907
+                        <T_lista>
+                         $
+                       <E_lista>
+                        OP_MINUS 18 -
+                        <E>
+                         <T>
+                          <P>
+                           BROJ 18 932
+                          <T_lista>
+                           $
+                         <E_lista>
+                          $
+                      <lista_naredbi>
+                       <naredba>
+                        <naredba_pridruzivanja>
+                         IDN 19 j
+                         OP_PRIDRUZI 19 =
+                         <E>
+                          <T>
+                           <P>
+                            L_ZAGRADA 19 (
+                            <E>
+                             <T>
+                              <P>
+                               BROJ 19 437
+                              <T_lista>
+                               $
+                             <E_lista>
+                              $
+                            D_ZAGRADA 19 )
+                           <T_lista>
+                            $
+                          <E_lista>
+                           $
+                       <lista_naredbi>
+                        $
+                      KR_AZ 20 az
+                    <lista_naredbi>
+                     $
+                   KR_AZ 21 az
+                 <lista_naredbi>
+                  <naredba>
+                   <naredba_pridruzivanja>
+                    IDN 22 x
+                    OP_PRIDRUZI 22 =
+                    <E>
+                     <T>
+                      <P>
+                       BROJ 22 447
+                      <T_lista>
+                       $
+                     <E_lista>
+                      OP_PLUS 22 +
+                      <E>
+                       <T>
+                        <P>
+                         BROJ 22 290
+                        <T_lista>
+                         OP_PUTA 22 *
+                         <T>
+                          <P>
+                           IDN 22 w
+                          <T_lista>
+                           $
+                       <E_lista>
+                        $
+                  <lista_naredbi>
+                   <naredba>
+                    <naredba_pridruzivanja>
+                     IDN 23 i
+                     OP_PRIDRUZI 23 =
+                     <E>
+                      <T>
+                       <P>
+                        OP_MINUS 23 -
+                        <P>
+                         BROJ 23 502
+                       <T_lista>
+                        $
+                      <E_lista>
+                       OP_PLUS 23 +
+                       <E>
+                        <T>
+                         <P>
+                          BROJ 23 676
+                         <T_lista>
+                          OP_PUTA 23 *
+                          <T>
+                           <P>
+                            OP_MINUS 23 -
+                            <P>
+                             L_ZAGRADA 23 (
+                             <E>
+                              <T>
+                               <P>
+                                BROJ 23 987
+                               <T_lista>
+                                $
+                              <E_lista>
+                               $
+                             D_ZAGRADA 23 )
+                           <T_lista>
+                            $
+                        <E_lista>
+                         $
+                   <lista_naredbi>
+                    <naredba>
+                     <za_petlja>
+                      KR_ZA 24 za
+                      IDN 24 r
+                      KR_OD 24 od
+                      <E>
+                       <T>
+                        <P>
+                         OP_PLUS 24 +
+                         <P>
+                          BROJ 24 1158
+                        <T_lista>
+                         OP_PUTA 24 *
+                         <T>
+                          <P>
+                           BROJ 24 112
+                          <T_lista>
+                           $
+                       <E_lista>
+                        OP_MINUS 24 -
+                        <E>
+                         <T>
+                          <P>
+                           OP_PLUS 24 +
+                           <P>
+                            IDN 24 w
+                          <T_lista>
+                           $
+                         <E_lista>
+                          $
+                      KR_DO 24 do
+                      <E>
+                       <T>
+                        <P>
+                         IDN 24 w
+                        <T_lista>
+                         $
+                       <E_lista>
+                        $
+                      <lista_naredbi>
+                       $
+                      KR_AZ 25 az
+                    <lista_naredbi>
+                     <naredba>
+                      <za_petlja>
+                       KR_ZA 26 za
+                       IDN 26 y
+                       KR_OD 26 od
+                       <E>
+                        <T>
+                         <P>
+                          IDN 26 p
+                         <T_lista>
+                          OP_PUTA 26 *
+                          <T>
+                           <P>
+                            OP_MINUS 26 -
+                            <P>
+                             BROJ 26 72
+                           <T_lista>
+                            $
+                        <E_lista>
+                         $
+                       KR_DO 26 do
+                       <E>
+                        <T>
+                         <P>
+                          L_ZAGRADA 26 (
+                          <E>
+                           <T>
+                            <P>
+                             BROJ 26 401
+                            <T_lista>
+                             $
+                           <E_lista>
+                            $
+                          D_ZAGRADA 26 )
+                         <T_lista>
+                          $
+                        <E_lista>
+                         $
+                       <lista_naredbi>
+                        $
+                       KR_AZ 27 az
+                     <lista_naredbi>
+                      <naredba>
+                       <za_petlja>
+                        KR_ZA 28 za
+                        IDN 28 x
+                        KR_OD 28 od
+                        <E>
+                         <T>
+                          <P>
+                           IDN 28 h
+                          <T_lista>
+                           OP_PUTA 28 *
+                           <T>
+                            <P>
+                             BROJ 28 473
+                            <T_lista>
+                             $
+                         <E_lista>
+                          $
+                        KR_DO 28 do
+                        <E>
+                         <T>
+                          <P>
+                           BROJ 28 1187
+                          <T_lista>
+                           $
+                         <E_lista>
+                          OP_PLUS 28 +
+                          <E>
+                           <T>
+                            <P>
+                             BROJ 28 617
+                            <T_lista>
+                             $
+                           <E_lista>
+                            OP_MINUS 28 -
+                            <E>
+                             <T>
+                              <P>
+                               BROJ 28 691
+                              <T_lista>
+                               $
+                             <E_lista>
+                              $
+                        <lista_naredbi>
+                         $
+                        KR_AZ 29 az
+                      <lista_naredbi>
+                       $
+                KR_AZ 30 az
+              <lista_naredbi>
+               $
+           KR_AZ 31 az
+         <lista_naredbi>
+          <naredba>
+           <naredba_pridruzivanja>
+            IDN 32 w
+            OP_PRIDRUZI 32 =
+            <E>
+             <T>
+              <P>
+               BROJ 32 981
+              <T_lista>
+               OP_PUTA 32 *
+               <T>
+                <P>
+                 IDN 32 x
+                <T_lista>
+                 OP_PUTA 32 *
+                 <T>
+                  <P>
+                   BROJ 32 1188
+                  <T_lista>
+                   $
+             <E_lista>
+              $
+          <lista_naredbi>
+           <naredba>
+            <naredba_pridruzivanja>
+             IDN 33 i
+             OP_PRIDRUZI 33 =
+             <E>
+              <T>
+               <P>
+                L_ZAGRADA 33 (
+                <E>
+                 <T>
+                  <P>
+                   OP_PLUS 33 +
+                   <P>
+                    OP_MINUS 33 -
+                    <P>
+                     L_ZAGRADA 33 (
+                     <E>
+                      <T>
+                       <P>
+                        IDN 33 e
+                       <T_lista>
+                        $
+                      <E_lista>
+                       OP_PLUS 33 +
+                       <E>
+                        <T>
+                         <P>
+                          OP_MINUS 33 -
+                          <P>
+                           BROJ 33 165
+                         <T_lista>
+                          $
+                        <E_lista>
+                         $
+                     D_ZAGRADA 33 )
+                  <T_lista>
+                   $
+                 <E_lista>
+                  OP_MINUS 33 -
+                  <E>
+                   <T>
+                    <P>
+                     BROJ 33 970
+                    <T_lista>
+                     $
+                   <E_lista>
+                    $
+                D_ZAGRADA 33 )
+               <T_lista>
+                OP_PUTA 33 *
+                <T>
+                 <P>
+                  BROJ 33 1192
+                 <T_lista>
+                  $
+              <E_lista>
+               $
+           <lista_naredbi>
+            <naredba>
+             <naredba_pridruzivanja>
+              IDN 34 w
+              OP_PRIDRUZI 34 =
+              <E>
+               <T>
+                <P>
+                 BROJ 34 889
+                <T_lista>
+                 $
+               <E_lista>
+                OP_MINUS 34 -
+                <E>
+                 <T>
+                  <P>
+                   OP_MINUS 34 -
+                   <P>
+                    L_ZAGRADA 34 (
+                    <E>
+                     <T>
+                      <P>
+                       IDN 34 e
+                      <T_lista>
+                       $
+                     <E_lista>
+                      $
+                    D_ZAGRADA 34 )
+                  <T_lista>
+                   OP_PUTA 34 *
+                   <T>
+                    <P>
+                     OP_MINUS 34 -
+                     <P>
+                      OP_MINUS 34 -
+                      <P>
+                       L_ZAGRADA 34 (
+                       <E>
+                        <T>
+                         <P>
+                          BROJ 34 1223
+                         <T_lista>
+                          $
+                        <E_lista>
+                         $
+                       D_ZAGRADA 34 )
+                    <T_lista>
+                     $
+                 <E_lista>
+                  $
+            <lista_naredbi>
+             <naredba>
+              <naredba_pridruzivanja>
+               IDN 35 n
+               OP_PRIDRUZI 35 =
+               <E>
+                <T>
+                 <P>
+                  BROJ 35 1221
+                 <T_lista>
+                  $
+                <E_lista>
+                 OP_PLUS 35 +
+                 <E>
+                  <T>
+                   <P>
+                    BROJ 35 265
+                   <T_lista>
+                    OP_PUTA 35 *
+                    <T>
+                     <P>
+                      OP_MINUS 35 -
+                      <P>
+                       OP_MINUS 35 -
+                       <P>
+                        IDN 35 x
+                     <T_lista>
+                      $
+                  <E_lista>
+                   $
+             <lista_naredbi>
+              <naredba>
+               <za_petlja>
+                KR_ZA 36 za
+                IDN 36 j
+                KR_OD 36 od
+                <E>
+                 <T>
+                  <P>
+                   BROJ 36 785
+                  <T_lista>
+                   $
+                 <E_lista>
+                  OP_PLUS 36 +
+                  <E>
+                   <T>
+                    <P>
+                     BROJ 36 345
+                    <T_lista>
+                     $
+                   <E_lista>
+                    $
+                KR_DO 36 do
+                <E>
+                 <T>
+                  <P>
+                   IDN 36 i
+                  <T_lista>
+                   $
+                 <E_lista>
+                  OP_MINUS 36 -
+                  <E>
+                   <T>
+                    <P>
+                     BROJ 36 287
+                    <T_lista>
+                     $
+                   <E_lista>
+                    OP_PLUS 36 +
+                    <E>
+                     <T>
+                      <P>
+                       IDN 36 i
+                      <T_lista>
+                       $
+                     <E_lista>
+                      $
+                <lista_naredbi>
+                 <naredba>
+                  <naredba_pridruzivanja>
+                   IDN 37 e
+                   OP_PRIDRUZI 37 =
+                   <E>
+                    <T>
+                     <P>
+                      OP_PLUS 37 +
+                      <P>
+                       BROJ 37 1022
+                     <T_lista>
+                      OP_PUTA 37 *
+                      <T>
+                       <P>
+                        BROJ 37 20
+                       <T_lista>
+                        $
+                    <E_lista>
+                     $
+                 <lista_naredbi>
+                  <naredba>
+                   <naredba_pridruzivanja>
+                    IDN 38 n
+                    OP_PRIDRUZI 38 =
+                    <E>
+                     <T>
+                      <P>
+                       IDN 38 w
+                      <T_lista>
+                       $
+                     <E_lista>
+                      $
+                  <lista_naredbi>
+                   $
+                KR_AZ 39 az
+              <lista_naredbi>
+               <naredba>
+                <naredba_pridruzivanja>
+                 IDN 40 q
+                 OP_PRIDRUZI 40 =
+                 <E>
+                  <T>
+                   <P>
+                    BROJ 40 1031
+                   <T_lista>
+                    OP_PUTA 40 *
+                    <T>
+                     <P>
+                      IDN 40 i
+                     <T_lista>
+                      $
+                  <E_lista>
+                   OP_PLUS 40 +
+                   <E>
+                    <T>
+                     <P>
+                      BROJ 40 981
+                     <T_lista>
+                      $
+                    <E_lista>
+                     $
+               <lista_naredbi>
+                <naredba>
+                 <naredba_pridruzivanja>
+                  IDN 41 n
+                  OP_PRIDRUZI 41 =
+                  <E>
+                   <T>
+                    <P>
+                     IDN 41 h
+                    <T_lista>
+                     $
+                   <E_lista>
+                    OP_MINUS 41 -
+                    <E>
+                     <T>
+                      <P>
+                       IDN 41 h
+                      <T_lista>
+                       $
+                     <E_lista>
+                      $
+                <lista_naredbi>
+                 <naredba>
+                  <naredba_pridruzivanja>
+                   IDN 42 j
+                   OP_PRIDRUZI 42 =
+                   <E>
+                    <T>
+                     <P>
+                      BROJ 42 810
+                     <T_lista>
+                      OP_PUTA 42 *
+                      <T>
+                       <P>
+                        BROJ 42 808
+                       <T_lista>
+                        $
+                    <E_lista>
+                     OP_PLUS 42 +
+                     <E>
+                      <T>
+                       <P>
+                        IDN 42 e
+                       <T_lista>
+                        $
+                      <E_lista>
+                       $
+                 <lista_naredbi>
+                  <naredba>
+                   <naredba_pridruzivanja>
+                    IDN 43 q
+                    OP_PRIDRUZI 43 =
+                    <E>
+                     <T>
+                      <P>
+                       IDN 43 q
+                      <T_lista>
+                       OP_PUTA 43 *
+                       <T>
+                        <P>
+                         IDN 43 x
+                        <T_lista>
+                         $
+                     <E_lista>
+                      $
+                  <lista_naredbi>
+                   <naredba>
+                    <naredba_pridruzivanja>
+                     IDN 44 q
+                     OP_PRIDRUZI 44 =
+                     <E>
+                      <T>
+                       <P>
+                        L_ZAGRADA 44 (
+                        <E>
+                         <T>
+                          <P>
+                           IDN 44 h
+                          <T_lista>
+                           OP_PUTA 44 *
+                           <T>
+                            <P>
+                             BROJ 44 276
+                            <T_lista>
+                             $
+                         <E_lista>
+                          OP_PLUS 44 +
+                          <E>
+                           <T>
+                            <P>
+                             BROJ 44 651
+                            <T_lista>
+                             $
+                           <E_lista>
+                            $
+                        D_ZAGRADA 44 )
+                       <T_lista>
+                        $
+                      <E_lista>
+                       $
+                   <lista_naredbi>
+                    <naredba>
+                     <naredba_pridruzivanja>
+                      IDN 45 l
+                      OP_PRIDRUZI 45 =
+                      <E>
+                       <T>
+                        <P>
+                         IDN 45 j
+                        <T_lista>
+                         OP_PUTA 45 *
+                         <T>
+                          <P>
+                           L_ZAGRADA 45 (
+                           <E>
+                            <T>
+                             <P>
+                              BROJ 45 946
+                             <T_lista>
+                              $
+                            <E_lista>
+                             $
+                           D_ZAGRADA 45 )
+                          <T_lista>
+                           $
+                       <E_lista>
+                        OP_PLUS 45 +
+                        <E>
+                         <T>
+                          <P>
+                           IDN 45 i
+                          <T_lista>
+                           $
+                         <E_lista>
+                          $
+                    <lista_naredbi>
+                     $

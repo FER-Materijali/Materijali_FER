@@ -1,0 +1,9 @@
+Gramatika 2
++ * a ( )
+E$,T+,T),T$,P+,P*,P),a+,a*,a)
+1 E->E+T
+2 E->T
+3 T->T*P
+4 T->P
+5 P->(E)
+6 P->a

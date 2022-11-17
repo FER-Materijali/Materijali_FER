@@ -1,0 +1,13 @@
+d = 0
+za a od 1 do 5
+  za b od -a do +a
+    za c od b+a do b*(d+3)
+      d = d + a*b*c
+    az
+  az
+  za c od b-a do b*(d-3)
+    d = d + 1
+  az
+  za c od 0 do 100
+  az
+az

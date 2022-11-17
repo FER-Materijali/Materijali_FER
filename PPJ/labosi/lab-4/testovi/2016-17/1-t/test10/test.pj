@@ -1,0 +1,5 @@
+i = 0
+rez = -12
+za i od -1 do -1
+    rez = rez - i
+az

@@ -1,0 +1,6 @@
+a = 12
+b = a + 12
+c = b*13
+d = a/b/c + d
+do = od
+od = 3+zaz

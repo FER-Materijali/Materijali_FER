@@ -1,0 +1,5 @@
+S->pAmC
+S->bA
+A->dSa
+A->e
+C->dA

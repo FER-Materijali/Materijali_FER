@@ -1,0 +1,14 @@
+%header%
+
+GRAMMARTYPE = "LL"
+
+%tokens%
+
+a = "a"
+b = "b"
+e = "e"
+
+%productions%
+
+S = a E a | a E b | b E a | b E b ;
+E = S e | e ;

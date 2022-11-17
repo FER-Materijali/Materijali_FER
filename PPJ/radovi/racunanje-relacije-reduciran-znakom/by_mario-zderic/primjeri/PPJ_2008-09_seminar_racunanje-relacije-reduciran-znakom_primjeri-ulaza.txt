@@ -1,0 +1,24 @@
+Gramatika 1.
+A,B,C,D,E
+%
+A:=BCc
+A:=eDB
+B:=$
+B:=bCDE
+C:=DaB
+C:=ca
+D:=$
+D:=dD
+E:=eAf
+E:=c
+%
+
+Gramatika 2.
+S, A, B, C
+%
+S:= pAmC 
+A:= dSa
+C:= dA
+S:= bA 
+A:= e
+%

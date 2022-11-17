@@ -1,0 +1,5 @@
+n = 5
+rez = 0
+za i od n do n+5
+  rez = rez - i*i + i/3
+az

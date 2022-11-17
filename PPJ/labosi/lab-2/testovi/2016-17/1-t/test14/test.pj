@@ -1,0 +1,6 @@
+c = 0
+za a od 0 do 5
+  za b od a do 10
+    c = c + a*b
+  az
+az

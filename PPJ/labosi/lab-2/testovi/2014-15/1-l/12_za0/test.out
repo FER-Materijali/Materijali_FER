@@ -1,0 +1,29 @@
+<program>
+ <lista_naredbi>
+  <naredba>
+   <za_petlja>
+    KR_ZA 1 za
+    IDN 1 a
+    KR_OD 1 od
+    <E>
+     <T>
+      <P>
+       BROJ 1 0
+      <T_lista>
+       $
+     <E_lista>
+      $
+    KR_DO 1 do
+    <E>
+     <T>
+      <P>
+       BROJ 1 1
+      <T_lista>
+       $
+     <E_lista>
+      $
+    <lista_naredbi>
+     $
+    KR_AZ 2 az
+  <lista_naredbi>
+   $
