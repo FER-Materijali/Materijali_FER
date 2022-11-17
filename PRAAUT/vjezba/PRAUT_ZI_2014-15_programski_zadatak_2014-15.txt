@@ -1,0 +1,84 @@
+//********************************************************************************
+//    OB40: Hardware interrupt
+//********************************************************************************
+
+      L     PIB  125
+      T     #enc_new
+      L     "enc_old"
+      XOW                               // bits are 1 where change occurred
+      T     #enc_change
+
+      AW    W#16#1
+      JZ    C_1B
+      L     #enc_new
+      AW    W#16#1                      //extract new bit A
+      PUSH                              //copy to ACCU2 
+      L     #enc_new
+      SRW   1                           //extract new bit B and put it on position of A
+      AW    W#16#1
+      XOW                               //xor new bit A with new bit B
+      JZ    E1_M
+      JU    E1_P
+
+
+
+C_1B: L     #enc_change
+      AW    W#16#2
+      JZ    C_2A
+      L     #enc_new
+      AW    W#16#1                      //extract new bit A
+      PUSH                              //copy to ACCU2 
+      L     #enc_new
+      SRW   1                           //extract new bit B and put it on position of A
+      AW    W#16#1
+      XOW                               // xor new bit A with new bit B
+      JZ    E1_P
+      JU    E1_M
+
+E1_P: L     "IMPULSA_X"
+      +     L#1
+      T     "IMPULSA_X"
+      JU    C_2A
+E1_M: L     "IMPULSA_X"
+      +     L#-1
+      T     "IMPULSA_X"
+
+
+C_2A: L     #enc_change
+      AW    W#16#4
+      JZ    C_2B
+      L     #enc_new
+      AW    W#16#4                      //extract new bit A
+      PUSH                              //copy to ACCU2 
+      L     #enc_new
+      SRW   1                           //extract new bit B and put it on position of A
+      AW    W#16#4
+      XOW                               // xor new bit A with new bit B
+      JZ    E2_M
+      JU    E2_P
+
+
+C_2B: L     #enc_change
+      AW    W#16#8
+      JZ    ENDE
+      L     #enc_new
+      AW    W#16#4                      //extract new bit A
+      PUSH                              //copy to ACCU2 
+      L     #enc_new
+      SRW   1                           //extract new bit B and put it on position of A
+      AW    W#16#4
+      XOW                               //xor new bit A with new bit B
+      JZ    E2_P
+      JU    E2_M
+
+E2_P: L     "IMPULSA_Y"
+      +     L#1
+      T     "IMPULSA_Y"
+      JU    ENDE
+E2_M: L     "IMPULSA_Y"
+      +     L#-1
+      T     "IMPULSA_Y"
+
+
+ENDE: L     #enc_new
+      T     "enc_old"
