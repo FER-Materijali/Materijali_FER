@@ -1,0 +1,18 @@
+<header class="header primary-color-bg">
+    <nav class="navigation container">
+        <div class="menu">
+            <a href="/" class="link menu-item <%if (linkActive === 'home') {%>  link-active  <%}%>">Home</a>
+            <a href="/order" class="link menu-item <%if (linkActive === 'order') {%>  link-active  <%}%>">Order</a>
+            <a href="/" class="link">
+                <img class="scaled-image scaled-image-fixed" src="../images/logo.svg" alt="Company logo">
+            </a>
+            <a href="/cart" class="link menu-item <%if (linkActive === 'cart') {%>  link-active  <%}%>">Cart</a>
+            <% if( user !== undefined ) {%>
+            <a href="/user" class="link menu-item <%if (linkActive === 'user') {%>  link-active  <%}%>">User</a>
+            <a href="/logout" class="link menu-item <%if (linkActive === 'logout') {%>  link-active  <%}%>">Logout</a>
+            <% } else {%>
+            <a href="/login" class="link menu-item <%if (linkActive === 'login') {%>  link-active  <%}%>">Login</a>
+            <% } %>
+        </div>
+    </nav>
+</header>

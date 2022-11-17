@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Error <%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/images/flower-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="/vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head>
+
+<body class="content">
+
+<%- include(`partials/header`); %>
+
+<main class="main">
+    <div class="centered-container">
+        <h1 class="decorated-title font-secondary main-color"><span class="main-color-emphasized">
+                            <%= title %>:</span> Error(s) Occurred</h1>
+        <div class="separator"></div>
+        <div class="container">
+            <% if (errors !== 'none') { %>
+                <% for (let errorValidation of errors) { %>
+                    <div class="main-color">Error <span class="main-color-emphasized">
+                            <%= errorValidation.msg %></span> occured on parameter <span class="main-color-emphasized">
+                            <%= errorValidation.param %></span></div>
+                    <div class="separator"></div>
+                <% } %>
+            <% } else { %>
+                <div class="main-color">Error occured because: <span class="main-color-emphasized">
+                            <%= errDB %></span></div>
+                <div class="separator"></div>
+            <% } %>
+        </div>
+        <div class="buttons">
+            <a href="/item/<%= itemID %>">
+                <button class="btn">Back to item</button>
+            </a>
+        </div>
+    </div>
+</main>
+
+<%- include(`partials/footer`); %>
+
+</body>
+
+</html>
+

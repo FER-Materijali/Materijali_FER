@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./images/flower-icon.png" />
+    <link rel="stylesheet" type="text/css" href="./vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body class="content">
+
+    <%- include(`partials/header`); %>
+
+    <main class="main">
+        <h1 class="decorated-title decorated-title-centered font-secondary main-color">
+            <span class="main-color-emphasized">Thank you</span> for your purchase!
+        </h1>
+        <div class="separator"></div>
+        <div class="gutter container">
+            <div class="entry entry-col-3 entry-emphasized">
+                <div class="">Product</div>
+                <div class="">Unit price</div>
+                <div class="">Quantity</div>
+            </div>
+            <% for (item of Object.values(cart.items)) { %>
+            <div class="entry entry-col-3" data-id="<%= item.id %>">
+                <figure class="entry-figure">
+                    <img class="entry-image" src="<%= item.imageurl %>"></img>
+                    <figcaption><%= item.name %></figcaption>
+                </figure>
+                <div><%= item.price %></div>
+                <div><%= item.quantity %></div>
+            </div>
+            <% } %>
+            <div class="entry entry-total-price">
+                <div>TOTAL PRICE: </div>
+                <div class="entry-total-price-val"><%= cart.totalAmount %></div>
+            </div>
+        </div>
+
+    </main>
+
+    <%- include(`partials/footer`); %>
+
+</body>
+
+</html>

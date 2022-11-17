@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flower power!</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./images/flower-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="./vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head>
+
+<body class="content">
+
+<%- include(`partials/header`); %>
+
+<main class="main">
+
+    <section class="section secondary-color-bg">
+        <div class="container">
+            <div class="centered-container">
+                <h1 class="decorated-title font-secondary main-color">
+                    <span class="main-color-emphasized">New</span> User
+                </h1>
+
+                <div class="separator"></div>
+                <form action="/signup" method="post" class="form gutter">
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">User registration form</legend>
+
+                        <div class="form-group">
+                            <label class="form-label" for="username">Username:</label>
+                            <input class="form-component form-input" type="text" name="username" id="username" maxlength="20"
+                                   minlength="1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="email">E-mail:</label>
+                            <input class="form-component form-input" type="email" name="email" id="email" maxlength="20"
+                                   minlength="12" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="firstname">First name:</label>
+                            <input class="form-component form-input" type="text" name="firstName" id="firstname"
+                                   maxlength="20"
+                                   minlength="2">
+                        </div>
+
+                        <div class="form-group">
+
+                            <label class="form-label" for="lastname">Last name:</label>
+                            <input class="form-component form-input" type="text" name="lastName" id="lastname"
+                                   maxlength="20"
+                                   minlength="2">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="form-label" for="password1">Password:</label>
+                            <input class="form-component form-input" type="password" maxlength="20" minlength="8"
+                                   id="password1"
+                                   name="password1" placeholder="Pick something secure and memorable" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="password2">Confirm password:</label>
+                            <input class="form-component form-input" type="password" maxlength="20" minlength="8"
+                                   id="password2"
+                                   name="password2" placeholder="Match the password above" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="street">Street:</label>
+                            <input class="form-component form-input" type="text" maxlength="40" minlength="10"
+                                   id="street"
+                                   name="street">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="postcode">Post/zip code:</label>
+                            <input class="form-component form-input" type="text" maxlength="40" minlength="5"
+                                   id="postcode"
+                                   name="postcode">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="city">City:</label>
+                            <input class="form-component form-input" type="text" maxlength="40" minlength="5" id="city"
+                                   name="city">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="city">Country:</label>
+                            <input class="form-component form-input" type="text" maxlength="40" minlength="5"
+                                   id="country"
+                                   name="country">
+                        </div>
+
+                        <input class="btn" type="submit">
+                        <input class="btn" type="reset">
+
+                        <% if (err !== undefined ) { %>
+                            <p class="alert alert-danger"><%= err %></p>
+                        <% } %>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include(`partials/footer`); %>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!-- zajednicki zadatak cart.html - pregled kosarice -->
+<template id="cart-template-header">
+    <div class="cart-header">
+        <div class="cart-header-title">Product</div>
+        <div class="cart-header-title">Price</div>
+        <div class="cart-header-title">Quantity</div>
+    </div>
+</template>
+<template id="cart-template-item">
+    <div class="cart-item">
+        <div class="cart-item-title">Tulips</div>
+        <div class="cart-item-price">15 kn</div>
+        <input type="number" class="cart-item-quantity"></input>
+    </div>
+</template>
+
+<!-- 1. zadatak - filter -->
+<div class="centered-container">
+    <h1 class="decorated-title font-secondary main-color"><span class="main-color-emphasized">Shopping
+            cart</span> items</h1>
+    <div class="separator"></div>
+    Filter products<br></br>
+    <input type="text" class="cart-filter-text", value=""></input>
+    <button class="cart-filter-apply">Apply</button>
+    <button class="cart-filter-clear">Clear</button>
+    <div class="separator"></div>
+</div>
+
+<!-- 2. zadatak - update -->
+<template id="cart-template-item">
+    <div class="cart-item">
+        <div class="cart-item-title">Tulips</div>
+        <div class="cart-item-price">15 kn</div>
+        
+        <input type="button" class="cart-btn-update-minus" value="-">
+        <input type="number" class="cart-item-quantity"></input>
+        <input type="button" class="cart-btn-update-plus" value="+">
+    </div>
+</template>
+
+
+<!-- 3. zadatak - total  -->
+<template id="cart-template-item">
+    <div class="cart-item">
+        <div class="cart-item-title">Tulips</div>
+        <div class="cart-item-price">15 kn</div>
+        <div class="cart-item-quantity-div">
+            <input type="number" class="cart-item-quantity"></input>
+        </div>
+        <div class="cart-item-total-price">15 kn</div>
+    </div>
+</template>
+<template  id="cart-total-template">
+    <div  class="cart-total"><div>Total:
+    </div><div  id="cart-total-value">
+    </div></div>
+</template >
+
+<!-- 4. zadatak - sort  -->
+<template id="cart-template-header">
+    <div class="cart-header">
+        <button class="cart-header-title" id="product-button" >Product</button>
+        <button class="cart-header-title" id="price-button">Price</button>
+        <button class="cart-header-title" id="quantity-button">Quantity</button>
+    </div>
+</template>

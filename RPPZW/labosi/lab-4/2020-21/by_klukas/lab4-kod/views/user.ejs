@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flower power!</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./images/flower-icon.png" />
+    <link rel="stylesheet" type="text/css" href="./vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body class="content">
+
+    <%- include(`partials/header`); %>
+
+    <main class="main">
+        <section class="section secondary-color-bg">
+            <div class="container">
+                <h1 class="decorated-title font-secondary main-color">
+                    <span class="main-color-emphasized">User</span> profile
+                </h1>
+                <div class="dataset">
+
+                    <div class="dataset-entry">
+                        <div class="dataset-property">
+                            User name
+                        </div>
+                        <div class="dataset-value">
+                            <%= user.user_name %>
+                        </div>
+                    </div>
+
+                    <div class="dataset-entry">
+                        <div class="dataset-property">
+                            First name
+                        </div>
+                        <div class="dataset-value">
+                            <%= user.first_name %>
+                        </div>
+                    </div>
+
+                    <div class="dataset-entry">
+                        <div class="dataset-property">
+                            Last name
+                        </div>
+                        <div class="dataset-value">
+                            <%= user.last_name %>
+                        </div>
+                    </div>
+                    <div class="dataset-entry">
+                        <div class="dataset-property">
+                            E-mail
+                        </div>
+                        <div class="dataset-value">
+                            <%= user.email %>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container collapse-fix">
+                <div class="separator"></div>
+            </div>
+
+            <section class="section secondary-color-bg">
+                <div class="container collapse-fix">
+
+                    <h1 class="decorated-title font-secondary main-color">
+                        <span class="main-color-emphasized">User</span> addresses
+                    </h1>
+
+                    <div class="dataset">
+                        <div class="dataset-entry">
+                            <div class="dataset-property">
+                                Name:
+                            </div>
+                            <div class="dataset-value">
+                                <%= address.name %>
+                            </div>
+                        </div>
+
+                        <div class="dataset-entry">
+                            <div class="dataset-property">
+                                Street:
+                            </div>
+                            <div class="dataset-value">
+                                <%= address.street %>
+                            </div>
+                        </div>
+
+                        <div class="dataset-entry">
+                            <div class="dataset-property">
+                                Postcode:
+                            </div>
+                            <div class="dataset-value">
+                                <%= address.code %>
+                            </div>
+                        </div>
+
+                        <div class="dataset-entry">
+                            <div class="dataset-property">
+                                City:
+                            </div>
+                            <div class="dataset-value">
+                                <%= address.town %>
+                            </div>
+                        </div>
+
+                        <div class="dataset-entry">
+                            <div class="dataset-property">
+                                Country:
+                            </div>
+                            <div class="dataset-value">
+                                <%= address.country %>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <div class="container collapse-fix">
+                <div class="separator"></div>
+            </div>
+
+            <section class="section container collapse-fix gutter">
+                <h1 class="decorated-title font-secondary main-color">
+                    <span class="main-color-emphasized">Past</span> orders
+                </h1>
+                <div class="entries">
+                    <% if ((!orders) || (orders.length == 0)) { %>
+                    <div class="entry entry-left gutter">
+                        No orders yet
+                    </div>
+                    <% } else { %>
+                    <% for (order of orders) { %>
+                    <% if( order && order.date && order.cart ) { %>
+                    <div class="entry entry-left gutter">
+                        <div class="main-color-emphasized">
+                            Date:
+                        </div>
+                        <div class="entry-value">
+                            <%= order.date.toISOString().slice(0, 10) %>
+                        </div>
+                        <div class="main-color-emphasized">
+                            Total price:
+                        </div>
+                        <div class="entry-value">
+                            <%= JSON.parse(order.cart)["totalAmount"] %>
+                        </div>
+                    </div>
+
+                    <% } %>
+                    <% } %>
+                    <% } %>
+                </div>
+
+            </section>
+        </section>
+    </main>
+
+    <%- include(`partials/footer`); %>
+
+
+</body>
+
+</html>

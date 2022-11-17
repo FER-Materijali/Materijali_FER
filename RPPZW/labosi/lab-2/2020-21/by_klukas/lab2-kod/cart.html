@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flower power!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/flower-icon.png" />
+    <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+
+<body class="content body-header-fixed">
+    <header class="header header-fixed primary-color-bg">
+        <nav class="navigation container">
+            <div class="menu">
+                <a href="index.html" class="link menu-item">Home</a>
+                <a href="order.html" class="link menu-item">Order</a>
+                <a href="index.html" class="link">
+                    <img class="scaled-image scaled-image-fixed" src="images/logo.svg" alt="Company logo">
+                </a>
+                <a href="#" class="link menu-item">Contact us</a>
+                <a href="cart.html" class="link menu-item cart-menu link-active">
+                    <img src="images/cart-icon.svg" alt="Cart icon">
+                    <div class="cart-menu-status">
+                        <div id="cart-items">0</div>
+                        <div>items</div>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+
+        <section class="section secondary-color-bg">
+            <div class="centered-container">
+                <h1 class="decorated-title font-secondary main-color">
+                    <span class="main-color-emphasized">Shopping cart</span>
+                    Items</h1>
+                <div class="separator"></div>
+            </div>
+        </section>
+        <section class="section secondary-color-bg">
+            <div class = "cart">
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer lab-footer">
+        <div class="container">
+            <div class="menu menu-distributed">
+                <div class="infobox infobox-marginless infobox-copyright">
+                    <h4 class="infobox-title infobox-title-secondary-color main-color-emphasized">
+                        Copy this as much as you like
+                    </h4>
+                </div>
+                <div class="infobox infobox-marginless infobox-flower">
+                    <h4 class="infobox-title infobox-title-secondary-color main-color-emphasized">
+                        Flower power
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <template id="cart-template-header">
+        <div class="cart-header">
+            <div class="cart-header-title">Product</div>
+            <div class="cart-header-title">Price</div>
+            <div class="cart-header-title">Quantity</div>
+            <div class="cart-header-total">Total price</div>
+        </div>
+    </template>
+    <template id="cart-template-item">
+        <div class="cart-item">
+            <div class="cart-item-title">Tulips</div>
+            <div class="cart-item-price">15 kn</div>
+            <div class="cart-item-quantity-div">
+                <input type="number" class="cart-item-quantity"></input>
+            </div>
+            <div class="cart-item-total-price">15 kn</div>
+        </div>
+    </template>
+    <template  id="cart-total-template">
+        <div  class="cart-total"><div>Total: 0
+        </div><div  id="cart-total-value">
+        </div></div>
+    </template >
+    <script src="scripts/cart.js"></script>
+    <script>
+        if (localStorage.getItem("count")) {
+            document.querySelector('#cart-items').innerHTML = JSON.parse(localStorage.getItem("count"));
+        } else {
+            document.querySelector('#cart-items').innerHTML = 0;
+        }
+    </script>
+</body>
+</html>

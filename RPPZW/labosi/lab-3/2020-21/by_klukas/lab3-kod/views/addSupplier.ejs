@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> --- </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/images/flower-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="/vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head>
+
+<body class="content">
+
+<%- include(`partials/header`); %>
+
+<main class="main">
+
+            <div class="container">
+                <div class="centered-container">
+                    <h1 class="decorated-title font-secondary main-color">
+                        Add new  
+                        <span class="main-color-emphasized">suppliers</span>
+                        for item
+                        <span class="main-color-emphasized"><%=item.name%></span>
+                    </h1>
+                    <div class="separator"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="centered-container">
+                    <form action="/item/<%=item.id%>/addsupplier" method="POST">
+                        <fieldset class="fieldset">
+                            <div class="label-input">
+                                <label for="name"> Name </label>
+                                <input type="text" name="name" id="name" size="30" required>
+                            </div>
+                            <div class="label-input">
+                                <label for="country"> Country </label>
+                                <input type="text" name="country" id="country" size="30" required>
+                            </div>
+                            <div class="label-input">
+                                <label for="county"> County </label>
+                                <input type="text" name="county" id="county" size="30" required>
+                            </div>
+                            <div class="label-input">
+                                <label for="e-mail"> E-mail </label>
+                                <input type="text" name="email" id="email" size="30" required>
+                            </div>
+                            <div class="label-input">
+                                <label for="supplier"> Supplier since </label>
+                                <input type="text" name="suppliersince" id="suppliersince" size="30" required>
+                            </div>
+                            <hr>
+                            <div class="submitButtons">
+                                <input type="submit" class="btn">
+                                <input type="reset" class="btn"> 
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+
+            
+
+</main>
+
+<%- include(`partials/footer`); %>
+
+</body>
+
+</html>

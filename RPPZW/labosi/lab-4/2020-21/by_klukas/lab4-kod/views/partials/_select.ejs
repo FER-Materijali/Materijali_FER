@@ -1,0 +1,6 @@
+<% let selectData = locals.selectData || { list: []};  %>
+<select id="<%-selectData.id%>" <%-selectData.name ? 'name="' + selectData.name + '"': '' %> <%- selectData.attributes ? selectData.attributes : '' %> >
+    <% selectData.list.forEach(function(item) {  %>
+        <option <%- (item.value == selectData.selected) ? "selected" : "" %> value="<%-item.value%>"><%-item.name%></option>
+    <%  }); %>
+</select>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="../images/flower-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="../vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head>
+
+<body class="content">
+
+<%- include(`partials/header`); %>
+
+<main class="main">
+    <section class="section secondary-color-bg">
+        <div class="container">
+            <div class="centered-container">
+                <h1 class="decorated-title font-secondary main-color">
+                    Item 
+                    <span class="main-color-emphasized">Information</span>
+                </h1>
+                <div class="separator"></div>
+            </div>
+            <div class="item-view">
+                <img class="item-view-image" src="<%=item.imageurl%>"></img>
+                <div class="item-view-text">
+                    <div class="item-view-text-title font-secondary main-color-emphasized"><%=item.name%></div>
+                    <hr>
+                    <div class="item-view-text-property main-color">Price: <span class="item-view-text-value"><%=item.price%> kn</span></div>
+                    <div class="item-view-text-property main-color">Available colors: <span class="item-view-text-value"><%=item.colors%></span></div>
+                    <div class="item-view-text-property main-color">Category: <span class="item-view-text-value"><%=category.name%></span></div>
+                    <div class="item-view-text-property main-color">Seasonal: <span class="item-view-text-value"><%=category.seasonal%></span></div>
+                    <div class="item-view-text-desc font-secondary main-color"><%=category.description%></div>
+                </div>
+            </div>
+            <div class="centered-container">
+                <h1 class="decorated-title font-secondary main-color">
+                    Item 
+                    <span class="main-color-emphasized">Suppliers</span>
+                    <a href='/item/<%=index%>/addsupplier'>
+                        <img class="my-img" src="/images/plus.png">
+                        </img>
+                    </a>
+                </h1>
+                <div class="separator"></div>
+                <% if (suppliers.length == 0) {%>
+                <h3 class="main-color font-secondary news-title">
+                    No supplies for this item! Only our own products.
+                </h3> 
+                <% } else { %>
+
+                    <% for (supplier of suppliers) { %>
+
+                        <section class="section secondary-color-bg expert_supplier_container">
+                            <h3 class="decorated-title font-secondary main-color-emphasized"> <%=supplier.name%>
+                            </h3>
+                            <div class="item-view-text-property main-color">E-mail: 
+                                <span class="item-view-text-value"><%=supplier.email%></span></div>
+                            <div class="item-view-text-property main-color">Country: 
+                                <span class="item-view-text-value"><%=supplier.country%></span></div>
+                            <div class="item-view-text-property main-color">County: 
+                                <span class="item-view-text-value"><%=supplier.county%></span></div>
+                            <div class="item-view-text-property main-color">Supplier since: 
+                                <span class="item-view-text-value"><%=supplier.suppliersince%></span></div>
+                            <hr>
+                        </section>
+
+                    <% } %>
+
+                <% } %>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include(`partials/footer`); %>
+
+</body>
+
+</html>

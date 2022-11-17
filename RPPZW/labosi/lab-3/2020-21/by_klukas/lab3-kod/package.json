@@ -1,0 +1,22 @@
+{
+    "name": "web1-lab-3",
+    "version": "1.0.0",
+    "description": "Web1: Laboratory exercise 3",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "seed": "node db/seed.js"
+    },
+    "keywords": [
+        "express"
+    ],
+    "author": "Web1",
+    "license": "MIT",
+    "dependencies": {
+        "ejs": "^3.0.1",
+        "express": "^4.17.1",
+        "express-validator": "^6.11.1",
+        "pg": "^8.0.3"
+    }
+}

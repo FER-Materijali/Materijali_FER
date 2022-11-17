@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./images/flower-icon.png" />
+    <link rel="stylesheet" type="text/css" href="./vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" type="text/css" href="./scripts/main.js">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body class="content">
+
+    <%- include(`partials/header`); %>
+    <main class="main">
+        <section class="section secondary-color-bg">
+            <div class="container">
+                <div class="centered-container">
+                    <h1 class="decorated-title font-secondary main-color">
+                        <span class="main-color-emphasized">Courier </span> selection
+                    </h1>
+
+                    <div class="separator"></div>
+                    <form method="post" class="form gutter">
+                        <fieldset class="form-fieldset">
+                            <legend class="form-legend">Select the desired courier</legend>
+
+                            <div class="form-group">
+                                <% const companies = ["Flowers Express", "Garden Delivery"] %>
+                                <label class="form-label" for="company">Courier:</label>
+                                <select class="form-component" id="company" name="company">
+                                    <% for (const opt of companies) { %>
+                                    <option>
+                                        <%= opt %>
+                                    </option>
+                                    <% } %>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <% const methods = ["Standard delivery", "Premium delivery"] %>
+                                <label class="form-label" for="delivery-method">Delivery method:</label>
+                                <select class="form-component" id="delivery-method" name="delivery-method">
+                                    <% for (const opt of methods) { %>
+                                    <option>
+                                        <%= opt %>
+                                    </option>
+                                    <% } %>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="courier-note">Note for courier:</label>
+                                <textarea class="form-component" type="texarea" maxlength="40" minlength="5"
+                                    id="courier-note" name="courier-note">
+                                </textarea>
+                            </div>
+
+                            <input class="btn" type="submit" formaction="..."
+                                value="Save and return to cart">
+                            <input class="btn" type="submit" formaction="..." value="Reset">
+                            <input class="btn push-right" type="submit" formaction="..."
+                                value="Order now!">
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include(`partials/footer`); %>
+
+</body>
+
+</html>
