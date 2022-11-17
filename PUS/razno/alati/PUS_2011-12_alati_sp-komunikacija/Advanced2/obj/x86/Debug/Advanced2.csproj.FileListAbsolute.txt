@@ -1,0 +1,10 @@
+c:\users\summoning\documents\visual studio 2010\Projects\Advanced1\Advanced2\bin\Debug\Advanced2.exe
+c:\users\summoning\documents\visual studio 2010\Projects\Advanced1\Advanced2\bin\Debug\Advanced2.pdb
+c:\users\summoning\documents\visual studio 2010\Projects\Advanced1\Advanced2\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\summoning\documents\visual studio 2010\Projects\Advanced1\Advanced2\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\summoning\documents\visual studio 2010\Projects\Advanced1\Advanced2\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\summoning\documents\visual studio 2010\Projects\Advanced1\Advanced2\obj\x86\Debug\Advanced2.exe
+c:\users\summoning\documents\visual studio 2010\Projects\Advanced1\Advanced2\obj\x86\Debug\Advanced2.pdb
+c:\users\summoning\documents\visual studio 2010\Projects\Advanced1\Advanced2\bin\Debug\Advanced2.exe.config
+c:\users\summoning\documents\visual studio 2010\Projects\Advanced1\Advanced2\obj\x86\Debug\ServiceModelSamples.Form1.resources
+c:\users\summoning\documents\visual studio 2010\Projects\Advanced1\Advanced2\obj\x86\Debug\ServiceModelSamples.Properties.Resources.resources
