@@ -1,0 +1,11 @@
+name: lab3
+dependencies:
+- python
+- scikit-learn
+- numpy
+- scipy
+- pandas
+- ipykernel
+- jupyter
+- matplotlib
+- seaborn

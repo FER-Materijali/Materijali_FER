@@ -1,0 +1,4 @@
+ipykernel
+openpyxl
+pandas
+requests
