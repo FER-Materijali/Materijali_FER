@@ -1,0 +1,270 @@
+;komentar
+;simulator se pokreæe iz terminala
+;kao parametar se može proslijediti od kojeg koraka izvoðenja da poène printati ispis traka
+;npr TS.exe 1000 æe poèeti ispisivati trake od 1000tog koraka pa do kraja
+
+#BROJ_TRAKA#
+3
+
+#POCETNO_STANJE#
+q0
+
+
+;oznaka praznog znaka, oznaka za lijevo, ostani, desno
+;cetiri znaka
+
+#OZNAKE#
+_lsr
+
+#TRAKE#
+5 136.15.192.37/17__________________
+5 __________________________________
+5 __________________________________
+
+
+;pomakni desno do toèke i pretvori toèku u x
+(q0, (0, _, _)) (q0, (0, _, _), (r,s,s))
+(q0, (1, _, _)) (q0, (1, _, _), (r,s,s))
+(q0, (2, _, _)) (q0, (2, _, _), (r,s,s))
+(q0, (3, _, _)) (q0, (3, _, _), (r,s,s))
+(q0, (4, _, _)) (q0, (4, _, _), (r,s,s))
+(q0, (5, _, _)) (q0, (5, _, _), (r,s,s))
+(q0, (6, _, _)) (q0, (6, _, _), (r,s,s))
+(q0, (7, _, _)) (q0, (7, _, _), (r,s,s))
+(q0, (8, _, _)) (q0, (8, _, _), (r,s,s))
+(q0, (9, _, _)) (q0, (9, _, _), (r,s,s))
+(q0, (., _, _)) (q1, (x, _, _), (s,s,s))
+
+;pomakni desno 8 mjesta u drugoj traci
+(q1, (x, _, _)) (q1, (x, _, 8), (s,s,s))
+(q1, (x, _, 8)) (q1, (x, 0, 7), (s,r,s))
+(q1, (x, _, 7)) (q1, (x, 0, 6), (s,r,s))
+(q1, (x, _, 6)) (q1, (x, 0, 5), (s,r,s))
+(q1, (x, _, 5)) (q1, (x, 0, 4), (s,r,s))
+(q1, (x, _, 4)) (q1, (x, 0, 3), (s,r,s))
+(q1, (x, _, 3)) (q1, (x, 0, 2), (s,r,s))
+(q1, (x, _, 2)) (q1, (x, 0, 1), (s,r,s))
+(q1, (x, _, 1)) (q2, (x, 0, _), (l,r,s))
+
+;oduzimaj 1 dekadskom
+(q2, (9, _, _)) (q3, (8, _, _), (r,s,s))
+(q2, (8, _, _)) (q3, (7, _, _), (r,s,s))
+(q2, (7, _, _)) (q3, (6, _, _), (r,s,s))
+(q2, (6, _, _)) (q3, (5, _, _), (r,s,s))
+(q2, (5, _, _)) (q3, (4, _, _), (r,s,s))
+(q2, (4, _, _)) (q3, (3, _, _), (r,s,s))
+(q2, (3, _, _)) (q3, (2, _, _), (r,s,s))
+(q2, (2, _, _)) (q3, (1, _, _), (r,s,s))
+(q2, (1, _, _)) (q3, (0, _, _), (r,s,s))
+
+;prenosi ostatak
+(q2, (0, _, _)) (q2, (0, _, _), (l,s,s))
+(q3, (0, _, _)) (q3, (9, _, _), (r,s,s))
+
+;dodaj 1 binarnom
+(q3, (x, _, _)) (q3, (x, _, _), (s,l,s))
+(q3, (x, 0, _)) (q4, (x, 1, _), (s,r,s))
+(q3, (x, 1, _)) (q3, (x, 0, _), (s,l,s))
+
+;vrati se na kraj druge trake i ponovno poèni oduzimati
+(q4, (x, 0, _)) (q4, (x, 0, _), (s,r,s))
+(q4, (x, 1, _)) (q4, (x, 1, _), (s,r,s))
+(q4, (x, _, _)) (q2, (x, _, _), (l,s,s))
+
+;kad doðe do kraja oduzimanja preði na iduæi broj (u drugu ;traku stavi x)
+(q2, (_, _, _)) (q0, (_, x, _), (r,r,s))
+(q0, (x, _, _)) (q0, (_, _, _), (r,s,s))
+
+;kad doðe do zadnjeg broja treba prepoznati da ih nema više
+(q0, (/, _, _)) (q1, (x, _, _), (s,s,s))
+
+;preði u stanje q5
+(q0, (_, _, _)) (q5, (_, _, _), (s,l,s))
+
+
+;FAZA 2 - 
+
+;u stanju q5 odi na poèetak druge trake
+(q5, (_, x, _)) (q5, (_, x, _), (s,l,s))
+(q5, (_, 0, _)) (q5, (_, 0, _), (s,l,s))
+(q5, (_, 1, _)) (q5, (_, 1, _), (s,l,s))
+(q5, (_, _, _)) (q6, (_, _, _), (s,r,s))
+
+;u q6 popuni najprije treæu traku nulama (32 nule)
+(q6, (_, 0, _)) (q6, (_, 0, 0), (s,r,r))
+(q6, (_, 1, _)) (q6, (_, 1, 0), (s,r,r))
+(q6, (_, x, _)) (q6, (_, x, x), (s,r,r))
+(q6, (_, _, _)) (q7, (_, _, _), (s,l,l))
+
+;u q7 pomakni 2 i 3 traku na poèetak
+(q7, (_, x, x)) (q7, (_, x, x), (s,l,l))
+(q7, (_, 0, 0)) (q7, (_, 0, 0), (s,l,l))
+(q7, (_, 1, 0)) (q7, (_, 1, 0), (s,l,l))
+;zadnju postavi na prvi znak i idi u novo stanje
+(q7, (_, _, _)) (q8, (_, _, _), (l,s,r))
+
+
+;upiši N jedinica u traku 3
+;najprije oduzmi -  N-1
+(q8, (1, _, 0)) (q8, (0, _, 1), (s,s,r))
+(q8, (2, _, 0)) (q8, (1, _, 1), (s,s,r))
+(q8, (3, _, 0)) (q8, (2, _, 1), (s,s,r))
+(q8, (4, _, 0)) (q8, (3, _, 1), (s,s,r))
+(q8, (5, _, 0)) (q8, (4, _, 1), (s,s,r))
+(q8, (6, _, 0)) (q8, (5, _, 1), (s,s,r))
+(q8, (7, _, 0)) (q8, (6, _, 1), (s,s,r))
+(q8, (8, _, 0)) (q8, (7, _, 1), (s,s,r))
+(q8, (9, _, 0)) (q8, (8, _, 1), (s,s,r))
+;preskoèi sve x-eve
+(q8, (0, _, x)) (q8, (0, _, x), (s,s,r))
+(q8, (1, _, x)) (q8, (1, _, x), (s,s,r))
+(q8, (2, _, x)) (q8, (2, _, x), (s,s,r))
+(q8, (3, _, x)) (q8, (3, _, x), (s,s,r))
+(q8, (4, _, x)) (q8, (4, _, x), (s,s,r))
+(q8, (5, _, x)) (q8, (5, _, x), (s,s,r))
+(q8, (6, _, x)) (q8, (6, _, x), (s,s,r))
+(q8, (7, _, x)) (q8, (7, _, x), (s,s,r))
+(q8, (8, _, x)) (q8, (8, _, x), (s,s,r))
+(q8, (9, _, x)) (q8, (9, _, x), (s,s,r))
+
+;ako je bio upisan 32 doæi æe do _ u traci 3 pa treba vratiti 
+;u lijevo
+(q8, (0, _, _)) (q10, (0, _, _), (r,s,l))
+
+;ako je 0 onda idi lijevo i oduzmi 1 pa se vrati
+;(pretpostavlja se da je N <= 32)
+(q8, (0, _, 0)) (q9, (9, _, 0), (l,s,s))
+(q9, (3, _, 0)) (q8, (2, _, 1), (r,s,r))
+(q9, (2, _, 0)) (q8, (1, _, 1), (r,s,r))
+(q9, (1, _, 0)) (q8, (0, _, 1), (r,s,r))
+(q9, (0, _, 0)) (q9, (0, _, 0), (l,s,s))
+(q9, (_, _, 0)) (q10, (_, _, 0), (r,s,s))
+
+;sada u traci 1 pomakni glavu na friške prazne znakove desno
+(q10, (0, _, 0)) (q10, (_, _, 0), (r,s,s))
+(q10, (9, _, 0)) (q10, (_, _, 0), (r,s,s))
+(q10, (_, _, 0)) (q11, (_, _, 0), (r,s,s))
+;još jedan ako je N=32 završit æe glava na x a ne na 0
+(q10, (_, _, x)) (q11, (_, _, x), (r,s,s))
+
+FAZA 3 - AND operacija
+
+;vrati traku 3 na poèetak niza i uði u novo stanje
+(q11, (_, _, 0)) (q11, (_, _, 0), (s,s,l))
+(q11, (_, _, 1)) (q11, (_, _, 1), (s,s,l))
+(q11, (_, _, x)) (q11, (_, _, x), (s,s,l))
+(q11, (_, _, _)) (q12, (_, _, _), (s,r,r))
+
+;izvrši AND operaciju
+(q12, (_, 0, 0)) (q12, (0, 0, 0), (r,r,r))
+(q12, (_, 0, 1)) (q12, (0, 0, 1), (r,r,r))
+(q12, (_, 1, 0)) (q12, (0, 1, 0), (r,r,r))
+(q12, (_, 1, 1)) (q12, (1, 1, 1), (r,r,r))
+(q12, (_, x, x)) (q12, (x, x, x), (r,r,r))
+
+(q12, (_, _, _)) (q13, (_, _, _), (l,s,r))
+
+
+
+FAZA 4 - vrati binarni u dekadski
+
+;napravi mjesta za IP u traci 3 (pomakni desno 15  mjesta) 
+;2 x 8 mjesta - odi do prvog x u traci 1 pa se vrati nazad
+;na kraju stavi toèku u dek zapisu
+(q13, (x, _, _)) (q14, (x, _, _), (l,s,s))
+(q14, (0, _, _)) (q14, (0, _, _), (l,s,r))
+(q14, (1, _, _)) (q14, (1, _, _), (l,s,r))
+(q14, (x, _, _)) (q15, (x, _, _), (r,s,s))
+(q15, (0, _, _)) (q15, (0, _, _), (r,s,r))
+(q15, (1, _, _)) (q15, (1, _, _), (r,s,r))
+(q15, (x, _, _)) (q16, (x, _, .), (s,s,s))
+
+
+;oduzmi 1 binarnom 
+(q16, (x, _, .)) (q17, (x, _, .), (l,s,s))
+(q17, (0, _, .)) (q17, (1, _, .), (l,s,s))
+(q17, (1, _, .)) (q18, (0, _, .), (r,s,s))
+
+
+;u q18 vrati se na poèetak niza 
+(q18, (1, _, .)) (q18, (1, _, .), (r,s,s))
+(q18, (0, _, .)) (q18, (0, _, .), (r,s,s))
+(q18, (x, _, .)) (q19, (x, _, .), (s,s,l))
+
+
+;u q19 dodaj dekadskom broj 1 
+
+(q19, (x, _, .)) (q21, (x, _, .), (s,s,l))
+(q19, (x, _, _)) (q21, (x, _, 1), (s,s,r))
+(q19, (x, _, 0)) (q21, (x, _, 1), (s,s,r))
+(q19, (x, _, 1)) (q21, (x, _, 2), (s,s,r))
+(q19, (x, _, 2)) (q21, (x, _, 3), (s,s,r))
+(q19, (x, _, 3)) (q21, (x, _, 4), (s,s,r))
+(q19, (x, _, 4)) (q21, (x, _, 5), (s,s,r))
+(q19, (x, _, 5)) (q21, (x, _, 6), (s,s,r))
+(q19, (x, _, 6)) (q21, (x, _, 7), (s,s,r))
+(q19, (x, _, 7)) (q21, (x, _, 8), (s,s,r))
+(q19, (x, _, 8)) (q21, (x, _, 9), (s,s,r))
+(q21, (x, _, .)) (q16, (x, _, .), (s,s,s))
+
+
+;sad treba prenosit ostataaak
+(q19, (x, _, 9)) (q19, (x, _, 9), (s,s,l))
+(q21, (x, _, 9)) (q21, (x, _, 0), (s,s,r))
+
+
+;kad doðe do kraja oduzimanja prebaci na iduæi blok
+(q17, (x, _, .)) (q20, (x, _, .), (s,s,l))
+
+
+;i idi do prvog praznog mjesta i stavi .
+(q20, (x, _, 0)) (q20, (x, _, 0), (s,s,l))
+(q20, (x, _, 1)) (q20, (x, _, 1), (s,s,l))
+(q20, (x, _, 2)) (q20, (x, _, 2), (s,s,l))
+(q20, (x, _, 3)) (q20, (x, _, 3), (s,s,l))
+(q20, (x, _, 4)) (q20, (x, _, 4), (s,s,l))
+(q20, (x, _, 5)) (q20, (x, _, 5), (s,s,l))
+(q20, (x, _, 6)) (q20, (x, _, 6), (s,s,l))
+(q20, (x, _, 7)) (q20, (x, _, 7), (s,s,l))
+(q20, (x, _, 8)) (q20, (x, _, 8), (s,s,l))
+(q20, (x, _, 9)) (q20, (x, _, 9), (s,s,l))
+
+
+;na kraju stavi . i prebaci se na iduæi broj
+(q20, (x, _, _)) (q22, (x, _, .), (s,s,r))
+
+;ak je sluèaj .. stavi .0.
+(q22, (x, _, .)) (q22, (x, 1, .), (s,s,l))
+(q22, (x, 1, .)) (q22, (x, 0, 0), (s,s,l))
+(q22, (x, 0, _)) (q16, (x, _, .), (s,s,s))
+
+;ak je neki od brojeva idi dalje
+(q22, (x, _, 0)) (q16, (x, _, 0), (s,s,l))
+(q22, (x, _, 1)) (q16, (x, _, 1), (s,s,l))
+(q22, (x, _, 2)) (q16, (x, _, 2), (s,s,l))
+(q22, (x, _, 3)) (q16, (x, _, 3), (s,s,l))
+(q22, (x, _, 4)) (q16, (x, _, 4), (s,s,l))
+(q22, (x, _, 5)) (q16, (x, _, 5), (s,s,l))
+(q22, (x, _, 6)) (q16, (x, _, 6), (s,s,l))
+(q22, (x, _, 7)) (q16, (x, _, 7), (s,s,l))
+(q22, (x, _, 8)) (q16, (x, _, 8), (s,s,l))
+(q22, (x, _, 9)) (q16, (x, _, 9), (s,s,l))
+
+
+;kad pretvaranje završi preði u novo stanje
+(q17, (_, _, .)) (q23, (_, _, .), (s,s,s))
+
+;u stanju q23 obriši zadnju toèku
+(q23, (_, _, .)) (q23, (_, _, .), (s,s,r))
+(q23, (_, _, 0)) (q23, (_, _, 0), (s,s,r))
+(q23, (_, _, 1)) (q23, (_, _, 1), (s,s,r))
+(q23, (_, _, 2)) (q23, (_, _, 2), (s,s,r))
+(q23, (_, _, 3)) (q23, (_, _, 3), (s,s,r))
+(q23, (_, _, 4)) (q23, (_, _, 4), (s,s,r))
+(q23, (_, _, 5)) (q23, (_, _, 5), (s,s,r))
+(q23, (_, _, 6)) (q23, (_, _, 6), (s,s,r))
+(q23, (_, _, 7)) (q23, (_, _, 7), (s,s,r))
+(q23, (_, _, 8)) (q23, (_, _, 8), (s,s,r))
+(q23, (_, _, 9)) (q23, (_, _, 9), (s,s,r))
+(q23, (_, _, _)) (q24, (_, _, _), (s,s,l))
+(q24, (_, _, .)) (q24, (_, _, _), (s,s,s))

@@ -1,0 +1,66 @@
+1#www.index.hr-> Učitavanje www.index.hr
+img2->img3->img4->img1->Učitana www.index.hr
+img3->img2->img4->img1->Učitana www.index.hr
+img3->img4->img2->img1->Učitana www.index.hr
+img4->img3->img2->img1->Učitana www.index.hr
+img2->img4->img3->img1->Učitana www.index.hr
+img4->img2->img3->img1->Učitana www.index.hr
+img4->img3->img1->img2->Učitana www.index.hr
+img3->img4->img1->img2->Učitana www.index.hr
+img3->img1->img4->img2->Učitana www.index.hr
+img1->img3->img4->img2->Učitana www.index.hr
+img4->img1->img3->img2->Učitana www.index.hr
+img1->img4->img3->img2->Učitana www.index.hr
+img2->img4->img1->img3->Učitana www.index.hr
+img4->img2->img1->img3->Učitana www.index.hr
+img4->img1->img2->img3->Učitana www.index.hr
+img1->img4->img2->img3->Učitana www.index.hr
+img2->img1->img4->img3->Učitana www.index.hr
+img1->img2->img4->img3->Učitana www.index.hr
+img2->img3->img1->img4->Učitana www.index.hr
+img3->img2->img1->img4->Učitana www.index.hr
+img3->img1->img2->img4->Učitana www.index.hr
+img1->img3->img2->img4->Učitana www.index.hr
+img2->img1->img3->img4->Učitana www.index.hr
+img1->img2->img3->img4->Učitana www.index.hr
+__
+www.jutarnji.hr->2
+www.vecernji.hr->3
+2#www.jutarnji.hr-> Učitavanje www.jutarnji.hr
+img1->Učitana www.jutarnji.hr
+_
+www.vecernji.hr->3
+3#www.vecernji.hr-> Učitavanje www.vecernji.hr
+img2->res4->res3->img3->Učitana www.vecernji.hr
+res4->img2->res3->img3->Učitana www.vecernji.hr
+res4->res3->img2->img3->Učitana www.vecernji.hr
+res3->res4->img2->img3->Učitana www.vecernji.hr
+img2->res3->res4->img3->Učitana www.vecernji.hr
+res3->img2->res4->img3->Učitana www.vecernji.hr
+res3->res4->img3->img2->Učitana www.vecernji.hr
+res4->res3->img3->img2->Učitana www.vecernji.hr
+res4->img3->res3->img2->Učitana www.vecernji.hr
+img3->res4->res3->img2->Učitana www.vecernji.hr
+res3->img3->res4->img2->Učitana www.vecernji.hr
+img3->res3->res4->img2->Učitana www.vecernji.hr
+img2->res3->img3->res4->Učitana www.vecernji.hr
+res3->img2->img3->res4->Učitana www.vecernji.hr
+res3->img3->img2->res4->Učitana www.vecernji.hr
+img3->res3->img2->res4->Učitana www.vecernji.hr
+img2->img3->res3->res4->Učitana www.vecernji.hr
+img3->img2->res3->res4->Učitana www.vecernji.hr
+img2->res4->img3->res3->Učitana www.vecernji.hr
+res4->img2->img3->res3->Učitana www.vecernji.hr
+res4->img3->img2->res3->Učitana www.vecernji.hr
+img3->res4->img2->res3->Učitana www.vecernji.hr
+img2->img3->res4->res3->Učitana www.vecernji.hr
+img3->img2->res4->res3->Učitana www.vecernji.hr
+_
+www.index.hr->1
+4#www.fer.hr-> Učitavanje www.fer.hr
+dioahad5->dhkj3->Učitana www.fer.hr
+dhkj3->dioahad5->Učitana www.fer.hr
+___
+www.index.hr->1
+www.jutarnji.hr->2
+www.vecernji.hr->3

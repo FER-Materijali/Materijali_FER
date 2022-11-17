@@ -1,0 +1,16 @@
+dugackiznakabecede12
+a,b,dugackinazivstanja12,p5,s3,s4,st6,stanje1,stanje2
+a,dugackiznakabecede12,lab2,lala,pnp,utr
+p5
+stanje1
+a,a->a,b
+dugackinazivstanja12,dugackiznakabecede12->s3,s4
+s3,a->stanje2
+s3,lab2->p5,s4
+s4,$->st6
+s4,utr->p5,s3
+stanje1,$->dugackinazivstanja12
+stanje1,a->stanje2
+stanje1,pnp->s3
+stanje2,$->a,st6
+stanje2,a->#

@@ -1,0 +1,132 @@
+20/25
+
+test6:
+	pogresan rezultat izvodjenja ili greska u izvodjenju:
+	ulazni podaci:
+	a
+	q0,q1,q2
+	a
+	K
+	q1
+	q0
+	K
+	q0,$,K->q2,K
+	q2,$,K->q1,K
+	q1,a,K->q1,K
+
+	ocekivani izlaz:
+	q0#K|q2#K|q1#K|q1#K|1
+
+	dobiveni izlaz:
+	q0#K|q2#K|fail|0
+
+	stderr:
+
+
+test11:
+	pogresan rezultat izvodjenja ili greska u izvodjenju:
+	ulazni podaci:
+	a,a,b
+	q0,q1,q2
+	a,b
+	K,X
+	q2
+	q0
+	K
+	q0,a,K->q0,XK
+	q0,$,X->q1,XX
+	q1,$,X->q1,KX
+	q1,a,K->q1,K
+	q1,b,K->q2,K
+	
+	ocekivani izlaz:
+	q0#K|q0#XK|q1#XXK|q1#KXXK|q1#KXXK|q2#KXXK|1
+	
+	dobiveni izlaz:
+	q0#K|q0#XK|q1#XXK|fail|0
+	
+	stderr:
+
+
+test12:
+	pogresan rezultat izvodjenja ili greska u izvodjenju:
+	ulazni podaci:
+	a,a,b
+	q0,q1,q2
+	a,b
+	K,X
+	q2
+	q0
+	K
+	q0,a,K->q0,XK
+	q0,$,X->q1,XX
+	q1,$,X->q1,KX
+	q1,a,K->q1,K
+	q1,b,K->q2,K
+	q2,$,K->q2,XK
+
+	ocekivani izlaz:
+	q0#K|q0#XK|q1#XXK|q1#KXXK|q1#KXXK|q2#KXXK|1
+
+	dobiveni izlaz:
+	q0#K|q0#XK|q1#XXK|fail|0
+	
+	stderr:
+	
+
+test16:
+	pogresan rezultat izvodjenja ili greska u izvodjenju:
+	ulazni podaci:
+	a,a,b
+	q0,q1,q2,pp
+	a,b
+	K,X,Y
+	pp
+	q0
+	K
+	q0,a,K->q1,XK
+	q1,a,X->q1,YX
+	q1,b,Y->q2,Y
+	q2,$,Y->q2,XY
+	q2,$,X->pp,X
+	pp,$,X->q0,X
+	
+	ocekivani izlaz:
+	q0#K|q1#XK|q1#YXK|q2#YXK|q2#XYXK|pp#XYXK|1
+	
+	dobiveni izlaz:
+	q0#K|q1#XK|q1#YXK|q2#YXK|q2#XYXK|pp#XYXK|q0#XYXK|1
+	
+	stderr:
+
+
+test20:
+	pogresan rezultat izvodjenja ili greska u izvodjenju:
+	ulazni podaci:
+	a,b,a,b,b,b|a,b,b,a|b,b,a|a,a,b,b,b,b|a,b,b,b,a,b
+	p0,p1,p2
+	a,b
+	K,A
+	p2
+	p0
+	K
+	p0,a,K->p1,AAK
+	p1,a,A->p1,AAA
+	p1,b,A->p1,$
+	p1,$,K->p2,K
+	
+	ocekivani izlaz:
+	p0#K|p1#AAK|p1#AK|p1#AAAK|p1#AAK|p1#AK|p1#K|p2#K|1
+	p0#K|p1#AAK|p1#AK|p1#K|p2#K|fail|0
+	p0#K|fail|0
+	p0#K|p1#AAK|p1#AAAAK|p1#AAAK|p1#AAK|p1#AK|p1#K|p2#K|1
+	p0#K|p1#AAK|p1#AK|p1#K|p2#K|fail|0
+	
+	dobiveni izlaz:
+	p0#K|p1#AAK|p1#AK|p1#AAAK|p1#AAK|p1#AK|p1#K|p2#K|1
+	p0#K|p1#AAK|p1#AK|p1#K|p2#K|fail|0
+	p0#K|fail|0
+	p0#K|p1#AAK|p1#AAAAK|p1#AAAK|p1#AAK|p1#AK|p1#K|0
+	p0#K|p1#AAK|p1#AK|p1#K|p2#K|fail|0
+	
+	stderr:

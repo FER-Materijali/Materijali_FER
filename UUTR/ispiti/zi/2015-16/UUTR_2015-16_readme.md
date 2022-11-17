@@ -1,0 +1,1 @@
+Ova slika vam sluzi samo da vidite ta rjesenja ako sam nesto fulao. Isto mozete vidjeti kakv je prosjek na zavrsnom bio.

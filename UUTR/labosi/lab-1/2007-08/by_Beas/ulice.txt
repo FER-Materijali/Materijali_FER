@@ -1,0 +1,6 @@
+Koturaška ulica,0,0,300,0
+Unska ulica,300,0,300,100
+Ulica Grada Vukovara,0,100,450,100
+Savska cesta,0,0,0,300
+Trnjanska ulica,450,300,450,100
+Slavonska avenija,450,300,0,300

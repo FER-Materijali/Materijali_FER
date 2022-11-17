@@ -1,0 +1,6 @@
+c:\users\tomislav\documents\visual studio 2013\Projects\DKAminimizacija\DKAminimizacija\bin\Debug\DKAminimizacija.exe.config
+C:\Users\Tomislav\documents\visual studio 2013\Projects\DKAminimizacija\DKAminimizacija\bin\Debug\DKAminimizacija.exe
+C:\Users\Tomislav\documents\visual studio 2013\Projects\DKAminimizacija\DKAminimizacija\bin\Debug\DKAminimizacija.pdb
+C:\Users\Tomislav\documents\visual studio 2013\Projects\DKAminimizacija\DKAminimizacija\obj\Debug\DKAminimizacija.csprojResolveAssemblyReference.cache
+C:\Users\Tomislav\documents\visual studio 2013\Projects\DKAminimizacija\DKAminimizacija\obj\Debug\DKAminimizacija.exe
+C:\Users\Tomislav\documents\visual studio 2013\Projects\DKAminimizacija\DKAminimizacija\obj\Debug\DKAminimizacija.pdb

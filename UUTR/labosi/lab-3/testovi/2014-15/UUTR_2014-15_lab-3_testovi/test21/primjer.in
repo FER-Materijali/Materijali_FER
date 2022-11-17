@@ -1,0 +1,17 @@
+x,y,y,y,z
+p0,p1
+x,y,z
+K,A,B
+p1
+p0
+K
+p0,x,K->p0,AAAK
+p0,y,K->p0,BK
+p0,x,A->p0,AAAA
+p0,y,A->p0,$
+p0,x,B->p0,AA
+p0,y,B->p0,BB
+p0,z,K->p1,K
+p1,z,K->p1,K
+p1,x,K->p0,AAAK
+p1,y,K->p0,BK

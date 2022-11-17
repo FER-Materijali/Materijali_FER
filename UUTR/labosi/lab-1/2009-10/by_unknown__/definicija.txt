@@ -1,0 +1,13 @@
+P:www.index.hr:ucitind
+P:www.jutarnji.hr:ucitjut
+P:www.vecernji.hr:ucitvec
+ucitind:img1:indimg1
+ucitind:img2:indimg2
+indimg1:img2:index
+indimg2:img1:index
+ucitjut:img1:jutarnji
+ucitvec:img3:vecernji
+index:www.jutarnji.hr:ucitjut
+index:www.vecernji.hr:ucitvec
+jutarnji:www.vecernji.hr:ucitvec
+vecernji:www.jutarnji.hr:ucitjut

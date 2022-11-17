@@ -1,0 +1,10 @@
+<Rečenica>=<SubjektniSkup> <Predikat> <ObjektniSkup>
+<SubjektniSkup>=<Atribut> <Subjekt>
+<ObjektniSkup>=<Atribut> <Objekt>
+<Predikat>=GLEDAJU
+<Subjekt>=DJEVOJKE
+<Subjekt>=MAČKE
+<Atribut>=ZBUNJENE
+<Atribut>=UPLAŠENE
+<Objekt>=DJEVOJKE
+<Objekt>=MAČKE

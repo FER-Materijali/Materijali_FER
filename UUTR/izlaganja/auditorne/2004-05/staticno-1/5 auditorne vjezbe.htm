@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Automati formalni jezici i jezicni procesori 1 - 5. auditorne vjezbe</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1250">
+<STYLE type=text/css>BODY {
+	FONT-FAMILY: Arial,Helvetica,sans-serif
+}
+</STYLE>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff><B><FONT face=Verdana size=-1>
+<A href="4 auditorne vjezbe.htm">[Prethodno poglavlje]</A> &nbsp;
+<A href="6 auditorne vjezbe.htm">[Sljedeće poglavlje]</A> &nbsp; 
+<A href="Automati formalni jezici i jezicni procesori 1.htm">[Sadržaj]</A> 
+</FONT></B>
+<HR noShade SIZE=2>
+<H1 style="COLOR: rgb(204,0,0)" align=center>5. Auditorne vježbe</H1>
+<B><A name=Zad16>Zadatak 16.</A></B><P>Izbaciti beskorisne znakove iz zadane gramatike.<BR><BR><CENTER><IMG alt=gram1 src="5 auditorne vjezbe_files\gram1.gif"></CENTER></P>
+<B>Rješenje:</B><P><IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">beskorisni znakovi: mrtvi ( ne može se generirati niz završnih znakova ), nedohvatljivi<BR><BR>LŽZ: { E, C, B, A, S }<BR><BR><IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">izbaciti sve produkcije u kojima se javlja D, znak D je mrtav
+<BR><BR>LDZ: { S, b, A, E, a, B, c, e, d } <BR><BR><IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">znak C je nedohvatljiv, izbacuju se sve produkcije znaka C<BR><BR><CENTER><IMG alt=gram2 src="5 auditorne vjezbe_files\gram2.gif"></CENTER></P>
+<BR><BR><B><A name=Zad17>Zadatak 17.</A></B><P>Iz zadane gramatike izbaciti jedinične i <SUB><IMG alt=eps src="5 auditorne vjezbe_files\cale.gif"></SUB> produkcije ( to nisu beskorisne produkcije ).<BR><BR><CENTER><IMG alt=gram3 src="5 auditorne vjezbe_files\gram3.gif"></CENTER></P>
+<B>Rješenje:</B><P><IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">izbace se jedinična produkcija C<IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">D što se ostvaruje supstitucijom nezavršnog znaka D s desnim stranama svih produkcija u kojima je D na lijevoj strani<BR><BR><IMG alt=gram4 src="5 auditorne vjezbe_files\gram4.gif">
+<BR><IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">nezavršni znak D postao je nedohvatljiv pa se izbacuje<BR><BR><IMG alt=gram5 src="5 auditorne vjezbe_files\gram5.gif"><BR><BR><PRE><IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">uklanjaju se <SUB><IMG alt=eps src="5 auditorne vjezbe_files\cale.gif"></SUB> produkcije, u tu kategoriju osim B<IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif"><SUB><IMG alt=eps src="5 auditorne vjezbe_files\cale.gif"></SUB> i C<IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif"><SUB><IMG alt=eps src="5 auditorne vjezbe_files\cale.gif"></SUB>
+ spada i produkcija A<IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">BC jer možemo generirati A<IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif"><SUB><IMG alt=eps src="5 auditorne vjezbe_files\cale.gif"></SUB></PRE></P>
+<BR><CENTER><IMG alt=gram6 src="5 auditorne vjezbe_files\gram6.gif"></CENTER><BR><BR><IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">ponovo se izbacuju jedinične produkcije A<IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">B i A<IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">C<BR><BR><CENTER><IMG alt=gram7 src="5 auditorne vjezbe_files\gram7.gif"></CENTER>
+<BR><BR><B><A name=Zad18>Zadatak 18.</A></B><P>Zadanu gramatiku petvoriti u Chomskyev oblik.<BR><BR><CENTER><IMG alt=gram8 src="5 auditorne vjezbe_files\gram8.gif"></CENTER></P>
+<B>Rješenje:</B><P>Chomskyev oblik je A<IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">BC i A<IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">d
+<BR><IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">pretvorba započinje izbacivanjem jediničnih i <SUB><IMG alt=eps src="5 auditorne vjezbe_files\cale.gif"></SUB> produkcija</P><CENTER><IMG alt=gram9 src="5 auditorne vjezbe_files\gram9.gif"></CENTER>
+<BR><BR><IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">završni znakovi koji se nalaze u produkcijama koje imaju više od jednog znaka na desnoj strani zamijene se s nezavršnim znakovima koji su zamjene za te završne znakove<BR><BR><CENTER><IMG alt=gram10 src="5 auditorne vjezbe_files\gram10.gif"></CENTER><BR>
+<BR><IMG alt=strelica src="5 auditorne vjezbe_files\strelica.gif">produkcije koje na desnoj strani imaju više od dva znaka razbiju se u produkcije:<BR><BR><CENTER><IMG alt=gram11.gif src="5 auditorne vjezbe_files\gram11.gif"></CENTER>
+<BR><BR><HR noShade SIZE=2>
+<B><FONT face=Verdana size=-1>
+<A href="4 auditorne vjezbe.htm">[Prethodno poglavlje]</A> &nbsp;
+<A href="6 auditorne vjezbe.htm">[Sljedeće poglavlje]</A> &nbsp; 
+<A href="Automati formalni jezici i jezicni procesori 1.htm">[Sadržaj]</A> 
+</FONT></B>
+</BODY></HTML>

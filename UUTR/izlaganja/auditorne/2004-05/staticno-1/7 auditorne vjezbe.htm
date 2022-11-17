@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Automati formalni jezici i jezicni procesori 1 - 7. auditorne vjezbe</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1250">
+<STYLE type=text/css>BODY {
+	FONT-FAMILY: Arial,Helvetica,sans-serif
+}
+</STYLE>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff><B><FONT face=Verdana size=-1>
+<A href="6 auditorne vjezbe.htm">[Prethodno poglavlje]</A> &nbsp;
+<A href="8 auditorne vjezbe.htm">[Sljedeće poglavlje]</A> &nbsp; 
+<A href="Automati formalni jezici i jezicni procesori 1.htm">[Sadržaj]</A> 
+</FONT></B>
+<HR noShade SIZE=2>
+<H1 style="COLOR: rgb(204,0,0)" align=center>7. Auditorne vježbe</H1>
+<B><A name=Zad24>Zadatak 24.</A></B><P>Konstruirati potisni automat koji prihvaća nizove koje generira zadana gramatika.<BR><BR>
+<CENTER><IMG alt=gram1 src="7 auditorne vjezbe_files\gram1.gif"></CENTER></P>
+<B>Rješenje:</B><P><IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">prije konstrukcije PA gramatiku treba pretvoriti u Greibachov oblik produkcija
+<BR><IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">prvo se izbace <SUB><IMG alt=eps src="7 auditorne vjezbe_files\cale.gif"></SUB> produkcije<BR><BR>
+<CENTER><IMG alt=gram2 src="7 auditorne vjezbe_files\gram2.gif"></CENTER></P>
+<P><IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">potom se završni znakovi koji nisu na prvom mjestu s lijeve strane zamijene sa zamjenskim nezavršnim znakom<BR><BR>
+<CENTER><IMG alt=gram3 src="7 auditorne vjezbe_files\gram3.gif"></CENTER></P>
+<P><IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">nakon toga moguće je konstruirati PA<BR><BR><CENTER><IMG alt=pa1 src="7 auditorne vjezbe_files\pa1.gif"></CENTER></P>
+<BR><BR><B><A name=Zad25>Zadatak 25.</A></B><P>Konstruirati kontekstno neovisnu gramatiku koja generira jezik koje prihvaća zadani potisni automat.<BR><BR><CENTER><IMG alt=pa2 src="7 auditorne vjezbe_files\pa2.gif"></CENTER></P>
+<B>Rješenje:</B><P><IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">da bi se gramatika mogla konstruirati potisni automat nizove mora prihvaćati praznim stogom <BR>G = ( V, T, P, S ) pri tome je <SUB><IMG alt=gram4 src="7 auditorne vjezbe_files\gram4.gif"></SUB>
+<BR><IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">gramatika simulira rad PA<BR><IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">nezavršni znak oblika [ q<SUB>i</SUB> A q<SUB>j</SUB> ] ima posebno značenje - PA se nalazi u stanju q<SUB>i</SUB> 
+tijekom daljnjeg rada sa stoga se skida znak A i nakon toga potisni automat završava u stanju q<SUB>j</SUB><BR><IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">gramatika je hijerarhijski organizirana ( stablo ) pa jedan nezavršni znak predstavlja niz prijelaza tijekom kojih je automat krenuo iz 
+q<SUB>i</SUB> i završio u q<SUB>j</SUB> i sa stoga skinuo znak A<BR><IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">uvode se početne produkcije oblika [ q<SUB>0</SUB> K q<SUB>i</SUB> ], za svaki q<SUB>i</SUB> element Q<BR><BR><CENTER><IMG alt=gram5 src="7 auditorne vjezbe_files\gram5.gif"></CENTER><BR>
+<IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">daljni nezavršni znakovi i produkcije gramatike grade se na temelju prijelaza PA i slijedećeg pravila:<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;za prijelaz <SUB><IMG alt=gram6 src="7 auditorne vjezbe_files\gram6.gif"></SUB> uvodi se slijedeći nezavršni znakovi i produkcije:
+<BR><BR><CENTER><IMG alt=gram7 src="7 auditorne vjezbe_files\gram7.gif"></CENTER><BR><IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">ako je | Q | = n i | ABC ... Z | = m onda se uvodi n<SUP>m</SUP> + 1 nezavršnih znakova i n * n<SUP>m-1</SUP> = n<SUP>m</SUP> produkcija<BR><IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">poseban slučaj je ako je m = 0 - formula vrijedi, ali produkcija malo odstupa<BR><BR><CENTER><IMG alt=gram8 src="7 auditorne vjezbe_files\gram8.gif"></CENTER></P>
+<P><CENTER><IMG alt=gram9 src="7 auditorne vjezbe_files\gram9.gif"></CENTER><BR><IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">dobivena gramatika može imati mrtvih i nedohvatljivih nezavršnih znakova<BR><IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">nezavršni znakovi koji nemaju nijednu produkciju smatraju se mrtvim<BR><IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">ako se izbace mrtvi znakovi dobije se:<BR><BR>
+<CENTER><IMG alt=gram10 src="7 auditorne vjezbe_files\gram10.gif"></CENTER><BR><IMG alt=strelica src="7 auditorne vjezbe_files\strelica.gif">uz preimenovanje:<BR><CENTER><IMG alt=gram11 src="7 auditorne vjezbe_files\gram11.gif"></CENTER></P>
+<BR><BR><HR noShade SIZE=2>
+<B><FONT face=Verdana size=-1>
+<A href="6 auditorne vjezbe.htm">[Prethodno poglavlje]</A> &nbsp;
+<A href="8 auditorne vjezbe.htm">[Sljedeće poglavlje]</A> &nbsp; 
+<A href="Automati formalni jezici i jezicni procesori 1.htm">[Sadržaj]</A> 
+</FONT></B>
+</BODY></HTML>

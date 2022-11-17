@@ -1,0 +1,13 @@
+{S,A,B,E}
+{a,b,c,d,e,0}
+{S}
+S -> bAbE
+S -> aABc
+B -> ad
+A -> beA
+E -> ed
+E -> ac
+S -> bbE
+S -> aBc
+A -> be
+A -> ad

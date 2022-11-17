@@ -1,0 +1,13 @@
+q0,q1,q2,q3,q4
+0,1
+J,N,K
+q0
+K
+q4
+q0,$,K->q1,K
+q0,0,K->q2,NK#q3,NK
+q1,$,K->q3,K
+q1,0,K->q2,JK
+q2,1,N->q4,NN
+q3,$,K->q1,K
+q3,1,N->q4,NN

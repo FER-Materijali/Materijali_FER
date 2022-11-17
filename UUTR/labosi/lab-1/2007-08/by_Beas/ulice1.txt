@@ -1,0 +1,9 @@
+Prva ulica,0,0,300,0
+Druga ulica,0,0,0,200
+Treca ulica,0,200,300,200
+Cetvrta ulica,300,200,300,0
+Peta ulica,300,200,300,350
+Setsa ulica,150,200,150,350
+Sedma ulica,150,350,550,350
+Osma ulica,550,350,550,200
+Deveta ulica,300,200,550,200

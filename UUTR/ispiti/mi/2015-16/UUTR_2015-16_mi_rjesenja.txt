@@ -1,0 +1,7 @@
+zad16	D
+zad17	A
+zad18	C
+zad19	B
+zad20	B
+zad21	C
+zad22	A

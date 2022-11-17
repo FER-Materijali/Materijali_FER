@@ -1,0 +1,10 @@
+Stanje1,Stanje2,Stanje3,Stanje4
+a,b,c,d
+Stanje2,Stanje3
+Stanje1
+Stanje1,a->Stanje2
+Stanje1,$->Stanje3,Stanje4
+Stanje2,b->Stanje1,Stanje2
+Stanje3,d->Stanje3
+Stanje4,c->Stanje3
+Stanje3,$->Stanje1

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Automati formalni jezici i jezicni procesori 1 - 1. auditorne vjezbe</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1250">
+<STYLE type=text/css>BODY {
+	FONT-FAMILY: Arial,Helvetica,sans-serif
+}
+</STYLE>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff><B><FONT face=Verdana size=-1>
+<A href="2 auditorne vjezbe.htm">[Sljedeće poglavlje]</A> &nbsp; 
+<A href="Automati formalni jezici i jezicni procesori 1.htm">[Sadržaj]</A> 
+</FONT></B>
+<HR noShade SIZE=2>
+<H1 style="COLOR: rgb(204,0,0)" align=center>1. Auditorne vježbe</H1>
+<B><A name=Zad1>Zadatak 1.</A></B><P>Jezik L nad abecedom {0,1,2} sadrži sve nizove u kojima nema uzastopnog ponavljanja 
+znaka 1. Jezik L opisati reguralnim izrazom i konstruirati konačni automat koji prihvaća 
+nizove iz jezika L.</P>
+<B>Rješenje:</B><P><CENTER>( 10 + 12 + 0 + 2 ) * ( 1 + <IMG alt=e src="1 auditorne vjezbe_files\cale.gif" align=top> ) </CENTER></P>
+<P><CENTER><IMG alt=DKA1 src="1 auditorne vjezbe_files\DKA1.gif"></CENTER></P>
+<B><A name=Zad2>Zadatak 2.</A></B><P>Konstruirati NKA koji prepoznaje sve binarne brojeve za koje vrijedi bar jedan od navedenih uvijeta:<BR>
+<OL TYPE=a START=a COMPACT><LI>u binarnom broju postoje dvije ili više uzastopnih 0
+<LI>suma znakova je manja od 4 (broj jedinica)</OL></P>
+<B>Rješenje:</B><P><CENTER><IMG alt=NKA1 src="1 auditorne vjezbe_files\NKA1.gif"></CENTER></P>
+<B><A name=Zad3>Zadatak 3.</A></B><P>Minimizirati zadani DKA uz upotrebu metode podjele stanja, automat dodatno smanjiti uporabom znakova.<BR>
+<BR><CENTER><IMG alt=DKA2 src="1 auditorne vjezbe_files\DKA2.gif"></CENTER></P>
+<B>Rješenje:</B>
+<P>- lista dohvatljivih stanja LDS: { q<SUB>0</SUB>, q<SUB>1</SUB>, q<SUB>2</SUB>, q<SUB>3</SUB>, q<SUB>5</SUB>, q<SUB>7</SUB>, q<SUB>4</SUB> }
+<BR>- nedohvatljiva stanja NDS: { q<SUB>6</SUB>, q<SUB>8</SUB> }<BR>
+<BR><IMG alt=strelica src="1 auditorne vjezbe_files\strelica.gif">traženje ekvivalentnih stanja<BR><BR>
+<OL TYPE=1 START=1 COMPACT><LI>podijela na prihvatljiva i neprihvatljiva stanja<BR><BR>
+G<SUB>11</SUB> = { q<SUB>0</SUB>, q<SUB>1</SUB>, q<SUB>4</SUB>, q<SUB>5</SUB> }<BR>G<SUB>12</SUB> = { q<SUB>2</SUB>, q<SUB>3</SUB>, q<SUB>7</SUB> }
+<BR><BR><LI>G<SUB>21</SUB> = { q<SUB>0</SUB>, q<SUB>4</SUB>, q<SUB>5</SUB> }<BR>G<SUB>22</SUB> = { q<SUB>1</SUB> }<BR>G<SUB>23</SUB> = { q<SUB>2</SUB>, q<SUB>3</SUB>, q<SUB>7</SUB> }
+<BR><BR><LI>G<SUB>31</SUB> = { q<SUB>0</SUB> }<BR>G<SUB>32</SUB> = { q<SUB>4</SUB>, q<SUB>5</SUB> }<BR>G<SUB>33</SUB> = { q<SUB>1</SUB> }<BR>G<SUB>34</SUB> = { q<SUB>2</SUB>, q<SUB>3</SUB>, q<SUB>7</SUB> }
+<BR><BR><LI>G<SUB>41</SUB> = { q<SUB>0</SUB> }<BR>G<SUB>42</SUB> = { q<SUB>4</SUB>, q<SUB>5</SUB> }<BR>G<SUB>43</SUB> = { q<SUB>1</SUB> }<BR>G<SUB>44</SUB> = { q<SUB>2</SUB>, q<SUB>3</SUB>, q<SUB>7</SUB> }</OL>
+<BR><BR><IMG alt=strelica src="1 auditorne vjezbe_files\strelica.gif">identična stanja su q<SUB>4</SUB> <IMG alt=eq src="1 auditorne vjezbe_files\eq.gif"> q<SUB>5</SUB>, q<SUB>2</SUB> <IMG alt=eq src="1 auditorne vjezbe_files\eq.gif"> q<SUB>3</SUB> <IMG alt=eq src="1 auditorne vjezbe_files\eq.gif"> q<SUB>7</SUB>
+<BR>zamjenjujemo: q<SUB>5</SUB><IMG alt=strelica src="1 auditorne vjezbe_files\strelica.gif">q<SUB>4</SUB>, q<SUB>3</SUB><IMG alt=strelica src="1 auditorne vjezbe_files\strelica.gif">q<SUB>2</SUB>, q<SUB>7</SUB><IMG alt=strelica src="1 auditorne vjezbe_files\strelica.gif">q<SUB>2</SUB></P>
+<P><BR><CENTER><IMG alt=DKA3 src="1 auditorne vjezbe_files\DKA3.gif" align=left HSPACE=40>b, c<IMG alt=strelica src="1 auditorne vjezbe_files\strelica.gif">e<BR><BR><IMG alt=DKA4 src="1 auditorne vjezbe_files\DKA4.gif" align=top></CENTER></P>
+<BR><BR><HR noShade SIZE=2>
+<B><FONT face=Verdana size=-1>
+<A href="2 auditorne vjezbe.htm">[Sljedeće poglavlje]</A> &nbsp; 
+<A href="Automati formalni jezici i jezicni procesori 1.htm">[Sadržaj]</A> 
+</FONT></B>
+</BODY></HTML>

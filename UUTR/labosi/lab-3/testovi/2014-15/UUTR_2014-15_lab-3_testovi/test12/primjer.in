@@ -1,0 +1,13 @@
+a,a,b
+q0,q1,q2
+a,b
+K,X
+q2
+q0
+K
+q0,a,K->q0,XK
+q0,$,X->q1,XX
+q1,$,X->q1,KX
+q1,a,K->q1,K
+q1,b,K->q2,K
+q2,$,K->q2,XK

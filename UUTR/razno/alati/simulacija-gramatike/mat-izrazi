@@ -1,0 +1,23 @@
+<znam>=<ne-nula>/0
+<ne-nula>=1/2/3/4/5/6/7/8/9
+<broj>=<ne-nula><broj-rek>/<ne-nula><broj-rek>/<ne-nula><broj-rek>/0
+<broj>=-<ne-nula><broj-rek>
+<broj-rek>=/<znam><broj-rek>
+<broj>=<znam>
+<var>=<broj>
+<op-bin>=+/-/*/\/^
+<op-un-post>=!
+<izraz>=<izraz-bin>/<izraz-un>/<var>
+<izraz-bin>=<izraz><op-bin><izraz>
+<izraz-un>=<var><op-un-post>
+
+<(izraz-bin)>=(<izraz-bin>)
+<[izraz-bin]>=[<(izraz-bin)><op-bin><( izraz-bin )>]/[<( izraz-bin )><op-bin><(izraz-bin)>]
+<{izraz-bin}>={<[izraz-bin]><op-bin><[(izraz-bin)]>}/{<[(izraz-bin)]><op-bin><[izraz-bin]>}
+
+<( izraz-bin )>=<izraz>/<(izraz-bin)>
+<[(izraz-bin)]>=<(izraz-bin)>/<[izraz-bin]>
+<{[(izraz-bin)]}>=<[(izraz-bin)]>/<{izraz-bin}>
+
+<kompl-izraz>=<{[(izraz-bin)]}><op-bin><kompl-izraz>/<op-un-post><{[(izraz-bin)]}>/<{[(izraz-bin)]}>
+

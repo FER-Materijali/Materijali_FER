@@ -1,0 +1,9 @@
+E:\FER\utr\lab1\vb\utr_sim\utr_sim\bin\Debug\utr_sim.exe
+E:\FER\utr\lab1\vb\utr_sim\utr_sim\bin\Debug\utr_sim.pdb
+E:\FER\utr\lab1\vb\utr_sim\utr_sim\bin\Debug\utr_sim.xml
+E:\FER\utr\lab1\vb\utr_sim\utr_sim\obj\Debug\ResolveAssemblyReference.cache
+E:\FER\utr\lab1\vb\utr_sim\utr_sim\obj\Debug\utr_sim.Resources.resources
+E:\FER\utr\lab1\vb\utr_sim\utr_sim\obj\Debug\utr_sim.vbproj.GenerateResource.Cache
+E:\FER\utr\lab1\vb\utr_sim\utr_sim\obj\Debug\utr_sim.exe
+E:\FER\utr\lab1\vb\utr_sim\utr_sim\obj\Debug\utr_sim.xml
+E:\FER\utr\lab1\vb\utr_sim\utr_sim\obj\Debug\utr_sim.pdb

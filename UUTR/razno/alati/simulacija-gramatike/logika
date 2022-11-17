@@ -1,0 +1,32 @@
+<formula>=nije istina da <formula>
+<formula>=<jednostavna>
+<formula>=<formula> <binop> <formula>
+<formula>=ako <formula>, onda <formula>
+<formula>=<formula> ako <formula>
+#<formula>=za <kvantifikatorj> <(ne)varj> vrijedi (<formula>)
+#<formula>=za <kvantifikatorm> <(ne)varm> vrijedi (<formula>) 
+<jednostavna>=<(ne)kvarj> <pred2j> <(ne)varj>|<(ne)kvarj> <pred1j>|<(ne)kvarj> <pred2j> <(ne)varj>
+<jednostavna>=<(ne)kvarm> <pred2m> <(ne)varm>|<(ne)kvarm> <pred1m>|<(ne)kvarm> <pred2m> <(ne)varm>
+<binop>=i|ili
+
+<kvantifikatorj>=svaki|neki
+<kvantifikatorm>=svi|neki
+
+<(ne)varj>=<varj>|ne-<varj>
+<(ne)varm>=<varm>|ne-<varm>
+
+<(ne)kvarj>=<kvantifikatorj> <(ne)varj>
+<(ne)kvarm>=<kvantifikatorm> <(ne)varm>
+
+<varj>=Ante|čovjek|vodozemac|sisavac
+<varm>=ljudi|vodozemci|sisavci
+
+<pred2j>=je|nije
+<pred2m>=su|nisu
+<pred1j>=postoji|misli|spava|hoda
+<pred1m>=postoji|misli|spava|hoda
+<pred0>=mislim|kiši
+
+<tekst>=<formula>.|<formula>. <tekst>
+
+

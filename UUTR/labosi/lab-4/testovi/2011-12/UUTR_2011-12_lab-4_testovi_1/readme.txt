@@ -1,0 +1,1 @@
+ako vam ne radi, u test.sh promijenite rijec 'python3' u 'python'

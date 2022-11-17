@@ -1,0 +1,10 @@
+a,c|a,b|b,b|c,c,a,b,c,a
+s1,s2,s3
+a,b,c
+s1
+s1,s3
+s1,a->s2
+s2,c->s3
+s2,b->s1
+s3,c->s1
+s1,b->s1

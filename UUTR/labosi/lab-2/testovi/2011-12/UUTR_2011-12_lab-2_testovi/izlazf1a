@@ -1,0 +1,4 @@
+stanje1|st6,stanje2|#|#
+stanje1|s3|p5,s4,st6
+stanje1|s3|st6,stanje2
+stanje1|s3|p5,s4,st6|p5,s3|#

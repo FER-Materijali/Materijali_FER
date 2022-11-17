@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Automati formalni jezici i jezicni procesori 1 - 4. auditorne vjezbe</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1250">
+<STYLE type=text/css>BODY {
+	FONT-FAMILY: Arial,Helvetica,sans-serif
+}
+</STYLE>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff><B><FONT face=Verdana size=-1>
+<A href="3 auditorne vjezbe.htm">[Prethodno poglavlje]</A> &nbsp;
+<A href="5 auditorne vjezbe.htm">[Sljedeće poglavlje]</A> &nbsp; 
+<A href="Automati formalni jezici i jezicni procesori 1.htm">[Sadržaj]</A> 
+</FONT></B>
+<HR noShade SIZE=2>
+<H1 style="COLOR: rgb(204,0,0)" align=center>4. Auditorne vježbe</H1>
+<B><A name=Zad10>Zadatak 10.</A></B><P>Iz zadanaog Mooreovog automata (iz zadatka 9.) konstruirati Mealyev automat.</P>
+<B>Rješenje:</B><P><IMG alt=delta1 src="4 auditorne vjezbe_files\delta1.gif"><BR><CENTER><IMG alt=Mealy1 src="4 auditorne vjezbe_files\Mealy1.gif"></CENTER></P>
+<BR><BR><B><A name=Zad11>Zadatak 11.</A></B><P>Iz zadanog MeDKA konstruirati MoDKA.<BR><BR>
+<CENTER><IMG alt=Mealy2 src="4 auditorne vjezbe_files\Mealy2.gif"></CENTER></P>
+<B>Rješenje:</B><P><IMG alt=delta2 src="4 auditorne vjezbe_files\delta2.gif"><BR><CENTER><IMG alt=Moore1 src="4 auditorne vjezbe_files\Moore1.gif"></CENTER></P>
+<BR><BR><B><A name=Zad12>Zadatak 12.</A></B><P>Konstruirati gramatiku nad abecedom { 0,1,2 } koja generira nizove u kojima nema uzastopnog ponavljanja podniza 01.</P>
+<B>Rješenje:</B><P>G = ( V, T, P, S)<BR>V = ( S, A, B, C )<BR>T = { 0, 1, 2 }<BR><BR>S<IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">0A | 1S | 2S | <SUB><IMG alt=eps src="4 auditorne vjezbe_files\cale.gif"></SUB><BR>
+A<IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">0A | 1B | 2S | <SUB><IMG alt=eps src="4 auditorne vjezbe_files\cale.gif"></SUB><BR>
+B<IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">0C | 1S | 2S | <SUB><IMG alt=eps src="4 auditorne vjezbe_files\cale.gif"></SUB><BR>
+C<IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">0A | 2S | <SUB><IMG alt=eps src="4 auditorne vjezbe_files\cale.gif"></SUB><BR>
+</P>
+<BR><BR><B><A name=Zad13>Zadatak 13.</A></B><P>Na temelju zadanog DKA konstruirati konteksno neovisnu gramatiku.<BR><BR>
+<IMG alt=DKA1 src="4 auditorne vjezbe_files\DKA1.gif"></P>
+<B>Rješenje:</B><P><IMG alt=gram1 src="4 auditorne vjezbe_files\gram1.gif"></P>
+<BR><BR><B><A name=Zad14>Zadatak 14.</A></B><P>Iz zadane lijevo-linearne gramatike konstruirati NKA.<BR><BR><CENTER><IMG alt=gram2 src="4 auditorne vjezbe_files\gram2.gif"></CENTER></P>
+<B>Rješenje:</B><P><IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">prvo se napravi nova gramatika G' = ( V, T, P', S ) u kojoj su produkcije napisane obrnuto ( iz LLG u DLG )
+<BR><BR><CENTER><IMG alt=gram3 src="4 auditorne vjezbe_files\gram3.gif"></CENTER><BR><BR><IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">ova gramatika generira nizove koji su napisani obrnuto od nizova u gramatici G<BR>
+<IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">rješe se desne strane koje ne završavaju s nezavršnim znakom i jedinične produkcije<BR><BR><CENTER><IMG alt=gram4 src="4 auditorne vjezbe_files\gram4.gif"></CENTER><BR><BR>
+<IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">na kraju se rješavaju desne strane s više od dva znaka<BR><BR><CENTER><IMG alt=gram5 src="4 auditorne vjezbe_files\gram5.gif"></CENTER><BR>
+<IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">sve produkcije gramatike
+<BR><BR><CENTER><IMG alt=gram9 src="4 auditorne vjezbe_files\gram9.gif"></CENTER>
+<BR><BR><IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">konstrukcija NKA<BR><BR><IMG alt=gram6 src="4 auditorne vjezbe_files\gram6.gif"><BR><BR><CENTER><IMG alt=NKA1 src="4 auditorne vjezbe_files\NKA1.gif"></CENTER><BR><IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">treba zamijeniti početno i prihvatljivo stanje i smjerove strelica
+<BR><BR><CENTER><IMG alt=NKA2 src="4 auditorne vjezbe_files\NKA2.gif"></CENTER></P>
+<BR><BR><B><A name=Zad15>Zadatek 15.</A></B><P>Zadanu gramatiku G pretvoriti u lijevo-linearnu gramatiku.<BR><BR>
+<CENTER><IMG alt=gram7 src="4 auditorne vjezbe_files\gram7.gif"></CENTER></P>
+<B>Rješenje:</B><P><OL TYPE=1><LI>G pretvoriti u G<SUB>1</SUB> koja ima oblik pogodan za konstrukciju NKA: L ( G<SUB>1</SUB> ) = L ( G )
+<LI>izgradi se NKA M<SUB>1</SUB>: L ( M<SUB>1</SUB> ) = L ( g<SUB>1</SUB> ) = L ( G )<LI>ako NKA M<SUB>1</SUB> ima više od jednog prihvatljivog stanja, preradi se u <SUB><IMG alt=eps src="4 auditorne vjezbe_files\cale.gif"></SUB>-NKA M<SUB>2</SUB> koji ima točno jedno prihvatljivo stanje L ( M<SUB>2</SUB> ) = L ( M<SUB>1</SUB> ) = L ( G )
+<LI>okrenu se grane  <SUB><IMG alt=eps src="4 auditorne vjezbe_files\cale.gif"></SUB>-NKA M<SUB>2</SUB> i zamijene se prihvatljivo i početno stanje tako da se dobije <SUB><IMG alt=eps src="4 auditorne vjezbe_files\cale.gif"></SUB>-NKA M<SUB>3</SUB>: L ( M<SUB>3</SUB> ) = inverzni nizovi iz L ( M<SUB>2</SUB> ) = L ( G )
+<LI>ako je potrebno <SUB><IMG alt=eps src="4 auditorne vjezbe_files\cale.gif"></SUB>-NKA M<SUB>3</SUB> pretvori se u NKA M<SUB>4</SUB>: L ( M<SUB>4</SUB> ) = L ( M<SUB>3</SUB> ) = inverzni nizovi iz L ( G )
+<LI>na temelju NKA M<SUB>4</SUB> konstruira se G<SUB>4</SUB>: L ( G<SUB>4</SUB> ) = L ( M<SUB>4</SUB> ) = inverzni nizovi iz L ( G )
+<LI>obrnu se desne strane produkcija G<SUB>4</SUB> i tako se dobije lijevo-linearna gramatika G<SUB>5</SUB>: L ( G<SUB>5</SUB> ) = inverzni nizovi iz L ( G<SUB>4</SUB> ) = L ( G )</OL></P>
+<BR><CENTER><IMG alt=gram8 src="4 auditorne vjezbe_files\gram8.gif"></CENTER><BR><BR><IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">izraditi se NKA M<SUB>1</SUB> za G<SUB>1</SUB> i preuredi se u <SUB><IMG alt=eps src="4 auditorne vjezbe_files\cale.gif"></SUB>-NKA M<SUB>2</SUB> sa jednim prihvatljivim stanjem<BR><BR>
+<BR><PRE>		NKA M<SUB>1</SUB></PRE><CENTER><IMG alt=NKA3 src="4 auditorne vjezbe_files\NKA3.gif"></CENTER><BR><BR><PRE>		<SUB><IMG alt=eps src="4 auditorne vjezbe_files\cale.gif"></SUB>-NKA M<SUB>2</SUB></PRE><CENTER><IMG alt=e_NKA1 src="4 auditorne vjezbe_files\e_NKA1.gif"></CENTER>
+<P><BR><IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">grane <SUB><IMG alt=eps src="4 auditorne vjezbe_files\cale.gif"></SUB>-NKA M<SUB>2</SUB> se okrenu i zamijeni se prihvatljivost početnog i završnog stanja da se dobije <SUB><IMG alt=eps src="4 auditorne vjezbe_files\cale.gif"></SUB>-NKA M<SUB>3</SUB> koji prihvaća obrnute nizove</P>
+<BR><PRE>		<SUB><IMG alt=eps src="4 auditorne vjezbe_files\cale.gif"></SUB>-NKA M<SUB>3</SUB></PRE><CENTER><IMG alt=e_NKA2 src="4 auditorne vjezbe_files\e_NKA2.gif"></CENTER>
+<P><BR><IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif"><SUB><IMG alt=eps src="4 auditorne vjezbe_files\cale.gif"></SUB>-NKA M<SUB>3</SUB> pretvori se u NKA M<SUB>4</SUB> pri čemu stanje <SUB><IMG alt=eps src="4 auditorne vjezbe_files\cale.gif"></SUB> postaje nedohvatljivo pa se može izbaciti</P>
+<BR><PRE>		NKA M<SUB>4</SUB></PRE><CENTER><IMG alt=NKA4 src="4 auditorne vjezbe_files\NKA4.gif"></CENTER><P><IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">za NKA M<SUB>4</SUB> napise se G<SUB>4</SUB> koja generira iste nizove, tj. prihvaća obrnute nizove od početne desno-linearne gramatike, F jest početni nezavršni znak</P>
+<CENTER><IMG alt=gram10 src="4 auditorne vjezbe_files\gram10.gif"></CENTER>
+<P><BR><IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">produkcije gramatike G<SUB>4</SUB> okrenu se i izvrši se supstitucija F<IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">S', S<IMG alt=strelica src="4 auditorne vjezbe_files\strelica.gif">F', dobije se gramatika G<SUB>5</SUB> koja je lijevo-linearna i generira iste nizove kao i gramatika G</P>
+<CENTER><IMG alt=gram11 src="4 auditorne vjezbe_files\gram11.gif"></CENTER>
+<BR><BR><HR noShade SIZE=2>
+<B><FONT face=Verdana size=-1>
+<A href="3 auditorne vjezbe.htm">[Prethodno poglavlje]</A> &nbsp;
+<A href="5 auditorne vjezbe.htm">[Sljedeće poglavlje]</A> &nbsp; 
+<A href="Automati formalni jezici i jezicni procesori 1.htm">[Sadržaj]</A> 
+</FONT></B>
+</BODY></HTML>

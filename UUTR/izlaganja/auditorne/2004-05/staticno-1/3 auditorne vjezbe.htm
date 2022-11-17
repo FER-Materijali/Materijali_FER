@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Automati formalni jezici i jezicni procesori 1 - 3. auditorne vjezbe</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1250">
+<STYLE type=text/css>BODY {
+	FONT-FAMILY: Arial,Helvetica,sans-serif
+}
+</STYLE>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff><B><FONT face=Verdana size=-1>
+<A href="2 auditorne vjezbe.htm">[Prethodno poglavlje]</A> &nbsp;
+<A href="4 auditorne vjezbe.htm">[Sljedeće poglavlje]</A> &nbsp; 
+<A href="Automati formalni jezici i jezicni procesori 1.htm">[Sadržaj]</A> 
+</FONT></B>
+<HR noShade SIZE=2>
+<H1 style="COLOR: rgb(204,0,0)" align=center>3. Auditorne vježbe</H1>
+<B><A name=Zad6>Zadatak 6.</A></B><P>Konstruirati DKA koji prihvaća jezik L = L<SUB>1</SUB> <IMG alt=presjek src="3 auditorne vjezbe_files\presjek.gif"> L<SUB>2</SUB>
+( L<SUB>1</SUB> <IMG alt=presjek src="3 auditorne vjezbe_files\unija.gif"> L<SUB>2</SUB>, L<SUB>1</SUB> - L<SUB>2</SUB>, L<SUB>2</SUB> - L<SUB>1</SUB> ). Jezik L<SUB>1</SUB> sastoji se od nizova
+opisanih reguralnim izrazom r<SUB>1</SUB> = a * b * c, a nizovi iz jezika L<SUB>2</SUB> opisani su regularnim izrazom r<SUB>2</SUB> = a * ( b + c ) *.</P>
+<B>Rješenje:</B><P><PRE>DKA M<SUB>1</SUB>	L ( M<SUB>1</SUB> ) = L<SUB>1</SUB></PRE></P>
+<CENTER><IMG alt=DKA1 src="3 auditorne vjezbe_files\DKA1.gif" HSPACE=40><IMG alt=DKA2 src="3 auditorne vjezbe_files\DKA2.gif"></CENTER>
+<P><PRE>DKA M<SUB>2</SUB>	L ( M<SUB>2</SUB> ) = L<SUB>2</SUB></PRE></P>
+<CENTER><IMG alt=DKA3 src="3 auditorne vjezbe_files\DKA3.gif" HSPACE=40><IMG alt=DKA4 src="3 auditorne vjezbe_files\DKA4.gif"></CENTER>
+<BR><IMG alt=DKA5 src="3 auditorne vjezbe_files\DKA5.gif">
+<BR><BR><B><A name=Zad7>Zadatak 7.</A></B><P>Regularnim izrazom opisati jezik koji sadrži sve nizove nad abecedom { 0, 1, 2 } u kojima nema uzastopnih ponavljanja znaka 0.</P>
+<B>Rješenje:</B><P><CENTER>( 01 + 02 + 1 + 2 ) * ( 0 + <IMG alt=eps src="3 auditorne vjezbe_files\cale.gif" align=top> )<BR><PRE> 	ili	</PRE>( 0 + <IMG alt=eps src="3 auditorne vjezbe_files\cale.gif" align=top> ) ( 12 + 20 + 1 +2 )*</CENTER></P>
+<B><A name=Zad8>Zadatak 8.</A></B><P>Ispitati da li su slijedeći algoritmi ekvivalentni:<BR><OL TYPE=a><LI><SUB><IMG alt=izraz1 src="3 auditorne vjezbe_files\izraz1.gif"></SUB><LI><SUB><IMG alt=izraz2 src="3 auditorne vjezbe_files\izraz2.gif"></SUB></OL></P>
+<B>Rješenje:</B><P><OL TYPE=a><LI><IMG alt=izraz3 src="3 auditorne vjezbe_files\izraz3.gif" align=top><BR><BR><LI><IMG alt=izraz4 src="3 auditorne vjezbe_files\izraz4.gif" align=top></OL></P>
+<BR><BR><B><A name=Zad9>Zadatak 9.</A></B><P>Konsturirati MoDKA ( MeDKA ) koji ispisuje ostatak djeljenja s 5 oktalno zapisanog broja.</P>
+<B>Rješenje:</B><P>ostatak<SUB>n+1</SUB> = ( ostatak<SUB>n</SUB> * baza + znam<SUB>n+1</SUB> ) % djelitelj</P>
+<P>Moore DKA<BR><BR><CENTER><IMG alt=Moore1 src="3 auditorne vjezbe_files\Moore1.gif"></CENTER></P>
+<BR><BR><HR noShade SIZE=2>
+<B><FONT face=Verdana size=-1>
+<A href="2 auditorne vjezbe.htm">[Prethodno poglavlje]</A> &nbsp;
+<A href="4 auditorne vjezbe.htm">[Sljedeće poglavlje]</A> &nbsp; 
+<A href="Automati formalni jezici i jezicni procesori 1.htm">[Sadržaj]</A> 
+</FONT></B>
+</BODY></HTML>

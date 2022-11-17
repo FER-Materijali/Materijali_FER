@@ -1,0 +1,11 @@
+a|b,a,b,a|b,a,a|a,a|b|b,b|b,a,b,b,a
+q1,q2,q3
+a,b
+q1
+q1
+q1,b->q2
+q1,$->q3
+q2,a->q2,q3
+q2,b->q3
+q3,a->q1
+

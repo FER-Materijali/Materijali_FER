@@ -1,0 +1,14 @@
+a|a,b,c,d|a,a,a,d
+A,B,C,D,E
+a,b,c,d,e
+B,D
+A
+A,$->A
+A,a->B
+B,a->B
+B,b->C,E
+C,c->C
+C,d->D
+C,e->E
+E,$->D
+

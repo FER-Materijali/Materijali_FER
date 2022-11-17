@@ -1,0 +1,11 @@
+a,b,a,b,b,b
+p0,p1,p2
+a,b
+K,A
+p2
+p0
+K
+p0,a,K->p1,AAK
+p1,a,A->p1,AAA
+p1,b,A->p1,$
+p1,$,K->p2,K

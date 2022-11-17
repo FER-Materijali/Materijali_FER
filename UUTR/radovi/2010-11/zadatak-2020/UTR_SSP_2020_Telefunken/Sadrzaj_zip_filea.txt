@@ -1,0 +1,44 @@
+Priložen je dokument UTR_SSP_2020_Telefunken.pdf kao objašnjenje projekta.
+
+
+Priložen je dokument Priprema_izraza.pdf koji detaljnije objašnjava pripremu izraza. 
+U glavnom dokumentu se nije išlo u detalje jer se tako sugeriralo u predlošku.
+
+
+Priložene su slike dijagrama koje su raðene u Microsoft Visiou i upotrebljene u glavnom dokumentu.
+
+
+Priloženo je 4 programa:
+
+UTR_SSP_2020_Py2.7_Telefunken_Bez_koraka_Iz_datoteke.py
+ - program bez ispisa koraka èita izraz po izraz 
+   iz datoteke Izrazi.txt i za pojedini izraz ispisuje 
+   je li aritmetièki.
+
+UTR_SSP_2020_Py2.7_Telefunken_Bez_koraka.py
+ - program ukratko na poèetku programa ispisuje ogranièenja, 
+   gramatiku i moguænosti programa.
+ - program bez ispisa koraka èita izraz koji mu se upiše 
+   i ispisuje je li aritmetièki, 
+   potom pita za nastavak i daljnje upisivanje izraza.
+
+UTR_SSP_2020_Py2.7_Telefunken_S_koracima_Iz_datoteke.py
+ - program èita izraz po izraz iz datoteke Izrazi.txt 
+   i ispisuje korak po korak prijelaze izmeðu funkcija, 
+   koji znakovi se prenašaju itd.
+ - upozorenje: Ogranièiti broj izraza u datoteci zbog ispisa 
+   mnogo linija teksta (program može izgledati 
+   kao da je upao u beskonaènu petlju, ali to je nemoguæe, 
+   za priloženi tekst file program ispisuje 1529 linija!)
+
+UTR_SSP_2020_Py2.7_Telefunken_S_koracima.py
+ - program ukratko na poèetku programa ispisuje 
+   ogranièenja, gramatiku i moguænosti programa.
+ - program nakon upisanog izraza ispisuje korak 
+   po korak prijelaze izmeðu funkcija, koji znakovi 
+   se prenašaju itd. i ispisuje je li aritmetièki, 
+   potom pita za nastavak i daljnje upisivanje izraza.
+
+Za pregled koda najbolje pregledati program bez koraka.
+
+Komentari nisu pisani, program objašnjen u dokumentu UTR_SSP_2020_Telefunken.pdf

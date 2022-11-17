@@ -1,0 +1,9 @@
+E:\FER\utr\lab1\vb\utr\utr\bin\Release\utr.exe
+E:\FER\utr\lab1\vb\utr\utr\bin\Release\utr.pdb
+E:\FER\utr\lab1\vb\utr\utr\bin\Release\utr.xml
+E:\FER\utr\lab1\vb\utr\utr\obj\Release\ResolveAssemblyReference.cache
+E:\FER\utr\lab1\vb\utr\utr\obj\Release\ConsoleApplication1.Resources.resources
+E:\FER\utr\lab1\vb\utr\utr\obj\Release\utr.vbproj.GenerateResource.Cache
+E:\FER\utr\lab1\vb\utr\utr\obj\Release\utr.exe
+E:\FER\utr\lab1\vb\utr\utr\obj\Release\utr.xml
+E:\FER\utr\lab1\vb\utr\utr\obj\Release\utr.pdb

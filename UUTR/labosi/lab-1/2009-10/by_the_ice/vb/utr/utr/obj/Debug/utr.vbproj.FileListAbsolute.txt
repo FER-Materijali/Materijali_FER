@@ -1,0 +1,9 @@
+E:\FER\utr\lab1\vb\utr\utr\bin\Debug\utr.exe
+E:\FER\utr\lab1\vb\utr\utr\bin\Debug\utr.pdb
+E:\FER\utr\lab1\vb\utr\utr\bin\Debug\utr.xml
+E:\FER\utr\lab1\vb\utr\utr\obj\Debug\ResolveAssemblyReference.cache
+E:\FER\utr\lab1\vb\utr\utr\obj\Debug\ConsoleApplication1.Resources.resources
+E:\FER\utr\lab1\vb\utr\utr\obj\Debug\utr.vbproj.GenerateResource.Cache
+E:\FER\utr\lab1\vb\utr\utr\obj\Debug\utr.exe
+E:\FER\utr\lab1\vb\utr\utr\obj\Debug\utr.xml
+E:\FER\utr\lab1\vb\utr\utr\obj\Debug\utr.pdb

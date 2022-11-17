@@ -1,0 +1,20 @@
+Extractati ovo negdje (mora biti folder (npr. UTR_LAB1_TEST) i onda unutar njega folder A i unutar njega B s izlaznim fileovima).
+Program funkcionira tako da generira za svaki file file_IZLAZ i zatim te IZLAZ fileove usporeðuje s IZLAZ fileovima u B folderu.
+
+Umjesto ovih komentara u TEST.py stavite svoj py program (nemojte izbrisati ovo ispod niti iznad komentara).
+Ulaz je uèitani file.
+
+Ne zaboravite indentirati svoj program za dva mjesta u tom podruèju.
+
+Skripta mjeri vrijeme izvoðenja svakog testa.
+Brzina izvoðenja æe vam varirati kod razlièitih fileova (neovisno o broju prijelaza i slièno)
+i nije èudno ako æe kod nekih testova vrijeme izvoðenja biti veliko (moguæe èak i više od 20 sekundi ovisno o složenosti algoritama).
+Bitnije je kod takvih (a i ostalih) da se skripta izvede uopæe do kraja. Oni vjerojatno neæe staviti takve
+divlje testove, ali hoæe one koji provjeravaju moguænosti beskonaène petlje.
+
+Nakon toga slijedi provjera podudaranja meðu fileovima koje je vaš program proizveo i fileove 
+koji su u B folderu (tj. fileovi koje je moj program proizveo).
+
+Program æe vam javiti u kojim se linijama razlikuje (ako se razlikuje).
+
+Za koliko toliko pregledan pogled na generirane i ulazne filevo koristite notepad++ zbog linijskog pregleda.

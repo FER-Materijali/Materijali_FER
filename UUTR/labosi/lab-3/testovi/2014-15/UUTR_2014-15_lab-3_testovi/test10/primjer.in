@@ -1,0 +1,10 @@
+a,a,b
+q0,q1,q2
+a,b
+K,X
+q2
+q0
+K
+q0,a,K->q0,XK
+q0,$,X->q0,KX
+q0,b,K->q1,K

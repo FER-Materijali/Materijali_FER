@@ -1,0 +1,17 @@
+0,1,1,2
+qp1,q0,qpr
+0,1,2
+K,N,J
+qpr
+qp1
+K
+qp1,0,K->q0,NK
+q0,0,N->q0,NN
+q0,0,J->q0,$
+qp1,1,K->q0,JK
+q0,1,N->q0,$
+q0,1,J->q0,JJ
+qp1,2,K->q0,K
+q0,2,N->q0,N
+q0,2,J->q0,J
+q0,$,K->qp1,K

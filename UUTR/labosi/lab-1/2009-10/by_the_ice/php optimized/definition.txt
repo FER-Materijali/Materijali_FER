@@ -1,0 +1,9 @@
+START www.index.hr www.index.hr
+START www.jutarnji.hr www.jutarnji.hr_img1
+START www.vecernji.hr www.vecernji.hr_img1
+www.index.hr www.jutarnji.hr www.jutarnji.hr_img1
+www.index.hr www.vecernji.hr www.vecernji.hr_img1
+www.jutarnji.hr www.vecernji.hr www.vecernji.hr_img1
+www.vecernji.hr www.index.hr www.index.hr
+www.jutarnji.hr_img1 img1 www.jutarnji.hr
+www.vecernji.hr_img1 img1 www.vecernji.hr

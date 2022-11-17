@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Automati formalni jezici i jezicni procesori 1 - 2. auditorne vjezbe</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1250">
+<STYLE type=text/css>BODY {
+	FONT-FAMILY: Arial,Helvetica,sans-serif
+}
+</STYLE>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff><B><FONT face=Verdana size=-1>
+<A href="1 auditorne vjezbe.htm">[Prethodno poglavlje]</A> &nbsp;
+<A href="3 auditorne vjezbe.htm">[Sljedeće poglavlje]</A> &nbsp; 
+<A href="Automati formalni jezici i jezicni procesori 1.htm">[Sadržaj]</A> 
+</FONT></B>
+<HR noShade SIZE=2>
+<H1 style="COLOR: rgb(204,0,0)" align=center>2. Auditorne vježbe</H1>
+<B><A name=Zad4>Zadatak 4.</A></B><P>Minimizirati zadani DKA uz upotrebu metode pronalaženja neekvivalentnih stanja.<BR>
+<BR><CENTER><IMG alt=DKA1 src="2 auditorne vjezbe_files\DKA1.gif"></CENTER></P>
+<B>Rješenje:</B><BR><BR>
+LDS: { q<SUB>0</SUB>, q<SUB>4</SUB>, q<SUB>1</SUB>, q<SUB>5</SUB>, q<SUB>3</SUB>, q<SUB>2</SUB> }<BR>NDS: { q<SUB>6</SUB>, q<SUB>7</SUB> }<BR><BR>
+<IMG alt=DKA2 src="2 auditorne vjezbe_files\DKA2.gif" align=left>lista uz (q<SUB>2</SUB>, q<SUB>4</SUB>) = { ( q<SUB>0</SUB>, q<SUB>1</SUB> ), ( q<SUB>1</SUB>, q<SUB>3</SUB> ) }<BR>
+lista uz (q<SUB>1</SUB>, q<SUB>3</SUB>) = { ( q<SUB>0</SUB>, q<SUB>1</SUB> ), ( q<SUB>2</SUB>, q<SUB>4</SUB> ) }<BR>
+lista uz (q<SUB>4</SUB>, q<SUB>5</SUB>) = { ( q<SUB>0</SUB>, q<SUB>1</SUB> ), ( q<SUB>0</SUB>, q<SUB>3</SUB> ) }<BR>
+<BR>q<SUB>1</SUB> <IMG alt=eq src="2 auditorne vjezbe_files\eq.gif"> q<SUB>3</SUB><BR>q<SUB>2</SUB> <IMG alt=eq src="2 auditorne vjezbe_files\eq.gif"> q<SUB>4</SUB><BR><BR><BR><BR>
+<IMG alt=strelica src="2 auditorne vjezbe_files\strelica.gif">izbacuju se stanja q<SUB>6</SUB> i q<SUB>7</SUB>, zamjena q<SUB>3</SUB><IMG alt=strelica src="2 auditorne vjezbe_files\strelica.gif">q<SUB>1</SUB> i q<SUB>4</SUB><IMG alt=strelica src="2 auditorne vjezbe_files\strelica.gif">q<SUB>2</SUB><BR><BR>
+<CENTER><IMG alt=DKA3 src="2 auditorne vjezbe_files\DKA3.gif"></CENTER>
+<B><A name=Zad5>Zadatak 5.</A></B><P>Zadani <IMG alt=e src="2 auditorne vjezbe_files\cale.gif" align=top> - NKA pretvoriti u minimalni DKA.<BR><BR>
+<CENTER><IMG alt=e-NKA1 src="2 auditorne vjezbe_files\e_NKA1.gif"></CENTER></P><B>Rješenje:</B><BR><BR>
+<IMG alt=e src="2 auditorne vjezbe_files\cale.gif" align=top> - okruženje ( q<SUB>0</SUB> ) = { q<SUB>0</SUB>, q<SUB>1</SUB>, q<SUB>2</SUB>, q<SUB>3</SUB> }<BR>
+<IMG alt=e src="2 auditorne vjezbe_files\cale.gif" align=top> - okruženje ( q<SUB>1</SUB> ) = { q<SUB>1</SUB>, q<SUB>2</SUB>, q<SUB>2</SUB> }<BR>
+<IMG alt=e src="2 auditorne vjezbe_files\cale.gif" align=top> - okruženje ( q<SUB>2</SUB> ) = { q<SUB>2</SUB> }<BR>
+<IMG alt=e src="2 auditorne vjezbe_files\cale.gif" align=top> - okruženje ( q<SUB>3</SUB> ) = { q<SUB>3</SUB> }<BR>
+<P><IMG alt=strelica src="2 auditorne vjezbe_files\strelica.gif">dobije se NKA<CENTER><IMG alt=NKA1 src="2 auditorne vjezbe_files\NKA1.gif"></CENTER></P>
+<P><IMG alt=strelica src="2 auditorne vjezbe_files\strelica.gif">pretvorba NKA u DKA<BR>- uvode se složena stanja oblika { q<SUB>i0</SUB>, q<SUB>i1</SUB>, ... , q<SUB>im</SUB> }<BR>- prijelazi se ostvaruju unijom prijelaza podstanja</P>
+<CENTER><IMG alt=DKA4 src="2 auditorne vjezbe_files\DKA4.gif"></CENTER><P><IMG alt=strelica src="2 auditorne vjezbe_files\strelica.gif">minimizacija DKA<BR><BR><IMG alt=DKA5 src="2 auditorne vjezbe_files\DKA5.gif" align=left HSPACE=40>[ q<SUB>1</SUB>,q<SUB>2</SUB> ] <IMG alt=eq src="2 auditorne vjezbe_files\eq.gif"> [ q<SUB>2</SUB> ]<BR><BR><IMG alt=DKA6 src="2 auditorne vjezbe_files\DKA6.gif" align=top></P>
+<BR><BR><HR noShade SIZE=2>
+<B><FONT face=Verdana size=-1>
+<A href="1 auditorne vjezbe.htm">[Prethodno poglavlje]</A> &nbsp;
+<A href="3 auditorne vjezbe.htm">[Sljedeće poglavlje]</A> &nbsp; 
+<A href="Automati formalni jezici i jezicni procesori 1.htm">[Sadržaj]</A> 
+</FONT></B>
+</BODY></HTML>

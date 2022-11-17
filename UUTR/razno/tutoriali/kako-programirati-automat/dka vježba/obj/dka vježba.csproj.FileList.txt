@@ -1,0 +1,5 @@
+obj\Debug\dka vježba.exe
+obj\Debug\dka vježba.pdb
+bin\Debug\dka vježba.exe
+bin\Debug\dka vježba.pdb
+obj\Debug\ResolveAssemblyReference.cache

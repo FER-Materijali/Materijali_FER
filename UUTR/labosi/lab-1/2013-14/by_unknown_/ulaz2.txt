@@ -1,0 +1,13 @@
+a,pnp,a|pnp,lab2|pnp,a|pnp,lab2,utr,utr
+p5,s3,s4,st6,stanje1,stanje2
+a,lab2,pnp,utr
+p5
+stanje1
+s3,a->stanje2
+s3,lab2->p5,s4
+s4,$->st6
+s4,utr->p5,s3
+stanje1,a->stanje2
+stanje1,pnp->s3
+stanje2,$->st6
+stanje2,a->#

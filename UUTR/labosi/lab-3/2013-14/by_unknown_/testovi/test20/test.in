@@ -1,0 +1,12 @@
+b,b,a,c,c
+q0,q1,q2
+b,a,c
+A,K
+q2
+q0
+K
+q0,b,K->q0,AK
+q0,b,A->q0,AA
+q0,a,A->q1,A
+q1,c,A->q1,$
+q1,$,K->q2,$

@@ -1,0 +1,5 @@
+Back:3
+1:www.index.hr|2,3|img1,img2
+2:www.jutarnji.hr|3|img1
+3:www.vecernji.hr|1,4|img3
+4:www.google.hr|1,2,3,4|img4
