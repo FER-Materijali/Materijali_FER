@@ -1,0 +1,21 @@
+1. Upute za kompajliranje
+Preduvjeti:
+-imati instalirani GNU Make
+-imate instaliran G++ kompajler
+(Na Ubuntu distribuciji Linux-a oboje je moguce instalirati pomocu "sudo apt-get install build-essential")
+Upute:
+1) pokrenuti naredbu "make"
+2) Ako zelite pobrisati sve izvrsne datoteke, pokrenite "make clean"
+
+1. Upute za pokretanje
+Preduvjeti:
+-imati kompajlirane programe (izvrsne datoteke i "runall.bat" skriptu)
+Upute:
+1) pokrenuti runall.bat
+
+
+Redoslijed komandi u komandnoj liniji (GNU / Linux):
+unzip NSK19.zip
+make
+./runall.bat
+
