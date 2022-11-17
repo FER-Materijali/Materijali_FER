@@ -1,0 +1,64 @@
+1. Ispravljaèki spojevi i fazno upravljivi upravljaèki spojevi - (a) razlika, 
+(b) srednja vrijednost napona trošila uz komutaciju i razlika pri spajanju na 50 Hz i 60 Hz mrezu.
+2. Istosmjerni pretvaraèi - kontinuirani i diskontinuirani naèin rada, o èemu ovisi i koje su posljedice.
+3. Neizravni izmjenièni pretvaraèi i njihova primjena kod izmjeniènih pogona.
+pito je modulacije, komutaciju i Active front end
+
+1.punovalni diodni ispravljac
+- shema, valni oblik napona i struje kada je induktivitet velik
+- valni oblik struje i napona izvora
+- izraz za srednju struju (ne treba izvod naravno)
+- komutacija: gdje dodati komutacijski induktivitet (serija s izvorom jel  ) te nacrtaj valni oblik napona na trosilu (za komutaciju jel)
+- jel struja istog valnog oblika? odgovor: jap, struja kroz diode nije ista jedino
+- ak uzmemo u obzir komutaciju da li se sada srednja struja smanji ili poveca? (pogledaj sad sto si nacrto  , napon se smanji pa se onda i struja smanji)
+
+2. uzlazni DC-DC
+- shema, napon i struja na zavojnici za neisprekidani nacin rada
+- izvedi naponsku transformatorsku jednadzbu; odakle si to izvukao, tj. zasto je povrsina ulaza = povrsini izlaza? (misli se na valni oblik napona) - 
+odgovor: zato sto mi PRETPSTAVLJAMO da je sve idelano (pise ispod sheme na slajdu sad da ne prepisujem)
+- izvedi strujnu jednadzbu; zast je Pb = Pd? (zato sto nema gubitaka)
+- jel se more staviti tiristor umjesto sklopke? ogovor: ne more jer je tiristor polupravljiva sklopka i struje ne prolazi kroz 0 pa se ne moze 
+iskljuciti pa bi time bila stalno ukljucena
+- u stvarnom svijetu sklop radi na velikim frekvencijama i sto utjece na gubitke? (sklopka S jer nije idealna + pad napona na diodi)
+
+3. jednofazni mosni izmjenjivac
+- shema (samo s idealnim sklopkama), izgled napona i struje za pravokutnu modulaciju
+- struja nije sunosnog oblika, kak bi se moglo napraviti sinusno oblik, tj. koja modulacija? odgovor: PWM bipolarni ili unipolarni  
+
+1) Utjecaj komutacije na rad ispravljaèa (usmjerivaèa). U kojim se valnim oblicima može primjetiti komutacija i kako izgleda.
+
+2) Bilo koji istosmjerni pretvaraè bez galvanskog odvajanja. Skicirati glavne valne oblike. Naèelo izvoðenja transformacijskih jednadžbi.
+
+3) Naponski izmjenjivaè u jednofaznom spoju za dobivanje pravokutnog, kvazipravokutnog i izmjeniènog napona
+- nacrtati napon i struju
+- kriterij za odabir sklopki
+
+1. Silazne, uzlazne i te pretvaraèe - izvod formula, shemu, one grafove. To je meni došlo na 2 usmena.
+
+2. Modulacija - PWM - to Šunde obožava, prenošenje tih spektara i sl. Uglavnom, frajer me tu namlatio s tim, nisam imao pojma.
+
+3. Neizravni izmjenièni pretvaraè - sve tam prouèite, shemu i sl.
+
+
+Usmeni: ispravljaci, usmjerivaci, podjele komutacije valni oblici izvod izreza za sr napon trosila.
+Dcd
+Izvod trafo jdbi i malo o tom.
+Smanjivanje, uklanjanje i izmjeatanje harmonika kod autonomnih izmjenjivaca
+Skalarna vektorska
+
+
+Prvo svi dobijete 3 pitanja i skicirate odgovore, zatim dolaze profesori i pozivaju po jednog. Ja sam bila kod Šundea.
+Pitanja su bila; ispravljaèi, usmjerivaèi + izmj. naèin rada (skiciraš shemu spoja, napon i struju trošila, upravljaèku karakteristiku),
+ tu me Šunde onda pitao da nacrtam na ploèi kako bi izgledao napon trošila 1f tiristorskog usmjerivaèa sa komutacijom i o èemu ovisi duljina trajanja 
+komutacije, i kako bi postigli izmjenjivaèki naèin rada.
+Drugo pitanje je bilo: podjela DC/DC pretvaraèa, odabrati jedan: nacrtati shemu, izvesti transformatorske jednadžbe, isprekidan naèin rada
+ (tu me još pitao kako izgleda napon na trošilu kad je isprekidana struja i nek skiciram struju i koji je uvjet za isprekidan naèin rada)
+Treæe je bilo metode uklanjanja harmonika, pitao me koje se najèešæe koriste i malo nek ih objasnim.
+Uglavnom ništa strašnog  , kod Jakopoviæa su bili brže gotovi jer Šunde malo voli duže ispitivati i baš crtaš sheme pred njim na ploèi.
+
+DC-DC pretvaraè
+ispravljaè, fazno upravljivi ispravljaè, usmjerivaè, kao šta je šta i karakteristike one
+i metode rješavanja harmonika
+
+Komutacijski induktivitet je parazitni induktivitet, on se ne dodaje posebno u sklopove.
+3 parametra koja utjecu na duljinu trajanja komutacije: komutacijski induktivitet, jacina struje i napon izvora.

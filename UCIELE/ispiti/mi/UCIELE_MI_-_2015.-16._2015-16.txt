@@ -1,0 +1,18 @@
+1. [4boda] Nacrtajte shemu poluvalnog diodnog ispravljaèa optereæenog L trošilom, izvor ima frekv. 60Hz, 120V;
+ nacrtati uS, iS, iD, uD (trošilo i izvor), odrediti L takav da max. vrijednost struje bude 600A
+
+2. [4boda] Nacrtajte shemu poluvalnog diodnog ispravljaèa optereæenog RL trošilom s porednom diodom. 
+Odredite faktor snage i gubitke voðenja diode (zanemariti provodni otpor koji iznosi neki iznos), 
+napon koljena diode 1V. Nacrtati uS, iS, iD, uD, iD2, uD2 (izvor, trošilo i druga dioda). wL>>R
+
+3. [4boda] Nacrtajte shemu trofaznog diodnog ispravljaèa s nultom toèkom spojenog na izvor 
+pomoæu trafiæa 2:1 spojenog u spoju Yy optereæenog L-om. 
+Zadan izvor, odrediti faktor snage èini mi se i nacrtati struje svega, napone, i struje primara i sekundara jedne faze.
+
+4. [4boda] Nacrtajte shemu punovalnog mosnog usmjerivaèa optereæenog RLE trošilom s induktivitetom kod ulaza 
+(tj. kako se to veæ kaže na ovom predmetu) i postoji komutacija, nacrtati struje i napone na trošilu i na izvoru. 
+Zadan Udc, Lk, Rd, alfa, efektivna vrijednost napona izvora. Odrediti snagu predanu DC izvoru, odrediti trajanje komutacije. wL>>Rd
+
+5. [4boda] Nacrtajte shemu uzlaznog pretvaraèa bez galvanskog odvajanja, 
+odredti L, izvesti Transform. jednadžbe ulaza i izlaza, faktor voðenja. Odrediti kapacitet da valovitost napona ne bude preko 5%. 
+Nacrtati struje i to.
